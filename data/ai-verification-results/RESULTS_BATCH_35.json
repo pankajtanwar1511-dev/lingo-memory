@@ -1,0 +1,946 @@
+[
+  {
+    "card_id": "n5_vocab_0606",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "結婚 appears with する verb in 結婚する (to marry)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, time expression 来年, verb in dictionary form. All N5 patterns",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple future with dictionary form. Vocabulary: 彼女, 来年 are N5. Length: Short. Context: Universal marriage concept",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Clear usage of target vocabulary with simple future tense"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0606",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "結婚 appears in 結婚する construction",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ~ている (嫌がっている) which is N4 continuous grammar. Also contains のを nominalization which is borderline N4",
+      "difficulty_rating": 9,
+      "difficulty_notes": "Grammar: ~ている and のを both N4+. Vocabulary: 彼女, 彼, 嫌がる are N5. Length: Long. Context: Universal but complex",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 grammar ~ている. Also uses のを nominalization. Too complex for N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0606",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "結婚 appears in 結婚する",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains のか nominalization + question which is borderline N4. Also かなあ is wondering/uncertainty expression that's N4",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: のかなあ pattern is N4 speculation. Vocabulary: 彼女, 彼 are N5. Length: Medium. Context: Universal",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 grammar pattern のかなあ for speculation/wondering. Too advanced"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0607",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "置く appears in て-form おいて in the phrase 一軒おいて (one house over)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ~なら conditional (その家なら) which is N4 grammar",
+      "difficulty_rating": 8,
+      "difficulty_notes": "Grammar: なら conditional is N4. Vocabulary: 家, 隣 are N5. Length: Medium. Context: Requires understanding idiomatic 一軒おいて",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 conditional なら. Also uses idiomatic expression 一軒おいて which is complex"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0607",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "置く appears in compound 置き時計 (table clock, mantel clock)",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "Shows おきどけい but should be おきどけい. The kanji 時 can be read as とけい but the reading given is どけい which seems like a typo",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains passive form 使われている (is being used) which is N4 passive + ~ている continuous",
+      "difficulty_rating": 8,
+      "difficulty_notes": "Grammar: Passive + ~ている is N4. Vocabulary: 古い, 時計 are N5. Length: Medium. Context: Universal",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 passive and ~ている grammar. Too advanced for N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0607",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "置く appears in て-form ておく (to do in advance/keep)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ~ておく auxiliary which is N4 grammar expressing preparation or maintaining state. Also のよ ending is N4 emphatic feminine particle",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: ~ておく is N4, のよ is N4. Vocabulary: 目, 開ける are N5. Length: Short. Context: Universal",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 ~ておく auxiliary construction. Also uses のよ which is N4"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0607",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "Duplicate of example_index 2. Same sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Same as example 2",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Same as example 2 - contains N4 grammar",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Same as example 2",
+      "recommendation": "REJECT",
+      "overall_notes": "DUPLICATE of example_index 2. Should be flagged for removal. Also contains N4 grammar"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0607",
+    "example_index": 4,
+    "verification": {
+      "target_vocab_present": "UNCLEAR",
+      "target_vocab_notes": "Sentence has いておく but this appears to be a typo in the Japanese. Should probably be しておく (keep it clean). The いて doesn't make grammatical sense here",
+      "kana_accuracy": "MAJOR_ERROR",
+      "kana_notes": "Japanese sentence has typo: きれいにいておく doesn't make sense. Should be きれいにしておく. Kana reflects the broken Japanese",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ~ておく which is N4 grammar. Also sentence has grammatical error",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar would be N4 if corrected. Vocabulary: 妹, 部屋, いつも, きれい are N5",
+      "recommendation": "REJECT",
+      "overall_notes": "CRITICAL ERROR: Japanese sentence has typo/grammatical error. Should be しておく not いておく. Also contains N4 grammar"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0607",
+    "example_index": 5,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "置く appears in ~ておく form",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ~ておく which is N4 auxiliary. Also ように (so that) is N4 purpose expression",
+      "difficulty_rating": 8,
+      "difficulty_notes": "Grammar: ~ておく and ように are both N4. Vocabulary: 部屋, 窓, 閉める are N5. Length: Medium. Context: Universal",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains multiple N4 patterns: ~ておく and ように. Too advanced for N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0608",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "渡る appears in compound verb 行き渡る (to spread, circulate)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ~ている (行き渡っている) which is N4 continuous grammar",
+      "difficulty_rating": 8,
+      "difficulty_notes": "Grammar: ~ている is N4. Vocabulary: 雑誌, 広く are N5. Length: Medium. Context: Universal",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 ~ている grammar. Too advanced for N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0608",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "渡る appears in past tense 渡った",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, を particle, past tense. Simple structure",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Basic past tense. Vocabulary: 彼, 海 are N5. Length: Short. Context: Universal crossing concept",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Simple past tense with clear usage of target verb"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0608",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "渡る appears in volitional form 渡ろう",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains volitional form ~ろう which is N4 grammar (beyond basic ましょう)",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Volitional form is N4. Vocabulary: 道 is N5. Length: Very short. Context: Universal",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 volitional form ~ろう. Should use ましょう for N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0608",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "渡る appears in past tense form 渡った",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, を particle, past tense",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple past tense. Vocabulary: 橋 is N5. Length: Short. Context: Universal bridge crossing",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Clear and simple usage"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0609",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "吸う appears in masu-negative form 吸いません",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, を particle, negative masu-form. All N5",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Basic negative masu-form. Vocabulary: 私, タバコ are N5. Length: Short. Context: Universal",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Simple negative sentence"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0609",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "吸う appears in て-form 吸って in ~てもいい construction",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: を particle, ~てもいい (permission) which is taught at N5, か question particle",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: ~てもいい permission pattern is N5. Vocabulary: タバコ are N5. Length: Short. Context: Universal",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Shows permission pattern ~てもいい which is N5 grammar"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0609",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "吸う appears in past tense 吸った",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, で particle (location), を particle, past tense",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Past tense with location. Vocabulary: 彼, レストラン, タバコ are N5. Length: Medium. Context: Universal",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Natural sentence with past tense"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0610",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "兄 appears with possessive の",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: の possessive, は particle, plain past tense だった",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Possessive and past copula. Vocabulary: 私, 背, 高い, 学生 are N5. Length: Medium. Context: Universal",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Clear past tense with adjective modifier"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0610",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "兄 appears with は particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, に particle (indirect object), を particle, past tense 買った",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Past tense with multiple particles. Vocabulary: 私, 車, 買う are N5. Length: Medium. Context: Universal gift-giving",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Natural sentence with clear particle usage"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0610",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "兄 appears with が particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: に particle (possessor), が particle, ます-form",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Existence sentence with に particle. Vocabulary: 私, いる are N5. Length: Short. Context: Universal family",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Simple existence sentence for family"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0611",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "妹 appears with が particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: に particle (possessor), が particle, ます-form",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Basic existence sentence. Vocabulary: 私, いる are N5. Length: Short. Context: Universal family",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Simple family member sentence"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0611",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "妹 appears with の possessive in 妹さん (polite)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ~たい + もの construction (会いたいもの) which is N4 pattern expressing strong desire. もの here is modal particle",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: ~たいものです is N4 expressing wish. Vocabulary: あなた, 会う are N5. Length: Medium. Context: Universal",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 grammar ~たいものです. Too advanced for N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0611",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "妹 appears with が particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: の possessive, が particle, を particle, past tense 壊した",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Past tense with particles. Vocabulary: 私, パソコン, 壊す are N5. Length: Medium. Context: Universal",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Clear sentence with past tense"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0612",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "帽子 appears with を particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, を particle, て-form + ください (request). All N5",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: ~てください request form. Vocabulary: 帽子, 取る are N5. Length: Short. Context: Universal",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Simple request sentence"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0612",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "帽子 appears with を particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ~ている (かぶっている) which is N4 continuous/state grammar",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: ~ている is N4. Vocabulary: あの, 男 are N5. Length: Short. Context: Universal",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 ~ている grammar. Too advanced for N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0612",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "帽子 appears with を particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, を particle, past tense 買った",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple past tense. Vocabulary: 私, 買う are N5. Length: Short. Context: Universal shopping",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Simple and clear past tense"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0613",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "欲しい appears as predicate i-adjective",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, が particle, i-adjective です",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Basic i-adjective predicate. Vocabulary: 私, 車 are N5. Length: Short. Context: Universal desire",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Simple desire expression"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0613",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "欲しい appears as i-adjective",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, が particle, i-adjective",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Very simple desire expression. Vocabulary: 私, お金 are N5. Length: Short. Context: Universal",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect beginner N5 example. Very simple and clear"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0613",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "欲しい appears modifying もの (thing)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: が particle, は particle, です copula. I-adjective modifying noun",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: I-adjective as modifier. Vocabulary: 何 is N5. Length: Short. Context: Universal question",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Shows i-adjective as modifier"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0614",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "今年 appears with は particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, past tense copula だった",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Past tense copula. Vocabulary: 暖かい, 冬 are N5. Length: Short. Context: Universal weather",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Simple past tense sentence"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0614",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "今年 appears with は particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, が particle, past tense 降った",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Past tense with particles. Vocabulary: たくさん, 雪, 降る are N5. Length: Medium. Context: Universal weather",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Natural weather sentence"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0614",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "今年 appears with は particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, が particle, past tense 降った",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Past tense. Vocabulary: たくさん, 雨, 降る are N5. Length: Medium. Context: Universal weather",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Clear and natural sentence"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0615",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "背 appears in compound 背の高い (tall)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, past tense copula だった. Modifying phrase with の and i-adjective",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Past copula with modifier. Vocabulary: 兄, 学生 are N5. Length: Medium. Context: Universal",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Shows adjective modifier with の"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0615",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "背 appears in 背の高い",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, past tense 会った. Modifying phrase with の and i-adjective",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Past tense with adjective modifier. Vocabulary: 彼女, 昨日, 男, 人, 会う are N5. Length: Long. Context: Universal",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Natural sentence with adjective phrase"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0615",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "背 appears in 背の高い",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, です copula. Modifying phrase",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple copula with modifier. Vocabulary: 彼女 are N5. Length: Short. Context: Universal",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Clear adjective usage"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0616",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "靴 appears with を particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: を particle, て-form + ください (request)",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple request form. Vocabulary: 脱ぐ is N5. Length: Short. Context: Universal (Japanese custom)",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Simple request sentence"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0616",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "靴 appears with を particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, を particle, past tense 買った",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple past tense. Vocabulary: 彼女, 買う are N5. Length: Short. Context: Universal shopping",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Clear and simple"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0616",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "靴 appears with が particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: が particle, です copula. Simple adjective predicate",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Very simple i-adjective predicate. Vocabulary: 大きい is N5. Length: Short. Context: Universal",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect beginner N5 example. Very simple"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0616",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "靴 appears with が particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: が particle, です copula. I-adjective predicate",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple i-adjective sentence. Vocabulary: 小さい is N5. Length: Short. Context: Universal",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good beginner N5 example. Very simple"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0616",
+    "example_index": 4,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "靴 appears with を particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains んです explanatory pattern which is N4 grammar",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: んです is N4 explanatory. Vocabulary: どこ, 買う are N5. Length: Short. Context: Universal",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 explanatory んです pattern. Too advanced for N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0616",
+    "example_index": 5,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "靴 appears in hiragana くつ with を particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, の possessive, を particle, past tense 食べました",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Past tense masu-form. Vocabulary: 犬, 私, 食べる are N5. Length: Medium. Context: Universal (humorous)",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Clear sentence structure"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0617",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ボタン appears in compound 非常ボタン (emergency button)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, を particle, past tense 押した",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Simple past tense. Vocabulary: 彼, 押す are N5, 非常 is upper N5. Length: Medium. Context: Universal emergency",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Clear usage with compound noun"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0617",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ボタン appears with を particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, を particle, te-form 押して, past tense 待った. Te-form for sequence",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Te-form connecting actions. Vocabulary: 彼, 押す, 待つ are N5. Length: Medium. Context: Universal",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Shows te-form for sequential actions"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0617",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ボタン appears with を particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: を particle, past tense masu-form 押しました, か question particle",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Past tense question. Vocabulary: 押す is N5. Length: Short. Context: Universal",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Simple past tense question"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0618",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "今月 appears with は particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, が particle, past tense i-adjective 多かった",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Past tense i-adjective. Vocabulary: 雨, 多い are N5. Length: Medium. Context: Universal weather",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Natural weather sentence"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0618",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "今月 appears with は particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, が particle, adverb たくさん, past tense 降った",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Past tense with adverb. Vocabulary: 雨, たくさん, 降る are N5. Length: Medium. Context: Universal weather",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Clear weather sentence"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0618",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "今月 appears with は particle",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "Shows おりません but should be ふりません (降りません not correct for rain - should be 降る not 降りる)",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, まだ (yet/still), が particle, negative masu-form. All N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Negative with まだ. Vocabulary: まだ, 雨, 降る are N5. Length: Medium. Context: Universal weather",
+      "recommendation": "REVIEW",
+      "overall_notes": "Good N5 grammar but kana shows おりません suggesting wrong verb reading (降りる vs 降る). Should verify source"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0619",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "返す appears in て-form 返して in ~てください",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: time expression, を particle, ~てください request. All N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Request form with time. Vocabulary: 明日, テープ are N5. Length: Medium. Context: Universal returning items",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Natural request sentence"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0619",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "返す appears in nominalized form 返すのを",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains のを nominalization which is borderline N4 grammar",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: のを nominalization is N4. Vocabulary: 彼, 私, 辞書, 忘れる are N5. Length: Long. Context: Universal",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 のを nominalization. Too advanced for N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0619",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "返す appears in nominalized form 返すのが",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "Shows にん but should be ひと (人 reading inconsistency)",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains のが nominalization pattern which is borderline N4 grammar",
+      "difficulty_rating": 8,
+      "difficulty_notes": "Grammar: のが nominalization is N4. Vocabulary: 借りる, 好き, 嫌い are N5. Length: Long. Context: Universal",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 のが nominalization pattern. Also minor kana inconsistency"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0620",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "いかが appears as polite question word",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: または (or), は particle, question. いかが is polite form of どう taught at N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Polite question offering. Vocabulary: 紅茶, コーヒー are N5. Length: Medium. Context: Universal hospitality",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Shows polite offering pattern"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0620",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "いかが appears as polite question word",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: i-adjective modifier, は particle, です copula, か question",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Polite question. Vocabulary: 新しい, 仕事 are N5. Length: Medium. Context: Universal",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Natural polite question"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0620",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "いかが appears as polite question word",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: i-adjective modifier, は particle, です copula, か question",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Polite question. Vocabulary: 新しい, クラス are N5. Length: Medium. Context: Universal school",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Clear polite question pattern"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0621",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ストーブ appears as subject",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: adverb ちゃんと, past tense 消した, か question. Casual speech pattern",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Past tense question. Vocabulary: ちゃんと (properly), 消す are N5. Length: Short. Context: Universal safety",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Natural casual question about turning off heater"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0621",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ストーブ appears as object",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: past tense 切った, か question. Very casual",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple past tense question. Vocabulary: 切る (to turn off) is N5. Length: Very short. Context: Universal",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Very casual but appropriate"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0622",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "二人 appears but kana shows ２にん (using numeral 2 instead of ふたり)",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "Kana shows ２にん but target is ふたり. The reading にん (as counter) vs ふたり (as word) is inconsistent",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, とも (both), です copula. All N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: とも pattern. Vocabulary: 私たち, 同じ, クラス are N5. Length: Medium. Context: Universal school",
+      "recommendation": "REVIEW",
+      "overall_notes": "Good N5 grammar but kana shows にん instead of ふたり. Reading inconsistency to clarify"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0622",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ふたり appears in hiragana",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains のは nominalization which is borderline N4 grammar",
+      "difficulty_rating": 9,
+      "difficulty_notes": "Grammar: のは nominalization is N4. Vocabulary: 我々, 不自然 are advanced. Length: Long. Context: Abstract",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 のは nominalization. Also uses 我々 and 不自然 which are too advanced"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0622",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ふたり appears counting sisters",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: に particle (possessor), が particle, と particle (and/with), いる existence. All N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Existence sentence with counters. Vocabulary: 僕, 兄さん, 妹, 一人, いる are N5. Length: Long. Context: Universal family",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Shows family member counting naturally"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0622",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ふたり appears in hiragana counting children",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: に particle (possessor), が particle, いる existence, です copula. Multiple sentences combined",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: Multiple clauses explaining. Vocabulary: 子供, 一人, 男の子, もう, 女の子 all N5. Length: Long. Context: Universal family",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example though getting long. Natural explanation of children"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0622",
+    "example_index": 4,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ふたり appears in hiragana",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5 grammar: は particle, が particle, いる existence. Simple structure",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Basic existence sentence. Vocabulary: 私たち, 子供 are N5. Length: Short. Context: Universal family",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Simple and clear family sentence"
+    }
+  }
+]

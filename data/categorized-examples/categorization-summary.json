@@ -1,0 +1,31 @@
+{
+  "total_examples": 1859,
+  "categories": {
+    "n5_production": {
+      "count": 1166,
+      "percentage": 62.721893491124256,
+      "description": "Ready for N5 app deployment"
+    },
+    "n5_n4_bridge": {
+      "count": 229,
+      "percentage": 12.318450779989242,
+      "description": "Needs human review for level placement"
+    },
+    "n4_foundation": {
+      "count": 275,
+      "percentage": 14.792899408284024,
+      "description": "N4 dataset foundation (grammar too advanced for N5)"
+    },
+    "needs_correction": {
+      "count": 189,
+      "percentage": 10.166756320602474,
+      "description": "Kana errors or vocabulary issues"
+    }
+  },
+  "usability": {
+    "immediate_use": 1166,
+    "after_review": 1395,
+    "total_verified": 1670,
+    "correction_rate": 10.166756320602474
+  }
+}

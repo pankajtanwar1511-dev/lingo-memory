@@ -1,0 +1,802 @@
+[
+  {
+    "card_id": "n5_vocab_0174",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "１日 appears correctly",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "おきに (every other), に, dictionary form - N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-Advanced N5. おきに interval pattern",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0174",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "１日 appears",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "休ませて should be 'やすませて' not 'きゅうませて'",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "ませて is causative form (N4+). 休む→休ませる",
+      "difficulty_rating": 0,
+      "difficulty_notes": "N4 grammar",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 causative + kana error"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0174",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "１日中 appears correctly",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, 中 (throughout), た-form - N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Time duration pattern",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean N5 example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0175",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "いいえ appears as 'no'",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Simple response with verb - N5",
+      "difficulty_rating": 1,
+      "difficulty_notes": "Absolute beginner N5",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect beginner example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0175",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "いいえ appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "なければ is conditional ば-form (N4+)",
+      "difficulty_rating": 0,
+      "difficulty_notes": "N4 grammar",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 conditional なければ"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0175",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "いいえ appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "も particle for emphasis - N5",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Beginner-Mid N5. Short response",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Natural N5 response"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0176",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "小さな appears correctly",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, で location, ました passive... wait, 生まれました is intransitive past, not passive. N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Standard past tense pattern",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0176",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "小さな appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, の, に, 住んでいた - N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-Advanced N5. Past ている form",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Natural N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0176",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "小さな appears",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "彼の should be 'かれの' not 'かの'",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "その, を, で, た-form - N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-Advanced N5. Multiple particles",
+      "recommendation": "REVIEW",
+      "overall_notes": "Good N5 but needs kana fix"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0177",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "時間 in compound 時間帯",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "毎日, 働く, が, 違う, んです - N5",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Advanced N5. んです explanatory form, 時間帯 compound",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Complex but valid N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0177",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "時間 appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "が, ある, か embedded question, 分かりません - N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Embedded question",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0177",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "時間 appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "の, です, よ - N5",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Beginner-Mid N5. Simple time expression",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean beginner example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0178",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "あげます as auxiliary (benefit)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "いつでも, を, て-form + あげる - N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-Advanced N5. てあげる benefit pattern",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 benefactive"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0178",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "あげません appears (raise hand)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, あまり, を, ません - N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Standard negative",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0178",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "あげる appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, でも, dictionary form - N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Standard promise",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0178",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "Duplicate of index 2",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Same as index 2",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Same as index 2",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Same",
+      "recommendation": "ACCEPT",
+      "overall_notes": "DUPLICATE - remove"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0178",
+    "example_index": 4,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "あげる as auxiliary",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "の, を, か counter, て-form + あげる - N5",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Advanced N5. Multiple elements",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Complex but valid N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0178",
+    "example_index": 5,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "あげる as auxiliary",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "て-form + あげる - N5",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Low-Mid N5. Simple benefactive",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0179",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ふろ appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, に, を, た-form - N5",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Low-Mid N5. Standard pattern",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0179",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "おふろ appears",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "入って should be 'はいって' not 'いっって'",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "を, て-form sequence, ます - N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-Advanced N5. Multiple actions",
+      "recommendation": "REVIEW",
+      "overall_notes": "Good N5 but needs kana fix"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0180",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "生徒 appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, の, が, います - N5",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Low-Mid N5. Simple existential",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0180",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "生徒 appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, あまり, を, ません - N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Standard",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0180",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "生徒 appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "入らせた is causative form (N4+). 入る→入らせる",
+      "difficulty_rating": 0,
+      "difficulty_notes": "N4 grammar",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 causative 入らせた"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0181",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "レストラン appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, から, 出て行った - N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Movement verb",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0181",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "レストラン appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, の, に, た-form - N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0181",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "レストラン appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, に, ました - N5",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Beginner-Mid N5. Simple",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean beginner example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0182",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "出している from 降り出す (start to rain)",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "降り should be 'ふり' not 'おり'",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "その上 (moreover), が, 出す compound verb, ている - N5",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Advanced N5. Compound verb pattern",
+      "recommendation": "REVIEW",
+      "overall_notes": "Compound verb OK but kana error: おり→ふり"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0182",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "出す appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "で location, を, ます - N5",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Low-Mid N5",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0182",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "出さないで appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "から, を, ないで prohibition - N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. ないで request",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Natural N5 request"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0182",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "出すな appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "な is negative imperative (N4+). Strong command form",
+      "difficulty_rating": 0,
+      "difficulty_notes": "N4 grammar",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 negative imperative な"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0183",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "かわいい appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, い-adjective - N5",
+      "difficulty_rating": 2,
+      "difficulty_notes": "Beginner N5. Simple",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect beginner example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0183",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "かわいい appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, とても, い-adjective - N5",
+      "difficulty_rating": 2,
+      "difficulty_notes": "Beginner N5",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean beginner example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0183",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "かわいい appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, とても, です, ね - N5",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Beginner-Mid N5",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Natural N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0184",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "音楽 appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "が, 好き, で, ている - N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-Advanced N5. Compound sentence",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0184",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "音楽 appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, も particle, を, た-form - N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0184",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "音楽 appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, を, ていた - N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Past continuous",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0185",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "歌 appears twice (noun and verb)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, に adverb, を, dictionary form - N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Natural N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0185",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "歌 appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, の, どの, より, も, が, 上手だ - N5",
+      "difficulty_rating": 8,
+      "difficulty_notes": "Advanced N5/Upper limit. Complex comparison",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Complex but valid N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0185",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "歌 appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "が, を, て, が, を, た - N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-Advanced N5. Parallel actions",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0186",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "いちばん appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, が, だ - N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Superlative",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0186",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "いちばん appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, で, する - N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Superlative",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Natural N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0186",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "いちばん appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "が, の中で, い-adjective - N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Superlative",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0187",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "咲く appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "これらの, は, に, dictionary form - N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0187",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "咲いている appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "な-adjective, が, ている - N5. たおやか may be advanced vocab",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Advanced N5. たおやか is formal/poetic",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar OK but たおやか vocabulary may be too formal"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0187",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "咲く appears",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "彼の should be 'かれの' not 'かの'",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "の, は, いつも, な-adjective, が, dictionary form - N5",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Advanced N5. Complex with 様々",
+      "recommendation": "REVIEW",
+      "overall_notes": "Good N5 but needs kana fix"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0188",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "山 appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, に, いました - N5",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Beginner-Mid N5",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0188",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "山 appears",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "だろう is volitional/conjecture (N4+)",
+      "difficulty_rating": 0,
+      "difficulty_notes": "N4 grammar",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 だろう"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0188",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "山 appears twice",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "は, の上, ています - N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-Advanced N5. Repetition for emphasis",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Natural N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0188",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "NO",
+      "target_vocab_notes": "False positive: やまなかった is from 止む (to stop), not 山 (mountain)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana correct but wrong word",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Grammar is N5 but wrong vocab",
+      "difficulty_rating": 0,
+      "difficulty_notes": "Wrong vocabulary",
+      "recommendation": "REJECT",
+      "overall_notes": "False positive: 止む not 山"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0188",
+    "example_index": 4,
+    "verification": {
+      "target_vocab_present": "NO",
+      "target_vocab_notes": "False positive: やまなかったら from 止む (to stop), not 山",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana correct but wrong word",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "たら is conditional (N4+). Also wrong vocabulary",
+      "difficulty_rating": 0,
+      "difficulty_notes": "Wrong vocab + N4 grammar",
+      "recommendation": "REJECT",
+      "overall_notes": "False positive + N4 conditional たら"
+    }
+  }
+]

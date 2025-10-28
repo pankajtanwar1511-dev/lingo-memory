@@ -1,0 +1,333 @@
+{
+  "batch_number": 38,
+  "total_batches": 38,
+  "examples_in_batch": 21,
+  "verification_instructions": {
+    "task": "Verify each example for N5 appropriateness",
+    "check": [
+      "1. Does sentence contain the target vocabulary word?",
+      "2. Does kana reading match the Japanese sentence correctly?",
+      "3. Does sentence use ONLY N5 grammar patterns?",
+      "4. Rate difficulty from 1-10 (within N5 range)",
+      "5. Recommend: accept/review/reject"
+    ],
+    "output_format": "For each example, return JSON with: target_vocab_present, kana_accuracy, n5_grammar_check, difficulty_rating, recommendation"
+  },
+  "examples": [
+    {
+      "card_id": "n5_vocab_0657",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "貼る",
+        "kana": "はる",
+        "meaning": "to stick"
+      },
+      "sentence": {
+        "japanese": "私は封筒に切手をはるのを忘れた。",
+        "kana": "わたしはふうとうにきってをはるのをわすれた。",
+        "english": "I forgot to attach a stamp to the envelope.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0657",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "貼る",
+        "kana": "はる",
+        "meaning": "to stick"
+      },
+      "sentence": {
+        "japanese": "手紙を出す前に切手を貼るのを忘れた。",
+        "kana": "てがみをだすまえにきってをはるのをわすれた。",
+        "english": "I forgot to put on the stamp before I mailed the letter.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0657",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "貼る",
+        "kana": "はる",
+        "meaning": "to stick"
+      },
+      "sentence": {
+        "japanese": "私が出して欲しいと頼んだ手紙に切手を貼るのを忘れないでね。",
+        "kana": "わたしがだしてほしいとたのんだてがみにきってをはるのをわすれないでね。",
+        "english": "Please don't forget to put stamps on the letters I gave you to post.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0657",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "貼る",
+        "kana": "はる",
+        "meaning": "to stick"
+      },
+      "sentence": {
+        "japanese": "私が出すの頼んでおいた手紙にさ、切手貼るの忘れないでよ。",
+        "kana": "わたしがだすのたのんでおいたてがみにさ、きってはるのわすれないでよ。",
+        "english": "Please don't forget to put stamps on the letters that I gave you to mail.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0658",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "たばこ",
+        "meaning": "tobacco"
+      },
+      "sentence": {
+        "japanese": "たばこを吸わないの？",
+        "kana": "たばこをすわないの？",
+        "english": "Don't you smoke?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0658",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "たばこ",
+        "meaning": "tobacco"
+      },
+      "sentence": {
+        "japanese": "たばこを吸わないでほしいのですが。",
+        "kana": "たばこをすわないでほしいのですが。",
+        "english": "I'd rather you didn't smoke so much.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0658",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "たばこ",
+        "meaning": "tobacco"
+      },
+      "sentence": {
+        "japanese": "たばこは体に悪いよ。",
+        "kana": "たばこはからだにわるいよ。",
+        "english": "Smoking is bad for your health.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0659",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "涼しい",
+        "kana": "すずしい",
+        "meaning": "refreshing"
+      },
+      "sentence": {
+        "japanese": "涼しい夏は好きですか。",
+        "kana": "すずしいなつはすきですか。",
+        "english": "Do you like a cool summer?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0659",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "涼しい",
+        "kana": "すずしい",
+        "meaning": "refreshing"
+      },
+      "sentence": {
+        "japanese": "今日は涼しいです。",
+        "kana": "こんにちはすずしいです。",
+        "english": "It's cool today.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0659",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "涼しい",
+        "kana": "すずしい",
+        "meaning": "refreshing"
+      },
+      "sentence": {
+        "japanese": "今日は少しすずしい。",
+        "kana": "こんにちはすこしすずしい。",
+        "english": "It is a little cool today.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0659",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "涼しい",
+        "kana": "すずしい",
+        "meaning": "refreshing"
+      },
+      "sentence": {
+        "japanese": "今日は少しすずしい。",
+        "kana": "こんにちはすこしすずしい。",
+        "english": "It is a little cool today.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0660",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "昨日",
+        "kana": "きのう",
+        "meaning": "yesterday"
+      },
+      "sentence": {
+        "japanese": "私は昨日夕飯を作った。",
+        "kana": "わたしはきのうゆうはんをつくった。",
+        "english": "I cooked supper last night.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0660",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "昨日",
+        "kana": "きのう",
+        "meaning": "yesterday"
+      },
+      "sentence": {
+        "japanese": "昨日動物園に行った。",
+        "kana": "きのうどうぶつえんにいった。",
+        "english": "I went to the zoo yesterday.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0660",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "昨日",
+        "kana": "きのう",
+        "meaning": "yesterday"
+      },
+      "sentence": {
+        "japanese": "彼女は昨日野菜を買いました。",
+        "kana": "かのじょはきのうやさいをかいました。",
+        "english": "She bought some vegetables yesterday.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0660",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "昨日",
+        "kana": "きのう",
+        "meaning": "yesterday"
+      },
+      "sentence": {
+        "japanese": "彼は「この本をきのうここで買った」と言った。",
+        "kana": "かれは「このほんをきのうここでかった」といった。",
+        "english": "He said he had bought that book there the day before.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0660",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "昨日",
+        "kana": "きのう",
+        "meaning": "yesterday"
+      },
+      "sentence": {
+        "japanese": "私はきのう歯が痛かった。",
+        "kana": "わたしはきのうはがいたかった。",
+        "english": "I had a toothache yesterday.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0660",
+      "example_index": 5,
+      "target_vocab": {
+        "kanji": "昨日",
+        "kana": "きのう",
+        "meaning": "yesterday"
+      },
+      "sentence": {
+        "japanese": "これは私がきのう買ったカメラです。",
+        "kana": "これはわたしがきのうかったかめらです。",
+        "english": "This is the camera which I bought yesterday.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0661",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "せっけん",
+        "meaning": "economy"
+      },
+      "sentence": {
+        "japanese": "せっけんで手を洗いました。",
+        "kana": "せっけんでてをあらいました。",
+        "english": "I washed my hands with soap.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0662",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "初め/始め",
+        "kana": "はじめ",
+        "meaning": "beginning"
+      },
+      "sentence": {
+        "japanese": "彼は体を足から洗いはじめた。",
+        "kana": "かれはからだをあしからあらいはじめた。",
+        "english": "In washing himself, he started on the legs.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0662",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "初め/始め",
+        "kana": "はじめ",
+        "meaning": "beginning"
+      },
+      "sentence": {
+        "japanese": "彼は車を洗いはじめた。",
+        "kana": "かれはくるまをあらいはじめた。",
+        "english": "He started washing his car.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0662",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "初め/始め",
+        "kana": "はじめ",
+        "meaning": "beginning"
+      },
+      "sentence": {
+        "japanese": "雨が降りはじめた。",
+        "kana": "あめがおりはじめた。",
+        "english": "The rain began to fall.",
+        "source": "tatoeba"
+      }
+    }
+  ]
+}

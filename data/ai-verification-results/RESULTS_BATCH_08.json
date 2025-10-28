@@ -1,0 +1,738 @@
+[
+  {
+    "card_id": "n5_vocab_0123",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "なくす appears in ta-form なくした",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, i-adjective 新しい, を particle, ta-form なくした. Simple past tense statement.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple past tense (3). Vocabulary: Common N5 words (4). Length: Short (3). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Clear and appropriate use of なくす."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0123",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "なくす appears in ta-form なくした",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: を particle, ta-form なくした, の explanatory ending. While の can be feminine/explanatory, it's acceptable for N5.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple past with explanatory の (3). Vocabulary: Common N5 words (3). Length: Very short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent N5 example. Simple and clear."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0123",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "なくす appears in polite ta-form なくしました",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: を particle, ta-form なくしました. Simple polite past tense.",
+      "difficulty_rating": 2,
+      "difficulty_notes": "Grammar: Simple past polite (2). Vocabulary: Basic words (2). Length: Very short (1). Cultural: Universal (2). Average: 2/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect beginner N5 example. Very simple."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0124",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "スリッパ appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: を particle, te-form はいて + ください. Standard N5 request pattern.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Te-form request (3). Vocabulary: Common household word (3). Length: Short (2). Cultural: Japanese custom (4). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Standard request pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0124",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "スリッパ appears in the possessive phrase 僕のスリッパ",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている form (寝てる - is sleeping), which is present continuous. This is typically N4+ grammar.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Present continuous (7). Vocabulary: Common words (4). Length: Medium (5). Cultural: Universal (2). Average: 6/10",
+      "recommendation": "REVIEW",
+      "overall_notes": "Uses ている which is borderline N4+. May be too advanced for strict N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0126",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ページ appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: その (that), は particle, が particle, i-adjective 多い in past tense 多かった. Simple statement.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Past tense adjective (4). Vocabulary: Common words (3). Length: Short (3). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Clear and simple."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0126",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ページ appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: の possessive, を particle, te-form 読んで + ください. Standard request.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Te-form request (4). Vocabulary: Common words (3). Length: Medium (4). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Clear request pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0126",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ページ appears in the question",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: question word 何 + counter ページ. Very basic question.",
+      "difficulty_rating": 2,
+      "difficulty_notes": "Grammar: Simple question (2). Vocabulary: Single word question (1). Length: Very short (1). Cultural: Universal (2). Average: 2/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent beginner N5 example. Very simple and practical."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0127",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "曇る appears in te-form 曇って",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: te-form 曇って + きた (came to be/became), ようだ (seems), ね. The ~てくる pattern and ようだ are borderline but commonly taught at upper N5 level.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: ~てくる pattern with ようだ (6). Vocabulary: Weather term (4). Length: Short (3). Cultural: Universal weather (2). Average: 6/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate for upper N5. The ~てくる pattern is commonly taught at N5 level."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0127",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "曇る appears in te-form 曇って",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている form (曇っています - is cloudy), which is present continuous/state. This is typically N4+ grammar.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Present continuous for weather state (5). Vocabulary: Weather term (3). Length: Very short (1). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "REVIEW",
+      "overall_notes": "Uses ている which is borderline N4+. However, for weather states, ている is sometimes accepted at N5 level."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0127",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "曇る appears in te-form 曇って",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: te-form 曇って + きた (became/came to be). The ~てくる pattern is taught at N5 for change of state.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: ~てくる pattern (4). Vocabulary: Weather term (3). Length: Very short (1). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. The ~てくる pattern is standard N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0128",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "辞書 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: この (this), は particle, が particle, na-adjective 手ごろだ. While 手ごろ is somewhat specific vocabulary, the grammar is N5.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Simple statement (3). Vocabulary: Somewhat advanced 手ごろ (6). Length: Medium (4). Cultural: Universal (2). Average: 5/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 level despite 手ごろ vocabulary. Grammar is simple."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0128",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "辞書 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: を particle, て-form 使って + ください. Standard request pattern.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Te-form request (3). Vocabulary: Common words (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Simple and clear."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0129",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "易しい appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: この (this), は particle, i-adjective 易しい, です. Simple statement.",
+      "difficulty_rating": 2,
+      "difficulty_notes": "Grammar: Simple adjective statement (2). Vocabulary: Basic N5 adjective (2). Length: Very short (1). Cultural: Universal (2). Average: 2/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent beginner N5 example. Very simple."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0129",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "易しい appears modifying 問題",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: i-adjective 易しい, を particle, て-form 出して + ください. Standard request.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Te-form request (4). Vocabulary: Common words (3). Length: Medium (4). Cultural: Educational context (3). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Clear request pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0130",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "弱い appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, に particle, i-adjective 弱い, です. Simple statement.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple adjective statement (3). Vocabulary: Common N5 adjective (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Simple and clear."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0130",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "弱い appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, が particle, i-adjective 弱い. Simple statement.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple statement (3). Vocabulary: Basic adjective (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent N5 example. Clear and simple."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0131",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "低い appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: あの (that), は particle, が particle, i-adjective 低い. Simple statement.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple statement (3). Vocabulary: Common adjective (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Simple and clear."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0131",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "低い appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, が particle, i-adjective 低い, です. Simple statement.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple statement (3). Vocabulary: Common adjective (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent N5 example. Clear and appropriate."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0132",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "遅い appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, が particle, i-adjective 遅い. Simple statement.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple statement (3). Vocabulary: Common adjective (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Simple and clear."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0132",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "遅い appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: adverb form 遅く (late), dictionary form 着く (arrive). Simple statement.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple statement with adverb (3). Vocabulary: Common words (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Clear and simple."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0133",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "音 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains potential form 聞こえる (can be heard/is audible), which uses the potential form. Potential forms are N4+ grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Potential form (7). Vocabulary: Common words (3). Length: Short (3). Cultural: Universal (2). Average: 5/10",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains potential form 聞こえる which is N4+ grammar. Not appropriate for N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0133",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "音 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains potential form 聞こえる (can be heard), which is N4+ grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Potential form (7). Vocabulary: Common words (3). Length: Short (3). Cultural: Universal (2). Average: 5/10",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains potential form 聞こえる which is N4+ grammar. Not appropriate for N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0134",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "色 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, question word 何, です copula, か question particle. Basic question structure.",
+      "difficulty_rating": 2,
+      "difficulty_notes": "Grammar: Simple question (2). Vocabulary: Basic words (2). Length: Very short (1). Cultural: Universal (2). Average: 2/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent beginner N5 example. Very simple question."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0134",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "色 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: が particle, 好きです (like). Simple preference statement.",
+      "difficulty_rating": 2,
+      "difficulty_notes": "Grammar: Simple preference (2). Vocabulary: Basic words (2). Length: Very short (1). Cultural: Universal (2). Average: 2/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect beginner N5 example. Very simple."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0135",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "声 appears in the phrase 大きい声で",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: もっと (more), i-adjective 大きい, で particle, て-form 言って + ください. Standard request.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Te-form request with adverb (4). Vocabulary: Common words (3). Length: Medium (4). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Clear request pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0135",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "声 appears in the phrase 声を出して",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains べきだ (should/ought to), which is a N3/N4 grammar pattern expressing obligation or strong recommendation.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: べきだ pattern (8). Vocabulary: Multiple elements (5). Length: Medium (5). Cultural: Educational context (3). Average: 7/10",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains べきだ which is N3/N4 grammar. Too advanced for N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0135",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "声 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: しーっ (shh), が particle, i-adjective 大きい. Simple statement with interjection.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple statement (3). Vocabulary: Common words (3). Length: Very short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Natural and simple."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0136",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "とる appears in dictionary form",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: を particle, dictionary form とる, の nominalizer, は particle, i-adjective 楽しい, ものだ. The pattern is acceptable for N5.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Nominalizer with adjective (5). Vocabulary: Common words (4). Length: Medium (4). Cultural: Universal (2). Average: 5/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example with standard nominalizer usage."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0136",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "とる appears in the sentence (休みをとる - take a break)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, に particle (time), を particle, dictionary form とる. Simple statement.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple statement (3). Vocabulary: Common expression (4). Length: Medium (4). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Common usage of とる."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0136",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "とる appears (電話をとる - answer the phone)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: を particle, dictionary form とる, な negative imperative. Basic command form is N5.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Negative imperative (4). Vocabulary: Common expression (4). Length: Short (2). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Simple negative command."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0136",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "撮る appears explicitly with kanji (写真を撮る - take photos)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, を particle, dictionary form 撮る, の nominalizer, が好きだ. Standard preference pattern.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Nominalizer with preference (5). Vocabulary: Common expression (4). Length: Medium (4). Cultural: Universal (2). Average: 5/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect match for target vocabulary 撮る. Appropriate N5 level."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0136",
+    "example_index": 4,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "撮る appears with kanji (写真を撮る)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, を particle, 撮る dictionary form, の nominalizer, が particle, na-adjective 上手だ. Standard pattern.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Nominalizer with skill adjective (5). Vocabulary: Common words (4). Length: Medium (4). Cultural: Universal (2). Average: 5/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect match for target vocabulary 撮る. Appropriate N5 level."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0136",
+    "example_index": 5,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "撮る appears with kanji in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: を particle, 撮る dictionary form, の nominalizer, が好きです. Standard preference statement.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Nominalizer with preference (5). Vocabulary: Common words (4). Length: Medium (4). Cultural: Universal (2). Average: 5/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect match for target vocabulary 撮る. Appropriate N5 level."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0137",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "私 appears twice in the sentence (read as わたし both times)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana shows わたし (not わたくし), which is the more common reading. The target vocabulary lists わたくし as the humble form, but the sentence uses わたし.",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: の possessive, は particle, どこでも (anywhere), dictionary form 行く, ところへ, dictionary form ついてくる. The relative clause pattern is acceptable for N5.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Relative clause construction (7). Vocabulary: Common words (4). Length: Long (6). Cultural: Universal (2). Average: 6/10",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar is acceptable N5, but note that the reading is わたし not わたくし. Also somewhat complex for beginner N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0137",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "私 appears (read as わたし)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana shows わたし, not わたくし as listed in target vocabulary",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ので (because/so), which is an N4 conjunction. Also contains potential form 読めない (cannot read), which is N4+ grammar.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: ので conjunction + potential (8). Vocabulary: Common words (4). Length: Medium (5). Cultural: Universal (2). Average: 7/10",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4+ grammar (ので and potential form). Too advanced for N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0137",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "私 appears (read as わたし)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana shows わたし, not わたくし",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, time word 今朝, の possessive, を particle, ta-form 食べた. Simple past tense statement.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple past (3). Vocabulary: Food and time words (4). Length: Medium (5). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 level. Note reading is わたし not わたくし."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0138",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "両親 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている form (取っている - are getting old/aging), which is present continuous/state. This is typically N4+ grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Present continuous/state (6). Vocabulary: Family term and age expression (4). Length: Short (3). Cultural: Universal (2). Average: 5/10",
+      "recommendation": "REVIEW",
+      "overall_notes": "Uses ている which is borderline N4+. May be too advanced for strict N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0138",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "両親 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains causative form 行かせた (made me go), which uses the causative せる/させる. Causative forms are N4+ grammar.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: Causative form (8). Vocabulary: Common words (4). Length: Medium (5). Cultural: Universal (2). Average: 7/10",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains causative form which is N4+ grammar. Not appropriate for N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0138",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "両親 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, に particle, を particle, ta-form 書いた. Simple past tense statement.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple past (3). Vocabulary: Common family and action words (4). Length: Medium (4). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Simple and clear."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0139",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "きれい appears in the sentence",
+      "kana_accuracy": "MAJOR_ERROR",
+      "kana_notes": "The kana shows 'きれいにいておく' but the Japanese has 'きれいにしておく'. The verb is しておく (keep/maintain), not いておく. This is a major error - missing the し syllable.",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ておく form (しておく - keep in that state), which is N4+ grammar. This pattern expresses doing something in advance or maintaining a state.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: ~ておく pattern (8). Vocabulary: Household terms (4). Length: Medium (5). Cultural: Universal (2). Average: 7/10",
+      "recommendation": "REJECT",
+      "overall_notes": "Major kana error and contains N4+ grammar (~ておく). Not appropriate for N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0139",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "きれい appears as na-adjective modifying 帽子",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, に particle, na-adjective きれいな, を particle, ta-form 見せた. Simple past tense.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple past (4). Vocabulary: Common words (4). Length: Medium (4). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Clear and simple."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0139",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "きれい appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains 同様 (どうよう - similarly), which is N4+ vocabulary/grammar. This pattern is too advanced for N5.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: Advanced comparison pattern (8). Vocabulary: N4+ word 同様 (8). Length: Medium (4). Cultural: Universal (2). Average: 7/10",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4+ vocabulary/grammar (同様). Too advanced for N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0140",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "どうぞ appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: お prefix, 先に (first/ahead), どうぞ (please). Common polite expression.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Fixed expression (3). Vocabulary: Polite expression (3). Length: Very short (2). Cultural: Japanese politeness (4). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Common polite expression."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0140",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "どうぞ appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: どうぞ, お prefix, 先に. Common polite expression with exclamation.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Fixed expression (3). Vocabulary: Polite expression (3). Length: Very short (2). Cultural: Japanese politeness (4). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent N5 example. Natural polite expression."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0140",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "どうぞ appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: どうぞ, お prefix, を particle, に particle, imperative-like expression. While using honorific お体 is polite, the structure is acceptable for N5.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Polite imperative (5). Vocabulary: Honorific usage (5). Length: Medium (4). Cultural: Japanese politeness (5). Average: 5/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Common polite expression for health wishes."
+    }
+  }
+]

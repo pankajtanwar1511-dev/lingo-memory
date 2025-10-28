@@ -1,0 +1,11 @@
+{
+  "total_cards": 662,
+  "cards_with_examples": 647,
+  "cards_without_examples": 15,
+  "error_count": 0,
+  "warning_count": 15,
+  "examples_from_tatoeba": 1288,
+  "examples_from_generated": 0,
+  "examples_needing_review": 0,
+  "pass": true
+}

@@ -1,0 +1,768 @@
+{
+  "batch_number": 24,
+  "total_batches": 38,
+  "examples_in_batch": 50,
+  "verification_instructions": {
+    "task": "Verify each example for N5 appropriateness",
+    "check": [
+      "1. Does sentence contain the target vocabulary word?",
+      "2. Does kana reading match the Japanese sentence correctly?",
+      "3. Does sentence use ONLY N5 grammar patterns?",
+      "4. Rate difficulty from 1-10 (within N5 range)",
+      "5. Recommend: accept/review/reject"
+    ],
+    "output_format": "For each example, return JSON with: target_vocab_present, kana_accuracy, n5_grammar_check, difficulty_rating, recommendation"
+  },
+  "examples": [
+    {
+      "card_id": "n5_vocab_0398",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "映画",
+        "kana": "えいが",
+        "meaning": "movie"
+      },
+      "sentence": {
+        "japanese": "妹と私はときどき映画に行きます。",
+        "kana": "いもうととわたしはときどきえいがにいきます。",
+        "english": "My sister and I go to the movies from time to time.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0398",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "映画",
+        "kana": "えいが",
+        "meaning": "movie"
+      },
+      "sentence": {
+        "japanese": "僕と一緒に映画に行った女の子は僕の友達です。",
+        "kana": "ぼくといっしょにえいがにいったおんなのこはぼくのともだちです。",
+        "english": "The girl I went to the movies with is a friend of mine.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0399",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "遅い",
+        "kana": "おそい",
+        "meaning": "late"
+      },
+      "sentence": {
+        "japanese": "彼女は走るのが遅い。",
+        "kana": "かのじょははしるのがおそい。",
+        "english": "She is a slow runner.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0399",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "遅い",
+        "kana": "おそい",
+        "meaning": "late"
+      },
+      "sentence": {
+        "japanese": "昨夜は、遅かったんです。",
+        "kana": "さくやは、おそかったんです。",
+        "english": "I stayed up late last night.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0399",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "遅い",
+        "kana": "おそい",
+        "meaning": "late"
+      },
+      "sentence": {
+        "japanese": "彼女はホテルに夜遅く着いた。",
+        "kana": "かのじょはほてるによるおそくついた。",
+        "english": "She got to the hotel late at night.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0400",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "耳",
+        "kana": "みみ",
+        "meaning": "ear"
+      },
+      "sentence": {
+        "japanese": "彼は耳が早い。",
+        "kana": "かれはみみがはやい。",
+        "english": "He is quick to learn.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0400",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "耳",
+        "kana": "みみ",
+        "meaning": "ear"
+      },
+      "sentence": {
+        "japanese": "彼は私の言葉に耳をかさなかった。",
+        "kana": "かれはわたしのことばにみみをかさなかった。",
+        "english": "He turned a deaf ear to my words.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0400",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "耳",
+        "kana": "みみ",
+        "meaning": "ear"
+      },
+      "sentence": {
+        "japanese": "彼の犬は耳が遠い。",
+        "kana": "かのいぬはみみがとおい。",
+        "english": "His dog is hard of hearing.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0401",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "かかる",
+        "meaning": "to take time or money"
+      },
+      "sentence": {
+        "japanese": "長くかかるんでしょうか。",
+        "kana": "ながくかかるんでしょうか。",
+        "english": "Will it be much longer?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0401",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "かかる",
+        "meaning": "to take time or money"
+      },
+      "sentence": {
+        "japanese": "医者にかかるべきだ。",
+        "kana": "いしゃにかかるべきだ。",
+        "english": "You should consult your doctor.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0401",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "かかる",
+        "meaning": "to take time or money"
+      },
+      "sentence": {
+        "japanese": "バスでは時間がかかるぞ。",
+        "kana": "ばすではじかんがかかるぞ。",
+        "english": "The bus will take time.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0404",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "机",
+        "kana": "つくえ",
+        "meaning": "desk"
+      },
+      "sentence": {
+        "japanese": "机の上に一冊の本がある。",
+        "kana": "つくえのうえにいっさつのほんがある。",
+        "english": "There is an album on the desk.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0404",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "机",
+        "kana": "つくえ",
+        "meaning": "desk"
+      },
+      "sentence": {
+        "japanese": "この机は私にはちょっと低い。",
+        "kana": "このつくえはわたしにはちょっとひくい。",
+        "english": "This desk is a little low for me.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0404",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "机",
+        "kana": "つくえ",
+        "meaning": "desk"
+      },
+      "sentence": {
+        "japanese": "あの窓のそばの机は使うな。",
+        "kana": "あのまどのそばのつくえはつかうな。",
+        "english": "Don't use the desk by that window.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0405",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "あっち",
+        "meaning": "over there"
+      },
+      "sentence": {
+        "japanese": "さあ、あっちへ行ってよ。",
+        "kana": "さあ、あっちへいってよ。",
+        "english": "Oh, off with you.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0405",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "あっち",
+        "meaning": "over there"
+      },
+      "sentence": {
+        "japanese": "こっちの本はあっちの本よりやさしい。",
+        "kana": "こっちのほんはあっちのほんよりやさしい。",
+        "english": "These books are easier than those books.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0405",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "あっち",
+        "meaning": "over there"
+      },
+      "sentence": {
+        "japanese": "あっちの本は彼らの本です。",
+        "kana": "あっちのほんはかれらのほんです。",
+        "english": "Those books are theirs.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0406",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "買う",
+        "kana": "かう",
+        "meaning": "to buy"
+      },
+      "sentence": {
+        "japanese": "どんなに高くても、あの古い時計を買います。",
+        "kana": "どんなにたかくても、あのふるいとけいをかいます。",
+        "english": "I'll buy that old clock, however expensive it is.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0406",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "買う",
+        "kana": "かう",
+        "meaning": "to buy"
+      },
+      "sentence": {
+        "japanese": "あのデパートで新しいコートを買いたい。",
+        "kana": "あのでぱーとであたらしいこーとをかいたい。",
+        "english": "I would like to buy a new coat at that department store.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0406",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "買う",
+        "kana": "かう",
+        "meaning": "to buy"
+      },
+      "sentence": {
+        "japanese": "その雑誌はどこで買えますか。",
+        "kana": "そのざっしはどこでかえますか。",
+        "english": "Where can I buy that magazine?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0407",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "開く",
+        "kana": "あく",
+        "meaning": "to open"
+      },
+      "sentence": {
+        "japanese": "門は今開いている。",
+        "kana": "もんはいまひらいている。",
+        "english": "The gate is open now.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0407",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "開く",
+        "kana": "あく",
+        "meaning": "to open"
+      },
+      "sentence": {
+        "japanese": "本を開くな。",
+        "kana": "ほんをひらくな。",
+        "english": "Don't open your book.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0407",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "開く",
+        "kana": "あく",
+        "meaning": "to open"
+      },
+      "sentence": {
+        "japanese": "頻繁にパーティーを開くのが大好きだ。",
+        "kana": "ひんぱんにぱーてぃーをひらくのがだいすきだ。",
+        "english": "They love to give parties all the time.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0408",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "教室",
+        "kana": "きょうしつ",
+        "meaning": "classroom"
+      },
+      "sentence": {
+        "japanese": "彼女は教室の前の方に立っていた。",
+        "kana": "かのじょはきょうしつのまえのほうにたっていた。",
+        "english": "She was standing in the front of the classroom.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0408",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "教室",
+        "kana": "きょうしつ",
+        "meaning": "classroom"
+      },
+      "sentence": {
+        "japanese": "彼女はいつ教室から出ていったのですか。",
+        "kana": "かのじょはいつきょうしつからでていったのですか。",
+        "english": "When did she leave the classroom?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0408",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "教室",
+        "kana": "きょうしつ",
+        "meaning": "classroom"
+      },
+      "sentence": {
+        "japanese": "先生は私を教室に立たせておいた。",
+        "kana": "せんせいはわたしをきょうしつにたたせておいた。",
+        "english": "My teacher had me standing in the classroom.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0409",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "かばん",
+        "meaning": "bag"
+      },
+      "sentence": {
+        "japanese": "彼女はあなたが持っているのと同じようなかばんを持っている。",
+        "kana": "かのじょはあなたがもっているのとおなじようなかばんをもっている。",
+        "english": "She has the same bag as you have.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0409",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "かばん",
+        "meaning": "bag"
+      },
+      "sentence": {
+        "japanese": "私のかばんです。",
+        "kana": "わたしのかばんです。",
+        "english": "This is my bag.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0409",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "かばん",
+        "meaning": "bag"
+      },
+      "sentence": {
+        "japanese": "君のかばんはここにあるよ。",
+        "kana": "くんのかばんはここにあるよ。",
+        "english": "Here is your bag.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0410",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "マッチ",
+        "meaning": "match"
+      },
+      "sentence": {
+        "japanese": "マッチを持っていますか。",
+        "kana": "まっちをもっていますか。",
+        "english": "Have you got a match?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0410",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "マッチ",
+        "meaning": "match"
+      },
+      "sentence": {
+        "japanese": "マッチで遊んではいけません。",
+        "kana": "まっちであそんではいけません。",
+        "english": "You shouldn't play with matches.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0411",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "短い",
+        "kana": "みじかい",
+        "meaning": "short"
+      },
+      "sentence": {
+        "japanese": "彼女は短いスカートが好きだ。",
+        "kana": "かのじょはみじかいすかーとがすきだ。",
+        "english": "She likes short skirts.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0411",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "短い",
+        "kana": "みじかい",
+        "meaning": "short"
+      },
+      "sentence": {
+        "japanese": "彼は短い病気の後で死んだ。",
+        "kana": "かれはみじかいびょうきのあとでしんだ。",
+        "english": "He died after a brief illness.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0411",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "短い",
+        "kana": "みじかい",
+        "meaning": "short"
+      },
+      "sentence": {
+        "japanese": "私はそんなに短い時間でその本は読めません。",
+        "kana": "わたしはそんなにみじかいじかんでそのほんはよめません。",
+        "english": "I cannot read the book in so short a time.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0412",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "姉",
+        "kana": "あね",
+        "meaning": "(humble) older sister"
+      },
+      "sentence": {
+        "japanese": "私の姉は君より背が低い。",
+        "kana": "わたしのあねはくんよりせがひくい。",
+        "english": "My sister is shorter than you.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0412",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "姉",
+        "kana": "あね",
+        "meaning": "(humble) older sister"
+      },
+      "sentence": {
+        "japanese": "彼女は私の姉です。",
+        "kana": "かのじょはわたしのあねです。",
+        "english": "She is my elder sister.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0412",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "姉",
+        "kana": "あね",
+        "meaning": "(humble) older sister"
+      },
+      "sentence": {
+        "japanese": "彼女は姉同様きれいだ。",
+        "kana": "かのじょはあねどうようきれいだ。",
+        "english": "She is no less beautiful than her sister.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0413",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "大勢",
+        "kana": "おおぜい",
+        "meaning": "great number of people"
+      },
+      "sentence": {
+        "japanese": "そこには大勢の人がいた。",
+        "kana": "そこにはおおぜいのにんがいた。",
+        "english": "There was a large crowd there.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0413",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "大勢",
+        "kana": "おおぜい",
+        "meaning": "great number of people"
+      },
+      "sentence": {
+        "japanese": "彼の家族は大勢である。",
+        "kana": "かのかぞくはおおぜいである。",
+        "english": "His is a large family.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0413",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "大勢",
+        "kana": "おおぜい",
+        "meaning": "great number of people"
+      },
+      "sentence": {
+        "japanese": "大勢の人たちがバスを待っていた。",
+        "kana": "おおぜいのにんたちがばすをまっていた。",
+        "english": "There were a lot of people waiting for the bus.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0414",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "開ける",
+        "kana": "あける",
+        "meaning": "to open"
+      },
+      "sentence": {
+        "japanese": "電車が停まるまで開けないで。",
+        "kana": "でんしゃがとまるまでひらけないで。",
+        "english": "Don't open before the train stops.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0414",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "開ける",
+        "kana": "あける",
+        "meaning": "to open"
+      },
+      "sentence": {
+        "japanese": "口を開けてください！",
+        "kana": "くちをひらけてください！",
+        "english": "Open your mouth!",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0414",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "開ける",
+        "kana": "あける",
+        "meaning": "to open"
+      },
+      "sentence": {
+        "japanese": "目を開けてください。",
+        "kana": "めをひらけてください。",
+        "english": "Open your eyes, please.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0415",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "忙しい",
+        "kana": "いそがしい",
+        "meaning": "busy"
+      },
+      "sentence": {
+        "japanese": "忙しくって、クレージーだ。",
+        "kana": "いそがしくって、くれーじーだ。",
+        "english": "Staying busy and crazy!!",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0415",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "忙しい",
+        "kana": "いそがしい",
+        "meaning": "busy"
+      },
+      "sentence": {
+        "japanese": "その女の子達は、とても忙しい。",
+        "kana": "そのおんなのことおるは、とてもいそがしい。",
+        "english": "Those girls are very busy.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0415",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "忙しい",
+        "kana": "いそがしい",
+        "meaning": "busy"
+      },
+      "sentence": {
+        "japanese": "来月はとても忙しいだろう。",
+        "kana": "らいげつはとてもいそがしいだろう。",
+        "english": "I'll be very busy next month.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0415",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "忙しい",
+        "kana": "いそがしい",
+        "meaning": "busy"
+      },
+      "sentence": {
+        "japanese": "彼は明日いそがしいだろう。",
+        "kana": "かれはあしたいそがしいだろう。",
+        "english": "He'll be busy tomorrow.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0417",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "店",
+        "kana": "みせ",
+        "meaning": "shop"
+      },
+      "sentence": {
+        "japanese": "その店は野菜を売っている。",
+        "kana": "そのみせはやさいをうっている。",
+        "english": "The store deals in vegetables.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0417",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "店",
+        "kana": "みせ",
+        "meaning": "shop"
+      },
+      "sentence": {
+        "japanese": "その店は私の家の目と鼻の先にある。",
+        "kana": "そのみせはわたしのいえのめとはなのさきにある。",
+        "english": "The store is close to my house.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0417",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "店",
+        "kana": "みせ",
+        "meaning": "shop"
+      },
+      "sentence": {
+        "japanese": "彼女はその店へ行った。",
+        "kana": "かのじょはそのみせへいった。",
+        "english": "She went to that store.",
+        "source": "tatoeba"
+      }
+    }
+  ]
+}

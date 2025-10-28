@@ -1,0 +1,4 @@
+card_id,example_index,japanese,kana,english,suggested_action,reviewer_comments,reviewed_by,review_date
+n5_example_001,0,今日は暑いです。,きょうはあついです。,It's hot today.,,,
+n5_example_001,1,明日も暑いでしょう。,あしたもあついでしょう。,Tomorrow will probably be hot too.,,,
+n5_example_002,0,毎朝シャワーをあびます。,まいあさシャワーをあびます。,I take a shower every morning.,,,

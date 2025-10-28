@@ -1,0 +1,768 @@
+{
+  "batch_number": 1,
+  "total_batches": 38,
+  "examples_in_batch": 50,
+  "verification_instructions": {
+    "task": "Verify each example for N5 appropriateness",
+    "check": [
+      "1. Does sentence contain the target vocabulary word?",
+      "2. Does kana reading match the Japanese sentence correctly?",
+      "3. Does sentence use ONLY N5 grammar patterns?",
+      "4. Rate difficulty from 1-10 (within N5 range)",
+      "5. Recommend: accept/review/reject"
+    ],
+    "output_format": "For each example, return JSON with: target_vocab_present, kana_accuracy, n5_grammar_check, difficulty_rating, recommendation"
+  },
+  "examples": [
+    {
+      "card_id": "n5_vocab_0001",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "毎朝",
+        "kana": "まいあさ",
+        "meaning": "every morning"
+      },
+      "sentence": {
+        "japanese": "彼女は毎朝早く起きる。",
+        "kana": "かのじょはまいあさはやくおきる。",
+        "english": "She gets up early every morning.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0001",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "毎朝",
+        "kana": "まいあさ",
+        "meaning": "every morning"
+      },
+      "sentence": {
+        "japanese": "彼女は毎朝歯を磨くと言った。",
+        "kana": "かのじょはまいあさはをみがくといった。",
+        "english": "She said that she brushes her teeth every morning.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0001",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "毎朝",
+        "kana": "まいあさ",
+        "meaning": "every morning"
+      },
+      "sentence": {
+        "japanese": "彼は毎朝駅まで走ります。",
+        "kana": "かれはまいあさえきまではしります。",
+        "english": "He runs to the station every morning.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0002",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "問題",
+        "kana": "もんだい",
+        "meaning": "problem"
+      },
+      "sentence": {
+        "japanese": "君は問題児ですね。",
+        "kana": "くんはもんだいじですね。",
+        "english": "You are a troublemaker.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0002",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "問題",
+        "kana": "もんだい",
+        "meaning": "problem"
+      },
+      "sentence": {
+        "japanese": "何が問題なの？",
+        "kana": "なにがもんだいなの？",
+        "english": "Where is the problem?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0002",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "問題",
+        "kana": "もんだい",
+        "meaning": "problem"
+      },
+      "sentence": {
+        "japanese": "そこに問題がある。",
+        "kana": "そこにもんだいがある。",
+        "english": "Therein lies the problem.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0004",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "黒",
+        "kana": "くろ",
+        "meaning": "black"
+      },
+      "sentence": {
+        "japanese": "彼は黒っぽいセーターを着ていた。",
+        "kana": "かれはくろっぽいせーたーをきていた。",
+        "english": "He wore a dark sweater.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0004",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "黒",
+        "kana": "くろ",
+        "meaning": "black"
+      },
+      "sentence": {
+        "japanese": "私は彼女の黒っぽい目が好きだ。",
+        "kana": "わたしはかのじょのくろっぽいめがすきだ。",
+        "english": "I like her dark eyes.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0004",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "黒",
+        "kana": "くろ",
+        "meaning": "black"
+      },
+      "sentence": {
+        "japanese": "私は黒の上着と白の上着をもっている。",
+        "kana": "わたしはくろのうわぎとしろのうわぎをもっている。",
+        "english": "I have a black and a white coat.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0005",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "台所",
+        "kana": "だいどころ",
+        "meaning": "kitchen"
+      },
+      "sentence": {
+        "japanese": "彼女は台所で働きますか。",
+        "kana": "かのじょはだいどころではたらきますか。",
+        "english": "Does she work in the kitchen?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0005",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "台所",
+        "kana": "だいどころ",
+        "meaning": "kitchen"
+      },
+      "sentence": {
+        "japanese": "彼女は今台所でコーヒーをいれています。",
+        "kana": "かのじょはいまだいどころでこーひーをいれています。",
+        "english": "She is now making coffee in the kitchen.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0005",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "台所",
+        "kana": "だいどころ",
+        "meaning": "kitchen"
+      },
+      "sentence": {
+        "japanese": "彼女が台所に入ってみると、そこには誰もいなかった。",
+        "kana": "かのじょがだいどころにいっってみると、そこにはだれもいなかった。",
+        "english": "When she entered the kitchen, no one was there.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0006",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "葉書",
+        "kana": "はがき",
+        "meaning": "postcard"
+      },
+      "sentence": {
+        "japanese": "この店に葉書がたくさんある。",
+        "kana": "このみせにはがきがたくさんある。",
+        "english": "There are many postcards in this store.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0006",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "葉書",
+        "kana": "はがき",
+        "meaning": "postcard"
+      },
+      "sentence": {
+        "japanese": "この店にはハガキがたくさんあるんだよ。",
+        "kana": "このみせにははがきがたくさんあるんだよ。",
+        "english": "There are many postcards in this store.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0006",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "葉書",
+        "kana": "はがき",
+        "meaning": "postcard"
+      },
+      "sentence": {
+        "japanese": "ハガキを売ってるんですね。",
+        "kana": "はがきをうってるんですね。",
+        "english": "You sell postcards.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0007",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ペン",
+        "meaning": "pen"
+      },
+      "sentence": {
+        "japanese": "ペンか鉛筆を持っていますか。",
+        "kana": "ぺんかえんぴつをもっていますか。",
+        "english": "Do you have a pen or a pencil?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0007",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ペン",
+        "meaning": "pen"
+      },
+      "sentence": {
+        "japanese": "先生、ペン書きにするのでしょうか。",
+        "kana": "せんせい、ぺんかきにするのでしょうか。",
+        "english": "Sir, do we have to write in ink?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0007",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ペン",
+        "meaning": "pen"
+      },
+      "sentence": {
+        "japanese": "彼女は何本ペンを持っていますか。",
+        "kana": "かのじょはなんぼんぺんをもっていますか。",
+        "english": "How many pens does she have?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0008",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ニュース",
+        "meaning": "news"
+      },
+      "sentence": {
+        "japanese": "そのニュースはラジオで聞いたよ。",
+        "kana": "そのにゅーすはらじおできいたよ。",
+        "english": "I heard the news on the radio.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0008",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ニュース",
+        "meaning": "news"
+      },
+      "sentence": {
+        "japanese": "私は彼にそのビッグニュースを知らせた。",
+        "kana": "わたしはかれにそのびっぐにゅーすをしらせた。",
+        "english": "I told him the big news.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0008",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ニュース",
+        "meaning": "news"
+      },
+      "sentence": {
+        "japanese": "彼女はまだそのニュースを聞いてはいない。",
+        "kana": "かのじょはまだそのにゅーすをきいてはいない。",
+        "english": "She's not yet heard the news.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0009",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "花瓶",
+        "kana": "かびん",
+        "meaning": "a vase"
+      },
+      "sentence": {
+        "japanese": "花瓶のなかには何本の花がはいっていますか。",
+        "kana": "かびんのなかにはなんぼんのはながはいっていますか。",
+        "english": "How many flowers are there in the vase?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0009",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "花瓶",
+        "kana": "かびん",
+        "meaning": "a vase"
+      },
+      "sentence": {
+        "japanese": "花瓶には何本の花が入っていますか。",
+        "kana": "かびんにはなんぼんのはながいっっていますか。",
+        "english": "How many flowers are there in the vase?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0009",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "花瓶",
+        "kana": "かびん",
+        "meaning": "a vase"
+      },
+      "sentence": {
+        "japanese": "テーブルの上に花瓶がある。",
+        "kana": "てーぶるのうえにかびんがある。",
+        "english": "There is a vase on the table.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0010",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "フォーク",
+        "meaning": "fork"
+      },
+      "sentence": {
+        "japanese": "彼は上手にナイフとフォークを使った。",
+        "kana": "かれはじょうずにないふとふぉーくをつかった。",
+        "english": "He handled the knife and fork very well.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0010",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "フォーク",
+        "meaning": "fork"
+      },
+      "sentence": {
+        "japanese": "スプーンとフォークとナイフが要る。どうも。",
+        "kana": "すぷーんとふぉーくとないふがいる。どうも。",
+        "english": "I need a spoon, a fork, and a knife. Thank you.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0010",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "フォーク",
+        "meaning": "fork"
+      },
+      "sentence": {
+        "japanese": "フォークで豚肉を食べます。",
+        "kana": "ふぉーくでぶたにくをたべます。",
+        "english": "I eat pork with a fork.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0011",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "引く",
+        "kana": "ひく",
+        "meaning": "to pull"
+      },
+      "sentence": {
+        "japanese": "その辞書を引くべきである。",
+        "kana": "そのじしょをひくべきである。",
+        "english": "You should consult the dictionary.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0011",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "引く",
+        "kana": "ひく",
+        "meaning": "to pull"
+      },
+      "sentence": {
+        "japanese": "私はよく風邪を引く。",
+        "kana": "わたしはよくかぜをひく。",
+        "english": "I often catch cold.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0011",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "引く",
+        "kana": "ひく",
+        "meaning": "to pull"
+      },
+      "sentence": {
+        "japanese": "九引く六はいくつですか。",
+        "kana": "きゅうひくろくはいくつですか。",
+        "english": "How many is nine minus six?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0012",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "フィルム",
+        "meaning": "roll of film"
+      },
+      "sentence": {
+        "japanese": "彼は自分のカメラに新しいフィルムを入れた。",
+        "kana": "かれはじぶんのかめらにあたらしいふぃるむをいれた。",
+        "english": "He put new film into his camera.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0012",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "フィルム",
+        "meaning": "roll of film"
+      },
+      "sentence": {
+        "japanese": "私のカメラは簡単にフィルムを入れられる。",
+        "kana": "わたしのかめらはかんたんにふぃるむをいれられる。",
+        "english": "My camera loads easily.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0012",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "フィルム",
+        "meaning": "roll of film"
+      },
+      "sentence": {
+        "japanese": "このカメラにはフィルムが入っていないんだ。",
+        "kana": "このかめらにはふぃるむがいっっていないんだ。",
+        "english": "This camera is not loaded with film.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0013",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "磨く",
+        "kana": "みがく",
+        "meaning": "to brush teeth"
+      },
+      "sentence": {
+        "japanese": "彼女は毎朝歯を磨くと言った。",
+        "kana": "かのじょはまいあさはをみがくといった。",
+        "english": "She said that she brushes her teeth every morning.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0013",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "磨く",
+        "kana": "みがく",
+        "meaning": "to brush teeth"
+      },
+      "sentence": {
+        "japanese": "彼はくつをみがいた。",
+        "kana": "かれはくつをみがいた。",
+        "english": "He shined his shoes.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0013",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "磨く",
+        "kana": "みがく",
+        "meaning": "to brush teeth"
+      },
+      "sentence": {
+        "japanese": "寝る前に歯をみがかなくてはいけないですよ。",
+        "kana": "ねるまえにはをみがかなくてはいけないですよ。",
+        "english": "You are to clean your teeth before you go to bed.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0014",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "押す",
+        "kana": "おす",
+        "meaning": "to push"
+      },
+      "sentence": {
+        "japanese": "僕たちは、その車を押した。",
+        "kana": "ぼくたちは、そのくるまをおした。",
+        "english": "We gave the car a push.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0014",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "押す",
+        "kana": "おす",
+        "meaning": "to push"
+      },
+      "sentence": {
+        "japanese": "彼女は戸を押して閉めた。",
+        "kana": "かのじょはこをおしてしめた。",
+        "english": "She pushed the door shut.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0014",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "押す",
+        "kana": "おす",
+        "meaning": "to push"
+      },
+      "sentence": {
+        "japanese": "彼は非常ボタンをおした。",
+        "kana": "かれはひじょうぼたんをおした。",
+        "english": "He pushed the emergency button.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0015",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "売る",
+        "kana": "うる",
+        "meaning": "to sell"
+      },
+      "sentence": {
+        "japanese": "その店は野菜を売っている。",
+        "kana": "そのみせはやさいをうっている。",
+        "english": "The store deals in vegetables.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0015",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "売る",
+        "kana": "うる",
+        "meaning": "to sell"
+      },
+      "sentence": {
+        "japanese": "僕は本を安く売った。",
+        "kana": "ぼくはほんをやすくうった。",
+        "english": "I sold my books cheaply.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0015",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "売る",
+        "kana": "うる",
+        "meaning": "to sell"
+      },
+      "sentence": {
+        "japanese": "彼は車を売りたくて、私はその車を買いたいのです。",
+        "kana": "かれはくるまをうりたくて、わたしはそのくるまをかいたいのです。",
+        "english": "He wants to sell his car, and I want to buy one.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0016",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "電気",
+        "kana": "でんき",
+        "meaning": "electricity"
+      },
+      "sentence": {
+        "japanese": "寝る前に電気を消してください。",
+        "kana": "ねるまえにでんきをけしてください。",
+        "english": "Turn off the light before you go to bed.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0016",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "電気",
+        "kana": "でんき",
+        "meaning": "electricity"
+      },
+      "sentence": {
+        "japanese": "電気を消すのを忘れないで。",
+        "kana": "でんきをけすのをわすれないで。",
+        "english": "Don't forget to turn the light off.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0016",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "電気",
+        "kana": "でんき",
+        "meaning": "electricity"
+      },
+      "sentence": {
+        "japanese": "電気を消すな。",
+        "kana": "でんきをけすな。",
+        "english": "Don't turn off the light.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0017",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "並ぶ",
+        "kana": "ならぶ",
+        "meaning": "to line up"
+      },
+      "sentence": {
+        "japanese": "並んでお待ちください。",
+        "kana": "ならんでおまちください。",
+        "english": "Wait in line, please.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0017",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "並ぶ",
+        "kana": "ならぶ",
+        "meaning": "to line up"
+      },
+      "sentence": {
+        "japanese": "彼女は僕と並んで歩いた。",
+        "kana": "かのじょはぼくとならんであるいた。",
+        "english": "She walked side by side with me.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0017",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "並ぶ",
+        "kana": "ならぶ",
+        "meaning": "to line up"
+      },
+      "sentence": {
+        "japanese": "彼女はわたしとならんで座った。",
+        "kana": "かのじょはわたしとならんですわった。",
+        "english": "She sat side by side with me.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0018",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "病気",
+        "kana": "びょうき",
+        "meaning": "illness"
+      },
+      "sentence": {
+        "japanese": "彼女は病気だったらしい。",
+        "kana": "かのじょはびょうきだったらしい。",
+        "english": "It seems that she was ill.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0018",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "病気",
+        "kana": "びょうき",
+        "meaning": "illness"
+      },
+      "sentence": {
+        "japanese": "病気は財布を空にする。",
+        "kana": "びょうきはさいふをそらにする。",
+        "english": "Sickness empties the wallet.",
+        "source": "tatoeba"
+      }
+    }
+  ]
+}

@@ -1,0 +1,802 @@
+[
+  {
+    "card_id": "n5_vocab_0242",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "悪い appears in idiomatic expression 人が悪い (ill-natured, malicious)",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "Shows にん but should be ひと for 人. Should be ひとがわるい not にんがわるい",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses basic N5: は (topic), が (subject), い-adjective. Simple N5 structure",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Simple descriptive sentence. Vocabulary: Idiomatic expression. Length: Very short. Context: Character description",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar is N5 but has kana error (にん→ひと). Also 人が悪い is idiomatic (ill-natured) not literal 'person is bad', which may confuse beginners learning 悪い as basic adjective"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0242",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "悪い appears in 目に悪い (bad for the eyes)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains multiple N4+ elements: から (reason - acceptable), but てはいけない (must not) which is a prohibition pattern. While て-form is N5, the てはいけない pattern is more complex and often considered N4+",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: てはいけない prohibition (borderline N4). Vocabulary: N5. Length: Long. Context: Warning/prohibition",
+      "recommendation": "REJECT",
+      "overall_notes": "てはいけない prohibition pattern is beyond basic N5. Also sentence is quite long and complex for beginners"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0243",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "青い appears as predicate adjective describing 空 (sky)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: なぜ (why), が (subject), か (question marker), 知っている (知る in ている state form), か (question). While 知っている uses ている, it's one of the most basic state verbs taught at N5. The embedded question なぜ...か is acceptable N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Embedded question with 知っている. Vocabulary: N5 (空). Length: Medium. Context: Natural phenomenon question",
+      "recommendation": "ACCEPT",
+      "overall_notes": "知っている is acceptable N5 state verb. Embedded question structure is within N5 range. Good use of 青い"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0243",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "青い appears in quoted form meaning 'green/inexperienced' (idiomatic)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: は (topic), まだ (still), な (sentence-ending particle). All basic N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Simple sentence. Vocabulary: Idiomatic meaning. Length: Short. Context: Criticism/inexperience",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar is simple N5 but 青い here means 'green/inexperienced' (idiomatic), not the literal color blue. This may confuse beginners learning 青い as 'blue'. お前 is also somewhat informal/rough"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0243",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "青い appears modifying 服 (clothes) - literal blue color",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている (着ています - is wearing). While this is a very common usage, the guidelines say to accept only 'very basic' ている. 着ている describes ongoing state of wearing which is borderline",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: ている continuous/state. Vocabulary: N5 (服、着る). Length: Short. Context: Clothing description",
+      "recommendation": "REVIEW",
+      "overall_notes": "着ている is very common expression but technically ている. This is literal use of 青い (blue color) which is good, unlike example 1"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0244",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "住む appears in ている form (住んでいる - living)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches perfectly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている (住んでいます). While 住んでいる (to live/reside) is one of the most common ている uses for ongoing state, guidelines say accept only 'very basic' ている. This is borderline",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: ている state. Vocabulary: Very basic N5. Length: Very short. Context: Where-question",
+      "recommendation": "REVIEW",
+      "overall_notes": "住んでいる is arguably one of the most basic ている expressions (state of residence), very commonly taught at N5, but technically still ている"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0244",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "住む appears in ている form (住んでいる)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている (住んでいる) plus のだ/んだ explanatory pattern. Same ている issue as previous example",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: ている + んだ pattern. Vocabulary: N5 (隣、家). Length: Medium. Context: Neighbor inquiry",
+      "recommendation": "REVIEW",
+      "overall_notes": "Same ている borderline issue. The んですか adds explanatory nuance which is acceptable N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0244",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "住む appears in ている form (住んでいる)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている (住んでいる). Third example with same issue",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: ている state. Vocabulary: N5 (隣). Length: Short. Context: Neighbor location",
+      "recommendation": "REVIEW",
+      "overall_notes": "Same ている issue. All three examples for 住む use 住んでいる which is borderline"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0244",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "すむ appears but in different meaning 'to do without/get by without' (済む), not 住む (to live)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: なんか (dismissive particle), なくて (negative て-form), すむ (can do without). The pattern なくてすむ meaning 'can do without' uses 済む not 住む. Grammar is acceptable N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Negative て-form pattern. Vocabulary: Different verb (済む vs 住む). Length: Short. Context: Doing without something",
+      "recommendation": "REVIEW",
+      "overall_notes": "This uses 済む (to manage/get by) not 住む (to live). Different verb entirely, though same pronunciation. May be data matching error if target is 住む only"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0244",
+    "example_index": 4,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "すむ appears meaning 済む (to suffice/avoid having to), not 住む (to live)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains だろう (presumptive) which is N4+ according to guidelines. Also uses ずに (without doing - negative form) which is more formal than ないで",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: だろう presumptive + ずに pattern. Vocabulary: 済む not 住む. Length: Long. Context: Avoiding necessity",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4+ だろう. Also uses 済む (suffice) not 住む (live). Wrong verb if target is specifically 住む"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0245",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "かける appears in idiomatic 鼻にかける (to boast about), not 'to call by phone'",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: あまり (not too much), を (object), に (direction), な (negative imperative). The な imperative is basic N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Negative imperative. Vocabulary: Idiomatic expression. Length: Short. Context: Warning against boasting",
+      "recommendation": "REJECT",
+      "overall_notes": "CRITICAL: Target vocab meaning is 'to call by phone' but this uses 鼻にかける (to boast). Wrong usage - false positive or incorrect example selection"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0245",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "かける appears meaning 'to go out/set off' (でかける), not 'to call by phone'",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: は (topic), 今 (now), で (at point of), ところ (about to - V dictionary + ところ pattern), だ (copula). The Vるところだ pattern meaning 'about to V' is acceptable N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: ところだ pattern. Vocabulary: でかける. Length: Short. Context: About to leave",
+      "recommendation": "REJECT",
+      "overall_notes": "CRITICAL: Target vocab is 'to call by phone' but this uses でかける (to go out). Wrong meaning - doesn't demonstrate target vocabulary"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0245",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "かける appears correctly in 電話をかける (to make a phone call) - matches target meaning",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: に (indirect object), を (object), の (nominalizer), ました (past polite). The pattern 電話をかける is standard N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Nominalization with の. Vocabulary: N5 (昨夜、電話、忘れる). Length: Medium. Context: Forgetting to call",
+      "recommendation": "ACCEPT",
+      "overall_notes": "This is the ONLY example that actually demonstrates かける in the target meaning 'to call by phone'. Good N5 example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0247",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "忘れる appears in compound 忘れやすい (easy to forget)",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "Shows にん but should be ひと for 人. Should be ひとのなまえ not にんのなまえ",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: は (topic), の (possessive), を (object), やすい (easy to - suffix). The やすい suffix is taught at N5 for expressing ease/tendency",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: やすい suffix pattern. Vocabulary: N5 (人、名前). Length: Short. Context: Tendency description",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar is acceptable N5 but has kana error (にん→ひと). やすい suffix is standard N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0247",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "忘れる appears in nominalized form 忘れないで (don't forget)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: を (object), の (nominalizer), で (て-form of だ for request/command context). The pattern Vないで meaning 'don't do' or 'without doing' is basic N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Nominalization + negative request. Vocabulary: N5 (電気、消す). Length: Medium. Context: Reminder/request",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean N5 example. Common request pattern with nominalization"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0247",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "忘れる appears in compound 忘れてはいけません (must not forget)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains てはいけません prohibition pattern which is more complex and often considered beyond basic N5. While て-form is N5, てはいけない is a prohibition construction",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: てはいけません prohibition (borderline N4). Vocabulary: N5. Length: Long. Context: Strong reminder",
+      "recommendation": "REJECT",
+      "overall_notes": "てはいけません is beyond basic N5. Same issue as n5_vocab_0242 example 2"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0249",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "写真 appears as object/topic in の後",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: は (topic), の (possessive), を (object), 撮る (take - N5 verb), た (past tense), です (copula). All basic N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Relative clause modifying 写真. Vocabulary: N5 (妹、撮る). Length: Medium. Context: Photo description",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Natural use of 写真 in relative clause construction"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0249",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "写真 appears as object in 写真を見せる",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: に (indirect object), 何枚か (several - counter usage), の, を, ましょう (suggestion). While ましょう is volitional, basic suggestions with ましょう are acceptable N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: ましょう suggestion with counter. Vocabulary: N5 (見せる、何). Length: Medium. Context: Offering to show",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Shows counter usage with 写真. ましょう for offers is acceptable"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0249",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "写真 appears as object in 写真を撮る",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses basic N5: は (topic), の (possessive), を (object), た (past tense). Simple past tense statement",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple past tense. Vocabulary: N5 (家族、撮る). Length: Short. Context: Taking photo",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect simple N5 example. Natural and clear use of 写真"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0250",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ゼロ appears as subject/topic",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: の前 (before), は (topic), です (copula). All basic N5",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple copula sentence. Vocabulary: Very basic (一、前). Length: Very short. Context: Number ordering",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Simple, clear N5 example. Good for teaching number ゼロ"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0251",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "いろいろ appears modifying ところ (places)",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "Shows かのはなし but should be かれのはなし (his talk). Missing れ in 彼の",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: の (possessive), は (topic), な (attributive form of な-adjective), へ (direction), 飛ぶ (jump). All basic N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Simple present tense. Vocabulary: N5 (話、飛ぶ). Length: Short. Context: Topic-jumping",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar is N5 but has kana error (かの→かれの). Otherwise acceptable"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0251",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "いろいろ appears as direct object/adverbial",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: は (topic), 知っている (state verb - acceptable N5). The いろいろ here functions adverbially meaning 'a lot of things'",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple statement with 知っている. Vocabulary: Very basic. Length: Very short. Context: Knowledge",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Simple N5 example. 知っている is acceptable state verb. Natural use of いろいろ"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0251",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "いろいろ appears with と particle for emphasis",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "Shows かのいえ but should be かれのいえ (his house). Missing れ",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: の (possessive), は (topic), と (with - for emphasis), な-adjective 便利, だ. All basic N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Simple copula with な-adjective. Vocabulary: N5 (家、便利). Length: Short. Context: Convenience description",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar is N5 but has kana error (かの→かれの). Otherwise acceptable example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0252",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "もう appears as emphatic particle (already/really/completely)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains て-form (働いて) connecting to result クタクタだ. While て-form is N5, the クタクタ (exhausted - onomatopoeia) may not be standard N5 vocabulary. The overall pattern is acceptable but vocabulary is questionable",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: て-form for cause-result. Vocabulary: クタクタ (exhausted) may be beyond N5. Length: Medium. Context: Exhaustion",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar is acceptable N5 but クタクタ onomatopoeia may be too advanced. Also uses colloquial tone"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0252",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "もう appears as emphatic particle (completely/really)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: は (topic), に (target of emotion), 夢中 (absorbed), メロメロ (head over heels), の (explanatory), よ. However, メロメロ (smitten/crazy about) is probably beyond N5 vocabulary",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Explanatory のよ. Vocabulary: メロメロ, 夢中 may be advanced. Length: Medium. Context: Romantic feeling",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar structure is N5 but vocabulary (メロメロ、夢中) may be too advanced and colloquial"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0252",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "もう appears as emphatic particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: が (subject), い-adjective stem + くって (て-form of くて). The くって is emphatic/colloquial form of くて. While colloquial, this is acceptable N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Colloquial て-form. Vocabulary: N5 (手、冷たい). Length: Very short. Context: Cold hands",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Colloquial but acceptable N5. Shows natural spoken Japanese with もう as emphasis"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0253",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "会う appears in past tense 会った (met)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: の (possessive/at), で (location), に (particle with 会う), た (past). All basic N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Simple past tense. Vocabulary: N5 (いつも、人達、ところ). Length: Medium. Context: Routine meeting",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Natural use of 会う with に particle"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0253",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "会う appears in たい form (会いたい - want to meet)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: の (possessive), に (with 会う), たい (want to), ものです (emphasis/desire expression). While ものです can be slightly advanced, in context of expressing desire it's acceptable N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: たい desire + ものです. Vocabulary: N5 (妹). Length: Medium. Context: Desire to meet",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Acceptable N5. たい form is basic N5, ものです adds polite emphasis"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0253",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "会う appears in dictionary form in ところです pattern",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: ある (certain - な-adjective), に (with 会う), ところです (about to - basic N5 pattern). All acceptable N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: ところです pattern. Vocabulary: N5 (学生). Length: Short. Context: About to meet",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. The Vるところです pattern (about to V) is standard N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0253",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "あう appears meaning 'to match/suit' (different usage from 'to meet')",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: は (topic), よく (well), と (with), 会う/合う (match/suit). All basic N5. Note this is 合う (match) not 会う (meet)",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Simple present tense. Vocabulary: N5 (帽子、服). Length: Short. Context: Matching/coordinating",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Different meaning of あう - 合う (to match/suit) not 会う (to meet). Shows verb versatility. Acceptable N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0253",
+    "example_index": 4,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "あう appears meaning 'to fit/suit' (合う not 会う)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: は (topic), に (target), ちょうど (just right - N5 adverb), よく (well), 合う. All basic N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Simple present tense. Vocabulary: N5 (スカート、体). Length: Medium. Context: Fit/sizing",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Again shows 合う (to fit) not 会う (to meet). Good for showing different usages"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0254",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "南 appears as direction with へ particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses basic N5: は (topic), へ (direction), 吹く (blow - N5 verb). Simple present tense",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Very simple directional sentence. Vocabulary: N5 (風). Length: Very short. Context: Wind direction",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect simple N5 example. Clear use of 南 with directional へ"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0254",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "南 appears as direction",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains compound verb 飛んでいった (flew away) which is て-form + 行った. This is the てく/ていく pattern showing directional movement away. While common, this is often considered beyond basic N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: ていく directional compound. Vocabulary: N5 (鳥、飛ぶ). Length: Short. Context: Bird movement",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains ていく directional compound which is N4+ territory. Should use simpler past tense"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0254",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "南 appears as direction",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains conditional と (冬になると) which is N4+ according to guidelines. Also uses ていく (飛んでいく) compound verb. Double N4+ violation",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: Conditional と + ていく (both N4+). Vocabulary: N5. Length: Medium. Context: Seasonal migration",
+      "recommendation": "REJECT",
+      "overall_notes": "Multiple N4+ elements: conditional と and ていく. Too advanced for N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0256",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "着る appears in ている form (着ている - wearing)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches perfectly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている (着ている). While 着ている is very common for 'wearing', guidelines say accept only 'very basic' ている. Also あべこべに (inside out) may be advanced vocabulary",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: ている state. Vocabulary: あべこべ may be beyond N5. Length: Medium. Context: Wearing incorrectly",
+      "recommendation": "REVIEW",
+      "overall_notes": "ている issue plus potentially advanced vocabulary あべこべ (inside out/backwards). Borderline"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0256",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "着る appears in past ている form (着ていた - was wearing)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains past ている (着ていた). Past progressive ていた is beyond basic N5. Also くたくた (worn out) and 背広 (suit) may be advanced vocabulary",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: Past ていた (N4+). Vocabulary: くたくた, 背広 may be beyond N5. Length: Short. Context: Worn clothing",
+      "recommendation": "REJECT",
+      "overall_notes": "Past ていた is N4+. Also vocabulary (くたくた, 背広) may be too advanced"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0256",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "着る appears in past tense 着た (wore/put on)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: は (topic), で (location), を (object), すうっと (smoothly - onomatopoeia), た (past). The すうっと may be slightly advanced but pattern is N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Simple past tense. Vocabulary: すうっと (smoothly) is onomatopoeia. Length: Short. Context: Putting on shirt",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Finally a 着る example without ている! Simple past tense. すうっと adds nuance but acceptable"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0257",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "そこ appears in そこら (around there/thereabouts)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: は (topic), に (location), います (polite existence), か (question). The そこら is extended form of そこ. All basic N5",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple existence question. Vocabulary: そこら (around there). Length: Short. Context: Location inquiry",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. そこら (around there) is natural extension of そこ"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0257",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "そこ appears in そこの (that one there)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: ちょっと (hey - interjection), の (possessive/demonstrative), きみ (you). All basic N5 calling pattern",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple address/calling. Vocabulary: Very basic. Length: Very short. Context: Getting attention",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Simple N5 calling pattern. Natural use of そこの to point out someone"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0257",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "そこ appears as destination/goal",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: が (subject), 先に (first/before), へ (direction), 着く (arrive), よ (particle). All basic N5",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple future statement. Vocabulary: N5 (先、着く). Length: Short. Context: Arrival prediction",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clear N5 example. Natural use of そこ as destination"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0259",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "どの appears in どのような (what kind of)",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "Shows にん but should be ひと for 人. Should be ひとですか not にんですか",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: は (topic), ような (like - な-adjective form), です, か. The どのような pattern meaning 'what kind of' is standard N5",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Question pattern. Vocabulary: N5. Length: Short. Context: Person description inquiry",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar is N5 but has kana error (にん→ひと). Otherwise acceptable"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0259",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "どの appears in どの...よりも (than any...)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: は, の, よりも (than - comparative), が (subject), な-adjective 上手, だ. The どの...よりも pattern is acceptable N5 for superlative",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: Complex comparative/superlative. Vocabulary: N5 (女の子、歌、上手). Length: Long. Context: Superlative comparison",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Advanced N5 but acceptable. The どの...よりも superlative pattern is within N5 range"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0259",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "どの appears in どのように (how/in what way)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: は, を, どのように (how), するか (embedded question), 知らない. The embedded question pattern is acceptable N5",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Embedded question. Vocabulary: N5 (知る). Length: Medium. Context: Method inquiry",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. どのように (how) is standard N5 question pattern"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0260",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "読む appears in potential negative form 読めない (cannot read)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches perfectly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains multiple N4+ elements: ので (reason conjunction - N4+) and 読めない (potential negative - N4+). Potential forms are explicitly listed as N4+ in guidelines",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: ので + potential (both N4+). Vocabulary: N5. Length: Medium. Context: Inability to read",
+      "recommendation": "REJECT",
+      "overall_notes": "Double N4+ violation: ので and potential form 読めない. Too advanced for N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0260",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "読む appears in nominalized form 読み方 (way of reading)",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "Shows かのなまえ but should be かれのなまえ (his name). Missing れ",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5: は, の (possessive), 方 (way/method), が, わからない. The V-masu stem + 方 pattern meaning 'way of V-ing' is standard N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: ~方 method pattern. Vocabulary: N5 (名前、わかる). Length: Medium. Context: Pronunciation inquiry",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar is good N5 but has kana error (かの→かれの). Otherwise acceptable"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0260",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "読む appears in potential negative 読めない (cannot read)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains potential negative 読めない and conditional pattern なくては (if not/without). Both are N4+ elements. The なくては pattern is a conditional construction",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: なくては conditional + potential (both N4+). Vocabulary: N5 (メガネ). Length: Medium. Context: Necessity condition",
+      "recommendation": "REJECT",
+      "overall_notes": "Multiple N4+ elements: なくては conditional and potential 読めない. Too advanced"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0262",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "来月 appears as time expression/topic",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains だろう (presumptive) which is N4+ according to guidelines. While でしょう is acceptable N5, だろう is more advanced",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: だろう presumptive (N4+). Vocabulary: N5 (忙しい). Length: Short. Context: Future prediction",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4+ だろう. Should use でしょう instead for N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0262",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "来月 appears as time expression",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains だろう (presumptive - N4+). Same issue as previous example",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: だろう presumptive (N4+). Vocabulary: N5 (結婚する). Length: Short. Context: Future prediction",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4+ だろう. Both 来月 examples have same だろう issue"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0263",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "果物 appears as object in 果物を食べる",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches perfectly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains べき (should/ought to) which is a modal expression often considered N4+. While べき can appear in N5 contexts, it's generally taught at N4 level for obligation/recommendation",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: べき modal (borderline N4). Vocabulary: N5 (もっと、食べる). Length: Short. Context: Health advice",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains べき which is typically N4+ modal expression for obligation. Too advanced for N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0263",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "果物 appears as subject of preference",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses basic N5: は (topic), が (subject of preference), 好き (like), です. Simple preference statement",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Very simple preference. Vocabulary: Very basic N5. Length: Very short. Context: Liking fruit",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect simple N5 example. Clean use of 果物 with 好き pattern"
+    }
+  }
+]

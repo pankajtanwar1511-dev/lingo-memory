@@ -1,0 +1,768 @@
+{
+  "batch_number": 9,
+  "total_batches": 38,
+  "examples_in_batch": 50,
+  "verification_instructions": {
+    "task": "Verify each example for N5 appropriateness",
+    "check": [
+      "1. Does sentence contain the target vocabulary word?",
+      "2. Does kana reading match the Japanese sentence correctly?",
+      "3. Does sentence use ONLY N5 grammar patterns?",
+      "4. Rate difficulty from 1-10 (within N5 range)",
+      "5. Recommend: accept/review/reject"
+    ],
+    "output_format": "For each example, return JSON with: target_vocab_present, kana_accuracy, n5_grammar_check, difficulty_rating, recommendation"
+  },
+  "examples": [
+    {
+      "card_id": "n5_vocab_0141",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "好き",
+        "kana": "すき",
+        "meaning": "likeable"
+      },
+      "sentence": {
+        "japanese": "コーヒーは薄いのが好きです。",
+        "kana": "こーひーはうすいのがすきです。",
+        "english": "I'd like my coffee weak.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0141",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "好き",
+        "kana": "すき",
+        "meaning": "likeable"
+      },
+      "sentence": {
+        "japanese": "音楽が好きで、毎日聴いています。",
+        "kana": "おんがくがすきで、まいにちきいています。",
+        "english": "I like music, and I listen to it every day.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0141",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "好き",
+        "kana": "すき",
+        "meaning": "likeable"
+      },
+      "sentence": {
+        "japanese": "好きにしろよ。",
+        "kana": "すきにしろよ。",
+        "english": "Suit yourself.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0141",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "好き",
+        "kana": "すき",
+        "meaning": "likeable"
+      },
+      "sentence": {
+        "japanese": "彼はすきだらけだ。",
+        "kana": "かれはすきだらけだ。",
+        "english": "He is utterly unguarded.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0141",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "好き",
+        "kana": "すき",
+        "meaning": "likeable"
+      },
+      "sentence": {
+        "japanese": "私達はみんな彼がすきです。",
+        "kana": "わたしたちはみんなかれがすきです。",
+        "english": "We all like him.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0141",
+      "example_index": 5,
+      "target_vocab": {
+        "kanji": "好き",
+        "kana": "すき",
+        "meaning": "likeable"
+      },
+      "sentence": {
+        "japanese": "どの店がすきですか。",
+        "kana": "どのみせがすきですか。",
+        "english": "Which is your favorite store?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0142",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "静か",
+        "kana": "しずか",
+        "meaning": "quiet"
+      },
+      "sentence": {
+        "japanese": "静かにしろったら。",
+        "kana": "しずかにしろったら。",
+        "english": "Do be quiet!",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0142",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "静か",
+        "kana": "しずか",
+        "meaning": "quiet"
+      },
+      "sentence": {
+        "japanese": "彼女は静かに部屋に入った。",
+        "kana": "かのじょはしずかにへやにいっった。",
+        "english": "She quietly entered the room.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0142",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "静か",
+        "kana": "しずか",
+        "meaning": "quiet"
+      },
+      "sentence": {
+        "japanese": "彼女は静かな人です。",
+        "kana": "かのじょはしずかなにんです。",
+        "english": "She is quiet.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0144",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "人",
+        "kana": "ひと",
+        "meaning": "person"
+      },
+      "sentence": {
+        "japanese": "彼女はどのような人ですか。",
+        "kana": "かのじょはどのようなにんですか。",
+        "english": "What is she like?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0144",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "人",
+        "kana": "ひと",
+        "meaning": "person"
+      },
+      "sentence": {
+        "japanese": "彼は人の名前を忘れやすい。",
+        "kana": "かれはにんのなまえをわすれやすい。",
+        "english": "He is apt to forget people's name.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0144",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "人",
+        "kana": "ひと",
+        "meaning": "person"
+      },
+      "sentence": {
+        "japanese": "いつものところでいつもの人達に会った。",
+        "kana": "いつものところでいつものひとたちにあった。",
+        "english": "I met the usual people at the usual place.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0144",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "人",
+        "kana": "ひと",
+        "meaning": "person"
+      },
+      "sentence": {
+        "japanese": "「コップいる？」「テーブルにひとつある」",
+        "kana": "「こっぷいる？」「てーぶるにひとつある」",
+        "english": "\"Is there a glass?\" \"Yes, there's one on the table.\"",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0144",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "人",
+        "kana": "ひと",
+        "meaning": "person"
+      },
+      "sentence": {
+        "japanese": "ひと箱いくらですか？",
+        "kana": "ひとはこいくらですか？",
+        "english": "How much does a box cost?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0144",
+      "example_index": 5,
+      "target_vocab": {
+        "kanji": "人",
+        "kana": "ひと",
+        "meaning": "person"
+      },
+      "sentence": {
+        "japanese": "ひとつ欲しい？",
+        "kana": "ひとつほしい？",
+        "english": "Do you want one?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0145",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "覚える",
+        "kana": "おぼえる",
+        "meaning": "to remember"
+      },
+      "sentence": {
+        "japanese": "彼は名前を覚えるのが下手だ。",
+        "kana": "かれはなまえをおぼえるのがへただ。",
+        "english": "He is weak on names.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0145",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "覚える",
+        "kana": "おぼえる",
+        "meaning": "to remember"
+      },
+      "sentence": {
+        "japanese": "彼の名前は覚えるのがとても難しい。",
+        "kana": "かのなまえはおぼえるのがとてもむずかしい。",
+        "english": "His name is very difficult to remember.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0145",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "覚える",
+        "kana": "おぼえる",
+        "meaning": "to remember"
+      },
+      "sentence": {
+        "japanese": "彼の名前を覚えていますか。",
+        "kana": "かのなまえをおぼえていますか。",
+        "english": "Do you remember his name?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0146",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "休み",
+        "kana": "やすみ",
+        "meaning": "rest"
+      },
+      "sentence": {
+        "japanese": "来週の今日は学校は休みだ。",
+        "kana": "らいしゅうのこんにちはがっこうはやすみだ。",
+        "english": "There will be no school a week from today.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0146",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "休み",
+        "kana": "やすみ",
+        "meaning": "rest"
+      },
+      "sentence": {
+        "japanese": "明日は休みだ。",
+        "kana": "あしたはやすみだ。",
+        "english": "It is a holiday tomorrow.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0146",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "休み",
+        "kana": "やすみ",
+        "meaning": "rest"
+      },
+      "sentence": {
+        "japanese": "明日は休みます。",
+        "kana": "あしたはやすみます。",
+        "english": "I'll be absent tomorrow.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0146",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "休み",
+        "kana": "やすみ",
+        "meaning": "rest"
+      },
+      "sentence": {
+        "japanese": "私は彼女におやすみといった。",
+        "kana": "わたしはかのじょにおやすみといった。",
+        "english": "I bade good night to her.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0146",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "休み",
+        "kana": "やすみ",
+        "meaning": "rest"
+      },
+      "sentence": {
+        "japanese": "もう、おやすみを言う時間だね。",
+        "kana": "もう、おやすみをいうじかんだね。",
+        "english": "Now it's time to say good night.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0146",
+      "example_index": 5,
+      "target_vocab": {
+        "kanji": "休み",
+        "kana": "やすみ",
+        "meaning": "rest"
+      },
+      "sentence": {
+        "japanese": "おやすみ。",
+        "kana": "おやすみ。",
+        "english": "Good night!",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0147",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "池",
+        "kana": "いけ",
+        "meaning": "pond"
+      },
+      "sentence": {
+        "japanese": "池のそばに男がいる。",
+        "kana": "いけのそばにおとこがいる。",
+        "english": "There is a man by the side of the pond.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0147",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "池",
+        "kana": "いけ",
+        "meaning": "pond"
+      },
+      "sentence": {
+        "japanese": "池に大きな赤い魚が一匹泳いでいる。",
+        "kana": "いけにおおきなあかいさかながいっぴきおよいでいる。",
+        "english": "A big red fish is swimming about in the pond.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0147",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "池",
+        "kana": "いけ",
+        "meaning": "pond"
+      },
+      "sentence": {
+        "japanese": "池には魚がたくさんいる。",
+        "kana": "いけにはさかながたくさんいる。",
+        "english": "There are a lot of fish in the pond.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0147",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "池",
+        "kana": "いけ",
+        "meaning": "pond"
+      },
+      "sentence": {
+        "japanese": "目に悪いから暗いところで本を読んではいけない。",
+        "kana": "めにわるいからくらいところでほんをよんではいけない。",
+        "english": "Don't read under insufficient light, for it is bad for your eyes.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0147",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "池",
+        "kana": "いけ",
+        "meaning": "pond"
+      },
+      "sentence": {
+        "japanese": "明日彼と話をするのを忘れてはいけませんよ。",
+        "kana": "あしたかれとはなしをするのをわすれてはいけませんよ。",
+        "english": "Don't forget to talk with him tomorrow.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0147",
+      "example_index": 5,
+      "target_vocab": {
+        "kanji": "池",
+        "kana": "いけ",
+        "meaning": "pond"
+      },
+      "sentence": {
+        "japanese": "明日は来なければいけませんよ。",
+        "kana": "あしたはこなければいけませんよ。",
+        "english": "You'll have to come tomorrow.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0148",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "始まる",
+        "kana": "はじまる",
+        "meaning": "to begin"
+      },
+      "sentence": {
+        "japanese": "来週からテストが始まる。",
+        "kana": "らいしゅうからてすとがはじまる。",
+        "english": "Tests start next week.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0148",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "始まる",
+        "kana": "はじまる",
+        "meaning": "to begin"
+      },
+      "sentence": {
+        "japanese": "学校は明日から始まります。",
+        "kana": "がっこうはあしたからはじまります。",
+        "english": "School begins tomorrow.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0148",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "始まる",
+        "kana": "はじまる",
+        "meaning": "to begin"
+      },
+      "sentence": {
+        "japanese": "学校は春から始まります。",
+        "kana": "がっこうははるからはじまります。",
+        "english": "School begins in spring.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0149",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "困る",
+        "kana": "こまる",
+        "meaning": "to be worried"
+      },
+      "sentence": {
+        "japanese": "こいつは困ったぞ。",
+        "kana": "こいつはこまったぞ。",
+        "english": "Here's a fine how-do-you-do.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0149",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "困る",
+        "kana": "こまる",
+        "meaning": "to be worried"
+      },
+      "sentence": {
+        "japanese": "非常に困っています。",
+        "kana": "ひじょうにこまっています。",
+        "english": "I am in deep water.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0149",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "困る",
+        "kana": "こまる",
+        "meaning": "to be worried"
+      },
+      "sentence": {
+        "japanese": "彼等はいつも食べる物に困っている。",
+        "kana": "かれらはいつもたべるものにこまっている。",
+        "english": "They are always hard up for food.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0152",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "疲れる",
+        "kana": "つかれる",
+        "meaning": "to get tired"
+      },
+      "sentence": {
+        "japanese": "彼女に疲れているのかと聞かれて彼は「ああ」といった。",
+        "kana": "かのじょにつかれているのかときかれてかれは「ああ」といった。",
+        "english": "He said \"Yeah\" when she asked if he was tired.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0152",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "疲れる",
+        "kana": "つかれる",
+        "meaning": "to get tired"
+      },
+      "sentence": {
+        "japanese": "疲れて足が重かった。",
+        "kana": "つかれてあしがおもかった。",
+        "english": "My legs were leaden from fatigue.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0152",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "疲れる",
+        "kana": "つかれる",
+        "meaning": "to get tired"
+      },
+      "sentence": {
+        "japanese": "目が疲れやすいです。",
+        "kana": "めがつかれやすいです。",
+        "english": "My eyes get tired very easily.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0153",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "掃除",
+        "kana": "そうじする",
+        "meaning": "to clean"
+      },
+      "sentence": {
+        "japanese": "彼女が私の部屋を掃除する。",
+        "kana": "かのじょがわたしのへやをそうじする。",
+        "english": "She will clean my room.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0153",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "掃除",
+        "kana": "そうじする",
+        "meaning": "to clean"
+      },
+      "sentence": {
+        "japanese": "彼は部屋を掃除するように私に言った。",
+        "kana": "かれはへやをそうじするようにわたしにいった。",
+        "english": "He ordered me to clean the room.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0153",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "掃除",
+        "kana": "そうじする",
+        "meaning": "to clean"
+      },
+      "sentence": {
+        "japanese": "彼は部屋の掃除が嫌いだ。",
+        "kana": "かれはへやのそうじがきらいだ。",
+        "english": "He hates cleaning his room.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0154",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "賑やか",
+        "kana": "にぎやか",
+        "meaning": "bustling"
+      },
+      "sentence": {
+        "japanese": "にぎやかなところが好きだ。",
+        "kana": "にぎやかなところがすきだ。",
+        "english": "I like busy places.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0154",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "賑やか",
+        "kana": "にぎやか",
+        "meaning": "bustling"
+      },
+      "sentence": {
+        "japanese": "ここはとてもにぎやかな所です。",
+        "kana": "ここはとてもにぎやかなところです。",
+        "english": "This is a very lively place.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0154",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "賑やか",
+        "kana": "にぎやか",
+        "meaning": "bustling"
+      },
+      "sentence": {
+        "japanese": "隣の教室はとてもにぎやかです。",
+        "kana": "となりのきょうしつはとてもにぎやかです。",
+        "english": "It's very lively in the class next door.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0154",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "賑やか",
+        "kana": "にぎやか",
+        "meaning": "bustling"
+      },
+      "sentence": {
+        "japanese": "にぎやかなところが好きだ。",
+        "kana": "にぎやかなところがすきだ。",
+        "english": "I like busy places.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0154",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "賑やか",
+        "kana": "にぎやか",
+        "meaning": "bustling"
+      },
+      "sentence": {
+        "japanese": "ここはとてもにぎやかな所です。",
+        "kana": "ここはとてもにぎやかなところです。",
+        "english": "This is a very lively place.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0154",
+      "example_index": 5,
+      "target_vocab": {
+        "kanji": "賑やか",
+        "kana": "にぎやか",
+        "meaning": "bustling"
+      },
+      "sentence": {
+        "japanese": "隣の教室はとてもにぎやかです。",
+        "kana": "となりのきょうしつはとてもにぎやかです。",
+        "english": "It's very lively in the class next door.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0156",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "来週",
+        "kana": "らいしゅう",
+        "meaning": "next week"
+      },
+      "sentence": {
+        "japanese": "来週また会いたい。",
+        "kana": "らいしゅうまたあいたい。",
+        "english": "I'd like to see you again next week.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0156",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "来週",
+        "kana": "らいしゅう",
+        "meaning": "next week"
+      },
+      "sentence": {
+        "japanese": "来週の今日は学校は休みだ。",
+        "kana": "らいしゅうのこんにちはがっこうはやすみだ。",
+        "english": "There will be no school a week from today.",
+        "source": "tatoeba"
+      }
+    }
+  ]
+}

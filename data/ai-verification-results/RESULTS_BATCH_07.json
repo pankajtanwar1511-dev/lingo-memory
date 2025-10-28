@@ -1,0 +1,754 @@
+[
+  {
+    "card_id": "n5_vocab_0105",
+    "example_index": 4,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "はじめて appears as adverb meaning 'for the first time'",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: に particle, ta-form 会った, の nominalizer with は particle, question word いつ, です copula, か question particle. Basic N5 question structure.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Nominalizer の with question (5). Vocabulary: Common N5 words (4). Length: Medium (4). Cultural: Universal (2). Average: 5/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example with clear usage of はじめて as simple adverb."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0105",
+    "example_index": 5,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "はじめて appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: に particle, ta-form 来た, の nominalizer with は particle, はじめて, です copula, か question particle. Standard N5 question.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Nominalizer の with copula (5). Vocabulary: Common words (4). Length: Medium (4). Cultural: Universal (2). Average: 5/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Clear and simple usage of はじめて."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0106",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "風邪 appears meaning 'cold/flu'",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: で particle (reason/cause), が particle, i-adjective 痛い. Simple statement.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Cause-effect with で (4). Vocabulary: Body/illness words (4). Length: Short (3). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example demonstrating causative で particle."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0106",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "風邪 appears as the subject",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: です copula, ね sentence-final particle. Very basic statement.",
+      "difficulty_rating": 2,
+      "difficulty_notes": "Grammar: Simple copula (2). Vocabulary: Single word (1). Length: Very short (1). Cultural: Universal illness (2). Average: 2/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent beginner N5 example. Very simple and clear."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0106",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "風邪 appears with causative で particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている form (休んでます - is resting/taking time off), which is present continuous. This is typically N4+ grammar.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Present continuous (7). Vocabulary: Common words (3). Length: Short (3). Cultural: Universal (2). Average: 6/10",
+      "recommendation": "REVIEW",
+      "overall_notes": "Uses ている which is borderline N4+. May be too advanced for strict N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0107",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "赤い appears as i-adjective modifying スカート",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている form (はいていた - was wearing), which is past continuous/state. This is typically N4+ grammar.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Past continuous/state (7). Vocabulary: Clothing terms (4). Length: Short (3). Cultural: Universal (2). Average: 6/10",
+      "recommendation": "REVIEW",
+      "overall_notes": "Uses ていた which is borderline N4+. May be acceptable for describing wearing state but risky."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0107",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "赤い appears modifying ネクタイ",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: を particle, ta-form 買いました (bought). Simple past tense statement.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple past (3). Vocabulary: Common N5 words (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Simple and clear past tense."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0107",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "赤い appears modifying 服",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている form (着ていた - was wearing), which is past continuous/state. This is typically N4+ grammar.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Past continuous/state (7). Vocabulary: Common words (3). Length: Short (3). Cultural: Universal (2). Average: 6/10",
+      "recommendation": "REVIEW",
+      "overall_notes": "Uses ていた which is borderline N4+. Risky for strict N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0108",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "甘い appears as i-adjective modifying もの",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: 何か (something), が particle, 欲しい (want). Standard N5 desire expression.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Desire expression (4). Vocabulary: Common words (3). Length: Short (3). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Clear use of 欲しい pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0108",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "甘い appears with figurative meaning (lenient/indulgent) rather than literal sweet",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, の possessive, に particle, i-adjective 甘い. Simple statement.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Simple statement (3). Vocabulary: Abstract/figurative use of 甘い (7). Length: Medium (4). Cultural: Universal concept but figurative (5). Average: 6/10",
+      "recommendation": "REVIEW",
+      "overall_notes": "While grammar is N5, the figurative meaning of 甘い (lenient/indulgent) may be too advanced for N5 learners who typically learn the literal 'sweet' meaning first."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0108",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "甘い appears modifying もの (things)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, が particle, 好きだ (like). Standard preference statement.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple preference (3). Vocabulary: Common N5 words (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Simple and clear."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0109",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "西 appears in the sentence along with 東",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, も~も (neither...nor with negative), わかりません (don't know). Basic N5 structure.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Negative with も~も (5). Vocabulary: Direction words (4). Length: Medium (4). Cultural: Directional concepts (3). Average: 5/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example demonstrating directional vocabulary."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0109",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "西 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, に particle (location), あります (exists). Standard existence sentence.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Basic existence (3). Vocabulary: Direction and location (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Simple location statement."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0110",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "東 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, に particle, あります (exists). Basic location sentence.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Basic existence (3). Vocabulary: Direction words (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Simple and clear."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0110",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "東 appears in the phrase 東の窓",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: の possessive, から particle, が particle, verb 入る (enter). Simple sentence.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple statement (3). Vocabulary: Direction and household (4). Length: Medium (4). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example with clear directional usage."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0111",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "南 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, に particle, あります (exists). Basic location sentence.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Basic existence (3). Vocabulary: Direction words (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Simple location statement."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0111",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "南 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, に particle (direction), 向く (face/turn toward) dictionary form. Simple statement.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple statement (3). Vocabulary: Direction and position (4). Length: Short (3). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Clear directional usage."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0112",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "北 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, に particle, あります (exists). Basic location sentence.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Basic existence (3). Vocabulary: Direction and geography (3). Length: Short (2). Cultural: Geographic knowledge (3). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Simple and clear."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0112",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "北 appears in the phrase 北の窓",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: の possessive, を particle, て-form + ください (please). Standard N5 request.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Te-form request (4). Vocabulary: Direction and action words (3). Length: Short (3). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Standard request pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0113",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "左 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, に particle, あります (exists). Basic location sentence.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Basic existence (3). Vocabulary: Direction words (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Clear and simple."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0113",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "左 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: を particle (path/route), dictionary form 行く (go). Simple directional instruction.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple instruction (3). Vocabulary: Direction words (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent N5 example. Simple directional instruction."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0114",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "右 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, に particle, あります (exists). Basic location sentence.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Basic existence (3). Vocabulary: Direction words (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Simple location statement."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0114",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "右 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: を particle (path), dictionary form 行く. Simple instruction.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple instruction (3). Vocabulary: Direction words (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent N5 example. Clear and simple."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0115",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "外 appears as がい in 外国人",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, です copula. Simple statement.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple copula (3). Vocabulary: Common N5 compound (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Clear usage of 外 in compound word."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0115",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "外 appears as そと meaning 'outside'",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, i-adjective 寒い, です. Simple declarative.",
+      "difficulty_rating": 2,
+      "difficulty_notes": "Grammar: Simple adjective statement (2). Vocabulary: Basic weather (2). Length: Very short (1). Cultural: Universal (2). Average: 2/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent beginner N5 example. Very simple and clear."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0116",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "作る appears as dictionary form",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: を particle, が particle, 好きだ. The nominalizer usage with の and が is N5 level.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Nominalizer with preference (5). Vocabulary: Common words (4). Length: Medium (4). Cultural: Universal (2). Average: 5/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Standard preference pattern with verbs."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0116",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "作る appears in the phrase 'to make things'",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: を particle, 前に (before), imperative form 作れ. While imperative forms can be direct, つくれ is acceptable as basic N5.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Before construction + imperative (6). Vocabulary: Abstract 人をつくる concept (7). Length: Medium (5). Cultural: Japanese proverb/saying (6). Average: 6/10",
+      "recommendation": "REVIEW",
+      "overall_notes": "While grammar is technically N5, this is a philosophical proverb that may be too abstract for beginner learners. The concept of 'making people' is culturally specific."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0117",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "UNCLEAR",
+      "target_vocab_notes": "The target vocab is 風 (かぜ - wind), but the sentence uses かぜ to mean 'cold/flu' (風邪). This is a different word with different kanji. The sentence is about having a cold, not about wind.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly for the sentence content",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: time word きょう, で particle (reason), を particle, ta-form 休みました. Standard N5 structure.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Past tense with reason (4). Vocabulary: Common words (3). Length: Medium (4). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "REJECT",
+      "overall_notes": "Wrong vocabulary - this sentence is about 風邪 (cold/flu), not 風 (wind). The target vocabulary for 'wind' does not appear in this sentence."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0117",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "風 appears meaning 'wind'",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains うえに (in addition to/moreover), which is an N3/N4 conjunction pattern used to add information.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: N4 conjunction うえに (8). Vocabulary: Weather words (4). Length: Medium (5). Cultural: Universal (2). Average: 7/10",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 grammar pattern うえに. Too advanced for N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0117",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "風 appears in the phrase 風のように (like the wind)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: また (again), いつか (someday), の particle, ように (like/as), dictionary form 走る, んだ explanatory ending. While んだ is slightly informal, it's acceptable for N5.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Simile pattern with んだ (6). Vocabulary: Common words (4). Length: Medium (5). Cultural: Universal metaphor (3). Average: 6/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 level. The ように simile pattern is taught at N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0117",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "風 appears as the subject",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: が particle, まだ (still), adverb form 強く, masu-form 吹きます. Simple statement.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Simple statement with adverb (4). Vocabulary: Weather words (4). Length: Short (3). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Clear and appropriate."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0118",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "少し appears in the phrase もう少し (a little more)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: もう少し (a little more), の方へ (toward), よう (exclamation). The structure is acceptable for N5.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Directional instruction (5). Vocabulary: Direction words (4). Length: Short but with punctuation (4). Cultural: Universal (2). Average: 5/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Natural directional instruction."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0118",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "少し appears in the sentence",
+      "kana_accuracy": "MAJOR_ERROR",
+      "kana_notes": "The kana shows 'こどもとおるが' but the Japanese has '子ども達が'. Should be 'こどもたちが'. The reading is completely wrong - shows とおる instead of たち.",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: には particle combination, ta-form いた (existed). Basic past existence.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Past existence (4). Vocabulary: Common words (3). Length: Short (3). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "REJECT",
+      "overall_notes": "Major kana error - '達' is read as とおる instead of たち. This is a significant mistake."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0118",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "少し appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, と particle (quotation), ta-form 言った. Standard quotation pattern with と is N5.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Quotation with と (5). Vocabulary: Common words (4). Length: Medium (5). Cultural: Universal (2). Average: 5/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Standard quotation pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0118",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "すこし appears in the phrase すこしも (not at all)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, すこしも~ない (not at all), nakatta form 疲れなかった. This negative emphasis pattern is N5 level.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Emphatic negative (5). Vocabulary: Common words (4). Length: Short (3). Cultural: Universal (2). Average: 5/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. The すこしも~ない pattern is taught at N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0119",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "大学 appears in the compound 大学生 (university student)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: の possessive, は particle, です copula. Simple statement.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple copula (3). Vocabulary: Family and education (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Clear and simple."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0119",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "大学 appears in 大学生",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, です copula. Very simple statement.",
+      "difficulty_rating": 2,
+      "difficulty_notes": "Grammar: Simple copula (2). Vocabulary: Basic occupation (2). Length: Very short (1). Cultural: Universal (2). Average: 2/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent beginner N5 example. Very simple."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0119",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "大学 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている form (出ている - has graduated), which is present perfect continuous. This is typically N4+ grammar.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Present perfect with ている (7). Vocabulary: Education term (4). Length: Short (3). Cultural: Universal (2). Average: 6/10",
+      "recommendation": "REVIEW",
+      "overall_notes": "Uses ている which is borderline N4+. May be too advanced for strict N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0120",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "シャツ appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている form (着ている - are wearing), which is present continuous/state. Also, あべこべに is a somewhat advanced adverb. This is typically N4+ grammar.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Grammar: Present continuous (7). Vocabulary: Advanced adverb あべこべ (7). Length: Medium (5). Cultural: Universal (2). Average: 7/10",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains ている (N4+) and advanced vocabulary あべこべ. Too advanced for N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0120",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "シャツ appears in the sentence",
+      "kana_accuracy": "MAJOR_ERROR",
+      "kana_notes": "The kana shows 'すうっときた' but the Japanese has 'すうっと着た'. The verb is 着る (to wear), not 来る (to come). This is a reading error - should be きた for 着た.",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: そのそば (near that), で particle, を particle, ta-form. The mimetic すうっと is advanced but grammar structure is N5.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Simple past (4). Vocabulary: Mimetic word すうっと (6). Length: Medium (4). Cultural: Universal (2). Average: 5/10",
+      "recommendation": "REJECT",
+      "overall_notes": "Major kana error and uses advanced mimetic expression. Not appropriate for N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0120",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "シャツ appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている form (きている - wears/is wearing), which is present continuous/habitual state. This is typically N4+ grammar.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Grammar: Habitual state with ている (7). Vocabulary: Common words (3). Length: Medium (5). Cultural: Universal (2). Average: 6/10",
+      "recommendation": "REVIEW",
+      "overall_notes": "Uses ている which is borderline N4+. May be too advanced for strict N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0121",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "病院 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: へ particle, と particle (with), に particle, volitional ましょう. The ましょう form for suggestions is basic N5.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Grammar: Volitional suggestion (4). Vocabulary: Common words (4). Length: Medium (4). Cultural: Universal (2). Average: 4/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Standard ましょう suggestion pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0121",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "病院 appears as the subject",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: は particle, から particle, i-adjective 近い. Simple location description.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple location (3). Vocabulary: Common words (3). Length: Short (2). Cultural: Universal (2). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Clear and simple."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0121",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "病院 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: の possessive, にある (located at), あの (that), は particle, なん (what), です copula, か question particle. Standard N5 question structure.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Multiple clauses with relative construction (6). Vocabulary: Building/location words (4). Length: Long (6). Cultural: Universal (2). Average: 5/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example, though slightly complex. All grammar elements are within N5 range."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0122",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "会社 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: 明日 (tomorrow), で particle (location), ね sentence-final particle. Simple, casual statement.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Grammar: Simple statement (3). Vocabulary: Common workplace word (3). Length: Very short (2). Cultural: Workplace context (3). Average: 3/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect N5 example. Simple and natural."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0122",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "会社 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: て-form 忙しくて (reason/cause), に particle (location), いる (exist), んだ explanatory ending. While んだ is slightly informal, it's acceptable for N5.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Te-form reason with いる (5). Vocabulary: Common words (4). Length: Short (3). Cultural: Workplace (3). Average: 5/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. The て-form for reason is basic N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0122",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "会社 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches correctly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses N5 patterns: て-form 忙しくて (reason), に particle, います (polite exist). Same pattern as previous but polite form.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Grammar: Te-form reason (5). Vocabulary: Common words (4). Length: Short (3). Cultural: Workplace (3). Average: 5/10",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example. Standard reason pattern with て-form."
+    }
+  }
+]

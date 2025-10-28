@@ -1,0 +1,690 @@
+[
+  {
+    "card_id": "n5_vocab_0281",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "動物 appears in 動物園 (zoo). While it's part of a compound, the target vocabulary is clearly present and recognizable.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: かれらはどうぶつえんへいった。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Simple past tense sentence using: は particle, へ particle, た form (行った). All N5 grammar.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Mid N5. Simple grammar structure (subject-location-verb), common vocabulary (they, zoo, went), straightforward past tense. Slightly elevated due to かれら (they) and compound word 動物園.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean N5 example with target vocabulary clearly present in natural context."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0282",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "切符 appears clearly in the sentence.",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "Error in kana: おきわすれた should be おきわすれた. The kana appears correct on review.",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains 置き忘れた (okiwasureta - left and forgot), which is a complex compound verb. While 忘れる is N5, the combination 置き忘れる is more advanced.",
+      "difficulty_rating": 8,
+      "difficulty_notes": "Advanced N5 or borderline N4. Complex compound verb, longer sentence structure, and abstract concept of forgetting something somewhere.",
+      "recommendation": "REJECT",
+      "overall_notes": "Compound verb 置き忘れる is too complex for N5 learners despite individual components being N5 vocabulary."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0282",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "きっぷ appears at the beginning of the sentence.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: きっぷをてにいれてください。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: を particle, てください (te-form + kudasai for polite requests), 手に入れて (te-form). All N5 patterns.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-high N5. Idiomatic expression 手に入れる (to obtain) is more abstract than simple verbs. Request form is N5 but the vocabulary is slightly elevated.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Acceptable N5 example though 手に入れる is somewhat idiomatic. The grammar is clearly N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0282",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "切符 appears at the beginning of the sentence.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: きっぷをみせてください。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: を particle, te-form (見せて), ください (polite request). All N5 grammar.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Low N5. Simple polite request structure, common verb 見せる, straightforward meaning. Perfect beginner sentence.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent N5 example. Simple, clear, practical, and commonly used phrase."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0282",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "きっぷ appears at the beginning in hiragana form.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: きっぷって、どこでかえるの？",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains potential form かえる (can buy) from 買う. The potential form (られる/える) is N4 grammar. Also uses って quotation particle which is casual but acceptable.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Above N5 due to potential form. Otherwise simple question structure.",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 potential form かえる (can buy). Should use どこで買うの or どこで買いますか instead."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0284",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "呼ぶ appears in conditional form 呼べば.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: あなたがよべば、かれはくるでしょう。",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ば conditional form (呼べば - if you call). Conditional forms (ば、たら、なら、と) are N4 grammar.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "N4 level due to conditional. Also uses でしょう (conjecture), which is borderline.",
+      "recommendation": "REJECT",
+      "overall_notes": "Clear N4 grammar with ば conditional form. Does not meet N5 criteria."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0284",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "呼ぶ appears in te-form 呼んで.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: かのじょはせいとをよんでへやへいらせた。",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains causative form 入らせた (iraseta - made enter). Causative forms (させる/せる) are N4 grammar.",
+      "difficulty_rating": 9,
+      "difficulty_notes": "Advanced N4. Complex causative grammar, longer sentence, multiple clauses.",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 causative form. Far too advanced for N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0284",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "呼ぶ appears at the end in dictionary form.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: かれらはわれわれをもんだいじとよぶ。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: は particle, を particle, と particle (quotative/naming), dictionary form verb. All N5 grammar.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Upper N5. Complex sentence structure with naming pattern (X を Y と呼ぶ). Vocabulary like 我々 and 問題児 is more advanced. Structure is challenging for beginners.",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar is N5 but vocabulary (我々、問題児) and abstract concept push difficulty high. Borderline for N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0285",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "体 appears as お体 (polite form with 御).",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: どうぞおからだをたいせつに。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: どうぞ (please), を particle, に particle. Grammar is N5. Elliptical sentence (omitted してください).",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-high N5. Set phrase with polite お prefix. Somewhat formal/idiomatic expression. Missing verb makes it slightly abstract.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Common polite expression. Grammar is N5 though the elliptical structure is sophisticated."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0285",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "体 appears in その細っこい体.",
+      "kana_accuracy": "MAJOR_ERROR",
+      "kana_notes": "Error: そのこまっこいからだのどこにいるんだ should be そのほそっこいからだのどこにはいるんだ. 細っこい should be ほそっこい not こまっこい. Also いるんだ should likely be はいる (to enter/fit).",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: の particles, question word どこ, んだ (explanatory). Grammar patterns are N5.",
+      "difficulty_rating": 8,
+      "difficulty_notes": "Advanced N5. Abstract rhetorical question, idiomatic expression, colloquial speech patterns.",
+      "recommendation": "REJECT",
+      "overall_notes": "Major kana error (こまっこい instead of ほそっこい). Also very colloquial and idiomatic for N5 learners."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0285",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "体 appears in 体の弱い (weak of body).",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: かれはからだのよわいこどもだった。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: は particle, の particle, i-adjective (弱い), た-form of copula (だった). All N5 grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Noun modification pattern (体の弱い子供), past tense copula, descriptive sentence. Straightforward but not beginner level.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with natural noun modification pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0288",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "大人 (おとな) appears in hiragana.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: わたしもとおからずおとなになるだろう。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: も particle, になる (to become), だろう (conjecture). While だろう is slightly advanced, it's acceptable N5.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Upper N5. Abstract expression 遠からず (before long), conjecture form だろう, and the concept of becoming an adult. Complex for beginners.",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar is technically N5 but 遠からず is an advanced expression. The sentence is somewhat literary/formal."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0288",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "大人 appears in 大人びた (adult-like/mature).",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: かのじょはおとなびたじょせいです。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: は particle, な-adjective pattern, です copula. All N5 grammar.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-high N5. 大人びた is a compound expression meaning 'mature/adult-like.' The word 女性 is also slightly formal.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Acceptable N5 example though 大人びた is somewhat sophisticated vocabulary."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0288",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "大人 appears at the beginning in hiragana.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: おとなはこどもにたいしてせきにんをもっています。",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている form (持っています - have/are holding). While ている is sometimes considered borderline N5, this usage is more N4 level expressing continuous state.",
+      "difficulty_rating": 8,
+      "difficulty_notes": "N4 level. Complex abstract concept (adults have responsibility toward children), ている form, formal vocabulary (責任).",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains ている form which is borderline, plus abstract vocabulary like 責任 and に対して makes this too advanced."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0289",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "多分 appears at the beginning.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: たぶんそうです。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Simple copula sentence with です. All N5 grammar.",
+      "difficulty_rating": 2,
+      "difficulty_notes": "Very low N5. Simple two-word response with adverb + copula. Perfect beginner sentence.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent simple N5 example. Very practical and easy to understand."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0289",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "多分 appears in the middle of the sentence.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: かれはたぶんこないでしょう。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: は particle, nai-form (来ない), でしょう (conjecture). All N5 grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Negative form with でしょう conjecture. Straightforward sentence structure.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with common pattern of probability + negative."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0289",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "多分 appears in the middle.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: きょうはたぶんあめがふるでしょう。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: は particle, が particle, dictionary form (降る), でしょう (conjecture). All N5 grammar.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Low-mid N5. Weather prediction sentence with common pattern. Topic marker + probability adverb + subject + verb + conjecture.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent N5 example for weather predictions with probability."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0290",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "台所 appears at the beginning.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: だいどころからおいしそうなにおいがします。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: から particle, そう (seems/appears), な particle, が particle, します (polite). Grammar is N5.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Upper N5. Uses そう form (おいしそう - looks delicious) which is borderline N5. The sentence has multiple modifiers and abstract sensory description.",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar is technically N5 but おいしそう and においがする are more advanced concepts. Borderline for N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0290",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "台所 appears at the beginning.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: だいどころにおさらがたくさんあります。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: に particle (location), が particle, たくさん (many), あります (existence). All N5 grammar.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Low N5. Simple existence sentence with location. Common pattern and straightforward meaning.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent N5 example with basic existence pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0290",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "台所 appears in the middle.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: かのじょはだいどころできゅうけいしている。",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている form (休憩している - is resting). Progressive/continuous ている form is N4 grammar.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "N4 level due to ている form. Otherwise straightforward sentence.",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 ている continuous form. Should use simpler N5 grammar."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0291",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "大丈夫 appears in the middle.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: ぼくはだいじょうぶだよ。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: は particle, な-adjective with だ copula, よ particle. All N5 grammar.",
+      "difficulty_rating": 2,
+      "difficulty_notes": "Very low N5. Simple statement with na-adjective and casual copula. Very practical and common.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent simple N5 example. Very natural and useful."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0291",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "大丈夫 appears at the beginning.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: だいじょうぶです、しんぱいしないで。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: です copula, te-form negative (しないで - don't worry). All N5 grammar.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Low-mid N5. Two clauses but both simple. Common reassurance phrase with negative request.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with practical reassurance pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0291",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "大丈夫 appears in the middle.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: かのじょはいまのところだいじょうぶです。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: は particle, です copula. All N5 grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Expression 今のところ (for now/at the moment) is somewhat idiomatic but acceptable.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Acceptable N5 example. 今のところ is a useful time expression."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0292",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "吹く appears at the end in masu form.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: かぜがまだつよくふきます。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: が particle, まだ (still), i-adjective adverbial form (強く), masu form. All N5 grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Simple sentence with adverb, i-adjective adverbial form, and masu ending. Straightforward weather description.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with weather vocabulary and adverbial form."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0292",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "吹く appears in ている form 吹いている.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: つめたいかぜはうみからふいている。",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている form (吹いている - is blowing). Progressive ている form is N4 grammar.",
+      "difficulty_rating": 6,
+      "difficulty_rating_notes": "N4 level due to ている form.",
+      "recommendation": "REJECT",
+      "overall_notes": "Contains N4 ている continuous form. Too advanced for N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0292",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "吹く appears at the end in dictionary form.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: あしたはあしたのかぜがふく。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: は particle, の particle, が particle, dictionary form. All N5 grammar.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-high N5. This is a proverb/idiom (tomorrow is another day). While grammar is simple, the idiomatic meaning and abstract concept are challenging.",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar is N5 but this is an idiomatic proverb. May be difficult for beginners to understand the metaphorical meaning."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0293",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "足 appears in 四本足 (four legs).",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: いぬはよんほんあしである。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: は particle, である (formal copula). While である is formal, it's acceptable N5.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Counter 本 for cylindrical objects, formal copula である. Factual statement structure.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with counter practice. である is more formal but appropriate."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0293",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "足 appears in the middle.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: つかれてあしがおもかった。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: te-form (疲れて), が particle, i-adjective past (重かった). All N5 grammar.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-high N5. Te-form expressing cause/reason (疲れて), idiomatic expression 足が重い. Grammar is N5 but the idiom is somewhat advanced.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Grammar is clearly N5. The idiomatic use of 足が重い (heavy legs from fatigue) is acceptable."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0293",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "足 appears in 足が重い idiom.",
+      "kana_accuracy": "MAJOR_ERROR",
+      "kana_notes": "Error: かのところにいくのはあしがおもい should be かれのところにいくのはあしがおもい. The kana shows かの but the kanji is 彼 which should be かれ.",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: の particle, nominalizer (行くの), は particle, が particle, i-adjective. Grammar is N5.",
+      "difficulty_rating": 8,
+      "difficulty_notes": "Upper N5 or N4. Highly idiomatic expression 足が重い meaning 'reluctant to go.' The nominalization and abstract meaning are challenging.",
+      "recommendation": "REJECT",
+      "overall_notes": "Major kana error (かの instead of かれ). Also highly idiomatic meaning that's difficult for beginners."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0294",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "箱 appears in the middle.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: おやまあ、なんておおきなはこなの。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: なんて (what a), な-adjective (大きな), なの sentence ending. All N5 grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Exclamatory sentence with なんて (what a). Natural expression but slightly emotional/expressive tone.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with exclamatory pattern. Natural and expressive."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0294",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "箱 appears in the middle.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: かのじょはそのはこをてーぶるのうえにおいた。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: は particle, を particle, の particle, location (テーブルの上に), ta-form (置いた). All N5 grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Longer sentence with multiple particles, location phrase, past tense. Good practice sentence.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent N5 example with clear object-location-verb pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0294",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "箱 appears in the middle in 箱の開け方.",
+      "kana_accuracy": "MAJOR_ERROR",
+      "kana_notes": "Error: かれははこのひらけほうをわかった should be かれははこのあけかたをわかった. The kana shows ひらけほう but 開け方 should be あけかた.",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: は particle, の particle, を particle, ta-form (わかった). Grammar is N5. The 方 (way/method) pattern is acceptable N5.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-high N5. Uses 方 pattern to express 'way of doing.' Slightly abstract concept but acceptable N5.",
+      "recommendation": "REJECT",
+      "overall_notes": "Major kana error. The reading should be あけかた not ひらけほう."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0295",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "八 appears in the idiom 十中八九 (8 or 9 times out of 10).",
+      "kana_accuracy": "MAJOR_ERROR",
+      "kana_notes": "Error: かれはじゅっちゅうはっくくるだろう has an error. 十中八九 should be じゅっちゅうはっく not じゅっちゅうはっくく. There's an extra く.",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: は particle, dictionary form (来る), だろう (conjecture). Grammar is N5.",
+      "difficulty_rating": 8,
+      "difficulty_notes": "Upper N5. Idiomatic expression 十中八九 (9 times out of 10) is quite advanced. Abstract probability concept.",
+      "recommendation": "REJECT",
+      "overall_notes": "Kana error (extra く) and highly idiomatic expression that's too advanced for most N5 learners."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0295",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "八 appears in 十中八九.",
+      "kana_accuracy": "MAJOR_ERROR",
+      "kana_notes": "Error: じゅっちゅうはっく、かれはいちいになるだろう. The idiom 十中八九 should be じゅっちゅうはっく but this is missing the final 九. Should be じゅっちゅうはっく not じゅっちゅうはっく with a comma.",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: は particle, になる (to become), だろう (conjecture). Grammar is N5.",
+      "difficulty_rating": 8,
+      "difficulty_notes": "Upper N5. Same idiomatic expression issue as previous example. Very advanced idiom.",
+      "recommendation": "REJECT",
+      "overall_notes": "Kana error with the idiom and overly advanced idiomatic expression for N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0295",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "八 appears in the number sequence.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: ひとつ、ふたつ、みっつ、よつ、いつつ、むつ、ななつ、やつ、ここのつ、じゅう。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Simple counting sequence. N5 vocabulary and pattern.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Low N5. Basic counting practice. Perfect for beginners learning Japanese counting.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent N5 example for teaching counting. Clear and practical."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0296",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "朝 appears in 朝から晩まで (from morning to night).",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: もうあさからばんまではたらいてくたくただよ。",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ている form (働いて). The te-form here connects to クタクタだ, but the overall pattern is complex. Also クタクタ is onomatopoeia that's quite colloquial.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "N4 level. Complex sentence with から~まで pattern, te-form connection, onomatopoeia (クタクタ), and colloquial tone.",
+      "recommendation": "REJECT",
+      "overall_notes": "Too complex for N5. Contains colloquial onomatopoeia and complex te-form usage."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0296",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "朝 appears in 明日の朝 (tomorrow morning).",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: あしたのあさ、でんわするよ。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: の particle, dictionary form (する), よ particle. All N5 grammar.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Low N5. Simple future action statement with time expression. Very practical and clear.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent N5 example. Simple, practical, and natural."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0296",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "朝 appears in 明日の朝.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: あしたのあさわたしにあうのをわすれないで。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: の particle, に particle, nominalizer (会うの), を particle, te-form negative (忘れないで). All N5 grammar.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-high N5. Nominalization pattern (会うの), negative te-form request. Multiple particles and clauses but all N5.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with nominalization and negative request pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0297",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "一昨日 appears in hiragana form おととい.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: おとといそこへいきました。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: へ particle, ta-form masu (行きました). All N5 grammar.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Low N5. Simple past tense statement with time and location. Straightforward and practical.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent simple N5 example for past tense with time expressions."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0297",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "UNCLEAR",
+      "target_vocab_notes": "一昨日 appears but in an idiom おとといきやがれ (Get lost! / Don't come back!). This is a vulgar expression where おととい is used idiomatically, not literally meaning 'day before yesterday.'",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: おとといきやがれ！",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains やがる form (来やがれ), which is a rude/vulgar auxiliary verb. This is beyond N5 and inappropriate for learners.",
+      "difficulty_rating": 10,
+      "difficulty_notes": "Way beyond N5. Vulgar slang expression with complex grammar and idiomatic usage. Not appropriate for learners.",
+      "recommendation": "REJECT",
+      "overall_notes": "Completely inappropriate for N5. Vulgar expression with N4+ grammar (やがる) and idiomatic usage."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0297",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "一昨日 appears as おとつい (dialectical variant of おととい).",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: おとついかれにあったよ. Note: おとつい is a variant pronunciation of おととい.",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: に particle, ta-form (会った), よ particle. All N5 grammar.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Low-mid N5. Simple past tense with time and person. Uses dialectical おとつい instead of standard おととい.",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar is fine but おとつい is dialectical. Standard is おととい. May confuse learners."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0297",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "一昨日 appears as おととい.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: おとといそこへいきました。",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses: へ particle, masu ta-form (行きました). All N5 grammar.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Low N5. Simple past tense sentence. Same as example_index 0.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Duplicate of example_index 0. Good N5 example but redundant."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0297",
+    "example_index": 4,
+    "verification": {
+      "target_vocab_present": "UNCLEAR",
+      "target_vocab_notes": "Same as example_index 1 - idiomatic vulgar expression.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match: おとといきやがれ！",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains やがる form - vulgar auxiliary verb. N4+ grammar and inappropriate.",
+      "difficulty_rating": 10,
+      "difficulty_notes": "Way beyond N5. Vulgar slang.",
+      "recommendation": "REJECT",
+      "overall_notes": "Duplicate of example_index 1. Completely inappropriate for N5."
+    }
+  }
+]

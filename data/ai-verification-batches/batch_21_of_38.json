@@ -1,0 +1,768 @@
+{
+  "batch_number": 21,
+  "total_batches": 38,
+  "examples_in_batch": 50,
+  "verification_instructions": {
+    "task": "Verify each example for N5 appropriateness",
+    "check": [
+      "1. Does sentence contain the target vocabulary word?",
+      "2. Does kana reading match the Japanese sentence correctly?",
+      "3. Does sentence use ONLY N5 grammar patterns?",
+      "4. Rate difficulty from 1-10 (within N5 range)",
+      "5. Recommend: accept/review/reject"
+    ],
+    "output_format": "For each example, return JSON with: target_vocab_present, kana_accuracy, n5_grammar_check, difficulty_rating, recommendation"
+  },
+  "examples": [
+    {
+      "card_id": "n5_vocab_0351",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "帽子",
+        "kana": "ぼうし",
+        "meaning": "hat"
+      },
+      "sentence": {
+        "japanese": "帽子をとってください。",
+        "kana": "ぼうしをとってください。",
+        "english": "Please take off your hat.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0351",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "帽子",
+        "kana": "ぼうし",
+        "meaning": "hat"
+      },
+      "sentence": {
+        "japanese": "彼女は新しい帽子を欲しがっている。",
+        "kana": "かのじょはあたらしいぼうしをほっしがっている。",
+        "english": "She wants a new hat.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0351",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "帽子",
+        "kana": "ぼうし",
+        "meaning": "hat"
+      },
+      "sentence": {
+        "japanese": "彼女は私たちにきれいな帽子を見せた。",
+        "kana": "かのじょはわたしたちにきれいなぼうしをみせた。",
+        "english": "She showed us a beautiful hat.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0351",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "帽子",
+        "kana": "ぼうし",
+        "meaning": "hat"
+      },
+      "sentence": {
+        "japanese": "この部屋ではぼうしを取ってください。",
+        "kana": "このへやではぼうしをとってください。",
+        "english": "Please take off your hat here in this room.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0352",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "丈夫",
+        "kana": "じょうぶ",
+        "meaning": "strong"
+      },
+      "sentence": {
+        "japanese": "私は前と同じようにじょうぶです。",
+        "kana": "わたしはまえとおなじようにじょうぶです。",
+        "english": "I'm as strong as before.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0352",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "丈夫",
+        "kana": "じょうぶ",
+        "meaning": "strong"
+      },
+      "sentence": {
+        "japanese": "この橋はじょうぶそうだ。",
+        "kana": "このはしはじょうぶそうだ。",
+        "english": "This bridge looks secure.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0352",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "丈夫",
+        "kana": "じょうぶ",
+        "meaning": "strong"
+      },
+      "sentence": {
+        "japanese": "彼はとても丈夫だ。",
+        "kana": "かれはとてもじょうぶだ。",
+        "english": "He is strong as a horse.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0352",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "丈夫",
+        "kana": "じょうぶ",
+        "meaning": "strong"
+      },
+      "sentence": {
+        "japanese": "私は前と同じようにじょうぶです。",
+        "kana": "わたしはまえとおなじようにじょうぶです。",
+        "english": "I'm as strong as before.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0352",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "丈夫",
+        "kana": "じょうぶ",
+        "meaning": "strong"
+      },
+      "sentence": {
+        "japanese": "この橋はじょうぶそうだ。",
+        "kana": "このはしはじょうぶそうだ。",
+        "english": "This bridge looks secure.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0353",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "入れる",
+        "kana": "いれる",
+        "meaning": "to put in"
+      },
+      "sentence": {
+        "japanese": "何か飲み物をいれましょうか。",
+        "kana": "なにかのみものをいれましょうか。",
+        "english": "Can I get you something to drink?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0353",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "入れる",
+        "kana": "いれる",
+        "meaning": "to put in"
+      },
+      "sentence": {
+        "japanese": "僕は君の欲しいものはなんでも手に入れた。",
+        "kana": "ぼくはくんのほしいものはなんでもてにいれた。",
+        "english": "I've got everything that you want.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0353",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "入れる",
+        "kana": "いれる",
+        "meaning": "to put in"
+      },
+      "sentence": {
+        "japanese": "彼女は今台所でコーヒーをいれています。",
+        "kana": "かのじょはいまだいどころでこーひーをいれています。",
+        "english": "She is now making coffee in the kitchen.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0356",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "遠い",
+        "kana": "とおい",
+        "meaning": "far"
+      },
+      "sentence": {
+        "japanese": "私も遠からずおとなになるだろう。",
+        "kana": "わたしもとおからずおとなになるだろう。",
+        "english": "I will also become a grown-up before long.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0356",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "遠い",
+        "kana": "とおい",
+        "meaning": "far"
+      },
+      "sentence": {
+        "japanese": "ここから遠いの？",
+        "kana": "ここからとおいの？",
+        "english": "Is it far from here?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0356",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "遠い",
+        "kana": "とおい",
+        "meaning": "far"
+      },
+      "sentence": {
+        "japanese": "歩くと遠いですか。",
+        "kana": "あるくととおいですか。",
+        "english": "Is it too far to walk?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0357",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "夏休み",
+        "kana": "なつやすみ",
+        "meaning": "summer holiday"
+      },
+      "sentence": {
+        "japanese": "夏休みにどこかへ行きましたか。",
+        "kana": "なつやすみにどこかへいきましたか。",
+        "english": "Did you go anywhere during the summer vacation?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0357",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "夏休み",
+        "kana": "なつやすみ",
+        "meaning": "summer holiday"
+      },
+      "sentence": {
+        "japanese": "この夏休みはどこかへ行くのですか。",
+        "kana": "このなつやすみはどこかへいくのですか。",
+        "english": "Are you going away this summer?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0357",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "夏休み",
+        "kana": "なつやすみ",
+        "meaning": "summer holiday"
+      },
+      "sentence": {
+        "japanese": "彼女は夏休みを待ちかねている。",
+        "kana": "かのじょはなつやすみをまちかねている。",
+        "english": "She can hardly wait for the summer vacation.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0358",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "友達",
+        "kana": "ともだち",
+        "meaning": "friend"
+      },
+      "sentence": {
+        "japanese": "友達はたくさんいますか。",
+        "kana": "ともだちはたくさんいますか。",
+        "english": "Do you have many friends?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0358",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "友達",
+        "kana": "ともだち",
+        "meaning": "friend"
+      },
+      "sentence": {
+        "japanese": "友達と買い物に行った。",
+        "kana": "ともだちとかいものにいった。",
+        "english": "I went shopping with a friend.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0358",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "友達",
+        "kana": "ともだち",
+        "meaning": "friend"
+      },
+      "sentence": {
+        "japanese": "友達が明日家に遊びに来る。",
+        "kana": "ともだちがあしたいえにあそびにくる。",
+        "english": "A friend comes to play at our house tomorrow.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0359",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "横",
+        "kana": "よこ",
+        "meaning": "beside"
+      },
+      "sentence": {
+        "japanese": "さようなら、さよこ！",
+        "kana": "さようなら、さよこ！",
+        "english": "Bye, Sayoko!",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0359",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "横",
+        "kana": "よこ",
+        "meaning": "beside"
+      },
+      "sentence": {
+        "japanese": "あちっ！ 熱いよこのコーヒー！",
+        "kana": "あちっ！ あついよこのこーひー！",
+        "english": "Ow! This coffee is hot!",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0359",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "横",
+        "kana": "よこ",
+        "meaning": "beside"
+      },
+      "sentence": {
+        "japanese": "横に座って。",
+        "kana": "よこにすわって。",
+        "english": "Sit beside me.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0359",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "横",
+        "kana": "よこ",
+        "meaning": "beside"
+      },
+      "sentence": {
+        "japanese": "さようなら、さよこ！",
+        "kana": "さようなら、さよこ！",
+        "english": "Bye, Sayoko!",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0359",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "横",
+        "kana": "よこ",
+        "meaning": "beside"
+      },
+      "sentence": {
+        "japanese": "あちっ！ 熱いよこのコーヒー！",
+        "kana": "あちっ！ あついよこのこーひー！",
+        "english": "Ow! This coffee is hot!",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0360",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "冷たい",
+        "kana": "つめたい",
+        "meaning": "cold to the touch"
+      },
+      "sentence": {
+        "japanese": "もう手が冷たくって。",
+        "kana": "もうてがつめたくって。",
+        "english": "My hand's getting too cold.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0360",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "冷たい",
+        "kana": "つめたい",
+        "meaning": "cold to the touch"
+      },
+      "sentence": {
+        "japanese": "冷たい風は海から吹いている。",
+        "kana": "つめたいかぜはうみからふいている。",
+        "english": "The cold wind is blowing from the sea.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0360",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "冷たい",
+        "kana": "つめたい",
+        "meaning": "cold to the touch"
+      },
+      "sentence": {
+        "japanese": "冷たいなあ。",
+        "kana": "つめたいなあ。",
+        "english": "That's a bit cold.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0361",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "夜",
+        "kana": "よる",
+        "meaning": "evening"
+      },
+      "sentence": {
+        "japanese": "あなたは夜よく寝れませんか。",
+        "kana": "あなたはよるよくねれませんか。",
+        "english": "Don't you sleep well at night?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0361",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "夜",
+        "kana": "よる",
+        "meaning": "evening"
+      },
+      "sentence": {
+        "japanese": "私はなぜか夜の方が元気だ。",
+        "kana": "わたしはなぜかよるのほうがげんきだ。",
+        "english": "For some reason I feel more alive at night.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0361",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "夜",
+        "kana": "よる",
+        "meaning": "evening"
+      },
+      "sentence": {
+        "japanese": "夜は早く寝ます。",
+        "kana": "よるははやくねます。",
+        "english": "I go to bed early at night.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0361",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "夜",
+        "kana": "よる",
+        "meaning": "evening"
+      },
+      "sentence": {
+        "japanese": "新聞によると彼は今日はここに来るらしい。",
+        "kana": "しんぶんによるとかれはこんにちはここにくるらしい。",
+        "english": "According to the newspaper, he will be here today.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0361",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "夜",
+        "kana": "よる",
+        "meaning": "evening"
+      },
+      "sentence": {
+        "japanese": "新聞によると今日は雨が降ります。",
+        "kana": "しんぶんによるとこんにちはあめがおります。",
+        "english": "According to the newspaper, it will rain today.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0362",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "トイレ",
+        "meaning": "toilet"
+      },
+      "sentence": {
+        "japanese": "トイレの水が止まりません。",
+        "kana": "といれのみずがどまりません。",
+        "english": "The toilet won't stop running.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0362",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "トイレ",
+        "meaning": "toilet"
+      },
+      "sentence": {
+        "japanese": "トイレはどちらでしょうか。",
+        "kana": "といれはどちらでしょうか。",
+        "english": "Where's the restroom?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0362",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "トイレ",
+        "meaning": "toilet"
+      },
+      "sentence": {
+        "japanese": "トイレはどこにあるのでしょうか。",
+        "kana": "といれはどこにあるのでしょうか。",
+        "english": "Where is the bathroom?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0363",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "おなか",
+        "meaning": "stomach"
+      },
+      "sentence": {
+        "japanese": "おなかが痛い。",
+        "kana": "おなかがいたい。",
+        "english": "My stomach hurts.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0363",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "おなか",
+        "meaning": "stomach"
+      },
+      "sentence": {
+        "japanese": "おなかペコペコだ。",
+        "kana": "おなかぺこぺこだ。",
+        "english": "I am hungry.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0363",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "おなか",
+        "meaning": "stomach"
+      },
+      "sentence": {
+        "japanese": "おなかが痛いので、病院へ行きます。",
+        "kana": "おなかがいたいので、びょういんへいきます。",
+        "english": "I'm going to the hospital because my stomach hurts.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0364",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "どこ",
+        "meaning": "where"
+      },
+      "sentence": {
+        "japanese": "私の犬は、どこでも私の行くところへついてくる。",
+        "kana": "わたしのいぬは、どこでもわたしのいくところへついてくる。",
+        "english": "My dog follows me wherever I go.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0364",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "どこ",
+        "meaning": "where"
+      },
+      "sentence": {
+        "japanese": "夏休みにどこかへ行きましたか。",
+        "kana": "なつやすみにどこかへいきましたか。",
+        "english": "Did you go anywhere during the summer vacation?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0364",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "どこ",
+        "meaning": "where"
+      },
+      "sentence": {
+        "japanese": "この夏休みはどこかへ行くのですか。",
+        "kana": "このなつやすみはどこかへいくのですか。",
+        "english": "Are you going away this summer?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0365",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "暇",
+        "kana": "ひま",
+        "meaning": "free time"
+      },
+      "sentence": {
+        "japanese": "今晩暇かな？",
+        "kana": "こんばんひまかな？",
+        "english": "Are you free tonight?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0365",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "暇",
+        "kana": "ひま",
+        "meaning": "free time"
+      },
+      "sentence": {
+        "japanese": "明日の夕方はお暇ですか。",
+        "kana": "あしたのゆうがたはおひまですか。",
+        "english": "Are you free tomorrow evening?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0365",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "暇",
+        "kana": "ひま",
+        "meaning": "free time"
+      },
+      "sentence": {
+        "japanese": "彼は明日暇でしょう。",
+        "kana": "かれはあしたひまでしょう。",
+        "english": "He will be free tomorrow.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0365",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "暇",
+        "kana": "ひま",
+        "meaning": "free time"
+      },
+      "sentence": {
+        "japanese": "私は今日はひまです。",
+        "kana": "わたしはこんにちはひまです。",
+        "english": "I'm free today.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0365",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "暇",
+        "kana": "ひま",
+        "meaning": "free time"
+      },
+      "sentence": {
+        "japanese": "今は忙しいが明日はひまになるだろうと彼は言った。",
+        "kana": "いまはいそがしいがあしたはひまになるだろうとかれはいった。",
+        "english": "He said that he was busy then, but that he would be free the next day.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0365",
+      "example_index": 5,
+      "target_vocab": {
+        "kanji": "暇",
+        "kana": "ひま",
+        "meaning": "free time"
+      },
+      "sentence": {
+        "japanese": "明日の晩は、ひま？",
+        "kana": "あしたのばんは、ひま？",
+        "english": "Are you free tomorrow evening?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0366",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "鳴く",
+        "kana": "なく",
+        "meaning": "animal noise. to chirp"
+      },
+      "sentence": {
+        "japanese": "鳥は鳴く。",
+        "kana": "とりはなく。",
+        "english": "Birds sing.",
+        "source": "tatoeba"
+      }
+    }
+  ]
+}

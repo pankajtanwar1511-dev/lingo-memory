@@ -1,0 +1,31 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2020",
+    "lib": ["ES2020"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@/types/*": ["./src/types/*"],
+      "@/store/*": ["./src/store/*"],
+      "@/data/*": ["./src/data/*"],
+      "@/schemas/*": ["./src/schemas/*"],
+      "@/services/*": ["./src/services/*"]
+    }
+  },
+  "include": ["scripts/**/*", "src/types/**/*", "src/lib/**/*", "src/services/**/*", "src/schemas/**/*"],
+  "exclude": ["node_modules", ".next", "out"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}

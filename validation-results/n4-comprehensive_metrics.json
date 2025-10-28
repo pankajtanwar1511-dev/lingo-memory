@@ -1,0 +1,13 @@
+{
+  "total_cards": 632,
+  "cards_with_examples": 449,
+  "cards_without_examples": 183,
+  "cards_with_audio": 632,
+  "total_examples": 2032,
+  "example_coverage_percent": 71.04,
+  "audio_coverage_percent": 100.0,
+  "avg_examples_per_card": 3.22,
+  "error_count": 0,
+  "warning_count": 1751,
+  "pass_rate_percent": 100.0
+}

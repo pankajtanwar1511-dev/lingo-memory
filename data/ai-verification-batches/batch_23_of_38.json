@@ -1,0 +1,768 @@
+{
+  "batch_number": 23,
+  "total_batches": 38,
+  "examples_in_batch": 50,
+  "verification_instructions": {
+    "task": "Verify each example for N5 appropriateness",
+    "check": [
+      "1. Does sentence contain the target vocabulary word?",
+      "2. Does kana reading match the Japanese sentence correctly?",
+      "3. Does sentence use ONLY N5 grammar patterns?",
+      "4. Rate difficulty from 1-10 (within N5 range)",
+      "5. Recommend: accept/review/reject"
+    ],
+    "output_format": "For each example, return JSON with: target_vocab_present, kana_accuracy, n5_grammar_check, difficulty_rating, recommendation"
+  },
+  "examples": [
+    {
+      "card_id": "n5_vocab_0383",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "明日",
+        "kana": "あした",
+        "meaning": "tomorrow"
+      },
+      "sentence": {
+        "japanese": "ではまた明日。",
+        "kana": "ではまたあした。",
+        "english": "See you again tomorrow.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0383",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "明日",
+        "kana": "あした",
+        "meaning": "tomorrow"
+      },
+      "sentence": {
+        "japanese": "はい、あしたは休みます。",
+        "kana": "はい、あしたはやすみます。",
+        "english": "Yeah, I'm going to take tomorrow off.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0383",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "明日",
+        "kana": "あした",
+        "meaning": "tomorrow"
+      },
+      "sentence": {
+        "japanese": "彼はあした来るかな。",
+        "kana": "かれはあしたくるかな。",
+        "english": "I wonder if he'll come tomorrow.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0383",
+      "example_index": 5,
+      "target_vocab": {
+        "kanji": "明日",
+        "kana": "あした",
+        "meaning": "tomorrow"
+      },
+      "sentence": {
+        "japanese": "またあしたね。",
+        "kana": "またあしたね。",
+        "english": "See you tomorrow!",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0384",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ホテル",
+        "meaning": "hotel"
+      },
+      "sentence": {
+        "japanese": "彼女は今ホテルにいる。",
+        "kana": "かのじょはいまほてるにいる。",
+        "english": "She is in her hotel now.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0384",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ホテル",
+        "meaning": "hotel"
+      },
+      "sentence": {
+        "japanese": "彼女はホテルに夜遅く着いた。",
+        "kana": "かのじょはほてるによるおそくついた。",
+        "english": "She got to the hotel late at night.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0384",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ホテル",
+        "meaning": "hotel"
+      },
+      "sentence": {
+        "japanese": "彼らはホテルに着いた。",
+        "kana": "かれらはほてるについた。",
+        "english": "They arrived at the hotel.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0385",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "降りる",
+        "kana": "おりる",
+        "meaning": "to get off"
+      },
+      "sentence": {
+        "japanese": "彼はその駅で降りるように言われた。",
+        "kana": "かれはそのえきでおりるようにいわれた。",
+        "english": "He was told to get off at the station.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0385",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "降りる",
+        "kana": "おりる",
+        "meaning": "to get off"
+      },
+      "sentence": {
+        "japanese": "次が君の降りる駅です。",
+        "kana": "つがくんのおりるえきです。",
+        "english": "The next station is where you get off.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0385",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "降りる",
+        "kana": "おりる",
+        "meaning": "to get off"
+      },
+      "sentence": {
+        "japanese": "バスが止まるまで降りるな。",
+        "kana": "ばすがとまるまでおりるな。",
+        "english": "Don't get off the bus till it stops.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0386",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "重い",
+        "kana": "おもい",
+        "meaning": "heavy"
+      },
+      "sentence": {
+        "japanese": "彼は口が重い。",
+        "kana": "かれはくちがおもい。",
+        "english": "He is a man of few words.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0386",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "重い",
+        "kana": "おもい",
+        "meaning": "heavy"
+      },
+      "sentence": {
+        "japanese": "疲れて足が重かった。",
+        "kana": "つかれてあしがおもかった。",
+        "english": "My legs were leaden from fatigue.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0386",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "重い",
+        "kana": "おもい",
+        "meaning": "heavy"
+      },
+      "sentence": {
+        "japanese": "彼の所に行くのは足が重い。",
+        "kana": "かのところにいくのはあしがおもい。",
+        "english": "I'm reluctant to visit him.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0386",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "重い",
+        "kana": "おもい",
+        "meaning": "heavy"
+      },
+      "sentence": {
+        "japanese": "彼は私たちのパーティーに来るとおもいます。",
+        "kana": "かれはわたしたちのぱーてぃーにくるとおもいます。",
+        "english": "I think he will come to our party.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0386",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "重い",
+        "kana": "おもい",
+        "meaning": "heavy"
+      },
+      "sentence": {
+        "japanese": "このテーブルはおもいです。",
+        "kana": "このてーぶるはおもいです。",
+        "english": "This table is heavy.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0387",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "電車",
+        "kana": "でんしゃ",
+        "meaning": "electric train"
+      },
+      "sentence": {
+        "japanese": "ほら、あなたの乗る電車が来たわ。",
+        "kana": "ほら、あなたののるでんしゃがきたわ。",
+        "english": "Look, here comes your train.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0387",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "電車",
+        "kana": "でんしゃ",
+        "meaning": "electric train"
+      },
+      "sentence": {
+        "japanese": "電車はバスより頻繁に来ます。",
+        "kana": "でんしゃはばすよりひんぱんにきます。",
+        "english": "Trains come more often than buses.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0387",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "電車",
+        "kana": "でんしゃ",
+        "meaning": "electric train"
+      },
+      "sentence": {
+        "japanese": "電車が停まるまで開けないで。",
+        "kana": "でんしゃがとまるまでひらけないで。",
+        "english": "Don't open before the train stops.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0388",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "痛い",
+        "kana": "いたい",
+        "meaning": "painful"
+      },
+      "sentence": {
+        "japanese": "目が痛いです。",
+        "kana": "めがいたいです。",
+        "english": "My eyes are sore.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0388",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "痛い",
+        "kana": "いたい",
+        "meaning": "painful"
+      },
+      "sentence": {
+        "japanese": "目が痛い。",
+        "kana": "めがいたい。",
+        "english": "My eyes hurt.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0388",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "痛い",
+        "kana": "いたい",
+        "meaning": "painful"
+      },
+      "sentence": {
+        "japanese": "風邪で頭が痛い。",
+        "kana": "かぜであたまがいたい。",
+        "english": "My head aches with a cold.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0388",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "痛い",
+        "kana": "いたい",
+        "meaning": "painful"
+      },
+      "sentence": {
+        "japanese": "家にいたいな。",
+        "kana": "いえにいたいな。",
+        "english": "I would rather stay at home.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0388",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "痛い",
+        "kana": "いたい",
+        "meaning": "painful"
+      },
+      "sentence": {
+        "japanese": "どちらかと言えば、私は家にいたいな。",
+        "kana": "どちらかといえば、わたしはいえにいたいな。",
+        "english": "I would rather stay at home.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0388",
+      "example_index": 5,
+      "target_vocab": {
+        "kanji": "痛い",
+        "kana": "いたい",
+        "meaning": "painful"
+      },
+      "sentence": {
+        "japanese": "一緒にいたいな。",
+        "kana": "いっしょにいたいな。",
+        "english": "I want to be with you.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0389",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "話す",
+        "kana": "はなす",
+        "meaning": "to speak"
+      },
+      "sentence": {
+        "japanese": "彼の話し方が嫌なの。",
+        "kana": "かのはなしかたがいやなの。",
+        "english": "I don't like his way of talking.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0389",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "話す",
+        "kana": "はなす",
+        "meaning": "to speak"
+      },
+      "sentence": {
+        "japanese": "私は誰と話しているの？",
+        "kana": "わたしはだれとはなしているの？",
+        "english": "Who am I talking with?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0389",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "話す",
+        "kana": "はなす",
+        "meaning": "to speak"
+      },
+      "sentence": {
+        "japanese": "何を話しているの？",
+        "kana": "なにをはなしているの？",
+        "english": "What are you talking about?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0390",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "りっぱ",
+        "meaning": "splendid"
+      },
+      "sentence": {
+        "japanese": "私の家の近くにりっぱな公園がある。",
+        "kana": "わたしのいえのちかくにりっぱなこうえんがある。",
+        "english": "There is a fine park near my house.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0392",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "よく",
+        "meaning": "often"
+      },
+      "sentence": {
+        "japanese": "あなたは夜よく寝れませんか。",
+        "kana": "あなたはよるよくねれませんか。",
+        "english": "Don't you sleep well at night?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0392",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "よく",
+        "meaning": "often"
+      },
+      "sentence": {
+        "japanese": "僕はあの人達をよく知っています。",
+        "kana": "ぼくはあのひとたちをよくしっています。",
+        "english": "I've got acquainted with them.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0392",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "よく",
+        "meaning": "often"
+      },
+      "sentence": {
+        "japanese": "彼女はよく働く。",
+        "kana": "かのじょはよくはたらく。",
+        "english": "She works hard.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0393",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "嫌",
+        "kana": "いや",
+        "meaning": "unpleasant"
+      },
+      "sentence": {
+        "japanese": "彼の話し方が嫌なの。",
+        "kana": "かのはなしかたがいやなの。",
+        "english": "I don't like his way of talking.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0393",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "嫌",
+        "kana": "いや",
+        "meaning": "unpleasant"
+      },
+      "sentence": {
+        "japanese": "僕が「嫌だ」と言ったらどうする。",
+        "kana": "ぼくが「いやだ」といったらどうする。",
+        "english": "What if I say \"no\"?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0393",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "嫌",
+        "kana": "いや",
+        "meaning": "unpleasant"
+      },
+      "sentence": {
+        "japanese": "彼女は名前を言うのを嫌がった。",
+        "kana": "かのじょはなまえをいうのをいやがった。",
+        "english": "She was unwilling to tell her name.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0393",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "嫌",
+        "kana": "いや",
+        "meaning": "unpleasant"
+      },
+      "sentence": {
+        "japanese": "今日はいやに暑い。",
+        "kana": "こんにちはいやにあつい。",
+        "english": "It's awfully hot today.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0393",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "嫌",
+        "kana": "いや",
+        "meaning": "unpleasant"
+      },
+      "sentence": {
+        "japanese": "一人はいやだ。",
+        "kana": "ひとりはいやだ。",
+        "english": "I dislike being alone.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0393",
+      "example_index": 5,
+      "target_vocab": {
+        "kanji": "嫌",
+        "kana": "いや",
+        "meaning": "unpleasant"
+      },
+      "sentence": {
+        "japanese": "一人で行くのはいやです。",
+        "kana": "ひとりでいくのはいやです。",
+        "english": "I don't want to go alone.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0394",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "宿題",
+        "kana": "しゅくだい",
+        "meaning": "homework"
+      },
+      "sentence": {
+        "japanese": "彼は今宿題で忙しい。",
+        "kana": "かれはいまじゅくだいでいそがしい。",
+        "english": "He's busy with his homework now.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0394",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "宿題",
+        "kana": "しゅくだい",
+        "meaning": "homework"
+      },
+      "sentence": {
+        "japanese": "先生は私たちに宿題を出した。",
+        "kana": "せんせいはわたしたちにしゅくだいをだした。",
+        "english": "The teacher gave us homework.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0394",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "宿題",
+        "kana": "しゅくだい",
+        "meaning": "homework"
+      },
+      "sentence": {
+        "japanese": "先生は私たちにたくさんの宿題を出した。",
+        "kana": "せんせいはわたしたちにたくさんのしゅくだいをだした。",
+        "english": "The teacher gave us a lot of homework.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0395",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "死ぬ",
+        "kana": "しぬ",
+        "meaning": "to die"
+      },
+      "sentence": {
+        "japanese": "てめぇら、死にやがれ！",
+        "kana": "てめぇら、しにやがれ！",
+        "english": "Fuck you all to hell!",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0395",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "死ぬ",
+        "kana": "しぬ",
+        "meaning": "to die"
+      },
+      "sentence": {
+        "japanese": "物言わぬ友達は今朝死んだ。",
+        "kana": "ものいわぬともだちはけさしんだ。",
+        "english": "My poor dumb friend died this morning.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0395",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "死ぬ",
+        "kana": "しぬ",
+        "meaning": "to die"
+      },
+      "sentence": {
+        "japanese": "彼女は私がそこに着く前に死んだ。",
+        "kana": "かのじょはわたしがそこにつくまえにしんだ。",
+        "english": "She died before I arrived there.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0396",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "みんな",
+        "meaning": "everyone"
+      },
+      "sentence": {
+        "japanese": "みんなあなたに会いたがってる。あなたは有名なのよ！",
+        "kana": "みんなあなたにあいたがってる。あなたはゆうめいなのよ！",
+        "english": "Everyone wants to meet you. You're famous!",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0396",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "みんな",
+        "meaning": "everyone"
+      },
+      "sentence": {
+        "japanese": "それらはみんな同じかい？",
+        "kana": "それらはみんなおなじかい？",
+        "english": "Are they all the same?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0396",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "みんな",
+        "meaning": "everyone"
+      },
+      "sentence": {
+        "japanese": "立っているのは、みんな男だった。",
+        "kana": "たっているのは、みんなおとこだった。",
+        "english": "Those standing were all men.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0397",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "万",
+        "kana": "まん",
+        "meaning": "ten thousand"
+      },
+      "sentence": {
+        "japanese": "万年筆を持っていますか。",
+        "kana": "まんねんひつをもっていますか。",
+        "english": "Do you have a fountain pen with you?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0397",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "万",
+        "kana": "まん",
+        "meaning": "ten thousand"
+      },
+      "sentence": {
+        "japanese": "新しい万年筆買ったんだ。",
+        "kana": "あたらしいまんねんひつかったんだ。",
+        "english": "I bought a new fountain pen.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0397",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "万",
+        "kana": "まん",
+        "meaning": "ten thousand"
+      },
+      "sentence": {
+        "japanese": "万年筆って持ってる？",
+        "kana": "まんねんひつってもってる？",
+        "english": "Do you have a fountain pen?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0398",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "映画",
+        "kana": "えいが",
+        "meaning": "movie"
+      },
+      "sentence": {
+        "japanese": "明日の夜、映画に行かない？",
+        "kana": "あしたのよる、えいがにいかない？",
+        "english": "Wanna go to a movie tomorrow night?",
+        "source": "tatoeba"
+      }
+    }
+  ]
+}

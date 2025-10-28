@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reset Database</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    button {
+      background: #6B46C1;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 12px;
+    }
+    button:hover {
+      background: #553C9A;
+    }
+    button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+    .log {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 12px;
+      margin-top: 12px;
+      font-family: monospace;
+      font-size: 14px;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    .success { color: #10b981; }
+    .warning { color: #f59e0b; }
+    .error { color: #ef4444; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🗄️ Database Reset Tool</h1>
+    <p>This tool will completely clear your vocabulary database and reload all seed data with detailed logging.</p>
+
+    <button id="checkBtn">📊 Check Current Database</button>
+    <button id="resetBtn">🗑️ Clear Database & Reload</button>
+
+    <div id="log" class="log"></div>
+  </div>
+
+  <script>
+    const log = document.getElementById('log');
+    const checkBtn = document.getElementById('checkBtn');
+    const resetBtn = document.getElementById('resetBtn');
+
+    function addLog(message, type = 'info') {
+      const div = document.createElement('div');
+      div.className = type;
+      div.textContent = message;
+      log.appendChild(div);
+      log.scrollTop = log.scrollHeight;
+    }
+
+    checkBtn.addEventListener('click', async () => {
+      log.innerHTML = '';
+      addLog('📊 Checking database...', 'info');
+
+      try {
+        const request = indexedDB.open('JapVocabDB');
+        request.onsuccess = async (event) => {
+          const db = event.target.result;
+          const tx = db.transaction(['vocabulary'], 'readonly');
+          const store = tx.objectStore('vocabulary');
+
+          const countReq = store.count();
+          countReq.onsuccess = () => {
+            addLog(`Total cards: ${countReq.result}`, 'success');
+          };
+
+          // Count by level
+          const levels = ['N5', 'N4', 'N3', 'N2', 'N1'];
+          for (const level of levels) {
+            const index = store.index('jlptLevel');
+            const levelReq = index.count(level);
+            levelReq.onsuccess = () => {
+              if (levelReq.result > 0) {
+                addLog(`${level}: ${levelReq.result} cards`, 'info');
+              }
+            };
+          }
+        };
+      } catch (error) {
+        addLog(`Error: ${error.message}`, 'error');
+      }
+    });
+
+    resetBtn.addEventListener('click', async () => {
+      if (!confirm('⚠️ This will DELETE ALL vocabulary data and reload from seed files. Continue?')) {
+        return;
+      }
+
+      log.innerHTML = '';
+      resetBtn.disabled = true;
+
+      try {
+        addLog('🗑️ Clearing localStorage flag...', 'info');
+        localStorage.removeItem('vocab_seed_loaded_v1');
+        addLog('✅ Flag cleared', 'success');
+
+        addLog('🗑️ Opening database...', 'info');
+        const request = indexedDB.open('JapVocabDB');
+
+        request.onsuccess = (event) => {
+          const db = event.target.result;
+          addLog('✅ Database opened', 'success');
+
+          addLog('🗑️ Clearing vocabulary table...', 'info');
+          const tx = db.transaction(['vocabulary'], 'readwrite');
+          const store = tx.objectStore('vocabulary');
+          const clearReq = store.clear();
+
+          clearReq.onsuccess = () => {
+            addLog('✅ Vocabulary table cleared!', 'success');
+            addLog('🔄 Reloading page in 2 seconds...', 'warning');
+            addLog('📝 Watch console for detailed import logs', 'info');
+
+            setTimeout(() => {
+              window.location.href = '/';
+            }, 2000);
+          };
+
+          clearReq.onerror = () => {
+            addLog(`❌ Error clearing: ${clearReq.error}`, 'error');
+            resetBtn.disabled = false;
+          };
+        };
+
+        request.onerror = () => {
+          addLog(`❌ Error opening database: ${request.error}`, 'error');
+          resetBtn.disabled = false;
+        };
+      } catch (error) {
+        addLog(`❌ Error: ${error.message}`, 'error');
+        resetBtn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

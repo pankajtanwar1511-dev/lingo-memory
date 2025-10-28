@@ -1,0 +1,802 @@
+[
+  {
+    "card_id": "n5_vocab_0529",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "コーヒー appears as the main subject modified by まろやかな",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - これはとてもまろやかなこーひーだ",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: これは, とても adverb, な-adjective まろやかな, だ copula",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5: uses な-adjective and adverb, but まろやかな (mild/mellow) is somewhat advanced vocabulary",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Grammatically solid N5. Vocabulary まろやか is a bit advanced but acceptable."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0529",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "コーヒー appears as main topic",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - このこーひーはぬるいです",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: この demonstrative, は topic, い-adjective ぬるい, です copula",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Mid N5: simple sentence with demonstrative and adjective. ぬるい (lukewarm) is standard N5 vocabulary",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clear N5 sentence with appropriate structure."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0529",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "コーヒー appears as topic",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - こーひーはうすいのがすきです",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains の nominalizer creating embedded clause (薄いの), which is N4 complexity",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Complex with nominalized clause structure",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to N4 の nominalizer creating embedded clause (薄いのが好き)."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0530",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "漢字 appears as object of 読める",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - くんはこのかんじがよめますか",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains potential form 読める (can read), which is N4 grammar",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Would be mid N5 except for potential form",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to N4 potential form よめます."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0530",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "漢字 appears as main topic",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - かんじはよむのがむずかしい",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains の nominalizer creating embedded clause (読むのが), which is N4 complexity",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Complex nominalized clause structure",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to N4 の nominalizer creating embedded clause."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0530",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "漢字 appears as main topic",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - このかんじはどういういみですか",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: この demonstrative, は topic, どういう question phrase, です copula, か question",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5: uses どういう (what kind of) question pattern with です/か",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 question pattern with どういう."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0532",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "その appears as demonstrative modifying そば (vicinity)",
+      "kana_accuracy": "MAJOR_ERROR",
+      "kana_notes": "Major error: kana shows きた (came/wore) but Japanese has 着た (wore). Should be すうっときた but the verb is 着る (to wear), not 来る (to come). The reading should use き not き",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses ている-style form but with ta-form. The structure その+noun is basic N5",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Complex with adverb すうっと and descriptive elements",
+      "recommendation": "REJECT",
+      "overall_notes": "Major kana error - 着た should be きた not きた. Also sentence complexity is high."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0532",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "その appears as demonstrative modifying 仕事",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - そのしごとでへとへとだ",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: その demonstrative, で particle (cause/reason), へとへと (exhausted), だ copula",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5: simple structure but へとへと is somewhat advanced vocabulary (exhausted)",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. へとへと is onomatopoeia but acceptable."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0532",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "その appears as demonstrative modifying ニュース",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - そのにゅーすはらじおできいたよ",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: その demonstrative, は topic, で location/means, た past, よ sentence-ending particle",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Mid N5: straightforward past tense with location/means particle",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clear N5 sentence with good demonstrative usage."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0533",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "子供 appears with counter",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - あなたにはなんにんこどもがいますか",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: には particle combination, question word 何人, が subject, います existence, か question",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Mid N5: standard family question with counter",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Standard N5 family question pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0533",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "子供 appears as predicate",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - かれはからだのよわいこどもだった",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: は topic, possessive の, い-adjective 弱い modifying child, だった past copula",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5: multiple elements including possessive, adjective modifier, past copula",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with modifying adjective and past tense."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0533",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "子供 appears as subject with も particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - やさいのきらいなこどももいる",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: possessive の, な-adjective 嫌いな modifying child, も (also/too), いる existence",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5: modifying clause with な-adjective, も particle for 'some/also'",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 with な-adjective modification pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0533",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "こどもたち appears in plural form",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - かのじょはこどもたちとあそぶのがひじょうにすきだ",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains の nominalizer creating embedded clause (遊ぶのが), which is N4 complexity",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Too complex with nominalized clause structure",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to N4 の nominalizer creating embedded clause."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0534",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ちょっと appears as adverb modifying 低い",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - このつくえはわたしにはちょっとひくい",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: この demonstrative, は topic, には particle combination, adverb ちょっと, い-adjective 低い",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5: uses には and adverb with adjective",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example of adverb usage."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0534",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ちょっと used as interjection/attention-getter",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - ちょっと、そこのきみ",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: interjection ちょっと, demonstrative そこ, possessive の, 君",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Beginner N5: simple interjection usage",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Simple N5 interjection pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0534",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ちょっと appears as adverb/polite softener",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - ちょっとおたのみがあるんですが",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains んです explanatory pattern (N4 grammar) and が trailing particle",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Would be mid N5 except for N4 んです",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to N4 んです pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0535",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "女の子達 appears in plural form as subject",
+      "kana_accuracy": "MAJOR_ERROR",
+      "kana_notes": "Major error: kana shows とおる but Japanese has 達 which should be たち, not とおる. Should be おんなのこたち",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: その demonstrative, は topic, とても adverb, い-adjective 忙しい",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Mid N5 if kana were correct",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to major kana error: 達 is たち, not とおる."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0535",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "女の子 appears in から clause",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - あなたがおんなのこだからよ",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains から (because), which when used for explanation/reason is borderline N4. Combined with sentence-ending よ makes it N4 level",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Would be mid N5 except for から reason clause",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to N4 から causal/reason pattern (だから construction is N4)."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0535",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "女の子 appears in relative clause modifying subject",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - ぼくといっしょにえいがにいったおんなのこはぼくのともだちです",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains relative clause (映画に行った女の子) modifying the subject, which is N4 complexity",
+      "difficulty_rating": 8,
+      "difficulty_notes": "Complex relative clause structure, too advanced",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to N4 relative clause construction."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0536",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "紙 appears with counter 一枚",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - かれはいちまいのかみにてがみをかきました",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: は topic, counter 一枚, possessive の, に destination/location, を object, ました past",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5: counter usage, multiple particles, longer sentence",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with counter and multiple particles."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0536",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "紙 appears as object modified by 書く",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - かくかみをいちまいください",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: verb 書く modifying 紙, を object, counter 一枚, ください request",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5: modifying verb, counter, polite request",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 with verb modification and request form."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0536",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "紙 appears as main topic",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - かみはきからつくられる",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains passive form 作られる (is made), which is N4 grammar",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Would be mid N5 except for passive form",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to N4 passive form つくられる."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0536",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "NO",
+      "target_vocab_notes": "かみさん (wife) appears, but target vocab is 紙 (paper). These are different words despite same kana reading",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches the Japanese text, but wrong word",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains potential negative 寝られない (cannot sleep), which is N4 grammar. Also contains んだ explanatory pattern (N4)",
+      "difficulty_rating": 6,
+      "difficulty_notes": "N4 grammar level",
+      "recommendation": "REJECT",
+      "overall_notes": "Wrong vocabulary - かみさん (wife) not 紙 (paper). Also contains N4 potential form and んだ."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0536",
+    "example_index": 4,
+    "verification": {
+      "target_vocab_present": "NO",
+      "target_vocab_notes": "かみさん (wife) appears, not 紙 (paper). Wrong vocabulary match",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches but wrong word",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: possessive の, 元気 adjective with implicit copula, question marker",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Would be mid N5 if vocab were correct",
+      "recommendation": "REJECT",
+      "overall_notes": "Wrong vocabulary - かみさん (wife) not 紙 (paper). False positive match."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0539",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "嫌い appears as predicate",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - あからさまにいえばかれはきらいだ",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains ば conditional form (言えば - if I say), which is N4 grammar",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Complex with conditional form",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to N4 ば conditional form."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0539",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "お嫌い appears with honorific prefix",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - いびつなやさいはおきらいですか",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: な-adjective いびつな, は topic, honorific お, です copula, か question",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5: uses honorific prefix and な-adjective. いびつ (misshapen) is somewhat advanced vocab",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Acceptable N5 with honorific prefix. いびつ is advanced but sentence structure is N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0539",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "嫌い appears in が嫌い preference pattern",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - わたしはかのくちのききかたがきらいだ",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: は topic, possessive の chain, が object of dislike, だ copula. 口のききかた (way of talking) uses N5 structures",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Advanced N5: multiple possessive の, compound noun 口のききかた",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Grammatically N5 but vocabulary is advanced. Acceptable for upper N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0540",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "お先に appears in set phrase with honorific",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - おさきにどうぞ",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: honorific お, に particle, どうぞ. This is a set phrase お先にどうぞ (after you)",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Beginner N5: set phrase, very common expression",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Standard N5 courtesy expression."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0540",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "お先に appears in set phrase",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - どうぞ、おさきに",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: どうぞ, honorific お, に particle. Same set phrase as previous",
+      "difficulty_rating": 2,
+      "difficulty_notes": "Beginner N5: simple set phrase",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Standard N5 courtesy expression."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0540",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "先 appears meaning 'beyond/further'",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - ここからさきにはいけません",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: ここから (from here), には particle combination, いけません negative potential-like form. Actually いけません here is just negative of 行く in potential/permission sense, but the structure is N5",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5: uses には combination and negative form for prohibition/impossibility",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar appears N5, but いけません (cannot go) could be interpreted as potential negative. If it's just negative of 行く for permission/possibility, it's acceptable N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0541",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "答える appears in past tense こたえました",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains passive form われました (was asked), which is N4 grammar",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Complex with quoted speech and passive form",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to N4 passive form われました."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0541",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "答える appears in potential negative form 答えられなかった",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - てすとでいちもんもこたえられなかった",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains potential negative form 答えられなかった (could not answer), which is N4 grammar",
+      "difficulty_rating": 6,
+      "difficulty_notes": "N4 grammar with potential form",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to N4 potential form られなかった."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0541",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "答える appears in past tense 答えた",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - なんてこたえたの",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: 何て (what), た past, の question particle (casual)",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Mid N5: casual question with の particle",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 casual question pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0541",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "UNCLEAR",
+      "target_vocab_notes": "こたえる appears but with different meaning - 'to take a toll/affect' rather than 'to answer'. This is a different usage/meaning of the same verb",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - かれにはさむさがとてもこたえる",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: には particle, が subject, adverb とても, dictionary form こたえる",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5 grammatically but semantic issue",
+      "recommendation": "REVIEW",
+      "overall_notes": "こたえる here means 'to take a toll/be hard on' not 'to answer'. Different meaning may confuse learners expecting 'to answer'."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0542",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "食堂 appears as topic",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - しょくどうはどこですか",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: は topic, question word どこ, です copula, か question",
+      "difficulty_rating": 2,
+      "difficulty_notes": "Beginner N5: simple location question",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Basic N5 location question."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0542",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "食堂 appears as topic",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - しょくどうはもうひらいてますか",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: は topic, もう (already), ている form for state, か question",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5: uses ている for state and もう time adverb",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 with ている for state."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0542",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "食堂 appears as subject",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - しょくどうがまだひらいてるかどうか、だれかしってる",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains かどうか (whether or not) which is N4 grammar for embedded questions",
+      "difficulty_rating": 8,
+      "difficulty_notes": "Complex with embedded question structure",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to N4 かどうか embedded question pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0543",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "テーブル appears with location marker の上に",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - かのじょはそのはこをてーぶるのうえにおいた",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: は topic, を object, possessive の, location 上に, た past",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5: multiple elements including location phrase",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 with location phrase の上に."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0543",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "テーブル appears with につく",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - かれらはれすとらんのてーぶるについた",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: は topic, possessive の, に particle, た past. につく (to sit at/take a seat) is N5 level",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5: straightforward sentence with に particle",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 usage of につく."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0543",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "テーブル appears in compound with と particle",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - かれらはいすとてーぶるをつかわない",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: は topic, と (and) particle, を object, ない negative",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Mid N5: simple negative with と conjunction",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clear N5 sentence with と conjunction."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0545",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "働く appears in て form 働いて",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - もうあさからばんまではたらいてくたくただよ",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: もう, から-まで (from-to), て form connecting, adjective クタクタ, よ particle",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5: から-まで range, て form for sequence/cause, colloquial クタクタ",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 with から-まで and て form."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0545",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "働く appears as modifying verb 働く時間帯",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - まいにちはたらくじかんたいがちがうんです",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains んです explanatory pattern (N4 grammar)",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Would be upper N5 except for N4 んです",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to N4 んです pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0545",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "働く appears in ている form",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - あなたはなぜはたらいているの",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: は topic, question word なぜ, ている progressive, の question particle",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5: question with なぜ and ている form",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 question with ている."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0546",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "こんな appears as demonstrative modifying ところ",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - なんだってわたしのほんがこんなところにあるんだろう",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains んだろう (explanatory + conjecture), which is N4 grammar",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Complex with N4 grammar",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to N4 んだろう pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0546",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "こんなに appears as degree adverb",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - まいにちこんなにあついのですか",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains のです explanatory pattern (N4 grammar)",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Would be mid N5 except for N4 のです",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to N4 のです pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0546",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "こんな appears modifying 甘いコーヒー",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - わたしはこんなあまいこーひーはのめない",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains potential negative 飲めない (cannot drink), which is N4 grammar",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Would be mid-upper N5 except for potential form",
+      "recommendation": "REJECT",
+      "overall_notes": "Must reject due to N4 potential form のめない."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0547",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "たくさん appears with の as modifier",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - このがっこうはたくさんのせいとがいます",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: この demonstrative, は topic, たくさんの (many), が subject, います existence",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Mid N5: straightforward existence sentence with quantifier",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 with quantifier たくさん."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0547",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "たくさん appears in idiomatic 'もうたくさん' (had enough)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - このわるいてんきはもうたくさんだ",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: この demonstrative, い-adjective 悪い, は topic, もうたくさん (had enough), だ copula",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5: uses idiomatic expression もうたくさん",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 with idiomatic たくさん usage meaning 'enough'."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0547",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "たくさん appears as predicate",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - わからないことばがたくさんある",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: negative verb 分からない modifying 言葉, が subject, たくさん, ある existence",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5: verb modifier (分からない言葉), quantifier, existence verb",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 with verb modification pattern."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0548",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ドア appears with location の前で",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Perfect match - わかいおとこのにんがどあのまえでうたっています",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "N5: adjective 若い, possessive の, location 前で, ている progressive",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5: multiple modifiers, location phrase, ている form",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 with location phrase and ている."
+    }
+  }
+]

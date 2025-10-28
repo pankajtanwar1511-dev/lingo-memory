@@ -1,0 +1,768 @@
+{
+  "batch_number": 30,
+  "total_batches": 38,
+  "examples_in_batch": 50,
+  "verification_instructions": {
+    "task": "Verify each example for N5 appropriateness",
+    "check": [
+      "1. Does sentence contain the target vocabulary word?",
+      "2. Does kana reading match the Japanese sentence correctly?",
+      "3. Does sentence use ONLY N5 grammar patterns?",
+      "4. Rate difficulty from 1-10 (within N5 range)",
+      "5. Recommend: accept/review/reject"
+    ],
+    "output_format": "For each example, return JSON with: target_vocab_present, kana_accuracy, n5_grammar_check, difficulty_rating, recommendation"
+  },
+  "examples": [
+    {
+      "card_id": "n5_vocab_0512",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "階段",
+        "kana": "かいだん",
+        "meaning": "stairs"
+      },
+      "sentence": {
+        "japanese": "わたしの家には階段がふたつある。",
+        "kana": "わたしのいえにはかいだんがふたつある。",
+        "english": "There are two staircases in my house.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0512",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "階段",
+        "kana": "かいだん",
+        "meaning": "stairs"
+      },
+      "sentence": {
+        "japanese": "階段がある。",
+        "kana": "かいだんがある。",
+        "english": "There are stairs.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0513",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "煩い",
+        "kana": "うるさい",
+        "meaning": "noisy"
+      },
+      "sentence": {
+        "japanese": "隣の部屋がうるさいのです。",
+        "kana": "となりのへやがうるさいのです。",
+        "english": "It's noisy next door.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0513",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "煩い",
+        "kana": "うるさい",
+        "meaning": "noisy"
+      },
+      "sentence": {
+        "japanese": "彼女は食べ物にうるさい。",
+        "kana": "かのじょはたべものにうるさい。",
+        "english": "She is particular about food.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0513",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "煩い",
+        "kana": "うるさい",
+        "meaning": "noisy"
+      },
+      "sentence": {
+        "japanese": "男の子で食べ物にうるさいのは少ない。",
+        "kana": "おとこのこでたべものにうるさいのはすくない。",
+        "english": "Few boys are dainty about their food.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0513",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "煩い",
+        "kana": "うるさい",
+        "meaning": "noisy"
+      },
+      "sentence": {
+        "japanese": "隣の部屋がうるさいのです。",
+        "kana": "となりのへやがうるさいのです。",
+        "english": "It's noisy next door.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0513",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "煩い",
+        "kana": "うるさい",
+        "meaning": "noisy"
+      },
+      "sentence": {
+        "japanese": "彼女は食べ物にうるさい。",
+        "kana": "かのじょはたべものにうるさい。",
+        "english": "She is particular about food.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0513",
+      "example_index": 5,
+      "target_vocab": {
+        "kanji": "煩い",
+        "kana": "うるさい",
+        "meaning": "noisy"
+      },
+      "sentence": {
+        "japanese": "男の子で食べ物にうるさいのは少ない。",
+        "kana": "おとこのこでたべものにうるさいのはすくない。",
+        "english": "Few boys are dainty about their food.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0514",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "半分",
+        "kana": "はんぶん",
+        "meaning": "half minute"
+      },
+      "sentence": {
+        "japanese": "はい、お兄ちゃん、半分こ。",
+        "kana": "はい、おにいちゃん、はんぶんこ。",
+        "english": "Here, bro, halfsies.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0514",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "半分",
+        "kana": "はんぶん",
+        "meaning": "half minute"
+      },
+      "sentence": {
+        "japanese": "私の犬の大きさはあなたの犬の半分です。",
+        "kana": "わたしのいぬのおおきさはあなたのいぬのはんぶんです。",
+        "english": "My dog is almost half the size of yours.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0514",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "半分",
+        "kana": "はんぶん",
+        "meaning": "half minute"
+      },
+      "sentence": {
+        "japanese": "私のクラスの生徒の半分は犬が好きです。",
+        "kana": "わたしのくらすのせいとのはんぶんはいぬがすきです。",
+        "english": "Half of my class like dogs.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0515",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "背広",
+        "kana": "せびろ",
+        "meaning": "business suit"
+      },
+      "sentence": {
+        "japanese": "彼はくたくたの背広を着ていた。",
+        "kana": "かれはくたくたのせびろをきていた。",
+        "english": "He was wearing a threadbare suit.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0515",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "背広",
+        "kana": "せびろ",
+        "meaning": "business suit"
+      },
+      "sentence": {
+        "japanese": "私は新しい背広を買った。",
+        "kana": "わたしはあたらしいせびろをかった。",
+        "english": "I bought a new suit of clothes.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0516",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "晴れ",
+        "kana": "はれ",
+        "meaning": "clear weather"
+      },
+      "sentence": {
+        "japanese": "明日は晴れだろうか。",
+        "kana": "あしたははれだろうか。",
+        "english": "Will it be fine weather tomorrow?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0516",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "晴れ",
+        "kana": "はれ",
+        "meaning": "clear weather"
+      },
+      "sentence": {
+        "japanese": "明日は晴れかどうか知りたいな。",
+        "kana": "あしたははれかどうかしりたいな。",
+        "english": "We want to know if it will be sunny tomorrow.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0516",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "晴れ",
+        "kana": "はれ",
+        "meaning": "clear weather"
+      },
+      "sentence": {
+        "japanese": "明日の天気は晴れ時々雨でしょう。",
+        "kana": "あしたのてんきははれときどきあめでしょう。",
+        "english": "Tomorrow's weather should be sunny with occasional rain.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0517",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "見せる",
+        "kana": "みせる",
+        "meaning": "to show"
+      },
+      "sentence": {
+        "japanese": "あなたの切手帳を見せてください。",
+        "kana": "あなたのきってちょうをみせてください。",
+        "english": "Please show me your stamp album.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0517",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "見せる",
+        "kana": "みせる",
+        "meaning": "to show"
+      },
+      "sentence": {
+        "japanese": "あなたに何枚かの写真を見せましょう。",
+        "kana": "あなたになんまいかのしゃしんをみせましょう。",
+        "english": "I will show you some pictures.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0517",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "見せる",
+        "kana": "みせる",
+        "meaning": "to show"
+      },
+      "sentence": {
+        "japanese": "彼女は本を隣の人にも見せてあげた。",
+        "kana": "かのじょはほんをとなりのにんにもみせてあげた。",
+        "english": "She shared her book with her neighbor.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0518",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "飲み物",
+        "kana": "のみもの",
+        "meaning": "a drink"
+      },
+      "sentence": {
+        "japanese": "何か飲み物をいれましょうか。",
+        "kana": "なにかのみものをいれましょうか。",
+        "english": "Can I get you something to drink?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0518",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "飲み物",
+        "kana": "のみもの",
+        "meaning": "a drink"
+      },
+      "sentence": {
+        "japanese": "僕は今、何か冷たい飲み物が欲しい。",
+        "kana": "ぼくはいま、なにかつめたいのみものがほしい。",
+        "english": "I want something cold to drink now.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0518",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "飲み物",
+        "kana": "のみもの",
+        "meaning": "a drink"
+      },
+      "sentence": {
+        "japanese": "彼は何か冷たい飲み物を欲しがっている。",
+        "kana": "かれはなにかつめたいのみものをほっしがっている。",
+        "english": "He wants something cold to drink.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0519",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "雪",
+        "kana": "ゆき",
+        "meaning": "snow"
+      },
+      "sentence": {
+        "japanese": "たぶん、明日は雪が降るだろう。",
+        "kana": "たぶん、あしたはゆきがふるだろう。",
+        "english": "Probably it will snow tomorrow.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0519",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "雪",
+        "kana": "ゆき",
+        "meaning": "snow"
+      },
+      "sentence": {
+        "japanese": "明日は雪だろう。",
+        "kana": "あしたはゆきだろう。",
+        "english": "It'll snow tomorrow.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0519",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "雪",
+        "kana": "ゆき",
+        "meaning": "snow"
+      },
+      "sentence": {
+        "japanese": "明日、雪が降るだろう。",
+        "kana": "あした、ゆきがふるだろう。",
+        "english": "It'll snow tomorrow.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0520",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "買い物",
+        "kana": "かいもの",
+        "meaning": "shopping"
+      },
+      "sentence": {
+        "japanese": "１日おきに買い物に行く。",
+        "kana": "１にちおきにかいものにいく。",
+        "english": "I go shopping every other day.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0520",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "買い物",
+        "kana": "かいもの",
+        "meaning": "shopping"
+      },
+      "sentence": {
+        "japanese": "友達と買い物に行った。",
+        "kana": "ともだちとかいものにいった。",
+        "english": "I went shopping with a friend.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0520",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "買い物",
+        "kana": "かいもの",
+        "meaning": "shopping"
+      },
+      "sentence": {
+        "japanese": "明日買い物に行きます。",
+        "kana": "あしたかいものにいきます。",
+        "english": "I'm going shopping tomorrow.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0522",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "駅",
+        "kana": "えき",
+        "meaning": "station"
+      },
+      "sentence": {
+        "japanese": "明日駅で会いましょう。",
+        "kana": "あしたえきであいましょう。",
+        "english": "I'll meet you down at the station tomorrow.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0522",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "駅",
+        "kana": "えき",
+        "meaning": "station"
+      },
+      "sentence": {
+        "japanese": "僕は駅で彼に会った。",
+        "kana": "ぼくはえきでかれにあった。",
+        "english": "I met him at the station.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0522",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "駅",
+        "kana": "えき",
+        "meaning": "station"
+      },
+      "sentence": {
+        "japanese": "彼女はなぜ駅に行ったのですか。",
+        "kana": "かのじょはなぜえきにいったのですか。",
+        "english": "Why did she go to the station?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0523",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "大丈夫",
+        "kana": "だいじょうぶ",
+        "meaning": "all right"
+      },
+      "sentence": {
+        "japanese": "このセーターは洗っても大丈夫です。",
+        "kana": "このせーたーはあらってもだいじょうぶです。",
+        "english": "This sweater will stand washing.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0523",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "大丈夫",
+        "kana": "だいじょうぶ",
+        "meaning": "all right"
+      },
+      "sentence": {
+        "japanese": "彼女は今のところ大丈夫です。",
+        "kana": "かのじょはいまのところだいじょうぶです。",
+        "english": "She is all right at the moment.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0523",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "大丈夫",
+        "kana": "だいじょうぶ",
+        "meaning": "all right"
+      },
+      "sentence": {
+        "japanese": "「ぼくだいじょうぶ？」といわれました。「だいじょうぶ」とこたえました。",
+        "kana": "「ぼくだいじょうぶ？」といわれました。「だいじょうぶ」とこたえました。",
+        "english": "I was asked, \"You OK, kid?\". I replied, \"Fine.\"",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0523",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "大丈夫",
+        "kana": "だいじょうぶ",
+        "meaning": "all right"
+      },
+      "sentence": {
+        "japanese": "「ぼくだいじょうぶ？」といわれました。「だいじょうぶ」とこたえました。",
+        "kana": "「ぼくだいじょうぶ？」といわれました。「だいじょうぶ」とこたえました。",
+        "english": "I was asked, \"You OK, kid?\". I replied, \"Fine.\"",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0525",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "勉強",
+        "kana": "べんきょうする",
+        "meaning": "to study"
+      },
+      "sentence": {
+        "japanese": "彼女は勉強部屋から出ていった。",
+        "kana": "かのじょはべんきょうへやからでていった。",
+        "english": "She went out of her study.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0525",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "勉強",
+        "kana": "べんきょうする",
+        "meaning": "to study"
+      },
+      "sentence": {
+        "japanese": "勉強は難しいの？",
+        "kana": "べんきょうはむずかしいの？",
+        "english": "Is the school work hard?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0525",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "勉強",
+        "kana": "べんきょうする",
+        "meaning": "to study"
+      },
+      "sentence": {
+        "japanese": "勉強は順調にいっています。",
+        "kana": "べんきょうはじゅんちょうにいっています。",
+        "english": "My studies are going okay.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0526",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "兄弟",
+        "kana": "きょうだい",
+        "meaning": "(humble) siblings"
+      },
+      "sentence": {
+        "japanese": "あなたは何人兄弟がいますか。",
+        "kana": "あなたはなんにんきょうだいがいますか。",
+        "english": "How many siblings do you have?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0526",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "兄弟",
+        "kana": "きょうだい",
+        "meaning": "(humble) siblings"
+      },
+      "sentence": {
+        "japanese": "彼女には兄弟が三人いる。",
+        "kana": "かのじょにはきょうだいがさんにんいる。",
+        "english": "She has three brothers.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0526",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "兄弟",
+        "kana": "きょうだい",
+        "meaning": "(humble) siblings"
+      },
+      "sentence": {
+        "japanese": "彼女に兄弟はいない。",
+        "kana": "かのじょにきょうだいはいない。",
+        "english": "She has no brothers.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0526",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "兄弟",
+        "kana": "きょうだい",
+        "meaning": "(humble) siblings"
+      },
+      "sentence": {
+        "japanese": "きょうだいは何人ですか。",
+        "kana": "きょうだいはなんにんですか。",
+        "english": "How many brothers and sisters do you have?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0526",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "兄弟",
+        "kana": "きょうだい",
+        "meaning": "(humble) siblings"
+      },
+      "sentence": {
+        "japanese": "女のきょうだいはいません。",
+        "kana": "おんなのきょうだいはいません。",
+        "english": "I have no sisters.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0526",
+      "example_index": 5,
+      "target_vocab": {
+        "kanji": "兄弟",
+        "kana": "きょうだい",
+        "meaning": "(humble) siblings"
+      },
+      "sentence": {
+        "japanese": "ごきょうだいはいますか？",
+        "kana": "ごきょうだいはいますか？",
+        "english": "Do you have any siblings?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0527",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "封筒",
+        "kana": "ふうとう",
+        "meaning": "envelope"
+      },
+      "sentence": {
+        "japanese": "封筒をください。",
+        "kana": "ふうとうをください。",
+        "english": "I need an envelope.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0527",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "封筒",
+        "kana": "ふうとう",
+        "meaning": "envelope"
+      },
+      "sentence": {
+        "japanese": "彼は封筒を切って開けた。",
+        "kana": "かれはふうとうをきってひらけた。",
+        "english": "He cut the envelope open.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0527",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "封筒",
+        "kana": "ふうとう",
+        "meaning": "envelope"
+      },
+      "sentence": {
+        "japanese": "私は封筒に切手をはるのを忘れた。",
+        "kana": "わたしはふうとうにきってをはるのをわすれた。",
+        "english": "I forgot to attach a stamp to the envelope.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0528",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "レコード",
+        "meaning": "record"
+      },
+      "sentence": {
+        "japanese": "彼女はよく何時間もレコードを聞いている。",
+        "kana": "かのじょはよくなんじかんもれこーどをきいている。",
+        "english": "She will often listen to records for hours.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0528",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "レコード",
+        "meaning": "record"
+      },
+      "sentence": {
+        "japanese": "彼らは、レコードを買います。",
+        "kana": "かれらは、れこーどをかいます。",
+        "english": "They will buy a record.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0528",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "レコード",
+        "meaning": "record"
+      },
+      "sentence": {
+        "japanese": "私は彼のレコードをいくつか聞いた。",
+        "kana": "わたしはかのれこーどをいくつかきいた。",
+        "english": "I listened to some of his records.",
+        "source": "tatoeba"
+      }
+    }
+  ]
+}

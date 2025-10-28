@@ -1,0 +1,802 @@
+[
+  {
+    "card_id": "n5_vocab_0001",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "毎朝 appears clearly in the sentence at the expected position",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches the Japanese sentence perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses dictionary form 起きる, basic particles は and を implied through context. Simple statement with time expression and verb.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5 level. Uses common time expression 毎朝, adverb 早く, and basic verb. Straightforward sentence structure but requires knowledge of several N5 words.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean N5 example with appropriate target vocabulary usage and grammar level"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0001",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "毎朝 appears in the sentence clearly",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "Kana shows 'は' as 'は' which should match the Japanese. However, there's an issue - the Japanese has '歯を' (teeth) but kana shows 'はを' when it should be 'は' (teeth, pronounced 'ha'). This is actually accurate for the particle を.",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains 'と言った' which uses the quotation particle と followed by past tense. While と for quotation exists in N5, the pattern 'verb dictionary + と + verb' for reported speech is typically considered N4 level grammar.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Advanced N5 approaching N4. Uses quotation pattern, reported speech construction, and requires understanding of embedded clauses.",
+      "recommendation": "REJECT",
+      "overall_notes": "Grammar level exceeds N5 due to quotation/reported speech pattern と言った"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0001",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "毎朝 appears clearly in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses masu-form 走ります, particles は/まで, and basic time expression. All N5 grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Uses time expression, location with まで particle, and polite verb form. Straightforward sentence structure.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with clear target vocabulary and appropriate grammar"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0002",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "UNCLEAR",
+      "target_vocab_notes": "Target is 問題 (problem), but sentence uses 問題児 (problem child/troublemaker) which is a compound noun. The target vocabulary is not used independently.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, copula です, and sentence-ending particle ね. All N5 grammar.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5. Uses cultural concept of 問題児 and requires understanding of な-adjective noun compound. The word 君 (you) adds slight complexity.",
+      "recommendation": "REJECT",
+      "overall_notes": "Target vocabulary appears only as part of compound word 問題児, not independently. Should be rejected for vocabulary matching criteria."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0002",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "問題 appears clearly as an independent word",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana matches perfectly including the の particle",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses question word 何, が particle, な-adjective なの (casual copula), and question marker. All N5 level.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Lower-mid N5. Simple question structure with basic particles and な-adjective. The casual form なの is common in spoken N5.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean N5 example with clear target vocabulary usage"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0002",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "問題 appears clearly in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses location particle に, が particle, and ある (existence verb). All N5 grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Uses そこに construction and existence verb がある. Requires understanding of abstract location reference.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with appropriate grammar and vocabulary"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0004",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "黒 appears as part of 黒っぽい (blackish/dark)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains 'ていた' which is the past progressive form (te-form + いる in past tense). While basic ている is borderline N5, the past progressive ていた is generally N4 level.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Advanced approaching N4. Uses past progressive, derived adjective っぽい (which itself is more casual/colloquial), and requires understanding of continuous aspect in past.",
+      "recommendation": "REJECT",
+      "overall_notes": "Grammar level exceeds N5 with past progressive ていた. Also uses っぽい suffix which may be beyond basic N5."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0004",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "黒 appears as part of 黒っぽい",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches accurately",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, が particle with 好きだ (like). The structure X は Y が 好きだ is core N5 grammar.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5. Uses の possessive particle, が好きだ construction, and requires understanding of body parts vocabulary 目. The っぽい suffix adds complexity.",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar is N5, but っぽい suffix (blackish/dark) might be beyond basic N5 vocabulary. Borderline case."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0004",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "黒 appears independently with の particle (黒の上着)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, と particle for listing, を particle, and もっている (to have/possess). All N5 grammar. The ている form in もっている represents state, which is acceptable at N5.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5. Uses color + の + noun construction (x2), と for listing, and もっている for possession. Multiple clauses but still straightforward.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with clear independent usage of target vocabulary"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0005",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "台所 appears clearly in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, で particle (location of action), masu-form verb 働きます, and question marker か. All N5 grammar.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Lower-mid N5. Simple question structure with basic particles and masu-form. Straightforward meaning.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean N5 example with appropriate grammar and vocabulary"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0005",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "台所 appears clearly in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, time word 今, location particle で, を particle, and ています form. The ています progressive is borderline but generally accepted for very basic progressive actions in N5.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5. Uses present progressive ています with いれる verb, time expression, and location. More complex than basic statements but still manageable at N5.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. The ています progressive is borderline but acceptable for such a concrete, basic action."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0005",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "台所 appears in the sentence",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "Error in kana: 'いっってみると' has an extra っ. Should be 'いってみると' (入って + みる + と)",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains multiple N4+ patterns: (1) てみる (try doing) is N4 grammar, (2) と for conditional (when X, then Y) is N4, (3) Complex temporal clause structure",
+      "difficulty_rating": 9,
+      "difficulty_notes": "Far too complex for N5. Uses N4 grammar patterns, past tense with conditional clause, and abstract temporal construction.",
+      "recommendation": "REJECT",
+      "overall_notes": "Multiple issues: N4 grammar (てみる, conditional と), kana error, and excessive complexity for N5"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0006",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ぜんぶ (全部) appears clearly in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses basic construction with を particle and plain past form 食べた. N5 grammar.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Low N5. Very simple sentence with basic past tense verb and target adverb. Easy to understand.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent simple N5 example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0006",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ぜんぶ appears clearly",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle and copula です. Very basic N5 grammar.",
+      "difficulty_rating": 2,
+      "difficulty_notes": "Very low N5. Simple X は Y です construction. About as basic as it gets.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect simple N5 example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0006",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "ぜんぶ appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses を particle with で particle (means/method), past tense form 使った. All N5 grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Uses past tense, method particle で, and requires understanding of money/spending context.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with appropriate complexity"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0007",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "多分 appears clearly at sentence start",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses basic future/volitional expression with でしょう which is N5 level (different from volitional よう).",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Uses adverb of uncertainty 多分, particle へ for direction, and でしょう for probability. Requires modal expression understanding.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with appropriate usage of probability expressions"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0007",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "多分 appears at sentence beginning",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains だろう which is the plain form of でしょう. While some sources include this in late N5, it's typically considered N4 as it's more advanced/literary than the polite でしょう.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Upper N5/N4 boundary. Uses plain copula with volitional だろう, requires understanding of weather vocabulary.",
+      "recommendation": "REVIEW",
+      "overall_notes": "Borderline case. だろう is typically N4 though some include it in late N5. Conservative approach would be REJECT, but marking as REVIEW."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0007",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "多分 appears clearly in sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses plain form verb 来る, でしょう probability marker, question particle か. All N5 grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Uses probability expression, question form, and common verb 来る. Standard N5 complexity.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with clear target vocabulary"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0008",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "お菓子 appears clearly in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses を particle, volitional form あげる (to give), past tense form あげた. All N5 grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Uses giving verb あげる, indirect object に, and past tense. Requires understanding of directional verbs.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with appropriate grammar"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0008",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "お菓子 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses の particle for possession, が particle, and adjective 好きだ. Standard N5 X は Y が 好き construction.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Lower-mid N5. Simple preference statement with basic が好き pattern.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean N5 example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0008",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "お菓子 appears clearly",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses を particle, ください (please do), masu-stem + ください construction. All N5 level.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Lower-mid N5. Polite request with ください. Simple and direct.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent N5 example with clear polite request pattern"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0009",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "今 appears clearly in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle and います (polite existence for animate). Basic N5 grammar.",
+      "difficulty_rating": 2,
+      "difficulty_notes": "Very low N5. Simple existence statement with time word. Extremely basic.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Perfect simple N5 example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0009",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "今 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains 'なければならない' which is the must do/have to pattern. This is N4 grammar expressing obligation.",
+      "difficulty_rating": 8,
+      "difficulty_notes": "N4 level. Uses complex negative conditional with obligation, far beyond N5.",
+      "recommendation": "REJECT",
+      "overall_notes": "Grammar level exceeds N5 due to なければならない obligation pattern"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0009",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "今 appears clearly",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, particle で indicating location/means, polite form ています. Progressive is borderline but acceptable for basic contexts.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Uses present progressive with common verb 読む, location particle. Standard complexity.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with acceptable use of ています"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0010",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "引く appears as plain form 引く",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses mathematical expression with は particle and question word いくつ. Basic N5.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Lower-mid N5. Simple math question. Requires number vocabulary but structure is straightforward.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example for mathematical context"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0010",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "引く appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses mathematical expression with は particle and copula です. Basic N5.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Low N5. Simple equation statement. Very straightforward.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent simple N5 math example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0010",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "引く appears in the sentence (as 引いたら in conditional form)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains 'たら' conditional form which is N4 grammar. The sentence uses 引いたら (if you subtract).",
+      "difficulty_rating": 7,
+      "difficulty_notes": "N4 level. Uses conditional form which is beyond N5.",
+      "recommendation": "REJECT",
+      "overall_notes": "Grammar exceeds N5 due to たら conditional"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0011",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "引く appears in the sentence in its expected mathematical usage",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses mathematical expression with は particle and question word いくつ. Basic N5.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Lower-mid N5. Math question with basic structure. Clear and simple.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 math example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0011",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "引く appears in mathematical context",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, mathematical expression, copula です. Basic N5.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Low N5. Simple equation statement.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean simple N5 example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0011",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "引く appears in the sentence but target vocab shows same kanji as n5_vocab_0010",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses mathematical expression, は particle, question word いくつ. All N5 level.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Lower-mid N5. Math question, straightforward.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. Note: vocab cards 0010 and 0011 appear to be duplicates"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0012",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "フィルム appears clearly in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses possessive の (自分の), に particle, i-adjective 新しい, を particle, past tense 入れた. All N5 grammar.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5. Uses possessive construction, adjective + noun, and past tense. Multiple elements but still N5 appropriate.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with appropriate complexity"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0012",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "フィルム appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains 'られる' potential form (入れられる - can insert/load). Potential form is N4 grammar.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "N4 level. Uses potential form and adverb 簡単に.",
+      "recommendation": "REJECT",
+      "overall_notes": "Grammar exceeds N5 due to potential form 入れられる"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0012",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "フィルム appears clearly",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "Error: 'いっっていない' has extra っ. Should be 'いっていない' or 'はいっていない'",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses に particle, ている form for state (入っている - is loaded), negative (ない), explanatory んだ. While んだ is sometimes considered N4, basic usage is often included in late N5.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Upper N5. Uses explanatory んだ, negative ている form, and demonstrative この. Complex for N5.",
+      "recommendation": "REVIEW",
+      "overall_notes": "Kana error present. Grammar is borderline with んだ and ていない combination. Recommend review or reject."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0013",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "磨く appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains quotation pattern 'と言った' (said that...). Reported speech with と is N4 grammar.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "N4 level. Uses reported speech pattern which is too advanced for N5.",
+      "recommendation": "REJECT",
+      "overall_notes": "Same sentence as vocab_0001 example 1. Grammar exceeds N5 with quotation と言った"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0013",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "磨く appears in past tense form みがいた (polished)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, を particle, and past tense. All basic N5 grammar.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Lower-mid N5. Simple past tense sentence with direct object. Note: using 磨く for shoes (polish) vs teeth (brush) - meaning is broader than listed 'to brush teeth'.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example, though note the verb meaning is broader (polish) than the target definition (brush teeth)"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0013",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "磨く appears in negative form みがかなくて",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains 'なくてはいけない' (must do/have to) which is N4 grammar expressing obligation. This is too complex for N5.",
+      "difficulty_rating": 8,
+      "difficulty_notes": "N4 level. Uses complex obligation pattern far beyond N5.",
+      "recommendation": "REJECT",
+      "overall_notes": "Grammar far exceeds N5 with なくてはいけない obligation form"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0014",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "押す appears in past tense form 押した",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, を particle, and past tense 押した. Basic N5 grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Uses past tense, demonstrative その, and basic sentence structure. The word 僕たち (we) is standard N5.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with clear target vocabulary"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0014",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "押す appears in te-form 押して",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses te-form to connect sequential actions (押して閉めた - pushed and closed). This is N5 level te-form usage.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5. Uses te-form for sequential actions, を particle, past tense. Requires understanding of verb connection.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example showing te-form sequential action"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0014",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "押す appears in past tense form おした (kana form)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, を particle, past tense. Basic N5 grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Uses past tense and compound noun 非常ボタン (emergency button). Vocabulary might be slightly advanced but grammar is solid N5.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with appropriate grammar level"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0015",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "売る appears in ている form 売っている",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, を particle, ている form. The ている here indicates ongoing business activity/state, which is borderline but acceptable in N5.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5. Uses ている for habitual/business activity, requires understanding of state vs action. Slightly complex but manageable.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example. ている for ongoing business is borderline but acceptable"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0015",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "売る appears in past tense form 売った",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, を particle, i-adjective 安く (adverbial form), past tense. All N5 grammar.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Uses adverbial form of i-adjective, past tense, basic structure. Straightforward.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent N5 example with clear grammar"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0015",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "売る appears in たい form 売りたくて",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses たい desire form with て connection (売りたくて), and たい form again (買いたい) with explanatory のです. While のです is sometimes N4, basic たい form and て connection are N5. Borderline acceptable.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Upper N5. Uses desire forms, て for reason, のです for explanation, and contrasting statements. Complex but within N5 if generous.",
+      "recommendation": "REVIEW",
+      "overall_notes": "Borderline case. たいくて pattern and のです together push toward N4, but could be late N5. Recommend review."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0016",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "電気 appears clearly in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses temporal expression 寝る前に (before sleeping), を particle, te-form + ください (please do). All N5 grammar.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5. Uses temporal expression with 前に, polite request pattern. Requires understanding of time expressions.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with appropriate polite request pattern"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0016",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "電気 appears in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses を particle, の nominalizer (消すの), negative imperative form 忘れないで (don't forget). While complex, these are N5 patterns.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Upper N5. Uses nominalization, negative te-form for prohibition, and embedded verb phrase. Complex but still N5.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Appropriate N5 example though on the complex side"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0016",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "電気 appears clearly",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses を particle and negative command form 消すな. While imperative/prohibitive forms are strong, basic な commands are included in N5.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Mid N5. Short command sentence using な prohibitive. Direct and clear.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example of negative command"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0017",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "並ぶ appears in te-form 並んで",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses te-form with お + masu-stem + ください pattern (並んでお待ちください). This is polite N5 level request form.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5. Uses polite request pattern with お~ください, te-form connection. Formal/polite but still N5.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example of polite request pattern"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0017",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "並ぶ appears in te-form 並んで",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, と particle (together with), te-form for manner (並んで - walking side by side), past tense 歩いた. All N5 grammar.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5. Uses と particle for accompaniment, te-form for manner, past tense. Requires nuanced understanding of て-form.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example showing te-form for manner"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0017",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "並ぶ appears in te-form ならんで",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, と particle, te-form, past tense 座った. Same pattern as previous example. All N5.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5. Same structure as example 1 with sit instead of walk. Standard complexity.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0018",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "病気 appears clearly in the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "FAIL",
+      "grammar_notes": "Contains 'らしい' which expresses hearsay/appearance (seems that/apparently). This is N4 grammar.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "N4 level. Uses らしい evidential marker which is beyond N5.",
+      "recommendation": "REJECT",
+      "overall_notes": "Grammar exceeds N5 due to らしい evidential form"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0018",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "病気 appears as subject of the sentence",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading is accurate",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, を particle, and basic verb する in present tense. The phrase 空にする (empty) uses そら which could be questioned, but the grammar structure is N5.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Mid-upper N5. Uses metaphorical expression 空にする (make empty/empty out), requires understanding of abstract concept. Vocabulary might be challenging.",
+      "recommendation": "REVIEW",
+      "overall_notes": "Grammar is N5, but the idiomatic expression 空にする and abstract concept may be too difficult. Borderline - recommend review."
+    }
+  }
+]

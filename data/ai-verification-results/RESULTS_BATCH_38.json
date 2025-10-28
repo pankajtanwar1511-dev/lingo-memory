@@ -1,0 +1,338 @@
+[
+  {
+    "card_id": "n5_vocab_0657",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "はる appears in kana form",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, に particle, を particle, の nominalization (twice), た form. All N5 patterns.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Uses double nominalization structure (はるのをわすれた). Multiple particles and embedded clauses. Advanced N5.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Complex N5 sentence with nominalization pattern but all grammar is N5-level"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0657",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "貼る appears in kanji form",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses を particle, 前に (before) temporal expression, に particle, を particle, の nominalization, を particle, た form. All N5 patterns.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Uses temporal 前に expression and nominalization. Multiple embedded clauses. Advanced N5 structure.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Complex but appropriate N5 example with temporal expression"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0657",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "貼る appears in kanji form",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses が particle, て form, 欲しい (want), と quotation, た form, に particle, を particle, の nominalization, を particle, ないで, ね particle. て form + 欲しい is N5 level desire pattern.",
+      "difficulty_rating": 9,
+      "difficulty_notes": "Very complex sentence with embedded relative clause, quotation, nominalization, and multiple particles. At upper limit of N5 complexity with long sentence structure.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Upper limit of N5 complexity but all grammar patterns are N5-level"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0657",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "はる appears in kana form (切手貼る)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses が particle, の particle, ておく pattern, た form, に particle, さ filler particle, の nominalization, ないで, よ particle. The ておく pattern (do in advance) is borderline but acceptable for basic N5 usage.",
+      "difficulty_rating": 9,
+      "difficulty_notes": "Very complex and colloquial with さ particle, ておく pattern, and casual speech style. Multiple embedded clauses. Upper limit of N5.",
+      "recommendation": "REVIEW",
+      "overall_notes": "ておく pattern is borderline N4+ but used in basic context. Very colloquial style may be challenging for beginners."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0658",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "たばこ appears clearly at sentence start",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses を particle, ない form, の question particle. All N5 patterns.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Simple negative question. Straightforward N5 structure with basic vocabulary.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good straightforward N5 example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0658",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "たばこ appears at sentence start",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses を particle, ないで, 欲しい (want), のです explanatory form, が particle. The ないでほしい pattern (want someone not to do) is N5 level.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Uses complex desire expression with negative and explanatory のです. Multiple patterns combined. Advanced N5.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Complex N5 sentence with polite request pattern"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0658",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "たばこ appears as topic",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, に particle, i-adjective, よ particle. Basic N5 pattern.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Simple statement about health. Straightforward N5 with basic vocabulary.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent simple N5 example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0659",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "涼しい appears modifying 夏",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses i-adjective, は particle, 好き, です, か question. All N5 patterns.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Simple preference question. Straightforward N5 structure.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with preference pattern"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0659",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "涼しい appears as predicate",
+      "kana_accuracy": "MAJOR_ERROR",
+      "kana_notes": "Shows こんにちは (konnichiwa - hello) but should be きょう (kyou) for 今日. Completely wrong reading that changes the meaning.",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, i-adjective, です. Basic N5 pattern.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Simple weather statement. Basic N5 structure.",
+      "recommendation": "REVIEW",
+      "overall_notes": "Major kana error - こんにちは vs きょう. Must be corrected despite good grammar."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0659",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "すずしい appears in kana form",
+      "kana_accuracy": "MAJOR_ERROR",
+      "kana_notes": "Shows こんにちは but should be きょう for 今日. Same error as previous example.",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, 少し adverb, i-adjective. All N5 patterns.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Simple weather statement with adverb. Basic N5 structure.",
+      "recommendation": "REVIEW",
+      "overall_notes": "Major kana error needs correction"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0659",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "すずしい appears in kana form",
+      "kana_accuracy": "MAJOR_ERROR",
+      "kana_notes": "Shows こんにちは but should be きょう. Same kana error repeated.",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, 少し adverb, i-adjective. All N5 patterns.",
+      "difficulty_rating": 3,
+      "difficulty_notes": "Simple weather statement, identical to example_index 2.",
+      "recommendation": "REJECT",
+      "overall_notes": "Duplicate of example_index 2 with same major kana error. Should be removed."
+    }
+  },
+  {
+    "card_id": "n5_vocab_0660",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "昨日 appears as time expression",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, time word, を particle, た form. All N5 patterns.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Simple past action with time word. Straightforward N5 structure.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Excellent straightforward N5 example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0660",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "昨日 appears as time expression",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses time word, に particle, た form. Basic N5 pattern.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Simple past action statement. Basic vocabulary and structure.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good simple N5 example"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0660",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "昨日 appears as time expression",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, time word, を particle, ました form. All N5 patterns.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Simple past action with polite form. Straightforward N5.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean N5 example with polite form"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0660",
+    "example_index": 3,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "きのう appears in kana within quotation",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, quotation marks 「」, を particle, で particle, た form, と quotation particle, た form. All N5 patterns.",
+      "difficulty_rating": 7,
+      "difficulty_notes": "Uses direct quotation with quotation marks and と particle. Multiple clauses and reported speech. Advanced N5.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with quotation pattern"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0660",
+    "example_index": 4,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "きのう appears in kana form",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, time word, が particle, i-adjective past tense. All N5 patterns.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Simple past state description. Straightforward N5 with i-adjective past.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with adjective past tense"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0660",
+    "example_index": 5,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "きのう appears in kana within relative clause",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, が particle, time word, た form (relative clause modifying カメラ), です. All N5 patterns.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Uses relative clause to modify noun. Mid-level N5 with embedded clause structure.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with relative clause pattern"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0661",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "せっけん appears clearly. NOTE: The meaning listed is 'economy' but せっけん means 'soap' not economy. This is a data error.",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses で particle (means/instrument), を particle, ました form. All N5 patterns.",
+      "difficulty_rating": 4,
+      "difficulty_notes": "Simple action statement with instrumental で. Straightforward N5 structure.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example but note the meaning field has an error (should be 'soap' not 'economy')"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0662",
+    "example_index": 0,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "はじめた appears as compound verb (洗いはじめた - started washing)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, を particle, から particle, verb stem + はじめた compound verb pattern. This compound verb pattern (verb stem + 始める) is N5 level.",
+      "difficulty_rating": 6,
+      "difficulty_notes": "Uses compound verb はじめる and から particle for starting point. Mid-level N5 with multiple particles.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Good N5 example with compound verb pattern"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0662",
+    "example_index": 1,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "はじめた appears as compound verb (洗いはじめた)",
+      "kana_accuracy": "ACCURATE",
+      "kana_notes": "Kana reading matches perfectly",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses は particle, を particle, verb stem + はじめた compound verb. All N5 patterns.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Simple past action with compound verb. Mid-level N5 structure.",
+      "recommendation": "ACCEPT",
+      "overall_notes": "Clean N5 example with compound verb"
+    }
+  },
+  {
+    "card_id": "n5_vocab_0662",
+    "example_index": 2,
+    "verification": {
+      "target_vocab_present": "YES",
+      "target_vocab_notes": "はじめた appears as compound verb (降りはじめた)",
+      "kana_accuracy": "MINOR_ERROR",
+      "kana_notes": "Shows おりはじめた but 降る is typically read as ふる not おる. Should be ふりはじめた not おりはじめた.",
+      "n5_grammar_check": "PASS",
+      "grammar_notes": "Uses が particle, verb stem + はじめた compound verb. All N5 patterns.",
+      "difficulty_rating": 5,
+      "difficulty_notes": "Simple weather statement with compound verb. Mid-level N5.",
+      "recommendation": "REVIEW",
+      "overall_notes": "Kana error - 降る should be read as ふる not おる. Needs correction."
+    }
+  }
+]

@@ -1,0 +1,768 @@
+{
+  "batch_number": 27,
+  "total_batches": 38,
+  "examples_in_batch": 50,
+  "verification_instructions": {
+    "task": "Verify each example for N5 appropriateness",
+    "check": [
+      "1. Does sentence contain the target vocabulary word?",
+      "2. Does kana reading match the Japanese sentence correctly?",
+      "3. Does sentence use ONLY N5 grammar patterns?",
+      "4. Rate difficulty from 1-10 (within N5 range)",
+      "5. Recommend: accept/review/reject"
+    ],
+    "output_format": "For each example, return JSON with: target_vocab_present, kana_accuracy, n5_grammar_check, difficulty_rating, recommendation"
+  },
+  "examples": [
+    {
+      "card_id": "n5_vocab_0462",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "そっち",
+        "meaning": "over there"
+      },
+      "sentence": {
+        "japanese": "そっちがその手でくるならこっちにも手がある。",
+        "kana": "そっちがそのてでくるならこっちにもてがある。",
+        "english": "Two can play at that game.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0464",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "カップ",
+        "meaning": "cup"
+      },
+      "sentence": {
+        "japanese": "テーブルの上にカップがある。",
+        "kana": "てーぶるのうえにかっぷがある。",
+        "english": "There is a cup on the table.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0464",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "カップ",
+        "meaning": "cup"
+      },
+      "sentence": {
+        "japanese": "そのカップは素敵だ。",
+        "kana": "そのかっぷはすてきだ。",
+        "english": "The cup is nice.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0464",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "カップ",
+        "meaning": "cup"
+      },
+      "sentence": {
+        "japanese": "どのカップがあなたのですか。",
+        "kana": "どのかっぷがあなたのですか。",
+        "english": "Which cup is yours?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0465",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "あの",
+        "meaning": "that over there"
+      },
+      "sentence": {
+        "japanese": "どんなに高くても、あの古い時計を買います。",
+        "kana": "どんなにたかくても、あのふるいとけいをかいます。",
+        "english": "I'll buy that old clock, however expensive it is.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0465",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "あの",
+        "meaning": "that over there"
+      },
+      "sentence": {
+        "japanese": "あのデパートで新しいコートを買いたい。",
+        "kana": "あのでぱーとであたらしいこーとをかいたい。",
+        "english": "I would like to buy a new coat at that department store.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0465",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "あの",
+        "meaning": "that over there"
+      },
+      "sentence": {
+        "japanese": "あの仕事の口はまだあるよ。",
+        "kana": "あのしごとのくちはまだあるよ。",
+        "english": "The job offer still stands.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0466",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "頼む",
+        "kana": "たのむ",
+        "meaning": "to ask"
+      },
+      "sentence": {
+        "japanese": "ちょっとおたのみがあるんですが。",
+        "kana": "ちょっとおたのみがあるんですが。",
+        "english": "Would you do something for me?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0466",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "頼む",
+        "kana": "たのむ",
+        "meaning": "to ask"
+      },
+      "sentence": {
+        "japanese": "頼んだぞ。",
+        "kana": "たのんだぞ。",
+        "english": "I'm depending on you.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0466",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "頼む",
+        "kana": "たのむ",
+        "meaning": "to ask"
+      },
+      "sentence": {
+        "japanese": "頼んだ物がまだ来ません。",
+        "kana": "たのんだものがまだきません。",
+        "english": "I'm still waiting for my order.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0468",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "手",
+        "kana": "て",
+        "meaning": "hand"
+      },
+      "sentence": {
+        "japanese": "彼女はナイフで手を切った。",
+        "kana": "かのじょはないふでてをきった。",
+        "english": "She cut her hand on a knife.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0468",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "手",
+        "kana": "て",
+        "meaning": "hand"
+      },
+      "sentence": {
+        "japanese": "もう手が冷たくって。",
+        "kana": "もうてがつめたくって。",
+        "english": "My hand's getting too cold.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0468",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "手",
+        "kana": "て",
+        "meaning": "hand"
+      },
+      "sentence": {
+        "japanese": "この手の本はあまり読まない。",
+        "kana": "このてのほんはあまりよまない。",
+        "english": "I don't read this kind of book much.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0468",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "手",
+        "kana": "て",
+        "meaning": "hand"
+      },
+      "sentence": {
+        "japanese": "あなたはシャツをあべこべに着ている。",
+        "kana": "あなたはしゃつをあべこべにきている。",
+        "english": "You are wearing your shirt inside out.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0468",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "手",
+        "kana": "て",
+        "meaning": "hand"
+      },
+      "sentence": {
+        "japanese": "もう朝から晩まで働いてクタクタだよ。",
+        "kana": "もうあさからばんまではたらいてくたくただよ。",
+        "english": "I'm beat. I've been working from dawn to dusk.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0468",
+      "example_index": 5,
+      "target_vocab": {
+        "kanji": "手",
+        "kana": "て",
+        "meaning": "hand"
+      },
+      "sentence": {
+        "japanese": "彼はくたくたの背広を着ていた。",
+        "kana": "かれはくたくたのせびろをきていた。",
+        "english": "He was wearing a threadbare suit.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0469",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ええ",
+        "meaning": "yes"
+      },
+      "sentence": {
+        "japanese": "ええ、じゃあ私の電話番号教えるね。",
+        "kana": "ええ、じゃあわたしのでんわばんごうおしえるね。",
+        "english": "OK. Let me give you my number.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0469",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ええ",
+        "meaning": "yes"
+      },
+      "sentence": {
+        "japanese": "長く歩いた後で疲れたかどうか聞くと、彼女は「ええ、ちょっと」と言った。",
+        "kana": "ながくあるいたあとでつかれたかどうかきくと、かのじょは「ええ、ちょっと」といった。",
+        "english": "When I asked her if she was tired after the long walk, she said, \"Sort of.\"",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0469",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ええ",
+        "meaning": "yes"
+      },
+      "sentence": {
+        "japanese": "ええと、買ったのは先週でした。",
+        "kana": "ええと、かったのはせんしゅうでした。",
+        "english": "Let's see. I bought it last week.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0470",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "毎日",
+        "kana": "まいにち",
+        "meaning": "every day"
+      },
+      "sentence": {
+        "japanese": "毎日働く時間帯が違うんです。",
+        "kana": "まいにちはたらくじかんたいがちがうんです。",
+        "english": "Every day I work different hours.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0470",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "毎日",
+        "kana": "まいにち",
+        "meaning": "every day"
+      },
+      "sentence": {
+        "japanese": "音楽が好きで、毎日聴いています。",
+        "kana": "おんがくがすきで、まいにちきいています。",
+        "english": "I like music, and I listen to it every day.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0470",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "毎日",
+        "kana": "まいにち",
+        "meaning": "every day"
+      },
+      "sentence": {
+        "japanese": "毎日お昼ご飯を作っているよ。",
+        "kana": "まいにちおひるごめしをつくっているよ。",
+        "english": "I make lunch every day.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0471",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "花",
+        "kana": "はな",
+        "meaning": "flower"
+      },
+      "sentence": {
+        "japanese": "これらの花は春に咲く。",
+        "kana": "これらのはなははるにさく。",
+        "english": "These flowers bloom in spring.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0471",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "花",
+        "kana": "はな",
+        "meaning": "flower"
+      },
+      "sentence": {
+        "japanese": "たおやかな花が咲いている。",
+        "kana": "たおやかなはながさいている。",
+        "english": "The delicate, graceful flowers are in bloom.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0471",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "花",
+        "kana": "はな",
+        "meaning": "flower"
+      },
+      "sentence": {
+        "japanese": "彼女は鳥や花が大好きです。",
+        "kana": "かのじょはとりやはながだいすきです。",
+        "english": "She is keen on birds and flowers.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0472",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "一",
+        "kana": "いち",
+        "meaning": "one"
+      },
+      "sentence": {
+        "japanese": "あなたか私のどちらかが一位を取るだろう。",
+        "kana": "あなたかわたしのどちらかがいちいをとるだろう。",
+        "english": "Either you or I will get the first prize.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0472",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "一",
+        "kana": "いち",
+        "meaning": "one"
+      },
+      "sentence": {
+        "japanese": "その家なら一軒おいて隣ですよ。",
+        "kana": "そのいえならいっけんおいてとなりですよ。",
+        "english": "The house is next door but one.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0472",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "一",
+        "kana": "いち",
+        "meaning": "one"
+      },
+      "sentence": {
+        "japanese": "机の上に一冊の本がある。",
+        "kana": "つくえのうえにいっさつのほんがある。",
+        "english": "There is an album on the desk.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0473",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "居る",
+        "kana": "いる",
+        "meaning": "to be"
+      },
+      "sentence": {
+        "japanese": "あなたはシャツをあべこべに着ている。",
+        "kana": "あなたはしゃつをあべこべにきている。",
+        "english": "You are wearing your shirt inside out.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0473",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "居る",
+        "kana": "いる",
+        "meaning": "to be"
+      },
+      "sentence": {
+        "japanese": "ワシが空を飛んでいる。",
+        "kana": "わしがそらをとんでいる。",
+        "english": "An eagle is flying in the sky.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0473",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "居る",
+        "kana": "いる",
+        "meaning": "to be"
+      },
+      "sentence": {
+        "japanese": "その上雨が降り出している。",
+        "kana": "そのうえあめがおりだしている。",
+        "english": "Besides, it's starting to rain.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0473",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "居る",
+        "kana": "いる",
+        "meaning": "to be"
+      },
+      "sentence": {
+        "japanese": "あなたはシャツをあべこべに着ている。",
+        "kana": "あなたはしゃつをあべこべにきている。",
+        "english": "You are wearing your shirt inside out.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0473",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "居る",
+        "kana": "いる",
+        "meaning": "to be"
+      },
+      "sentence": {
+        "japanese": "彼はくたくたの背広を着ていた。",
+        "kana": "かれはくたくたのせびろをきていた。",
+        "english": "He was wearing a threadbare suit.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0473",
+      "example_index": 5,
+      "target_vocab": {
+        "kanji": "居る",
+        "kana": "いる",
+        "meaning": "to be"
+      },
+      "sentence": {
+        "japanese": "彼女はそこらにいますか。",
+        "kana": "かのじょはそこらにいますか。",
+        "english": "Is she anywhere about?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0474",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "砂糖",
+        "kana": "さとう",
+        "meaning": "sugar"
+      },
+      "sentence": {
+        "japanese": "薄い砂糖水を作った。",
+        "kana": "うすいさとうみずをつくった。",
+        "english": "I prepared a weak solution of sugar and water.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0474",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "砂糖",
+        "kana": "さとう",
+        "meaning": "sugar"
+      },
+      "sentence": {
+        "japanese": "彼女はコーヒーにたくさん砂糖を入れた。",
+        "kana": "かのじょはこーひーにたくさんさとうをいれた。",
+        "english": "She put much sugar in the coffee.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0474",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "砂糖",
+        "kana": "さとう",
+        "meaning": "sugar"
+      },
+      "sentence": {
+        "japanese": "彼は砂糖を入れないコーヒーが好きだ。",
+        "kana": "かれはさとうをいれないこーひーがすきだ。",
+        "english": "He likes coffee without sugar.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0475",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "カレンダー",
+        "meaning": "calendar"
+      },
+      "sentence": {
+        "japanese": "カレンダーはどこ？",
+        "kana": "かれんだーはどこ？",
+        "english": "Where is the calendar?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0475",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "カレンダー",
+        "meaning": "calendar"
+      },
+      "sentence": {
+        "japanese": "カレンダーはある？",
+        "kana": "かれんだーはある？",
+        "english": "Do you have a calendar?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0476",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "今",
+        "kana": "いま",
+        "meaning": "now"
+      },
+      "sentence": {
+        "japanese": "私は彼が来るのを今か今かと待っている。",
+        "kana": "わたしはかれがくるのをいまかいまかとまっている。",
+        "english": "I expect him to come every moment.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0476",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "今",
+        "kana": "いま",
+        "meaning": "now"
+      },
+      "sentence": {
+        "japanese": "今、女の人が１人入っていきましたよ。",
+        "kana": "いま、おんなのひとが１にんいっっていきましたよ。",
+        "english": "A woman is going into it now.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0476",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "今",
+        "kana": "いま",
+        "meaning": "now"
+      },
+      "sentence": {
+        "japanese": "彼女は今のところ大丈夫です。",
+        "kana": "かのじょはいまのところだいじょうぶです。",
+        "english": "She is all right at the moment.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0476",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "今",
+        "kana": "いま",
+        "meaning": "now"
+      },
+      "sentence": {
+        "japanese": "彼らはいま三人の子供がいる。",
+        "kana": "かれらはいまさんにんのこどもがいる。",
+        "english": "Now they have three children.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0476",
+      "example_index": 4,
+      "target_vocab": {
+        "kanji": "今",
+        "kana": "いま",
+        "meaning": "now"
+      },
+      "sentence": {
+        "japanese": "彼はいま泳いでいます。",
+        "kana": "かれはいまおよいでいます。",
+        "english": "He's swimming now.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0476",
+      "example_index": 5,
+      "target_vocab": {
+        "kanji": "今",
+        "kana": "いま",
+        "meaning": "now"
+      },
+      "sentence": {
+        "japanese": "いま頭が痛い。",
+        "kana": "いまあたまがいたい。",
+        "english": "I have a headache now.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0477",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "旅行",
+        "kana": "りょこう",
+        "meaning": "travel"
+      },
+      "sentence": {
+        "japanese": "彼は来年外国旅行をする。",
+        "kana": "かれはらいねんがいこくりょこうをする。",
+        "english": "He will travel abroad next year.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0477",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "旅行",
+        "kana": "りょこう",
+        "meaning": "travel"
+      },
+      "sentence": {
+        "japanese": "旅行は楽しい。",
+        "kana": "りょこうはたのしい。",
+        "english": "It's fun to travel.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0477",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "旅行",
+        "kana": "りょこう",
+        "meaning": "travel"
+      },
+      "sentence": {
+        "japanese": "旅行に行こう。",
+        "kana": "りょこうにいこう。",
+        "english": "Let's take a trip.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0478",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "できる",
+        "meaning": "to be able to"
+      },
+      "sentence": {
+        "japanese": "できるよ！",
+        "kana": "できるよ！",
+        "english": "You can do it.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0478",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "できる",
+        "meaning": "to be able to"
+      },
+      "sentence": {
+        "japanese": "電話はどこでできる？",
+        "kana": "でんわはどこでできる？",
+        "english": "Where can one make a phone call?",
+        "source": "tatoeba"
+      }
+    }
+  ]
+}

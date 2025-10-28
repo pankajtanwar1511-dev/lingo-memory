@@ -1,0 +1,768 @@
+{
+  "batch_number": 20,
+  "total_batches": 38,
+  "examples_in_batch": 50,
+  "verification_instructions": {
+    "task": "Verify each example for N5 appropriateness",
+    "check": [
+      "1. Does sentence contain the target vocabulary word?",
+      "2. Does kana reading match the Japanese sentence correctly?",
+      "3. Does sentence use ONLY N5 grammar patterns?",
+      "4. Rate difficulty from 1-10 (within N5 range)",
+      "5. Recommend: accept/review/reject"
+    ],
+    "output_format": "For each example, return JSON with: target_vocab_present, kana_accuracy, n5_grammar_check, difficulty_rating, recommendation"
+  },
+  "examples": [
+    {
+      "card_id": "n5_vocab_0330",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "銀行",
+        "kana": "ぎんこう",
+        "meaning": "bank"
+      },
+      "sentence": {
+        "japanese": "彼は銀行員です。",
+        "kana": "かれはぎんこういんです。",
+        "english": "He is a bank clerk.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0330",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "銀行",
+        "kana": "ぎんこう",
+        "meaning": "bank"
+      },
+      "sentence": {
+        "japanese": "彼は銀行に入って行った。",
+        "kana": "かれはぎんこうにいっっていった。",
+        "english": "He went into the bank.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0330",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "銀行",
+        "kana": "ぎんこう",
+        "meaning": "bank"
+      },
+      "sentence": {
+        "japanese": "彼は銀行で働いています。",
+        "kana": "かれはぎんこうではたらいています。",
+        "english": "He works for a bank.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0331",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "大切",
+        "kana": "たいせつ",
+        "meaning": "important"
+      },
+      "sentence": {
+        "japanese": "どうぞお体を大切に。",
+        "kana": "どうぞおからだをたいせつに。",
+        "english": "Please take good care of yourself.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0331",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "大切",
+        "kana": "たいせつ",
+        "meaning": "important"
+      },
+      "sentence": {
+        "japanese": "大切な話があるんです。",
+        "kana": "たいせつなはなしがあるんです。",
+        "english": "I'm about to tell you something important.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0331",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "大切",
+        "kana": "たいせつ",
+        "meaning": "important"
+      },
+      "sentence": {
+        "japanese": "彼女は私の大切な人です。",
+        "kana": "かのじょはわたしのたいせつなにんです。",
+        "english": "She is dear to me.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0332",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "学生",
+        "kana": "がくせい",
+        "meaning": "student"
+      },
+      "sentence": {
+        "japanese": "ある学生に会うところです。",
+        "kana": "あるがくせいにあうところです。",
+        "english": "I'm going to meet a certain student.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0332",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "学生",
+        "kana": "がくせい",
+        "meaning": "student"
+      },
+      "sentence": {
+        "japanese": "彼女は優秀な学生だ。",
+        "kana": "かのじょはゆうしゅうながくせいだ。",
+        "english": "She is an excellent student.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0332",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "学生",
+        "kana": "がくせい",
+        "meaning": "student"
+      },
+      "sentence": {
+        "japanese": "彼女は真面目な学生です。",
+        "kana": "かのじょはまじめながくせいです。",
+        "english": "She is an earnest student.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0333",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "部屋",
+        "kana": "へや",
+        "meaning": "room"
+      },
+      "sentence": {
+        "japanese": "隣の部屋がうるさいのです。",
+        "kana": "となりのへやがうるさいのです。",
+        "english": "It's noisy next door.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0333",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "部屋",
+        "kana": "へや",
+        "meaning": "room"
+      },
+      "sentence": {
+        "japanese": "彼女は勉強部屋から出ていった。",
+        "kana": "かのじょはべんきょうへやからでていった。",
+        "english": "She went out of her study.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0333",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "部屋",
+        "kana": "へや",
+        "meaning": "room"
+      },
+      "sentence": {
+        "japanese": "この部屋は先生方に使われています。",
+        "kana": "このへやはせんせいがたにつかわれています。",
+        "english": "This room is used by teachers.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0334",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "昼御飯",
+        "kana": "ひるごはん",
+        "meaning": "midday meal"
+      },
+      "sentence": {
+        "japanese": "昼ご飯を食べに外に出ませんか。",
+        "kana": "ひるごめしをたべにそとにでませんか。",
+        "english": "How about going out for lunch?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0334",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "昼御飯",
+        "kana": "ひるごはん",
+        "meaning": "midday meal"
+      },
+      "sentence": {
+        "japanese": "毎日お昼ご飯を作っているよ。",
+        "kana": "まいにちおひるごめしをつくっているよ。",
+        "english": "I make lunch every day.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0334",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "昼御飯",
+        "kana": "ひるごはん",
+        "meaning": "midday meal"
+      },
+      "sentence": {
+        "japanese": "彼女は昼ご飯を食べているところだ。",
+        "kana": "かのじょはひるごめしをたべているところだ。",
+        "english": "She is having lunch now.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0335",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "下",
+        "kana": "した",
+        "meaning": "below"
+      },
+      "sentence": {
+        "japanese": "木の下でちょっと休もうよ。",
+        "kana": "きのしたでちょっとやすもうよ。",
+        "english": "Let's take a little rest under the tree.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0335",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "下",
+        "kana": "した",
+        "meaning": "below"
+      },
+      "sentence": {
+        "japanese": "彼女は木の下に座っていた。",
+        "kana": "かのじょはきのしたにすわっていた。",
+        "english": "She was sitting under a tree.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0335",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "下",
+        "kana": "した",
+        "meaning": "below"
+      },
+      "sentence": {
+        "japanese": "彼らは木の下に座った。",
+        "kana": "かれらはきのしたにすわった。",
+        "english": "They sat under a tree.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0335",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "下",
+        "kana": "した",
+        "meaning": "below"
+      },
+      "sentence": {
+        "japanese": "橋のしたは暗かった。",
+        "kana": "はしのしたはくらかった。",
+        "english": "It was dark under the bridge.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0338",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "地図",
+        "kana": "ちず",
+        "meaning": "map"
+      },
+      "sentence": {
+        "japanese": "少なくとも地図ぐらいはあるだろう。",
+        "kana": "すくなくともちずぐらいはあるだろう。",
+        "english": "At least they should have a map.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0338",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "地図",
+        "kana": "ちず",
+        "meaning": "map"
+      },
+      "sentence": {
+        "japanese": "その地図はどこで手に入りますか。",
+        "kana": "そのちずはどこでてにいりますか。",
+        "english": "Where can I get the map?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0338",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "地図",
+        "kana": "ちず",
+        "meaning": "map"
+      },
+      "sentence": {
+        "japanese": "これは地図です。",
+        "kana": "これはちずです。",
+        "english": "This is a map.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0339",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "八百屋",
+        "kana": "やおや",
+        "meaning": "greengrocer"
+      },
+      "sentence": {
+        "japanese": "果物や野菜は八百屋で買ってるよ。",
+        "kana": "くだものややさいはやおやでかってるよ。",
+        "english": "I buy my fruits and vegetables at the greengrocer's.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0340",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ネクタイ",
+        "meaning": "tie"
+      },
+      "sentence": {
+        "japanese": "赤いネクタイを買いました。",
+        "kana": "あかいねくたいをかいました。",
+        "english": "I bought a red tie.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0340",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ネクタイ",
+        "meaning": "tie"
+      },
+      "sentence": {
+        "japanese": "素敵なネクタイですね。",
+        "kana": "すてきなねくたいですね。",
+        "english": "That's a nice tie you're wearing.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0340",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ネクタイ",
+        "meaning": "tie"
+      },
+      "sentence": {
+        "japanese": "私は彼にネクタイを買ってあげた。",
+        "kana": "わたしはかれにねくたいをかってあげた。",
+        "english": "I bought him a tie.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0341",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "去年",
+        "kana": "きょねん",
+        "meaning": "last year"
+      },
+      "sentence": {
+        "japanese": "わたしは去年一年生でした。",
+        "kana": "わたしはきょねんいちねんせいでした。",
+        "english": "I was a first year student last year.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0341",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "去年",
+        "kana": "きょねん",
+        "meaning": "last year"
+      },
+      "sentence": {
+        "japanese": "去年の冬は暖かだった。",
+        "kana": "きょねんのふゆはあたたかだった。",
+        "english": "We had a mild winter last year.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0341",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "去年",
+        "kana": "きょねん",
+        "meaning": "last year"
+      },
+      "sentence": {
+        "japanese": "私は去年三田に住んでいませんでした。",
+        "kana": "わたしはきょねんみたにすんでいませんでした。",
+        "english": "I did not live in Sanda last year.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0343",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "乗る",
+        "kana": "のる",
+        "meaning": "to get on"
+      },
+      "sentence": {
+        "japanese": "ほら、あなたの乗る電車が来たわ。",
+        "kana": "ほら、あなたののるでんしゃがきたわ。",
+        "english": "Look, here comes your train.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0343",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "乗る",
+        "kana": "のる",
+        "meaning": "to get on"
+      },
+      "sentence": {
+        "japanese": "毎日どこでバスに乗りますか。",
+        "kana": "まいにちどこでばすにのりますか。",
+        "english": "Where do you get on the bus every day?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0343",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "乗る",
+        "kana": "のる",
+        "meaning": "to get on"
+      },
+      "sentence": {
+        "japanese": "彼女は病院までタクシーに乗った。",
+        "kana": "かのじょはびょういんまでたくしーにじょうった。",
+        "english": "She took a taxi to the hospital.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0344",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "弟",
+        "kana": "おとうと",
+        "meaning": "younger brother"
+      },
+      "sentence": {
+        "japanese": "私は一人の弟がいます。",
+        "kana": "わたしはひとりのおとうとがいます。",
+        "english": "I have one brother.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0344",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "弟",
+        "kana": "おとうと",
+        "meaning": "younger brother"
+      },
+      "sentence": {
+        "japanese": "彼の弟はとてもよく勉強する。",
+        "kana": "かのおとうとはとてもよくべんきょうする。",
+        "english": "His brother studies very hard.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0344",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "弟",
+        "kana": "おとうと",
+        "meaning": "younger brother"
+      },
+      "sentence": {
+        "japanese": "弟は私より背が高い。",
+        "kana": "おとうとはわたしよりせがたかい。",
+        "english": "My younger brother is taller than I.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0345",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "あなた",
+        "meaning": "you"
+      },
+      "sentence": {
+        "japanese": "あなたはシャツをあべこべに着ている。",
+        "kana": "あなたはしゃつをあべこべにきている。",
+        "english": "You are wearing your shirt inside out.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0345",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "あなた",
+        "meaning": "you"
+      },
+      "sentence": {
+        "japanese": "ほら、あなたの乗る電車が来たわ。",
+        "kana": "ほら、あなたののるでんしゃがきたわ。",
+        "english": "Look, here comes your train.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0345",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "あなた",
+        "meaning": "you"
+      },
+      "sentence": {
+        "japanese": "私はもうあなたに夢中、メロメロなのよ。",
+        "kana": "わたしはもうあなたにむちゅう、めろめろなのよ。",
+        "english": "I'm stuck on you - really far gone.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0346",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "千",
+        "kana": "せん",
+        "meaning": "thousand"
+      },
+      "sentence": {
+        "japanese": "千人もの人がそこにいた。",
+        "kana": "せんにんものにんがそこにいた。",
+        "english": "As many as a thousand people were there.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0346",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "千",
+        "kana": "せん",
+        "meaning": "thousand"
+      },
+      "sentence": {
+        "japanese": "生徒は全部で約千人です。",
+        "kana": "せいとはぜんぶでやくせんにんです。",
+        "english": "There are about a thousand students in all.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0347",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "緑",
+        "kana": "みどり",
+        "meaning": "green"
+      },
+      "sentence": {
+        "japanese": "私はみどり銀行に行ってきたところなんです。",
+        "kana": "わたしはみどりぎんこうにいってきたところなんです。",
+        "english": "I have just been to the Midori Bank.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0347",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "緑",
+        "kana": "みどり",
+        "meaning": "green"
+      },
+      "sentence": {
+        "japanese": "その緑のシャツを見せてください。",
+        "kana": "そのみどりのしゃつをみせてください。",
+        "english": "Please show me the green shirt.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0347",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "緑",
+        "kana": "みどり",
+        "meaning": "green"
+      },
+      "sentence": {
+        "japanese": "このはこの外は緑だが中は赤である。",
+        "kana": "このはこのそとはみどりだがなかはあかである。",
+        "english": "The outside of this box is green, but the inside is red.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0347",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "緑",
+        "kana": "みどり",
+        "meaning": "green"
+      },
+      "sentence": {
+        "japanese": "私はみどり銀行に行ってきたところなんです。",
+        "kana": "わたしはみどりぎんこうにいってきたところなんです。",
+        "english": "I have just been to the Midori Bank.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0349",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "軽い",
+        "kana": "かるい",
+        "meaning": "light"
+      },
+      "sentence": {
+        "japanese": "彼女は口が軽い。",
+        "kana": "かのじょはくちがかるい。",
+        "english": "She is a chatterbox.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0349",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "軽い",
+        "kana": "かるい",
+        "meaning": "light"
+      },
+      "sentence": {
+        "japanese": "私は軽い靴が好きだ。",
+        "kana": "わたしはかるいくつがすきだ。",
+        "english": "I like light shoes.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0349",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "軽い",
+        "kana": "かるい",
+        "meaning": "light"
+      },
+      "sentence": {
+        "japanese": "私のコートは軽いが暖かい。",
+        "kana": "わたしのこーとはかるいがあたたかい。",
+        "english": "My overcoat is light but warm.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0350",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "あまり",
+        "meaning": "not very"
+      },
+      "sentence": {
+        "japanese": "この手の本はあまり読まない。",
+        "kana": "このてのほんはあまりよまない。",
+        "english": "I don't read this kind of book much.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0350",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "あまり",
+        "meaning": "not very"
+      },
+      "sentence": {
+        "japanese": "あまりそれを鼻にかけるな。",
+        "kana": "あまりそれをはなにかけるな。",
+        "english": "Don't boast too much about that.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0350",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "あまり",
+        "meaning": "not very"
+      },
+      "sentence": {
+        "japanese": "生徒はあまり手を挙げません。",
+        "kana": "せいとはあまりてをあげません。",
+        "english": "Students don't raise their hands much.",
+        "source": "jmdict"
+      }
+    }
+  ]
+}

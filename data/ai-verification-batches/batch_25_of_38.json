@@ -1,0 +1,768 @@
+{
+  "batch_number": 25,
+  "total_batches": 38,
+  "examples_in_batch": 50,
+  "verification_instructions": {
+    "task": "Verify each example for N5 appropriateness",
+    "check": [
+      "1. Does sentence contain the target vocabulary word?",
+      "2. Does kana reading match the Japanese sentence correctly?",
+      "3. Does sentence use ONLY N5 grammar patterns?",
+      "4. Rate difficulty from 1-10 (within N5 range)",
+      "5. Recommend: accept/review/reject"
+    ],
+    "output_format": "For each example, return JSON with: target_vocab_present, kana_accuracy, n5_grammar_check, difficulty_rating, recommendation"
+  },
+  "examples": [
+    {
+      "card_id": "n5_vocab_0417",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "店",
+        "kana": "みせ",
+        "meaning": "shop"
+      },
+      "sentence": {
+        "japanese": "私にちょっとみせてくださいよ。",
+        "kana": "わたしにちょっとみせてくださいよ。",
+        "english": "Let me have a look at it, will you?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0418",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ワイシャツ",
+        "meaning": "business shirt"
+      },
+      "sentence": {
+        "japanese": "私はワイシャツをきれいに洗った。",
+        "kana": "わたしはわいしゃつをきれいにあらった。",
+        "english": "I washed my shirt clean.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0418",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ワイシャツ",
+        "meaning": "business shirt"
+      },
+      "sentence": {
+        "japanese": "俺の白のワイシャツ、どこ？",
+        "kana": "おれのしろのわいしゃつ、どこ？",
+        "english": "Where's my white dress shirt?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0419",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "北",
+        "kana": "きた",
+        "meaning": "north"
+      },
+      "sentence": {
+        "japanese": "北の方では冬が寒いです。",
+        "kana": "きたのほうではふゆがさむいです。",
+        "english": "In the north, it's cold in winter.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0419",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "北",
+        "kana": "きた",
+        "meaning": "north"
+      },
+      "sentence": {
+        "japanese": "北から冷たい風が吹いていた。",
+        "kana": "きたからつめたいかぜがふいていた。",
+        "english": "There was a cold wind blowing from the north.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0419",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "北",
+        "kana": "きた",
+        "meaning": "north"
+      },
+      "sentence": {
+        "japanese": "風は北から吹いている。",
+        "kana": "かぜはきたからふいている。",
+        "english": "The wind is blowing from the north.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0420",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ラジオ",
+        "meaning": "radio"
+      },
+      "sentence": {
+        "japanese": "そのニュースはラジオで聞いたよ。",
+        "kana": "そのにゅーすはらじおできいたよ。",
+        "english": "I heard the news on the radio.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0420",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ラジオ",
+        "meaning": "radio"
+      },
+      "sentence": {
+        "japanese": "彼女はラジオを消した。",
+        "kana": "かのじょはらじおをけした。",
+        "english": "She turned off the radio.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0420",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ラジオ",
+        "meaning": "radio"
+      },
+      "sentence": {
+        "japanese": "彼女はラジオを持っていた。",
+        "kana": "かのじょはらじおをもっていた。",
+        "english": "She had a radio.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0422",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ハンカチ",
+        "meaning": "handkerchief"
+      },
+      "sentence": {
+        "japanese": "このハンカチはいくらですか。",
+        "kana": "このはんかちはいくらですか。",
+        "english": "How much is this handkerchief?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0422",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ハンカチ",
+        "meaning": "handkerchief"
+      },
+      "sentence": {
+        "japanese": "彼女はたくさんハンカチを持っている。",
+        "kana": "かのじょはたくさんはんかちをもっている。",
+        "english": "She has many handkerchiefs.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0422",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "ハンカチ",
+        "meaning": "handkerchief"
+      },
+      "sentence": {
+        "japanese": "きのう教室にハンカチを忘れました。",
+        "kana": "きのうきょうしつにはんかちをわすれました。",
+        "english": "I left my handkerchief in the classroom yesterday.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0423",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "いつ",
+        "meaning": "when"
+      },
+      "sentence": {
+        "japanese": "テレビはいつからあるの？",
+        "kana": "てれびはいつからあるの？",
+        "english": "When did TV appear?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0423",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "いつ",
+        "meaning": "when"
+      },
+      "sentence": {
+        "japanese": "いつものところでいつもの人達に会った。",
+        "kana": "いつものところでいつものひとたちにあった。",
+        "english": "I met the usual people at the usual place.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0423",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "いつ",
+        "meaning": "when"
+      },
+      "sentence": {
+        "japanese": "いつでも私の車を貸してあげますよ。",
+        "kana": "いつでもわたしのくるまをかしてあげますよ。",
+        "english": "You can borrow my car anytime.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0424",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "全部",
+        "kana": "ぜんぶ",
+        "meaning": "all"
+      },
+      "sentence": {
+        "japanese": "彼は窓を全部開けておいた。",
+        "kana": "かれはまどをぜんぶひらけておいた。",
+        "english": "He kept all the windows open.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0424",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "全部",
+        "kana": "ぜんぶ",
+        "meaning": "all"
+      },
+      "sentence": {
+        "japanese": "生徒は全部で約千人です。",
+        "kana": "せいとはぜんぶでやくせんにんです。",
+        "english": "There are about a thousand students in all.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0424",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "全部",
+        "kana": "ぜんぶ",
+        "meaning": "all"
+      },
+      "sentence": {
+        "japanese": "私は彼らの全部を知っている。",
+        "kana": "わたしはかれらのぜんぶをしっている。",
+        "english": "I know all of them.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0425",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "橋",
+        "kana": "はし",
+        "meaning": "bridge"
+      },
+      "sentence": {
+        "japanese": "はしで食べるのは難しいですか。",
+        "kana": "はしでたべるのはむずかしいですか。",
+        "english": "Is eating with chopsticks difficult?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0425",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "橋",
+        "kana": "はし",
+        "meaning": "bridge"
+      },
+      "sentence": {
+        "japanese": "彼らは橋を造った。",
+        "kana": "かれらははしをぞうった。",
+        "english": "They constructed a bridge.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0425",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "橋",
+        "kana": "はし",
+        "meaning": "bridge"
+      },
+      "sentence": {
+        "japanese": "私の家はあの橋の向こうにある。",
+        "kana": "わたしのいえはあのはしのむこうにある。",
+        "english": "My house is beyond that bridge.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0425",
+      "example_index": 3,
+      "target_vocab": {
+        "kanji": "橋",
+        "kana": "はし",
+        "meaning": "bridge"
+      },
+      "sentence": {
+        "japanese": "橋まで一緒に行きましょう。",
+        "kana": "はしまでいっしょにいきましょう。",
+        "english": "I'll go with you as far as the bridge.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0427",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "バター",
+        "meaning": "butter"
+      },
+      "sentence": {
+        "japanese": "私は今朝バターつきのパンを食べた。",
+        "kana": "わたしはけさばたーつきのぱんをたべた。",
+        "english": "I ate bread and butter this morning.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0427",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "バター",
+        "meaning": "butter"
+      },
+      "sentence": {
+        "japanese": "彼はバター付きパンが好きだ。",
+        "kana": "かれはばたーつきぱんがすきだ。",
+        "english": "He likes bread and butter.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0427",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "バター",
+        "meaning": "butter"
+      },
+      "sentence": {
+        "japanese": "私たちは牛乳でバターを作ります。",
+        "kana": "わたしたちはぎゅうにゅうでばたーをつくります。",
+        "english": "We make milk into butter.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0428",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "もっと",
+        "meaning": "more"
+      },
+      "sentence": {
+        "japanese": "もっと果物を食べるべきです。",
+        "kana": "もっとくだものをたべるべきです。",
+        "english": "You should eat more fruit.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0428",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "もっと",
+        "meaning": "more"
+      },
+      "sentence": {
+        "japanese": "もっと大きい声で言ってください。",
+        "kana": "もっとおおきいこえでいってください。",
+        "english": "Louder, please.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0428",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "もっと",
+        "meaning": "more"
+      },
+      "sentence": {
+        "japanese": "なんでもっと早くここに来なかったのだ。",
+        "kana": "なんでもっとはやくここにこなかったのだ。",
+        "english": "Why didn't you get here sooner?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0430",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "など",
+        "meaning": "et cetera"
+      },
+      "sentence": {
+        "japanese": "彼は鉛筆やノートや辞書などを買った。",
+        "kana": "かれはえんぴつやのーとやじしょなどをかった。",
+        "english": "He bought pencils, notebooks, dictionaries and so on.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0430",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "など",
+        "meaning": "et cetera"
+      },
+      "sentence": {
+        "japanese": "私はパンやコーヒーや砂糖などを買った。",
+        "kana": "わたしはぱんやこーひーやさとうなどをかった。",
+        "english": "I bought bread, coffee, sugar and the like.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0430",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "など",
+        "meaning": "et cetera"
+      },
+      "sentence": {
+        "japanese": "だれがその手紙を書いたかはまだなぞである。",
+        "kana": "だれがそのてがみをかいたかはまだなぞである。",
+        "english": "It is still a mystery who wrote the letter.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0431",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "太い",
+        "kana": "ふとい",
+        "meaning": "fat"
+      },
+      "sentence": {
+        "japanese": "このペンは太いです。",
+        "kana": "このぺんはふといです。",
+        "english": "This pen is thick.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0432",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "やる",
+        "meaning": "to do"
+      },
+      "sentence": {
+        "japanese": "彼は夏は花に毎日水をやる。",
+        "kana": "かれはなつははなにまいにちみずをやる。",
+        "english": "He waters the flowers every day in summer.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0432",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "やる",
+        "meaning": "to do"
+      },
+      "sentence": {
+        "japanese": "私は毎日庭の花に水をやる。",
+        "kana": "わたしはまいにちにわのはなにみずをやる。",
+        "english": "I water the flowers in the garden every day.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0432",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "やる",
+        "meaning": "to do"
+      },
+      "sentence": {
+        "japanese": "私は犬に肉をやる。",
+        "kana": "わたしはいぬににくをやる。",
+        "english": "I feed meat to my dog.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0434",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "昼",
+        "kana": "ひる",
+        "meaning": "noon"
+      },
+      "sentence": {
+        "japanese": "彼女は昼も夜も働いている。",
+        "kana": "かのじょはひるもよるもはたらいている。",
+        "english": "She is working night and day.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0434",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "昼",
+        "kana": "ひる",
+        "meaning": "noon"
+      },
+      "sentence": {
+        "japanese": "昼寝て夜働く人もいる。",
+        "kana": "ひるねてよるはたらくにんもいる。",
+        "english": "There are some people who sleep in the daytime and work at night.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0434",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "昼",
+        "kana": "ひる",
+        "meaning": "noon"
+      },
+      "sentence": {
+        "japanese": "私たちはよく一緒に御昼を食べます。",
+        "kana": "わたしたちはよくいっしょにおひるをたべます。",
+        "english": "We often eat lunch together.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0435",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "色",
+        "kana": "いろ",
+        "meaning": "colour"
+      },
+      "sentence": {
+        "japanese": "僕はこの色もまた好きだ。",
+        "kana": "ぼくはこのいろもまたすきだ。",
+        "english": "I like this color as well.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0435",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "色",
+        "kana": "いろ",
+        "meaning": "colour"
+      },
+      "sentence": {
+        "japanese": "彼女は色が黒い。",
+        "kana": "かのじょはいろがくろい。",
+        "english": "She is dark-skinned.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0435",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "色",
+        "kana": "いろ",
+        "meaning": "colour"
+      },
+      "sentence": {
+        "japanese": "彼女の目の色は青です。",
+        "kana": "かのじょのめのいろはあおです。",
+        "english": "The color of her eyes is blue.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0436",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "黄色",
+        "kana": "きいろ",
+        "meaning": "yellow"
+      },
+      "sentence": {
+        "japanese": "私はたくさんの花を持っている。あるものは赤く、あるものは黄色である。",
+        "kana": "わたしはたくさんのはなをもっている。あるものはあかく、あるものはきいろである。",
+        "english": "I have a lot of flowers. Some are red and some are yellow.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0436",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "黄色",
+        "kana": "きいろ",
+        "meaning": "yellow"
+      },
+      "sentence": {
+        "japanese": "私は黄色が好きです。",
+        "kana": "わたしはきいろがすきです。",
+        "english": "I like the colour yellow.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0436",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "黄色",
+        "kana": "きいろ",
+        "meaning": "yellow"
+      },
+      "sentence": {
+        "japanese": "黄色のもあるよ。",
+        "kana": "きいろのもあるよ。",
+        "english": "There's also a yellow one.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0437",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "左",
+        "kana": "ひだり",
+        "meaning": "left hand side"
+      },
+      "sentence": {
+        "japanese": "左の足が痛いです。",
+        "kana": "ひだりのあしがいたいです。",
+        "english": "My left foot hurts.",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0438",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "野菜",
+        "kana": "やさい",
+        "meaning": "vegetable"
+      },
+      "sentence": {
+        "japanese": "その店は野菜を売っている。",
+        "kana": "そのみせはやさいをうっている。",
+        "english": "The store deals in vegetables.",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0438",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "野菜",
+        "kana": "やさい",
+        "meaning": "vegetable"
+      },
+      "sentence": {
+        "japanese": "いびつな野菜はお嫌いですか？",
+        "kana": "いびつなやさいはおきらいですか？",
+        "english": "Do you hate misshapen vegetables?",
+        "source": "jmdict"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0438",
+      "example_index": 2,
+      "target_vocab": {
+        "kanji": "野菜",
+        "kana": "やさい",
+        "meaning": "vegetable"
+      },
+      "sentence": {
+        "japanese": "野菜を食べたら？",
+        "kana": "やさいをたべたら？",
+        "english": "Why don't you eat some vegetables?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0439",
+      "example_index": 0,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "シャワー",
+        "meaning": "shower"
+      },
+      "sentence": {
+        "japanese": "シャワーはどこですか。",
+        "kana": "しゃわーはどこですか。",
+        "english": "Where are the showers?",
+        "source": "tatoeba"
+      }
+    },
+    {
+      "card_id": "n5_vocab_0439",
+      "example_index": 1,
+      "target_vocab": {
+        "kanji": "",
+        "kana": "シャワー",
+        "meaning": "shower"
+      },
+      "sentence": {
+        "japanese": "シャワーの水が出ません。",
+        "kana": "しゃわーのみずがでません。",
+        "english": "There's no water coming out of the shower.",
+        "source": "tatoeba"
+      }
+    }
+  ]
+}
