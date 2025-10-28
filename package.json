@@ -11,9 +11,6 @@
     "import:jmdict": "ts-node --project tsconfig.scripts.json scripts/import-jmdict.ts",
     "enrich:sentences": "ts-node --project tsconfig.scripts.json scripts/enrich-sentences.ts",
     "enrich:stream": "ts-node --project tsconfig.scripts.json scripts/enrich-sentences-streaming.ts",
-    "generate:audio": "ts-node --project tsconfig.scripts.json scripts/generate-audio-edge.ts",
-    "link:audio": "ts-node --project tsconfig.scripts.json scripts/link-audio-urls.ts",
-    "upload:audio": "ts-node --project tsconfig.scripts.json scripts/upload-audio.ts",
     "validate:quality": "ts-node --project tsconfig.scripts.json scripts/validate-quality.ts",
     "review:cards": "ts-node --project tsconfig.scripts.json scripts/review-cards.ts"
   },

@@ -27,7 +27,7 @@ A modern, beautiful Japanese vocabulary learning app built with Next.js 14, Type
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/japvocab.git
+git clone git@github.com:pankajtanwar1511-dev/lingo-memory.git japvocab
 cd japvocab
 
 # Install dependencies
@@ -115,28 +115,31 @@ NEXT_PUBLIC_API_URL=your_api_url
 
 ## 📈 Current Status
 
-**Production Readiness:** 75%
+**Production Readiness:** 58.5%
 
-### ✅ Completed (Phase 1 & 2)
+### ✅ Completed (Phase 1, 2 & 3)
 
 - ✅ **Core Application**: Next.js 14, full component library, study system
 - ✅ **Services**: 14 business logic services implemented
 - ✅ **Database**: IndexedDB with Dexie, seed loading, import/export
 - ✅ **UI/UX**: Flashcards, quiz mode, progress tracking, dark mode
 - ✅ **Data Pipeline**: Automated pipeline with Tatoeba/JMdict integration
-- ✅ **N5 Dataset**: 401 words verified and ready to use
+- ✅ **AI Verification**: 38 batches (1,859 examples) manually verified by Claude
+- ✅ **N5 Dataset**: 387 words production-ready (2+ verified examples each)
+- ✅ **Quality Control**: All examples verified for N5 grammar, kana accuracy, vocab presence
 - ✅ **Documentation**: 8 comprehensive guides + archived history
 
 ### 🚧 In Progress
 
-- 🚧 **N5 Completion**: 401/662 verified → 261 remaining (need AI generation)
+- 🚧 **N5 Completion**: 387/662 production-ready → 275 need examples
+  - 115 cards with 1 example (need 1 more)
+  - 160 cards with 0 examples (need 2 new)
 - 🚧 **N4 Dataset**: Not yet processed (planned for later)
 - 🚧 **Audio Generation**: Planned with official LLM models (TTS removed)
 
 ### 📋 Next Phase
 
-- [ ] Generate remaining 261 N5 examples with AI
-- [ ] Verify AI-generated content
+- [ ] Generate examples for 275 remaining N5 words (AI-assisted)
 - [ ] Audio generation with licensed TTS
 - [ ] Firebase authentication activation
 - [ ] Cloud sync with Firestore
@@ -183,7 +186,7 @@ This project uses open-source vocabulary data:
 
 ## 📧 Contact
 
-For questions or feedback, please open an issue on GitHub.
+For questions or feedback, please open an issue on [GitHub](https://github.com/pankajtanwar1511-dev/lingo-memory).
 
 ---
 

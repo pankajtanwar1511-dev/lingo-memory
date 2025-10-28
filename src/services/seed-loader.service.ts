@@ -20,16 +20,10 @@ export interface SeedFile {
  */
 export const SEED_FILES: SeedFile[] = [
   {
-    name: 'N5 Comprehensive',
-    path: '/seed-data/n5-comprehensive.json',
-    description: '662 JLPT N5 vocabulary cards with examples',
+    name: 'N5 Verified Dataset',
+    path: '/seed-data/N5_vocab_dataset.json',
+    description: '662 JLPT N5 words with AI-verified examples (387 production-ready)',
     priority: 1
-  },
-  {
-    name: 'N4 Comprehensive',
-    path: '/seed-data/n4-comprehensive.json',
-    description: '632 JLPT N4 vocabulary cards with examples',
-    priority: 2
   }
 ]
 
