@@ -92,14 +92,15 @@ japvocab/
 │
 ├── public/
 │   ├── seed-data/       # Production vocabulary datasets
-│   │   ├── n5-vocabulary.json
-│   │   └── n4-comprehensive.json
-│   └── audio/           # Audio files
+│   │   └── N5_vocab_dataset.json  # AI-verified N5 dataset (387 production-ready)
+│   ├── backup/          # Old datasets (n5-comprehensive.json, n4-comprehensive.json)
+│   └── icons/           # PWA icons
 │
 ├── data/                # Development data and processing
-│   ├── ai-verification/ # AI verification batches
+│   ├── verification/    # AI verification batches & results
+│   ├── production/      # Categorized verified examples
 │   ├── backups/         # Data backups
-│   └── categorized-examples/  # Quality-sorted examples
+│   └── archive/         # Old/unused data
 │
 ├── scripts/             # Data processing scripts
 ├── docs/                # Documentation (you are here)

@@ -1,20 +1,21 @@
 # Project History & Timeline
 
-**Last Updated:** October 28, 2024
+**Last Updated:** October 29, 2024
 **Project Start:** October 2024
 
 ---
 
 ## Summary
 
-JapVocab is a Japanese vocabulary learning platform with a solid foundation and **401 verified N5 words** ready for production use.
+JapVocab is a Japanese vocabulary learning platform with **387 production-ready N5 words** with AI-verified examples.
 
-**Current Status:** 60% production ready
+**Current Status:** 58.5% production ready
 - ✅ Core application complete
-- ✅ Data pipeline operational
-- ✅ 401 N5 words verified and ready (60.6% of target)
-- 🚧 261 N5 words need AI-generated examples (39.4%)
-- ⚠️ N4 dataset not started
+- ✅ Data pipeline operational with AI verification
+- ✅ 387 N5 words production-ready (2+ perfect examples each)
+- ✅ 1,165 perfect examples verified from 1,859 total
+- 🚧 275 N5 words need examples (115 need 1 more, 160 need 2 new)
+- ⚠️ N4 dataset archived (not in use)
 - ⚠️ Audio generation planned (no audio currently)
 - ⚠️ Auth/sync coded but not activated
 - ❌ Testing suite needed
@@ -39,14 +40,15 @@ JapVocab is a Japanese vocabulary learning platform with a solid foundation and 
 - Validation framework
 - Data verification system established
 
-**Key Achievement:** N5 dataset foundation
+**Key Achievement:** N5 dataset with AI verification
 - 662 target words from JMdict/Tatoeba
-- Custom scripts with filters applied
-- Claude AI manual verification
-- 401 words fully verified and ready (60.6%)
-- 261 words pending AI generation (39.4%)
-- Full legal attribution
-- Verification results in data/ai-verification-results/
+- Custom scripts with quality filters applied
+- 38 batches created for AI verification
+- Claude AI manual verification of 1,859 examples
+- 1,165 perfect examples identified (62.7% pass rate)
+- 387 words production-ready with 2+ perfect examples (58.5%)
+- Full legal attribution (CC BY-SA 4.0, CC BY 2.0 FR)
+- Final dataset: `public/seed-data/N5_vocab_dataset.json`
 
 ### Week 2: Advanced Features & Automation
 

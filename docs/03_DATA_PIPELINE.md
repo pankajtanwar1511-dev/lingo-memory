@@ -1,7 +1,7 @@
 # Data Pipeline Guide
 
-**Last Updated:** October 28, 2024
-**Status:** N5 401/662 Verified (60.6%), N4 Not Started
+**Last Updated:** October 29, 2024
+**Status:** N5 387/662 Production-Ready (58.5%), N4 Not Started
 
 ---
 
@@ -56,7 +56,24 @@ Step 5: Categorization
 - No translation: -50 points
 - Unnatural text: -15 points
 
-**Result:** 401/662 N5 words verified, 261 pending AI generation
+**Result:** 387/662 N5 words production-ready (2+ perfect examples), 275 pending
+
+### AI Verification Methodology
+
+**Quality Criteria (All Must Pass):**
+1. ✅ **Vocab Present = YES**: Target vocabulary appears in sentence as distinct word
+2. ✅ **Kana Accurate = ACCURATE**: Kana reading matches perfectly (character-by-character)
+3. ✅ **N5 Grammar = PASS**: Only N5 grammar patterns (no conditional, passive, causative, potential forms)
+4. ✅ **Recommendation = ACCEPT**: Passes all checks
+
+**Verification Process:**
+- 38 batches created (~50 examples each)
+- Manual review by Claude AI
+- 1,859 examples verified total
+- 1,165 examples passed all criteria (62.7%)
+- 387 vocabulary cards have 2+ perfect examples (production-ready)
+
+**Final Dataset:** `public/seed-data/N5_vocab_dataset.json`
 
 ---
 
