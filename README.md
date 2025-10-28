@@ -6,6 +6,7 @@ A modern, beautiful Japanese vocabulary learning app built with Next.js 14, Type
 
 - **FSRS Algorithm**: Science-backed spaced repetition for optimal retention
 - **Authentic Content**: Real Japanese from verified sources with proper attribution
+- **401 N5 Words Ready**: Verified vocabulary with authentic examples from Tatoeba/JMdict
 - **Beautiful UI**: Modern design with smooth animations and dark mode support
 - **PWA Ready**: Works offline, installable on all devices
 - **JLPT Aligned**: Structured learning path from N5 to N1
@@ -14,12 +15,13 @@ A modern, beautiful Japanese vocabulary learning app built with Next.js 14, Type
 ## 🛠️ Tech Stack
 
 - **Framework**: Next.js 14 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
+- **Language**: TypeScript 5.3
+- **Styling**: Tailwind CSS 3.4
 - **UI Components**: Radix UI
 - **Animations**: Framer Motion
-- **State Management**: Zustand (coming in Phase 2)
-- **Database**: IndexedDB with Dexie (coming in Phase 2)
+- **State Management**: Zustand 4.5
+- **Database**: IndexedDB with Dexie 4.2
+- **Validation**: Zod 4.x
 
 ## 📦 Installation
 
@@ -43,16 +45,27 @@ npm run dev
 japvocab/
 ├── src/
 │   ├── app/              # Next.js app router pages
-│   ├── components/       # React components
-│   │   ├── ui/          # Reusable UI components
-│   │   └── layout/      # Layout components
-│   ├── data/            # Sample vocabulary data
-│   ├── lib/             # Utility functions
-│   ├── types/           # TypeScript type definitions
-│   └── store/           # State management (Zustand)
-├── public/              # Static assets
-├── tailwind.config.ts   # Tailwind configuration
-└── tsconfig.json        # TypeScript configuration
+│   ├── components/       # React components (30+)
+│   ├── services/         # Business logic (14 services)
+│   ├── store/            # State management (Zustand)
+│   ├── types/            # TypeScript type definitions
+│   ├── schemas/          # Zod validation schemas
+│   ├── lib/              # Utility functions (JMdict parser, etc.)
+│   └── hooks/            # Custom React hooks
+├── public/
+│   ├── icons/            # PWA icons
+│   └── seed-data/        # N5 & N4 vocabulary datasets
+├── data/
+│   ├── verification/     # AI verification (batches, results, prompts)
+│   ├── production/       # Production-ready categorized examples
+│   ├── archive/          # Backups and old datasets
+│   └── backups/          # Dataset backups
+├── scripts/
+│   ├── verification/     # AI verification scripts (Python)
+│   └── deprecated/       # Old audio scripts (not in use)
+├── docs/                 # Documentation (01-08 + archive)
+├── reports/              # Validation reports & metrics
+└── tools/                # HTML utilities (reset DB, etc.)
 ```
 
 ## 🎨 Design System
@@ -100,32 +113,60 @@ Create a `.env.local` file in the root directory:
 NEXT_PUBLIC_API_URL=your_api_url
 ```
 
-## 📈 Development Phases
+## 📈 Current Status
 
-### Phase 1: Foundation (Current)
-- ✅ Next.js setup with TypeScript
-- ✅ Tailwind CSS with custom theme
-- ✅ Base component library
-- ✅ Sample flashcard component
-- ✅ N5 vocabulary data
-- ✅ Beautiful landing page
+**Production Readiness:** 75%
 
-### Phase 2: Core Features (Coming Next)
-- [ ] FSRS algorithm implementation
-- [ ] IndexedDB integration with Dexie
-- [ ] PWA manifest and service worker
-- [ ] Firebase authentication
+### ✅ Completed (Phase 1 & 2)
+
+- ✅ **Core Application**: Next.js 14, full component library, study system
+- ✅ **Services**: 14 business logic services implemented
+- ✅ **Database**: IndexedDB with Dexie, seed loading, import/export
+- ✅ **UI/UX**: Flashcards, quiz mode, progress tracking, dark mode
+- ✅ **Data Pipeline**: Automated pipeline with Tatoeba/JMdict integration
+- ✅ **N5 Dataset**: 401 words verified and ready to use
+- ✅ **Documentation**: 8 comprehensive guides + archived history
+
+### 🚧 In Progress
+
+- 🚧 **N5 Completion**: 401/662 verified → 261 remaining (need AI generation)
+- 🚧 **N4 Dataset**: Not yet processed (planned for later)
+- 🚧 **Audio Generation**: Planned with official LLM models (TTS removed)
+
+### 📋 Next Phase
+
+- [ ] Generate remaining 261 N5 examples with AI
+- [ ] Verify AI-generated content
+- [ ] Audio generation with licensed TTS
+- [ ] Firebase authentication activation
 - [ ] Cloud sync with Firestore
+- [ ] Testing suite (unit + integration)
 
-### Phase 3: Premium Features
-- [ ] Stripe payment integration
-- [ ] Premium audio recordings
-- [ ] Advanced analytics
-- [ ] Import/Export functionality
+See `docs/07_DEVELOPMENT_ROADMAP.md` for detailed roadmap
+
+## 📚 Documentation
+
+Comprehensive documentation is available in the `docs/` folder:
+
+1. **[Getting Started](docs/01_GETTING_STARTED.md)** - Installation & quick start
+2. **[Architecture](docs/02_ARCHITECTURE.md)** - Technical deep dive
+3. **[Data Pipeline](docs/03_DATA_PIPELINE.md)** - Data processing guide
+4. **[Data Schema](docs/04_DATA_SCHEMA.md)** - Complete schema reference
+5. **[Audio Production](docs/05_AUDIO_PRODUCTION.md)** - TTS setup & migration
+6. **[Project History](docs/06_PROJECT_HISTORY.md)** - Timeline & milestones
+7. **[Development Roadmap](docs/07_DEVELOPMENT_ROADMAP.md)** - Future plans
+8. **[Quality Assurance](docs/08_QUALITY_ASSURANCE.md)** - Validation & review
+
+**Historical Docs:** See `docs/archive/` for 49 archived development logs
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+**Before contributing:**
+- Read `docs/01_GETTING_STARTED.md` for setup
+- Check `docs/07_DEVELOPMENT_ROADMAP.md` for priorities
+- Review `docs/08_QUALITY_ASSURANCE.md` for quality standards
 
 ## 📄 License
 
