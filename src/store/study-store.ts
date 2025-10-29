@@ -27,6 +27,12 @@ export interface StudyStats {
   lastStudyDate?: Date
 }
 
+export interface StudyPreferences {
+  showGeneratedExamples: boolean
+  showAuthenticExamples: boolean
+  showNeedsReview: boolean
+}
+
 interface StudyStore {
   // Cards data
   vocabulary: VocabularyCard[]
@@ -40,6 +46,9 @@ interface StudyStore {
   // Stats
   stats: StudyStats
 
+  // Preferences
+  preferences: StudyPreferences
+
   // Actions
   loadVocabulary: (cards: VocabularyCard[]) => void
   initializeCards: () => void
@@ -51,6 +60,7 @@ interface StudyStore {
   getNewCards: (limit?: number) => StudyCard[]
   updateStats: () => void
   resetProgress: () => void
+  updatePreferences: (prefs: Partial<StudyPreferences>) => void
 }
 
 const useStudyStore = create<StudyStore>()(
@@ -70,6 +80,11 @@ const useStudyStore = create<StudyStore>()(
         todayReviews: 0,
         todayMinutes: 0,
         lastStudyDate: undefined
+      },
+      preferences: {
+        showGeneratedExamples: true,
+        showAuthenticExamples: true,
+        showNeedsReview: true
       },
 
       // Load vocabulary from database
@@ -298,13 +313,24 @@ const useStudyStore = create<StudyStore>()(
             lastStudyDate: undefined
           }
         })
+      },
+
+      // Update preferences
+      updatePreferences: (prefs: Partial<StudyPreferences>) => {
+        set({
+          preferences: {
+            ...get().preferences,
+            ...prefs
+          }
+        })
       }
     }),
     {
-      name: 'japvocab-study-store',
+      name: 'lingomemory-study-store',
       partialize: (state) => ({
         studyCards: state.studyCards,
-        stats: state.stats
+        stats: state.stats,
+        preferences: state.preferences
       }),
       // Custom storage with date deserialization
       storage: {

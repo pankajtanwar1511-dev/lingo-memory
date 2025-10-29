@@ -624,7 +624,7 @@ npm run import:jmdict -- --jlpt N5 --output data/n5-all.json
 
 4. **Upload to CDN and Deploy**
    ```bash
-   npm run upload:audio -- --source public/audio/n5 --bucket japvocab-audio
+   npm run upload:audio -- --source public/audio/n5 --bucket lingomemory-audio
    ```
 
 ---

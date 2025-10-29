@@ -15,20 +15,20 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'),
-  title: "JapVocab - Master Japanese with Science-Backed Learning",
+  title: "LingoMemory - Master Japanese with Science-Backed Learning",
   description: "Learn Japanese vocabulary efficiently with spaced repetition, JLPT-aligned content, and authentic examples from native sources.",
   keywords: ["Japanese", "JLPT", "vocabulary", "learning", "spaced repetition", "flashcards"],
-  authors: [{ name: "JapVocab Team" }],
+  authors: [{ name: "LingoMemory Team" }],
   openGraph: {
-    title: "JapVocab - Master Japanese with Science-Backed Learning",
+    title: "LingoMemory - Master Japanese with Science-Backed Learning",
     description: "Learn Japanese vocabulary efficiently with spaced repetition",
     type: "website",
     locale: "en_US",
-    siteName: "JapVocab",
+    siteName: "LingoMemory",
   },
   twitter: {
     card: "summary_large_image",
-    title: "JapVocab - Master Japanese with Science-Backed Learning",
+    title: "LingoMemory - Master Japanese with Science-Backed Learning",
     description: "Learn Japanese vocabulary efficiently with spaced repetition",
   },
   manifest: "/manifest.json",

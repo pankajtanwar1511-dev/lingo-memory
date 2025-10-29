@@ -43,7 +43,7 @@ We created a **production-ready N5 dataset** with:
 ### 🗂️ Directory Structure
 
 ```
-japvocab/
+lingomemory/
 ├── docs/                           # Documentation folder
 │   ├── DATA_SCHEMA.md              # [1] Schema reference
 │   ├── N5_PIPELINE_GUIDE.md        # [2] Execution guide

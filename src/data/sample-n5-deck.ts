@@ -550,7 +550,7 @@ export const sampleN5DeckMetadata = {
   visibility: "public" as const,
   premiumOnly: false,
   credits: {
-    author: "JapVocab Team",
+    author: "LingoMemory Team",
     sources: [
       "JMdict (EDRDG) - CC BY-SA 4.0",
       "Tatoeba Project - CC BY 2.0",

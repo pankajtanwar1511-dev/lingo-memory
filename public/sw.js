@@ -1,5 +1,5 @@
-// Service Worker for JapVocab PWA
-const CACHE_NAME = 'japvocab-v2';
+// Service Worker for LingoMemory PWA
+const CACHE_NAME = 'lingomemory-v2';
 const urlsToCache = [
   '/',
   '/study',
@@ -132,7 +132,7 @@ self.addEventListener('push', (event) => {
   };
 
   event.waitUntil(
-    self.registration.showNotification('JapVocab Study Reminder', options)
+    self.registration.showNotification('LingoMemory Study Reminder', options)
   );
 });
 

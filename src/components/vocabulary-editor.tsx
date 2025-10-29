@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Select } from "@/components/ui/select"
 import { Badge } from "@/components/ui/badge"
 import { Plus, X, Save } from "lucide-react"
+import { PersonaBadge } from "@/components/persona"
 
 interface VocabularyEditorProps {
   card?: VocabularyCard
@@ -271,16 +272,13 @@ export function VocabularyEditor({ card, onSave, onCancel }: VocabularyEditorPro
 
         <div className="space-y-3 mb-3">
           {formData.examples?.map((example, index) => (
-            <Card key={index} className="p-3">
-              <div className="flex items-start justify-between">
-                <div className="flex-1">
-                  <p className="font-medium">{example.japanese}</p>
-                  {example.kana && (
-                    <p className="text-sm text-gray-600">{example.kana}</p>
+            <Card key={index} className="p-3 border-l-2 border-blue-400/50">
+              <div className="flex items-start justify-between mb-2">
+                <div className="flex gap-1.5">
+                  <PersonaBadge type="source" status={example.source.type} />
+                  {example.needsReview && (
+                    <PersonaBadge type="review" status="needs_review" />
                   )}
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
-                    {example.english}
-                  </p>
                 </div>
                 <Button
                   variant="ghost"
@@ -289,6 +287,15 @@ export function VocabularyEditor({ card, onSave, onCancel }: VocabularyEditorPro
                 >
                   <X className="h-4 w-4" />
                 </Button>
+              </div>
+              <div className="flex-1">
+                <p className="font-medium">{example.japanese}</p>
+                {example.kana && (
+                  <p className="text-sm text-gray-600">{example.kana}</p>
+                )}
+                <p className="text-sm text-gray-600 dark:text-gray-400 italic">
+                  "{example.english}"
+                </p>
               </div>
             </Card>
           ))}

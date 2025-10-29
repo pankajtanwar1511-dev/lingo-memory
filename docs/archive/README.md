@@ -2,7 +2,7 @@
 
 **Last Updated:** October 28, 2024
 
-This folder contains historical documentation from the development of JapVocab. These files have been superseded by the consolidated documentation in the parent `docs/` folder but are preserved for historical reference.
+This folder contains historical documentation from the development of LingoMemory. These files have been superseded by the consolidated documentation in the parent `docs/` folder but are preserved for historical reference.
 
 ---
 

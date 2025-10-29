@@ -1,4 +1,4 @@
-# Data Improvement Plan for JapVocab
+# Data Improvement Plan for LingoMemory
 
 ## Executive Summary
 

@@ -6,7 +6,7 @@
 
 ## Overview
 
-JapVocab maintains high data quality through a multi-layered validation system:
+LingoMemory maintains high data quality through a multi-layered validation system:
 
 1. **Automated Validation** - Schema and consistency checks
 2. **Quality Scoring** - 0-100 point scoring system

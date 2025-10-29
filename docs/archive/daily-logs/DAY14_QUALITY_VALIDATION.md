@@ -133,7 +133,7 @@ npm run validate:quality -- \
   "metadata": {
     "generatedAt": "2025-10-26T10:00:00Z",
     "totalCards": 800,
-    "validator": "JapVocab Quality Validator v1.0"
+    "validator": "LingoMemory Quality Validator v1.0"
   },
   "statistics": {
     "total": 800,

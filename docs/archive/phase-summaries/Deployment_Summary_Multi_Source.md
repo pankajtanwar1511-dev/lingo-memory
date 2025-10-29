@@ -421,7 +421,7 @@ cp public/seed-data/n5-comprehensive.json.backup-20251027 public/seed-data/n5-co
 
 ---
 
-**Project**: japvocab - Japanese Vocabulary Learning App
+**Project**: lingomemory - Japanese Vocabulary Learning App
 **Level**: N5 (JLPT Beginner)
 **Version**: 2.0 (Multi-Source Support)
 **Status**: ✅ Production Deployed

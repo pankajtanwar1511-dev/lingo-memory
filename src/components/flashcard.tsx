@@ -8,6 +8,9 @@ import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
 import type { VocabularyCard } from "@/types/vocabulary"
+import { PersonaBadge } from "@/components/persona"
+import { getPersonaById } from "@/data/personas"
+import useStudyStore from "@/store/study-store"
 
 interface FlashcardProps {
   card: VocabularyCard
@@ -26,6 +29,7 @@ export function Flashcard({
 }: FlashcardProps) {
   const [isFlipped, setIsFlipped] = useState(false)
   const [showHint, setShowHint] = useState(false)
+  const preferences = useStudyStore((state) => state.preferences)
 
   const playAudio = () => {
     // Using Web Speech API for now, will integrate with real audio later
@@ -166,27 +170,92 @@ export function Flashcard({
                       Example Sentences
                     </h3>
                     <div className="space-y-3 max-h-[200px] overflow-y-auto">
-                      {card.examples.map((example, index) => (
-                        <div
-                          key={index}
-                          className="p-3 bg-white/50 dark:bg-gray-800/50 rounded-lg space-y-1"
-                        >
-                          <p className="text-lg font-japanese text-gray-800 dark:text-gray-200">
-                            {example.japanese}
-                          </p>
-                          {example.kana && (
-                            <p className="text-sm text-gray-600 dark:text-gray-400 font-japanese">
-                              {example.kana}
-                            </p>
-                          )}
-                          <p className="text-sm text-gray-700 dark:text-gray-300">
-                            {example.english}
-                          </p>
-                          <p className="text-xs text-gray-500 dark:text-gray-500">
-                            Source: {example.source.type} {example.source.id && `#${example.source.id}`}
-                          </p>
-                        </div>
-                      ))}
+                      {card.examples
+                        .filter(example => {
+                          const isGenerated = example.source.type === 'generated'
+                          const isAuthentic = example.source.type !== 'generated'
+
+                          if (isGenerated && !preferences.showGeneratedExamples) return false
+                          if (isAuthentic && !preferences.showAuthenticExamples) return false
+                          if (example.needsReview && !preferences.showNeedsReview) return false
+
+                          return true
+                        })
+                        .map((example, index) => {
+                        const persona = example.source.type === 'generated' && example.source.persona
+                          ? getPersonaById(example.source.persona)
+                          : undefined
+
+                        // Get persona color
+                        const getPersonaColor = () => {
+                          if (!persona) return 'border-blue-400'
+                          const colorMap: Record<string, string> = {
+                            'persona_tomoko': 'border-pink-400',
+                            'persona_ken': 'border-blue-400',
+                            'persona_aya': 'border-purple-400',
+                            'persona_emi': 'border-orange-400',
+                          }
+                          return colorMap[persona.id] || 'border-blue-400'
+                        }
+
+                        return (
+                          <div
+                            key={index}
+                            className={`relative p-5 bg-gradient-to-br from-white via-gray-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-2xl border-l-[6px] ${getPersonaColor()} animate-scale-in transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group`}
+                          >
+                            {/* Character Avatar - floating outside */}
+                            {persona && (
+                              <div className="absolute -left-2 -top-2 z-10">
+                                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 border-2 border-white shadow-lg flex items-center justify-center text-xl group-hover:scale-110 transition-transform duration-300">
+                                  {persona.name[0]}
+                                </div>
+                              </div>
+                            )}
+
+                            {/* Decorative corner */}
+                            <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-yellow-200/20 to-transparent rounded-tr-2xl rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                            {/* Badges row */}
+                            <div className="flex gap-1.5 flex-wrap mb-3 ml-10">
+                              <PersonaBadge type="source" status={example.source.type} />
+                              {example.needsReview && (
+                                <PersonaBadge type="review" status="needs_review" />
+                              )}
+                            </div>
+
+                            {/* Speech bubble content */}
+                            <div className="relative bg-white dark:bg-gray-800 rounded-xl p-3 shadow-sm border border-gray-100 dark:border-gray-700">
+                              {/* Triangle pointer */}
+                              {persona && (
+                                <div className="absolute -left-1.5 top-3 w-0 h-0 border-t-6 border-t-transparent border-r-6 border-r-white dark:border-r-gray-800 border-b-6 border-b-transparent"></div>
+                              )}
+
+                              {/* Japanese */}
+                              <p className="text-xl font-bold font-japanese text-gray-900 dark:text-gray-100 mb-2 leading-relaxed">
+                                {example.japanese}
+                              </p>
+
+                              {/* Kana */}
+                              {example.kana && (
+                                <p className="text-sm text-gray-600 dark:text-gray-400 font-japanese mb-2">
+                                  {example.kana}
+                                </p>
+                              )}
+
+                              {/* Divider */}
+                              <div className="border-t border-gray-200 dark:border-gray-600 my-2"></div>
+
+                              {/* English with icon */}
+                              <div className="flex items-start gap-2">
+                                <span className="text-base">💬</span>
+                                <p className="text-base text-gray-700 dark:text-gray-300 font-medium">
+                                  "{example.english}"
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        )
+                      })}
                     </div>
                   </div>
                 )}

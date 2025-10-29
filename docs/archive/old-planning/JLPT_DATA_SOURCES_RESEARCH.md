@@ -289,7 +289,7 @@ Subject: Permission Request for JLPT Vocabulary Data
 Dear Jonathan,
 
 I'm developing an open-source Japanese vocabulary learning app
-called JapVocab. I would like to use the JLPT N5 vocabulary list
+called LingoMemory. I would like to use the JLPT N5 vocabulary list
 from tanos.co.uk as a data source.
 
 Purpose: Educational flashcard app with example sentences and audio

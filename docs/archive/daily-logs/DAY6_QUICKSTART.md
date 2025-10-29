@@ -114,7 +114,7 @@ await db.studyCards.toArray()
 
 1. Open DevTools (F12)
 2. Go to **Application** tab
-3. Expand **IndexedDB** → **JapVocabDB**
+3. Expand **IndexedDB** → **LingoMemoryDB**
 4. Click on tables:
    - `vocabulary` - all your cards
    - `studyCards` - FSRS scheduling data
@@ -200,7 +200,7 @@ await db.delete()
 
 1. DevTools → **Application** → **Manifest**
 2. Verify:
-   - ✅ Name: "JapVocab"
+   - ✅ Name: "LingoMemory"
    - ✅ Icons: 8 sizes
    - ✅ Start URL: "/"
    - ✅ Display: "standalone"
@@ -220,7 +220,7 @@ await db.delete()
 ### Check Cache Storage
 
 1. DevTools → **Application** → **Cache Storage**
-2. Expand **japvocab-v2**
+2. Expand **lingomemory-v2**
 3. See cached files:
    - ✅ /
    - ✅ /study

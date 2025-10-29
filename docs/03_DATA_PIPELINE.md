@@ -7,7 +7,7 @@
 
 ## Overview
 
-JapVocab uses a TypeScript-based data pipeline to fetch vocabulary from JMdict and Tatoeba, apply sophisticated filters, and verify with Claude AI.
+LingoMemory uses a TypeScript-based data pipeline to fetch vocabulary from JMdict and Tatoeba, apply sophisticated filters, and verify with Claude AI.
 
 ### Current Pipeline
 

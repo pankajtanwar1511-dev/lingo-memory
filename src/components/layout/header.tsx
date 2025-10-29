@@ -42,7 +42,7 @@ export function Header() {
                   <BookOpen className="h-5 w-5" />
                 </div>
               </div>
-              <span className="font-bold text-xl gradient-text">JapVocab</span>
+              <span className="font-bold text-xl gradient-text">LingoMemory</span>
             </Link>
             <Badge variant="gradient" className="hidden sm:flex">
               <Zap className="h-3 w-3 mr-1" />

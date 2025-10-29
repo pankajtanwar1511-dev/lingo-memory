@@ -165,7 +165,7 @@ export default function ManagePage() {
 
   // Export handlers
   const handleExportAllCSV = () => {
-    exportVocabularyToCSVFile(vocabulary, "japvocab-all.csv", {
+    exportVocabularyToCSVFile(vocabulary, "lingomemory-all.csv", {
       includeHeader: true,
       ankiFormat: true
     })
@@ -177,7 +177,7 @@ export default function ManagePage() {
     const url = URL.createObjectURL(blob)
     const link = document.createElement("a")
     link.href = url
-    link.download = "japvocab-all.json"
+    link.download = "lingomemory-all.json"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)

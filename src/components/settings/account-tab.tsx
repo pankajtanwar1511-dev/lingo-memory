@@ -139,7 +139,7 @@ export function AccountTab() {
             Offline Mode
           </CardTitle>
           <CardDescription className="text-blue-800 dark:text-blue-200">
-            You're using JapVocab in offline mode. All your study data is saved locally on this device.
+            You're using LingoMemory in offline mode. All your study data is saved locally on this device.
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-3">

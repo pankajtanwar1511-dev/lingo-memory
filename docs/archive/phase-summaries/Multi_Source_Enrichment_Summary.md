@@ -344,7 +344,7 @@ EOF
 
 ## 📞 Support & Credits
 
-**Project**: japvocab - Japanese Vocabulary Learning App
+**Project**: lingomemory - Japanese Vocabulary Learning App
 **Data Sources**:
 - JMdict: Jim Breen & EDRDG
 - Tatoeba: Tatoeba Community

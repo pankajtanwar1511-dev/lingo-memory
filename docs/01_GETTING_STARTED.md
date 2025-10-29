@@ -1,7 +1,7 @@
-# Getting Started with JapVocab
+# Getting Started with LingoMemory
 
 **Last Updated:** October 28, 2024
-**Project:** JapVocab - Japanese Vocabulary Learning Platform
+**Project:** LingoMemory - Japanese Vocabulary Learning Platform
 
 ---
 
@@ -11,8 +11,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/japvocab.git
-cd japvocab
+git clone https://github.com/yourusername/lingomemory.git
+cd lingomemory
 
 # Install dependencies
 npm install
@@ -57,7 +57,7 @@ npm run review:cards       # Review flashcards
 ## Project Structure
 
 ```
-japvocab/
+lingomemory/
 ├── src/
 │   ├── app/              # Next.js pages (App Router)
 │   │   ├── page.tsx                # Landing page

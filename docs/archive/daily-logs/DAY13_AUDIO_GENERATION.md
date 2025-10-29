@@ -264,7 +264,7 @@ Google Cloud offers a **free tier**:
 
 1. Go to https://console.cloud.google.com
 2. Click "Create Project"
-3. Name it "japvocab-tts"
+3. Name it "lingomemory-tts"
 4. Click "Create"
 
 ### Step 2: Enable Text-to-Speech API
@@ -420,7 +420,7 @@ Examples:
 
 **Setup:**
 1. Create Cloudflare account
-2. Create R2 bucket: "japvocab-audio"
+2. Create R2 bucket: "lingomemory-audio"
 3. Get API credentials
 4. Configure custom domain (optional)
 
@@ -710,5 +710,5 @@ We now have a complete system for generating high-quality pronunciation audio fo
 ---
 
 **License:** MIT
-**Author:** JapVocab Development Team
+**Author:** LingoMemory Development Team
 **Last Updated:** 2025-10-26

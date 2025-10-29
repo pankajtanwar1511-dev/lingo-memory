@@ -484,7 +484,7 @@ Sources to credit:
   "metadata": {
     "source": "JMdict + Tatoeba",
     "createdAt": "2025-10-26",
-    "author": "JapVocab Team",
+    "author": "LingoMemory Team",
     "license": "CC BY-SA 4.0"
   },
   "vocabulary": [

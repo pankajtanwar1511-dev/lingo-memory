@@ -1,0 +1,134 @@
+{
+  "personas": [
+    {
+      "id": "persona_tomoko",
+      "name": "Tomoko",
+      "nameKana": "ともこ",
+      "nameKanji": "智子",
+      "role": "elementary student",
+      "age": 10,
+      "tone": ["simple", "friendly", "playful"],
+      "context": {
+        "primary": ["school", "home", "play", "daily activities"],
+        "secondary": ["family", "friends", "pets", "food"]
+      },
+      "grammarLevel": "N5",
+      "exampleStyle": "short_daily",
+      "avatarUrl": "/assets/personas/tomoko.svg",
+      "preferredVocabulary": [
+        "school",
+        "food",
+        "play",
+        "animals",
+        "family",
+        "friends",
+        "basic verbs",
+        "basic adjectives",
+        "time expressions",
+        "daily activities"
+      ],
+      "description": "Tomoko is a 10-year-old elementary school student who speaks in simple, natural Japanese. Her examples use basic N5 grammar and focus on everyday activities like going to school, playing with friends, eating, and family time. She uses short sentences with clear, simple vocabulary that beginners can easily understand and relate to.",
+      "ttsVoice": "ja-JP-NanamiNeural",
+      "active": true
+    },
+    {
+      "id": "persona_ken",
+      "name": "Ken",
+      "nameKana": "けん",
+      "nameKanji": "健",
+      "role": "office worker",
+      "age": "32",
+      "tone": ["neutral", "practical"],
+      "context": {
+        "primary": ["office", "commute", "daily routine", "work"],
+        "secondary": ["home", "errands", "transportation", "food"]
+      },
+      "grammarLevel": "N5",
+      "exampleStyle": "routine",
+      "avatarUrl": "/assets/personas/ken.svg",
+      "preferredVocabulary": [
+        "time expressions",
+        "transportation",
+        "work",
+        "daily routine",
+        "food",
+        "weather",
+        "locations",
+        "verbs of motion",
+        "schedule"
+      ],
+      "description": "Ken is a 32-year-old office worker (salaryman) who speaks in neutral, practical Japanese. His examples focus on daily routines, commuting, work-related activities, and common adult life situations. He uses polite forms appropriately and his sentences reflect the structured, routine-oriented lifestyle of a typical Japanese office worker.",
+      "ttsVoice": "ja-JP-KeitaNeural",
+      "active": true
+    },
+    {
+      "id": "persona_aya",
+      "name": "Aya",
+      "nameKana": "あや",
+      "nameKanji": "彩",
+      "role": "university student",
+      "age": "21",
+      "tone": ["casual", "friendly"],
+      "context": {
+        "primary": ["university", "social life", "hobbies", "friends"],
+        "secondary": ["part-time work", "study", "entertainment", "shopping"]
+      },
+      "grammarLevel": "N5",
+      "exampleStyle": "casual",
+      "avatarUrl": "/assets/personas/aya.svg",
+      "preferredVocabulary": [
+        "hobbies",
+        "entertainment",
+        "social activities",
+        "study",
+        "modern life",
+        "shopping",
+        "food",
+        "friends",
+        "casual expressions",
+        "wants and desires"
+      ],
+      "description": "Aya is a 21-year-old university student who speaks in casual, modern Japanese. Her examples include social activities, hobbies, studying, and contemporary life situations. She uses slightly more casual forms (while staying within N5 grammar) and her examples often express desires, preferences, and plans with friends. Her speech reflects modern young adult life in Japan.",
+      "ttsVoice": "ja-JP-AoiNeural",
+      "active": true
+    },
+    {
+      "id": "persona_emi",
+      "name": "Emi",
+      "nameKana": "えみ",
+      "nameKanji": "恵美",
+      "role": "retiree",
+      "age": "68",
+      "tone": ["polite", "formal", "friendly"],
+      "context": {
+        "primary": ["home", "family", "traditional culture", "community"],
+        "secondary": ["shopping", "gardens", "neighbors", "cooking"]
+      },
+      "grammarLevel": "N5",
+      "exampleStyle": "polite_formal",
+      "avatarUrl": "/assets/personas/emi.svg",
+      "preferredVocabulary": [
+        "family",
+        "traditional culture",
+        "polite expressions",
+        "food",
+        "home",
+        "weather",
+        "health",
+        "neighbors",
+        "gratitude",
+        "seasons"
+      ],
+      "description": "Emi is a 68-year-old grandmother who speaks in polite, warm Japanese. Her examples use more formal/polite language while staying within N5 grammar. She represents traditional Japanese culture and family values. Her sentences often include polite forms (です/ます consistently) and contexts related to family, traditional activities, and community life. She's helpful for learning polite speech patterns.",
+      "ttsVoice": "ja-JP-ShioriNeural",
+      "active": false
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "createdAt": "2025-10-29",
+    "description": "Character personas for generating contextualized Japanese example sentences",
+    "activePersonas": 3,
+    "totalPersonas": 4
+  }
+}

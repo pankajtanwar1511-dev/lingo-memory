@@ -2,7 +2,7 @@
 
 ## Overview
 
-Day 4 adds comprehensive vocabulary data management features to JapVocab, including JMdict integration, import/export capabilities, advanced search/filtering, deck management, and bulk operations.
+Day 4 adds comprehensive vocabulary data management features to LingoMemory, including JMdict integration, import/export capabilities, advanced search/filtering, deck management, and bulk operations.
 
 ## Features Implemented
 
@@ -759,7 +759,7 @@ function exportDeckToJSONFile(deck: Deck, filename?: string): void
 
 ## Credits
 
-Developed as part of JapVocab Day 4 implementation.
+Developed as part of LingoMemory Day 4 implementation.
 
 **Technologies**:
 - Next.js 14

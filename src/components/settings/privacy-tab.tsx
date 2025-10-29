@@ -47,7 +47,7 @@ export function PrivacyTab() {
         <div className="flex items-center justify-between">
           <div>
             <Label>Data Collection</Label>
-            <p className="text-sm text-muted-foreground">Help improve JapVocab with anonymous usage data</p>
+            <p className="text-sm text-muted-foreground">Help improve LingoMemory with anonymous usage data</p>
           </div>
           <Switch
             checked={settings.allowDataCollection}

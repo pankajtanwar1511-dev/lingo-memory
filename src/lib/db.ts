@@ -51,7 +51,7 @@ export interface DBSyncLog {
   error?: string
 }
 
-class JapVocabDB extends Dexie {
+class LingoMemoryDB extends Dexie {
   // Tables
   vocabulary!: Table<DBVocabularyCard>
   studyCards!: Table<DBStudyCard>
@@ -64,7 +64,7 @@ class JapVocabDB extends Dexie {
   achievements!: Table<Achievement>
 
   constructor() {
-    super('JapVocabDB')
+    super('LingoMemoryDB')
 
     // Define database schema
     // Version 1
@@ -338,7 +338,7 @@ class JapVocabDB extends Dexie {
 }
 
 // Create database instance
-export const db = new JapVocabDB()
+export const db = new LingoMemoryDB()
 
 // Export database for debugging in development
 if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {

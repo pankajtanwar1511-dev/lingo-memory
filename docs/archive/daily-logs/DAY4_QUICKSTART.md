@@ -172,12 +172,12 @@ for (const card of n5Cards) {
 
 **Export to CSV (Anki)**:
 1. Click "Export All CSV" in header
-2. File downloads as `japvocab-all.csv`
+2. File downloads as `lingomemory-all.csv`
 3. Can be imported into Anki
 
 **Export to JSON**:
 1. Click "Export All JSON" in header
-2. File downloads as `japvocab-all.json`
+2. File downloads as `lingomemory-all.json`
 3. Can be re-imported or backed up
 
 ---

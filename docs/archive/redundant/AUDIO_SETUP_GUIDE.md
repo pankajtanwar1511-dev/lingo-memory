@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide walks you through setting up Google Cloud Text-to-Speech for generating audio files for your JapVocab vocabulary cards and example sentences.
+This guide walks you through setting up Google Cloud Text-to-Speech for generating audio files for your LingoMemory vocabulary cards and example sentences.
 
 **Cost**: **FREE** - Your usage (11,000 characters) is covered by Google's 1M free tier 90x over!
 
@@ -20,7 +20,7 @@ This guide walks you through setting up Google Cloud Text-to-Speech for generati
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com/)
 2. Click "Select a project" → "New Project"
-3. Project name: `japvocab-tts` (or any name you prefer)
+3. Project name: `lingomemory-tts` (or any name you prefer)
 4. Click "Create"
 5. Wait for project creation (~30 seconds)
 
@@ -36,8 +36,8 @@ This guide walks you through setting up Google Cloud Text-to-Speech for generati
 1. Go to "IAM & Admin" → "Service Accounts"
 2. Click "Create Service Account"
 3. Service account details:
-   - Name: `japvocab-audio-generator`
-   - Description: "Audio generation for JapVocab app"
+   - Name: `lingomemory-audio-generator`
+   - Description: "Audio generation for LingoMemory app"
 4. Click "Create and Continue"
 5. Grant role: "Cloud Text-to-Speech Client"
 6. Click "Continue" → "Done"
@@ -49,21 +49,21 @@ This guide walks you through setting up Google Cloud Text-to-Speech for generati
 3. Click "Add Key" → "Create new key"
 4. Key type: JSON
 5. Click "Create"
-6. **Save the downloaded JSON file securely!** (e.g., `~/keys/japvocab-tts-key.json`)
+6. **Save the downloaded JSON file securely!** (e.g., `~/keys/lingomemory-tts-key.json`)
 
 ### Step 5: Set Environment Variable
 
 **Linux/Mac:**
 ```bash
-export GOOGLE_APPLICATION_CREDENTIALS="$HOME/keys/japvocab-tts-key.json"
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/keys/lingomemory-tts-key.json"
 
 # Add to ~/.bashrc or ~/.zshrc to make it permanent:
-echo 'export GOOGLE_APPLICATION_CREDENTIALS="$HOME/keys/japvocab-tts-key.json"' >> ~/.bashrc
+echo 'export GOOGLE_APPLICATION_CREDENTIALS="$HOME/keys/lingomemory-tts-key.json"' >> ~/.bashrc
 ```
 
 **Windows (PowerShell):**
 ```powershell
-$env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\YourName\keys\japvocab-tts-key.json"
+$env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\YourName\keys\lingomemory-tts-key.json"
 
 # To make it permanent, add it to System Environment Variables
 ```
@@ -71,7 +71,7 @@ $env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\YourName\keys\japvocab-tts-key.jso
 ### Step 6: Install Google Cloud TTS Library
 
 ```bash
-cd /home/pankaj/bumble/japvocab
+cd /home/pankaj/bumble/lingomemory
 npm install @google-cloud/text-to-speech
 ```
 

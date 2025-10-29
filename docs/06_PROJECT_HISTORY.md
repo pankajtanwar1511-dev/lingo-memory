@@ -7,7 +7,7 @@
 
 ## Summary
 
-JapVocab is a Japanese vocabulary learning platform with **387 production-ready N5 words** with AI-verified examples.
+LingoMemory is a Japanese vocabulary learning platform with **387 production-ready N5 words** with AI-verified examples.
 
 **Current Status:** 58.5% production ready
 - ✅ Core application complete
@@ -404,7 +404,7 @@ Historical documentation preserved in:
 
 ## Conclusion
 
-JapVocab has evolved from concept to a production-ready platform with:
+LingoMemory has evolved from concept to a production-ready platform with:
 - ✅ Solid technical foundation (Next.js 14, TypeScript, Dexie)
 - ✅ High-quality data (97.7% N5 coverage from authentic sources)
 - ✅ Automated pipeline (reproducible for all JLPT levels)

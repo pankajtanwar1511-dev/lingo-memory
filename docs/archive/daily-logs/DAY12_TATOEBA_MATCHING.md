@@ -670,5 +670,5 @@ We now have an intelligent system that automatically enriches vocabulary cards w
 ---
 
 **License:** CC BY 2.0 FR (Tatoeba data), MIT (our code)
-**Author:** JapVocab Development Team
+**Author:** LingoMemory Development Team
 **Last Updated:** 2025-10-26

@@ -83,7 +83,7 @@ await updateProfile({
 2. Click "Export All Data"
 3. Save the JSON file to your computer
 
-File will be named: `japvocab-backup-2025-10-26.json`
+File will be named: `lingomemory-backup-2025-10-26.json`
 
 ### 6. Change Password
 

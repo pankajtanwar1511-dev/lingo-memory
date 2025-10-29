@@ -535,7 +535,7 @@ const handleExportData = async () => {
   const url = URL.createObjectURL(blob)
   const a = document.createElement("a")
   a.href = url
-  a.download = `japvocab-backup-${new Date().toISOString().split("T")[0]}.json`
+  a.download = `lingomemory-backup-${new Date().toISOString().split("T")[0]}.json`
   document.body.appendChild(a)
   a.click()
   document.body.removeChild(a)
@@ -545,7 +545,7 @@ const handleExportData = async () => {
 
 **File Naming:**
 ```
-japvocab-backup-2025-10-26.json
+lingomemory-backup-2025-10-26.json
 ```
 
 #### 2. Account Deletion

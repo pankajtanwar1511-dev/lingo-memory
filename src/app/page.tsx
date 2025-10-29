@@ -148,7 +148,7 @@ export default function HomePage() {
         <section className="space-y-8">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold">
-              Why Choose JapVocab?
+              Why Choose LingoMemory?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Built by language learners, for language learners. Every feature is
@@ -345,7 +345,7 @@ export default function HomePage() {
               Ready to Start Your Japanese Journey?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Join thousands of learners achieving their JLPT goals with JapVocab
+              Join thousands of learners achieving their JLPT goals with LingoMemory
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Link href="/study">
@@ -372,7 +372,7 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-2">
               <BookOpen className="h-5 w-5 text-primary" />
-              <span className="font-semibold">JapVocab</span>
+              <span className="font-semibold">LingoMemory</span>
               <span className="text-sm text-muted-foreground">© 2024</span>
             </div>
 

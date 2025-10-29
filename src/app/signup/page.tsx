@@ -3,7 +3,7 @@ import { SignupForm } from "@/components/auth/signup-form"
 import { Header } from "@/components/layout/header"
 
 export const metadata: Metadata = {
-  title: "Sign Up - JapVocab",
+  title: "Sign Up - LingoMemory",
   description: "Create an account to sync your Japanese vocabulary learning progress across all devices",
 }
 

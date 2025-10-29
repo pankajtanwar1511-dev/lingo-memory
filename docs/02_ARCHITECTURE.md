@@ -1,4 +1,4 @@
-# JapVocab Architecture
+# LingoMemory Architecture
 
 **Last Updated:** October 28, 2024
 
@@ -18,7 +18,7 @@
 
 ## Overview
 
-JapVocab is a modern web application built with Next.js 14, featuring a clean separation of concerns through a service-oriented architecture. The app follows best practices for Progressive Web Apps (PWA) and offline-first design.
+LingoMemory is a modern web application built with Next.js 14, featuring a clean separation of concerns through a service-oriented architecture. The app follows best practices for Progressive Web Apps (PWA) and offline-first design.
 
 ### Key Architectural Principles
 
@@ -138,7 +138,7 @@ IndexedDB (Local Storage)
 
 ## Services Layer
 
-The heart of JapVocab's architecture. All business logic lives in services (src/services/), keeping components clean and testable.
+The heart of LingoMemory's architecture. All business logic lives in services (src/services/), keeping components clean and testable.
 
 ### Core Services (14 Total)
 
@@ -464,7 +464,7 @@ interface QuizStore {
 ### IndexedDB Schema (Dexie)
 
 ```typescript
-const db = new Dexie('JapVocabDB')
+const db = new Dexie('LingoMemoryDB')
 
 db.version(1).stores({
   vocabulary: 'id, jlptLevel, [jlptLevel+createdAt]',

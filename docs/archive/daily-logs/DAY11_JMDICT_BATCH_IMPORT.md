@@ -614,5 +614,5 @@ We now have a robust, automated system for importing vocabulary from JMdict. Thi
 ---
 
 **License:** MIT
-**Author:** JapVocab Development Team
+**Author:** LingoMemory Development Team
 **Last Updated:** 2025-10-26

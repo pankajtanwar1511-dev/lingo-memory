@@ -2,7 +2,7 @@
 
 ## Overview
 
-Day 4 successfully implemented comprehensive vocabulary data management features for the JapVocab Japanese learning PWA. This includes JMdict integration, robust import/export capabilities, advanced search and filtering, complete deck management, bulk operations, and a full-featured vocabulary editor.
+Day 4 successfully implemented comprehensive vocabulary data management features for the LingoMemory Japanese learning PWA. This includes JMdict integration, robust import/export capabilities, advanced search and filtering, complete deck management, bulk operations, and a full-featured vocabulary editor.
 
 ---
 

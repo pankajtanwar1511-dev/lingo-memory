@@ -8,10 +8,12 @@ import { useSettings } from "@/contexts/settings-context"
 import { useTheme } from "next-themes"
 import { toast } from "@/components/ui/toaster"
 import { Sun, Moon } from "lucide-react"
+import useStudyStore from "@/store/study-store"
 
 export function PreferencesTab() {
   const { settings, updateSettings } = useSettings()
   const { theme, setTheme } = useTheme()
+  const { preferences, updatePreferences } = useStudyStore()
 
   const handleUpdate = async (key: keyof typeof settings, value: any) => {
     try {
@@ -111,6 +113,47 @@ export function PreferencesTab() {
             <Switch
               checked={settings.showFurigana}
               onCheckedChange={(checked) => handleUpdate("showFurigana", checked)}
+            />
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Example Sentences</CardTitle>
+          <CardDescription>Control which examples to display during study</CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="flex items-center justify-between">
+            <div>
+              <Label>Show Generated Examples</Label>
+              <p className="text-sm text-muted-foreground">AI-generated sentences with personas</p>
+            </div>
+            <Switch
+              checked={preferences.showGeneratedExamples}
+              onCheckedChange={(checked) => updatePreferences({ showGeneratedExamples: checked })}
+            />
+          </div>
+
+          <div className="flex items-center justify-between">
+            <div>
+              <Label>Show Authentic Examples</Label>
+              <p className="text-sm text-muted-foreground">Examples from Tatoeba and other sources</p>
+            </div>
+            <Switch
+              checked={preferences.showAuthenticExamples}
+              onCheckedChange={(checked) => updatePreferences({ showAuthenticExamples: checked })}
+            />
+          </div>
+
+          <div className="flex items-center justify-between">
+            <div>
+              <Label>Show Needs Review</Label>
+              <p className="text-sm text-muted-foreground">Display examples pending review</p>
+            </div>
+            <Switch
+              checked={preferences.showNeedsReview}
+              onCheckedChange={(checked) => updatePreferences({ showNeedsReview: checked })}
             />
           </div>
         </CardContent>

@@ -1,6 +1,6 @@
 # Data Quality Improvements - Summary Report
 
-This document summarizes all the data quality improvements, validation tools, and documentation created for the JapVocab dataset.
+This document summarizes all the data quality improvements, validation tools, and documentation created for the LingoMemory dataset.
 
 **Date:** January 2025
 **Phase:** Data Quality & Legal Compliance Review

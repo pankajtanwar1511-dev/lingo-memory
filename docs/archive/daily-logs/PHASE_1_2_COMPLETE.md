@@ -159,7 +159,7 @@ npm run build
 
 1. **Create Google Cloud Project** (~3 min)
    - Go to https://console.cloud.google.com/
-   - Create new project: "japvocab-tts"
+   - Create new project: "lingomemory-tts"
 
 2. **Enable Text-to-Speech API** (~1 min)
    - Search for "Text-to-Speech API"
@@ -167,19 +167,19 @@ npm run build
 
 3. **Create Service Account** (~5 min)
    - IAM & Admin → Service Accounts
-   - Create account: "japvocab-audio-generator"
+   - Create account: "lingomemory-audio-generator"
    - Grant role: "Cloud Text-to-Speech Client"
 
 4. **Download JSON Key** (~1 min)
    - Create key → JSON
-   - Save to: `~/keys/japvocab-tts-key.json`
+   - Save to: `~/keys/lingomemory-tts-key.json`
 
 5. **Set Environment Variable** (~1 min)
    ```bash
-   export GOOGLE_APPLICATION_CREDENTIALS="$HOME/keys/japvocab-tts-key.json"
+   export GOOGLE_APPLICATION_CREDENTIALS="$HOME/keys/lingomemory-tts-key.json"
 
    # Make permanent:
-   echo 'export GOOGLE_APPLICATION_CREDENTIALS="$HOME/keys/japvocab-tts-key.json"' >> ~/.bashrc
+   echo 'export GOOGLE_APPLICATION_CREDENTIALS="$HOME/keys/lingomemory-tts-key.json"' >> ~/.bashrc
    ```
 
 6. **Test Setup** (~1 min)

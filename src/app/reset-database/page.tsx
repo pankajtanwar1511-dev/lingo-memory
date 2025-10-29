@@ -33,7 +33,7 @@ export default function ResetDatabasePage() {
 
       console.log('🗑️ Step 2: Clearing localStorage...')
       // Clear localStorage
-      localStorage.removeItem('japvocab-study-store')
+      localStorage.removeItem('lingomemory-study-store')
       localStorage.removeItem('vocab_seed_loaded_v1')
 
       console.log('✅ Step 2 complete')

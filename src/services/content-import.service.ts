@@ -333,9 +333,9 @@ export class ContentImportService {
     const exportData = {
       version: '1.0.0',
       metadata: {
-        source: 'JapVocab App',
+        source: 'LingoMemory App',
         createdAt: new Date().toISOString(),
-        author: 'JapVocab',
+        author: 'LingoMemory',
         license: 'CC BY-SA 4.0',
         exportedBy: 'user',
         totalCards: cards.length

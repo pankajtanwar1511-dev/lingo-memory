@@ -1,4 +1,4 @@
-# JapVocab 6-8 Week Enhancement Plan
+# LingoMemory 6-8 Week Enhancement Plan
 **Version:** 1.0
 **Created:** 2025-10-26
 **Target Launch:** Week 8 (December 2025)
@@ -1233,7 +1233,7 @@ This recovers the Week 1 content gap with minimal time investment.
 
 ## ⭐ Phase 3: Advanced Features (Week 6)
 
-**Goal:** Add features that differentiate JapVocab from competitors
+**Goal:** Add features that differentiate LingoMemory from competitors
 
 ### Day 29 (Day 39): Weak Areas Identification
 
@@ -1670,7 +1670,7 @@ This recovers the Week 1 content gap with minimal time investment.
 **Tasks:**
 1. **Terms of Service**
    - Use Termly.io template
-   - Customize for JapVocab
+   - Customize for LingoMemory
    - Cover:
      - Account registration
      - Subscription terms
@@ -1905,7 +1905,7 @@ This recovers the Week 1 content gap with minimal time investment.
 
 **Tasks:**
 1. **Domain purchase**
-   - Buy domain (japvocab.com or similar)
+   - Buy domain (lingomemory.com or similar)
    - Namecheap / Google Domains recommended
    - Cost: ~$12/year
 
@@ -2073,7 +2073,7 @@ This recovers the Week 1 content gap with minimal time investment.
    - Annotated for clarity
 
 4. **Social media setup**
-   - Twitter/X account (@japvocab)
+   - Twitter/X account (@lingomemory)
    - Facebook page (optional)
    - Reddit account
    - ProductHunt profile
@@ -2136,7 +2136,7 @@ This recovers the Week 1 content gap with minimal time investment.
    - Check CDN working
 
 5. **Support setup**
-   - Create support email (support@japvocab.com)
+   - Create support email (support@lingomemory.com)
    - Set up email forwarding
    - Create Discord server for community (optional)
    - Prepare FAQ responses

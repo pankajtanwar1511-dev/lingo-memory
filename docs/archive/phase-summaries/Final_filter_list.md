@@ -242,4 +242,4 @@ Final: Production dataset
 
 **Last Updated**: 2025-01-27
 **Version**: 2.0 (Multi-source support)
-**Maintained By**: japvocab project
+**Maintained By**: lingomemory project

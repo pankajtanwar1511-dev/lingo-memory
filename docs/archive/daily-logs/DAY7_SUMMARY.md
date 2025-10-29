@@ -333,7 +333,7 @@ service cloud.firestore {
 
 ## Conclusion
 
-Day 7 successfully transformed JapVocab from a single-user offline app into a multi-user cloud-enabled Progressive Web App. Users can now:
+Day 7 successfully transformed LingoMemory from a single-user offline app into a multi-user cloud-enabled Progressive Web App. Users can now:
 
 - **Sign up and sign in** with email or Google
 - **Access their data** from any device

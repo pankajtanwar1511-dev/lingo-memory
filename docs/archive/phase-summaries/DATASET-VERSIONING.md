@@ -37,7 +37,7 @@ Format: `MAJOR.MINOR.PATCH` (e.g., `1.2.3`)
     "source": "JLPT Vocabulary API + Tatoeba Project",
     "createdAt": "2025-01-15",
     "updatedAt": "2025-01-20",
-    "author": "JapVocab Content Team",
+    "author": "LingoMemory Content Team",
     "license": "CC BY-SA 4.0 + CC BY 2.0 FR",
     "description": "N5 vocabulary - comprehensive with examples",
     "datasetHash": "sha256:abc123...",

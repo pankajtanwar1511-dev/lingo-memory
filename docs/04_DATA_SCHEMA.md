@@ -51,7 +51,7 @@ The N5 vocabulary dataset follows a strict JSON schema designed for:
     "source": "JLPT Vocabulary API + Tatoeba Project",
     "createdAt": "2025-01-15",
     "updatedAt": "2025-01-15",
-    "author": "JapVocab Content Team",
+    "author": "LingoMemory Content Team",
     "license": "CC BY-SA 4.0 (vocab) + CC BY 2.0 FR (Tatoeba examples)",
     "description": "JLPT N5 vocabulary with example sentences",
     "totalCards": 662,
@@ -273,7 +273,7 @@ Examples can come from multiple sources. Each source has specific requirements.
 ```json
 {
   "type": "custom",
-  "author": "JapVocab Team",  // Optional
+  "author": "LingoMemory Team",  // Optional
   "date": "2025-01-15"         // Optional
 }
 ```
@@ -567,5 +567,5 @@ Use `src/schemas/vocabulary.schema.ts` for runtime validation in the app.
 ---
 
 **Last Updated:** January 2025
-**Maintainer:** JapVocab Content Team
+**Maintainer:** LingoMemory Content Team
 **License:** This documentation is CC BY-SA 4.0

@@ -55,7 +55,7 @@ export function PWAInstaller() {
       setDeferredPrompt(null)
       toast({
         title: "App Installed!",
-        description: "JapVocab has been added to your home screen",
+        description: "LingoMemory has been added to your home screen",
         type: "success"
       })
     })
@@ -119,7 +119,7 @@ export function PWAInstaller() {
             </div>
 
             <div className="flex-1 space-y-2">
-              <h3 className="font-semibold">Install JapVocab</h3>
+              <h3 className="font-semibold">Install LingoMemory</h3>
               <p className="text-sm text-muted-foreground">
                 Install our app for offline study and quick access from your home screen
               </p>
@@ -201,7 +201,7 @@ export function IOSInstallInstructions() {
             <ol className="text-sm text-muted-foreground space-y-1 ml-4">
               <li>1. Tap the Share button <span className="text-primary">⎙</span></li>
               <li>2. Scroll down and tap "Add to Home Screen"</li>
-              <li>3. Tap "Add" to install JapVocab</li>
+              <li>3. Tap "Add" to install LingoMemory</li>
             </ol>
 
             <Button

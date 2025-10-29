@@ -1,4 +1,4 @@
-# JapVocab - Master Japanese with Science-Backed Learning
+# LingoMemory - Master Japanese with Science-Backed Learning
 
 A modern, beautiful Japanese vocabulary learning app built with Next.js 14, TypeScript, and Tailwind CSS. Features FSRS spaced repetition algorithm, authentic content from JMdict and Tatoeba, and a delightful learning experience.
 
@@ -27,8 +27,8 @@ A modern, beautiful Japanese vocabulary learning app built with Next.js 14, Type
 
 ```bash
 # Clone the repository
-git clone git@github.com:pankajtanwar1511-dev/lingo-memory.git japvocab
-cd japvocab
+git clone git@github.com:pankajtanwar1511-dev/lingo-memory.git lingomemory
+cd lingomemory
 
 # Install dependencies
 npm install
@@ -42,7 +42,7 @@ npm run dev
 ## 🏗️ Project Structure
 
 ```
-japvocab/
+lingomemory/
 ├── src/
 │   ├── app/              # Next.js app router pages
 │   ├── components/       # React components (30+)

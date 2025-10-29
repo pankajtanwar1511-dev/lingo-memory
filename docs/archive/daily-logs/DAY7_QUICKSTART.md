@@ -18,7 +18,7 @@
 
 1. Go to [Firebase Console](https://console.firebase.google.com/)
 2. Click "Add project"
-3. Enter project name: `japvocab` (or your choice)
+3. Enter project name: `lingomemory` (or your choice)
 4. Disable Google Analytics (optional)
 5. Click "Create project"
 
@@ -62,7 +62,7 @@ service cloud.firestore {
 1. Go to **Project Settings** (gear icon)
 2. Scroll to "Your apps"
 3. Click web icon (</>) to add web app
-4. Register app name: `japvocab-web`
+4. Register app name: `lingomemory-web`
 5. Click "Register app"
 6. Copy the config object:
 
@@ -654,9 +654,9 @@ NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=... # Google Analytics
 
 ### Community
 
-- **GitHub Issues**: https://github.com/yourusername/japvocab/issues
+- **GitHub Issues**: https://github.com/yourusername/lingomemory/issues
 - **Discord**: Join our community (coming soon)
-- **Email**: support@japvocab.com (coming soon)
+- **Email**: support@lingomemory.com (coming soon)
 
 ---
 

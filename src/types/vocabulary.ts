@@ -1,31 +1,139 @@
 export type JLPTLevel = "N5" | "N4" | "N3" | "N2" | "N1"
 
-export interface Example {
-  japanese: string
-  hiragana?: string
-  english: string
-  audioUrl?: string
-  source: {
-    type: "tatoeba" | "jmdict" | "custom"
-    id?: string | number
-  }
+/**
+ * Source types for example sentences
+ * - tatoeba: From Tatoeba Project (CC BY 2.0)
+ * - jmdict: From JMdict (CC BY-SA 4.0)
+ * - custom: Manually created by team
+ * - generated: AI-generated with persona
+ */
+export type ExampleSourceType = "tatoeba" | "jmdict" | "custom" | "generated"
+
+/**
+ * Base source information for all examples
+ */
+export interface BaseExampleSource {
+  type: ExampleSourceType
+  id?: string | number
 }
 
+/**
+ * Source information for generated examples
+ */
+export interface GeneratedExampleSource extends BaseExampleSource {
+  type: "generated"
+  /** Persona that generated/spoke this example */
+  persona: string // PersonaId
+  /** Model used for generation */
+  model: string
+  /** When it was generated */
+  generatedAt: string // ISO 8601 date
+}
+
+/**
+ * Union type for all example sources
+ */
+export type ExampleSource = BaseExampleSource | GeneratedExampleSource
+
+/**
+ * Validation results from automated checks
+ */
+export interface ExampleValidation {
+  /** Word appears in the example (kanji or kana) */
+  tokenMatch: boolean
+  /** Kana reading matches the sentence */
+  kanaMatch: boolean
+  /** Length is appropriate for JLPT level */
+  lengthOk: boolean
+  /** Overall automated quality score (0-1) */
+  autoScore?: number
+  /** Validation timestamp */
+  validatedAt?: string
+  /** Any validation errors or warnings */
+  issues?: string[]
+}
+
+/**
+ * Review information for generated examples
+ */
+export interface ExampleReview {
+  /** User/reviewer who approved/rejected */
+  reviewedBy: string
+  /** When it was reviewed */
+  reviewedAt: string
+  /** Review decision */
+  status: "approved" | "rejected" | "needs_revision"
+  /** Optional reviewer comments */
+  comments?: string
+  /** Reviewer's quality rating (1-5) */
+  rating?: number
+}
+
+/**
+ * License information
+ */
+export interface License {
+  text: string
+  url: string
+}
+
+/**
+ * Example sentence with metadata
+ */
+export interface Example {
+  /** Japanese sentence (with kanji) */
+  japanese: string
+  /** Kana reading (matches your schema field name) */
+  kana: string
+  /** English translation */
+  english: string
+  /** Source of this example */
+  source: ExampleSource
+  /** License information */
+  license: License
+  /** Audio URL if available */
+  audioUrl?: string
+  /** Whether this example needs human review */
+  needsReview?: boolean
+  /** Review information (for generated examples) */
+  review?: ExampleReview
+  /** Automated validation results */
+  validation?: ExampleValidation
+}
+
+/**
+ * Audio information for vocabulary
+ */
+export interface VocabularyAudio {
+  pronunciationUrl: string
+  source: string
+}
+
+/**
+ * Source information for vocabulary
+ */
+export interface VocabularySource {
+  type: string
+  url?: string
+  id?: string
+}
+
+/**
+ * Vocabulary Card matching your actual schema
+ */
 export interface VocabularyCard {
   id: string
   kanji?: string
   kana: string
-  meaning: string | string[]
+  romaji?: string
+  meaning: string[]
+  jlptLevel: JLPTLevel
+  partOfSpeech: string[]
+  tags: string[]
   examples: Example[]
-  audioUrl?: string
-  imageUrl?: string
-  tags?: string[]
-  jlptLevel?: JLPTLevel
-  partOfSpeech?: string[]
-  license?: {
-    text: string
-    url?: string
-  }
+  audio?: VocabularyAudio
+  source: VocabularySource
+  license: License
   createdAt?: Date
   updatedAt?: Date
 }
