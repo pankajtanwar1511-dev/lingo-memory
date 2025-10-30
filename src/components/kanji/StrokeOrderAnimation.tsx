@@ -146,11 +146,11 @@ export function StrokeOrderAnimation({
   }
 
   return (
-    <div className={`flex flex-col gap-4 ${className}`}>
+    <div className={`flex flex-col gap-4 max-w-md mx-auto ${className}`}>
       {/* SVG Animation Container */}
       <div
         ref={containerRef}
-        className="relative bg-background border-2 border-border rounded-lg p-4 aspect-square flex items-center justify-center"
+        className="relative bg-background border-2 border-border rounded-lg p-4 aspect-square flex items-center justify-center w-full"
       >
         <svg
           viewBox="0 0 109 109"
@@ -181,12 +181,12 @@ export function StrokeOrderAnimation({
                 className="text-foreground"
                 initial={{ pathLength: 0, opacity: 0 }}
                 animate={{
-                  pathLength: isCurrentStroke && isPlaying ? 1 : 1,
+                  pathLength: 1,
                   opacity: 1,
                 }}
                 transition={{
                   pathLength: {
-                    duration: strokeDuration / 1000,
+                    duration: isCurrentStroke && isPlaying ? strokeDuration / 1000 : 0,
                     ease: 'easeInOut',
                   },
                   opacity: { duration: 0.1 },

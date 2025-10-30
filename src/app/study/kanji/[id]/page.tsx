@@ -135,51 +135,52 @@ export default function KanjiDetailPage() {
       </Card>
 
       {/* Readings */}
-      <div className="grid md:grid-cols-2 gap-4">
-        {/* On-readings */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-sm font-medium text-muted-foreground">
-              音読み (On-reading)
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
+      <Card>
+        <CardHeader>
+          <CardTitle>Readings</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          {/* On-readings */}
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-xs font-semibold text-muted-foreground uppercase">
+                音読み (On-reading)
+              </span>
+            </div>
             {kanji.onReadings.length > 0 ? (
               <div className="flex flex-wrap gap-2">
                 {kanji.onReadings.map((reading, i) => (
-                  <Badge key={i} variant="outline" className="text-base">
+                  <Badge key={i} variant="secondary" className="text-base px-3 py-1">
                     {reading}
                   </Badge>
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-muted-foreground">None</p>
+              <p className="text-sm text-muted-foreground italic">None</p>
             )}
-          </CardContent>
-        </Card>
+          </div>
 
-        {/* Kun-readings */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-sm font-medium text-muted-foreground">
-              訓読み (Kun-reading)
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
+          {/* Kun-readings */}
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-xs font-semibold text-muted-foreground uppercase">
+                訓読み (Kun-reading)
+              </span>
+            </div>
             {kanji.kunReadings.length > 0 ? (
               <div className="flex flex-wrap gap-2">
                 {kanji.kunReadings.map((reading, i) => (
-                  <Badge key={i} variant="outline" className="text-base">
+                  <Badge key={i} variant="outline" className="text-base px-3 py-1">
                     {reading}
                   </Badge>
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-muted-foreground">None</p>
+              <p className="text-sm text-muted-foreground italic">None</p>
             )}
-          </CardContent>
-        </Card>
-      </div>
+          </div>
+        </CardContent>
+      </Card>
 
       {/* Stroke Order Animation */}
       <Card>
