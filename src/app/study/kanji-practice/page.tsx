@@ -38,6 +38,7 @@ export default function KanjiPracticePage() {
   const [loading, setLoading] = useState(true);
   const [showRating, setShowRating] = useState(false);
   const [progress, setProgress] = useState<Record<string, CardProgress>>({});
+  const [selectedRating, setSelectedRating] = useState<number | null>(null);
 
   useEffect(() => {
     const loadKanji = async () => {
@@ -119,12 +120,14 @@ export default function KanjiPracticePage() {
   const handleNext = () => {
     setIsFlipped(false);
     setShowRating(false);
+    setSelectedRating(null);
     setCurrentIndex((prev) => (prev + 1) % kanjiList.length);
   };
 
   const handlePrevious = () => {
     setIsFlipped(false);
     setShowRating(false);
+    setSelectedRating(null);
     setCurrentIndex((prev) => (prev - 1 + kanjiList.length) % kanjiList.length);
   };
 
@@ -140,6 +143,9 @@ export default function KanjiPracticePage() {
 
   const handleRating = (level: number) => {
     if (!currentKanji) return;
+
+    // Set selected rating visually
+    setSelectedRating(level);
 
     // Update progress
     const newProgress = {
@@ -243,7 +249,11 @@ export default function KanjiPracticePage() {
                   className="group relative"
                   title={['Didn\'t know', 'Hard', 'Medium', 'Good', 'Perfect'][level === 5 ? 4 : level]}
                 >
-                  <div className="w-8 h-8 rounded-full border-2 border-muted-foreground hover:border-foreground transition-colors flex items-center justify-center">
+                  <div className={`w-8 h-8 rounded-full border transition-all flex items-center justify-center ${
+                    selectedRating === level
+                      ? 'bg-blue-500 border-blue-600 text-white'
+                      : 'bg-gray-100 dark:bg-gray-800 border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-600'
+                  }`}>
                     <span className="text-[8px] font-medium">LM</span>
                   </div>
                 </button>
