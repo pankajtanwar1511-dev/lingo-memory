@@ -9,10 +9,12 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, RotateCw, ChevronLeft, ChevronRight, Eye, EyeOff } from 'lucide-react';
+import { ArrowLeft, RotateCw, ChevronLeft, ChevronRight, Eye, EyeOff, Settings } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 
 interface KanjiCard {
   id: string;
@@ -31,6 +33,8 @@ interface CardProgress {
   reviewCount: number;  // Total reviews
 }
 
+type SortMode = 'weak-first' | 'random' | 'algorithm';
+
 export default function KanjiPracticePage() {
   const [kanjiList, setKanjiList] = useState<KanjiCard[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,6 +43,12 @@ export default function KanjiPracticePage() {
   const [showRating, setShowRating] = useState(false);
   const [progress, setProgress] = useState<Record<string, CardProgress>>({});
   const [selectedRating, setSelectedRating] = useState<number | null>(null);
+
+  // Configuration state
+  const [showConfig, setShowConfig] = useState(false);
+  const [cardCount, setCardCount] = useState(10);
+  const [jlptFilter, setJlptFilter] = useState<string>('N5');
+  const [sortMode, setSortMode] = useState<SortMode>('algorithm');
 
   useEffect(() => {
     const loadKanji = async () => {
@@ -53,6 +63,15 @@ export default function KanjiPracticePage() {
         const progressData = savedProgress ? JSON.parse(savedProgress) : {};
         setProgress(progressData);
 
+        // Load saved config
+        const savedConfig = sessionStorage.getItem('kanji-practice-config');
+        if (savedConfig) {
+          const config = JSON.parse(savedConfig);
+          setCardCount(config.cardCount);
+          setJlptFilter(config.jlptFilter);
+          setSortMode(config.sortMode);
+        }
+
         // Try to restore from session storage
         const savedOrder = sessionStorage.getItem('kanji-practice-order');
         const savedIndex = sessionStorage.getItem('kanji-practice-index');
@@ -66,14 +85,10 @@ export default function KanjiPracticePage() {
             .map((id: string) => data.kanji.find((k: any) => k.id === id))
             .filter(Boolean);
           setCurrentIndex(savedIndex ? parseInt(savedIndex) : 0);
+          setShowConfig(false);
         } else {
-          // New session - sort by priority based on progress
-          orderedKanji = sortByPriority(data.kanji, progressData);
-          // Save the order
-          sessionStorage.setItem(
-            'kanji-practice-order',
-            JSON.stringify(orderedKanji.map((k: any) => k.id))
-          );
+          // New session - show config first
+          setShowConfig(true);
         }
 
         setKanjiList(orderedKanji);
@@ -119,6 +134,52 @@ export default function KanjiPracticePage() {
     // Clear session state when going back to kanji list
     sessionStorage.removeItem('kanji-practice-order');
     sessionStorage.removeItem('kanji-practice-index');
+    sessionStorage.removeItem('kanji-practice-config');
+  };
+
+  const startPractice = async () => {
+    try {
+      const response = await fetch('/seed-data/kanji_n5.json');
+      if (!response.ok) throw new Error('Failed to load');
+
+      const data = await response.json();
+      const progressData = progress;
+
+      // Filter by JLPT level
+      let filteredKanji = data.kanji.filter((k: KanjiCard) => k.jlptLevel === jlptFilter);
+
+      // Apply sorting
+      let orderedKanji: KanjiCard[] = [];
+      switch (sortMode) {
+        case 'random':
+          orderedKanji = [...filteredKanji].sort(() => Math.random() - 0.5);
+          break;
+        case 'weak-first':
+          orderedKanji = [...filteredKanji].sort((a, b) => {
+            const levelA = progressData[a.id]?.level || 0;
+            const levelB = progressData[b.id]?.level || 0;
+            return levelA - levelB; // Lower level = weaker = first
+          });
+          break;
+        case 'algorithm':
+        default:
+          orderedKanji = sortByPriority(filteredKanji, progressData);
+          break;
+      }
+
+      // Limit to card count
+      orderedKanji = orderedKanji.slice(0, cardCount);
+
+      // Save config and order
+      sessionStorage.setItem('kanji-practice-config', JSON.stringify({ cardCount, jlptFilter, sortMode }));
+      sessionStorage.setItem('kanji-practice-order', JSON.stringify(orderedKanji.map(k => k.id)));
+
+      setKanjiList(orderedKanji);
+      setCurrentIndex(0);
+      setShowConfig(false);
+    } catch (err) {
+      console.error('Error starting practice:', err);
+    }
   };
 
   const currentKanji = kanjiList[currentIndex];
@@ -183,6 +244,123 @@ export default function KanjiPracticePage() {
     );
   }
 
+  // Show configuration screen
+  if (showConfig) {
+    return (
+      <div className="container max-w-4xl mx-auto px-4 py-8">
+        <div className="flex items-center justify-between mb-6">
+          <Link href="/study/kanji" onClick={handleBackToList}>
+            <Button variant="ghost" className="gap-2">
+              <ArrowLeft className="h-4 w-4" />
+              Back to Kanji List
+            </Button>
+          </Link>
+        </div>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Settings className="h-5 w-5" />
+              Configure Practice Session
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            {/* Number of Cards */}
+            <div className="space-y-2">
+              <Label htmlFor="cardCount">Number of Cards</Label>
+              <Input
+                id="cardCount"
+                type="number"
+                min="1"
+                max="100"
+                value={cardCount}
+                onChange={(e) => setCardCount(parseInt(e.target.value) || 10)}
+                className="w-full"
+              />
+              <p className="text-xs text-muted-foreground">
+                How many kanji do you want to practice? (1-100)
+              </p>
+            </div>
+
+            {/* JLPT Level */}
+            <div className="space-y-2">
+              <Label>JLPT Level</Label>
+              <div className="flex gap-2">
+                {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
+                  <Button
+                    key={level}
+                    variant={jlptFilter === level ? 'default' : 'outline'}
+                    onClick={() => setJlptFilter(level)}
+                    className="flex-1"
+                  >
+                    {level}
+                  </Button>
+                ))}
+              </div>
+              <p className="text-xs text-muted-foreground">
+                Currently only N5 kanji are available
+              </p>
+            </div>
+
+            {/* Sort Mode */}
+            <div className="space-y-2">
+              <Label>Card Order</Label>
+              <div className="space-y-2">
+                <Button
+                  variant={sortMode === 'algorithm' ? 'default' : 'outline'}
+                  onClick={() => setSortMode('algorithm')}
+                  className="w-full justify-start"
+                >
+                  <div className="text-left">
+                    <div className="font-semibold">Smart Algorithm (Recommended)</div>
+                    <div className="text-xs text-muted-foreground">
+                      Prioritizes cards you haven't seen, then by difficulty level and recency
+                    </div>
+                  </div>
+                </Button>
+
+                <Button
+                  variant={sortMode === 'weak-first' ? 'default' : 'outline'}
+                  onClick={() => setSortMode('weak-first')}
+                  className="w-full justify-start"
+                >
+                  <div className="text-left">
+                    <div className="font-semibold">Weakest First</div>
+                    <div className="text-xs text-muted-foreground">
+                      Shows cards with lowest memory level first
+                    </div>
+                  </div>
+                </Button>
+
+                <Button
+                  variant={sortMode === 'random' ? 'default' : 'outline'}
+                  onClick={() => setSortMode('random')}
+                  className="w-full justify-start"
+                >
+                  <div className="text-left">
+                    <div className="font-semibold">Random</div>
+                    <div className="text-xs text-muted-foreground">
+                      Completely random shuffle
+                    </div>
+                  </div>
+                </Button>
+              </div>
+            </div>
+
+            {/* Start Button */}
+            <Button
+              onClick={startPractice}
+              size="lg"
+              className="w-full"
+            >
+              Start Practice
+            </Button>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
   if (!currentKanji) {
     return (
       <div className="container max-w-4xl mx-auto px-4 py-8">
@@ -230,11 +408,12 @@ export default function KanjiPracticePage() {
             onClick={() => {
               sessionStorage.removeItem('kanji-practice-order');
               sessionStorage.removeItem('kanji-practice-index');
-              window.location.reload();
+              sessionStorage.removeItem('kanji-practice-config');
+              setShowConfig(true);
             }}
           >
-            <RotateCw className="h-4 w-4 mr-2" />
-            Restart
+            <Settings className="h-4 w-4 mr-2" />
+            Reconfigure
           </Button>
         </div>
       </div>
