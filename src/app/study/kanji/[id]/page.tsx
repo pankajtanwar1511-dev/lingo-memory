@@ -37,6 +37,7 @@ export default function KanjiDetailPage() {
     const loadKanji = async () => {
       try {
         setLoading(true);
+        console.log('🔍 Loading kanji with ID:', kanjiId);
         const response = await fetch('/seed-data/kanji_n5.json');
 
         if (!response.ok) {
@@ -44,11 +45,16 @@ export default function KanjiDetailPage() {
         }
 
         const data = await response.json();
+        console.log('📦 Loaded kanji dataset:', data.metadata);
+        console.log('🔎 Searching for kanji with ID:', kanjiId);
         const kanjiCard = data.kanji.find((k: KanjiCard) => k.id === kanjiId);
 
         if (!kanjiCard) {
+          console.error('❌ Kanji not found. Available IDs:', data.kanji.slice(0, 5).map((k: any) => k.id));
           throw new Error('Kanji not found');
         }
+
+        console.log('✅ Found kanji:', kanjiCard.kanji);
 
         setKanji(kanjiCard);
         setError(null);
