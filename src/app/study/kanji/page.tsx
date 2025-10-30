@@ -118,9 +118,16 @@ export default function KanjiListPage() {
             </p>
           </div>
 
-          <Badge variant="secondary" className="text-lg px-4 py-2">
-            JLPT N5
-          </Badge>
+          <div className="flex items-center gap-3">
+            <Link href="/study/kanji-practice">
+              <Button variant="default" className="gap-2">
+                <span>Practice</span>
+              </Button>
+            </Link>
+            <Badge variant="secondary" className="text-lg px-4 py-2">
+              JLPT N5
+            </Badge>
+          </div>
         </div>
 
         {/* Search and Filters */}
