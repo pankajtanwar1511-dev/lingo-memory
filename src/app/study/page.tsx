@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import {
   ChevronLeft, Clock, Zap, Target, Flame,
-  Brain, RotateCcw, Play, CheckCircle2, XCircle, Loader2
+  Brain, RotateCcw, Play, CheckCircle2, XCircle, Loader2, Languages
 } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -293,7 +293,7 @@ export default function StudyPage() {
             </div>
 
             {/* Study modes */}
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Card className="hover:shadow-xl transition-all">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
@@ -389,6 +389,36 @@ export default function StudyPage() {
                     <Zap className="h-4 w-4 mr-2" />
                     Start Cramming
                   </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-xl transition-all border-primary/50">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Languages className="h-5 w-5" />
+                    Kanji
+                  </CardTitle>
+                  <CardDescription>
+                    Learn N5 kanji with stroke order
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-sm">
+                      <span>N5 Kanji</span>
+                      <span className="font-bold">88</span>
+                    </div>
+                    <div className="flex justify-between text-sm">
+                      <span>With examples</span>
+                      <Badge variant="outline">272</Badge>
+                    </div>
+                  </div>
+                  <Link href="/study/kanji">
+                    <Button className="w-full" variant="default">
+                      <Languages className="h-4 w-4 mr-2" />
+                      Browse Kanji
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             </div>

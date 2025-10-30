@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useTheme } from "next-themes"
-import { Moon, Sun, BookOpen, Trophy, Settings, Menu, X, Zap, Library, BarChart3, GraduationCap, Wrench, Database } from "lucide-react"
+import { Moon, Sun, BookOpen, Trophy, Settings, Menu, X, Zap, Library, BarChart3, GraduationCap, Wrench, Database, Languages } from "lucide-react"
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -21,6 +21,7 @@ export function Header() {
   const navigation = [
     { name: "Study", href: "/study", icon: BookOpen },
     { name: "Quiz", href: "/quiz", icon: GraduationCap },
+    { name: "Kanji", href: "/study/kanji", icon: Languages },
     { name: "Vocabulary", href: "/vocabulary", icon: Library },
     { name: "Progress", href: "/progress", icon: Trophy },
     { name: "Analytics", href: "/analytics", icon: BarChart3 },
