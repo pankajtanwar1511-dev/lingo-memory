@@ -135,52 +135,43 @@ export default function KanjiDetailPage() {
       </Card>
 
       {/* Readings */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Readings</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4">
-          {/* On-readings */}
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-semibold text-muted-foreground uppercase">
-                音読み (On-reading)
-              </span>
+      <div className="grid md:grid-cols-2 gap-6">
+        {/* On-readings */}
+        <div className="space-y-3">
+          <h3 className="text-lg font-semibold">
+            音読み <span className="text-sm font-normal text-muted-foreground">(On-reading)</span>
+          </h3>
+          {kanji.onReadings.length > 0 ? (
+            <div className="space-y-2">
+              {kanji.onReadings.map((reading, i) => (
+                <div key={i} className="text-3xl font-medium">
+                  {reading}
+                </div>
+              ))}
             </div>
-            {kanji.onReadings.length > 0 ? (
-              <div className="flex flex-wrap gap-2">
-                {kanji.onReadings.map((reading, i) => (
-                  <Badge key={i} variant="secondary" className="text-base px-3 py-1">
-                    {reading}
-                  </Badge>
-                ))}
-              </div>
-            ) : (
-              <p className="text-sm text-muted-foreground italic">None</p>
-            )}
-          </div>
+          ) : (
+            <p className="text-muted-foreground">—</p>
+          )}
+        </div>
 
-          {/* Kun-readings */}
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-semibold text-muted-foreground uppercase">
-                訓読み (Kun-reading)
-              </span>
+        {/* Kun-readings */}
+        <div className="space-y-3">
+          <h3 className="text-lg font-semibold">
+            訓読み <span className="text-sm font-normal text-muted-foreground">(Kun-reading)</span>
+          </h3>
+          {kanji.kunReadings.length > 0 ? (
+            <div className="space-y-2">
+              {kanji.kunReadings.map((reading, i) => (
+                <div key={i} className="text-3xl font-medium">
+                  {reading}
+                </div>
+              ))}
             </div>
-            {kanji.kunReadings.length > 0 ? (
-              <div className="flex flex-wrap gap-2">
-                {kanji.kunReadings.map((reading, i) => (
-                  <Badge key={i} variant="outline" className="text-base px-3 py-1">
-                    {reading}
-                  </Badge>
-                ))}
-              </div>
-            ) : (
-              <p className="text-sm text-muted-foreground italic">None</p>
-            )}
-          </div>
-        </CardContent>
-      </Card>
+          ) : (
+            <p className="text-muted-foreground">—</p>
+          )}
+        </div>
+      </div>
 
       {/* Stroke Order Animation */}
       <Card>

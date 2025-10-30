@@ -85,16 +85,25 @@ export function StrokeOrderAnimation({
 
   // Auto-play animation loop
   useEffect(() => {
-    if (!isPlaying || strokePaths.length === 0) return;
+    console.log('⏱️ Animation effect triggered:', { isPlaying, currentStroke, totalStrokes: strokePaths.length, duration: strokeDuration, pause: pauseBetweenStrokes });
+
+    if (!isPlaying || strokePaths.length === 0) {
+      console.log('❌ Animation stopped or no paths');
+      return;
+    }
 
     const timer = setTimeout(() => {
       if (currentStroke < strokePaths.length - 1) {
+        console.log('➡️ Moving to next stroke:', currentStroke + 1);
         setCurrentStroke(prev => prev + 1);
       } else {
+        console.log('✅ Animation complete');
         // Animation complete
         if (isLooping) {
+          console.log('🔁 Looping back to start');
           setCurrentStroke(0);  // Restart
         } else {
+          console.log('⏹️ Stopping animation');
           setIsPlaying(false);
           onComplete?.();
         }
@@ -106,6 +115,7 @@ export function StrokeOrderAnimation({
 
   // Control handlers
   const handlePlayPause = () => {
+    console.log('🎮 Play/Pause clicked. Current state:', { isPlaying, currentStroke, totalStrokes: strokePaths.length });
     if (!isPlaying && currentStroke >= strokePaths.length - 1) {
       // If finished, reset and play
       setCurrentStroke(0);
@@ -114,11 +124,13 @@ export function StrokeOrderAnimation({
   };
 
   const handleReset = () => {
+    console.log('🔄 Reset clicked');
     setIsPlaying(false);
     setCurrentStroke(0);
   };
 
   const toggleLoop = () => {
+    console.log('🔁 Loop toggled. Current:', isLooping);
     setIsLooping(!isLooping);
   };
 
@@ -126,6 +138,7 @@ export function StrokeOrderAnimation({
     const speeds = [0.5, 1.0, 2.0];
     const currentIndex = speeds.indexOf(playbackSpeed);
     const nextSpeed = speeds[(currentIndex + 1) % speeds.length];
+    console.log('⚡ Speed changed:', playbackSpeed, '→', nextSpeed);
     setPlaybackSpeed(nextSpeed);
   };
 
