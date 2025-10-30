@@ -235,7 +235,7 @@ export default function KanjiPracticePage() {
 
       {/* Flashcard */}
       <div className="relative">
-        <Card className="h-[400px] flex items-center justify-center relative">
+        <Card className="h-[500px] flex items-center justify-center relative">
           {/* LM Circle Rating - Top Right */}
           {isFlipped && (
             <div className="absolute top-4 right-4 flex gap-2 z-10">
