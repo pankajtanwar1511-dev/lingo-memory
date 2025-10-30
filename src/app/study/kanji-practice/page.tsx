@@ -266,41 +266,41 @@ export default function KanjiPracticePage() {
                     </div>
                   </div>
 
-                  {/* Readings */}
-                  <div className="grid md:grid-cols-2 gap-4 pt-4">
-                    {/* On-readings */}
-                    <div>
-                      <h3 className="text-sm font-semibold text-muted-foreground mb-2">
-                        音読み (ON)
+                  {/* Readings - Side by Side Blocks */}
+                  <div className="grid md:grid-cols-2 gap-3 pt-4">
+                    {/* On-readings Block */}
+                    <div className="p-4 rounded-lg bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-900/30">
+                      <h3 className="text-sm font-semibold mb-3">
+                        音読み <span className="text-xs font-normal text-muted-foreground">(On)</span>
                       </h3>
                       {currentKanji.onReadings.length > 0 ? (
-                        <div className="space-y-1">
+                        <div className="space-y-2">
                           {currentKanji.onReadings.map((reading, i) => (
-                            <div key={i} className="text-xl font-medium">
+                            <div key={i} className="text-2xl font-medium text-blue-900 dark:text-blue-100">
                               {reading}
                             </div>
                           ))}
                         </div>
                       ) : (
-                        <p className="text-muted-foreground">—</p>
+                        <p className="text-muted-foreground text-xl">—</p>
                       )}
                     </div>
 
-                    {/* Kun-readings */}
-                    <div>
-                      <h3 className="text-sm font-semibold text-muted-foreground mb-2">
-                        訓読み (KUN)
+                    {/* Kun-readings Block */}
+                    <div className="p-4 rounded-lg bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-900/30">
+                      <h3 className="text-sm font-semibold mb-3">
+                        訓読み <span className="text-xs font-normal text-muted-foreground">(Kun)</span>
                       </h3>
                       {currentKanji.kunReadings.length > 0 ? (
-                        <div className="space-y-1">
+                        <div className="space-y-2">
                           {currentKanji.kunReadings.map((reading, i) => (
-                            <div key={i} className="text-xl font-medium">
+                            <div key={i} className="text-2xl font-medium text-green-900 dark:text-green-100">
                               {reading}
                             </div>
                           ))}
                         </div>
                       ) : (
-                        <p className="text-muted-foreground">—</p>
+                        <p className="text-muted-foreground text-xl">—</p>
                       )}
                     </div>
                   </div>
