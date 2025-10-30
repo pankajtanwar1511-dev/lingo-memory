@@ -42,7 +42,7 @@ export function StrokeOrderAnimation({
   className = '',
 }: StrokeOrderAnimationProps) {
   const [isPlaying, setIsPlaying] = useState(autoPlay);
-  const [currentStroke, setCurrentStroke] = useState(0);
+  const [currentStroke, setCurrentStroke] = useState(-1);  // Start at -1 so no strokes show initially
   const [isLooping, setIsLooping] = useState(loop);
   const [playbackSpeed, setPlaybackSpeed] = useState(speed);
   const [svgContent, setSvgContent] = useState<string | null>(null);
@@ -121,9 +121,12 @@ export function StrokeOrderAnimation({
   // Control handlers
   const handlePlayPause = () => {
     console.log('🎮 Play/Pause clicked. Current state:', { isPlaying, currentStroke, totalStrokes: strokePaths.length });
-    if (!isPlaying && currentStroke >= strokePaths.length - 1) {
-      // If finished, reset and play
-      setCurrentStroke(0);
+    if (!isPlaying) {
+      // Starting to play
+      if (currentStroke >= strokePaths.length - 1 || currentStroke === -1) {
+        // If finished or not started, start from beginning
+        setCurrentStroke(0);
+      }
     }
     setIsPlaying(!isPlaying);
   };
@@ -131,7 +134,7 @@ export function StrokeOrderAnimation({
   const handleReset = () => {
     console.log('🔄 Reset clicked');
     setIsPlaying(false);
-    setCurrentStroke(0);
+    setCurrentStroke(-1);  // Reset to -1 to hide all strokes
   };
 
   const toggleLoop = () => {
@@ -183,14 +186,14 @@ export function StrokeOrderAnimation({
 
           {/* Render strokes up to current stroke */}
           {strokePaths.map((pathData, index) => {
-            if (index > currentStroke) return null;
+            // Only show strokes up to currentStroke (currentStroke can be -1 to show nothing)
+            if (index > currentStroke || currentStroke === -1) return null;
 
             const isCurrentStroke = index === currentStroke;
-            const isCompletedStroke = index < currentStroke;
 
             return (
               <motion.path
-                key={`${index}-${isPlaying}`}
+                key={index}
                 d={pathData}
                 fill="none"
                 stroke="currentColor"
@@ -198,17 +201,16 @@ export function StrokeOrderAnimation({
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 className="text-foreground"
-                initial={{ pathLength: isCompletedStroke ? 1 : 0, opacity: isCompletedStroke ? 1 : 0 }}
-                animate={{
-                  pathLength: 1,
-                  opacity: 1,
-                }}
+                initial={{ pathLength: 0, opacity: 0 }}
+                animate={{ pathLength: 1, opacity: 1 }}
                 transition={{
                   pathLength: {
-                    duration: isCurrentStroke && isPlaying ? strokeDuration / 1000 : 0,
+                    duration: (isCurrentStroke && isPlaying) ? strokeDuration / 1000 : 0,
                     ease: 'easeInOut',
                   },
-                  opacity: { duration: 0.1 },
+                  opacity: {
+                    duration: 0.05,
+                  },
                 }}
               />
             );
@@ -235,7 +237,7 @@ export function StrokeOrderAnimation({
 
         {/* Stroke count indicator */}
         <div className="absolute top-2 right-2 bg-background/80 backdrop-blur-sm px-2 py-1 rounded text-xs font-medium">
-          {currentStroke + 1} / {strokePaths.length}
+          {currentStroke === -1 ? 0 : currentStroke + 1} / {strokePaths.length}
         </div>
       </div>
 
@@ -289,7 +291,7 @@ export function StrokeOrderAnimation({
         <div
           className="bg-primary h-1.5 rounded-full transition-all duration-300"
           style={{
-            width: `${((currentStroke + 1) / strokePaths.length) * 100}%`,
+            width: currentStroke === -1 ? '0%' : `${((currentStroke + 1) / strokePaths.length) * 100}%`,
           }}
         />
       </div>
