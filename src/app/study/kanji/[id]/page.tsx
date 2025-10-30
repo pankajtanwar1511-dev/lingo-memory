@@ -281,9 +281,10 @@ export default function KanjiDetailPage() {
                 if (!vocab) return null;
 
                 return (
-                  <div
+                  <Link
                     key={vocabId}
-                    className="p-4 bg-white dark:bg-slate-900 border border-amber-200 dark:border-amber-900/50 rounded-lg shadow-sm"
+                    href={`/vocabulary/${vocabId}`}
+                    className="p-4 bg-white dark:bg-slate-900 border border-amber-200 dark:border-amber-900/50 rounded-lg shadow-sm hover:shadow-md hover:border-amber-400 dark:hover:border-amber-700 transition-all cursor-pointer"
                   >
                     <div className="flex items-center justify-between mb-2">
                       <div className="text-2xl font-bold text-foreground">
@@ -299,7 +300,7 @@ export default function KanjiDetailPage() {
                     <div className="text-sm text-muted-foreground">
                       {vocab.meaning[0]}
                     </div>
-                  </div>
+                  </Link>
                 );
               })}
             </div>
