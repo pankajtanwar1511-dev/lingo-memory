@@ -1,0 +1,636 @@
+{
+  "metadata": {
+    "source": "KanjiVG",
+    "sourceUrl": "https://github.com/KanjiVG/kanjivg",
+    "license": "CC BY-SA 3.0",
+    "processedAt": "2025-10-30T08:23:31.852411Z",
+    "totalKanji": 89,
+    "foundSvgFiles": 89,
+    "script": "02_process_kanjivg.py"
+  },
+  "kanji": [
+    {
+      "kanji": "一",
+      "svgFilename": "04e00.svg",
+      "svgPath": "/kanji/strokes/04e00.svg",
+      "strokeCount": 1,
+      "found": true
+    },
+    {
+      "kanji": "二",
+      "svgFilename": "04e8c.svg",
+      "svgPath": "/kanji/strokes/04e8c.svg",
+      "strokeCount": 2,
+      "found": true
+    },
+    {
+      "kanji": "三",
+      "svgFilename": "04e09.svg",
+      "svgPath": "/kanji/strokes/04e09.svg",
+      "strokeCount": 3,
+      "found": true
+    },
+    {
+      "kanji": "四",
+      "svgFilename": "056db.svg",
+      "svgPath": "/kanji/strokes/056db.svg",
+      "strokeCount": 5,
+      "found": true
+    },
+    {
+      "kanji": "五",
+      "svgFilename": "04e94.svg",
+      "svgPath": "/kanji/strokes/04e94.svg",
+      "strokeCount": 4,
+      "found": true
+    },
+    {
+      "kanji": "六",
+      "svgFilename": "0516d.svg",
+      "svgPath": "/kanji/strokes/0516d.svg",
+      "strokeCount": 4,
+      "found": true
+    },
+    {
+      "kanji": "七",
+      "svgFilename": "04e03.svg",
+      "svgPath": "/kanji/strokes/04e03.svg",
+      "strokeCount": 2,
+      "found": true
+    },
+    {
+      "kanji": "八",
+      "svgFilename": "0516b.svg",
+      "svgPath": "/kanji/strokes/0516b.svg",
+      "strokeCount": 2,
+      "found": true
+    },
+    {
+      "kanji": "九",
+      "svgFilename": "04e5d.svg",
+      "svgPath": "/kanji/strokes/04e5d.svg",
+      "strokeCount": 2,
+      "found": true
+    },
+    {
+      "kanji": "十",
+      "svgFilename": "05341.svg",
+      "svgPath": "/kanji/strokes/05341.svg",
+      "strokeCount": 2,
+      "found": true
+    },
+    {
+      "kanji": "百",
+      "svgFilename": "0767e.svg",
+      "svgPath": "/kanji/strokes/0767e.svg",
+      "strokeCount": 6,
+      "found": true
+    },
+    {
+      "kanji": "千",
+      "svgFilename": "05343.svg",
+      "svgPath": "/kanji/strokes/05343.svg",
+      "strokeCount": 3,
+      "found": true
+    },
+    {
+      "kanji": "万",
+      "svgFilename": "04e07.svg",
+      "svgPath": "/kanji/strokes/04e07.svg",
+      "strokeCount": 3,
+      "found": true
+    },
+    {
+      "kanji": "円",
+      "svgFilename": "05186.svg",
+      "svgPath": "/kanji/strokes/05186.svg",
+      "strokeCount": 4,
+      "found": true
+    },
+    {
+      "kanji": "時",
+      "svgFilename": "06642.svg",
+      "svgPath": "/kanji/strokes/06642.svg",
+      "strokeCount": 10,
+      "found": true
+    },
+    {
+      "kanji": "日",
+      "svgFilename": "065e5.svg",
+      "svgPath": "/kanji/strokes/065e5.svg",
+      "strokeCount": 4,
+      "found": true
+    },
+    {
+      "kanji": "月",
+      "svgFilename": "06708.svg",
+      "svgPath": "/kanji/strokes/06708.svg",
+      "strokeCount": 4,
+      "found": true
+    },
+    {
+      "kanji": "火",
+      "svgFilename": "0706b.svg",
+      "svgPath": "/kanji/strokes/0706b.svg",
+      "strokeCount": 4,
+      "found": true
+    },
+    {
+      "kanji": "水",
+      "svgFilename": "06c34.svg",
+      "svgPath": "/kanji/strokes/06c34.svg",
+      "strokeCount": 4,
+      "found": true
+    },
+    {
+      "kanji": "木",
+      "svgFilename": "06728.svg",
+      "svgPath": "/kanji/strokes/06728.svg",
+      "strokeCount": 4,
+      "found": true
+    },
+    {
+      "kanji": "金",
+      "svgFilename": "091d1.svg",
+      "svgPath": "/kanji/strokes/091d1.svg",
+      "strokeCount": 8,
+      "found": true
+    },
+    {
+      "kanji": "土",
+      "svgFilename": "0571f.svg",
+      "svgPath": "/kanji/strokes/0571f.svg",
+      "strokeCount": 3,
+      "found": true
+    },
+    {
+      "kanji": "年",
+      "svgFilename": "05e74.svg",
+      "svgPath": "/kanji/strokes/05e74.svg",
+      "strokeCount": 6,
+      "found": true
+    },
+    {
+      "kanji": "週",
+      "svgFilename": "09031.svg",
+      "svgPath": "/kanji/strokes/09031.svg",
+      "strokeCount": 11,
+      "found": true
+    },
+    {
+      "kanji": "今",
+      "svgFilename": "04eca.svg",
+      "svgPath": "/kanji/strokes/04eca.svg",
+      "strokeCount": 4,
+      "found": true
+    },
+    {
+      "kanji": "何",
+      "svgFilename": "04f55.svg",
+      "svgPath": "/kanji/strokes/04f55.svg",
+      "strokeCount": 7,
+      "found": true
+    },
+    {
+      "kanji": "分",
+      "svgFilename": "05206.svg",
+      "svgPath": "/kanji/strokes/05206.svg",
+      "strokeCount": 4,
+      "found": true
+    },
+    {
+      "kanji": "半",
+      "svgFilename": "0534a.svg",
+      "svgPath": "/kanji/strokes/0534a.svg",
+      "strokeCount": 5,
+      "found": true
+    },
+    {
+      "kanji": "毎",
+      "svgFilename": "06bce.svg",
+      "svgPath": "/kanji/strokes/06bce.svg",
+      "strokeCount": 6,
+      "found": true
+    },
+    {
+      "kanji": "人",
+      "svgFilename": "04eba.svg",
+      "svgPath": "/kanji/strokes/04eba.svg",
+      "strokeCount": 2,
+      "found": true
+    },
+    {
+      "kanji": "子",
+      "svgFilename": "05b50.svg",
+      "svgPath": "/kanji/strokes/05b50.svg",
+      "strokeCount": 3,
+      "found": true
+    },
+    {
+      "kanji": "女",
+      "svgFilename": "05973.svg",
+      "svgPath": "/kanji/strokes/05973.svg",
+      "strokeCount": 3,
+      "found": true
+    },
+    {
+      "kanji": "男",
+      "svgFilename": "07537.svg",
+      "svgPath": "/kanji/strokes/07537.svg",
+      "strokeCount": 7,
+      "found": true
+    },
+    {
+      "kanji": "母",
+      "svgFilename": "06bcd.svg",
+      "svgPath": "/kanji/strokes/06bcd.svg",
+      "strokeCount": 5,
+      "found": true
+    },
+    {
+      "kanji": "父",
+      "svgFilename": "07236.svg",
+      "svgPath": "/kanji/strokes/07236.svg",
+      "strokeCount": 4,
+      "found": true
+    },
+    {
+      "kanji": "友",
+      "svgFilename": "053cb.svg",
+      "svgPath": "/kanji/strokes/053cb.svg",
+      "strokeCount": 4,
+      "found": true
+    },
+    {
+      "kanji": "学",
+      "svgFilename": "05b66.svg",
+      "svgPath": "/kanji/strokes/05b66.svg",
+      "strokeCount": 8,
+      "found": true
+    },
+    {
+      "kanji": "生",
+      "svgFilename": "0751f.svg",
+      "svgPath": "/kanji/strokes/0751f.svg",
+      "strokeCount": 5,
+      "found": true
+    },
+    {
+      "kanji": "先",
+      "svgFilename": "05148.svg",
+      "svgPath": "/kanji/strokes/05148.svg",
+      "strokeCount": 6,
+      "found": true
+    },
+    {
+      "kanji": "名",
+      "svgFilename": "0540d.svg",
+      "svgPath": "/kanji/strokes/0540d.svg",
+      "strokeCount": 6,
+      "found": true
+    },
+    {
+      "kanji": "私",
+      "svgFilename": "079c1.svg",
+      "svgPath": "/kanji/strokes/079c1.svg",
+      "strokeCount": 7,
+      "found": true
+    },
+    {
+      "kanji": "大",
+      "svgFilename": "05927.svg",
+      "svgPath": "/kanji/strokes/05927.svg",
+      "strokeCount": 3,
+      "found": true
+    },
+    {
+      "kanji": "小",
+      "svgFilename": "05c0f.svg",
+      "svgPath": "/kanji/strokes/05c0f.svg",
+      "strokeCount": 3,
+      "found": true
+    },
+    {
+      "kanji": "中",
+      "svgFilename": "04e2d.svg",
+      "svgPath": "/kanji/strokes/04e2d.svg",
+      "strokeCount": 4,
+      "found": true
+    },
+    {
+      "kanji": "本",
+      "svgFilename": "0672c.svg",
+      "svgPath": "/kanji/strokes/0672c.svg",
+      "strokeCount": 5,
+      "found": true
+    },
+    {
+      "kanji": "学",
+      "svgFilename": "05b66.svg",
+      "svgPath": "/kanji/strokes/05b66.svg",
+      "strokeCount": 8,
+      "found": true
+    },
+    {
+      "kanji": "校",
+      "svgFilename": "06821.svg",
+      "svgPath": "/kanji/strokes/06821.svg",
+      "strokeCount": 10,
+      "found": true
+    },
+    {
+      "kanji": "高",
+      "svgFilename": "09ad8.svg",
+      "svgPath": "/kanji/strokes/09ad8.svg",
+      "strokeCount": 10,
+      "found": true
+    },
+    {
+      "kanji": "国",
+      "svgFilename": "056fd.svg",
+      "svgPath": "/kanji/strokes/056fd.svg",
+      "strokeCount": 8,
+      "found": true
+    },
+    {
+      "kanji": "語",
+      "svgFilename": "08a9e.svg",
+      "svgPath": "/kanji/strokes/08a9e.svg",
+      "strokeCount": 14,
+      "found": true
+    },
+    {
+      "kanji": "英",
+      "svgFilename": "082f1.svg",
+      "svgPath": "/kanji/strokes/082f1.svg",
+      "strokeCount": 8,
+      "found": true
+    },
+    {
+      "kanji": "会",
+      "svgFilename": "04f1a.svg",
+      "svgPath": "/kanji/strokes/04f1a.svg",
+      "strokeCount": 6,
+      "found": true
+    },
+    {
+      "kanji": "社",
+      "svgFilename": "0793e.svg",
+      "svgPath": "/kanji/strokes/0793e.svg",
+      "strokeCount": 7,
+      "found": true
+    },
+    {
+      "kanji": "手",
+      "svgFilename": "0624b.svg",
+      "svgPath": "/kanji/strokes/0624b.svg",
+      "strokeCount": 4,
+      "found": true
+    },
+    {
+      "kanji": "車",
+      "svgFilename": "08eca.svg",
+      "svgPath": "/kanji/strokes/08eca.svg",
+      "strokeCount": 7,
+      "found": true
+    },
+    {
+      "kanji": "門",
+      "svgFilename": "09580.svg",
+      "svgPath": "/kanji/strokes/09580.svg",
+      "strokeCount": 8,
+      "found": true
+    },
+    {
+      "kanji": "聞",
+      "svgFilename": "0805e.svg",
+      "svgPath": "/kanji/strokes/0805e.svg",
+      "strokeCount": 14,
+      "found": true
+    },
+    {
+      "kanji": "見",
+      "svgFilename": "0898b.svg",
+      "svgPath": "/kanji/strokes/0898b.svg",
+      "strokeCount": 7,
+      "found": true
+    },
+    {
+      "kanji": "行",
+      "svgFilename": "0884c.svg",
+      "svgPath": "/kanji/strokes/0884c.svg",
+      "strokeCount": 6,
+      "found": true
+    },
+    {
+      "kanji": "来",
+      "svgFilename": "06765.svg",
+      "svgPath": "/kanji/strokes/06765.svg",
+      "strokeCount": 7,
+      "found": true
+    },
+    {
+      "kanji": "出",
+      "svgFilename": "051fa.svg",
+      "svgPath": "/kanji/strokes/051fa.svg",
+      "strokeCount": 5,
+      "found": true
+    },
+    {
+      "kanji": "入",
+      "svgFilename": "05165.svg",
+      "svgPath": "/kanji/strokes/05165.svg",
+      "strokeCount": 2,
+      "found": true
+    },
+    {
+      "kanji": "上",
+      "svgFilename": "04e0a.svg",
+      "svgPath": "/kanji/strokes/04e0a.svg",
+      "strokeCount": 3,
+      "found": true
+    },
+    {
+      "kanji": "下",
+      "svgFilename": "04e0b.svg",
+      "svgPath": "/kanji/strokes/04e0b.svg",
+      "strokeCount": 3,
+      "found": true
+    },
+    {
+      "kanji": "左",
+      "svgFilename": "05de6.svg",
+      "svgPath": "/kanji/strokes/05de6.svg",
+      "strokeCount": 5,
+      "found": true
+    },
+    {
+      "kanji": "右",
+      "svgFilename": "053f3.svg",
+      "svgPath": "/kanji/strokes/053f3.svg",
+      "strokeCount": 5,
+      "found": true
+    },
+    {
+      "kanji": "前",
+      "svgFilename": "0524d.svg",
+      "svgPath": "/kanji/strokes/0524d.svg",
+      "strokeCount": 9,
+      "found": true
+    },
+    {
+      "kanji": "後",
+      "svgFilename": "05f8c.svg",
+      "svgPath": "/kanji/strokes/05f8c.svg",
+      "strokeCount": 9,
+      "found": true
+    },
+    {
+      "kanji": "午",
+      "svgFilename": "05348.svg",
+      "svgPath": "/kanji/strokes/05348.svg",
+      "strokeCount": 4,
+      "found": true
+    },
+    {
+      "kanji": "食",
+      "svgFilename": "098df.svg",
+      "svgPath": "/kanji/strokes/098df.svg",
+      "strokeCount": 9,
+      "found": true
+    },
+    {
+      "kanji": "飲",
+      "svgFilename": "098f2.svg",
+      "svgPath": "/kanji/strokes/098f2.svg",
+      "strokeCount": 12,
+      "found": true
+    },
+    {
+      "kanji": "買",
+      "svgFilename": "08cb7.svg",
+      "svgPath": "/kanji/strokes/08cb7.svg",
+      "strokeCount": 12,
+      "found": true
+    },
+    {
+      "kanji": "書",
+      "svgFilename": "066f8.svg",
+      "svgPath": "/kanji/strokes/066f8.svg",
+      "strokeCount": 10,
+      "found": true
+    },
+    {
+      "kanji": "読",
+      "svgFilename": "08aad.svg",
+      "svgPath": "/kanji/strokes/08aad.svg",
+      "strokeCount": 14,
+      "found": true
+    },
+    {
+      "kanji": "話",
+      "svgFilename": "08a71.svg",
+      "svgPath": "/kanji/strokes/08a71.svg",
+      "strokeCount": 13,
+      "found": true
+    },
+    {
+      "kanji": "立",
+      "svgFilename": "07acb.svg",
+      "svgPath": "/kanji/strokes/07acb.svg",
+      "strokeCount": 5,
+      "found": true
+    },
+    {
+      "kanji": "休",
+      "svgFilename": "04f11.svg",
+      "svgPath": "/kanji/strokes/04f11.svg",
+      "strokeCount": 6,
+      "found": true
+    },
+    {
+      "kanji": "山",
+      "svgFilename": "05c71.svg",
+      "svgPath": "/kanji/strokes/05c71.svg",
+      "strokeCount": 3,
+      "found": true
+    },
+    {
+      "kanji": "川",
+      "svgFilename": "05ddd.svg",
+      "svgPath": "/kanji/strokes/05ddd.svg",
+      "strokeCount": 3,
+      "found": true
+    },
+    {
+      "kanji": "白",
+      "svgFilename": "0767d.svg",
+      "svgPath": "/kanji/strokes/0767d.svg",
+      "strokeCount": 5,
+      "found": true
+    },
+    {
+      "kanji": "天",
+      "svgFilename": "05929.svg",
+      "svgPath": "/kanji/strokes/05929.svg",
+      "strokeCount": 4,
+      "found": true
+    },
+    {
+      "kanji": "気",
+      "svgFilename": "06c17.svg",
+      "svgPath": "/kanji/strokes/06c17.svg",
+      "strokeCount": 6,
+      "found": true
+    },
+    {
+      "kanji": "雨",
+      "svgFilename": "096e8.svg",
+      "svgPath": "/kanji/strokes/096e8.svg",
+      "strokeCount": 8,
+      "found": true
+    },
+    {
+      "kanji": "電",
+      "svgFilename": "096fb.svg",
+      "svgPath": "/kanji/strokes/096fb.svg",
+      "strokeCount": 13,
+      "found": true
+    },
+    {
+      "kanji": "北",
+      "svgFilename": "05317.svg",
+      "svgPath": "/kanji/strokes/05317.svg",
+      "strokeCount": 5,
+      "found": true
+    },
+    {
+      "kanji": "外",
+      "svgFilename": "05916.svg",
+      "svgPath": "/kanji/strokes/05916.svg",
+      "strokeCount": 5,
+      "found": true
+    },
+    {
+      "kanji": "店",
+      "svgFilename": "05e97.svg",
+      "svgPath": "/kanji/strokes/05e97.svg",
+      "strokeCount": 8,
+      "found": true
+    },
+    {
+      "kanji": "駅",
+      "svgFilename": "099c5.svg",
+      "svgPath": "/kanji/strokes/099c5.svg",
+      "strokeCount": 14,
+      "found": true
+    },
+    {
+      "kanji": "東",
+      "svgFilename": "06771.svg",
+      "svgPath": "/kanji/strokes/06771.svg",
+      "strokeCount": 8,
+      "found": true
+    }
+  ]
+}

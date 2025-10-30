@@ -50,3 +50,8 @@ service-account*.json
 # Large data files and archives (>100MB)
 # Exclude entire OLD-COMPLEX-APPROACH directory (archived/backup data)
 data/OLD-COMPLEX-APPROACH/
+
+# Kanji raw data (external git repos and large XML files)
+data/kanji/raw/kanjivg/
+data/kanji/raw/kanjidic2.xml.gz
+data/kanji/raw/kanjidic2.xml

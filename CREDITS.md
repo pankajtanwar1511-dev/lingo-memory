@@ -67,6 +67,34 @@ See `docs/TTS-ALTERNATIVES.md` for detailed comparison of:
 
 ---
 
+## 📝 Kanji Data
+
+### KANJIDIC2 (EDRDG)
+- **Source:** http://www.edrdg.org/wiki/index.php/KANJIDIC_Project
+- **Content Used:** N5 kanji meanings, readings, stroke counts, grades, radicals, frequency
+- **License:** CC BY-SA 4.0 (Creative Commons Attribution-ShareAlike 4.0 International)
+- **License URL:** https://creativecommons.org/licenses/by-sa/4.0/
+- **Attribution:** Kanji dictionary data from KANJIDIC2, Electronic Dictionary Research and Development Group
+- **Version:** KANJIDIC2 2024-12 (Rev 1.6)
+
+**Kanji Entries:**
+- N5: 88 kanji characters with full metadata
+
+### KanjiVG Project
+- **Source:** https://github.com/KanjiVG/kanjivg
+- **Content Used:** SVG stroke order diagrams for kanji animations
+- **License:** CC BY-SA 3.0 (Creative Commons Attribution-ShareAlike 3.0)
+- **License URL:** https://creativecommons.org/licenses/by-sa/3.0/
+- **Attribution:** Stroke order data from KanjiVG, created by Ulrich Apel
+- **Version:** KanjiVG 20240101
+
+**Attribution:** Kanji stroke order diagrams from KanjiVG (https://kanjivg.tagaini.net/), licensed under CC BY-SA 3.0. Copyright © 2009-2024 Ulrich Apel.
+
+**SVG Files:**
+- N5: 88 stroke order SVG files
+
+---
+
 ## 🖼️ Icons & UI Components
 
 ### Lucide Icons
@@ -145,6 +173,8 @@ Some example sentences are generated using large language models (Claude or GPT-
 |-----------|---------|----------------|---------------------|
 | Vocabulary data | CC BY-SA 4.0 | ✅ Yes | ✅ Yes |
 | Tatoeba examples | CC BY 2.0 FR | ✅ Yes | ✅ Yes |
+| Kanji data (KANJIDIC2) | CC BY-SA 4.0 | ✅ Yes | ✅ Yes |
+| Kanji strokes (KanjiVG) | CC BY-SA 3.0 | ✅ Yes | ✅ Yes |
 | Audio (Edge TTS) | ⚠️ Unofficial | ❌ No | N/A |
 | Audio (VOICEVOX alternative) | Free | ✅ Yes | ✅ Yes (per voice) |
 | Audio (OpenJTalk alternative) | Modified BSD | ✅ Yes | ❌ No |

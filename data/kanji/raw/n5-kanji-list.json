@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "source": "Community consensus JLPT N5 kanji list",
+    "totalKanji": 80,
+    "note": "No official JLPT kanji list exists - this is based on multiple community sources",
+    "references": [
+      "https://www.tanos.co.uk/jlpt/jlpt5/kanji/",
+      "https://jlptstudy.net/N5/?kanji-list",
+      "Community consensus from multiple JLPT prep sites"
+    ]
+  },
+  "kanji": [
+    "一", "二", "三", "四", "五", "六", "七", "八", "九", "十",
+    "百", "千", "万", "円", "時",
+    "日", "月", "火", "水", "木", "金", "土",
+    "年", "週", "今", "何", "分", "半", "毎",
+    "人", "子", "女", "男", "母", "父", "友", "学", "生", "先",
+    "名", "私", "大", "小", "中", "本", "学", "校", "高", "国",
+    "語", "英", "会", "社", "手", "車", "門", "聞", "見", "行",
+    "来", "出", "入", "上", "下", "左", "右", "前", "後", "午",
+    "食", "飲", "買", "書", "読", "話", "立", "休", "山", "川",
+    "白", "天", "気", "雨", "電", "北", "外", "店", "駅", "東"
+  ]
+}

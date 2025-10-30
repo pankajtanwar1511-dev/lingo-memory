@@ -1,0 +1,2892 @@
+{
+  "metadata": {
+    "source": "LingoMemory N5 Vocab Dataset",
+    "processedAt": "2025-10-30T08:24:09.762875Z",
+    "totalKanji": 88,
+    "kanjiWithExamples": 88,
+    "totalExampleWords": 272,
+    "script": "03_link_vocabulary.py"
+  },
+  "kanji": [
+    {
+      "kanji": "一",
+      "exampleCount": 9,
+      "examples": [
+        "n5_vocab_0472",
+        "n5_vocab_0024",
+        "n5_vocab_0155",
+        "n5_vocab_0174",
+        "n5_vocab_0220",
+        "n5_vocab_0321",
+        "n5_vocab_0234",
+        "n5_vocab_0297",
+        "n5_vocab_0557"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0472",
+          "word": "一",
+          "kana": "いち",
+          "meaning": "one",
+          "audioUrl": "/audio/n5/n5_vocab_0472.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0024",
+          "word": "一月",
+          "kana": "ひとつき",
+          "meaning": "one month",
+          "audioUrl": "/audio/n5/n5_vocab_0024.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0155",
+          "word": "一つ",
+          "kana": "ひとつ",
+          "meaning": "one",
+          "audioUrl": "/audio/n5/n5_vocab_0155.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0174",
+          "word": "一日",
+          "kana": "いちにち",
+          "meaning": "(1) one day",
+          "audioUrl": "/audio/n5/n5_vocab_0174.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0220",
+          "word": "一緒",
+          "kana": "いっしょ",
+          "meaning": "together",
+          "audioUrl": "/audio/n5/n5_vocab_0220.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0321",
+          "word": "一人",
+          "kana": "ひとり",
+          "meaning": "one person",
+          "audioUrl": "/audio/n5/n5_vocab_0321.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0234",
+          "word": "一昨年",
+          "kana": "おととし",
+          "meaning": "year before last",
+          "audioUrl": "/audio/n5/n5_vocab_0234.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0297",
+          "word": "一昨日",
+          "kana": "おととい",
+          "meaning": "day before yesterday",
+          "audioUrl": "/audio/n5/n5_vocab_0297.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0557",
+          "word": "もう一度",
+          "kana": "もういちど",
+          "meaning": "again",
+          "audioUrl": "/audio/n5/n5_vocab_0557.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "七",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0226",
+        "n5_vocab_0041",
+        "n5_vocab_0447"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0226",
+          "word": "七",
+          "kana": "しち/なな",
+          "meaning": "seven",
+          "audioUrl": "/audio/n5/n5_vocab_0226.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0041",
+          "word": "七つ",
+          "kana": "ななつ",
+          "meaning": "seven",
+          "audioUrl": "/audio/n5/n5_vocab_0041.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0447",
+          "word": "七日",
+          "kana": "なのか",
+          "meaning": "seven days",
+          "audioUrl": "/audio/n5/n5_vocab_0447.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "万",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0397",
+        "n5_vocab_0129"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0397",
+          "word": "万",
+          "kana": "まん",
+          "meaning": "ten thousand",
+          "audioUrl": "/audio/n5/n5_vocab_0397.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0129",
+          "word": "万年筆",
+          "kana": "まんねんひつ",
+          "meaning": "fountain pen",
+          "audioUrl": "/audio/n5/n5_vocab_0129.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "三",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0441",
+        "n5_vocab_0328",
+        "n5_vocab_0355"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0441",
+          "word": "三",
+          "kana": "さん",
+          "meaning": "three",
+          "audioUrl": "/audio/n5/n5_vocab_0441.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0328",
+          "word": "三つ",
+          "kana": "みっつ",
+          "meaning": "three",
+          "audioUrl": "/audio/n5/n5_vocab_0328.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0355",
+          "word": "三日",
+          "kana": "みっか",
+          "meaning": "three days",
+          "audioUrl": "/audio/n5/n5_vocab_0355.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "上",
+      "exampleCount": 4,
+      "examples": [
+        "n5_vocab_0309",
+        "n5_vocab_0240",
+        "n5_vocab_0324",
+        "n5_vocab_0178"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0309",
+          "word": "上",
+          "kana": "うえ",
+          "meaning": "on top of",
+          "audioUrl": "/audio/n5/n5_vocab_0309.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0240",
+          "word": "上着",
+          "kana": "うわぎ",
+          "meaning": "jacket",
+          "audioUrl": "/audio/n5/n5_vocab_0240.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0324",
+          "word": "上手",
+          "kana": "じょうず",
+          "meaning": "skillful",
+          "audioUrl": "/audio/n5/n5_vocab_0324.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0178",
+          "word": "上げる",
+          "kana": "あげる",
+          "meaning": "to give",
+          "audioUrl": "/audio/n5/n5_vocab_0178.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "下",
+      "exampleCount": 5,
+      "examples": [
+        "n5_vocab_0335",
+        "n5_vocab_0072",
+        "n5_vocab_0100",
+        "n5_vocab_0320",
+        "n5_vocab_0125"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0335",
+          "word": "下",
+          "kana": "した",
+          "meaning": "below",
+          "audioUrl": "/audio/n5/n5_vocab_0335.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0072",
+          "word": "廊下",
+          "kana": "ろうか",
+          "meaning": "corridor",
+          "audioUrl": "/audio/n5/n5_vocab_0072.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0100",
+          "word": "下手",
+          "kana": "へた",
+          "meaning": "unskillful",
+          "audioUrl": "/audio/n5/n5_vocab_0100.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0320",
+          "word": "靴下",
+          "kana": "くつした",
+          "meaning": "socks",
+          "audioUrl": "/audio/n5/n5_vocab_0320.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0125",
+          "word": "地下鉄",
+          "kana": "ちかてつ",
+          "meaning": "underground train",
+          "audioUrl": "/audio/n5/n5_vocab_0125.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "中",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0038"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0038",
+          "word": "中",
+          "kana": "なか",
+          "meaning": "middle",
+          "audioUrl": "/audio/n5/n5_vocab_0038.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "九",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0028",
+        "n5_vocab_0461",
+        "n5_vocab_0503"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0028",
+          "word": "九",
+          "kana": "きゅう/く",
+          "meaning": "nine",
+          "audioUrl": "/audio/n5/n5_vocab_0028.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0461",
+          "word": "九日",
+          "kana": "ここのか",
+          "meaning": "nine days",
+          "audioUrl": "/audio/n5/n5_vocab_0461.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0503",
+          "word": "九つ",
+          "kana": "ここのつ",
+          "meaning": "nine",
+          "audioUrl": "/audio/n5/n5_vocab_0503.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "二",
+      "exampleCount": 6,
+      "examples": [
+        "n5_vocab_0636",
+        "n5_vocab_0287",
+        "n5_vocab_0336",
+        "n5_vocab_0622",
+        "n5_vocab_0299",
+        "n5_vocab_0354"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0636",
+          "word": "二",
+          "kana": "に",
+          "meaning": "two",
+          "audioUrl": "/audio/n5/n5_vocab_0636.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0287",
+          "word": "二日",
+          "kana": "ふつか",
+          "meaning": "two days",
+          "audioUrl": "/audio/n5/n5_vocab_0287.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0336",
+          "word": "二つ",
+          "kana": "ふたつ",
+          "meaning": "two",
+          "audioUrl": "/audio/n5/n5_vocab_0336.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0622",
+          "word": "二人",
+          "kana": "ふたり",
+          "meaning": "two people",
+          "audioUrl": "/audio/n5/n5_vocab_0622.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0299",
+          "word": "二十日",
+          "kana": "はつか",
+          "meaning": "twenty days",
+          "audioUrl": "/audio/n5/n5_vocab_0299.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0354",
+          "word": "二十歳",
+          "kana": "はたち",
+          "meaning": "20 years old",
+          "audioUrl": "/audio/n5/n5_vocab_0354.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "五",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0310",
+        "n5_vocab_0112",
+        "n5_vocab_0255"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0310",
+          "word": "五",
+          "kana": "ご",
+          "meaning": "five",
+          "audioUrl": "/audio/n5/n5_vocab_0310.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0112",
+          "word": "五つ",
+          "kana": "いつつ",
+          "meaning": "five",
+          "audioUrl": "/audio/n5/n5_vocab_0112.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0255",
+          "word": "五日",
+          "kana": "いつか",
+          "meaning": "five days",
+          "audioUrl": "/audio/n5/n5_vocab_0255.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "人",
+      "exampleCount": 5,
+      "examples": [
+        "n5_vocab_0144",
+        "n5_vocab_0288",
+        "n5_vocab_0321",
+        "n5_vocab_0622",
+        "n5_vocab_0652"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0144",
+          "word": "人",
+          "kana": "ひと",
+          "meaning": "person",
+          "audioUrl": "/audio/n5/n5_vocab_0144.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0288",
+          "word": "大人",
+          "kana": "おとな",
+          "meaning": "adult",
+          "audioUrl": "/audio/n5/n5_vocab_0288.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0321",
+          "word": "一人",
+          "kana": "ひとり",
+          "meaning": "one person",
+          "audioUrl": "/audio/n5/n5_vocab_0321.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0622",
+          "word": "二人",
+          "kana": "ふたり",
+          "meaning": "two people",
+          "audioUrl": "/audio/n5/n5_vocab_0622.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0652",
+          "word": "外国人",
+          "kana": "がいこくじん",
+          "meaning": "foreigner",
+          "audioUrl": "/audio/n5/n5_vocab_0652.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "今",
+      "exampleCount": 7,
+      "examples": [
+        "n5_vocab_0476",
+        "n5_vocab_0104",
+        "n5_vocab_0217",
+        "n5_vocab_0232",
+        "n5_vocab_0269",
+        "n5_vocab_0315",
+        "n5_vocab_0618"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0476",
+          "word": "今",
+          "kana": "いま",
+          "meaning": "now",
+          "audioUrl": "/audio/n5/n5_vocab_0476.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0104",
+          "word": "今年",
+          "kana": "ことし",
+          "meaning": "this year",
+          "audioUrl": "/audio/n5/n5_vocab_0104.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0217",
+          "word": "今朝",
+          "kana": "けさ",
+          "meaning": "this morning",
+          "audioUrl": "/audio/n5/n5_vocab_0217.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0232",
+          "word": "今日",
+          "kana": "きょう",
+          "meaning": "today",
+          "audioUrl": "/audio/n5/n5_vocab_0232.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0269",
+          "word": "今晩",
+          "kana": "こんばん",
+          "meaning": "this evening",
+          "audioUrl": "/audio/n5/n5_vocab_0269.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0315",
+          "word": "今週",
+          "kana": "こんしゅう",
+          "meaning": "this week",
+          "audioUrl": "/audio/n5/n5_vocab_0315.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0618",
+          "word": "今月",
+          "kana": "こんげつ",
+          "meaning": "this month",
+          "audioUrl": "/audio/n5/n5_vocab_0618.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "休",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0146",
+        "n5_vocab_0655",
+        "n5_vocab_0357"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0146",
+          "word": "休み",
+          "kana": "やすみ",
+          "meaning": "rest",
+          "audioUrl": "/audio/n5/n5_vocab_0146.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0655",
+          "word": "休む",
+          "kana": "やすむ",
+          "meaning": "to rest",
+          "audioUrl": "/audio/n5/n5_vocab_0655.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0357",
+          "word": "夏休み",
+          "kana": "なつやすみ",
+          "meaning": "summer holiday",
+          "audioUrl": "/audio/n5/n5_vocab_0357.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "会",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0122",
+        "n5_vocab_0253"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0122",
+          "word": "会社",
+          "kana": "かいしゃ",
+          "meaning": "company",
+          "audioUrl": "/audio/n5/n5_vocab_0122.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0253",
+          "word": "会う",
+          "kana": "あう",
+          "meaning": "to meet",
+          "audioUrl": "/audio/n5/n5_vocab_0253.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "何",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0059"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0059",
+          "word": "何",
+          "kana": "なん/なに",
+          "meaning": "what",
+          "audioUrl": "/audio/n5/n5_vocab_0059.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "先",
+      "exampleCount": 4,
+      "examples": [
+        "n5_vocab_0540",
+        "n5_vocab_0271",
+        "n5_vocab_0368",
+        "n5_vocab_0371"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0540",
+          "word": "先",
+          "kana": "さき",
+          "meaning": "the future",
+          "audioUrl": "/audio/n5/n5_vocab_0540.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0271",
+          "word": "先週",
+          "kana": "せんしゅう",
+          "meaning": "last week",
+          "audioUrl": "/audio/n5/n5_vocab_0271.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0368",
+          "word": "先生",
+          "kana": "せんせい",
+          "meaning": "teacher",
+          "audioUrl": "/audio/n5/n5_vocab_0368.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0371",
+          "word": "先月",
+          "kana": "せんげつ",
+          "meaning": "last month",
+          "audioUrl": "/audio/n5/n5_vocab_0371.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "入",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0200",
+        "n5_vocab_0429",
+        "n5_vocab_0353"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0200",
+          "word": "入る",
+          "kana": "はいる",
+          "meaning": "to enter",
+          "audioUrl": "/audio/n5/n5_vocab_0200.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0429",
+          "word": "入口",
+          "kana": "いりぐち",
+          "meaning": "entrance",
+          "audioUrl": "/audio/n5/n5_vocab_0429.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0353",
+          "word": "入れる",
+          "kana": "いれる",
+          "meaning": "to put in",
+          "audioUrl": "/audio/n5/n5_vocab_0353.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "八",
+      "exampleCount": 4,
+      "examples": [
+        "n5_vocab_0295",
+        "n5_vocab_0458",
+        "n5_vocab_0481",
+        "n5_vocab_0339"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0295",
+          "word": "八",
+          "kana": "はち",
+          "meaning": "eight",
+          "audioUrl": "/audio/n5/n5_vocab_0295.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0458",
+          "word": "八日",
+          "kana": "ようか",
+          "meaning": "eight days",
+          "audioUrl": "/audio/n5/n5_vocab_0458.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0481",
+          "word": "八つ",
+          "kana": "やっつ",
+          "meaning": "eight",
+          "audioUrl": "/audio/n5/n5_vocab_0481.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0339",
+          "word": "八百屋",
+          "kana": "やおや",
+          "meaning": "greengrocer",
+          "audioUrl": "/audio/n5/n5_vocab_0339.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "六",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0103",
+        "n5_vocab_0045",
+        "n5_vocab_0647"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0103",
+          "word": "六",
+          "kana": "ろく",
+          "meaning": "six",
+          "audioUrl": "/audio/n5/n5_vocab_0103.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0045",
+          "word": "六日",
+          "kana": "むいか",
+          "meaning": "six days",
+          "audioUrl": "/audio/n5/n5_vocab_0045.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0647",
+          "word": "六つ",
+          "kana": "むっつ",
+          "meaning": "six",
+          "audioUrl": "/audio/n5/n5_vocab_0647.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "円",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0601"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0601",
+          "word": "丸い/円い",
+          "kana": "まるい",
+          "meaning": "round",
+          "audioUrl": "/audio/n5/n5_vocab_0601.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "出",
+      "exampleCount": 4,
+      "examples": [
+        "n5_vocab_0182",
+        "n5_vocab_0369",
+        "n5_vocab_0593",
+        "n5_vocab_0639"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0182",
+          "word": "出す",
+          "kana": "だす",
+          "meaning": "to put out",
+          "audioUrl": "/audio/n5/n5_vocab_0182.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0369",
+          "word": "出口",
+          "kana": "でぐち",
+          "meaning": "exit",
+          "audioUrl": "/audio/n5/n5_vocab_0369.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0593",
+          "word": "出る",
+          "kana": "でる",
+          "meaning": "to appear",
+          "audioUrl": "/audio/n5/n5_vocab_0593.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0639",
+          "word": "出かける",
+          "kana": "でかける",
+          "meaning": "to go out",
+          "audioUrl": "/audio/n5/n5_vocab_0639.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "分",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0165",
+        "n5_vocab_0514",
+        "n5_vocab_0055"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0165",
+          "word": "自分",
+          "kana": "じぶん",
+          "meaning": "oneself",
+          "audioUrl": "/audio/n5/n5_vocab_0165.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0514",
+          "word": "半分",
+          "kana": "はんぶん",
+          "meaning": "half minute",
+          "audioUrl": "/audio/n5/n5_vocab_0514.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0055",
+          "word": "分かる",
+          "kana": "わかる",
+          "meaning": "to be understood",
+          "audioUrl": "/audio/n5/n5_vocab_0055.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "前",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0496",
+        "n5_vocab_0599",
+        "n5_vocab_0600"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0496",
+          "word": "前",
+          "kana": "まえ",
+          "meaning": "before",
+          "audioUrl": "/audio/n5/n5_vocab_0496.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0599",
+          "word": "午前",
+          "kana": "ごぜん",
+          "meaning": "morning",
+          "audioUrl": "/audio/n5/n5_vocab_0599.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0600",
+          "word": "名前",
+          "kana": "なまえ",
+          "meaning": "name",
+          "audioUrl": "/audio/n5/n5_vocab_0600.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "北",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0419"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0419",
+          "word": "北",
+          "kana": "きた",
+          "meaning": "north",
+          "audioUrl": "/audio/n5/n5_vocab_0419.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "十",
+      "exampleCount": 4,
+      "examples": [
+        "n5_vocab_0037",
+        "n5_vocab_0311",
+        "n5_vocab_0299",
+        "n5_vocab_0354"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0037",
+          "word": "十",
+          "kana": "じゅうとお",
+          "meaning": "ten",
+          "audioUrl": "/audio/n5/n5_vocab_0037.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0311",
+          "word": "十日",
+          "kana": "とおか",
+          "meaning": "ten days",
+          "audioUrl": "/audio/n5/n5_vocab_0311.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0299",
+          "word": "二十日",
+          "kana": "はつか",
+          "meaning": "twenty days",
+          "audioUrl": "/audio/n5/n5_vocab_0299.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0354",
+          "word": "二十歳",
+          "kana": "はたち",
+          "meaning": "20 years old",
+          "audioUrl": "/audio/n5/n5_vocab_0354.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "千",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0346"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0346",
+          "word": "千",
+          "kana": "せん",
+          "meaning": "thousand",
+          "audioUrl": "/audio/n5/n5_vocab_0346.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "午",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0303",
+        "n5_vocab_0599"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0303",
+          "word": "午後",
+          "kana": "ごご",
+          "meaning": "afternoon",
+          "audioUrl": "/audio/n5/n5_vocab_0303.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0599",
+          "word": "午前",
+          "kana": "ごぜん",
+          "meaning": "morning",
+          "audioUrl": "/audio/n5/n5_vocab_0599.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "半",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0562",
+        "n5_vocab_0514"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0562",
+          "word": "半",
+          "kana": "はん",
+          "meaning": "half",
+          "audioUrl": "/audio/n5/n5_vocab_0562.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0514",
+          "word": "半分",
+          "kana": "はんぶん",
+          "meaning": "half minute",
+          "audioUrl": "/audio/n5/n5_vocab_0514.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "友",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0358"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0358",
+          "word": "友達",
+          "kana": "ともだち",
+          "meaning": "friend",
+          "audioUrl": "/audio/n5/n5_vocab_0358.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "右",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0034"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0034",
+          "word": "右",
+          "kana": "みぎ",
+          "meaning": "right side",
+          "audioUrl": "/audio/n5/n5_vocab_0034.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "名",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0298",
+        "n5_vocab_0600"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0298",
+          "word": "有名",
+          "kana": "ゆうめい",
+          "meaning": "famous",
+          "audioUrl": "/audio/n5/n5_vocab_0298.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0600",
+          "word": "名前",
+          "kana": "なまえ",
+          "meaning": "name",
+          "audioUrl": "/audio/n5/n5_vocab_0600.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "四",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0199",
+        "n5_vocab_0403",
+        "n5_vocab_0565"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0199",
+          "word": "四",
+          "kana": "し/よん",
+          "meaning": "four",
+          "audioUrl": "/audio/n5/n5_vocab_0199.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0403",
+          "word": "四つ",
+          "kana": "よっつ",
+          "meaning": "four",
+          "audioUrl": "/audio/n5/n5_vocab_0403.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0565",
+          "word": "四日",
+          "kana": "よっか",
+          "meaning": "four days",
+          "audioUrl": "/audio/n5/n5_vocab_0565.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "国",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0215",
+        "n5_vocab_0202",
+        "n5_vocab_0652"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0215",
+          "word": "国",
+          "kana": "くに",
+          "meaning": "country",
+          "audioUrl": "/audio/n5/n5_vocab_0215.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0202",
+          "word": "外国",
+          "kana": "がいこく",
+          "meaning": "foreign country",
+          "audioUrl": "/audio/n5/n5_vocab_0202.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0652",
+          "word": "外国人",
+          "kana": "がいこくじん",
+          "meaning": "foreigner",
+          "audioUrl": "/audio/n5/n5_vocab_0652.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "土",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0511"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0511",
+          "word": "土曜日",
+          "kana": "どようび",
+          "meaning": "Saturday",
+          "audioUrl": "/audio/n5/n5_vocab_0511.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "外",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0495",
+        "n5_vocab_0202",
+        "n5_vocab_0652"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0495",
+          "word": "外",
+          "kana": "そと",
+          "meaning": "outside",
+          "audioUrl": "/audio/n5/n5_vocab_0495.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0202",
+          "word": "外国",
+          "kana": "がいこく",
+          "meaning": "foreign country",
+          "audioUrl": "/audio/n5/n5_vocab_0202.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0652",
+          "word": "外国人",
+          "kana": "がいこくじん",
+          "meaning": "foreigner",
+          "audioUrl": "/audio/n5/n5_vocab_0652.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "大",
+      "exampleCount": 9,
+      "examples": [
+        "n5_vocab_0119",
+        "n5_vocab_0288",
+        "n5_vocab_0331",
+        "n5_vocab_0413",
+        "n5_vocab_0096",
+        "n5_vocab_0266",
+        "n5_vocab_0307",
+        "n5_vocab_0457",
+        "n5_vocab_0523"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0119",
+          "word": "大学",
+          "kana": "だいがく",
+          "meaning": "university",
+          "audioUrl": "/audio/n5/n5_vocab_0119.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0288",
+          "word": "大人",
+          "kana": "おとな",
+          "meaning": "adult",
+          "audioUrl": "/audio/n5/n5_vocab_0288.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0331",
+          "word": "大切",
+          "kana": "たいせつ",
+          "meaning": "important",
+          "audioUrl": "/audio/n5/n5_vocab_0331.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0413",
+          "word": "大勢",
+          "kana": "おおぜい",
+          "meaning": "great number of people",
+          "audioUrl": "/audio/n5/n5_vocab_0413.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0096",
+          "word": "大きな",
+          "kana": "おおきな",
+          "meaning": "big",
+          "audioUrl": "/audio/n5/n5_vocab_0096.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0266",
+          "word": "大好き",
+          "kana": "だいすき",
+          "meaning": "to be very likeable",
+          "audioUrl": "/audio/n5/n5_vocab_0266.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0307",
+          "word": "大使館",
+          "kana": "たいしかん",
+          "meaning": "embassy",
+          "audioUrl": "/audio/n5/n5_vocab_0307.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0457",
+          "word": "大きい",
+          "kana": "おおきい",
+          "meaning": "big",
+          "audioUrl": "/audio/n5/n5_vocab_0457.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0523",
+          "word": "大丈夫",
+          "kana": "だいじょうぶ",
+          "meaning": "all right",
+          "audioUrl": "/audio/n5/n5_vocab_0523.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "天",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0224"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0224",
+          "word": "天気",
+          "kana": "てんき",
+          "meaning": "weather",
+          "audioUrl": "/audio/n5/n5_vocab_0224.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "女",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0595",
+        "n5_vocab_0535"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0595",
+          "word": "女",
+          "kana": "おんな",
+          "meaning": "woman",
+          "audioUrl": "/audio/n5/n5_vocab_0595.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0535",
+          "word": "女の子",
+          "kana": "おんなのこ",
+          "meaning": "girl",
+          "audioUrl": "/audio/n5/n5_vocab_0535.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "子",
+      "exampleCount": 5,
+      "examples": [
+        "n5_vocab_0351",
+        "n5_vocab_0533",
+        "n5_vocab_0048",
+        "n5_vocab_0276",
+        "n5_vocab_0535"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0351",
+          "word": "帽子",
+          "kana": "ぼうし",
+          "meaning": "hat",
+          "audioUrl": "/audio/n5/n5_vocab_0351.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0533",
+          "word": "子供",
+          "kana": "こども",
+          "meaning": "child",
+          "audioUrl": "/audio/n5/n5_vocab_0533.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0048",
+          "word": "男の子",
+          "kana": "おとこのこ",
+          "meaning": "boy",
+          "audioUrl": "/audio/n5/n5_vocab_0048.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0276",
+          "word": "お菓子",
+          "kana": "おかし",
+          "meaning": "sweets",
+          "audioUrl": "/audio/n5/n5_vocab_0276.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0535",
+          "word": "女の子",
+          "kana": "おんなのこ",
+          "meaning": "girl",
+          "audioUrl": "/audio/n5/n5_vocab_0535.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "学",
+      "exampleCount": 4,
+      "examples": [
+        "n5_vocab_0119",
+        "n5_vocab_0197",
+        "n5_vocab_0332",
+        "n5_vocab_0641"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0119",
+          "word": "大学",
+          "kana": "だいがく",
+          "meaning": "university",
+          "audioUrl": "/audio/n5/n5_vocab_0119.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0197",
+          "word": "学校",
+          "kana": "がっこう",
+          "meaning": "school",
+          "audioUrl": "/audio/n5/n5_vocab_0197.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0332",
+          "word": "学生",
+          "kana": "がくせい",
+          "meaning": "student",
+          "audioUrl": "/audio/n5/n5_vocab_0332.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0641",
+          "word": "留学生",
+          "kana": "りゅうがくせい",
+          "meaning": "overseas student",
+          "audioUrl": "/audio/n5/n5_vocab_0641.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "小",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0176",
+        "n5_vocab_0314"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0176",
+          "word": "小さな",
+          "kana": "ちいさな",
+          "meaning": "little",
+          "audioUrl": "/audio/n5/n5_vocab_0176.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0314",
+          "word": "小さい",
+          "kana": "ちいさい",
+          "meaning": "little",
+          "audioUrl": "/audio/n5/n5_vocab_0314.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "山",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0188"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0188",
+          "word": "山",
+          "kana": "やま",
+          "meaning": "mountain",
+          "audioUrl": "/audio/n5/n5_vocab_0188.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "川",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0426"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0426",
+          "word": "川/河",
+          "kana": "かわ",
+          "meaning": "river",
+          "audioUrl": "/audio/n5/n5_vocab_0426.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "左",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0437"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0437",
+          "word": "左",
+          "kana": "ひだり",
+          "meaning": "left hand side",
+          "audioUrl": "/audio/n5/n5_vocab_0437.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "年",
+      "exampleCount": 8,
+      "examples": [
+        "n5_vocab_0047",
+        "n5_vocab_0104",
+        "n5_vocab_0341",
+        "n5_vocab_0382",
+        "n5_vocab_0504",
+        "n5_vocab_0129",
+        "n5_vocab_0196",
+        "n5_vocab_0234"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0047",
+          "word": "年",
+          "kana": "とし",
+          "meaning": "year",
+          "audioUrl": "/audio/n5/n5_vocab_0047.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0104",
+          "word": "今年",
+          "kana": "ことし",
+          "meaning": "this year",
+          "audioUrl": "/audio/n5/n5_vocab_0104.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0341",
+          "word": "去年",
+          "kana": "きょねん",
+          "meaning": "last year",
+          "audioUrl": "/audio/n5/n5_vocab_0341.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0382",
+          "word": "毎年",
+          "kana": "まいねん/まいとし",
+          "meaning": "every year",
+          "audioUrl": "/audio/n5/n5_vocab_0382.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0504",
+          "word": "来年",
+          "kana": "らいねん",
+          "meaning": "next year",
+          "audioUrl": "/audio/n5/n5_vocab_0504.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0129",
+          "word": "万年筆",
+          "kana": "まんねんひつ",
+          "meaning": "fountain pen",
+          "audioUrl": "/audio/n5/n5_vocab_0129.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0196",
+          "word": "さ来年",
+          "kana": "さらいねん",
+          "meaning": "year after next",
+          "audioUrl": "/audio/n5/n5_vocab_0196.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0234",
+          "word": "一昨年",
+          "kana": "おととし",
+          "meaning": "year before last",
+          "audioUrl": "/audio/n5/n5_vocab_0234.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "店",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0417",
+        "n5_vocab_0531"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0417",
+          "word": "店",
+          "kana": "みせ",
+          "meaning": "shop",
+          "audioUrl": "/audio/n5/n5_vocab_0417.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0531",
+          "word": "喫茶店",
+          "kana": "きっさてん",
+          "meaning": "coffee lounge",
+          "audioUrl": "/audio/n5/n5_vocab_0531.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "後",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0452",
+        "n5_vocab_0303",
+        "n5_vocab_0370"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0452",
+          "word": "後",
+          "kana": "あと",
+          "meaning": "afterwards",
+          "audioUrl": "/audio/n5/n5_vocab_0452.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0303",
+          "word": "午後",
+          "kana": "ごご",
+          "meaning": "afternoon",
+          "audioUrl": "/audio/n5/n5_vocab_0303.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0370",
+          "word": "後ろ",
+          "kana": "うしろ",
+          "meaning": "behind",
+          "audioUrl": "/audio/n5/n5_vocab_0370.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "手",
+      "exampleCount": 6,
+      "examples": [
+        "n5_vocab_0468",
+        "n5_vocab_0075",
+        "n5_vocab_0100",
+        "n5_vocab_0324",
+        "n5_vocab_0591",
+        "n5_vocab_0248"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0468",
+          "word": "手",
+          "kana": "て",
+          "meaning": "hand",
+          "audioUrl": "/audio/n5/n5_vocab_0468.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0075",
+          "word": "手紙",
+          "kana": "てがみ",
+          "meaning": "letter",
+          "audioUrl": "/audio/n5/n5_vocab_0075.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0100",
+          "word": "下手",
+          "kana": "へた",
+          "meaning": "unskillful",
+          "audioUrl": "/audio/n5/n5_vocab_0100.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0324",
+          "word": "上手",
+          "kana": "じょうず",
+          "meaning": "skillful",
+          "audioUrl": "/audio/n5/n5_vocab_0324.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0591",
+          "word": "切手",
+          "kana": "きって",
+          "meaning": "postage stamp",
+          "audioUrl": "/audio/n5/n5_vocab_0591.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0248",
+          "word": "お手洗い",
+          "kana": "おてあらい",
+          "meaning": "bathroom",
+          "audioUrl": "/audio/n5/n5_vocab_0248.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "日",
+      "exampleCount": 25,
+      "examples": [
+        "n5_vocab_0045",
+        "n5_vocab_0174",
+        "n5_vocab_0232",
+        "n5_vocab_0255",
+        "n5_vocab_0287",
+        "n5_vocab_0311",
+        "n5_vocab_0355",
+        "n5_vocab_0383",
+        "n5_vocab_0447",
+        "n5_vocab_0458",
+        "n5_vocab_0461",
+        "n5_vocab_0470",
+        "n5_vocab_0565",
+        "n5_vocab_0660",
+        "n5_vocab_0246",
+        "n5_vocab_0277",
+        "n5_vocab_0297",
+        "n5_vocab_0299",
+        "n5_vocab_0342",
+        "n5_vocab_0445",
+        "n5_vocab_0507",
+        "n5_vocab_0511",
+        "n5_vocab_0597",
+        "n5_vocab_0597",
+        "n5_vocab_0642"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0045",
+          "word": "六日",
+          "kana": "むいか",
+          "meaning": "six days",
+          "audioUrl": "/audio/n5/n5_vocab_0045.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0174",
+          "word": "一日",
+          "kana": "いちにち",
+          "meaning": "(1) one day",
+          "audioUrl": "/audio/n5/n5_vocab_0174.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0232",
+          "word": "今日",
+          "kana": "きょう",
+          "meaning": "today",
+          "audioUrl": "/audio/n5/n5_vocab_0232.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0255",
+          "word": "五日",
+          "kana": "いつか",
+          "meaning": "five days",
+          "audioUrl": "/audio/n5/n5_vocab_0255.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0287",
+          "word": "二日",
+          "kana": "ふつか",
+          "meaning": "two days",
+          "audioUrl": "/audio/n5/n5_vocab_0287.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0311",
+          "word": "十日",
+          "kana": "とおか",
+          "meaning": "ten days",
+          "audioUrl": "/audio/n5/n5_vocab_0311.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0355",
+          "word": "三日",
+          "kana": "みっか",
+          "meaning": "three days",
+          "audioUrl": "/audio/n5/n5_vocab_0355.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0383",
+          "word": "明日",
+          "kana": "あした",
+          "meaning": "tomorrow",
+          "audioUrl": "/audio/n5/n5_vocab_0383.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0447",
+          "word": "七日",
+          "kana": "なのか",
+          "meaning": "seven days",
+          "audioUrl": "/audio/n5/n5_vocab_0447.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0458",
+          "word": "八日",
+          "kana": "ようか",
+          "meaning": "eight days",
+          "audioUrl": "/audio/n5/n5_vocab_0458.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0461",
+          "word": "九日",
+          "kana": "ここのか",
+          "meaning": "nine days",
+          "audioUrl": "/audio/n5/n5_vocab_0461.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0470",
+          "word": "毎日",
+          "kana": "まいにち",
+          "meaning": "every day",
+          "audioUrl": "/audio/n5/n5_vocab_0470.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0565",
+          "word": "四日",
+          "kana": "よっか",
+          "meaning": "four days",
+          "audioUrl": "/audio/n5/n5_vocab_0565.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0660",
+          "word": "昨日",
+          "kana": "きのう",
+          "meaning": "yesterday",
+          "audioUrl": "/audio/n5/n5_vocab_0660.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0246",
+          "word": "木曜日",
+          "kana": "もくようび",
+          "meaning": "Thursday",
+          "audioUrl": "/audio/n5/n5_vocab_0246.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0277",
+          "word": "金曜日",
+          "kana": "きんようび",
+          "meaning": "Friday",
+          "audioUrl": "/audio/n5/n5_vocab_0277.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0297",
+          "word": "一昨日",
+          "kana": "おととい",
+          "meaning": "day before yesterday",
+          "audioUrl": "/audio/n5/n5_vocab_0297.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0299",
+          "word": "二十日",
+          "kana": "はつか",
+          "meaning": "twenty days",
+          "audioUrl": "/audio/n5/n5_vocab_0299.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0342",
+          "word": "火曜日",
+          "kana": "かようび",
+          "meaning": "Tuesday",
+          "audioUrl": "/audio/n5/n5_vocab_0342.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0445",
+          "word": "誕生日",
+          "kana": "たんじょうび",
+          "meaning": "birthday",
+          "audioUrl": "/audio/n5/n5_vocab_0445.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0507",
+          "word": "水曜日",
+          "kana": "すいようび",
+          "meaning": "Wednesday",
+          "audioUrl": "/audio/n5/n5_vocab_0507.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0511",
+          "word": "土曜日",
+          "kana": "どようび",
+          "meaning": "Saturday",
+          "audioUrl": "/audio/n5/n5_vocab_0511.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0597",
+          "word": "日曜日",
+          "kana": "にちようび",
+          "meaning": "Sunday",
+          "audioUrl": "/audio/n5/n5_vocab_0597.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0597",
+          "word": "日曜日",
+          "kana": "にちようび",
+          "meaning": "Sunday",
+          "audioUrl": "/audio/n5/n5_vocab_0597.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0642",
+          "word": "月曜日",
+          "kana": "げつようび",
+          "meaning": "Monday",
+          "audioUrl": "/audio/n5/n5_vocab_0642.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "時",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0079",
+        "n5_vocab_0177",
+        "n5_vocab_0302"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0079",
+          "word": "時々",
+          "kana": "ときどき",
+          "meaning": "sometimes",
+          "audioUrl": "/audio/n5/n5_vocab_0079.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0177",
+          "word": "時間",
+          "kana": "じかん",
+          "meaning": "time",
+          "audioUrl": "/audio/n5/n5_vocab_0177.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0302",
+          "word": "時計",
+          "kana": "とけい",
+          "meaning": "watch",
+          "audioUrl": "/audio/n5/n5_vocab_0302.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "書",
+      "exampleCount": 4,
+      "examples": [
+        "n5_vocab_0006",
+        "n5_vocab_0128",
+        "n5_vocab_0381",
+        "n5_vocab_0454"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0006",
+          "word": "葉書",
+          "kana": "はがき",
+          "meaning": "postcard",
+          "audioUrl": "/audio/n5/n5_vocab_0006.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0128",
+          "word": "辞書",
+          "kana": "じしょ",
+          "meaning": "dictionary",
+          "audioUrl": "/audio/n5/n5_vocab_0128.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0381",
+          "word": "書く",
+          "kana": "かく",
+          "meaning": "to write",
+          "audioUrl": "/audio/n5/n5_vocab_0381.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0454",
+          "word": "図書館",
+          "kana": "としょかん",
+          "meaning": "library",
+          "audioUrl": "/audio/n5/n5_vocab_0454.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "月",
+      "exampleCount": 6,
+      "examples": [
+        "n5_vocab_0024",
+        "n5_vocab_0061",
+        "n5_vocab_0262",
+        "n5_vocab_0371",
+        "n5_vocab_0618",
+        "n5_vocab_0642"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0024",
+          "word": "一月",
+          "kana": "ひとつき",
+          "meaning": "one month",
+          "audioUrl": "/audio/n5/n5_vocab_0024.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0061",
+          "word": "毎月",
+          "kana": "まいげつ/まいつき",
+          "meaning": "every month",
+          "audioUrl": "/audio/n5/n5_vocab_0061.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0262",
+          "word": "来月",
+          "kana": "らいげつ",
+          "meaning": "next month",
+          "audioUrl": "/audio/n5/n5_vocab_0262.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0371",
+          "word": "先月",
+          "kana": "せんげつ",
+          "meaning": "last month",
+          "audioUrl": "/audio/n5/n5_vocab_0371.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0618",
+          "word": "今月",
+          "kana": "こんげつ",
+          "meaning": "this month",
+          "audioUrl": "/audio/n5/n5_vocab_0618.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0642",
+          "word": "月曜日",
+          "kana": "げつようび",
+          "meaning": "Monday",
+          "audioUrl": "/audio/n5/n5_vocab_0642.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "木",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0273",
+        "n5_vocab_0246"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0273",
+          "word": "木",
+          "kana": "き",
+          "meaning": "tree",
+          "audioUrl": "/audio/n5/n5_vocab_0273.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0246",
+          "word": "木曜日",
+          "kana": "もくようび",
+          "meaning": "Thursday",
+          "audioUrl": "/audio/n5/n5_vocab_0246.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "本",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0375",
+        "n5_vocab_0648"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0375",
+          "word": "本",
+          "kana": "ほん",
+          "meaning": "book",
+          "audioUrl": "/audio/n5/n5_vocab_0375.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0648",
+          "word": "本棚",
+          "kana": "ほんだな",
+          "meaning": "bookshelves",
+          "audioUrl": "/audio/n5/n5_vocab_0648.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "来",
+      "exampleCount": 5,
+      "examples": [
+        "n5_vocab_0156",
+        "n5_vocab_0262",
+        "n5_vocab_0497",
+        "n5_vocab_0504",
+        "n5_vocab_0196"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0156",
+          "word": "来週",
+          "kana": "らいしゅう",
+          "meaning": "next week",
+          "audioUrl": "/audio/n5/n5_vocab_0156.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0262",
+          "word": "来月",
+          "kana": "らいげつ",
+          "meaning": "next month",
+          "audioUrl": "/audio/n5/n5_vocab_0262.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0497",
+          "word": "来る",
+          "kana": "くる",
+          "meaning": "to come",
+          "audioUrl": "/audio/n5/n5_vocab_0497.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0504",
+          "word": "来年",
+          "kana": "らいねん",
+          "meaning": "next year",
+          "audioUrl": "/audio/n5/n5_vocab_0504.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0196",
+          "word": "さ来年",
+          "kana": "さらいねん",
+          "meaning": "year after next",
+          "audioUrl": "/audio/n5/n5_vocab_0196.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "東",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0134"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0134",
+          "word": "東",
+          "kana": "ひがし",
+          "meaning": "east",
+          "audioUrl": "/audio/n5/n5_vocab_0134.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "校",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0197"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0197",
+          "word": "学校",
+          "kana": "がっこう",
+          "meaning": "school",
+          "audioUrl": "/audio/n5/n5_vocab_0197.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "母",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0586",
+        "n5_vocab_0609",
+        "n5_vocab_0609"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0586",
+          "word": "お母さん",
+          "kana": "おかあさん",
+          "meaning": "(honorable) mother",
+          "audioUrl": "/audio/n5/n5_vocab_0586.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0609",
+          "word": "伯母さん/叔母さん",
+          "kana": "おばさん",
+          "meaning": "aunt",
+          "audioUrl": "/audio/n5/n5_vocab_0609.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0609",
+          "word": "伯母さん/叔母さん",
+          "kana": "おばさん",
+          "meaning": "aunt",
+          "audioUrl": "/audio/n5/n5_vocab_0609.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "毎",
+      "exampleCount": 6,
+      "examples": [
+        "n5_vocab_0001",
+        "n5_vocab_0061",
+        "n5_vocab_0110",
+        "n5_vocab_0327",
+        "n5_vocab_0382",
+        "n5_vocab_0470"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0001",
+          "word": "毎朝",
+          "kana": "まいあさ",
+          "meaning": "every morning",
+          "audioUrl": "/audio/n5/n5_vocab_0001.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0061",
+          "word": "毎月",
+          "kana": "まいげつ/まいつき",
+          "meaning": "every month",
+          "audioUrl": "/audio/n5/n5_vocab_0061.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0110",
+          "word": "毎週",
+          "kana": "まいしゅう",
+          "meaning": "every week",
+          "audioUrl": "/audio/n5/n5_vocab_0110.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0327",
+          "word": "毎晩",
+          "kana": "まいばん",
+          "meaning": "every night",
+          "audioUrl": "/audio/n5/n5_vocab_0327.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0382",
+          "word": "毎年",
+          "kana": "まいねん/まいとし",
+          "meaning": "every year",
+          "audioUrl": "/audio/n5/n5_vocab_0382.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0470",
+          "word": "毎日",
+          "kana": "まいにち",
+          "meaning": "every day",
+          "audioUrl": "/audio/n5/n5_vocab_0470.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "気",
+      "exampleCount": 4,
+      "examples": [
+        "n5_vocab_0016",
+        "n5_vocab_0018",
+        "n5_vocab_0223",
+        "n5_vocab_0224"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0016",
+          "word": "電気",
+          "kana": "でんき",
+          "meaning": "electricity",
+          "audioUrl": "/audio/n5/n5_vocab_0016.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0018",
+          "word": "病気",
+          "kana": "びょうき",
+          "meaning": "illness",
+          "audioUrl": "/audio/n5/n5_vocab_0018.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0223",
+          "word": "元気",
+          "kana": "げんき",
+          "meaning": "health",
+          "audioUrl": "/audio/n5/n5_vocab_0223.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0224",
+          "word": "天気",
+          "kana": "てんき",
+          "meaning": "weather",
+          "audioUrl": "/audio/n5/n5_vocab_0224.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "水",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0488",
+        "n5_vocab_0507"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0488",
+          "word": "水",
+          "kana": "みず",
+          "meaning": "water",
+          "audioUrl": "/audio/n5/n5_vocab_0488.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0507",
+          "word": "水曜日",
+          "kana": "すいようび",
+          "meaning": "Wednesday",
+          "audioUrl": "/audio/n5/n5_vocab_0507.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "火",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0342"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0342",
+          "word": "火曜日",
+          "kana": "かようび",
+          "meaning": "Tuesday",
+          "audioUrl": "/audio/n5/n5_vocab_0342.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "父",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0143",
+        "n5_vocab_0567",
+        "n5_vocab_0567"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0143",
+          "word": "お父さん",
+          "kana": "おとうさん",
+          "meaning": "(honorable) father",
+          "audioUrl": "/audio/n5/n5_vocab_0143.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0567",
+          "word": "伯父/叔父",
+          "kana": "おじいさん",
+          "meaning": "grandfather",
+          "audioUrl": "/audio/n5/n5_vocab_0567.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0567",
+          "word": "伯父/叔父",
+          "kana": "おじいさん",
+          "meaning": "grandfather",
+          "audioUrl": "/audio/n5/n5_vocab_0567.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "生",
+      "exampleCount": 6,
+      "examples": [
+        "n5_vocab_0180",
+        "n5_vocab_0332",
+        "n5_vocab_0368",
+        "n5_vocab_0445",
+        "n5_vocab_0641",
+        "n5_vocab_0213"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0180",
+          "word": "生徒",
+          "kana": "せいと",
+          "meaning": "pupil",
+          "audioUrl": "/audio/n5/n5_vocab_0180.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0332",
+          "word": "学生",
+          "kana": "がくせい",
+          "meaning": "student",
+          "audioUrl": "/audio/n5/n5_vocab_0332.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0368",
+          "word": "先生",
+          "kana": "せんせい",
+          "meaning": "teacher",
+          "audioUrl": "/audio/n5/n5_vocab_0368.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0445",
+          "word": "誕生日",
+          "kana": "たんじょうび",
+          "meaning": "birthday",
+          "audioUrl": "/audio/n5/n5_vocab_0445.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0641",
+          "word": "留学生",
+          "kana": "りゅうがくせい",
+          "meaning": "overseas student",
+          "audioUrl": "/audio/n5/n5_vocab_0641.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0213",
+          "word": "生まれる",
+          "kana": "うまれる",
+          "meaning": "to be born",
+          "audioUrl": "/audio/n5/n5_vocab_0213.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "男",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0582",
+        "n5_vocab_0048"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0582",
+          "word": "男",
+          "kana": "おとこ",
+          "meaning": "man",
+          "audioUrl": "/audio/n5/n5_vocab_0582.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0048",
+          "word": "男の子",
+          "kana": "おとこのこ",
+          "meaning": "boy",
+          "audioUrl": "/audio/n5/n5_vocab_0048.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "白",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0485",
+        "n5_vocab_0577"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0485",
+          "word": "白",
+          "kana": "しろ",
+          "meaning": "white",
+          "audioUrl": "/audio/n5/n5_vocab_0485.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0577",
+          "word": "白い",
+          "kana": "しろい",
+          "meaning": "white",
+          "audioUrl": "/audio/n5/n5_vocab_0577.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "百",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0337",
+        "n5_vocab_0339"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0337",
+          "word": "百",
+          "kana": "ひゃく",
+          "meaning": "hundred",
+          "audioUrl": "/audio/n5/n5_vocab_0337.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0339",
+          "word": "八百屋",
+          "kana": "やおや",
+          "meaning": "greengrocer",
+          "audioUrl": "/audio/n5/n5_vocab_0339.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "社",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0122"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0122",
+          "word": "会社",
+          "kana": "かいしゃ",
+          "meaning": "company",
+          "audioUrl": "/audio/n5/n5_vocab_0122.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "私",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0137"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0137",
+          "word": "私",
+          "kana": "わたくし",
+          "meaning": "(humble) I",
+          "audioUrl": "/audio/n5/n5_vocab_0137.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "立",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0222"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0222",
+          "word": "立つ",
+          "kana": "たつ",
+          "meaning": "to stand",
+          "audioUrl": "/audio/n5/n5_vocab_0222.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "聞",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0093",
+        "n5_vocab_0584"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0093",
+          "word": "新聞",
+          "kana": "しんぶん",
+          "meaning": "newspaper",
+          "audioUrl": "/audio/n5/n5_vocab_0093.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0584",
+          "word": "聞く",
+          "kana": "きく",
+          "meaning": "to hear",
+          "audioUrl": "/audio/n5/n5_vocab_0584.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "英",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0022"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0022",
+          "word": "英語",
+          "kana": "えいご",
+          "meaning": "English language",
+          "audioUrl": "/audio/n5/n5_vocab_0022.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "行",
+      "exampleCount": 4,
+      "examples": [
+        "n5_vocab_0330",
+        "n5_vocab_0477",
+        "n5_vocab_0580",
+        "n5_vocab_0596"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0330",
+          "word": "銀行",
+          "kana": "ぎんこう",
+          "meaning": "bank",
+          "audioUrl": "/audio/n5/n5_vocab_0330.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0477",
+          "word": "旅行",
+          "kana": "りょこう",
+          "meaning": "travel",
+          "audioUrl": "/audio/n5/n5_vocab_0477.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0580",
+          "word": "行く",
+          "kana": "いく",
+          "meaning": "to go",
+          "audioUrl": "/audio/n5/n5_vocab_0580.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0596",
+          "word": "飛行機",
+          "kana": "ひこうき",
+          "meaning": "aeroplane",
+          "audioUrl": "/audio/n5/n5_vocab_0596.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "見",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0517",
+        "n5_vocab_0549"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0517",
+          "word": "見せる",
+          "kana": "みせる",
+          "meaning": "to show",
+          "audioUrl": "/audio/n5/n5_vocab_0517.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0549",
+          "word": "見る観る",
+          "kana": "みる",
+          "meaning": "to see",
+          "audioUrl": "/audio/n5/n5_vocab_0549.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "話",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0326",
+        "n5_vocab_0082",
+        "n5_vocab_0389"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0326",
+          "word": "話",
+          "kana": "はなし",
+          "meaning": "talk",
+          "audioUrl": "/audio/n5/n5_vocab_0326.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0082",
+          "word": "電話",
+          "kana": "でんわ",
+          "meaning": "telephone",
+          "audioUrl": "/audio/n5/n5_vocab_0082.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0389",
+          "word": "話す",
+          "kana": "はなす",
+          "meaning": "to speak",
+          "audioUrl": "/audio/n5/n5_vocab_0389.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "語",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0022"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0022",
+          "word": "英語",
+          "kana": "えいご",
+          "meaning": "English language",
+          "audioUrl": "/audio/n5/n5_vocab_0022.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "読",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0260"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0260",
+          "word": "読む",
+          "kana": "よむ",
+          "meaning": "to read",
+          "audioUrl": "/audio/n5/n5_vocab_0260.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "買",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0406",
+        "n5_vocab_0520"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0406",
+          "word": "買う",
+          "kana": "かう",
+          "meaning": "to buy",
+          "audioUrl": "/audio/n5/n5_vocab_0406.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0520",
+          "word": "買い物",
+          "kana": "かいもの",
+          "meaning": "shopping",
+          "audioUrl": "/audio/n5/n5_vocab_0520.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "車",
+      "exampleCount": 4,
+      "examples": [
+        "n5_vocab_0555",
+        "n5_vocab_0387",
+        "n5_vocab_0193",
+        "n5_vocab_0433"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0555",
+          "word": "車",
+          "kana": "くるま",
+          "meaning": "car",
+          "audioUrl": "/audio/n5/n5_vocab_0555.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0387",
+          "word": "電車",
+          "kana": "でんしゃ",
+          "meaning": "electric train",
+          "audioUrl": "/audio/n5/n5_vocab_0387.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0193",
+          "word": "自転車",
+          "kana": "じてんしゃ",
+          "meaning": "bicycle",
+          "audioUrl": "/audio/n5/n5_vocab_0193.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0433",
+          "word": "自動車",
+          "kana": "じどうしゃ",
+          "meaning": "automobile",
+          "audioUrl": "/audio/n5/n5_vocab_0433.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "週",
+      "exampleCount": 4,
+      "examples": [
+        "n5_vocab_0110",
+        "n5_vocab_0156",
+        "n5_vocab_0271",
+        "n5_vocab_0315"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0110",
+          "word": "毎週",
+          "kana": "まいしゅう",
+          "meaning": "every week",
+          "audioUrl": "/audio/n5/n5_vocab_0110.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0156",
+          "word": "来週",
+          "kana": "らいしゅう",
+          "meaning": "next week",
+          "audioUrl": "/audio/n5/n5_vocab_0156.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0271",
+          "word": "先週",
+          "kana": "せんしゅう",
+          "meaning": "last week",
+          "audioUrl": "/audio/n5/n5_vocab_0271.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0315",
+          "word": "今週",
+          "kana": "こんしゅう",
+          "meaning": "this week",
+          "audioUrl": "/audio/n5/n5_vocab_0315.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "金",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0508",
+        "n5_vocab_0277"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0508",
+          "word": "お金",
+          "kana": "おかね",
+          "meaning": "money",
+          "audioUrl": "/audio/n5/n5_vocab_0508.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0277",
+          "word": "金曜日",
+          "kana": "きんようび",
+          "meaning": "Friday",
+          "audioUrl": "/audio/n5/n5_vocab_0277.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "門",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0378"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0378",
+          "word": "門",
+          "kana": "もん",
+          "meaning": "gate",
+          "audioUrl": "/audio/n5/n5_vocab_0378.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "雨",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0067"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0067",
+          "word": "雨",
+          "kana": "あめ",
+          "meaning": "rain",
+          "audioUrl": "/audio/n5/n5_vocab_0067.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "電",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0016",
+        "n5_vocab_0082",
+        "n5_vocab_0387"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0016",
+          "word": "電気",
+          "kana": "でんき",
+          "meaning": "electricity",
+          "audioUrl": "/audio/n5/n5_vocab_0016.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0082",
+          "word": "電話",
+          "kana": "でんわ",
+          "meaning": "telephone",
+          "audioUrl": "/audio/n5/n5_vocab_0082.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0387",
+          "word": "電車",
+          "kana": "でんしゃ",
+          "meaning": "electric train",
+          "audioUrl": "/audio/n5/n5_vocab_0387.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "食",
+      "exampleCount": 3,
+      "examples": [
+        "n5_vocab_0542",
+        "n5_vocab_0304",
+        "n5_vocab_0564"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0542",
+          "word": "食堂",
+          "kana": "しょくどう",
+          "meaning": "dining hall",
+          "audioUrl": "/audio/n5/n5_vocab_0542.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0304",
+          "word": "食べ物",
+          "kana": "たべもの",
+          "meaning": "food",
+          "audioUrl": "/audio/n5/n5_vocab_0304.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0564",
+          "word": "食べる",
+          "kana": "たべる",
+          "meaning": "to eat",
+          "audioUrl": "/audio/n5/n5_vocab_0564.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "飲",
+      "exampleCount": 2,
+      "examples": [
+        "n5_vocab_0057",
+        "n5_vocab_0518"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0057",
+          "word": "飲む",
+          "kana": "のむ",
+          "meaning": "to drink",
+          "audioUrl": "/audio/n5/n5_vocab_0057.mp3"
+        },
+        {
+          "vocabId": "n5_vocab_0518",
+          "word": "飲み物",
+          "kana": "のみもの",
+          "meaning": "a drink",
+          "audioUrl": "/audio/n5/n5_vocab_0518.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "駅",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0522"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0522",
+          "word": "駅",
+          "kana": "えき",
+          "meaning": "station",
+          "audioUrl": "/audio/n5/n5_vocab_0522.mp3"
+        }
+      ]
+    },
+    {
+      "kanji": "高",
+      "exampleCount": 1,
+      "examples": [
+        "n5_vocab_0168"
+      ],
+      "exampleDetails": [
+        {
+          "vocabId": "n5_vocab_0168",
+          "word": "高い",
+          "kana": "たかい",
+          "meaning": "tall",
+          "audioUrl": "/audio/n5/n5_vocab_0168.mp3"
+        }
+      ]
+    }
+  ]
+}

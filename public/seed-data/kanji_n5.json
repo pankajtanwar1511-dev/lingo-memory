@@ -1,0 +1,3990 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generatedAt": "2025-10-30T08:25:04.034067Z",
+    "description": "JLPT N5 kanji with stroke order animations and vocabulary links",
+    "totalKanji": 88,
+    "kanjiWithExamples": 88,
+    "totalExampleWords": 272,
+    "sources": {
+      "kanjidic2": "KANJIDIC2 2024-12 (Rev 1.6)",
+      "kanjivg": "KanjiVG 20240101",
+      "vocabulary": "LingoMemory N5 Vocab Dataset v1.0.0"
+    }
+  },
+  "kanji": [
+    {
+      "id": "kanji_n5_一",
+      "kanji": "一",
+      "jlptLevel": "N5",
+      "meanings": [
+        "one",
+        "one radical (no.1)"
+      ],
+      "onReadings": [
+        "イチ",
+        "イツ"
+      ],
+      "kunReadings": [
+        "ひと-",
+        "ひとつ"
+      ],
+      "strokeCount": 1,
+      "grade": 1,
+      "radical": null,
+      "frequency": 2,
+      "strokes": {
+        "svgPath": "/kanji/strokes/04e00.svg",
+        "count": 1
+      },
+      "examples": [
+        "n5_vocab_0472",
+        "n5_vocab_0024",
+        "n5_vocab_0155",
+        "n5_vocab_0174",
+        "n5_vocab_0220",
+        "n5_vocab_0321",
+        "n5_vocab_0234",
+        "n5_vocab_0297",
+        "n5_vocab_0557"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033885Z",
+        "lastUpdated": "2025-10-30T08:25:04.033895Z"
+      }
+    },
+    {
+      "id": "kanji_n5_九",
+      "kanji": "九",
+      "jlptLevel": "N5",
+      "meanings": [
+        "nine"
+      ],
+      "onReadings": [
+        "キュウ",
+        "ク"
+      ],
+      "kunReadings": [
+        "ここの",
+        "ここのつ"
+      ],
+      "strokeCount": 2,
+      "grade": 1,
+      "radical": null,
+      "frequency": 55,
+      "strokes": {
+        "svgPath": "/kanji/strokes/04e5d.svg",
+        "count": 2
+      },
+      "examples": [
+        "n5_vocab_0028",
+        "n5_vocab_0461",
+        "n5_vocab_0503"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033897Z",
+        "lastUpdated": "2025-10-30T08:25:04.033897Z"
+      }
+    },
+    {
+      "id": "kanji_n5_七",
+      "kanji": "七",
+      "jlptLevel": "N5",
+      "meanings": [
+        "seven"
+      ],
+      "onReadings": [
+        "シチ"
+      ],
+      "kunReadings": [
+        "なな",
+        "ななつ",
+        "なの"
+      ],
+      "strokeCount": 2,
+      "grade": 1,
+      "radical": null,
+      "frequency": 115,
+      "strokes": {
+        "svgPath": "/kanji/strokes/04e03.svg",
+        "count": 2
+      },
+      "examples": [
+        "n5_vocab_0226",
+        "n5_vocab_0041",
+        "n5_vocab_0447"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033899Z",
+        "lastUpdated": "2025-10-30T08:25:04.033900Z"
+      }
+    },
+    {
+      "id": "kanji_n5_十",
+      "kanji": "十",
+      "jlptLevel": "N5",
+      "meanings": [
+        "ten"
+      ],
+      "onReadings": [
+        "ジュウ",
+        "ジッ",
+        "ジュッ"
+      ],
+      "kunReadings": [
+        "とお",
+        "と",
+        "そ"
+      ],
+      "strokeCount": 2,
+      "grade": 1,
+      "radical": null,
+      "frequency": 8,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05341.svg",
+        "count": 2
+      },
+      "examples": [
+        "n5_vocab_0037",
+        "n5_vocab_0311",
+        "n5_vocab_0299",
+        "n5_vocab_0354"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033901Z",
+        "lastUpdated": "2025-10-30T08:25:04.033902Z"
+      }
+    },
+    {
+      "id": "kanji_n5_人",
+      "kanji": "人",
+      "jlptLevel": "N5",
+      "meanings": [
+        "person"
+      ],
+      "onReadings": [
+        "ジン",
+        "ニン"
+      ],
+      "kunReadings": [
+        "ひと",
+        "-り",
+        "-と"
+      ],
+      "strokeCount": 2,
+      "grade": 1,
+      "radical": null,
+      "frequency": 5,
+      "strokes": {
+        "svgPath": "/kanji/strokes/04eba.svg",
+        "count": 2
+      },
+      "examples": [
+        "n5_vocab_0144",
+        "n5_vocab_0288",
+        "n5_vocab_0321",
+        "n5_vocab_0622",
+        "n5_vocab_0652"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033903Z",
+        "lastUpdated": "2025-10-30T08:25:04.033903Z"
+      }
+    },
+    {
+      "id": "kanji_n5_二",
+      "kanji": "二",
+      "jlptLevel": "N5",
+      "meanings": [
+        "two",
+        "two radical (no. 7)"
+      ],
+      "onReadings": [
+        "ニ",
+        "ジ"
+      ],
+      "kunReadings": [
+        "ふた",
+        "ふたつ",
+        "ふたたび"
+      ],
+      "strokeCount": 2,
+      "grade": 1,
+      "radical": null,
+      "frequency": 9,
+      "strokes": {
+        "svgPath": "/kanji/strokes/04e8c.svg",
+        "count": 2
+      },
+      "examples": [
+        "n5_vocab_0636",
+        "n5_vocab_0287",
+        "n5_vocab_0336",
+        "n5_vocab_0622",
+        "n5_vocab_0299",
+        "n5_vocab_0354"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033904Z",
+        "lastUpdated": "2025-10-30T08:25:04.033905Z"
+      }
+    },
+    {
+      "id": "kanji_n5_入",
+      "kanji": "入",
+      "jlptLevel": "N5",
+      "meanings": [
+        "enter",
+        "insert"
+      ],
+      "onReadings": [
+        "ニュウ",
+        "ジュ"
+      ],
+      "kunReadings": [
+        "いる",
+        "-いる",
+        "-いり",
+        "いれる",
+        "-いれ",
+        "はいる"
+      ],
+      "strokeCount": 2,
+      "grade": 1,
+      "radical": null,
+      "frequency": 56,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05165.svg",
+        "count": 2
+      },
+      "examples": [
+        "n5_vocab_0200",
+        "n5_vocab_0429",
+        "n5_vocab_0353"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033907Z",
+        "lastUpdated": "2025-10-30T08:25:04.033907Z"
+      }
+    },
+    {
+      "id": "kanji_n5_八",
+      "kanji": "八",
+      "jlptLevel": "N5",
+      "meanings": [
+        "eight",
+        "eight radical (no. 12)"
+      ],
+      "onReadings": [
+        "ハチ",
+        "ハツ"
+      ],
+      "kunReadings": [
+        "や",
+        "やつ",
+        "やっつ",
+        "よう"
+      ],
+      "strokeCount": 2,
+      "grade": 1,
+      "radical": null,
+      "frequency": 92,
+      "strokes": {
+        "svgPath": "/kanji/strokes/0516b.svg",
+        "count": 2
+      },
+      "examples": [
+        "n5_vocab_0295",
+        "n5_vocab_0458",
+        "n5_vocab_0481",
+        "n5_vocab_0339"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033908Z",
+        "lastUpdated": "2025-10-30T08:25:04.033909Z"
+      }
+    },
+    {
+      "id": "kanji_n5_下",
+      "kanji": "下",
+      "jlptLevel": "N5",
+      "meanings": [
+        "below",
+        "down",
+        "descend",
+        "give",
+        "low",
+        "inferior"
+      ],
+      "onReadings": [
+        "カ",
+        "ゲ"
+      ],
+      "kunReadings": [
+        "した",
+        "しも",
+        "もと",
+        "さげる",
+        "さがる",
+        "くだる",
+        "くだり",
+        "くだす",
+        "-くだす",
+        "くださる",
+        "おろす",
+        "おりる"
+      ],
+      "strokeCount": 3,
+      "grade": 1,
+      "radical": null,
+      "frequency": 97,
+      "strokes": {
+        "svgPath": "/kanji/strokes/04e0b.svg",
+        "count": 3
+      },
+      "examples": [
+        "n5_vocab_0335",
+        "n5_vocab_0072",
+        "n5_vocab_0100",
+        "n5_vocab_0320",
+        "n5_vocab_0125"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033910Z",
+        "lastUpdated": "2025-10-30T08:25:04.033910Z"
+      }
+    },
+    {
+      "id": "kanji_n5_三",
+      "kanji": "三",
+      "jlptLevel": "N5",
+      "meanings": [
+        "three"
+      ],
+      "onReadings": [
+        "サン",
+        "ゾウ"
+      ],
+      "kunReadings": [
+        "み",
+        "みつ",
+        "みっつ"
+      ],
+      "strokeCount": 3,
+      "grade": 1,
+      "radical": null,
+      "frequency": 14,
+      "strokes": {
+        "svgPath": "/kanji/strokes/04e09.svg",
+        "count": 3
+      },
+      "examples": [
+        "n5_vocab_0441",
+        "n5_vocab_0328",
+        "n5_vocab_0355"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033911Z",
+        "lastUpdated": "2025-10-30T08:25:04.033912Z"
+      }
+    },
+    {
+      "id": "kanji_n5_山",
+      "kanji": "山",
+      "jlptLevel": "N5",
+      "meanings": [
+        "mountain"
+      ],
+      "onReadings": [
+        "サン",
+        "セン"
+      ],
+      "kunReadings": [
+        "やま"
+      ],
+      "strokeCount": 3,
+      "grade": 1,
+      "radical": null,
+      "frequency": 131,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05c71.svg",
+        "count": 3
+      },
+      "examples": [
+        "n5_vocab_0188"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033913Z",
+        "lastUpdated": "2025-10-30T08:25:04.033913Z"
+      }
+    },
+    {
+      "id": "kanji_n5_子",
+      "kanji": "子",
+      "jlptLevel": "N5",
+      "meanings": [
+        "child",
+        "sign of the rat",
+        "11pm-1am",
+        "first sign of chinese zodiac"
+      ],
+      "onReadings": [
+        "シ",
+        "ス",
+        "ツ"
+      ],
+      "kunReadings": [
+        "こ",
+        "-こ",
+        "ね"
+      ],
+      "strokeCount": 3,
+      "grade": 1,
+      "radical": null,
+      "frequency": 72,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05b50.svg",
+        "count": 3
+      },
+      "examples": [
+        "n5_vocab_0351",
+        "n5_vocab_0533",
+        "n5_vocab_0048",
+        "n5_vocab_0276",
+        "n5_vocab_0535"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033915Z",
+        "lastUpdated": "2025-10-30T08:25:04.033916Z"
+      }
+    },
+    {
+      "id": "kanji_n5_女",
+      "kanji": "女",
+      "jlptLevel": "N5",
+      "meanings": [
+        "woman",
+        "female"
+      ],
+      "onReadings": [
+        "ジョ",
+        "ニョ",
+        "ニョウ"
+      ],
+      "kunReadings": [
+        "おんな",
+        "め"
+      ],
+      "strokeCount": 3,
+      "grade": 1,
+      "radical": null,
+      "frequency": 151,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05973.svg",
+        "count": 3
+      },
+      "examples": [
+        "n5_vocab_0595",
+        "n5_vocab_0535"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033917Z",
+        "lastUpdated": "2025-10-30T08:25:04.033917Z"
+      }
+    },
+    {
+      "id": "kanji_n5_小",
+      "kanji": "小",
+      "jlptLevel": "N5",
+      "meanings": [
+        "little",
+        "small"
+      ],
+      "onReadings": [
+        "ショウ"
+      ],
+      "kunReadings": [
+        "ちいさい",
+        "こ-",
+        "お-",
+        "さ-"
+      ],
+      "strokeCount": 3,
+      "grade": 1,
+      "radical": null,
+      "frequency": 114,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05c0f.svg",
+        "count": 3
+      },
+      "examples": [
+        "n5_vocab_0176",
+        "n5_vocab_0314"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033918Z",
+        "lastUpdated": "2025-10-30T08:25:04.033919Z"
+      }
+    },
+    {
+      "id": "kanji_n5_上",
+      "kanji": "上",
+      "jlptLevel": "N5",
+      "meanings": [
+        "above",
+        "up"
+      ],
+      "onReadings": [
+        "ジョウ",
+        "ショウ",
+        "シャン"
+      ],
+      "kunReadings": [
+        "うえ",
+        "-うえ",
+        "うわ-",
+        "かみ",
+        "あげる",
+        "-あげる",
+        "あがる",
+        "-あがる",
+        "あがり",
+        "-あがり",
+        "のぼる",
+        "のぼり",
+        "のぼせる",
+        "のぼす",
+        "たてまつる"
+      ],
+      "strokeCount": 3,
+      "grade": 1,
+      "radical": null,
+      "frequency": 35,
+      "strokes": {
+        "svgPath": "/kanji/strokes/04e0a.svg",
+        "count": 3
+      },
+      "examples": [
+        "n5_vocab_0309",
+        "n5_vocab_0240",
+        "n5_vocab_0324",
+        "n5_vocab_0178"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033920Z",
+        "lastUpdated": "2025-10-30T08:25:04.033920Z"
+      }
+    },
+    {
+      "id": "kanji_n5_千",
+      "kanji": "千",
+      "jlptLevel": "N5",
+      "meanings": [
+        "thousand"
+      ],
+      "onReadings": [
+        "セン"
+      ],
+      "kunReadings": [
+        "ち"
+      ],
+      "strokeCount": 3,
+      "grade": 1,
+      "radical": null,
+      "frequency": 195,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05343.svg",
+        "count": 3
+      },
+      "examples": [
+        "n5_vocab_0346"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033922Z",
+        "lastUpdated": "2025-10-30T08:25:04.033922Z"
+      }
+    },
+    {
+      "id": "kanji_n5_川",
+      "kanji": "川",
+      "jlptLevel": "N5",
+      "meanings": [
+        "stream",
+        "river",
+        "river or three-stroke river radical (no. 47)"
+      ],
+      "onReadings": [
+        "セン"
+      ],
+      "kunReadings": [
+        "かわ"
+      ],
+      "strokeCount": 3,
+      "grade": 1,
+      "radical": null,
+      "frequency": 181,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05ddd.svg",
+        "count": 3
+      },
+      "examples": [
+        "n5_vocab_0426"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033923Z",
+        "lastUpdated": "2025-10-30T08:25:04.033924Z"
+      }
+    },
+    {
+      "id": "kanji_n5_大",
+      "kanji": "大",
+      "jlptLevel": "N5",
+      "meanings": [
+        "large",
+        "big"
+      ],
+      "onReadings": [
+        "ダイ",
+        "タイ"
+      ],
+      "kunReadings": [
+        "おお-",
+        "おおきい",
+        "-おおいに"
+      ],
+      "strokeCount": 3,
+      "grade": 1,
+      "radical": null,
+      "frequency": 7,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05927.svg",
+        "count": 3
+      },
+      "examples": [
+        "n5_vocab_0119",
+        "n5_vocab_0288",
+        "n5_vocab_0331",
+        "n5_vocab_0413",
+        "n5_vocab_0096",
+        "n5_vocab_0266",
+        "n5_vocab_0307",
+        "n5_vocab_0457",
+        "n5_vocab_0523"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033926Z",
+        "lastUpdated": "2025-10-30T08:25:04.033926Z"
+      }
+    },
+    {
+      "id": "kanji_n5_土",
+      "kanji": "土",
+      "jlptLevel": "N5",
+      "meanings": [
+        "soil",
+        "earth",
+        "ground",
+        "turkey"
+      ],
+      "onReadings": [
+        "ド",
+        "ト"
+      ],
+      "kunReadings": [
+        "つち"
+      ],
+      "strokeCount": 3,
+      "grade": 1,
+      "radical": null,
+      "frequency": 307,
+      "strokes": {
+        "svgPath": "/kanji/strokes/0571f.svg",
+        "count": 3
+      },
+      "examples": [
+        "n5_vocab_0511"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033928Z",
+        "lastUpdated": "2025-10-30T08:25:04.033928Z"
+      }
+    },
+    {
+      "id": "kanji_n5_万",
+      "kanji": "万",
+      "jlptLevel": "N5",
+      "meanings": [
+        "ten thousand",
+        "10,000"
+      ],
+      "onReadings": [
+        "マン",
+        "バン"
+      ],
+      "kunReadings": [
+        "よろず"
+      ],
+      "strokeCount": 3,
+      "grade": 2,
+      "radical": null,
+      "frequency": 375,
+      "strokes": {
+        "svgPath": "/kanji/strokes/04e07.svg",
+        "count": 3
+      },
+      "examples": [
+        "n5_vocab_0397",
+        "n5_vocab_0129"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033929Z",
+        "lastUpdated": "2025-10-30T08:25:04.033930Z"
+      }
+    },
+    {
+      "id": "kanji_n5_円",
+      "kanji": "円",
+      "jlptLevel": "N5",
+      "meanings": [
+        "circle",
+        "yen",
+        "round"
+      ],
+      "onReadings": [
+        "エン"
+      ],
+      "kunReadings": [
+        "まるい",
+        "まる",
+        "まど",
+        "まどか",
+        "まろやか"
+      ],
+      "strokeCount": 4,
+      "grade": 1,
+      "radical": null,
+      "frequency": 69,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05186.svg",
+        "count": 4
+      },
+      "examples": [
+        "n5_vocab_0601"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033931Z",
+        "lastUpdated": "2025-10-30T08:25:04.033931Z"
+      }
+    },
+    {
+      "id": "kanji_n5_火",
+      "kanji": "火",
+      "jlptLevel": "N5",
+      "meanings": [
+        "fire"
+      ],
+      "onReadings": [
+        "カ"
+      ],
+      "kunReadings": [
+        "ひ",
+        "-び",
+        "ほ-"
+      ],
+      "strokeCount": 4,
+      "grade": 1,
+      "radical": null,
+      "frequency": 574,
+      "strokes": {
+        "svgPath": "/kanji/strokes/0706b.svg",
+        "count": 4
+      },
+      "examples": [
+        "n5_vocab_0342"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033932Z",
+        "lastUpdated": "2025-10-30T08:25:04.033933Z"
+      }
+    },
+    {
+      "id": "kanji_n5_月",
+      "kanji": "月",
+      "jlptLevel": "N5",
+      "meanings": [
+        "month",
+        "moon"
+      ],
+      "onReadings": [
+        "ゲツ",
+        "ガツ"
+      ],
+      "kunReadings": [
+        "つき"
+      ],
+      "strokeCount": 4,
+      "grade": 1,
+      "radical": null,
+      "frequency": 23,
+      "strokes": {
+        "svgPath": "/kanji/strokes/06708.svg",
+        "count": 4
+      },
+      "examples": [
+        "n5_vocab_0024",
+        "n5_vocab_0061",
+        "n5_vocab_0262",
+        "n5_vocab_0371",
+        "n5_vocab_0618",
+        "n5_vocab_0642"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033934Z",
+        "lastUpdated": "2025-10-30T08:25:04.033934Z"
+      }
+    },
+    {
+      "id": "kanji_n5_五",
+      "kanji": "五",
+      "jlptLevel": "N5",
+      "meanings": [
+        "five"
+      ],
+      "onReadings": [
+        "ゴ"
+      ],
+      "kunReadings": [
+        "いつ",
+        "いつつ"
+      ],
+      "strokeCount": 4,
+      "grade": 1,
+      "radical": null,
+      "frequency": 31,
+      "strokes": {
+        "svgPath": "/kanji/strokes/04e94.svg",
+        "count": 4
+      },
+      "examples": [
+        "n5_vocab_0310",
+        "n5_vocab_0112",
+        "n5_vocab_0255"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033936Z",
+        "lastUpdated": "2025-10-30T08:25:04.033937Z"
+      }
+    },
+    {
+      "id": "kanji_n5_午",
+      "kanji": "午",
+      "jlptLevel": "N5",
+      "meanings": [
+        "noon",
+        "sign of the horse",
+        "11am-1pm",
+        "seventh sign of chinese zodiac"
+      ],
+      "onReadings": [
+        "ゴ"
+      ],
+      "kunReadings": [
+        "うま"
+      ],
+      "strokeCount": 4,
+      "grade": 2,
+      "radical": null,
+      "frequency": 154,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05348.svg",
+        "count": 4
+      },
+      "examples": [
+        "n5_vocab_0303",
+        "n5_vocab_0599"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033938Z",
+        "lastUpdated": "2025-10-30T08:25:04.033938Z"
+      }
+    },
+    {
+      "id": "kanji_n5_今",
+      "kanji": "今",
+      "jlptLevel": "N5",
+      "meanings": [
+        "now"
+      ],
+      "onReadings": [
+        "コン",
+        "キン"
+      ],
+      "kunReadings": [
+        "いま"
+      ],
+      "strokeCount": 4,
+      "grade": 2,
+      "radical": null,
+      "frequency": 49,
+      "strokes": {
+        "svgPath": "/kanji/strokes/04eca.svg",
+        "count": 4
+      },
+      "examples": [
+        "n5_vocab_0476",
+        "n5_vocab_0104",
+        "n5_vocab_0217",
+        "n5_vocab_0232",
+        "n5_vocab_0269",
+        "n5_vocab_0315",
+        "n5_vocab_0618"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033939Z",
+        "lastUpdated": "2025-10-30T08:25:04.033940Z"
+      }
+    },
+    {
+      "id": "kanji_n5_手",
+      "kanji": "手",
+      "jlptLevel": "N5",
+      "meanings": [
+        "hand"
+      ],
+      "onReadings": [
+        "シュ",
+        "ズ"
+      ],
+      "kunReadings": [
+        "て",
+        "て-",
+        "-て",
+        "た-"
+      ],
+      "strokeCount": 4,
+      "grade": 1,
+      "radical": null,
+      "frequency": 60,
+      "strokes": {
+        "svgPath": "/kanji/strokes/0624b.svg",
+        "count": 4
+      },
+      "examples": [
+        "n5_vocab_0468",
+        "n5_vocab_0075",
+        "n5_vocab_0100",
+        "n5_vocab_0324",
+        "n5_vocab_0591",
+        "n5_vocab_0248"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033941Z",
+        "lastUpdated": "2025-10-30T08:25:04.033941Z"
+      }
+    },
+    {
+      "id": "kanji_n5_水",
+      "kanji": "水",
+      "jlptLevel": "N5",
+      "meanings": [
+        "water"
+      ],
+      "onReadings": [
+        "スイ"
+      ],
+      "kunReadings": [
+        "みず",
+        "みず-"
+      ],
+      "strokeCount": 4,
+      "grade": 1,
+      "radical": null,
+      "frequency": 223,
+      "strokes": {
+        "svgPath": "/kanji/strokes/06c34.svg",
+        "count": 4
+      },
+      "examples": [
+        "n5_vocab_0488",
+        "n5_vocab_0507"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033942Z",
+        "lastUpdated": "2025-10-30T08:25:04.033943Z"
+      }
+    },
+    {
+      "id": "kanji_n5_中",
+      "kanji": "中",
+      "jlptLevel": "N5",
+      "meanings": [
+        "in",
+        "inside",
+        "middle",
+        "mean",
+        "center"
+      ],
+      "onReadings": [
+        "チュウ"
+      ],
+      "kunReadings": [
+        "なか",
+        "うち",
+        "あたる"
+      ],
+      "strokeCount": 4,
+      "grade": 1,
+      "radical": null,
+      "frequency": 11,
+      "strokes": {
+        "svgPath": "/kanji/strokes/04e2d.svg",
+        "count": 4
+      },
+      "examples": [
+        "n5_vocab_0038"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033944Z",
+        "lastUpdated": "2025-10-30T08:25:04.033945Z"
+      }
+    },
+    {
+      "id": "kanji_n5_天",
+      "kanji": "天",
+      "jlptLevel": "N5",
+      "meanings": [
+        "heavens",
+        "sky",
+        "imperial"
+      ],
+      "onReadings": [
+        "テン"
+      ],
+      "kunReadings": [
+        "あまつ",
+        "あめ",
+        "あま-"
+      ],
+      "strokeCount": 4,
+      "grade": 1,
+      "radical": null,
+      "frequency": 512,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05929.svg",
+        "count": 4
+      },
+      "examples": [
+        "n5_vocab_0224"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033947Z",
+        "lastUpdated": "2025-10-30T08:25:04.033947Z"
+      }
+    },
+    {
+      "id": "kanji_n5_日",
+      "kanji": "日",
+      "jlptLevel": "N5",
+      "meanings": [
+        "day",
+        "sun",
+        "japan",
+        "counter for days"
+      ],
+      "onReadings": [
+        "ニチ",
+        "ジツ"
+      ],
+      "kunReadings": [
+        "ひ",
+        "-び",
+        "-か"
+      ],
+      "strokeCount": 4,
+      "grade": 1,
+      "radical": null,
+      "frequency": 1,
+      "strokes": {
+        "svgPath": "/kanji/strokes/065e5.svg",
+        "count": 4
+      },
+      "examples": [
+        "n5_vocab_0045",
+        "n5_vocab_0174",
+        "n5_vocab_0232",
+        "n5_vocab_0255",
+        "n5_vocab_0287",
+        "n5_vocab_0311",
+        "n5_vocab_0355",
+        "n5_vocab_0383",
+        "n5_vocab_0447",
+        "n5_vocab_0458",
+        "n5_vocab_0461",
+        "n5_vocab_0470",
+        "n5_vocab_0565",
+        "n5_vocab_0660",
+        "n5_vocab_0246",
+        "n5_vocab_0277",
+        "n5_vocab_0297",
+        "n5_vocab_0299",
+        "n5_vocab_0342",
+        "n5_vocab_0445",
+        "n5_vocab_0507",
+        "n5_vocab_0511",
+        "n5_vocab_0597",
+        "n5_vocab_0597",
+        "n5_vocab_0642"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033948Z",
+        "lastUpdated": "2025-10-30T08:25:04.033949Z"
+      }
+    },
+    {
+      "id": "kanji_n5_父",
+      "kanji": "父",
+      "jlptLevel": "N5",
+      "meanings": [
+        "father"
+      ],
+      "onReadings": [
+        "フ"
+      ],
+      "kunReadings": [
+        "ちち"
+      ],
+      "strokeCount": 4,
+      "grade": 2,
+      "radical": null,
+      "frequency": 646,
+      "strokes": {
+        "svgPath": "/kanji/strokes/07236.svg",
+        "count": 4
+      },
+      "examples": [
+        "n5_vocab_0143",
+        "n5_vocab_0567",
+        "n5_vocab_0567"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033950Z",
+        "lastUpdated": "2025-10-30T08:25:04.033950Z"
+      }
+    },
+    {
+      "id": "kanji_n5_分",
+      "kanji": "分",
+      "jlptLevel": "N5",
+      "meanings": [
+        "part",
+        "minute of time",
+        "segment",
+        "share",
+        "degree",
+        "one's lot",
+        "duty",
+        "understand",
+        "know",
+        "rate",
+        "1%",
+        "chances",
+        "shaku/100"
+      ],
+      "onReadings": [
+        "ブン",
+        "フン",
+        "ブ"
+      ],
+      "kunReadings": [
+        "わける",
+        "わけ",
+        "わかれる",
+        "わかる",
+        "わかつ"
+      ],
+      "strokeCount": 4,
+      "grade": 2,
+      "radical": null,
+      "frequency": 24,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05206.svg",
+        "count": 4
+      },
+      "examples": [
+        "n5_vocab_0165",
+        "n5_vocab_0514",
+        "n5_vocab_0055"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033951Z",
+        "lastUpdated": "2025-10-30T08:25:04.033952Z"
+      }
+    },
+    {
+      "id": "kanji_n5_木",
+      "kanji": "木",
+      "jlptLevel": "N5",
+      "meanings": [
+        "tree",
+        "wood"
+      ],
+      "onReadings": [
+        "ボク",
+        "モク"
+      ],
+      "kunReadings": [
+        "き",
+        "こ-"
+      ],
+      "strokeCount": 4,
+      "grade": 1,
+      "radical": null,
+      "frequency": 317,
+      "strokes": {
+        "svgPath": "/kanji/strokes/06728.svg",
+        "count": 4
+      },
+      "examples": [
+        "n5_vocab_0273",
+        "n5_vocab_0246"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033953Z",
+        "lastUpdated": "2025-10-30T08:25:04.033953Z"
+      }
+    },
+    {
+      "id": "kanji_n5_友",
+      "kanji": "友",
+      "jlptLevel": "N5",
+      "meanings": [
+        "friend"
+      ],
+      "onReadings": [
+        "ユウ"
+      ],
+      "kunReadings": [
+        "とも"
+      ],
+      "strokeCount": 4,
+      "grade": 2,
+      "radical": null,
+      "frequency": 622,
+      "strokes": {
+        "svgPath": "/kanji/strokes/053cb.svg",
+        "count": 4
+      },
+      "examples": [
+        "n5_vocab_0358"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033955Z",
+        "lastUpdated": "2025-10-30T08:25:04.033955Z"
+      }
+    },
+    {
+      "id": "kanji_n5_六",
+      "kanji": "六",
+      "jlptLevel": "N5",
+      "meanings": [
+        "six"
+      ],
+      "onReadings": [
+        "ロク",
+        "リク"
+      ],
+      "kunReadings": [
+        "む",
+        "むつ",
+        "むっつ",
+        "むい"
+      ],
+      "strokeCount": 4,
+      "grade": 1,
+      "radical": null,
+      "frequency": 93,
+      "strokes": {
+        "svgPath": "/kanji/strokes/0516d.svg",
+        "count": 4
+      },
+      "examples": [
+        "n5_vocab_0103",
+        "n5_vocab_0045",
+        "n5_vocab_0647"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033956Z",
+        "lastUpdated": "2025-10-30T08:25:04.033957Z"
+      }
+    },
+    {
+      "id": "kanji_n5_右",
+      "kanji": "右",
+      "jlptLevel": "N5",
+      "meanings": [
+        "right"
+      ],
+      "onReadings": [
+        "ウ",
+        "ユウ"
+      ],
+      "kunReadings": [
+        "みぎ"
+      ],
+      "strokeCount": 5,
+      "grade": 1,
+      "radical": null,
+      "frequency": 602,
+      "strokes": {
+        "svgPath": "/kanji/strokes/053f3.svg",
+        "count": 5
+      },
+      "examples": [
+        "n5_vocab_0034"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033958Z",
+        "lastUpdated": "2025-10-30T08:25:04.033958Z"
+      }
+    },
+    {
+      "id": "kanji_n5_外",
+      "kanji": "外",
+      "jlptLevel": "N5",
+      "meanings": [
+        "outside"
+      ],
+      "onReadings": [
+        "ガイ",
+        "ゲ"
+      ],
+      "kunReadings": [
+        "そと",
+        "ほか",
+        "はずす",
+        "はずれる",
+        "と-"
+      ],
+      "strokeCount": 5,
+      "grade": 2,
+      "radical": null,
+      "frequency": 81,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05916.svg",
+        "count": 5
+      },
+      "examples": [
+        "n5_vocab_0495",
+        "n5_vocab_0202",
+        "n5_vocab_0652"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033960Z",
+        "lastUpdated": "2025-10-30T08:25:04.033960Z"
+      }
+    },
+    {
+      "id": "kanji_n5_左",
+      "kanji": "左",
+      "jlptLevel": "N5",
+      "meanings": [
+        "left"
+      ],
+      "onReadings": [
+        "サ",
+        "シャ"
+      ],
+      "kunReadings": [
+        "ひだり"
+      ],
+      "strokeCount": 5,
+      "grade": 1,
+      "radical": null,
+      "frequency": 630,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05de6.svg",
+        "count": 5
+      },
+      "examples": [
+        "n5_vocab_0437"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033961Z",
+        "lastUpdated": "2025-10-30T08:25:04.033962Z"
+      }
+    },
+    {
+      "id": "kanji_n5_四",
+      "kanji": "四",
+      "jlptLevel": "N5",
+      "meanings": [
+        "four"
+      ],
+      "onReadings": [
+        "シ"
+      ],
+      "kunReadings": [
+        "よ",
+        "よつ",
+        "よっつ",
+        "よん"
+      ],
+      "strokeCount": 5,
+      "grade": 1,
+      "radical": null,
+      "frequency": 47,
+      "strokes": {
+        "svgPath": "/kanji/strokes/056db.svg",
+        "count": 5
+      },
+      "examples": [
+        "n5_vocab_0199",
+        "n5_vocab_0403",
+        "n5_vocab_0565"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033963Z",
+        "lastUpdated": "2025-10-30T08:25:04.033963Z"
+      }
+    },
+    {
+      "id": "kanji_n5_出",
+      "kanji": "出",
+      "jlptLevel": "N5",
+      "meanings": [
+        "exit",
+        "leave",
+        "go out",
+        "come out",
+        "put out",
+        "protrude"
+      ],
+      "onReadings": [
+        "シュツ",
+        "スイ"
+      ],
+      "kunReadings": [
+        "でる",
+        "-で",
+        "だす",
+        "-だす",
+        "いでる",
+        "いだす"
+      ],
+      "strokeCount": 5,
+      "grade": 1,
+      "radical": null,
+      "frequency": 13,
+      "strokes": {
+        "svgPath": "/kanji/strokes/051fa.svg",
+        "count": 5
+      },
+      "examples": [
+        "n5_vocab_0182",
+        "n5_vocab_0369",
+        "n5_vocab_0593",
+        "n5_vocab_0639"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033965Z",
+        "lastUpdated": "2025-10-30T08:25:04.033966Z"
+      }
+    },
+    {
+      "id": "kanji_n5_生",
+      "kanji": "生",
+      "jlptLevel": "N5",
+      "meanings": [
+        "life",
+        "genuine",
+        "birth"
+      ],
+      "onReadings": [
+        "セイ",
+        "ショウ"
+      ],
+      "kunReadings": [
+        "いきる",
+        "いかす",
+        "いける",
+        "うまれる",
+        "うまれる",
+        "うまれ",
+        "うまれ",
+        "うむ",
+        "おう",
+        "はえる",
+        "はやす",
+        "き",
+        "なま",
+        "なま-",
+        "なる",
+        "なす",
+        "むす",
+        "-う"
+      ],
+      "strokeCount": 5,
+      "grade": 1,
+      "radical": null,
+      "frequency": 29,
+      "strokes": {
+        "svgPath": "/kanji/strokes/0751f.svg",
+        "count": 5
+      },
+      "examples": [
+        "n5_vocab_0180",
+        "n5_vocab_0332",
+        "n5_vocab_0368",
+        "n5_vocab_0445",
+        "n5_vocab_0641",
+        "n5_vocab_0213"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033968Z",
+        "lastUpdated": "2025-10-30T08:25:04.033968Z"
+      }
+    },
+    {
+      "id": "kanji_n5_白",
+      "kanji": "白",
+      "jlptLevel": "N5",
+      "meanings": [
+        "white"
+      ],
+      "onReadings": [
+        "ハク",
+        "ビャク"
+      ],
+      "kunReadings": [
+        "しろ",
+        "しら-",
+        "しろい"
+      ],
+      "strokeCount": 5,
+      "grade": 1,
+      "radical": null,
+      "frequency": 483,
+      "strokes": {
+        "svgPath": "/kanji/strokes/0767d.svg",
+        "count": 5
+      },
+      "examples": [
+        "n5_vocab_0485",
+        "n5_vocab_0577"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033969Z",
+        "lastUpdated": "2025-10-30T08:25:04.033970Z"
+      }
+    },
+    {
+      "id": "kanji_n5_半",
+      "kanji": "半",
+      "jlptLevel": "N5",
+      "meanings": [
+        "half",
+        "middle",
+        "odd number",
+        "semi-",
+        "part-"
+      ],
+      "onReadings": [
+        "ハン"
+      ],
+      "kunReadings": [
+        "なかば"
+      ],
+      "strokeCount": 5,
+      "grade": 2,
+      "radical": null,
+      "frequency": 224,
+      "strokes": {
+        "svgPath": "/kanji/strokes/0534a.svg",
+        "count": 5
+      },
+      "examples": [
+        "n5_vocab_0562",
+        "n5_vocab_0514"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033971Z",
+        "lastUpdated": "2025-10-30T08:25:04.033972Z"
+      }
+    },
+    {
+      "id": "kanji_n5_母",
+      "kanji": "母",
+      "jlptLevel": "N5",
+      "meanings": [
+        "mother"
+      ],
+      "onReadings": [
+        "ボ"
+      ],
+      "kunReadings": [
+        "はは",
+        "も"
+      ],
+      "strokeCount": 5,
+      "grade": 2,
+      "radical": null,
+      "frequency": 570,
+      "strokes": {
+        "svgPath": "/kanji/strokes/06bcd.svg",
+        "count": 5
+      },
+      "examples": [
+        "n5_vocab_0586",
+        "n5_vocab_0609",
+        "n5_vocab_0609"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033973Z",
+        "lastUpdated": "2025-10-30T08:25:04.033973Z"
+      }
+    },
+    {
+      "id": "kanji_n5_北",
+      "kanji": "北",
+      "jlptLevel": "N5",
+      "meanings": [
+        "north"
+      ],
+      "onReadings": [
+        "ホク"
+      ],
+      "kunReadings": [
+        "きた"
+      ],
+      "strokeCount": 5,
+      "grade": 2,
+      "radical": null,
+      "frequency": 153,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05317.svg",
+        "count": 5
+      },
+      "examples": [
+        "n5_vocab_0419"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033974Z",
+        "lastUpdated": "2025-10-30T08:25:04.033975Z"
+      }
+    },
+    {
+      "id": "kanji_n5_本",
+      "kanji": "本",
+      "jlptLevel": "N5",
+      "meanings": [
+        "book",
+        "present",
+        "main",
+        "origin",
+        "true",
+        "real",
+        "counter for long cylindrical things"
+      ],
+      "onReadings": [
+        "ホン"
+      ],
+      "kunReadings": [
+        "もと"
+      ],
+      "strokeCount": 5,
+      "grade": 1,
+      "radical": null,
+      "frequency": 10,
+      "strokes": {
+        "svgPath": "/kanji/strokes/0672c.svg",
+        "count": 5
+      },
+      "examples": [
+        "n5_vocab_0375",
+        "n5_vocab_0648"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033977Z",
+        "lastUpdated": "2025-10-30T08:25:04.033978Z"
+      }
+    },
+    {
+      "id": "kanji_n5_立",
+      "kanji": "立",
+      "jlptLevel": "N5",
+      "meanings": [
+        "stand up",
+        "rise",
+        "set up",
+        "erect"
+      ],
+      "onReadings": [
+        "リツ",
+        "リュウ",
+        "リットル"
+      ],
+      "kunReadings": [
+        "たつ",
+        "-たつ",
+        "たち-",
+        "たてる",
+        "-たてる",
+        "たて-",
+        "たて-",
+        "-たて",
+        "-だて",
+        "-だてる"
+      ],
+      "strokeCount": 5,
+      "grade": 1,
+      "radical": null,
+      "frequency": 58,
+      "strokes": {
+        "svgPath": "/kanji/strokes/07acb.svg",
+        "count": 5
+      },
+      "examples": [
+        "n5_vocab_0222"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033979Z",
+        "lastUpdated": "2025-10-30T08:25:04.033979Z"
+      }
+    },
+    {
+      "id": "kanji_n5_会",
+      "kanji": "会",
+      "jlptLevel": "N5",
+      "meanings": [
+        "meeting",
+        "meet",
+        "party",
+        "association",
+        "interview",
+        "join"
+      ],
+      "onReadings": [
+        "カイ",
+        "エ"
+      ],
+      "kunReadings": [
+        "あう",
+        "あわせる",
+        "あつまる"
+      ],
+      "strokeCount": 6,
+      "grade": 2,
+      "radical": null,
+      "frequency": 4,
+      "strokes": {
+        "svgPath": "/kanji/strokes/04f1a.svg",
+        "count": 6
+      },
+      "examples": [
+        "n5_vocab_0122",
+        "n5_vocab_0253"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033980Z",
+        "lastUpdated": "2025-10-30T08:25:04.033981Z"
+      }
+    },
+    {
+      "id": "kanji_n5_気",
+      "kanji": "気",
+      "jlptLevel": "N5",
+      "meanings": [
+        "spirit",
+        "mind",
+        "air",
+        "atmosphere",
+        "mood"
+      ],
+      "onReadings": [
+        "キ",
+        "ケ"
+      ],
+      "kunReadings": [
+        "いき",
+        "き"
+      ],
+      "strokeCount": 6,
+      "grade": 1,
+      "radical": null,
+      "frequency": 113,
+      "strokes": {
+        "svgPath": "/kanji/strokes/06c17.svg",
+        "count": 6
+      },
+      "examples": [
+        "n5_vocab_0016",
+        "n5_vocab_0018",
+        "n5_vocab_0223",
+        "n5_vocab_0224"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033991Z",
+        "lastUpdated": "2025-10-30T08:25:04.033992Z"
+      }
+    },
+    {
+      "id": "kanji_n5_休",
+      "kanji": "休",
+      "jlptLevel": "N5",
+      "meanings": [
+        "rest",
+        "day off",
+        "retire",
+        "sleep"
+      ],
+      "onReadings": [
+        "キュウ"
+      ],
+      "kunReadings": [
+        "やすむ",
+        "やすまる",
+        "やすめる"
+      ],
+      "strokeCount": 6,
+      "grade": 1,
+      "radical": null,
+      "frequency": 642,
+      "strokes": {
+        "svgPath": "/kanji/strokes/04f11.svg",
+        "count": 6
+      },
+      "examples": [
+        "n5_vocab_0146",
+        "n5_vocab_0655",
+        "n5_vocab_0357"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033993Z",
+        "lastUpdated": "2025-10-30T08:25:04.033993Z"
+      }
+    },
+    {
+      "id": "kanji_n5_行",
+      "kanji": "行",
+      "jlptLevel": "N5",
+      "meanings": [
+        "going",
+        "journey",
+        "carry out",
+        "conduct",
+        "act",
+        "line",
+        "row",
+        "bank"
+      ],
+      "onReadings": [
+        "コウ",
+        "ギョウ",
+        "アン"
+      ],
+      "kunReadings": [
+        "いく",
+        "ゆく",
+        "-ゆき",
+        "-ゆき",
+        "-いき",
+        "-いき",
+        "おこなう",
+        "おこなう"
+      ],
+      "strokeCount": 6,
+      "grade": 2,
+      "radical": null,
+      "frequency": 20,
+      "strokes": {
+        "svgPath": "/kanji/strokes/0884c.svg",
+        "count": 6
+      },
+      "examples": [
+        "n5_vocab_0330",
+        "n5_vocab_0477",
+        "n5_vocab_0580",
+        "n5_vocab_0596"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033994Z",
+        "lastUpdated": "2025-10-30T08:25:04.033995Z"
+      }
+    },
+    {
+      "id": "kanji_n5_先",
+      "kanji": "先",
+      "jlptLevel": "N5",
+      "meanings": [
+        "before",
+        "ahead",
+        "previous",
+        "future",
+        "precedence"
+      ],
+      "onReadings": [
+        "セン"
+      ],
+      "kunReadings": [
+        "さき",
+        "まず"
+      ],
+      "strokeCount": 6,
+      "grade": 1,
+      "radical": null,
+      "frequency": 173,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05148.svg",
+        "count": 6
+      },
+      "examples": [
+        "n5_vocab_0540",
+        "n5_vocab_0271",
+        "n5_vocab_0368",
+        "n5_vocab_0371"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033997Z",
+        "lastUpdated": "2025-10-30T08:25:04.033997Z"
+      }
+    },
+    {
+      "id": "kanji_n5_年",
+      "kanji": "年",
+      "jlptLevel": "N5",
+      "meanings": [
+        "year",
+        "counter for years"
+      ],
+      "onReadings": [
+        "ネン"
+      ],
+      "kunReadings": [
+        "とし"
+      ],
+      "strokeCount": 6,
+      "grade": 1,
+      "radical": null,
+      "frequency": 6,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05e74.svg",
+        "count": 6
+      },
+      "examples": [
+        "n5_vocab_0047",
+        "n5_vocab_0104",
+        "n5_vocab_0341",
+        "n5_vocab_0382",
+        "n5_vocab_0504",
+        "n5_vocab_0129",
+        "n5_vocab_0196",
+        "n5_vocab_0234"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.033999Z",
+        "lastUpdated": "2025-10-30T08:25:04.033999Z"
+      }
+    },
+    {
+      "id": "kanji_n5_百",
+      "kanji": "百",
+      "jlptLevel": "N5",
+      "meanings": [
+        "hundred"
+      ],
+      "onReadings": [
+        "ヒャク",
+        "ビャク"
+      ],
+      "kunReadings": [
+        "もも"
+      ],
+      "strokeCount": 6,
+      "grade": 1,
+      "radical": null,
+      "frequency": 163,
+      "strokes": {
+        "svgPath": "/kanji/strokes/0767e.svg",
+        "count": 6
+      },
+      "examples": [
+        "n5_vocab_0337",
+        "n5_vocab_0339"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034000Z",
+        "lastUpdated": "2025-10-30T08:25:04.034001Z"
+      }
+    },
+    {
+      "id": "kanji_n5_毎",
+      "kanji": "毎",
+      "jlptLevel": "N5",
+      "meanings": [
+        "every"
+      ],
+      "onReadings": [
+        "マイ"
+      ],
+      "kunReadings": [
+        "ごと",
+        "-ごとに"
+      ],
+      "strokeCount": 6,
+      "grade": 2,
+      "radical": null,
+      "frequency": 436,
+      "strokes": {
+        "svgPath": "/kanji/strokes/06bce.svg",
+        "count": 6
+      },
+      "examples": [
+        "n5_vocab_0001",
+        "n5_vocab_0061",
+        "n5_vocab_0110",
+        "n5_vocab_0327",
+        "n5_vocab_0382",
+        "n5_vocab_0470"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034002Z",
+        "lastUpdated": "2025-10-30T08:25:04.034002Z"
+      }
+    },
+    {
+      "id": "kanji_n5_名",
+      "kanji": "名",
+      "jlptLevel": "N5",
+      "meanings": [
+        "name",
+        "noted",
+        "distinguished",
+        "reputation"
+      ],
+      "onReadings": [
+        "メイ",
+        "ミョウ"
+      ],
+      "kunReadings": [
+        "な",
+        "-な"
+      ],
+      "strokeCount": 6,
+      "grade": 1,
+      "radical": null,
+      "frequency": 177,
+      "strokes": {
+        "svgPath": "/kanji/strokes/0540d.svg",
+        "count": 6
+      },
+      "examples": [
+        "n5_vocab_0298",
+        "n5_vocab_0600"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034003Z",
+        "lastUpdated": "2025-10-30T08:25:04.034004Z"
+      }
+    },
+    {
+      "id": "kanji_n5_何",
+      "kanji": "何",
+      "jlptLevel": "N5",
+      "meanings": [
+        "what"
+      ],
+      "onReadings": [
+        "カ"
+      ],
+      "kunReadings": [
+        "なに",
+        "なん",
+        "なに-",
+        "なん-"
+      ],
+      "strokeCount": 7,
+      "grade": 2,
+      "radical": null,
+      "frequency": 340,
+      "strokes": {
+        "svgPath": "/kanji/strokes/04f55.svg",
+        "count": 7
+      },
+      "examples": [
+        "n5_vocab_0059"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034005Z",
+        "lastUpdated": "2025-10-30T08:25:04.034006Z"
+      }
+    },
+    {
+      "id": "kanji_n5_見",
+      "kanji": "見",
+      "jlptLevel": "N5",
+      "meanings": [
+        "see",
+        "hopes",
+        "chances",
+        "idea",
+        "opinion",
+        "look at",
+        "visible"
+      ],
+      "onReadings": [
+        "ケン"
+      ],
+      "kunReadings": [
+        "みる",
+        "みえる",
+        "みせる"
+      ],
+      "strokeCount": 7,
+      "grade": 1,
+      "radical": null,
+      "frequency": 22,
+      "strokes": {
+        "svgPath": "/kanji/strokes/0898b.svg",
+        "count": 7
+      },
+      "examples": [
+        "n5_vocab_0517",
+        "n5_vocab_0549"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034007Z",
+        "lastUpdated": "2025-10-30T08:25:04.034007Z"
+      }
+    },
+    {
+      "id": "kanji_n5_私",
+      "kanji": "私",
+      "jlptLevel": "N5",
+      "meanings": [
+        "private",
+        "i",
+        "me"
+      ],
+      "onReadings": [
+        "シ"
+      ],
+      "kunReadings": [
+        "わたくし",
+        "わたし"
+      ],
+      "strokeCount": 7,
+      "grade": 6,
+      "radical": null,
+      "frequency": 242,
+      "strokes": {
+        "svgPath": "/kanji/strokes/079c1.svg",
+        "count": 7
+      },
+      "examples": [
+        "n5_vocab_0137"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034009Z",
+        "lastUpdated": "2025-10-30T08:25:04.034009Z"
+      }
+    },
+    {
+      "id": "kanji_n5_社",
+      "kanji": "社",
+      "jlptLevel": "N5",
+      "meanings": [
+        "company",
+        "firm",
+        "office",
+        "association",
+        "shrine"
+      ],
+      "onReadings": [
+        "シャ"
+      ],
+      "kunReadings": [
+        "やしろ"
+      ],
+      "strokeCount": 7,
+      "grade": 2,
+      "radical": null,
+      "frequency": 21,
+      "strokes": {
+        "svgPath": "/kanji/strokes/0793e.svg",
+        "count": 7
+      },
+      "examples": [
+        "n5_vocab_0122"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034010Z",
+        "lastUpdated": "2025-10-30T08:25:04.034011Z"
+      }
+    },
+    {
+      "id": "kanji_n5_車",
+      "kanji": "車",
+      "jlptLevel": "N5",
+      "meanings": [
+        "car"
+      ],
+      "onReadings": [
+        "シャ"
+      ],
+      "kunReadings": [
+        "くるま"
+      ],
+      "strokeCount": 7,
+      "grade": 1,
+      "radical": null,
+      "frequency": 333,
+      "strokes": {
+        "svgPath": "/kanji/strokes/08eca.svg",
+        "count": 7
+      },
+      "examples": [
+        "n5_vocab_0555",
+        "n5_vocab_0387",
+        "n5_vocab_0193",
+        "n5_vocab_0433"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034012Z",
+        "lastUpdated": "2025-10-30T08:25:04.034012Z"
+      }
+    },
+    {
+      "id": "kanji_n5_男",
+      "kanji": "男",
+      "jlptLevel": "N5",
+      "meanings": [
+        "male"
+      ],
+      "onReadings": [
+        "ダン",
+        "ナン"
+      ],
+      "kunReadings": [
+        "おとこ",
+        "お"
+      ],
+      "strokeCount": 7,
+      "grade": 1,
+      "radical": null,
+      "frequency": 240,
+      "strokes": {
+        "svgPath": "/kanji/strokes/07537.svg",
+        "count": 7
+      },
+      "examples": [
+        "n5_vocab_0582",
+        "n5_vocab_0048"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034013Z",
+        "lastUpdated": "2025-10-30T08:25:04.034013Z"
+      }
+    },
+    {
+      "id": "kanji_n5_来",
+      "kanji": "来",
+      "jlptLevel": "N5",
+      "meanings": [
+        "come",
+        "due",
+        "next",
+        "cause",
+        "become"
+      ],
+      "onReadings": [
+        "ライ",
+        "タイ"
+      ],
+      "kunReadings": [
+        "くる",
+        "きたる",
+        "きたす",
+        "きたす",
+        "きたる",
+        "き",
+        "こ"
+      ],
+      "strokeCount": 7,
+      "grade": 2,
+      "radical": null,
+      "frequency": 102,
+      "strokes": {
+        "svgPath": "/kanji/strokes/06765.svg",
+        "count": 7
+      },
+      "examples": [
+        "n5_vocab_0156",
+        "n5_vocab_0262",
+        "n5_vocab_0497",
+        "n5_vocab_0504",
+        "n5_vocab_0196"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034015Z",
+        "lastUpdated": "2025-10-30T08:25:04.034016Z"
+      }
+    },
+    {
+      "id": "kanji_n5_雨",
+      "kanji": "雨",
+      "jlptLevel": "N5",
+      "meanings": [
+        "rain"
+      ],
+      "onReadings": [
+        "ウ"
+      ],
+      "kunReadings": [
+        "あめ",
+        "あま-",
+        "-さめ"
+      ],
+      "strokeCount": 8,
+      "grade": 1,
+      "radical": null,
+      "frequency": 950,
+      "strokes": {
+        "svgPath": "/kanji/strokes/096e8.svg",
+        "count": 8
+      },
+      "examples": [
+        "n5_vocab_0067"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034017Z",
+        "lastUpdated": "2025-10-30T08:25:04.034017Z"
+      }
+    },
+    {
+      "id": "kanji_n5_英",
+      "kanji": "英",
+      "jlptLevel": "N5",
+      "meanings": [
+        "england",
+        "english",
+        "hero",
+        "outstanding",
+        "calyx"
+      ],
+      "onReadings": [
+        "エイ"
+      ],
+      "kunReadings": [
+        "はなぶさ"
+      ],
+      "strokeCount": 8,
+      "grade": 4,
+      "radical": null,
+      "frequency": 430,
+      "strokes": {
+        "svgPath": "/kanji/strokes/082f1.svg",
+        "count": 8
+      },
+      "examples": [
+        "n5_vocab_0022"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034018Z",
+        "lastUpdated": "2025-10-30T08:25:04.034019Z"
+      }
+    },
+    {
+      "id": "kanji_n5_学",
+      "kanji": "学",
+      "jlptLevel": "N5",
+      "meanings": [
+        "study",
+        "learning",
+        "science"
+      ],
+      "onReadings": [
+        "ガク"
+      ],
+      "kunReadings": [
+        "まなぶ"
+      ],
+      "strokeCount": 8,
+      "grade": 1,
+      "radical": null,
+      "frequency": 63,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05b66.svg",
+        "count": 8
+      },
+      "examples": [
+        "n5_vocab_0119",
+        "n5_vocab_0197",
+        "n5_vocab_0332",
+        "n5_vocab_0641"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034020Z",
+        "lastUpdated": "2025-10-30T08:25:04.034021Z"
+      }
+    },
+    {
+      "id": "kanji_n5_金",
+      "kanji": "金",
+      "jlptLevel": "N5",
+      "meanings": [
+        "gold"
+      ],
+      "onReadings": [
+        "キン",
+        "コン",
+        "ゴン"
+      ],
+      "kunReadings": [
+        "かね",
+        "かな-",
+        "-がね"
+      ],
+      "strokeCount": 8,
+      "grade": 1,
+      "radical": null,
+      "frequency": 53,
+      "strokes": {
+        "svgPath": "/kanji/strokes/091d1.svg",
+        "count": 8
+      },
+      "examples": [
+        "n5_vocab_0508",
+        "n5_vocab_0277"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034022Z",
+        "lastUpdated": "2025-10-30T08:25:04.034022Z"
+      }
+    },
+    {
+      "id": "kanji_n5_国",
+      "kanji": "国",
+      "jlptLevel": "N5",
+      "meanings": [
+        "country"
+      ],
+      "onReadings": [
+        "コク"
+      ],
+      "kunReadings": [
+        "くに"
+      ],
+      "strokeCount": 8,
+      "grade": 2,
+      "radical": null,
+      "frequency": 3,
+      "strokes": {
+        "svgPath": "/kanji/strokes/056fd.svg",
+        "count": 8
+      },
+      "examples": [
+        "n5_vocab_0215",
+        "n5_vocab_0202",
+        "n5_vocab_0652"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034023Z",
+        "lastUpdated": "2025-10-30T08:25:04.034024Z"
+      }
+    },
+    {
+      "id": "kanji_n5_店",
+      "kanji": "店",
+      "jlptLevel": "N5",
+      "meanings": [
+        "store",
+        "shop"
+      ],
+      "onReadings": [
+        "テン"
+      ],
+      "kunReadings": [
+        "みせ",
+        "たな"
+      ],
+      "strokeCount": 8,
+      "grade": 2,
+      "radical": null,
+      "frequency": 378,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05e97.svg",
+        "count": 8
+      },
+      "examples": [
+        "n5_vocab_0417",
+        "n5_vocab_0531"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034026Z",
+        "lastUpdated": "2025-10-30T08:25:04.034027Z"
+      }
+    },
+    {
+      "id": "kanji_n5_東",
+      "kanji": "東",
+      "jlptLevel": "N5",
+      "meanings": [
+        "east"
+      ],
+      "onReadings": [
+        "トウ"
+      ],
+      "kunReadings": [
+        "ひがし"
+      ],
+      "strokeCount": 8,
+      "grade": 2,
+      "radical": null,
+      "frequency": 37,
+      "strokes": {
+        "svgPath": "/kanji/strokes/06771.svg",
+        "count": 8
+      },
+      "examples": [
+        "n5_vocab_0134"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034028Z",
+        "lastUpdated": "2025-10-30T08:25:04.034028Z"
+      }
+    },
+    {
+      "id": "kanji_n5_門",
+      "kanji": "門",
+      "jlptLevel": "N5",
+      "meanings": [
+        "gate",
+        "counter for cannons"
+      ],
+      "onReadings": [
+        "モン"
+      ],
+      "kunReadings": [
+        "かど",
+        "と"
+      ],
+      "strokeCount": 8,
+      "grade": 2,
+      "radical": null,
+      "frequency": 452,
+      "strokes": {
+        "svgPath": "/kanji/strokes/09580.svg",
+        "count": 8
+      },
+      "examples": [
+        "n5_vocab_0378"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034029Z",
+        "lastUpdated": "2025-10-30T08:25:04.034030Z"
+      }
+    },
+    {
+      "id": "kanji_n5_後",
+      "kanji": "後",
+      "jlptLevel": "N5",
+      "meanings": [
+        "behind",
+        "back",
+        "later"
+      ],
+      "onReadings": [
+        "ゴ",
+        "コウ"
+      ],
+      "kunReadings": [
+        "のち",
+        "うしろ",
+        "うしろ",
+        "あと",
+        "おくれる"
+      ],
+      "strokeCount": 9,
+      "grade": 2,
+      "radical": null,
+      "frequency": 26,
+      "strokes": {
+        "svgPath": "/kanji/strokes/05f8c.svg",
+        "count": 9
+      },
+      "examples": [
+        "n5_vocab_0452",
+        "n5_vocab_0303",
+        "n5_vocab_0370"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034031Z",
+        "lastUpdated": "2025-10-30T08:25:04.034031Z"
+      }
+    },
+    {
+      "id": "kanji_n5_食",
+      "kanji": "食",
+      "jlptLevel": "N5",
+      "meanings": [
+        "eat",
+        "food"
+      ],
+      "onReadings": [
+        "ショク",
+        "ジキ"
+      ],
+      "kunReadings": [
+        "くう",
+        "くらう",
+        "たべる",
+        "はむ"
+      ],
+      "strokeCount": 9,
+      "grade": 2,
+      "radical": null,
+      "frequency": 328,
+      "strokes": {
+        "svgPath": "/kanji/strokes/098df.svg",
+        "count": 9
+      },
+      "examples": [
+        "n5_vocab_0542",
+        "n5_vocab_0304",
+        "n5_vocab_0564"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034032Z",
+        "lastUpdated": "2025-10-30T08:25:04.034033Z"
+      }
+    },
+    {
+      "id": "kanji_n5_前",
+      "kanji": "前",
+      "jlptLevel": "N5",
+      "meanings": [
+        "in front",
+        "before"
+      ],
+      "onReadings": [
+        "ゼン"
+      ],
+      "kunReadings": [
+        "まえ",
+        "-まえ"
+      ],
+      "strokeCount": 9,
+      "grade": 2,
+      "radical": null,
+      "frequency": 27,
+      "strokes": {
+        "svgPath": "/kanji/strokes/0524d.svg",
+        "count": 9
+      },
+      "examples": [
+        "n5_vocab_0496",
+        "n5_vocab_0599",
+        "n5_vocab_0600"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034034Z",
+        "lastUpdated": "2025-10-30T08:25:04.034034Z"
+      }
+    },
+    {
+      "id": "kanji_n5_校",
+      "kanji": "校",
+      "jlptLevel": "N5",
+      "meanings": [
+        "exam",
+        "school",
+        "printing",
+        "proof",
+        "correction"
+      ],
+      "onReadings": [
+        "コウ",
+        "キョウ"
+      ],
+      "kunReadings": [],
+      "strokeCount": 10,
+      "grade": 1,
+      "radical": null,
+      "frequency": 294,
+      "strokes": {
+        "svgPath": "/kanji/strokes/06821.svg",
+        "count": 10
+      },
+      "examples": [
+        "n5_vocab_0197"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034036Z",
+        "lastUpdated": "2025-10-30T08:25:04.034036Z"
+      }
+    },
+    {
+      "id": "kanji_n5_高",
+      "kanji": "高",
+      "jlptLevel": "N5",
+      "meanings": [
+        "tall",
+        "high",
+        "expensive"
+      ],
+      "onReadings": [
+        "コウ"
+      ],
+      "kunReadings": [
+        "たかい",
+        "たか",
+        "-だか",
+        "たかまる",
+        "たかめる"
+      ],
+      "strokeCount": 10,
+      "grade": 2,
+      "radical": null,
+      "frequency": 65,
+      "strokes": {
+        "svgPath": "/kanji/strokes/09ad8.svg",
+        "count": 10
+      },
+      "examples": [
+        "n5_vocab_0168"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034037Z",
+        "lastUpdated": "2025-10-30T08:25:04.034038Z"
+      }
+    },
+    {
+      "id": "kanji_n5_時",
+      "kanji": "時",
+      "jlptLevel": "N5",
+      "meanings": [
+        "time",
+        "hour"
+      ],
+      "onReadings": [
+        "ジ"
+      ],
+      "kunReadings": [
+        "とき",
+        "-どき"
+      ],
+      "strokeCount": 10,
+      "grade": 2,
+      "radical": null,
+      "frequency": 16,
+      "strokes": {
+        "svgPath": "/kanji/strokes/06642.svg",
+        "count": 10
+      },
+      "examples": [
+        "n5_vocab_0079",
+        "n5_vocab_0177",
+        "n5_vocab_0302"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034039Z",
+        "lastUpdated": "2025-10-30T08:25:04.034040Z"
+      }
+    },
+    {
+      "id": "kanji_n5_書",
+      "kanji": "書",
+      "jlptLevel": "N5",
+      "meanings": [
+        "write"
+      ],
+      "onReadings": [
+        "ショ"
+      ],
+      "kunReadings": [
+        "かく",
+        "-がき",
+        "-がき"
+      ],
+      "strokeCount": 10,
+      "grade": 2,
+      "radical": null,
+      "frequency": 169,
+      "strokes": {
+        "svgPath": "/kanji/strokes/066f8.svg",
+        "count": 10
+      },
+      "examples": [
+        "n5_vocab_0006",
+        "n5_vocab_0128",
+        "n5_vocab_0381",
+        "n5_vocab_0454"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034041Z",
+        "lastUpdated": "2025-10-30T08:25:04.034041Z"
+      }
+    },
+    {
+      "id": "kanji_n5_週",
+      "kanji": "週",
+      "jlptLevel": "N5",
+      "meanings": [
+        "week"
+      ],
+      "onReadings": [
+        "シュウ"
+      ],
+      "kunReadings": [],
+      "strokeCount": 11,
+      "grade": 2,
+      "radical": null,
+      "frequency": 540,
+      "strokes": {
+        "svgPath": "/kanji/strokes/09031.svg",
+        "count": 11
+      },
+      "examples": [
+        "n5_vocab_0110",
+        "n5_vocab_0156",
+        "n5_vocab_0271",
+        "n5_vocab_0315"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034043Z",
+        "lastUpdated": "2025-10-30T08:25:04.034043Z"
+      }
+    },
+    {
+      "id": "kanji_n5_飲",
+      "kanji": "飲",
+      "jlptLevel": "N5",
+      "meanings": [
+        "drink",
+        "smoke",
+        "take"
+      ],
+      "onReadings": [
+        "イン",
+        "オン"
+      ],
+      "kunReadings": [
+        "のむ",
+        "-のみ"
+      ],
+      "strokeCount": 12,
+      "grade": 3,
+      "radical": null,
+      "frequency": 969,
+      "strokes": {
+        "svgPath": "/kanji/strokes/098f2.svg",
+        "count": 12
+      },
+      "examples": [
+        "n5_vocab_0057",
+        "n5_vocab_0518"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034046Z",
+        "lastUpdated": "2025-10-30T08:25:04.034046Z"
+      }
+    },
+    {
+      "id": "kanji_n5_買",
+      "kanji": "買",
+      "jlptLevel": "N5",
+      "meanings": [
+        "buy"
+      ],
+      "onReadings": [
+        "バイ"
+      ],
+      "kunReadings": [
+        "かう"
+      ],
+      "strokeCount": 12,
+      "grade": 2,
+      "radical": null,
+      "frequency": 520,
+      "strokes": {
+        "svgPath": "/kanji/strokes/08cb7.svg",
+        "count": 12
+      },
+      "examples": [
+        "n5_vocab_0406",
+        "n5_vocab_0520"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034048Z",
+        "lastUpdated": "2025-10-30T08:25:04.034048Z"
+      }
+    },
+    {
+      "id": "kanji_n5_電",
+      "kanji": "電",
+      "jlptLevel": "N5",
+      "meanings": [
+        "electricity"
+      ],
+      "onReadings": [
+        "デン"
+      ],
+      "kunReadings": [],
+      "strokeCount": 13,
+      "grade": 2,
+      "radical": null,
+      "frequency": 268,
+      "strokes": {
+        "svgPath": "/kanji/strokes/096fb.svg",
+        "count": 13
+      },
+      "examples": [
+        "n5_vocab_0016",
+        "n5_vocab_0082",
+        "n5_vocab_0387"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034049Z",
+        "lastUpdated": "2025-10-30T08:25:04.034050Z"
+      }
+    },
+    {
+      "id": "kanji_n5_話",
+      "kanji": "話",
+      "jlptLevel": "N5",
+      "meanings": [
+        "tale",
+        "talk"
+      ],
+      "onReadings": [
+        "ワ"
+      ],
+      "kunReadings": [
+        "はなす",
+        "はなし"
+      ],
+      "strokeCount": 13,
+      "grade": 2,
+      "radical": null,
+      "frequency": 134,
+      "strokes": {
+        "svgPath": "/kanji/strokes/08a71.svg",
+        "count": 13
+      },
+      "examples": [
+        "n5_vocab_0326",
+        "n5_vocab_0082",
+        "n5_vocab_0389"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034051Z",
+        "lastUpdated": "2025-10-30T08:25:04.034051Z"
+      }
+    },
+    {
+      "id": "kanji_n5_駅",
+      "kanji": "駅",
+      "jlptLevel": "N5",
+      "meanings": [
+        "station"
+      ],
+      "onReadings": [
+        "エキ"
+      ],
+      "kunReadings": [],
+      "strokeCount": 14,
+      "grade": 3,
+      "radical": null,
+      "frequency": 724,
+      "strokes": {
+        "svgPath": "/kanji/strokes/099c5.svg",
+        "count": 14
+      },
+      "examples": [
+        "n5_vocab_0522"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034052Z",
+        "lastUpdated": "2025-10-30T08:25:04.034052Z"
+      }
+    },
+    {
+      "id": "kanji_n5_語",
+      "kanji": "語",
+      "jlptLevel": "N5",
+      "meanings": [
+        "word",
+        "speech",
+        "language"
+      ],
+      "onReadings": [
+        "ゴ"
+      ],
+      "kunReadings": [
+        "かたる",
+        "かたらう"
+      ],
+      "strokeCount": 14,
+      "grade": 2,
+      "radical": null,
+      "frequency": 301,
+      "strokes": {
+        "svgPath": "/kanji/strokes/08a9e.svg",
+        "count": 14
+      },
+      "examples": [
+        "n5_vocab_0022"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034054Z",
+        "lastUpdated": "2025-10-30T08:25:04.034054Z"
+      }
+    },
+    {
+      "id": "kanji_n5_読",
+      "kanji": "読",
+      "jlptLevel": "N5",
+      "meanings": [
+        "read"
+      ],
+      "onReadings": [
+        "ドク",
+        "トク",
+        "トウ"
+      ],
+      "kunReadings": [
+        "よむ",
+        "-よみ"
+      ],
+      "strokeCount": 14,
+      "grade": 2,
+      "radical": null,
+      "frequency": 618,
+      "strokes": {
+        "svgPath": "/kanji/strokes/08aad.svg",
+        "count": 14
+      },
+      "examples": [
+        "n5_vocab_0260"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034056Z",
+        "lastUpdated": "2025-10-30T08:25:04.034056Z"
+      }
+    },
+    {
+      "id": "kanji_n5_聞",
+      "kanji": "聞",
+      "jlptLevel": "N5",
+      "meanings": [
+        "hear",
+        "ask",
+        "listen"
+      ],
+      "onReadings": [
+        "ブン",
+        "モン"
+      ],
+      "kunReadings": [
+        "きく",
+        "きこえる"
+      ],
+      "strokeCount": 14,
+      "grade": 2,
+      "radical": null,
+      "frequency": 319,
+      "strokes": {
+        "svgPath": "/kanji/strokes/0805e.svg",
+        "count": 14
+      },
+      "examples": [
+        "n5_vocab_0093",
+        "n5_vocab_0584"
+      ],
+      "source": {
+        "type": "kanjidic2",
+        "version": "KANJIDIC2 2024-12",
+        "url": "http://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "metadata": {
+        "verified": true,
+        "addedDate": "2025-10-30T08:25:04.034057Z",
+        "lastUpdated": "2025-10-30T08:25:04.034058Z"
+      }
+    }
+  ]
+}
