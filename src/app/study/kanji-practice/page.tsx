@@ -312,10 +312,7 @@ export default function KanjiPracticePage() {
           break;
         case ' ':
           e.preventDefault();
-          if (currentKanji) {
-            // Navigate to detail page
-            window.location.href = `/study/kanji/${currentKanji.id}`;
-          }
+          handleFlip();
           break;
       }
     };
@@ -534,9 +531,12 @@ export default function KanjiPracticePage() {
 
       {/* Flashcard */}
       <div className="relative">
-        <Card className="h-[500px] flex items-center justify-center relative">
+        <Card className="h-[500px] flex items-center justify-center relative cursor-pointer" onClick={handleFlip}>
           {/* LM Circle Rating - Bottom Right (shown on both sides) */}
-          <div className="absolute bottom-0 right-0 flex flex-col items-end gap-2 z-10 p-4 bg-gray-50/30 dark:bg-gray-900/30 rounded-tl-lg">
+          <div
+            className="absolute bottom-0 right-0 flex flex-col items-end gap-2 z-10 p-4 bg-gray-50/30 dark:bg-gray-900/30 rounded-tl-lg"
+            onClick={(e) => e.stopPropagation()}
+          >
             <div className="text-xs text-muted-foreground font-medium">Memory Level</div>
             <div className="flex gap-2">
               {[0, 1, 2, 3, 5].map((level, index) => {
@@ -570,7 +570,7 @@ export default function KanjiPracticePage() {
             </div>
           </div>
 
-          <CardContent className="pt-6 w-full" onClick={handleFlip}>
+          <CardContent className="pt-6 w-full">
             {!isFlipped ? (
               // Front: Kanji
               <div className="text-center space-y-6">
