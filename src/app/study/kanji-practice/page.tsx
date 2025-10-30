@@ -238,26 +238,36 @@ export default function KanjiPracticePage() {
         <Card className="h-[500px] flex items-center justify-center relative">
           {/* LM Circle Rating - Top Right */}
           {isFlipped && (
-            <div className="absolute top-4 right-4 flex gap-2 z-10">
-              {[0, 1, 2, 3, 5].map((level) => (
-                <button
-                  key={level}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleRating(level);
-                  }}
-                  className="group relative"
-                  title={['Didn\'t know', 'Hard', 'Medium', 'Good', 'Perfect'][level === 5 ? 4 : level]}
-                >
-                  <div className={`w-8 h-8 rounded-full border transition-all flex items-center justify-center ${
-                    selectedRating === level
-                      ? 'bg-blue-500 border-blue-600 text-white'
-                      : 'bg-gray-100 dark:bg-gray-800 border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-600'
-                  }`}>
-                    <span className="text-[8px] font-medium">LM</span>
-                  </div>
-                </button>
-              ))}
+            <div className="absolute top-4 right-4 flex flex-col items-end gap-2 z-10">
+              <div className="text-xs text-muted-foreground font-medium">Memory Level</div>
+              <div className="flex gap-2">
+                {[0, 1, 2, 3, 5].map((level, index) => {
+                  const currentLevel = progress[currentKanji?.id]?.level || 0;
+                  const isAchieved = index < (currentLevel === 5 ? 5 : currentLevel + 1);
+
+                  return (
+                    <button
+                      key={level}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleRating(level);
+                      }}
+                      className="group relative"
+                      title={['Didn\'t know', 'Hard', 'Medium', 'Good', 'Perfect'][level === 5 ? 4 : level]}
+                    >
+                      <div className={`w-8 h-8 rounded-full border transition-all flex items-center justify-center ${
+                        selectedRating === level
+                          ? 'bg-blue-500 border-blue-600 text-white'
+                          : isAchieved
+                          ? 'bg-green-500 border-green-600 text-white'
+                          : 'bg-gray-100 dark:bg-gray-800 border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-600'
+                      }`}>
+                        <span className="text-[8px] font-medium">LM</span>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           )}
 
