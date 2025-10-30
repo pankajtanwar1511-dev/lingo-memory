@@ -21,6 +21,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Select } from '@/components/ui/select';
 import { KanjiCard } from '@/types/kanji';
+import { Header } from '@/components/layout/header';
 
 type SortOption = 'stroke' | 'frequency' | 'grade' | 'default';
 
@@ -121,9 +122,11 @@ export default function KanjiListPage() {
   }
 
   return (
-    <div className="container max-w-7xl mx-auto px-4 py-8 space-y-6">
-      {/* Header */}
-      <div className="flex flex-col gap-4">
+    <>
+      <Header />
+      <div className="container max-w-7xl mx-auto px-4 py-8 space-y-6">
+        {/* Header */}
+        <div className="flex flex-col gap-4">
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-bold">N5 Kanji</h1>
@@ -294,5 +297,6 @@ export default function KanjiListPage() {
         </CardContent>
       </Card>
     </div>
+    </>
   );
 }
