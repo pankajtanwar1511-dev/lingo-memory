@@ -483,20 +483,6 @@ export default function KanjiPracticePage() {
           <Badge variant="secondary" className="text-sm">
             {currentIndex + 1} / {kanjiList.length}
           </Badge>
-          {currentKanji && progress[currentKanji.id] && (
-            <Badge variant="outline" className="text-sm gap-1">
-              {[...Array(5)].map((_, i) => (
-                <div
-                  key={i}
-                  className={`w-2 h-2 rounded-full ${
-                    i < progress[currentKanji.id].level
-                      ? 'bg-green-500'
-                      : 'bg-muted'
-                  }`}
-                />
-              ))}
-            </Badge>
-          )}
           <Button
             variant="outline"
             size="sm"
@@ -531,21 +517,18 @@ export default function KanjiPracticePage() {
                     key={level}
                     onClick={(e) => {
                       e.stopPropagation();
-                      if (isFlipped) {
-                        handleRating(level);
-                      }
+                      handleRating(level);
                     }}
                     className="group relative"
                     title={['Didn\'t know', 'Hard', 'Medium', 'Good', 'Perfect'][level === 5 ? 4 : level]}
-                    disabled={!isFlipped}
                   >
-                    <div className={`w-8 h-8 rounded-full border transition-all flex items-center justify-center ${
+                    <div className={`w-8 h-8 rounded-full border transition-all flex items-center justify-center cursor-pointer ${
                       selectedRating === level
                         ? 'bg-blue-500 border-blue-600 text-white'
                         : isAchieved
                         ? 'bg-green-500 border-green-600 text-white'
                         : 'bg-gray-100 dark:bg-gray-800 border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-600'
-                    } ${!isFlipped ? 'cursor-default' : 'cursor-pointer'}`}>
+                    }`}>
                       <span className="text-[8px] font-medium">LM</span>
                     </div>
                   </button>
