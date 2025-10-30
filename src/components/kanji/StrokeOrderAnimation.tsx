@@ -48,6 +48,7 @@ export function StrokeOrderAnimation({
   const [svgContent, setSvgContent] = useState<string | null>(null);
   const [strokePaths, setStrokePaths] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [animationKey, setAnimationKey] = useState(0);  // Used to force re-render of strokes
 
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -103,6 +104,7 @@ export function StrokeOrderAnimation({
         // We just finished animating the last stroke
         if (isLooping) {
           console.log('🔁 Looping back to start');
+          setAnimationKey(prev => prev + 1);  // Force remount for loop restart
           setCurrentStroke(0);  // Restart from first stroke
         } else {
           console.log('⏹️ Stopping animation');
@@ -125,6 +127,8 @@ export function StrokeOrderAnimation({
       // Starting to play
       if (currentStroke >= strokePaths.length - 1 || currentStroke === -1) {
         // If finished or not started, start from beginning
+        console.log('🔄 Restarting animation, incrementing key');
+        setAnimationKey(prev => prev + 1);  // Force remount to reset animations
         setCurrentStroke(0);
       }
     }
@@ -135,6 +139,7 @@ export function StrokeOrderAnimation({
     console.log('🔄 Reset clicked');
     setIsPlaying(false);
     setCurrentStroke(-1);  // Reset to -1 to hide all strokes
+    setAnimationKey(prev => prev + 1);  // Force remount
   };
 
   const toggleLoop = () => {
@@ -193,7 +198,7 @@ export function StrokeOrderAnimation({
 
             return (
               <motion.path
-                key={index}
+                key={`${index}-${animationKey}`}
                 d={pathData}
                 fill="none"
                 stroke="currentColor"
