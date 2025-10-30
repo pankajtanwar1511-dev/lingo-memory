@@ -6,6 +6,7 @@ import { QuizSetup } from "@/components/quiz/quiz-setup"
 import { QuizQuestion } from "@/components/quiz/quiz-question"
 import { QuizResults } from "@/components/quiz/quiz-results"
 import { useQuizStore } from "@/store/quiz-store"
+import { useBookmarksStore } from "@/store/bookmarks-store"
 import { useLiveVocabulary, useDatabase } from "@/hooks/useDatabase"
 import { VocabularyCard } from "@/types/vocabulary"
 import { KanjiCard } from "@/types/kanji"
@@ -70,7 +71,29 @@ export default function QuizPage() {
   }, [])
 
   const handleStartQuiz = (settings: QuizSettings) => {
-    let cards: (VocabularyCard | KanjiCard)[] = settings.contentType === "vocabulary" ? availableVocabCards : kanjiCards
+    const { bookmarkedVocab, bookmarkedKanji } = useBookmarksStore.getState()
+    let cards: (VocabularyCard | KanjiCard)[]
+
+    // Get cards based on content type
+    if (settings.contentType === "mixed") {
+      // Combine vocabulary and kanji cards
+      cards = [...availableVocabCards, ...kanjiCards]
+    } else if (settings.contentType === "vocabulary") {
+      cards = availableVocabCards
+    } else {
+      cards = kanjiCards
+    }
+
+    // Filter by bookmarked only if specified
+    if (settings.bookmarkedOnly) {
+      cards = cards.filter(card => {
+        if ("kana" in card) {
+          return bookmarkedVocab.has(card.id)
+        } else {
+          return bookmarkedKanji.has(card.id)
+        }
+      })
+    }
 
     // Filter by JLPT level if specified
     if (settings.jlptLevel && settings.jlptLevel !== "All") {
@@ -78,11 +101,12 @@ export default function QuizPage() {
     }
 
     if (cards.length === 0) {
-      const type = settings.contentType === "vocabulary" ? "vocabulary" : "kanji"
+      const type = settings.contentType === "mixed" ? "vocabulary or kanji" : settings.contentType
       const levelMsg = settings.jlptLevel && settings.jlptLevel !== "All"
         ? ` at ${settings.jlptLevel} level`
         : ""
-      alert(`No ${type} cards available${levelMsg}. Please add cards first.`)
+      const bookmarkMsg = settings.bookmarkedOnly ? " bookmarked" : ""
+      alert(`No${bookmarkMsg} ${type} cards available${levelMsg}. Please add cards first.`)
       return
     }
 

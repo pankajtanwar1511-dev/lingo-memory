@@ -5,7 +5,7 @@ import { KanjiCard } from "./kanji"
  * Quiz Types and Interfaces for Day 5
  */
 
-export type QuizContentType = "vocabulary" | "kanji"
+export type QuizContentType = "vocabulary" | "kanji" | "mixed"
 
 export type QuizMode =
   | "multiple-choice"
@@ -37,6 +37,7 @@ export interface QuizSettings {
   autoAdvance: boolean
   strictTyping: boolean // For typing mode - require exact match
   caseSensitive: boolean // For typing mode
+  bookmarkedOnly?: boolean // Only quiz bookmarked cards
 }
 
 export interface QuizQuestion {

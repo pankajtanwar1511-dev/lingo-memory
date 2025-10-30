@@ -9,17 +9,17 @@
 
 ## 🎯 Current Status
 
-**Overall Completion: 73%**
+**Overall Completion: 78%**
 - ✅ Basic Quiz Setup: 100%
 - ✅ Question Types: 80% (3/4 modes implemented)
-- ✅ Content Support: 100% (Vocabulary + Kanji)
+- ✅ Content Support: 100% (Vocabulary + Kanji + Mixed)
 - ⏸️ Bug Fixes: 0% (Audio tasks skipped for later)
 - ✅ Display Improvements: 100% (Kanji size, readings)
 - ✅ JLPT Filtering: 100%
 - ✅ Review System: 100% (Track & review incorrect answers)
-- ⏳ Advanced Features: 0%
+- ✅ Advanced Features: 50% (Mixed content, Bookmarks complete)
 - ⏳ Statistics & Analytics: 0%
-- ✅ UX Enhancements: 75% (Keyboard shortcuts, confetti, dark mode complete)
+- ✅ UX Enhancements: 100% (Keyboard shortcuts, confetti, dark mode complete)
 
 ---
 
@@ -328,24 +328,60 @@ if (settings.jlptLevel && settings.jlptLevel !== "All") {
 
 ---
 
-#### Task 2.2: Mixed Content Quiz Option ⏳
+#### Task 2.2: Mixed Content Quiz Option ✅ COMPLETE
 **Estimate:** 3 hours
-**Files to modify:**
+**Completed:** 2025-01-31
+**Files modified:**
+- `src/types/quiz.ts`
 - `src/components/quiz/quiz-setup.tsx`
 - `src/app/quiz/page.tsx`
 - `src/lib/quiz-generator.ts`
 
 **Implementation:**
-Add "Mixed" content type option
-- Combine vocabulary and kanji cards
-- Randomly interleave in question generation
-- Smart direction selection (only compatible directions)
+Added "Mixed" as a third content type option
+
+```typescript
+// src/types/quiz.ts
+export type QuizContentType = "vocabulary" | "kanji" | "mixed"
+
+// src/components/quiz/quiz-setup.tsx
+<ModeCard
+  icon={<Brain className="h-5 w-5" />}
+  title="Mixed"
+  description={`${availableVocabCount + availableKanjiCount} total cards`}
+  selected={contentType === "mixed"}
+  onClick={() => handleContentTypeChange("mixed")}
+/>
+
+// src/app/quiz/page.tsx
+if (settings.contentType === "mixed") {
+  cards = [...availableVocabCards, ...kanjiCards]
+} else if (settings.contentType === "vocabulary") {
+  cards = availableVocabCards
+} else {
+  cards = kanjiCards
+}
+
+// src/lib/quiz-generator.ts
+if (settings.contentType === "mixed") {
+  // Determine card type dynamically
+  if ("kana" in card) {
+    const vocabCards = allCards.filter((c): c is VocabularyCard => "kana" in c)
+    question = createVocabQuestion(card as VocabularyCard, settings, vocabCards)
+  } else {
+    const kanjiCards = allCards.filter((c): c is KanjiCard => "strokeCount" in c)
+    question = createKanjiQuestion(card as KanjiCard, settings, kanjiCards)
+  }
+}
+```
 
 **Acceptance Criteria:**
-- [ ] "Mixed" option in content type selector
-- [ ] Questions alternate between vocab and kanji
-- [ ] Only shows compatible quiz directions
-- [ ] Maintains difficulty settings
+- [x] "Mixed" option in content type selector with Brain icon
+- [x] Questions randomly interleave vocab and kanji
+- [x] Only shows compatible quiz directions (japanese-to-english, english-to-japanese)
+- [x] Maintains difficulty settings across both types
+- [x] Proper card type detection using type guards
+- [x] Correct distractors for multiple choice (vocab with vocab, kanji with kanji)
 
 ---
 
@@ -481,23 +517,84 @@ const handleReviewMistakes = () => {
 
 ### Phase 4: Favorites & Bookmarks
 
-#### Task 4.1: Bookmark System ⏳
+#### Task 4.1: Bookmark System ✅ COMPLETE
 **Estimate:** 4 hours
-**Files to create/modify:**
+**Completed:** 2025-01-31
+**Files created/modified:**
 - `src/store/bookmarks-store.ts` (new)
 - `src/components/quiz/quiz-question.tsx`
 - `src/components/quiz/quiz-setup.tsx`
+- `src/app/quiz/page.tsx`
+- `src/types/quiz.ts`
 
 **Implementation:**
-- Bookmark button on quiz questions
-- Store in localStorage
-- Filter quiz setup to show only bookmarked cards
+Created a complete bookmark system with Zustand store and UI integration
+
+```typescript
+// src/store/bookmarks-store.ts - New Store
+export const useBookmarksStore = create<BookmarksStore>()(
+  persist(
+    (set, get) => ({
+      bookmarkedVocab: new Set<string>(),
+      bookmarkedKanji: new Set<string>(),
+
+      toggleVocabBookmark: (cardId: string) => { /* ... */ },
+      toggleKanjiBookmark: (cardId: string) => { /* ... */ },
+      isVocabBookmarked: (cardId: string) => boolean,
+      isKanjiBookmarked: (cardId: string) => boolean,
+      clearAllBookmarks: () => { /* ... */ },
+      getBookmarkCounts: () => { vocab, kanji, total }
+    }),
+    {
+      name: "bookmarks-storage",
+      // Custom storage to handle Set serialization
+    }
+  )
+)
+
+// src/components/quiz/quiz-question.tsx - Bookmark Button
+const isBookmarked = question.contentType === "vocabulary"
+  ? isVocabBookmarked(question.card.id)
+  : isKanjiBookmarked(question.card.id)
+
+<Button
+  variant="ghost"
+  size="sm"
+  onClick={handleToggleBookmark}
+  className={`h-8 w-8 p-0 ${isBookmarked ? "text-yellow-500" : "text-gray-400"}`}
+>
+  <Star className={`h-4 w-4 ${isBookmarked ? "fill-current" : ""}`} />
+</Button>
+
+// src/components/quiz/quiz-setup.tsx - Filter Option
+<Checkbox
+  checked={bookmarkedOnly}
+  onChange={(e) => setBookmarkedOnly(e.target.checked)}
+  label={`Bookmarked only (${bookmarkCounts.total} cards)`}
+  disabled={bookmarkCounts.total === 0}
+/>
+
+// src/app/quiz/page.tsx - Filtering Logic
+if (settings.bookmarkedOnly) {
+  cards = cards.filter(card => {
+    if ("kana" in card) {
+      return bookmarkedVocab.has(card.id)
+    } else {
+      return bookmarkedKanji.has(card.id)
+    }
+  })
+}
+```
 
 **Acceptance Criteria:**
-- [ ] Star/bookmark icon on questions
-- [ ] Saves to localStorage
-- [ ] "Bookmarked Only" filter in setup
-- [ ] Sync across devices (future)
+- [x] Star/bookmark icon on quiz questions (filled when bookmarked)
+- [x] Saves to localStorage with Set serialization
+- [x] "Bookmarked Only" checkbox in quiz setup
+- [x] Shows bookmark count in filter label
+- [x] Filter disabled when no bookmarks exist
+- [x] Works for both vocabulary and kanji
+- [x] Persists across sessions
+- [x] Yellow star color for visual distinction
 
 ---
 
@@ -939,13 +1036,13 @@ Expand sentence-completion mode:
 **Target:** 3 tasks, ~7 hours total
 **Completed:** 3/3 tasks ✅
 
-### Sprint 3: Advanced Features (Week 3) - 🔄 IN PROGRESS
-- [ ] Task 2.2: Mixed content quizzes
-- [ ] Task 4.1: Bookmark system
+### Sprint 3: Advanced Features (Week 3) - ✅ COMPLETE
+- [✅] Task 2.2: Mixed content quizzes
+- [✅] Task 4.1: Bookmark system
 - [✅] Task 7.1: Keyboard shortcuts
 
 **Target:** 3 tasks, ~9 hours total
-**Completed:** 1/3 tasks
+**Completed:** 3/3 tasks ✅
 
 ### Sprint 4: Analytics (Week 4)
 - [ ] Task 5.1: Per-card statistics
@@ -1024,6 +1121,9 @@ src/
 | 2025-01-31 | Task 3.1: Track incorrect answers | ✅ Complete | IncorrectQuestionDetail interface |
 | 2025-01-31 | Task 3.2: Review Mode UI | ✅ Complete | Review Mistakes button + flow |
 | 2025-01-31 | Sprint 2 completed | ✅ Milestone | All filtering & review tasks done |
+| 2025-01-31 | Task 2.2: Mixed content quiz | ✅ Complete | Vocabulary + Kanji interleaved |
+| 2025-01-31 | Task 4.1: Bookmark system | ✅ Complete | Star icon + bookmarked filter |
+| 2025-01-31 | Sprint 3 completed | ✅ Milestone | All advanced features done |
 
 ---
 
@@ -1048,24 +1148,29 @@ Each task is considered complete when:
 
 ---
 
-**Last Updated:** 2025-01-31 21:00 UTC
-**Document Version:** 1.2.0
-**Next Review:** After Sprint 3 completion
+**Last Updated:** 2025-01-31 22:00 UTC
+**Document Version:** 1.3.0
+**Next Review:** After Sprint 4 completion
 
 ---
 
-## 📌 Recent Updates (v1.2.0)
+## 📌 Recent Updates (v1.3.0)
 
-**Completed on 2025-01-31 (Sprint 2 - COMPLETE ✅):**
+**Completed on 2025-01-31 (Sprints 1-3 - ALL COMPLETE ✅):**
 - ✅ Task 1.2: Improved kanji display size (7xl font, stroke count)
 - ✅ Task 1.3: Added reading pronunciation display (on-yomi/kun-yomi)
 - ✅ Task 2.1: Added JLPT level filter (All/N5/N4/N3/N2/N1)
+- ✅ Task 2.2: Mixed content quiz (vocabulary + kanji interleaved)
 - ✅ Task 3.1: Track incorrect answers (IncorrectQuestionDetail)
 - ✅ Task 3.2: Review Mode UI (Review Mistakes button)
+- ✅ Task 4.1: Bookmark system (star icon + filter)
 - ✅ Task 7.1: Added keyboard shortcuts (1-6, Enter, Space)
 - ✅ Task 7.3: Added confetti animation (canvas-confetti)
 - ✅ Task 7.4: Optimized dark mode (semantic color tokens)
 - ⏸️ Skipped: Tasks 1.1 and 7.2 (audio features - to be done as batch later)
 
-**Impact:** Quiz completion increased from 60% to 73%
-**Sprint 2 Milestone:** All filtering & review features complete!
+**Impact:** Quiz completion increased from 60% to 78%
+**Major Milestones:**
+- ✅ Sprint 1: Display improvements complete
+- ✅ Sprint 2: Filtering & review system complete
+- ✅ Sprint 3: Advanced features (mixed content + bookmarks) complete

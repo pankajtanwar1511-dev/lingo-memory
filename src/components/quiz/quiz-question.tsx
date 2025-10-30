@@ -14,9 +14,11 @@ import {
   ChevronRight,
   Check,
   X,
-  SkipForward
+  SkipForward,
+  Star
 } from "lucide-react"
 import { Progress } from "@/components/ui/progress"
+import { useBookmarksStore } from "@/store/bookmarks-store"
 
 interface QuizQuestionProps {
   question: QuizQuestionType
@@ -53,6 +55,26 @@ export function QuizQuestion({
   const startTimeRef = useRef(Date.now())
   const timerRef = useRef<NodeJS.Timeout>()
   const audioRef = useRef<HTMLAudioElement | null>(null)
+
+  // Bookmarks
+  const {
+    toggleVocabBookmark,
+    toggleKanjiBookmark,
+    isVocabBookmarked,
+    isKanjiBookmarked
+  } = useBookmarksStore()
+
+  const isBookmarked = question.contentType === "vocabulary"
+    ? isVocabBookmarked(question.card.id)
+    : isKanjiBookmarked(question.card.id)
+
+  const handleToggleBookmark = () => {
+    if (question.contentType === "vocabulary") {
+      toggleVocabBookmark(question.card.id)
+    } else {
+      toggleKanjiBookmark(question.card.id)
+    }
+  }
 
   useEffect(() => {
     // Reset state when question changes
@@ -227,9 +249,20 @@ export function QuizQuestion({
     <div className="max-w-3xl mx-auto space-y-6">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <Badge variant="secondary">
-          Question {questionNumber} / {totalQuestions}
-        </Badge>
+        <div className="flex items-center gap-2">
+          <Badge variant="secondary">
+            Question {questionNumber} / {totalQuestions}
+          </Badge>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={handleToggleBookmark}
+            className={`h-8 w-8 p-0 ${isBookmarked ? "text-yellow-500" : "text-gray-400"}`}
+            title={isBookmarked ? "Remove bookmark" : "Bookmark this card"}
+          >
+            <Star className={`h-4 w-4 ${isBookmarked ? "fill-current" : ""}`} />
+          </Button>
+        </div>
         {timeLimit && timeRemaining !== undefined && (
           <div className="flex items-center gap-2">
             <Clock className="h-4 w-4 text-gray-500" />

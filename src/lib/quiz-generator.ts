@@ -27,9 +27,25 @@ export function generateQuizQuestions(
   const shuffled = shuffleArray([...cards]).slice(0, settings.questionCount)
 
   for (const card of shuffled) {
-    const question = settings.contentType === "vocabulary"
-      ? createVocabQuestion(card as VocabularyCard, settings, allCards as VocabularyCard[])
-      : createKanjiQuestion(card as KanjiCard, settings, allCards as KanjiCard[])
+    let question: QuizQuestion | null = null
+
+    // For mixed mode, determine card type dynamically
+    if (settings.contentType === "mixed") {
+      // Check if card is vocabulary (has 'kana' property) or kanji
+      if ("kana" in card) {
+        // Filter allCards to only vocabulary for distractors
+        const vocabCards = allCards.filter((c): c is VocabularyCard => "kana" in c)
+        question = createVocabQuestion(card as VocabularyCard, settings, vocabCards)
+      } else {
+        // Filter allCards to only kanji for distractors
+        const kanjiCards = allCards.filter((c): c is KanjiCard => "strokeCount" in c)
+        question = createKanjiQuestion(card as KanjiCard, settings, kanjiCards)
+      }
+    } else if (settings.contentType === "vocabulary") {
+      question = createVocabQuestion(card as VocabularyCard, settings, allCards as VocabularyCard[])
+    } else {
+      question = createKanjiQuestion(card as KanjiCard, settings, allCards as KanjiCard[])
+    }
 
     if (question) {
       questions.push(question)

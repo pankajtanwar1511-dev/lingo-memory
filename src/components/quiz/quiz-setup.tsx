@@ -7,6 +7,7 @@ import { Select } from "@/components/ui/select"
 import { Input } from "@/components/ui/input"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Badge } from "@/components/ui/badge"
+import { useBookmarksStore } from "@/store/bookmarks-store"
 import {
   QuizSettings,
   QuizContentType,
@@ -45,8 +46,17 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
   const [autoAdvance, setAutoAdvance] = useState(true)
   const [strictTyping, setStrictTyping] = useState(false)
   const [caseSensitive, setCaseSensitive] = useState(false)
+  const [bookmarkedOnly, setBookmarkedOnly] = useState(false)
 
-  const availableCardCount = contentType === "vocabulary" ? availableVocabCount : availableKanjiCount
+  // Get bookmark counts
+  const { getBookmarkCounts } = useBookmarksStore()
+  const bookmarkCounts = getBookmarkCounts()
+
+  const availableCardCount = contentType === "mixed"
+    ? availableVocabCount + availableKanjiCount
+    : contentType === "vocabulary"
+    ? availableVocabCount
+    : availableKanjiCount
 
   // Reset direction when content type changes
   const handleContentTypeChange = (newType: QuizContentType) => {
@@ -54,6 +64,9 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
     // Set appropriate default direction for content type
     if (newType === "kanji") {
       setDirection("kanji-to-meaning")
+    } else if (newType === "mixed") {
+      // For mixed, use japanese-to-english as default (works for both)
+      setDirection("japanese-to-english")
     } else {
       setDirection("japanese-to-english")
     }
@@ -81,7 +94,8 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
       playAudio,
       autoAdvance,
       strictTyping,
-      caseSensitive
+      caseSensitive,
+      bookmarkedOnly
     }
 
     onStart(settings)
@@ -105,7 +119,7 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
         {/* Content Type */}
         <div>
           <label className="text-sm font-medium mb-3 block">Content Type</label>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-3 gap-3">
             <ModeCard
               icon={<Book className="h-5 w-5" />}
               title="Vocabulary"
@@ -119,6 +133,13 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
               description={`${availableKanjiCount} characters available`}
               selected={contentType === "kanji"}
               onClick={() => handleContentTypeChange("kanji")}
+            />
+            <ModeCard
+              icon={<Brain className="h-5 w-5" />}
+              title="Mixed"
+              description={`${availableVocabCount + availableKanjiCount} total cards`}
+              selected={contentType === "mixed"}
+              onClick={() => handleContentTypeChange("mixed")}
             />
           </div>
         </div>
@@ -181,12 +202,17 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
                 <option value="kanji-to-reading">Kanji → Reading</option>
                 <option value="reading-to-kanji">Reading → Kanji</option>
               </>
-            ) : (
+            ) : contentType === "kanji" ? (
               <>
                 <option value="kanji-to-meaning">Kanji → Meaning</option>
                 <option value="meaning-to-kanji">Meaning → Kanji</option>
                 <option value="kanji-to-reading">Kanji → Reading</option>
                 <option value="reading-to-kanji">Reading → Kanji</option>
+              </>
+            ) : (
+              <>
+                <option value="japanese-to-english">Japanese → English</option>
+                <option value="english-to-japanese">English → Japanese</option>
               </>
             )}
           </Select>
@@ -283,6 +309,12 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
             checked={autoAdvance}
             onChange={(e) => setAutoAdvance(e.target.checked)}
             label="Auto-advance to next question"
+          />
+          <Checkbox
+            checked={bookmarkedOnly}
+            onChange={(e) => setBookmarkedOnly(e.target.checked)}
+            label={`Bookmarked only (${bookmarkCounts.total} cards)`}
+            disabled={bookmarkCounts.total === 0}
           />
 
           {mode === "typing" && (
