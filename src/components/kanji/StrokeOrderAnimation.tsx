@@ -16,9 +16,11 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Play, Pause, RotateCcw, Repeat } from 'lucide-react';
+import { Play, Pause, RotateCcw, Repeat, Hash } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { KanjiStrokes } from '@/types/kanji';
+
+type StrokeNumberMode = 'current' | 'all' | 'none';
 
 interface StrokeOrderAnimationProps {
   kanji: string;
@@ -49,6 +51,7 @@ export function StrokeOrderAnimation({
   const [strokePaths, setStrokePaths] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [animationKey, setAnimationKey] = useState(0);  // Used to force re-render of strokes
+  const [strokeNumberMode, setStrokeNumberMode] = useState<StrokeNumberMode>('current');  // Default: show only current
 
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -155,6 +158,22 @@ export function StrokeOrderAnimation({
     setPlaybackSpeed(nextSpeed);
   };
 
+  const cycleStrokeNumberMode = () => {
+    const modes: StrokeNumberMode[] = ['current', 'all', 'none'];
+    const currentIndex = modes.indexOf(strokeNumberMode);
+    const nextMode = modes[(currentIndex + 1) % modes.length];
+    console.log('🔢 Stroke number mode changed:', strokeNumberMode, '→', nextMode);
+    setStrokeNumberMode(nextMode);
+  };
+
+  const getStrokeNumberLabel = () => {
+    switch (strokeNumberMode) {
+      case 'current': return 'Current';
+      case 'all': return 'All';
+      case 'none': return 'Hidden';
+    }
+  };
+
   if (error) {
     return (
       <div className="flex items-center justify-center p-8 bg-muted rounded-lg">
@@ -222,8 +241,12 @@ export function StrokeOrderAnimation({
           })}
 
           {/* Stroke numbers */}
-          {showStrokeNumbers && strokePaths.map((pathData, index) => {
-            if (index > currentStroke) return null;
+          {strokeNumberMode !== 'none' && strokePaths.map((pathData, index) => {
+            // Only show strokes up to current stroke
+            if (index > currentStroke || currentStroke === -1) return null;
+
+            // In 'current' mode, only show the number for the current stroke
+            if (strokeNumberMode === 'current' && index !== currentStroke) return null;
 
             // Extract the starting point of the stroke from the path data
             // Path data starts with "M x y" (move to x, y)
@@ -238,7 +261,7 @@ export function StrokeOrderAnimation({
                 key={`num-${index}`}
                 x={startX - 5}  // Offset slightly to the left
                 y={startY - 3}  // Offset slightly above
-                fontSize="12"
+                fontSize="14"
                 fontWeight="bold"
                 fill="currentColor"
                 className="text-red-500 dark:text-red-400"
@@ -297,6 +320,12 @@ export function StrokeOrderAnimation({
         {/* Speed */}
         <Button onClick={cycleSpeed} variant="outline" size="sm">
           Speed: {playbackSpeed}x
+        </Button>
+
+        {/* Stroke Numbers */}
+        <Button onClick={cycleStrokeNumberMode} variant="outline" size="sm" className="gap-2">
+          <Hash className="h-4 w-4" />
+          {getStrokeNumberLabel()}
         </Button>
       </div>
 
