@@ -91,6 +91,50 @@ export function QuizQuestion({
     }
   }, [question.id])
 
+  // Keyboard shortcuts
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      // Don't trigger shortcuts if user is typing
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+        return
+      }
+
+      // Don't trigger if already answered or disabled
+      if (hasAnswered || disabled) return
+
+      // Multiple choice: Number keys 1-4 (or 1-6 for hard mode)
+      if (question.mode === "multiple-choice" && question.choices) {
+        const num = parseInt(e.key)
+        if (num >= 1 && num <= question.choices.length) {
+          const choice = question.choices[num - 1]
+          setSelectedAnswer(choice)
+          return
+        }
+      }
+
+      // Enter key: Submit answer
+      if (e.key === "Enter") {
+        e.preventDefault()
+        if (question.mode === "multiple-choice" && selectedAnswer) {
+          handleSubmit()
+        } else if (question.mode === "typing" && typedAnswer.trim()) {
+          handleSubmit()
+        }
+        return
+      }
+
+      // Space key: Skip question
+      if (e.key === " " && !(e.target instanceof HTMLInputElement)) {
+        e.preventDefault()
+        handleSkipClick()
+        return
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyPress)
+    return () => window.removeEventListener("keydown", handleKeyPress)
+  }, [question.mode, question.choices, selectedAnswer, typedAnswer, hasAnswered, disabled])
+
   const handleTimeout = () => {
     if (!hasAnswered) {
       handleSubmit(true)
@@ -221,7 +265,40 @@ export function QuizQuestion({
             </Button>
           )}
 
-          <h2 className="text-3xl font-bold mb-2">{question.question}</h2>
+          <h2 className={`font-bold mb-2 text-foreground ${
+            question.contentType === "kanji"
+              ? "text-7xl"
+              : "text-3xl"
+          }`}>
+            {question.question}
+          </h2>
+
+          {/* Show stroke count for kanji questions */}
+          {question.contentType === "kanji" && "strokeCount" in question.card && (
+            <p className="text-sm text-muted-foreground mt-2">
+              Stroke count: {question.card.strokeCount}
+            </p>
+          )}
+
+          {/* Show readings for kanji-to-meaning questions (after they answer) */}
+          {question.contentType === "kanji" &&
+           question.direction === "kanji-to-meaning" &&
+           "onReadings" in question.card &&
+           "kunReadings" in question.card &&
+           hasAnswered && (
+            <div className="text-sm text-muted-foreground mt-3 space-x-3">
+              {question.card.onReadings.length > 0 && (
+                <span className="inline-block">
+                  <span className="font-semibold">音:</span> {question.card.onReadings.join(", ")}
+                </span>
+              )}
+              {question.card.kunReadings.length > 0 && (
+                <span className="inline-block">
+                  <span className="font-semibold">訓:</span> {question.card.kunReadings.join(", ")}
+                </span>
+              )}
+            </div>
+          )}
 
           {question.mode === "sentence-completion" && question.hint && (
             <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
@@ -262,7 +339,7 @@ export function QuizQuestion({
                   }`}>
                     {String.fromCharCode(65 + index)}
                   </div>
-                  <span className="flex-1">{choice}</span>
+                  <span className="flex-1 text-foreground font-medium">{choice}</span>
                   {hasAnswered && choice === question.correctAnswer && (
                     <Check className="h-5 w-5 text-green-600" />
                   )}
@@ -378,6 +455,9 @@ export function QuizQuestion({
           >
             <SkipForward className="h-4 w-4" />
             Skip
+            <kbd className="hidden sm:inline ml-1 px-1.5 py-0.5 text-xs bg-gray-100 dark:bg-gray-800 rounded border">
+              Space
+            </kbd>
           </Button>
 
           {question.mode === "multiple-choice" || question.mode === "listening" ? (
@@ -388,6 +468,9 @@ export function QuizQuestion({
             >
               {hasAnswered ? "Next" : "Submit"}
               <ChevronRight className="h-4 w-4" />
+              <kbd className="hidden sm:inline ml-1 px-1.5 py-0.5 text-xs bg-white/20 rounded border border-white/30">
+                Enter
+              </kbd>
             </Button>
           ) : (
             <Button
@@ -397,9 +480,19 @@ export function QuizQuestion({
             >
               {hasAnswered ? "Next" : "Submit"}
               <ChevronRight className="h-4 w-4" />
+              <kbd className="hidden sm:inline ml-1 px-1.5 py-0.5 text-xs bg-white/20 rounded border border-white/30">
+                Enter
+              </kbd>
             </Button>
           )}
         </div>
+
+        {/* Keyboard shortcuts hint */}
+        {question.mode === "multiple-choice" && !hasAnswered && (
+          <p className="text-xs text-center text-muted-foreground">
+            Press <kbd className="px-1 py-0.5 bg-muted rounded text-xs">1-{question.choices?.length || 4}</kbd> to select, <kbd className="px-1 py-0.5 bg-muted rounded text-xs">Enter</kbd> to submit, <kbd className="px-1 py-0.5 bg-muted rounded text-xs">Space</kbd> to skip
+          </p>
+        )}
       </Card>
     </div>
   )

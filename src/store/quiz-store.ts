@@ -11,9 +11,11 @@ import {
   QuizSettings,
   QuizResult,
   QuizProgress,
-  QuizStatistics
+  QuizStatistics,
+  IncorrectQuestionDetail
 } from "@/types/quiz"
 import { VocabularyCard } from "@/types/vocabulary"
+import { KanjiCard } from "@/types/kanji"
 import { generateQuizQuestions } from "@/lib/quiz-generator"
 import { updateFSRSFromQuizResult } from "@/lib/quiz-fsrs-integration"
 
@@ -29,7 +31,8 @@ interface QuizStore {
   sessionHistory: QuizResult[]
 
   // Actions
-  startQuiz: (cards: VocabularyCard[], settings: QuizSettings, allCards: VocabularyCard[]) => void
+  startQuiz: (cards: (VocabularyCard | KanjiCard)[], settings: QuizSettings, allCards: (VocabularyCard | KanjiCard)[]) => void
+  startReviewQuiz: (incorrectDetails: IncorrectQuestionDetail[], originalSettings: QuizSettings) => void
   answerQuestion: (answer: string, timeSpent: number, hintsUsed: number) => void
   skipQuestion: () => void
   nextQuestion: () => void
@@ -87,6 +90,35 @@ export const useQuizStore = create<QuizStore>()(
         const session: QuizSession = {
           id: sessionId,
           settings,
+          questions,
+          answers: [],
+          progress: {
+            currentQuestionIndex: 0,
+            totalQuestions: questions.length,
+            answeredCount: 0,
+            correctCount: 0,
+            startTime: new Date(),
+            elapsedTime: 0,
+            isPaused: false
+          },
+          startedAt: new Date(),
+          status: "in-progress"
+        }
+
+        set({
+          currentSession: session,
+          currentQuestionIndex: 0
+        })
+      },
+
+      startReviewQuiz: (incorrectDetails, originalSettings) => {
+        // Use the questions from incorrect answers directly
+        const questions = incorrectDetails.map(detail => detail.question)
+        const sessionId = `review_${Date.now()}`
+
+        const session: QuizSession = {
+          id: sessionId,
+          settings: originalSettings,
           questions,
           answers: [],
           progress: {
@@ -277,6 +309,22 @@ export const useQuizStore = create<QuizStore>()(
               currentSession.answers.length
             : 0
 
+        // Build incorrect question details
+        const incorrectQuestionDetails = currentSession.answers
+          .map((answer, index) => {
+            if (!answer.isCorrect && answer.userAnswer !== "") {
+              return {
+                question: currentSession.questions[index],
+                userAnswer: answer.userAnswer,
+                correctAnswer: answer.correctAnswer,
+                timeSpent: answer.timeSpent,
+                hintsUsed: answer.hintsUsed
+              }
+            }
+            return null
+          })
+          .filter((detail): detail is NonNullable<typeof detail> => detail !== null)
+
         const result: QuizResult = {
           sessionId: currentSession.id,
           startedAt: currentSession.startedAt,
@@ -293,7 +341,8 @@ export const useQuizStore = create<QuizStore>()(
           ).length,
           correctAnswers,
           incorrectAnswers,
-          skippedAnswers
+          skippedAnswers,
+          incorrectQuestionDetails
         }
 
         // Update statistics

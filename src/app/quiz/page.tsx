@@ -8,6 +8,7 @@ import { QuizResults } from "@/components/quiz/quiz-results"
 import { useQuizStore } from "@/store/quiz-store"
 import { useLiveVocabulary, useDatabase } from "@/hooks/useDatabase"
 import { VocabularyCard } from "@/types/vocabulary"
+import { KanjiCard } from "@/types/kanji"
 import { QuizSettings } from "@/types/quiz"
 import { Button } from "@/components/ui/button"
 import { X, Pause, Play, Loader2 } from "lucide-react"
@@ -18,11 +19,14 @@ type QuizState = "setup" | "in-progress" | "results"
 export default function QuizPage() {
   const router = useRouter()
   const [quizState, setQuizState] = useState<QuizState>("setup")
+  const [kanjiCards, setKanjiCards] = useState<KanjiCard[]>([])
+  const [kanjiLoading, setKanjiLoading] = useState(true)
 
   const {
     currentSession,
     currentQuestionIndex,
     startQuiz,
+    startReviewQuiz,
     answerQuestion,
     skipQuestion,
     nextQuestion,
@@ -40,22 +44,53 @@ export default function QuizPage() {
   const dbVocabulary = useLiveVocabulary() ?? []
 
   // Convert live vocabulary data
-  const availableCards: VocabularyCard[] = dbVocabulary.map(card => {
+  const availableVocabCards: VocabularyCard[] = dbVocabulary.map(card => {
     const { deckId, addedAt, modifiedAt, ...vocabCard } = card
     return vocabCard as VocabularyCard
   })
 
+  // Load kanji data
+  useEffect(() => {
+    const loadKanji = async () => {
+      try {
+        setKanjiLoading(true)
+        const response = await fetch('/seed-data/kanji_n5.json')
+        if (!response.ok) {
+          throw new Error('Failed to load kanji data')
+        }
+        const data = await response.json()
+        setKanjiCards(data.kanji || [])
+      } catch (err) {
+        console.error('Error loading kanji:', err)
+      } finally {
+        setKanjiLoading(false)
+      }
+    }
+    loadKanji()
+  }, [])
+
   const handleStartQuiz = (settings: QuizSettings) => {
-    if (availableCards.length === 0) {
-      alert("No vocabulary cards available. Please add cards first.")
+    let cards: (VocabularyCard | KanjiCard)[] = settings.contentType === "vocabulary" ? availableVocabCards : kanjiCards
+
+    // Filter by JLPT level if specified
+    if (settings.jlptLevel && settings.jlptLevel !== "All") {
+      cards = cards.filter(card => card.jlptLevel === settings.jlptLevel)
+    }
+
+    if (cards.length === 0) {
+      const type = settings.contentType === "vocabulary" ? "vocabulary" : "kanji"
+      const levelMsg = settings.jlptLevel && settings.jlptLevel !== "All"
+        ? ` at ${settings.jlptLevel} level`
+        : ""
+      alert(`No ${type} cards available${levelMsg}. Please add cards first.`)
       return
     }
 
     // Shuffle and select cards
-    const shuffled = [...availableCards].sort(() => Math.random() - 0.5)
+    const shuffled = [...cards].sort(() => Math.random() - 0.5)
     const selected = shuffled.slice(0, settings.questionCount)
 
-    startQuiz(selected, settings, availableCards)
+    startQuiz(selected, settings, cards)
     setQuizState("in-progress")
   }
 
@@ -87,6 +122,31 @@ export default function QuizPage() {
     router.push("/progress")
   }
 
+  const handleReviewMistakes = () => {
+    if (!currentSession) return
+
+    // Build incorrect question details from current session
+    const incorrectDetails = currentSession.answers
+      .map((answer, index) => {
+        if (!answer.isCorrect && answer.userAnswer !== "") {
+          return {
+            question: currentSession.questions[index],
+            userAnswer: answer.userAnswer,
+            correctAnswer: answer.correctAnswer,
+            timeSpent: answer.timeSpent,
+            hintsUsed: answer.hintsUsed
+          }
+        }
+        return null
+      })
+      .filter((detail): detail is NonNullable<typeof detail> => detail !== null)
+
+    if (incorrectDetails.length > 0) {
+      startReviewQuiz(incorrectDetails, currentSession.settings)
+      setQuizState("in-progress")
+    }
+  }
+
   const handleAbandon = () => {
     if (confirm("Are you sure you want to quit this quiz? Your progress will not be saved.")) {
       abandonQuiz()
@@ -116,7 +176,7 @@ export default function QuizPage() {
   const progress = getProgress()
 
   // Show loading state
-  if (dbLoading || !isInitialized) {
+  if (dbLoading || !isInitialized || kanjiLoading) {
     return (
       <div className="container mx-auto py-8 px-4">
         <div className="flex items-center justify-center h-64">
@@ -214,7 +274,8 @@ export default function QuizPage() {
       {quizState === "setup" && (
         <QuizSetup
           onStart={handleStartQuiz}
-          availableCardCount={availableCards.length}
+          availableVocabCount={availableVocabCards.length}
+          availableKanjiCount={kanjiCards.length}
         />
       )}
 
@@ -263,11 +324,26 @@ export default function QuizPage() {
               a => !a.isCorrect && a.userAnswer !== ""
             ).length,
             skippedAnswers: currentSession.answers.filter(a => a.userAnswer === "")
-              .length
+              .length,
+            incorrectQuestionDetails: currentSession.answers
+              .map((answer, index) => {
+                if (!answer.isCorrect && answer.userAnswer !== "") {
+                  return {
+                    question: currentSession.questions[index],
+                    userAnswer: answer.userAnswer,
+                    correctAnswer: answer.correctAnswer,
+                    timeSpent: answer.timeSpent,
+                    hintsUsed: answer.hintsUsed
+                  }
+                }
+                return null
+              })
+              .filter((detail): detail is NonNullable<typeof detail> => detail !== null)
           }}
           onRetry={handleRetry}
           onNewQuiz={handleNewQuiz}
           onViewProgress={handleViewProgress}
+          onReviewMistakes={handleReviewMistakes}
         />
       )}
     </div>

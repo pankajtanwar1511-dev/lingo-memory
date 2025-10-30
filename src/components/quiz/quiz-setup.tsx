@@ -9,6 +9,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Badge } from "@/components/ui/badge"
 import {
   QuizSettings,
+  QuizContentType,
   QuizMode,
   QuizDirection,
   QuizDifficulty,
@@ -21,18 +22,22 @@ import {
   Brain,
   Headphones,
   Keyboard,
-  Book
+  Book,
+  Languages
 } from "lucide-react"
 
 interface QuizSetupProps {
   onStart: (settings: QuizSettings) => void
-  availableCardCount: number
+  availableVocabCount: number
+  availableKanjiCount: number
 }
 
-export function QuizSetup({ onStart, availableCardCount }: QuizSetupProps) {
+export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }: QuizSetupProps) {
+  const [contentType, setContentType] = useState<QuizContentType>("vocabulary")
   const [mode, setMode] = useState<QuizMode>("multiple-choice")
   const [direction, setDirection] = useState<QuizDirection>("japanese-to-english")
   const [difficulty, setDifficulty] = useState<QuizDifficulty>("medium")
+  const [jlptLevel, setJlptLevel] = useState<string>("All")
   const [questionCount, setQuestionCount] = useState(20)
   const [timeLimit, setTimeLimit] = useState<number | undefined>(60)
   const [showHints, setShowHints] = useState(true)
@@ -40,6 +45,19 @@ export function QuizSetup({ onStart, availableCardCount }: QuizSetupProps) {
   const [autoAdvance, setAutoAdvance] = useState(true)
   const [strictTyping, setStrictTyping] = useState(false)
   const [caseSensitive, setCaseSensitive] = useState(false)
+
+  const availableCardCount = contentType === "vocabulary" ? availableVocabCount : availableKanjiCount
+
+  // Reset direction when content type changes
+  const handleContentTypeChange = (newType: QuizContentType) => {
+    setContentType(newType)
+    // Set appropriate default direction for content type
+    if (newType === "kanji") {
+      setDirection("kanji-to-meaning")
+    } else {
+      setDirection("japanese-to-english")
+    }
+  }
 
   // Update settings based on difficulty
   const handleDifficultyChange = (newDifficulty: QuizDifficulty) => {
@@ -52,9 +70,11 @@ export function QuizSetup({ onStart, availableCardCount }: QuizSetupProps) {
 
   const handleStart = () => {
     const settings: QuizSettings = {
+      contentType,
       mode,
       direction,
       difficulty,
+      jlptLevel,
       questionCount: Math.min(questionCount, availableCardCount),
       timeLimit,
       showHints,
@@ -82,6 +102,27 @@ export function QuizSetup({ onStart, availableCardCount }: QuizSetupProps) {
       </div>
 
       <Card className="p-6 space-y-6">
+        {/* Content Type */}
+        <div>
+          <label className="text-sm font-medium mb-3 block">Content Type</label>
+          <div className="grid grid-cols-2 gap-3">
+            <ModeCard
+              icon={<Book className="h-5 w-5" />}
+              title="Vocabulary"
+              description={`${availableVocabCount} words available`}
+              selected={contentType === "vocabulary"}
+              onClick={() => handleContentTypeChange("vocabulary")}
+            />
+            <ModeCard
+              icon={<Languages className="h-5 w-5" />}
+              title="Kanji"
+              description={`${availableKanjiCount} characters available`}
+              selected={contentType === "kanji"}
+              onClick={() => handleContentTypeChange("kanji")}
+            />
+          </div>
+        </div>
+
         {/* Quiz Mode */}
         <div>
           <label className="text-sm font-medium mb-3 block">Quiz Mode</label>
@@ -106,7 +147,26 @@ export function QuizSetup({ onStart, availableCardCount }: QuizSetupProps) {
               description="Listen and answer"
               selected={mode === "listening"}
               onClick={() => setMode("listening")}
+              disabled={contentType === "kanji"} // Disable for kanji
             />
+          </div>
+        </div>
+
+        {/* JLPT Level Filter */}
+        <div>
+          <label className="text-sm font-medium mb-3 block">JLPT Level</label>
+          <div className="grid grid-cols-3 gap-2">
+            {["All", "N5", "N4", "N3", "N2", "N1"].map((level) => (
+              <Button
+                key={level}
+                variant={jlptLevel === level ? "default" : "outline"}
+                onClick={() => setJlptLevel(level)}
+                size="sm"
+                className={level === "All" ? "col-span-3" : ""}
+              >
+                {level}
+              </Button>
+            ))}
           </div>
         </div>
 
@@ -114,10 +174,21 @@ export function QuizSetup({ onStart, availableCardCount }: QuizSetupProps) {
         <div>
           <label className="text-sm font-medium mb-2 block">Quiz Direction</label>
           <Select value={direction} onChange={(e) => setDirection(e.target.value as QuizDirection)}>
-            <option value="japanese-to-english">Japanese → English</option>
-            <option value="english-to-japanese">English → Japanese</option>
-            <option value="kanji-to-reading">Kanji → Reading</option>
-            <option value="reading-to-kanji">Reading → Kanji</option>
+            {contentType === "vocabulary" ? (
+              <>
+                <option value="japanese-to-english">Japanese → English</option>
+                <option value="english-to-japanese">English → Japanese</option>
+                <option value="kanji-to-reading">Kanji → Reading</option>
+                <option value="reading-to-kanji">Reading → Kanji</option>
+              </>
+            ) : (
+              <>
+                <option value="kanji-to-meaning">Kanji → Meaning</option>
+                <option value="meaning-to-kanji">Meaning → Kanji</option>
+                <option value="kanji-to-reading">Kanji → Reading</option>
+                <option value="reading-to-kanji">Reading → Kanji</option>
+              </>
+            )}
           </Select>
         </div>
 
@@ -250,21 +321,27 @@ interface ModeCardProps {
   description: string
   selected: boolean
   onClick: () => void
+  disabled?: boolean
 }
 
-function ModeCard({ icon, title, description, selected, onClick }: ModeCardProps) {
+function ModeCard({ icon, title, description, selected, onClick, disabled }: ModeCardProps) {
   return (
     <button
       onClick={onClick}
+      disabled={disabled}
       className={`p-4 rounded-lg border-2 transition-all text-left ${
-        selected
+        disabled
+          ? "opacity-50 cursor-not-allowed border-gray-200 dark:border-gray-700"
+          : selected
           ? "border-purple-600 bg-purple-50 dark:bg-purple-950/20"
           : "border-gray-200 dark:border-gray-700 hover:border-gray-300"
       }`}
     >
       <div className="flex items-start gap-3">
         <div className={`p-2 rounded-lg ${
-          selected
+          disabled
+            ? "bg-gray-100 dark:bg-gray-800 text-gray-400"
+            : selected
             ? "bg-purple-600 text-white"
             : "bg-gray-100 dark:bg-gray-800 text-gray-600"
         }`}>

@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect } from "react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -22,14 +23,46 @@ interface QuizResultsProps {
   onRetry: () => void
   onNewQuiz: () => void
   onViewProgress: () => void
+  onReviewMistakes?: () => void
 }
 
 export function QuizResults({
   result,
   onRetry,
   onNewQuiz,
-  onViewProgress
+  onViewProgress,
+  onReviewMistakes
 }: QuizResultsProps) {
+  // Trigger confetti for high scores
+  useEffect(() => {
+    const triggerConfetti = async () => {
+      if (result.score >= 90) {
+        // Dynamically import confetti library
+        const confetti = (await import("canvas-confetti")).default
+
+        if (result.score === 100) {
+          // Perfect score - golden confetti
+          confetti({
+            particleCount: 200,
+            spread: 160,
+            origin: { y: 0.6 },
+            colors: ["#FFD700", "#FFA500", "#FF8C00"],
+            scalar: 1.2
+          })
+        } else {
+          // High score - regular confetti
+          confetti({
+            particleCount: 150,
+            spread: 120,
+            origin: { y: 0.6 }
+          })
+        }
+      }
+    }
+
+    triggerConfetti()
+  }, [result.score])
+
   const formatTime = (ms: number) => {
     const seconds = Math.floor(ms / 1000)
     const minutes = Math.floor(seconds / 60)
@@ -226,6 +259,16 @@ export function QuizResults({
           <RotateCcw className="h-4 w-4" />
           Retry Quiz
         </Button>
+        {result.incorrectQuestionDetails && result.incorrectQuestionDetails.length > 0 && onReviewMistakes && (
+          <Button
+            variant="outline"
+            onClick={onReviewMistakes}
+            className="flex-1 gap-2 border-orange-600 text-orange-600 hover:bg-orange-50 dark:hover:bg-orange-950/20"
+          >
+            <X className="h-4 w-4" />
+            Review Mistakes ({result.incorrectQuestionDetails.length})
+          </Button>
+        )}
         <Button
           onClick={onViewProgress}
           className="flex-1 gap-2"

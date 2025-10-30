@@ -1,9 +1,10 @@
 /**
  * Quiz Generator Service
- * Generates quiz questions from vocabulary cards
+ * Generates quiz questions from vocabulary or kanji cards
  */
 
 import { VocabularyCard } from "@/types/vocabulary"
+import { KanjiCard } from "@/types/kanji"
 import {
   QuizQuestion,
   QuizMode,
@@ -13,12 +14,12 @@ import {
 } from "@/types/quiz"
 
 /**
- * Generate quiz questions from vocabulary cards
+ * Generate quiz questions from vocabulary or kanji cards
  */
 export function generateQuizQuestions(
-  cards: VocabularyCard[],
+  cards: (VocabularyCard | KanjiCard)[],
   settings: QuizSettings,
-  allCards: VocabularyCard[] // For generating distractors in multiple choice
+  allCards: (VocabularyCard | KanjiCard)[] // For generating distractors in multiple choice
 ): QuizQuestion[] {
   const questions: QuizQuestion[] = []
 
@@ -26,7 +27,10 @@ export function generateQuizQuestions(
   const shuffled = shuffleArray([...cards]).slice(0, settings.questionCount)
 
   for (const card of shuffled) {
-    const question = createQuestion(card, settings, allCards)
+    const question = settings.contentType === "vocabulary"
+      ? createVocabQuestion(card as VocabularyCard, settings, allCards as VocabularyCard[])
+      : createKanjiQuestion(card as KanjiCard, settings, allCards as KanjiCard[])
+
     if (question) {
       questions.push(question)
     }
@@ -36,9 +40,9 @@ export function generateQuizQuestions(
 }
 
 /**
- * Create a single quiz question
+ * Create a vocabulary quiz question
  */
-function createQuestion(
+function createVocabQuestion(
   card: VocabularyCard,
   settings: QuizSettings,
   allCards: VocabularyCard[]
@@ -60,6 +64,31 @@ function createQuestion(
 
     case "flashcard":
       return createFlashcardQuestion(card, direction)
+
+    default:
+      return null
+  }
+}
+
+/**
+ * Create a kanji quiz question
+ */
+function createKanjiQuestion(
+  card: KanjiCard,
+  settings: QuizSettings,
+  allCards: KanjiCard[]
+): QuizQuestion | null {
+  const { mode, direction } = settings
+
+  switch (mode) {
+    case "multiple-choice":
+      return createKanjiMultipleChoiceQuestion(card, direction, allCards, settings.difficulty)
+
+    case "typing":
+      return createKanjiTypingQuestion(card, direction)
+
+    case "flashcard":
+      return createKanjiFlashcardQuestion(card, direction)
 
     default:
       return null
@@ -149,6 +178,7 @@ function createMultipleChoiceQuestion(
   return {
     id: `quiz_${card.id}_${Date.now()}`,
     card,
+    contentType: "vocabulary",
     mode: "multiple-choice",
     direction,
     question,
@@ -206,6 +236,7 @@ function createTypingQuestion(
   return {
     id: `quiz_${card.id}_${Date.now()}`,
     card,
+    contentType: "vocabulary",
     mode: "typing",
     direction,
     question,
@@ -243,6 +274,7 @@ function createListeningQuestion(
   return {
     id: `quiz_${card.id}_${Date.now()}`,
     card,
+    contentType: "vocabulary",
     mode: "listening",
     direction: "japanese-to-english",
     question,
@@ -271,6 +303,7 @@ function createSentenceCompletionQuestion(card: VocabularyCard): QuizQuestion | 
   return {
     id: `quiz_${card.id}_${Date.now()}`,
     card,
+    contentType: "vocabulary",
     mode: "sentence-completion",
     direction: "japanese-to-english",
     question,
@@ -324,6 +357,7 @@ function createFlashcardQuestion(
   return {
     id: `quiz_${card.id}_${Date.now()}`,
     card,
+    contentType: "vocabulary",
     mode: "flashcard",
     direction,
     question,
@@ -472,4 +506,225 @@ function levenshteinDistance(str1: string, str2: string): number {
   }
 
   return matrix[str2.length][str1.length]
+}
+
+/**
+ * Kanji-specific question generation functions
+ */
+
+/**
+ * Create multiple choice question for kanji
+ */
+function createKanjiMultipleChoiceQuestion(
+  card: KanjiCard,
+  direction: QuizDirection,
+  allCards: KanjiCard[],
+  difficulty: QuizDifficulty
+): QuizQuestion {
+  const choiceCount = difficulty === "easy" ? 4 : difficulty === "medium" ? 4 : 6
+  let question: string
+  let correctAnswer: string
+  let choices: string[]
+
+  switch (direction) {
+    case "kanji-to-meaning":
+      question = card.kanji
+      correctAnswer = card.meanings[0]
+      choices = generateDistractors(
+        correctAnswer,
+        allCards.map(k => k.meanings[0]),
+        choiceCount - 1
+      )
+      break
+
+    case "meaning-to-kanji":
+      question = card.meanings[0]
+      correctAnswer = card.kanji
+      choices = generateDistractors(
+        correctAnswer,
+        allCards.map(k => k.kanji),
+        choiceCount - 1
+      )
+      break
+
+    case "kanji-to-reading":
+      question = card.kanji
+      // Combine on and kun readings
+      const allReadings = [...card.onReadings, ...card.kunReadings]
+      correctAnswer = allReadings[0] || card.kanji
+      choices = generateDistractors(
+        correctAnswer,
+        allCards.flatMap(k => [...k.onReadings, ...k.kunReadings]),
+        choiceCount - 1
+      )
+      break
+
+    case "reading-to-kanji":
+      const readings = [...card.onReadings, ...card.kunReadings]
+      question = readings[0] || card.kanji
+      correctAnswer = card.kanji
+      choices = generateDistractors(
+        correctAnswer,
+        allCards.map(k => k.kanji),
+        choiceCount - 1
+      )
+      break
+
+    default:
+      question = card.kanji
+      correctAnswer = card.meanings[0]
+      choices = generateDistractors(
+        correctAnswer,
+        allCards.map(k => k.meanings[0]),
+        choiceCount - 1
+      )
+  }
+
+  choices.push(correctAnswer)
+  choices = shuffleArray(choices)
+
+  return {
+    id: `quiz_${card.id}_${Date.now()}`,
+    card,
+    contentType: "kanji",
+    mode: "multiple-choice",
+    direction,
+    question,
+    correctAnswer,
+    choices,
+    hint: getKanjiHint(card, direction)
+  }
+}
+
+/**
+ * Create typing question for kanji
+ */
+function createKanjiTypingQuestion(
+  card: KanjiCard,
+  direction: QuizDirection
+): QuizQuestion {
+  let question: string
+  let correctAnswer: string | string[]
+
+  switch (direction) {
+    case "kanji-to-meaning":
+      question = card.kanji
+      correctAnswer = card.meanings // Accept all meanings
+      break
+
+    case "meaning-to-kanji":
+      question = card.meanings[0]
+      correctAnswer = card.kanji
+      break
+
+    case "kanji-to-reading":
+      question = card.kanji
+      correctAnswer = [...card.onReadings, ...card.kunReadings] // Accept any reading
+      break
+
+    case "reading-to-kanji":
+      const readings = [...card.onReadings, ...card.kunReadings]
+      question = readings[0] || card.kanji
+      correctAnswer = card.kanji
+      break
+
+    default:
+      question = card.kanji
+      correctAnswer = card.meanings
+  }
+
+  return {
+    id: `quiz_${card.id}_${Date.now()}`,
+    card,
+    contentType: "kanji",
+    mode: "typing",
+    direction,
+    question,
+    correctAnswer,
+    hint: getKanjiHint(card, direction)
+  }
+}
+
+/**
+ * Create flashcard question for kanji
+ */
+function createKanjiFlashcardQuestion(
+  card: KanjiCard,
+  direction: QuizDirection
+): QuizQuestion {
+  let question: string
+  let correctAnswer: string
+
+  switch (direction) {
+    case "kanji-to-meaning":
+      question = card.kanji
+      correctAnswer = card.meanings[0]
+      break
+
+    case "meaning-to-kanji":
+      question = card.meanings[0]
+      correctAnswer = card.kanji
+      break
+
+    case "kanji-to-reading":
+      question = card.kanji
+      const allReadings = [...card.onReadings, ...card.kunReadings]
+      correctAnswer = allReadings.join(", ")
+      break
+
+    case "reading-to-kanji":
+      const readings = [...card.onReadings, ...card.kunReadings]
+      question = readings.join(", ")
+      correctAnswer = card.kanji
+      break
+
+    default:
+      question = card.kanji
+      correctAnswer = card.meanings[0]
+  }
+
+  return {
+    id: `quiz_${card.id}_${Date.now()}`,
+    card,
+    contentType: "kanji",
+    mode: "flashcard",
+    direction,
+    question,
+    correctAnswer,
+    hint: getKanjiHint(card, direction)
+  }
+}
+
+/**
+ * Get hint for a kanji card
+ */
+function getKanjiHint(card: KanjiCard, direction: QuizDirection): string {
+  switch (direction) {
+    case "kanji-to-meaning":
+      return `Stroke count: ${card.strokeCount}`
+
+    case "meaning-to-kanji":
+      if (card.radical && card.radical.meaning) {
+        return `Radical: ${card.radical.literal} (${card.radical.meaning})`
+      }
+      return `Stroke count: ${card.strokeCount}`
+
+    case "kanji-to-reading":
+      const hasOn = card.onReadings.length > 0
+      const hasKun = card.kunReadings.length > 0
+      if (hasOn && hasKun) {
+        return `Has both on-yomi and kun-yomi readings`
+      } else if (hasOn) {
+        return `Has on-yomi reading (katakana)`
+      } else if (hasKun) {
+        return `Has kun-yomi reading (hiragana)`
+      }
+      return `Think about common readings`
+
+    case "reading-to-kanji":
+      return `Meaning: ${card.meanings[0]}`
+
+    default:
+      return "You can do it!"
+  }
 }

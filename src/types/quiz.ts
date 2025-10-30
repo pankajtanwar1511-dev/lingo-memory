@@ -1,8 +1,11 @@
 import { VocabularyCard } from "./vocabulary"
+import { KanjiCard } from "./kanji"
 
 /**
  * Quiz Types and Interfaces for Day 5
  */
+
+export type QuizContentType = "vocabulary" | "kanji"
 
 export type QuizMode =
   | "multiple-choice"
@@ -16,13 +19,17 @@ export type QuizDirection =
   | "english-to-japanese"
   | "kanji-to-reading"
   | "reading-to-kanji"
+  | "kanji-to-meaning"
+  | "meaning-to-kanji"
 
 export type QuizDifficulty = "easy" | "medium" | "hard"
 
 export interface QuizSettings {
+  contentType: QuizContentType
   mode: QuizMode
   direction: QuizDirection
   difficulty: QuizDifficulty
+  jlptLevel?: string // "All", "N5", "N4", "N3", "N2", "N1"
   questionCount: number
   timeLimit?: number // seconds per question
   showHints: boolean
@@ -34,7 +41,8 @@ export interface QuizSettings {
 
 export interface QuizQuestion {
   id: string
-  card: VocabularyCard
+  card: VocabularyCard | KanjiCard
+  contentType: QuizContentType
   mode: QuizMode
   direction: QuizDirection
   question: string
@@ -69,6 +77,19 @@ export interface QuizResult {
   correctAnswers: number
   incorrectAnswers: number
   skippedAnswers: number
+  // New: Track questions that were answered incorrectly
+  incorrectQuestionDetails?: IncorrectQuestionDetail[]
+}
+
+/**
+ * Detailed information about an incorrect answer
+ */
+export interface IncorrectQuestionDetail {
+  question: QuizQuestion
+  userAnswer: string
+  correctAnswer: string | string[]
+  timeSpent: number
+  hintsUsed: number
 }
 
 export interface QuizProgress {
