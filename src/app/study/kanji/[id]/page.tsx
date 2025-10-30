@@ -264,7 +264,7 @@ export default function KanjiDetailPage() {
 
       {/* Example Vocabulary */}
       {kanji.examples.length > 0 && (
-        <Card>
+        <Card className="bg-amber-50 dark:bg-amber-950/10 border-amber-200 dark:border-amber-900/30">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <BookOpen className="h-5 w-5" />
@@ -273,29 +273,33 @@ export default function KanjiDetailPage() {
           </CardHeader>
           <CardContent>
             <div className="text-sm text-muted-foreground mb-4">
-              Click on a word to see its full details
+              Words that use this kanji
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {kanji.examples.slice(0, 12).map((vocabId) => {
                 const vocab = vocabData[vocabId];
                 if (!vocab) return null;
 
                 return (
-                  <Link
+                  <div
                     key={vocabId}
-                    href={`/vocabulary/${vocabId}`}
-                    className="p-3 border rounded-lg hover:bg-accent hover:border-primary transition-colors"
+                    className="p-4 bg-white dark:bg-slate-900 border border-amber-200 dark:border-amber-900/50 rounded-lg shadow-sm"
                   >
-                    <div className="text-lg font-medium mb-1">
-                      {vocab.kanji || vocab.kana}
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="text-2xl font-bold text-foreground">
+                        {vocab.kanji || vocab.kana}
+                      </div>
+                      <Badge variant="outline" className="text-xs">
+                        {vocab.partOfSpeech[0] || 'word'}
+                      </Badge>
                     </div>
-                    <div className="text-sm text-muted-foreground mb-1">
+                    <div className="text-base text-muted-foreground mb-1">
                       {vocab.kana}
                     </div>
-                    <div className="text-xs text-muted-foreground">
+                    <div className="text-sm text-muted-foreground">
                       {vocab.meaning[0]}
                     </div>
-                  </Link>
+                  </div>
                 );
               })}
             </div>
