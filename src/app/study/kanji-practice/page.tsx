@@ -163,42 +163,6 @@ export default function KanjiPracticePage() {
     sessionStorage.removeItem('kanji-practice-config');
   };
 
-  // Keyboard shortcuts
-  useEffect(() => {
-    const handleKeyPress = (e: KeyboardEvent) => {
-      // Don't trigger if user is typing in input fields
-      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
-        return;
-      }
-
-      // Don't trigger if config screen is showing
-      if (showConfig) {
-        return;
-      }
-
-      switch (e.key) {
-        case 'ArrowRight':
-          e.preventDefault();
-          handleNext();
-          break;
-        case 'ArrowLeft':
-          e.preventDefault();
-          handlePrevious();
-          break;
-        case ' ':
-          e.preventDefault();
-          if (currentKanji) {
-            // Navigate to detail page
-            window.location.href = `/study/kanji/${currentKanji.id}`;
-          }
-          break;
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyPress);
-    return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [currentKanji, showConfig]);
-
   const applyFiltersAndSort = (allKanji: KanjiCard[], progressData: Record<string, CardProgress>, config: { cardCount: number; jlptFilter: string; sortMode: SortMode }) => {
     // Filter by JLPT level (or include all if 'All' selected)
     let filteredKanji = config.jlptFilter === 'All'
@@ -323,6 +287,42 @@ export default function KanjiPracticePage() {
 
     // Don't auto-advance - let user navigate manually
   };
+
+  // Keyboard shortcuts
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      // Don't trigger if user is typing in input fields
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+        return;
+      }
+
+      // Don't trigger if config screen is showing
+      if (showConfig) {
+        return;
+      }
+
+      switch (e.key) {
+        case 'ArrowRight':
+          e.preventDefault();
+          handleNext();
+          break;
+        case 'ArrowLeft':
+          e.preventDefault();
+          handlePrevious();
+          break;
+        case ' ':
+          e.preventDefault();
+          if (currentKanji) {
+            // Navigate to detail page
+            window.location.href = `/study/kanji/${currentKanji.id}`;
+          }
+          break;
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [currentKanji, showConfig, handleNext, handlePrevious]);
 
   if (loading) {
     return (
