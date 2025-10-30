@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
 import { Moon, Sun, BookOpen, Trophy, Settings, Menu, X, Zap, Library, BarChart3, GraduationCap, Wrench, Database, Languages } from "lucide-react"
 import { useState, useEffect } from "react"
@@ -11,6 +12,7 @@ import { cn } from "@/lib/utils"
 
 export function Header() {
   const { theme, setTheme } = useTheme()
+  const pathname = usePathname()
   const [mounted, setMounted] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -53,16 +55,24 @@ export function Header() {
 
           {/* Desktop navigation */}
           <div className="hidden md:flex md:items-center md:gap-6">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href as any}
-                className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <item.icon className="h-4 w-4" />
-                {item.name}
-              </Link>
-            ))}
+            {navigation.map((item) => {
+              const isActive = pathname === item.href || pathname?.startsWith(item.href + '/');
+              return (
+                <Link
+                  key={item.name}
+                  href={item.href as any}
+                  className={cn(
+                    "flex items-center gap-2 text-sm font-medium transition-colors",
+                    isActive
+                      ? "text-primary"
+                      : "text-muted-foreground hover:text-foreground"
+                  )}
+                >
+                  <item.icon className="h-4 w-4" />
+                  {item.name}
+                </Link>
+              );
+            })}
           </div>
 
           {/* Right side actions */}
@@ -107,17 +117,25 @@ export function Header() {
         {/* Mobile menu */}
         {mobileMenuOpen && (
           <div className="md:hidden py-4 space-y-2 border-t">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href as any}
-                className="flex items-center gap-3 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent rounded-lg transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <item.icon className="h-4 w-4" />
-                {item.name}
-              </Link>
-            ))}
+            {navigation.map((item) => {
+              const isActive = pathname === item.href || pathname?.startsWith(item.href + '/');
+              return (
+                <Link
+                  key={item.name}
+                  href={item.href as any}
+                  className={cn(
+                    "flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg transition-colors",
+                    isActive
+                      ? "text-primary bg-accent"
+                      : "text-muted-foreground hover:text-foreground hover:bg-accent"
+                  )}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <item.icon className="h-4 w-4" />
+                  {item.name}
+                </Link>
+              );
+            })}
             <div className="flex items-center justify-between px-3 py-2">
               <span className="text-sm font-medium">Theme</span>
               {mounted && (
