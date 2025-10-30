@@ -30,6 +30,7 @@ export default function KanjiDetailPage() {
   const kanjiId = decodeURIComponent(params.id as string);
 
   const [kanji, setKanji] = useState<KanjiCard | null>(null);
+  const [vocabData, setVocabData] = useState<Record<string, any>>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -38,19 +39,34 @@ export default function KanjiDetailPage() {
       try {
         setLoading(true);
         console.log('🔍 Loading kanji with ID:', kanjiId);
-        const response = await fetch('/seed-data/kanji_n5.json');
 
-        if (!response.ok) {
+        // Load kanji data
+        const kanjiResponse = await fetch('/seed-data/kanji_n5.json');
+        if (!kanjiResponse.ok) {
           throw new Error('Failed to load kanji data');
         }
+        const kanjiData = await kanjiResponse.json();
 
-        const data = await response.json();
-        console.log('📦 Loaded kanji dataset:', data.metadata);
+        // Load vocabulary data
+        const vocabResponse = await fetch('/seed-data/N5_vocab_dataset.json');
+        if (!vocabResponse.ok) {
+          throw new Error('Failed to load vocabulary data');
+        }
+        const vocabDataset = await vocabResponse.json();
+
+        // Create vocab lookup map
+        const vocabMap: Record<string, any> = {};
+        vocabDataset.vocabulary.forEach((vocab: any) => {
+          vocabMap[vocab.id] = vocab;
+        });
+        setVocabData(vocabMap);
+
+        console.log('📦 Loaded kanji dataset:', kanjiData.metadata);
         console.log('🔎 Searching for kanji with ID:', kanjiId);
-        const kanjiCard = data.kanji.find((k: KanjiCard) => k.id === kanjiId);
+        const kanjiCard = kanjiData.kanji.find((k: KanjiCard) => k.id === kanjiId);
 
         if (!kanjiCard) {
-          console.error('❌ Kanji not found. Available IDs:', data.kanji.slice(0, 5).map((k: any) => k.id));
+          console.error('❌ Kanji not found. Available IDs:', kanjiData.kanji.slice(0, 5).map((k: any) => k.id));
           throw new Error('Kanji not found');
         }
 
@@ -259,21 +275,29 @@ export default function KanjiDetailPage() {
             <div className="text-sm text-muted-foreground mb-4">
               Click on a word to see its full details
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-              {kanji.examples.slice(0, 12).map((vocabId) => (
-                <Link
-                  key={vocabId}
-                  href={`/vocabulary/${vocabId}`}
-                  className="p-3 border rounded-lg hover:bg-accent hover:border-primary transition-colors"
-                >
-                  <div className="text-sm font-medium text-primary">
-                    {vocabId}
-                  </div>
-                  <div className="text-xs text-muted-foreground">
-                    Click to view
-                  </div>
-                </Link>
-              ))}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+              {kanji.examples.slice(0, 12).map((vocabId) => {
+                const vocab = vocabData[vocabId];
+                if (!vocab) return null;
+
+                return (
+                  <Link
+                    key={vocabId}
+                    href={`/vocabulary/${vocabId}`}
+                    className="p-3 border rounded-lg hover:bg-accent hover:border-primary transition-colors"
+                  >
+                    <div className="text-lg font-medium mb-1">
+                      {vocab.kanji || vocab.kana}
+                    </div>
+                    <div className="text-sm text-muted-foreground mb-1">
+                      {vocab.kana}
+                    </div>
+                    <div className="text-xs text-muted-foreground">
+                      {vocab.meaning[0]}
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
 
             {kanji.examples.length > 12 && (
