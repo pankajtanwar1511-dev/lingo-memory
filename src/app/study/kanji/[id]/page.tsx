@@ -135,42 +135,50 @@ export default function KanjiDetailPage() {
       </Card>
 
       {/* Readings */}
-      <div className="grid md:grid-cols-2 gap-6">
-        {/* On-readings */}
-        <div className="space-y-3">
-          <h3 className="text-lg font-semibold">
-            音読み <span className="text-sm font-normal text-muted-foreground">(On-reading)</span>
-          </h3>
-          {kanji.onReadings.length > 0 ? (
-            <div className="space-y-2">
-              {kanji.onReadings.map((reading, i) => (
-                <div key={i} className="text-3xl font-medium">
-                  {reading}
-                </div>
-              ))}
-            </div>
-          ) : (
-            <p className="text-muted-foreground">—</p>
-          )}
-        </div>
+      <div className="grid md:grid-cols-2 gap-4">
+        {/* On-readings Card */}
+        <Card className="bg-blue-50 dark:bg-blue-950/20 border-blue-200 dark:border-blue-900/30">
+          <CardHeader>
+            <CardTitle className="text-lg">
+              音読み <span className="text-sm font-normal text-muted-foreground">(On-reading)</span>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            {kanji.onReadings.length > 0 ? (
+              <div className="space-y-2">
+                {kanji.onReadings.map((reading, i) => (
+                  <div key={i} className="text-3xl font-medium text-blue-900 dark:text-blue-100">
+                    {reading}
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p className="text-muted-foreground text-xl">—</p>
+            )}
+          </CardContent>
+        </Card>
 
-        {/* Kun-readings */}
-        <div className="space-y-3">
-          <h3 className="text-lg font-semibold">
-            訓読み <span className="text-sm font-normal text-muted-foreground">(Kun-reading)</span>
-          </h3>
-          {kanji.kunReadings.length > 0 ? (
-            <div className="space-y-2">
-              {kanji.kunReadings.map((reading, i) => (
-                <div key={i} className="text-3xl font-medium">
-                  {reading}
-                </div>
-              ))}
-            </div>
-          ) : (
-            <p className="text-muted-foreground">—</p>
-          )}
-        </div>
+        {/* Kun-readings Card */}
+        <Card className="bg-green-50 dark:bg-green-950/20 border-green-200 dark:border-green-900/30">
+          <CardHeader>
+            <CardTitle className="text-lg">
+              訓読み <span className="text-sm font-normal text-muted-foreground">(Kun-reading)</span>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            {kanji.kunReadings.length > 0 ? (
+              <div className="space-y-2">
+                {kanji.kunReadings.map((reading, i) => (
+                  <div key={i} className="text-3xl font-medium text-green-900 dark:text-green-100">
+                    {reading}
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p className="text-muted-foreground text-xl">—</p>
+            )}
+          </CardContent>
+        </Card>
       </div>
 
       {/* Stroke Order Animation */}
