@@ -186,10 +186,11 @@ export function StrokeOrderAnimation({
             if (index > currentStroke) return null;
 
             const isCurrentStroke = index === currentStroke;
+            const isCompletedStroke = index < currentStroke;
 
             return (
               <motion.path
-                key={index}
+                key={`${index}-${isPlaying}`}
                 d={pathData}
                 fill="none"
                 stroke="currentColor"
@@ -197,7 +198,7 @@ export function StrokeOrderAnimation({
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 className="text-foreground"
-                initial={{ pathLength: 0, opacity: 0 }}
+                initial={{ pathLength: isCompletedStroke ? 1 : 0, opacity: isCompletedStroke ? 1 : 0 }}
                 animate={{
                   pathLength: 1,
                   opacity: 1,
