@@ -3,7 +3,7 @@
 **Project:** LingoMemory Kanji Learning Module
 **Created:** 2025-01-30
 **Current Branch:** `kanji` (all phases in this branch)
-**Status:** 🔄 Phase 2 - Starting UI Components
+**Status:** 🔄 Phase 3 - Integration & Polish
 
 ---
 
@@ -41,13 +41,25 @@
 
 ### Phase 2: UI Components & Animations (100% complete) ✅
 **Started:** 2025-01-30 12:35
-**Completed:** 2025-01-30 13:00
+**Completed:** 2025-01-30 14:30
 **Status:** ✅ Complete
 **Branch:** `kanji` (same branch for all phases)
 
 #### Completed Tasks ✅
 - [x] TypeScript types (src/types/kanji.ts)
 - [x] Stroke animation component with Framer Motion
+- [x] Kanji detail page with URL decoding fix
+- [x] Kanji list page with search, sort, and filter
+- [x] Navigation integration (header + study page)
+- [x] Reading cards with subtle colors (blue/green)
+- [x] Animation fixes:
+  - Fixed initial state (start at currentStroke = -1)
+  - Fixed replay animation (animationKey remounting)
+  - Fixed stroke sequencing (auto-advance working)
+  - Fixed last stroke blink
+  - Fixed loop restart animations
+- [x] Stroke number positioning (at stroke start points)
+- [x] Stroke number display modes (Current/All/Hidden toggle)
 - [x] Kanji detail page (/study/kanji/[id])
 - [x] Kanji list page (/study/kanji)
 - [x] Navigation integration (header + study page)
