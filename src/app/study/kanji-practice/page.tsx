@@ -702,7 +702,7 @@ export default function KanjiPracticePage() {
           variant="outline"
           size="lg"
           onClick={handlePrevious}
-          className="gap-2"
+          className="gap-2 w-[140px]"
         >
           <ChevronLeft className="h-5 w-5" />
           Previous
@@ -712,7 +712,7 @@ export default function KanjiPracticePage() {
           variant="default"
           size="lg"
           onClick={handleFlip}
-          className="gap-2"
+          className="gap-2 w-[180px]"
         >
           {isFlipped ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
           {isFlipped ? 'Hide' : 'Show'} Answer
@@ -722,7 +722,7 @@ export default function KanjiPracticePage() {
           variant="outline"
           size="lg"
           onClick={handleNext}
-          className="gap-2"
+          className="gap-2 w-[140px]"
         >
           Next
           <ChevronRight className="h-5 w-5" />
