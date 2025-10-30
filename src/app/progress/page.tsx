@@ -19,6 +19,8 @@ import { cn } from "@/lib/utils"
 import { useDatabase } from "@/hooks/useDatabase"
 import { WeakAreasReport } from "@/components/analytics/weak-areas-report"
 import { QuizLearningCurve } from "@/components/analytics/quiz-learning-curve"
+import { DailyGoals } from "@/components/dashboard/daily-goals"
+import { StreakDisplay } from "@/components/dashboard/streak-display"
 
 interface DailyStats {
   date: Date
@@ -197,6 +199,12 @@ export default function ProgressPage() {
                 </div>
               </CardContent>
             </Card>
+          </div>
+
+          {/* Daily Goals and Streak */}
+          <div className="mt-8 grid md:grid-cols-2 gap-6">
+            <DailyGoals showSettings={true} />
+            <StreakDisplay />
           </div>
 
           <Tabs defaultValue="overview" className="space-y-6">

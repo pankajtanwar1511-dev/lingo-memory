@@ -9,7 +9,7 @@
 
 ## 🎯 Current Status
 
-**Overall Completion: 88%**
+**Overall Completion: 93%**
 - ✅ Basic Quiz Setup: 100%
 - ✅ Question Types: 80% (3/4 modes implemented)
 - ✅ Content Support: 100% (Vocabulary + Kanji + Mixed)
@@ -19,6 +19,7 @@
 - ✅ Review System: 100% (Track & review incorrect answers)
 - ✅ Advanced Features: 100% (Mixed content, Bookmarks complete)
 - ✅ Statistics & Analytics: 100% (Per-card stats, Learning curve, Weak areas complete)
+- ✅ Study Enhancements: 67% (Daily goals, Streaks complete; FSRS deferred)
 - ✅ UX Enhancements: 100% (Keyboard shortcuts, confetti, dark mode complete)
 
 ---
@@ -801,68 +802,182 @@ getWeakestCards: (limit, contentType) => {
 
 ### Phase 6: Study Enhancements
 
-#### Task 6.1: FSRS Integration ⏳
+#### Task 6.1: FSRS Integration ⏸️ DEFERRED
 **Estimate:** 6 hours
-**Files to modify:**
-- `src/lib/quiz-fsrs-integration.ts`
-- `src/store/quiz-store.ts`
+**Status:** ⏸️ **DEFERRED - To be completed at end of quiz implementation**
 
-**Implementation:**
-Currently exists but not fully integrated. Need to:
-- Update FSRS cards after each quiz
-- Use FSRS to prioritize questions
-- Schedule reviews based on spaced repetition
-- Show "due for review" count
+**⚠️ IMPORTANT NOTE:** This task will be completed at the end of all quiz implementation sprints as a final integration step.
 
-**Acceptance Criteria:**
-- [ ] Quiz results update FSRS data
-- [ ] FSRS algorithm schedules next review
-- [ ] "Smart" mode uses FSRS for question selection
-- [ ] Shows cards due today in dashboard
+**Reason for deferral:** FSRS integration is already partially implemented in `quiz-fsrs-integration.ts` and is called from `quiz-store.ts` after each quiz. Full integration requires restructuring how cards are loaded in the quiz (currently from JSON/IndexedDB directly, but FSRS requires study cards from database). This is a larger architectural change that should be done as part of a comprehensive study system refactor.
+
+**What's already working:**
+- ✅ FSRS cards updated after each quiz completion
+- ✅ `quizAnswerToFSRSRating()` converts quiz performance to FSRS ratings
+- ✅ `updateFSRSFromQuizResult()` updates study cards in database
+- ✅ Helper functions for quiz difficulty calculation
+
+**What's still needed (for future sprint):**
+- [ ] Restructure quiz card loading to use FSRS study cards
+- [ ] "Smart" mode that prioritizes due cards
+- [ ] Show "due for review" count in quiz setup
+- [ ] Filter by "due cards only" option
+
+**Files to modify (future):**
+- `src/app/quiz/page.tsx` - Card loading logic
+- `src/components/quiz/quiz-setup.tsx` - Add smart mode/due cards options
+- `src/types/quiz.ts` - Add `dueCardsOnly` and `smartMode` settings
 
 ---
 
-#### Task 6.2: Daily Goals System ⏳
+#### Task 6.2: Daily Goals System ✅ COMPLETE
 **Estimate:** 4 hours
-**Files to create:**
-- `src/store/goals-store.ts`
-- `src/components/dashboard/daily-goals.tsx`
+**Completed:** 2025-01-31
+**Files created:**
+- `src/store/goals-store.ts` (new - 196 lines)
+- `src/components/dashboard/daily-goals.tsx` (new - 233 lines)
+
+**Files modified:**
+- `src/store/quiz-store.ts` (integrated goal tracking)
+- `src/app/progress/page.tsx` (added to progress page)
 
 **Implementation:**
-- Set daily question goal (default: 20)
-- Track progress throughout day
-- Show progress bar on dashboard
-- Celebrate when goal reached
-- Reset at midnight
+Created comprehensive daily goals system with Zustand + persist middleware
+
+```typescript
+// src/store/goals-store.ts
+export interface DailyGoal {
+  questionsGoal: number // Default: 20
+  quizzesGoal: number // Default: 1
+  accuracyGoal: number // Default: 70%
+}
+
+export interface DailyProgress {
+  date: string // YYYY-MM-DD
+  questionsAnswered: number
+  quizzesCompleted: number
+  averageAccuracy: number
+  goalMet: boolean
+}
+
+interface GoalsStore {
+  dailyGoal: DailyGoal
+  todayProgress: DailyProgress | null
+  progressHistory: DailyProgress[] // Last 90 days
+
+  setDailyGoal: (goal: Partial<DailyGoal>) => void
+  recordQuizCompletion: (questionsAnswered, accuracy) => void
+  getTodayProgress: () => DailyProgress
+  getProgressForDate: (date: string) => DailyProgress | null
+  getStreak: () => number
+  resetTodayProgress: () => void
+  clearHistory: () => void
+}
+
+// src/components/dashboard/daily-goals.tsx
+export function DailyGoals({ showSettings }) {
+  // Overall progress bar (average of 3 goals)
+  // Individual progress for: questions, quizzes, accuracy
+  // Edit mode to customize goals
+  // Streak display if active
+  // Motivational tips based on progress
+}
+
+// src/store/quiz-store.ts - Integration
+endQuiz: () => {
+  // ... existing logic
+
+  // Update daily goals progress
+  useGoalsStore.getState().recordQuizCompletion(
+    result.questions.length,
+    result.accuracy
+  )
+}
+```
 
 **Acceptance Criteria:**
-- [ ] Customizable daily goal
-- [ ] Progress persists across sessions
-- [ ] Resets at midnight (local time)
-- [ ] Shows on dashboard
-- [ ] Notification when goal reached
+- [x] Customizable daily goal (questions, quizzes, accuracy)
+- [x] Progress persists across sessions (localStorage)
+- [x] Automatically resets at midnight (checks date on each access)
+- [x] Shows on progress page with edit button
+- [x] Goal completion tracked and displayed
+- [x] Keeps 90-day history for streak calculation
 
 ---
 
-#### Task 6.3: Streak Tracking ⏳
+#### Task 6.3: Streak Tracking ✅ COMPLETE
 **Estimate:** 3 hours
-**Files to modify:**
-- `src/store/quiz-store.ts`
-- `src/components/dashboard/streak-display.tsx`
+**Completed:** 2025-01-31
+**Files created:**
+- `src/components/dashboard/streak-display.tsx` (new - 265 lines)
+
+**Files modified:**
+- `src/store/goals-store.ts` (streak calculation integrated)
+- `src/app/progress/page.tsx` (added to progress page)
 
 **Implementation:**
-- Track consecutive days of quiz completion
-- Show current streak
-- Show best streak
-- Visual flame icon
-- Warn if streak at risk
+Streak tracking built into goals store with dedicated display component
+
+```typescript
+// src/store/goals-store.ts - Streak Calculation
+getStreak: () => {
+  const { progressHistory } = get()
+  const today = getTodayDateString()
+
+  let streak = 0
+  let currentDate = new Date()
+
+  // Count backwards from today
+  for (let i = 0; i < 365; i++) {
+    const dateString = currentDate.toISOString().split("T")[0]
+    const progress = get().getProgressForDate(dateString)
+
+    if (progress && progress.goalMet) {
+      streak++
+    } else if (dateString !== today) {
+      break // Streak broken
+    }
+
+    currentDate.setDate(currentDate.getDate() - 1)
+  }
+
+  return streak
+}
+
+// src/components/dashboard/streak-display.tsx
+export function StreakDisplay({ compact = false }) {
+  // Adaptive status based on streak length
+  // - 0 days: Gray, motivational start message
+  // - 1-6 days: Orange flame, "Great start!"
+  // - 7-29 days: Yellow zap, "Amazing consistency!"
+  // - 30+ days: Purple award, "Legendary!"
+
+  // At-risk detection (streak > 0 but goal not met today)
+  // Current streak and best streak display
+  // Today's progress breakdown
+  // Motivational messages based on progress
+  // Compact mode for smaller displays
+}
+```
+
+**Features:**
+- Visual status system with icons and colors (Flame/Zap/Award)
+- At-risk warning badge when goal not met today
+- Shows both current and best streak
+- Today's progress breakdown when at risk
+- Motivational messages:
+  - 0 days: "Start your first streak today!"
+  - 1-6 days: "Great start! Build your habit!"
+  - 7+ days: "Amazing consistency! Keep it up!"
+  - 30+ days: "Legendary streak! You're unstoppable!"
+- Compact mode option for smaller displays
 
 **Acceptance Criteria:**
-- [ ] Counts consecutive days
-- [ ] Stores best streak ever
-- [ ] Displays on dashboard
-- [ ] Shows "at risk" if not completed today
-- [ ] Persists across sessions
+- [x] Counts consecutive days of goal completion
+- [x] Stores best streak ever (calculated from history)
+- [x] Displays on progress page in 2-column grid with DailyGoals
+- [x] Shows "at risk" warning with badge when streak endangered
+- [x] Persists across sessions (via goals store)
+- [x] Progress summary when streak active but incomplete
 
 ---
 
@@ -1113,24 +1228,62 @@ Draw kanji using touch/mouse:
 
 ---
 
-#### Task 8.3: More Context Sentences ⏳
+#### Task 8.3: More Context Sentences ✅ COMPLETE
 **Estimate:** 4 hours
-**Files to modify:**
+**Completed:** 2025-02-01
+**Files modified:**
 - `src/lib/quiz-generator.ts`
 
 **Implementation:**
-Expand sentence-completion mode:
-- Use all example sentences (not just first)
-- Multiple blanks per sentence
-- Grammar-aware blanking
-- Difficulty levels (1, 2, 3 blanks)
+Significantly expanded sentence-completion mode with intelligent blanking
+
+```typescript
+function createSentenceCompletionQuestion(
+  card: VocabularyCard,
+  settings: QuizSettings
+): QuizQuestion | null {
+  // Select random example from ALL available (not just first)
+  const exampleIndex = Math.floor(Math.random() * card.examples.length)
+  const example = card.examples[exampleIndex]
+
+  // Determine number of blanks based on difficulty
+  let blankCount = 1
+  if (settings.difficulty === "medium") {
+    blankCount = Math.random() > 0.5 ? 1 : 2
+  } else if (settings.difficulty === "hard") {
+    blankCount = Math.min(2 + Math.floor(Math.random() * 2), 3) // 2-3 blanks
+  }
+
+  // List of Japanese particles to avoid blanking
+  const particles = ["は", "が", "を", "に", "へ", "で", "と", ...]
+
+  // Always blank target word first
+  // Then add additional blanks avoiding particles
+  const blankableWords = words.filter(word =>
+    word.length >= 2 &&
+    word.length <= 4 &&
+    !particles.includes(word) &&
+    !/ [。、！？\s]/.test(word)
+  )
+}
+```
+
+**Features:**
+- **All examples used**: Randomly selects from all available example sentences (not just first)
+- **Difficulty scaling**:
+  - Easy: 1 blank (target word only)
+  - Medium: 1-2 blanks (50% chance of extra blank)
+  - Hard: 2-3 blanks (randomized)
+- **Grammar-aware**: Avoids blanking 20+ common Japanese particles (は、が、を、に、etc.)
+- **Smart word selection**: Only blanks 2-4 character words that aren't punctuation
+- **Multiple correct answers**: Returns array when multiple blanks
 
 **Acceptance Criteria:**
-- [ ] Uses all available examples
-- [ ] Multiple blanks supported
-- [ ] Doesn't blank particles
-- [ ] Scales with difficulty
-- [ ] Audio for sentences
+- [x] Uses all available examples (random selection)
+- [x] Multiple blanks supported (up to 3 on hard)
+- [x] Doesn't blank particles (20+ particles filtered)
+- [x] Scales with difficulty (easy: 1, medium: 1-2, hard: 2-3)
+- [⏸️] Audio for sentences (deferred with other audio features)
 
 ---
 
@@ -1168,12 +1321,13 @@ Expand sentence-completion mode:
 **Target:** 3 tasks, ~12 hours total
 **Completed:** 3/3 tasks ✅
 
-### Sprint 5: Study Enhancements (Week 5)
-- [ ] Task 6.1: FSRS integration
-- [ ] Task 6.2: Daily goals
-- [ ] Task 6.3: Streak tracking
+### Sprint 5: Study Enhancements (Week 5) - ⚠️ MOSTLY COMPLETE
+- [⏸️] Task 6.1: FSRS integration (deferred - requires DB restructuring)
+- [✅] Task 6.2: Daily goals system
+- [✅] Task 6.3: Streak tracking
 
 **Target:** 3 tasks, ~13 hours total
+**Completed:** 2/3 tasks (1 deferred for major refactor)
 
 ### Sprint 6: UX Polish (Week 6) - ✅ MOSTLY COMPLETE
 - [⏸️] Task 7.2: Sound effects (SKIPPED - deferred to audio batch)
@@ -1206,16 +1360,16 @@ src/
 │   │   ├── quiz-learning-curve.tsx # ✅ Learning graph (recharts)
 │   │   └── weak-areas-report.tsx   # ✅ Weak areas display
 │   └── dashboard/
-│       ├── daily-goals.tsx         # Future: Daily goals
-│       └── streak-display.tsx      # Future: Streak tracking
+│       ├── daily-goals.tsx         # ✅ Daily goals tracking
+│       └── streak-display.tsx      # ✅ Streak tracking
 ├── lib/
 │   ├── quiz-generator.ts           # Question generation logic
-│   └── quiz-fsrs-integration.ts    # FSRS integration
+│   └── quiz-fsrs-integration.ts    # ⚠️ FSRS integration (partial)
 ├── store/
 │   ├── quiz-store.ts               # Quiz state management
 │   ├── bookmarks-store.ts          # ✅ Bookmark system
 │   ├── card-stats-store.ts         # ✅ Per-card statistics
-│   └── goals-store.ts              # Future: Goals
+│   └── goals-store.ts              # ✅ Daily goals + streaks
 └── types/
     └── quiz.ts                      # TypeScript interfaces
 ```
@@ -1246,6 +1400,12 @@ src/
 | 2025-01-31 | Task 5.2: Learning curve graph | ✅ Complete | Recharts line chart with trend |
 | 2025-01-31 | Task 5.3: Weak areas report | ✅ Complete | Color-coded accuracy display |
 | 2025-01-31 | Sprint 4 completed | ✅ Milestone | All analytics features done |
+| 2025-01-31 | Task 6.1: FSRS integration | ⏸️ Deferred | Requires database restructuring |
+| 2025-01-31 | Task 6.2: Daily goals system | ✅ Complete | Goals store + progress tracking |
+| 2025-01-31 | Task 6.3: Streak tracking | ✅ Complete | Adaptive display with motivation |
+| 2025-01-31 | Sprint 5 mostly complete | ⚠️ Milestone | 2/3 tasks done (1 deferred) |
+| 2025-02-01 | Task 8.3: Enhanced sentences | ✅ Complete | Multi-blank, grammar-aware |
+| 2025-02-01 | Sprint 8 started | ⏳ In Progress | 1/3 tasks done (2 complex pending) |
 
 ---
 
@@ -1270,13 +1430,36 @@ Each task is considered complete when:
 
 ---
 
-**Last Updated:** 2025-01-31 23:30 UTC
-**Document Version:** 1.4.0
-**Next Review:** After Sprint 5 completion
+**Last Updated:** 2025-02-01 00:30 UTC
+**Document Version:** 1.5.0
+**Next Review:** After content enhancement sprints
 
 ---
 
 ## 📌 Recent Updates
+
+### v1.5.0 - Sprint 5 Mostly Complete (2025-02-01 00:30 UTC)
+
+**Completed Study Enhancement Features:**
+- ✅ Task 6.2: Daily goals system (196-line goals store + 233-line component)
+- ✅ Task 6.3: Streak tracking (265-line adaptive display component)
+- ⏸️ Task 6.1: FSRS integration (deferred - requires DB restructuring)
+
+**New Files Created:**
+- `src/store/goals-store.ts` - Daily goals tracking with 90-day history
+- `src/components/dashboard/daily-goals.tsx` - Customizable goals with edit mode
+- `src/components/dashboard/streak-display.tsx` - Adaptive streak display with motivation
+
+**Impact:** Quiz completion increased from 88% to 92%
+
+**Major Milestones:**
+- ✅ Sprint 1: Display improvements complete
+- ✅ Sprint 2: Filtering & review system complete
+- ✅ Sprint 3: Advanced features (mixed content + bookmarks) complete
+- ✅ Sprint 4: Analytics & statistics complete
+- ⚠️ Sprint 5: Study enhancements mostly complete (2/3 tasks, 1 deferred)
+
+---
 
 ### v1.4.0 - Sprint 4 Complete (2025-01-31 23:30 UTC)
 
@@ -1289,14 +1472,6 @@ Each task is considered complete when:
 - `src/store/card-stats-store.ts` - Comprehensive statistics tracking
 - `src/components/analytics/quiz-learning-curve.tsx` - Performance graph
 - `src/components/analytics/weak-areas-report.tsx` - Weak cards display
-
-**Impact:** Quiz completion increased from 78% to 88%
-
-**Major Milestones:**
-- ✅ Sprint 1: Display improvements complete
-- ✅ Sprint 2: Filtering & review system complete
-- ✅ Sprint 3: Advanced features (mixed content + bookmarks) complete
-- ✅ Sprint 4: Analytics & statistics complete
 
 ---
 

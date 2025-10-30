@@ -147,7 +147,7 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
         {/* Quiz Mode */}
         <div>
           <label className="text-sm font-medium mb-3 block">Quiz Mode</label>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             <ModeCard
               icon={<Zap className="h-5 w-5" />}
               title="Multiple Choice"
@@ -169,6 +169,14 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
               selected={mode === "listening"}
               onClick={() => setMode("listening")}
               disabled={contentType === "kanji"} // Disable for kanji
+            />
+            <ModeCard
+              icon={<Book className="h-5 w-5" />}
+              title="Sentence Fill"
+              description="Complete the sentence"
+              selected={mode === "sentence-completion"}
+              onClick={() => setMode("sentence-completion")}
+              disabled={contentType === "kanji"} // Only works with vocabulary
             />
           </div>
         </div>

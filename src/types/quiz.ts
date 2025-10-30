@@ -38,6 +38,8 @@ export interface QuizSettings {
   strictTyping: boolean // For typing mode - require exact match
   caseSensitive: boolean // For typing mode
   bookmarkedOnly?: boolean // Only quiz bookmarked cards
+  dueCardsOnly?: boolean // Only quiz cards due for review (FSRS)
+  smartMode?: boolean // Use FSRS to prioritize card selection
 }
 
 export interface QuizQuestion {

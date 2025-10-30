@@ -19,6 +19,7 @@ import { KanjiCard } from "@/types/kanji"
 import { generateQuizQuestions } from "@/lib/quiz-generator"
 import { updateFSRSFromQuizResult } from "@/lib/quiz-fsrs-integration"
 import { useCardStatsStore } from "./card-stats-store"
+import { useGoalsStore } from "./goals-store"
 
 interface QuizStore {
   // Current session
@@ -173,9 +174,11 @@ export const useQuizStore = create<QuizStore>()(
         const correctCount = updatedAnswers.filter(a => a.isCorrect).length
 
         // Record card statistics
+        // Determine actual card type (in case of mixed mode)
+        const cardType: "vocabulary" | "kanji" = "kana" in question.card ? "vocabulary" : "kanji"
         useCardStatsStore.getState().recordAttempt(
           question.card.id,
-          question.contentType,
+          cardType,
           isCorrect,
           timeSpent
         )
@@ -361,6 +364,12 @@ export const useQuizStore = create<QuizStore>()(
         updateFSRSFromQuizResult(result).catch(err => {
           console.error("Failed to update FSRS from quiz:", err)
         })
+
+        // Update daily goals progress
+        useGoalsStore.getState().recordQuizCompletion(
+          result.questions.length,
+          result.accuracy
+        )
 
         // Add to history
         set(state => ({

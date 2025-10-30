@@ -76,7 +76,7 @@ function createVocabQuestion(
       return createListeningQuestion(card, allCards, settings.difficulty)
 
     case "sentence-completion":
-      return createSentenceCompletionQuestion(card)
+      return createSentenceCompletionQuestion(card, settings)
 
     case "flashcard":
       return createFlashcardQuestion(card, direction)
@@ -303,18 +303,69 @@ function createListeningQuestion(
 
 /**
  * Create sentence completion question
+ * Enhanced to use all examples, support multiple blanks, and scale with difficulty
  */
-function createSentenceCompletionQuestion(card: VocabularyCard): QuizQuestion | null {
+function createSentenceCompletionQuestion(
+  card: VocabularyCard,
+  settings: QuizSettings
+): QuizQuestion | null {
   if (!card.examples || card.examples.length === 0) {
     return null
   }
 
-  const example = card.examples[0]
+  // Select random example from all available (not just first)
+  const exampleIndex = Math.floor(Math.random() * card.examples.length)
+  const example = card.examples[exampleIndex]
   const sentence = example.japanese
   const wordToBlank = card.kanji || card.kana
 
-  // Create blank in sentence
-  const question = sentence.replace(wordToBlank, "____")
+  // Determine number of blanks based on difficulty
+  let blankCount = 1
+  if (settings.difficulty === "medium") {
+    blankCount = Math.random() > 0.5 ? 1 : 2
+  } else if (settings.difficulty === "hard") {
+    blankCount = Math.min(2 + Math.floor(Math.random() * 2), 3) // 2-3 blanks
+  }
+
+  // List of Japanese particles to avoid blanking
+  const particles = [
+    "は", "が", "を", "に", "へ", "で", "と", "から", "まで", "より",
+    "も", "か", "ね", "よ", "な", "の", "や", "ば", "けど", "けれど"
+  ]
+
+  // Create blanks (primary target always blanked)
+  let questionText = sentence
+  const blankedWords: string[] = []
+
+  // Always blank the target word first
+  questionText = sentence.replace(wordToBlank, "____")
+  blankedWords.push(wordToBlank)
+
+  // For multiple blanks, find additional words to blank (avoiding particles)
+  if (blankCount > 1 && sentence.length > wordToBlank.length + 10) {
+    // Simple approach: blank 2-3 character words that aren't particles
+    const words = sentence.split(/([。、！？\s]+)/).filter(w => w.trim().length > 0)
+
+    const blankableWords = words.filter(word =>
+      word.length >= 2 &&
+      word.length <= 4 &&
+      !particles.includes(word) &&
+      word !== wordToBlank &&
+      !/[。、！？\s]/.test(word) &&
+      questionText.includes(word) // Must still be in question (not already blanked)
+    )
+
+    for (let i = 0; i < Math.min(blankCount - 1, blankableWords.length); i++) {
+      const wordToAdd = blankableWords[i]
+      questionText = questionText.replace(wordToAdd, "____")
+      blankedWords.push(wordToAdd)
+    }
+  }
+
+  // Correct answer is the primary target word or all blanked words
+  const correctAnswer = blankedWords.length === 1
+    ? blankedWords[0]
+    : blankedWords
 
   return {
     id: `quiz_${card.id}_${Date.now()}`,
@@ -322,8 +373,8 @@ function createSentenceCompletionQuestion(card: VocabularyCard): QuizQuestion | 
     contentType: "vocabulary",
     mode: "sentence-completion",
     direction: "japanese-to-english",
-    question,
-    correctAnswer: wordToBlank,
+    question: questionText,
+    correctAnswer,
     hint: example.english
   }
 }

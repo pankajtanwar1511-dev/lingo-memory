@@ -386,7 +386,7 @@ export function QuizQuestion({
         )}
 
         {/* Typing Input */}
-        {question.mode === "typing" && (
+        {(question.mode === "typing" || question.mode === "sentence-completion") && (
           <div className="space-y-3">
             <Input
               type="text"
