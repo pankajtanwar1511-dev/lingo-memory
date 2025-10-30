@@ -19,6 +19,7 @@ import {
 } from "lucide-react"
 import { Progress } from "@/components/ui/progress"
 import { useBookmarksStore } from "@/store/bookmarks-store"
+import { SentenceBuilder } from "./sentence-builder"
 
 interface QuizQuestionProps {
   question: QuizQuestionType
@@ -29,6 +30,7 @@ interface QuizQuestionProps {
   playAudio: boolean
   onAnswer: (answer: string, timeSpent: number, hintsUsed: number) => void
   onSkip: () => void
+  onNext?: () => void
   disabled?: boolean
 }
 
@@ -41,6 +43,7 @@ export function QuizQuestion({
   playAudio,
   onAnswer,
   onSkip,
+  onNext,
   disabled = false
 }: QuizQuestionProps) {
   const [selectedAnswer, setSelectedAnswer] = useState<string>("")
@@ -88,8 +91,8 @@ export function QuizQuestion({
     setIsCorrect(null)
     startTimeRef.current = Date.now()
 
-    // Start timer
-    if (timeLimit) {
+    // Start timer (disabled for sentence-building mode which needs no time pressure)
+    if (timeLimit && question.mode !== "sentence-building") {
       timerRef.current = setInterval(() => {
         setTimeRemaining(prev => {
           if (prev === undefined || prev <= 0) {
@@ -241,6 +244,18 @@ export function QuizQuestion({
     handleSubmit()
   }
 
+  const handleSentenceBuilderSubmit = (userOrder: string[], isCorrect: boolean) => {
+    if (hasAnswered || disabled) return
+
+    const elapsed = Date.now() - startTimeRef.current
+    setTimeSpent(elapsed)
+    setHasAnswered(true)
+    setIsCorrect(isCorrect)
+
+    // Submit answer immediately (no auto-advance for sentence-building)
+    onAnswer(userOrder.join(""), elapsed, hintsUsed)
+  }
+
   const progressPercent = timeLimit && timeRemaining !== undefined
     ? (timeRemaining / timeLimit) * 100
     : 100
@@ -263,7 +278,7 @@ export function QuizQuestion({
             <Star className={`h-4 w-4 ${isBookmarked ? "fill-current" : ""}`} />
           </Button>
         </div>
-        {timeLimit && timeRemaining !== undefined && (
+        {timeLimit && timeRemaining !== undefined && question.mode !== "sentence-building" && (
           <div className="flex items-center gap-2">
             <Clock className="h-4 w-4 text-gray-500" />
             <span className={`font-mono ${
@@ -276,7 +291,7 @@ export function QuizQuestion({
       </div>
 
       {/* Timer Progress */}
-      {timeLimit && (
+      {timeLimit && question.mode !== "sentence-building" && (
         <Progress
           value={progressPercent}
           className={progressPercent <= 20 ? "bg-red-200" : ""}
@@ -453,8 +468,22 @@ export function QuizQuestion({
           </div>
         )}
 
-        {/* Hint */}
-        {showHints && question.hint && (
+        {/* Sentence Building (Drag and Drop) */}
+        {question.mode === "sentence-building" && question.scrambledWords && (
+          <SentenceBuilder
+            key={question.id}
+            words={question.scrambledWords}
+            correctOrder={Array.isArray(question.correctAnswer) ? question.correctAnswer : [question.correctAnswer]}
+            hint={question.hint}
+            onSubmit={handleSentenceBuilderSubmit}
+            onNext={onNext}
+            disabled={disabled}
+            showHints={showHints}
+          />
+        )}
+
+        {/* Hint (hidden for sentence-building as it has its own) */}
+        {showHints && question.hint && question.mode !== "sentence-building" && (
           <div className="text-center">
             {!showHint ? (
               <Button
@@ -479,21 +508,22 @@ export function QuizQuestion({
         )}
 
         {/* Action Buttons */}
-        <div className="flex gap-3">
-          <Button
-            variant="outline"
-            onClick={handleSkipClick}
-            disabled={hasAnswered || disabled}
-            className="gap-2"
-          >
-            <SkipForward className="h-4 w-4" />
-            Skip
-            <kbd className="hidden sm:inline ml-1 px-1.5 py-0.5 text-xs bg-gray-100 dark:bg-gray-800 rounded border">
-              Space
-            </kbd>
-          </Button>
+        {question.mode !== "sentence-building" && (
+          <div className="flex gap-3">
+            <Button
+              variant="outline"
+              onClick={handleSkipClick}
+              disabled={hasAnswered || disabled}
+              className="gap-2"
+            >
+              <SkipForward className="h-4 w-4" />
+              Skip
+              <kbd className="hidden sm:inline ml-1 px-1.5 py-0.5 text-xs bg-gray-100 dark:bg-gray-800 rounded border">
+                Space
+              </kbd>
+            </Button>
 
-          {question.mode === "multiple-choice" || question.mode === "listening" ? (
+            {question.mode === "multiple-choice" || question.mode === "listening" ? (
             <Button
               onClick={() => handleSubmit()}
               disabled={!selectedAnswer || hasAnswered || disabled}
@@ -517,8 +547,9 @@ export function QuizQuestion({
                 Enter
               </kbd>
             </Button>
-          )}
-        </div>
+            )}
+          </div>
+        )}
 
         {/* Keyboard shortcuts hint */}
         {question.mode === "multiple-choice" && !hasAnswered && (

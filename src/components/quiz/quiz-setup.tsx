@@ -24,7 +24,8 @@ import {
   Headphones,
   Keyboard,
   Book,
-  Languages
+  Languages,
+  Puzzle
 } from "lucide-react"
 
 interface QuizSetupProps {
@@ -147,7 +148,7 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
         {/* Quiz Mode */}
         <div>
           <label className="text-sm font-medium mb-3 block">Quiz Mode</label>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             <ModeCard
               icon={<Zap className="h-5 w-5" />}
               title="Multiple Choice"
@@ -176,6 +177,14 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
               description="Complete the sentence"
               selected={mode === "sentence-completion"}
               onClick={() => setMode("sentence-completion")}
+              disabled={contentType === "kanji"} // Only works with vocabulary
+            />
+            <ModeCard
+              icon={<Puzzle className="h-5 w-5" />}
+              title="Sentence Builder"
+              description="Arrange words in order"
+              selected={mode === "sentence-building"}
+              onClick={() => setMode("sentence-building")}
               disabled={contentType === "kanji"} // Only works with vocabulary
             />
           </div>

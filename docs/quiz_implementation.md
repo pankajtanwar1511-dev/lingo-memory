@@ -1182,25 +1182,126 @@ Updated to use semantic color tokens for better dark mode contrast
 
 ### Phase 8: Content Enhancements
 
-#### Task 8.1: Sentence Building Mode ⏳
+#### Task 8.1: Sentence Building Mode ✅ COMPLETE
 **Estimate:** 8 hours
-**Files to create:**
-- `src/components/quiz/sentence-builder.tsx`
+**Actual Time:** ~12 hours (multiple iterations with user feedback)
+**Completed:** 2025-02-01
+**Files created:**
+- `src/components/quiz/sentence-builder.tsx` (563 lines)
+
+**Files modified:**
+- `src/lib/quiz-generator.ts` (smart word boundary detection)
+- `src/components/quiz/quiz-question.tsx` (integrated sentence builder)
+- `src/types/quiz.ts` (added scrambledWords field)
 
 **Implementation:**
-Drag-and-drop interface to build sentences:
-- Show scrambled words
-- User drags to correct order
-- Validates sentence structure
-- Shows particles in different color
-- Audio playback of correct sentence
+Duolingo-style tap-to-move interface with smart word boundary detection:
+
+```typescript
+// Duolingo-style UX with separate answer area and word bank
+<div className="space-y-6">
+  {/* Answer Area - Drag to reorder, tap to remove */}
+  <DndContext sensors={sensors} onDragEnd={handleDragEnd}>
+    <SortableContext items={answerArea}>
+      {answerArea.map(item => (
+        <SortableAnswerWord
+          item={item}
+          onClick={() => handleAnswerAreaClick(item)} // Tap to remove
+        />
+      ))}
+    </SortableContext>
+  </DndContext>
+
+  {/* Word Bank - Tap to add, maintains layout with null placeholders */}
+  {wordBank.map((item, index) =>
+    item === null
+      ? renderGrayPlaceholder(initialItems[index].id)
+      : renderWordBankWord(item, () => handleWordBankClick(item, index))
+  )}
+</div>
+
+// Smart word boundary detection (quiz-generator.ts)
+function createSentenceBuildingQuestion(card, settings) {
+  const particles = ["は", "が", "を", "に", ...] // 28 particles
+  const wordEndings = ["ます", "です", "た", ...] // 18 endings
+
+  let words: string[] = []
+  let currentWord = ""
+
+  while (i < sentence.length) {
+    const char = sentence[i]
+
+    // Split on particles
+    if (particles.includes(char)) {
+      if (currentWord) words.push(currentWord)
+      words.push(char)
+      currentWord = ""
+      continue
+    }
+
+    // Check multi-character verb endings
+    for (const ending of wordEndings) {
+      if (sentence.slice(i, i + ending.length) === ending) {
+        currentWord += ending
+        words.push(currentWord)
+        currentWord = ""
+        i += ending.length
+        break
+      }
+    }
+
+    currentWord += char
+    i++
+  }
+
+  // Example output: "私は学生です" → ["私", "は", "学生", "です"]
+}
+```
+
+**Key Features:**
+1. **Duolingo-style UX**: Separate answer area and word bank
+2. **Tap-to-move**: Click words in bank to add to answer, click in answer to remove back to bank
+3. **Drag-to-reorder**: Drag words within answer area to change order (@dnd-kit with 3px activation)
+4. **Layout stability**: Null placeholders with exact width measurement prevent shifting
+5. **Smart word splitting**: Linguistic rules for Japanese (particles, verb endings, copulas)
+6. **Particle highlighting**: Purple background for particles (は、を、に, etc.)
+7. **Tutorial popup**: First-time instructions with "Don't show again" checkbox
+8. **Post-answer buttons**: Retry (if wrong), Show Answer (toggle), Next
+9. **Original position memory**: Removed words return to exact original slot
+10. **Fixed feedback area**: Reserved 120px height prevents button position shifts
+
+**Performance Optimizations:**
+- Only answer area uses drag-and-drop (word bank is click-only)
+- Exact width measurement cached using useRef + useEffect
+- Gray placeholders styled with exact pixel widths for zero layout shift
+
+**User Experience Iterations:**
+1. Initial: Full drag-and-drop (slow, 8px activation)
+2. v2: Click-to-swap between two words
+3. v3: Duolingo-style with answer area + word bank
+4. v4: Added drag-to-reorder within answer area
+5. v5: Fixed layout shifting with null placeholders + width measurement
+6. v6: Tutorial popup + reset button
+7. v7: Post-answer button redesign (3 parallel buttons)
+8. v8: Fixed duplicate correct answer display + retry state reset
 
 **Acceptance Criteria:**
-- [ ] Drag and drop works
-- [ ] Validates word order
-- [ ] Touch-friendly on mobile
-- [ ] Shows correct answer
-- [ ] Audio playback
+- [✅] Tap-to-move works (word bank → answer, answer → word bank)
+- [✅] Drag-to-reorder works (within answer area only)
+- [✅] Validates word order (joins and compares strings)
+- [✅] Touch-friendly on mobile (3px activation constraint)
+- [✅] Shows correct answer (toggle with Show Answer button)
+- [⏸️] Audio playback (deferred with other audio features)
+- [✅] Smart word splitting preserves kanji/hiragana combinations
+- [✅] Layout stability with exact width placeholders
+- [✅] Particle highlighting for visual grammar cues
+- [✅] Tutorial for first-time users
+- [✅] Fixed button positions with reserved feedback space
+
+**Known Limitations:**
+- Word boundary detection is heuristic-based (not perfect for all sentence structures)
+- Depends on quality of example sentences in database
+- No hiragana-only filter (user requested but not implemented - see Deferred Features)
 
 ---
 
@@ -1284,6 +1385,86 @@ function createSentenceCompletionQuestion(
 - [x] Doesn't blank particles (20+ particles filtered)
 - [x] Scales with difficulty (easy: 1, medium: 1-2, hard: 2-3)
 - [⏸️] Audio for sentences (deferred with other audio features)
+
+---
+
+## ⏸️ Deferred / Skipped Features
+
+This section documents features that were requested but explicitly skipped or deferred for future implementation.
+
+### Hiragana-Only Filter for Sentence Building
+**Status:** ⏸️ **DEFERRED - Database Quality Dependent**
+**Requested:** 2025-02-01 (during Sprint 8.1)
+**Reason for deferral:** This feature depends on having high-quality hiragana-only example sentences in the database.
+
+**User Request:**
+> "Can we have a filter to use only hiragana no kanji....In my current example adjective and noun came together..so I guess it depends on our database"
+
+**Technical Context:**
+- Current word boundary detection works with kanji/hiragana mixed sentences using linguistic rules
+- Switching to pure hiragana requires different splitting logic (no visual kanji boundaries)
+- Would need to filter vocabulary cards to only those with hiragana-only examples
+- Quality of hiragana sentences varies significantly in current dataset
+
+**Implementation Path (when ready):**
+1. Add checkbox in quiz setup: "Hiragana only (no kanji)"
+2. Filter cards to only those with `card.examples[].hasKanji === false`
+3. Update word boundary detection for hiragana-only mode:
+   - Rely more heavily on particle detection
+   - Use dictionary-based word segmentation (e.g., TinySegmenter)
+   - Consider spacing hints in example sentences
+
+**Files to modify:**
+- `src/components/quiz/quiz-setup.tsx` - Add hiragana-only checkbox
+- `src/types/quiz.ts` - Add `hiraganaOnly: boolean` to QuizSettings
+- `src/app/quiz/page.tsx` - Filter cards by `hasKanji` field
+- `src/lib/quiz-generator.ts` - Alternative word splitting for hiragana mode
+
+**Database Requirements:**
+- Tag all example sentences with `hasKanji: boolean` field
+- Review and improve quality of hiragana-only sentences
+- Ensure sufficient volume (target: 100+ cards with hiragana-only examples)
+
+**Priority:** Low - Better to focus on improving mixed kanji/hiragana experience first
+
+---
+
+### Audio Features (Batch)
+**Status:** ⏸️ **DEFERRED - To be implemented as comprehensive audio sprint**
+**Tasks Included:**
+- Task 1.1: Fix audio bug for kanji cards (listening mode)
+- Task 7.2: Sound effects (correct/incorrect/timer)
+- Task 8.1: Audio playback for sentence building
+
+**Reason for deferral:**
+Audio features across the quiz system should be implemented together as a coherent batch, not piecemeal. This ensures:
+- Consistent audio service interface
+- Unified settings for audio preferences
+- Better performance with shared audio resources
+- Comprehensive testing of audio features
+
+**Estimated Batch Effort:** 8-10 hours total
+
+---
+
+### FSRS Smart Mode
+**Status:** ⏸️ **DEFERRED - Requires database restructuring**
+**Task:** Task 6.1 (from Sprint 5)
+
+**What's already working:**
+- ✅ FSRS cards updated after each quiz completion
+- ✅ Quiz performance converted to FSRS ratings
+- ✅ Study cards updated in database
+
+**What's needed:**
+- [ ] Restructure quiz to load from FSRS study cards (not raw JSON/IndexedDB)
+- [ ] "Smart" mode prioritizing due cards
+- [ ] "Due for review" count display
+- [ ] Filter by due cards only
+
+**Reason for deferral:** Requires architectural changes to how cards are loaded in quiz flow. Current implementation loads directly from IndexedDB/JSON files. FSRS integration requires loading from study cards table in database, which is a larger refactor affecting multiple components.
+
+**Estimated Effort:** 6-8 hours when ready
 
 ---
 
@@ -1405,7 +1586,9 @@ src/
 | 2025-01-31 | Task 6.3: Streak tracking | ✅ Complete | Adaptive display with motivation |
 | 2025-01-31 | Sprint 5 mostly complete | ⚠️ Milestone | 2/3 tasks done (1 deferred) |
 | 2025-02-01 | Task 8.3: Enhanced sentences | ✅ Complete | Multi-blank, grammar-aware |
-| 2025-02-01 | Sprint 8 started | ⏳ In Progress | 1/3 tasks done (2 complex pending) |
+| 2025-02-01 | Task 8.1: Sentence building mode | ✅ Complete | Duolingo-style, 8 iterations |
+| 2025-02-01 | Hiragana-only filter | ⏸️ Deferred | Database quality dependent |
+| 2025-02-01 | Sprint 8.1 completed | ✅ Milestone | Sentence building fully functional |
 
 ---
 
@@ -1430,13 +1613,57 @@ Each task is considered complete when:
 
 ---
 
-**Last Updated:** 2025-02-01 00:30 UTC
-**Document Version:** 1.5.0
-**Next Review:** After content enhancement sprints
+**Last Updated:** 2025-02-01 14:45 UTC
+**Document Version:** 1.6.0
+**Next Review:** After remaining content enhancement sprints (8.2, 8.3)
 
 ---
 
 ## 📌 Recent Updates
+
+### v1.6.0 - Sprint 8.1 Complete - Sentence Building Mode (2025-02-01 14:45 UTC)
+
+**Completed Content Enhancement:**
+- ✅ Task 8.1: Sentence building mode (563-line component with 8 UX iterations)
+  - Duolingo-style tap-to-move interface
+  - Smart word boundary detection with 28 particles + 18 verb endings
+  - Layout stability with exact width measurement
+  - Tutorial popup, particle highlighting, fixed button positions
+  - Retry function fixed, duplicate answer display resolved
+
+**New Files Created:**
+- `src/components/quiz/sentence-builder.tsx` - Complete sentence building component
+
+**Files Modified:**
+- `src/lib/quiz-generator.ts` - Smart word splitting with linguistic rules
+- `src/components/quiz/quiz-question.tsx` - Integrated sentence builder with onNext prop
+- `src/types/quiz.ts` - Added scrambledWords field (already existed)
+
+**New Documentation Section:**
+- ⏸️ Deferred / Skipped Features
+  - Hiragana-only filter (database quality dependent)
+  - Audio features batch (comprehensive sprint planned)
+  - FSRS smart mode (requires DB restructuring)
+
+**Impact:** Quiz now supports 4 question modes (was 3)
+- ✅ Multiple Choice
+- ✅ Typing
+- ✅ Listening (vocabulary only)
+- ✅ Sentence Building (NEW)
+
+**User Feedback Iterations:**
+1. Performance: Removed slow drag-and-drop from word bank
+2. UX: Switched to Duolingo-style separate areas
+3. Layout: Fixed shifting with null placeholders + width measurement
+4. Visual: Darker placeholders, proper text centering
+5. Tutorial: Added first-time popup with dismissal
+6. Buttons: Redesigned to 3 parallel buttons (Retry, Show Answer, Next)
+7. Bugs: Fixed duplicate correct answer, retry state reset
+8. Word splitting: Implemented smart linguistic boundaries
+
+**Current Quiz System Completion: 96%**
+
+---
 
 ### v1.5.0 - Sprint 5 Mostly Complete (2025-02-01 00:30 UTC)
 

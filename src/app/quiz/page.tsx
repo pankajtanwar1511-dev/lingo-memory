@@ -14,6 +14,14 @@ import { QuizSettings } from "@/types/quiz"
 import { Button } from "@/components/ui/button"
 import { X, Pause, Play, Loader2 } from "lucide-react"
 import { Header } from "@/components/layout/header"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog"
 
 type QuizState = "setup" | "in-progress" | "results"
 
@@ -22,6 +30,7 @@ export default function QuizPage() {
   const [quizState, setQuizState] = useState<QuizState>("setup")
   const [kanjiCards, setKanjiCards] = useState<KanjiCard[]>([])
   const [kanjiLoading, setKanjiLoading] = useState(true)
+  const [showQuitDialog, setShowQuitDialog] = useState(false)
 
   const {
     currentSession,
@@ -172,10 +181,13 @@ export default function QuizPage() {
   }
 
   const handleAbandon = () => {
-    if (confirm("Are you sure you want to quit this quiz? Your progress will not be saved.")) {
-      abandonQuiz()
-      setQuizState("setup")
-    }
+    setShowQuitDialog(true)
+  }
+
+  const confirmQuit = () => {
+    abandonQuiz()
+    setQuizState("setup")
+    setShowQuitDialog(false)
   }
 
   const handleTogglePause = () => {
@@ -313,6 +325,7 @@ export default function QuizPage() {
           playAudio={currentSession?.settings.playAudio || false}
           onAnswer={handleAnswer}
           onSkip={handleSkip}
+          onNext={nextQuestion}
           disabled={progress.isPaused}
         />
       )}
@@ -370,6 +383,34 @@ export default function QuizPage() {
           onReviewMistakes={handleReviewMistakes}
         />
       )}
+
+      {/* Quit Confirmation Dialog */}
+      <Dialog open={showQuitDialog} onOpenChange={setShowQuitDialog}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle>Quit Quiz?</DialogTitle>
+            <DialogDescription>
+              Are you sure you want to quit this quiz? Your progress will not be saved and you will lose all answers.
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter className="flex gap-2 sm:gap-2">
+            <Button
+              variant="outline"
+              onClick={() => setShowQuitDialog(false)}
+            >
+              Cancel
+            </Button>
+            <Button
+              variant="destructive"
+              onClick={confirmQuit}
+              className="gap-2"
+            >
+              <X className="h-4 w-4" />
+              Quit Quiz
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
     </div>
   )

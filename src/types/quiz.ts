@@ -12,6 +12,7 @@ export type QuizMode =
   | "typing"
   | "listening"
   | "sentence-completion"
+  | "sentence-building"
   | "flashcard"
 
 export type QuizDirection =
@@ -53,6 +54,7 @@ export interface QuizQuestion {
   choices?: string[] // For multiple choice
   hint?: string
   audioUrl?: string // For listening mode
+  scrambledWords?: string[] // For sentence-building mode
 }
 
 export interface QuizAnswer {

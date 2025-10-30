@@ -78,6 +78,9 @@ function createVocabQuestion(
     case "sentence-completion":
       return createSentenceCompletionQuestion(card, settings)
 
+    case "sentence-building":
+      return createSentenceBuildingQuestion(card, settings)
+
     case "flashcard":
       return createFlashcardQuestion(card, direction)
 
@@ -793,5 +796,159 @@ function getKanjiHint(card: KanjiCard, direction: QuizDirection): string {
 
     default:
       return "You can do it!"
+  }
+}
+
+/**
+ * Create sentence building question (drag-and-drop)
+ * User must arrange scrambled words into correct order
+ */
+function createSentenceBuildingQuestion(
+  card: VocabularyCard,
+  settings: QuizSettings
+): QuizQuestion | null {
+  if (!card.examples || card.examples.length === 0) {
+    console.log(`[Sentence Building] Skipping card ${card.id}: no examples`)
+    return null
+  }
+
+  // Select random example from all available
+  const exampleIndex = Math.floor(Math.random() * card.examples.length)
+  const example = card.examples[exampleIndex]
+  const sentence = example.japanese
+
+  // Japanese particles list for intelligent word splitting
+  const particles = [
+    "は", "が", "を", "に", "へ", "で", "と", "から", "まで", "より",
+    "も", "か", "ね", "よ", "な", "の", "や", "ば", "けど", "けれど",
+    "って", "だけ", "しか", "さえ", "こそ", "など", "くらい", "ほど"
+  ]
+
+  // Common verb/adjective endings and auxiliary verbs that indicate word boundaries
+  const wordEndings = [
+    "ます", "ました", "ません", "ませんでした",
+    "です", "でした", "じゃない", "ではない",
+    "だ", "た", "ない", "なかった",
+    "られる", "られた", "させる", "させた",
+    "ている", "ていた", "てある", "てあった",
+    "そう", "よう", "らしい"
+  ]
+
+  // Smart word splitting with linguistic boundaries
+  const words: string[] = []
+  let currentWord = ""
+  let i = 0
+
+  while (i < sentence.length) {
+    const char = sentence[i]
+    const isSpace = /\s/.test(char)
+    const isPunctuation = /[。、！？]/.test(char)
+    const isParticle = particles.includes(char)
+
+    if (isSpace) {
+      // Space: save current word and skip
+      if (currentWord) {
+        words.push(currentWord)
+        currentWord = ""
+      }
+      i++
+      continue
+    }
+
+    if (isPunctuation) {
+      // Punctuation: save word, skip punctuation
+      if (currentWord) {
+        words.push(currentWord)
+        currentWord = ""
+      }
+      i++
+      continue
+    }
+
+    if (isParticle) {
+      // Particle: save word, add particle separately
+      if (currentWord) {
+        words.push(currentWord)
+        currentWord = ""
+      }
+      words.push(char)
+      i++
+      continue
+    }
+
+    // Check for multi-character word endings
+    let foundEnding = false
+    for (const ending of wordEndings) {
+      if (sentence.slice(i, i + ending.length) === ending) {
+        // Found a word ending - include it with current word
+        currentWord += ending
+        words.push(currentWord)
+        currentWord = ""
+        i += ending.length
+        foundEnding = true
+        break
+      }
+    }
+
+    if (foundEnding) {
+      continue
+    }
+
+    // Regular character: add to current word
+    currentWord += char
+    i++
+  }
+
+  // Add final word if any
+  if (currentWord) {
+    words.push(currentWord)
+  }
+
+  const validWords = words.filter(w => w.trim().length > 0)
+
+  // Need at least 2 words for meaningful scrambling (lowered from 3)
+  if (validWords.length < 2) {
+    console.log(`[Sentence Building] Skipping card ${card.id}: only ${validWords.length} words in "${sentence}"`)
+    return null
+  }
+
+  console.log(`[Sentence Building] Creating question for card ${card.id}: ${validWords.length} words - "${sentence}"`)
+
+  // Scramble the words (Fisher-Yates shuffle)
+  const scrambledWords = [...validWords]
+  for (let i = scrambledWords.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [scrambledWords[i], scrambledWords[j]] = [scrambledWords[j], scrambledWords[i]]
+  }
+
+  // Ensure scrambled order is different from correct order
+  let attempts = 0
+  while (
+    scrambledWords.join("") === validWords.join("") &&
+    attempts < 10
+  ) {
+    // Try different scramble
+    for (let i = scrambledWords.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [scrambledWords[i], scrambledWords[j]] = [scrambledWords[j], scrambledWords[i]]
+    }
+    attempts++
+  }
+
+  // Always show the English translation as the question
+  // User builds the Japanese sentence from scrambled words
+  const questionText = example.english
+  const hintText = sentence // Show complete Japanese as hint
+
+  return {
+    id: `quiz_${card.id}_${Date.now()}`,
+    card,
+    contentType: "vocabulary",
+    mode: "sentence-building",
+    direction: settings.direction,
+    question: questionText,
+    correctAnswer: validWords, // Correct word order (array)
+    scrambledWords, // Scrambled word order (array) - custom field
+    hint: hintText
   }
 }

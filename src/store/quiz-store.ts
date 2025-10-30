@@ -149,15 +149,27 @@ export const useQuizStore = create<QuizStore>()(
         }
 
         const question = currentSession.questions[currentQuestionIndex]
+
+        // For sentence-building mode, correctAnswer is an array of words
+        // We need to join them to compare with the user's answer
         const correctAnswers = Array.isArray(question.correctAnswer)
-          ? question.correctAnswer
+          ? [question.correctAnswer.join("")] // Join array into single string for comparison
           : [question.correctAnswer]
+
+        console.log('[Quiz Store] Checking answer:', {
+          mode: question.mode,
+          userAnswer: answer,
+          correctAnswers,
+          originalCorrectAnswer: question.correctAnswer
+        })
 
         // Check if answer is correct
         const isCorrect = correctAnswers.some(
           correct =>
             answer.trim().toLowerCase() === correct.trim().toLowerCase()
         )
+
+        console.log('[Quiz Store] Answer is correct:', isCorrect)
 
         const quizAnswer: QuizAnswer = {
           questionId: question.id,
@@ -196,8 +208,8 @@ export const useQuizStore = create<QuizStore>()(
           }
         })
 
-        // Auto-advance if enabled
-        if (currentSession.settings.autoAdvance) {
+        // Auto-advance if enabled (but not for sentence-building mode which has manual Next button)
+        if (currentSession.settings.autoAdvance && question.mode !== "sentence-building") {
           setTimeout(() => {
             get().nextQuestion()
           }, 1500)
