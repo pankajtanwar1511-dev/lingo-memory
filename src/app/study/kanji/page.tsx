@@ -24,11 +24,19 @@ import { KanjiCard } from '@/types/kanji';
 
 type SortOption = 'stroke' | 'frequency' | 'grade' | 'default';
 
+interface CardProgress {
+  kanjiId: string;
+  level: number;
+  lastSeen: number;
+  reviewCount: number;
+}
+
 export default function KanjiListPage() {
   const [kanjiList, setKanjiList] = useState<KanjiCard[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState<SortOption>('default');
+  const [progress, setProgress] = useState<Record<string, CardProgress>>({});
 
   useEffect(() => {
     const loadKanji = async () => {
@@ -42,6 +50,12 @@ export default function KanjiListPage() {
 
         const data = await response.json();
         setKanjiList(data.kanji);
+
+        // Load progress from localStorage
+        const savedProgress = localStorage.getItem('kanji-practice-progress');
+        if (savedProgress) {
+          setProgress(JSON.parse(savedProgress));
+        }
       } catch (err) {
         console.error('Error loading kanji:', err);
       } finally {
@@ -243,14 +257,25 @@ export default function KanjiListPage() {
                     {kanji.grade && <Badge variant="outline">G{kanji.grade}</Badge>}
                   </div>
 
-                  {/* Progress indicator (placeholder for future) */}
+                  {/* Progress indicator - LM circles */}
                   <div className="flex gap-1 justify-center">
-                    {[1, 2, 3, 4, 5].map((dot) => (
-                      <div
-                        key={dot}
-                        className="w-1.5 h-1.5 rounded-full bg-muted"
-                      />
-                    ))}
+                    {(() => {
+                      const kanjiProgress = progress[kanji.id];
+                      const hasBeenRated = kanjiProgress && kanjiProgress.reviewCount > 0;
+                      const currentLevel = kanjiProgress?.level || 0;
+
+                      return [0, 1, 2, 3, 5].map((level, index) => {
+                        const isAchieved = hasBeenRated && index < (currentLevel === 5 ? 5 : currentLevel + 1);
+                        return (
+                          <div
+                            key={level}
+                            className={`w-1.5 h-1.5 rounded-full ${
+                              isAchieved ? 'bg-green-500' : 'bg-muted'
+                            }`}
+                          />
+                        );
+                      });
+                    })()}
                   </div>
                 </CardContent>
               </Card>

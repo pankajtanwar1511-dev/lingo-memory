@@ -47,7 +47,7 @@ export default function KanjiPracticePage() {
   // Configuration state
   const [showConfig, setShowConfig] = useState(false);
   const [cardCount, setCardCount] = useState(10);
-  const [jlptFilter, setJlptFilter] = useState<string>('N5');
+  const [jlptFilter, setJlptFilter] = useState<string>('All');
   const [sortMode, setSortMode] = useState<SortMode>('algorithm');
   const [dontAskAgain, setDontAskAgain] = useState(false);
   const [hasDefaultSettings, setHasDefaultSettings] = useState(false);
@@ -164,8 +164,10 @@ export default function KanjiPracticePage() {
   };
 
   const applyFiltersAndSort = (allKanji: KanjiCard[], progressData: Record<string, CardProgress>, config: { cardCount: number; jlptFilter: string; sortMode: SortMode }) => {
-    // Filter by JLPT level
-    let filteredKanji = allKanji.filter((k: KanjiCard) => k.jlptLevel === config.jlptFilter);
+    // Filter by JLPT level (or include all if 'All' selected)
+    let filteredKanji = config.jlptFilter === 'All'
+      ? allKanji
+      : allKanji.filter((k: KanjiCard) => k.jlptLevel === config.jlptFilter);
 
     // Apply sorting
     let orderedKanji: KanjiCard[] = [];
@@ -340,20 +342,20 @@ export default function KanjiPracticePage() {
             {/* JLPT Level */}
             <div className="space-y-2">
               <Label>JLPT Level</Label>
-              <div className="flex gap-2">
-                {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
+              <div className="grid grid-cols-3 gap-2">
+                {['All', 'N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
                   <Button
                     key={level}
                     variant={jlptFilter === level ? 'default' : 'outline'}
                     onClick={() => setJlptFilter(level)}
-                    className="flex-1"
+                    className={level === 'All' ? 'col-span-3' : ''}
                   >
                     {level}
                   </Button>
                 ))}
               </div>
               <p className="text-xs text-muted-foreground">
-                Currently only N5 kanji are available
+                Currently only N5 kanji are available. "All" includes all levels.
               </p>
             </div>
 
