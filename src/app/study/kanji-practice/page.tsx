@@ -37,9 +37,29 @@ export default function KanjiPracticePage() {
         if (!response.ok) throw new Error('Failed to load');
 
         const data = await response.json();
-        // Shuffle for practice
-        const shuffled = [...data.kanji].sort(() => Math.random() - 0.5);
-        setKanjiList(shuffled);
+
+        // Try to restore from session storage
+        const savedOrder = sessionStorage.getItem('kanji-practice-order');
+        const savedIndex = sessionStorage.getItem('kanji-practice-index');
+
+        if (savedOrder) {
+          // Restore previous session
+          const orderIds = JSON.parse(savedOrder);
+          const restored = orderIds
+            .map((id: string) => data.kanji.find((k: any) => k.id === id))
+            .filter(Boolean);
+          setKanjiList(restored);
+          setCurrentIndex(savedIndex ? parseInt(savedIndex) : 0);
+        } else {
+          // New session - shuffle
+          const shuffled = [...data.kanji].sort(() => Math.random() - 0.5);
+          setKanjiList(shuffled);
+          // Save the order
+          sessionStorage.setItem(
+            'kanji-practice-order',
+            JSON.stringify(shuffled.map((k: any) => k.id))
+          );
+        }
       } catch (err) {
         console.error('Error loading kanji:', err);
       } finally {
@@ -49,6 +69,13 @@ export default function KanjiPracticePage() {
 
     loadKanji();
   }, []);
+
+  // Save current index whenever it changes
+  useEffect(() => {
+    if (kanjiList.length > 0) {
+      sessionStorage.setItem('kanji-practice-index', currentIndex.toString());
+    }
+  }, [currentIndex, kanjiList.length]);
 
   const currentKanji = kanjiList[currentIndex];
 
@@ -103,7 +130,15 @@ export default function KanjiPracticePage() {
           <Badge variant="secondary" className="text-sm">
             {currentIndex + 1} / {kanjiList.length}
           </Badge>
-          <Button variant="outline" size="sm" onClick={() => setCurrentIndex(0)}>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => {
+              sessionStorage.removeItem('kanji-practice-order');
+              sessionStorage.removeItem('kanji-practice-index');
+              window.location.reload();
+            }}
+          >
             <RotateCw className="h-4 w-4 mr-2" />
             Restart
           </Button>
