@@ -536,7 +536,7 @@ export default function KanjiPracticePage() {
       <div className="relative">
         <Card className="h-[500px] flex items-center justify-center relative">
           {/* LM Circle Rating - Bottom Right (shown on both sides) */}
-          <div className="absolute bottom-4 right-4 flex flex-col items-end gap-2 z-10">
+          <div className="absolute bottom-0 right-0 flex flex-col items-end gap-2 z-10 p-4 bg-gray-50/30 dark:bg-gray-900/30 rounded-tl-lg">
             <div className="text-xs text-muted-foreground font-medium">Memory Level</div>
             <div className="flex gap-2">
               {[0, 1, 2, 3, 5].map((level, index) => {
