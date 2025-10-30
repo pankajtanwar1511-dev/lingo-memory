@@ -27,7 +27,7 @@ import { KanjiCard } from '@/types/kanji';
 export default function KanjiDetailPage() {
   const params = useParams();
   const router = useRouter();
-  const kanjiId = params.id as string;
+  const kanjiId = decodeURIComponent(params.id as string);
 
   const [kanji, setKanji] = useState<KanjiCard | null>(null);
   const [loading, setLoading] = useState(true);
