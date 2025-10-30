@@ -19,13 +19,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
+import { Select } from '@/components/ui/select';
 import { KanjiCard } from '@/types/kanji';
 
 type SortOption = 'stroke' | 'frequency' | 'grade' | 'default';
@@ -144,18 +138,19 @@ export default function KanjiListPage() {
           </div>
 
           {/* Sort */}
-          <Select value={sortBy} onValueChange={(v) => setSortBy(v as SortOption)}>
-            <SelectTrigger className="w-[180px]">
-              <SortAsc className="h-4 w-4 mr-2" />
-              <SelectValue placeholder="Sort by..." />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="default">Default</SelectItem>
-              <SelectItem value="stroke">Stroke Count</SelectItem>
-              <SelectItem value="frequency">Frequency</SelectItem>
-              <SelectItem value="grade">Grade</SelectItem>
-            </SelectContent>
-          </Select>
+          <div className="flex items-center gap-2">
+            <SortAsc className="h-4 w-4 text-muted-foreground" />
+            <Select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as SortOption)}
+              className="w-[180px]"
+            >
+              <option value="default">Default</option>
+              <option value="stroke">Stroke Count</option>
+              <option value="frequency">Frequency</option>
+              <option value="grade">Grade</option>
+            </Select>
+          </div>
         </div>
       </div>
 
