@@ -229,7 +229,7 @@ export default function KanjiPracticePage() {
 
       {/* Flashcard */}
       <div className="relative">
-        <Card className="min-h-[400px] flex items-center justify-center relative">
+        <Card className="h-[400px] flex items-center justify-center relative">
           {/* LM Circle Rating - Top Right */}
           {isFlipped && (
             <div className="absolute top-4 right-4 flex gap-2 z-10">
@@ -243,22 +243,8 @@ export default function KanjiPracticePage() {
                   className="group relative"
                   title={['Didn\'t know', 'Hard', 'Medium', 'Good', 'Perfect'][level === 5 ? 4 : level]}
                 >
-                  <div className="flex flex-col items-center gap-1">
-                    <div className={`w-8 h-8 rounded-full border-2 transition-all ${
-                      level === 0
-                        ? 'border-red-400 hover:bg-red-100 dark:hover:bg-red-950'
-                        : level === 1
-                        ? 'border-orange-400 hover:bg-orange-100 dark:hover:bg-orange-950'
-                        : level === 2
-                        ? 'border-yellow-400 hover:bg-yellow-100 dark:hover:bg-yellow-950'
-                        : level === 3
-                        ? 'border-green-400 hover:bg-green-100 dark:hover:bg-green-950'
-                        : 'border-emerald-500 hover:bg-emerald-100 dark:hover:bg-emerald-950'
-                    }`}>
-                      <div className="w-full h-full flex items-center justify-center text-xs font-bold">
-                        {level}
-                      </div>
-                    </div>
+                  <div className="w-8 h-8 rounded-full border-2 border-muted-foreground hover:border-foreground transition-colors flex items-center justify-center">
+                    <span className="text-[8px] font-medium">LM</span>
                   </div>
                 </button>
               ))}
