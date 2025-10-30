@@ -92,16 +92,18 @@ export function StrokeOrderAnimation({
       return;
     }
 
+    // Wait for current stroke animation to complete, then decide next action
     const timer = setTimeout(() => {
+      // Check if there are more strokes after the one we just animated
       if (currentStroke < strokePaths.length - 1) {
-        console.log('➡️ Moving to next stroke:', currentStroke + 1);
+        console.log('➡️ Moving to next stroke:', currentStroke, '→', currentStroke + 1);
         setCurrentStroke(prev => prev + 1);
       } else {
-        console.log('✅ Animation complete');
-        // Animation complete
+        console.log('✅ Animation complete (animated last stroke:', currentStroke, ')');
+        // We just finished animating the last stroke
         if (isLooping) {
           console.log('🔁 Looping back to start');
-          setCurrentStroke(0);  // Restart
+          setCurrentStroke(0);  // Restart from first stroke
         } else {
           console.log('⏹️ Stopping animation');
           setIsPlaying(false);
@@ -110,7 +112,10 @@ export function StrokeOrderAnimation({
       }
     }, strokeDuration + pauseBetweenStrokes);
 
-    return () => clearTimeout(timer);
+    return () => {
+      console.log('🧹 Cleaning up timer for stroke', currentStroke);
+      clearTimeout(timer);
+    };
   }, [isPlaying, currentStroke, strokePaths.length, strokeDuration, pauseBetweenStrokes, isLooping, onComplete]);
 
   // Control handlers
