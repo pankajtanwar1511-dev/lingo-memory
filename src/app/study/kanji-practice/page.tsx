@@ -24,11 +24,20 @@ interface KanjiCard {
   jlptLevel: string;
 }
 
+interface CardProgress {
+  kanjiId: string;
+  level: number;        // 0-5 LM circles
+  lastSeen: number;     // Timestamp
+  reviewCount: number;  // Total reviews
+}
+
 export default function KanjiPracticePage() {
   const [kanjiList, setKanjiList] = useState<KanjiCard[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [showRating, setShowRating] = useState(false);
+  const [progress, setProgress] = useState<Record<string, CardProgress>>({});
 
   useEffect(() => {
     const loadKanji = async () => {
@@ -38,28 +47,35 @@ export default function KanjiPracticePage() {
 
         const data = await response.json();
 
+        // Load progress from localStorage
+        const savedProgress = localStorage.getItem('kanji-practice-progress');
+        const progressData = savedProgress ? JSON.parse(savedProgress) : {};
+        setProgress(progressData);
+
         // Try to restore from session storage
         const savedOrder = sessionStorage.getItem('kanji-practice-order');
         const savedIndex = sessionStorage.getItem('kanji-practice-index');
 
+        let orderedKanji: KanjiCard[] = [];
+
         if (savedOrder) {
           // Restore previous session
           const orderIds = JSON.parse(savedOrder);
-          const restored = orderIds
+          orderedKanji = orderIds
             .map((id: string) => data.kanji.find((k: any) => k.id === id))
             .filter(Boolean);
-          setKanjiList(restored);
           setCurrentIndex(savedIndex ? parseInt(savedIndex) : 0);
         } else {
-          // New session - shuffle
-          const shuffled = [...data.kanji].sort(() => Math.random() - 0.5);
-          setKanjiList(shuffled);
+          // New session - sort by priority based on progress
+          orderedKanji = sortByPriority(data.kanji, progressData);
           // Save the order
           sessionStorage.setItem(
             'kanji-practice-order',
-            JSON.stringify(shuffled.map((k: any) => k.id))
+            JSON.stringify(orderedKanji.map((k: any) => k.id))
           );
         }
+
+        setKanjiList(orderedKanji);
       } catch (err) {
         console.error('Error loading kanji:', err);
       } finally {
@@ -69,6 +85,27 @@ export default function KanjiPracticePage() {
 
     loadKanji();
   }, []);
+
+  // Sort kanji by priority (struggling cards first)
+  const sortByPriority = (kanji: KanjiCard[], progressData: Record<string, CardProgress>) => {
+    return [...kanji].sort((a, b) => {
+      const progressA = progressData[a.id];
+      const progressB = progressData[b.id];
+
+      // Never reviewed = highest priority
+      if (!progressA && progressB) return -1;
+      if (progressA && !progressB) return 1;
+      if (!progressA && !progressB) return Math.random() - 0.5;
+
+      // Lower level = higher priority
+      if (progressA.level !== progressB.level) {
+        return progressA.level - progressB.level;
+      }
+
+      // Least recently seen = higher priority
+      return progressA.lastSeen - progressB.lastSeen;
+    });
+  };
 
   // Save current index whenever it changes
   useEffect(() => {
@@ -81,16 +118,47 @@ export default function KanjiPracticePage() {
 
   const handleNext = () => {
     setIsFlipped(false);
+    setShowRating(false);
     setCurrentIndex((prev) => (prev + 1) % kanjiList.length);
   };
 
   const handlePrevious = () => {
     setIsFlipped(false);
+    setShowRating(false);
     setCurrentIndex((prev) => (prev - 1 + kanjiList.length) % kanjiList.length);
   };
 
   const handleFlip = () => {
-    setIsFlipped(!isFlipped);
+    if (!isFlipped) {
+      setIsFlipped(true);
+      setShowRating(true);
+    } else {
+      setIsFlipped(false);
+      setShowRating(false);
+    }
+  };
+
+  const handleRating = (level: number) => {
+    if (!currentKanji) return;
+
+    // Update progress
+    const newProgress = {
+      ...progress,
+      [currentKanji.id]: {
+        kanjiId: currentKanji.id,
+        level,
+        lastSeen: Date.now(),
+        reviewCount: (progress[currentKanji.id]?.reviewCount || 0) + 1,
+      },
+    };
+
+    setProgress(newProgress);
+    localStorage.setItem('kanji-practice-progress', JSON.stringify(newProgress));
+
+    // Auto-advance to next card
+    setTimeout(() => {
+      handleNext();
+    }, 300);
   };
 
   if (loading) {
@@ -130,6 +198,20 @@ export default function KanjiPracticePage() {
           <Badge variant="secondary" className="text-sm">
             {currentIndex + 1} / {kanjiList.length}
           </Badge>
+          {currentKanji && progress[currentKanji.id] && (
+            <Badge variant="outline" className="text-sm gap-1">
+              {[...Array(5)].map((_, i) => (
+                <div
+                  key={i}
+                  className={`w-2 h-2 rounded-full ${
+                    i < progress[currentKanji.id].level
+                      ? 'bg-green-500'
+                      : 'bg-muted'
+                  }`}
+                />
+              ))}
+            </Badge>
+          )}
           <Button
             variant="outline"
             size="sm"
@@ -231,10 +313,48 @@ export default function KanjiPracticePage() {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-center gap-2 text-muted-foreground pt-4">
-                  <EyeOff className="h-4 w-4" />
-                  <span className="text-sm">Click to hide answer</span>
-                </div>
+                {/* Rating Section */}
+                {showRating && (
+                  <div className="pt-6 border-t mt-6">
+                    <h3 className="text-center text-sm font-semibold text-muted-foreground mb-4">
+                      How well did you remember?
+                    </h3>
+                    <div className="space-y-2">
+                      {[
+                        { level: 0, label: "Didn't know", circles: 0 },
+                        { level: 1, label: "Hard", circles: 1 },
+                        { level: 2, label: "Medium", circles: 2 },
+                        { level: 3, label: "Good", circles: 3 },
+                        { level: 5, label: "Perfect", circles: 5 },
+                      ].map((option) => (
+                        <button
+                          key={option.level}
+                          onClick={() => handleRating(option.level)}
+                          className="w-full p-3 border rounded-lg hover:bg-accent hover:border-primary transition-all flex items-center justify-between group"
+                        >
+                          <div className="flex items-center gap-3">
+                            <div className="flex gap-1">
+                              {[...Array(5)].map((_, i) => (
+                                <div
+                                  key={i}
+                                  className={`w-3 h-3 rounded-full border-2 ${
+                                    i < option.circles
+                                      ? 'bg-green-500 border-green-500'
+                                      : 'bg-transparent border-muted-foreground/30'
+                                  }`}
+                                />
+                              ))}
+                            </div>
+                            <span className="text-sm font-medium">{option.label}</span>
+                          </div>
+                          <span className="text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity">
+                            Click to rate
+                          </span>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             )}
           </CardContent>
