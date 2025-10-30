@@ -222,17 +222,26 @@ export function StrokeOrderAnimation({
           })}
 
           {/* Stroke numbers */}
-          {showStrokeNumbers && strokePaths.map((_, index) => {
+          {showStrokeNumbers && strokePaths.map((pathData, index) => {
             if (index > currentStroke) return null;
+
+            // Extract the starting point of the stroke from the path data
+            // Path data starts with "M x y" (move to x, y)
+            const match = pathData.match(/M\s*([0-9.]+)[,\s]+([0-9.]+)/);
+            if (!match) return null;
+
+            const startX = parseFloat(match[1]);
+            const startY = parseFloat(match[2]);
 
             return (
               <text
                 key={`num-${index}`}
-                x="10"
-                y={20 + index * 12}
-                fontSize="10"
+                x={startX - 5}  // Offset slightly to the left
+                y={startY - 3}  // Offset slightly above
+                fontSize="12"
+                fontWeight="bold"
                 fill="currentColor"
-                className="text-muted-foreground opacity-50"
+                className="text-red-500 dark:text-red-400"
               >
                 {index + 1}
               </text>
