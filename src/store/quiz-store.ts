@@ -18,6 +18,7 @@ import { VocabularyCard } from "@/types/vocabulary"
 import { KanjiCard } from "@/types/kanji"
 import { generateQuizQuestions } from "@/lib/quiz-generator"
 import { updateFSRSFromQuizResult } from "@/lib/quiz-fsrs-integration"
+import { useCardStatsStore } from "./card-stats-store"
 
 interface QuizStore {
   // Current session
@@ -170,6 +171,14 @@ export const useQuizStore = create<QuizStore>()(
         const updatedAnswers = [...currentSession.answers, quizAnswer]
         const answeredCount = updatedAnswers.length
         const correctCount = updatedAnswers.filter(a => a.isCorrect).length
+
+        // Record card statistics
+        useCardStatsStore.getState().recordAttempt(
+          question.card.id,
+          question.contentType,
+          isCorrect,
+          timeSpent
+        )
 
         set({
           currentSession: {

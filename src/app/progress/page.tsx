@@ -17,6 +17,8 @@ import useStudyStore from "@/store/study-store"
 import { CardState, FSRS } from "@/lib/fsrs"
 import { cn } from "@/lib/utils"
 import { useDatabase } from "@/hooks/useDatabase"
+import { WeakAreasReport } from "@/components/analytics/weak-areas-report"
+import { QuizLearningCurve } from "@/components/analytics/quiz-learning-curve"
 
 interface DailyStats {
   date: Date
@@ -473,6 +475,17 @@ export default function ProgressPage() {
               </Card>
             </TabsContent>
           </Tabs>
+
+          {/* Quiz Analytics */}
+          <div className="mt-8 space-y-6">
+            <h2 className="text-2xl font-bold mb-4">Quiz Analytics</h2>
+
+            {/* Learning Curve */}
+            <QuizLearningCurve days={30} />
+
+            {/* Weak Areas Report */}
+            <WeakAreasReport limit={10} />
+          </div>
 
           {/* Call to action */}
           <Card className="bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/20">
