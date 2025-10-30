@@ -38,6 +38,7 @@ export default function VocabularyDetailPage() {
   const vocabId = decodeURIComponent(params.id as string);
 
   const [vocab, setVocab] = useState<VocabWord | null>(null);
+  const [relatedKanji, setRelatedKanji] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -45,20 +46,32 @@ export default function VocabularyDetailPage() {
     const loadVocab = async () => {
       try {
         setLoading(true);
-        const response = await fetch('/seed-data/N5_vocab_dataset.json');
 
-        if (!response.ok) {
+        // Load vocabulary data
+        const vocabResponse = await fetch('/seed-data/N5_vocab_dataset.json');
+        if (!vocabResponse.ok) {
           throw new Error('Failed to load vocabulary data');
         }
-
-        const data = await response.json();
-        const vocabWord = data.vocabulary.find((v: VocabWord) => v.id === vocabId);
+        const vocabData = await vocabResponse.json();
+        const vocabWord = vocabData.vocabulary.find((v: VocabWord) => v.id === vocabId);
 
         if (!vocabWord) {
           throw new Error('Vocabulary word not found');
         }
 
         setVocab(vocabWord);
+
+        // Load kanji data to find related kanji
+        const kanjiResponse = await fetch('/seed-data/kanji_n5.json');
+        if (kanjiResponse.ok) {
+          const kanjiData = await kanjiResponse.json();
+          // Find kanji that include this vocabulary word in their examples
+          const related = kanjiData.kanji.filter((k: any) =>
+            k.examples.includes(vocabId)
+          );
+          setRelatedKanji(related);
+        }
+
         setError(null);
       } catch (err) {
         console.error('Error loading vocabulary:', err);
@@ -188,6 +201,43 @@ export default function VocabularyDetailPage() {
                 </div>
               </div>
             ))}
+          </CardContent>
+        </Card>
+      )}
+
+      {/* Related Kanji */}
+      {relatedKanji.length > 0 && (
+        <Card className="bg-purple-50 dark:bg-purple-950/10 border-purple-200 dark:border-purple-900/30">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              Kanji in this Word ({relatedKanji.length})
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="text-sm text-muted-foreground mb-4">
+              Click on a kanji to learn its stroke order and meanings
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+              {relatedKanji.map((kanji) => (
+                <Link
+                  key={kanji.id}
+                  href={`/study/kanji/${kanji.id}`}
+                  className="p-4 bg-white dark:bg-slate-900 border border-purple-200 dark:border-purple-900/50 rounded-lg shadow-sm hover:shadow-md hover:border-purple-400 dark:hover:border-purple-700 transition-all cursor-pointer"
+                >
+                  <div className="text-center space-y-2">
+                    <div className="text-5xl font-bold">
+                      {kanji.kanji}
+                    </div>
+                    <div className="text-xs text-muted-foreground line-clamp-1">
+                      {kanji.meanings[0]}
+                    </div>
+                    <div className="text-xs text-muted-foreground">
+                      {kanji.strokeCount} strokes
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </CardContent>
         </Card>
       )}
