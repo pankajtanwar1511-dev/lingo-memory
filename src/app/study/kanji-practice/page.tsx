@@ -534,11 +534,11 @@ export default function KanjiPracticePage() {
         <Card className="h-[500px] flex items-center justify-center relative cursor-pointer" onClick={handleFlip}>
           {/* LM Circle Rating - Bottom Right (shown on both sides) */}
           <div
-            className="absolute bottom-0 right-0 flex flex-col items-end gap-2 z-10 p-4 bg-gray-50/30 dark:bg-gray-900/30 rounded-tl-lg"
+            className="absolute bottom-0 right-0 flex flex-col items-end gap-2 z-10 p-4 bg-gray-50/30 dark:bg-gray-900/30 rounded-tl-lg min-w-[240px]"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="text-xs text-muted-foreground font-medium">Memory Level</div>
-            <div className="flex gap-2">
+            <div className="text-xs text-muted-foreground font-medium whitespace-nowrap">Memory Level</div>
+            <div className="flex gap-2 flex-shrink-0">
               {[0, 1, 2, 3, 5].map((level, index) => {
                 const currentProgress = progress[currentKanji?.id];
                 const hasBeenRated = currentProgress && currentProgress.reviewCount > 0;
