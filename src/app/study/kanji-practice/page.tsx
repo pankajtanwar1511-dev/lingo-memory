@@ -49,6 +49,8 @@ export default function KanjiPracticePage() {
   const [cardCount, setCardCount] = useState(10);
   const [jlptFilter, setJlptFilter] = useState<string>('N5');
   const [sortMode, setSortMode] = useState<SortMode>('algorithm');
+  const [dontAskAgain, setDontAskAgain] = useState(false);
+  const [hasDefaultSettings, setHasDefaultSettings] = useState(false);
 
   useEffect(() => {
     const loadKanji = async () => {
@@ -63,7 +65,23 @@ export default function KanjiPracticePage() {
         const progressData = savedProgress ? JSON.parse(savedProgress) : {};
         setProgress(progressData);
 
-        // Load saved config
+        // Load default settings from localStorage
+        const defaultSettings = localStorage.getItem('kanji-practice-defaults');
+        const skipConfig = localStorage.getItem('kanji-practice-skip-config');
+
+        if (defaultSettings) {
+          const defaults = JSON.parse(defaultSettings);
+          setCardCount(defaults.cardCount);
+          setJlptFilter(defaults.jlptFilter);
+          setSortMode(defaults.sortMode);
+          setHasDefaultSettings(true);
+
+          if (skipConfig === 'true') {
+            setDontAskAgain(true);
+          }
+        }
+
+        // Load saved config from session
         const savedConfig = sessionStorage.getItem('kanji-practice-config');
         if (savedConfig) {
           const config = JSON.parse(savedConfig);
@@ -87,8 +105,16 @@ export default function KanjiPracticePage() {
           setCurrentIndex(savedIndex ? parseInt(savedIndex) : 0);
           setShowConfig(false);
         } else {
-          // New session - show config first
-          setShowConfig(true);
+          // New session - check if should skip config
+          if (skipConfig === 'true' && defaultSettings) {
+            // Auto-start with defaults
+            const defaults = JSON.parse(defaultSettings);
+            await autoStartWithDefaults(data.kanji, progressData, defaults);
+            setShowConfig(false);
+          } else {
+            // Show config first
+            setShowConfig(true);
+          }
         }
 
         setKanjiList(orderedKanji);
@@ -137,7 +163,45 @@ export default function KanjiPracticePage() {
     sessionStorage.removeItem('kanji-practice-config');
   };
 
-  const startPractice = async () => {
+  const applyFiltersAndSort = (allKanji: KanjiCard[], progressData: Record<string, CardProgress>, config: { cardCount: number; jlptFilter: string; sortMode: SortMode }) => {
+    // Filter by JLPT level
+    let filteredKanji = allKanji.filter((k: KanjiCard) => k.jlptLevel === config.jlptFilter);
+
+    // Apply sorting
+    let orderedKanji: KanjiCard[] = [];
+    switch (config.sortMode) {
+      case 'random':
+        orderedKanji = [...filteredKanji].sort(() => Math.random() - 0.5);
+        break;
+      case 'weak-first':
+        orderedKanji = [...filteredKanji].sort((a, b) => {
+          const levelA = progressData[a.id]?.level || 0;
+          const levelB = progressData[b.id]?.level || 0;
+          return levelA - levelB; // Lower level = weaker = first
+        });
+        break;
+      case 'algorithm':
+      default:
+        orderedKanji = sortByPriority(filteredKanji, progressData);
+        break;
+    }
+
+    // Limit to card count
+    return orderedKanji.slice(0, config.cardCount);
+  };
+
+  const autoStartWithDefaults = async (allKanji: KanjiCard[], progressData: Record<string, CardProgress>, defaults: any) => {
+    const orderedKanji = applyFiltersAndSort(allKanji, progressData, defaults);
+
+    // Save config and order to session
+    sessionStorage.setItem('kanji-practice-config', JSON.stringify(defaults));
+    sessionStorage.setItem('kanji-practice-order', JSON.stringify(orderedKanji.map(k => k.id)));
+
+    setKanjiList(orderedKanji);
+    setCurrentIndex(0);
+  };
+
+  const startPractice = async (saveAsDefault: boolean = false) => {
     try {
       const response = await fetch('/seed-data/kanji_n5.json');
       if (!response.ok) throw new Error('Failed to load');
@@ -145,34 +209,25 @@ export default function KanjiPracticePage() {
       const data = await response.json();
       const progressData = progress;
 
-      // Filter by JLPT level
-      let filteredKanji = data.kanji.filter((k: KanjiCard) => k.jlptLevel === jlptFilter);
+      const config = { cardCount, jlptFilter, sortMode };
+      const orderedKanji = applyFiltersAndSort(data.kanji, progressData, config);
 
-      // Apply sorting
-      let orderedKanji: KanjiCard[] = [];
-      switch (sortMode) {
-        case 'random':
-          orderedKanji = [...filteredKanji].sort(() => Math.random() - 0.5);
-          break;
-        case 'weak-first':
-          orderedKanji = [...filteredKanji].sort((a, b) => {
-            const levelA = progressData[a.id]?.level || 0;
-            const levelB = progressData[b.id]?.level || 0;
-            return levelA - levelB; // Lower level = weaker = first
-          });
-          break;
-        case 'algorithm':
-        default:
-          orderedKanji = sortByPriority(filteredKanji, progressData);
-          break;
-      }
-
-      // Limit to card count
-      orderedKanji = orderedKanji.slice(0, cardCount);
-
-      // Save config and order
-      sessionStorage.setItem('kanji-practice-config', JSON.stringify({ cardCount, jlptFilter, sortMode }));
+      // Save config and order to session
+      sessionStorage.setItem('kanji-practice-config', JSON.stringify(config));
       sessionStorage.setItem('kanji-practice-order', JSON.stringify(orderedKanji.map(k => k.id)));
+
+      // Save as default if requested
+      if (saveAsDefault) {
+        localStorage.setItem('kanji-practice-defaults', JSON.stringify(config));
+        setHasDefaultSettings(true);
+
+        // Save "don't ask again" preference
+        if (dontAskAgain) {
+          localStorage.setItem('kanji-practice-skip-config', 'true');
+        } else {
+          localStorage.removeItem('kanji-practice-skip-config');
+        }
+      }
 
       setKanjiList(orderedKanji);
       setCurrentIndex(0);
@@ -309,11 +364,15 @@ export default function KanjiPracticePage() {
                 <Button
                   variant={sortMode === 'algorithm' ? 'default' : 'outline'}
                   onClick={() => setSortMode('algorithm')}
-                  className="w-full justify-start"
+                  className={`w-full justify-start text-left h-auto py-3 ${
+                    sortMode === 'algorithm' ? 'text-primary-foreground' : ''
+                  }`}
                 >
-                  <div className="text-left">
-                    <div className="font-semibold">Smart Algorithm (Recommended)</div>
-                    <div className="text-xs text-muted-foreground">
+                  <div className="flex flex-col gap-1">
+                    <div className="font-semibold text-base">Smart Algorithm (Recommended)</div>
+                    <div className={`text-xs ${
+                      sortMode === 'algorithm' ? 'text-primary-foreground/80' : 'text-muted-foreground'
+                    }`}>
                       Prioritizes cards you haven't seen, then by difficulty level and recency
                     </div>
                   </div>
@@ -322,11 +381,15 @@ export default function KanjiPracticePage() {
                 <Button
                   variant={sortMode === 'weak-first' ? 'default' : 'outline'}
                   onClick={() => setSortMode('weak-first')}
-                  className="w-full justify-start"
+                  className={`w-full justify-start text-left h-auto py-3 ${
+                    sortMode === 'weak-first' ? 'text-primary-foreground' : ''
+                  }`}
                 >
-                  <div className="text-left">
-                    <div className="font-semibold">Weakest First</div>
-                    <div className="text-xs text-muted-foreground">
+                  <div className="flex flex-col gap-1">
+                    <div className="font-semibold text-base">Weakest First</div>
+                    <div className={`text-xs ${
+                      sortMode === 'weak-first' ? 'text-primary-foreground/80' : 'text-muted-foreground'
+                    }`}>
                       Shows cards with lowest memory level first
                     </div>
                   </div>
@@ -335,11 +398,15 @@ export default function KanjiPracticePage() {
                 <Button
                   variant={sortMode === 'random' ? 'default' : 'outline'}
                   onClick={() => setSortMode('random')}
-                  className="w-full justify-start"
+                  className={`w-full justify-start text-left h-auto py-3 ${
+                    sortMode === 'random' ? 'text-primary-foreground' : ''
+                  }`}
                 >
-                  <div className="text-left">
-                    <div className="font-semibold">Random</div>
-                    <div className="text-xs text-muted-foreground">
+                  <div className="flex flex-col gap-1">
+                    <div className="font-semibold text-base">Random</div>
+                    <div className={`text-xs ${
+                      sortMode === 'random' ? 'text-primary-foreground/80' : 'text-muted-foreground'
+                    }`}>
                       Completely random shuffle
                     </div>
                   </div>
@@ -347,14 +414,40 @@ export default function KanjiPracticePage() {
               </div>
             </div>
 
-            {/* Start Button */}
-            <Button
-              onClick={startPractice}
-              size="lg"
-              className="w-full"
-            >
-              Start Practice
-            </Button>
+            {/* Don't Ask Again (only if default is set) */}
+            {hasDefaultSettings && (
+              <div className="flex items-center space-x-2 p-3 bg-muted/50 rounded-lg">
+                <input
+                  type="checkbox"
+                  id="dontAskAgain"
+                  checked={dontAskAgain}
+                  onChange={(e) => setDontAskAgain(e.target.checked)}
+                  className="w-4 h-4 rounded border-gray-300"
+                />
+                <Label htmlFor="dontAskAgain" className="cursor-pointer text-sm">
+                  Don't ask again - automatically start with default settings
+                </Label>
+              </div>
+            )}
+
+            {/* Action Buttons */}
+            <div className="flex gap-2">
+              <Button
+                onClick={() => startPractice(false)}
+                size="lg"
+                variant="outline"
+                className="flex-1"
+              >
+                Start Practice
+              </Button>
+              <Button
+                onClick={() => startPractice(true)}
+                size="lg"
+                className="flex-1"
+              >
+                {hasDefaultSettings ? 'Update & Start' : 'Save as Default & Start'}
+              </Button>
+            </div>
           </CardContent>
         </Card>
       </div>
