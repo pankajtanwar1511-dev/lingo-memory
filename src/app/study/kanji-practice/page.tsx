@@ -712,10 +712,10 @@ export default function KanjiPracticePage() {
           variant="default"
           size="lg"
           onClick={handleFlip}
-          className="gap-2 w-[180px]"
+          className="gap-2 w-[180px] flex-shrink-0"
         >
-          {isFlipped ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
-          {isFlipped ? 'Hide' : 'Show'} Answer
+          {isFlipped ? <EyeOff className="h-5 w-5 flex-shrink-0" /> : <Eye className="h-5 w-5 flex-shrink-0" />}
+          <span>{isFlipped ? 'Hide' : 'Show'} Answer</span>
         </Button>
 
         <Button
