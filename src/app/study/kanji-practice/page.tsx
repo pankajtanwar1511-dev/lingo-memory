@@ -236,9 +236,9 @@ export default function KanjiPracticePage() {
       {/* Flashcard */}
       <div className="relative">
         <Card className="h-[500px] flex items-center justify-center relative">
-          {/* LM Circle Rating - Top Right */}
+          {/* LM Circle Rating - Bottom Right */}
           {isFlipped && (
-            <div className="absolute top-4 right-4 flex flex-col items-end gap-2 z-10">
+            <div className="absolute bottom-4 right-4 flex flex-col items-end gap-2 z-10">
               <div className="text-xs text-muted-foreground font-medium">Memory Level</div>
               <div className="flex gap-2">
                 {[0, 1, 2, 3, 5].map((level, index) => {
@@ -371,15 +371,15 @@ export default function KanjiPracticePage() {
                   </div>
 
                   {/* Stroke count */}
-                  <div className="text-center pt-4 border-t">
-                    <span className="text-sm text-muted-foreground">
+                  <div className="text-center pt-4 border-t border-gray-200 dark:border-gray-800">
+                    <span className="text-sm text-gray-400 dark:text-gray-600">
                       {currentKanji.strokeCount} strokes
                     </span>
                   </div>
 
                   {/* Rating hint */}
-                  <div className="text-center pt-4 text-xs text-muted-foreground">
-                    Click a circle above to rate your memory
+                  <div className="text-center pt-4 text-xs text-gray-400 dark:text-gray-600">
+                    Click a circle below to rate your memory
                   </div>
                 </div>
               </div>
