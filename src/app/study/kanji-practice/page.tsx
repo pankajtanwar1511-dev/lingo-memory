@@ -229,11 +229,43 @@ export default function KanjiPracticePage() {
 
       {/* Flashcard */}
       <div className="relative">
-        <Card
-          className="cursor-pointer hover:shadow-lg transition-shadow min-h-[400px] flex items-center justify-center"
-          onClick={handleFlip}
-        >
-          <CardContent className="pt-6 w-full">
+        <Card className="min-h-[400px] flex items-center justify-center relative">
+          {/* LM Circle Rating - Top Right */}
+          {isFlipped && (
+            <div className="absolute top-4 right-4 flex gap-2 z-10">
+              {[0, 1, 2, 3, 5].map((level) => (
+                <button
+                  key={level}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleRating(level);
+                  }}
+                  className="group relative"
+                  title={['Didn\'t know', 'Hard', 'Medium', 'Good', 'Perfect'][level === 5 ? 4 : level]}
+                >
+                  <div className="flex flex-col items-center gap-1">
+                    <div className={`w-8 h-8 rounded-full border-2 transition-all ${
+                      level === 0
+                        ? 'border-red-400 hover:bg-red-100 dark:hover:bg-red-950'
+                        : level === 1
+                        ? 'border-orange-400 hover:bg-orange-100 dark:hover:bg-orange-950'
+                        : level === 2
+                        ? 'border-yellow-400 hover:bg-yellow-100 dark:hover:bg-yellow-950'
+                        : level === 3
+                        ? 'border-green-400 hover:bg-green-100 dark:hover:bg-green-950'
+                        : 'border-emerald-500 hover:bg-emerald-100 dark:hover:bg-emerald-950'
+                    }`}>
+                      <div className="w-full h-full flex items-center justify-center text-xs font-bold">
+                        {level}
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              ))}
+            </div>
+          )}
+
+          <CardContent className="pt-6 w-full" onClick={handleFlip}>
             {!isFlipped ? (
               // Front: Kanji
               <div className="text-center space-y-6">
@@ -338,50 +370,12 @@ export default function KanjiPracticePage() {
                       {currentKanji.strokeCount} strokes
                     </span>
                   </div>
-                </div>
 
-                {/* Rating Section */}
-                {showRating && (
-                  <div className="pt-6 border-t mt-6">
-                    <h3 className="text-center text-sm font-semibold text-muted-foreground mb-4">
-                      How well did you remember?
-                    </h3>
-                    <div className="space-y-2">
-                      {[
-                        { level: 0, label: "Didn't know", circles: 0 },
-                        { level: 1, label: "Hard", circles: 1 },
-                        { level: 2, label: "Medium", circles: 2 },
-                        { level: 3, label: "Good", circles: 3 },
-                        { level: 5, label: "Perfect", circles: 5 },
-                      ].map((option) => (
-                        <button
-                          key={option.level}
-                          onClick={() => handleRating(option.level)}
-                          className="w-full p-3 border rounded-lg hover:bg-accent hover:border-primary transition-all flex items-center justify-between group"
-                        >
-                          <div className="flex items-center gap-3">
-                            <div className="flex gap-1">
-                              {[...Array(5)].map((_, i) => (
-                                <div
-                                  key={i}
-                                  className={`w-3 h-3 rounded-full border-2 ${
-                                    i < option.circles
-                                      ? 'bg-green-500 border-green-500'
-                                      : 'bg-transparent border-muted-foreground/30'
-                                  }`}
-                                />
-                              ))}
-                            </div>
-                            <span className="text-sm font-medium">{option.label}</span>
-                          </div>
-                          <span className="text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity">
-                            Click to rate
-                          </span>
-                        </button>
-                      ))}
-                    </div>
+                  {/* Rating hint */}
+                  <div className="text-center pt-4 text-xs text-muted-foreground">
+                    Click a circle above to rate your memory
                   </div>
-                )}
+                </div>
               </div>
             )}
           </CardContent>
