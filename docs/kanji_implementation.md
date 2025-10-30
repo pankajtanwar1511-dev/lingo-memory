@@ -3,13 +3,13 @@
 **Project:** LingoMemory Kanji Learning Module
 **Created:** 2025-01-30
 **Current Branch:** `kanji` (all phases in this branch)
-**Status:** 🔄 Phase 3 - Integration & Polish
+**Status:** ✅ Practice Mode Complete - Ready for Production
 
 ---
 
 ## 🎯 Progress Overview
 
-**Overall Completion: 85%** (Phase 1: 100%, Phase 2: 100%, Phase 3: 100%, Study Mode: 0%)
+**Overall Completion: 98%** (Phase 1: 100%, Phase 2: 100%, Phase 3: 100%, Phase 4: 100%)
 
 ### Phase 1: Data Fetching & Processing (100% complete) ✅
 **Started:** 2025-01-30 12:15
@@ -85,21 +85,29 @@
 
 ---
 
-### Phase 4: Teaching Examples & Enhancements (0% complete)
-**Status:** ⏳ Not started (blocked by Phase 3)
-**Note:** Added based on design discussion - dedicated kanji teaching examples
+### Phase 4: Practice Mode Implementation (100% complete) ✅
+**Started:** 2025-01-31 14:00
+**Completed:** 2025-01-31 18:30
+**Status:** ✅ Complete
+**Note:** Comprehensive flashcard-based practice system with spaced repetition
 
-#### Planned Tasks
-- [ ] Generate AI teaching examples (2-3 per kanji, 250 total)
-  - One kun-reading example
-  - One on-reading example
-  - N5-appropriate grammar only
-- [ ] AI verification in batches (similar to vocab workflow)
-- [ ] Update schema to support both vocab links + teaching examples
-- [ ] Add audio for teaching examples (with licensed TTS)
-- [ ] Update UI to show teaching examples section
+#### Completed Tasks ✅
+- [x] Built kanji practice flashcard interface (`/study/kanji-practice`)
+- [x] Implemented LM Circle rating system (5 levels: 0, 1, 2, 3, 5)
+- [x] Added configuration screen with filters:
+  - Card count selection (1-100)
+  - JLPT level filter (All, N5-N1)
+  - Sort modes (Smart Algorithm, Weakest First, Random)
+- [x] Implemented default settings with "Don't ask again" functionality
+- [x] Added keyboard shortcuts (Arrow keys: navigate, Space: flip)
+- [x] Created progress tracking with localStorage persistence
+- [x] Added progress display on kanji list page
+- [x] Integrated Header component with active state highlighting
+- [x] Fixed card stability issues (equal front/back size, stable buttons)
+- [x] Improved reading block layout with flexible widths
+- [x] Added visual progress indicators (green circles for achieved levels)
 
-**Goal:** Provide simple, focused examples that teach individual kanji readings in isolation (complement existing vocab word links)
+**Goal:** Provide spaced repetition practice system for kanji with configurable sessions and persistent progress tracking
 
 ---
 
@@ -123,6 +131,28 @@
 | 2025-01-30 12:50 | Kanji list page | ✅ Complete | Grid view with search, filter, sort |
 | 2025-01-30 12:55 | Navigation integration | ✅ Complete | Added Kanji to header nav + study page card |
 | 2025-01-30 13:00 | **Phase 2 COMPLETE** | ✅ **100%** | All UI components done - ready for Phase 3 |
+| 2025-01-30 15:00 | **Phase 3 STARTED** | 🔄 In Progress | Beginning integration & polish |
+| 2025-01-30 15:20 | Vocabulary integration | ✅ Complete | Bidirectional kanji ↔ vocab links working |
+| 2025-01-30 15:45 | **Phase 3 COMPLETE** | ✅ **100%** | All integration features done |
+| 2025-01-31 14:00 | **Phase 4 STARTED** | 🔄 In Progress | Beginning practice mode implementation |
+| 2025-01-31 14:15 | LM Circle rating system | ✅ Complete | 5-level system with visual feedback |
+| 2025-01-31 14:30 | Practice flashcard UI | ✅ Complete | Front/back cards with flip animation |
+| 2025-01-31 14:45 | Reading block layout | ✅ Complete | Flexible width based on content count |
+| 2025-01-31 15:00 | Card stability fixes | ✅ Complete | Equal card sizes, stable button widths |
+| 2025-01-31 15:15 | LM circles simplified | ✅ Complete | Minimal design with gray/blue/green states |
+| 2025-01-31 15:30 | Memory level visualization | ✅ Complete | Green circles show achieved levels |
+| 2025-01-31 15:45 | Remove auto-advance | ✅ Complete | Manual navigation only after rating |
+| 2025-01-31 16:00 | Keyboard shortcuts | ✅ Complete | Arrow keys (nav) + Space (flip) |
+| 2025-01-31 16:15 | Card clickability fix | ✅ Complete | Full card surface flippable |
+| 2025-01-31 16:30 | Header integration | ✅ Complete | Added to kanji list page |
+| 2025-01-31 16:45 | Active state highlighting | ✅ Complete | Current page highlighted in header |
+| 2025-01-31 17:00 | Configuration screen | ✅ Complete | Card count, JLPT filter, sort mode |
+| 2025-01-31 17:15 | Default settings | ✅ Complete | Save defaults + "Don't ask again" |
+| 2025-01-31 17:30 | JLPT "All" filter | ✅ Complete | Practice across all levels |
+| 2025-01-31 17:45 | Progress on list page | ✅ Complete | LM ratings display on kanji cards |
+| 2025-01-31 18:00 | LocalStorage persistence | ✅ Complete | Progress, defaults, skip-config saved |
+| 2025-01-31 18:15 | SessionStorage state | ✅ Complete | Card order, index, config preserved |
+| 2025-01-31 18:30 | **Phase 4 COMPLETE** | ✅ **100%** | Practice mode fully functional |
 
 ---
 
@@ -1530,6 +1560,266 @@ interface StrokeOrderAnimationProps {
 
 ---
 
-**Last Updated:** 2025-01-30 11:42 UTC
-**Document Version:** 1.0.0
-**Current Phase:** Planning Complete → Ready to Start Phase 1
+---
+
+## 🎴 Phase 4: Practice Mode - Detailed Implementation
+
+### Overview
+Phase 4 implemented a comprehensive flashcard-based practice system with spaced repetition tracking, configurable sessions, and extensive UX polish.
+
+### Core Features
+
+#### 1. Flashcard Interface (`/study/kanji-practice`)
+**File:** `src/app/study/kanji-practice/page.tsx`
+
+**Card Layout:**
+- **Front Side:** Displays kanji character (6xl font) + stroke count + LM rating circles
+- **Back Side:** Shows readings (on/kun with flexible width blocks), meanings, example words, and LM rating circles
+- **Fixed Size:** 500px height, consistent on both sides to prevent layout shift
+- **Clickable:** Full card surface flips on click (using stopPropagation for rating area)
+
+**Reading Block Layout:**
+```typescript
+// Flexible width based on content count
+const onWidth = onReadings.length;
+const kunWidth = kunReadings.length;
+const totalWidth = onWidth + kunWidth;
+
+// Calculate flex ratios
+flexRatio = `${(onWidth/totalWidth)*100}% / ${(kunWidth/totalWidth)*100}%`
+// Example: 2 on + 6 kun = 25% left, 75% right
+```
+
+#### 2. LM Circle Rating System
+**Levels:** 0 (Didn't know), 1 (Hard), 2 (Medium), 3 (Good), 5 (Perfect)
+
+**Visual States:**
+- **Unrated/Gray:** `bg-gray-100` - Not yet achieved
+- **Selected/Blue:** `bg-blue-500` - Currently selected rating
+- **Achieved/Green:** `bg-green-500` - Previously achieved level (only if `reviewCount > 0`)
+
+**Position:** Bottom-right corner of card, displayed on both front and back
+
+**Design:**
+- Minimal circles with "LM" text inside
+- No elaborate buttons or labels
+- Fixed width container (`min-w-[240px]`) to prevent shifting during flip
+
+#### 3. Configuration Screen
+**Triggered:** On first visit or when clicking "Reconfigure" button
+
+**Options:**
+1. **Card Count:** Input field (1-100 cards)
+2. **JLPT Level:** Buttons for All, N5, N4, N3, N2, N1
+3. **Sort Mode:** Three radio-style buttons
+   - **Smart Algorithm (Recommended):** Prioritizes unseen cards, then by difficulty and recency
+   - **Weakest First:** Sorts by lowest memory level
+   - **Random:** Shuffles randomly
+
+**Default Settings:**
+- "Save as Default & Start" button stores config in localStorage (`kanji-practice-defaults`)
+- "Don't ask again" checkbox enables auto-start with defaults
+- Skip state stored in localStorage (`kanji-practice-skip-config`)
+- "Reconfigure" button always available in practice mode to change settings
+
+#### 4. Progress Persistence
+
+**LocalStorage Keys:**
+- `kanji-practice-progress`: Permanent rating data
+  ```typescript
+  {
+    [kanjiId]: {
+      kanjiId: string,
+      level: number,        // 0, 1, 2, 3, or 5
+      lastSeen: number,     // timestamp
+      reviewCount: number   // total reviews
+    }
+  }
+  ```
+- `kanji-practice-defaults`: Saved configuration
+- `kanji-practice-skip-config`: Boolean flag for auto-start
+
+**SessionStorage Keys:** (cleared when leaving practice)
+- `kanji-practice-order`: Array of kanji IDs in current session
+- `kanji-practice-index`: Current card index
+- `kanji-practice-config`: Current session configuration
+
+**Preservation:** When navigating to kanji detail (`/study/kanji/[id]`), session state is preserved. When leaving practice entirely, session is cleared but progress remains.
+
+#### 5. Keyboard Shortcuts
+**Implementation:** Global keydown listener with safety checks
+
+**Shortcuts:**
+- **Right Arrow:** Next card
+- **Left Arrow:** Previous card
+- **Space:** Flip card
+
+**Safety:**
+- Disabled when typing in input fields
+- Disabled on configuration screen
+- Added to useEffect dependency array to prevent stale closures
+
+#### 6. Navigation & Controls
+
+**Top Bar:**
+- Progress counter: "Card X / Y"
+- "Reconfigure" button (ghost variant)
+- "Exit Practice" link (returns to kanji list)
+
+**Bottom Navigation:**
+- **Previous Button:** Fixed width 140px, chevron left icon
+- **Show/Hide Answer Button:** Fixed width 180px, eye icon, `flex-shrink-0` to prevent icon compression
+- **Next Button:** Fixed width 140px, chevron right icon
+
+**No Auto-Advance:** After rating a card, stay on current card until user manually navigates
+
+#### 7. Progress Display on List Page
+
+**File:** `src/app/study/kanji/page.tsx`
+
+**Implementation:**
+- Load progress from localStorage on component mount
+- Display 5 small circles (1.5px x 1.5px) below each kanji card
+- Green circles indicate achieved levels
+- Only show green if `reviewCount > 0` (distinguish unrated from level-0)
+
+**Visual:**
+```
+┌─────────┐
+│    日    │
+│  ニチ    │
+│  day     │
+│ ●●●○○   │  ← Green circles for levels 0, 1, 2 achieved
+└─────────┘
+```
+
+#### 8. Header Integration
+
+**File:** `src/components/layout/header.tsx`
+
+**Changes:**
+- Added `usePathname()` hook to detect current route
+- Active state detection: `pathname === item.href || pathname?.startsWith(item.href + '/')`
+- Desktop: `text-primary` for active, `text-muted-foreground` for inactive
+- Mobile: `text-primary bg-accent` for active
+
+**Navigation Items:**
+```typescript
+{ name: "Kanji", href: "/study/kanji", icon: Languages }
+```
+
+### Technical Implementation Details
+
+#### Card Clickability Fix
+**Problem:** Bottom 25% of card wasn't clickable
+**Solution:** Move onClick handler from `<CardContent>` to `<Card>` element, use `stopPropagation` on rating area
+
+```typescript
+<Card onClick={handleFlip} className="cursor-pointer">
+  <div onClick={(e) => e.stopPropagation()}>
+    {/* Rating circles */}
+  </div>
+  <CardContent>
+    {/* Card content */}
+  </CardContent>
+</Card>
+```
+
+#### Button Stability Fix
+**Problem:** Buttons shifted during flip due to text width changes ("Show" vs "Hide")
+**Solution:** Fixed widths on all navigation buttons
+
+```typescript
+<Button className="w-[140px]">Previous</Button>
+<Button className="w-[180px] flex-shrink-0">
+  <Eye className="flex-shrink-0" />
+  <span>Show Answer</span>
+</Button>
+<Button className="w-[140px]">Next</Button>
+```
+
+#### LM Circle Stability
+**Problem:** Rating area size changed during flip
+**Solution:** Fixed minimum width and prevent text wrapping
+
+```typescript
+<div className="min-w-[240px]">
+  <div className="whitespace-nowrap">Memory Level</div>
+  <div className="flex gap-2 flex-shrink-0">
+    {/* Circles */}
+  </div>
+</div>
+```
+
+### Error Fixes During Development
+
+1. **ReferenceError: Cannot access 'currentKanji' before initialization**
+   - Moved keyboard shortcuts useEffect after variable declarations
+   - Fixed dependency array
+
+2. **Icon compression in Show/Hide button**
+   - Added `flex-shrink-0` to icon elements
+   - Wrapped text in `<span>` element
+
+3. **Bottom card area not clickable**
+   - Moved onClick to parent Card element
+   - Added stopPropagation to nested interactive elements
+
+4. **Button shifting during flip**
+   - Added fixed widths to all navigation buttons
+   - Prevented flex compression with explicit sizing
+
+5. **LM circles shifting**
+   - Fixed minimum width on container
+   - Added whitespace-nowrap to text
+   - Applied flex-shrink-0 to circle container
+
+### User Experience Highlights
+
+✅ **Minimal Design:** Simplified LM circles from elaborate buttons to simple gray circles with "LM" text
+✅ **Visual Feedback:** Blue for selected, green for achieved levels
+✅ **Keyboard Navigation:** Full keyboard control for power users
+✅ **Configurable Sessions:** Users control card count, level, and sorting
+✅ **Smart Defaults:** Save preferences and skip config screen
+✅ **Progress Visualization:** See achievement history on list page
+✅ **Active Navigation:** Clear visual indication of current page
+✅ **Stable UI:** No shifting, consistent card sizes, predictable layout
+
+### Files Modified
+
+1. **src/app/study/kanji-practice/page.tsx** (Multiple iterations)
+   - Added configuration screen
+   - Implemented LM rating system
+   - Added keyboard shortcuts
+   - Fixed all stability issues
+
+2. **src/app/study/kanji/page.tsx**
+   - Added progress loading from localStorage
+   - Display LM ratings on kanji cards
+   - Integrated Header component
+
+3. **src/components/layout/header.tsx**
+   - Added pathname detection
+   - Implemented active state highlighting
+
+### Performance Considerations
+
+- **LocalStorage:** Synchronous but fast for small datasets
+- **SessionStorage:** Cleared automatically when leaving practice
+- **Progress Calculation:** Computed once on mount, cached in state
+- **Reading Block Layout:** CSS flexbox for dynamic width allocation
+
+### Future Enhancements (Not Implemented)
+
+- [ ] FSRS algorithm integration for intelligent scheduling
+- [ ] Daily review reminders
+- [ ] Streak tracking
+- [ ] Detailed analytics (time spent per card, retention rate)
+- [ ] Export progress data
+- [ ] Study mode variations (writing practice, audio-only)
+
+---
+
+**Last Updated:** 2025-01-31 18:30 UTC
+**Document Version:** 2.0.0
+**Current Phase:** Phase 4 Complete → Ready for Production
