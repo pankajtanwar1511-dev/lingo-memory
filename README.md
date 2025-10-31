@@ -149,18 +149,24 @@ See `docs/07_DEVELOPMENT_ROADMAP.md` for detailed roadmap
 
 ## 📚 Documentation
 
-Comprehensive documentation is available in the `docs/` folder:
+### Active Development
+- **[Content Implementation](docs/content_implementation.md)** 🔥 - Current content features in development
+  - Vocabulary, Grammar, Particles, Listening, Gamification, etc.
+  - Single source of truth for all content work
 
+### Completed Features (Archived)
+- **[Quiz System](docs/quiz_implementation.md)** ✅ - Quiz modes, FSRS, statistics (98% complete)
+- **[Kanji System](docs/kanji_implementation.md)** ✅ - Kanji cards, stroke order (100% complete)
+
+### General Documentation
 1. **[Getting Started](docs/01_GETTING_STARTED.md)** - Installation & quick start
 2. **[Architecture](docs/02_ARCHITECTURE.md)** - Technical deep dive
 3. **[Data Pipeline](docs/03_DATA_PIPELINE.md)** - Data processing guide
 4. **[Data Schema](docs/04_DATA_SCHEMA.md)** - Complete schema reference
-5. **[Audio Production](docs/05_AUDIO_PRODUCTION.md)** - TTS setup & migration
-6. **[Project History](docs/06_PROJECT_HISTORY.md)** - Timeline & milestones
-7. **[Development Roadmap](docs/07_DEVELOPMENT_ROADMAP.md)** - Future plans
-8. **[Quality Assurance](docs/08_QUALITY_ASSURANCE.md)** - Validation & review
+5. **[Development Roadmap](docs/07_DEVELOPMENT_ROADMAP.md)** - Future plans
+6. **[Quality Assurance](docs/08_QUALITY_ASSURANCE.md)** - Validation & review
 
-**Historical Docs:** See `docs/archive/` for 49 archived development logs
+**Historical Docs:** See `docs/archive/` for archived development logs
 
 ## 🤝 Contributing
 
