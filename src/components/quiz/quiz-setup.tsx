@@ -30,7 +30,8 @@ import {
   Puzzle,
   Pen,
   ArrowRight,
-  Lock
+  Lock,
+  ChevronRight
 } from "lucide-react"
 
 type DirectionOption = "kanji" | "kana" | "english"
@@ -59,6 +60,8 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
   const [smartMode, setSmartMode] = useState(false)
   const [dueCardsOnly, setDueCardsOnly] = useState(false)
   const [dueCardsCount, setDueCardsCount] = useState(0)
+  const [rememberSetup, setRememberSetup] = useState(true)
+  const [showQuickStart, setShowQuickStart] = useState(false)
 
   // Direction selector state
   const [leftSelection, setLeftSelection] = useState<DirectionOption>("kanji")
@@ -118,6 +121,47 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
     }
     loadDueCount()
   }, [])
+
+  // Load saved settings from localStorage on mount
+  useEffect(() => {
+    try {
+      const savedSettings = localStorage.getItem('lastQuizSettings')
+      if (savedSettings) {
+        const settings = JSON.parse(savedSettings)
+
+        // Restore all settings
+        setContentType(settings.contentType)
+        setMode(settings.mode)
+        setDirection(settings.direction)
+        setDifficulty(settings.difficulty)
+        setJlptLevel(settings.jlptLevel)
+        setQuestionCount(Math.min(settings.questionCount, availableCardCount))
+        setTimeLimit(settings.timeLimit)
+        setShowHints(settings.showHints)
+        setPlayAudio(settings.playAudio)
+        setAutoAdvance(settings.autoAdvance)
+        setStrictTyping(settings.strictTyping || false)
+        setCaseSensitive(settings.caseSensitive || false)
+        setBookmarkedOnly(settings.bookmarkedOnly || false)
+        setKanaOnly(settings.kanaOnly || false)
+        setSmartMode(settings.smartMode || false)
+        setDueCardsOnly(settings.dueCardsOnly || false)
+
+        // Restore direction selector state
+        if (settings.leftSelection && settings.rightSelection) {
+          setLeftSelection(settings.leftSelection)
+          setRightSelection(settings.rightSelection)
+        }
+
+        // Show quick start banner
+        setShowQuickStart(true)
+
+        console.log('✅ Loaded saved quiz settings')
+      }
+    } catch (error) {
+      console.error('Failed to load saved settings:', error)
+    }
+  }, [availableCardCount])
 
   // Convert left/right selections to QuizDirection
   const getQuizDirection = (left: DirectionOption, right: DirectionOption): QuizDirection => {
@@ -274,7 +318,27 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
       dueCardsOnly
     }
 
+    // Save settings to localStorage if "Remember my setup" is checked
+    if (rememberSetup) {
+      try {
+        const settingsToSave = {
+          ...settings,
+          leftSelection,
+          rightSelection
+        }
+        localStorage.setItem('lastQuizSettings', JSON.stringify(settingsToSave))
+        console.log('💾 Saved quiz settings to localStorage')
+      } catch (error) {
+        console.error('Failed to save settings:', error)
+      }
+    }
+
     onStart(settings)
+  }
+
+  const handleQuickStart = () => {
+    // Start with current settings (already loaded from localStorage)
+    handleStart()
   }
 
   const maxQuestions = Math.min(availableCardCount, 100)
@@ -290,6 +354,44 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
           {availableCardCount} cards available
         </Badge>
       </div>
+
+      {/* Quick Start Banner */}
+      {showQuickStart && (
+        <Card className="p-4 bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-950/30 dark:to-blue-950/30 border-2 border-purple-200 dark:border-purple-800">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="p-2 bg-purple-600 rounded-lg">
+                <Play className="h-5 w-5 text-white" />
+              </div>
+              <div>
+                <p className="font-semibold text-purple-900 dark:text-purple-100">
+                  Continue Last Quiz
+                </p>
+                <p className="text-sm text-purple-700 dark:text-purple-300">
+                  {contentType.charAt(0).toUpperCase() + contentType.slice(1)} · {mode === "multiple-choice" ? "Multiple Choice" : mode === "typing" ? "Typing" : mode === "listening" ? "Listening" : mode === "flashcard" ? "Flashcard" : mode} · {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)} · {questionCount} questions
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setShowQuickStart(false)}
+                className="border-purple-300 dark:border-purple-700"
+              >
+                Change Setup
+              </Button>
+              <Button
+                onClick={handleQuickStart}
+                className="gap-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800"
+              >
+                Start Now
+                <ChevronRight className="h-4 w-4" />
+              </Button>
+            </div>
+          </div>
+        </Card>
+      )}
 
       <Card className="p-6 space-y-6">
         {/* Content Type */}
@@ -672,10 +774,22 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
           )}
         </div>
 
+        {/* Remember Setup Checkbox */}
+        <div className="pt-3 border-t">
+          <Checkbox
+            checked={rememberSetup}
+            onChange={(e) => setRememberSetup(e.target.checked)}
+            label="Remember my setup for next time"
+          />
+          <p className="text-xs text-muted-foreground ml-6 mt-1">
+            Your settings will be saved and auto-loaded when you return
+          </p>
+        </div>
+
         {/* Start Button */}
         <Button
           onClick={handleStart}
-          className="w-full gap-2"
+          className="w-full gap-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800"
           size="lg"
         >
           <Play className="h-5 w-5" />
