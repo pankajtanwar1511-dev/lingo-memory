@@ -79,18 +79,71 @@ export default function QuizPage() {
     loadKanji()
   }, [])
 
-  const handleStartQuiz = (settings: QuizSettings) => {
+  const handleStartQuiz = async (settings: QuizSettings) => {
     const { bookmarkedVocab, bookmarkedKanji } = useBookmarksStore.getState()
     let cards: (VocabularyCard | KanjiCard)[]
 
-    // Get cards based on content type
-    if (settings.contentType === "mixed") {
-      // Combine vocabulary and kanji cards
-      cards = [...availableVocabCards, ...kanjiCards]
-    } else if (settings.contentType === "vocabulary") {
-      cards = availableVocabCards
-    } else {
-      cards = kanjiCards
+    // FSRS SMART MODE: Load cards from study cards table with prioritization
+    if (settings.smartMode && settings.contentType === "vocabulary") {
+      try {
+        const { databaseService } = await import("@/services/database.service")
+        const { getRecommendedQuizCards } = await import("@/lib/quiz-fsrs-integration")
+
+        // Get recommended cards based on FSRS
+        const recommendations = await getRecommendedQuizCards(settings.questionCount)
+
+        // Load vocabulary data for these cards
+        const studyCardsWithVocab = await databaseService.getStudyCardsWithVocabulary()
+
+        // Filter to get only recommended card IDs
+        const recommendedIds = new Set([
+          ...recommendations.dueCards.map(c => c.vocabularyId),
+          ...recommendations.newCards.map(c => c.vocabularyId),
+          ...recommendations.reviewCards.map(c => c.vocabularyId)
+        ])
+
+        // Get vocabulary cards for recommended IDs
+        cards = studyCardsWithVocab
+          .filter(sc => recommendedIds.has(sc.vocabularyId))
+          .map(sc => sc.vocabulary)
+
+        console.log(`🧠 FSRS Smart Mode: Loaded ${cards.length} cards (${recommendations.dueCards.length} due, ${recommendations.newCards.length} new)`)
+
+      } catch (error) {
+        console.error("Failed to load FSRS smart cards, falling back to normal mode:", error)
+        // Fallback to normal loading
+        cards = availableVocabCards
+      }
+    }
+    // DUE CARDS ONLY: Load only cards due for review
+    else if (settings.dueCardsOnly && settings.contentType === "vocabulary") {
+      try {
+        const { databaseService } = await import("@/services/database.service")
+        const studyCardsWithVocab = await databaseService.getStudyCardsWithVocabulary()
+        const now = new Date()
+
+        // Filter to due cards only
+        cards = studyCardsWithVocab
+          .filter(sc => new Date(sc.due) <= now)
+          .map(sc => sc.vocabulary)
+
+        console.log(`📅 Due Cards Only: Loaded ${cards.length} cards due for review`)
+
+      } catch (error) {
+        console.error("Failed to load due cards, falling back to normal mode:", error)
+        cards = availableVocabCards
+      }
+    }
+    // NORMAL MODE: Load all cards based on content type
+    else {
+      if (settings.contentType === "mixed") {
+        // Combine vocabulary and kanji cards
+        cards = [...availableVocabCards, ...kanjiCards]
+      } else if (settings.contentType === "vocabulary") {
+        cards = availableVocabCards
+      } else {
+        cards = kanjiCards
+      }
     }
 
     // Filter by bookmarked only if specified
@@ -104,10 +157,18 @@ export default function QuizPage() {
       })
     }
 
-    // Filter by JLPT level if specified
-    if (settings.jlptLevel && settings.jlptLevel !== "All") {
+    // Filter by JLPT level if specified (skip if smart mode already filtered)
+    if (!settings.smartMode && settings.jlptLevel && settings.jlptLevel !== "All") {
       cards = cards.filter(card => card.jlptLevel === settings.jlptLevel)
     }
+
+    // SMART FILTER: Filter cards based on direction requirements
+    // This ensures only cards with required fields are included
+    // E.g., "kana → kanji" direction needs cards WITH kanji
+    const { filterCardsForDirection, getDirectionFilterStats } = require("@/lib/quiz-card-filter")
+    const cardsBeforeDirectionFilter = cards.length
+    cards = filterCardsForDirection(cards, settings.direction)
+    const cardsFilteredByDirection = cardsBeforeDirectionFilter - cards.length
 
     if (cards.length === 0) {
       const type = settings.contentType === "mixed" ? "vocabulary or kanji" : settings.contentType
@@ -115,13 +176,44 @@ export default function QuizPage() {
         ? ` at ${settings.jlptLevel} level`
         : ""
       const bookmarkMsg = settings.bookmarkedOnly ? " bookmarked" : ""
-      alert(`No${bookmarkMsg} ${type} cards available${levelMsg}. Please add cards first.`)
+
+      // Show specific message if cards were filtered by direction
+      if (cardsFilteredByDirection > 0) {
+        const { getDirectionRequirements } = require("@/lib/quiz-card-filter")
+        const requirement = getDirectionRequirements(settings.direction)
+        alert(
+          `No${bookmarkMsg} ${type} cards available${levelMsg} for this quiz direction.\n\n` +
+          `${cardsFilteredByDirection} card(s) were filtered out because:\n` +
+          `${requirement}\n\n` +
+          `Try selecting a different direction or add more cards with the required fields.`
+        )
+      } else {
+        alert(`No${bookmarkMsg} ${type} cards available${levelMsg}. Please add cards first.`)
+      }
       return
     }
 
-    // Shuffle and select cards
-    const shuffled = [...cards].sort(() => Math.random() - 0.5)
-    const selected = shuffled.slice(0, settings.questionCount)
+    // Show info if cards were filtered
+    if (cardsFilteredByDirection > 0) {
+      console.log(
+        `ℹ️ Filtered ${cardsFilteredByDirection} card(s) that don't meet direction requirements. ` +
+        `${cards.length} cards available for quiz.`
+      )
+    }
+
+    // Select cards (shuffle only if not in smart mode)
+    let selected: (VocabularyCard | KanjiCard)[]
+
+    if (settings.smartMode) {
+      // Smart mode: Already prioritized by FSRS, just take the first N cards
+      // Don't shuffle - respect FSRS priority order
+      selected = cards.slice(0, settings.questionCount)
+      console.log(`🧠 Smart Mode: Selected top ${selected.length} prioritized cards`)
+    } else {
+      // Normal mode: Shuffle and select randomly
+      const shuffled = [...cards].sort(() => Math.random() - 0.5)
+      selected = shuffled.slice(0, settings.questionCount)
+    }
 
     startQuiz(selected, settings, cards)
     setQuizState("in-progress")

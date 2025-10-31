@@ -179,6 +179,62 @@ function createMultipleChoiceQuestion(
       )
       break
 
+    case "kanji-only-to-english":
+      // Show ONLY kanji, no kana hint
+      question = card.kanji || card.kana
+      correctAnswer = Array.isArray(card.meaning)
+        ? card.meaning[0]
+        : card.meaning
+      choices = generateDistractors(
+        correctAnswer,
+        allCards.map(c =>
+          Array.isArray(c.meaning) ? c.meaning[0] : c.meaning
+        ),
+        choiceCount - 1
+      )
+      break
+
+    case "kana-only-to-english":
+      // Show ONLY kana, never show kanji
+      question = card.kana
+      correctAnswer = Array.isArray(card.meaning)
+        ? card.meaning[0]
+        : card.meaning
+      choices = generateDistractors(
+        correctAnswer,
+        allCards.map(c =>
+          Array.isArray(c.meaning) ? c.meaning[0] : c.meaning
+        ),
+        choiceCount - 1
+      )
+      break
+
+    case "english-to-kanji":
+      // Answer must be in kanji form
+      question = Array.isArray(card.meaning)
+        ? card.meaning[0]
+        : card.meaning
+      correctAnswer = card.kanji || card.kana
+      choices = generateDistractors(
+        correctAnswer,
+        allCards.map(c => c.kanji || c.kana),
+        choiceCount - 1
+      )
+      break
+
+    case "english-to-kana":
+      // Answer must be in kana form
+      question = Array.isArray(card.meaning)
+        ? card.meaning[0]
+        : card.meaning
+      correctAnswer = card.kana
+      choices = generateDistractors(
+        correctAnswer,
+        allCards.map(c => c.kana),
+        choiceCount - 1
+      )
+      break
+
     default:
       question = card.kana
       correctAnswer = Array.isArray(card.meaning)
@@ -246,6 +302,38 @@ function createTypingQuestion(
     case "reading-to-kanji":
       question = card.kana
       correctAnswer = card.kanji || card.kana
+      break
+
+    case "kanji-only-to-english":
+      // Show ONLY kanji, no kana hint
+      question = card.kanji || card.kana
+      correctAnswer = Array.isArray(card.meaning)
+        ? card.meaning
+        : [card.meaning]
+      break
+
+    case "kana-only-to-english":
+      // Show ONLY kana, never show kanji
+      question = card.kana
+      correctAnswer = Array.isArray(card.meaning)
+        ? card.meaning
+        : [card.meaning]
+      break
+
+    case "english-to-kanji":
+      // Answer must be ONLY in kanji form (strict)
+      question = Array.isArray(card.meaning)
+        ? card.meaning[0]
+        : card.meaning
+      correctAnswer = card.kanji || card.kana
+      break
+
+    case "english-to-kana":
+      // Answer must be ONLY in kana form (strict)
+      question = Array.isArray(card.meaning)
+        ? card.meaning[0]
+        : card.meaning
+      correctAnswer = card.kana
       break
 
     default:
@@ -418,6 +506,38 @@ function createFlashcardQuestion(
     case "reading-to-kanji":
       question = card.kana
       correctAnswer = card.kanji || card.kana
+      break
+
+    case "kanji-only-to-english":
+      // Show ONLY kanji, no kana hint
+      question = card.kanji || card.kana
+      correctAnswer = Array.isArray(card.meaning)
+        ? card.meaning[0]
+        : card.meaning
+      break
+
+    case "kana-only-to-english":
+      // Show ONLY kana, never show kanji
+      question = card.kana
+      correctAnswer = Array.isArray(card.meaning)
+        ? card.meaning[0]
+        : card.meaning
+      break
+
+    case "english-to-kanji":
+      // Answer in kanji form
+      question = Array.isArray(card.meaning)
+        ? card.meaning[0]
+        : card.meaning
+      correctAnswer = card.kanji || card.kana
+      break
+
+    case "english-to-kana":
+      // Answer in kana form
+      question = Array.isArray(card.meaning)
+        ? card.meaning[0]
+        : card.meaning
+      correctAnswer = card.kana
       break
 
     default:
@@ -836,7 +956,9 @@ function createSentenceBuildingQuestion(
   // Select random example from all available
   const exampleIndex = Math.floor(Math.random() * card.examples.length)
   const example = card.examples[exampleIndex]
-  const sentence = example.japanese
+
+  // Use kana field (hiragana only) if kanaOnly setting is enabled
+  const sentence = settings.kanaOnly ? example.kana : example.japanese
 
   // Japanese particles list for intelligent word splitting
   const particles = [

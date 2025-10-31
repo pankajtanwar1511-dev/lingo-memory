@@ -104,6 +104,52 @@ export class DatabaseService {
   }
 
   /**
+   * Get due cards (cards that need review now)
+   */
+  async getDueCards(): Promise<StudyCard[]> {
+    const now = new Date()
+    const allCards = await this.getStudyCards()
+    return allCards.filter(card => new Date(card.due) <= now)
+  }
+
+  /**
+   * Get new cards (cards never reviewed)
+   */
+  async getNewCards(): Promise<StudyCard[]> {
+    const allCards = await this.getStudyCards()
+    return allCards.filter(card => card.reps === 0)
+  }
+
+  /**
+   * Get cards with vocabulary data for FSRS Smart Mode
+   */
+  async getStudyCardsWithVocabulary(): Promise<Array<StudyCard & { vocabulary: VocabularyCard }>> {
+    const studyCards = await this.getStudyCards()
+    const vocabulary = await this.getVocabulary()
+
+    const vocabMap = new Map(vocabulary.map(v => [v.id, v]))
+
+    return studyCards
+      .map(card => {
+        const vocab = vocabMap.get(card.vocabularyId)
+        if (!vocab) return null
+        return {
+          ...card,
+          vocabulary: vocab
+        }
+      })
+      .filter((card): card is StudyCard & { vocabulary: VocabularyCard } => card !== null)
+  }
+
+  /**
+   * Get due count for display
+   */
+  async getDueCardsCount(): Promise<number> {
+    const dueCards = await this.getDueCards()
+    return dueCards.length
+  }
+
+  /**
    * Update study card
    */
   async updateStudyCard(card: StudyCard): Promise<void> {

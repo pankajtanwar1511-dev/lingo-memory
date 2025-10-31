@@ -23,8 +23,21 @@ export type QuizDirection =
   | "reading-to-kanji"
   | "kanji-to-meaning"
   | "meaning-to-kanji"
+  | "kanji-only-to-english"    // Show ONLY kanji (no kana hint)
+  | "kana-only-to-english"     // Show ONLY kana
+  | "english-to-kanji"         // Answer must be kanji
+  | "english-to-kana"          // Answer must be kana
 
 export type QuizDifficulty = "easy" | "medium" | "hard"
+
+export type ValidationLevel = "correct" | "close" | "wrong"
+
+export interface ValidationResult {
+  level: ValidationLevel
+  isAcceptable: boolean // true for "correct" and "close"
+  message?: string // Feedback message for "close" answers
+  expectedAnswer?: string // For "close" answers, show what was expected
+}
 
 export interface QuizSettings {
   contentType: QuizContentType
@@ -42,6 +55,7 @@ export interface QuizSettings {
   bookmarkedOnly?: boolean // Only quiz bookmarked cards
   dueCardsOnly?: boolean // Only quiz cards due for review (FSRS)
   smartMode?: boolean // Use FSRS to prioritize card selection
+  kanaOnly?: boolean // For sentence-building - use kana field instead of japanese (no kanji)
 }
 
 export interface QuizQuestion {

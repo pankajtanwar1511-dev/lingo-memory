@@ -55,6 +55,9 @@ export function QuizQuestion({
   const [hintsUsed, setHintsUsed] = useState(0)
   const [hasAnswered, setHasAnswered] = useState(false)
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null)
+  const [validationLevel, setValidationLevel] = useState<"correct" | "close" | "wrong" | null>(null)
+  const [validationHint, setValidationHint] = useState<string>("")
+  const [isFlipped, setIsFlipped] = useState(false)
 
   const startTimeRef = useRef(Date.now())
   const timerRef = useRef<NodeJS.Timeout>()
@@ -90,6 +93,9 @@ export function QuizQuestion({
     setHintsUsed(0)
     setHasAnswered(false)
     setIsCorrect(null)
+    setValidationLevel(null)
+    setValidationHint("")
+    setIsFlipped(false)
     startTimeRef.current = Date.now()
 
     // Start timer (disabled for sentence-building and stroke-order modes which need no time pressure)
@@ -172,7 +178,7 @@ export function QuizQuestion({
     audioService.stop()
 
     // For listening mode, speak the Japanese text
-    if (question.mode === "listening" && question.card) {
+    if (question.mode === "listening" && question.card && question.contentType === "vocabulary") {
       const textToSpeak = question.card.kanji || question.card.kana
       try {
         await audioService.speak(textToSpeak, {
@@ -211,16 +217,40 @@ export function QuizQuestion({
 
     const answer = question.mode === "typing" ? typedAnswer : selectedAnswer
 
-    // Check if correct
-    const correctAnswers = Array.isArray(question.correctAnswer)
-      ? question.correctAnswer
-      : [question.correctAnswer]
+    // Use enhanced validator for typing mode, simple check for multiple-choice
+    if (question.mode === "typing") {
+      // Import validator dynamically
+      const { validateAnswer } = require("@/lib/quiz-validator")
 
-    const correct = correctAnswers.some(
-      ca => ca.trim().toLowerCase() === answer.trim().toLowerCase()
-    )
+      // Get card data
+      const card = question.card
+      const validationResult = validateAnswer(
+        answer,
+        question.direction,
+        card,
+        question.contentType
+      )
 
-    setIsCorrect(correct)
+      // Set validation state
+      setValidationLevel(validationResult.level)
+      setValidationHint(validationResult.hint || "")
+
+      // Set isCorrect for backward compatibility
+      setIsCorrect(validationResult.level === "correct")
+    } else {
+      // Multiple choice - use simple validation
+      const correctAnswers = Array.isArray(question.correctAnswer)
+        ? question.correctAnswer
+        : [question.correctAnswer]
+
+      const correct = correctAnswers.some(
+        ca => ca.trim().toLowerCase() === answer.trim().toLowerCase()
+      )
+
+      setIsCorrect(correct)
+      setValidationLevel(correct ? "correct" : "wrong")
+      setValidationHint("")
+    }
 
     // Submit answer after showing feedback
     setTimeout(() => {
@@ -313,27 +343,28 @@ export function QuizQuestion({
 
       <Card className="p-6 space-y-6">
         {/* Question */}
-        {question.mode !== "sentence-building" && (
-          <div className="text-center">
-            {question.mode === "listening" && (
-              <Button
-                variant="outline"
-                size="lg"
-                onClick={playQuestionAudio}
-                className="mb-4 gap-2"
-              >
-                <Volume2 className="h-5 w-5" />
-                Play Audio
-              </Button>
-            )}
+        <div className="text-center">
+          {question.mode === "listening" && (
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={playQuestionAudio}
+              className="mb-4 gap-2"
+            >
+              <Volume2 className="h-5 w-5" />
+              Play Audio
+            </Button>
+          )}
 
-            <h2 className={`font-bold mb-2 text-foreground ${
-              question.contentType === "kanji"
-                ? "text-7xl"
-                : "text-3xl"
-            }`}>
-              {question.question}
-            </h2>
+          <h2 className={`font-bold mb-2 text-foreground ${
+            question.mode === "sentence-building"
+              ? "text-2xl"
+              : question.contentType === "kanji"
+              ? "text-7xl"
+              : "text-3xl"
+          }`}>
+            {question.question}
+          </h2>
 
             {/* Show stroke count for kanji questions (except stroke-order mode) */}
             {question.contentType === "kanji" &&
@@ -362,8 +393,7 @@ export function QuizQuestion({
                 )}
               </div>
             )}
-          </div>
-        )}
+        </div>
 
         {/* Hint for sentence-completion mode */}
         {question.mode === "sentence-completion" && question.hint && (
@@ -434,14 +464,28 @@ export function QuizQuestion({
             />
             {hasAnswered && (
               <div className={`text-center p-3 rounded-lg ${
-                isCorrect
+                validationLevel === "correct"
                   ? "bg-green-50 dark:bg-green-950/20 text-green-700 dark:text-green-300"
+                  : validationLevel === "close"
+                  ? "bg-orange-50 dark:bg-orange-950/20 text-orange-700 dark:text-orange-300"
                   : "bg-red-50 dark:bg-red-950/20 text-red-700 dark:text-red-300"
               }`}>
-                {isCorrect ? (
+                {validationLevel === "correct" ? (
                   <div className="flex items-center justify-center gap-2">
                     <Check className="h-5 w-5" />
                     <span>Correct!</span>
+                  </div>
+                ) : validationLevel === "close" ? (
+                  <div>
+                    <div className="flex items-center justify-center gap-2 mb-2">
+                      <Check className="h-5 w-5" />
+                      <span className="font-semibold">Close!</span>
+                    </div>
+                    {validationHint && (
+                      <div className="text-sm bg-orange-100 dark:bg-orange-900/30 p-2 rounded border border-orange-200 dark:border-orange-800">
+                        💡 {validationHint}
+                      </div>
+                    )}
                   </div>
                 ) : (
                   <div>
@@ -516,8 +560,134 @@ export function QuizQuestion({
           />
         )}
 
-        {/* Hint (hidden for sentence-building and stroke-order as they have their own) */}
-        {showHints && question.hint && question.mode !== "sentence-building" && question.mode !== "stroke-order" && (
+        {/* Flashcard Mode */}
+        {question.mode === "flashcard" && (
+          <div className="space-y-4">
+            <div
+              className="relative min-h-[300px] cursor-pointer perspective-1000"
+              onClick={() => setIsFlipped(!isFlipped)}
+            >
+              <div
+                className={`relative w-full h-full transition-transform duration-500 preserve-3d ${
+                  isFlipped ? "rotate-y-180" : ""
+                }`}
+                style={{
+                  transformStyle: "preserve-3d",
+                  transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)"
+                }}
+              >
+                {/* Front of card */}
+                <div
+                  className={`absolute w-full backface-hidden ${isFlipped ? "invisible" : "visible"}`}
+                  style={{ backfaceVisibility: "hidden" }}
+                >
+                  <div className="p-8 bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-950/30 dark:to-blue-950/30 rounded-xl border-2 border-purple-200 dark:border-purple-800 min-h-[300px] flex flex-col items-center justify-center">
+                    <p className="text-sm text-muted-foreground mb-4">Front</p>
+                    <p className="text-5xl font-bold text-center mb-4">{question.question}</p>
+                    <p className="text-sm text-muted-foreground mt-8 flex items-center gap-2">
+                      👆 Click to flip
+                    </p>
+                  </div>
+                </div>
+
+                {/* Back of card */}
+                <div
+                  className={`absolute w-full backface-hidden ${isFlipped ? "visible" : "invisible"}`}
+                  style={{
+                    backfaceVisibility: "hidden",
+                    transform: "rotateY(180deg)"
+                  }}
+                >
+                  <div className="p-8 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 rounded-xl border-2 border-green-200 dark:border-green-800 min-h-[300px] flex flex-col items-center justify-center">
+                    <p className="text-sm text-muted-foreground mb-4">Back</p>
+                    <p className="text-4xl font-bold text-center mb-6">{question.correctAnswer}</p>
+                    {question.hint && (
+                      <div className="mt-4 p-4 bg-white/50 dark:bg-black/20 rounded-lg max-w-md">
+                        <p className="text-sm text-muted-foreground">{question.hint}</p>
+                      </div>
+                    )}
+                    <p className="text-sm text-muted-foreground mt-8 flex items-center gap-2">
+                      👆 Click to flip back
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Self-assessment buttons */}
+            {isFlipped && (
+              <div className="space-y-3">
+                <p className="text-sm text-center text-muted-foreground font-medium">
+                  How well did you know this?
+                </p>
+                <div className="grid grid-cols-3 gap-3">
+                  <Button
+                    variant="outline"
+                    onClick={() => {
+                      setIsCorrect(false)
+                      setHasAnswered(true)
+                      const time = Date.now() - startTimeRef.current
+                      onAnswer("wrong", time, hintsUsed)
+                    }}
+                    className="h-auto py-4 flex-col border-red-200 hover:bg-red-50 dark:border-red-800 dark:hover:bg-red-950/20"
+                    disabled={hasAnswered || disabled}
+                  >
+                    <X className="h-6 w-6 text-red-600 mb-1" />
+                    <span className="text-sm font-semibold">Didn't Know</span>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    onClick={() => {
+                      setIsCorrect(true)
+                      setHasAnswered(true)
+                      const time = Date.now() - startTimeRef.current
+                      onAnswer("partial", time, hintsUsed)
+                    }}
+                    className="h-auto py-4 flex-col border-yellow-200 hover:bg-yellow-50 dark:border-yellow-800 dark:hover:bg-yellow-950/20"
+                    disabled={hasAnswered || disabled}
+                  >
+                    <div className="text-2xl mb-1">😐</div>
+                    <span className="text-sm font-semibold">Sort of</span>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    onClick={() => {
+                      setIsCorrect(true)
+                      setHasAnswered(true)
+                      const time = Date.now() - startTimeRef.current
+                      const answer = Array.isArray(question.correctAnswer)
+                        ? question.correctAnswer[0]
+                        : question.correctAnswer
+                      onAnswer(answer, time, hintsUsed)
+                    }}
+                    className="h-auto py-4 flex-col border-green-200 hover:bg-green-50 dark:border-green-800 dark:hover:bg-green-950/20"
+                    disabled={hasAnswered || disabled}
+                  >
+                    <Check className="h-6 w-6 text-green-600 mb-1" />
+                    <span className="text-sm font-semibold">Knew It!</span>
+                  </Button>
+                </div>
+              </div>
+            )}
+
+            {/* After self-assessment */}
+            {hasAnswered && (
+              <div className="text-center">
+                <Button
+                  onClick={onNext}
+                  className="gap-2"
+                  size="lg"
+                >
+                  Next Card
+                  <ChevronRight className="h-5 w-5" />
+                </Button>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Hint (hidden for sentence-building, stroke-order, and flashcard as they have their own) */}
+        {showHints && question.hint && question.mode !== "sentence-building" && question.mode !== "stroke-order" && question.mode !== "flashcard" && (
           <div className="text-center">
             {!showHint ? (
               <Button
@@ -541,8 +711,8 @@ export function QuizQuestion({
           </div>
         )}
 
-        {/* Action Buttons (hidden for sentence-building and stroke-order which have their own) */}
-        {question.mode !== "sentence-building" && question.mode !== "stroke-order" && (
+        {/* Action Buttons (hidden for sentence-building, stroke-order, and flashcard which have their own) */}
+        {question.mode !== "sentence-building" && question.mode !== "stroke-order" && question.mode !== "flashcard" && (
           <div className="flex gap-3">
             <Button
               variant="outline"
