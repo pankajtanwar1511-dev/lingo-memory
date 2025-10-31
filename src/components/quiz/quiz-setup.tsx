@@ -25,7 +25,8 @@ import {
   Keyboard,
   Book,
   Languages,
-  Puzzle
+  Puzzle,
+  Pen
 } from "lucide-react"
 
 interface QuizSetupProps {
@@ -186,6 +187,14 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
               selected={mode === "sentence-building"}
               onClick={() => setMode("sentence-building")}
               disabled={contentType === "kanji"} // Only works with vocabulary
+            />
+            <ModeCard
+              icon={<Pen className="h-5 w-5" />}
+              title="Stroke Order"
+              description="Draw kanji strokes"
+              selected={mode === "stroke-order"}
+              onClick={() => setMode("stroke-order")}
+              disabled={contentType !== "kanji"} // Only works with kanji
             />
           </div>
         </div>

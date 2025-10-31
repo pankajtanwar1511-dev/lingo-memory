@@ -20,6 +20,7 @@ import {
 import { Progress } from "@/components/ui/progress"
 import { useBookmarksStore } from "@/store/bookmarks-store"
 import { SentenceBuilder } from "./sentence-builder"
+import { KanjiDrawing } from "./kanji-drawing"
 
 interface QuizQuestionProps {
   question: QuizQuestionType
@@ -91,8 +92,8 @@ export function QuizQuestion({
     setIsCorrect(null)
     startTimeRef.current = Date.now()
 
-    // Start timer (disabled for sentence-building mode which needs no time pressure)
-    if (timeLimit && question.mode !== "sentence-building") {
+    // Start timer (disabled for sentence-building and stroke-order modes which need no time pressure)
+    if (timeLimit && question.mode !== "sentence-building" && question.mode !== "stroke-order") {
       timerRef.current = setInterval(() => {
         setTimeRemaining(prev => {
           if (prev === undefined || prev <= 0) {
@@ -256,6 +257,18 @@ export function QuizQuestion({
     onAnswer(userOrder.join(""), elapsed, hintsUsed)
   }
 
+  const handleStrokeOrderSubmit = (strokes: any[], isCorrect: boolean) => {
+    if (hasAnswered || disabled) return
+
+    const elapsed = Date.now() - startTimeRef.current
+    setTimeSpent(elapsed)
+    setHasAnswered(true)
+    setIsCorrect(isCorrect)
+
+    // Submit answer with stroke count as answer
+    onAnswer(`${strokes.length} strokes`, elapsed, hintsUsed)
+  }
+
   const progressPercent = timeLimit && timeRemaining !== undefined
     ? (timeRemaining / timeLimit) * 100
     : 100
@@ -278,7 +291,7 @@ export function QuizQuestion({
             <Star className={`h-4 w-4 ${isBookmarked ? "fill-current" : ""}`} />
           </Button>
         </div>
-        {timeLimit && timeRemaining !== undefined && question.mode !== "sentence-building" && (
+        {timeLimit && timeRemaining !== undefined && question.mode !== "sentence-building" && question.mode !== "stroke-order" && (
           <div className="flex items-center gap-2">
             <Clock className="h-4 w-4 text-gray-500" />
             <span className={`font-mono ${
@@ -291,7 +304,7 @@ export function QuizQuestion({
       </div>
 
       {/* Timer Progress */}
-      {timeLimit && question.mode !== "sentence-building" && (
+      {timeLimit && question.mode !== "sentence-building" && question.mode !== "stroke-order" && (
         <Progress
           value={progressPercent}
           className={progressPercent <= 20 ? "bg-red-200" : ""}
@@ -300,60 +313,66 @@ export function QuizQuestion({
 
       <Card className="p-6 space-y-6">
         {/* Question */}
-        <div className="text-center">
-          {question.mode === "listening" && (
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={playQuestionAudio}
-              className="mb-4 gap-2"
-            >
-              <Volume2 className="h-5 w-5" />
-              Play Audio
-            </Button>
-          )}
+        {question.mode !== "sentence-building" && (
+          <div className="text-center">
+            {question.mode === "listening" && (
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={playQuestionAudio}
+                className="mb-4 gap-2"
+              >
+                <Volume2 className="h-5 w-5" />
+                Play Audio
+              </Button>
+            )}
 
-          <h2 className={`font-bold mb-2 text-foreground ${
-            question.contentType === "kanji"
-              ? "text-7xl"
-              : "text-3xl"
-          }`}>
-            {question.question}
-          </h2>
+            <h2 className={`font-bold mb-2 text-foreground ${
+              question.contentType === "kanji"
+                ? "text-7xl"
+                : "text-3xl"
+            }`}>
+              {question.question}
+            </h2>
 
-          {/* Show stroke count for kanji questions */}
-          {question.contentType === "kanji" && "strokeCount" in question.card && (
-            <p className="text-sm text-muted-foreground mt-2">
-              Stroke count: {question.card.strokeCount}
-            </p>
-          )}
+            {/* Show stroke count for kanji questions (except stroke-order mode) */}
+            {question.contentType === "kanji" &&
+             question.mode !== "stroke-order" &&
+             "strokeCount" in question.card && (
+              <p className="text-sm text-muted-foreground mt-2">
+                Stroke count: {question.card.strokeCount}
+              </p>
+            )}
 
-          {/* Show readings for kanji-to-meaning questions (after they answer) */}
-          {question.contentType === "kanji" &&
-           question.direction === "kanji-to-meaning" &&
-           "onReadings" in question.card &&
-           "kunReadings" in question.card &&
-           hasAnswered && (
-            <div className="text-sm text-muted-foreground mt-3 space-x-3">
-              {question.card.onReadings.length > 0 && (
-                <span className="inline-block">
-                  <span className="font-semibold">音:</span> {question.card.onReadings.join(", ")}
-                </span>
-              )}
-              {question.card.kunReadings.length > 0 && (
-                <span className="inline-block">
-                  <span className="font-semibold">訓:</span> {question.card.kunReadings.join(", ")}
-                </span>
-              )}
-            </div>
-          )}
+            {/* Show readings for kanji questions - always visible, regardless of direction */}
+            {question.contentType === "kanji" &&
+             question.mode !== "stroke-order" &&
+             "onReadings" in question.card &&
+             "kunReadings" in question.card && (
+              <div className="text-sm text-muted-foreground mt-3 space-x-3">
+                {question.card.onReadings.length > 0 && (
+                  <span className="inline-block">
+                    <span className="font-semibold">音:</span> {question.card.onReadings.join(", ")}
+                  </span>
+                )}
+                {question.card.kunReadings.length > 0 && (
+                  <span className="inline-block">
+                    <span className="font-semibold">訓:</span> {question.card.kunReadings.join(", ")}
+                  </span>
+                )}
+              </div>
+            )}
+          </div>
+        )}
 
-          {question.mode === "sentence-completion" && question.hint && (
+        {/* Hint for sentence-completion mode */}
+        {question.mode === "sentence-completion" && question.hint && (
+          <div className="text-center">
             <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
               {question.hint}
             </p>
-          )}
-        </div>
+          </div>
+        )}
 
         {/* Answer Options */}
         {question.mode === "multiple-choice" && question.choices && (
@@ -482,8 +501,23 @@ export function QuizQuestion({
           />
         )}
 
-        {/* Hint (hidden for sentence-building as it has its own) */}
-        {showHints && question.hint && question.mode !== "sentence-building" && (
+        {/* Stroke Order (Kanji Drawing) */}
+        {question.mode === "stroke-order" && question.contentType === "kanji" && "strokes" in question.card && (
+          <KanjiDrawing
+            key={question.id}
+            kanji={question.card.kanji}
+            svgPath={question.card.strokes.svgPath}
+            strokeCount={question.card.strokeCount}
+            onReadings={question.card.onReadings}
+            kunReadings={question.card.kunReadings}
+            onSubmit={handleStrokeOrderSubmit}
+            disabled={hasAnswered || disabled}
+            showReference={false}
+          />
+        )}
+
+        {/* Hint (hidden for sentence-building and stroke-order as they have their own) */}
+        {showHints && question.hint && question.mode !== "sentence-building" && question.mode !== "stroke-order" && (
           <div className="text-center">
             {!showHint ? (
               <Button
@@ -507,8 +541,8 @@ export function QuizQuestion({
           </div>
         )}
 
-        {/* Action Buttons */}
-        {question.mode !== "sentence-building" && (
+        {/* Action Buttons (hidden for sentence-building and stroke-order which have their own) */}
+        {question.mode !== "sentence-building" && question.mode !== "stroke-order" && (
           <div className="flex gap-3">
             <Button
               variant="outline"
@@ -524,29 +558,29 @@ export function QuizQuestion({
             </Button>
 
             {question.mode === "multiple-choice" || question.mode === "listening" ? (
-            <Button
-              onClick={() => handleSubmit()}
-              disabled={!selectedAnswer || hasAnswered || disabled}
-              className="flex-1 gap-2"
-            >
-              {hasAnswered ? "Next" : "Submit"}
-              <ChevronRight className="h-4 w-4" />
-              <kbd className="hidden sm:inline ml-1 px-1.5 py-0.5 text-xs bg-white/20 rounded border border-white/30">
-                Enter
-              </kbd>
-            </Button>
-          ) : (
-            <Button
-              onClick={handleTypingSubmit}
-              disabled={!typedAnswer.trim() || hasAnswered || disabled}
-              className="flex-1 gap-2"
-            >
-              {hasAnswered ? "Next" : "Submit"}
-              <ChevronRight className="h-4 w-4" />
-              <kbd className="hidden sm:inline ml-1 px-1.5 py-0.5 text-xs bg-white/20 rounded border border-white/30">
-                Enter
-              </kbd>
-            </Button>
+              <Button
+                onClick={() => handleSubmit()}
+                disabled={!selectedAnswer || hasAnswered || disabled}
+                className="flex-1 gap-2"
+              >
+                {hasAnswered ? "Next" : "Submit"}
+                <ChevronRight className="h-4 w-4" />
+                <kbd className="hidden sm:inline ml-1 px-1.5 py-0.5 text-xs bg-white/20 rounded border border-white/30">
+                  Enter
+                </kbd>
+              </Button>
+            ) : (
+              <Button
+                onClick={handleTypingSubmit}
+                disabled={!typedAnswer.trim() || hasAnswered || disabled}
+                className="flex-1 gap-2"
+              >
+                {hasAnswered ? "Next" : "Submit"}
+                <ChevronRight className="h-4 w-4" />
+                <kbd className="hidden sm:inline ml-1 px-1.5 py-0.5 text-xs bg-white/20 rounded border border-white/30">
+                  Enter
+                </kbd>
+              </Button>
             )}
           </div>
         )}

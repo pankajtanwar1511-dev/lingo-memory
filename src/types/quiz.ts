@@ -13,6 +13,7 @@ export type QuizMode =
   | "listening"
   | "sentence-completion"
   | "sentence-building"
+  | "stroke-order"
   | "flashcard"
 
 export type QuizDirection =

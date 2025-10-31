@@ -106,6 +106,9 @@ function createKanjiQuestion(
     case "typing":
       return createKanjiTypingQuestion(card, direction)
 
+    case "stroke-order":
+      return createKanjiStrokeOrderQuestion(card, direction)
+
     case "flashcard":
       return createKanjiFlashcardQuestion(card, direction)
 
@@ -762,6 +765,24 @@ function createKanjiFlashcardQuestion(
     question,
     correctAnswer,
     hint: getKanjiHint(card, direction)
+  }
+}
+
+/**
+ * Create stroke order question for kanji
+ * Note: The direction parameter is accepted to maintain consistency with other question types,
+ * but stroke-order mode does not use direction logic - it always shows the kanji to draw.
+ */
+function createKanjiStrokeOrderQuestion(card: KanjiCard, direction: QuizDirection): QuizQuestion {
+  return {
+    id: `quiz_${card.id}_${Date.now()}`,
+    card,
+    contentType: "kanji",
+    mode: "stroke-order",
+    direction, // Store direction but doesn't affect stroke-order behavior
+    question: card.kanji,
+    correctAnswer: `${card.strokeCount} strokes`,
+    hint: `This kanji means "${card.meanings[0]}" and has ${card.strokeCount} strokes`
   }
 }
 
