@@ -22,6 +22,14 @@
 - `06_PROJECT_HISTORY.md` - Project timeline
 - `08_QUALITY_ASSURANCE.md` - QA processes
 
+## 🛠️ Implementation & Scripts
+
+- `SCRIPTS_REGISTRY.md` - **Single source of truth for all automation scripts**
+- `vocabulary_implementation.md` - N5 vocabulary completion (in progress)
+- `kanji_implementation.md` - Kanji dataset implementation (completed)
+- `quiz_implementation.md` - Quiz system implementation
+- `content_implementation.md` - Overall content strategy
+
 ---
 
 ## 🗂️ Archive
