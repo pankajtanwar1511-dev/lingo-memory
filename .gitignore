@@ -54,4 +54,9 @@ data/OLD-COMPLEX-APPROACH/
 # Kanji raw data (external git repos and large XML files)
 data/kanji/raw/kanjivg/
 data/kanji/raw/kanjidic2.xml.gz
-data/kanji/raw/kanjidic2.xml
+data/kanji/raw/kanjidic2.xml# Backups
+*.backup_*
+*.db.backup*
+
+# Temp folders
+docs/temp/
