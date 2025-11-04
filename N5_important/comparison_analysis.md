@@ -1,8 +1,8 @@
 # N5 Vocabulary Comparison Analysis
-**Comparing:** N5_vocab_tags.md (808 entries) vs chatgpt_tags_merged.md (846 entries)
+**Comparing:** N5_vocab_tags.md (810 entries) vs chatgpt_tags_merged.md (846 entries)
 ---
 ## Table 1: Perfect Match (Kana + Kanji + Meaning)
-**Total: 567 entries**
+**Total: 565 entries**
 | Kana | Kanji | Meaning | N5 Tags | GPT Type | GPT Transitivity | GPT Category |
 |------|-------|---------|---------|----------|------------------|--------------|
 | あ |  | muteness | noun | noun | NA | misc |
@@ -16,7 +16,7 @@
 | あき | 秋 | autumn | adverb, noun, verb | noun | NA | time |
 | あく | 開く | to open (e.g. doors) | godan, verb | verb_godan | intransitive | action |
 | あける | 開ける | to open (a door, etc.) | ichidan, verb | verb_ichidan | transitive | action |
-| あげる | 上げる | to raise | ichidan, verb | verb_ichidan | transitive | action |
+| あげる | 上げる | to raise / give | ichidan, verb | verb_ichidan | transitive | action |
 | あさ | 朝 | morning | adverb, noun, verb | noun | NA | time |
 | あさごはん | 朝ごはん | breakfast | noun | noun | NA | food |
 | あさって |  | day after tomorrow | adverb, noun, particle, verb | noun | NA | time |
@@ -201,7 +201,7 @@
 | くつした | 靴下 | socks | noun | noun | NA | clothing |
 | くに | 国 | country | noun | noun | NA | place |
 | くらい | 暗い | dark | adjective | adj_i | NA | description |
-| くる | 来る | to come (spatially or temporally) | verb | verb_ichidan | intransitive | action |
+| くる | 来る | to come (spatially or temporally) | verb | verb_irregular | intransitive | action |
 | くるま | 車 | car | noun | noun | NA | object |
 | くろ | 黒 | black | noun, particle | noun | NA | description |
 | くろい | 黒い | black | adjective | adj_i | NA | description |
@@ -269,13 +269,13 @@
 | じゅぎょう | 授業 | lesson | noun, verb | noun | NA | activity |
 | じょうぶ | 丈夫 | healthy | adjective, noun | adj_na | NA | description |
 | すいようび | 水曜日 | Wednesday | adverb, noun, verb | noun | NA | time |
-| すう | 吸う | to smoke | godan, verb | verb_godan | transitive | action |
+| すう | 吸う | to inhale / breathe / smoke | godan, verb | verb_godan | transitive | action |
 | すくない | 少ない | few | adjective | adj_i | NA | quantity |
 | すぐに |  | immediately | adverb, verb | expression | NA | time |
 | すこし | 少し | a little | adverb, verb | expression | NA | quantity |
 | すずしい | 涼しい | cool | adjective | adj_i | NA | description |
 | すみません |  | excuse me | unknown | polite_expr | NA | greeting |
-| する |  | to do | verb | verb_ichidan | both | action |
+| する |  | to do | verb | verb_irregular | both | action |
 | すわる | 座る | to sit (down) | godan, verb | verb_godan | intransitive | action |
 | ずつ |  | apiece | unknown | particle | NA | quantity |
 | せ | 背 | back | noun | noun | NA | body |
@@ -616,7 +616,7 @@
 | さあ |  |  | come (on) | come now / well | unknown | interj | NA | expression |
 | さき |  | 先 | point | ahead / previous | noun, particle | noun | NA | time |
 | さくぶん |  | 作文 | writing (an essay, prose, etc.) | composition / writing | noun, verb | noun | NA | art |
-| さす |  | 差す | to shine | to raise (hand) / hold up | godan, verb | verb_godan | transitive | action |
+| さす |  | 差す | to hold up (umbrella) / shine | to raise (hand) / hold up | godan, verb | verb_godan | transitive | action |
 | さむい |  | 寒い | cold (e.g. weather) | cold (weather) | adjective | adj_i | NA | description |
 | さようなら |  |  | farewell | goodbye | unknown | expression | NA | greeting |
 | しつれいしました |  | 失礼しました | my apologies | excuse me (past polite) | unknown | polite_expr | NA | greeting |
@@ -691,7 +691,7 @@
 | もつ |  | 持つ | to hold (in one's hand) | to hold / have | godan, verb | verb_godan | transitive | action |
 | もんだい |  | 問題 | question (e.g. on a test) | problem / question | noun | noun | NA | misc |
 | や |  |  | melting | and / or (particle) | noun | particle | NA | misc |
-| やすむ |  | 休む | to be absent | to rest / be absent | godan, verb | verb_godan | intransitive | action |
+| やすむ |  | 休む | to rest / be absent | to rest / be absent | godan, verb | verb_godan | intransitive | action |
 | ようか |  | 八日 | 8th day of the month | eighth day / eight days | noun | noun | NA | time |
 | ようふく |  | 洋服 | Western-style clothes (cf. traditional Japanese clothes) | western clothes | noun | noun | NA | clothing |
 | よく |  |  | greed | often | noun | expression | NA | time |
@@ -790,7 +790,7 @@
 | じ |  | 字 | child | character / letter | noun | noun | NA | language |
 | じん |  | ～人 | -ian (e.g. Italian) | nationality suffix (e.g. 日本人) | unknown | noun | NA | person |
 | すしや |  | 寿司屋 | sushi shop | sushi restaurant | noun | noun | NA | place |
-| そうじ |  | 掃除 | concentration | cleaning | noun, verb | noun | NA | action |
+| そうじ |  | 掃除 | cleaning | cleaning | noun, verb | noun | NA | action |
 | ただいま |  | 只今 | I'm home! | I’m home! / just now | adverb, noun, verb | expression | NA | greeting |
 | ただしい |  | 正しい | right | correct | adjective | adj_i | NA | description |
 | たち |  | 達 | mansion | plural suffix (for people) | noun | particle | NA | person |
@@ -801,9 +801,9 @@
 | ちち |  | 父 | milk | father | noun | noun | NA | person |
 | ちゅう |  | 中 | kiss | in / during / middle | adverb, noun, particle, verb | noun | NA | place |
 | つ |  | つ | general-purpose counter | generic counter | counter | counter | NA | quantity |
-| つくりかた |  | 作り方 | style of building | way of making | noun | noun | NA | action |
-| つける |  | 付ける | to install (a king, emperor, etc.) | to attach / turn on | ichidan, verb | verb_ichidan | transitive | action |
-| できる |  | 出来る | to be out of | can do / be able | godan, verb | verb_ichidan | intransitive | action |
+| つくりかた |  | 作り方 | way of making | way of making | noun | noun | NA | action |
+| つける |  | 付ける | to attach / turn on | to attach / turn on | ichidan, verb | verb_ichidan | transitive | action |
+| できる |  | 出来る | to be able to / can do | can do / be able | godan, verb | verb_ichidan | intransitive | action |
 | とお |  | 十 | distant | ten | noun, particle | noun | NA | quantity |
 | ど |  | 度 | degree (angle, temperature, scale, etc.) | degree (angle/temperature) | counter, noun | counter | NA | quantity |
 | に | 二 |  | two | to / at (particle) | unknown | particle | NA | misc |
@@ -820,11 +820,10 @@
 | りょこうがいしゃ |  | 旅行会社 | travel agent | travel agency | noun | noun | NA | place |
 ---
 ## Table 5: Extra in ChatGPT (Missing in N5)
-**Total: 41 entries**
+**Total: 42 entries**
 | Kana | Kanji | Meaning | Type | Transitivity | Category |
 |------|-------|---------|------|--------------|----------|
 | いけない |  | must not / bad | adj_i | NA | misc |
-| いたる | 至る | to reach | verb_godan | intransitive | action |
 | かいしゃいん | 会社員 | office worker | noun | NA | person |
 | かたかな |  | katakana | noun | NA | language |
 | かわ | 川 | river | noun | NA | nature |
@@ -832,18 +831,18 @@
 | くうこう | 空港 | airport | noun | NA | place |
 | くも | 雲 | cloud | noun | NA | nature |
 | ぐらい |  | about / approximately | particle | NA | quantity |
-| けっこんする | 結婚する | to marry | verb_ichidan | intransitive | action |
+| けっこんする | 結婚する | to marry | verb_irregular | intransitive | action |
 | こころ | 心 | heart / mind | noun | NA | body |
 | ころ | 頃 | around / time | noun | NA | time |
-| さんぽする | 散歩する | to stroll | verb_ichidan | intransitive | action |
+| さんぽする | 散歩する | to stroll | verb_irregular | intransitive | action |
 | じゅういち | 十一 | eleven | noun | NA | quantity |
 | じゅうに | 十二 | twelve | noun | NA | quantity |
 | せびろ | 背広 | suit | noun | NA | clothing |
-| せんたくする | 洗濯する | to wash laundry | verb_ichidan | transitive | action |
-| そうじする | 掃除する | to clean | verb_ichidan | transitive | action |
+| せんたくする | 洗濯する | to wash laundry | verb_irregular | transitive | action |
+| そうじする | 掃除する | to clean | verb_irregular | transitive | action |
 | そうして |  | and then | expression | NA | misc |
 | たいしかん | 大使館 | embassy | noun | NA | place |
-| でんわする | 電話する | to make a phone call | verb_ichidan | transitive | action |
+| でんわする | 電話する | to make a phone call | verb_irregular | transitive | action |
 | とき | 時 | time / when | noun | NA | time |
 | なな | 七 | seven | noun | NA | quantity |
 | なん / なに | 何 | what | pronoun | NA | misc |
@@ -853,12 +852,15 @@
 | はんたい | 反対 | opposite | noun | NA | misc |
 | ぶっか | 物価 | prices (of goods) | noun | NA | quantity |
 | べんきょう | 勉強 | study | noun | NA | activity |
-| べんきょうする | 勉強する | to study | verb_ichidan | transitive | action |
+| べんきょうする | 勉強する | to study | verb_irregular | transitive | action |
 | まいつき | 毎月 | every month | noun | NA | time |
 | まるい | 丸い | round | adj_i | NA | description |
 | りゅうがくせい | 留学生 | foreign student | noun | NA | person |
-| りょこうする | 旅行する | to travel | verb_ichidan | intransitive | action |
-| れんしゅうする | 練習する | to practice | verb_ichidan | transitive | action |
+| りょこうする | 旅行する | to travel | verb_irregular | intransitive | action |
+| れんしゅうする | 練習する | to practice | verb_irregular | transitive | action |
+| てつだう | 手伝う | to help / assist | verb_godan | intransitive | action |
+| つれる | 連れる | to take (a person) / lead | verb_ichidan | transitive | action |
+| もってくる | 持って来る | to bring (something) | verb_irregular | transitive | action |
 | ん |  | hmm (filler) | interj | NA | expression |
 ---
 ---
