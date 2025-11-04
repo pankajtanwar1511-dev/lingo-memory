@@ -1,12 +1,8 @@
 # N5 Vocabulary Comparison Analysis
-
-**Comparing:** N5_vocab_tags.md (807 entries) vs chatgpt_tags_merged.md (846 entries)
-
+**Comparing:** N5_vocab_tags.md (808 entries) vs chatgpt_tags_merged.md (846 entries)
 ---
-
 ## Table 1: Perfect Match (Kana + Kanji + Meaning)
-**Total: 565 entries**
-
+**Total: 567 entries**
 | Kana | Kanji | Meaning | N5 Tags | GPT Type | GPT Transitivity | GPT Category |
 |------|-------|---------|---------|----------|------------------|--------------|
 | あ |  | muteness | noun | noun | NA | misc |
@@ -16,13 +12,13 @@
 | あおい | 青い | blue | adjective | adj_i | NA | description |
 | あか | 赤 | red | noun, particle | noun | NA | description |
 | あかい | 赤い | red | adjective | adj_i | NA | description |
-| あかるい | 明い | light | adjective | adj_i | NA | description |
+| あかるい | 明るい | light | adjective | adj_i | NA | description |
 | あき | 秋 | autumn | adverb, noun, verb | noun | NA | time |
 | あく | 開く | to open (e.g. doors) | godan, verb | verb_godan | intransitive | action |
 | あける | 開ける | to open (a door, etc.) | ichidan, verb | verb_ichidan | transitive | action |
 | あげる | 上げる | to raise | ichidan, verb | verb_ichidan | transitive | action |
 | あさ | 朝 | morning | adverb, noun, verb | noun | NA | time |
-| あさごはん | 朝御飯 | breakfast | noun | noun | NA | food |
+| あさごはん | 朝ごはん | breakfast | noun | noun | NA | food |
 | あさって |  | day after tomorrow | adverb, noun, particle, verb | noun | NA | time |
 | あし | 足 | foot | noun | noun | NA | body |
 | あした | 明日 | tomorrow | adverb, noun, verb | noun | NA | time |
@@ -68,16 +64,17 @@
 | いちばん | 一番 | number one | noun, verb | noun | NA | quantity |
 | いっしょ | 一緒 | (doing) together | noun, particle | expression | NA | misc |
 | いつ |  | when | noun | pronoun | NA | time |
-| いつか | 五日 | 5th day of the month | noun | noun | NA | time |
+| いつか |  | someday | noun | noun | NA | time |
 | いつつ | 五つ | five | noun | counter | NA | quantity |
+| いつか | 五日 | 5th day of the month | noun | noun | NA | time |
 | いつも |  | always | adverb, noun, particle, verb | expression | NA | time |
 | いぬ | 犬 | dog (Canis (lupus) familiaris) | noun | noun | NA | animal |
 | いま | 今 | now | adverb, noun, particle, verb | noun | NA | time |
 | いみ | 意味 | meaning | noun, verb | noun | NA | misc |
 | いもうと | 妹 | younger sister | noun | noun | NA | person |
-| いもうとさん |  | younger sister | noun | noun | NA | person |
+| いもうとさん | 妹さん | younger sister | noun | noun | NA | person |
 | いらっしゃいませ |  | welcome | unknown | polite_expr | NA | greeting |
-| いりぐち | 入口 | entrance | noun | noun | NA | place |
+| いりぐち | 入り口 | entrance | noun | noun | NA | place |
 | いる | 要る | to be needed | godan, verb | verb_godan | transitive | action |
 | いれる | 入れる | to put in | ichidan, verb | verb_ichidan | transitive | action |
 | いろいろ |  | various | adjective, adverb, noun, particle, verb | expression | NA | description |
@@ -90,7 +87,7 @@
 | うみ | 海 | sea | noun | noun | NA | place |
 | うる | 売る | to sell | godan, verb | verb_godan | transitive | action |
 | うるさい | 煩い | noisy | adjective | adj_i | NA | description |
-| うれしい |  | happy | adjective | adj_i | NA | description |
+| うれしい | 嬉しい | happy | adjective | adj_i | NA | description |
 | うわぎ | 上着 | coat | noun | noun | NA | clothing |
 | うーん |  | um | unknown | interj | NA | expression |
 | え | 絵 | picture | noun | noun | NA | art |
@@ -111,19 +108,19 @@
 | おきる | 起きる | to get up | ichidan, verb | verb_ichidan | intransitive | action |
 | おく | 置く | to put | godan, verb | verb_godan | transitive | action |
 | おくさん | 奥さん | wife | noun | noun | NA | person |
-| おくに |  | your native country | noun | noun | NA | place |
+| おくに | お国 | your native country | noun | noun | NA | place |
 | おくる | 送る | to send | verb | verb_godan | transitive | action |
 | おさけ | お酒 | alcohol | noun | noun | NA | food |
 | おさら | お皿 | plate | noun | noun | NA | object |
 | おしえる | 教える | to teach | ichidan, verb | verb_ichidan | transitive | action |
 | おす | 押す | to push | godan, verb | verb_godan | transitive | action |
 | おそい | 遅い | slow | adjective | adj_i | NA | description |
-| おそく |  | late | adverb, noun, verb | expression | NA | time |
+| おそく | 遅く | late | adverb, noun, verb | expression | NA | time |
 | おちゃ | お茶 | tea (esp. green or barley) | noun | noun | NA | food |
 | おてあらい | お手洗い | toilet | noun | noun | NA | place |
 | おとうさん | お父さん | father | noun | noun | NA | person |
 | おとうと | 弟 | younger brother | noun | noun | NA | person |
-| おとうとさん |  | younger brother | noun | noun | NA | person |
+| おとうとさん | 弟さん | younger brother | noun | noun | NA | person |
 | おとこ | 男 | man | noun | noun | NA | person |
 | おとこのこ | 男の子 | boy | noun | noun | NA | person |
 | おととい | 一昨日 | day before yesterday | adverb, noun, verb | noun | NA | time |
@@ -134,29 +131,28 @@
 | おにいさん | お兄さん | older brother | noun | noun | NA | person |
 | おねえさん | お姉さん | older sister | noun | noun | NA | person |
 | おねがい | お願い | request | expression, noun, verb | expression | NA | misc |
-| おねがいします |  | please | unknown | polite_expr | NA | greeting |
+| おねがいします | お願いします | please | unknown | polite_expr | NA | greeting |
 | おはよう |  | good morning | expression | expression | NA | greeting |
 | おはようございます |  | good morning | unknown | polite_expr | NA | greeting |
 | おばあさん |  | grandmother | noun | noun | NA | person |
 | おふろ | お風呂 | bath | noun | noun | NA | place |
 | おぼえる | 覚える | to memorize | ichidan, verb | verb_ichidan | transitive | action |
 | おまわりさん |  | police officer | noun | noun | NA | person |
-| おみせ |  | store | noun | noun | NA | place |
+| おみせ | お店 | store | noun | noun | NA | place |
 | おもい | 重い | heavy | adjective | adj_i | NA | description |
 | おやすみなさい |  | good night | unknown | polite_expr | NA | greeting |
 | およぐ | 泳ぐ | to swim | godan, verb | verb_godan | intransitive | action |
-| おわる | 終る | to end | godan, verb | verb_godan | intransitive | action |
+| おわる | 終わる | to end | godan, verb | verb_godan | intransitive | action |
 | おんがく | 音楽 | music | noun | noun | NA | art |
 | おんな | 女 | woman | noun | noun | NA | person |
 | おんなのこ | 女の子 | girl | noun | noun | NA | person |
 | かいしゃ | 会社 | company | noun | noun | NA | place |
 | かいだん | 階段 | stairs | noun | noun | NA | place |
-| かいとうようし |  | answer sheet | noun | noun | NA | object |
+| かいとうようし | 解答用紙 | answer sheet | noun | noun | NA | object |
 | かいもの | 買い物 | shopping | noun, verb | noun | NA | activity |
 | かう | 買う | to buy | godan, verb | verb_godan | transitive | action |
 | かえす | 返す | to return (something) | godan, verb | verb_godan | transitive | action |
 | かえる | 帰る | to return | godan, verb | verb_godan | intransitive | action |
-| かかん |  | looking down on | noun, verb | noun | NA | misc |
 | かく | 書く | to write | godan, verb | verb_godan | transitive | action |
 | かさ | 傘 | umbrella | noun | noun | NA | object |
 | かす | 貸す | to lend | godan, verb | verb_godan | transitive | action |
@@ -165,7 +161,7 @@
 | かた | 方 | direction | noun | noun | NA | person |
 | かてい | 家庭 | home | noun | noun | NA | place |
 | かど | 角 | corner | noun | noun | NA | place |
-| かない |  | (my) wife | noun | noun | NA | person |
+| かない | 家内 | (my) wife | noun | noun | NA | person |
 | かびん | 花瓶 | (flower) vase | noun | noun | NA | object |
 | かみ | 紙 | paper | noun | noun | NA | object |
 | かようび | 火曜日 | Tuesday | adverb, noun, verb | noun | NA | time |
@@ -254,7 +250,7 @@
 | しち | 七 | seven | unknown | noun | NA | quantity |
 | しつもん | 質問 | question | noun, particle, verb | noun | NA | misc |
 | しつれい | 失礼 | discourtesy | expression, noun, verb | adj_na | NA | description |
-| しつれいします |  | excuse me | unknown | polite_expr | NA | greeting |
+| しつれいします | 失礼します | excuse me | unknown | polite_expr | NA | greeting |
 | しぬ | 死ぬ | to die | godan, verb | verb_godan | intransitive | action |
 | しめる | 閉める | to close | ichidan, verb | verb_ichidan | transitive | action |
 | しゃしん | 写真 | photograph | noun | noun | NA | art |
@@ -398,6 +394,7 @@
 | はな | 花 | flower | noun, particle | noun | NA | nature |
 | はな | 鼻 | nose | noun | noun | NA | body |
 | はなし | 話 | talk | noun | noun | NA | misc |
+| はやい | 早い | early | adjective | adj_i | NA | time |
 | はやい | 速い | fast | adjective | adj_i | NA | description |
 | はる | 春 | spring | adverb, noun, verb | noun | NA | time |
 | はる | 貼る | to stick | godan, verb | verb_godan | transitive | action |
@@ -407,7 +404,7 @@
 | はんぶん | 半分 | half | adverb, noun, verb | noun | NA | quantity |
 | ばん | 晩 | evening | adverb, counter, noun, verb | noun | NA | time |
 | ばんごう | 番号 | number | noun | noun | NA | quantity |
-| ばんごはん | 晩御飯 | dinner | noun | noun | NA | food |
+| ばんごはん | 晩ごはん | dinner | noun | noun | NA | food |
 | ひがし | 東 | east | noun | noun | NA | place |
 | ひく | 引く | to pull | godan, verb | verb_godan | transitive | action |
 | ひくい | 低い | low (rank, degree, value, content, quality, etc.) | adjective | adj_i | NA | description |
@@ -420,7 +417,7 @@
 | ひゃく | 百 | hundred | unknown | noun | NA | quantity |
 | ひらがな |  | hiragana | noun | noun | NA | language |
 | ひる | 昼 | noon | adverb, noun, verb | noun | NA | time |
-| ひるごはん | 昼御飯 | lunch | noun | noun | NA | food |
+| ひるごはん | 昼ごはん | lunch | noun | noun | NA | food |
 | ひろい | 広い | spacious | adjective | adj_i | NA | description |
 | びょういん | 病院 | hospital | noun | noun | NA | place |
 | びょうき | 病気 | illness (usu. excluding minor ailments, e.g. common cold) | noun, particle | noun | NA | body |
@@ -471,7 +468,7 @@
 | もの | 物 | thing | noun | noun | NA | object |
 | もらう | 貰う | to receive | verb | verb_godan | transitive | action |
 | もん | 門 | gate | counter, noun | noun | NA | object |
-| もんだいようし |  | question sheet | noun | noun | NA | object |
+| もんだいようし | 問題用紙 | question sheet | noun | noun | NA | object |
 | やおや | 八百屋 | greengrocer | noun | noun | NA | place |
 | やさい | 野菜 | vegetable | noun | noun | NA | food |
 | やさしい | 易しい | easy | adjective | adj_i | NA | description |
@@ -573,12 +570,9 @@
 | ラジオ |  | radio | noun | kana_only | NA | tool |
 | ラーメン |  | ramen | noun | kana_only | NA | food |
 | レストラン |  | restaurant (esp. Western-style) | noun | kana_only | NA | place |
-
 ---
-
 ## Table 2: Kana + Kanji Match (Meaning Differs)
 **Total: 133 entries**
-
 | Kana | N5 Kanji | GPT Kanji | N5 Meaning | GPT Meaning | N5 Tags | GPT Type | GPT Transitivity | GPT Category |
 |------|----------|-----------|------------|-------------|---------|----------|------------------|--------------|
 | あのう |  |  | say | (hesitation) | unknown | interj | NA | expression |
@@ -625,7 +619,7 @@
 | さす |  | 差す | to shine | to raise (hand) / hold up | godan, verb | verb_godan | transitive | action |
 | さむい |  | 寒い | cold (e.g. weather) | cold (weather) | adjective | adj_i | NA | description |
 | さようなら |  |  | farewell | goodbye | unknown | expression | NA | greeting |
-| しつれいしました |  |  | my apologies | excuse me (past polite) | unknown | polite_expr | NA | greeting |
+| しつれいしました |  | 失礼しました | my apologies | excuse me (past polite) | unknown | polite_expr | NA | greeting |
 | しまる |  | 閉まる | to be shut | to close (intransitive) | godan, verb | verb_godan | intransitive | action |
 | しめる |  | 締める | to tie | to tighten | ichidan, verb | verb_ichidan | transitive | action |
 | しょくどう |  | 食堂 | dining room | cafeteria | noun | noun | NA | place |
@@ -714,15 +708,12 @@
 | ラジオカセット |  |  | radio-cassette | radio cassette player | noun | kana_only | NA | tool |
 | レコード |  |  | record (e.g. LP) | record (music) | noun | kana_only | NA | object |
 | ワイシャツ |  |  | (formal) shirt | dress shirt | noun | kana_only | NA | clothing |
-
 ---
-
 ## Table 3: Kana + Meaning Match (Kanji Differs)
 **Total: 55 entries**
-
 | Kana | N5 Kanji | GPT Kanji | Meaning | N5 Tags | GPT Type | GPT Transitivity | GPT Category |
 |------|----------|-----------|---------|---------|----------|------------------|--------------|
-| あびる |  | 浴びる? | to dash over oneself (e.g. water) | ichidan, verb | verb_ichidan | transitive | action |
+| あびる |  | 浴びる | to dash over oneself (e.g. water) | ichidan, verb | verb_ichidan | transitive | action |
 | いす |  | 椅子 | chair | noun | noun | NA | object |
 | いちど |  | 一度 | once | adverb, noun, verb | noun | NA | time |
 | えん |  | 円 | yen (Japanese monetary unit) | noun | noun | NA | quantity |
@@ -750,7 +741,7 @@
 | とうきょう |  | 東京 | Tokyo | noun | noun | NA | place |
 | とうふ |  | 豆腐 | tofu | noun | noun | NA | food |
 | とおく |  | 遠く | far away | adverb, noun, particle, verb | noun | NA | place |
-| とりにく |  | 鳥肉 | chicken meat | noun | noun | NA | food |
+| とりにく |  | 鶏肉 | chicken meat | noun | noun | NA | food |
 | なに |  | 何 | what | adverb, noun, verb | pronoun | NA | misc |
 | なにか |  | 何か | something | adverb, noun, verb | pronoun | NA | misc |
 | なる |  | 成る | to become | godan, verb | verb_godan | intransitive | action |
@@ -777,12 +768,9 @@
 | れんしゅう |  | 練習 | practice | noun, verb | noun | NA | activity |
 | バスてい |  | バス停 | bus stop | noun | noun | NA | place |
 | パンや |  | パン屋 | bakery | noun | noun | NA | place |
-
 ---
-
 ## Table 4: Kana Only Match (Kanji & Meaning Differ)
 **Total: 45 entries**
-
 | Kana | N5 Kanji | GPT Kanji | N5 Meaning | GPT Meaning | N5 Tags | GPT Type | GPT Transitivity | GPT Category |
 |------|----------|-----------|------------|-------------|---------|----------|------------------|--------------|
 | かける |  | 掛ける? | to hang up (e.g. a coat, a picture on the wall) | to hang; call (phone) | ichidan, verb | verb_ichidan | transitive | action |
@@ -830,16 +818,13 @@
 | もく |  | 木 | order | counter for trees / logs | counter, noun | counter | NA | nature |
 | もっていく |  | 持って行く | to take (something) along | to take along | expression, verb | verb_godan | transitive | action |
 | りょこうがいしゃ |  | 旅行会社 | travel agent | travel agency | noun | noun | NA | place |
-
 ---
-
 ## Table 5: Extra in ChatGPT (Missing in N5)
 **Total: 41 entries**
-
 | Kana | Kanji | Meaning | Type | Transitivity | Category |
 |------|-------|---------|------|--------------|----------|
 | いけない |  | must not / bad | adj_i | NA | misc |
-| いたる | 到る | to reach | verb_godan | intransitive | action |
+| いたる | 至る | to reach | verb_godan | intransitive | action |
 | かいしゃいん | 会社員 | office worker | noun | NA | person |
 | かたかな |  | katakana | noun | NA | language |
 | かわ | 川 | river | noun | NA | nature |
@@ -875,21 +860,15 @@
 | りょこうする | 旅行する | to travel | verb_ichidan | intransitive | action |
 | れんしゅうする | 練習する | to practice | verb_ichidan | transitive | action |
 | ん |  | hmm (filler) | interj | NA | expression |
-
-
 ---
-
-
 ---
-
 ## Table 6: Missing in ChatGPT (No Match Found in GPT Dataset)
-**Total: 8 entries**
-
+**Total: 7 entries**
 | Kana | Kanji | Meaning | N5 Tags |
 |------|-------|---------|---------|
-| いちばん |  | number one | adverb, noun, particle, verb |
+| いちばん | 一番 | number one | adverb, noun, particle, verb |
 | にねん |  | two ideas | noun |
 | はく |  | to sweep | godan, verb |
 | みる |  | to look after (often medically) | ichidan, verb |
 | みる | 観る | to see | verb |
-| ろっぽん |  | six (long cylindrical things) | noun |
+| ろっぽん | 六本 | six (long cylindrical things) | noun |
