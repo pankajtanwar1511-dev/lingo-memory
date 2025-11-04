@@ -1,0 +1,751 @@
+{
+  "batch_number": 2,
+  "batch_name": "Desire & Request Forms",
+  "extracted_at": "2025-11-02 16:29:03",
+  "patterns": {
+    "たいです": {
+      "count": 27,
+      "candidates": [
+        {
+          "tatoeba_id": "74282",
+          "japanese": "ゴムをすると確かに性感が落ちるので、出来れば生でしたいです。",
+          "english": "The sensitivity certainly drops if I use a condom, so if possible I'd like to do it bareback.",
+          "pattern": "たいです",
+          "length": 30,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76378",
+          "japanese": "よく聞いたら、ネタじゃなくてマジボケだったみたいです。",
+          "english": "When I asked afterwards it seems he hadn't said that as a joke.",
+          "pattern": "たいです",
+          "length": 27,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76465",
+          "japanese": "フェアにやろうとは申しませんけど、無思慮な行動はおやめ頂きたいですわ。",
+          "english": "I will not say play fair but I would wish that you refrain from indiscreet acts.",
+          "pattern": "たいです",
+          "length": 35,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "85921",
+          "japanese": "疲れたから、コーヒーカップに乗ってゆっくりしたいです。",
+          "english": "I'm tired. I just want to go on the teacup ride and take it easy.",
+          "pattern": "たいです",
+          "length": 27,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "121918",
+          "japanese": "熱いココアが飲みたいですね。",
+          "english": "I'd like to have some hot chocolate.",
+          "pattern": "たいです",
+          "length": 14,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "126211",
+          "japanese": "朝食に何を食べたいですか。",
+          "english": "What do you want for breakfast?",
+          "pattern": "たいです",
+          "length": 13,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "126213",
+          "japanese": "朝食に何をとりたいですか。",
+          "english": "What do you want for breakfast?",
+          "pattern": "たいです",
+          "length": 13,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "126216",
+          "japanese": "朝食にはゆで卵をとりたいですか。",
+          "english": "Do you want a boiled egg for breakfast?",
+          "pattern": "たいです",
+          "length": 16,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "137558",
+          "japanese": "オバマさんが大阪から東京に転入したいです。",
+          "english": "Mr. Obama wants to move to Tokyo from Osaka.",
+          "pattern": "たいです",
+          "length": 21,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "137756",
+          "japanese": "大きくなったら何になりたいですか。",
+          "english": "What do you want to be when you grow up?",
+          "pattern": "たいです",
+          "length": 17,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "143186",
+          "japanese": "政治家になりたいです。",
+          "english": "I want to be a statesman.",
+          "pattern": "たいです",
+          "length": 11,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "143329",
+          "japanese": "是非そうしたいですね。",
+          "english": "I'd like that a lot.",
+          "pattern": "たいです",
+          "length": 11,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "144772",
+          "japanese": "診察していただきたいです。",
+          "english": "I'd like to see the doctor.",
+          "pattern": "たいです",
+          "length": 13,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "147056",
+          "japanese": "将来何になりたいですか？",
+          "english": "What do you want to be in the future?",
+          "pattern": "たいです",
+          "length": 12,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "147082",
+          "japanese": "将来、彼は何になりたいですか。",
+          "english": "What would he like to be in the future?",
+          "pattern": "たいです",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "147705",
+          "japanese": "出発する前に会いたいです。",
+          "english": "I would like to see you before I leave.",
+          "pattern": "たいです",
+          "length": 13,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "150211",
+          "japanese": "次はどこへ行きたいですか。",
+          "english": "Where would you like to go next?",
+          "pattern": "たいです",
+          "length": 13,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "150240",
+          "japanese": "次の日曜日にはどこへ行きたいですか。",
+          "english": "Where would you like to go next Sunday?",
+          "pattern": "たいです",
+          "length": 18,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "152399",
+          "japanese": "私は来春大学を卒業したいです。",
+          "english": "I hope to graduate from university next spring.",
+          "pattern": "たいです",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "155179",
+          "japanese": "私は大変気分が悪い。ゲロをはきたいです。",
+          "english": "I feel very sick. I want to throw up.",
+          "pattern": "たいです",
+          "length": 20,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "155913",
+          "japanese": "私は将来できればパイロットになりたいです。",
+          "english": "I want to be a pilot in the future.",
+          "pattern": "たいです",
+          "length": 21,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "156191",
+          "japanese": "私は自由の女神像を見たいです。",
+          "english": "I'd like to see the Statue of Liberty.",
+          "pattern": "たいです",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "159009",
+          "japanese": "私はフライトアテンダントの職につきたいです。",
+          "english": "I long for a job as a flight attendant.",
+          "pattern": "たいです",
+          "length": 22,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "160601",
+          "japanese": "私はジョーのグループに加わりたいです。",
+          "english": "I want to join Joe's group.",
+          "pattern": "たいです",
+          "length": 19,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "160917",
+          "japanese": "この山について知りたいです。",
+          "english": "I want to know about this mountain.",
+          "pattern": "たいです",
+          "length": 14,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "161427",
+          "japanese": "私はいつかまたその少女に会いたいです。",
+          "english": "I want to see that girl again some day.",
+          "pattern": "たいです",
+          "length": 19,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "161745",
+          "japanese": "私はあなたに車を洗ってもらいたいです。",
+          "english": "I want you to wash the car.",
+          "pattern": "たいです",
+          "length": 19,
+          "stage": 3,
+          "priority": "CRITICAL"
+        }
+      ]
+    },
+    "たくない": {
+      "count": 24,
+      "candidates": [
+        {
+          "tatoeba_id": "4728",
+          "japanese": "それはあなたが一人になりたくないからです。",
+          "english": "It's because you don't want to be alone.",
+          "pattern": "たくない",
+          "length": 21,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4798",
+          "japanese": "行き過ぎたものであっても、僕は自分の考えをなくしたくない。",
+          "english": "I don't want to lose my ideas, even though some of them are a bit extreme.",
+          "pattern": "たくない",
+          "length": 29,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4855",
+          "japanese": "そんなに待ちたくない。",
+          "english": "I don't want to wait that long.",
+          "pattern": "たくない",
+          "length": 11,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4953",
+          "japanese": "「どうして行かないの？」「行きたくないからだよ」",
+          "english": "\"Why aren't you going?\" \"Because I don't want to.\"",
+          "pattern": "たくない",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5004",
+          "japanese": "そのことを後悔しながら余生を送りたくない。",
+          "english": "I don't want to spend the rest of my life regretting it.",
+          "pattern": "たくない",
+          "length": 21,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5210",
+          "japanese": "学校へ行きたくない。",
+          "english": "I don't want to go to school.",
+          "pattern": "たくない",
+          "length": 10,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5229",
+          "japanese": "彼女はそのことについて話したくないんだよ。",
+          "english": "She doesn't want to talk about it.",
+          "pattern": "たくない",
+          "length": 21,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5306",
+          "japanese": "君の愚痴はもう聞きたくないよ。",
+          "english": "I don't want to hear any more of your complaining.",
+          "pattern": "たくない",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74598",
+          "japanese": "ＯＫ！！ブラザー！！それ以上聞きたくないぜ！",
+          "english": "OK!! Bro!! I don't want to hear any more!",
+          "pattern": "たくない",
+          "length": 22,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75387",
+          "japanese": "３０過ぎての商売替えは大変だからしたくないのですけれどね。",
+          "english": "Well it's very difficult changing jobs after you're thirty so I don't really want to do it.",
+          "pattern": "たくない",
+          "length": 29,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76437",
+          "japanese": "ぼくはやばい橋は渡りたくない。",
+          "english": "I don't want to do anything risky.",
+          "pattern": "たくない",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76776",
+          "japanese": "けったくそ悪いから、やりたくないことはやらない。",
+          "english": "'Cuz it's a giant pain in the arse, if I don't wanna do something I just won't do it.",
+          "pattern": "たくない",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "78047",
+          "japanese": "両親にこれ以上負担をかけたくない。",
+          "english": "I don't want to be any more burden to my parents.",
+          "pattern": "たくない",
+          "length": 17,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "78294",
+          "japanese": "率直に言って私はあなたと行きたくない。",
+          "english": "Frankly speaking, I don't want to go with you.",
+          "pattern": "たくない",
+          "length": 19,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "78299",
+          "japanese": "率直に言って、私は彼と一緒に働きたくない。",
+          "english": "Frankly speaking, I don't want to work with him.",
+          "pattern": "たくない",
+          "length": 21,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "80914",
+          "japanese": "無駄な努力はしたくない。",
+          "english": "I do not want to exert myself in vain.",
+          "pattern": "たくない",
+          "length": 12,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "81794",
+          "japanese": "僕は彼のような奴を尊敬したくない。",
+          "english": "I don't want to respect a man like him.",
+          "pattern": "たくない",
+          "length": 17,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "82093",
+          "japanese": "僕はこれ以上の仕事は引き受けたくない。",
+          "english": "I don't like to take on any more work.",
+          "pattern": "たくない",
+          "length": 19,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "85043",
+          "japanese": "不平はまったくない。",
+          "english": "We have nothing to complain about.",
+          "pattern": "たくない",
+          "length": 10,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "85164",
+          "japanese": "貧乏くじを引きたくない。",
+          "english": "I don't want to be left holding the bag.",
+          "pattern": "たくない",
+          "length": 12,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "85704",
+          "japanese": "飛行機に乗り遅れたくないんだ。",
+          "english": "I don't want to miss my flight.",
+          "pattern": "たくない",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "86047",
+          "japanese": "彼等によって私は危険がまったくないと信じる気になった。",
+          "english": "They led me to believe that there was no danger.",
+          "pattern": "たくない",
+          "length": 27,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "91372",
+          "japanese": "彼女はもう二度と私の顔を見たくないときっぱり言った。",
+          "english": "She told me once and for all that she did not want to see me again.",
+          "pattern": "たくない",
+          "length": 26,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "91631",
+          "japanese": "彼女はビルと交際したくないと思っている。",
+          "english": "She doesn't like to associate with Bill.",
+          "pattern": "たくない",
+          "length": 20,
+          "stage": 3,
+          "priority": "CRITICAL"
+        }
+      ]
+    },
+    "てください": {
+      "count": 30,
+      "candidates": [
+        {
+          "tatoeba_id": "4945",
+          "japanese": "もし間違いを見つけたら訂正してください。",
+          "english": "If you see a mistake, then please correct it.",
+          "pattern": "てください",
+          "length": 20,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4978",
+          "japanese": "最初着る前に洗濯してください。",
+          "english": "Wash before first wearing.",
+          "pattern": "てください",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5067",
+          "japanese": "口を開けてください！",
+          "english": "Open your mouth!",
+          "pattern": "てください",
+          "length": 10,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5109",
+          "japanese": "もっとゆっくり話してください！",
+          "english": "Speak more slowly, please!",
+          "pattern": "てください",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "6018",
+          "japanese": "暇だったら、手伝ってください。",
+          "english": "If you are free, give me a hand.",
+          "pattern": "てください",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74239",
+          "japanese": "as may be の文法解釈を教えてください。",
+          "english": "Please explain the grammar of 'as may be'.",
+          "pattern": "てください",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74375",
+          "japanese": "どうぞ、皆様も最後の一瞬まで粘り抜いてください。",
+          "english": "Will everyone please stick with it to the last moment.",
+          "pattern": "てください",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74526",
+          "japanese": "洗濯のりでののりづけの仕方を教えてください。",
+          "english": "Please tell me how to use laundry starch to starch things.",
+          "pattern": "てください",
+          "length": 22,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74723",
+          "japanese": "「どいてください」「やんのか？あんちゃん」",
+          "english": "\"Please move aside.\" \"Ya wanna make something of it, sonny?\"",
+          "pattern": "てください",
+          "length": 21,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74820",
+          "japanese": "はきはきと意見を言ってください。",
+          "english": "Please state your opinion crisply and clearly.",
+          "pattern": "てください",
+          "length": 16,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74897",
+          "japanese": "持ち物すべてに記名してください。",
+          "english": "Please put their name on everything they take with them.",
+          "pattern": "てください",
+          "length": 16,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75436",
+          "japanese": "お願いですからヒスを起こす前に話は最後まで聞いてください。",
+          "english": "I'm begging you, before freaking out on me listen to the end of what I have to say.",
+          "pattern": "てください",
+          "length": 29,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75476",
+          "japanese": "プラモ作りは家でやってくださいよ。ラッカー液の臭い、充満してるじゃないですか。",
+          "english": "Please do your model building at home! The room's full of the smell of lacquer.",
+          "pattern": "てください",
+          "length": 39,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75704",
+          "japanese": "本当にこじらせなくて良かった。でもまだ無理はしないようにしてください。",
+          "english": "Thank goodness it didn't worsen. But please don't push yourself yet.",
+          "pattern": "てください",
+          "length": 35,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75739",
+          "japanese": "表彰式？表彰台？のポディウムの綴りを教えてください。",
+          "english": "Awards ceremony podium? Victory stand podium? Please tell me the correct spelling.",
+          "pattern": "てください",
+          "length": 26,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75744",
+          "japanese": "彼方任せにしないで、自分で責任をもってやってください。",
+          "english": "Instead of leaving it to others, take responsibility yourself.",
+          "pattern": "てください",
+          "length": 27,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75885",
+          "japanese": "単語は徐々に増えますので、こまめにチェックしてください。",
+          "english": "The words covered are steadily increasing, so check frequently.",
+          "pattern": "てください",
+          "length": 28,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76003",
+          "japanese": "詳らかに教えてください。",
+          "english": "Please explain in detail.",
+          "pattern": "てください",
+          "length": 12,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76178",
+          "japanese": "御社のお考えを先におっしゃってください。",
+          "english": "Please let us know your company's thoughts on this matter first.",
+          "pattern": "てください",
+          "length": 20,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76370",
+          "japanese": "りんごを少し買ってください。",
+          "english": "Please buy a few apples.",
+          "pattern": "てください",
+          "length": 14,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76480",
+          "japanese": "バットを長めに持ってください。",
+          "english": "Please hold your bat by the end of its handle.",
+          "pattern": "てください",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76510",
+          "japanese": "とろ火で時間をかけて豆を炊いてください。",
+          "english": "Please simmer the beans for a while over a low heat.",
+          "pattern": "てください",
+          "length": 20,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76813",
+          "japanese": "お子さんが車をおりたらすぐに車を出してください。",
+          "english": "Please drive off as soon as your child has left the car.",
+          "pattern": "てください",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76952",
+          "japanese": "５ページ脚注を参照してください。",
+          "english": "See the footnote on page 5.",
+          "pattern": "てください",
+          "length": 16,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77084",
+          "japanese": "籠の鳥に水とえさをまいにちやるようにしてください。",
+          "english": "Please see that the birds in the cage get water and food every day.",
+          "pattern": "てください",
+          "length": 25,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77134",
+          "japanese": "脇へ寄ってくださいませんか。",
+          "english": "Would you mind standing aside?",
+          "pattern": "てください",
+          "length": 14,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77135",
+          "japanese": "脇によってください。",
+          "english": "Please step aside.",
+          "pattern": "てください",
+          "length": 10,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77231",
+          "japanese": "録音が終わったらそれを再生して聞かせてください。",
+          "english": "Please play it back for me after you've finished the recording.",
+          "pattern": "てください",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77234",
+          "japanese": "六時半に起こしてください。",
+          "english": "Please wake me up at 6:30.",
+          "pattern": "てください",
+          "length": 13,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77403",
+          "japanese": "連絡先をここに書いてください。",
+          "english": "Please write down your contact address here.",
+          "pattern": "てください",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        }
+      ]
+    }
+  }
+}

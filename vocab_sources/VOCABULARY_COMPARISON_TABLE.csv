@@ -1,0 +1,670 @@
+Kanji,Kana,English,In Both,In Tanos,In Current,Category
+"会う","あう","to meet",YES,YES,YES,BOTH
+"青","あお","blue",YES,YES,YES,BOTH
+"青い","あおい","blue",YES,YES,YES,BOTH
+"赤","あか","red",YES,YES,YES,BOTH
+"赤い","あかい","red",YES,YES,YES,BOTH
+"明い","あかるい","bright",YES,YES,YES,BOTH
+"秋","あき","autumn",YES,YES,YES,BOTH
+"開く","あく","to open, to become open",YES,YES,YES,BOTH
+"開ける","あける","to open",YES,YES,YES,BOTH
+"上げる","あげる","to give",YES,YES,YES,BOTH
+"朝","あさ","morning",YES,YES,YES,BOTH
+"朝御飯","あさごはん","breakfast",YES,YES,YES,BOTH
+"足","あし","foot, leg",YES,YES,YES,BOTH
+"明日","あした","tomorrow",YES,YES,YES,BOTH
+"遊ぶ","あそぶ","to play, to make a visit",YES,YES,YES,BOTH
+"暖かい","あたたかい","warm",YES,YES,YES,BOTH
+"頭","あたま","head",YES,YES,YES,BOTH
+"新しい","あたらしい","new",YES,YES,YES,BOTH
+"","あちら","there",YES,YES,YES,BOTH
+"暑い","あつい","hot",YES,YES,YES,BOTH
+"熱い","あつい","hot to the touch",YES,YES,YES,BOTH
+"厚い","あつい","kind, deep, thick",YES,YES,YES,BOTH
+"後","あと","afterwards",YES,YES,YES,BOTH
+"","あなた","you",YES,YES,YES,BOTH
+"兄","あに","(humble) older brother",YES,YES,YES,BOTH
+"姉","あね","(humble) older sister",YES,YES,YES,BOTH
+"","あの","um...",YES,YES,YES,BOTH
+"危ない","あぶない","dangerous",YES,YES,YES,BOTH
+"甘い","あまい","sweet",YES,YES,YES,BOTH
+"雨","あめ","rain",YES,YES,YES,BOTH
+"飴","あめ","candy",YES,YES,YES,BOTH
+"洗う","あらう","to wash",YES,YES,YES,BOTH
+"歩く","あるく","to walk",YES,YES,YES,BOTH
+"","あれ","that",YES,YES,YES,BOTH
+"","いいえ","no",YES,YES,YES,BOTH
+"言う","いう","to say",YES,YES,YES,BOTH
+"家","いえ","house",YES,YES,YES,BOTH
+"","いかが","how",YES,YES,YES,BOTH
+"行く","いく","to go",YES,YES,YES,BOTH
+"池","いけ","pond",YES,YES,YES,BOTH
+"医者","いしゃ","medical doctor",YES,YES,YES,BOTH
+"","いす","chair",YES,YES,YES,BOTH
+"忙しい","いそがしい","busy, irritated",YES,YES,YES,BOTH
+"痛い","いたい","painful",YES,YES,YES,BOTH
+"一","いち","one",YES,YES,YES,BOTH
+"一日","いちにち","first of the month",YES,YES,YES,BOTH
+"一緒","いっしょ","together",YES,YES,YES,BOTH
+"","いつ","when",YES,YES,YES,BOTH
+"五日","いつか","five days, fifth day",YES,YES,YES,BOTH
+"五つ","いつつ","five",YES,YES,YES,BOTH
+"","いつも","always",YES,YES,YES,BOTH
+"犬","いぬ","dog",YES,YES,YES,BOTH
+"今","いま","now",YES,YES,YES,BOTH
+"意味","いみ","meaning",YES,YES,YES,BOTH
+"妹","いもうと","(humble) younger sister",YES,YES,YES,BOTH
+"嫌","いや","unpleasant",YES,YES,YES,BOTH
+"入口","いりぐち","entrance",YES,YES,YES,BOTH
+"要る","いる","to need",YES,YES,YES,BOTH
+"入れる","いれる","to put in",YES,YES,YES,BOTH
+"色","いろ","colour",YES,YES,YES,BOTH
+"","いろいろ","various",YES,YES,YES,BOTH
+"上","うえ","on top of",YES,YES,YES,BOTH
+"後ろ","うしろ","behind",YES,YES,YES,BOTH
+"薄い","うすい","thin,weak",YES,YES,YES,BOTH
+"歌","うた","song",YES,YES,YES,BOTH
+"歌う","うたう","to sing",YES,YES,YES,BOTH
+"生まれる","うまれる","to be born",YES,YES,YES,BOTH
+"海","うみ","sea",YES,YES,YES,BOTH
+"売る","うる","to sell",YES,YES,YES,BOTH
+"煩い","うるさい","noisy, annoying",YES,YES,YES,BOTH
+"上着","うわぎ","jacket",YES,YES,YES,BOTH
+"絵","え","picture",YES,YES,YES,BOTH
+"映画","えいが","movie",YES,YES,YES,BOTH
+"映画館","えいがかん","cinema",YES,YES,YES,BOTH
+"英語","えいご","English language",YES,YES,YES,BOTH
+"","ええ","yes",YES,YES,YES,BOTH
+"駅","えき","station",YES,YES,YES,BOTH
+"鉛筆","えんぴつ","pencil",YES,YES,YES,BOTH
+"","おいしい","delicious",YES,YES,YES,BOTH
+"多い","おおい","many",YES,YES,YES,BOTH
+"大きい","おおきい","big",YES,YES,YES,BOTH
+"大きな","おおきな","big",YES,YES,YES,BOTH
+"大勢","おおぜい","great number of people",YES,YES,YES,BOTH
+"お母さん","おかあさん","(honorable) mother",YES,YES,YES,BOTH
+"お菓子","おかし","sweets, candy",YES,YES,YES,BOTH
+"お金","おかね","money",YES,YES,YES,BOTH
+"起きる","おきる","to get up",YES,YES,YES,BOTH
+"置く","おく","to put",YES,YES,YES,BOTH
+"奥さん","おくさん","(honorable) wife",YES,YES,YES,BOTH
+"お酒","おさけ","alcohol, rice wine",YES,YES,YES,BOTH
+"お皿","おさら","plate, dish",YES,YES,YES,BOTH
+"教える","おしえる","to teach, to tell",YES,YES,YES,BOTH
+"伯父/叔父","おじいさん","grandfather, male senior citizen",YES,YES,YES,BOTH
+"押す","おす","to push, to stamp something",YES,YES,YES,BOTH
+"遅い","おそい","late, slow",YES,YES,YES,BOTH
+"お茶","おちゃ","green tea",YES,YES,YES,BOTH
+"お手洗い","おてあらい","bathroom",YES,YES,YES,BOTH
+"お父さん","おとうさん","(honorable) father",YES,YES,YES,BOTH
+"弟","おとうと","younger brother",YES,YES,YES,BOTH
+"男","おとこ","Man",YES,YES,YES,BOTH
+"男の子","おとこのこ","Boy",YES,YES,YES,BOTH
+"一昨日","おととい","day before yesterday",YES,YES,YES,BOTH
+"一昨年","おととし","year before last",YES,YES,YES,BOTH
+"大人","おとな","Adult",YES,YES,YES,BOTH
+"","おなか","stomach",YES,YES,YES,BOTH
+"同じ","おなじ","same",YES,YES,YES,BOTH
+"お兄さん","おにいさん","(honorable) older brother",YES,YES,YES,BOTH
+"お姉さん","おねえさん","(honorable) older sister",YES,YES,YES,BOTH
+"伯母さん/叔母さん","おばさん","Aunt",YES,YES,YES,BOTH
+"お風呂","おふろ","Bath",YES,YES,YES,BOTH
+"お弁当","おべんとう","boxed lunch",YES,YES,YES,BOTH
+"覚える","おぼえる","to remember",YES,YES,YES,BOTH
+"重い","おもい","Heavy",YES,YES,YES,BOTH
+"","おもしろい","Interesting",YES,YES,YES,BOTH
+"泳ぐ","およぐ","to swim",YES,YES,YES,BOTH
+"降りる","おりる","to get off, to descend",YES,YES,YES,BOTH
+"終る","おわる","to finish",YES,YES,YES,BOTH
+"音楽","おんがく","Music",YES,YES,YES,BOTH
+"女","おんな","Woman",YES,YES,YES,BOTH
+"女の子","おんなのこ","Girl",YES,YES,YES,BOTH
+"会社","かいしゃ","Company",YES,YES,YES,BOTH
+"階段","かいだん","Stairs",YES,YES,YES,BOTH
+"買い物","かいもの","Shopping",YES,YES,YES,BOTH
+"買う","かう","to buy",YES,YES,YES,BOTH
+"返す","かえす","to return something",YES,YES,YES,BOTH
+"帰る","かえる","to go back",YES,YES,YES,BOTH
+"","かぎ","Key",YES,YES,YES,BOTH
+"書く","かく","to write",YES,YES,YES,BOTH
+"傘","かさ","Umbrella",YES,YES,YES,BOTH
+"貸す","かす","to lend",YES,YES,YES,BOTH
+"風","かぜ","Wind",YES,YES,YES,BOTH
+"風邪","かぜ","a cold",YES,YES,YES,BOTH
+"家族","かぞく","Family",YES,YES,YES,BOTH
+"方","かた","person, way of doing",YES,YES,YES,BOTH
+"家庭","かてい","Household",YES,YES,YES,BOTH
+"角","かど","a corner",YES,YES,YES,BOTH
+"花瓶","かびん","a vase",YES,YES,YES,BOTH
+"紙","かみ","paper",YES,YES,YES,BOTH
+"火曜日","かようび","Tuesday",YES,YES,YES,BOTH
+"辛い","からい","Spicy",YES,YES,YES,BOTH
+"体","からだ","Body",YES,YES,YES,BOTH
+"借りる","かりる","to borrow",YES,YES,YES,BOTH
+"軽い","かるい","Light",YES,YES,YES,BOTH
+"川/河","かわ","River",YES,YES,YES,BOTH
+"","かわいい","Cute",YES,YES,YES,BOTH
+"漢字","かんじ","Chinese character",YES,YES,YES,BOTH
+"外国","がいこく","foreign country",YES,YES,YES,BOTH
+"外国人","がいこくじん","Foreigner",YES,YES,YES,BOTH
+"学生","がくせい","Student",YES,YES,YES,BOTH
+"学校","がっこう","School",YES,YES,YES,BOTH
+"木","き","tree, wood",YES,YES,YES,BOTH
+"黄色","きいろ","yellow",YES,YES,YES,BOTH
+"黄色い","きいろい","yellow",YES,YES,YES,BOTH
+"消える","きえる","to disappear",YES,YES,YES,BOTH
+"聞く","きく","to hear, to listen to, to ask",YES,YES,YES,BOTH
+"北","きた","North",YES,YES,YES,BOTH
+"汚い","きたない","Dirty",YES,YES,YES,BOTH
+"喫茶店","きっさてん","coffee lounge",YES,YES,YES,BOTH
+"切手","きって","postage stamp",YES,YES,YES,BOTH
+"切符","きっぷ","Ticket",YES,YES,YES,BOTH
+"昨日","きのう","Yesterday",YES,YES,YES,BOTH
+"九","きゅう","/ く Nine",YES,YES,YES,BOTH
+"今日","きょう","Today",YES,YES,YES,BOTH
+"教室","きょうしつ","Classroom",YES,YES,YES,BOTH
+"兄弟","きょうだい","(humble) siblings",YES,YES,YES,BOTH
+"去年","きょねん","last year",YES,YES,YES,BOTH
+"嫌い","きらい","Hate",YES,YES,YES,BOTH
+"切る","きる","to cut",YES,YES,YES,BOTH
+"着る","きる","to put on from the shoulders down",YES,YES,YES,BOTH
+"金曜日","きんようび","Friday",YES,YES,YES,BOTH
+"牛肉","ぎゅうにく","Beef",YES,YES,YES,BOTH
+"牛乳","ぎゅうにゅう","Milk",YES,YES,YES,BOTH
+"銀行","ぎんこう","Bank",YES,YES,YES,BOTH
+"薬","くすり","medicine",YES,YES,YES,BOTH
+"","ください","Please",YES,YES,YES,BOTH
+"果物","くだもの","Fruit",YES,YES,YES,BOTH
+"口","くち","mouth, opening",YES,YES,YES,BOTH
+"靴","くつ","Shoes",YES,YES,YES,BOTH
+"靴下","くつした","Socks",YES,YES,YES,BOTH
+"国","くに","Country",YES,YES,YES,BOTH
+"曇り","くもり","cloudy weather",YES,YES,YES,BOTH
+"曇る","くもる","to become cloudy, to become dim",YES,YES,YES,BOTH
+"暗い","くらい","Gloomy",YES,YES,YES,BOTH
+"来る","くる","to come",YES,YES,YES,BOTH
+"車","くるま","car, vehicle",YES,YES,YES,BOTH
+"黒","くろ","Black",YES,YES,YES,BOTH
+"黒い","くろい","black",YES,YES,YES,BOTH
+"警官","けいかん","policeman",YES,YES,YES,BOTH
+"今朝","けさ","this morning",YES,YES,YES,BOTH
+"消す","けす","to erase, to turn off power",YES,YES,YES,BOTH
+"結構","けっこう","splendid, enough",YES,YES,YES,BOTH
+"結婚","けっこん","Marriage",YES,YES,YES,BOTH
+"月曜日","げつようび","Monday",YES,YES,YES,BOTH
+"玄関","げんかん","entry hall",YES,YES,YES,BOTH
+"元気","げんき","health, vitality",YES,YES,YES,BOTH
+"公園","こうえん","Park",YES,YES,YES,BOTH
+"交差点","こうさてん","intersection",YES,YES,YES,BOTH
+"紅茶","こうちゃ","black tea",YES,YES,YES,BOTH
+"交番","こうばん","police box",YES,YES,YES,BOTH
+"声","こえ","Voice",YES,YES,YES,BOTH
+"","ここ","Here",YES,YES,YES,BOTH
+"九日","ここのか","nine days, ninth day",YES,YES,YES,BOTH
+"九つ","ここのつ","Nine",YES,YES,YES,BOTH
+"答える","こたえる","to answer",YES,YES,YES,BOTH
+"今年","ことし","this year",YES,YES,YES,BOTH
+"言葉","ことば","word, language",YES,YES,YES,BOTH
+"子供","こども","Child",YES,YES,YES,BOTH
+"","この","This",YES,YES,YES,BOTH
+"困る","こまる","to be worried",YES,YES,YES,BOTH
+"","これ","This",YES,YES,YES,BOTH
+"今月","こんげつ","this month",YES,YES,YES,BOTH
+"今週","こんしゅう","this week",YES,YES,YES,BOTH
+"","こんな","Such",YES,YES,YES,BOTH
+"今晩","こんばん","this evening",YES,YES,YES,BOTH
+"五","ご","Five",YES,YES,YES,BOTH
+"午後","ごご","afternoon",YES,YES,YES,BOTH
+"午前","ごぜん","morning",YES,YES,YES,BOTH
+"御飯","ごはん","cooked rice, meal",YES,YES,YES,BOTH
+"","さあ","well…",YES,YES,YES,BOTH
+"財布","さいふ","Wallet",YES,YES,YES,BOTH
+"魚","さかな","Fish",YES,YES,YES,BOTH
+"先","さき","the future, previous",YES,YES,YES,BOTH
+"咲く","さく","to bloom",YES,YES,YES,BOTH
+"作文","さくぶん","composition, writing",YES,YES,YES,BOTH
+"砂糖","さとう","Sugar",YES,YES,YES,BOTH
+"寒い","さむい","Cold",YES,YES,YES,BOTH
+"さ来年","さらいねん","year after next",YES,YES,YES,BOTH
+"三","さん","Three",YES,YES,YES,BOTH
+"散歩","さんぽする","to stroll",YES,YES,YES,BOTH
+"雑誌","ざっし","Magazine",YES,YES,YES,BOTH
+"四","し","/ よん Four",YES,YES,YES,BOTH
+"塩","しお","Salt",YES,YES,YES,BOTH
+"","しかし","However",YES,YES,YES,BOTH
+"仕事","しごと","Job",YES,YES,YES,BOTH
+"静か","しずか","Quiet",YES,YES,YES,BOTH
+"下","した","Below",YES,YES,YES,BOTH
+"七","しち","/ なな Seven",YES,YES,YES,BOTH
+"質問","しつもん","Question",YES,YES,YES,BOTH
+"死ぬ","しぬ","to die",YES,YES,YES,BOTH
+"閉まる","しまる","to close, to be closed",YES,YES,YES,BOTH
+"閉める","しめる","to close something",YES,YES,YES,BOTH
+"締める","しめる","to tie",YES,YES,YES,BOTH
+"写真","しゃしん","photograph",YES,YES,YES,BOTH
+"宿題","しゅくだい","homework",YES,YES,YES,BOTH
+"食堂","しょくどう","dining hall",YES,YES,YES,BOTH
+"知る","しる","to know",YES,YES,YES,BOTH
+"白","しろ","White",YES,YES,YES,BOTH
+"白い","しろい","White",YES,YES,YES,BOTH
+"新聞","しんぶん","newspaper",YES,YES,YES,BOTH
+"時間","じかん","Time",YES,YES,YES,BOTH
+"辞書","じしょ","Dictionary",YES,YES,YES,BOTH
+"自転車","じてんしゃ","Bicycle",YES,YES,YES,BOTH
+"自動車","じどうしゃ","Automobile",YES,YES,YES,BOTH
+"字引","じびき","Dictionary",YES,YES,YES,BOTH
+"自分","じぶん","Oneself",YES,YES,YES,BOTH
+"十","じゅう","とお Ten",YES,YES,YES,BOTH
+"授業","じゅぎょう","lesson, class work",YES,YES,YES,BOTH
+"上手","じょうず","Skillful",YES,YES,YES,BOTH
+"丈夫","じょうぶ","strong, durable",YES,YES,YES,BOTH
+"水曜日","すいようび","Wednesday",YES,YES,YES,BOTH
+"吸う","すう","to smoke, to suck",YES,YES,YES,BOTH
+"好き","すき","Likeable",YES,YES,YES,BOTH
+"少ない","すくない","a few",YES,YES,YES,BOTH
+"","すぐに","Instantly",YES,YES,YES,BOTH
+"少し","すこし","Few",YES,YES,YES,BOTH
+"涼しい","すずしい","Refreshing",YES,YES,YES,BOTH
+"住む","すむ","to live in",YES,YES,YES,BOTH
+"座る","すわる","to sit",YES,YES,YES,BOTH
+"背","せ","height, stature",YES,YES,YES,BOTH
+"生徒","せいと","Pupil",YES,YES,YES,BOTH
+"","せっけん","Economy",YES,YES,YES,BOTH
+"背広","せびろ","business suit",YES,YES,YES,BOTH
+"狭い","せまい","Narrow",YES,YES,YES,BOTH
+"千","せん","Thousand",YES,YES,YES,BOTH
+"先月","せんげつ","last month",YES,YES,YES,BOTH
+"先週","せんしゅう","last week",YES,YES,YES,BOTH
+"先生","せんせい","teacher, doctor",YES,YES,YES,BOTH
+"洗濯","せんたく","Washing",YES,YES,YES,BOTH
+"全部","ぜんぶ","All",YES,YES,YES,BOTH
+"掃除","そうじする","to clean, to sweep",YES,YES,YES,BOTH
+"外","そと","Outside",YES,YES,YES,BOTH
+"","その","That",YES,YES,YES,BOTH
+"空","そら","Sky",YES,YES,YES,BOTH
+"","それ","that",YES,YES,YES,BOTH
+"大使館","たいしかん","embassy",YES,YES,YES,BOTH
+"大切","たいせつ","important",YES,YES,YES,BOTH
+"","たいへん","very",YES,YES,YES,BOTH
+"高い","たかい","tall, expensive",YES,YES,YES,BOTH
+"","たくさん","many",YES,YES,YES,BOTH
+"立つ","たつ","to stand",YES,YES,YES,BOTH
+"","たて","length,height",YES,YES,YES,BOTH
+"建物","たてもの","building",YES,YES,YES,BOTH
+"楽しい","たのしい","enjoyable",YES,YES,YES,BOTH
+"頼む","たのむ","to ask",YES,YES,YES,BOTH
+"","たばこ","tobacco,cigarettes",YES,YES,YES,BOTH
+"","たぶん","probably",YES,YES,YES,BOTH
+"食べ物","たべもの","food",YES,YES,YES,BOTH
+"食べる","たべる","to eat",YES,YES,YES,BOTH
+"卵","たまご","egg",YES,YES,YES,BOTH
+"誕生日","たんじょうび","birthday",YES,YES,YES,BOTH
+"大学","だいがく","university",YES,YES,YES,BOTH
+"大丈夫","だいじょうぶ","all right",YES,YES,YES,BOTH
+"大好き","だいすき","to be very likeable",YES,YES,YES,BOTH
+"台所","だいどころ","kitchen",YES,YES,YES,BOTH
+"出す","だす","to put out",YES,YES,YES,BOTH
+"誰","だれ","who",YES,YES,YES,BOTH
+"","だんだん","gradually",YES,YES,YES,BOTH
+"小さい","ちいさい","little",YES,YES,YES,BOTH
+"小さな","ちいさな","little",YES,YES,YES,BOTH
+"近い","ちかい","near",YES,YES,YES,BOTH
+"近く","ちかく","near",YES,YES,YES,BOTH
+"地下鉄","ちかてつ","underground train",YES,YES,YES,BOTH
+"違う","ちがう","to differ",YES,YES,YES,BOTH
+"地図","ちず","map",YES,YES,YES,BOTH
+"茶色","ちゃいろ","brown",YES,YES,YES,BOTH
+"","ちょうど","exactly",YES,YES,YES,BOTH
+"","ちょっと","somewhat",YES,YES,YES,BOTH
+"使う","つかう","to use",YES,YES,YES,BOTH
+"疲れる","つかれる","to get tired",YES,YES,YES,BOTH
+"次","つぎ","next",YES,YES,YES,BOTH
+"着く","つく","to arrive at",YES,YES,YES,BOTH
+"机","つくえ","desk",YES,YES,YES,BOTH
+"作る","つくる","to make",YES,YES,YES,BOTH
+"勤める","つとめる","to work for someone",YES,YES,YES,BOTH
+"","つまらない","boring",YES,YES,YES,BOTH
+"冷たい","つめたい","cold to the touch",YES,YES,YES,BOTH
+"強い","つよい","powerful",YES,YES,YES,BOTH
+"手","て","hand",YES,YES,YES,BOTH
+"手紙","てがみ","letter",YES,YES,YES,BOTH
+"天気","てんき","weather",YES,YES,YES,BOTH
+"出かける","でかける","to go out",YES,YES,YES,BOTH
+"出口","でぐち","exit",YES,YES,YES,BOTH
+"","でも","but",YES,YES,YES,BOTH
+"出る","でる","to appear,to leave",YES,YES,YES,BOTH
+"電気","でんき","electricity,electric light",YES,YES,YES,BOTH
+"電車","でんしゃ","electric train",YES,YES,YES,BOTH
+"電話","でんわ","telephone",YES,YES,YES,BOTH
+"戸","と","Japanese style door",YES,YES,YES,BOTH
+"遠い","とおい","far",YES,YES,YES,BOTH
+"十日","とおか","ten days,the tenth day",YES,YES,YES,BOTH
+"時々","ときどき","sometimes",YES,YES,YES,BOTH
+"時計","とけい","watch,clock",YES,YES,YES,BOTH
+"所","ところ","place",YES,YES,YES,BOTH
+"年","とし","year",YES,YES,YES,BOTH
+"図書館","としょかん","library",YES,YES,YES,BOTH
+"","とても","very",YES,YES,YES,BOTH
+"隣","となり","next door to",YES,YES,YES,BOTH
+"飛ぶ","とぶ","to fly,to hop",YES,YES,YES,BOTH
+"止まる","とまる","to come to a halt",YES,YES,YES,BOTH
+"友達","ともだち","friend",YES,YES,YES,BOTH
+"鳥","とり","bird",YES,YES,YES,BOTH
+"とり肉","とりにく","chicken meat",YES,YES,YES,BOTH
+"取る","とる","to take something",YES,YES,YES,BOTH
+"撮る","とる","to take a photo or record a film",YES,YES,YES,BOTH
+"","どうぞ","please",YES,YES,YES,BOTH
+"動物","どうぶつ","animal",YES,YES,YES,BOTH
+"","どうも","thanks",YES,YES,YES,BOTH
+"","どこ","where",YES,YES,YES,BOTH
+"","どっち","which",YES,YES,YES,BOTH
+"","どなた","who",YES,YES,YES,BOTH
+"","どの","which",YES,YES,YES,BOTH
+"土曜日","どようび","Saturday",YES,YES,YES,BOTH
+"中","なか","middle",YES,YES,YES,BOTH
+"長い","ながい","long",YES,YES,YES,BOTH
+"鳴く","なく","animal noise. to chirp, roar or croak etc.",YES,YES,YES,BOTH
+"無くす","なくす","to lose something",YES,YES,YES,BOTH
+"","なぜ","why",YES,YES,YES,BOTH
+"夏","なつ","summer",YES,YES,YES,BOTH
+"夏休み","なつやすみ","summer holiday",YES,YES,YES,BOTH
+"七つ","ななつ","seven",YES,YES,YES,BOTH
+"七日","なのか","seven days,the seventh day",YES,YES,YES,BOTH
+"名前","なまえ","name",YES,YES,YES,BOTH
+"習う","ならう","to learn",YES,YES,YES,BOTH
+"並ぶ","ならぶ","to line up,to stand in a line",YES,YES,YES,BOTH
+"並べる","ならべる","to line up,to set up",YES,YES,YES,BOTH
+"二","に","two",YES,YES,YES,BOTH
+"賑やか","にぎやか","bustling,busy",YES,YES,YES,BOTH
+"肉","にく","meat",YES,YES,YES,BOTH
+"西","にし","west",YES,YES,YES,BOTH
+"日曜日","にちようび","Sunday",YES,YES,YES,BOTH
+"荷物","にもつ","luggage",YES,YES,YES,BOTH
+"庭","にわ","garden",YES,YES,YES,BOTH
+"脱ぐ","ぬぐ","to take off clothes",YES,YES,YES,BOTH
+"温い","ぬるい","luke warm",YES,YES,YES,BOTH
+"猫","ねこ","cat",YES,YES,YES,BOTH
+"寝る","ねる","to go to bed,to sleep",YES,YES,YES,BOTH
+"登る","のぼる","to climb",YES,YES,YES,BOTH
+"飲み物","のみもの","a drink",YES,YES,YES,BOTH
+"飲む","のむ","to drink",YES,YES,YES,BOTH
+"乗る","のる","to get on,to ride",YES,YES,YES,BOTH
+"歯","は","tooth",YES,YES,YES,BOTH
+"","はい","yes",YES,YES,YES,BOTH
+"灰皿","はいざら","ashtray",YES,YES,YES,BOTH
+"入る","はいる","to enter,to contain",YES,YES,YES,BOTH
+"葉書","はがき","postcard",YES,YES,YES,BOTH
+"箱","はこ","box",YES,YES,YES,BOTH
+"橋","はし","bridge",YES,YES,YES,BOTH
+"","はし","chopsticks",YES,YES,YES,BOTH
+"走る","はしる","to run",YES,YES,YES,BOTH
+"始まる","はじまる","to begin",YES,YES,YES,BOTH
+"初め/始め","はじめ","beginning",YES,YES,YES,BOTH
+"初めて","はじめて","for the first time",YES,YES,YES,BOTH
+"二十歳","はたち","20 years old,20th year",YES,YES,YES,BOTH
+"働く","はたらく","to work",YES,YES,YES,BOTH
+"八","はち","eight",YES,YES,YES,BOTH
+"二十日","はつか","twenty days,twentieth",YES,YES,YES,BOTH
+"花","はな","flower",YES,YES,YES,BOTH
+"鼻","はな","nose",YES,YES,YES,BOTH
+"話","はなし","talk,story",YES,YES,YES,BOTH
+"話す","はなす","to speak",YES,YES,YES,BOTH
+"早い","はやい","early",YES,YES,YES,BOTH
+"速い","はやい","quick",YES,YES,YES,BOTH
+"春","はる","spring",YES,YES,YES,BOTH
+"貼る","はる","to stick",YES,YES,YES,BOTH
+"晴れ","はれ","clear weather",YES,YES,YES,BOTH
+"晴れる","はれる","to be sunny",YES,YES,YES,BOTH
+"半","はん","half",YES,YES,YES,BOTH
+"半分","はんぶん","half minute",YES,YES,YES,BOTH
+"晩","ばん","evening",YES,YES,YES,BOTH
+"番号","ばんごう","number",YES,YES,YES,BOTH
+"晩御飯","ばんごはん","evening meal",YES,YES,YES,BOTH
+"東","ひがし","east",YES,YES,YES,BOTH
+"引く","ひく","to pull",YES,YES,YES,BOTH
+"低い","ひくい","short,low",YES,YES,YES,BOTH
+"飛行機","ひこうき","aeroplane",YES,YES,YES,BOTH
+"左","ひだり","left hand side",YES,YES,YES,BOTH
+"人","ひと","person",YES,YES,YES,BOTH
+"一つ","ひとつ","one",YES,YES,YES,BOTH
+"一月","ひとつき","one month",YES,YES,YES,BOTH
+"一人","ひとり","one person",YES,YES,YES,BOTH
+"暇","ひま","free time",YES,YES,YES,BOTH
+"百","ひゃく","hundred",YES,YES,YES,BOTH
+"昼","ひる","noon, daytime",YES,YES,YES,BOTH
+"昼御飯","ひるごはん","midday meal",YES,YES,YES,BOTH
+"広い","ひろい","spacious,wide",YES,YES,YES,BOTH
+"病院","びょういん","hospital",YES,YES,YES,BOTH
+"病気","びょうき","illness",YES,YES,YES,BOTH
+"封筒","ふうとう","envelope",YES,YES,YES,BOTH
+"吹く","ふく","to blow",YES,YES,YES,BOTH
+"服","ふく","clothes",YES,YES,YES,BOTH
+"二つ","ふたつ","two",YES,YES,YES,BOTH
+"二人","ふたり","two people",YES,YES,YES,BOTH
+"二日","ふつか","two days, second day of the month",YES,YES,YES,BOTH
+"太い","ふとい","fat",YES,YES,YES,BOTH
+"冬","ふゆ","winter",YES,YES,YES,BOTH
+"降る","ふる","to fall, e.g. rain or snow",YES,YES,YES,BOTH
+"古い","ふるい","old (not used for people)",YES,YES,YES,BOTH
+"","ふろ","bath",YES,YES,YES,BOTH
+"豚肉","ぶたにく","pork",YES,YES,YES,BOTH
+"文章","ぶんしょう","sentence,text",YES,YES,YES,BOTH
+"下手","へた","unskillful",YES,YES,YES,BOTH
+"部屋","へや","room",YES,YES,YES,BOTH
+"辺","へん","area",YES,YES,YES,BOTH
+"勉強","べんきょうする","to study",YES,YES,YES,BOTH
+"便利","べんり","useful, convenient",YES,YES,YES,BOTH
+"欲しい","ほしい","want",YES,YES,YES,BOTH
+"細い","ほそい","thin",YES,YES,YES,BOTH
+"本","ほん","book",YES,YES,YES,BOTH
+"本棚","ほんだな","bookshelves",YES,YES,YES,BOTH
+"","ほんとう","truth",YES,YES,YES,BOTH
+"帽子","ぼうし","hat",YES,YES,YES,BOTH
+"毎朝","まいあさ","every morning",YES,YES,YES,BOTH
+"毎週","まいしゅう","every week",YES,YES,YES,BOTH
+"毎日","まいにち","every day",YES,YES,YES,BOTH
+"毎晩","まいばん","every night",YES,YES,YES,BOTH
+"前","まえ","before",YES,YES,YES,BOTH
+"曲る","まがる","to turn,to bend",YES,YES,YES,BOTH
+"","まずい","unpleasant",YES,YES,YES,BOTH
+"","また","again,and",YES,YES,YES,BOTH
+"","まだ","yet,still",YES,YES,YES,BOTH
+"町","まち","town,city",YES,YES,YES,BOTH
+"待つ","まつ","to wait",YES,YES,YES,BOTH
+"窓","まど","window",YES,YES,YES,BOTH
+"丸い/円い","まるい","round,circular",YES,YES,YES,BOTH
+"万","まん","ten thousand",YES,YES,YES,BOTH
+"万年筆","まんねんひつ","fountain pen",YES,YES,YES,BOTH
+"磨く","みがく","to brush teeth, to polish",YES,YES,YES,BOTH
+"右","みぎ","right side",YES,YES,YES,BOTH
+"短い","みじかい","short",YES,YES,YES,BOTH
+"水","みず","water",YES,YES,YES,BOTH
+"店","みせ","shop",YES,YES,YES,BOTH
+"見せる","みせる","to show",YES,YES,YES,BOTH
+"道","みち","street",YES,YES,YES,BOTH
+"三日","みっか","three days, third day of the month",YES,YES,YES,BOTH
+"三つ","みっつ","three",YES,YES,YES,BOTH
+"緑","みどり","green",YES,YES,YES,BOTH
+"皆さん","みなさん","everyone",YES,YES,YES,BOTH
+"南","みなみ","south",YES,YES,YES,BOTH
+"耳","みみ","ear",YES,YES,YES,BOTH
+"","みんな","everyone",YES,YES,YES,BOTH
+"六日","むいか","six days, sixth day of the month",YES,YES,YES,BOTH
+"向こう","むこう","over there",YES,YES,YES,BOTH
+"難しい","むずかしい","difficult",YES,YES,YES,BOTH
+"六つ","むっつ","six",YES,YES,YES,BOTH
+"村","むら","village",YES,YES,YES,BOTH
+"目","め","eye",YES,YES,YES,BOTH
+"眼鏡","めがね","glasses",YES,YES,YES,BOTH
+"","もう","already",YES,YES,YES,BOTH
+"もう一度","もういちど","again",YES,YES,YES,BOTH
+"木曜日","もくようび","Thursday",YES,YES,YES,BOTH
+"","もっと","more",YES,YES,YES,BOTH
+"持つ","もつ","to hold",YES,YES,YES,BOTH
+"物","もの","thing",YES,YES,YES,BOTH
+"門","もん","gate",YES,YES,YES,BOTH
+"問題","もんだい","problem",YES,YES,YES,BOTH
+"八百屋","やおや","greengrocer",YES,YES,YES,BOTH
+"野菜","やさい","vegetable",YES,YES,YES,BOTH
+"易しい","やさしい","easy, simple",YES,YES,YES,BOTH
+"安い","やすい","cheap",YES,YES,YES,BOTH
+"休み","やすみ","rest,holiday",YES,YES,YES,BOTH
+"休む","やすむ","to rest",YES,YES,YES,BOTH
+"八つ","やっつ","eight",YES,YES,YES,BOTH
+"山","やま","mountain",YES,YES,YES,BOTH
+"夕方","ゆうがた","evening",YES,YES,YES,BOTH
+"夕飯","ゆうはん","dinner",YES,YES,YES,BOTH
+"郵便局","ゆうびんきょく","post office",YES,YES,YES,BOTH
+"昨夜","ゆうべ","last night",YES,YES,YES,BOTH
+"有名","ゆうめい","famous",YES,YES,YES,BOTH
+"雪","ゆき","snow",YES,YES,YES,BOTH
+"","ゆっくりと","slowly",YES,YES,YES,BOTH
+"八日","ようか","eight days, eighth day of the month",YES,YES,YES,BOTH
+"洋服","ようふく","western-style clothes",YES,YES,YES,BOTH
+"横","よこ","beside,side,width",YES,YES,YES,BOTH
+"四日","よっか","four days, fouth day of the month",YES,YES,YES,BOTH
+"四つ","よっつ","four",YES,YES,YES,BOTH
+"呼ぶ","よぶ","to call out,to invite",YES,YES,YES,BOTH
+"読む","よむ","to read",YES,YES,YES,BOTH
+"夜","よる","evening,night",YES,YES,YES,BOTH
+"弱い","よわい","weak",YES,YES,YES,BOTH
+"来月","らいげつ","next month",YES,YES,YES,BOTH
+"来週","らいしゅう","next week",YES,YES,YES,BOTH
+"来年","らいねん","next year",YES,YES,YES,BOTH
+"","りっぱ","splendid",YES,YES,YES,BOTH
+"留学生","りゅうがくせい","overseas student",YES,YES,YES,BOTH
+"両親","りょうしん","both parents",YES,YES,YES,BOTH
+"料理","りょうり","cuisine",YES,YES,YES,BOTH
+"旅行","りょこう","travel",YES,YES,YES,BOTH
+"零","れい","zero",YES,YES,YES,BOTH
+"冷蔵庫","れいぞうこ","refrigerator",YES,YES,YES,BOTH
+"練習","れんしゅうする","to practice",YES,YES,YES,BOTH
+"廊下","ろうか","corridor",YES,YES,YES,BOTH
+"六","ろく","six",YES,YES,YES,BOTH
+"若い","わかい","young",YES,YES,YES,BOTH
+"分かる","わかる","to be understood",YES,YES,YES,BOTH
+"忘れる","わすれる","to forget",YES,YES,YES,BOTH
+"私","わたくし","(humble) I,myself",YES,YES,YES,BOTH
+"渡す","わたす","to hand over",YES,YES,YES,BOTH
+"渡る","わたる","to go across",YES,YES,YES,BOTH
+"悪い","わるい","bad",YES,YES,YES,BOTH
+"","アパート","apartment",YES,YES,YES,BOTH
+"","エレベーター","elevator",YES,YES,YES,BOTH
+"","カップ","Cup",YES,YES,YES,BOTH
+"","カメラ","camera",YES,YES,YES,BOTH
+"","カレンダー","calendar",YES,YES,YES,BOTH
+"","カレー","Curry",YES,YES,YES,BOTH
+"","ギター","Guitar",YES,YES,YES,BOTH
+"","クラス","Class",YES,YES,YES,BOTH
+"","グラム","Gram",YES,YES,YES,BOTH
+"","コーヒー","Coffee",YES,YES,YES,BOTH
+"","シャツ","Shirt",YES,YES,YES,BOTH
+"","シャワー","Shower",YES,YES,YES,BOTH
+"","スカート","Skirt",YES,YES,YES,BOTH
+"","ストーブ","Heater",YES,YES,YES,BOTH
+"","スプーン","Spoon",YES,YES,YES,BOTH
+"","スポーツ","Sport",YES,YES,YES,BOTH
+"","スリッパ","Slippers",YES,YES,YES,BOTH
+"","ズボン","Trousers",YES,YES,YES,BOTH
+"","ゼロ","Zero",YES,YES,YES,BOTH
+"","タクシー","taxi",YES,YES,YES,BOTH
+"","テスト","test",YES,YES,YES,BOTH
+"","テレビ","television",YES,YES,YES,BOTH
+"","テーブル","table",YES,YES,YES,BOTH
+"","テープ","tape",YES,YES,YES,BOTH
+"","トイレ","toilet",YES,YES,YES,BOTH
+"","ナイフ","knife",YES,YES,YES,BOTH
+"","ニュース","news",YES,YES,YES,BOTH
+"","ネクタイ","tie,necktie",YES,YES,YES,BOTH
+"","ハンカチ","handkerchief",YES,YES,YES,BOTH
+"","バス","bus",YES,YES,YES,BOTH
+"","バター","butter",YES,YES,YES,BOTH
+"","パン","bread",YES,YES,YES,BOTH
+"","パーティー","party",YES,YES,YES,BOTH
+"","フォーク","fork",YES,YES,YES,BOTH
+"","ベッド","bed",YES,YES,YES,BOTH
+"","ペット","pet",YES,YES,YES,BOTH
+"","ペン","pen",YES,YES,YES,BOTH
+"","ページ","page",YES,YES,YES,BOTH
+"","ホテル","hotel",YES,YES,YES,BOTH
+"","ボタン","button",YES,YES,YES,BOTH
+"","ポケット","pocket",YES,YES,YES,BOTH
+"","ポスト","post",YES,YES,YES,BOTH
+"","マッチ","match",YES,YES,YES,BOTH
+"","メートル","metre",YES,YES,YES,BOTH
+"","ラジオ","radio",YES,YES,YES,BOTH
+"","レコード","record",YES,YES,YES,BOTH
+"","レストラン","restaurant",YES,YES,YES,BOTH
+"","ラジカセ","/",NO,YES,NO,TANOS_ONLY
+"","あさって","",NO,NO,YES,CURRENT_ONLY
+"","あそこ","",NO,NO,YES,CURRENT_ONLY
+"","あっち","",NO,NO,YES,CURRENT_ONLY
+"","あびる","",NO,NO,YES,CURRENT_ONLY
+"","あまり","",NO,NO,YES,CURRENT_ONLY
+"","ある","",NO,NO,YES,CURRENT_ONLY
+"","いい/よい","",NO,NO,YES,CURRENT_ONLY
+"","いくつ","",NO,NO,YES,CURRENT_ONLY
+"","いくら","",NO,NO,YES,CURRENT_ONLY
+"","いちばん","",NO,NO,YES,CURRENT_ONLY
+"","おばあさん","",NO,NO,YES,CURRENT_ONLY
+"","おまわりさん","",NO,NO,YES,CURRENT_ONLY
+"","かかる","",NO,NO,YES,CURRENT_ONLY
+"","かける","",NO,NO,YES,CURRENT_ONLY
+"","かばん","",NO,NO,YES,CURRENT_ONLY
+"","きゅう/く","",NO,NO,YES,CURRENT_ONLY
+"","きれい","",NO,NO,YES,CURRENT_ONLY
+"","こちら","",NO,NO,YES,CURRENT_ONLY
+"","こっち","",NO,NO,YES,CURRENT_ONLY
+"","さす","",NO,NO,YES,CURRENT_ONLY
+"","し/よん","",NO,NO,YES,CURRENT_ONLY
+"","しち/なな","",NO,NO,YES,CURRENT_ONLY
+"","しょうゆ","",NO,NO,YES,CURRENT_ONLY
+"","じゃ/じゃあ","",NO,NO,YES,CURRENT_ONLY
+"","じゅうとお","",NO,NO,YES,CURRENT_ONLY
+"","する","",NO,NO,YES,CURRENT_ONLY
+"","そうして/そして","",NO,NO,YES,CURRENT_ONLY
+"","そこ","",NO,NO,YES,CURRENT_ONLY
+"","そちら","",NO,NO,YES,CURRENT_ONLY
+"","そっち","",NO,NO,YES,CURRENT_ONLY
+"","そば","",NO,NO,YES,CURRENT_ONLY
+"","それから","",NO,NO,YES,CURRENT_ONLY
+"","それでは","",NO,NO,YES,CURRENT_ONLY
+"","ちゃわん","",NO,NO,YES,CURRENT_ONLY
+"","つける","",NO,NO,YES,CURRENT_ONLY
+"","できる","",NO,NO,YES,CURRENT_ONLY
+"","では","",NO,NO,YES,CURRENT_ONLY
+"","どう","",NO,NO,YES,CURRENT_ONLY
+"","どうして","",NO,NO,YES,CURRENT_ONLY
+"","どちら","",NO,NO,YES,CURRENT_ONLY
+"","どれ","",NO,NO,YES,CURRENT_ONLY
+"","など","",NO,NO,YES,CURRENT_ONLY
+"","なる","",NO,NO,YES,CURRENT_ONLY
+"","なん/なに","",NO,NO,YES,CURRENT_ONLY
+"","はく","",NO,NO,YES,CURRENT_ONLY
+"","ほか","",NO,NO,YES,CURRENT_ONLY
+"","まいげつ/まいつき","",NO,NO,YES,CURRENT_ONLY
+"","まいねん/まいとし","",NO,NO,YES,CURRENT_ONLY
+"","まっすぐ","",NO,NO,YES,CURRENT_ONLY
+"","みる","",NO,NO,YES,CURRENT_ONLY
+"","やる","",NO,NO,YES,CURRENT_ONLY
+"","よく","",NO,NO,YES,CURRENT_ONLY
+"","キロ/キロメートル","",NO,NO,YES,CURRENT_ONLY
+"","コップ","",NO,NO,YES,CURRENT_ONLY
+"","コート","",NO,NO,YES,CURRENT_ONLY
+"","セーター","",NO,NO,YES,CURRENT_ONLY
+"","テープレコーダー","",NO,NO,YES,CURRENT_ONLY
+"","デパート","",NO,NO,YES,CURRENT_ONLY
+"","ドア","",NO,NO,YES,CURRENT_ONLY
+"","ノート","",NO,NO,YES,CURRENT_ONLY
+"","フィルム","",NO,NO,YES,CURRENT_ONLY
+"","プール","",NO,NO,YES,CURRENT_ONLY
+"","ボールペン","",NO,NO,YES,CURRENT_ONLY
+"","ラジカセ/ラジオカセット","",NO,NO,YES,CURRENT_ONLY
+"","ワイシャツ","",NO,NO,YES,CURRENT_ONLY
+"何","","",NO,NO,YES,CURRENT_ONLY
+"居る","","",NO,NO,YES,CURRENT_ONLY
+"差す","","",NO,NO,YES,CURRENT_ONLY
+"弾く","","",NO,NO,YES,CURRENT_ONLY
+"毎年","","",NO,NO,YES,CURRENT_ONLY
+"毎月","","",NO,NO,YES,CURRENT_ONLY
+"見る観る","","",NO,NO,YES,CURRENT_ONLY

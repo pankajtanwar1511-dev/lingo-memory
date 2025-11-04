@@ -1,0 +1,449 @@
+{
+  "batch_number": 4,
+  "batch_name": "Comparison Forms",
+  "extracted_at": "2025-11-02 16:29:20",
+  "patterns": {
+    "いちばん": {
+      "count": 24,
+      "candidates": [
+        {
+          "tatoeba_id": "79394",
+          "japanese": "友情は、すべての中でいちばん大切である。",
+          "english": "Friendship is the most precious of all.",
+          "pattern": "いちばん",
+          "length": 20,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "79640",
+          "japanese": "野球は日本でとびぬけていちばん人気のあるスポーツです。",
+          "english": "Baseball is by far the most popular sport in Japan.",
+          "pattern": "いちばん",
+          "length": 27,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "82464",
+          "japanese": "北米でいちばん高い山は何ですか。",
+          "english": "What is the highest mountain in North America?",
+          "pattern": "いちばん",
+          "length": 16,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "82856",
+          "japanese": "母は毎朝いちばん早く起きます。",
+          "english": "Mother gets up earliest every morning.",
+          "pattern": "いちばん",
+          "length": 15,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "84746",
+          "japanese": "父はいまいちばん新しい型のバイクを買ってくれた。",
+          "english": "Father bought me the latest model motorcycle.",
+          "pattern": "いちばん",
+          "length": 24,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "85920",
+          "japanese": "疲れたときはひと風呂浴びるのがいちばんだ。",
+          "english": "When you feel tired, there is nothing like having a bath.",
+          "pattern": "いちばん",
+          "length": 21,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "92338",
+          "japanese": "彼女はその店にある全ての宝石の中でいちばんいいものを選んだ。",
+          "english": "She picked out the best of all the jewels in the shop.",
+          "pattern": "いちばん",
+          "length": 30,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "92952",
+          "japanese": "彼女はクラスの中で、断然歌がいちばんうまかった。",
+          "english": "She was by far the best singer in the class.",
+          "pattern": "いちばん",
+          "length": 24,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "93338",
+          "japanese": "彼女はいちばんの晴れ着を着ている。",
+          "english": "She is dressed in her best.",
+          "pattern": "いちばん",
+          "length": 17,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "100655",
+          "japanese": "彼は鼻がいちばん立派だ。",
+          "english": "His nose is his best feature.",
+          "pattern": "いちばん",
+          "length": 12,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "102084",
+          "japanese": "彼は町中でいちばんの名医ということになっている。",
+          "english": "He is supposed to be the best doctor in the town.",
+          "pattern": "いちばん",
+          "length": 24,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "108535",
+          "japanese": "彼は疑いなく私たちの学校でいちばんのスポーツ選手だ。",
+          "english": "He is beyond doubt the best athlete in our school.",
+          "pattern": "いちばん",
+          "length": 26,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "113737",
+          "japanese": "彼はこの町でいちばんの金持ちだ。",
+          "english": "He is richer than anyone else in this town is.",
+          "pattern": "いちばん",
+          "length": 16,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "113951",
+          "japanese": "彼はクラスでいちばん勉強する。",
+          "english": "He studies harder than any other student does in his class.",
+          "pattern": "いちばん",
+          "length": 15,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "114653",
+          "japanese": "彼はいちばんよい本を選び出した。",
+          "english": "He picked out the best book.",
+          "pattern": "いちばん",
+          "length": 16,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "122823",
+          "japanese": "日本でいちばん長い川はどれですか。",
+          "english": "Which river is the longest in Japan?",
+          "pattern": "いちばん",
+          "length": 17,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "122824",
+          "japanese": "日本でいちばん高い建物は何ですか。",
+          "english": "What is the tallest building in Japan?",
+          "pattern": "いちばん",
+          "length": 17,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "122825",
+          "japanese": "日本でいちばんおいしい果物は何？",
+          "english": "What's the most delicious fruit in Japan?",
+          "pattern": "いちばん",
+          "length": 16,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "125539",
+          "japanese": "定期的に歯医者に行くのがいちばんいいよ。",
+          "english": "It's best to go to the dentist at regular intervals.",
+          "pattern": "いちばん",
+          "length": 20,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "138032",
+          "japanese": "太郎を除けば、次郎がいちばん背が高い。",
+          "english": "Next to Taro, Jiro is the tallest boy.",
+          "pattern": "いちばん",
+          "length": 19,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "138209",
+          "japanese": "太平洋は世界でいちばん大きな大洋です。",
+          "english": "The Pacific is the largest ocean in the world.",
+          "pattern": "いちばん",
+          "length": 19,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "143461",
+          "japanese": "世界でいちばんいい仕事だものね。",
+          "english": "It's the best job in the world!",
+          "pattern": "いちばん",
+          "length": 16,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "143700",
+          "japanese": "水泳ができるから、私は夏がいちばん好きだ。",
+          "english": "I like summer best because I can swim.",
+          "pattern": "いちばん",
+          "length": 21,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "143780",
+          "japanese": "水はここがいちばん深い。",
+          "english": "The water is deepest here.",
+          "pattern": "いちばん",
+          "length": 12,
+          "stage": 3,
+          "priority": "MEDIUM"
+        }
+      ]
+    },
+    "のほうが": {
+      "count": 24,
+      "candidates": [
+        {
+          "tatoeba_id": "74221",
+          "japanese": "強い乱視はコンタクトレンズのほうが矯正できます。",
+          "english": "Contact lenses are more able to correct strong astigmatism.",
+          "pattern": "のほうが",
+          "length": 24,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "75627",
+          "japanese": "むしろロン毛のほうが禿げやすいって聞いたぞ。",
+          "english": "In fact, I've heard that long hair is more likely to go bald!",
+          "pattern": "のほうが",
+          "length": 22,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "77008",
+          "japanese": "「ボクは寝てないさ。いつもサボッてるだけ」「そっちのほうが質悪い！」",
+          "english": "\"I'm not sleeping. I'm always just skiving off.\" \"That way's even worse!\"",
+          "pattern": "のほうが",
+          "length": 34,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "78996",
+          "japanese": "予防のほうがことが起こっての治療よりずっと効果がある。",
+          "english": "Preventive measures are much more effective than the actual treatment.",
+          "pattern": "のほうが",
+          "length": 27,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "93643",
+          "japanese": "彼女は１０年前のほうが今より太っていた。",
+          "english": "She was fatter ten years ago than she is now.",
+          "pattern": "のほうが",
+          "length": 20,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "95030",
+          "japanese": "彼女にとっては富よりも健康のほうが大事だ。",
+          "english": "She values health above wealth.",
+          "pattern": "のほうが",
+          "length": 21,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "99435",
+          "japanese": "彼は野球よりフットボールのほうが好きです。",
+          "english": "He prefers football to baseball.",
+          "pattern": "のほうが",
+          "length": 21,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "106794",
+          "japanese": "彼は昨日より今日のほうが具合がよい。",
+          "english": "He is better today than yesterday.",
+          "pattern": "のほうが",
+          "length": 18,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "108326",
+          "japanese": "彼は教師のほうが向いている。",
+          "english": "He is better suited to a job as a teacher is.",
+          "pattern": "のほうが",
+          "length": 14,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "118247",
+          "japanese": "彼のほうが私より段違いにうまい。",
+          "english": "He can do it far better than I can.",
+          "pattern": "のほうが",
+          "length": 16,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "118248",
+          "japanese": "彼のほうが兄より背が高い。",
+          "english": "He is taller than his brother.",
+          "pattern": "のほうが",
+          "length": 13,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "119199",
+          "japanese": "彼と私とどちらのほうが若いですか。",
+          "english": "Who is younger, he or I?",
+          "pattern": "のほうが",
+          "length": 17,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "121927",
+          "japanese": "猫は夜のほうがはるかによく見える。",
+          "english": "A cat can see much better at night.",
+          "pattern": "のほうが",
+          "length": 17,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "121995",
+          "japanese": "猫が好きな人もいれば、犬のほうが好きな人もいます。",
+          "english": "Some people like cats, others prefer dogs.",
+          "pattern": "のほうが",
+          "length": 25,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "122564",
+          "japanese": "日本の男性はまだサッカーより野球のほうが好きだ。",
+          "english": "Japanese men still like baseball better than soccer.",
+          "pattern": "のほうが",
+          "length": 24,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "122995",
+          "japanese": "肉には白ワインよりも赤ワインのほうが合うと言われています。",
+          "english": "They say red wine is better with meat than white.",
+          "pattern": "のほうが",
+          "length": 29,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "125909",
+          "japanese": "長くてだらしがないより短くて簡潔のほうがよい。",
+          "english": "Better short and sweet, than long and lax.",
+          "pattern": "のほうが",
+          "length": 23,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "126806",
+          "japanese": "恥よりも死のほうがましである。",
+          "english": "Death is preferable to shame.",
+          "pattern": "のほうが",
+          "length": 15,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "127333",
+          "japanese": "団体旅行より、一人旅のほうがおもしろい。",
+          "english": "It's more interesting to travel alone than to go on a group tour.",
+          "pattern": "のほうが",
+          "length": 20,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "143934",
+          "japanese": "人柄のほうが財産よりも重要である。",
+          "english": "What you are is more important than what you have.",
+          "pattern": "のほうが",
+          "length": 17,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "144380",
+          "japanese": "人を訪問することのほうが、訪問されることよりすてきだ。",
+          "english": "Visiting people is nicer than being visited.",
+          "pattern": "のほうが",
+          "length": 27,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "147997",
+          "japanese": "柔道では力より技のほうが大切である。",
+          "english": "In judo, technique is more important than strength.",
+          "pattern": "のほうが",
+          "length": 18,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "148182",
+          "japanese": "秋より春のほうが好きだ。",
+          "english": "I prefer spring to fall.",
+          "pattern": "のほうが",
+          "length": 12,
+          "stage": 3,
+          "priority": "MEDIUM"
+        },
+        {
+          "tatoeba_id": "149329",
+          "japanese": "実際には、努力よりも能力のほうがものを言う。",
+          "english": "In practice, ability counts for more than effort.",
+          "pattern": "のほうが",
+          "length": 22,
+          "stage": 3,
+          "priority": "MEDIUM"
+        }
+      ]
+    }
+  }
+}

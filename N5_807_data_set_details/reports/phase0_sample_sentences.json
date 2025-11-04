@@ -1,0 +1,872 @@
+[
+  {
+    "id": "4710",
+    "japanese": "知らない。",
+    "english": "I don't know.",
+    "formality": "casual",
+    "length": 5,
+    "kanji_count": 1,
+    "patterns": [
+      "nai"
+    ],
+    "vocab_hits": []
+  },
+  {
+    "id": "4715",
+    "japanese": "私は山にいました。",
+    "english": "I was in the mountains.",
+    "formality": "casual",
+    "length": 9,
+    "kanji_count": 2,
+    "patterns": [
+      "desu_masu",
+      "ta",
+      "particle_wa",
+      "particle_ni"
+    ],
+    "vocab_hits": [
+      "は",
+      "した",
+      "に",
+      "山",
+      "私"
+    ]
+  },
+  {
+    "id": "4717",
+    "japanese": "時間があるか分かりません。",
+    "english": "I don't know if I have the time.",
+    "formality": "casual",
+    "length": 13,
+    "kanji_count": 3,
+    "patterns": [],
+    "vocab_hits": [
+      "時間",
+      "せん",
+      "あ",
+      "ある",
+      "せ"
+    ]
+  },
+  {
+    "id": "4748",
+    "japanese": "私は違います。あなたです。",
+    "english": "No I'm not; you are!",
+    "formality": "formal",
+    "length": 13,
+    "kanji_count": 2,
+    "patterns": [
+      "desu_masu",
+      "particle_wa"
+    ],
+    "vocab_hits": [
+      "あなた",
+      "は",
+      "あ",
+      "私",
+      "いま"
+    ]
+  },
+  {
+    "id": "4757",
+    "japanese": "私はなぜか夜の方が元気だ。",
+    "english": "For some reason I feel more alive at night.",
+    "formality": "casual",
+    "length": 13,
+    "kanji_count": 5,
+    "patterns": [
+      "da",
+      "particle_wa"
+    ],
+    "vocab_hits": [
+      "なぜ",
+      "は",
+      "方",
+      "夜",
+      "私"
+    ]
+  },
+  {
+    "id": "4767",
+    "japanese": "言ってみただけだよ！",
+    "english": "I'm just saying!",
+    "formality": "casual",
+    "length": 10,
+    "kanji_count": 1,
+    "patterns": [],
+    "vocab_hits": [
+      "て"
+    ]
+  },
+  {
+    "id": "4772",
+    "japanese": "あなたが女の子だからよ。",
+    "english": "That's because you're a girl.",
+    "formality": "casual",
+    "length": 12,
+    "kanji_count": 2,
+    "patterns": [],
+    "vocab_hits": [
+      "あなた",
+      "あ",
+      "女",
+      "だから",
+      "か"
+    ]
+  },
+  {
+    "id": "4781",
+    "japanese": "時間はいくらでも作れる。",
+    "english": "One can always find time.",
+    "formality": "casual",
+    "length": 12,
+    "kanji_count": 3,
+    "patterns": [
+      "particle_wa"
+    ],
+    "vocab_hits": [
+      "く",
+      "は",
+      "時間",
+      "でも",
+      "いく"
+    ]
+  },
+  {
+    "id": "4789",
+    "japanese": "なんで聞くの？",
+    "english": "Why do you ask?",
+    "formality": "casual",
+    "length": 7,
+    "kanji_count": 1,
+    "patterns": [],
+    "vocab_hits": [
+      "く",
+      "なん",
+      "聞く"
+    ]
+  },
+  {
+    "id": "4794",
+    "japanese": "どのくらいいたの？",
+    "english": "How long did you stay?",
+    "formality": "casual",
+    "length": 9,
+    "kanji_count": 0,
+    "patterns": [],
+    "vocab_hits": [
+      "く",
+      "ど",
+      "くらい",
+      "いい",
+      "どの"
+    ]
+  },
+  {
+    "id": "4802",
+    "japanese": "それがどこから来たのか分からなかった。",
+    "english": "I didn't know where it came from.",
+    "formality": "casual",
+    "length": 19,
+    "kanji_count": 2,
+    "patterns": [
+      "ta"
+    ],
+    "vocab_hits": [
+      "それ",
+      "どこ",
+      "ど",
+      "なか",
+      "どこか"
+    ]
+  },
+  {
+    "id": "4810",
+    "japanese": "できるよ！",
+    "english": "You can do it.",
+    "formality": "casual",
+    "length": 5,
+    "kanji_count": 0,
+    "patterns": [],
+    "vocab_hits": [
+      "できる",
+      "き",
+      "きる"
+    ]
+  },
+  {
+    "id": "4816",
+    "japanese": "今日はもう聞かないよ。",
+    "english": "I won't ask you anything else today.",
+    "formality": "casual",
+    "length": 11,
+    "kanji_count": 3,
+    "patterns": [
+      "nai",
+      "particle_wa"
+    ],
+    "vocab_hits": [
+      "は",
+      "今日",
+      "今",
+      "かない",
+      "もう"
+    ]
+  },
+  {
+    "id": "4832",
+    "japanese": "分からない言葉がたくさんある。",
+    "english": "There are many words that I don't understand.",
+    "formality": "casual",
+    "length": 15,
+    "kanji_count": 3,
+    "patterns": [
+      "nai"
+    ],
+    "vocab_hits": [
+      "く",
+      "言葉",
+      "あ",
+      "ある",
+      "たくさん"
+    ]
+  },
+  {
+    "id": "4839",
+    "japanese": "誰にも分からないよ。",
+    "english": "No one will know.",
+    "formality": "casual",
+    "length": 10,
+    "kanji_count": 2,
+    "patterns": [
+      "nai",
+      "particle_ni"
+    ],
+    "vocab_hits": [
+      "に",
+      "誰",
+      "か"
+    ]
+  },
+  {
+    "id": "4849",
+    "japanese": "待つしかない。",
+    "english": "I can only wait.",
+    "formality": "casual",
+    "length": 7,
+    "kanji_count": 1,
+    "patterns": [
+      "nai"
+    ],
+    "vocab_hits": [
+      "待つ",
+      "つ",
+      "かない",
+      "し",
+      "か"
+    ]
+  },
+  {
+    "id": "4852",
+    "japanese": "もう好きじゃない。",
+    "english": "I don't like you anymore.",
+    "formality": "casual",
+    "length": 9,
+    "kanji_count": 1,
+    "patterns": [
+      "nai"
+    ],
+    "vocab_hits": [
+      "じゃ",
+      "好き",
+      "き",
+      "じ",
+      "もう"
+    ]
+  },
+  {
+    "id": "4856",
+    "japanese": "家に来ませんか。",
+    "english": "Why don't you come visit us?",
+    "formality": "casual",
+    "length": 8,
+    "kanji_count": 2,
+    "patterns": [
+      "particle_ni"
+    ],
+    "vocab_hits": [
+      "せん",
+      "家",
+      "に",
+      "せ",
+      "か"
+    ]
+  },
+  {
+    "id": "4876",
+    "japanese": "まだ持ってるか分からないなあ。",
+    "english": "I don't know if I still have it.",
+    "formality": "casual",
+    "length": 15,
+    "kanji_count": 2,
+    "patterns": [
+      "nai"
+    ],
+    "vocab_hits": [
+      "まだ",
+      "て",
+      "あ",
+      "か"
+    ]
+  },
+  {
+    "id": "4882",
+    "japanese": "そこに問題がある。",
+    "english": "Therein lies the problem.",
+    "formality": "casual",
+    "length": 9,
+    "kanji_count": 2,
+    "patterns": [
+      "particle_ni"
+    ],
+    "vocab_hits": [
+      "問題",
+      "そこ",
+      "に",
+      "あ",
+      "ある"
+    ]
+  },
+  {
+    "id": "4885",
+    "japanese": "みんなあなたに会いたがってる。あなたは有名なのよ！",
+    "english": "Everyone wants to meet you. You're famous!",
+    "formality": "casual",
+    "length": 25,
+    "kanji_count": 3,
+    "patterns": [
+      "particle_wa",
+      "particle_ni"
+    ],
+    "vocab_hits": [
+      "みんな",
+      "あなた",
+      "は",
+      "て",
+      "に"
+    ]
+  },
+  {
+    "id": "4953",
+    "japanese": "「どうして行かないの？」「行きたくないからだよ」",
+    "english": "\"Why aren't you going?\" \"Because I don't want to.\"",
+    "formality": "casual",
+    "length": 24,
+    "kanji_count": 2,
+    "patterns": [
+      "nai"
+    ],
+    "vocab_hits": [
+      "く",
+      "どう",
+      "どうして",
+      "き",
+      "ど"
+    ]
+  },
+  {
+    "id": "4979",
+    "japanese": "電車が停まるまで開けないで。",
+    "english": "Don't open before the train stops.",
+    "formality": "casual",
+    "length": 14,
+    "kanji_count": 4,
+    "patterns": [
+      "nai"
+    ],
+    "vocab_hits": [
+      "車",
+      "電車"
+    ]
+  },
+  {
+    "id": "5010",
+    "japanese": "どれくらいかかるのかしら。",
+    "english": "I wonder how long it's going to take.",
+    "formality": "casual",
+    "length": 13,
+    "kanji_count": 0,
+    "patterns": [],
+    "vocab_hits": [
+      "く",
+      "ど",
+      "くらい",
+      "かかる",
+      "どれ"
+    ]
+  },
+  {
+    "id": "5053",
+    "japanese": "明日会いましょうか？",
+    "english": "We're meeting up tomorrow?",
+    "formality": "casual",
+    "length": 10,
+    "kanji_count": 3,
+    "patterns": [
+      "ka_question"
+    ],
+    "vocab_hits": [
+      "明日",
+      "いま",
+      "し",
+      "か"
+    ]
+  },
+  {
+    "id": "5055",
+    "japanese": "ここから遠いの？",
+    "english": "Is it far from here?",
+    "formality": "casual",
+    "length": 8,
+    "kanji_count": 1,
+    "patterns": [],
+    "vocab_hits": [
+      "遠い",
+      "ここ",
+      "こ",
+      "か"
+    ]
+  },
+  {
+    "id": "5057",
+    "japanese": "ありがとう、それだけだよ。",
+    "english": "Thanks, that's all.",
+    "formality": "casual",
+    "length": 13,
+    "kanji_count": 0,
+    "patterns": [],
+    "vocab_hits": [
+      "それ",
+      "あ",
+      "と",
+      "ありがとう"
+    ]
+  },
+  {
+    "id": "5061",
+    "japanese": "あなたの名前は？",
+    "english": "What is your name?",
+    "formality": "casual",
+    "length": 8,
+    "kanji_count": 2,
+    "patterns": [
+      "particle_wa"
+    ],
+    "vocab_hits": [
+      "あなた",
+      "は",
+      "名前",
+      "あ",
+      "前"
+    ]
+  },
+  {
+    "id": "5066",
+    "japanese": "シャワーはどこですか。",
+    "english": "Where are the showers?",
+    "formality": "formal",
+    "length": 11,
+    "kanji_count": 0,
+    "patterns": [
+      "desu_masu",
+      "ka_question",
+      "particle_wa"
+    ],
+    "vocab_hits": [
+      "シャワー",
+      "どこ",
+      "は",
+      "ど",
+      "こ"
+    ]
+  },
+  {
+    "id": "5067",
+    "japanese": "口を開けてください！",
+    "english": "Open your mouth!",
+    "formality": "casual",
+    "length": 10,
+    "kanji_count": 2,
+    "patterns": [
+      "kudasai",
+      "particle_wo"
+    ],
+    "vocab_hits": [
+      "く",
+      "さい",
+      "て",
+      "ください",
+      "口"
+    ]
+  },
+  {
+    "id": "5069",
+    "japanese": "財布をなくしたの。",
+    "english": "I have lost my wallet.",
+    "formality": "casual",
+    "length": 9,
+    "kanji_count": 2,
+    "patterns": [
+      "particle_wo"
+    ],
+    "vocab_hits": [
+      "く",
+      "なく",
+      "した",
+      "財布",
+      "し"
+    ]
+  },
+  {
+    "id": "5078",
+    "japanese": "おいくつですか？",
+    "english": "How old are you?",
+    "formality": "formal",
+    "length": 8,
+    "kanji_count": 0,
+    "patterns": [
+      "desu_masu",
+      "ka_question"
+    ],
+    "vocab_hits": [
+      "く",
+      "いくつ",
+      "お",
+      "つ",
+      "いく"
+    ]
+  },
+  {
+    "id": "5092",
+    "japanese": "今日はとても暑い。",
+    "english": "It is very hot today.",
+    "formality": "casual",
+    "length": 9,
+    "kanji_count": 3,
+    "patterns": [
+      "particle_wa"
+    ],
+    "vocab_hits": [
+      "とても",
+      "は",
+      "て",
+      "今日",
+      "と"
+    ]
+  },
+  {
+    "id": "5093",
+    "japanese": "誰も来なかった。",
+    "english": "Nobody came.",
+    "formality": "casual",
+    "length": 8,
+    "kanji_count": 2,
+    "patterns": [
+      "ta"
+    ],
+    "vocab_hits": [
+      "なか",
+      "誰",
+      "か"
+    ]
+  },
+  {
+    "id": "5109",
+    "japanese": "もっとゆっくり話してください！",
+    "english": "Speak more slowly, please!",
+    "formality": "casual",
+    "length": 15,
+    "kanji_count": 1,
+    "patterns": [
+      "kudasai"
+    ],
+    "vocab_hits": [
+      "く",
+      "さい",
+      "話",
+      "て",
+      "ゆっくり"
+    ]
+  },
+  {
+    "id": "5111",
+    "japanese": "いつ着くの？",
+    "english": "When do we arrive?",
+    "formality": "casual",
+    "length": 6,
+    "kanji_count": 1,
+    "patterns": [],
+    "vocab_hits": [
+      "く",
+      "着く",
+      "つ",
+      "いつ"
+    ]
+  },
+  {
+    "id": "5115",
+    "japanese": "電話はどこでできる？",
+    "english": "Where can one make a phone call?",
+    "formality": "casual",
+    "length": 10,
+    "kanji_count": 2,
+    "patterns": [
+      "particle_wa"
+    ],
+    "vocab_hits": [
+      "できる",
+      "話",
+      "き",
+      "どこ",
+      "は"
+    ]
+  },
+  {
+    "id": "5155",
+    "japanese": "私は結婚していて子どもが二人いる。",
+    "english": "I am married and have two children.",
+    "formality": "casual",
+    "length": 17,
+    "kanji_count": 6,
+    "patterns": [
+      "particle_wa"
+    ],
+    "vocab_hits": [
+      "人",
+      "結婚",
+      "二人",
+      "は",
+      "ど"
+    ]
+  },
+  {
+    "id": "5159",
+    "japanese": "あなた私が誰か知らないのね。",
+    "english": "You don't know who I am.",
+    "formality": "casual",
+    "length": 14,
+    "kanji_count": 3,
+    "patterns": [
+      "nai"
+    ],
+    "vocab_hits": [
+      "あなた",
+      "あ",
+      "誰",
+      "私",
+      "か"
+    ]
+  },
+  {
+    "id": "5162",
+    "japanese": "私は服を脱いでいる。",
+    "english": "I'm undressing.",
+    "formality": "casual",
+    "length": 10,
+    "kanji_count": 3,
+    "patterns": [
+      "particle_wa",
+      "particle_wo"
+    ],
+    "vocab_hits": [
+      "服",
+      "は",
+      "いる",
+      "私"
+    ]
+  },
+  {
+    "id": "5194",
+    "japanese": "私は誰と話しているの？",
+    "english": "Who am I talking with?",
+    "formality": "casual",
+    "length": 11,
+    "kanji_count": 3,
+    "patterns": [
+      "teiru",
+      "particle_wa"
+    ],
+    "vocab_hits": [
+      "話",
+      "は",
+      "て",
+      "いる",
+      "と"
+    ]
+  },
+  {
+    "id": "5210",
+    "japanese": "学校へ行きたくない。",
+    "english": "I don't want to go to school.",
+    "formality": "casual",
+    "length": 10,
+    "kanji_count": 3,
+    "patterns": [
+      "nai"
+    ],
+    "vocab_hits": [
+      "く",
+      "き",
+      "学校",
+      "きた"
+    ]
+  },
+  {
+    "id": "5212",
+    "japanese": "雨が降っている。",
+    "english": "It is raining.",
+    "formality": "casual",
+    "length": 8,
+    "kanji_count": 2,
+    "patterns": [
+      "teiru"
+    ],
+    "vocab_hits": [
+      "雨",
+      "て",
+      "いる"
+    ]
+  },
+  {
+    "id": "5220",
+    "japanese": "毎日お昼ご飯を作っているよ。",
+    "english": "I make lunch every day.",
+    "formality": "casual",
+    "length": 14,
+    "kanji_count": 5,
+    "patterns": [
+      "teiru",
+      "particle_wo"
+    ],
+    "vocab_hits": [
+      "昼",
+      "て",
+      "お",
+      "いる",
+      "毎日"
+    ]
+  },
+  {
+    "id": "5221",
+    "japanese": "今朝テレビを見ました。",
+    "english": "I watched TV this morning.",
+    "formality": "casual",
+    "length": 11,
+    "kanji_count": 3,
+    "patterns": [
+      "desu_masu",
+      "ta",
+      "particle_wo"
+    ],
+    "vocab_hits": [
+      "した",
+      "今",
+      "朝",
+      "テレビ",
+      "今朝"
+    ]
+  },
+  {
+    "id": "5231",
+    "japanese": "私の弟はテレビを見ている。",
+    "english": "My little brother is watching TV.",
+    "formality": "casual",
+    "length": 13,
+    "kanji_count": 3,
+    "patterns": [
+      "teiru",
+      "particle_wa",
+      "particle_wo"
+    ],
+    "vocab_hits": [
+      "は",
+      "て",
+      "いる",
+      "私",
+      "弟"
+    ]
+  },
+  {
+    "id": "5272",
+    "japanese": "飴がほしい。",
+    "english": "I want a piece of candy.",
+    "formality": "casual",
+    "length": 6,
+    "kanji_count": 1,
+    "patterns": [],
+    "vocab_hits": [
+      "ほしい",
+      "飴",
+      "し"
+    ]
+  },
+  {
+    "id": "5275",
+    "japanese": "学校は好きじゃない。",
+    "english": "I don't like school.",
+    "formality": "casual",
+    "length": 10,
+    "kanji_count": 3,
+    "patterns": [
+      "nai",
+      "particle_wa"
+    ],
+    "vocab_hits": [
+      "じゃ",
+      "好き",
+      "き",
+      "は",
+      "じ"
+    ]
+  },
+  {
+    "id": "5319",
+    "japanese": "どこにいますか？",
+    "english": "Where are you?",
+    "formality": "formal",
+    "length": 8,
+    "kanji_count": 0,
+    "patterns": [
+      "desu_masu",
+      "ka_question",
+      "particle_ni"
+    ],
+    "vocab_hits": [
+      "どこ",
+      "ど",
+      "に",
+      "いま",
+      "こ"
+    ]
+  },
+  {
+    "id": "5320",
+    "japanese": "どこに行きますか？",
+    "english": "Where are you going to?",
+    "formality": "formal",
+    "length": 9,
+    "kanji_count": 1,
+    "patterns": [
+      "desu_masu",
+      "ka_question",
+      "particle_ni"
+    ],
+    "vocab_hits": [
+      "き",
+      "どこ",
+      "ど",
+      "に",
+      "こ"
+    ]
+  }
+]

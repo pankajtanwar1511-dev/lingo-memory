@@ -1,0 +1,91 @@
+BATCH 3 VALIDATION SUMMARY
+======================================================================
+
+OVERALL STATISTICS:
+  Total candidates: 99
+  N5 compliant: 0 (0.0%)
+  Avg quality score: 0.487
+  Avg difficulty: 6.4
+
+BY PATTERN:
+----------------------------------------------------------------------
+
+あとで:
+  Total: 24
+  N5 compliant: 0 (0.0%)
+  Top 5 candidates:
+    1. [❌] 私は勉強をしたあとで寝ます。 (Q:0.60 D:5)
+       I go to bed after I study.
+       Non-N5: 為る, 後
+    2. [❌] 私が出かけたあとで彼がついた。 (Q:0.60 D:5)
+       He arrived after I had left.
+       Non-N5: 出掛ける, 後, 付く
+    3. [❌] 仕事をしたあとで外出した。 (Q:0.60 D:5)
+       Having done his work, he went out.
+       Non-N5: 為る, 後, 外出, 為る
+    4. [❌] 今日またあとで君に電話するよ。 (Q:0.60 D:5)
+       I'll give you a ring later today.
+       Non-N5: 又, 後, 為る
+    5. [❌] 今、努力しなさい。さもないとあとで後悔しますよ。 (Q:0.60 D:6)
+       Try now, or you will be sorry for it later.
+       Non-N5: 為る, 為さる, 然も, 無い, 後, 後悔, 為る
+
+ている:
+  Total: 27
+  N5 compliant: 0 (0.0%)
+  Top 5 candidates:
+    1. [❌] 君は僕にとてもいらいらしている。 (Q:0.60 D:5)
+       You're so impatient with me.
+       Non-N5: 迚も, 苛々, 為る, 居る
+    2. [❌] 君はただ人生の問題から逃げているだけだよ。 (Q:0.60 D:6)
+       You're just running away from life's problems.
+       Non-N5: 唯, 人生, 居る
+    3. [❌] 謝罪はあったにせよ、私はまだ彼に腹を立てている。 (Q:0.60 D:6)
+       Even though he apologized, I'm still furious.
+       Non-N5: 謝罪, 有る, 為る, 未だ, 腹, 立てる, 居る
+    4. [❌] 理論的には、私は数学をしている。 (Q:0.60 D:6)
+       Theoretically, I'm doing math.
+       Non-N5: 理論, 為る, 居る
+    5. [❌] 「電話が鳴っているよ」「私が出ます」 (Q:0.60 D:6)
+       "The phone is ringing." "I'll get it."
+       Non-N5: 鳴る, 居る
+
+てから:
+  Total: 24
+  N5 compliant: 0 (0.0%)
+  Top 5 candidates:
+    1. [❌] 馬が亡くなってから鞍が淋しい。 (Q:0.60 D:6)
+       It's lonely in the saddle since the horse died.
+       Non-N5: 亡くなる, 鞍
+    2. [❌] あなたは私が出発してから到着した。 (Q:0.60 D:6)
+       You arrived at the moment I left.
+       Non-N5: 出発, 為る, 到着, 為る
+    3. [❌] 約束してから彼を訪問すべきだ。 (Q:0.60 D:6)
+       You should visit him by appointment.
+       Non-N5: 為る, 訪問, 為る
+    4. [❌] 戻ってきてから、目を通すから。 (Q:0.60 D:5)
+       I'll look it over after I come back.
+       Non-N5: 戻る, 通す
+    5. [❌] 妹が結婚してから３年になる。 (Q:0.60 D:5)
+       It is three years since my sister got married.
+       Non-N5: 結婚, 為る, ３, 成る
+
+とき:
+  Total: 24
+  N5 compliant: 0 (0.0%)
+  Top 5 candidates:
+    1. [❌] 誰かが亡くなったときは悲しいものだよ。 (Q:0.60 D:6)
+       It's a pity when somebody dies.
+       Non-N5: 亡くなる
+    2. [❌] 私が話しているときは私を見て！ (Q:0.60 D:6)
+       Look at me when I talk to you!
+       Non-N5: 居る
+    3. [❌] 最近寝てるときにこむらがえりを起こします。 (Q:0.60 D:6)
+       Recently I get leg cramps when I sleep.
+       Non-N5: 最近, 腓返り, 起こす
+    4. [❌] 留学中に鬱になったときはどうすれば？ (Q:0.60 D:6)
+       What should I do if I become depressed while studying abroad?
+       Non-N5: 留学, 鬱, 成る, 為る
+    5. [❌] 俺が気づいたとき、俺は車の中にいた。 (Q:0.60 D:6)
+       When I woke up, I was in the car.
+       Non-N5: 気付く, 居る

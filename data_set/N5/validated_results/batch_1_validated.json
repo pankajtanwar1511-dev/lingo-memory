@@ -1,0 +1,8059 @@
+[
+  {
+    "tatoeba_id": "4733",
+    "japanese": "長い目で見れば違ってくると思います。",
+    "english": "I suppose it's different when you think about it over the long term.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": true,
+    "non_n5_words": [],
+    "n5_words_found": [
+      "長い",
+      "目",
+      "見る",
+      "違う",
+      "来る",
+      "思う"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:18(5) K:5(5) G:S4(8) W:12(8)",
+    "length": 18,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.85,
+    "rank": 1
+  },
+  {
+    "tatoeba_id": "4726",
+    "japanese": "私は一日に100ユーロ稼ぎます。",
+    "english": "I make €100 a day.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "一日",
+      "100",
+      "ユーロ-Euro",
+      "稼ぐ"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:16(5) K:4(5) G:S1(2) W:9(6)",
+    "length": 16,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 2
+  },
+  {
+    "tatoeba_id": "5030",
+    "japanese": "あなたに不満があります。",
+    "english": "I have a bone to pick with you.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "不満",
+      "有る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:12(3) K:2(3) G:S2(4) W:7(4)",
+    "length": 12,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 3
+  },
+  {
+    "tatoeba_id": "5276",
+    "japanese": "明日授業があります。",
+    "english": "I have class tomorrow.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "有る"
+    ],
+    "n5_words_found": [
+      "明日",
+      "授業"
+    ],
+    "difficulty": 4,
+    "difficulty_explanation": "L:10(3) K:4(5) G:S1(2) W:6(4)",
+    "length": 10,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 4
+  },
+  {
+    "tatoeba_id": "5334",
+    "japanese": "すぐに伝票をお持ちします。",
+    "english": "I'll bring you the bill immediately.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "直ぐ",
+      "伝票",
+      "為る"
+    ],
+    "n5_words_found": [
+      "持つ"
+    ],
+    "difficulty": 3,
+    "difficulty_explanation": "L:13(3) K:3(3) G:S1(2) W:9(6)",
+    "length": 13,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 5
+  },
+  {
+    "tatoeba_id": "74529",
+    "japanese": "こんな時は、迎え酒に限ります。",
+    "english": "In times like this, there's nothing like a hair of the dog.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "迎え酒",
+      "限る"
+    ],
+    "n5_words_found": [
+      "時"
+    ],
+    "difficulty": 4,
+    "difficulty_explanation": "L:15(5) K:4(5) G:S1(2) W:9(6)",
+    "length": 15,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 6
+  },
+  {
+    "tatoeba_id": "74555",
+    "japanese": "妻の乾咳が気になります。",
+    "english": "I'm concerned about my wife's hacking cough.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "妻",
+      "空咳",
+      "気",
+      "成る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:12(3) K:4(5) G:S2(4) W:9(6)",
+    "length": 12,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 7
+  },
+  {
+    "tatoeba_id": "74614",
+    "japanese": "カップケーキ型に、ペーパーカップを並べます。",
+    "english": "Set up paper cups in the cupcake baking tray.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "カップ-cup",
+      "ケーキ-cake",
+      "ペーパー-paper",
+      "カップ-cup"
+    ],
+    "n5_words_found": [
+      "並べる"
+    ],
+    "difficulty": 4,
+    "difficulty_explanation": "L:22(7) K:2(3) G:S1(2) W:11(6)",
+    "length": 22,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 8
+  },
+  {
+    "tatoeba_id": "74827",
+    "japanese": "誰か英語を話す人はいますか。",
+    "english": "Is there an English speaker here?",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "居る"
+    ],
+    "n5_words_found": [
+      "英語",
+      "話す",
+      "人"
+    ],
+    "difficulty": 4,
+    "difficulty_explanation": "L:14(3) K:5(5) G:S1(2) W:11(6)",
+    "length": 14,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 9
+  },
+  {
+    "tatoeba_id": "74850",
+    "japanese": "彼はいつも物々しい話し方をします。",
+    "english": "He always talks in such high-sounding terms.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "物々しい",
+      "為る"
+    ],
+    "n5_words_found": [
+      "話す"
+    ],
+    "difficulty": 4,
+    "difficulty_explanation": "L:17(5) K:4(5) G:S1(2) W:11(6)",
+    "length": 17,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 10
+  },
+  {
+    "tatoeba_id": "74905",
+    "japanese": "急ぎません。ゆっくりお願いします。",
+    "english": "There's no rush. If you would, in your own time.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "急ぐ",
+      "願う",
+      "為る"
+    ],
+    "n5_words_found": [
+      "ゆっくり"
+    ],
+    "difficulty": 4,
+    "difficulty_explanation": "L:17(5) K:2(3) G:S2(4) W:10(6)",
+    "length": 17,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 11
+  },
+  {
+    "tatoeba_id": "74996",
+    "japanese": "風がまだ強く吹きます。",
+    "english": "The wind still blows hard.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "未だ",
+      "吹く"
+    ],
+    "n5_words_found": [
+      "風",
+      "強い"
+    ],
+    "difficulty": 3,
+    "difficulty_explanation": "L:11(3) K:3(3) G:S1(2) W:7(4)",
+    "length": 11,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 12
+  },
+  {
+    "tatoeba_id": "75873",
+    "japanese": "虫の音がきこえます。",
+    "english": "I can hear the chirping of insects.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "聞こえる"
+    ],
+    "n5_words_found": [
+      "虫",
+      "音"
+    ],
+    "difficulty": 4,
+    "difficulty_explanation": "L:10(3) K:2(3) G:S2(4) W:7(4)",
+    "length": 10,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 13
+  },
+  {
+    "tatoeba_id": "76128",
+    "japanese": "最大１０名でテーブルを囲えます。",
+    "english": "At most 10 people can sit round the table.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "最大",
+      "テン-ten",
+      "名",
+      "テーブル-table",
+      "囲う"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:16(5) K:4(5) G:S1(2) W:9(6)",
+    "length": 16,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 14
+  },
+  {
+    "tatoeba_id": "76266",
+    "japanese": "勘定書をお願いします。",
+    "english": "The check, please.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "勘定",
+      "願う",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:11(3) K:4(5) G:S1(2) W:8(6)",
+    "length": 11,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 15
+  },
+  {
+    "tatoeba_id": "76476",
+    "japanese": "パンダは竹林にすんでいます。",
+    "english": "Pandas live in bamboo thickets.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "パンダ-panda",
+      "竹林",
+      "済む",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 3,
+    "difficulty_explanation": "L:14(3) K:2(3) G:S1(2) W:9(6)",
+    "length": 14,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 16
+  },
+  {
+    "tatoeba_id": "76702",
+    "japanese": "ご冥福をお祈りします。",
+    "english": "May his soul rest in peace.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "冥福",
+      "祈る",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 3,
+    "difficulty_explanation": "L:11(3) K:3(3) G:S1(2) W:8(6)",
+    "length": 11,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 17
+  },
+  {
+    "tatoeba_id": "4971",
+    "japanese": "ありがとうございます！",
+    "english": "Thank you very much!",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "有り難う",
+      "御座る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:11(3) K:0(1) G:S4(8) W:4(2)",
+    "length": 11,
+    "kanji_count": 0,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 18
+  },
+  {
+    "tatoeba_id": "5025",
+    "japanese": "ブラウンさんをお願いします。",
+    "english": "May I talk to Ms. Brown?",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ブラウン-Brown",
+      "願う",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 3,
+    "difficulty_explanation": "L:14(3) K:1(3) G:S1(2) W:8(6)",
+    "length": 14,
+    "kanji_count": 1,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 19
+  },
+  {
+    "tatoeba_id": "74260",
+    "japanese": "安価な簡易住宅を提供します。",
+    "english": "We offer low-cost prefabricated houses.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "住宅",
+      "提供",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:14(3) K:8(7) G:S1(2) W:9(6)",
+    "length": 14,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 20
+  },
+  {
+    "tatoeba_id": "75537",
+    "japanese": "３０ユーロになります。",
+    "english": "This will cost €30.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "３０",
+      "ユーロ-Euro",
+      "成る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 3,
+    "difficulty_explanation": "L:11(3) K:0(1) G:S1(2) W:6(4)",
+    "length": 11,
+    "kanji_count": 0,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 21
+  },
+  {
+    "tatoeba_id": "76495",
+    "japanese": "ニューススタンドで買えますよ。",
+    "english": "You can buy it at newsstands.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ニュース-news",
+      "スタンド-stand"
+    ],
+    "n5_words_found": [
+      "買う"
+    ],
+    "difficulty": 4,
+    "difficulty_explanation": "L:15(5) K:1(3) G:S2(4) W:7(4)",
+    "length": 15,
+    "kanji_count": 1,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 22
+  },
+  {
+    "tatoeba_id": "5112",
+    "japanese": "勘定お願いします。",
+    "english": "The check, please.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "勘定",
+      "願う",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 3,
+    "difficulty_explanation": "L:9(1) K:3(3) G:S1(2) W:6(4)",
+    "length": 9,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.5499999999999999,
+    "rank": 23
+  },
+  {
+    "tatoeba_id": "77063",
+    "japanese": "雹が降っています。",
+    "english": "It's hailing.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "雹",
+      "降る",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:9(1) K:2(3) G:S3(6) W:7(4)",
+    "length": 9,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.5499999999999999,
+    "rank": 24
+  },
+  {
+    "tatoeba_id": "4709",
+    "japanese": "すぐに戻ります。",
+    "english": "I will be back soon.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "直ぐ",
+      "戻る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 3,
+    "difficulty_explanation": "L:8(1) K:1(3) G:S1(2) W:5(4)",
+    "length": 8,
+    "kanji_count": 1,
+    "pattern_verified": true,
+    "quality_score": 0.52,
+    "rank": 25
+  },
+  {
+    "tatoeba_id": "4731",
+    "japanese": "あなたの勉強を邪魔しないようにします。",
+    "english": "I'll do my best not to disturb your studying.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "邪魔",
+      "為る",
+      "為る"
+    ],
+    "n5_words_found": [
+      "勉強"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:19(5) K:4(5) G:S4(8) W:12(8)",
+    "length": 19,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 26
+  },
+  {
+    "tatoeba_id": "4736",
+    "japanese": "明日帰ったら電話します。",
+    "english": "I'll call them tomorrow when I come back.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "返る",
+      "為る"
+    ],
+    "n5_words_found": [
+      "明日",
+      "電話"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:12(3) K:5(5) G:S4(8) W:7(4)",
+    "length": 12,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 27
+  },
+  {
+    "tatoeba_id": "4750",
+    "japanese": "彼は私を蹴っています！",
+    "english": "He's kicking me!",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "蹴る",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:11(3) K:3(3) G:S3(6) W:9(6)",
+    "length": 11,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 28
+  },
+  {
+    "tatoeba_id": "4989",
+    "japanese": "あなたが駅に着くのにどのくらいかかりますか。",
+    "english": "How long does it take to get to the station?",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "着く",
+      "掛かる"
+    ],
+    "n5_words_found": [
+      "駅"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:22(7) K:2(3) G:S2(4) W:13(8)",
+    "length": 22,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 29
+  },
+  {
+    "tatoeba_id": "5150",
+    "japanese": "ジュネーブから来る列車が駅に到着します。",
+    "english": "The train from Geneva will arrive at the station.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ジュネーブ-Geneve",
+      "列車",
+      "到着",
+      "為る"
+    ],
+    "n5_words_found": [
+      "来る",
+      "駅"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:20(7) K:6(5) G:S3(6) W:11(6)",
+    "length": 20,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 30
+  },
+  {
+    "tatoeba_id": "5181",
+    "japanese": "うれしさで舞い上がっています。",
+    "english": "I'm beside myself with joy.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "舞い上がる",
+      "居る"
+    ],
+    "n5_words_found": [
+      "嬉しい"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:15(5) K:2(3) G:S4(8) W:8(6)",
+    "length": 15,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 31
+  },
+  {
+    "tatoeba_id": "6010",
+    "japanese": "公園を散歩しています。",
+    "english": "I'm taking a walk in a park.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "公園",
+      "散歩"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:11(3) K:4(5) G:S3(6) W:8(6)",
+    "length": 11,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 32
+  },
+  {
+    "tatoeba_id": "6021",
+    "japanese": "日曜日でも、働きます。",
+    "english": "I work even on Sunday.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "日曜"
+    ],
+    "n5_words_found": [
+      "日",
+      "働く"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:11(3) K:4(5) G:S5(10) W:8(6)",
+    "length": 11,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 33
+  },
+  {
+    "tatoeba_id": "74013",
+    "japanese": "そちら様のお電話番号をいただけますか。",
+    "english": "May I please have your telephone number?",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "番号",
+      "頂く"
+    ],
+    "n5_words_found": [
+      "電話"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:19(5) K:5(5) G:S2(4) W:11(6)",
+    "length": 19,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 34
+  },
+  {
+    "tatoeba_id": "74067",
+    "japanese": "非会員は50ドル増しとなります。",
+    "english": "Non-members pay an additional 50 dollars.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "会員",
+      "50",
+      "ドル-dollar",
+      "増し",
+      "成る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:16(5) K:4(5) G:S2(4) W:10(6)",
+    "length": 16,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 35
+  },
+  {
+    "tatoeba_id": "74188",
+    "japanese": "ムクドリのヒナを親鳥に返せますか。",
+    "english": "Can you return starling chicks to their parents?",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "椋鳥",
+      "雛",
+      "親鳥"
+    ],
+    "n5_words_found": [
+      "返す"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:17(5) K:3(3) G:S2(4) W:10(6)",
+    "length": 17,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 36
+  },
+  {
+    "tatoeba_id": "74189",
+    "japanese": "最近寝てるときにこむらがえりを起こします。",
+    "english": "Recently I get leg cramps when I sleep.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "最近",
+      "腓返り",
+      "起こす"
+    ],
+    "n5_words_found": [
+      "寝る",
+      "時"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:21(7) K:4(5) G:S3(6) W:10(6)",
+    "length": 21,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 37
+  },
+  {
+    "tatoeba_id": "74208",
+    "japanese": "人物画を描けるスクールを探しています。",
+    "english": "I'm looking for a school where I can paint portraits.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "人物",
+      "画",
+      "描く",
+      "スクール-school",
+      "居る"
+    ],
+    "n5_words_found": [
+      "探す"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:19(5) K:5(5) G:S3(6) W:11(6)",
+    "length": 19,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 38
+  },
+  {
+    "tatoeba_id": "74297",
+    "japanese": "私の駄文を見ていただきありがとうございます。",
+    "english": "Thank you for looking at my poor scribblings.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "駄文",
+      "頂く",
+      "有り難う",
+      "御座る"
+    ],
+    "n5_words_found": [
+      "見る"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:22(7) K:4(5) G:S4(8) W:11(6)",
+    "length": 22,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 39
+  },
+  {
+    "tatoeba_id": "74321",
+    "japanese": "皆さんは、モラルを大切にしていますか。",
+    "english": "Do you all place great importance on morals?",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "皆",
+      "モラル-moral",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:19(5) K:3(3) G:S3(6) W:14(8)",
+    "length": 19,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 40
+  },
+  {
+    "tatoeba_id": "74331",
+    "japanese": "いわゆる裏方仕事もたくさんあります。",
+    "english": "There's also a great deal of so called behind-the-scenes work.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "裏方",
+      "有る"
+    ],
+    "n5_words_found": [
+      "仕事",
+      "沢山"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:18(5) K:4(5) G:S2(4) W:8(6)",
+    "length": 18,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 41
+  },
+  {
+    "tatoeba_id": "74340",
+    "japanese": "トピ主さんが親思いの娘さんであることはわかります。",
+    "english": "I can tell that you're a daughter who cares much for your parents.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "トピ",
+      "主",
+      "親思い",
+      "娘",
+      "有る",
+      "分かる"
+    ],
+    "n5_words_found": [
+      "事"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:25(7) K:4(5) G:S2(4) W:15(10)",
+    "length": 25,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 42
+  },
+  {
+    "tatoeba_id": "74447",
+    "japanese": "画像をクリックすると次ページへ移ります！",
+    "english": "Click the picture to go to the next page!",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "画像",
+      "クリック-click",
+      "為る",
+      "次",
+      "ページ-page",
+      "移る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:20(7) K:4(5) G:S2(4) W:11(6)",
+    "length": 20,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 43
+  },
+  {
+    "tatoeba_id": "74495",
+    "japanese": "最近、以前からある痔が痛みます。",
+    "english": "Recently my haemorrhoids, which I've had from before, are painful.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "最近",
+      "以前",
+      "痔",
+      "痛む"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:16(5) K:6(5) G:S3(6) W:10(6)",
+    "length": 16,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 44
+  },
+  {
+    "tatoeba_id": "74581",
+    "japanese": "熱が出るとひきつけを起こすことがあります。",
+    "english": "Convulsions can occur when they run a fever.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "引き付ける",
+      "起こす",
+      "有る"
+    ],
+    "n5_words_found": [
+      "熱",
+      "出る",
+      "事"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:21(7) K:3(3) G:S2(4) W:12(8)",
+    "length": 21,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 45
+  },
+  {
+    "tatoeba_id": "74624",
+    "japanese": "ソレノイドへの突入電流でノイズが発生します。",
+    "english": "Noise is produced by the sudden flow of current into a solenoid.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ソレノイド-solenoid",
+      "突入",
+      "電流",
+      "ノイズ-noise",
+      "発生",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:22(7) K:6(5) G:S2(4) W:12(8)",
+    "length": 22,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 46
+  },
+  {
+    "tatoeba_id": "74635",
+    "japanese": "今、キーボードがダブって見えるぐらい酔ってます。",
+    "english": "I'm so drunk now that I'm seeing two keyboards.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "キーボード-keyboard",
+      "ダブる",
+      "見える",
+      "酔う"
+    ],
+    "n5_words_found": [
+      "今"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:24(7) K:3(3) G:S3(6) W:12(8)",
+    "length": 24,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 47
+  },
+  {
+    "tatoeba_id": "74736",
+    "japanese": "こちらアヤ、こちらアヤ、応答お願いします。",
+    "english": "This is Aya, this is Aya. Please respond.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "文",
+      "文",
+      "応答",
+      "願う",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:21(7) K:3(3) G:S1(2) W:12(8)",
+    "length": 21,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 48
+  },
+  {
+    "tatoeba_id": "75126",
+    "japanese": "ゼラチンは、冷えると固まる性質があります。",
+    "english": "Gelatine has the property of setting as it cools.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ゼラチン-gelatin",
+      "性質",
+      "有る"
+    ],
+    "n5_words_found": [
+      "冷える",
+      "固まる"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:21(7) K:4(5) G:S2(4) W:11(6)",
+    "length": 21,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 49
+  },
+  {
+    "tatoeba_id": "75214",
+    "japanese": "こちらの飲み物は単品となります。",
+    "english": "These drinks are a la carte.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "飲み物",
+      "単品",
+      "成る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:16(5) K:4(5) G:S2(4) W:9(6)",
+    "length": 16,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 50
+  },
+  {
+    "tatoeba_id": "75238",
+    "japanese": "ここが差し込むように痛みます。",
+    "english": "I have a gripping pain here.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "差し込む",
+      "痛む"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:15(5) K:3(3) G:S4(8) W:8(6)",
+    "length": 15,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 51
+  },
+  {
+    "tatoeba_id": "75239",
+    "japanese": "ここが締めつけられるように痛みます。",
+    "english": "I have a gripping pain here.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "締め付ける",
+      "痛む"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:18(5) K:2(3) G:S4(8) W:9(6)",
+    "length": 18,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 52
+  },
+  {
+    "tatoeba_id": "75322",
+    "japanese": "AとBを反応させるとCが生成されます。",
+    "english": "C is formed by reacting A with B.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "A",
+      "B",
+      "反応",
+      "為る",
+      "C",
+      "生成",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:19(5) K:4(5) G:S2(4) W:15(10)",
+    "length": 19,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 53
+  },
+  {
+    "tatoeba_id": "75335",
+    "japanese": "無断キャンセルにはほとほと困っています。",
+    "english": "These cancellations without notice are a real pain.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "無断",
+      "キャンセル-cancel",
+      "ほとほと",
+      "居る"
+    ],
+    "n5_words_found": [
+      "困る"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:20(7) K:3(3) G:S3(6) W:10(6)",
+    "length": 20,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 54
+  },
+  {
+    "tatoeba_id": "75628",
+    "japanese": "ザ・ベストテンにランクインした曲を全て紹介します！",
+    "english": "We introduce you to the entire line up of songs that made it into The Best Ten.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ザ-the",
+      "ベスト-best",
+      "テン-ten",
+      "ランク-rank",
+      "イン-in",
+      "為る",
+      "曲",
+      "紹介",
+      "為る"
+    ],
+    "n5_words_found": [
+      "全て"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:25(7) K:4(5) G:S3(6) W:16(10)",
+    "length": 25,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 55
+  },
+  {
+    "tatoeba_id": "75647",
+    "japanese": "洒落たお帽子をお召しになっていらっしゃいますね。",
+    "english": "That's a stylish hat you are wearing.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "洒落る",
+      "召し",
+      "成る",
+      "いらっしゃる"
+    ],
+    "n5_words_found": [
+      "帽子"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:24(7) K:5(5) G:S3(6) W:14(8)",
+    "length": 24,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 56
+  },
+  {
+    "tatoeba_id": "75736",
+    "japanese": "不束者ですがよろしくお願いします。",
+    "english": "I'm not much good at anything, but please be kind to me.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "不束者",
+      "宜しく",
+      "願う",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:17(5) K:4(5) G:S2(4) W:9(6)",
+    "length": 17,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 57
+  },
+  {
+    "tatoeba_id": "75775",
+    "japanese": "彼は小節を利かして歌っています。",
+    "english": "He is singing with a lot of ornamentation.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "小節",
+      "利かす",
+      "歌う",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:16(5) K:5(5) G:S3(6) W:11(6)",
+    "length": 16,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 58
+  },
+  {
+    "tatoeba_id": "75928",
+    "japanese": "先程のはＰ波でした。Ｓ波が来ます。",
+    "english": "That was the P-wave just now. The S-wave is coming.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "先程",
+      "Ｐ",
+      "Ｓ"
+    ],
+    "n5_words_found": [
+      "来る"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:17(5) K:5(5) G:S2(4) W:14(8)",
+    "length": 17,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 59
+  },
+  {
+    "tatoeba_id": "76050",
+    "japanese": "実はこれで４度目の質問になります。",
+    "english": "Actually this will be my fourth question.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "４",
+      "度",
+      "成る"
+    ],
+    "n5_words_found": [
+      "実",
+      "質問"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:17(5) K:5(5) G:S2(4) W:13(8)",
+    "length": 17,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 60
+  },
+  {
+    "tatoeba_id": "76061",
+    "japanese": "自分でもそれをやってみます。",
+    "english": "I'll do it by myself too.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "自分",
+      "遣る"
+    ],
+    "n5_words_found": [
+      "見る"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:14(3) K:2(3) G:S5(10) W:10(6)",
+    "length": 14,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 61
+  },
+  {
+    "tatoeba_id": "76174",
+    "japanese": "広島に口和というところがあります。",
+    "english": "There's a place called Kuchiwa in Hiroshima.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ヒロシマ",
+      "クチワ",
+      "有る"
+    ],
+    "n5_words_found": [
+      "言う",
+      "所"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:17(5) K:4(5) G:S4(8) W:10(6)",
+    "length": 17,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 62
+  },
+  {
+    "tatoeba_id": "76233",
+    "japanese": "魚は遠火でゆっくり、こんがり焼き上げます。",
+    "english": "The fish is baked slowly till browned over a not-too-close fire.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "遠火",
+      "こんがり",
+      "焼き上げる"
+    ],
+    "n5_words_found": [
+      "魚",
+      "ゆっくり"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:21(7) K:5(5) G:S1(2) W:10(6)",
+    "length": 21,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 63
+  },
+  {
+    "tatoeba_id": "76329",
+    "japanese": "遠距離恋愛をしたことはありますか。",
+    "english": "Have you ever been in a long distance relationship?",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "距離",
+      "恋愛",
+      "為る",
+      "有る"
+    ],
+    "n5_words_found": [
+      "事"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:17(5) K:5(5) G:S2(4) W:12(8)",
+    "length": 17,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 64
+  },
+  {
+    "tatoeba_id": "76556",
+    "japanese": "ちょっと屈めば、アソコがチラチラと見え隠れします。",
+    "english": "If you just crouch a little, her crotch can just be seen flicking in and out of sight.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "一寸",
+      "屈む",
+      "ちらちら",
+      "見え隠れ",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:25(7) K:3(3) G:S4(8) W:12(8)",
+    "length": 25,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 65
+  },
+  {
+    "tatoeba_id": "76615",
+    "japanese": "その土壌は腐植に富んでいます。",
+    "english": "That soil is rich in humus.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "土壌",
+      "腐植",
+      "富む",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:15(5) K:5(5) G:S2(4) W:10(6)",
+    "length": 15,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 66
+  },
+  {
+    "tatoeba_id": "76738",
+    "japanese": "この山を登ればラボに着きます。",
+    "english": "If you climb up this mountain, you'll reach the lab.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "上る",
+      "ラボ-laboratory",
+      "着く"
+    ],
+    "n5_words_found": [
+      "山"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:15(5) K:3(3) G:S4(8) W:10(6)",
+    "length": 15,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 67
+  },
+  {
+    "tatoeba_id": "76810",
+    "japanese": "お祖父さまはお風邪を召していらっしゃいます。",
+    "english": "Grandfather has caught a cold.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "召す",
+      "いらっしゃる"
+    ],
+    "n5_words_found": [
+      "祖父",
+      "風邪"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:22(7) K:5(5) G:S3(6) W:12(8)",
+    "length": 22,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 68
+  },
+  {
+    "tatoeba_id": "77059",
+    "japanese": "（注）画像がリンク切れになっている場合があります。",
+    "english": "NB: Pictures may have become dead links.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "注",
+      "画像",
+      "リンク-link",
+      "切れ",
+      "成る",
+      "居る",
+      "場合",
+      "有る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:25(7) K:6(5) G:S3(6) W:16(10)",
+    "length": 25,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 69
+  },
+  {
+    "tatoeba_id": "77062",
+    "japanese": "雹が降るのを見たことがありますか。",
+    "english": "Have you ever seen it hail?",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "雹",
+      "降る",
+      "有る"
+    ],
+    "n5_words_found": [
+      "見る",
+      "事"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:17(5) K:3(3) G:S2(4) W:13(8)",
+    "length": 17,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 70
+  },
+  {
+    "tatoeba_id": "77068",
+    "japanese": "やがて万物は死に絶えます。",
+    "english": "All things die in time.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "軈て",
+      "万物",
+      "死に絶える"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:13(3) K:4(5) G:S5(10) W:6(4)",
+    "length": 13,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 71
+  },
+  {
+    "tatoeba_id": "4854",
+    "japanese": "おめでとうございます。",
+    "english": "Congratulations!",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "めでたい",
+      "御座る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:11(3) K:0(1) G:S4(8) W:5(4)",
+    "length": 11,
+    "kanji_count": 0,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 72
+  },
+  {
+    "tatoeba_id": "5242",
+    "japanese": "私は自分の仕事を気に入っています。",
+    "english": "I like my job very much.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "自分",
+      "気",
+      "居る"
+    ],
+    "n5_words_found": [
+      "仕事",
+      "入る"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:17(5) K:7(7) G:S3(6) W:13(8)",
+    "length": 17,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 73
+  },
+  {
+    "tatoeba_id": "74097",
+    "japanese": "副作用としては、視力障害があります。",
+    "english": "This has visual impairment as a side effect.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "作用",
+      "為る",
+      "視力",
+      "障害",
+      "有る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:18(5) K:7(7) G:S3(6) W:13(8)",
+    "length": 18,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 74
+  },
+  {
+    "tatoeba_id": "74726",
+    "japanese": "車も何もなく、生活保護で生きてます。",
+    "english": "I'm living on welfare, without a car or anything.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "無い",
+      "生活",
+      "保護",
+      "生きる"
+    ],
+    "n5_words_found": [
+      "車"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:18(5) K:7(7) G:S3(6) W:13(8)",
+    "length": 18,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 75
+  },
+  {
+    "tatoeba_id": "74730",
+    "japanese": "音を吸収する素材のことを吸音材といいます。",
+    "english": "Sound absorbing material is called acoustic material.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "吸収",
+      "為る",
+      "素材",
+      "吸音"
+    ],
+    "n5_words_found": [
+      "音",
+      "事",
+      "言う"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:21(7) K:8(7) G:S2(4) W:14(8)",
+    "length": 21,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 76
+  },
+  {
+    "tatoeba_id": "74780",
+    "japanese": "時々、私の犬は夜中の間に吠えます。",
+    "english": "Sometimes my dog barks in the middle of the night.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "間",
+      "吠える"
+    ],
+    "n5_words_found": [
+      "時々",
+      "犬",
+      "夜中"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:17(5) K:7(7) G:S2(4) W:13(8)",
+    "length": 17,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 77
+  },
+  {
+    "tatoeba_id": "75094",
+    "japanese": "今日はオームの法則に関する実験を行います。",
+    "english": "Today we will carry out an experiment about Ohm's Law.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "オーム-Ohm",
+      "法則",
+      "関する",
+      "実験",
+      "行う"
+    ],
+    "n5_words_found": [
+      "今日"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:21(7) K:8(7) G:S2(4) W:12(8)",
+    "length": 21,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 78
+  },
+  {
+    "tatoeba_id": "75118",
+    "japanese": "なお、危険防止の為、サブアド利用をお奨めします。",
+    "english": "Moreover, for your safety, we advise use of a substitute email address.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "猶",
+      "防止",
+      "為",
+      "サブ-sub",
+      "アド-address",
+      "利用",
+      "勧める",
+      "為る"
+    ],
+    "n5_words_found": [
+      "危険"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:24(7) K:8(7) G:S2(4) W:16(10)",
+    "length": 24,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 79
+  },
+  {
+    "tatoeba_id": "75207",
+    "japanese": "過去の動作については過去形を用います。",
+    "english": "\"Past tense\" is used in connection with actions in the past.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "動作",
+      "つく",
+      "用いる"
+    ],
+    "n5_words_found": [
+      "過去",
+      "過去",
+      "形"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:19(5) K:8(7) G:S3(6) W:13(8)",
+    "length": 19,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 80
+  },
+  {
+    "tatoeba_id": "75430",
+    "japanese": "インドは地域色豊かな食文化があります。",
+    "english": "India has a cuisine rich in regional flavour.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "インド-India",
+      "地域",
+      "食",
+      "有る"
+    ],
+    "n5_words_found": [
+      "色",
+      "文化"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:19(5) K:7(7) G:S1(2) W:12(8)",
+    "length": 19,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 81
+  },
+  {
+    "tatoeba_id": "76285",
+    "japanese": "会社が日中合弁で経営しています。",
+    "english": "The company is operating under joint Sino-Japanese management.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "日中",
+      "合弁",
+      "経営",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "会社"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:16(5) K:8(7) G:S3(6) W:11(6)",
+    "length": 16,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 82
+  },
+  {
+    "tatoeba_id": "76481",
+    "japanese": "はい。これならそらで歌えます。",
+    "english": "Yes. This one I can sing from memory.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "はい",
+      "歌う"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:15(5) K:1(3) G:S4(8) W:9(6)",
+    "length": 15,
+    "kanji_count": 1,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 83
+  },
+  {
+    "tatoeba_id": "5317",
+    "japanese": "私はこのプロジェクトに参加できることを誇りに思います。",
+    "english": "I am proud to be a part of this project.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "プロジェクト-project",
+      "出来る",
+      "誇り"
+    ],
+    "n5_words_found": [
+      "参加",
+      "事",
+      "思う"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:27(7) K:5(5) G:S2(4) W:14(8)",
+    "length": 27,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 84
+  },
+  {
+    "tatoeba_id": "74539",
+    "japanese": "ひどくなると、亀裂が生じたり、断裂することもあります。",
+    "english": "In severe cases, cracks can form or it can snap apart.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "酷い",
+      "成る",
+      "亀裂",
+      "生ずる",
+      "断裂",
+      "為る",
+      "有る"
+    ],
+    "n5_words_found": [
+      "事"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:27(7) K:5(5) G:S2(4) W:16(10)",
+    "length": 27,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 85
+  },
+  {
+    "tatoeba_id": "74606",
+    "japanese": "リプレーする度に彼女の反応にいちいち萌えてしまいます。",
+    "english": "I find myself being enthralled by her reaction each time I replay it.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "リプレー-replay",
+      "為る",
+      "度",
+      "反応",
+      "一々",
+      "萌える",
+      "仕舞う"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:27(7) K:6(5) G:S3(6) W:14(8)",
+    "length": 27,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 86
+  },
+  {
+    "tatoeba_id": "74666",
+    "japanese": "自分と気があわない、いけ好かない、人がいるとします。",
+    "english": "Suppose there's some jerk you just can't get on with.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "自分",
+      "気",
+      "合う",
+      "好く",
+      "居る",
+      "為る"
+    ],
+    "n5_words_found": [
+      "人"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:26(7) K:5(5) G:S2(4) W:18(10)",
+    "length": 26,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 87
+  },
+  {
+    "tatoeba_id": "74837",
+    "japanese": "ウィッチヘーゼルは、乾燥させずに毛穴を引き締めます。",
+    "english": "Witch hazel tightens pores without drying skin.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ウイッチ-witch",
+      "ヘーゼル-hazel",
+      "乾燥",
+      "為る",
+      "毛穴",
+      "引き締める"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:26(7) K:6(5) G:S1(2) W:14(8)",
+    "length": 26,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 88
+  },
+  {
+    "tatoeba_id": "74892",
+    "japanese": "肌にシェーバーを滑らす度に確かに滑らか～な感じがします。",
+    "english": "It certainly feels smooth when you run the shaver over your skin.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "肌",
+      "シェーバー-shaver",
+      "滑らす",
+      "度",
+      "為る"
+    ],
+    "n5_words_found": [
+      "感じ"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:28(7) K:6(5) G:S1(2) W:17(10)",
+    "length": 28,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 89
+  },
+  {
+    "tatoeba_id": "75584",
+    "japanese": "コンタクトすると目が乾いた感じになって、目が赤くなります。",
+    "english": "When I use contacts, my eyes feel dry and become red.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "コンタクト-contact",
+      "為る",
+      "成る",
+      "成る"
+    ],
+    "n5_words_found": [
+      "目",
+      "乾く",
+      "感じ",
+      "目",
+      "赤い"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:29(7) K:5(5) G:S3(6) W:18(10)",
+    "length": 29,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 90
+  },
+  {
+    "tatoeba_id": "75735",
+    "japanese": "不用品を送っていただいた方にもれなくプレゼントいたします。",
+    "english": "Those who send in old junk they don't use anymore will, without exception, receive a present.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "頂く",
+      "方",
+      "漏れる",
+      "プレゼント-present",
+      "致す"
+    ],
+    "n5_words_found": [
+      "送る"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:29(7) K:5(5) G:S3(6) W:15(10)",
+    "length": 29,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 91
+  },
+  {
+    "tatoeba_id": "76932",
+    "japanese": "あ、ごめんなさい。めぐみ。リンスを取っていただけますか。",
+    "english": "Ah, sorry. Megumi, could you get me the conditioner?",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "あっ",
+      "御免",
+      "為さる",
+      "恵み",
+      "リンス-rinse",
+      "頂く"
+    ],
+    "n5_words_found": [
+      "取る"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:28(7) K:1(3) G:S3(6) W:15(10)",
+    "length": 28,
+    "kanji_count": 1,
+    "pattern_verified": true,
+    "quality_score": 0.37,
+    "rank": 92
+  },
+  {
+    "tatoeba_id": "74221",
+    "japanese": "強い乱視はコンタクトレンズのほうが矯正できます。",
+    "english": "Contact lenses are more able to correct strong astigmatism.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "乱視",
+      "コンタクト-contact",
+      "レンズ-lens",
+      "方",
+      "矯正",
+      "出来る"
+    ],
+    "n5_words_found": [
+      "強い"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:24(7) K:5(5) G:S4(8) W:12(8)",
+    "length": 24,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.35,
+    "rank": 93
+  },
+  {
+    "tatoeba_id": "74570",
+    "japanese": "松野の家名をけがすことがないようにお願いしますよ。",
+    "english": "Please don't do anything that would besmirch the Matsuno family name!",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "マツノ",
+      "家名",
+      "無い",
+      "願う",
+      "為る"
+    ],
+    "n5_words_found": [
+      "汚す",
+      "事"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:25(7) K:5(5) G:S4(8) W:16(10)",
+    "length": 25,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.35,
+    "rank": 94
+  },
+  {
+    "tatoeba_id": "74767",
+    "japanese": "全てを考慮してもやはり勝てない仕様になっています。",
+    "english": "All things considered, it's set up so it isn't possible to win.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "考慮",
+      "為る",
+      "矢張り",
+      "勝つ",
+      "仕様",
+      "成る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "全て"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:25(7) K:6(5) G:S5(10) W:16(10)",
+    "length": 25,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.35,
+    "rank": 95
+  },
+  {
+    "tatoeba_id": "74958",
+    "japanese": "でも、私は彼の言うことが分かります。",
+    "english": "But I understand what he says.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "分かる"
+    ],
+    "n5_words_found": [
+      "言う",
+      "事"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:18(5) K:4(5) G:S5(10) W:13(8)",
+    "length": 18,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.35,
+    "rank": 96
+  },
+  {
+    "tatoeba_id": "75502",
+    "japanese": "食べすぎさえしなければ、必ず痩せると思います。",
+    "english": "I think that as long as I don't overeat, I will certainly lose weight.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "為る",
+      "必ず"
+    ],
+    "n5_words_found": [
+      "食べる",
+      "痩せる",
+      "思う"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:23(7) K:4(5) G:S4(8) W:13(8)",
+    "length": 23,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.35,
+    "rank": 97
+  },
+  {
+    "tatoeba_id": "75672",
+    "japanese": "お願いですから犬猫扱いするのやめて貰えますか。",
+    "english": "I'm begging you, could you stop treating me like a pet?",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "願い",
+      "犬猫",
+      "扱い",
+      "為る",
+      "貰う"
+    ],
+    "n5_words_found": [
+      "止める"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:23(7) K:5(5) G:S5(10) W:14(8)",
+    "length": 23,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.35,
+    "rank": 98
+  },
+  {
+    "tatoeba_id": "75844",
+    "japanese": "同じような品がまだ何点かありますよ。",
+    "english": "We've got several more of the same kind of articles.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "品",
+      "未だ",
+      "有る"
+    ],
+    "n5_words_found": [
+      "何",
+      "点"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:18(5) K:4(5) G:S5(10) W:13(8)",
+    "length": 18,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.35,
+    "rank": 99
+  },
+  {
+    "tatoeba_id": "76155",
+    "japanese": "今はフレッドの錯乱が治まって静かに眠っています。",
+    "english": "Fred's agitation has now subsided, and he's sleeping peacefully.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "フレッド-Fred",
+      "錯乱",
+      "収まる",
+      "眠る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "今"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:24(7) K:6(5) G:S3(6) W:15(10)",
+    "length": 24,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.35,
+    "rank": 100
+  },
+  {
+    "tatoeba_id": "76338",
+    "japanese": "雨天なら、山登りは、取りやめます。",
+    "english": "If it's rainy the mountain climbing will be called off.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "雨天",
+      "山登り",
+      "取り止める"
+    ],
+    "n5_words_found": [],
+    "difficulty": 7,
+    "difficulty_explanation": "L:17(5) K:5(5) G:S5(10) W:9(6)",
+    "length": 17,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.35,
+    "rank": 101
+  },
+  {
+    "tatoeba_id": "76369",
+    "japanese": "ルーは、バターと小麦粉を炒めながら作ります。",
+    "english": "Roux is made while cooking flour and butter together.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ルー-外国",
+      "バター-butter",
+      "小麦",
+      "粉",
+      "炒める"
+    ],
+    "n5_words_found": [
+      "作る"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:22(7) K:5(5) G:S5(10) W:13(8)",
+    "length": 22,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.35,
+    "rank": 102
+  },
+  {
+    "tatoeba_id": "76616",
+    "japanese": "その節はよろしくご指導のほどお願いいたします。",
+    "english": "I hope you will favor me with your guidance at that time.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "節",
+      "宜しく",
+      "指導",
+      "程",
+      "願う",
+      "致す"
+    ],
+    "n5_words_found": [],
+    "difficulty": 7,
+    "difficulty_explanation": "L:23(7) K:4(5) G:S5(10) W:13(8)",
+    "length": 23,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.35,
+    "rank": 103
+  },
+  {
+    "tatoeba_id": "76660",
+    "japanese": "ストレスでやけ食いをされる方も多いと思います。",
+    "english": "I think there are many who binge eat from stress.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ストレス-stress",
+      "焼け食い",
+      "為る",
+      "方"
+    ],
+    "n5_words_found": [
+      "多い",
+      "思う"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:23(7) K:4(5) G:S5(10) W:13(8)",
+    "length": 23,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.35,
+    "rank": 104
+  },
+  {
+    "tatoeba_id": "76873",
+    "japanese": "あんな妹達でよければ、ノシをつけてさしあげますよ。",
+    "english": "If those little brats of sisters are good enough I'll make a gift of them to you!",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "熨斗",
+      "差し上げる"
+    ],
+    "n5_words_found": [
+      "妹",
+      "良い",
+      "付ける"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:25(7) K:2(3) G:S4(8) W:15(10)",
+    "length": 25,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.35,
+    "rank": 105
+  },
+  {
+    "tatoeba_id": "5225",
+    "japanese": "私は海の近くに住んでいるのでよく海岸に行きます。",
+    "english": "I live near the sea, so I often get to go to the beach.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "近く",
+      "住む",
+      "居る",
+      "良く",
+      "海岸"
+    ],
+    "n5_words_found": [
+      "海",
+      "行く"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:24(7) K:7(7) G:S3(6) W:17(10)",
+    "length": 24,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.32,
+    "rank": 106
+  },
+  {
+    "tatoeba_id": "74046",
+    "japanese": "結果、雨の日は部屋の中でボール遊びをしています。",
+    "english": "As a result, we play ball inside on rainy days.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ボール-ball",
+      "遊び",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "結果",
+      "雨",
+      "日",
+      "部屋",
+      "中"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:24(7) K:8(7) G:S3(6) W:18(10)",
+    "length": 24,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.32,
+    "rank": 107
+  },
+  {
+    "tatoeba_id": "74255",
+    "japanese": "細菌などから隔離するため、面会謝絶となっています。",
+    "english": "In order to isolate him from bacteria, and such, he is not allowed visitors.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "細菌",
+      "隔離",
+      "為る",
+      "為",
+      "面会",
+      "謝絶",
+      "成る",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 7,
+    "difficulty_explanation": "L:25(7) K:8(7) G:S3(6) W:15(10)",
+    "length": 25,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.32,
+    "rank": 108
+  },
+  {
+    "tatoeba_id": "74280",
+    "japanese": "彼は戦災孤児をひきとって養女として育てています。",
+    "english": "He adopted a war orphan and is bringing her up as a foster daughter.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "戦災",
+      "孤児",
+      "引き取る",
+      "養女",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "育てる"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:24(7) K:8(7) G:S3(6) W:16(10)",
+    "length": 24,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.32,
+    "rank": 109
+  },
+  {
+    "tatoeba_id": "74679",
+    "japanese": "最近、赤ちゃんのアトピー性皮膚炎が増えています。",
+    "english": "Atopic dermatitis has been increasing on babies recently.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "最近",
+      "アトピー-atopy",
+      "皮膚",
+      "居る"
+    ],
+    "n5_words_found": [
+      "赤ちゃん",
+      "増える"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:24(7) K:8(7) G:S3(6) W:14(8)",
+    "length": 24,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.32,
+    "rank": 110
+  },
+  {
+    "tatoeba_id": "74763",
+    "japanese": "それは、人間が哺乳動物であることに由来しています。",
+    "english": "That is because human beings are mammals.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "人間",
+      "哺乳",
+      "有る",
+      "由来",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "動物",
+      "事"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:25(7) K:8(7) G:S3(6) W:17(10)",
+    "length": 25,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.32,
+    "rank": 111
+  },
+  {
+    "tatoeba_id": "75100",
+    "japanese": "カナダのお客様に居酒屋料理をサーブしています。",
+    "english": "I serve pub food to Canadian customers.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "カナダ-Canada",
+      "客",
+      "居酒屋",
+      "サーブ-serve",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "料理"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:23(7) K:7(7) G:S3(6) W:15(10)",
+    "length": 23,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.32,
+    "rank": 112
+  },
+  {
+    "tatoeba_id": "75210",
+    "japanese": "このような場合は“現在時制”を使います。",
+    "english": "We use the present tense for this kind of case.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "場合",
+      "時制"
+    ],
+    "n5_words_found": [
+      "現在",
+      "使う"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:20(7) K:7(7) G:S5(10) W:13(8)",
+    "length": 20,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.32,
+    "rank": 113
+  },
+  {
+    "tatoeba_id": "76055",
+    "japanese": "自分達で考えた企画を実行することができます。",
+    "english": "You can put into practice the plan you thought up.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "自分",
+      "企画",
+      "実行",
+      "為る",
+      "出来る"
+    ],
+    "n5_words_found": [
+      "考える",
+      "事"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:22(7) K:8(7) G:S4(8) W:14(8)",
+    "length": 22,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.32,
+    "rank": 114
+  },
+  {
+    "tatoeba_id": "76953",
+    "japanese": "５８１４を千の位に四捨五入すれば何になりますか。",
+    "english": "What is 5814 rounded to the nearest thousand?",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "５８１４",
+      "位",
+      "四捨",
+      "五入",
+      "為る",
+      "成る"
+    ],
+    "n5_words_found": [
+      "千"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:24(7) K:7(7) G:S4(8) W:16(10)",
+    "length": 24,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.32,
+    "rank": 115
+  },
+  {
+    "tatoeba_id": "5292",
+    "japanese": "これにつきまして、お考えをお聞かせ願えればと存じます。",
+    "english": "I look forward to hearing your thoughts on this matter.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "つく",
+      "願う",
+      "存ずる"
+    ],
+    "n5_words_found": [
+      "考え",
+      "聞く"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:27(7) K:4(5) G:S4(8) W:18(10)",
+    "length": 27,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 116
+  },
+  {
+    "tatoeba_id": "74298",
+    "japanese": "仕事をそつなくこなすことを会社は求めていることはわかります。",
+    "english": "I know companies are looking for work carried out flawlessly.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "そつ",
+      "無い",
+      "熟す",
+      "求める",
+      "居る",
+      "分かる"
+    ],
+    "n5_words_found": [
+      "仕事",
+      "事",
+      "会社",
+      "事"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:30(9) K:5(5) G:S3(6) W:17(10)",
+    "length": 30,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 117
+  },
+  {
+    "tatoeba_id": "74681",
+    "japanese": "ここでは、文字やパスのアウトラインの作成について説明します。",
+    "english": "Here we explain about creating outlines of characters and paths.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "文字",
+      "パス-pass",
+      "アウトライン-outline",
+      "作成",
+      "つく",
+      "為る"
+    ],
+    "n5_words_found": [
+      "説明"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:30(9) K:6(5) G:S5(10) W:18(10)",
+    "length": 30,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 118
+  },
+  {
+    "tatoeba_id": "74841",
+    "japanese": "こういう風に合体すれば、１４ポートのＵＳＢハブになります。",
+    "english": "If you combine them in this way, you get a 14 port USB hub.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "こう",
+      "合体",
+      "為る",
+      "１４",
+      "ポート-port",
+      "ＵＳＢ",
+      "ハブ-have",
+      "成る"
+    ],
+    "n5_words_found": [
+      "言う",
+      "風"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:29(7) K:3(3) G:S4(8) W:17(10)",
+    "length": 29,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 119
+  },
+  {
+    "tatoeba_id": "74947",
+    "japanese": "お楽しみいただけましたら、ポチっと１票お願いいたします！",
+    "english": "If you enjoyed this, please give a click on the vote link!",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "楽しむ",
+      "頂く",
+      "ぽち",
+      "１",
+      "票",
+      "願う",
+      "致す"
+    ],
+    "n5_words_found": [],
+    "difficulty": 7,
+    "difficulty_explanation": "L:28(7) K:3(3) G:S4(8) W:15(10)",
+    "length": 28,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 120
+  },
+  {
+    "tatoeba_id": "75125",
+    "japanese": "ありがとうございました。またのご来店、お待ちしております！",
+    "english": "Thank you for your business. Please come again!",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "有り難う",
+      "御座る",
+      "又",
+      "来店",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "待つ"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:29(7) K:3(3) G:S4(8) W:17(10)",
+    "length": 29,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 121
+  },
+  {
+    "tatoeba_id": "76447",
+    "japanese": "ベニヤ板で十分だとのこと、教えられたとおりベニヤ板で作ることにします。",
+    "english": "Having been informed that plywood is sufficient, I will make it with plywood, as instructed.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ベニヤ-veneer",
+      "板",
+      "通り",
+      "ベニヤ-veneer",
+      "板",
+      "為る"
+    ],
+    "n5_words_found": [
+      "事",
+      "教える",
+      "作る",
+      "事"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:35(9) K:6(5) G:S2(4) W:22(10)",
+    "length": 35,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 122
+  },
+  {
+    "tatoeba_id": "76574",
+    "japanese": "たとえ火の中、水の中。あなたとならば、どこまでもいきます。",
+    "english": "I'll follow you, come hell or high water.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "仮令",
+      "火"
+    ],
+    "n5_words_found": [
+      "中",
+      "水",
+      "中",
+      "行く"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:29(7) K:4(5) G:S5(10) W:20(10)",
+    "length": 29,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 123
+  },
+  {
+    "tatoeba_id": "76890",
+    "japanese": "アメリカは発表するたびに、イラク軍のゲリラ抵抗を「テロ」と呼んでおります。",
+    "english": "In reports in America, guerrilla resistance by the Iraq military is called terrorism.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "アメリカ-America",
+      "発表",
+      "為る",
+      "度",
+      "イラク-Iraq",
+      "軍",
+      "ゲリラ-guerrilla",
+      "抵抗",
+      "テロ-terrorism",
+      "呼ぶ",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:37(9) K:6(5) G:S2(4) W:22(10)",
+    "length": 37,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 124
+  },
+  {
+    "tatoeba_id": "4925",
+    "japanese": "「これはとてもおもしろそうだね」とひろしが言います。",
+    "english": "\"This looks pretty interesting,\" Hiroshi says.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "迚も",
+      "面白い",
+      "ヒロシ"
+    ],
+    "n5_words_found": [
+      "言う"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:26(7) K:1(3) G:S5(10) W:15(10)",
+    "length": 26,
+    "kanji_count": 1,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 125
+  },
+  {
+    "tatoeba_id": "74172",
+    "japanese": "これは遠心力ですがニュートンは絶対運動と見なしています。",
+    "english": "This is centrifugal force; Newton viewed it as absolute motion.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "遠心",
+      "ニュートン-Newton",
+      "見なす",
+      "居る"
+    ],
+    "n5_words_found": [
+      "絶対",
+      "運動"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:28(7) K:8(7) G:S3(6) W:16(10)",
+    "length": 28,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 126
+  },
+  {
+    "tatoeba_id": "74334",
+    "japanese": "さらに、横から見ると、前歯は出っ歯の状態にあります。",
+    "english": "Moreover, when viewed from the side, the front teeth are protruding.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "更に",
+      "前歯",
+      "出歯",
+      "状態",
+      "有る"
+    ],
+    "n5_words_found": [
+      "横",
+      "見る"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:26(7) K:8(7) G:S3(6) W:16(10)",
+    "length": 26,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 127
+  },
+  {
+    "tatoeba_id": "74472",
+    "japanese": "おやおや、食事の途中に席を立つとはマナーに反しますね。",
+    "english": "Oh my, leaving the table in the middle of a meal is bad manners, you know.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "八百屋",
+      "途中",
+      "席",
+      "マナー-manner",
+      "反する"
+    ],
+    "n5_words_found": [
+      "食事",
+      "立つ"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:27(7) K:7(7) G:S5(10) W:18(10)",
+    "length": 27,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 128
+  },
+  {
+    "tatoeba_id": "75130",
+    "japanese": "和食のレストランへ行くたびに、割り箸を家へもって帰ります。",
+    "english": "Whenever I go to a Japanese restaurant, I take the disposable chopsticks home with me.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "和食",
+      "レストラン-restaurant",
+      "度",
+      "割り箸",
+      "返る"
+    ],
+    "n5_words_found": [
+      "行く",
+      "家",
+      "持つ"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:29(7) K:7(7) G:S3(6) W:17(10)",
+    "length": 29,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 129
+  },
+  {
+    "tatoeba_id": "75726",
+    "japanese": "物取りなので、物を盗ったら帰ります。通報したら刺します。",
+    "english": "I'm a thief, I'll go back when I've taken the stuff. Report me and I'll stab you.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "物取り",
+      "返る",
+      "通報",
+      "為る",
+      "差す-他動詞"
+    ],
+    "n5_words_found": [
+      "物",
+      "取る"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:28(7) K:8(7) G:S4(8) W:18(10)",
+    "length": 28,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 130
+  },
+  {
+    "tatoeba_id": "75900",
+    "japanese": "台座に心棒を立てて、各パーツをずらしながら重ねていきます。",
+    "english": "You stand the axis on the base and then proceed to stack up each part, staggering their position.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "台座",
+      "心棒",
+      "立てる",
+      "パーツ-parts",
+      "ずらす",
+      "重ねる"
+    ],
+    "n5_words_found": [
+      "行く"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:29(7) K:7(7) G:S5(10) W:17(10)",
+    "length": 29,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 131
+  },
+  {
+    "tatoeba_id": "76054",
+    "japanese": "七夕は漫画によく出てくるので、私もそこそこ知っています。",
+    "english": "Tanabata comes up in manga a lot so I also know it fairly well.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "七夕",
+      "漫画",
+      "良く",
+      "そこそこ",
+      "居る"
+    ],
+    "n5_words_found": [
+      "出る",
+      "来る",
+      "知る"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:28(7) K:7(7) G:S3(6) W:19(10)",
+    "length": 28,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 132
+  },
+  {
+    "tatoeba_id": "76289",
+    "japanese": "過去問がもしあるならば一応目を通すほうがいいと思います。",
+    "english": "If there are past exam questions then I think it would be best to give them a quick look over.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "若し",
+      "有る",
+      "一応",
+      "通す",
+      "方"
+    ],
+    "n5_words_found": [
+      "過去",
+      "目",
+      "良い",
+      "思う"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:28(7) K:8(7) G:S5(10) W:18(10)",
+    "length": 28,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 133
+  },
+  {
+    "tatoeba_id": "76400",
+    "japanese": "みつなは綺麗好きだから、よく自ら進んで掃除をしています。",
+    "english": "Mitsuna is very tidy so she often cleans up without being asked.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "綱",
+      "良く",
+      "自ら",
+      "進む",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "掃除"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:28(7) K:7(7) G:S3(6) W:19(10)",
+    "length": 28,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 134
+  },
+  {
+    "tatoeba_id": "5314",
+    "japanese": "もし電気がないと、私たちの暮らしがどのようなものになるか想像できますか。",
+    "english": "Can you imagine what our lives would be like without electricity?",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "若し",
+      "電気",
+      "無い",
+      "暮らし",
+      "成る",
+      "想像",
+      "出来る"
+    ],
+    "n5_words_found": [
+      "物"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:36(9) K:6(5) G:S5(10) W:23(10)",
+    "length": 36,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.2,
+    "rank": 135
+  },
+  {
+    "tatoeba_id": "74033",
+    "japanese": "前髪が、おでこにかからないように髪を上げることをおすすめします。",
+    "english": "I recommend putting up your hair so your fringe doesn't get on your forehead.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "前髪",
+      "でこ",
+      "掛かる",
+      "髪",
+      "上げる",
+      "勧める",
+      "為る"
+    ],
+    "n5_words_found": [
+      "事"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:32(9) K:4(5) G:S4(8) W:20(10)",
+    "length": 32,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.2,
+    "rank": 136
+  },
+  {
+    "tatoeba_id": "74359",
+    "japanese": "このブログは情報インフラを中心としたトピックを取り上げています。",
+    "english": "This blog covers topics that centre on information infrastructure.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ブログ-blog",
+      "情報",
+      "インフラ-infrastructure",
+      "中心",
+      "為る",
+      "トピック-topic",
+      "取り上げる",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 7,
+    "difficulty_explanation": "L:32(9) K:6(5) G:S3(6) W:17(10)",
+    "length": 32,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.2,
+    "rank": 137
+  },
+  {
+    "tatoeba_id": "74908",
+    "japanese": "次回につづく、ということで、どうかお付き合いのほど、平にお願いいたします。",
+    "english": "To be continued next time, and thus I most humbly request your attendance then.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "次回",
+      "付き合い",
+      "程",
+      "願う",
+      "致す"
+    ],
+    "n5_words_found": [
+      "続く",
+      "言う",
+      "事",
+      "どう"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:37(9) K:6(5) G:S5(10) W:23(10)",
+    "length": 37,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.2,
+    "rank": 138
+  },
+  {
+    "tatoeba_id": "75229",
+    "japanese": "カンマを入れないようにしたいんだけど、６はカンマがないと不自然な気がします。",
+    "english": "I'd like to do without commas, but 6 feels odd if it doesn't have commas.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "コンマ-comma",
+      "為る",
+      "６",
+      "コンマ-comma",
+      "無い",
+      "気",
+      "為る"
+    ],
+    "n5_words_found": [
+      "入れる"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:38(9) K:5(5) G:S5(10) W:26(10)",
+    "length": 38,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.2,
+    "rank": 139
+  },
+  {
+    "tatoeba_id": "76049",
+    "japanese": "実はビートを食べると、尿がうっすらピンク色をすることがあります。",
+    "english": "Actually if you eat beets your urine may turn a light pink colour.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ビート-beat",
+      "尿",
+      "薄ら",
+      "ピンク-pink",
+      "為る",
+      "有る"
+    ],
+    "n5_words_found": [
+      "実",
+      "食べる",
+      "色",
+      "事"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:32(9) K:4(5) G:S4(8) W:19(10)",
+    "length": 32,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.2,
+    "rank": 140
+  },
+  {
+    "tatoeba_id": "76426",
+    "japanese": "ホワイトニングなどの治療を行います。ヤニ取りなどのクリーニングも行っています。",
+    "english": "We carry out treatments like whitening. We also do tobacco stain removal and other cleaning procedures.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ホワイトニング",
+      "治療",
+      "行う",
+      "脂",
+      "取り",
+      "クリーニング-cleaning",
+      "居る"
+    ],
+    "n5_words_found": [
+      "行く"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:39(9) K:5(5) G:S3(6) W:19(10)",
+    "length": 39,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.2,
+    "rank": 141
+  },
+  {
+    "tatoeba_id": "77036",
+    "japanese": "「このたびはご愁傷さまでございます」とひとことお悔みの挨拶をします。",
+    "english": "Use a brief expression of condolence, such as: \"On this sad occasion we grieve with you\".",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "度",
+      "愁傷",
+      "御座る",
+      "一言",
+      "悔やみ",
+      "挨拶",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 8,
+    "difficulty_explanation": "L:34(9) K:5(5) G:S5(10) W:21(10)",
+    "length": 34,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.2,
+    "rank": 142
+  },
+  {
+    "tatoeba_id": "74026",
+    "japanese": "そして、この遊具には滑り台のデッキに上がる方法がもう一つあります。",
+    "english": "And there is one more method of climbing up to the slide deck.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "そして",
+      "遊具",
+      "滑り台",
+      "デッキ-deck",
+      "上がる",
+      "有る"
+    ],
+    "n5_words_found": [
+      "方法",
+      "もう",
+      "一"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:33(9) K:8(7) G:S4(8) W:19(10)",
+    "length": 33,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 143
+  },
+  {
+    "tatoeba_id": "74222",
+    "japanese": "普通、アマチュアでは250ヤード飛べばすごい飛距離だと言われます。",
+    "english": "Normally you'd call 250 yards a great distance for an amateur.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "普通",
+      "アマチュア-amateur",
+      "250",
+      "ヤード-yard",
+      "飛ぶ",
+      "凄い",
+      "距離"
+    ],
+    "n5_words_found": [
+      "言う"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:33(9) K:7(7) G:S4(8) W:18(10)",
+    "length": 33,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 144
+  },
+  {
+    "tatoeba_id": "74252",
+    "japanese": "ストレスが胃の粘膜を荒らす原因のひとつは次のように考えられています。",
+    "english": "The following is thought to be one of the reasons stress damages the stomach's mucous membrane.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ストレス-stress",
+      "胃",
+      "粘膜",
+      "荒らす",
+      "原因",
+      "次",
+      "居る"
+    ],
+    "n5_words_found": [
+      "一",
+      "考える"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:34(9) K:8(7) G:S4(8) W:22(10)",
+    "length": 34,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 145
+  },
+  {
+    "tatoeba_id": "74326",
+    "japanese": "カウンターの値が指定の「キリ番」になったら記念メッセージを表示させます。",
+    "english": "When the counter value reaches the assigned 'lucky-number' it displays a congratulatory message.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "カウンター-counter",
+      "値",
+      "指定",
+      "キリ-cruz",
+      "番",
+      "成る",
+      "記念",
+      "メッセージ-message",
+      "表示",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 8,
+    "difficulty_explanation": "L:36(9) K:8(7) G:S4(8) W:21(10)",
+    "length": 36,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 146
+  },
+  {
+    "tatoeba_id": "74420",
+    "japanese": "私達は時々、ドライブを兼ねて大好きなラーメンを食べに行きます。",
+    "english": "We sometimes combine going for a drive with eating the ramen we love so.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ドライブ-drive",
+      "兼ねる",
+      "ラーメン-Rahmen"
+    ],
+    "n5_words_found": [
+      "時々",
+      "食べる",
+      "行く"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:31(9) K:8(7) G:S3(6) W:18(10)",
+    "length": 31,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 147
+  },
+  {
+    "tatoeba_id": "74687",
+    "japanese": "雪道でアクシデントがなかったら、無事に帰って来れると思います。",
+    "english": "If you don't have an accident on the snowy roads I think you should be able to get back safely.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "雪道",
+      "アクシデント-accident",
+      "無い",
+      "無事",
+      "返る"
+    ],
+    "n5_words_found": [
+      "来る",
+      "思う"
+    ],
+    "difficulty": 9,
+    "difficulty_explanation": "L:31(9) K:7(7) G:S5(10) W:16(10)",
+    "length": 31,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 148
+  },
+  {
+    "tatoeba_id": "74749",
+    "japanese": "シャッターを押すだけで、最新のテクノロジーがキレイな一枚に仕上げます。",
+    "english": "Just press the button and a clear photo will be produced by the latest technology.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "シャッター-shutter",
+      "最新",
+      "テクノロジー-technology",
+      "仕上げる"
+    ],
+    "n5_words_found": [
+      "押す",
+      "一"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:35(9) K:7(7) G:S2(4) W:18(10)",
+    "length": 35,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 149
+  },
+  {
+    "tatoeba_id": "75045",
+    "japanese": "おそらく、見張りに重大な欠陥があったんではないかと考えています。",
+    "english": "I think that it likely that there was a major fault in the lookout.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "恐らく",
+      "見張る",
+      "欠陥",
+      "有る",
+      "無い",
+      "居る"
+    ],
+    "n5_words_found": [
+      "考える"
+    ],
+    "difficulty": 9,
+    "difficulty_explanation": "L:32(9) K:7(7) G:S5(10) W:21(10)",
+    "length": 32,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 150
+  },
+  {
+    "tatoeba_id": "75121",
+    "japanese": "私はテキストを買ってますが、流れてくる英文をテキスト見ずにまず書き出しています。",
+    "english": "I buy the texts, but first I start writing the English sentences that come along without looking at them.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "テキスト-text",
+      "流れる",
+      "英文",
+      "テキスト-text",
+      "先ず",
+      "書き出す",
+      "居る"
+    ],
+    "n5_words_found": [
+      "買う",
+      "来る",
+      "見る"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:40(9) K:8(7) G:S3(6) W:24(10)",
+    "length": 40,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 151
+  },
+  {
+    "tatoeba_id": "75208",
+    "japanese": "アフィ狙いの釣り記事ですね。英語関係のコミュのあちこちにマルチポストしています。",
+    "english": "It's a troll trying for click-throughs. It's being multiposted in English-related communities all over the place.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "アフィ",
+      "狙い",
+      "釣り",
+      "記事",
+      "コミュ-community",
+      "マルチ-multi",
+      "ポスト-post（郵便）",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "英語",
+      "関係"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:40(9) K:8(7) G:S3(6) W:22(10)",
+    "length": 40,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 152
+  },
+  {
+    "tatoeba_id": "75946",
+    "japanese": "静かに！みんなその場を動かないで。これから持ち物検査をはじめます。",
+    "english": "Quiet! Everybody stay where they are, there will now be a possessions check.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "皆",
+      "場",
+      "動く",
+      "持ち物",
+      "検査"
+    ],
+    "n5_words_found": [
+      "始める"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:33(9) K:7(7) G:S3(6) W:19(10)",
+    "length": 33,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 153
+  },
+  {
+    "tatoeba_id": "76722",
+    "japanese": "この問題はｋについての恒等式なので、まず与式を、ｋについて、解きます。",
+    "english": "This problem is an equality of k so we first solve the assigned equation for k.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ｋ",
+      "つく",
+      "式",
+      "先ず",
+      "式",
+      "ｋ",
+      "つく"
+    ],
+    "n5_words_found": [
+      "問題",
+      "解く"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:35(9) K:8(7) G:S3(6) W:27(10)",
+    "length": 35,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 154
+  },
+  {
+    "tatoeba_id": "76750",
+    "japanese": "このような名詞句を隠れ疑問文（concealed　question）といいます。",
+    "english": "This type of noun phrase is called a \"concealed question\".",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "名詞",
+      "句",
+      "隠れる",
+      "疑問",
+      "文",
+      "concealed",
+      "question"
+    ],
+    "n5_words_found": [
+      "言う"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:40(9) K:7(7) G:S5(10) W:18(10)",
+    "length": 40,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 155
+  },
+  {
+    "tatoeba_id": "76788",
+    "japanese": "きつつきは、長く尖ったくちばしで、木の幹をつついて、中にいる虫を食べます。",
+    "english": "Woodpeckers peck tree trunks with their long pointed beaks and eat insects found there.",
+    "pattern": "ます",
+    "stage": 1,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "啄木鳥",
+      "尖る",
+      "嘴",
+      "幹",
+      "突く",
+      "居る"
+    ],
+    "n5_words_found": [
+      "長い",
+      "木",
+      "中",
+      "虫",
+      "食べる"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:37(9) K:7(7) G:S4(8) W:24(10)",
+    "length": 37,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 156
+  },
+  {
+    "tatoeba_id": "5246",
+    "japanese": "わたしはあなたの夢を見ました。",
+    "english": "I dreamt about you.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": true,
+    "non_n5_words": [],
+    "n5_words_found": [
+      "夢",
+      "見る"
+    ],
+    "difficulty": 4,
+    "difficulty_explanation": "L:15(5) K:2(3) G:S2(4) W:10(6)",
+    "length": 15,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 1.0,
+    "rank": 1
+  },
+  {
+    "tatoeba_id": "5175",
+    "japanese": "決めました。",
+    "english": "I made my decision.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": true,
+    "non_n5_words": [],
+    "n5_words_found": [
+      "決める"
+    ],
+    "difficulty": 3,
+    "difficulty_explanation": "L:6(1) K:1(3) G:S2(4) W:4(2)",
+    "length": 6,
+    "kanji_count": 1,
+    "pattern_verified": true,
+    "quality_score": 0.87,
+    "rank": 2
+  },
+  {
+    "tatoeba_id": "5221",
+    "japanese": "今朝テレビを見ました。",
+    "english": "I watched TV this morning.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "今朝",
+      "テレビ-television"
+    ],
+    "n5_words_found": [
+      "見る"
+    ],
+    "difficulty": 4,
+    "difficulty_explanation": "L:11(3) K:3(3) G:S2(4) W:7(4)",
+    "length": 11,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 3
+  },
+  {
+    "tatoeba_id": "5228",
+    "japanese": "昨年ロンドンへ行きました。",
+    "english": "We went to London last year.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "昨年",
+      "ロンドン-London"
+    ],
+    "n5_words_found": [
+      "行く"
+    ],
+    "difficulty": 4,
+    "difficulty_explanation": "L:13(3) K:3(3) G:S2(4) W:7(4)",
+    "length": 13,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 4
+  },
+  {
+    "tatoeba_id": "74145",
+    "japanese": "終わったあとも足が軽い感じがしました。",
+    "english": "I felt very light on my feet afterwards.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "後",
+      "為る"
+    ],
+    "n5_words_found": [
+      "終わる",
+      "足",
+      "軽い",
+      "感じ"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:19(5) K:4(5) G:S2(4) W:13(8)",
+    "length": 19,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 5
+  },
+  {
+    "tatoeba_id": "74157",
+    "japanese": "サイレンが急変を知らせました。",
+    "english": "The siren sounded an emergency.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "サイレン-siren",
+      "急変"
+    ],
+    "n5_words_found": [
+      "知る"
+    ],
+    "difficulty": 4,
+    "difficulty_explanation": "L:15(5) K:3(3) G:S2(4) W:9(6)",
+    "length": 15,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 6
+  },
+  {
+    "tatoeba_id": "74891",
+    "japanese": "私は婚約を解消しました。",
+    "english": "I have broken off our engagement.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "婚約",
+      "解消",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:12(3) K:5(5) G:S2(4) W:9(6)",
+    "length": 12,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 7
+  },
+  {
+    "tatoeba_id": "74976",
+    "japanese": "彼はライバル会社に引き抜かれました。",
+    "english": "He was poached by a rival company.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ライバル-rival",
+      "引き抜く"
+    ],
+    "n5_words_found": [
+      "会社"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:18(5) K:5(5) G:S2(4) W:10(6)",
+    "length": 18,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 8
+  },
+  {
+    "tatoeba_id": "75025",
+    "japanese": "比較的難しいジグソーだと感じました。",
+    "english": "I felt it was a relatively difficult jigsaw puzzle.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "比較",
+      "難しい",
+      "ジグソー-jigsaw",
+      "感ずる"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:18(5) K:5(5) G:S2(4) W:10(6)",
+    "length": 18,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 9
+  },
+  {
+    "tatoeba_id": "75079",
+    "japanese": "夜になると彼女はお月様をながめました。",
+    "english": "When night fell, she watched the moon.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "成る",
+      "眺める"
+    ],
+    "n5_words_found": [
+      "夜",
+      "月"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:19(5) K:5(5) G:S2(4) W:14(8)",
+    "length": 19,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 10
+  },
+  {
+    "tatoeba_id": "75135",
+    "japanese": "敵の旗艦を撃破しました！",
+    "english": "We've destroyed the enemy flagship!",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "敵",
+      "旗艦",
+      "撃破",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:12(3) K:5(5) G:S2(4) W:9(6)",
+    "length": 12,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 11
+  },
+  {
+    "tatoeba_id": "75359",
+    "japanese": "しかるべき時期にお支払いいたしました。",
+    "english": "I paid at the appropriate time.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "然り",
+      "時期",
+      "致す"
+    ],
+    "n5_words_found": [
+      "支払う"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:19(5) K:4(5) G:S2(4) W:10(6)",
+    "length": 19,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 12
+  },
+  {
+    "tatoeba_id": "4707",
+    "japanese": "ムーリエルは２０歳になりました。",
+    "english": "Muiriel is 20 now.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ムー",
+      "リエル-riel",
+      "２０",
+      "成る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:16(5) K:1(3) G:S2(4) W:10(6)",
+    "length": 16,
+    "kanji_count": 1,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 13
+  },
+  {
+    "tatoeba_id": "5224",
+    "japanese": "先週中国語を習い始めました。",
+    "english": "I started learning Chinese last week.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "語"
+    ],
+    "n5_words_found": [
+      "先週",
+      "中国",
+      "習う",
+      "始める"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:14(3) K:7(7) G:S2(4) W:9(6)",
+    "length": 14,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 14
+  },
+  {
+    "tatoeba_id": "5280",
+    "japanese": "あなたからさまざまなことを学びました。",
+    "english": "I learned a lot from you.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "学ぶ"
+    ],
+    "n5_words_found": [
+      "事"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:19(5) K:1(3) G:S3(6) W:10(6)",
+    "length": 19,
+    "kanji_count": 1,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 15
+  },
+  {
+    "tatoeba_id": "5344",
+    "japanese": "あなたはすっかり変わりましたね。",
+    "english": "You changed a lot.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "すっかり"
+    ],
+    "n5_words_found": [
+      "変わる"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:16(5) K:1(3) G:S2(4) W:8(6)",
+    "length": 16,
+    "kanji_count": 1,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 16
+  },
+  {
+    "tatoeba_id": "74166",
+    "japanese": "私は先月結婚式を挙げました。",
+    "english": "I held a wedding ceremony last month.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "結婚",
+      "式",
+      "上げる"
+    ],
+    "n5_words_found": [
+      "先月"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:14(3) K:7(7) G:S2(4) W:10(6)",
+    "length": 14,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 17
+  },
+  {
+    "tatoeba_id": "74228",
+    "japanese": "予定日の夕方に破水しました。",
+    "english": "My water broke on the evening of the predicted birth date.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "夕方",
+      "破水",
+      "為る"
+    ],
+    "n5_words_found": [
+      "予定",
+      "日"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:14(3) K:7(7) G:S2(4) W:10(6)",
+    "length": 14,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 18
+  },
+  {
+    "tatoeba_id": "74235",
+    "japanese": "そのろくでなしどもはクビになりましたよ。",
+    "english": "Those good-for-nothing layabouts were sacked.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "陸でなし",
+      "首",
+      "成る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:20(7) K:0(1) G:S2(4) W:11(6)",
+    "length": 20,
+    "kanji_count": 0,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 19
+  },
+  {
+    "tatoeba_id": "4715",
+    "japanese": "私は山にいました。",
+    "english": "I was in the mountains.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "居る"
+    ],
+    "n5_words_found": [
+      "山"
+    ],
+    "difficulty": 4,
+    "difficulty_explanation": "L:9(1) K:2(3) G:S2(4) W:8(6)",
+    "length": 9,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.5499999999999999,
+    "rank": 20
+  },
+  {
+    "tatoeba_id": "4916",
+    "japanese": "「どうかしたの？」と小さな白いウサギが聞きました。",
+    "english": "\"What's the matter?\" asked the little white rabbit.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "為る",
+      "兎"
+    ],
+    "n5_words_found": [
+      "どう",
+      "白い",
+      "聞く"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:25(7) K:3(3) G:S4(8) W:17(10)",
+    "length": 25,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 21
+  },
+  {
+    "tatoeba_id": "5209",
+    "japanese": "私はあなたが送ってくれた手紙を読んでいました。",
+    "english": "I was reading the letter you sent me.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "呉れる",
+      "居る"
+    ],
+    "n5_words_found": [
+      "送る",
+      "手紙",
+      "読む"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:23(7) K:5(5) G:S3(6) W:16(10)",
+    "length": 23,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 22
+  },
+  {
+    "tatoeba_id": "5298",
+    "japanese": "きょう何を昼食に食べましたか。",
+    "english": "What did you eat for lunch today?",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "昼食"
+    ],
+    "n5_words_found": [
+      "今日",
+      "食べる"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:15(5) K:4(5) G:S4(8) W:10(6)",
+    "length": 15,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 23
+  },
+  {
+    "tatoeba_id": "6056",
+    "japanese": "彼は1888年7月28日に生まれました。",
+    "english": "He was born on July 28th, 1888.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "1888",
+      "7",
+      "28"
+    ],
+    "n5_words_found": [
+      "年",
+      "月",
+      "生まれる"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:20(7) K:5(5) G:S2(4) W:13(8)",
+    "length": 20,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 24
+  },
+  {
+    "tatoeba_id": "74135",
+    "japanese": "電話で済まそうと思いました。",
+    "english": "I thought I could settle it by phone.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "済ます"
+    ],
+    "n5_words_found": [
+      "電話",
+      "思う"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:14(3) K:4(5) G:S4(8) W:8(6)",
+    "length": 14,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 25
+  },
+  {
+    "tatoeba_id": "74146",
+    "japanese": "それが高1の時だから17年が経ちました。",
+    "english": "That was when I was in the first year at high school, so 17 years have passed since then.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "1",
+      "17",
+      "経つ"
+    ],
+    "n5_words_found": [
+      "時",
+      "年"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:20(7) K:4(5) G:S3(6) W:15(10)",
+    "length": 20,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 26
+  },
+  {
+    "tatoeba_id": "74389",
+    "japanese": "池のほとりに花ショウブが綺麗に咲いていました。",
+    "english": "Many Japanese irises were flowering prettily on the lake's edge.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "辺",
+      "菖蒲",
+      "咲く",
+      "居る"
+    ],
+    "n5_words_found": [
+      "池",
+      "花"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:23(7) K:5(5) G:S3(6) W:15(10)",
+    "length": 23,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 27
+  },
+  {
+    "tatoeba_id": "74422",
+    "japanese": "16年間、ここに住んでいる高木さんも驚きました。",
+    "english": "Mr Takagi, who's lived here 16 years, was also surprised.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "16",
+      "年間",
+      "住む",
+      "居る",
+      "タカギ"
+    ],
+    "n5_words_found": [
+      "驚く"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:24(7) K:6(5) G:S2(4) W:15(10)",
+    "length": 24,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 28
+  },
+  {
+    "tatoeba_id": "74479",
+    "japanese": "難民がごみごみした裏町に住んでいました。",
+    "english": "The refugees were living in a narrow, squalid backstreet.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "難民",
+      "ごみごみ",
+      "為る",
+      "裏町",
+      "住む",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:20(7) K:5(5) G:S2(4) W:13(8)",
+    "length": 20,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 29
+  },
+  {
+    "tatoeba_id": "74659",
+    "japanese": "私よりもっとエッチな人もいて安心しました。",
+    "english": "I was relieved that there are people more wanton than me.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "エッチ-H",
+      "居る",
+      "安心",
+      "為る"
+    ],
+    "n5_words_found": [
+      "もっと",
+      "人"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:21(7) K:4(5) G:S3(6) W:14(8)",
+    "length": 21,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 30
+  },
+  {
+    "tatoeba_id": "74689",
+    "japanese": "友人の結婚式にアカペラで歌うことになりました。",
+    "english": "I'm going to be singing a cappella at a friend's wedding ceremony.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "友人",
+      "結婚",
+      "式",
+      "ア・カペラ-a cappella",
+      "歌う",
+      "成る"
+    ],
+    "n5_words_found": [
+      "事"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:23(7) K:6(5) G:S4(8) W:14(8)",
+    "length": 23,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 31
+  },
+  {
+    "tatoeba_id": "74773",
+    "japanese": "明らかに全員出席しているように見えました。",
+    "english": "It clearly looked as if everyone was present.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "全員",
+      "出席",
+      "為る",
+      "居る",
+      "見える"
+    ],
+    "n5_words_found": [],
+    "difficulty": 7,
+    "difficulty_explanation": "L:21(7) K:6(5) G:S4(8) W:13(8)",
+    "length": 21,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 32
+  },
+  {
+    "tatoeba_id": "75253",
+    "japanese": "結局面倒なのでタクシーで帰宅しました。",
+    "english": "In the end, it was just too much bother so I went home by taxi.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "結局",
+      "面倒",
+      "タクシー-taxi",
+      "帰宅",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:19(5) K:6(5) G:S3(6) W:12(8)",
+    "length": 19,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 33
+  },
+  {
+    "tatoeba_id": "75281",
+    "japanese": "娘をなくして、すっかり心の張りがなくなりました。",
+    "english": "Losing my daughter has taken away my will to live.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "娘",
+      "無くす",
+      "すっかり",
+      "心",
+      "張り",
+      "無くなる"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:24(7) K:3(3) G:S3(6) W:14(8)",
+    "length": 24,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 34
+  },
+  {
+    "tatoeba_id": "75596",
+    "japanese": "夕方になって少し雲が出てきました。",
+    "english": "By evening, a few clouds had formed.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "夕方",
+      "成る"
+    ],
+    "n5_words_found": [
+      "少し",
+      "雲",
+      "出る",
+      "来る"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:17(5) K:5(5) G:S3(6) W:13(8)",
+    "length": 17,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 35
+  },
+  {
+    "tatoeba_id": "74011",
+    "japanese": "彼氏が留置所に入って10日経ちました。",
+    "english": "It's been 10 days since my boyfriend went to jail.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "彼氏",
+      "留置",
+      "10",
+      "経つ"
+    ],
+    "n5_words_found": [
+      "入る"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:19(5) K:8(7) G:S3(6) W:13(8)",
+    "length": 19,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 36
+  },
+  {
+    "tatoeba_id": "74386",
+    "japanese": "いきなり本人に誰何するのも無粋と考えました。",
+    "english": "I thought it would be boorish to challenge his identity without warning.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "行成",
+      "本人",
+      "誰何",
+      "為る",
+      "無粋"
+    ],
+    "n5_words_found": [
+      "考える"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:22(7) K:7(7) G:S2(4) W:13(8)",
+    "length": 22,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 37
+  },
+  {
+    "tatoeba_id": "74685",
+    "japanese": "家中が力を合わせて麦の刈入れをしました。",
+    "english": "The whole family helped harvest the wheat.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "力",
+      "合わせる",
+      "麦",
+      "刈り",
+      "為る"
+    ],
+    "n5_words_found": [
+      "家"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:20(7) K:7(7) G:S3(6) W:16(10)",
+    "length": 20,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 38
+  },
+  {
+    "tatoeba_id": "75159",
+    "japanese": "入院２週間したらニキビが急激に減りました。",
+    "english": "Two weeks after being admitted to hospital my acne suddenly started to disappear.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "２",
+      "週間",
+      "為る",
+      "面皰"
+    ],
+    "n5_words_found": [
+      "入院",
+      "減る"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:21(7) K:7(7) G:S4(8) W:13(8)",
+    "length": 21,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 39
+  },
+  {
+    "tatoeba_id": "74262",
+    "japanese": "スーパーボウルを見るために会社を休んでいた事もありました。",
+    "english": "I've sometimes taken time off work to watch the Super Bowl.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "スーパー-super",
+      "ボウル-bowl",
+      "為",
+      "居る",
+      "有る"
+    ],
+    "n5_words_found": [
+      "見る",
+      "会社",
+      "休む",
+      "事"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:29(7) K:5(5) G:S2(4) W:18(10)",
+    "length": 29,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 40
+  },
+  {
+    "tatoeba_id": "74294",
+    "japanese": "ついに我がデジタルグルーヴクラブの定款が完成しました。",
+    "english": "The articles of incorporation have finally been completed for our Digital Groove Club.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "遂に",
+      "デジタル-digital",
+      "グルーブ-groove",
+      "クラブ-club",
+      "定款",
+      "完成",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:27(7) K:5(5) G:S2(4) W:13(8)",
+    "length": 27,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 41
+  },
+  {
+    "tatoeba_id": "74429",
+    "japanese": "風が吹くたびに、桜の花びらが、ひらひらと舞い降りてました。",
+    "english": "The cherry blossoms flutter down whenever the wind blows.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "吹く",
+      "度",
+      "桜",
+      "花弁",
+      "ひらひら",
+      "舞い下りる"
+    ],
+    "n5_words_found": [
+      "風"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:29(7) K:6(5) G:S3(6) W:18(10)",
+    "length": 29,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 42
+  },
+  {
+    "tatoeba_id": "74613",
+    "japanese": "メッセージがなぜか文字化けしていたので、修復して読みました。",
+    "english": "For some reason the message text was corrupted, so I restored it before reading.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "メッセージ-message",
+      "何故",
+      "文字",
+      "化け",
+      "為る",
+      "居る",
+      "修復",
+      "為る"
+    ],
+    "n5_words_found": [
+      "読む"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:30(9) K:6(5) G:S3(6) W:20(10)",
+    "length": 30,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 43
+  },
+  {
+    "tatoeba_id": "74646",
+    "japanese": "友人からもらったコンパクトの鏡の部分が割れてしまいました。",
+    "english": "The mirror on a compact I got from a friend has cracked.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "友人",
+      "貰う",
+      "コンパクト-compact",
+      "鏡",
+      "部分",
+      "割れる",
+      "仕舞う"
+    ],
+    "n5_words_found": [],
+    "difficulty": 7,
+    "difficulty_explanation": "L:29(7) K:6(5) G:S3(6) W:16(10)",
+    "length": 29,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 44
+  },
+  {
+    "tatoeba_id": "75065",
+    "japanese": "私も先日クリスマスプレゼントにちょっとしたものをあげました。",
+    "english": "I also gave him a little something as a Christmas present the other day.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "先日",
+      "クリスマス-Christmas",
+      "プレゼント-present",
+      "一寸",
+      "為る",
+      "上げる"
+    ],
+    "n5_words_found": [
+      "物"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:30(9) K:3(3) G:S2(4) W:15(10)",
+    "length": 30,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 45
+  },
+  {
+    "tatoeba_id": "5023",
+    "japanese": "２、３ページの英語を訳すのに２時間以上もかかりました。",
+    "english": "It took me more than two hours to translate a few pages of English.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "二三",
+      "ページ-page",
+      "訳す",
+      "２",
+      "以上",
+      "掛かる"
+    ],
+    "n5_words_found": [
+      "英語",
+      "時間"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:27(7) K:7(7) G:S2(4) W:16(10)",
+    "length": 27,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.37,
+    "rank": 46
+  },
+  {
+    "tatoeba_id": "74744",
+    "japanese": "ルネッサンス時代、ベニスの芸術は全盛期を迎えていました。",
+    "english": "Art was in its golden age in Venice during the Renaissance.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ルネサンス-Renaissance",
+      "時代",
+      "ベニス-Venice",
+      "芸術",
+      "全盛",
+      "期",
+      "迎える",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 7,
+    "difficulty_explanation": "L:28(7) K:8(7) G:S3(6) W:16(10)",
+    "length": 28,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.37,
+    "rank": 47
+  },
+  {
+    "tatoeba_id": "75619",
+    "japanese": "ペットのためにご祈祷していただける御守と御札が実現しました。",
+    "english": "Now there are charms and talismans for your pet that you can have blessed.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ペット-pet",
+      "為",
+      "祈祷",
+      "為る",
+      "頂く",
+      "守",
+      "札",
+      "実現",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 7,
+    "difficulty_explanation": "L:30(9) K:8(7) G:S3(6) W:20(10)",
+    "length": 30,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.37,
+    "rank": 48
+  },
+  {
+    "tatoeba_id": "74644",
+    "japanese": "残念ながら昨日はご覧の通りの結果となりました。",
+    "english": "Unfortunately, the results yesterday were as you see.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "御覧",
+      "通り",
+      "成る"
+    ],
+    "n5_words_found": [
+      "昨日",
+      "結果"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:23(7) K:8(7) G:S5(10) W:14(8)",
+    "length": 23,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.32,
+    "rank": 49
+  },
+  {
+    "tatoeba_id": "74216",
+    "japanese": "そんなことを考えながら『我輩はカモである』を再見しました。",
+    "english": "Thinking about those sorts of things, I watched \"Duck Soup\" again.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "鴨",
+      "有る",
+      "ツァイツェン",
+      "為る"
+    ],
+    "n5_words_found": [
+      "事",
+      "考える"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:29(7) K:5(5) G:S5(10) W:18(10)",
+    "length": 29,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 50
+  },
+  {
+    "tatoeba_id": "74264",
+    "japanese": "ガーデニングの本を見てたら、ドクロマークのついたのがいっぱいあって驚きました。",
+    "english": "When I looked in a gardening book I was surprised by how many were marked poisonous.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ガーデニング-gardening",
+      "独露",
+      "マーク-mark",
+      "付く",
+      "一杯",
+      "有る"
+    ],
+    "n5_words_found": [
+      "本",
+      "見る",
+      "驚く"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:39(9) K:3(3) G:S4(8) W:22(10)",
+    "length": 39,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 51
+  },
+  {
+    "tatoeba_id": "74434",
+    "japanese": "ブルーワン航空は、エア・ボトゥニアとして1988年に創設されました。",
+    "english": "Blue1 was founded as Air Botnia in 1988.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ブルー-blue",
+      "ワン-one",
+      "航空",
+      "エアー-air",
+      "ボトゥニア",
+      "為る",
+      "1988",
+      "創設",
+      "為る"
+    ],
+    "n5_words_found": [
+      "年"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:34(9) K:5(5) G:S3(6) W:20(10)",
+    "length": 34,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 52
+  },
+  {
+    "tatoeba_id": "74633",
+    "japanese": "ブラックリストに載っていれば編集を拒否するてなこと考えてました。",
+    "english": "I considered doing something like blocking edits based on a blacklist.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ブラックリスト-blacklist",
+      "居る",
+      "編集",
+      "拒否",
+      "為る"
+    ],
+    "n5_words_found": [
+      "乗る",
+      "事",
+      "考える"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:32(9) K:6(5) G:S4(8) W:18(10)",
+    "length": 32,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 53
+  },
+  {
+    "tatoeba_id": "74672",
+    "japanese": "興奮の連続に、あっというまもなく３０分のショウタイムが過ぎてしまいました。",
+    "english": "In all the excitement the 30 minute show-time passed in a flash.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "興奮",
+      "連続",
+      "あっ",
+      "間",
+      "無い",
+      "３０",
+      "ショー-show",
+      "タイム-time",
+      "過ぎる",
+      "仕舞う"
+    ],
+    "n5_words_found": [
+      "言う"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:37(9) K:6(5) G:S4(8) W:23(10)",
+    "length": 37,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 54
+  },
+  {
+    "tatoeba_id": "75106",
+    "japanese": "４年ほど前にアキレス腱が痛くなりアキレス腱炎といわれました。",
+    "english": "About four years ago my Achilles tendon started to hurt and I was told it was Achilles tendonitis.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "４",
+      "アキレス-Achilles",
+      "腱",
+      "成る",
+      "アキレス-Achilles",
+      "腱炎"
+    ],
+    "n5_words_found": [
+      "年",
+      "前",
+      "痛い",
+      "言う"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:30(9) K:6(5) G:S5(10) W:18(10)",
+    "length": 30,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 55
+  },
+  {
+    "tatoeba_id": "5036",
+    "japanese": "こちらは私の友達のレイチェルです。私たちは同じ高校に通っていました。",
+    "english": "This is my friend Rachel. We went to high school together.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "レイチェル-外国",
+      "通う",
+      "居る"
+    ],
+    "n5_words_found": [
+      "友達",
+      "高校"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:34(9) K:8(7) G:S3(6) W:21(10)",
+    "length": 34,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 56
+  },
+  {
+    "tatoeba_id": "74436",
+    "japanese": "ブレーカーが落ちて真っ暗闇になった時、赤ちゃんが怖くて泣きだしました。",
+    "english": "When the breaker tripped and it became pitch black, the baby got scared and started crying.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ブレーカー-breaker",
+      "落ちる",
+      "暗闇",
+      "成る",
+      "出す"
+    ],
+    "n5_words_found": [
+      "時",
+      "赤ちゃん",
+      "怖い",
+      "泣く"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:35(9) K:8(7) G:S3(6) W:20(10)",
+    "length": 35,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 57
+  },
+  {
+    "tatoeba_id": "74718",
+    "japanese": "管理用画面に管理者しかアクセスできないようにしました。",
+    "english": "I made it so only root could access the administrative screen.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "管理",
+      "画面",
+      "管理",
+      "アクセス-access",
+      "出来る",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 8,
+    "difficulty_explanation": "L:27(7) K:8(7) G:S4(8) W:16(10)",
+    "length": 27,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 58
+  },
+  {
+    "tatoeba_id": "74751",
+    "japanese": "腰の痛みから足が鉛のように重く引きずるように歩いていました。",
+    "english": "His backache left him lurching along with leaden legs.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "腰",
+      "痛み",
+      "鉛",
+      "引き摺る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "足",
+      "重い",
+      "歩く"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:30(9) K:7(7) G:S4(8) W:20(10)",
+    "length": 30,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 59
+  },
+  {
+    "tatoeba_id": "74796",
+    "japanese": "女性の乞食が５～６人の子どもをぞろぞろつれて物乞いをしていました。",
+    "english": "A female beggar was begging with five or six children following along.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "女性",
+      "乞食",
+      "５",
+      "６",
+      "ぞろぞろ",
+      "連れる",
+      "物乞い",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "子供"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:33(9) K:8(7) G:S3(6) W:22(10)",
+    "length": 33,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 60
+  },
+  {
+    "tatoeba_id": "74807",
+    "japanese": "英語のコミュニティでお名前とコメントを拝見し、プロフィールを拝読しました。",
+    "english": "I saw your name and posts in an English forum and took the liberty of reading your profile.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "コミュニティー-community",
+      "名前",
+      "コメント-comment",
+      "拝見",
+      "為る",
+      "プロフィール-profile",
+      "拝読",
+      "為る"
+    ],
+    "n5_words_found": [
+      "英語"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:37(9) K:8(7) G:S2(4) W:19(10)",
+    "length": 37,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 61
+  },
+  {
+    "tatoeba_id": "75180",
+    "japanese": "最近のぼくは、「生き恥」「赤恥」をかくことを恐れなくなりました。",
+    "english": "Recently I've stopped being afraid of \"living in shame\" and being exposed to \"public ridicule\".",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "最近",
+      "生き恥",
+      "赤恥",
+      "掻く",
+      "成る"
+    ],
+    "n5_words_found": [
+      "事",
+      "恐れる"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:32(9) K:7(7) G:S2(4) W:21(10)",
+    "length": 32,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 62
+  },
+  {
+    "tatoeba_id": "75182",
+    "japanese": "「それは何ですか」とお聞きしたら「自分で調べなさい」と言われてしまいました。",
+    "english": "When I inquired \"what is that?\" I was told, \"go and find out for yourself.\"",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "為る",
+      "自分",
+      "為さる",
+      "仕舞う"
+    ],
+    "n5_words_found": [
+      "聞く",
+      "調べる",
+      "言う"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:38(9) K:6(5) G:S4(8) W:26(10)",
+    "length": 38,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.2,
+    "rank": 63
+  },
+  {
+    "tatoeba_id": "74454",
+    "japanese": "最初は別々だったんですがある日一緒行き帰りするようになりました。",
+    "english": "At first we used to go separately, but one day we started going and returning together.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "最初",
+      "一緒",
+      "行き帰り",
+      "為る",
+      "成る"
+    ],
+    "n5_words_found": [
+      "日"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:32(9) K:8(7) G:S4(8) W:19(10)",
+    "length": 32,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 64
+  },
+  {
+    "tatoeba_id": "74462",
+    "japanese": "水から上がり、入江のほとりの砂の上を、よちよち歩き出しました。",
+    "english": "She pulled herself out of the water and waddled along the sand at the edge of the creek.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "上がる",
+      "入り江",
+      "辺",
+      "よちよち",
+      "出す"
+    ],
+    "n5_words_found": [
+      "水",
+      "砂",
+      "上",
+      "歩く"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:31(9) K:8(7) G:S3(6) W:19(10)",
+    "length": 31,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 65
+  },
+  {
+    "tatoeba_id": "74970",
+    "japanese": "城からそのふもとをゆるやかに湾曲して流れる川全体が見えました。",
+    "english": "From the castle we could see the whole curve of the river around its base.",
+    "pattern": "ました",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "城",
+      "麓",
+      "湾曲",
+      "為る",
+      "流れる",
+      "全体",
+      "見える"
+    ],
+    "n5_words_found": [
+      "川"
+    ],
+    "difficulty": 9,
+    "difficulty_explanation": "L:31(9) K:8(7) G:S5(10) W:18(10)",
+    "length": 31,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 66
+  },
+  {
+    "tatoeba_id": "4856",
+    "japanese": "家に来ませんか。",
+    "english": "Why don't you come visit us?",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": true,
+    "non_n5_words": [],
+    "n5_words_found": [
+      "家",
+      "来る"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:8(1) K:2(3) G:S4(8) W:7(4)",
+    "length": 8,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.95,
+    "rank": 1
+  },
+  {
+    "tatoeba_id": "4703",
+    "japanese": "私は眠らなければなりません。",
+    "english": "I have to go to sleep.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "眠る",
+      "成る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:14(3) K:2(3) G:S4(8) W:9(6)",
+    "length": 14,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 2
+  },
+  {
+    "tatoeba_id": "4717",
+    "japanese": "時間があるか分かりません。",
+    "english": "I don't know if I have the time.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "有る",
+      "分かる"
+    ],
+    "n5_words_found": [
+      "時間"
+    ],
+    "difficulty": 4,
+    "difficulty_explanation": "L:13(3) K:3(3) G:S2(4) W:8(6)",
+    "length": 13,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 3
+  },
+  {
+    "tatoeba_id": "4744",
+    "japanese": "生物学は好きになれません。",
+    "english": "I never liked biology.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "生物",
+      "成る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:13(3) K:4(5) G:S2(4) W:9(6)",
+    "length": 13,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 4
+  },
+  {
+    "tatoeba_id": "4814",
+    "japanese": "私は寝なければなりません。",
+    "english": "I have to go to bed.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "成る"
+    ],
+    "n5_words_found": [
+      "寝る"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:13(3) K:2(3) G:S4(8) W:9(6)",
+    "length": 13,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 5
+  },
+  {
+    "tatoeba_id": "4983",
+    "japanese": "あら、申し訳ございません。",
+    "english": "Oh, I'm sorry.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "あら",
+      "申し訳",
+      "御座る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:13(3) K:2(3) G:S2(4) W:7(4)",
+    "length": 13,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 6
+  },
+  {
+    "tatoeba_id": "5058",
+    "japanese": "僕と踊ってくれませんか。",
+    "english": "Would you like to dance with me?",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "踊る",
+      "呉れる"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:12(3) K:2(3) G:S4(8) W:9(6)",
+    "length": 12,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 7
+  },
+  {
+    "tatoeba_id": "5174",
+    "japanese": "ドイツ語は分かりません。",
+    "english": "I don't understand German.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ドイツ-Duits",
+      "語",
+      "分かる"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:12(3) K:2(3) G:S2(4) W:7(4)",
+    "length": 12,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 8
+  },
+  {
+    "tatoeba_id": "5305",
+    "japanese": "私は秘密を漏らしたりしません。",
+    "english": "Your secret will be safe with me.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "秘密",
+      "漏らす",
+      "為る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:15(5) K:4(5) G:S2(4) W:10(6)",
+    "length": 15,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 9
+  },
+  {
+    "tatoeba_id": "6001",
+    "japanese": "薬を飲まなければなりません。",
+    "english": "I have to take medicine.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "成る"
+    ],
+    "n5_words_found": [
+      "薬",
+      "飲む"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:14(3) K:2(3) G:S4(8) W:9(6)",
+    "length": 14,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 10
+  },
+  {
+    "tatoeba_id": "74505",
+    "japanese": "アートファイル(.art)の使用法がわかりません。",
+    "english": "I don't know how to use an art file (.art).",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "アート-art",
+      "ファイル-file",
+      "art",
+      "使用",
+      "法",
+      "分かる"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:25(7) K:3(3) G:S2(4) W:14(8)",
+    "length": 25,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 11
+  },
+  {
+    "tatoeba_id": "74786",
+    "japanese": "当面の問題には関係ないかもしれません。",
+    "english": "This might not have anything to do with the problem at hand.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "当面",
+      "無い",
+      "知れる"
+    ],
+    "n5_words_found": [
+      "問題",
+      "関係"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:19(5) K:6(5) G:S2(4) W:13(8)",
+    "length": 19,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 12
+  },
+  {
+    "tatoeba_id": "74789",
+    "japanese": "余計なことをして、すみません。",
+    "english": "Sorry, that was none of my business.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "為る",
+      "済む"
+    ],
+    "n5_words_found": [
+      "事"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:15(5) K:2(3) G:S3(6) W:11(6)",
+    "length": 15,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 13
+  },
+  {
+    "tatoeba_id": "74998",
+    "japanese": "現在は舞子に住んでいません。",
+    "english": "I don't live in Maigo now.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "舞子",
+      "住む",
+      "居る"
+    ],
+    "n5_words_found": [
+      "現在"
+    ],
+    "difficulty": 4,
+    "difficulty_explanation": "L:14(3) K:5(5) G:S2(4) W:10(6)",
+    "length": 14,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 14
+  },
+  {
+    "tatoeba_id": "75280",
+    "japanese": "ＥＲＲＯＲ：本文がありません！",
+    "english": "ERROR: No body text!",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ＥＲＲＯＲ",
+      "本文",
+      "有る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:15(5) K:2(3) G:S2(4) W:8(6)",
+    "length": 15,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 15
+  },
+  {
+    "tatoeba_id": "75354",
+    "japanese": "そんな話は少しも信じてはいけません。",
+    "english": "You can't believe a word of that.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "信ずる"
+    ],
+    "n5_words_found": [
+      "話",
+      "少し",
+      "行く"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:18(5) K:3(3) G:S3(6) W:12(8)",
+    "length": 18,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 16
+  },
+  {
+    "tatoeba_id": "75563",
+    "japanese": "いくら電話をかけても通じません。",
+    "english": "However often I phone I can't get through.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "幾ら",
+      "通ずる"
+    ],
+    "n5_words_found": [
+      "電話",
+      "掛ける"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:16(5) K:3(3) G:S3(6) W:10(6)",
+    "length": 16,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 17
+  },
+  {
+    "tatoeba_id": "77112",
+    "japanese": "腕を放してくれませんか。",
+    "english": "Would you please let go of my arm?",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "腕",
+      "放す",
+      "呉れる"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:12(3) K:2(3) G:S4(8) W:9(6)",
+    "length": 12,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 18
+  },
+  {
+    "tatoeba_id": "77134",
+    "japanese": "脇へ寄ってくださいませんか。",
+    "english": "Would you mind standing aside?",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "脇",
+      "寄る",
+      "下さる"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:14(3) K:2(3) G:S4(8) W:9(6)",
+    "length": 14,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 19
+  },
+  {
+    "tatoeba_id": "77294",
+    "japanese": "お年寄りをからかってはいけません。",
+    "english": "Don't make fun of old people.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "年寄り",
+      "からかう"
+    ],
+    "n5_words_found": [
+      "行く"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:17(5) K:2(3) G:S3(6) W:10(6)",
+    "length": 17,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 20
+  },
+  {
+    "tatoeba_id": "77396",
+    "japanese": "路線図をもらえませんか。",
+    "english": "Can I get a route map, please?",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "路線",
+      "図",
+      "貰う"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:12(3) K:3(3) G:S4(8) W:8(6)",
+    "length": 12,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 21
+  },
+  {
+    "tatoeba_id": "77520",
+    "japanese": "列車はその駅では止まりません。",
+    "english": "The train doesn't stop at that station.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "列車"
+    ],
+    "n5_words_found": [
+      "駅",
+      "止まる"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:15(5) K:4(5) G:S2(4) W:10(6)",
+    "length": 15,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 22
+  },
+  {
+    "tatoeba_id": "77646",
+    "japanese": "冷蔵庫にはほとんど食べ物がありません。",
+    "english": "There is little food in the refrigerator.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "冷蔵",
+      "殆ど",
+      "有る"
+    ],
+    "n5_words_found": [
+      "食べ物"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:19(5) K:5(5) G:S2(4) W:11(6)",
+    "length": 19,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 23
+  },
+  {
+    "tatoeba_id": "77681",
+    "japanese": "例外のない規則はありません。",
+    "english": "There is no rule without exceptions.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "例外",
+      "無い",
+      "有る"
+    ],
+    "n5_words_found": [
+      "規則"
+    ],
+    "difficulty": 4,
+    "difficulty_explanation": "L:14(3) K:4(5) G:S2(4) W:9(6)",
+    "length": 14,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 24
+  },
+  {
+    "tatoeba_id": "6015",
+    "japanese": "いくら考えても、わかりません。",
+    "english": "No matter how much I consider it I do not understand.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "幾ら",
+      "分かる"
+    ],
+    "n5_words_found": [
+      "考える"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:15(5) K:1(3) G:S3(6) W:9(6)",
+    "length": 15,
+    "kanji_count": 1,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 25
+  },
+  {
+    "tatoeba_id": "75140",
+    "japanese": "ミスタイプです。すみません。",
+    "english": "It's a typo. Sorry.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ミス-mistake",
+      "タイプ-type",
+      "済む"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:14(3) K:0(1) G:S2(4) W:8(6)",
+    "length": 14,
+    "kanji_count": 0,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 26
+  },
+  {
+    "tatoeba_id": "75192",
+    "japanese": "トピずれです。すみません。",
+    "english": "This is off-topic. Sorry.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "トピ",
+      "ずれ",
+      "済む"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:13(3) K:0(1) G:S2(4) W:8(6)",
+    "length": 13,
+    "kanji_count": 0,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 27
+  },
+  {
+    "tatoeba_id": "76593",
+    "japanese": "そんなことリクエストしていません。",
+    "english": "I didn't request you to do that.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "リクエスト-request",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "事"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:17(5) K:0(1) G:S3(6) W:9(6)",
+    "length": 17,
+    "kanji_count": 0,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 28
+  },
+  {
+    "tatoeba_id": "77717",
+    "japanese": "たとえどんなことがあってもあきらめません。",
+    "english": "No matter what happens, I won't give up.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "仮令",
+      "有る",
+      "諦める"
+    ],
+    "n5_words_found": [
+      "事"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:21(7) K:0(1) G:S3(6) W:11(6)",
+    "length": 21,
+    "kanji_count": 0,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 29
+  },
+  {
+    "tatoeba_id": "77741",
+    "japanese": "涙が止まりません。",
+    "english": "I cannot stop crying.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "涙"
+    ],
+    "n5_words_found": [
+      "止まる"
+    ],
+    "difficulty": 3,
+    "difficulty_explanation": "L:9(1) K:2(3) G:S2(4) W:6(4)",
+    "length": 9,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.5499999999999999,
+    "rank": 30
+  },
+  {
+    "tatoeba_id": "77812",
+    "japanese": "力が出ません。",
+    "english": "I feel lethargic.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "力"
+    ],
+    "n5_words_found": [
+      "出る"
+    ],
+    "difficulty": 3,
+    "difficulty_explanation": "L:7(1) K:2(3) G:S2(4) W:6(4)",
+    "length": 7,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.5,
+    "rank": 31
+  },
+  {
+    "tatoeba_id": "4711",
+    "japanese": "何と言ったら良いか分かりません。",
+    "english": "I'm at a loss for words.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "分かる"
+    ],
+    "n5_words_found": [
+      "言う",
+      "良い"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:16(5) K:4(5) G:S4(8) W:10(6)",
+    "length": 16,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 32
+  },
+  {
+    "tatoeba_id": "5247",
+    "japanese": "新しいパソコンを買わねばなりません。",
+    "english": "I have to get a new computer.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "パソコン-personal computer",
+      "成る"
+    ],
+    "n5_words_found": [
+      "新しい",
+      "買う"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:18(5) K:2(3) G:S4(8) W:10(6)",
+    "length": 18,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 33
+  },
+  {
+    "tatoeba_id": "5255",
+    "japanese": "まだ晴れている間に洗濯をしなければなりません。",
+    "english": "I have to do laundry while it's still sunny.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "未だ",
+      "晴れる",
+      "居る",
+      "間",
+      "為る",
+      "成る"
+    ],
+    "n5_words_found": [
+      "洗濯"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:23(7) K:4(5) G:S4(8) W:15(10)",
+    "length": 23,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 34
+  },
+  {
+    "tatoeba_id": "5326",
+    "japanese": "土曜日までに本を返さなければなりません。",
+    "english": "I have to give back the book before Saturday.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "土曜",
+      "成る"
+    ],
+    "n5_words_found": [
+      "日",
+      "本",
+      "返す"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:20(7) K:5(5) G:S5(10) W:13(8)",
+    "length": 20,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 35
+  },
+  {
+    "tatoeba_id": "5348",
+    "japanese": "あなたはもっと仕事をしなければなりません。",
+    "english": "You must work more.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "為る",
+      "成る"
+    ],
+    "n5_words_found": [
+      "もっと",
+      "仕事"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:21(7) K:2(3) G:S4(8) W:12(8)",
+    "length": 21,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 36
+  },
+  {
+    "tatoeba_id": "74042",
+    "japanese": "手が寒さで震えたは、少しオーバーですみません。",
+    "english": "Sorry, \"my hands shuddered with the cold\" was a bit over the top.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "震える",
+      "オーバー-over",
+      "済む"
+    ],
+    "n5_words_found": [
+      "手",
+      "寒い",
+      "少し"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:23(7) K:4(5) G:S2(4) W:16(10)",
+    "length": 23,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 37
+  },
+  {
+    "tatoeba_id": "74271",
+    "japanese": "あなた同様私もヤフオクの評価が信じられません。",
+    "english": "I also, same as you, don't trust Yahoo Auction ratings.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ヤフオク",
+      "評価",
+      "信ずる"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:23(7) K:6(5) G:S2(4) W:13(8)",
+    "length": 23,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 38
+  },
+  {
+    "tatoeba_id": "74415",
+    "japanese": "この部屋の本は私の物ではありません。",
+    "english": "The books in this room aren't mine.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "有る"
+    ],
+    "n5_words_found": [
+      "部屋",
+      "本",
+      "物"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:18(5) K:5(5) G:S5(10) W:14(8)",
+    "length": 18,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 39
+  },
+  {
+    "tatoeba_id": "74445",
+    "japanese": "このサービスは一時的にご利用いただけません。",
+    "english": "This service is temporarily out of order.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "サービス-service",
+      "一時",
+      "利用",
+      "頂く"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:22(7) K:5(5) G:S2(4) W:12(8)",
+    "length": 22,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 40
+  },
+  {
+    "tatoeba_id": "74818",
+    "japanese": "ちょっと顔を貸してくれませんか。",
+    "english": "Can I have a few words with you?",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "一寸",
+      "呉れる"
+    ],
+    "n5_words_found": [
+      "顔",
+      "貸す"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:16(5) K:2(3) G:S4(8) W:10(6)",
+    "length": 16,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 41
+  },
+  {
+    "tatoeba_id": "74896",
+    "japanese": "ですから、玲子。アンタは慌てることはありません。",
+    "english": "And so, Reiko, it's nothing for you to panic about.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "レイコ",
+      "慌てる",
+      "有る"
+    ],
+    "n5_words_found": [
+      "事"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:24(7) K:3(3) G:S3(6) W:14(8)",
+    "length": 24,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 42
+  },
+  {
+    "tatoeba_id": "75854",
+    "japanese": "殿方が細かいことにこだわるものではありません。",
+    "english": "It doesn't become a gentleman to fuss over trifles.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "殿方",
+      "細かい",
+      "こだわる",
+      "有る"
+    ],
+    "n5_words_found": [
+      "事",
+      "物"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:23(7) K:3(3) G:S5(10) W:13(8)",
+    "length": 23,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 43
+  },
+  {
+    "tatoeba_id": "76188",
+    "japanese": "現段階ではその問題についてコメントできません。",
+    "english": "At this point, I'm unable to comment on that problem.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "段階",
+      "つく",
+      "コメント-comment",
+      "出来る"
+    ],
+    "n5_words_found": [
+      "問題"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:23(7) K:5(5) G:S3(6) W:14(8)",
+    "length": 23,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 44
+  },
+  {
+    "tatoeba_id": "76316",
+    "japanese": "恩人に礼節を欠いてはなりませんよ。",
+    "english": "You must not lack decorum dealing with your benefactors.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "恩人",
+      "礼節",
+      "欠く",
+      "成る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:17(5) K:5(5) G:S3(6) W:12(8)",
+    "length": 17,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 45
+  },
+  {
+    "tatoeba_id": "76420",
+    "japanese": "まあ、広義的には間違っていませんね。",
+    "english": "Well, broadly speaking that's right.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "まあ",
+      "広義",
+      "間違う",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:18(5) K:5(5) G:S3(6) W:13(8)",
+    "length": 18,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 46
+  },
+  {
+    "tatoeba_id": "76571",
+    "japanese": "たまには理性のタガを外してみませんか。",
+    "english": "Why not just let fly once in a while?",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "偶に",
+      "理性",
+      "箍",
+      "外す"
+    ],
+    "n5_words_found": [
+      "見る"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:19(5) K:3(3) G:S4(8) W:13(8)",
+    "length": 19,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 47
+  },
+  {
+    "tatoeba_id": "76746",
+    "japanese": "この牛車で島一周めぐりしませんか。",
+    "english": "Why don't we take a ride round the island on this ox carriage?",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "牛車",
+      "周",
+      "巡る",
+      "為る"
+    ],
+    "n5_words_found": [
+      "島",
+      "一"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:17(5) K:5(5) G:S4(8) W:12(8)",
+    "length": 17,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 48
+  },
+  {
+    "tatoeba_id": "77306",
+    "japanese": "お年寄りにはできるだけ親切にしなくてはいけません。",
+    "english": "We must be as kind to old people as possible.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "年寄り",
+      "出来る",
+      "為る"
+    ],
+    "n5_words_found": [
+      "親切",
+      "行く"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:25(7) K:4(5) G:S3(6) W:16(10)",
+    "length": 25,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 49
+  },
+  {
+    "tatoeba_id": "77574",
+    "japanese": "列車が止まるまでドアを開けてはいけません。",
+    "english": "Don't open the door till the train stops.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "列車",
+      "ドア-door"
+    ],
+    "n5_words_found": [
+      "止まる",
+      "開ける",
+      "行く"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:21(7) K:4(5) G:S5(10) W:13(8)",
+    "length": 21,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 50
+  },
+  {
+    "tatoeba_id": "77645",
+    "japanese": "冷蔵庫には肉は残っていません。",
+    "english": "There is no meat left in the fridge.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "冷蔵",
+      "残る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "肉"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:15(5) K:5(5) G:S3(6) W:12(8)",
+    "length": 15,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 51
+  },
+  {
+    "tatoeba_id": "74419",
+    "japanese": "私は日本人ですが、日本に住んでいません。",
+    "english": "I'm Japanese, but I don't live in Japan.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "住む",
+      "居る"
+    ],
+    "n5_words_found": [
+      "日本",
+      "日本"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:20(7) K:7(7) G:S2(4) W:15(10)",
+    "length": 20,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 52
+  },
+  {
+    "tatoeba_id": "76137",
+    "japanese": "今日は暖房器具を使っていません。",
+    "english": "I'm not using my home heater today.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "暖房",
+      "器具",
+      "居る"
+    ],
+    "n5_words_found": [
+      "今日",
+      "使う"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:16(5) K:7(7) G:S3(6) W:11(6)",
+    "length": 16,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 53
+  },
+  {
+    "tatoeba_id": "77148",
+    "japanese": "話をやめてくれませんか。",
+    "english": "Will you stop talking?",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "呉れる"
+    ],
+    "n5_words_found": [
+      "話",
+      "止める"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:12(3) K:1(3) G:S5(10) W:9(6)",
+    "length": 12,
+    "kanji_count": 1,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 54
+  },
+  {
+    "tatoeba_id": "74410",
+    "japanese": "何でもかんでもメモをしますがあとで使い物になりません。",
+    "english": "I note down absolutely everything, but they're no good to me afterwards.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "メモ-memo",
+      "為る",
+      "後",
+      "使い物",
+      "成る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 7,
+    "difficulty_explanation": "L:27(7) K:3(3) G:S5(10) W:19(10)",
+    "length": 27,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 55
+  },
+  {
+    "tatoeba_id": "75043",
+    "japanese": "そんなの、身体にとっていいはずがないじゃありませんか。",
+    "english": "That can't be good for your health, can it?",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "身体",
+      "筈",
+      "無い",
+      "有る"
+    ],
+    "n5_words_found": [
+      "取る",
+      "良い"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:27(7) K:2(3) G:S5(10) W:17(10)",
+    "length": 27,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 56
+  },
+  {
+    "tatoeba_id": "75836",
+    "japanese": "突貫作業だったから、サイズが合わないかもしれません。",
+    "english": "It was a rush job, so it might not be a good fit.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "突貫",
+      "作業",
+      "サイズ-size",
+      "合う",
+      "知れる"
+    ],
+    "n5_words_found": [],
+    "difficulty": 7,
+    "difficulty_explanation": "L:26(7) K:5(5) G:S3(6) W:16(10)",
+    "length": 26,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.4,
+    "rank": 57
+  },
+  {
+    "tatoeba_id": "76744",
+    "japanese": "この校閲力の弱さは人手が足らないとしか考えられませんね。",
+    "english": "I can only put this poor checking down to lack of people at work.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "校閲",
+      "人手",
+      "足る"
+    ],
+    "n5_words_found": [
+      "弱い",
+      "考える"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:28(7) K:8(7) G:S2(4) W:19(10)",
+    "length": 28,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.37,
+    "rank": 58
+  },
+  {
+    "tatoeba_id": "75252",
+    "japanese": "いつ寝首を掻かれるかわかったものではありません。",
+    "english": "There's no telling when she'll stab you in the back.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "寝首",
+      "掻く",
+      "分かる",
+      "有る"
+    ],
+    "n5_words_found": [
+      "物"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:24(7) K:3(3) G:S5(10) W:15(10)",
+    "length": 24,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.35,
+    "rank": 59
+  },
+  {
+    "tatoeba_id": "77506",
+    "japanese": "列車は何時に出発するか教えてくれませんか。",
+    "english": "Would you tell me what time the train starts?",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "列車",
+      "出発",
+      "為る",
+      "呉れる"
+    ],
+    "n5_words_found": [
+      "何",
+      "時",
+      "教える"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:21(7) K:7(7) G:S4(8) W:15(10)",
+    "length": 21,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.32,
+    "rank": 60
+  },
+  {
+    "tatoeba_id": "4926",
+    "japanese": "彼らのコミュニケーションは我々が考えてきたものよりはるかに複雑かもしれません。",
+    "english": "Their communication may be much more complex than we thought.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "コミュニケーション-communication",
+      "知れる"
+    ],
+    "n5_words_found": [
+      "考える",
+      "来る",
+      "物",
+      "複雑"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:39(9) K:5(5) G:S3(6) W:22(10)",
+    "length": 39,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 61
+  },
+  {
+    "tatoeba_id": "74162",
+    "japanese": "パソコンを持ってない人は、このMP3プレーヤー機能をフルに使いこなせません。",
+    "english": "People who don't have a computer can't make full use of this MP3 player function.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "パソコン-personal computer",
+      "MP",
+      "3",
+      "プレーヤー-player",
+      "機能",
+      "熟す"
+    ],
+    "n5_words_found": [
+      "持つ",
+      "人",
+      "使う"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:38(9) K:5(5) G:S3(6) W:21(10)",
+    "length": 38,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 62
+  },
+  {
+    "tatoeba_id": "74860",
+    "japanese": "同じ虹を、これだけたくさんの人が撮影したものを見たことがありません。",
+    "english": "I've never seen as many people as this photograph the same rainbow.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "虹",
+      "撮影",
+      "為る",
+      "有る"
+    ],
+    "n5_words_found": [
+      "人",
+      "物",
+      "見る",
+      "事"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:34(9) K:6(5) G:S2(4) W:23(10)",
+    "length": 34,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 63
+  },
+  {
+    "tatoeba_id": "75392",
+    "japanese": "ヒントの ***** の数と語の中の字数とは関係がありません。",
+    "english": "The number of *****s in the hint has no relation to the number of characters in the word.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ヒント-hint",
+      "数",
+      "語",
+      "字数",
+      "有る"
+    ],
+    "n5_words_found": [
+      "中",
+      "関係"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:31(9) K:7(7) G:S2(4) W:19(10)",
+    "length": 31,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 64
+  },
+  {
+    "tatoeba_id": "75918",
+    "japanese": "全ての商品及びレストランで割引が効くわけではありません。",
+    "english": "The discount can't be used for all goods or at all restaurants.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "及び",
+      "レストラン-restaurant",
+      "割り引き",
+      "利く",
+      "訳",
+      "有る"
+    ],
+    "n5_words_found": [
+      "全て",
+      "商品"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:28(7) K:7(7) G:S5(10) W:16(10)",
+    "length": 28,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 65
+  },
+  {
+    "tatoeba_id": "75256",
+    "japanese": "彼女がどうしてその犯罪に及んだかという動機については、いまだによくわかりません。",
+    "english": "They still haven't been able to work out quite what her motive was for resorting to crime.",
+    "pattern": "ません",
+    "stage": 2,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "為る",
+      "犯罪",
+      "及ぶ",
+      "動機",
+      "つく",
+      "未だ",
+      "良く",
+      "分かる"
+    ],
+    "n5_words_found": [
+      "どう",
+      "言う"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:40(9) K:7(7) G:S4(8) W:26(10)",
+    "length": 40,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 66
+  },
+  {
+    "tatoeba_id": "4750",
+    "japanese": "彼は私を蹴っています！",
+    "english": "He's kicking me!",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "蹴る",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:11(3) K:3(3) G:S3(6) W:9(6)",
+    "length": 11,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 1
+  },
+  {
+    "tatoeba_id": "5181",
+    "japanese": "うれしさで舞い上がっています。",
+    "english": "I'm beside myself with joy.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "舞い上がる",
+      "居る"
+    ],
+    "n5_words_found": [
+      "嬉しい"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:15(5) K:2(3) G:S4(8) W:8(6)",
+    "length": 15,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 2
+  },
+  {
+    "tatoeba_id": "6010",
+    "japanese": "公園を散歩しています。",
+    "english": "I'm taking a walk in a park.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "公園",
+      "散歩"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:11(3) K:4(5) G:S3(6) W:8(6)",
+    "length": 11,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 3
+  },
+  {
+    "tatoeba_id": "74208",
+    "japanese": "人物画を描けるスクールを探しています。",
+    "english": "I'm looking for a school where I can paint portraits.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "人物",
+      "画",
+      "描く",
+      "スクール-school",
+      "居る"
+    ],
+    "n5_words_found": [
+      "探す"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:19(5) K:5(5) G:S3(6) W:11(6)",
+    "length": 19,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 4
+  },
+  {
+    "tatoeba_id": "74321",
+    "japanese": "皆さんは、モラルを大切にしていますか。",
+    "english": "Do you all place great importance on morals?",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "皆",
+      "モラル-moral",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:19(5) K:3(3) G:S3(6) W:14(8)",
+    "length": 19,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 5
+  },
+  {
+    "tatoeba_id": "74746",
+    "japanese": "いつも何曜日なら空いていますか？",
+    "english": "What day are you usually free?",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "何曜",
+      "空く",
+      "居る"
+    ],
+    "n5_words_found": [
+      "日"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:16(5) K:4(5) G:S4(8) W:11(6)",
+    "length": 16,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 6
+  },
+  {
+    "tatoeba_id": "75335",
+    "japanese": "無断キャンセルにはほとほと困っています。",
+    "english": "These cancellations without notice are a real pain.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "無断",
+      "キャンセル-cancel",
+      "ほとほと",
+      "居る"
+    ],
+    "n5_words_found": [
+      "困る"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:20(7) K:3(3) G:S3(6) W:10(6)",
+    "length": 20,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 7
+  },
+  {
+    "tatoeba_id": "75775",
+    "japanese": "彼は小節を利かして歌っています。",
+    "english": "He is singing with a lot of ornamentation.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "小節",
+      "利かす",
+      "歌う",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 6,
+    "difficulty_explanation": "L:16(5) K:5(5) G:S3(6) W:11(6)",
+    "length": 16,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 8
+  },
+  {
+    "tatoeba_id": "77086",
+    "japanese": "籠の中で鳥が鳴いていますね。",
+    "english": "There's a bird singing in the cage, isn't there?",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "籠",
+      "鳴く",
+      "居る"
+    ],
+    "n5_words_found": [
+      "中",
+      "鳥"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:14(3) K:4(5) G:S3(6) W:12(8)",
+    "length": 14,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 9
+  },
+  {
+    "tatoeba_id": "77101",
+    "japanese": "嗅覚が鈍っています。",
+    "english": "I've lost my sense of smell.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "嗅覚",
+      "鈍る",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:10(3) K:3(3) G:S3(6) W:7(4)",
+    "length": 10,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 10
+  },
+  {
+    "tatoeba_id": "77214",
+    "japanese": "和子さんはお姉さんによく似ています。",
+    "english": "Kazuko really takes after her sister.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "カズコ",
+      "良く",
+      "似る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "姉"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:18(5) K:4(5) G:S3(6) W:13(8)",
+    "length": 18,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 11
+  },
+  {
+    "tatoeba_id": "77233",
+    "japanese": "六時半に予約しています。",
+    "english": "I have a reservation for six-thirty.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "半",
+      "予約",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "六",
+      "時"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:12(3) K:5(5) G:S3(6) W:10(6)",
+    "length": 12,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 12
+  },
+  {
+    "tatoeba_id": "77454",
+    "japanese": "恋する相手を捜しています。",
+    "english": "I'm looking for someone to fall in love with.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "恋",
+      "為る",
+      "相手",
+      "居る"
+    ],
+    "n5_words_found": [
+      "探す"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:13(3) K:4(5) G:S3(6) W:9(6)",
+    "length": 13,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 13
+  },
+  {
+    "tatoeba_id": "77512",
+    "japanese": "列車はもう着いていますよ。",
+    "english": "The train has arrived here now.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "列車",
+      "着く",
+      "居る"
+    ],
+    "n5_words_found": [
+      "もう"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:13(3) K:3(3) G:S4(8) W:9(6)",
+    "length": 13,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 14
+  },
+  {
+    "tatoeba_id": "77544",
+    "japanese": "列車のダイヤが遅れています。",
+    "english": "The trains are running late.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "列車",
+      "ダイヤ-diagram",
+      "遅れる",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 5,
+    "difficulty_explanation": "L:14(3) K:3(3) G:S3(6) W:9(6)",
+    "length": 14,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 15
+  },
+  {
+    "tatoeba_id": "77947",
+    "japanese": "料理が冷めてしまっています。",
+    "english": "The food is cold.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "冷める",
+      "仕舞う",
+      "居る"
+    ],
+    "n5_words_found": [
+      "料理"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:14(3) K:3(3) G:S3(6) W:9(6)",
+    "length": 14,
+    "kanji_count": 3,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 16
+  },
+  {
+    "tatoeba_id": "77954",
+    "japanese": "料理がお上手と聞いています。",
+    "english": "I hear you are good at cooking.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "居る"
+    ],
+    "n5_words_found": [
+      "料理",
+      "上手",
+      "聞く"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:14(3) K:5(5) G:S3(6) W:10(6)",
+    "length": 14,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 17
+  },
+  {
+    "tatoeba_id": "77996",
+    "japanese": "両親は二人ともまだ生きています。",
+    "english": "Both the parents are still living.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "二人",
+      "未だ",
+      "生きる",
+      "居る"
+    ],
+    "n5_words_found": [
+      "両親"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:16(5) K:5(5) G:S3(6) W:10(6)",
+    "length": 16,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 18
+  },
+  {
+    "tatoeba_id": "78021",
+    "japanese": "両親はスキーヤー用のペンションを経営しています。",
+    "english": "My parents run a pension for skiers.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "スキーヤー-skier",
+      "ペンション-pension",
+      "経営",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "両親"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:24(7) K:5(5) G:S3(6) W:13(8)",
+    "length": 24,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 19
+  },
+  {
+    "tatoeba_id": "78164",
+    "japanese": "旅行の準備はできていますか。",
+    "english": "Are you ready for the trip?",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "出来る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "旅行",
+      "準備"
+    ],
+    "difficulty": 5,
+    "difficulty_explanation": "L:14(3) K:4(5) G:S3(6) W:10(6)",
+    "length": 14,
+    "kanji_count": 4,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 20
+  },
+  {
+    "tatoeba_id": "78240",
+    "japanese": "留学をするために私はお金を貯めています。",
+    "english": "I am saving money in order to study abroad.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "留学",
+      "為る",
+      "為",
+      "溜める",
+      "居る"
+    ],
+    "n5_words_found": [
+      "金"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:20(7) K:5(5) G:S3(6) W:15(10)",
+    "length": 20,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.6,
+    "rank": 21
+  },
+  {
+    "tatoeba_id": "5242",
+    "japanese": "私は自分の仕事を気に入っています。",
+    "english": "I like my job very much.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "自分",
+      "気",
+      "居る"
+    ],
+    "n5_words_found": [
+      "仕事",
+      "入る"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:17(5) K:7(7) G:S3(6) W:13(8)",
+    "length": 17,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 22
+  },
+  {
+    "tatoeba_id": "76285",
+    "japanese": "会社が日中合弁で経営しています。",
+    "english": "The company is operating under joint Sino-Japanese management.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "日中",
+      "合弁",
+      "経営",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "会社"
+    ],
+    "difficulty": 6,
+    "difficulty_explanation": "L:16(5) K:8(7) G:S3(6) W:11(6)",
+    "length": 16,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.5700000000000001,
+    "rank": 23
+  },
+  {
+    "tatoeba_id": "77063",
+    "japanese": "雹が降っています。",
+    "english": "It's hailing.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "雹",
+      "降る",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 4,
+    "difficulty_explanation": "L:9(1) K:2(3) G:S3(6) W:7(4)",
+    "length": 9,
+    "kanji_count": 2,
+    "pattern_verified": true,
+    "quality_score": 0.5499999999999999,
+    "rank": 24
+  },
+  {
+    "tatoeba_id": "74767",
+    "japanese": "全てを考慮してもやはり勝てない仕様になっています。",
+    "english": "All things considered, it's set up so it isn't possible to win.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "考慮",
+      "為る",
+      "矢張り",
+      "勝つ",
+      "仕様",
+      "成る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "全て"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:25(7) K:6(5) G:S5(10) W:16(10)",
+    "length": 25,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 25
+  },
+  {
+    "tatoeba_id": "76155",
+    "japanese": "今はフレッドの錯乱が治まって静かに眠っています。",
+    "english": "Fred's agitation has now subsided, and he's sleeping peacefully.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "フレッド-Fred",
+      "錯乱",
+      "収まる",
+      "眠る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "今"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:24(7) K:6(5) G:S3(6) W:15(10)",
+    "length": 24,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 26
+  },
+  {
+    "tatoeba_id": "78056",
+    "japanese": "両親とは手紙のやりとりを続けています。",
+    "english": "I keep in touch with my parents by mail.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "遣り取り",
+      "居る"
+    ],
+    "n5_words_found": [
+      "両親",
+      "手紙",
+      "続ける"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:19(5) K:5(5) G:S5(10) W:12(8)",
+    "length": 19,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.44999999999999996,
+    "rank": 27
+  },
+  {
+    "tatoeba_id": "74046",
+    "japanese": "結果、雨の日は部屋の中でボール遊びをしています。",
+    "english": "As a result, we play ball inside on rainy days.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ボール-ball",
+      "遊び",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "結果",
+      "雨",
+      "日",
+      "部屋",
+      "中"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:24(7) K:8(7) G:S3(6) W:18(10)",
+    "length": 24,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 28
+  },
+  {
+    "tatoeba_id": "74255",
+    "japanese": "細菌などから隔離するため、面会謝絶となっています。",
+    "english": "In order to isolate him from bacteria, and such, he is not allowed visitors.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "細菌",
+      "隔離",
+      "為る",
+      "為",
+      "面会",
+      "謝絶",
+      "成る",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 7,
+    "difficulty_explanation": "L:25(7) K:8(7) G:S3(6) W:15(10)",
+    "length": 25,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 29
+  },
+  {
+    "tatoeba_id": "74280",
+    "japanese": "彼は戦災孤児をひきとって養女として育てています。",
+    "english": "He adopted a war orphan and is bringing her up as a foster daughter.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "戦災",
+      "孤児",
+      "引き取る",
+      "養女",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "育てる"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:24(7) K:8(7) G:S3(6) W:16(10)",
+    "length": 24,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 30
+  },
+  {
+    "tatoeba_id": "74679",
+    "japanese": "最近、赤ちゃんのアトピー性皮膚炎が増えています。",
+    "english": "Atopic dermatitis has been increasing on babies recently.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "最近",
+      "アトピー-atopy",
+      "皮膚",
+      "居る"
+    ],
+    "n5_words_found": [
+      "赤ちゃん",
+      "増える"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:24(7) K:8(7) G:S3(6) W:14(8)",
+    "length": 24,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 31
+  },
+  {
+    "tatoeba_id": "74763",
+    "japanese": "それは、人間が哺乳動物であることに由来しています。",
+    "english": "That is because human beings are mammals.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "人間",
+      "哺乳",
+      "有る",
+      "由来",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "動物",
+      "事"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:25(7) K:8(7) G:S3(6) W:17(10)",
+    "length": 25,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 32
+  },
+  {
+    "tatoeba_id": "75100",
+    "japanese": "カナダのお客様に居酒屋料理をサーブしています。",
+    "english": "I serve pub food to Canadian customers.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "カナダ-Canada",
+      "客",
+      "居酒屋",
+      "サーブ-serve",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "料理"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:23(7) K:7(7) G:S3(6) W:15(10)",
+    "length": 23,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 33
+  },
+  {
+    "tatoeba_id": "77606",
+    "japanese": "零細企業はインフレで苦境に陥っています。",
+    "english": "Small enterprises are feeling the squeeze of inflation.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "企業",
+      "インフレ-inflation",
+      "苦境",
+      "陥る",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 7,
+    "difficulty_explanation": "L:20(7) K:7(7) G:S3(6) W:12(8)",
+    "length": 20,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 34
+  },
+  {
+    "tatoeba_id": "77640",
+    "japanese": "冷蔵庫の中にたくさんの食べ物が入っていますか。",
+    "english": "Is there much food in the refrigerator?",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "冷蔵",
+      "居る"
+    ],
+    "n5_words_found": [
+      "中",
+      "食べ物",
+      "入る"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:23(7) K:7(7) G:S3(6) W:15(10)",
+    "length": 23,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.42000000000000004,
+    "rank": 35
+  },
+  {
+    "tatoeba_id": "74172",
+    "japanese": "これは遠心力ですがニュートンは絶対運動と見なしています。",
+    "english": "This is centrifugal force; Newton viewed it as absolute motion.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "遠心",
+      "ニュートン-Newton",
+      "見なす",
+      "居る"
+    ],
+    "n5_words_found": [
+      "絶対",
+      "運動"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:28(7) K:8(7) G:S3(6) W:16(10)",
+    "length": 28,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.37,
+    "rank": 36
+  },
+  {
+    "tatoeba_id": "76054",
+    "japanese": "七夕は漫画によく出てくるので、私もそこそこ知っています。",
+    "english": "Tanabata comes up in manga a lot so I also know it fairly well.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "七夕",
+      "漫画",
+      "良く",
+      "そこそこ",
+      "居る"
+    ],
+    "n5_words_found": [
+      "出る",
+      "来る",
+      "知る"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:28(7) K:7(7) G:S3(6) W:19(10)",
+    "length": 28,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.37,
+    "rank": 37
+  },
+  {
+    "tatoeba_id": "76400",
+    "japanese": "みつなは綺麗好きだから、よく自ら進んで掃除をしています。",
+    "english": "Mitsuna is very tidy so she often cleans up without being asked.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "綱",
+      "良く",
+      "自ら",
+      "進む",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "掃除"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:28(7) K:7(7) G:S3(6) W:19(10)",
+    "length": 28,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.37,
+    "rank": 38
+  },
+  {
+    "tatoeba_id": "74359",
+    "japanese": "このブログは情報インフラを中心としたトピックを取り上げています。",
+    "english": "This blog covers topics that centre on information infrastructure.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ブログ-blog",
+      "情報",
+      "インフラ-infrastructure",
+      "中心",
+      "為る",
+      "トピック-topic",
+      "取り上げる",
+      "居る"
+    ],
+    "n5_words_found": [],
+    "difficulty": 7,
+    "difficulty_explanation": "L:32(9) K:6(5) G:S3(6) W:17(10)",
+    "length": 32,
+    "kanji_count": 6,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 39
+  },
+  {
+    "tatoeba_id": "76426",
+    "japanese": "ホワイトニングなどの治療を行います。ヤニ取りなどのクリーニングも行っています。",
+    "english": "We carry out treatments like whitening. We also do tobacco stain removal and other cleaning procedures.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ホワイトニング",
+      "治療",
+      "行う",
+      "脂",
+      "取り",
+      "クリーニング-cleaning",
+      "居る"
+    ],
+    "n5_words_found": [
+      "行く"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:39(9) K:5(5) G:S3(6) W:19(10)",
+    "length": 39,
+    "kanji_count": 5,
+    "pattern_verified": true,
+    "quality_score": 0.30000000000000004,
+    "rank": 40
+  },
+  {
+    "tatoeba_id": "74252",
+    "japanese": "ストレスが胃の粘膜を荒らす原因のひとつは次のように考えられています。",
+    "english": "The following is thought to be one of the reasons stress damages the stomach's mucous membrane.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "ストレス-stress",
+      "胃",
+      "粘膜",
+      "荒らす",
+      "原因",
+      "次",
+      "居る"
+    ],
+    "n5_words_found": [
+      "一",
+      "考える"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:34(9) K:8(7) G:S4(8) W:22(10)",
+    "length": 34,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 41
+  },
+  {
+    "tatoeba_id": "75121",
+    "japanese": "私はテキストを買ってますが、流れてくる英文をテキスト見ずにまず書き出しています。",
+    "english": "I buy the texts, but first I start writing the English sentences that come along without looking at them.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "テキスト-text",
+      "流れる",
+      "英文",
+      "テキスト-text",
+      "先ず",
+      "書き出す",
+      "居る"
+    ],
+    "n5_words_found": [
+      "買う",
+      "来る",
+      "見る"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:40(9) K:8(7) G:S3(6) W:24(10)",
+    "length": 40,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 42
+  },
+  {
+    "tatoeba_id": "75208",
+    "japanese": "アフィ狙いの釣り記事ですね。英語関係のコミュのあちこちにマルチポストしています。",
+    "english": "It's a troll trying for click-throughs. It's being multiposted in English-related communities all over the place.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "アフィ",
+      "狙い",
+      "釣り",
+      "記事",
+      "コミュ-community",
+      "マルチ-multi",
+      "ポスト-post（郵便）",
+      "為る",
+      "居る"
+    ],
+    "n5_words_found": [
+      "英語",
+      "関係"
+    ],
+    "difficulty": 7,
+    "difficulty_explanation": "L:40(9) K:8(7) G:S3(6) W:22(10)",
+    "length": 40,
+    "kanji_count": 8,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 43
+  },
+  {
+    "tatoeba_id": "75419",
+    "japanese": "どうです？似合っていますか？ここいらで使う使用人の服なんですよ。",
+    "english": "What do you think? Does it suit me? It's what servants wear around here.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "似合う",
+      "居る",
+      "使用"
+    ],
+    "n5_words_found": [
+      "どう",
+      "使う",
+      "服"
+    ],
+    "difficulty": 8,
+    "difficulty_explanation": "L:32(9) K:7(7) G:S4(8) W:22(10)",
+    "length": 32,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.27,
+    "rank": 44
+  },
+  {
+    "tatoeba_id": "75045",
+    "japanese": "おそらく、見張りに重大な欠陥があったんではないかと考えています。",
+    "english": "I think that it likely that there was a major fault in the lookout.",
+    "pattern": "ています",
+    "stage": 3,
+    "vocab_compliant": false,
+    "non_n5_words": [
+      "恐らく",
+      "見張る",
+      "欠陥",
+      "有る",
+      "無い",
+      "居る"
+    ],
+    "n5_words_found": [
+      "考える"
+    ],
+    "difficulty": 9,
+    "difficulty_explanation": "L:32(9) K:7(7) G:S5(10) W:21(10)",
+    "length": 32,
+    "kanji_count": 7,
+    "pattern_verified": true,
+    "quality_score": 0.17,
+    "rank": 45
+  }
+]

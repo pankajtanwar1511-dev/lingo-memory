@@ -1,0 +1,739 @@
+{
+  "_metadata": {
+    "description": "N5 Grammar Pattern to Learning Stage Mapping",
+    "version": "1.0.0",
+    "total_patterns": 87,
+    "total_stages": 5,
+    "created": "2025-11-02",
+    "based_on": "Claude AI + ChatGPT consensus recommendations",
+    "stage_structure": {
+      "stage_1": "Foundation (12 patterns, difficulty 1-3, 90% formal)",
+      "stage_2": "Core verbs & forms (27 total patterns, difficulty 2-5, 80% formal)",
+      "stage_3": "Functional structures (47 total patterns, difficulty 3-6, 70% formal)",
+      "stage_4": "Conditionals & obligations (67 total patterns, difficulty 4-8, 60% formal)",
+      "stage_5": "Consolidation & variety (87 total patterns, difficulty 5-10, 50% formal)"
+    }
+  },
+
+  "stage_1_foundation": {
+    "description": "Survival Japanese - Basic sentences, copula, particles, present tense",
+    "target_sentences": "200-700",
+    "difficulty_range": [1, 3],
+    "formality_target": 0.90,
+    "patterns": [
+      {
+        "pattern": "です",
+        "description": "polite copula (is/am/are)",
+        "prerequisites": [],
+        "example": "これは本です。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "だ",
+        "description": "plain copula (is/am/are)",
+        "prerequisites": [],
+        "example": "これは本だ。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "は",
+        "description": "topic marker",
+        "prerequisites": [],
+        "example": "私は学生です。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "が",
+        "description": "subject marker",
+        "prerequisites": [],
+        "example": "犬がいます。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "を",
+        "description": "object marker",
+        "prerequisites": [],
+        "example": "本を読みます。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "に",
+        "description": "location/time/indirect object marker",
+        "prerequisites": [],
+        "example": "学校に行きます。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "で",
+        "description": "means/location of action marker",
+        "prerequisites": [],
+        "example": "駅で会います。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "か",
+        "description": "question marker",
+        "prerequisites": [],
+        "example": "これは何ですか。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "い",
+        "description": "i-adjective present",
+        "prerequisites": [],
+        "example": "今日は暑いです。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "な",
+        "description": "na-adjective",
+        "prerequisites": [],
+        "example": "静かな部屋です。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "ます",
+        "description": "polite present verb ending",
+        "prerequisites": [],
+        "example": "行きます。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "も",
+        "description": "also, too",
+        "prerequisites": ["は"],
+        "example": "私も学生です。",
+        "priority": "high"
+      }
+    ]
+  },
+
+  "stage_2_core_verbs": {
+    "description": "Time & Negation - Past tense, negative forms, basic counters",
+    "target_sentences": "300-750",
+    "difficulty_range": [2, 5],
+    "formality_target": 0.80,
+    "patterns": [
+      {
+        "pattern": "でした",
+        "description": "copula past polite",
+        "prerequisites": ["です"],
+        "example": "昨日は暑かったです。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "だった",
+        "description": "copula past plain",
+        "prerequisites": ["だ"],
+        "example": "昨日は暑かった。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "ました",
+        "description": "polite past verb",
+        "prerequisites": ["ます"],
+        "example": "行きました。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "た",
+        "description": "plain past verb",
+        "prerequisites": [],
+        "example": "行った。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "ません",
+        "description": "polite negative verb",
+        "prerequisites": ["ます"],
+        "example": "行きません。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "ない",
+        "description": "plain negative verb",
+        "prerequisites": ["た"],
+        "example": "行かない。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "じゃない",
+        "description": "copula negative plain",
+        "prerequisites": ["だ"],
+        "example": "学生じゃない。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "かった",
+        "description": "i-adjective past",
+        "prerequisites": ["い"],
+        "example": "暑かった。",
+        "priority": "high"
+      },
+      {
+        "pattern": "くない",
+        "description": "i-adjective negative",
+        "prerequisites": ["い"],
+        "example": "暑くない。",
+        "priority": "high"
+      },
+      {
+        "pattern": "と",
+        "description": "and, with",
+        "prerequisites": [],
+        "example": "友達と行きます。",
+        "priority": "high"
+      },
+      {
+        "pattern": "へ",
+        "description": "direction marker",
+        "prerequisites": ["に"],
+        "example": "学校へ行きます。",
+        "priority": "medium"
+      },
+      {
+        "pattern": "の",
+        "description": "possessive/explanatory",
+        "prerequisites": [],
+        "example": "私の本です。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "よ",
+        "description": "emphasis particle",
+        "prerequisites": [],
+        "example": "行きますよ。",
+        "priority": "medium"
+      },
+      {
+        "pattern": "ね",
+        "description": "confirmation particle",
+        "prerequisites": [],
+        "example": "いいですね。",
+        "priority": "medium"
+      },
+      {
+        "pattern": "でしょう",
+        "description": "probably polite",
+        "prerequisites": ["です"],
+        "example": "明日は雨でしょう。",
+        "priority": "medium"
+      }
+    ]
+  },
+
+  "stage_3_connections": {
+    "description": "Connecting Ideas - て-form, desire, reasons, comparisons, time",
+    "target_sentences": "400-800",
+    "difficulty_range": [3, 6],
+    "formality_target": 0.70,
+    "patterns": [
+      {
+        "pattern": "て",
+        "description": "te-form connector",
+        "prerequisites": ["ます", "た"],
+        "example": "食べて飲みます。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "てください",
+        "description": "please do",
+        "prerequisites": ["て"],
+        "example": "待ってください。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "ている",
+        "description": "progressive/state plain",
+        "prerequisites": ["て"],
+        "example": "食べている。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "ています",
+        "description": "progressive/state polite",
+        "prerequisites": ["ている", "ます"],
+        "example": "食べています。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "てから",
+        "description": "after doing",
+        "prerequisites": ["て"],
+        "example": "食べてから行きます。",
+        "priority": "high"
+      },
+      {
+        "pattern": "たい",
+        "description": "want to (plain)",
+        "prerequisites": ["ます"],
+        "example": "行きたい。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "たいです",
+        "description": "want to (polite)",
+        "prerequisites": ["たい", "です"],
+        "example": "行きたいです。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "ほしい",
+        "description": "want object",
+        "prerequisites": [],
+        "example": "水がほしい。",
+        "priority": "high"
+      },
+      {
+        "pattern": "から",
+        "description": "because",
+        "prerequisites": [],
+        "example": "暑いから窓を開けます。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "ので",
+        "description": "because (objective)",
+        "prerequisites": ["から"],
+        "example": "雨なので休みます。",
+        "priority": "high"
+      },
+      {
+        "pattern": "より",
+        "description": "than (comparison)",
+        "prerequisites": [],
+        "example": "これはあれより大きい。",
+        "priority": "high"
+      },
+      {
+        "pattern": "のほうが",
+        "description": "more than",
+        "prerequisites": ["より"],
+        "example": "こちらのほうがいいです。",
+        "priority": "high"
+      },
+      {
+        "pattern": "いちばん",
+        "description": "most",
+        "prerequisites": [],
+        "example": "これがいちばん大きいです。",
+        "priority": "high"
+      },
+      {
+        "pattern": "とき",
+        "description": "when, time",
+        "prerequisites": [],
+        "example": "行くとき電話します。",
+        "priority": "high"
+      },
+      {
+        "pattern": "前に",
+        "description": "before",
+        "prerequisites": ["とき"],
+        "example": "食べる前に手を洗います。",
+        "priority": "high"
+      },
+      {
+        "pattern": "後で",
+        "description": "after",
+        "prerequisites": ["とき"],
+        "example": "食べた後で歯を磨きます。",
+        "priority": "high"
+      },
+      {
+        "pattern": "あとで",
+        "description": "later, afterwards",
+        "prerequisites": ["後で"],
+        "example": "あとで電話します。",
+        "priority": "medium"
+      },
+      {
+        "pattern": "に行く",
+        "description": "go to do",
+        "prerequisites": ["ます"],
+        "example": "買い物に行きます。",
+        "priority": "high"
+      },
+      {
+        "pattern": "たくない",
+        "description": "don't want to",
+        "prerequisites": ["たい", "ない"],
+        "example": "行きたくない。",
+        "priority": "high"
+      },
+      {
+        "pattern": "たくないです",
+        "description": "don't want to (polite)",
+        "prerequisites": ["たくない", "です"],
+        "example": "行きたくないです。",
+        "priority": "high"
+      }
+    ]
+  },
+
+  "stage_4_conditionals": {
+    "description": "Hypotheticals & Capability - Conditionals, ability, experience, giving/receiving",
+    "target_sentences": "400-800",
+    "difficulty_range": [4, 8],
+    "formality_target": 0.60,
+    "patterns": [
+      {
+        "pattern": "たら",
+        "description": "if/when conditional",
+        "prerequisites": ["た"],
+        "example": "雨が降ったら行きません。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "ば",
+        "description": "if conditional",
+        "prerequisites": ["たら"],
+        "example": "安ければ買います。",
+        "priority": "high"
+      },
+      {
+        "pattern": "なら",
+        "description": "if contextual",
+        "prerequisites": ["たら"],
+        "example": "東京なら知っています。",
+        "priority": "high"
+      },
+      {
+        "pattern": "と",
+        "description": "if natural consequence",
+        "prerequisites": [],
+        "example": "春になると桜が咲きます。",
+        "priority": "high"
+      },
+      {
+        "pattern": "ことができる",
+        "description": "can do (plain)",
+        "prerequisites": [],
+        "example": "泳ぐことができる。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "ことができます",
+        "description": "can do (polite)",
+        "prerequisites": ["ことができる", "ます"],
+        "example": "泳ぐことができます。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "たことがある",
+        "description": "have done (experience)",
+        "prerequisites": ["た"],
+        "example": "日本に行ったことがあります。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "たことがない",
+        "description": "have never done",
+        "prerequisites": ["たことがある"],
+        "example": "食べたことがない。",
+        "priority": "high"
+      },
+      {
+        "pattern": "てみる",
+        "description": "try doing (plain)",
+        "prerequisites": ["て"],
+        "example": "食べてみる。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "てみます",
+        "description": "try doing (polite)",
+        "prerequisites": ["てみる", "ます"],
+        "example": "食べてみます。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "あげる",
+        "description": "give (outward)",
+        "prerequisites": [],
+        "example": "友達に本をあげます。",
+        "priority": "high"
+      },
+      {
+        "pattern": "くれる",
+        "description": "give (to me)",
+        "prerequisites": ["あげる"],
+        "example": "友達が本をくれます。",
+        "priority": "high"
+      },
+      {
+        "pattern": "もらう",
+        "description": "receive",
+        "prerequisites": ["あげる", "くれる"],
+        "example": "友達に本をもらいます。",
+        "priority": "high"
+      },
+      {
+        "pattern": "に来る",
+        "description": "come to do",
+        "prerequisites": ["に行く"],
+        "example": "遊びに来ます。",
+        "priority": "medium"
+      },
+      {
+        "pattern": "う",
+        "description": "plain volitional",
+        "prerequisites": [],
+        "example": "行こう。",
+        "priority": "high"
+      },
+      {
+        "pattern": "よう",
+        "description": "plain volitional (variant)",
+        "prerequisites": ["う"],
+        "example": "食べよう。",
+        "priority": "high"
+      },
+      {
+        "pattern": "ましょう",
+        "description": "let's (polite)",
+        "prerequisites": ["ます"],
+        "example": "行きましょう。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "ませんか",
+        "description": "won't you? (invitation)",
+        "prerequisites": ["ません"],
+        "example": "行きませんか。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "だろう",
+        "description": "probably (plain)",
+        "prerequisites": ["でしょう"],
+        "example": "雨だろう。",
+        "priority": "medium"
+      },
+      {
+        "pattern": "そして",
+        "description": "and then",
+        "prerequisites": [],
+        "example": "起きて、そして朝ご飯を食べます。",
+        "priority": "medium"
+      }
+    ]
+  },
+
+  "stage_5_consolidation": {
+    "description": "Obligations, Permissions & Mastery - Complex patterns, modal forms, integration",
+    "target_sentences": "500-800",
+    "difficulty_range": [5, 10],
+    "formality_target": 0.50,
+    "patterns": [
+      {
+        "pattern": "てもいい",
+        "description": "it's okay to, may",
+        "prerequisites": ["て"],
+        "example": "写真を撮ってもいいですか。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "てはいけない",
+        "description": "must not",
+        "prerequisites": ["て", "ない"],
+        "example": "ここで食べてはいけません。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "なければならない",
+        "description": "must do",
+        "prerequisites": ["ない", "ば"],
+        "example": "宿題をしなければなりません。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "なくてはいけない",
+        "description": "must do (variant)",
+        "prerequisites": ["なければならない"],
+        "example": "行かなくてはいけない。",
+        "priority": "high"
+      },
+      {
+        "pattern": "なくてもいい",
+        "description": "don't have to",
+        "prerequisites": ["てもいい", "ない"],
+        "example": "来なくてもいいです。",
+        "priority": "high"
+      },
+      {
+        "pattern": "すぎる",
+        "description": "too much",
+        "prerequisites": ["ます"],
+        "example": "食べすぎました。",
+        "priority": "high"
+      },
+      {
+        "pattern": "やすい",
+        "description": "easy to",
+        "prerequisites": ["ます"],
+        "example": "読みやすい本です。",
+        "priority": "high"
+      },
+      {
+        "pattern": "にくい",
+        "description": "hard to",
+        "prerequisites": ["やすい"],
+        "example": "読みにくい字です。",
+        "priority": "high"
+      },
+      {
+        "pattern": "そうだ",
+        "description": "looks like, hearsay",
+        "prerequisites": [],
+        "example": "おいしそうです。",
+        "priority": "high"
+      },
+      {
+        "pattern": "そうです",
+        "description": "looks like (polite), I heard",
+        "prerequisites": ["そうだ", "です"],
+        "example": "雨が降るそうです。",
+        "priority": "high"
+      },
+      {
+        "pattern": "みたいだ",
+        "description": "seems like",
+        "prerequisites": ["そうだ"],
+        "example": "学生みたいです。",
+        "priority": "high"
+      },
+      {
+        "pattern": "らしい",
+        "description": "seems like, apparently",
+        "prerequisites": ["みたいだ"],
+        "example": "日本人らしいです。",
+        "priority": "medium"
+      },
+      {
+        "pattern": "ではない",
+        "description": "copula negative (formal)",
+        "prerequisites": ["じゃない"],
+        "example": "学生ではありません。",
+        "priority": "medium"
+      },
+      {
+        "pattern": "じゃありません",
+        "description": "copula negative polite",
+        "prerequisites": ["じゃない", "ません"],
+        "example": "学生じゃありません。",
+        "priority": "medium"
+      },
+      {
+        "pattern": "ではありません",
+        "description": "copula negative formal polite",
+        "prerequisites": ["ではない", "ません"],
+        "example": "学生ではありません。",
+        "priority": "medium"
+      },
+      {
+        "pattern": "ながら",
+        "description": "while doing",
+        "prerequisites": ["ます"],
+        "example": "音楽を聞きながら勉強します。",
+        "priority": "high"
+      },
+      {
+        "pattern": "ような",
+        "description": "like, such as",
+        "prerequisites": ["よう"],
+        "example": "夢のような話です。",
+        "priority": "medium"
+      },
+      {
+        "pattern": "ほど",
+        "description": "to the extent",
+        "prerequisites": [],
+        "example": "死ぬほど疲れました。",
+        "priority": "medium"
+      },
+      {
+        "pattern": "けれども",
+        "description": "but (formal)",
+        "prerequisites": [],
+        "example": "高いけれども買います。",
+        "priority": "medium"
+      },
+      {
+        "pattern": "それから",
+        "description": "and then (formal)",
+        "prerequisites": ["そして"],
+        "example": "朝ご飯を食べて、それから学校に行きます。",
+        "priority": "medium"
+      },
+      {
+        "pattern": "なかった",
+        "description": "plain negative past",
+        "prerequisites": ["ない", "た"],
+        "example": "行かなかった。",
+        "priority": "high"
+      },
+      {
+        "pattern": "ませんでした",
+        "description": "polite negative past",
+        "prerequisites": ["ません", "でした"],
+        "example": "行きませんでした。",
+        "priority": "critical"
+      },
+      {
+        "pattern": "でも",
+        "description": "but, however",
+        "prerequisites": [],
+        "example": "高いです。でも買います。",
+        "priority": "high"
+      },
+      {
+        "pattern": "けど",
+        "description": "but (casual)",
+        "prerequisites": [],
+        "example": "高いけど買います。",
+        "priority": "medium"
+      },
+      {
+        "pattern": "まで",
+        "description": "until, up to",
+        "prerequisites": [],
+        "example": "駅まで歩きます。",
+        "priority": "high"
+      },
+      {
+        "pattern": "や",
+        "description": "and (non-exhaustive list)",
+        "prerequisites": ["と"],
+        "example": "りんごやバナナを買いました。",
+        "priority": "medium"
+      },
+      {
+        "pattern": "ほうがいい",
+        "description": "had better",
+        "prerequisites": ["のほうが"],
+        "example": "早く寝たほうがいいです。",
+        "priority": "high"
+      }
+    ]
+  },
+
+  "pattern_to_stage_lookup": {
+    "です": 1, "だ": 1, "は": 1, "が": 1, "を": 1, "に": 1, "で": 1, "か": 1, "い": 1, "な": 1, "ます": 1, "も": 1,
+    "でした": 2, "だった": 2, "ました": 2, "た": 2, "ません": 2, "ない": 2, "じゃない": 2, "かった": 2, "くない": 2, "と": 2, "へ": 2, "の": 2, "よ": 2, "ね": 2, "でしょう": 2,
+    "て": 3, "てください": 3, "ている": 3, "ています": 3, "てから": 3, "たい": 3, "たいです": 3, "ほしい": 3, "から": 3, "ので": 3, "より": 3, "のほうが": 3, "いちばん": 3, "とき": 3, "前に": 3, "後で": 3, "あとで": 3, "に行く": 3, "たくない": 3, "たくないです": 3,
+    "たら": 4, "ば": 4, "なら": 4, "ことができる": 4, "ことができます": 4, "たことがある": 4, "たことがない": 4, "てみる": 4, "てみます": 4, "あげる": 4, "くれる": 4, "もらう": 4, "に来る": 4, "う": 4, "よう": 4, "ましょう": 4, "ませんか": 4, "だろう": 4, "そして": 4,
+    "てもいい": 5, "てはいけない": 5, "なければならない": 5, "なくてはいけない": 5, "なくてもいい": 5, "すぎる": 5, "やすい": 5, "にくい": 5, "そうだ": 5, "そうです": 5, "みたいだ": 5, "らしい": 5, "ではない": 5, "じゃありません": 5, "ではありません": 5, "ながら": 5, "ような": 5, "ほど": 5, "けれども": 5, "それから": 5, "なかった": 5, "ませんでした": 5, "でも": 5, "けど": 5, "まで": 5, "や": 5, "ほうがいい": 5
+  },
+
+  "dependency_tree": {
+    "description": "Grammar pattern prerequisites - teach these patterns before dependent patterns",
+    "note": "A pattern can only be taught after all its prerequisites are taught",
+    "examples": {
+      "ている_requires": ["て"],
+      "ています_requires": ["ている", "ます"],
+      "たことがある_requires": ["た"],
+      "なければならない_requires": ["ない", "ば"]
+    }
+  }
+}

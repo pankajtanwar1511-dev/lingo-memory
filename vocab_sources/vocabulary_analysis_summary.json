@@ -1,0 +1,12 @@
+{
+  "current_vocabulary": 1147,
+  "tanos_vocabulary": 1077,
+  "mlc_core": 726,
+  "mlc_expressions": 42,
+  "mlc_total": 765,
+  "missing_from_tanos": 5,
+  "missing_from_mlc_core": 246,
+  "missing_from_mlc_expressions": 33,
+  "missing_from_mlc_total": 279,
+  "complete_n5_size": 1426
+}

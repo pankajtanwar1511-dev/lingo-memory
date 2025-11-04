@@ -1,0 +1,55 @@
+BATCH 5: Conditional Forms
+======================================================================
+
+
+Pattern: たら
+Candidates: 30
+----------------------------------------------------------------------
+ 1. 何と言ったら良いか分かりません。
+    I'm at a loss for words.
+ 2. 何と言ったらいいか・・・。
+    I just don't know what to say.
+ 3. 明日帰ったら電話します。
+    I'll call them tomorrow when I come back.
+ 4. そうしたらひとつ問題があって・・・。
+    Then there is a problem...
+ 5. 大きくなったら王様になりたい。
+    When I grow up, I want to be a king.
+ 6. 日本へ行けたらいいのに。
+    I wish I could go to Japan.
+ 7. こんなに明らかなことをわざわざどうやって説明したらいいのか分からない。
+    I don't know how to demonstrate it, since it's too obvious!
+ 8. もう何をしたらいいか分からない。
+    I don't know what to do anymore.
+ 9. 何か私にできることがありましたらお知らせ下さい。
+    Let me know if there is anything I can do.
+10. もし間違いを見つけたら訂正してください。
+    If you see a mistake, then please correct it.
+    ... and 20 more
+
+
+Pattern: れば
+Candidates: 30
+----------------------------------------------------------------------
+ 1. 私は眠らなければなりません。
+    I have to go to sleep.
+ 2. 長い目で見れば違ってくると思います。
+    I suppose it's different when you think about it over the long term.
+ 3. それをするためには危険を冒さなければならない。
+    In order to do that, you have to take risks.
+ 4. たぶん彼にしてみれば同じことよ。
+    Maybe it will be exactly the same for him.
+ 5. 歌詞を見てみれば、あまり意味が無いことに気付くでしょう。
+    If you look at the lyrics, they don't really mean much.
+ 6. 私は寝なければなりません。
+    I have to go to bed.
+ 7. 人は食事を取らなければ死んでしまう。
+    If you don't eat, you die.
+ 8. 君がいなければできなかった。ありがとう。
+    I couldn't have done it without you. Thank you.
+ 9. 君が側にいてくれれば何もいらない。
+    You're by my side; everything's fine now.
+10. 買い物に行かなければならない。一時間で戻るよ。
+    I have to go shopping. I'll be back in an hour.
+    ... and 20 more
+

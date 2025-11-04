@@ -1,0 +1,3024 @@
+{
+  "batch_number": 1,
+  "batch_name": "Critical Polite Forms",
+  "extracted_at": "2025-11-02 16:23:48",
+  "patterns": {
+    "ます": {
+      "count": 156,
+      "candidates": [
+        {
+          "tatoeba_id": "4709",
+          "japanese": "すぐに戻ります。",
+          "english": "I will be back soon.",
+          "pattern": "ます",
+          "length": 8,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4726",
+          "japanese": "私は一日に100ユーロ稼ぎます。",
+          "english": "I make €100 a day.",
+          "pattern": "ます",
+          "length": 16,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4731",
+          "japanese": "あなたの勉強を邪魔しないようにします。",
+          "english": "I'll do my best not to disturb your studying.",
+          "pattern": "ます",
+          "length": 19,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4733",
+          "japanese": "長い目で見れば違ってくると思います。",
+          "english": "I suppose it's different when you think about it over the long term.",
+          "pattern": "ます",
+          "length": 18,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4736",
+          "japanese": "明日帰ったら電話します。",
+          "english": "I'll call them tomorrow when I come back.",
+          "pattern": "ます",
+          "length": 12,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4750",
+          "japanese": "彼は私を蹴っています！",
+          "english": "He's kicking me!",
+          "pattern": "ます",
+          "length": 11,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4854",
+          "japanese": "おめでとうございます。",
+          "english": "Congratulations!",
+          "pattern": "ます",
+          "length": 11,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4925",
+          "japanese": "「これはとてもおもしろそうだね」とひろしが言います。",
+          "english": "\"This looks pretty interesting,\" Hiroshi says.",
+          "pattern": "ます",
+          "length": 26,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4971",
+          "japanese": "ありがとうございます！",
+          "english": "Thank you very much!",
+          "pattern": "ます",
+          "length": 11,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4989",
+          "japanese": "あなたが駅に着くのにどのくらいかかりますか。",
+          "english": "How long does it take to get to the station?",
+          "pattern": "ます",
+          "length": 22,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5025",
+          "japanese": "ブラウンさんをお願いします。",
+          "english": "May I talk to Ms. Brown?",
+          "pattern": "ます",
+          "length": 14,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5030",
+          "japanese": "あなたに不満があります。",
+          "english": "I have a bone to pick with you.",
+          "pattern": "ます",
+          "length": 12,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5112",
+          "japanese": "勘定お願いします。",
+          "english": "The check, please.",
+          "pattern": "ます",
+          "length": 9,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5150",
+          "japanese": "ジュネーブから来る列車が駅に到着します。",
+          "english": "The train from Geneva will arrive at the station.",
+          "pattern": "ます",
+          "length": 20,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5181",
+          "japanese": "うれしさで舞い上がっています。",
+          "english": "I'm beside myself with joy.",
+          "pattern": "ます",
+          "length": 15,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5225",
+          "japanese": "私は海の近くに住んでいるのでよく海岸に行きます。",
+          "english": "I live near the sea, so I often get to go to the beach.",
+          "pattern": "ます",
+          "length": 24,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5242",
+          "japanese": "私は自分の仕事を気に入っています。",
+          "english": "I like my job very much.",
+          "pattern": "ます",
+          "length": 17,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5276",
+          "japanese": "明日授業があります。",
+          "english": "I have class tomorrow.",
+          "pattern": "ます",
+          "length": 10,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5292",
+          "japanese": "これにつきまして、お考えをお聞かせ願えればと存じます。",
+          "english": "I look forward to hearing your thoughts on this matter.",
+          "pattern": "ます",
+          "length": 27,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5314",
+          "japanese": "もし電気がないと、私たちの暮らしがどのようなものになるか想像できますか。",
+          "english": "Can you imagine what our lives would be like without electricity?",
+          "pattern": "ます",
+          "length": 36,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5317",
+          "japanese": "私はこのプロジェクトに参加できることを誇りに思います。",
+          "english": "I am proud to be a part of this project.",
+          "pattern": "ます",
+          "length": 27,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5334",
+          "japanese": "すぐに伝票をお持ちします。",
+          "english": "I'll bring you the bill immediately.",
+          "pattern": "ます",
+          "length": 13,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "6010",
+          "japanese": "公園を散歩しています。",
+          "english": "I'm taking a walk in a park.",
+          "pattern": "ます",
+          "length": 11,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "6021",
+          "japanese": "日曜日でも、働きます。",
+          "english": "I work even on Sunday.",
+          "pattern": "ます",
+          "length": 11,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74013",
+          "japanese": "そちら様のお電話番号をいただけますか。",
+          "english": "May I please have your telephone number?",
+          "pattern": "ます",
+          "length": 19,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74026",
+          "japanese": "そして、この遊具には滑り台のデッキに上がる方法がもう一つあります。",
+          "english": "And there is one more method of climbing up to the slide deck.",
+          "pattern": "ます",
+          "length": 33,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74033",
+          "japanese": "前髪が、おでこにかからないように髪を上げることをおすすめします。",
+          "english": "I recommend putting up your hair so your fringe doesn't get on your forehead.",
+          "pattern": "ます",
+          "length": 32,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74046",
+          "japanese": "結果、雨の日は部屋の中でボール遊びをしています。",
+          "english": "As a result, we play ball inside on rainy days.",
+          "pattern": "ます",
+          "length": 24,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74067",
+          "japanese": "非会員は50ドル増しとなります。",
+          "english": "Non-members pay an additional 50 dollars.",
+          "pattern": "ます",
+          "length": 16,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74097",
+          "japanese": "副作用としては、視力障害があります。",
+          "english": "This has visual impairment as a side effect.",
+          "pattern": "ます",
+          "length": 18,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74172",
+          "japanese": "これは遠心力ですがニュートンは絶対運動と見なしています。",
+          "english": "This is centrifugal force; Newton viewed it as absolute motion.",
+          "pattern": "ます",
+          "length": 28,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74188",
+          "japanese": "ムクドリのヒナを親鳥に返せますか。",
+          "english": "Can you return starling chicks to their parents?",
+          "pattern": "ます",
+          "length": 17,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74189",
+          "japanese": "最近寝てるときにこむらがえりを起こします。",
+          "english": "Recently I get leg cramps when I sleep.",
+          "pattern": "ます",
+          "length": 21,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74208",
+          "japanese": "人物画を描けるスクールを探しています。",
+          "english": "I'm looking for a school where I can paint portraits.",
+          "pattern": "ます",
+          "length": 19,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74221",
+          "japanese": "強い乱視はコンタクトレンズのほうが矯正できます。",
+          "english": "Contact lenses are more able to correct strong astigmatism.",
+          "pattern": "ます",
+          "length": 24,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74222",
+          "japanese": "普通、アマチュアでは250ヤード飛べばすごい飛距離だと言われます。",
+          "english": "Normally you'd call 250 yards a great distance for an amateur.",
+          "pattern": "ます",
+          "length": 33,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74252",
+          "japanese": "ストレスが胃の粘膜を荒らす原因のひとつは次のように考えられています。",
+          "english": "The following is thought to be one of the reasons stress damages the stomach's mucous membrane.",
+          "pattern": "ます",
+          "length": 34,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74255",
+          "japanese": "細菌などから隔離するため、面会謝絶となっています。",
+          "english": "In order to isolate him from bacteria, and such, he is not allowed visitors.",
+          "pattern": "ます",
+          "length": 25,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74260",
+          "japanese": "安価な簡易住宅を提供します。",
+          "english": "We offer low-cost prefabricated houses.",
+          "pattern": "ます",
+          "length": 14,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74280",
+          "japanese": "彼は戦災孤児をひきとって養女として育てています。",
+          "english": "He adopted a war orphan and is bringing her up as a foster daughter.",
+          "pattern": "ます",
+          "length": 24,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74297",
+          "japanese": "私の駄文を見ていただきありがとうございます。",
+          "english": "Thank you for looking at my poor scribblings.",
+          "pattern": "ます",
+          "length": 22,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74298",
+          "japanese": "仕事をそつなくこなすことを会社は求めていることはわかります。",
+          "english": "I know companies are looking for work carried out flawlessly.",
+          "pattern": "ます",
+          "length": 30,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74321",
+          "japanese": "皆さんは、モラルを大切にしていますか。",
+          "english": "Do you all place great importance on morals?",
+          "pattern": "ます",
+          "length": 19,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74326",
+          "japanese": "カウンターの値が指定の「キリ番」になったら記念メッセージを表示させます。",
+          "english": "When the counter value reaches the assigned 'lucky-number' it displays a congratulatory message.",
+          "pattern": "ます",
+          "length": 36,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74331",
+          "japanese": "いわゆる裏方仕事もたくさんあります。",
+          "english": "There's also a great deal of so called behind-the-scenes work.",
+          "pattern": "ます",
+          "length": 18,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74334",
+          "japanese": "さらに、横から見ると、前歯は出っ歯の状態にあります。",
+          "english": "Moreover, when viewed from the side, the front teeth are protruding.",
+          "pattern": "ます",
+          "length": 26,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74340",
+          "japanese": "トピ主さんが親思いの娘さんであることはわかります。",
+          "english": "I can tell that you're a daughter who cares much for your parents.",
+          "pattern": "ます",
+          "length": 25,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74359",
+          "japanese": "このブログは情報インフラを中心としたトピックを取り上げています。",
+          "english": "This blog covers topics that centre on information infrastructure.",
+          "pattern": "ます",
+          "length": 32,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74420",
+          "japanese": "私達は時々、ドライブを兼ねて大好きなラーメンを食べに行きます。",
+          "english": "We sometimes combine going for a drive with eating the ramen we love so.",
+          "pattern": "ます",
+          "length": 31,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74447",
+          "japanese": "画像をクリックすると次ページへ移ります！",
+          "english": "Click the picture to go to the next page!",
+          "pattern": "ます",
+          "length": 20,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74472",
+          "japanese": "おやおや、食事の途中に席を立つとはマナーに反しますね。",
+          "english": "Oh my, leaving the table in the middle of a meal is bad manners, you know.",
+          "pattern": "ます",
+          "length": 27,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74495",
+          "japanese": "最近、以前からある痔が痛みます。",
+          "english": "Recently my haemorrhoids, which I've had from before, are painful.",
+          "pattern": "ます",
+          "length": 16,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74529",
+          "japanese": "こんな時は、迎え酒に限ります。",
+          "english": "In times like this, there's nothing like a hair of the dog.",
+          "pattern": "ます",
+          "length": 15,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74539",
+          "japanese": "ひどくなると、亀裂が生じたり、断裂することもあります。",
+          "english": "In severe cases, cracks can form or it can snap apart.",
+          "pattern": "ます",
+          "length": 27,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74555",
+          "japanese": "妻の乾咳が気になります。",
+          "english": "I'm concerned about my wife's hacking cough.",
+          "pattern": "ます",
+          "length": 12,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74570",
+          "japanese": "松野の家名をけがすことがないようにお願いしますよ。",
+          "english": "Please don't do anything that would besmirch the Matsuno family name!",
+          "pattern": "ます",
+          "length": 25,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74581",
+          "japanese": "熱が出るとひきつけを起こすことがあります。",
+          "english": "Convulsions can occur when they run a fever.",
+          "pattern": "ます",
+          "length": 21,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74606",
+          "japanese": "リプレーする度に彼女の反応にいちいち萌えてしまいます。",
+          "english": "I find myself being enthralled by her reaction each time I replay it.",
+          "pattern": "ます",
+          "length": 27,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74614",
+          "japanese": "カップケーキ型に、ペーパーカップを並べます。",
+          "english": "Set up paper cups in the cupcake baking tray.",
+          "pattern": "ます",
+          "length": 22,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74624",
+          "japanese": "ソレノイドへの突入電流でノイズが発生します。",
+          "english": "Noise is produced by the sudden flow of current into a solenoid.",
+          "pattern": "ます",
+          "length": 22,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74635",
+          "japanese": "今、キーボードがダブって見えるぐらい酔ってます。",
+          "english": "I'm so drunk now that I'm seeing two keyboards.",
+          "pattern": "ます",
+          "length": 24,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74666",
+          "japanese": "自分と気があわない、いけ好かない、人がいるとします。",
+          "english": "Suppose there's some jerk you just can't get on with.",
+          "pattern": "ます",
+          "length": 26,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74679",
+          "japanese": "最近、赤ちゃんのアトピー性皮膚炎が増えています。",
+          "english": "Atopic dermatitis has been increasing on babies recently.",
+          "pattern": "ます",
+          "length": 24,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74681",
+          "japanese": "ここでは、文字やパスのアウトラインの作成について説明します。",
+          "english": "Here we explain about creating outlines of characters and paths.",
+          "pattern": "ます",
+          "length": 30,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74687",
+          "japanese": "雪道でアクシデントがなかったら、無事に帰って来れると思います。",
+          "english": "If you don't have an accident on the snowy roads I think you should be able to get back safely.",
+          "pattern": "ます",
+          "length": 31,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74726",
+          "japanese": "車も何もなく、生活保護で生きてます。",
+          "english": "I'm living on welfare, without a car or anything.",
+          "pattern": "ます",
+          "length": 18,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74730",
+          "japanese": "音を吸収する素材のことを吸音材といいます。",
+          "english": "Sound absorbing material is called acoustic material.",
+          "pattern": "ます",
+          "length": 21,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74736",
+          "japanese": "こちらアヤ、こちらアヤ、応答お願いします。",
+          "english": "This is Aya, this is Aya. Please respond.",
+          "pattern": "ます",
+          "length": 21,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74749",
+          "japanese": "シャッターを押すだけで、最新のテクノロジーがキレイな一枚に仕上げます。",
+          "english": "Just press the button and a clear photo will be produced by the latest technology.",
+          "pattern": "ます",
+          "length": 35,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74763",
+          "japanese": "それは、人間が哺乳動物であることに由来しています。",
+          "english": "That is because human beings are mammals.",
+          "pattern": "ます",
+          "length": 25,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74767",
+          "japanese": "全てを考慮してもやはり勝てない仕様になっています。",
+          "english": "All things considered, it's set up so it isn't possible to win.",
+          "pattern": "ます",
+          "length": 25,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74780",
+          "japanese": "時々、私の犬は夜中の間に吠えます。",
+          "english": "Sometimes my dog barks in the middle of the night.",
+          "pattern": "ます",
+          "length": 17,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74827",
+          "japanese": "誰か英語を話す人はいますか。",
+          "english": "Is there an English speaker here?",
+          "pattern": "ます",
+          "length": 14,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74837",
+          "japanese": "ウィッチヘーゼルは、乾燥させずに毛穴を引き締めます。",
+          "english": "Witch hazel tightens pores without drying skin.",
+          "pattern": "ます",
+          "length": 26,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74841",
+          "japanese": "こういう風に合体すれば、１４ポートのＵＳＢハブになります。",
+          "english": "If you combine them in this way, you get a 14 port USB hub.",
+          "pattern": "ます",
+          "length": 29,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74850",
+          "japanese": "彼はいつも物々しい話し方をします。",
+          "english": "He always talks in such high-sounding terms.",
+          "pattern": "ます",
+          "length": 17,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74892",
+          "japanese": "肌にシェーバーを滑らす度に確かに滑らか～な感じがします。",
+          "english": "It certainly feels smooth when you run the shaver over your skin.",
+          "pattern": "ます",
+          "length": 28,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74905",
+          "japanese": "急ぎません。ゆっくりお願いします。",
+          "english": "There's no rush. If you would, in your own time.",
+          "pattern": "ます",
+          "length": 17,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74908",
+          "japanese": "次回につづく、ということで、どうかお付き合いのほど、平にお願いいたします。",
+          "english": "To be continued next time, and thus I most humbly request your attendance then.",
+          "pattern": "ます",
+          "length": 37,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74947",
+          "japanese": "お楽しみいただけましたら、ポチっと１票お願いいたします！",
+          "english": "If you enjoyed this, please give a click on the vote link!",
+          "pattern": "ます",
+          "length": 28,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74958",
+          "japanese": "でも、私は彼の言うことが分かります。",
+          "english": "But I understand what he says.",
+          "pattern": "ます",
+          "length": 18,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74996",
+          "japanese": "風がまだ強く吹きます。",
+          "english": "The wind still blows hard.",
+          "pattern": "ます",
+          "length": 11,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75045",
+          "japanese": "おそらく、見張りに重大な欠陥があったんではないかと考えています。",
+          "english": "I think that it likely that there was a major fault in the lookout.",
+          "pattern": "ます",
+          "length": 32,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75094",
+          "japanese": "今日はオームの法則に関する実験を行います。",
+          "english": "Today we will carry out an experiment about Ohm's Law.",
+          "pattern": "ます",
+          "length": 21,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75100",
+          "japanese": "カナダのお客様に居酒屋料理をサーブしています。",
+          "english": "I serve pub food to Canadian customers.",
+          "pattern": "ます",
+          "length": 23,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75118",
+          "japanese": "なお、危険防止の為、サブアド利用をお奨めします。",
+          "english": "Moreover, for your safety, we advise use of a substitute email address.",
+          "pattern": "ます",
+          "length": 24,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75121",
+          "japanese": "私はテキストを買ってますが、流れてくる英文をテキスト見ずにまず書き出しています。",
+          "english": "I buy the texts, but first I start writing the English sentences that come along without looking at them.",
+          "pattern": "ます",
+          "length": 40,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75125",
+          "japanese": "ありがとうございました。またのご来店、お待ちしております！",
+          "english": "Thank you for your business. Please come again!",
+          "pattern": "ます",
+          "length": 29,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75126",
+          "japanese": "ゼラチンは、冷えると固まる性質があります。",
+          "english": "Gelatine has the property of setting as it cools.",
+          "pattern": "ます",
+          "length": 21,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75130",
+          "japanese": "和食のレストランへ行くたびに、割り箸を家へもって帰ります。",
+          "english": "Whenever I go to a Japanese restaurant, I take the disposable chopsticks home with me.",
+          "pattern": "ます",
+          "length": 29,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75207",
+          "japanese": "過去の動作については過去形を用います。",
+          "english": "\"Past tense\" is used in connection with actions in the past.",
+          "pattern": "ます",
+          "length": 19,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75208",
+          "japanese": "アフィ狙いの釣り記事ですね。英語関係のコミュのあちこちにマルチポストしています。",
+          "english": "It's a troll trying for click-throughs. It's being multiposted in English-related communities all over the place.",
+          "pattern": "ます",
+          "length": 40,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75210",
+          "japanese": "このような場合は“現在時制”を使います。",
+          "english": "We use the present tense for this kind of case.",
+          "pattern": "ます",
+          "length": 20,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75214",
+          "japanese": "こちらの飲み物は単品となります。",
+          "english": "These drinks are a la carte.",
+          "pattern": "ます",
+          "length": 16,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75229",
+          "japanese": "カンマを入れないようにしたいんだけど、６はカンマがないと不自然な気がします。",
+          "english": "I'd like to do without commas, but 6 feels odd if it doesn't have commas.",
+          "pattern": "ます",
+          "length": 38,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75238",
+          "japanese": "ここが差し込むように痛みます。",
+          "english": "I have a gripping pain here.",
+          "pattern": "ます",
+          "length": 15,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75239",
+          "japanese": "ここが締めつけられるように痛みます。",
+          "english": "I have a gripping pain here.",
+          "pattern": "ます",
+          "length": 18,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75322",
+          "japanese": "AとBを反応させるとCが生成されます。",
+          "english": "C is formed by reacting A with B.",
+          "pattern": "ます",
+          "length": 19,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75335",
+          "japanese": "無断キャンセルにはほとほと困っています。",
+          "english": "These cancellations without notice are a real pain.",
+          "pattern": "ます",
+          "length": 20,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75430",
+          "japanese": "インドは地域色豊かな食文化があります。",
+          "english": "India has a cuisine rich in regional flavour.",
+          "pattern": "ます",
+          "length": 19,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75502",
+          "japanese": "食べすぎさえしなければ、必ず痩せると思います。",
+          "english": "I think that as long as I don't overeat, I will certainly lose weight.",
+          "pattern": "ます",
+          "length": 23,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75537",
+          "japanese": "３０ユーロになります。",
+          "english": "This will cost €30.",
+          "pattern": "ます",
+          "length": 11,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75584",
+          "japanese": "コンタクトすると目が乾いた感じになって、目が赤くなります。",
+          "english": "When I use contacts, my eyes feel dry and become red.",
+          "pattern": "ます",
+          "length": 29,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75628",
+          "japanese": "ザ・ベストテンにランクインした曲を全て紹介します！",
+          "english": "We introduce you to the entire line up of songs that made it into The Best Ten.",
+          "pattern": "ます",
+          "length": 25,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75647",
+          "japanese": "洒落たお帽子をお召しになっていらっしゃいますね。",
+          "english": "That's a stylish hat you are wearing.",
+          "pattern": "ます",
+          "length": 24,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75672",
+          "japanese": "お願いですから犬猫扱いするのやめて貰えますか。",
+          "english": "I'm begging you, could you stop treating me like a pet?",
+          "pattern": "ます",
+          "length": 23,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75726",
+          "japanese": "物取りなので、物を盗ったら帰ります。通報したら刺します。",
+          "english": "I'm a thief, I'll go back when I've taken the stuff. Report me and I'll stab you.",
+          "pattern": "ます",
+          "length": 28,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75735",
+          "japanese": "不用品を送っていただいた方にもれなくプレゼントいたします。",
+          "english": "Those who send in old junk they don't use anymore will, without exception, receive a present.",
+          "pattern": "ます",
+          "length": 29,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75736",
+          "japanese": "不束者ですがよろしくお願いします。",
+          "english": "I'm not much good at anything, but please be kind to me.",
+          "pattern": "ます",
+          "length": 17,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75775",
+          "japanese": "彼は小節を利かして歌っています。",
+          "english": "He is singing with a lot of ornamentation.",
+          "pattern": "ます",
+          "length": 16,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75844",
+          "japanese": "同じような品がまだ何点かありますよ。",
+          "english": "We've got several more of the same kind of articles.",
+          "pattern": "ます",
+          "length": 18,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75873",
+          "japanese": "虫の音がきこえます。",
+          "english": "I can hear the chirping of insects.",
+          "pattern": "ます",
+          "length": 10,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75900",
+          "japanese": "台座に心棒を立てて、各パーツをずらしながら重ねていきます。",
+          "english": "You stand the axis on the base and then proceed to stack up each part, staggering their position.",
+          "pattern": "ます",
+          "length": 29,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75928",
+          "japanese": "先程のはＰ波でした。Ｓ波が来ます。",
+          "english": "That was the P-wave just now. The S-wave is coming.",
+          "pattern": "ます",
+          "length": 17,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75946",
+          "japanese": "静かに！みんなその場を動かないで。これから持ち物検査をはじめます。",
+          "english": "Quiet! Everybody stay where they are, there will now be a possessions check.",
+          "pattern": "ます",
+          "length": 33,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76049",
+          "japanese": "実はビートを食べると、尿がうっすらピンク色をすることがあります。",
+          "english": "Actually if you eat beets your urine may turn a light pink colour.",
+          "pattern": "ます",
+          "length": 32,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76050",
+          "japanese": "実はこれで４度目の質問になります。",
+          "english": "Actually this will be my fourth question.",
+          "pattern": "ます",
+          "length": 17,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76054",
+          "japanese": "七夕は漫画によく出てくるので、私もそこそこ知っています。",
+          "english": "Tanabata comes up in manga a lot so I also know it fairly well.",
+          "pattern": "ます",
+          "length": 28,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76055",
+          "japanese": "自分達で考えた企画を実行することができます。",
+          "english": "You can put into practice the plan you thought up.",
+          "pattern": "ます",
+          "length": 22,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76061",
+          "japanese": "自分でもそれをやってみます。",
+          "english": "I'll do it by myself too.",
+          "pattern": "ます",
+          "length": 14,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76128",
+          "japanese": "最大１０名でテーブルを囲えます。",
+          "english": "At most 10 people can sit round the table.",
+          "pattern": "ます",
+          "length": 16,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76155",
+          "japanese": "今はフレッドの錯乱が治まって静かに眠っています。",
+          "english": "Fred's agitation has now subsided, and he's sleeping peacefully.",
+          "pattern": "ます",
+          "length": 24,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76174",
+          "japanese": "広島に口和というところがあります。",
+          "english": "There's a place called Kuchiwa in Hiroshima.",
+          "pattern": "ます",
+          "length": 17,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76233",
+          "japanese": "魚は遠火でゆっくり、こんがり焼き上げます。",
+          "english": "The fish is baked slowly till browned over a not-too-close fire.",
+          "pattern": "ます",
+          "length": 21,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76266",
+          "japanese": "勘定書をお願いします。",
+          "english": "The check, please.",
+          "pattern": "ます",
+          "length": 11,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76285",
+          "japanese": "会社が日中合弁で経営しています。",
+          "english": "The company is operating under joint Sino-Japanese management.",
+          "pattern": "ます",
+          "length": 16,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76289",
+          "japanese": "過去問がもしあるならば一応目を通すほうがいいと思います。",
+          "english": "If there are past exam questions then I think it would be best to give them a quick look over.",
+          "pattern": "ます",
+          "length": 28,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76329",
+          "japanese": "遠距離恋愛をしたことはありますか。",
+          "english": "Have you ever been in a long distance relationship?",
+          "pattern": "ます",
+          "length": 17,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76338",
+          "japanese": "雨天なら、山登りは、取りやめます。",
+          "english": "If it's rainy the mountain climbing will be called off.",
+          "pattern": "ます",
+          "length": 17,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76369",
+          "japanese": "ルーは、バターと小麦粉を炒めながら作ります。",
+          "english": "Roux is made while cooking flour and butter together.",
+          "pattern": "ます",
+          "length": 22,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76400",
+          "japanese": "みつなは綺麗好きだから、よく自ら進んで掃除をしています。",
+          "english": "Mitsuna is very tidy so she often cleans up without being asked.",
+          "pattern": "ます",
+          "length": 28,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76426",
+          "japanese": "ホワイトニングなどの治療を行います。ヤニ取りなどのクリーニングも行っています。",
+          "english": "We carry out treatments like whitening. We also do tobacco stain removal and other cleaning procedures.",
+          "pattern": "ます",
+          "length": 39,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76447",
+          "japanese": "ベニヤ板で十分だとのこと、教えられたとおりベニヤ板で作ることにします。",
+          "english": "Having been informed that plywood is sufficient, I will make it with plywood, as instructed.",
+          "pattern": "ます",
+          "length": 35,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76476",
+          "japanese": "パンダは竹林にすんでいます。",
+          "english": "Pandas live in bamboo thickets.",
+          "pattern": "ます",
+          "length": 14,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76481",
+          "japanese": "はい。これならそらで歌えます。",
+          "english": "Yes. This one I can sing from memory.",
+          "pattern": "ます",
+          "length": 15,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76495",
+          "japanese": "ニューススタンドで買えますよ。",
+          "english": "You can buy it at newsstands.",
+          "pattern": "ます",
+          "length": 15,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76556",
+          "japanese": "ちょっと屈めば、アソコがチラチラと見え隠れします。",
+          "english": "If you just crouch a little, her crotch can just be seen flicking in and out of sight.",
+          "pattern": "ます",
+          "length": 25,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76574",
+          "japanese": "たとえ火の中、水の中。あなたとならば、どこまでもいきます。",
+          "english": "I'll follow you, come hell or high water.",
+          "pattern": "ます",
+          "length": 29,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76615",
+          "japanese": "その土壌は腐植に富んでいます。",
+          "english": "That soil is rich in humus.",
+          "pattern": "ます",
+          "length": 15,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76616",
+          "japanese": "その節はよろしくご指導のほどお願いいたします。",
+          "english": "I hope you will favor me with your guidance at that time.",
+          "pattern": "ます",
+          "length": 23,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76660",
+          "japanese": "ストレスでやけ食いをされる方も多いと思います。",
+          "english": "I think there are many who binge eat from stress.",
+          "pattern": "ます",
+          "length": 23,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76702",
+          "japanese": "ご冥福をお祈りします。",
+          "english": "May his soul rest in peace.",
+          "pattern": "ます",
+          "length": 11,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76722",
+          "japanese": "この問題はｋについての恒等式なので、まず与式を、ｋについて、解きます。",
+          "english": "This problem is an equality of k so we first solve the assigned equation for k.",
+          "pattern": "ます",
+          "length": 35,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76738",
+          "japanese": "この山を登ればラボに着きます。",
+          "english": "If you climb up this mountain, you'll reach the lab.",
+          "pattern": "ます",
+          "length": 15,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76750",
+          "japanese": "このような名詞句を隠れ疑問文（concealed　question）といいます。",
+          "english": "This type of noun phrase is called a \"concealed question\".",
+          "pattern": "ます",
+          "length": 40,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76788",
+          "japanese": "きつつきは、長く尖ったくちばしで、木の幹をつついて、中にいる虫を食べます。",
+          "english": "Woodpeckers peck tree trunks with their long pointed beaks and eat insects found there.",
+          "pattern": "ます",
+          "length": 37,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76810",
+          "japanese": "お祖父さまはお風邪を召していらっしゃいます。",
+          "english": "Grandfather has caught a cold.",
+          "pattern": "ます",
+          "length": 22,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76873",
+          "japanese": "あんな妹達でよければ、ノシをつけてさしあげますよ。",
+          "english": "If those little brats of sisters are good enough I'll make a gift of them to you!",
+          "pattern": "ます",
+          "length": 25,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76890",
+          "japanese": "アメリカは発表するたびに、イラク軍のゲリラ抵抗を「テロ」と呼んでおります。",
+          "english": "In reports in America, guerrilla resistance by the Iraq military is called terrorism.",
+          "pattern": "ます",
+          "length": 37,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76932",
+          "japanese": "あ、ごめんなさい。めぐみ。リンスを取っていただけますか。",
+          "english": "Ah, sorry. Megumi, could you get me the conditioner?",
+          "pattern": "ます",
+          "length": 28,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76953",
+          "japanese": "５８１４を千の位に四捨五入すれば何になりますか。",
+          "english": "What is 5814 rounded to the nearest thousand?",
+          "pattern": "ます",
+          "length": 24,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77036",
+          "japanese": "「このたびはご愁傷さまでございます」とひとことお悔みの挨拶をします。",
+          "english": "Use a brief expression of condolence, such as: \"On this sad occasion we grieve with you\".",
+          "pattern": "ます",
+          "length": 34,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77059",
+          "japanese": "（注）画像がリンク切れになっている場合があります。",
+          "english": "NB: Pictures may have become dead links.",
+          "pattern": "ます",
+          "length": 25,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77062",
+          "japanese": "雹が降るのを見たことがありますか。",
+          "english": "Have you ever seen it hail?",
+          "pattern": "ます",
+          "length": 17,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77063",
+          "japanese": "雹が降っています。",
+          "english": "It's hailing.",
+          "pattern": "ます",
+          "length": 9,
+          "stage": 1,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77068",
+          "japanese": "やがて万物は死に絶えます。",
+          "english": "All things die in time.",
+          "pattern": "ます",
+          "length": 13,
+          "stage": 1,
+          "priority": "CRITICAL"
+        }
+      ]
+    },
+    "ました": {
+      "count": 66,
+      "candidates": [
+        {
+          "tatoeba_id": "4707",
+          "japanese": "ムーリエルは２０歳になりました。",
+          "english": "Muiriel is 20 now.",
+          "pattern": "ました",
+          "length": 16,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4715",
+          "japanese": "私は山にいました。",
+          "english": "I was in the mountains.",
+          "pattern": "ました",
+          "length": 9,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4916",
+          "japanese": "「どうかしたの？」と小さな白いウサギが聞きました。",
+          "english": "\"What's the matter?\" asked the little white rabbit.",
+          "pattern": "ました",
+          "length": 25,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5023",
+          "japanese": "２、３ページの英語を訳すのに２時間以上もかかりました。",
+          "english": "It took me more than two hours to translate a few pages of English.",
+          "pattern": "ました",
+          "length": 27,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5036",
+          "japanese": "こちらは私の友達のレイチェルです。私たちは同じ高校に通っていました。",
+          "english": "This is my friend Rachel. We went to high school together.",
+          "pattern": "ました",
+          "length": 34,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5175",
+          "japanese": "決めました。",
+          "english": "I made my decision.",
+          "pattern": "ました",
+          "length": 6,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5209",
+          "japanese": "私はあなたが送ってくれた手紙を読んでいました。",
+          "english": "I was reading the letter you sent me.",
+          "pattern": "ました",
+          "length": 23,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5221",
+          "japanese": "今朝テレビを見ました。",
+          "english": "I watched TV this morning.",
+          "pattern": "ました",
+          "length": 11,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5224",
+          "japanese": "先週中国語を習い始めました。",
+          "english": "I started learning Chinese last week.",
+          "pattern": "ました",
+          "length": 14,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5228",
+          "japanese": "昨年ロンドンへ行きました。",
+          "english": "We went to London last year.",
+          "pattern": "ました",
+          "length": 13,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5246",
+          "japanese": "わたしはあなたの夢を見ました。",
+          "english": "I dreamt about you.",
+          "pattern": "ました",
+          "length": 15,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5280",
+          "japanese": "あなたからさまざまなことを学びました。",
+          "english": "I learned a lot from you.",
+          "pattern": "ました",
+          "length": 19,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5298",
+          "japanese": "きょう何を昼食に食べましたか。",
+          "english": "What did you eat for lunch today?",
+          "pattern": "ました",
+          "length": 15,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5344",
+          "japanese": "あなたはすっかり変わりましたね。",
+          "english": "You changed a lot.",
+          "pattern": "ました",
+          "length": 16,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "6056",
+          "japanese": "彼は1888年7月28日に生まれました。",
+          "english": "He was born on July 28th, 1888.",
+          "pattern": "ました",
+          "length": 20,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74011",
+          "japanese": "彼氏が留置所に入って10日経ちました。",
+          "english": "It's been 10 days since my boyfriend went to jail.",
+          "pattern": "ました",
+          "length": 19,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74135",
+          "japanese": "電話で済まそうと思いました。",
+          "english": "I thought I could settle it by phone.",
+          "pattern": "ました",
+          "length": 14,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74145",
+          "japanese": "終わったあとも足が軽い感じがしました。",
+          "english": "I felt very light on my feet afterwards.",
+          "pattern": "ました",
+          "length": 19,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74146",
+          "japanese": "それが高1の時だから17年が経ちました。",
+          "english": "That was when I was in the first year at high school, so 17 years have passed since then.",
+          "pattern": "ました",
+          "length": 20,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74157",
+          "japanese": "サイレンが急変を知らせました。",
+          "english": "The siren sounded an emergency.",
+          "pattern": "ました",
+          "length": 15,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74166",
+          "japanese": "私は先月結婚式を挙げました。",
+          "english": "I held a wedding ceremony last month.",
+          "pattern": "ました",
+          "length": 14,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74216",
+          "japanese": "そんなことを考えながら『我輩はカモである』を再見しました。",
+          "english": "Thinking about those sorts of things, I watched \"Duck Soup\" again.",
+          "pattern": "ました",
+          "length": 29,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74228",
+          "japanese": "予定日の夕方に破水しました。",
+          "english": "My water broke on the evening of the predicted birth date.",
+          "pattern": "ました",
+          "length": 14,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74235",
+          "japanese": "そのろくでなしどもはクビになりましたよ。",
+          "english": "Those good-for-nothing layabouts were sacked.",
+          "pattern": "ました",
+          "length": 20,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74262",
+          "japanese": "スーパーボウルを見るために会社を休んでいた事もありました。",
+          "english": "I've sometimes taken time off work to watch the Super Bowl.",
+          "pattern": "ました",
+          "length": 29,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74264",
+          "japanese": "ガーデニングの本を見てたら、ドクロマークのついたのがいっぱいあって驚きました。",
+          "english": "When I looked in a gardening book I was surprised by how many were marked poisonous.",
+          "pattern": "ました",
+          "length": 39,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74294",
+          "japanese": "ついに我がデジタルグルーヴクラブの定款が完成しました。",
+          "english": "The articles of incorporation have finally been completed for our Digital Groove Club.",
+          "pattern": "ました",
+          "length": 27,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74386",
+          "japanese": "いきなり本人に誰何するのも無粋と考えました。",
+          "english": "I thought it would be boorish to challenge his identity without warning.",
+          "pattern": "ました",
+          "length": 22,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74389",
+          "japanese": "池のほとりに花ショウブが綺麗に咲いていました。",
+          "english": "Many Japanese irises were flowering prettily on the lake's edge.",
+          "pattern": "ました",
+          "length": 23,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74422",
+          "japanese": "16年間、ここに住んでいる高木さんも驚きました。",
+          "english": "Mr Takagi, who's lived here 16 years, was also surprised.",
+          "pattern": "ました",
+          "length": 24,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74429",
+          "japanese": "風が吹くたびに、桜の花びらが、ひらひらと舞い降りてました。",
+          "english": "The cherry blossoms flutter down whenever the wind blows.",
+          "pattern": "ました",
+          "length": 29,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74434",
+          "japanese": "ブルーワン航空は、エア・ボトゥニアとして1988年に創設されました。",
+          "english": "Blue1 was founded as Air Botnia in 1988.",
+          "pattern": "ました",
+          "length": 34,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74436",
+          "japanese": "ブレーカーが落ちて真っ暗闇になった時、赤ちゃんが怖くて泣きだしました。",
+          "english": "When the breaker tripped and it became pitch black, the baby got scared and started crying.",
+          "pattern": "ました",
+          "length": 35,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74454",
+          "japanese": "最初は別々だったんですがある日一緒行き帰りするようになりました。",
+          "english": "At first we used to go separately, but one day we started going and returning together.",
+          "pattern": "ました",
+          "length": 32,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74462",
+          "japanese": "水から上がり、入江のほとりの砂の上を、よちよち歩き出しました。",
+          "english": "She pulled herself out of the water and waddled along the sand at the edge of the creek.",
+          "pattern": "ました",
+          "length": 31,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74479",
+          "japanese": "難民がごみごみした裏町に住んでいました。",
+          "english": "The refugees were living in a narrow, squalid backstreet.",
+          "pattern": "ました",
+          "length": 20,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74613",
+          "japanese": "メッセージがなぜか文字化けしていたので、修復して読みました。",
+          "english": "For some reason the message text was corrupted, so I restored it before reading.",
+          "pattern": "ました",
+          "length": 30,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74633",
+          "japanese": "ブラックリストに載っていれば編集を拒否するてなこと考えてました。",
+          "english": "I considered doing something like blocking edits based on a blacklist.",
+          "pattern": "ました",
+          "length": 32,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74644",
+          "japanese": "残念ながら昨日はご覧の通りの結果となりました。",
+          "english": "Unfortunately, the results yesterday were as you see.",
+          "pattern": "ました",
+          "length": 23,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74646",
+          "japanese": "友人からもらったコンパクトの鏡の部分が割れてしまいました。",
+          "english": "The mirror on a compact I got from a friend has cracked.",
+          "pattern": "ました",
+          "length": 29,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74659",
+          "japanese": "私よりもっとエッチな人もいて安心しました。",
+          "english": "I was relieved that there are people more wanton than me.",
+          "pattern": "ました",
+          "length": 21,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74672",
+          "japanese": "興奮の連続に、あっというまもなく３０分のショウタイムが過ぎてしまいました。",
+          "english": "In all the excitement the 30 minute show-time passed in a flash.",
+          "pattern": "ました",
+          "length": 37,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74685",
+          "japanese": "家中が力を合わせて麦の刈入れをしました。",
+          "english": "The whole family helped harvest the wheat.",
+          "pattern": "ました",
+          "length": 20,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74689",
+          "japanese": "友人の結婚式にアカペラで歌うことになりました。",
+          "english": "I'm going to be singing a cappella at a friend's wedding ceremony.",
+          "pattern": "ました",
+          "length": 23,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74718",
+          "japanese": "管理用画面に管理者しかアクセスできないようにしました。",
+          "english": "I made it so only root could access the administrative screen.",
+          "pattern": "ました",
+          "length": 27,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74744",
+          "japanese": "ルネッサンス時代、ベニスの芸術は全盛期を迎えていました。",
+          "english": "Art was in its golden age in Venice during the Renaissance.",
+          "pattern": "ました",
+          "length": 28,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74751",
+          "japanese": "腰の痛みから足が鉛のように重く引きずるように歩いていました。",
+          "english": "His backache left him lurching along with leaden legs.",
+          "pattern": "ました",
+          "length": 30,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74773",
+          "japanese": "明らかに全員出席しているように見えました。",
+          "english": "It clearly looked as if everyone was present.",
+          "pattern": "ました",
+          "length": 21,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74796",
+          "japanese": "女性の乞食が５～６人の子どもをぞろぞろつれて物乞いをしていました。",
+          "english": "A female beggar was begging with five or six children following along.",
+          "pattern": "ました",
+          "length": 33,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74807",
+          "japanese": "英語のコミュニティでお名前とコメントを拝見し、プロフィールを拝読しました。",
+          "english": "I saw your name and posts in an English forum and took the liberty of reading your profile.",
+          "pattern": "ました",
+          "length": 37,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74891",
+          "japanese": "私は婚約を解消しました。",
+          "english": "I have broken off our engagement.",
+          "pattern": "ました",
+          "length": 12,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74970",
+          "japanese": "城からそのふもとをゆるやかに湾曲して流れる川全体が見えました。",
+          "english": "From the castle we could see the whole curve of the river around its base.",
+          "pattern": "ました",
+          "length": 31,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74976",
+          "japanese": "彼はライバル会社に引き抜かれました。",
+          "english": "He was poached by a rival company.",
+          "pattern": "ました",
+          "length": 18,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75025",
+          "japanese": "比較的難しいジグソーだと感じました。",
+          "english": "I felt it was a relatively difficult jigsaw puzzle.",
+          "pattern": "ました",
+          "length": 18,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75065",
+          "japanese": "私も先日クリスマスプレゼントにちょっとしたものをあげました。",
+          "english": "I also gave him a little something as a Christmas present the other day.",
+          "pattern": "ました",
+          "length": 30,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75079",
+          "japanese": "夜になると彼女はお月様をながめました。",
+          "english": "When night fell, she watched the moon.",
+          "pattern": "ました",
+          "length": 19,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75106",
+          "japanese": "４年ほど前にアキレス腱が痛くなりアキレス腱炎といわれました。",
+          "english": "About four years ago my Achilles tendon started to hurt and I was told it was Achilles tendonitis.",
+          "pattern": "ました",
+          "length": 30,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75135",
+          "japanese": "敵の旗艦を撃破しました！",
+          "english": "We've destroyed the enemy flagship!",
+          "pattern": "ました",
+          "length": 12,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75159",
+          "japanese": "入院２週間したらニキビが急激に減りました。",
+          "english": "Two weeks after being admitted to hospital my acne suddenly started to disappear.",
+          "pattern": "ました",
+          "length": 21,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75180",
+          "japanese": "最近のぼくは、「生き恥」「赤恥」をかくことを恐れなくなりました。",
+          "english": "Recently I've stopped being afraid of \"living in shame\" and being exposed to \"public ridicule\".",
+          "pattern": "ました",
+          "length": 32,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75182",
+          "japanese": "「それは何ですか」とお聞きしたら「自分で調べなさい」と言われてしまいました。",
+          "english": "When I inquired \"what is that?\" I was told, \"go and find out for yourself.\"",
+          "pattern": "ました",
+          "length": 38,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75253",
+          "japanese": "結局面倒なのでタクシーで帰宅しました。",
+          "english": "In the end, it was just too much bother so I went home by taxi.",
+          "pattern": "ました",
+          "length": 19,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75281",
+          "japanese": "娘をなくして、すっかり心の張りがなくなりました。",
+          "english": "Losing my daughter has taken away my will to live.",
+          "pattern": "ました",
+          "length": 24,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75359",
+          "japanese": "しかるべき時期にお支払いいたしました。",
+          "english": "I paid at the appropriate time.",
+          "pattern": "ました",
+          "length": 19,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75596",
+          "japanese": "夕方になって少し雲が出てきました。",
+          "english": "By evening, a few clouds had formed.",
+          "pattern": "ました",
+          "length": 17,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75619",
+          "japanese": "ペットのためにご祈祷していただける御守と御札が実現しました。",
+          "english": "Now there are charms and talismans for your pet that you can have blessed.",
+          "pattern": "ました",
+          "length": 30,
+          "stage": 2,
+          "priority": "CRITICAL"
+        }
+      ]
+    },
+    "ません": {
+      "count": 66,
+      "candidates": [
+        {
+          "tatoeba_id": "4703",
+          "japanese": "私は眠らなければなりません。",
+          "english": "I have to go to sleep.",
+          "pattern": "ません",
+          "length": 14,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4711",
+          "japanese": "何と言ったら良いか分かりません。",
+          "english": "I'm at a loss for words.",
+          "pattern": "ません",
+          "length": 16,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4717",
+          "japanese": "時間があるか分かりません。",
+          "english": "I don't know if I have the time.",
+          "pattern": "ません",
+          "length": 13,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4744",
+          "japanese": "生物学は好きになれません。",
+          "english": "I never liked biology.",
+          "pattern": "ません",
+          "length": 13,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4814",
+          "japanese": "私は寝なければなりません。",
+          "english": "I have to go to bed.",
+          "pattern": "ません",
+          "length": 13,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4856",
+          "japanese": "家に来ませんか。",
+          "english": "Why don't you come visit us?",
+          "pattern": "ません",
+          "length": 8,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4926",
+          "japanese": "彼らのコミュニケーションは我々が考えてきたものよりはるかに複雑かもしれません。",
+          "english": "Their communication may be much more complex than we thought.",
+          "pattern": "ません",
+          "length": 39,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4983",
+          "japanese": "あら、申し訳ございません。",
+          "english": "Oh, I'm sorry.",
+          "pattern": "ません",
+          "length": 13,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5058",
+          "japanese": "僕と踊ってくれませんか。",
+          "english": "Would you like to dance with me?",
+          "pattern": "ません",
+          "length": 12,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5174",
+          "japanese": "ドイツ語は分かりません。",
+          "english": "I don't understand German.",
+          "pattern": "ません",
+          "length": 12,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5247",
+          "japanese": "新しいパソコンを買わねばなりません。",
+          "english": "I have to get a new computer.",
+          "pattern": "ません",
+          "length": 18,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5255",
+          "japanese": "まだ晴れている間に洗濯をしなければなりません。",
+          "english": "I have to do laundry while it's still sunny.",
+          "pattern": "ません",
+          "length": 23,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5305",
+          "japanese": "私は秘密を漏らしたりしません。",
+          "english": "Your secret will be safe with me.",
+          "pattern": "ません",
+          "length": 15,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5326",
+          "japanese": "土曜日までに本を返さなければなりません。",
+          "english": "I have to give back the book before Saturday.",
+          "pattern": "ません",
+          "length": 20,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5348",
+          "japanese": "あなたはもっと仕事をしなければなりません。",
+          "english": "You must work more.",
+          "pattern": "ません",
+          "length": 21,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "6001",
+          "japanese": "薬を飲まなければなりません。",
+          "english": "I have to take medicine.",
+          "pattern": "ません",
+          "length": 14,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "6015",
+          "japanese": "いくら考えても、わかりません。",
+          "english": "No matter how much I consider it I do not understand.",
+          "pattern": "ません",
+          "length": 15,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74042",
+          "japanese": "手が寒さで震えたは、少しオーバーですみません。",
+          "english": "Sorry, \"my hands shuddered with the cold\" was a bit over the top.",
+          "pattern": "ません",
+          "length": 23,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74162",
+          "japanese": "パソコンを持ってない人は、このMP3プレーヤー機能をフルに使いこなせません。",
+          "english": "People who don't have a computer can't make full use of this MP3 player function.",
+          "pattern": "ません",
+          "length": 38,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74271",
+          "japanese": "あなた同様私もヤフオクの評価が信じられません。",
+          "english": "I also, same as you, don't trust Yahoo Auction ratings.",
+          "pattern": "ません",
+          "length": 23,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74410",
+          "japanese": "何でもかんでもメモをしますがあとで使い物になりません。",
+          "english": "I note down absolutely everything, but they're no good to me afterwards.",
+          "pattern": "ません",
+          "length": 27,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74415",
+          "japanese": "この部屋の本は私の物ではありません。",
+          "english": "The books in this room aren't mine.",
+          "pattern": "ません",
+          "length": 18,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74419",
+          "japanese": "私は日本人ですが、日本に住んでいません。",
+          "english": "I'm Japanese, but I don't live in Japan.",
+          "pattern": "ません",
+          "length": 20,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74445",
+          "japanese": "このサービスは一時的にご利用いただけません。",
+          "english": "This service is temporarily out of order.",
+          "pattern": "ません",
+          "length": 22,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74505",
+          "japanese": "アートファイル(.art)の使用法がわかりません。",
+          "english": "I don't know how to use an art file (.art).",
+          "pattern": "ません",
+          "length": 25,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74786",
+          "japanese": "当面の問題には関係ないかもしれません。",
+          "english": "This might not have anything to do with the problem at hand.",
+          "pattern": "ません",
+          "length": 19,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74789",
+          "japanese": "余計なことをして、すみません。",
+          "english": "Sorry, that was none of my business.",
+          "pattern": "ません",
+          "length": 15,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74818",
+          "japanese": "ちょっと顔を貸してくれませんか。",
+          "english": "Can I have a few words with you?",
+          "pattern": "ません",
+          "length": 16,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74860",
+          "japanese": "同じ虹を、これだけたくさんの人が撮影したものを見たことがありません。",
+          "english": "I've never seen as many people as this photograph the same rainbow.",
+          "pattern": "ません",
+          "length": 34,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74896",
+          "japanese": "ですから、玲子。アンタは慌てることはありません。",
+          "english": "And so, Reiko, it's nothing for you to panic about.",
+          "pattern": "ません",
+          "length": 24,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74998",
+          "japanese": "現在は舞子に住んでいません。",
+          "english": "I don't live in Maigo now.",
+          "pattern": "ません",
+          "length": 14,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75043",
+          "japanese": "そんなの、身体にとっていいはずがないじゃありませんか。",
+          "english": "That can't be good for your health, can it?",
+          "pattern": "ません",
+          "length": 27,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75140",
+          "japanese": "ミスタイプです。すみません。",
+          "english": "It's a typo. Sorry.",
+          "pattern": "ません",
+          "length": 14,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75192",
+          "japanese": "トピずれです。すみません。",
+          "english": "This is off-topic. Sorry.",
+          "pattern": "ません",
+          "length": 13,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75252",
+          "japanese": "いつ寝首を掻かれるかわかったものではありません。",
+          "english": "There's no telling when she'll stab you in the back.",
+          "pattern": "ません",
+          "length": 24,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75256",
+          "japanese": "彼女がどうしてその犯罪に及んだかという動機については、いまだによくわかりません。",
+          "english": "They still haven't been able to work out quite what her motive was for resorting to crime.",
+          "pattern": "ません",
+          "length": 40,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75280",
+          "japanese": "ＥＲＲＯＲ：本文がありません！",
+          "english": "ERROR: No body text!",
+          "pattern": "ません",
+          "length": 15,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75354",
+          "japanese": "そんな話は少しも信じてはいけません。",
+          "english": "You can't believe a word of that.",
+          "pattern": "ません",
+          "length": 18,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75392",
+          "japanese": "ヒントの ***** の数と語の中の字数とは関係がありません。",
+          "english": "The number of *****s in the hint has no relation to the number of characters in the word.",
+          "pattern": "ません",
+          "length": 31,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75563",
+          "japanese": "いくら電話をかけても通じません。",
+          "english": "However often I phone I can't get through.",
+          "pattern": "ません",
+          "length": 16,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75836",
+          "japanese": "突貫作業だったから、サイズが合わないかもしれません。",
+          "english": "It was a rush job, so it might not be a good fit.",
+          "pattern": "ません",
+          "length": 26,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75854",
+          "japanese": "殿方が細かいことにこだわるものではありません。",
+          "english": "It doesn't become a gentleman to fuss over trifles.",
+          "pattern": "ません",
+          "length": 23,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75918",
+          "japanese": "全ての商品及びレストランで割引が効くわけではありません。",
+          "english": "The discount can't be used for all goods or at all restaurants.",
+          "pattern": "ません",
+          "length": 28,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76137",
+          "japanese": "今日は暖房器具を使っていません。",
+          "english": "I'm not using my home heater today.",
+          "pattern": "ません",
+          "length": 16,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76188",
+          "japanese": "現段階ではその問題についてコメントできません。",
+          "english": "At this point, I'm unable to comment on that problem.",
+          "pattern": "ません",
+          "length": 23,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76316",
+          "japanese": "恩人に礼節を欠いてはなりませんよ。",
+          "english": "You must not lack decorum dealing with your benefactors.",
+          "pattern": "ません",
+          "length": 17,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76420",
+          "japanese": "まあ、広義的には間違っていませんね。",
+          "english": "Well, broadly speaking that's right.",
+          "pattern": "ません",
+          "length": 18,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76571",
+          "japanese": "たまには理性のタガを外してみませんか。",
+          "english": "Why not just let fly once in a while?",
+          "pattern": "ません",
+          "length": 19,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76593",
+          "japanese": "そんなことリクエストしていません。",
+          "english": "I didn't request you to do that.",
+          "pattern": "ません",
+          "length": 17,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76744",
+          "japanese": "この校閲力の弱さは人手が足らないとしか考えられませんね。",
+          "english": "I can only put this poor checking down to lack of people at work.",
+          "pattern": "ません",
+          "length": 28,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76746",
+          "japanese": "この牛車で島一周めぐりしませんか。",
+          "english": "Why don't we take a ride round the island on this ox carriage?",
+          "pattern": "ません",
+          "length": 17,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77112",
+          "japanese": "腕を放してくれませんか。",
+          "english": "Would you please let go of my arm?",
+          "pattern": "ません",
+          "length": 12,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77134",
+          "japanese": "脇へ寄ってくださいませんか。",
+          "english": "Would you mind standing aside?",
+          "pattern": "ません",
+          "length": 14,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77148",
+          "japanese": "話をやめてくれませんか。",
+          "english": "Will you stop talking?",
+          "pattern": "ません",
+          "length": 12,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77294",
+          "japanese": "お年寄りをからかってはいけません。",
+          "english": "Don't make fun of old people.",
+          "pattern": "ません",
+          "length": 17,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77306",
+          "japanese": "お年寄りにはできるだけ親切にしなくてはいけません。",
+          "english": "We must be as kind to old people as possible.",
+          "pattern": "ません",
+          "length": 25,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77396",
+          "japanese": "路線図をもらえませんか。",
+          "english": "Can I get a route map, please?",
+          "pattern": "ません",
+          "length": 12,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77506",
+          "japanese": "列車は何時に出発するか教えてくれませんか。",
+          "english": "Would you tell me what time the train starts?",
+          "pattern": "ません",
+          "length": 21,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77520",
+          "japanese": "列車はその駅では止まりません。",
+          "english": "The train doesn't stop at that station.",
+          "pattern": "ません",
+          "length": 15,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77574",
+          "japanese": "列車が止まるまでドアを開けてはいけません。",
+          "english": "Don't open the door till the train stops.",
+          "pattern": "ません",
+          "length": 21,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77645",
+          "japanese": "冷蔵庫には肉は残っていません。",
+          "english": "There is no meat left in the fridge.",
+          "pattern": "ません",
+          "length": 15,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77646",
+          "japanese": "冷蔵庫にはほとんど食べ物がありません。",
+          "english": "There is little food in the refrigerator.",
+          "pattern": "ません",
+          "length": 19,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77681",
+          "japanese": "例外のない規則はありません。",
+          "english": "There is no rule without exceptions.",
+          "pattern": "ません",
+          "length": 14,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77717",
+          "japanese": "たとえどんなことがあってもあきらめません。",
+          "english": "No matter what happens, I won't give up.",
+          "pattern": "ません",
+          "length": 21,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77741",
+          "japanese": "涙が止まりません。",
+          "english": "I cannot stop crying.",
+          "pattern": "ません",
+          "length": 9,
+          "stage": 2,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77812",
+          "japanese": "力が出ません。",
+          "english": "I feel lethargic.",
+          "pattern": "ません",
+          "length": 7,
+          "stage": 2,
+          "priority": "CRITICAL"
+        }
+      ]
+    },
+    "ています": {
+      "count": 45,
+      "candidates": [
+        {
+          "tatoeba_id": "4750",
+          "japanese": "彼は私を蹴っています！",
+          "english": "He's kicking me!",
+          "pattern": "ています",
+          "length": 11,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5181",
+          "japanese": "うれしさで舞い上がっています。",
+          "english": "I'm beside myself with joy.",
+          "pattern": "ています",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5242",
+          "japanese": "私は自分の仕事を気に入っています。",
+          "english": "I like my job very much.",
+          "pattern": "ています",
+          "length": 17,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "6010",
+          "japanese": "公園を散歩しています。",
+          "english": "I'm taking a walk in a park.",
+          "pattern": "ています",
+          "length": 11,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74046",
+          "japanese": "結果、雨の日は部屋の中でボール遊びをしています。",
+          "english": "As a result, we play ball inside on rainy days.",
+          "pattern": "ています",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74172",
+          "japanese": "これは遠心力ですがニュートンは絶対運動と見なしています。",
+          "english": "This is centrifugal force; Newton viewed it as absolute motion.",
+          "pattern": "ています",
+          "length": 28,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74208",
+          "japanese": "人物画を描けるスクールを探しています。",
+          "english": "I'm looking for a school where I can paint portraits.",
+          "pattern": "ています",
+          "length": 19,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74252",
+          "japanese": "ストレスが胃の粘膜を荒らす原因のひとつは次のように考えられています。",
+          "english": "The following is thought to be one of the reasons stress damages the stomach's mucous membrane.",
+          "pattern": "ています",
+          "length": 34,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74255",
+          "japanese": "細菌などから隔離するため、面会謝絶となっています。",
+          "english": "In order to isolate him from bacteria, and such, he is not allowed visitors.",
+          "pattern": "ています",
+          "length": 25,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74280",
+          "japanese": "彼は戦災孤児をひきとって養女として育てています。",
+          "english": "He adopted a war orphan and is bringing her up as a foster daughter.",
+          "pattern": "ています",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74321",
+          "japanese": "皆さんは、モラルを大切にしていますか。",
+          "english": "Do you all place great importance on morals?",
+          "pattern": "ています",
+          "length": 19,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74359",
+          "japanese": "このブログは情報インフラを中心としたトピックを取り上げています。",
+          "english": "This blog covers topics that centre on information infrastructure.",
+          "pattern": "ています",
+          "length": 32,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74679",
+          "japanese": "最近、赤ちゃんのアトピー性皮膚炎が増えています。",
+          "english": "Atopic dermatitis has been increasing on babies recently.",
+          "pattern": "ています",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74746",
+          "japanese": "いつも何曜日なら空いていますか？",
+          "english": "What day are you usually free?",
+          "pattern": "ています",
+          "length": 16,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74763",
+          "japanese": "それは、人間が哺乳動物であることに由来しています。",
+          "english": "That is because human beings are mammals.",
+          "pattern": "ています",
+          "length": 25,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74767",
+          "japanese": "全てを考慮してもやはり勝てない仕様になっています。",
+          "english": "All things considered, it's set up so it isn't possible to win.",
+          "pattern": "ています",
+          "length": 25,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75045",
+          "japanese": "おそらく、見張りに重大な欠陥があったんではないかと考えています。",
+          "english": "I think that it likely that there was a major fault in the lookout.",
+          "pattern": "ています",
+          "length": 32,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75100",
+          "japanese": "カナダのお客様に居酒屋料理をサーブしています。",
+          "english": "I serve pub food to Canadian customers.",
+          "pattern": "ています",
+          "length": 23,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75121",
+          "japanese": "私はテキストを買ってますが、流れてくる英文をテキスト見ずにまず書き出しています。",
+          "english": "I buy the texts, but first I start writing the English sentences that come along without looking at them.",
+          "pattern": "ています",
+          "length": 40,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75208",
+          "japanese": "アフィ狙いの釣り記事ですね。英語関係のコミュのあちこちにマルチポストしています。",
+          "english": "It's a troll trying for click-throughs. It's being multiposted in English-related communities all over the place.",
+          "pattern": "ています",
+          "length": 40,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75335",
+          "japanese": "無断キャンセルにはほとほと困っています。",
+          "english": "These cancellations without notice are a real pain.",
+          "pattern": "ています",
+          "length": 20,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75419",
+          "japanese": "どうです？似合っていますか？ここいらで使う使用人の服なんですよ。",
+          "english": "What do you think? Does it suit me? It's what servants wear around here.",
+          "pattern": "ています",
+          "length": 32,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75775",
+          "japanese": "彼は小節を利かして歌っています。",
+          "english": "He is singing with a lot of ornamentation.",
+          "pattern": "ています",
+          "length": 16,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76054",
+          "japanese": "七夕は漫画によく出てくるので、私もそこそこ知っています。",
+          "english": "Tanabata comes up in manga a lot so I also know it fairly well.",
+          "pattern": "ています",
+          "length": 28,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76155",
+          "japanese": "今はフレッドの錯乱が治まって静かに眠っています。",
+          "english": "Fred's agitation has now subsided, and he's sleeping peacefully.",
+          "pattern": "ています",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76285",
+          "japanese": "会社が日中合弁で経営しています。",
+          "english": "The company is operating under joint Sino-Japanese management.",
+          "pattern": "ています",
+          "length": 16,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76400",
+          "japanese": "みつなは綺麗好きだから、よく自ら進んで掃除をしています。",
+          "english": "Mitsuna is very tidy so she often cleans up without being asked.",
+          "pattern": "ています",
+          "length": 28,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76426",
+          "japanese": "ホワイトニングなどの治療を行います。ヤニ取りなどのクリーニングも行っています。",
+          "english": "We carry out treatments like whitening. We also do tobacco stain removal and other cleaning procedures.",
+          "pattern": "ています",
+          "length": 39,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77063",
+          "japanese": "雹が降っています。",
+          "english": "It's hailing.",
+          "pattern": "ています",
+          "length": 9,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77086",
+          "japanese": "籠の中で鳥が鳴いていますね。",
+          "english": "There's a bird singing in the cage, isn't there?",
+          "pattern": "ています",
+          "length": 14,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77101",
+          "japanese": "嗅覚が鈍っています。",
+          "english": "I've lost my sense of smell.",
+          "pattern": "ています",
+          "length": 10,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77214",
+          "japanese": "和子さんはお姉さんによく似ています。",
+          "english": "Kazuko really takes after her sister.",
+          "pattern": "ています",
+          "length": 18,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77233",
+          "japanese": "六時半に予約しています。",
+          "english": "I have a reservation for six-thirty.",
+          "pattern": "ています",
+          "length": 12,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77454",
+          "japanese": "恋する相手を捜しています。",
+          "english": "I'm looking for someone to fall in love with.",
+          "pattern": "ています",
+          "length": 13,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77512",
+          "japanese": "列車はもう着いていますよ。",
+          "english": "The train has arrived here now.",
+          "pattern": "ています",
+          "length": 13,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77544",
+          "japanese": "列車のダイヤが遅れています。",
+          "english": "The trains are running late.",
+          "pattern": "ています",
+          "length": 14,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77606",
+          "japanese": "零細企業はインフレで苦境に陥っています。",
+          "english": "Small enterprises are feeling the squeeze of inflation.",
+          "pattern": "ています",
+          "length": 20,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77640",
+          "japanese": "冷蔵庫の中にたくさんの食べ物が入っていますか。",
+          "english": "Is there much food in the refrigerator?",
+          "pattern": "ています",
+          "length": 23,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77947",
+          "japanese": "料理が冷めてしまっています。",
+          "english": "The food is cold.",
+          "pattern": "ています",
+          "length": 14,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77954",
+          "japanese": "料理がお上手と聞いています。",
+          "english": "I hear you are good at cooking.",
+          "pattern": "ています",
+          "length": 14,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77996",
+          "japanese": "両親は二人ともまだ生きています。",
+          "english": "Both the parents are still living.",
+          "pattern": "ています",
+          "length": 16,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "78021",
+          "japanese": "両親はスキーヤー用のペンションを経営しています。",
+          "english": "My parents run a pension for skiers.",
+          "pattern": "ています",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "78056",
+          "japanese": "両親とは手紙のやりとりを続けています。",
+          "english": "I keep in touch with my parents by mail.",
+          "pattern": "ています",
+          "length": 19,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "78164",
+          "japanese": "旅行の準備はできていますか。",
+          "english": "Are you ready for the trip?",
+          "pattern": "ています",
+          "length": 14,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "78240",
+          "japanese": "留学をするために私はお金を貯めています。",
+          "english": "I am saving money in order to study abroad.",
+          "pattern": "ています",
+          "length": 20,
+          "stage": 3,
+          "priority": "CRITICAL"
+        }
+      ]
+    }
+  }
+}

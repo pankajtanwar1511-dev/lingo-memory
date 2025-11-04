@@ -1,0 +1,90 @@
+{
+  "phase": "Phase 0 - Diagnostic",
+  "date": "2025-11-03",
+  "input_file": "/home/pankaj/bumble/lingomemory/N5_807_data_set_details/data/n5_807_vocab_n5_grammar_sentences_v2_enhanced.json",
+  "sentence_statistics": {
+    "total_sentences": 9419,
+    "formal_count": 1924,
+    "casual_count": 7495,
+    "formal_percent": 20.43,
+    "casual_percent": 79.57
+  },
+  "length_statistics": {
+    "mean": 11.66,
+    "std": 3.89,
+    "min": 5,
+    "max": 35
+  },
+  "kanji_statistics": {
+    "mean": 2.55,
+    "std": 1.48
+  },
+  "existing_metadata": {
+    "formality": 0,
+    "difficulty": 0,
+    "kana": 0,
+    "grammar_patterns": 0
+  },
+  "pattern_distribution": {
+    "particle_wa": 3653,
+    "desu_masu": 2508,
+    "particle_ni": 1983,
+    "particle_wo": 1676,
+    "ta": 1091,
+    "nai": 1042,
+    "ka_question": 843,
+    "teiru": 398,
+    "kudasai": 385,
+    "da": 330
+  },
+  "vocabulary_coverage": {
+    "total_vocab_words": 1286,
+    "words_with_0_examples": 522,
+    "words_with_1_example": 85,
+    "words_with_2plus_examples": 679,
+    "top_30_words": {
+      "は": 3653,
+      "て": 2715,
+      "か": 2324,
+      "に": 1983,
+      "し": 1940,
+      "こ": 1885,
+      "く": 1473,
+      "私": 1449,
+      "き": 1267,
+      "あ": 1142,
+      "ど": 1011,
+      "と": 987,
+      "この": 602,
+      "した": 567,
+      "いま": 524,
+      "今": 483,
+      "あなた": 457,
+      "好き": 453,
+      "いい": 444,
+      "せ": 426,
+      "さい": 413,
+      "お": 401,
+      "ください": 385,
+      "いる": 377,
+      "誰": 366,
+      "それ": 353,
+      "これ": 341,
+      "話": 336,
+      "人": 325,
+      "その": 322
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "issue": "Low formal percentage (20.4%)",
+      "recommendation": "Will need to prioritize formal sentences in filtering. Target 85% in CORE tier may require smaller core or AI generation."
+    },
+    {
+      "priority": "HIGH",
+      "issue": "522 words have no examples",
+      "recommendation": "May need AI generation for missing vocabulary words"
+    }
+  ]
+}

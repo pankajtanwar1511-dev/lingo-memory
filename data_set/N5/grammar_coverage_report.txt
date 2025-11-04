@@ -1,0 +1,97 @@
+N5 GRAMMAR PATTERN COVERAGE REPORT
+================================================================================
+
+Coverage: 54/87 (62.1%)
+
+
+COVERED PATTERNS:
+い                    - 1252 sentences - i-adjective present
+です                   -  962 sentences - polite copula (is/am/are)
+が                    -  834 sentences - but
+か                    -  747 sentences - question marker
+な                    -  631 sentences - don't (prohibitive)
+だ                    -  545 sentences - plain copula (is/am/are)
+よ                    -  427 sentences - you know (emphasis)
+も                    -  415 sentences - also, too
+た                    -  401 sentences - plain past
+う                    -  389 sentences - plain volitional (will do)
+と                    -  301 sentences - if/when (natural result)
+て                    -  236 sentences - te-form (and, please)
+ね                    -  145 sentences - isn't it? (confirmation)
+ので                   -  123 sentences - because (objective)
+だった                  -   81 sentences - plain copula past (was/were)
+より                   -   73 sentences - than (comparison)
+もう                   -   64 sentences - already
+から                   -   63 sentences - because
+だろう                  -   55 sentences - probably (plain)
+に行く                  -   51 sentences - go to do
+でしょう                 -   50 sentences - probably (polite)
+まだ                   -   41 sentences - still, not yet
+でした                  -   39 sentences - polite copula past (was/were)
+でも                   -   32 sentences - but, however
+たい                   -   31 sentences - want to (verb)
+だけ                   -   25 sentences - only
+ほしい                  -   23 sentences - want (noun)
+くて                   -   16 sentences - i-adjective te-form (and)
+けど                   -   14 sentences - but (casual)
+らしい                  -    9 sentences - seems like, apparently
+後で                   -    9 sentences - after
+に来る                  -    9 sentences - come to do
+ます                   -    8 sentences - polite present/future
+前に                   -    8 sentences - before
+ではない                 -    7 sentences - formal negative copula (is not)
+あげる                  -    6 sentences - give (outward)
+ほど                   -    5 sentences - as much as
+しか                   -    5 sentences - only (with negative)
+みたい                  -    5 sentences - like, similar to
+ましょう                 -    5 sentences - let's do
+くない                  -    5 sentences - i-adjective negative
+じゃない                 -    5 sentences - casual negative copula (is not)
+たいです                 -    3 sentences - want to (polite)
+ません                  -    3 sentences - polite negative present
+ました                  -    3 sentences - polite past
+とき                   -    2 sentences - when, at the time
+てください                -    2 sentences - please do
+ば                    -    2 sentences - if (conditional)
+あとで                  -    2 sentences - after (casual)
+そして                  -    2 sentences - and then
+なかった                 -    1 sentences - plain negative past
+かった                  -    1 sentences - i-adjective past
+ている                  -    1 sentences - progressive/state
+ませんか                 -    1 sentences - won't you? (invitation)
+
+
+MISSING PATTERNS:
+いちばん                 - most, number one
+くなかった                - i-adjective negative past
+くれる                  - give (to me)
+けれども                 - but (formal)
+ことができます              - can do (polite)
+ことができる               - can do, able to
+じゃありません              - polite negative copula (is not)
+すぎる                  - too much
+そうだ                  - I heard that / looks like
+そうです                 - I heard that (polite)
+それから                 - and then, after that
+たくない                 - don't want to
+たことがある               - have done (experience)
+たことがない               - have never done
+たら                   - if/when
+ています                 - polite progressive/state
+てはいけない               - must not
+てみます                 - try doing (polite)
+てみる                  - try doing
+てもいい                 - it's okay to
+ではありません              - polite negative copula (is not)
+ながら                  - while doing
+なくてはいけない             - must do
+なくてもいい               - don't have to
+なければならない             - must do
+にくい                  - hard to
+のほうが                 - more than
+ませんでした               - polite negative past
+みたいだ                 - seems like
+もらう                  - receive
+やすい                  - easy to
+よう                   - plain volitional (will do)
+ような                  - like, such as

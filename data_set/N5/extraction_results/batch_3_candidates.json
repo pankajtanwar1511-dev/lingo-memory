@@ -1,0 +1,918 @@
+{
+  "batch_number": 3,
+  "batch_name": "Progressive & Time Forms",
+  "extracted_at": "2025-11-02 16:29:13",
+  "patterns": {
+    "ている": {
+      "count": 27,
+      "candidates": [
+        {
+          "tatoeba_id": "4741",
+          "japanese": "君は僕にとてもいらいらしている。",
+          "english": "You're so impatient with me.",
+          "pattern": "ている",
+          "length": 16,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4747",
+          "japanese": "大抵の人は僕を気違いだと思っている。",
+          "english": "Most people think I'm crazy.",
+          "pattern": "ている",
+          "length": 18,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4806",
+          "japanese": "彼女は、どうしてそんなことが可能なのかと尋ねている。",
+          "english": "She's asking how that's possible.",
+          "pattern": "ている",
+          "length": 26,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4807",
+          "japanese": "君はただ人生の問題から逃げているだけだよ。",
+          "english": "You're just running away from life's problems.",
+          "pattern": "ている",
+          "length": 21,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4818",
+          "japanese": "謝罪はあったにせよ、私はまだ彼に腹を立てている。",
+          "english": "Even though he apologized, I'm still furious.",
+          "pattern": "ている",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4823",
+          "japanese": "理論的には、私は数学をしている。",
+          "english": "Theoretically, I'm doing math.",
+          "pattern": "ている",
+          "length": 16,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4917",
+          "japanese": "「洞穴の中で何が起こっているんだろう？すごく知りたいなあ」「見当もつかないよ」",
+          "english": "\"What's going on in the cave? I'm curious.\" \"I have no idea.\"",
+          "pattern": "ている",
+          "length": 39,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4927",
+          "japanese": "「電話が鳴っているよ」「私が出ます」",
+          "english": "\"The phone is ringing.\" \"I'll get it.\"",
+          "pattern": "ている",
+          "length": 18,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4934",
+          "japanese": "そこで私たちを待っている幸福が、私たちが望むような幸福ではないかもしれない。",
+          "english": "It may be that the happiness awaiting us is not at all the sort of happiness we would want.",
+          "pattern": "ている",
+          "length": 38,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4966",
+          "japanese": "マドリードから来た人たちは変わっている。",
+          "english": "People from Madrid are weird.",
+          "pattern": "ている",
+          "length": 20,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "4996",
+          "japanese": "「ハムレット」はこれまでで最もおもしろい戯曲だと言われている。",
+          "english": "It is said that \"Hamlet\" is the most interesting play ever written.",
+          "pattern": "ている",
+          "length": 31,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5017",
+          "japanese": "試験が教育を駄目にしていると思う。",
+          "english": "I think exams are ruining education.",
+          "pattern": "ている",
+          "length": 17,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5024",
+          "japanese": "１１時になっているよ。",
+          "english": "It is already eleven.",
+          "pattern": "ている",
+          "length": 11,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5028",
+          "japanese": "あなたは何を求めているのですか。",
+          "english": "What do you want?",
+          "pattern": "ている",
+          "length": 16,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5073",
+          "japanese": "欲しくないという事は持っていると同じことだ。",
+          "english": "Not wanting is the same as having.",
+          "pattern": "ている",
+          "length": 22,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5100",
+          "japanese": "私が話しているときは私を見て！",
+          "english": "Look at me when I talk to you!",
+          "pattern": "ている",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5107",
+          "japanese": "疲れているんだ。",
+          "english": "I'm tired.",
+          "pattern": "ている",
+          "length": 8,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5113",
+          "japanese": "それで何をしようとしているの？",
+          "english": "And what are we going to do?",
+          "pattern": "ている",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5122",
+          "japanese": "彼女は寝たふりをしているからいびきをかいていないんだ。",
+          "english": "She's faking sleep. That's why she's not snoring.",
+          "pattern": "ている",
+          "length": 27,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5127",
+          "japanese": "「もし疲れているなら寝たらどう？」「僕が今寝たらあまりに早く目覚めてしまうから」",
+          "english": "\"If you're tired, why don't you go to sleep?\" \"Because if I go to sleep now I will wake up too early.\"",
+          "pattern": "ている",
+          "length": 40,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5139",
+          "japanese": "考えていることを聞くな。やることを聞け。",
+          "english": "Don't ask what they think. Ask what they do.",
+          "pattern": "ている",
+          "length": 20,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5166",
+          "japanese": "私の持っている全てをあなたに与えるために時間をちょうだい。",
+          "english": "Give me time to give you everything I have!",
+          "pattern": "ている",
+          "length": 29,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5194",
+          "japanese": "私は誰と話しているの？",
+          "english": "Who am I talking with?",
+          "pattern": "ている",
+          "length": 11,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5212",
+          "japanese": "雨が降っている。",
+          "english": "It is raining.",
+          "pattern": "ている",
+          "length": 8,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5220",
+          "japanese": "毎日お昼ご飯を作っているよ。",
+          "english": "I make lunch every day.",
+          "pattern": "ている",
+          "length": 14,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5227",
+          "japanese": "一日に何回鏡で自分を見ているの？",
+          "english": "How many times a day do you look at yourself in the mirror?",
+          "pattern": "ている",
+          "length": 16,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5231",
+          "japanese": "私の弟はテレビを見ている。",
+          "english": "My little brother is watching TV.",
+          "pattern": "ている",
+          "length": 13,
+          "stage": 3,
+          "priority": "CRITICAL"
+        }
+      ]
+    },
+    "とき": {
+      "count": 24,
+      "candidates": [
+        {
+          "tatoeba_id": "4976",
+          "japanese": "誰かが亡くなったときは悲しいものだよ。",
+          "english": "It's a pity when somebody dies.",
+          "pattern": "とき",
+          "length": 19,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5088",
+          "japanese": "あの蜘蛛が大嫌い。いつもそこにいて私が掃除するときいらいらさせるの。",
+          "english": "I hate those spiders. They're always there to freak me out when I'm cleaning.",
+          "pattern": "とき",
+          "length": 34,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5100",
+          "japanese": "私が話しているときは私を見て！",
+          "english": "Look at me when I talk to you!",
+          "pattern": "とき",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74189",
+          "japanese": "最近寝てるときにこむらがえりを起こします。",
+          "english": "Recently I get leg cramps when I sleep.",
+          "pattern": "とき",
+          "length": 21,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74465",
+          "japanese": "ひょんなことからほんとうのことがわかったんだ、ほとんど手を引きかけたときに。",
+          "english": "I tumbled on the truth by the merest accident, when I'd pretty nearly chucked the whole job.",
+          "pattern": "とき",
+          "length": 38,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74612",
+          "japanese": "ＮＡＴＯはそのときにボスニアのセルビア人の基地などを空爆した。",
+          "english": "At that time, NATO bombed the bases of the Bosnian Serbs.",
+          "pattern": "とき",
+          "length": 31,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74648",
+          "japanese": "私は１４歳のときに、父をくも膜下出血で亡くした。",
+          "english": "I lost my father to a subarachnoid haemorrhage when I was fourteen.",
+          "pattern": "とき",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74940",
+          "japanese": "このとき除雪車は確かに私たちの英雄でした。",
+          "english": "At that time the snow plow was certainly our hero.",
+          "pattern": "とき",
+          "length": 21,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "74964",
+          "japanese": "学食に飽きたときは、ベルファで買うもよし、ファミレスで食べるもよし。",
+          "english": "When you're fed up with the school cafe you can buy something at Bellfa or eat at a family restaurant.",
+          "pattern": "とき",
+          "length": 34,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75144",
+          "japanese": "留学中に鬱になったときはどうすれば？",
+          "english": "What should I do if I become depressed while studying abroad?",
+          "pattern": "とき",
+          "length": 18,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75184",
+          "japanese": "つらいとき、哀しいときは人のために何かしてみましょう。",
+          "english": "In hard times, in sorrowful times, let's try doing something for other people.",
+          "pattern": "とき",
+          "length": 27,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75833",
+          "japanese": "曇天の日は晴天のときより音がよく聞こえるのです。",
+          "english": "On cloudy days, you can hear distant sounds better than in clear weather.",
+          "pattern": "とき",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75845",
+          "japanese": "動き出すとき、ベルが「ちんちん」と鳴る。だから、ちんちん電車。",
+          "english": "When it sets off the bell rings, \"ding-ding\". Thus 'ding-ding-train'.",
+          "pattern": "とき",
+          "length": 31,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76126",
+          "japanese": "妻は魚のオードブルが好きだからね、釣りに出掛けるときはお許しが出やすいんだよね。",
+          "english": "My wife loves fish hors d'oeuvre, so it's easier for me to get a kitchen pass for my fishing.",
+          "pattern": "とき",
+          "length": 40,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76263",
+          "japanese": "漢字を書くときは点やはらいに気をつけて、なるべく早くていねいに書きましょう。",
+          "english": "When drawing kanji be careful of dots and sweeps, write as carefully and quickly as possible.",
+          "pattern": "とき",
+          "length": 38,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76324",
+          "japanese": "俺が気づいたとき、俺は車の中にいた。",
+          "english": "When I woke up, I was in the car.",
+          "pattern": "とき",
+          "length": 18,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76838",
+          "japanese": "エステサロンで優雅な至福のひとときを過ごしてみませんか？",
+          "english": "How about spending an elegant and blissful time at a beauty salon?",
+          "pattern": "とき",
+          "length": 28,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77563",
+          "japanese": "列車が発車しようとしているとき私たちは駅に着いた。",
+          "english": "We arrived at the station as the train was leaving.",
+          "pattern": "とき",
+          "length": 25,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "77579",
+          "japanese": "列車から降りたときに激しく雪が降り始めた。",
+          "english": "It began to snow heavily as I got off the train.",
+          "pattern": "とき",
+          "length": 21,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "78169",
+          "japanese": "旅行に出かけるときにも同じ規則が当てはまる。",
+          "english": "The same rule applies to going for a journey.",
+          "pattern": "とき",
+          "length": 22,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "78187",
+          "japanese": "旅行するときは私は飛行機の方を好みます。",
+          "english": "When I travel, I prefer to travel by air.",
+          "pattern": "とき",
+          "length": 20,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "78189",
+          "japanese": "旅行するときはあまりたくさんの荷物を持っていくな。",
+          "english": "Don't carry too much baggage when you travel.",
+          "pattern": "とき",
+          "length": 25,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "78190",
+          "japanese": "旅行から帰るときの土産のことを考えておきなさい。",
+          "english": "Make allowance for souvenirs on the return trip.",
+          "pattern": "とき",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "78462",
+          "japanese": "嵐が終わったとき、私たちは出港の準備をはじめた。",
+          "english": "When the storm was over, we began to make preparations to leave the port.",
+          "pattern": "とき",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        }
+      ]
+    },
+    "あとで": {
+      "count": 24,
+      "candidates": [
+        {
+          "tatoeba_id": "74410",
+          "japanese": "何でもかんでもメモをしますがあとで使い物になりません。",
+          "english": "I note down absolutely everything, but they're no good to me afterwards.",
+          "pattern": "あとで",
+          "length": 27,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "87850",
+          "japanese": "彼女は長い間病気をしていたあとで死んだ。",
+          "english": "She died after she had been ill for a long time.",
+          "pattern": "あとで",
+          "length": 20,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "88810",
+          "japanese": "彼女は手紙を読んだあとで、それを細かく破った。",
+          "english": "After she had read the letter, she tore it to pieces.",
+          "pattern": "あとで",
+          "length": 23,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "125888",
+          "japanese": "長期にわたる病気のあとでジェーンはカウチ・ポテトになった。",
+          "english": "After being ill for a long time, Jane turned into a couch potato.",
+          "pattern": "あとで",
+          "length": 29,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "125969",
+          "japanese": "長い間捜したあとでようやくその本を手に入れた。",
+          "english": "I managed to acquire the book after a long search.",
+          "pattern": "あとで",
+          "length": 23,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "150863",
+          "japanese": "事故のあとで彼は運転を禁止された。",
+          "english": "After the accident, he was banned from driving.",
+          "pattern": "あとで",
+          "length": 17,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "152886",
+          "japanese": "私は勉強をしたあとで寝ます。",
+          "english": "I go to bed after I study.",
+          "pattern": "あとで",
+          "length": 14,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "167685",
+          "japanese": "私が出かけたあとで彼がついた。",
+          "english": "He arrived after I had left.",
+          "pattern": "あとで",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "169078",
+          "japanese": "仕事をしたあとで外出した。",
+          "english": "Having done his work, he went out.",
+          "pattern": "あとで",
+          "length": 13,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "170389",
+          "japanese": "最大限の努力をすればあとで後悔しないから。",
+          "english": "Give it your all, and you won't be sorry later.",
+          "pattern": "あとで",
+          "length": 21,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "170426",
+          "japanese": "最初簡単に思えるものが、あとで難しいとわかることがよくある。",
+          "english": "What seems easy at first often turns out to be difficult.",
+          "pattern": "あとで",
+          "length": 30,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "170444",
+          "japanese": "最初は簡単に思えることがあとで難しいと分かることがよくある。",
+          "english": "What seems easy at first often turns out to be difficult.",
+          "pattern": "あとで",
+          "length": 30,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "171477",
+          "japanese": "今日またあとで君に電話するよ。",
+          "english": "I'll give you a ring later today.",
+          "pattern": "あとで",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "172897",
+          "japanese": "今、努力しなさい。さもないとあとで後悔しますよ。",
+          "english": "Try now, or you will be sorry for it later.",
+          "pattern": "あとで",
+          "length": 24,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "187347",
+          "japanese": "何度も何度も負けたあとで、ついに彼は降参した。",
+          "english": "Having lost the game over and over again, he finally gave in.",
+          "pattern": "あとで",
+          "length": 23,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "187404",
+          "japanese": "何週間もよい天気だったあとで雨がふった。",
+          "english": "It rained after it had been dry for many weeks.",
+          "pattern": "あとで",
+          "length": 20,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "189609",
+          "japanese": "雨のあとで庭は水びたしだった。",
+          "english": "The garden was destroyed after the rain.",
+          "pattern": "あとで",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "191934",
+          "japanese": "わたしたちはしばらく歩いたあとで湖にでた。",
+          "english": "After we had walked for some time, we came to the lake.",
+          "pattern": "あとで",
+          "length": 21,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "195532",
+          "japanese": "またあとでお会いしましょう。",
+          "english": "I'll see you later.",
+          "pattern": "あとで",
+          "length": 14,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "195609",
+          "japanese": "まず結婚しろ。そうすれば愛情とはあとで生まれてくる。",
+          "english": "Marry first and love will follow.",
+          "pattern": "あとで",
+          "length": 26,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "202472",
+          "japanese": "ディナーのあとで、私は海岸を散歩する。",
+          "english": "After dinner, I walk on the beach.",
+          "pattern": "あとで",
+          "length": 19,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "202729",
+          "japanese": "ちょっと中断したあとで討議が再び始まった。",
+          "english": "Discussion resumed after a short interruption.",
+          "pattern": "あとで",
+          "length": 21,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "206469",
+          "japanese": "その問題はあとで解決することにしよう。",
+          "english": "We will talk over the matter later.",
+          "pattern": "あとで",
+          "length": 19,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "211922",
+          "japanese": "その課題に関しては、あとで議論しよう。",
+          "english": "We will discuss that later.",
+          "pattern": "あとで",
+          "length": 19,
+          "stage": 3,
+          "priority": "CRITICAL"
+        }
+      ]
+    },
+    "てから": {
+      "count": 24,
+      "candidates": [
+        {
+          "tatoeba_id": "5084",
+          "japanese": "最後に家族でディズニーランドへに行ってからもう随分になる。",
+          "english": "It has been so long since I last went to Disneyland with my family.",
+          "pattern": "てから",
+          "length": 29,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5098",
+          "japanese": "馬が亡くなってから鞍が淋しい。",
+          "english": "It's lonely in the saddle since the horse died.",
+          "pattern": "てから",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "5339",
+          "japanese": "あなたは私が出発してから到着した。",
+          "english": "You arrived at the moment I left.",
+          "pattern": "てから",
+          "length": 17,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75018",
+          "japanese": "「どうぞ、座って下さい」と言われてから、椅子に座る。",
+          "english": "After being told, \"Please, sit down,\" I sit in the chair.",
+          "pattern": "てから",
+          "length": 26,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75411",
+          "japanese": "言ってから、まゆちゃんは恥ずかしそうに俯いてしまう。",
+          "english": "Having said it, Mayu hangs her head in embarrassment.",
+          "pattern": "てから",
+          "length": 26,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75870",
+          "japanese": "朝は洗顔はもちろん身だしなみを整えてからここに集まるんだ。",
+          "english": "Obviously wash your face, but you must also take care of your appearance before assembling here.",
+          "pattern": "てから",
+          "length": 29,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75875",
+          "japanese": "仲間と決別してから、他のプレイヤーを邪魔するようになった・・。",
+          "english": "After the break-up with her game partners she started to make trouble for other players.",
+          "pattern": "てから",
+          "length": 31,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "75917",
+          "japanese": "祖父は祖母がぽっくり逝ってから急に老け込みました。",
+          "english": "After Grandma's sudden death, Grandpa began to age rapidly.",
+          "pattern": "てから",
+          "length": 25,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "76761",
+          "japanese": "こっちにきてから、ずっと近所でビバークしてたの？大変だったね。",
+          "english": "You've been camping out ever since you came over here? Must have been terrible.",
+          "pattern": "てから",
+          "length": 31,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "79380",
+          "japanese": "友人が亡くなってから丁度１年が経過した。",
+          "english": "Just one year has gone by since my friend died.",
+          "pattern": "てから",
+          "length": 20,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "79552",
+          "japanese": "約束してから彼を訪問すべきだ。",
+          "english": "You should visit him by appointment.",
+          "pattern": "てから",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "79880",
+          "japanese": "戻ってきてから、目を通すから。",
+          "english": "I'll look it over after I come back.",
+          "pattern": "てから",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "81420",
+          "japanese": "妹が結婚してから３年になる。",
+          "english": "It is three years since my sister got married.",
+          "pattern": "てから",
+          "length": 14,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "82365",
+          "japanese": "僕が彼女に会ってから３ヶ月がたちました。",
+          "english": "It's been three months since I met her.",
+          "pattern": "てから",
+          "length": 20,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "82632",
+          "japanese": "訪ねてきてしばらくしてから、彼は突然立ち上がって別れを告げた。",
+          "english": "After a short visit he suddenly got up and took his leave.",
+          "pattern": "てから",
+          "length": 31,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "83025",
+          "japanese": "母は暗くなってから私が外出してはいけないと言い張る。",
+          "english": "My mother insists that I should not go out after dark.",
+          "pattern": "てから",
+          "length": 26,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "84449",
+          "japanese": "父は手術をしてから体調が良い。",
+          "english": "My father has been in good shape since his operation.",
+          "pattern": "てから",
+          "length": 15,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "84844",
+          "japanese": "父が亡くなってから３年になります。",
+          "english": "My father has been dead for three years.",
+          "pattern": "てから",
+          "length": 17,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "87611",
+          "japanese": "彼女は入院してからどんどん良くなってきている。",
+          "english": "She has been mending since she entered the hospital.",
+          "pattern": "てから",
+          "length": 23,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "87613",
+          "japanese": "彼女は入ってからきっちりドアを閉めた。",
+          "english": "She closed the door tightly behind her.",
+          "pattern": "てから",
+          "length": 19,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "88293",
+          "japanese": "彼女は赤ん坊が出来てからはあまり外出しなくなった。",
+          "english": "She did not go out often after the babies came.",
+          "pattern": "てから",
+          "length": 25,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "90183",
+          "japanese": "彼女は雇われてから二ヶ月するかしないうちに能力を認められた。",
+          "english": "She had not been employed two months when her ability was recognized.",
+          "pattern": "てから",
+          "length": 30,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "90288",
+          "japanese": "彼女は結婚してから大学には行った。",
+          "english": "She went to college after she got married.",
+          "pattern": "てから",
+          "length": 17,
+          "stage": 3,
+          "priority": "CRITICAL"
+        },
+        {
+          "tatoeba_id": "91221",
+          "japanese": "彼女は暗くなってから家に帰った。",
+          "english": "She came home after dark.",
+          "pattern": "てから",
+          "length": 16,
+          "stage": 3,
+          "priority": "CRITICAL"
+        }
+      ]
+    }
+  }
+}
