@@ -1,5 +1,5 @@
 # N5 Vocabulary Comparison Analysis
-**Comparing:** N5_vocab_tags.md (810 entries) vs chatgpt_tags_merged.md (846 entries)
+**Comparing:** N5_vocab_tags.md (811 entries) vs chatgpt_tags_merged.md (846 entries)
 ---
 ## Table 1: Perfect Match (Kana + Kanji + Meaning)
 **Total: 565 entries**
@@ -16,7 +16,7 @@
 | あき | 秋 | autumn | adverb, noun, verb | noun | NA | time |
 | あく | 開く | to open (e.g. doors) | godan, verb | verb_godan | intransitive | action |
 | あける | 開ける | to open (a door, etc.) | ichidan, verb | verb_ichidan | transitive | action |
-| あげる | 上げる | to raise / give | ichidan, verb | verb_ichidan | transitive | action |
+| あげる | 上げる | to give / raise | ichidan, verb | verb_ichidan | transitive | action |
 | あさ | 朝 | morning | adverb, noun, verb | noun | NA | time |
 | あさごはん | 朝ごはん | breakfast | noun | noun | NA | food |
 | あさって |  | day after tomorrow | adverb, noun, particle, verb | noun | NA | time |
@@ -593,7 +593,7 @@
 | おりる |  | 降りる | to descend (e.g. a mountain) | to get off / descend | ichidan, verb | verb_ichidan | intransitive | action |
 | か |  |  | beautiful | mosquito? / or question marker | adjective, noun | unknown | NA | misc |
 | かい |  |  | low rank | floor / times | noun, particle | counter | NA | quantity |
-| かかる |  |  | to span | to take (time/money) / hang | godan, verb | verb_godan | intransitive/transitive | action |
+| かかる |  |  | to take (time/money) / hang | to take (time/money) / hang | godan, verb | verb_godan | intransitive/transitive | action |
 | かげつ |  |  | good month | month (counter for months) | noun | counter | NA | time |
 | かぜ |  | 風邪 | (common) cold | cold (illness) | noun | noun | NA | body |
 | かばん |  |  | going off duty | bag | noun, verb | noun | NA | object |
@@ -699,7 +699,7 @@
 | よっか |  | 四日 | 4th day of the month | fourth day / four days | noun | noun | NA | time |
 | よぶ |  | 呼ぶ | to call out (to) | to call / invite | godan, verb | verb_godan | transitive | action |
 | よろしく |  |  | well | best regards / please treat kindly | adverb, verb | polite_expr | NA | greeting |
-| わたす |  | 渡す | to ferry across (e.g. a river) | to hand over | godan, verb | verb_godan | transitive | action |
+| わたす |  | 渡す | to hand over / pass / give | to hand over | godan, verb | verb_godan | transitive | action |
 | コップ |  |  | glass (drinking vessel) | glass (cup) | noun | kana_only | NA | object |
 | ストーブ |  |  | (room) heater | stove | noun | kana_only | NA | tool |
 | ボールペン |  |  | ball-point pen | ballpoint pen | noun | kana_only | NA | tool |
@@ -803,7 +803,7 @@
 | つ |  | つ | general-purpose counter | generic counter | counter | counter | NA | quantity |
 | つくりかた |  | 作り方 | way of making | way of making | noun | noun | NA | action |
 | つける |  | 付ける | to attach / turn on | to attach / turn on | ichidan, verb | verb_ichidan | transitive | action |
-| できる |  | 出来る | to be able to / can do | can do / be able | godan, verb | verb_ichidan | intransitive | action |
+| できる |  | 出来る | to be able to / can do | can do / be able | ichidan, verb | verb_ichidan | intransitive | action |
 | とお |  | 十 | distant | ten | noun, particle | noun | NA | quantity |
 | ど |  | 度 | degree (angle, temperature, scale, etc.) | degree (angle/temperature) | counter, noun | counter | NA | quantity |
 | に | 二 |  | two | to / at (particle) | unknown | particle | NA | misc |
@@ -865,9 +865,10 @@
 ---
 ---
 ## Table 6: Missing in ChatGPT (No Match Found in GPT Dataset)
-**Total: 7 entries**
+**Total: 8 entries**
 | Kana | Kanji | Meaning | N5 Tags |
 |------|-------|---------|---------|
+| くれる |  | to give (to me/us) | ichidan, verb | action |
 | いちばん | 一番 | number one | adverb, noun, particle, verb |
 | にねん |  | two ideas | noun |
 | はく |  | to sweep | godan, verb |

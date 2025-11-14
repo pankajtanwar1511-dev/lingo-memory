@@ -1,220 +1,181 @@
 # N5 Vocabulary - Action Category Entries
 
-**Total Entries:** 127
+**Total Entries:** 128
+
+**Grouped by:** GPT Type (verb_godan, verb_ichidan, verb_irregular, noun, etc.)
 
 ---
 
-## Table 1: Perfect Match (76 entries)
+## verb_godan (82 entries)
 
-Columns: Kana | Kanji | Meaning | N5 Tags | GPT Type | Transitivity
+**Columns:** Kana | Kanji | Meaning | GPT Type | GPT Transitivity
 
-| # | Kana | Kanji | Meaning | N5 Tags | GPT Type | Transitivity |
-|---|------|-------|---------|---------|----------|--------------|
-| 1 | あう | 会う | to meet/ to brush against | godan, verb | verb_godan | intransitive |
-| 2 | あく | 開く | to open (e.g. doors) | godan, verb | verb_godan | intransitive |
-| 3 | あける | 開ける | to open (a door, etc.) | ichidan, verb | verb_ichidan | transitive |
-| 4 | あげる | 上げる | to raise / give | ichidan, verb | verb_ichidan | transitive |
-| 5 | あそぶ | 遊ぶ | to play (games, sports) | godan, verb | verb_godan | intransitive |
-| 6 | あらう | 洗う | to wash | godan, verb | verb_godan | transitive |
-| 7 | ある |  | to be | godan, verb | verb_godan | intransitive |
-| 8 | あるく | 歩く | to walk | godan, verb | verb_godan | intransitive |
-| 9 | いう | 言う | to say | godan, verb | verb_godan | transitive |
-| 10 | いく | 行く | to go | godan, verb | verb_godan | intransitive |
-| 11 | いただく |  | to receive | verb | verb_godan | transitive |
-| 12 | いる | 要る | to be needed | godan, verb | verb_godan | transitive |
-| 13 | いれる | 入れる | to put in | ichidan, verb | verb_ichidan | transitive |
-| 14 | うたう | 歌う | to sing | godan, verb | verb_godan | transitive/intransitive |
-| 15 | うる | 売る | to sell | godan, verb | verb_godan | transitive |
-| 16 | えらぶ | 選ぶ | to choose | verb | verb_godan | transitive |
-| 17 | おきる | 起きる | to get up | ichidan, verb | verb_ichidan | intransitive |
-| 18 | おく | 置く | to put | godan, verb | verb_godan | transitive |
-| 19 | おくる | 送る | to send | verb | verb_godan | transitive |
-| 20 | おしえる | 教える | to teach | ichidan, verb | verb_ichidan | transitive |
-| 21 | おす | 押す | to push | godan, verb | verb_godan | transitive |
-| 22 | おぼえる | 覚える | to memorize | ichidan, verb | verb_ichidan | transitive |
-| 23 | およぐ | 泳ぐ | to swim | godan, verb | verb_godan | intransitive |
-| 24 | おわる | 終わる | to end | godan, verb | verb_godan | intransitive |
-| 25 | かう | 買う | to buy | godan, verb | verb_godan | transitive |
-| 26 | かえす | 返す | to return (something) | godan, verb | verb_godan | transitive |
-| 27 | かえる | 帰る | to return | godan, verb | verb_godan | intransitive |
-| 28 | かく | 書く | to write | godan, verb | verb_godan | transitive |
-| 29 | かす | 貸す | to lend | godan, verb | verb_godan | transitive |
-| 30 | かりる | 借りる | to borrow | ichidan, verb | verb_ichidan | transitive |
-| 31 | きる | 切る | to cut | godan, verb | verb_godan | transitive |
-| 32 | くる | 来る | to come (spatially or temporally) | verb | verb_irregular | intransitive |
-| 33 | こたえる | 答える | to answer | ichidan, verb | verb_ichidan | intransitive |
-| 34 | こまる | 困る | to be troubled | godan, verb | verb_godan | intransitive |
-| 35 | しごと | 仕事 | work | noun, verb | noun | NA |
-| 36 | しぬ | 死ぬ | to die | godan, verb | verb_godan | intransitive |
-| 37 | しめる | 閉める | to close | ichidan, verb | verb_ichidan | transitive |
-| 38 | しる | 知る | to know | godan, verb | verb_godan | transitive |
-| 39 | すう | 吸う | to inhale / breathe / smoke | godan, verb | verb_godan | transitive |
-| 40 | する |  | to do | verb | verb_irregular | both |
-| 41 | すわる | 座る | to sit (down) | godan, verb | verb_godan | intransitive |
-| 42 | たつ | 立つ | to stand (up) | godan, verb | verb_godan | intransitive |
-| 43 | たべる | 食べる | to eat | ichidan, verb | verb_ichidan | transitive |
-| 44 | だす | 出す | to take out | godan, verb | verb_godan | transitive |
-| 45 | つかう | 使う | to use (a tool, method, etc.) | godan, verb | verb_godan | transitive |
-| 46 | つく | 着く | to arrive at | godan, verb | verb_godan | intransitive |
-| 47 | つくる | 作る | to make | godan, verb | verb_godan | transitive |
-| 48 | でかける | 出かける | to go out (e.g. on an excursion or outing) | ichidan, verb | verb_ichidan | intransitive |
-| 49 | でる | 出る | to leave | ichidan, verb | verb_ichidan | intransitive |
-| 50 | とぶ | 飛ぶ | to fly | godan, verb | verb_godan | intransitive |
-| 51 | とまる | 止まる | to stop (moving) | godan, verb | verb_godan | intransitive |
-| 52 | とる | 取る | to take | godan, verb | verb_godan | transitive |
-| 53 | なくす | 無くす | to lose (something) | godan, verb | verb_godan | transitive |
-| 54 | なく | 鳴く | to make sound (of an animal) | godan, verb | verb_godan | intransitive |
-| 55 | なく | 泣く | to cry | godan, verb | verb_godan | intransitive |
-| 56 | ならぶ | 並ぶ | to line up | godan, verb | verb_godan | intransitive |
-| 57 | ぬる | 塗る | to paint | verb | verb_godan | transitive |
-| 58 | ねる | 寝る | to sleep (lying down) | ichidan, verb | verb_ichidan | intransitive |
-| 59 | のむ | 飲む | to drink | godan, verb | verb_godan | transitive |
-| 60 | はいる | 入る | to enter | godan, verb | verb_godan | intransitive |
-| 61 | はしる | 走る | to run | godan, verb | verb_godan | intransitive |
-| 62 | はじまる | 始まる | to begin | godan, verb | verb_godan | intransitive |
-| 63 | はたらく | 働く | to work | godan, verb | verb_godan | intransitive |
-| 64 | はる | 貼る | to stick | godan, verb | verb_godan | transitive |
-| 65 | ひく | 引く | to pull | godan, verb | verb_godan | transitive |
-| 66 | まつ | 待つ | to wait | godan, verb | verb_godan | transitive |
-| 67 | みがく | 磨く | to polish | godan, verb | verb_godan | transitive |
-| 68 | みせる | 見せる | to show | ichidan, verb | verb_ichidan | transitive |
-| 69 | みる | 見る | to see | verb | verb_ichidan | transitive |
-| 70 | もらう | 貰う | to receive | verb | verb_godan | transitive |
-| 71 | やる |  | to do | godan, verb | verb_godan | transitive |
-| 72 | ゆく | 行く | to go | godan, verb | verb_godan | intransitive |
-| 73 | よむ | 読む | to read | godan, verb | verb_godan | transitive |
-| 74 | わかる | 分かる | to understand | godan, verb | verb_godan | intransitive |
-| 75 | わすれる | 忘れる | to forget | ichidan, verb | verb_ichidan | transitive |
-| 76 | わたる | 渡る | to cross over | godan, verb | verb_godan | intransitive |
-
----
-
-## Table 2: Kana + Kanji Match, Meaning Differs (29 entries)
-
-Columns: Kana | Kanji | N5 Meaning | ChatGPT Meaning | N5 Tags | GPT Type
-
-| # | Kana | Kanji | N5 Meaning | ChatGPT Meaning | N5 Tags | GPT Type |
-|---|------|-------|------------|-----------------|---------|----------|
-| 1 | いる |  | 居る | to be (of animate objects) | to be (animate existence) | ichidan, verb |
-| 2 | おりる |  | 降りる | to descend (e.g. a mountain) | to get off / descend | ichidan, verb |
-| 3 | かかる |  |  | to span | to take (time/money) / hang | godan, verb |
-| 4 | かぶる |  | 被る | to put on (one's head) | to put on (head) | verb |
-| 5 | きえる |  | 消える | to disappear | to go out / disappear | ichidan, verb |
-| 6 | きく |  | 聞く | to hear | to listen / ask | godan, verb |
-| 7 | きる |  | 着る | to wear (from the shoulders down) | to wear (torso) | ichidan, verb |
-| 8 | けす |  | 消す | to erase | to turn off / erase | godan, verb |
-| 9 | さす |  | 差す | to hold up (umbrella) / shine | to raise (hand) / hold up | godan, verb |
-| 10 | しまる |  | 閉まる | to be shut | to close (intransitive) | godan, verb |
-| 11 | しめる |  | 締める | to tie | to tighten | ichidan, verb |
-| 12 | すむ |  | 住む | to live (of humans) | to live / reside | godan, verb |
-| 13 | せんたく |  | 洗濯 | washing | laundry | noun, verb |
-| 14 | たのむ |  | 頼む | to request | to ask / request | godan, verb |
-| 15 | ちがう |  | 違う | to differ (from) | to differ / be wrong | godan, verb |
-| 16 | つとめる |  | 勤める | to work (for) | to work for | ichidan, verb |
-| 17 | とる |  | 撮る | to take (a photograph) | to take (photo) | godan, verb |
-| 18 | ならう |  | 習う | to take lessons in | to learn | godan, verb |
-| 19 | ならべる |  | 並べる | to line up | to arrange | ichidan, verb |
-| 20 | ぬぐ |  | 脱ぐ | to take off (clothes, shoes, etc.) | to take off (clothes) | godan, verb |
-| 21 | のぼる |  | 登る | to ascend | to climb | godan, verb |
-| 22 | のる |  | 乗る | to get on (train, plane, bus, ship, etc.) | to ride | godan, verb |
-| 23 | はく |  | 履く | to put on (lower-body clothing, e.g. pants, skirt, footwear) | to put on (shoes/pants) | verb |
-| 24 | はなす |  | 話す | to talk | to speak | godan, verb |
-| 25 | ひく |  | 弾く | to play (a stringed or keyboard instrument) | to play (instrument) | godan, verb |
-| 26 | もつ |  | 持つ | to hold (in one's hand) | to hold / have | godan, verb |
-| 27 | やすむ |  | 休む | to rest / be absent | to rest / be absent | godan, verb |
-| 28 | よぶ |  | 呼ぶ | to call out (to) | to call / invite | godan, verb |
-| 29 | わたす |  | 渡す | to ferry across (e.g. a river) | to hand over | godan, verb |
+| # | Kana | Kanji | Meaning | GPT Type | GPT Transitivity |
+|---|------|-------|---------|----------|------------------|
+| 1 | あう | 会う | to meet/ to brush against | verb_godan | intransitive |
+| 2 | あく | 開く | to open (e.g. doors) | verb_godan | intransitive |
+| 3 | あそぶ | 遊ぶ | to play (games, sports) | verb_godan | intransitive |
+| 4 | あらう | 洗う | to wash | verb_godan | transitive |
+| 5 | ある |  | to be | verb_godan | intransitive |
+| 6 | あるく | 歩く | to walk | verb_godan | intransitive |
+| 7 | いう | 言う | to say | verb_godan | transitive |
+| 8 | いく | 行く | to go | verb_godan | intransitive |
+| 9 | いただく | 頂く | to receive | verb_godan | transitive |
+| 10 | いる | 要る | to be needed | verb_godan | transitive |
+| 11 | うたう | 歌う | to sing | verb_godan | transitive/intransitive |
+| 12 | うる | 売る | to sell | verb_godan | transitive |
+| 13 | えらぶ | 選ぶ | to choose | verb_godan | transitive |
+| 14 | おく | 置く | to put | verb_godan | transitive |
+| 15 | おくる | 送る | to send | verb_godan | transitive |
+| 16 | おす | 押す | to push | verb_godan | transitive |
+| 17 | およぐ | 泳ぐ | to swim | verb_godan | intransitive |
+| 18 | おわる | 終わる | to end | verb_godan | intransitive |
+| 19 | かう | 買う | to buy | verb_godan | transitive |
+| 20 | かえす | 返す | to return (something) | verb_godan | transitive |
+| 21 | かえる | 帰る | to return | verb_godan | intransitive |
+| 22 | かく | 書く | to write | verb_godan | transitive |
+| 23 | かす | 貸す | to lend | verb_godan | transitive |
+| 24 | きる | 切る | to cut | verb_godan | transitive |
+| 25 | こまる | 困る | to be troubled | verb_godan | intransitive |
+| 26 | しぬ | 死ぬ | to die | verb_godan | intransitive |
+| 27 | しる | 知る | to know | verb_godan | transitive |
+| 28 | すう | 吸う | to inhale / breathe / smoke | verb_godan | transitive |
+| 29 | すわる | 座る | to sit (down) | verb_godan | intransitive |
+| 30 | たつ | 立つ | to stand (up) | verb_godan | intransitive |
+| 31 | だす | 出す | to take out | verb_godan | transitive |
+| 32 | つかう | 使う | to use (a tool, method, etc.) | verb_godan | transitive |
+| 33 | つく | 着く | to arrive at | verb_godan | intransitive |
+| 34 | つくる | 作る | to make | verb_godan | transitive |
+| 35 | とぶ | 飛ぶ | to fly | verb_godan | intransitive |
+| 36 | とまる | 止まる | to stop (moving) | verb_godan | intransitive |
+| 37 | とる | 取る | to take | verb_godan | transitive |
+| 38 | なくす | 無くす | to lose (something) | verb_godan | transitive |
+| 39 | なく | 鳴く | to make sound (of an animal) | verb_godan | intransitive |
+| 40 | なく | 泣く | to cry | verb_godan | intransitive |
+| 41 | ならぶ | 並ぶ | to line up | verb_godan | intransitive |
+| 42 | ぬる | 塗る | to paint | verb_godan | transitive |
+| 43 | のむ | 飲む | to drink | verb_godan | transitive |
+| 44 | はいる | 入る | to enter | verb_godan | intransitive |
+| 45 | はしる | 走る | to run | verb_godan | intransitive |
+| 46 | はじまる | 始まる | to begin | verb_godan | intransitive |
+| 47 | はたらく | 働く | to work | verb_godan | intransitive |
+| 48 | はる | 貼る | to stick | verb_godan | transitive |
+| 49 | ひく | 引く | to pull | verb_godan | transitive |
+| 50 | まつ | 待つ | to wait | verb_godan | transitive |
+| 51 | みがく | 磨く | to polish | verb_godan | transitive |
+| 52 | もらう | 貰う | to receive | verb_godan | transitive |
+| 53 | やる |  | to do | verb_godan | transitive |
+| 54 | ゆく | 行く | to go | verb_godan | intransitive |
+| 55 | よむ | 読む | to read | verb_godan | transitive |
+| 56 | わかる | 分かる | to understand | verb_godan | intransitive |
+| 57 | わたる | 渡る | to cross over | verb_godan | intransitive |
+| 58 | なる | 成る | to become | verb_godan | intransitive |
+| 59 | てつだう | 手伝う | to help / assist | verb_godan | transitive |
+| 60 | かかる |  | to take (time/money) / hang | verb_godan | intransitive/transitive |
+| 61 | かぶる | 被る | to put on (one's head) | verb_godan | transitive |
+| 62 | きく | 聞く | to hear | verb_godan | transitive |
+| 63 | けす | 消す | to erase | verb_godan | transitive |
+| 64 | さす | 差す | to hold up (umbrella) / shine | verb_godan | transitive |
+| 65 | しまる | 閉まる | to be shut | verb_godan | intransitive |
+| 66 | すむ | 住む | to live (of humans) | verb_godan | intransitive |
+| 67 | たのむ | 頼む | to request | verb_godan | transitive |
+| 68 | ちがう | 違う | to differ (from) | verb_godan | intransitive |
+| 69 | とる | 撮る | to take (a photograph) | verb_godan | transitive |
+| 70 | ならう | 習う | to take lessons in | verb_godan | transitive |
+| 71 | ぬぐ | 脱ぐ | to take off (clothes, shoes, etc.) | verb_godan | transitive |
+| 72 | のぼる | 登る | to ascend | verb_godan | intransitive |
+| 73 | のる | 乗る | to get on (train, plane, bus, ship, etc.) | verb_godan | intransitive |
+| 74 | はく | 履く | to put on (lower-body clothing, e.g. pants, skirt, footwear) | verb_godan | transitive |
+| 75 | はなす | 話す | to talk | verb_godan | transitive |
+| 76 | ひく | 弾く | to play (a stringed or keyboard instrument) | verb_godan | transitive |
+| 77 | もつ | 持つ | to hold (in one's hand) | verb_godan | transitive |
+| 78 | やすむ | 休む | to rest / be absent | verb_godan | intransitive |
+| 79 | よぶ | 呼ぶ | to call out (to) | verb_godan | transitive |
+| 80 | わたす | 渡す | to hand over / pass / give | verb_godan | transitive |
+| 81 | まがる | 曲がる | to turn / bend | verb_godan | intransitive |
+| 82 | もっていく | 持って行く | to take (something) along | verb_godan | transitive |
 
 ---
 
-## Table 3: Kana + Meaning Match, Kanji Differs (3 entries)
+## verb_ichidan (30 entries)
 
-Columns: Kana | N5 Kanji | ChatGPT Kanji | Meaning | N5 Tags | GPT Type
+**Columns:** Kana | Kanji | Meaning | GPT Type | GPT Transitivity
 
-| # | Kana | N5 Kanji | ChatGPT Kanji | Meaning | N5 Tags | GPT Type |
-|---|------|----------|---------------|---------|---------|----------|
-| 1 | あびる |  | 浴びる | to dash over oneself (e.g. water) | ichidan, verb | verb_ichidan |
-| 2 | さんぽ |  | 散歩 | walk | noun, verb | noun |
-| 3 | なる |  | 成る | to become | godan, verb | verb_godan |
-
----
-
-## Table 4: Kana Only Match (7 entries)
-
-Columns: Kana | N5 Kanji | ChatGPT Kanji | N5 Meaning | ChatGPT Meaning | N5 Tags | GPT Type
-
-| # | Kana | N5 Kanji | ChatGPT Kanji | N5 Meaning | ChatGPT Meaning | N5 Tags | GPT Type |
-|---|------|----------|---------------|------------|-----------------|---------|----------|
-| 1 | かける |  | 掛ける? | to hang up (e.g. a coat, a picture on the wall) | to hang; call (phone) | ichidan, verb | verb_ichidan |
-| 2 | そうじ |  | 掃除 | cleaning | cleaning | noun, verb | noun |
-| 3 | つくりかた |  | 作り方 | way of making | way of making | noun | noun |
-| 4 | つける |  | 付ける | to attach / turn on | to attach / turn on | ichidan, verb | verb_ichidan |
-| 5 | できる |  | 出来る | to be able to / can do | can do / be able | godan, verb | verb_ichidan |
-| 6 | まがる |  | 曲がる | to turn / bend | to turn / bend | godan, verb | verb_godan |
-| 7 | もっていく |  | 持って行く | to take (something) along | to take along | expression, verb | verb_godan |
-
----
-
-## Table 5: Extra in ChatGPT (12 entries)
-
-Columns: Kana | Kanji | Meaning | GPT Type | Transitivity
-
-| # | Kana | Kanji | Meaning | GPT Type | Transitivity |
-|---|------|-------|---------|----------|--------------|
-| 1 | けっこんする | 結婚する | to marry | verb_irregular | intransitive |
-| 2 | さんぽする | 散歩する | to stroll | verb_irregular | intransitive |
-| 3 | せんたくする | 洗濯する | to wash laundry | verb_irregular | transitive |
-| 4 | そうじする | 掃除する | to clean | verb_irregular | transitive |
-| 5 | でんわする | 電話する | to make a phone call | verb_irregular | transitive |
-| 6 | はじめる | 始める | to start (transitive) | verb_ichidan | transitive |
-| 7 | べんきょうする | 勉強する | to study | verb_irregular | transitive |
-| 8 | りょこうする | 旅行する | to travel | verb_irregular | intransitive |
-| 9 | れんしゅうする | 練習する | to practice | verb_irregular | transitive |
-| 10 | てつだう | 手伝う | to help / assist | verb_godan | intransitive |
-| 11 | つれる | 連れる | to take (a person) / lead | verb_ichidan | transitive |
-| 12 | もってくる | 持って来る | to bring (something) | verb_irregular | transitive |
+| # | Kana | Kanji | Meaning | GPT Type | GPT Transitivity |
+|---|------|-------|---------|----------|------------------|
+| 83 | あける | 開ける | to open (a door, etc.) | verb_ichidan | transitive |
+| 84 | あげる | 上げる | to give / raise | verb_ichidan | transitive |
+| 85 | いれる | 入れる | to put in | verb_ichidan | transitive |
+| 86 | おきる | 起きる | to get up | verb_ichidan | intransitive |
+| 87 | おしえる | 教える | to teach | verb_ichidan | transitive |
+| 88 | おぼえる | 覚える | to memorize | verb_ichidan | transitive |
+| 89 | かりる | 借りる | to borrow | verb_ichidan | transitive |
+| 90 | こたえる | 答える | to answer | verb_ichidan | intransitive |
+| 91 | しめる | 閉める | to close | verb_ichidan | transitive |
+| 92 | たべる | 食べる | to eat | verb_ichidan | transitive |
+| 93 | でかける | 出かける | to go out (e.g. on an excursion or outing) | verb_ichidan | intransitive |
+| 94 | でる | 出る | to leave | verb_ichidan | intransitive |
+| 95 | ねる | 寝る | to sleep (lying down) | verb_ichidan | intransitive |
+| 96 | みせる | 見せる | to show | verb_ichidan | transitive |
+| 97 | みる | 見る | to see | verb_ichidan | transitive |
+| 98 | わすれる | 忘れる | to forget | verb_ichidan | transitive |
+| 99 | あびる | 浴びる | to dash over oneself (e.g. water) | verb_ichidan | transitive |
+| 100 | はじめる | 始める | to start (transitive) | verb_ichidan | transitive |
+| 101 | つれる | 連れる | to take (a person) / lead | verb_ichidan | transitive |
+| 102 | いる | 居る | to be (of animate objects) | verb_ichidan | intransitive |
+| 103 | おりる | 降りる | to descend (e.g. a mountain) | verb_ichidan | intransitive |
+| 104 | きえる | 消える | to disappear | verb_ichidan | intransitive |
+| 105 | きる | 着る | to wear (from the shoulders down) | verb_ichidan | transitive |
+| 106 | しめる | 締める | to tie | verb_ichidan | transitive |
+| 107 | つとめる | 勤める | to work (for) | verb_ichidan | intransitive |
+| 108 | ならべる | 並べる | to line up | verb_ichidan | transitive |
+| 109 | かける | 掛ける | to hang up (e.g. a coat, a picture on the wall) | verb_ichidan | transitive |
+| 110 | つける | 付ける | to attach / turn on | verb_ichidan | transitive |
+| 111 | できる | 出来る | to be able to / can do | verb_ichidan | intransitive |
+| 112 | くれる | 呉れる | to give (to me/us) | verb_ichidan | transitive |
 
 ---
 
-## Table 6: Missing in ChatGPT (0 entries)
+## verb_irregular (11 entries)
 
-No action category entries in this table.
+**Columns:** Kana | Kanji | Meaning | GPT Type | GPT Transitivity
+
+| # | Kana | Kanji | Meaning | GPT Type | GPT Transitivity |
+|---|------|-------|---------|----------|------------------|
+| 113 | くる | 来る | to come (spatially or temporally) | verb_irregular | intransitive |
+| 114 | する |  | to do | verb_irregular | both |
+| 115 | けっこんする | 結婚する | to marry | verb_irregular | intransitive |
+| 116 | さんぽする | 散歩する | to stroll | verb_irregular | intransitive |
+| 117 | せんたくする | 洗濯する | to wash laundry | verb_irregular | transitive |
+| 118 | そうじする | 掃除する | to clean | verb_irregular | transitive |
+| 119 | でんわする | 電話する | to make a phone call | verb_irregular | transitive |
+| 120 | べんきょうする | 勉強する | to study | verb_irregular | transitive |
+| 121 | りょこうする | 旅行する | to travel | verb_irregular | intransitive |
+| 122 | れんしゅうする | 練習する | to practice | verb_irregular | transitive |
+| 123 | もってくる | 持って来る | to bring (something) | verb_irregular | transitive |
+
+---
+
+## noun (5 entries)
+
+**Columns:** Kana | Kanji | Meaning | GPT Type | GPT Transitivity
+
+| # | Kana | Kanji | Meaning | GPT Type | GPT Transitivity |
+|---|------|-------|---------|----------|------------------|
+| 124 | しごと | 仕事 | work | noun | NA |
+| 125 | さんぽ | 散歩 | walk | noun | NA |
+| 126 | せんたく | 洗濯 | washing | noun | NA |
+| 127 | そうじ | 掃除 | cleaning | noun | NA |
+| 128 | つくりかた | 作り方 | way of making | noun | NA |
 
 ---
 
 ## Summary Statistics
 
-### Distribution by Table
-- **Table 1 (Perfect Match):** 76 entries (59.8%)
-- **Table 2 (Meaning Differs):** 29 entries (22.8%)
-- **Table 3 (Kanji Differs):** 3 entries (2.4%)
-- **Table 4 (Kana Only):** 7 entries (5.5%)
-- **Table 5 (Extra in ChatGPT):** 12 entries (9.4%)
-- **Table 6 (Missing):** 0 entries (0%)
-
-### By Verb Type
-- **Godan verbs (verb_godan):** 58 entries
-- **Ichidan verbs (verb_ichidan):** 17 entries
-- **Irregular verbs (verb_irregular):** 2 entries (くる, もってくる)
-- **Nouns with action category:** 2 entries (しごと, さんぽ)
-- **する-verbs (compound):** 9 entries (けっこんする, さんぽする, せんたくする, そうじする, でんわする, べんきょうする, りょこうする, れんしゅうする, and する itself)
-
-### By Transitivity (from Tables 1, 5)
-- **Transitive:** 41 entries
-- **Intransitive:** 34 entries
-- **Both:** 1 entry (する)
-- **NA (nouns):** 1 entry
-
-### Notable Entries
-- **Irregular verbs:** くる (来る), する, もってくる (持って来る)
-- **Homographs (same kana, different kanji):** なく (鳴く "to make sound" / 泣く "to cry"), とる (取る "to take" / 撮る "to photograph"), ひく (引く "to pull" / 弾く "to play instrument")
-- **Compound verbs with する:** 9 entries
-- **Expanded glosses after linguistic review:** すう, さす, やすむ, あげる
-- **Corrected meanings:** そうじ, つくりかた, つける, できる
-
+### Distribution by GPT Type
+- **verb_godan:** 82 entries (64.1%)\n- **verb_ichidan:** 30 entries (23.4%)\n- **verb_irregular:** 11 entries (8.6%)\n- **noun:** 5 entries (3.9%)\n
+### Notable Corrections Applied
+- **Added:** くれる (essential N5 giving/receiving verb)\n- **Fixed meanings:** そうじ, つくりかた, つける, できる, あげる, かかる, わたす\n- **Expanded glosses:** すう, さす, やすむ\n- **Fixed classifications:** くる, する → irregular; できる → ichidan\n- **Removed:** いたる (N2 level)\n- **Added verbs:** くれる, てつだう, つれる, もってくる\n
 ---
 
-**Source:** comparison_analysis.md
-**Date:** 2025-11-05
-**Total Action Entries:** 127
-**Changes applied:** Fixed meanings, removed non-N5 entries (いたる), added missing verbs (てつだう, つれる, もってくる), fixed verb types (くる, する → irregular)
+**Source:** comparison_analysis.md\n**Date:** 2025-11-05\n**Total Action Entries:** 128\n**Organization:** Unified table grouped by GPT Type\n

@@ -1,0 +1,3493 @@
+{
+  "note": "Group I (Godan) verbs from Minna no Nihongo with professional JMdict filtering",
+  "filter_strategy": "hybrid_professional",
+  "filter_description": "Uses JMdict priority tags (news1, ichi1, nf01-nf06), multi-factor scoring, keyword filtering, and Minna meaning similarity",
+  "extraction_date": "2025-11-05",
+  "source_file": "minna_verb.md",
+  "verb_group": "Group I (Godan)",
+  "total_unique_verbs": 76,
+  "found_in_jmdict": 76,
+  "missing_from_jmdict": 0,
+  "filtering_stats": {
+    "original_senses": 439,
+    "filtered_senses": 139,
+    "filtered_out": 300,
+    "reduction_percent": 68.3
+  },
+  "priority_stats": {
+    "with_news1": 34,
+    "with_ichi1": 74,
+    "with_nf_tags": 34
+  },
+  "verbs": [
+    {
+      "minna_kanji": "会う",
+      "minna_kana": "あう",
+      "minna_masu_form": "会います",
+      "minna_meanings": [
+        "meet [a friend]"
+      ],
+      "jmdict_ent_seq": "1198180",
+      "jmdict_exact_kanji": "会う",
+      "jmdict_exact_kana": "あう",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf34",
+        "nf26"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to meet",
+            "to encounter",
+            "to see"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to have an accident",
+            "to have a bad experience"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "intransitive verb"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 2,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "遊ぶ",
+      "minna_kana": "あそぶ",
+      "minna_masu_form": "遊びます",
+      "minna_meanings": [
+        "enjoy oneself, play"
+      ],
+      "jmdict_ent_seq": "1542160",
+      "jmdict_exact_kanji": "遊ぶ",
+      "jmdict_exact_kana": "あそぶ",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf25"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to play (games, sports)",
+            "to enjoy oneself",
+            "to have a good time"
+          ],
+          "pos": [
+            "Godan verb with 'bu' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to be idle",
+            "to do nothing",
+            "to be unused"
+          ],
+          "pos": [
+            "Godan verb with 'bu' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 8,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "洗う",
+      "minna_kana": "あらう",
+      "minna_masu_form": "洗います",
+      "minna_meanings": [
+        "wash"
+      ],
+      "jmdict_ent_seq": "1390930",
+      "jmdict_exact_kanji": "洗う",
+      "jmdict_exact_kana": "あらう",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf23"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to wash",
+            "to cleanse",
+            "to rinse"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to inquire into",
+            "to investigate"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 4,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "ある",
+      "minna_kana": "ある",
+      "minna_masu_form": "あります",
+      "minna_meanings": [
+        "have",
+        "exist, be (inanimate)",
+        "[a festival] be held, take place"
+      ],
+      "jmdict_ent_seq": "1296400",
+      "jmdict_exact_kanji": "ある",
+      "jmdict_exact_kana": "ある",
+      "priorities": [
+        "nf05",
+        "spec1",
+        "ichi1",
+        "news1",
+        "nf23"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to be",
+            "to exist",
+            "to live"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending (irregular verb)",
+            "intransitive verb"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": [
+            "居る・いる・1"
+          ]
+        },
+        {
+          "glosses": [
+            "to have"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending (irregular verb)",
+            "intransitive verb"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 6,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "歩く",
+      "minna_kana": "あるく",
+      "minna_masu_form": "歩きます",
+      "minna_meanings": [
+        "walk"
+      ],
+      "jmdict_ent_seq": "1514320",
+      "jmdict_exact_kanji": "歩く",
+      "jmdict_exact_kana": "あるく",
+      "priorities": [
+        "ichi1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to walk"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 1,
+      "filtered_sense_count": 1,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "言う",
+      "minna_kana": "いう",
+      "minna_masu_form": "言います",
+      "minna_meanings": [
+        "say"
+      ],
+      "jmdict_ent_seq": "1587040",
+      "jmdict_exact_kanji": "言う",
+      "jmdict_exact_kana": "いう",
+      "priorities": [
+        "ichi1",
+        "nf01",
+        "news1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to say",
+            "to utter",
+            "to declare"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to name",
+            "to call"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 3,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "行く",
+      "minna_kana": "いく",
+      "minna_masu_form": "行きます",
+      "minna_meanings": [
+        "go"
+      ],
+      "jmdict_ent_seq": "1578850",
+      "jmdict_exact_kanji": "行く",
+      "jmdict_exact_kana": "いく",
+      "priorities": [
+        "ichi1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to go",
+            "to move (towards)",
+            "to head (towards)",
+            "to leave (for)"
+          ],
+          "pos": [
+            "Godan verb - Iku/Yuku special class",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": [
+            "来る・1"
+          ]
+        },
+        {
+          "glosses": [
+            "to go (well, badly, etc.)",
+            "to proceed",
+            "to turn out",
+            "to get along"
+          ],
+          "pos": [
+            "Godan verb - Iku/Yuku special class",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 12,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "急ぐ",
+      "minna_kana": "いそぐ",
+      "minna_masu_form": "急ぎます",
+      "minna_meanings": [
+        "hurry"
+      ],
+      "jmdict_ent_seq": "1228650",
+      "jmdict_exact_kanji": "急ぐ",
+      "jmdict_exact_kana": "いそぐ",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf22"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to hurry",
+            "to rush",
+            "to hasten",
+            "to make something happen sooner"
+          ],
+          "pos": [
+            "Godan verb with 'gu' ending",
+            "intransitive verb",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 1,
+      "filtered_sense_count": 1,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "要る",
+      "minna_kana": "いる",
+      "minna_masu_form": "要ります",
+      "minna_meanings": [
+        "need, require [a visa]"
+      ],
+      "jmdict_ent_seq": "1546640",
+      "jmdict_exact_kanji": "要る",
+      "jmdict_exact_kana": "いる",
+      "priorities": [
+        "news2",
+        "nf27",
+        "spec1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to be needed",
+            "to be necessary",
+            "to be required",
+            "to be wanted",
+            "to need",
+            "to want"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 1,
+      "filtered_sense_count": 1,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "動く",
+      "minna_kana": "うごく",
+      "minna_masu_form": "動きます",
+      "minna_meanings": [
+        "move, work"
+      ],
+      "jmdict_ent_seq": "1451210",
+      "jmdict_exact_kanji": "動く",
+      "jmdict_exact_kana": "うごく",
+      "priorities": [
+        "ichi1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to move",
+            "to stir",
+            "to shift",
+            "to shake",
+            "to swing"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to operate",
+            "to run",
+            "to go",
+            "to work"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 6,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "歌う",
+      "minna_kana": "うたう",
+      "minna_masu_form": "歌います",
+      "minna_meanings": [
+        "sing"
+      ],
+      "jmdict_ent_seq": "1588120",
+      "jmdict_exact_kanji": "歌う",
+      "jmdict_exact_kana": "うたう",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf15"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to sing"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to sing of (love, beauty, etc.) in a poem",
+            "to express in the form of a poem",
+            "to recite (a poem)"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 2,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "売る",
+      "minna_kana": "うる",
+      "minna_masu_form": "売ります",
+      "minna_meanings": [
+        "sell"
+      ],
+      "jmdict_ent_seq": "1473950",
+      "jmdict_exact_kanji": "売る",
+      "jmdict_exact_kana": "うる",
+      "priorities": [
+        "ichi1",
+        "nf08",
+        "news1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to sell"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to betray",
+            "to sell out (one's friend, country, etc.)"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": [
+            "国を売る"
+          ]
+        }
+      ],
+      "original_sense_count": 4,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "置く",
+      "minna_kana": "おく",
+      "minna_masu_form": "置きます",
+      "minna_meanings": [
+        "put"
+      ],
+      "jmdict_ent_seq": "1421850",
+      "jmdict_exact_kanji": "置く",
+      "jmdict_exact_kana": "おく",
+      "priorities": [
+        "ichi1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to put",
+            "to place"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to leave (behind)"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 10,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "送る",
+      "minna_kana": "おくる",
+      "minna_masu_form": "送ります",
+      "minna_meanings": [
+        "send",
+        "escort [someone], go with"
+      ],
+      "jmdict_ent_seq": "1402730",
+      "jmdict_exact_kanji": "送る",
+      "jmdict_exact_kana": "おくる",
+      "priorities": [
+        "ichi1",
+        "nf06",
+        "news1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to send",
+            "to dispatch",
+            "to forward",
+            "to transmit",
+            "to ship",
+            "to remit"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to see (someone) off",
+            "to escort",
+            "to accompany",
+            "to take"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 6,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "押す",
+      "minna_kana": "おす",
+      "minna_masu_form": "押します",
+      "minna_meanings": [
+        "push, press"
+      ],
+      "jmdict_ent_seq": "1180470",
+      "jmdict_exact_kanji": "押す",
+      "jmdict_exact_kana": "おす",
+      "priorities": [
+        "ichi1",
+        "nf08",
+        "news1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to push",
+            "to thrust",
+            "to shove"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to press (down)",
+            "to push (e.g. a button)",
+            "to exert pressure on"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 11,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "思い出す",
+      "minna_kana": "おもいだす",
+      "minna_masu_form": "思い出します",
+      "minna_meanings": [
+        "remember, recollect"
+      ],
+      "jmdict_ent_seq": "1309260",
+      "jmdict_exact_kanji": "思い出す",
+      "jmdict_exact_kana": "おもいだす",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf15"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to recall",
+            "to remember",
+            "to recollect"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 1,
+      "filtered_sense_count": 1,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "思う",
+      "minna_kana": "おもう",
+      "minna_masu_form": "思います",
+      "minna_meanings": [
+        "think"
+      ],
+      "jmdict_ent_seq": "1589350",
+      "jmdict_exact_kanji": "思う",
+      "jmdict_exact_kana": "おもう",
+      "priorities": [
+        "ichi1",
+        "nf02",
+        "news1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to think",
+            "to consider",
+            "to believe",
+            "to reckon"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to think (of doing)",
+            "to plan (to do)"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 8,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "泳ぐ",
+      "minna_kana": "およぐ",
+      "minna_masu_form": "泳ぎます",
+      "minna_meanings": [
+        "swim"
+      ],
+      "jmdict_ent_seq": "1174340",
+      "jmdict_exact_kanji": "泳ぐ",
+      "jmdict_exact_kana": "およぐ",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf20"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to swim"
+          ],
+          "pos": [
+            "Godan verb with 'gu' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to totter",
+            "to lose one's balance"
+          ],
+          "pos": [
+            "Godan verb with 'gu' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 4,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "下ろす",
+      "minna_kana": "おろす",
+      "minna_masu_form": "下ろします",
+      "minna_meanings": [
+        "withdraw"
+      ],
+      "jmdict_ent_seq": "1589580",
+      "jmdict_exact_kanji": "下ろす",
+      "jmdict_exact_kana": "おろす",
+      "priorities": [
+        "ichi1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to withdraw (money)"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to take down",
+            "to bring down",
+            "to lower (a hand, flag, shutter, etc.)",
+            "to drop (an anchor, curtain, etc.)",
+            "to let down (hair)",
+            "to launch (a boat)"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 9,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "終わる",
+      "minna_kana": "おわる",
+      "minna_masu_form": "終わります",
+      "minna_meanings": [
+        "finish"
+      ],
+      "jmdict_ent_seq": "1589600",
+      "jmdict_exact_kanji": "終わる",
+      "jmdict_exact_kana": "おわる",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf11"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to end",
+            "to come to an end",
+            "to finish",
+            "to close",
+            "to be over"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to finish",
+            "to complete",
+            "to conclude"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 5,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "買う",
+      "minna_kana": "かう",
+      "minna_masu_form": "買います",
+      "minna_meanings": [
+        "buy"
+      ],
+      "jmdict_ent_seq": "1473740",
+      "jmdict_exact_kanji": "買う",
+      "jmdict_exact_kana": "かう",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf10"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to buy",
+            "to purchase"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to accept",
+            "to take on",
+            "to take up"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 5,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "返す",
+      "minna_kana": "かえす",
+      "minna_masu_form": "返します",
+      "minna_meanings": [
+        "give back, return"
+      ],
+      "jmdict_ent_seq": "1512130",
+      "jmdict_exact_kanji": "返す",
+      "jmdict_exact_kana": "かえす",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf20",
+        "nf18"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to return (something)",
+            "to restore",
+            "to put back"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": [
+            "帰す・かえす"
+          ]
+        },
+        {
+          "glosses": [
+            "to pay back",
+            "to retaliate",
+            "to reciprocate"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 6,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "帰る",
+      "minna_kana": "かえる",
+      "minna_masu_form": "帰ります",
+      "minna_meanings": [
+        "go home, return"
+      ],
+      "jmdict_ent_seq": "1221270",
+      "jmdict_exact_kanji": "帰る",
+      "jmdict_exact_kana": "かえる",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf37"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to return",
+            "to come home",
+            "to go home",
+            "to go back"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to get home",
+            "to get to home plate"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 3,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "掛かる",
+      "minna_kana": "かかる",
+      "minna_masu_form": "掛かります",
+      "minna_meanings": [
+        "take, cost (time or money)"
+      ],
+      "jmdict_ent_seq": "1207590",
+      "jmdict_exact_kanji": "掛かる",
+      "jmdict_exact_kana": "かかる",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf47"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to take (a resource, e.g. time or money)"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": [
+            "時間がかかる"
+          ]
+        },
+        {
+          "glosses": [
+            "to hang"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 15,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "書く",
+      "minna_kana": "かく",
+      "minna_masu_form": "書きます",
+      "minna_meanings": [
+        "write, draw, paint"
+      ],
+      "jmdict_ent_seq": "1343950",
+      "jmdict_exact_kanji": "書く",
+      "jmdict_exact_kana": "かく",
+      "priorities": [
+        "ichi1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to draw",
+            "to paint"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": [
+            "描く・かく・1"
+          ]
+        },
+        {
+          "glosses": [
+            "to write",
+            "to compose",
+            "to pen"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 2,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "貸す",
+      "minna_kana": "かす",
+      "minna_masu_form": "貸します",
+      "minna_meanings": [
+        "lend"
+      ],
+      "jmdict_ent_seq": "1411160",
+      "jmdict_exact_kanji": "貸す",
+      "jmdict_exact_kana": "かす",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf31"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to lend",
+            "to loan"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to rent out",
+            "to hire out"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 3,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "勝つ",
+      "minna_kana": "かつ",
+      "minna_masu_form": "勝ちます",
+      "minna_meanings": [
+        "win"
+      ],
+      "jmdict_ent_seq": "1346150",
+      "jmdict_exact_kanji": "勝つ",
+      "jmdict_exact_kana": "かつ",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf28"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to win",
+            "to gain victory"
+          ],
+          "pos": [
+            "Godan verb with 'tsu' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 1,
+      "filtered_sense_count": 1,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "被る",
+      "minna_kana": "かぶる",
+      "minna_masu_form": "被ります",
+      "minna_meanings": [
+        "put on (a hat, etc.)"
+      ],
+      "jmdict_ent_seq": "1484330",
+      "jmdict_exact_kanji": "被る",
+      "jmdict_exact_kana": "かぶる",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf46"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to put on (one's head)",
+            "to wear",
+            "to have on",
+            "to pull over (one's head)",
+            "to crown (oneself)"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to be covered with (dust, snow, etc.)",
+            "to pour (water, etc.) on oneself",
+            "to dash on oneself",
+            "to ship water"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 10,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "頑張る",
+      "minna_kana": "がんばる",
+      "minna_masu_form": "頑張ります",
+      "minna_meanings": [
+        "do one's best"
+      ],
+      "jmdict_ent_seq": "1217700",
+      "jmdict_exact_kanji": "頑張る",
+      "jmdict_exact_kana": "がんばる",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf23"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to persevere",
+            "to persist",
+            "to keep at it",
+            "to hang on",
+            "to hold out",
+            "to do one's best"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to insist that",
+            "to stick to (one's opinion)"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 3,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "聞く",
+      "minna_kana": "きく",
+      "minna_masu_form": "聞きます",
+      "minna_meanings": [
+        "hear, listen",
+        "ask [the teacher]"
+      ],
+      "jmdict_ent_seq": "1591110",
+      "jmdict_exact_kanji": "聞く",
+      "jmdict_exact_kana": "きく",
+      "priorities": [
+        "ichi1",
+        "spec1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to hear"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to ask",
+            "to enquire",
+            "to query"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 8,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "切る",
+      "minna_kana": "きる",
+      "minna_masu_form": "切ります",
+      "minna_meanings": [
+        "cut, slice"
+      ],
+      "jmdict_ent_seq": "1384830",
+      "jmdict_exact_kanji": "切る",
+      "jmdict_exact_kana": "きる",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf11"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to cut",
+            "to cut through",
+            "to perform (surgery)"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to sever (connections, ties)"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": [
+            "縁を切る"
+          ]
+        }
+      ],
+      "original_sense_count": 26,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "消す",
+      "minna_kana": "けす",
+      "minna_masu_form": "消します",
+      "minna_meanings": [
+        "turn off"
+      ],
+      "jmdict_ent_seq": "1350110",
+      "jmdict_exact_kanji": "消す",
+      "jmdict_exact_kana": "けす",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf27"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to erase",
+            "to rub out",
+            "to rub off",
+            "to cross out",
+            "to delete"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to turn off (a light, TV, heater, etc.)",
+            "to switch off"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 6,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "触る",
+      "minna_kana": "さわる",
+      "minna_masu_form": "触ります",
+      "minna_meanings": [
+        "touch [a door]"
+      ],
+      "jmdict_ent_seq": "1357980",
+      "jmdict_exact_kanji": "触る",
+      "jmdict_exact_kana": "さわる",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf36"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to touch",
+            "to feel",
+            "to handle"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to get involved (with)",
+            "to approach"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 3,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "知る",
+      "minna_kana": "しる",
+      "minna_masu_form": "知ります",
+      "minna_meanings": [
+        "get to know"
+      ],
+      "jmdict_ent_seq": "1420470",
+      "jmdict_exact_kanji": "知る",
+      "jmdict_exact_kana": "しる",
+      "priorities": [
+        "ichi1",
+        "nf02",
+        "news1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to know",
+            "to be aware (of)",
+            "to be conscious (of)",
+            "to learn (of)",
+            "to find out",
+            "to discover"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to sense",
+            "to feel",
+            "to notice",
+            "to realize"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 7,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "吸う",
+      "minna_kana": "すう",
+      "minna_masu_form": "吸います",
+      "minna_meanings": [
+        "smoke [a cigarette]"
+      ],
+      "jmdict_ent_seq": "1228260",
+      "jmdict_exact_kanji": "吸う",
+      "jmdict_exact_kana": "すう",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf34"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to smoke",
+            "to breathe in",
+            "to inhale"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to absorb",
+            "to soak up"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 4,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "住む",
+      "minna_kana": "すむ",
+      "minna_masu_form": "住みます",
+      "minna_meanings": [
+        "be going to live"
+      ],
+      "jmdict_ent_seq": "1334040",
+      "jmdict_exact_kanji": "住む",
+      "jmdict_exact_kana": "すむ",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf47"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to live (of humans)",
+            "to reside",
+            "to inhabit",
+            "to dwell",
+            "to abide"
+          ],
+          "pos": [
+            "Godan verb with 'mu' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": [
+            "棲む"
+          ]
+        }
+      ],
+      "original_sense_count": 1,
+      "filtered_sense_count": 1,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "座る",
+      "minna_kana": "すわる",
+      "minna_masu_form": "座ります",
+      "minna_meanings": [
+        "sit down"
+      ],
+      "jmdict_ent_seq": "1291800",
+      "jmdict_exact_kanji": "座る",
+      "jmdict_exact_kana": "すわる",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf25"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to sit (down)",
+            "to have a seat",
+            "to be seated",
+            "to kneel (on the floor)"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to assume (a position)",
+            "to take on (a duty)",
+            "to occupy (a post)"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 3,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "出す",
+      "minna_kana": "だす",
+      "minna_masu_form": "出します",
+      "minna_meanings": [
+        "take out, hand in, send"
+      ],
+      "jmdict_ent_seq": "1338180",
+      "jmdict_exact_kanji": "出す",
+      "jmdict_exact_kana": "だす",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf03"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to take out",
+            "to get out"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to put out",
+            "to reveal",
+            "to show"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 9,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "立つ",
+      "minna_kana": "たつ",
+      "minna_masu_form": "立ちます",
+      "minna_meanings": [
+        "stand up"
+      ],
+      "jmdict_ent_seq": "1597040",
+      "jmdict_exact_kanji": "立つ",
+      "jmdict_exact_kana": "たつ",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf21"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to stand (up)",
+            "to rise",
+            "to get to one's feet",
+            "to stand on end (e.g. of hairs)",
+            "to stick up"
+          ],
+          "pos": [
+            "Godan verb with 'tsu' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to stand (in a position; of a person, tree, building, etc.)",
+            "to be situated (in, on)"
+          ],
+          "pos": [
+            "Godan verb with 'tsu' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 18,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "使う",
+      "minna_kana": "つかう",
+      "minna_masu_form": "使います",
+      "minna_meanings": [
+        "use"
+      ],
+      "jmdict_ent_seq": "1305990",
+      "jmdict_exact_kanji": "使う",
+      "jmdict_exact_kana": "つかう",
+      "priorities": [
+        "ichi1",
+        "nf02",
+        "news1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to use (a tool, method, etc.)",
+            "to make use of",
+            "to put to use"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to use (a person, animal, puppet, etc.)",
+            "to employ",
+            "to handle",
+            "to manage",
+            "to manipulate"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 4,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "着く",
+      "minna_kana": "つく",
+      "minna_masu_form": "着きます",
+      "minna_meanings": [
+        "arrive"
+      ],
+      "jmdict_ent_seq": "1422970",
+      "jmdict_exact_kanji": "着く",
+      "jmdict_exact_kana": "つく",
+      "priorities": [
+        "ichi1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to arrive at",
+            "to reach"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to sit on",
+            "to sit at (e.g. the table)"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": [
+            "席に着く"
+          ]
+        }
+      ],
+      "original_sense_count": 2,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "作る",
+      "minna_kana": "つくる",
+      "minna_masu_form": "作ります",
+      "minna_meanings": [
+        "make, produce"
+      ],
+      "jmdict_ent_seq": "1597890",
+      "jmdict_exact_kanji": "作る",
+      "jmdict_exact_kana": "つくる",
+      "priorities": [
+        "ichi1",
+        "spec1",
+        "nf04",
+        "news1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to make",
+            "to produce",
+            "to manufacture",
+            "to build",
+            "to construct"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to prepare (food)",
+            "to brew (alcohol)"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 14,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "連れて行く",
+      "minna_kana": "つれていく",
+      "minna_masu_form": "連れて行きます",
+      "minna_meanings": [
+        "take (someone)"
+      ],
+      "jmdict_ent_seq": "1598220",
+      "jmdict_exact_kanji": "連れて行く",
+      "jmdict_exact_kana": "つれていく",
+      "priorities": [
+        "ichi1",
+        "spec1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to take (someone to a place)",
+            "to take (someone) with one",
+            "to take along",
+            "to lead away"
+          ],
+          "pos": [
+            "Godan verb - Iku/Yuku special class",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 1,
+      "filtered_sense_count": 1,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "手伝う",
+      "minna_kana": "てつだう",
+      "minna_masu_form": "手伝います",
+      "minna_meanings": [
+        "help (with a task)"
+      ],
+      "jmdict_ent_seq": "1328190",
+      "jmdict_exact_kanji": "手伝う",
+      "jmdict_exact_kana": "てつだう",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf46"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to help",
+            "to assist",
+            "to aid"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to contribute to",
+            "to be a factor in"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 2,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "泊まる",
+      "minna_kana": "とまる",
+      "minna_masu_form": "泊まります",
+      "minna_meanings": [
+        "stay [at a hotel]"
+      ],
+      "jmdict_ent_seq": "1474850",
+      "jmdict_exact_kanji": "泊まる",
+      "jmdict_exact_kana": "とまる",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf29"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to stay at (e.g. hotel)"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to be docked",
+            "to be berthed",
+            "to be moored"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 2,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "取る",
+      "minna_kana": "とる",
+      "minna_masu_form": "取ります",
+      "minna_meanings": [
+        "take, pass"
+      ],
+      "jmdict_ent_seq": "1326980",
+      "jmdict_exact_kanji": "取る",
+      "jmdict_exact_kana": "とる",
+      "priorities": [
+        "ichi1",
+        "nf06",
+        "news1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to take",
+            "to pick up",
+            "to grab",
+            "to catch",
+            "to hold"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to pass",
+            "to hand",
+            "to give"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 18,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "撮る",
+      "minna_kana": "とる",
+      "minna_masu_form": "撮ります",
+      "minna_meanings": [
+        "take [a photograph]"
+      ],
+      "jmdict_ent_seq": "1298790",
+      "jmdict_exact_kanji": "撮る",
+      "jmdict_exact_kana": "とる",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf22"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to take (a photograph)"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to record (audio or video)",
+            "to film",
+            "to shoot"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 2,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "年を取る",
+      "minna_kana": "としをとる",
+      "minna_masu_form": "年を取ります",
+      "minna_meanings": [
+        "grow old"
+      ],
+      "jmdict_ent_seq": "1468190",
+      "jmdict_exact_kanji": "年を取る",
+      "jmdict_exact_kana": "としをとる",
+      "priorities": [
+        "spec1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to grow old",
+            "to age"
+          ],
+          "pos": [
+            "expressions (phrases, clauses, etc.)",
+            "Godan verb with 'ru' ending"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 1,
+      "filtered_sense_count": 1,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "直す",
+      "minna_kana": "なおす",
+      "minna_masu_form": "直します",
+      "minna_meanings": [
+        "repair, correct"
+      ],
+      "jmdict_ent_seq": "1599390",
+      "jmdict_exact_kanji": "直す",
+      "jmdict_exact_kana": "なおす",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf38"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to repair",
+            "to mend",
+            "to fix",
+            "to correct (a mistake, bad habit, etc.)",
+            "to put right",
+            "to restore",
+            "to straighten (e.g. a tie)",
+            "to tidy up (one's hair, make-up, etc.)",
+            "to revive (one's spirits)"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to change",
+            "to alter",
+            "to convert",
+            "to translate"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 6,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "無くす",
+      "minna_kana": "なくす",
+      "minna_masu_form": "無くします",
+      "minna_meanings": [
+        "lose"
+      ],
+      "jmdict_ent_seq": "1529530",
+      "jmdict_exact_kanji": "無くす",
+      "jmdict_exact_kana": "なくす",
+      "priorities": [
+        "ichi1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to lose (something)"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to get rid of",
+            "to eliminate",
+            "to remove",
+            "to eradicate",
+            "to abolish"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 2,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "習う",
+      "minna_kana": "ならう",
+      "minna_masu_form": "習います",
+      "minna_meanings": [
+        "learn"
+      ],
+      "jmdict_ent_seq": "1333070",
+      "jmdict_exact_kanji": "習う",
+      "jmdict_exact_kana": "ならう",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf42"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to take lessons in",
+            "to be taught",
+            "to learn (from a teacher)",
+            "to study (under a teacher)",
+            "to get training in"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 1,
+      "filtered_sense_count": 1,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "なる",
+      "minna_kana": "なる",
+      "minna_masu_form": "なります",
+      "minna_meanings": [
+        "become"
+      ],
+      "jmdict_ent_seq": "1375610",
+      "jmdict_exact_kanji": "なる",
+      "jmdict_exact_kana": "なる",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf34"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to become",
+            "to get",
+            "to grow",
+            "to turn",
+            "to reach",
+            "to attain"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to be completed",
+            "to be realized",
+            "to succeed",
+            "to be attained",
+            "to be accomplished"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 11,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "脱ぐ",
+      "minna_kana": "ぬぐ",
+      "minna_masu_form": "脱ぎます",
+      "minna_meanings": [
+        "take off (clothes, shoes, etc.)"
+      ],
+      "jmdict_ent_seq": "1416400",
+      "jmdict_exact_kanji": "脱ぐ",
+      "jmdict_exact_kana": "ぬぐ",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf44"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to take off (clothes, shoes, etc.)",
+            "to undress"
+          ],
+          "pos": [
+            "Godan verb with 'gu' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 1,
+      "filtered_sense_count": 1,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "登る",
+      "minna_kana": "のぼる",
+      "minna_masu_form": "登ります",
+      "minna_meanings": [
+        "climb, go up"
+      ],
+      "jmdict_ent_seq": "1352570",
+      "jmdict_exact_kanji": "登る",
+      "jmdict_exact_kana": "のぼる",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf16"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to ascend",
+            "to go up",
+            "to climb"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to go to (the capital)"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 8,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "飲む",
+      "minna_kana": "のむ",
+      "minna_masu_form": "飲みます",
+      "minna_meanings": [
+        "drink",
+        "drink alcohol",
+        "take [medicine]"
+      ],
+      "jmdict_ent_seq": "1169870",
+      "jmdict_exact_kanji": "飲む",
+      "jmdict_exact_kana": "のむ",
+      "priorities": [
+        "nf40",
+        "nf35",
+        "news2",
+        "spec1",
+        "ichi1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to drink",
+            "to swallow",
+            "to take (medicine)"
+          ],
+          "pos": [
+            "Godan verb with 'mu' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to smoke (tobacco)"
+          ],
+          "pos": [
+            "Godan verb with 'mu' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 7,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "乗る",
+      "minna_kana": "のる",
+      "minna_masu_form": "乗ります",
+      "minna_meanings": [
+        "ride, get on [a train]"
+      ],
+      "jmdict_ent_seq": "1355120",
+      "jmdict_exact_kanji": "乗る",
+      "jmdict_exact_kana": "のる",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf21"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to get on (train, plane, bus, ship, etc.)",
+            "to get in",
+            "to board",
+            "to take",
+            "to embark"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to get on (e.g. a footstool)",
+            "to step on",
+            "to jump on",
+            "to sit on",
+            "to mount"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": [
+            "載る・のる・1"
+          ]
+        }
+      ],
+      "original_sense_count": 9,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "入る",
+      "minna_kana": "はいる",
+      "minna_masu_form": "入ります",
+      "minna_meanings": [
+        "enter [a café]",
+        "enter [university]",
+        "take [a bath]"
+      ],
+      "jmdict_ent_seq": "1465590",
+      "jmdict_exact_kanji": "入る",
+      "jmdict_exact_kana": "はいる",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf25"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to enter",
+            "to come in",
+            "to go in",
+            "to get in",
+            "to arrive"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to join (a club, company, etc.)",
+            "to enter (a university, the army, etc.)",
+            "to enroll (in)",
+            "to go into (e.g. politics)",
+            "to get into"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 13,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "履く",
+      "minna_kana": "はく",
+      "minna_masu_form": "履きます",
+      "minna_meanings": [
+        "put on (shoes, trousers, etc.)"
+      ],
+      "jmdict_ent_seq": "1607260",
+      "jmdict_exact_kanji": "履く",
+      "jmdict_exact_kana": "はく",
+      "priorities": [
+        "ichi1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to put on (lower-body clothing, e.g. pants, skirt, footwear)",
+            "to wear"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to affix (a sword to one's hip)"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 3,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "働く",
+      "minna_kana": "はたらく",
+      "minna_masu_form": "働きます",
+      "minna_meanings": [
+        "work"
+      ],
+      "jmdict_ent_seq": "1451150",
+      "jmdict_exact_kanji": "働く",
+      "jmdict_exact_kana": "はたらく",
+      "priorities": [
+        "ichi1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to work",
+            "to labor",
+            "to labour"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to function",
+            "to operate",
+            "to be effective",
+            "to work (i.e. ... works)",
+            "to come into play"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 4,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "話す",
+      "minna_kana": "はなす",
+      "minna_masu_form": "話します",
+      "minna_meanings": [
+        "speak, talk"
+      ],
+      "jmdict_ent_seq": "1562350",
+      "jmdict_exact_kanji": "話す",
+      "jmdict_exact_kana": "はなす",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf21"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to talk",
+            "to speak",
+            "to converse",
+            "to chat"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to tell",
+            "to explain",
+            "to narrate",
+            "to mention",
+            "to describe",
+            "to discuss"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 3,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "払う",
+      "minna_kana": "はらう",
+      "minna_masu_form": "払います",
+      "minna_meanings": [
+        "pay"
+      ],
+      "jmdict_ent_seq": "1501620",
+      "jmdict_exact_kanji": "払う",
+      "jmdict_exact_kana": "はらう",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf21"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to pay (e.g. money, bill)"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to brush off",
+            "to wipe away",
+            "to clear away",
+            "to dust off",
+            "to cut off (e.g. branches)"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 10,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "弾く",
+      "minna_kana": "ひく",
+      "minna_masu_form": "弾きます",
+      "minna_meanings": [
+        "play (stringed instruments, piano, etc.)"
+      ],
+      "jmdict_ent_seq": "1419370",
+      "jmdict_exact_kanji": "弾く",
+      "jmdict_exact_kana": "ひく",
+      "priorities": [
+        "ichi1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to play (a stringed or keyboard instrument)"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": [
+            "引く・ひく・7"
+          ]
+        }
+      ],
+      "original_sense_count": 1,
+      "filtered_sense_count": 1,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "引く",
+      "minna_kana": "ひく",
+      "minna_masu_form": "引きます",
+      "minna_meanings": [
+        "pull"
+      ],
+      "jmdict_ent_seq": "1169250",
+      "jmdict_exact_kanji": "引く",
+      "jmdict_exact_kana": "ひく",
+      "priorities": [
+        "ichi1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to pull",
+            "to tug",
+            "to lead (e.g. a horse)"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to draw back (e.g. one's hand)",
+            "to draw in (one's chin, stomach, etc.)",
+            "to pull in"
+          ],
+          "pos": [
+            "Godan verb with 'ku' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 20,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "降る",
+      "minna_kana": "ふる",
+      "minna_masu_form": "降ります",
+      "minna_meanings": [
+        "rain"
+      ],
+      "jmdict_ent_seq": "1282790",
+      "jmdict_exact_kanji": "降る",
+      "jmdict_exact_kana": "ふる",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf27"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to fall (of rain, snow, ash, etc.)",
+            "to come down"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to form (of frost)"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 4,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "曲がる",
+      "minna_kana": "まがる",
+      "minna_masu_form": "曲がります",
+      "minna_meanings": [
+        "turn [to the right]"
+      ],
+      "jmdict_ent_seq": "1239730",
+      "jmdict_exact_kanji": "曲がる",
+      "jmdict_exact_kana": "まがる",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf28"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to turn"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": [
+            "折れる・おれる・4"
+          ]
+        },
+        {
+          "glosses": [
+            "to bend",
+            "to curve",
+            "to warp",
+            "to wind",
+            "to twist"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 3,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "待つ",
+      "minna_kana": "まつ",
+      "minna_masu_form": "待ちます",
+      "minna_meanings": [
+        "wait"
+      ],
+      "jmdict_ent_seq": "1410590",
+      "jmdict_exact_kanji": "待つ",
+      "jmdict_exact_kana": "まつ",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf18"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to wait"
+          ],
+          "pos": [
+            "Godan verb with 'tsu' ending",
+            "transitive verb",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to await",
+            "to look forward to",
+            "to anticipate"
+          ],
+          "pos": [
+            "Godan verb with 'tsu' ending",
+            "transitive verb",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 3,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "回す",
+      "minna_kana": "まわす",
+      "minna_masu_form": "回します",
+      "minna_meanings": [
+        "turn"
+      ],
+      "jmdict_ent_seq": "1199350",
+      "jmdict_exact_kanji": "回す",
+      "jmdict_exact_kana": "まわす",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf15"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to turn",
+            "to rotate",
+            "to spin",
+            "to twist",
+            "to gyrate"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to pass around",
+            "to send around",
+            "to hand around",
+            "to circulate"
+          ],
+          "pos": [
+            "Godan verb with 'su' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 13,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "持つ",
+      "minna_kana": "もつ",
+      "minna_masu_form": "持ちます",
+      "minna_meanings": [
+        "hold"
+      ],
+      "jmdict_ent_seq": "1315720",
+      "jmdict_exact_kanji": "持つ",
+      "jmdict_exact_kana": "もつ",
+      "priorities": [
+        "ichi1",
+        "nf08",
+        "news1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to hold (in one's hand)",
+            "to take",
+            "to carry"
+          ],
+          "pos": [
+            "Godan verb with 'tsu' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to possess",
+            "to have",
+            "to own"
+          ],
+          "pos": [
+            "Godan verb with 'tsu' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 7,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "持って行く",
+      "minna_kana": "もっていく",
+      "minna_masu_form": "持って行きます",
+      "minna_meanings": [
+        "take (something)"
+      ],
+      "jmdict_ent_seq": "1315700",
+      "jmdict_exact_kanji": "持って行く",
+      "jmdict_exact_kana": "もっていく",
+      "priorities": [
+        "ichi1",
+        "spec1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to take (something) along",
+            "to bring with one",
+            "to carry (something) away",
+            "to bear"
+          ],
+          "pos": [
+            "expressions (phrases, clauses, etc.)",
+            "Godan verb - Iku/Yuku special class"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 1,
+      "filtered_sense_count": 1,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "もらう",
+      "minna_kana": "もらう",
+      "minna_masu_form": "もらいます",
+      "minna_meanings": [
+        "receive"
+      ],
+      "jmdict_ent_seq": "1535910",
+      "jmdict_exact_kanji": "もらう",
+      "jmdict_exact_kana": "もらう",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf42"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to receive",
+            "to take",
+            "to accept"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to contract (a disease)",
+            "to catch",
+            "to be affected"
+          ],
+          "pos": [
+            "Godan verb with 'u' ending",
+            "transitive verb"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 4,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "役に立つ",
+      "minna_kana": "やくにたつ",
+      "minna_masu_form": "役に立ちます",
+      "minna_meanings": [
+        "be useful"
+      ],
+      "jmdict_ent_seq": "1537980",
+      "jmdict_exact_kanji": "役に立つ",
+      "jmdict_exact_kana": "やくにたつ",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf23"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to be helpful",
+            "to be useful"
+          ],
+          "pos": [
+            "expressions (phrases, clauses, etc.)",
+            "Godan verb with 'tsu' ending"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 1,
+      "filtered_sense_count": 1,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "休む",
+      "minna_kana": "やすむ",
+      "minna_masu_form": "休みます",
+      "minna_meanings": [
+        "take a rest, take a holiday",
+        "take a day off [work]"
+      ],
+      "jmdict_ent_seq": "1227560",
+      "jmdict_exact_kanji": "休む",
+      "jmdict_exact_kana": "やすむ",
+      "priorities": [
+        "ichi1",
+        "news1",
+        "nf20"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to be absent",
+            "to take a day off"
+          ],
+          "pos": [
+            "Godan verb with 'mu' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to rest",
+            "to have a break"
+          ],
+          "pos": [
+            "Godan verb with 'mu' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 4,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "呼ぶ",
+      "minna_kana": "よぶ",
+      "minna_masu_form": "呼びます",
+      "minna_meanings": [
+        "call"
+      ],
+      "jmdict_ent_seq": "1266440",
+      "jmdict_exact_kanji": "呼ぶ",
+      "jmdict_exact_kana": "よぶ",
+      "priorities": [
+        "ichi1",
+        "nf02",
+        "news1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to call out (to)",
+            "to call",
+            "to invoke"
+          ],
+          "pos": [
+            "Godan verb with 'bu' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to summon (a doctor, etc.)"
+          ],
+          "pos": [
+            "Godan verb with 'bu' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 6,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "読む",
+      "minna_kana": "よむ",
+      "minna_masu_form": "読みます",
+      "minna_meanings": [
+        "read"
+      ],
+      "jmdict_ent_seq": "1456360",
+      "jmdict_exact_kanji": "読む",
+      "jmdict_exact_kana": "よむ",
+      "priorities": [
+        "ichi1",
+        "nf12",
+        "news1"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to read"
+          ],
+          "pos": [
+            "Godan verb with 'mu' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to predict",
+            "to guess",
+            "to forecast",
+            "to read (someone's thoughts)",
+            "to see (e.g. into someone's heart)",
+            "to divine"
+          ],
+          "pos": [
+            "Godan verb with 'mu' ending",
+            "transitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 7,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "分かる",
+      "minna_kana": "わかる",
+      "minna_masu_form": "分かります",
+      "minna_meanings": [
+        "understand"
+      ],
+      "jmdict_ent_seq": "1606560",
+      "jmdict_exact_kanji": "分かる",
+      "jmdict_exact_kana": "わかる",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "spec1",
+        "nf39"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to understand",
+            "to comprehend",
+            "to grasp",
+            "to see",
+            "to get",
+            "to follow"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to become clear",
+            "to be known",
+            "to be discovered",
+            "to be realized (realised)",
+            "to be found out",
+            "to make sense"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": []
+        }
+      ],
+      "original_sense_count": 2,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    },
+    {
+      "minna_kanji": "渡る",
+      "minna_kana": "わたる",
+      "minna_masu_form": "渡ります",
+      "minna_meanings": [
+        "cross [a bridge]"
+      ],
+      "jmdict_ent_seq": "1444680",
+      "jmdict_exact_kanji": "渡る",
+      "jmdict_exact_kana": "わたる",
+      "priorities": [
+        "ichi1",
+        "news2",
+        "nf41"
+      ],
+      "jmdict_verb_senses_only": [
+        {
+          "glosses": [
+            "to cross over",
+            "to go across"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [],
+          "xref": []
+        },
+        {
+          "glosses": [
+            "to extend",
+            "to cover",
+            "to range",
+            "to span"
+          ],
+          "pos": [
+            "Godan verb with 'ru' ending",
+            "intransitive verb"
+          ],
+          "misc": [
+            "word usually written using kana alone"
+          ],
+          "xref": [
+            "にわたって"
+          ]
+        }
+      ],
+      "original_sense_count": 2,
+      "filtered_sense_count": 2,
+      "filter_strategy": "hybrid_professional"
+    }
+  ],
+  "missing_verbs": []
+}
