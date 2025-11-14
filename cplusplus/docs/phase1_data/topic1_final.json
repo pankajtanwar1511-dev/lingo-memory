@@ -1,0 +1,490 @@
+{
+  "topic_id": "phase1_01",
+  "topic_title": "C++ Object-Oriented Programming (OOP)",
+  "theory": {
+    "sections": [
+      {
+        "title": "Classes vs Structs and Access Specifiers",
+        "content": "## Classes vs Structs\n\nIn C++, `class` and `struct` are functionally identical with one key difference:\n\n**Default Access Specifier:**\n- `struct`: Members are `public` by default\n- `class`: Members are `private` by default\n\nBoth support:\n- Inheritance\n- Member functions\n- Constructors/destructors\n- Virtual functions\n- All OOP features\n\n## Access Specifiers\n\n### Three Levels of Access Control\n\n1. **`public`**: Accessible from anywhere\n2. **`protected`**: Accessible within the class and derived classes\n3. **`private`**: Accessible only within the class itself\n\n### Access Control with Inheritance\n\nThe inheritance access specifier affects how base class members appear in derived class:\n\n| Base Member | public inheritance | protected inheritance | private inheritance |\n|-------------|-------------------|----------------------|--------------------|\n| public      | public            | protected            | private            |\n| protected   | protected         | protected            | private            |\n| private     | inaccessible      | inaccessible         | inaccessible       |\n\n### Important: Access vs Overriding\n\nAccess specifiers control **visibility**, not **overriding capability**. A private virtual function can still be overridden in derived classes.",
+        "key_points": [
+          "struct and class differ only in default access (public vs private)",
+          "Private members exist in memory but are compiler-enforced invisible",
+          "Access specifiers are compile-time checks, not runtime",
+          "Inheritance access modifier changes visibility of inherited members",
+          "Private virtual functions can be overridden but not called directly from derived"
+        ],
+        "code_examples": [
+          {
+            "title": "Basic Class vs Struct Difference",
+            "code": "// Struct - public by default\nstruct MyStruct {\n    int x;  // public\n    void show() { std::cout << x << \"\\n\"; }\n};\n\n// Class - private by default\nclass MyClass {\n    int y;  // private\npublic:\n    void setY(int val) { y = val; }\n    void show() { std::cout << y << \"\\n\"; }\n};\n\nint main() {\n    MyStruct s;\n    s.x = 10;  // OK - public\n    s.show();\n    \n    MyClass c;\n    // c.y = 5;  // ERROR - y is private\n    c.setY(20);\n    c.show();\n}",
+            "explanation": "Demonstrates the default access difference between struct and class. Struct members are directly accessible while class members need getters/setters."
+          },
+          {
+            "title": "Private Virtual Function Override",
+            "code": "class Base {\nprivate:\n    virtual void secret() {\n        std::cout << \"Base::secret\\n\";\n    }\npublic:\n    void callSecret() {\n        secret();  // Calls via vtable\n    }\n};\n\nclass Derived : public Base {\nprivate:\n    void secret() override {  // Legal override!\n        std::cout << \"Derived::secret\\n\";\n    }\n};\n\nint main() {\n    Derived d;\n    d.callSecret();  // Prints: Derived::secret\n    // d.secret();   // ERROR - not accessible\n}",
+            "explanation": "Shows that private virtual functions can be overridden. Access control affects calling, not overriding or vtable dispatch."
+          },
+          {
+            "title": "Inheritance Access Control",
+            "code": "class Base {\nprotected:\n    int protectedVal;\nprivate:\n    int privateVal;\npublic:\n    int publicVal;\n};\n\n// Public inheritance\nclass PublicDerived : public Base {\n    void access() {\n        protectedVal = 1;  // OK - remains protected\n        publicVal = 2;     // OK - remains public\n        // privateVal = 3; // ERROR - never accessible\n    }\n};\n\n// Private inheritance\nclass PrivateDerived : private Base {\n    void access() {\n        protectedVal = 1;  // OK - becomes private\n        publicVal = 2;     // OK - becomes private\n    }\n};\n\nint main() {\n    PublicDerived pd;\n    pd.publicVal = 10;  // OK\n    \n    PrivateDerived pvd;\n    // pvd.publicVal = 10;  // ERROR - now private\n}",
+            "explanation": "Demonstrates how inheritance access modifiers change the visibility of inherited members."
+          }
+        ]
+      },
+      {
+        "title": "Encapsulation, Inheritance, and Polymorphism",
+        "content": "## Encapsulation\n\nEncapsulation is binding data and methods that operate on data into a single unit (class) while restricting direct access to internals.\n\n**Benefits:**\n- Data hiding\n- Interface-based programming\n- Maintainability\n- Control over data access\n\n**Implementation:** Using access specifiers (private, protected, public) and providing controlled interfaces.\n\n## Inheritance\n\nMechanism for a derived class to acquire properties and behaviors from a base class.\n\n**Object Layout:**\n- Derived class object contains base class subobject\n- Members laid out base-to-derived\n- Each inheritance branch may have its own vptr\n\n### Function Hiding vs Overriding\n\n**Function Hiding:** When derived class declares function with same name as base (any signature), it hides ALL base overloads.\n\n**Override:** Requires exact signature match for virtual functions.\n\n## Polymorphism\n\n**Compile-time Polymorphism:**\n- Function overloading\n- Operator overloading\n- Templates\n\n**Runtime Polymorphism:**\n- Virtual functions\n- Requires base pointer/reference\n- Uses vtable/vptr mechanism\n\n### Critical Rules\n\n1. **Never call virtual functions in constructors/destructors** - vptr points to current class being constructed\n2. **Always use virtual destructors in polymorphic base classes**\n3. **Pass polymorphic objects by pointer/reference** to avoid slicing",
+        "key_points": [
+          "Encapsulation enforced at compile-time, not runtime",
+          "Function hiding occurs by name, not signature",
+          "Virtual dispatch requires vptr which is set during construction",
+          "Calling virtual in constructor calls base version, not derived",
+          "Object slicing loses derived part when passing by value"
+        ],
+        "code_examples": [
+          {
+            "title": "Function Hiding Example",
+            "code": "class Base {\npublic:\n    void func(int) { std::cout << \"Base::func(int)\\n\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void func(double) { std::cout << \"Derived::func(double)\\n\"; }\n};\n\nint main() {\n    Derived d;\n    d.func(10);  // Calls Derived::func(double) - int converted to double\n    // Base::func(int) is hidden!\n    \n    // Fix: Bring base into scope\n    // using Base::func;\n}",
+            "explanation": "Function hiding happens when derived class declares ANY function with same name. All base overloads are hidden, even if signatures differ."
+          },
+          {
+            "title": "Virtual Function in Constructor - Dangerous",
+            "code": "class Base {\npublic:\n    Base() { show(); }  // BAD PRACTICE\n    virtual void show() { std::cout << \"Base\\n\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void show() override { std::cout << \"Derived\\n\"; }\n};\n\nint main() {\n    Derived d;  // Prints: Base (not Derived!)\n}",
+            "explanation": "During base construction, vptr points to Base's vtable, not Derived's. Virtual calls resolve to base version. This is by design for safety."
+          },
+          {
+            "title": "Object Slicing Problem",
+            "code": "class Animal {\npublic:\n    virtual void speak() const { std::cout << \"Animal\\n\"; }\n};\n\nclass Dog : public Animal {\npublic:\n    void speak() const override { std::cout << \"Dog barks\\n\"; }\n};\n\nvoid printAnimal(Animal a) {  // Takes by VALUE - slicing\n    a.speak();  // Always prints \"Animal\"\n}\n\nint main() {\n    Dog d;\n    printAnimal(d);  // Slicing occurs - Dog part lost\n}",
+            "explanation": "Passing by value causes object slicing. The Dog part is cut off, leaving only the Animal base. Always pass polymorphic objects by reference or pointer."
+          },
+          {
+            "title": "Correct Polymorphic Design",
+            "code": "class Shape {\npublic:\n    virtual void draw() const = 0;\n    virtual ~Shape() = default;  // Virtual destructor!\n};\n\nclass Circle : public Shape {\npublic:\n    void draw() const override {\n        std::cout << \"Drawing circle\\n\";\n    }\n};\n\nvoid render(const Shape& shape) {  // By reference!\n    shape.draw();\n}\n\nint main() {\n    Circle c;\n    render(c);  // Polymorphism works correctly\n}",
+            "explanation": "Proper polymorphic design: pure virtual interface, virtual destructor, pass by reference. This enables correct runtime dispatch without slicing."
+          }
+        ]
+      },
+      {
+        "title": "Virtual Functions and vtable/vptr Mechanism",
+        "content": "## Virtual Function Internals\n\n### vtable (Virtual Table)\n- Static table per class containing function pointers\n- One vtable per class with virtual functions\n- Shared by all objects of that class\n- Contains addresses of all virtual functions\n\n### vptr (Virtual Pointer)\n- Hidden pointer member in each object\n- Points to the object's class vtable\n- Automatically initialized during construction\n- Size overhead: typically one pointer (8 bytes on 64-bit)\n\n### Virtual Dispatch Mechanism\n\n1. Object created → vptr initialized to point to class's vtable\n2. Virtual function called → dereference vptr to get vtable\n3. Index into vtable to get function address\n4. Call the function at that address\n\n### Important Facts\n\n- **Access specifiers don't affect vtable** - even private virtual functions go into vtable\n- **Virtual dispatch is runtime** - chosen function based on actual object type\n- **Non-virtual functions** use static binding - based on pointer/reference type\n- **Virtual destructors** are essential for polymorphic classes\n- **const qualification** is part of signature for virtual functions\n\n## Critical const Rule\n\nFor virtual function overriding, const must match:\n\n```cpp\nclass Base {\n    virtual void func() const;  // const member function\n};\n\nclass Derived : public Base {\n    void func() override;  // ERROR - not const, no override!\n};\n```",
+        "key_points": [
+          "vtable is per-class, vptr is per-object",
+          "vptr adds memory overhead (typically 8 bytes per object)",
+          "Virtual dispatch has small runtime cost (pointer dereference + jump)",
+          "const qualification must match for proper override",
+          "Access modifiers don't block vtable dispatch, only direct calls",
+          "vptr is initialized during constructor, pointing to current level's vtable"
+        ],
+        "code_examples": [
+          {
+            "title": "vtable/vptr Illustration",
+            "code": "class Base {\npublic:\n    virtual void foo() { std::cout << \"Base::foo\\n\"; }\n    virtual void bar() { std::cout << \"Base::bar\\n\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void foo() override { std::cout << \"Derived::foo\\n\"; }\n    // bar() inherited\n};\n\nint main() {\n    Base b;\n    Derived d;\n    \n    // Memory layout (conceptual):\n    // b: [vptr -> Base_vtable] [data members]\n    // d: [vptr -> Derived_vtable] [Base data] [Derived data]\n    \n    Base* ptr = &d;\n    ptr->foo();  // Calls Derived::foo via vtable\n    ptr->bar();  // Calls Base::bar via vtable\n}",
+            "explanation": "Shows conceptual memory layout with vptr. Each object has vptr pointing to its class's vtable, enabling runtime dispatch."
+          },
+          {
+            "title": "const Qualification in Virtual Override",
+            "code": "class Base {\npublic:\n    virtual void show() const {\n        std::cout << \"Base const\\n\";\n    }\n};\n\nclass Derived1 : public Base {\npublic:\n    // Correct override - const matches\n    void show() const override {\n        std::cout << \"Derived const\\n\";\n    }\n};\n\nclass Derived2 : public Base {\npublic:\n    // NOT an override - missing const\n    // This is a NEW function, not override!\n    void show() {\n        std::cout << \"Derived non-const\\n\";\n    }\n};\n\nint main() {\n    Derived1 d1;\n    Base* b1 = &d1;\n    b1->show();  // Prints: Derived const\n    \n    Derived2 d2;\n    Base* b2 = &d2;\n    b2->show();  // Prints: Base const (no override!)\n}",
+            "explanation": "Demonstrates critical const rule: const is part of function signature. Without matching const, there's no override, just a new function."
+          },
+          {
+            "title": "Virtual Dispatch Timing",
+            "code": "class A {\npublic:\n    A() {\n        std::cout << \"A ctor calling: \";\n        who();  // Calls A::who, not B::who!\n    }\n    virtual void who() { std::cout << \"A\\n\"; }\n};\n\nclass B : public A {\npublic:\n    B() {\n        std::cout << \"B ctor calling: \";\n        who();  // Now calls B::who\n    }\n    void who() override { std::cout << \"B\\n\"; }\n};\n\nint main() {\n    B b;\n    // Output:\n    // A ctor calling: A\n    // B ctor calling: B\n}",
+            "explanation": "During base constructor, vptr points to Base's vtable. Only after derived construction does vptr update to Derived's vtable. This prevents calling on uninitialized derived parts."
+          }
+        ]
+      },
+      {
+        "title": "Pure Virtual Functions and Abstract Base Classes",
+        "content": "## Pure Virtual Functions\n\nA pure virtual function is declared with `= 0`:\n\n```cpp\nclass Interface {\npublic:\n    virtual void method() = 0;  // Pure virtual\n};\n```\n\n### Key Properties\n\n1. **Can have implementation** - pure virtual doesn't mean no body\n2. **Makes class abstract** - cannot instantiate\n3. **Must be overridden** in concrete derived classes\n4. **Can be called explicitly** via Base::method() if defined\n5. **Access specifier applies** - can be private, protected, or public\n\n## Abstract Base Classes (ABC)\n\nA class with at least one pure virtual function is abstract:\n\n- **Cannot instantiate** - `ABC obj;` is error\n- **Can have pointers/references** - `ABC* ptr` is OK\n- **Can have data members** - ABC is not just interface\n- **Can have constructors** - called during derived construction\n- **Should have virtual destructor** - for polymorphic deletion\n\n### Pure Virtual Destructor\n\nSpecial case: Pure virtual destructor MUST have implementation:\n\n```cpp\nclass A {\npublic:\n    virtual ~A() = 0;  // Declaration\n};\n\nA::~A() {}  // MUST provide definition\n```\n\nWhy? Derived destructors call base destructor automatically.",
+        "key_points": [
+          "Pure virtual functions can have implementation",
+          "Abstract classes can have constructors and data members",
+          "Pure virtual destructor must be defined or linker error",
+          "Derived class remains abstract if it doesn't override all pure virtuals",
+          "Pure virtual in base can be called explicitly via Base::func()",
+          "Private pure virtual functions are valid and useful"
+        ],
+        "code_examples": [
+          {
+            "title": "Pure Virtual with Implementation",
+            "code": "class Base {\npublic:\n    virtual void process() = 0;  // Pure virtual\n};\n\n// Can provide default implementation\nvoid Base::process() {\n    std::cout << \"Base default process\\n\";\n}\n\nclass Derived : public Base {\npublic:\n    void process() override {\n        Base::process();  // Call base implementation\n        std::cout << \"Derived specific process\\n\";\n    }\n};\n\nint main() {\n    // Base b;  // ERROR - abstract\n    Derived d;\n    d.process();\n    // Output:\n    // Base default process\n    // Derived specific process\n}",
+            "explanation": "Pure virtual functions can have bodies. Useful for providing default behavior that derived classes can optionally call."
+          },
+          {
+            "title": "Incomplete Override Chain",
+            "code": "class A {\npublic:\n    virtual void f() = 0;\n    virtual void g() = 0;\n};\n\n// B overrides only f, remains abstract\nclass B : public A {\npublic:\n    void f() override { std::cout << \"B::f\\n\"; }\n    // g() not overridden - B is still abstract\n};\n\n// C completes the interface\nclass C : public B {\npublic:\n    void g() override { std::cout << \"C::g\\n\"; }\n};\n\nint main() {\n    // A a;  // ERROR - abstract\n    // B b;  // ERROR - still abstract\n    C c;     // OK - concrete\n    c.f();   // Calls B::f\n    c.g();   // Calls C::g\n}",
+            "explanation": "Intermediate classes in hierarchy can remain abstract. Only when all pure virtuals are implemented does class become concrete."
+          },
+          {
+            "title": "Pure Virtual Destructor Pattern",
+            "code": "class AbstractBase {\npublic:\n    virtual ~AbstractBase() = 0;  // Pure virtual destructor\n};\n\n// MUST provide definition\nAbstractBase::~AbstractBase() {\n    std::cout << \"AbstractBase destroyed\\n\";\n}\n\nclass Concrete : public AbstractBase {\npublic:\n    ~Concrete() {\n        std::cout << \"Concrete destroyed\\n\";\n    }\n};\n\nint main() {\n    // AbstractBase* b = new AbstractBase();  // ERROR\n    AbstractBase* b = new Concrete();\n    delete b;\n    // Output:\n    // Concrete destroyed\n    // AbstractBase destroyed\n}",
+            "explanation": "Pure virtual destructor makes class abstract but MUST have implementation since derived destructors call it."
+          }
+        ]
+      },
+      {
+        "title": "Constructor Types and Member Initialization",
+        "content": "## Constructor Types\n\n### 1. Default Constructor\n- Takes no arguments\n- Auto-generated if no other constructor defined\n- If any constructor defined, must explicitly provide default if needed\n\n### 2. Parameterized Constructor\n- Takes arguments\n- Prevents auto-generation of default constructor\n\n### 3. Copy Constructor\n- Signature: `T(const T& other)`\n- Called on initialization from another object\n- Auto-generated does memberwise copy (shallow)\n\n### 4. Move Constructor (C++11)\n- Signature: `T(T&& other)`\n- Called on initialization from rvalue/temporary\n- Enables resource stealing\n- Not generated if copy/destructor user-declared\n\n## Member Initialization Best Practices\n\n### Initialization Order\n\n1. **Member initializer list** (preferred)\n2. **In-class initialization** (C++11, for defaults)\n3. **Constructor body assignment** (least efficient)\n\n### Critical Rules\n\n- Initialization order follows **declaration order**, not initializer list order\n- **const members** must use initializer list\n- **Reference members** must use initializer list\n- Base classes must be initialized before derived\n- Member objects constructed before constructor body\n\n## Delegating Constructors (C++11)\n\nOne constructor can call another:\n\n```cpp\nclass A {\n    int x;\npublic:\n    A() : A(0) {}  // Delegates to parameterized\n    A(int val) : x(val) {}\n};\n```",
+        "key_points": [
+          "Member initialization follows declaration order, not list order",
+          "Prefer initializer list over constructor body assignment",
+          "const and reference members MUST use initializer list",
+          "Move constructor not generated if copy/destructor user-declared",
+          "In-class initializers provide defaults, overridden by initializer list",
+          "Built-in types in local scope are uninitialized (garbage)"
+        ],
+        "code_examples": [
+          {
+            "title": "Initialization Order Trap",
+            "code": "class Dangerous {\n    int x;\n    int y;\npublic:\n    // WRONG: Order in list doesn't matter!\n    Dangerous(int val) : y(val), x(y) {\n        // x initialized first (declared first)\n        // x = y, but y is uninitialized!\n    }\n};\n\nclass Correct {\n    int x;\n    int y;\npublic:\n    // RIGHT: Initialize in declaration order\n    Correct(int val) : x(val), y(x) {\n        // x initialized first, then y = x\n    }\n};",
+            "explanation": "Initialization order follows member declaration order, not initializer list order. Violating this causes undefined behavior."
+          },
+          {
+            "title": "const and Reference Members",
+            "code": "class MustUseInitList {\n    const int constVal;\n    int& refVal;\npublic:\n    // Both MUST be initialized in initializer list\n    MustUseInitList(int v, int& r) \n        : constVal(v), refVal(r) {\n        // Cannot assign to const or reference in body\n        // constVal = v;  // ERROR\n        // refVal = r;    // ERROR\n    }\n};",
+            "explanation": "const and reference members cannot be assigned after construction, so they must be initialized in the initializer list."
+          },
+          {
+            "title": "In-Class Initializers vs Initializer List",
+            "code": "class Defaults {\n    int a = 10;     // In-class default\n    int b = 20;\n    int c;\npublic:\n    // Default constructor uses in-class values\n    Defaults() : c(30) {\n        // a = 10, b = 20, c = 30\n    }\n    \n    // Initializer list overrides defaults\n    Defaults(int x) : a(x), c(x) {\n        // a = x, b = 20 (default), c = x\n    }\n    \n    void print() {\n        std::cout << a << \" \" << b << \" \" << c << \"\\n\";\n    }\n};\n\nint main() {\n    Defaults d1;\n    d1.print();  // 10 20 30\n    \n    Defaults d2(100);\n    d2.print();  // 100 20 100\n}",
+            "explanation": "In-class initializers provide defaults. Initializer list can override them. This is preferred over default arguments for flexibility."
+          },
+          {
+            "title": "Delegating Constructor",
+            "code": "class Resource {\n    int* data;\n    size_t size;\npublic:\n    // Master constructor\n    Resource(size_t n, int val) : data(new int[n]), size(n) {\n        std::fill(data, data + size, val);\n        std::cout << \"Master ctor\\n\";\n    }\n    \n    // Delegate to master\n    Resource() : Resource(10, 0) {\n        std::cout << \"Default ctor\\n\";\n    }\n    \n    Resource(size_t n) : Resource(n, 0) {\n        std::cout << \"Size-only ctor\\n\";\n    }\n    \n    ~Resource() { delete[] data; }\n};\n\nint main() {\n    Resource r;\n    // Output:\n    // Master ctor\n    // Default ctor\n}",
+            "explanation": "Delegating constructors reduce code duplication. Delegated constructor runs completely before delegating constructor body."
+          }
+        ]
+      },
+      {
+        "title": "Copy Constructor vs Assignment Operator",
+        "content": "## Key Differences\n\n| Aspect | Copy Constructor | Copy Assignment |\n|--------|-----------------|----------------|\n| When called | Object **initialization** | Object **reassignment** |\n| Syntax | `T b = a;` or `T b(a);` | `b = a;` |\n| Starting state | Object being constructed | Object already exists |\n| Return type | None (constructor) | `T&` (usually) |\n| Self-assignment | N/A | Must check for |\n| Default behavior | Memberwise copy | Memberwise assign |\n\n## Copy Constructor\n\n```cpp\nclass T {\npublic:\n    T(const T& other);  // Copy constructor\n};\n```\n\n**Called in:**\n- Initialization: `T b = a;`\n- Function argument (pass by value): `void f(T obj)`\n- Function return by value: `return T();`\n- Container insertion/resize\n\n## Copy Assignment Operator\n\n```cpp\nclass T {\npublic:\n    T& operator=(const T& other);  // Copy assignment\n};\n```\n\n**Must handle:**\n1. Self-assignment check\n2. Cleanup of existing resources\n3. Copy from source\n4. Return `*this`\n\n## Copy-and-Swap Idiom\n\nElegant way to implement assignment:\n\n```cpp\nclass T {\npublic:\n    T& operator=(T other) {  // Pass by value!\n        swap(*this, other);  // Exception-safe swap\n        return *this;        // other's dtor cleans old data\n    }\n    \n    friend void swap(T& a, T& b) noexcept {\n        using std::swap;\n        swap(a.data, b.data);\n    }\n};\n```",
+        "key_points": [
+          "Copy constructor is initialization, assignment is rebinding",
+          "Assignment must handle self-assignment",
+          "Assignment must clean up existing resources before copying",
+          "Copy-and-swap idiom provides strong exception safety",
+          "Default copy is shallow - problematic with dynamic resources",
+          "Use =delete to prevent copying if not meaningful"
+        ],
+        "code_examples": [
+          {
+            "title": "Copy Constructor vs Assignment",
+            "code": "class Demo {\npublic:\n    Demo() { std::cout << \"Default\\n\"; }\n    Demo(const Demo&) { std::cout << \"Copy ctor\\n\"; }\n    Demo& operator=(const Demo&) {\n        std::cout << \"Copy assign\\n\";\n        return *this;\n    }\n};\n\nvoid func(Demo d) {}  // Pass by value\n\nDemo getDemo() {\n    Demo d;\n    return d;  // May use copy or move\n}\n\nint main() {\n    Demo a;              // Default\n    Demo b = a;          // Copy ctor (initialization)\n    Demo c(a);           // Copy ctor (initialization)\n    Demo d;              // Default\n    d = a;               // Copy assign (reassignment)\n    \n    func(a);             // Copy ctor (pass by value)\n    Demo e = getDemo();  // May elide or copy ctor\n}",
+            "explanation": "Demonstrates when copy constructor vs assignment operator is called. Understanding this is crucial for proper resource management."
+          },
+          {
+            "title": "Self-Assignment Safe Implementation",
+            "code": "class String {\n    char* data;\n    size_t len;\npublic:\n    // Copy constructor\n    String(const String& other) \n        : data(new char[other.len + 1]), len(other.len) {\n        std::strcpy(data, other.data);\n    }\n    \n    // Copy assignment - self-assignment safe\n    String& operator=(const String& other) {\n        if (this != &other) {  // Self-assignment check\n            char* newData = new char[other.len + 1];\n            std::strcpy(newData, other.data);\n            \n            delete[] data;  // Clean up old\n            data = newData; // Assign new\n            len = other.len;\n        }\n        return *this;\n    }\n    \n    ~String() { delete[] data; }\n};\n\nint main() {\n    String s1(\"hello\");\n    String s2 = s1;  // Copy ctor\n    s1 = s1;         // Self-assignment - safe\n    s2 = s1;         // Normal assignment\n}",
+            "explanation": "Proper implementation with self-assignment check and exception safety. Allocate new before deleting old."
+          },
+          {
+            "title": "Copy-and-Swap Idiom",
+            "code": "class Buffer {\n    int* data;\n    size_t size;\npublic:\n    Buffer(size_t n) : data(new int[n]), size(n) {}\n    \n    ~Buffer() { delete[] data; }\n    \n    // Copy constructor\n    Buffer(const Buffer& other)\n        : data(new int[other.size]), size(other.size) {\n        std::copy(other.data, other.data + size, data);\n    }\n    \n    // Copy assignment via copy-and-swap\n    Buffer& operator=(Buffer other) {  // Pass by value!\n        swap(*this, other);\n        return *this;\n    }\n    \n    friend void swap(Buffer& a, Buffer& b) noexcept {\n        using std::swap;\n        swap(a.data, b.data);\n        swap(a.size, b.size);\n    }\n};\n\nint main() {\n    Buffer b1(100);\n    Buffer b2(50);\n    b1 = b2;  // Copy-and-swap: exception-safe, self-assignment safe\n}",
+            "explanation": "Copy-and-swap idiom: pass by value (copy), swap, let destructor clean up. Automatically handles self-assignment and provides strong exception safety."
+          }
+        ]
+      },
+      {
+        "title": "Rule of 3, Rule of 5, Rule of 0",
+        "content": "## Rule of 3 (Pre-C++11)\n\nIf a class defines **any one** of:\n1. Destructor\n2. Copy constructor\n3. Copy assignment operator\n\nThen it should probably define **all three**.\n\n**Why?** These classes typically manage resources (memory, files, locks). Default implementations cause shallow copies leading to double deletion or resource leaks.\n\n## Rule of 5 (C++11 onwards)\n\nWith move semantics, if defining any of the Rule of 3, also define:\n4. Move constructor\n5. Move assignment operator\n\n**Why?** Without explicit move operations, expensive copies happen even when moving would suffice.\n\n## Rule of 0 (Modern C++ Best Practice)\n\n**Prefer not to define any of the 5.** Use RAII types:\n- `std::vector` instead of raw arrays\n- `std::unique_ptr` / `std::shared_ptr` instead of raw pointers\n- `std::string` instead of char*\n- `std::fstream` for files\n\nCompiler-generated special members work correctly when all members manage themselves.\n\n## Special Member Generation Rules\n\n### What Suppresses Generation\n\n- **User-declared destructor** → suppresses move operations\n- **User-declared copy operations** → suppresses move operations\n- **User-declared move operations** → suppresses copy operations\n\n### Explicit =default and =delete\n\n```cpp\nclass T {\npublic:\n    T(const T&) = default;  // Explicitly request default\n    T& operator=(const T&) = delete;  // Explicitly delete\n};\n```",
+        "key_points": [
+          "Rule of 3 prevents resource management bugs",
+          "Rule of 5 adds move semantics for performance",
+          "Rule of 0 is cleanest - let RAII handle everything",
+          "User-declared destructor suppresses move generation",
+          "Defining move suppresses copy generation",
+          "Use =default to explicitly request compiler-generated",
+          "Use =delete to explicitly prohibit operations"
+        ],
+        "code_examples": [
+          {
+            "title": "Rule of 3 Violation - Bug",
+            "code": "// BROKEN: Only destructor defined\nclass Broken {\n    int* data;\npublic:\n    Broken(int val) : data(new int(val)) {}\n    ~Broken() { delete data; }\n    // Missing: copy constructor and copy assignment\n};\n\nint main() {\n    Broken a(42);\n    Broken b = a;  // Shallow copy - both point to same data\n    // When a and b destruct: DOUBLE DELETE - crash!\n}",
+            "explanation": "Classic Rule of 3 violation. Compiler-generated copy is shallow, both objects delete same memory. Undefined behavior."
+          },
+          {
+            "title": "Rule of 5 Complete Implementation",
+            "code": "class Buffer {\n    int* data;\n    size_t size;\npublic:\n    // Constructor\n    Buffer(size_t n) : data(new int[n]), size(n) {}\n    \n    // Destructor\n    ~Buffer() { delete[] data; }\n    \n    // Copy constructor - deep copy\n    Buffer(const Buffer& other)\n        : data(new int[other.size]), size(other.size) {\n        std::copy(other.data, other.data + size, data);\n    }\n    \n    // Copy assignment\n    Buffer& operator=(const Buffer& other) {\n        if (this != &other) {\n            int* newData = new int[other.size];\n            std::copy(other.data, other.data + other.size, newData);\n            delete[] data;\n            data = newData;\n            size = other.size;\n        }\n        return *this;\n    }\n    \n    // Move constructor - steal resources\n    Buffer(Buffer&& other) noexcept\n        : data(other.data), size(other.size) {\n        other.data = nullptr;\n        other.size = 0;\n    }\n    \n    // Move assignment\n    Buffer& operator=(Buffer&& other) noexcept {\n        if (this != &other) {\n            delete[] data;\n            data = other.data;\n            size = other.size;\n            other.data = nullptr;\n            other.size = 0;\n        }\n        return *this;\n    }\n};",
+            "explanation": "Complete Rule of 5 implementation. Deep copy for copy ops, resource stealing for move ops. Move is noexcept for efficiency."
+          },
+          {
+            "title": "Rule of 0 - Preferred Modern Style",
+            "code": "// GOOD: Rule of 0 - no special members needed\nclass ModernBuffer {\n    std::vector<int> data;  // Manages memory itself\npublic:\n    ModernBuffer(size_t n) : data(n) {}\n    \n    // No destructor needed\n    // No copy/move operations needed\n    // Compiler-generated versions work perfectly\n    \n    size_t size() const { return data.size(); }\n    int& operator[](size_t i) { return data[i]; }\n};\n\nint main() {\n    ModernBuffer a(100);\n    ModernBuffer b = a;          // Copy works\n    ModernBuffer c = std::move(a);  // Move works\n    // All cleanup automatic\n}",
+            "explanation": "Rule of 0 in action. Using std::vector eliminates need for manual memory management. Cleaner, safer, less error-prone."
+          },
+          {
+            "title": "Explicit Default and Delete",
+            "code": "class MoveOnly {\n    std::unique_ptr<int> data;\npublic:\n    // Allow default construction and move\n    MoveOnly() = default;\n    MoveOnly(MoveOnly&&) = default;\n    MoveOnly& operator=(MoveOnly&&) = default;\n    \n    // Delete copy operations\n    MoveOnly(const MoveOnly&) = delete;\n    MoveOnly& operator=(const MoveOnly&) = delete;\n    \n    // Virtual destructor for polymorphic use\n    virtual ~MoveOnly() = default;\n};\n\nint main() {\n    MoveOnly a;\n    // MoveOnly b = a;  // ERROR - copy deleted\n    MoveOnly c = std::move(a);  // OK - move allowed\n}",
+            "explanation": "Explicit control over special members. Move-only semantics by deleting copy operations. =default documents intent."
+          }
+        ]
+      },
+      {
+        "title": "Virtual Destructors and Object Slicing",
+        "content": "## Virtual Destructors\n\n### Why Virtual Destructors Matter\n\nWhen deleting a derived object through a base pointer, if the base destructor is not virtual:\n- Only the base destructor is called\n- Derived destructor never runs\n- Resource leaks in derived class\n- **Undefined Behavior**\n\n### Rule\n\n**Any class with virtual functions should have a virtual destructor.**\n\nEven if the destructor does nothing, make it virtual:\n```cpp\nvirtual ~Base() = default;\n```\n\n### Pure Virtual Destructor\n\nSpecial case:\n```cpp\nclass Abstract {\npublic:\n    virtual ~Abstract() = 0;  // Makes class abstract\n};\n\nAbstract::~Abstract() {}  // MUST provide definition\n```\n\n## Object Slicing\n\n### What is Object Slicing?\n\nWhen a derived object is assigned to a base object **by value**, the derived part is \"sliced off\":\n\n```cpp\nBase b = Derived();  // Derived parts lost\n```\n\n### Problems Caused\n\n1. **Loss of data** - derived members are discarded\n2. **Broken polymorphism** - vtable is base, not derived\n3. **Incorrect behavior** - derived logic doesn't execute\n4. **Destructor issues** - derived resources not cleaned properly\n\n### How to Prevent Slicing\n\n1. **Pass by reference or pointer**\n```cpp\nvoid func(const Base& obj);  // No slicing\nvoid func(Base* obj);        // No slicing\n```\n\n2. **Delete copy constructor/assignment in base**\n```cpp\nclass Base {\nprotected:\n    Base(const Base&) = delete;\n    Base& operator=(const Base&) = delete;\n};\n```\n\n3. **Use smart pointers in containers**\n```cpp\nstd::vector<std::unique_ptr<Base>> vec;  // No slicing\n```",
+        "key_points": [
+          "Virtual destructor ensures derived destructors are called",
+          "Without virtual destructor, deleting via base pointer is UB",
+          "Pure virtual destructor makes class abstract but must be defined",
+          "Object slicing happens with pass-by-value or assignment",
+          "Slicing loses derived data and breaks polymorphism",
+          "Always pass polymorphic objects by reference or pointer"
+        ],
+        "code_examples": [
+          {
+            "title": "Virtual Destructor Necessity",
+            "code": "// WITHOUT virtual destructor - WRONG\nclass Base {\npublic:\n    ~Base() { std::cout << \"~Base\\n\"; }\n};\n\nclass Derived : public Base {\n    int* data;\npublic:\n    Derived() : data(new int[100]) {}\n    ~Derived() {\n        delete[] data;\n        std::cout << \"~Derived\\n\";\n    }\n};\n\nint main() {\n    Base* ptr = new Derived();\n    delete ptr;  // UB: Only ~Base called, memory leak!\n    // Output: ~Base (missing ~Derived!)\n}\n\n// CORRECT version\nclass BaseFixed {\npublic:\n    virtual ~BaseFixed() { std::cout << \"~Base\\n\"; }\n};\n\nclass DerivedFixed : public BaseFixed {\n    int* data;\npublic:\n    DerivedFixed() : data(new int[100]) {}\n    ~DerivedFixed() override {\n        delete[] data;\n        std::cout << \"~Derived\\n\";\n    }\n};\n\nint main() {\n    BaseFixed* ptr = new DerivedFixed();\n    delete ptr;  // Correct: Both destructors called\n    // Output:\n    // ~Derived\n    // ~Base\n}",
+            "explanation": "Without virtual destructor, derived destructor doesn't run - resource leak. Always use virtual destructor in polymorphic base classes."
+          },
+          {
+            "title": "Object Slicing Demonstration",
+            "code": "class Animal {\npublic:\n    virtual void speak() const { std::cout << \"Animal\\n\"; }\n    virtual ~Animal() = default;\n};\n\nclass Dog : public Animal {\n    std::string name;\npublic:\n    Dog(const std::string& n) : name(n) {}\n    void speak() const override {\n        std::cout << \"Dog \" << name << \" barks\\n\";\n    }\n};\n\n// WRONG: Pass by value causes slicing\nvoid makeSpeak_BAD(Animal animal) {\n    animal.speak();  // Always calls Animal::speak\n}\n\n// CORRECT: Pass by reference\nvoid makeSpeak_GOOD(const Animal& animal) {\n    animal.speak();  // Correct polymorphic call\n}\n\nint main() {\n    Dog dog(\"Rex\");\n    \n    makeSpeak_BAD(dog);   // Slicing: prints \"Animal\"\n    makeSpeak_GOOD(dog);  // Correct: prints \"Dog Rex barks\"\n    \n    // Direct slicing\n    Animal a = dog;  // Slicing occurs\n    a.speak();       // Prints \"Animal\"\n}",
+            "explanation": "Pass-by-value causes slicing. Dog becomes just Animal, losing name and polymorphic behavior. Always pass by reference or pointer."
+          },
+          {
+            "title": "Preventing Slicing at Compile Time",
+            "code": "class Base {\nprotected:\n    // Prevent slicing by deleting copy operations\n    Base() = default;\n    ~Base() = default;\n    Base(const Base&) = delete;\n    Base& operator=(const Base&) = delete;\npublic:\n    virtual void func() = 0;\n};\n\nclass Derived : public Base {\npublic:\n    void func() override { std::cout << \"Derived\\n\"; }\n};\n\nvoid process(Base obj) {}  // Would cause slicing\n\nint main() {\n    Derived d;\n    // process(d);  // ERROR - copy deleted\n    \n    // Must use reference or pointer\n    Base& ref = d;  // OK\n    Base* ptr = &d; // OK\n}",
+            "explanation": "Making base copy operations protected/deleted prevents slicing at compile time. Forces users to use references or pointers."
+          },
+          {
+            "title": "Slicing in Containers",
+            "code": "class Shape {\npublic:\n    virtual void draw() const = 0;\n    virtual ~Shape() = default;\n};\n\nclass Circle : public Shape {\n    int radius;\npublic:\n    Circle(int r) : radius(r) {}\n    void draw() const override {\n        std::cout << \"Circle radius \" << radius << \"\\n\";\n    }\n};\n\n// WRONG: Slicing in container\nvoid wrong_approach() {\n    std::vector<Shape> shapes;  // ERROR: can't store abstract\n    // Even if Shape was concrete:\n    // shapes.push_back(Circle(5));  // Slicing!\n}\n\n// CORRECT: Use pointers\nvoid correct_approach() {\n    std::vector<std::unique_ptr<Shape>> shapes;\n    shapes.push_back(std::make_unique<Circle>(5));\n    \n    for (const auto& shape : shapes) {\n        shape->draw();  // Correct polymorphism\n    }\n}",
+            "explanation": "Never store polymorphic objects by value in containers. Use smart pointers to preserve polymorphism and avoid slicing."
+          }
+        ]
+      }
+    ]
+  },
+  "interview_questions": {
+    "basic": [
+      {
+        "question": "What is the only difference between struct and class in C++?",
+        "answer": "Default access specifier: struct defaults to public, class defaults to private. Otherwise they are functionally identical - both support inheritance, member functions, virtual functions, and all OOP features.",
+        "tags": ["classes", "structs", "access-specifiers", "basics"]
+      },
+      {
+        "question": "What are the three access specifiers in C++ and what do they control?",
+        "answer": "1. **public**: Accessible from anywhere\n2. **protected**: Accessible within the class and derived classes\n3. **private**: Accessible only within the class itself\n\nThey control compile-time visibility of members but don't affect memory layout or performance.",
+        "tags": ["access-specifiers", "encapsulation"]
+      },
+      {
+        "question": "What is encapsulation in C++?",
+        "answer": "Encapsulation is bundling data and methods that operate on that data into a single unit (class) while restricting direct access to internal details. Implemented using access specifiers (private/protected/public) to hide implementation details and provide controlled interfaces. Enforced at compile-time, not runtime.",
+        "tags": ["encapsulation", "oop-principles"]
+      },
+      {
+        "question": "Explain the difference between compile-time and runtime polymorphism.",
+        "answer": "**Compile-time polymorphism**: Resolved at compile time. Includes function overloading, operator overloading, and templates. Faster but less flexible.\n\n**Runtime polymorphism**: Resolved at runtime using virtual functions and vtable mechanism. Slightly slower due to pointer indirection but enables dynamic behavior based on actual object type.",
+        "tags": ["polymorphism", "virtual-functions"]
+      },
+      {
+        "question": "When is a copy constructor called?",
+        "answer": "Copy constructor is called when:\n1. Object initialization from another object: `T b = a;` or `T b(a);`\n2. Pass by value: `void func(T obj)`\n3. Return by value: `return obj;`\n4. Container operations (insertion, resizing)\n\nNote: Copy elision (RVO/NRVO) may eliminate these calls, especially in C++17+.",
+        "tags": ["copy-constructor", "constructors"]
+      },
+      {
+        "question": "When is assignment operator called instead of copy constructor?",
+        "answer": "Assignment operator is called when assigning to an **already existing** object:\n```cpp\nT a, b;\nb = a;  // Assignment operator, b already exists\n\nT c = a;  // Copy constructor, c being initialized\n```\nKey difference: assignment operates on existing object, copy constructor constructs new object.",
+        "tags": ["assignment-operator", "copy-constructor"]
+      },
+      {
+        "question": "What is the Rule of 3?",
+        "answer": "If a class defines any one of these three, it should define all three:\n1. Destructor\n2. Copy constructor\n3. Copy assignment operator\n\nWhy? Classes defining these typically manage resources (dynamic memory, file handles, etc.). Default shallow copy would cause double deletion or resource leaks.",
+        "tags": ["rule-of-3", "resource-management"]
+      },
+      {
+        "question": "Why do we need virtual destructors in base classes?",
+        "answer": "To ensure proper cleanup when deleting derived objects through base pointers. Without virtual destructor:\n```cpp\nBase* ptr = new Derived();\ndelete ptr;  // Only Base destructor called - UB!\n```\nWith virtual destructor, both Derived and Base destructors are called in correct order. Essential for polymorphic classes.",
+        "tags": ["virtual-destructor", "polymorphism", "memory-management"]
+      },
+      {
+        "question": "What is object slicing?",
+        "answer": "Object slicing occurs when a derived class object is assigned to a base class object by value. The derived parts are \"sliced off\":\n```cpp\nDerived d;\nBase b = d;  // Slicing - derived members lost\n```\nProblems: Loss of derived data, broken polymorphism, incorrect behavior. Prevent by passing/storing polymorphic objects by reference or pointer.",
+        "tags": ["object-slicing", "inheritance", "polymorphism"]
+      },
+      {
+        "question": "What is a pure virtual function?",
+        "answer": "A virtual function declared with `= 0`:\n```cpp\nvirtual void func() = 0;\n```\nMakes the class abstract (cannot instantiate). Derived classes must override it to be concrete. Can optionally have an implementation that derived classes can call explicitly.",
+        "tags": ["pure-virtual", "abstract-class"]
+      }
+    ],
+    "intermediate": [
+      {
+        "question": "What is vtable and vptr? How do they enable polymorphism?",
+        "answer": "**vtable (virtual table)**: Static table per class containing function pointers for all virtual functions. One vtable shared by all objects of that class.\n\n**vptr (virtual pointer)**: Hidden pointer member in each object pointing to its class's vtable. Added by compiler, typically 8 bytes overhead on 64-bit systems.\n\n**How it works**: Virtual function call → dereference vptr → get vtable → index into vtable → call function at that address. This runtime dispatch enables polymorphism.",
+        "tags": ["vtable", "vptr", "polymorphism", "internals"]
+      },
+      {
+        "question": "Can private virtual functions be overridden? How does access control work with virtual functions?",
+        "answer": "Yes! Private virtual functions can be overridden:\n```cpp\nclass Base {\nprivate:\n    virtual void f() { cout << \"Base\"; }\npublic:\n    void call() { f(); }  // Calls via vtable\n};\n\nclass Derived : public Base {\nprivate:\n    void f() override { cout << \"Derived\"; }  // Legal!\n};\n```\nAccess control affects **calling**, not **overriding** or vtable dispatch. The overridden function is still in the vtable and will be called polymorphically.",
+        "tags": ["virtual-functions", "access-control", "override"]
+      },
+      {
+        "question": "What happens when you call a virtual function inside a constructor?",
+        "answer": "During base class construction, virtual functions do NOT dispatch to derived class versions:\n```cpp\nclass Base {\npublic:\n    Base() { func(); }  // Calls Base::func, not Derived::func\n    virtual void func() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\n    void func() override { cout << \"Derived\"; }\n};\n\nDerived d;  // Prints: Base\n```\nWhy? At the time Base constructor runs, vptr points to Base's vtable, not Derived's. This prevents accessing uninitialized derived members. Same applies to destructors.",
+        "tags": ["virtual-functions", "constructors", "vtable"]
+      },
+      {
+        "question": "Explain the Rule of 5. Why was it needed beyond Rule of 3?",
+        "answer": "Rule of 5 extends Rule of 3 with move semantics (C++11):\n1. Destructor\n2. Copy constructor\n3. Copy assignment\n4. **Move constructor**\n5. **Move assignment**\n\nWhy needed? Without move operations, even temporary objects are copied (expensive). Move operations enable resource stealing from temporaries:\n```cpp\nBuffer b = createBuffer();  // Move, not copy\n```\nDefining copy/destructor suppresses move generation, so must explicitly define or =default them.",
+        "tags": ["rule-of-5", "move-semantics", "resource-management"]
+      },
+      {
+        "question": "What is the Rule of 0 and why is it preferred in modern C++?",
+        "answer": "Rule of 0: Don't define any special members (destructor, copy/move constructors/assignments). Instead, use RAII types:\n```cpp\nclass Modern {\n    std::vector<int> data;  // Manages itself\n    std::unique_ptr<File> file;  // Manages itself\n    // No special members needed!\n};\n```\nBenefits:\n- Less code to write and maintain\n- No bugs in manual resource management\n- Compiler-generated versions are correct\n- Easier to reason about\n\nPrefer composition of RAII types over manual resource management.",
+        "tags": ["rule-of-0", "raii", "modern-cpp", "best-practices"]
+      },
+      {
+        "question": "What's the difference between function hiding and function overriding?",
+        "answer": "**Function Hiding**: Derived class declares function with same **name** as base (any signature). ALL base overloads are hidden:\n```cpp\nclass Base { void f(int); };\nclass Derived : public Base {\n    void f(double);  // Hides Base::f(int)\n};\nDerived d;\nd.f(5);  // Calls Derived::f(double), not Base::f(int)\n```\n\n**Function Overriding**: Derived class provides new implementation for base virtual function with **exact same signature**:\n```cpp\nclass Base { virtual void f(int); };\nclass Derived : public Base {\n    void f(int) override;  // Overrides\n};\n```\nFix hiding: `using Base::f;` brings base overloads into scope.",
+        "tags": ["inheritance", "function-hiding", "override"]
+      },
+      {
+        "question": "Why should move constructors be marked noexcept?",
+        "answer": "1. **Performance in containers**: `std::vector::push_back` uses move if noexcept, otherwise copies for strong exception guarantee.\n\n2. **Strong exception guarantee**: Move should be a simple pointer/resource swap with no allocations. If it can throw, cannot provide strong guarantee.\n\n3. **Enables optimizations**: Compiler can apply more aggressive optimizations knowing no exceptions possible.\n\n```cpp\nBuffer(Buffer&& other) noexcept  // Strongly recommended\n    : data(other.data), size(other.size) {\n    other.data = nullptr;\n}\n```",
+        "tags": ["move-constructor", "noexcept", "exception-safety"]
+      },
+      {
+        "question": "What is copy-and-swap idiom and what are its benefits?",
+        "answer": "Implementation technique for assignment operator:\n```cpp\nclass T {\npublic:\n    T& operator=(T other) {  // Pass by value!\n        swap(*this, other);\n        return *this;\n    }\n    friend void swap(T& a, T& b) noexcept;\n};\n```\nBenefits:\n1. **Exception safety**: Strong guarantee - either succeeds completely or no change\n2. **Self-assignment safe**: Automatic, no explicit check needed\n3. **Code reuse**: Leverages copy constructor\n4. **DRY principle**: Single swap function handles both copy and move assignment\n\nThe copy is made in parameter, if construction succeeds, swap is noexcept.",
+        "tags": ["copy-and-swap", "assignment-operator", "exception-safety"]
+      },
+      {
+        "question": "Can const be part of function signature for overriding?",
+        "answer": "Yes, const qualification is PART of the signature for member functions:\n```cpp\nclass Base {\n    virtual void f() const;  // const member\n};\n\nclass Derived1 : public Base {\n    void f() const override;  // ✓ Correct override\n};\n\nclass Derived2 : public Base {\n    void f() override;  // ✗ NOT an override - missing const!\n};\n```\nWithout matching const, it's a different function (hiding, not overriding). Use `override` keyword to catch such mistakes at compile time.",
+        "tags": ["const", "override", "virtual-functions"]
+      },
+      {
+        "question": "What is the order of initialization for class members?",
+        "answer": "Members are initialized in **declaration order**, NOT initializer list order:\n```cpp\nclass Dangerous {\n    int x;\n    int y;\npublic:\n    Dangerous(int v) : y(v), x(y) {  // x initialized first!\n        // x = y, but y is uninitialized - UB!\n    }\n};\n```\nCorrect:\n```cpp\nDangerous(int v) : x(v), y(x) {  // Matches declaration order\n    // x initialized first (declared first), then y = x\n}\n```\nCompiler warnings help catch this. Always initialize in declaration order.",
+        "tags": ["initialization", "constructors", "undefined-behavior"]
+      }
+    ],
+    "advanced": [
+      {
+        "question": "Can a pure virtual function have an implementation? When would you use this?",
+        "answer": "Yes! Pure virtual can have implementation:\n```cpp\nclass Base {\npublic:\n    virtual void process() = 0;  // Pure virtual\n};\n\nvoid Base::process() {  // Provide default\n    std::cout << \"Base default\\n\";\n}\n\nclass Derived : public Base {\n    void process() override {\n        Base::process();  // Call base implementation\n        std::cout << \"Derived specific\\n\";\n    }\n};\n```\nUse cases:\n- Provide default behavior derived classes can optionally call\n- Shared initialization/cleanup code\n- Template Method pattern\n\nClass is still abstract despite implementation.",
+        "tags": ["pure-virtual", "abstract-class", "design-patterns"]
+      },
+      {
+        "question": "What happens with multiple inheritance and vtables?",
+        "answer": "Each inheritance branch gets its own vtable and vptr:\n```cpp\nclass A { virtual void f(); };\nclass B { virtual void g(); };\nclass C : public A, public B { };\n\nC c;  // Has TWO vptrs: one for A, one for B\n```\nComplications:\n- Multiple vptrs increase object size\n- Pointer adjustment needed when casting between bases\n- Diamond problem requires virtual inheritance\n- Virtual inheritance adds another vptr\n\nThis is why multiple inheritance is complex and should be used carefully.",
+        "tags": ["multiple-inheritance", "vtable", "virtual-inheritance"]
+      },
+      {
+        "question": "What are the edge cases with default parameters in virtual functions?",
+        "answer": "Default parameters are **statically bound** (compile-time), not polymorphic:\n```cpp\nclass Base {\npublic:\n    virtual void f(int x = 10) {\n        std::cout << x << \"\\n\";\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void f(int x = 20) override {\n        std::cout << x << \"\\n\";\n    }\n};\n\nBase* ptr = new Derived();\nptr->f();  // Calls Derived::f but uses Base's default: prints 10!\n```\n**Critical rule**: Virtual dispatch is runtime, but default arguments are compile-time. Never rely on overridden default parameters. Better: avoid default parameters in virtual functions.",
+        "tags": ["virtual-functions", "default-parameters", "gotchas"]
+      },
+      {
+        "question": "How do you implement a move-only type and why?",
+        "answer": "Delete copy operations, provide/default move operations:\n```cpp\nclass MoveOnly {\n    std::unique_ptr<Resource> resource;\npublic:\n    MoveOnly() = default;\n    \n    // Delete copy\n    MoveOnly(const MoveOnly&) = delete;\n    MoveOnly& operator=(const MoveOnly&) = delete;\n    \n    // Allow move\n    MoveOnly(MoveOnly&&) = default;\n    MoveOnly& operator=(MoveOnly&&) = default;\n};\n```\nUse cases:\n- Unique ownership semantics (like `std::unique_ptr`)\n- Non-copyable resources (file handles, sockets)\n- Prevent expensive copies\n- Enforce transfer of ownership\n\nMove-only types work in containers and algorithms that support move semantics.",
+        "tags": ["move-semantics", "move-only", "ownership"]
+      },
+      {
+        "question": "What is the deleted destructor pattern and when would you use it?",
+        "answer": "Explicitly delete destructor to prevent destruction:\n```cpp\nclass HeapOnly {\n    ~HeapOnly() = delete;  // Cannot destroy\npublic:\n    static HeapOnly* create() {\n        return new HeapOnly();\n    }\n    void destroy() {\n        delete this;  // Only accessible from within class\n    }\nprivate:\n    HeapOnly() = default;\n};\n```\nUse cases:\n- Enforce heap-only allocation\n- Factory patterns with controlled lifetime\n- Singleton patterns\n- Memory pool management\n- Objects that should never be stack-allocated\n\nAlternative: private destructor (allows friends/members to destroy).",
+        "tags": ["destructor", "lifetime-management", "design-patterns"]
+      },
+      {
+        "question": "Explain the interaction between copy elision and deleted copy/move constructors.",
+        "answer": "Copy elision can occur EVEN with deleted copy/move:\n```cpp\nclass NoCopy {\npublic:\n    NoCopy() = default;\n    NoCopy(const NoCopy&) = delete;\n};\n\nNoCopy create() {\n    return NoCopy();  // OK in C++17 - mandatory elision\n}\n\nNoCopy obj = create();  // OK - elision, no copy\n```\nKey points:\n- **C++17**: Mandatory copy elision in certain cases (prvalue return)\n- Elision **bypasses** the constructor entirely - no need for it to exist\n- Pre-C++17: Elision is optional, so deleted copy would fail\n- Compiler must verify copy/move is **possible** (not deleted) pre-C++17\n\nThis enables returning move-only types by value.",
+        "tags": ["copy-elision", "rvo", "move-only", "cpp17"]
+      },
+      {
+        "question": "What are the implications of the order of destructor calls in inheritance?",
+        "answer": "Destructors called in **reverse order** of construction:\n```cpp\nclass Base {\npublic:\n    ~Base() { cleanup(); }\n    virtual void cleanup() { /* base cleanup */ }\n};\n\nclass Derived : public Base {\n    Resource* res;\npublic:\n    ~Derived() {\n        cleanup();  // Calls Base::cleanup!\n        delete res;\n    }\n    void cleanup() override { /* derived cleanup */ }\n};\n```\nCritical issues:\n- During Derived destruction, **vptr already points to Base**\n- Virtual calls in destructor resolve to Base version\n- Derived parts already destroyed when Base destructor runs\n\n**Solutions**:\n- Don't call virtual functions in destructors\n- Use explicit non-virtual cleanup methods\n- Two-phase destruction pattern",
+        "tags": ["destructors", "virtual-functions", "inheritance"]
+      },
+      {
+        "question": "How do you prevent object slicing at compile time?",
+        "answer": "Multiple techniques:\n\n**1. Delete copy operations in base:**\n```cpp\nclass Base {\nprotected:\n    Base() = default;\n    Base(const Base&) = delete;\n    Base& operator=(const Base&) = delete;\npublic:\n    virtual ~Base() = default;\n};\n```\n\n**2. Make base abstract:**\n```cpp\nclass Base {\npublic:\n    virtual void interface() = 0;\n    virtual ~Base() = default;\nprotected:\n    Base() = default;\n};\n```\n\n**3. Use std::enable_if for templates:**\n```cpp\ntemplate<typename T>\nvoid process(T& obj) {\n    static_assert(std::is_base_of_v<Base, T>,\n                  \"Must pass by reference to polymorphic base\");\n}\n```\n\nPrevents accidental pass-by-value compilation.",
+        "tags": ["object-slicing", "compile-time", "type-safety"]
+      },
+      {
+        "question": "What is the complete set of rules for when special member functions are auto-generated?",
+        "answer": "Complex interaction:\n\n**Default Constructor**: Generated unless ANY other constructor is user-declared\n\n**Destructor**: Always generated unless user-declared\n\n**Copy Constructor**: Generated unless:\n- Move constructor/assignment user-declared\n- Destructor user-declared (deprecated)\n\n**Copy Assignment**: Generated unless:\n- Move constructor/assignment user-declared  \n- Destructor user-declared (deprecated)\n\n**Move Constructor**: Generated only if:\n- No user-declared copy/move/destructor\n- All members are movable\n\n**Move Assignment**: Same rules as move constructor\n\n**Key insight**: Declaring ANY of the Rule of 5 suppresses some others. Use `=default` to explicitly request generation.",
+        "tags": ["special-members", "rule-of-5", "compiler-generation"]
+      },
+      {
+        "question": "How do you safely implement a polymorphic clone() method?",
+        "answer": "Covariant return type pattern:\n```cpp\nclass Base {\npublic:\n    virtual Base* clone() const = 0;\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    Derived* clone() const override {  // Covariant return\n        return new Derived(*this);\n    }\n    \n    // Ensure proper copy constructor\n    Derived(const Derived&) = default;\n};\n\n// Usage\nBase* original = new Derived();\nBase* copy = original->clone();  // Polymorphic clone\ndelete original;\ndelete copy;\n```\nBenefits:\n- Works polymorphically\n- Type-safe (covariant return)\n- Each derived class implements its own copy\n\nModern alternative: Return `std::unique_ptr` for automatic memory management.",
+        "tags": ["polymorphism", "clone", "covariant-return", "design-patterns"]
+      }
+    ]
+  },
+  "student_weaknesses": [
+    {
+      "concept": "Default parameters with virtual functions",
+      "confusion_level": 4,
+      "evidence": "Initially answered Q17 incorrectly, thought overridden default value (20) would be used instead of pointer type's default (10). Confused about static vs dynamic binding of default arguments.",
+      "recommendation": "Study the difference between static binding (compile-time: default parameters, non-virtual calls, overload resolution) vs dynamic binding (runtime: virtual function dispatch). Remember: virtual dispatch is runtime, but default arguments are compile-time resolved based on pointer/reference type, not object type."
+    },
+    {
+      "concept": "Member initialization order",
+      "confusion_level": 3,
+      "evidence": "Made mistake in Q7 output prediction initially. Initialization order follows declaration order in class, not order in initializer list.",
+      "recommendation": "Practice identifying initialization order bugs. Remember: members initialize in **declaration order** regardless of initializer list order. Tools like `-Wreorder` compiler warning help. Always write initializer list in same order as declaration."
+    },
+    {
+      "concept": "Virtual destructor behavior in polymorphic deletion",
+      "confusion_level": 3,
+      "evidence": "Initially wrong on Q2 and Q12 - didn't recognize that non-virtual base destructor means only base destructor is called, not derived. Multiple questions needed on this topic.",
+      "recommendation": "Memorize this rule: **Without virtual base destructor, deleting via base pointer only calls base destructor → resource leak/UB**. Practice identifying this pattern in code. Any polymorphic base class should have virtual destructor. Review examples of resource leaks caused by this."
+    },
+    {
+      "concept": "const qualification in virtual function overriding",
+      "confusion_level": 3,
+      "evidence": "Q8 confusion - thought non-const function overrides const function. Didn't initially understand const is part of signature and must match for override.",
+      "recommendation": "Remember: `void f()` and `void f() const` are **completely different functions**. For virtual override, **every part of signature must match** including const, reference qualifiers, exception specs. Use `override` keyword to catch mismatches at compile-time. Practice identifying override vs hiding."
+    },
+    {
+      "concept": "Special member function generation rules",
+      "confusion_level": 4,
+      "evidence": "Multiple requests for clarification table. Confused about when compiler generates vs suppresses copy/move constructors based on what user declares.",
+      "recommendation": "Study the complete generation rules systematically. Key rules: (1) User-declared destructor suppresses move (2) User-declared copy suppresses move (3) User-declared move suppresses copy. Use `=default` to explicitly request generation. Create flashcards for different scenarios: 'If I declare X, what happens to Y?'"
+    },
+    {
+      "concept": "vtable/vptr behavior during construction",
+      "confusion_level": 3,
+      "evidence": "Q11 - initially didn't fully understand that vptr points to base vtable during base constructor, so virtual calls resolve to base version.",
+      "recommendation": "Understand object construction phases: During Base constructor, only Base part exists and vptr points to Base vtable. Virtual dispatch to derived is unsafe because derived members not yet initialized. Never call virtual functions in constructors/destructors. Draw timeline diagrams showing vptr changes during construction."
+    },
+    {
+      "concept": "Function hiding vs overriding",
+      "confusion_level": 2,
+      "evidence": "Q9 - correctly identified output but needed deeper understanding of the mechanism. Function hiding by name vs virtual override by signature.",
+      "recommendation": "Key distinction: Hiding happens by **name** (any signature), overriding requires **exact signature match** for virtual functions. Use `using Base::func;` to bring hidden base overloads into scope. Practice identifying hiding vs overriding in code examples."
+    }
+  ],
+  "metadata": {
+    "total_concepts": 9,
+    "code_examples_count": 45,
+    "interview_questions_count": 30,
+    "estimated_study_time_minutes": 180,
+    "key_topics_covered": [
+      "Classes and Structs",
+      "Access Specifiers",
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Virtual Functions",
+      "vtable/vptr mechanism",
+      "Pure Virtual Functions",
+      "Abstract Base Classes",
+      "Constructors (Default, Parameterized, Copy, Move)",
+      "Copy Constructor vs Assignment Operator",
+      "Rule of 3/5/0",
+      "Virtual Destructors",
+      "Object Slicing",
+      "Member Initialization",
+      "Function Hiding vs Overriding"
+    ],
+    "difficulty_distribution": {
+      "basic": 10,
+      "intermediate": 10,
+      "advanced": 10
+    }
+  }
+}

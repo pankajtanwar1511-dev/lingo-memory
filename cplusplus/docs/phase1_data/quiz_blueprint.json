@@ -1,0 +1,313 @@
+{
+  "phase": 1,
+  "description": "Quiz generation specifications for Phase 1 topics",
+  "global_settings": {
+    "min_questions_per_topic": 10,
+    "max_questions_per_topic": 25,
+    "difficulty_distribution": {
+      "easy": 0.3,
+      "medium": 0.5,
+      "hard": 0.2
+    }
+  },
+  "topics": [
+    {
+      "topic_id": "phase1_01",
+      "title": "C++ Object-Oriented Programming (OOP)",
+      "difficulty": "easy",
+      "recommended_question_count": 20,
+      "focus_areas": [
+        "Classes and structs differences",
+        "Access specifiers",
+        "Virtual functions and vtables",
+        "Constructors and destructors",
+        "Inheritance and polymorphism",
+        "Object slicing",
+        "Abstract classes"
+      ],
+      "question_type_distribution": {
+        "conceptual": 8,
+        "code_based": 7,
+        "debugging": 3,
+        "comparison": 2
+      }
+    },
+    {
+      "topic_id": "phase1_02",
+      "title": "C++ Memory Management",
+      "difficulty": "easy",
+      "recommended_question_count": 10,
+      "focus_areas": [
+        "Stack vs heap",
+        "new and delete",
+        "Memory leaks",
+        "RAII basics"
+      ],
+      "question_type_distribution": {
+        "conceptual": 5,
+        "code_based": 3,
+        "debugging": 2
+      }
+    },
+    {
+      "topic_id": "phase1_03",
+      "title": "Smart Pointers (C++11)",
+      "difficulty": "easy",
+      "recommended_question_count": 11,
+      "focus_areas": [
+        "unique_ptr usage",
+        "shared_ptr and weak_ptr",
+        "When to use which smart pointer",
+        "make_unique and make_shared"
+      ],
+      "question_type_distribution": {
+        "conceptual": 4,
+        "code_based": 5,
+        "comparison": 2
+      }
+    },
+    {
+      "topic_id": "phase1_04",
+      "title": "References, Copying, and Moving",
+      "difficulty": "easy",
+      "recommended_question_count": 13,
+      "focus_areas": [
+        "Lvalue vs rvalue",
+        "Move semantics",
+        "Copy constructor",
+        "Move constructor",
+        "std::move and std::forward"
+      ],
+      "question_type_distribution": {
+        "conceptual": 5,
+        "code_based": 6,
+        "comparison": 2
+      }
+    },
+    {
+      "topic_id": "phase1_05",
+      "title": "Operator Overloading",
+      "difficulty": "easy",
+      "recommended_question_count": 10,
+      "focus_areas": [
+        "Overloading arithmetic operators",
+        "Stream operators",
+        "Comparison operators",
+        "Subscript operator"
+      ],
+      "question_type_distribution": {
+        "conceptual": 3,
+        "code_based": 6,
+        "debugging": 1
+      }
+    },
+    {
+      "topic_id": "phase1_06",
+      "title": "Type System and Casting",
+      "difficulty": "easy",
+      "recommended_question_count": 12,
+      "focus_areas": [
+        "static_cast vs dynamic_cast",
+        "const_cast usage",
+        "reinterpret_cast",
+        "Type safety"
+      ],
+      "question_type_distribution": {
+        "conceptual": 4,
+        "code_based": 5,
+        "comparison": 3
+      }
+    },
+    {
+      "topic_id": "phase1_07",
+      "title": "Templates and Generics",
+      "difficulty": "easy",
+      "recommended_question_count": 10,
+      "focus_areas": [
+        "Function templates",
+        "Class templates",
+        "Template specialization",
+        "Variadic templates"
+      ],
+      "question_type_distribution": {
+        "conceptual": 4,
+        "code_based": 5,
+        "debugging": 1
+      }
+    },
+    {
+      "topic_id": "phase1_08",
+      "title": "STL Containers and Algorithms",
+      "difficulty": "easy",
+      "recommended_question_count": 14,
+      "focus_areas": [
+        "vector, list, map usage",
+        "Iterators",
+        "Common algorithms",
+        "Container selection"
+      ],
+      "question_type_distribution": {
+        "conceptual": 4,
+        "code_based": 7,
+        "comparison": 3
+      }
+    },
+    {
+      "topic_id": "phase1_09",
+      "title": "C++11 Features",
+      "difficulty": "easy",
+      "recommended_question_count": 20,
+      "focus_areas": [
+        "auto keyword",
+        "nullptr",
+        "Lambda expressions",
+        "Range-based for loops",
+        "decltype"
+      ],
+      "question_type_distribution": {
+        "conceptual": 6,
+        "code_based": 10,
+        "comparison": 4
+      }
+    },
+    {
+      "topic_id": "phase1_10",
+      "title": "RAII and Resource Management",
+      "difficulty": "easy",
+      "recommended_question_count": 10,
+      "focus_areas": [
+        "RAII principle",
+        "Scope guards",
+        "Resource cleanup",
+        "Exception safety"
+      ],
+      "question_type_distribution": {
+        "conceptual": 5,
+        "code_based": 4,
+        "debugging": 1
+      }
+    },
+    {
+      "topic_id": "phase1_11",
+      "title": "Multithreading (C++11 Intro)",
+      "difficulty": "easy",
+      "recommended_question_count": 12,
+      "focus_areas": [
+        "std::thread basics",
+        "Mutex and locks",
+        "Race conditions",
+        "Thread synchronization"
+      ],
+      "question_type_distribution": {
+        "conceptual": 5,
+        "code_based": 5,
+        "debugging": 2
+      }
+    },
+    {
+      "topic_id": "phase1_12",
+      "title": "Design Patterns in C++",
+      "difficulty": "easy",
+      "recommended_question_count": 25,
+      "focus_areas": [
+        "Singleton pattern",
+        "Factory pattern",
+        "Observer pattern",
+        "Strategy pattern",
+        "SOLID principles"
+      ],
+      "question_type_distribution": {
+        "conceptual": 10,
+        "code_based": 12,
+        "comparison": 3
+      }
+    },
+    {
+      "topic_id": "phase1_13",
+      "title": "Compile-Time Magic",
+      "difficulty": "medium",
+      "recommended_question_count": 10,
+      "focus_areas": [
+        "constexpr functions",
+        "Template metaprogramming",
+        "SFINAE",
+        "Type traits"
+      ],
+      "question_type_distribution": {
+        "conceptual": 4,
+        "code_based": 4,
+        "debugging": 2
+      }
+    },
+    {
+      "topic_id": "phase1_15",
+      "title": "Low-Level & Tricky Topics",
+      "difficulty": "easy",
+      "recommended_question_count": 10,
+      "focus_areas": [
+        "Undefined behavior",
+        "Bit manipulation",
+        "Alignment",
+        "Memory layout"
+      ],
+      "question_type_distribution": {
+        "conceptual": 4,
+        "code_based": 4,
+        "debugging": 2
+      }
+    },
+    {
+      "topic_id": "phase1_16",
+      "title": "C++14 Feature Deep Dive",
+      "difficulty": "easy",
+      "recommended_question_count": 10,
+      "focus_areas": [
+        "Generic lambdas",
+        "Variable templates",
+        "Binary literals",
+        "Return type deduction"
+      ],
+      "question_type_distribution": {
+        "conceptual": 4,
+        "code_based": 5,
+        "comparison": 1
+      }
+    },
+    {
+      "topic_id": "phase1_17",
+      "title": "C++17 Features Overview",
+      "difficulty": "easy",
+      "recommended_question_count": 20,
+      "focus_areas": [
+        "Structured bindings",
+        "if constexpr",
+        "std::optional",
+        "std::variant",
+        "Fold expressions"
+      ],
+      "question_type_distribution": {
+        "conceptual": 6,
+        "code_based": 11,
+        "comparison": 3
+      }
+    }
+  ],
+  "missing_topics": [
+    {
+      "topic_id": "phase1_14",
+      "title": "[MISSING - Placeholder]",
+      "status": "no_data",
+      "recommendation": "Add synthetic content or mark as coming soon"
+    }
+  ],
+  "global_weak_areas": [
+    "RAII and Resource Management",
+    "Compile-Time Magic",
+    "Multithreading"
+  ],
+  "usage_notes": {
+    "for_adaptive_quizzes": "Use weakness_score to prioritize questions from weaker topics",
+    "for_general_quizzes": "Follow recommended_question_count distribution",
+    "for_interview_prep": "Focus on Design Patterns (87 Q), OOP (39 Q), and C++17 (36 Q)"
+  }
+}

@@ -1,0 +1,3821 @@
+{
+  "topic_01": {
+    "title": "1. C++ Object-Oriented Programming (OOP)",
+    "focus_areas": [
+      "destructor",
+      "const",
+      "virtual",
+      "constructor",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 19,
+    "emphasis_on_confusion_areas": [
+      "pointer",
+      "noexcept"
+    ]
+  },
+  "topic_02": {
+    "title": "Skincare routine advice",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_03": {
+    "title": "Confirm tagging schema",
+    "focus_areas": [
+      "reference",
+      "struct",
+      "move",
+      "class",
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": [
+      "reference",
+      "struct",
+      "move"
+    ]
+  },
+  "topic_04": {
+    "title": "Claude Code vs API pricing",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_05": {
+    "title": "Besan ke ladoo recipe",
+    "focus_areas": [
+      "auto",
+      "move",
+      "class",
+      "const",
+      "reference"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": [
+      "static"
+    ]
+  },
+  "topic_06": {
+    "title": "ROS2 performance improvement",
+    "focus_areas": [
+      "copy",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": [
+      "copy",
+      "struct"
+    ]
+  },
+  "topic_07": {
+    "title": "DDS writer and reader",
+    "focus_areas": [
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_08": {
+    "title": "Fix sticky modak",
+    "focus_areas": [
+      "class",
+      "virtual"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 8,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_09": {
+    "title": "C++ Core Concepts Roadmap",
+    "focus_areas": [
+      "move",
+      "copy",
+      "reference",
+      "pointer",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_10": {
+    "title": "5. Operator Overloading",
+    "focus_areas": [
+      "class",
+      "const",
+      "move",
+      "constructor",
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_11": {
+    "title": "4. References, Copying, and Moving",
+    "focus_areas": [
+      "move",
+      "const",
+      "rvalue",
+      "lvalue",
+      "reference"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 6,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_12": {
+    "title": "17. C++17 Features Overview",
+    "focus_areas": [
+      "const",
+      "copy",
+      "constexpr",
+      "template",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 17,
+    "emphasis_on_confusion_areas": [
+      "copy",
+      "static",
+      "reference"
+    ]
+  },
+  "topic_13": {
+    "title": "16. C++14 Feature Deep Dive",
+    "focus_areas": [
+      "const",
+      "lambda",
+      "move",
+      "auto",
+      "decltype"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_14": {
+    "title": "15. Low-Level &amp; Tricky Topics",
+    "focus_areas": [
+      "const",
+      "virtual",
+      "inheritance",
+      "copy",
+      "vptr"
+    ],
+    "suggested_difficulty": "intermediate",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_15": {
+    "title": "13. Compile-Time Magic (Intro Only)",
+    "focus_areas": [
+      "const",
+      "constexpr",
+      "static",
+      "move",
+      "template"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_16": {
+    "title": "12. Design Patterns in C++ part 2",
+    "focus_areas": [
+      "struct",
+      "template",
+      "class",
+      "pointer",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 8,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_17": {
+    "title": "12. Design Patterns in C++ part 3",
+    "focus_areas": [
+      "class",
+      "const",
+      "template",
+      "noexcept",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 8,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_18": {
+    "title": "12. Design Patterns in C++",
+    "focus_areas": [
+      "move",
+      "polymorphism",
+      "static"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_19": {
+    "title": "12. Design Patterns in C++ Part 1",
+    "focus_areas": [
+      "move",
+      "template",
+      "class",
+      "const",
+      "static"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_20": {
+    "title": "11. Multithreading (C++11 Intro)",
+    "focus_areas": [
+      "reference",
+      "struct",
+      "copy",
+      "move",
+      "pointer"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 6,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_21": {
+    "title": "10. RAII and Resource Management",
+    "focus_areas": [
+      "move",
+      "pointer",
+      "constructor",
+      "reference",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_22": {
+    "title": "9. C++11 Features (Most Interview Relevant)",
+    "focus_areas": [
+      "const",
+      "auto",
+      "copy",
+      "move",
+      "override"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 10,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_23": {
+    "title": "8. STL Containers and Algorithms",
+    "focus_areas": [
+      "move",
+      "lambda",
+      "pointer",
+      "constructor",
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 7,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_24": {
+    "title": "7. Templates and Generics",
+    "focus_areas": [
+      "template",
+      "move",
+      "class",
+      "pointer",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_25": {
+    "title": "6. Type System and Casting",
+    "focus_areas": [
+      "const",
+      "static",
+      "move",
+      "constructor",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_26": {
+    "title": "3. Smart Pointers (C++11)",
+    "focus_areas": [
+      "move",
+      "shared_ptr",
+      "weak_ptr",
+      "reference",
+      "unique_ptr"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_27": {
+    "title": "2. C++ Memory Management",
+    "focus_areas": [
+      "pointer",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_28": {
+    "title": "N5 level word list",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 10,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_29": {
+    "title": "Decoration suggestions provided",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_30": {
+    "title": "Apple for cough in toddlers",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_31": {
+    "title": "Beauty products in Japan",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_32": {
+    "title": "Translate book request Japanese",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_33": {
+    "title": "Minna no Nihongo test",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_34": {
+    "title": "Japanese long green onion",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_35": {
+    "title": "C++ tricky questions",
+    "focus_areas": [
+      "class",
+      "static",
+      "struct",
+      "virtual",
+      "pointer"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 6,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_36": {
+    "title": "Perception Engineer roadmap",
+    "focus_areas": [
+      "struct",
+      "const",
+      "copy",
+      "class",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": [
+      "struct",
+      "const",
+      "copy"
+    ]
+  },
+  "topic_37": {
+    "title": "C++ memory concepts",
+    "focus_areas": [
+      "copy",
+      "struct",
+      "auto",
+      "reference"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": [
+      "struct"
+    ]
+  },
+  "topic_38": {
+    "title": "Interview prep questions",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_39": {
+    "title": "Software architecture review",
+    "focus_areas": [],
+    "suggested_difficulty": "intermediate",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_40": {
+    "title": "Morgan Stanley interview prep",
+    "focus_areas": [
+      "move",
+      "copy",
+      "const",
+      "class",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 15,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_41": {
+    "title": "Interview prep questions",
+    "focus_areas": [
+      "shared_ptr",
+      "copy",
+      "const",
+      "reference"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 11,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_42": {
+    "title": "Multithreading in HFT systems",
+    "focus_areas": [
+      "copy"
+    ],
+    "suggested_difficulty": "intermediate",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": [
+      "copy"
+    ]
+  },
+  "topic_43": {
+    "title": "C++ interview preparation",
+    "focus_areas": [
+      "struct",
+      "move",
+      "pointer",
+      "copy",
+      "virtual"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 15,
+    "emphasis_on_confusion_areas": [
+      "virtual",
+      "shared_ptr",
+      "rule of three"
+    ]
+  },
+  "topic_44": {
+    "title": "Why Roaches Persist",
+    "focus_areas": [
+      "auto",
+      "pointer",
+      "class",
+      "move",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_45": {
+    "title": "OpenCV Day 3 preparation",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_46": {
+    "title": "OpenCV Day 1–3 plan",
+    "focus_areas": [
+      "move",
+      "template",
+      "class",
+      "struct",
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": [
+      "template"
+    ]
+  },
+  "topic_47": {
+    "title": "OpenCV in perception pipeline",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_48": {
+    "title": "Polite event cancellation message",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_49": {
+    "title": "Becoming Robotics Expert",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_50": {
+    "title": "Robotics DSA Interview Prep",
+    "focus_areas": [
+      "const",
+      "auto"
+    ],
+    "suggested_difficulty": "intermediate",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_51": {
+    "title": "Git Interview Prep",
+    "focus_areas": [
+      "auto",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 13,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_52": {
+    "title": "Robotics Control Systems Interview",
+    "focus_areas": [
+      "const",
+      "auto",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 7,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_53": {
+    "title": "Move constructor deletion behavior",
+    "focus_areas": [
+      "move",
+      "copy",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_54": {
+    "title": "ISO 26262 Overview",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_55": {
+    "title": "Design Patterns in Resume",
+    "focus_areas": [
+      "move",
+      "struct",
+      "static",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_56": {
+    "title": "T2 Interview Process Insights",
+    "focus_areas": [
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_57": {
+    "title": "Virtual Destructor and Slicing",
+    "focus_areas": [
+      "virtual",
+      "class",
+      "destructor",
+      "struct",
+      "pointer"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_58": {
+    "title": "pipeline till perception",
+    "focus_areas": [
+      "move",
+      "auto",
+      "static",
+      "inheritance",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 16,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_59": {
+    "title": "Nav2 Mapping Localization Guide",
+    "focus_areas": [
+      "move",
+      "reference",
+      "const",
+      "static",
+      "auto"
+    ],
+    "suggested_difficulty": "intermediate",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": [
+      "move",
+      "reference",
+      "const"
+    ]
+  },
+  "topic_60": {
+    "title": "Linux internals Interview Prep Plan",
+    "focus_areas": [
+      "struct",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_61": {
+    "title": "ROS 2 Quiz Concepts",
+    "focus_areas": [
+      "auto",
+      "const",
+      "static"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": [
+      "const"
+    ]
+  },
+  "topic_62": {
+    "title": "Job Role Qualifications Inquiry",
+    "focus_areas": [
+      "const",
+      "struct",
+      "move",
+      "virtual",
+      "inheritance"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 9,
+    "emphasis_on_confusion_areas": [
+      "virtual",
+      "inheritance"
+    ]
+  },
+  "topic_63": {
+    "title": "MQTT Advanced Concepts Deep Dive",
+    "focus_areas": [
+      "const",
+      "move",
+      "virtual"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 8,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_64": {
+    "title": "MQTT Basics and Internals",
+    "focus_areas": [
+      "move",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 10,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_65": {
+    "title": "MQTT Retained Message Behavior",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_66": {
+    "title": "Introduction to MQTT",
+    "focus_areas": [
+      "move",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_67": {
+    "title": "C++ Jobs in Japan",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_68": {
+    "title": "Operator Overloading Fix",
+    "focus_areas": [
+      "class",
+      "const",
+      "struct",
+      "static"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_69": {
+    "title": "JLPT N5 Learning Time",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_70": {
+    "title": "Free AI Resume Tools",
+    "focus_areas": [
+      "auto",
+      "struct",
+      "const",
+      "move",
+      "static"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_71": {
+    "title": "Autoware Perception Resume Tips",
+    "focus_areas": [
+      "auto",
+      "move",
+      "static",
+      "struct",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_72": {
+    "title": "AI Engineer Timeframe Guide",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_73": {
+    "title": "Top Medium LeetCode Problems",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_74": {
+    "title": "Linux Internals Interview Prep",
+    "focus_areas": [],
+    "suggested_difficulty": "advanced",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_75": {
+    "title": "Linux Internals Learning Plan",
+    "focus_areas": [
+      "struct",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_76": {
+    "title": "Median Binary Search Visualization",
+    "focus_areas": [
+      "move",
+      "class"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_77": {
+    "title": "Custom Comparator Priority Queue",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_78": {
+    "title": "Trunk Line Services Explained",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_79": {
+    "title": "C++ Position Inquiry",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_80": {
+    "title": "Online Interview Scheduling Reply",
+    "focus_areas": [
+      "class",
+      "auto",
+      "const",
+      "reference",
+      "template"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": [
+      "reference"
+    ]
+  },
+  "topic_81": {
+    "title": "C++ Role Inquiry Cyient",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_82": {
+    "title": "C++ Opportunity Follow-up",
+    "focus_areas": [
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_83": {
+    "title": "Follow-up Interview Schedule",
+    "focus_areas": [
+      "const",
+      "auto",
+      "move",
+      "class"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 6,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_84": {
+    "title": "CV vs Resume Guidance",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_85": {
+    "title": "Lock-Free Queue Phases",
+    "focus_areas": [
+      "pointer",
+      "template"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_86": {
+    "title": "Copy-on-Write String Implementation",
+    "focus_areas": [
+      "copy",
+      "const",
+      "reference",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_87": {
+    "title": "Fork COW Memory Copy",
+    "focus_areas": [
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_88": {
+    "title": "Process vs Thread Explained",
+    "focus_areas": [
+      "struct",
+      "const",
+      "auto",
+      "move",
+      "virtual"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": [
+      "const",
+      "move",
+      "static"
+    ]
+  },
+  "topic_89": {
+    "title": "Understanding tar file structure",
+    "focus_areas": [
+      "reference",
+      "struct",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_90": {
+    "title": "Israel vs Iran Military",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_91": {
+    "title": "Script vs Function Params",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_92": {
+    "title": "Bash redirection shorthand",
+    "focus_areas": [
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 10,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_93": {
+    "title": "Role Preference Clarification",
+    "focus_areas": [
+      "reference"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_94": {
+    "title": "Embedded Systems Resume Review",
+    "focus_areas": [
+      "inheritance",
+      "move",
+      "reference",
+      "const",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_95": {
+    "title": "Embedded Systems Overview",
+    "focus_areas": [
+      "const",
+      "inheritance",
+      "move",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": [
+      "const"
+    ]
+  },
+  "topic_96": {
+    "title": "Hard Link vs Soft Link",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_97": {
+    "title": "Docker HTTP Server Command",
+    "focus_areas": [
+      "auto",
+      "move",
+      "struct",
+      "reference",
+      "inheritance"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 14,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_98": {
+    "title": "TF Broadcaster vs Listener",
+    "focus_areas": [
+      "auto",
+      "static",
+      "move",
+      "class",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 15,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_99": {
+    "title": "Low-Level Embedded Drivers",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_100": {
+    "title": "Install netstat via net-tools",
+    "focus_areas": [
+      "move",
+      "reference",
+      "copy",
+      "struct",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 15,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_101": {
+    "title": "Docker Overview and Usage",
+    "focus_areas": [
+      "move",
+      "copy",
+      "reference"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 16,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_102": {
+    "title": "Docker permission issue fix",
+    "focus_areas": [
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_103": {
+    "title": "Map and Localization in Nav2",
+    "focus_areas": [
+      "move",
+      "reference"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 7,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_104": {
+    "title": "Nav2 Behavior Trees Explained",
+    "focus_areas": [
+      "move",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 8,
+    "emphasis_on_confusion_areas": [
+      "auto"
+    ]
+  },
+  "topic_105": {
+    "title": "C++ Developer Job Application",
+    "focus_areas": [
+      "static",
+      "auto",
+      "struct",
+      "class",
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 15,
+    "emphasis_on_confusion_areas": [
+      "static"
+    ]
+  },
+  "topic_106": {
+    "title": "Undefined behavior fix",
+    "focus_areas": [
+      "class",
+      "rvalue",
+      "reference",
+      "template",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_107": {
+    "title": "ROS 2 QoS Overview",
+    "focus_areas": [
+      "auto",
+      "const",
+      "constructor",
+      "struct",
+      "static"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 9,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_108": {
+    "title": "Delhi Capitals IPL 2025",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_109": {
+    "title": "ROS 2 include error",
+    "focus_areas": [
+      "copy",
+      "class",
+      "move",
+      "const",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 7,
+    "emphasis_on_confusion_areas": [
+      "copy"
+    ]
+  },
+  "topic_110": {
+    "title": "QoS Depth and Transient",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_111": {
+    "title": "Launch nodes after Autoware",
+    "focus_areas": [
+      "auto",
+      "class"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_112": {
+    "title": "ROS2 Core Concepts Interview Prep",
+    "focus_areas": [
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 8,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_113": {
+    "title": "C++20 Features Overview",
+    "focus_areas": [
+      "const",
+      "constexpr",
+      "struct",
+      "template",
+      "static"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 7,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_114": {
+    "title": "Interview Prep and C++ Study",
+    "focus_areas": [
+      "move",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_115": {
+    "title": "ROS2 Actions Importance",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_116": {
+    "title": "ROS 2 Core Concepts",
+    "focus_areas": [
+      "copy",
+      "struct",
+      "auto"
+    ],
+    "suggested_difficulty": "intermediate",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": [
+      "copy",
+      "struct",
+      "auto"
+    ]
+  },
+  "topic_117": {
+    "title": "Tricky OOPs Output Challenges",
+    "focus_areas": [
+      "struct",
+      "const",
+      "virtual",
+      "destructor"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 7,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_118": {
+    "title": "ROS2 Certificate Verification Error",
+    "focus_areas": [
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_119": {
+    "title": "New Features in C++20",
+    "focus_areas": [
+      "lambda",
+      "auto",
+      "const",
+      "struct",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_120": {
+    "title": "Delete ChatGPT History",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_121": {
+    "title": "Types of Threads in C++",
+    "focus_areas": [
+      "copy",
+      "template",
+      "class"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 7,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_122": {
+    "title": "Elementor Full Width Guide",
+    "focus_areas": [
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_123": {
+    "title": "Responsive Layout Setup",
+    "focus_areas": [
+      "class",
+      "auto",
+      "struct",
+      "const",
+      "template"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 16,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_124": {
+    "title": "STL and Design Patterns",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_125": {
+    "title": "Update Resume C++ Focus",
+    "focus_areas": [
+      "auto",
+      "move",
+      "copy",
+      "inheritance",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 7,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_126": {
+    "title": "Valgrind Memory Error Detection",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_127": {
+    "title": "C++ Performance Techniques Overview",
+    "focus_areas": [
+      "struct",
+      "class",
+      "constructor",
+      "const",
+      "polymorphism"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 11,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_128": {
+    "title": "Japannext Interview Prep",
+    "focus_areas": [
+      "polymorphism",
+      "move",
+      "template",
+      "struct",
+      "virtual"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 11,
+    "emphasis_on_confusion_areas": [
+      "polymorphism",
+      "move",
+      "template"
+    ]
+  },
+  "topic_129": {
+    "title": "Role Fit Mapping C++",
+    "focus_areas": [
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_130": {
+    "title": "C++ HFT Module Design",
+    "focus_areas": [
+      "auto",
+      "move",
+      "const",
+      "inheritance"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": [
+      "inheritance"
+    ]
+  },
+  "topic_131": {
+    "title": "Layered UI Design Overview",
+    "focus_areas": [
+      "auto",
+      "class",
+      "struct",
+      "const",
+      "inheritance"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 6,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_132": {
+    "title": "Design Patterns Explained",
+    "focus_areas": [
+      "virtual",
+      "override",
+      "class"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_133": {
+    "title": "Vectorization and SIMD Overview",
+    "focus_areas": [
+      "struct",
+      "const",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_134": {
+    "title": "Thread Safety Concepts",
+    "focus_areas": [
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_135": {
+    "title": "C++ FinTech Coding Questions",
+    "focus_areas": [
+      "constructor",
+      "move",
+      "copy",
+      "pointer",
+      "template"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_136": {
+    "title": "False Sharing Identification Fix",
+    "focus_areas": [
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_137": {
+    "title": "Bit Manipulation Techniques",
+    "focus_areas": [
+      "pointer",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_138": {
+    "title": "C++ Advanced Concepts Guide",
+    "focus_areas": [
+      "pointer",
+      "template",
+      "class",
+      "const",
+      "noexcept"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 10,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_139": {
+    "title": "Pointer Basics Implementation",
+    "focus_areas": [
+      "static",
+      "pointer",
+      "struct",
+      "const",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_140": {
+    "title": "Sorting Searching Heaps Quickselect",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_141": {
+    "title": "C++ FinTech Interview Prep",
+    "focus_areas": [
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_142": {
+    "title": "Pointer Basics Implementation",
+    "focus_areas": [
+      "pointer",
+      "struct",
+      "move",
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_143": {
+    "title": "Memory Alignment in FinTech",
+    "focus_areas": [
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_144": {
+    "title": "Advanced Template Concepts",
+    "focus_areas": [
+      "template",
+      "const",
+      "constexpr",
+      "struct",
+      "static"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 9,
+    "emphasis_on_confusion_areas": [
+      "virtual"
+    ]
+  },
+  "topic_145": {
+    "title": "SFINAE and Template Metaprogramming",
+    "focus_areas": [
+      "template",
+      "move",
+      "const",
+      "decltype",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 12,
+    "emphasis_on_confusion_areas": [
+      "reference",
+      "pointer",
+      "static"
+    ]
+  },
+  "topic_146": {
+    "title": "C++17 Features Overview",
+    "focus_areas": [
+      "move",
+      "static",
+      "constexpr",
+      "template",
+      "class"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_147": {
+    "title": "Cache Line Interview Questions",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_148": {
+    "title": "Fintech Interview Prep Resources",
+    "focus_areas": [
+      "polymorphism",
+      "template",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_149": {
+    "title": "Japannext Interview Prep",
+    "focus_areas": [
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_150": {
+    "title": "Meta Templates in C++",
+    "focus_areas": [
+      "template",
+      "move",
+      "polymorphism"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 6,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_151": {
+    "title": "Mutex vs Semaphore Explained",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_152": {
+    "title": "std::async deferred behavior",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_153": {
+    "title": "Dependent visa tax info",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_154": {
+    "title": "Nav2 Stack Overview",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_155": {
+    "title": "IKM C++20 Questions Summary",
+    "focus_areas": [
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_156": {
+    "title": "Generic Algorithms Overview",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_157": {
+    "title": "HackerRank AvatarInn Questions",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_158": {
+    "title": "URI Design Principles",
+    "focus_areas": [
+      "struct",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_159": {
+    "title": "HackerRank 16-Minute Test",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_160": {
+    "title": "Infinite loop with size_t",
+    "focus_areas": [
+      "class",
+      "pointer",
+      "struct",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_161": {
+    "title": "Resume Update for C++ Developer",
+    "focus_areas": [
+      "struct",
+      "const",
+      "inheritance",
+      "move",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_162": {
+    "title": "Job Fit Assessment",
+    "focus_areas": [
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_163": {
+    "title": "ROS 2 Preparation Guide",
+    "focus_areas": [
+      "const",
+      "template",
+      "class",
+      "struct",
+      "noexcept"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 12,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_164": {
+    "title": "Lock-Free Ring Buffer Explanation",
+    "focus_areas": [
+      "template",
+      "class",
+      "const",
+      "static",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_165": {
+    "title": "C++ System Design Guide",
+    "focus_areas": [
+      "class",
+      "const",
+      "static",
+      "move",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_166": {
+    "title": "Ring Buffer Thread Pool",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_167": {
+    "title": "C++ System Design Questions",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_168": {
+    "title": "Random Problem Selection",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_169": {
+    "title": "Nuclear Bomb Air Interception",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_170": {
+    "title": "Code Fix and Optimization",
+    "focus_areas": [
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_171": {
+    "title": "HDMI flickering fix",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_172": {
+    "title": "USB installation error fix",
+    "focus_areas": [
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 8,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_173": {
+    "title": "Log out of Chrome",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_174": {
+    "title": "Remove Windows Keep Ubuntu",
+    "focus_areas": [
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_175": {
+    "title": "Remove Ubuntu and Keep Windows",
+    "focus_areas": [
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_176": {
+    "title": "Task Scheduler with Retries",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_177": {
+    "title": "Nav2 ROS Overview",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_178": {
+    "title": "Web vs C++ System Design",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_179": {
+    "title": "Lucas-Kanade Optical Flow Code",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_180": {
+    "title": "C++ Practice Programs",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_181": {
+    "title": "OpenCV setup VSCode Linux",
+    "focus_areas": [
+      "move",
+      "virtual",
+      "reference",
+      "pointer",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": [
+      "virtual"
+    ]
+  },
+  "topic_182": {
+    "title": "Free OpenCV C++ YouTube",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_183": {
+    "title": "OpenCV C++ Basics",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_184": {
+    "title": "Changing constexpr Variables",
+    "focus_areas": [
+      "const",
+      "constexpr"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_185": {
+    "title": "OpenCV Overview",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_186": {
+    "title": "Low-latency systems explained",
+    "focus_areas": [
+      "copy",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_187": {
+    "title": "Targeting Jobs in UAE",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_188": {
+    "title": "Job Change Email Template",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_189": {
+    "title": "Software Engineer Resume Summary",
+    "focus_areas": [
+      "inheritance",
+      "move",
+      "const",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_190": {
+    "title": "Professional Bio Enhancement",
+    "focus_areas": [
+      "struct",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": [
+      "struct",
+      "auto"
+    ]
+  },
+  "topic_191": {
+    "title": "Exploring LinkedIn Roles",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_192": {
+    "title": "Update Resume LinkedIn",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_193": {
+    "title": "Autonomous Vehicle Resume Update",
+    "focus_areas": [
+      "auto",
+      "const",
+      "move",
+      "inheritance",
+      "virtual"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 15,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_194": {
+    "title": "UI Middleware Architecture Design",
+    "focus_areas": [
+      "class",
+      "struct",
+      "const",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 14,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_195": {
+    "title": "C++ Software Architecture Insights",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_196": {
+    "title": "GitHub Push Error Solution",
+    "focus_areas": [
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_197": {
+    "title": "Short JS Video Courses",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_198": {
+    "title": "Best C++ Learning Resources",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_199": {
+    "title": "Route planning initialization issue",
+    "focus_areas": [
+      "class",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_200": {
+    "title": "Address Change Request",
+    "focus_areas": [
+      "template"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_201": {
+    "title": "Poetry install no update",
+    "focus_areas": [
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_202": {
+    "title": "ISO 26262 vs SOTIF",
+    "focus_areas": [
+      "class",
+      "struct",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_203": {
+    "title": "ROS Msg Two Strings",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_204": {
+    "title": "Poetry Configuration Issues",
+    "focus_areas": [
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_205": {
+    "title": "TaskInfo Constructor Issue",
+    "focus_areas": [
+      "struct",
+      "const",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_206": {
+    "title": "ROS2 C++ Delay",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_207": {
+    "title": "Refactor Fault Publishing",
+    "focus_areas": [
+      "move",
+      "auto",
+      "shared_ptr",
+      "const",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_208": {
+    "title": "Test failure troubleshooting",
+    "focus_areas": [
+      "const",
+      "auto",
+      "class",
+      "unique_ptr",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 13,
+    "emphasis_on_confusion_areas": [
+      "unique_ptr",
+      "move"
+    ]
+  },
+  "topic_209": {
+    "title": "Refactor Fault Detection Code",
+    "focus_areas": [
+      "move",
+      "const",
+      "auto"
+    ],
+    "suggested_difficulty": "medium-hard",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": [
+      "move",
+      "const",
+      "auto"
+    ]
+  },
+  "topic_210": {
+    "title": "ROS2 launch file issue",
+    "focus_areas": [
+      "class",
+      "const",
+      "auto",
+      "move",
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": [
+      "move",
+      "static",
+      "shared_ptr"
+    ]
+  },
+  "topic_211": {
+    "title": "Fault detection optimization",
+    "focus_areas": [
+      "auto",
+      "const",
+      "move",
+      "class",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 6,
+    "emphasis_on_confusion_areas": [
+      "move"
+    ]
+  },
+  "topic_212": {
+    "title": "Diagnostics Status Data Structure",
+    "focus_areas": [
+      "struct",
+      "class",
+      "const",
+      "auto",
+      "constructor"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 9,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_213": {
+    "title": "Launch Configuration Explanation",
+    "focus_areas": [
+      "lambda",
+      "auto",
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_214": {
+    "title": "Shared Pointer Ownership",
+    "focus_areas": [
+      "auto",
+      "pointer",
+      "class",
+      "const",
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 8,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_215": {
+    "title": "ROS 2 Launch Explanation",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_216": {
+    "title": "SEO Backend Challenges",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_217": {
+    "title": "Grid Map Plugin Error",
+    "focus_areas": [
+      "auto",
+      "move",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_218": {
+    "title": "Create C++ Node Autoware",
+    "focus_areas": [
+      "auto",
+      "class",
+      "copy",
+      "template",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_219": {
+    "title": "Template Specialization Explanation",
+    "focus_areas": [
+      "template",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_220": {
+    "title": "Checking key existence",
+    "focus_areas": [
+      "const",
+      "static",
+      "unique_ptr",
+      "auto",
+      "destructor"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_221": {
+    "title": "Automated Driving Safety Overview",
+    "focus_areas": [
+      "static",
+      "const",
+      "auto",
+      "struct",
+      "lambda"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 7,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_222": {
+    "title": "Active PID with execlp",
+    "focus_areas": [
+      "const",
+      "auto",
+      "reference",
+      "static",
+      "pointer"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_223": {
+    "title": "Vehicle Charging Status Check",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_224": {
+    "title": "BMS Data Read Explanation",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_225": {
+    "title": "Install xdotool Error",
+    "focus_areas": [
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_226": {
+    "title": "Sudo passwordless setup",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_227": {
+    "title": "Automating Sudo Password",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_228": {
+    "title": "Open Terminal on Boot",
+    "focus_areas": [
+      "auto",
+      "struct",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 8,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_229": {
+    "title": "Setting up rosdep Humble",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_230": {
+    "title": "LIDAR Localization Test Cases",
+    "focus_areas": [
+      "move",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_231": {
+    "title": "Unknown Object Detection Test",
+    "focus_areas": [
+      "class"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": [
+      "class"
+    ]
+  },
+  "topic_232": {
+    "title": "ISO 26262 vs ISO 21448",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_233": {
+    "title": "Tools for Flow Diagrams",
+    "focus_areas": [
+      "auto",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 12,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_234": {
+    "title": "自動運転車テスト概要",
+    "focus_areas": [
+      "move",
+      "const",
+      "static",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": [
+      "move",
+      "const",
+      "static"
+    ]
+  },
+  "topic_236": {
+    "title": "Dezyne Interfaces Components Systems",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_237": {
+    "title": "UI_bridge Protocol Update",
+    "focus_areas": [
+      "auto",
+      "copy",
+      "reference",
+      "class"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 11,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_238": {
+    "title": "UI_bridge autoware_bridge contract",
+    "focus_areas": [
+      "auto",
+      "class",
+      "static"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 17,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_239": {
+    "title": "ROS2 service response handling",
+    "focus_areas": [
+      "const",
+      "shared_ptr",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_240": {
+    "title": "Dezyne Interface and Component",
+    "focus_areas": [
+      "copy",
+      "override",
+      "virtual",
+      "class"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 16,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_241": {
+    "title": "GTest linker error solution",
+    "focus_areas": [
+      "auto",
+      "reference",
+      "struct",
+      "const",
+      "static"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_242": {
+    "title": "Parallel Task Execution",
+    "focus_areas": [
+      "class",
+      "move",
+      "const",
+      "shared_ptr",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_243": {
+    "title": "Override method issue",
+    "focus_areas": [
+      "auto",
+      "class",
+      "const",
+      "override",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_244": {
+    "title": "EmergencyHandler Test Cases",
+    "focus_areas": [
+      "auto",
+      "class",
+      "const",
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_245": {
+    "title": "Overriding with Different Parameters",
+    "focus_areas": [
+      "class",
+      "virtual",
+      "const",
+      "auto",
+      "override"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_246": {
+    "title": "Class Refactoring for Testing",
+    "focus_areas": [
+      "class",
+      "auto",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_247": {
+    "title": "Mode Manager Design Discussion",
+    "focus_areas": [
+      "auto",
+      "virtual",
+      "override",
+      "encapsulation",
+      "class"
+    ],
+    "suggested_difficulty": "intermediate",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_248": {
+    "title": "ROS2 Timestamp vs Chrono",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_249": {
+    "title": "EmergencyHandler Code Review",
+    "focus_areas": [
+      "class",
+      "auto",
+      "const",
+      "destructor",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 6,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_250": {
+    "title": "Admin UI Overview",
+    "focus_areas": [
+      "move",
+      "auto"
+    ],
+    "suggested_difficulty": "intermediate",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": [
+      "move",
+      "auto"
+    ]
+  },
+  "topic_251": {
+    "title": "Condition Variable in C++",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_252": {
+    "title": "Autoware Key Topics",
+    "focus_areas": [
+      "auto",
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_253": {
+    "title": "UI Design Suggestions",
+    "focus_areas": [
+      "reference"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_254": {
+    "title": "UI Design Suggestions",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_255": {
+    "title": "Building Selection UI Design",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_256": {
+    "title": "AppImage Installation Guide",
+    "focus_areas": [
+      "const",
+      "auto",
+      "class",
+      "constructor",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_257": {
+    "title": "iPhone Video Brightness Tips",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_258": {
+    "title": "Check NVIDIA Version Ubuntu",
+    "focus_areas": [
+      "auto",
+      "move",
+      "copy",
+      "virtual",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 12,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_259": {
+    "title": "Uninstall Visual Studio Completely",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_260": {
+    "title": "Cannot open sys/wait.h",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_261": {
+    "title": "VSCode ROS2 Setup",
+    "focus_areas": [
+      "auto",
+      "reference",
+      "virtual",
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 10,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_262": {
+    "title": "Cannot find rclcpp.hpp",
+    "focus_areas": [
+      "copy",
+      "auto",
+      "vtable"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 6,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_263": {
+    "title": "Emergency Hazard Handling ROS2",
+    "focus_areas": [
+      "auto",
+      "constructor",
+      "class",
+      "struct",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 8,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_264": {
+    "title": "Code Refactoring and Testing",
+    "focus_areas": [
+      "move",
+      "virtual",
+      "copy",
+      "auto",
+      "class"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 15,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_266": {
+    "title": "Autoware Python Module Integration",
+    "focus_areas": [
+      "auto",
+      "move",
+      "class",
+      "override",
+      "reference"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": [
+      "override",
+      "reference"
+    ]
+  },
+  "topic_267": {
+    "title": "rclpy version resolution",
+    "focus_areas": [
+      "auto",
+      "reference",
+      "virtual"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_268": {
+    "title": "ROS2 Node Review",
+    "focus_areas": [
+      "class",
+      "auto",
+      "move",
+      "static"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_269": {
+    "title": "Chunk Upload Process",
+    "focus_areas": [
+      "class",
+      "move",
+      "constructor",
+      "struct",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 6,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_270": {
+    "title": "JLPT N5 Verbs List",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_271": {
+    "title": "YouTube Channel Ideas Rianna",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_272": {
+    "title": "LogUpload Filename Handling",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_273": {
+    "title": "Log upload models creation",
+    "focus_areas": [
+      "class",
+      "move",
+      "static",
+      "constructor",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 8,
+    "emphasis_on_confusion_areas": [
+      "move"
+    ]
+  },
+  "topic_274": {
+    "title": "Dezyne Language Overview",
+    "focus_areas": [
+      "struct",
+      "static",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_275": {
+    "title": "Minno no Nihongo JLPT N5",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_276": {
+    "title": "ROS2 Starhawk Bridge",
+    "focus_areas": [
+      "class",
+      "struct",
+      "move",
+      "copy",
+      "static"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 10,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_277": {
+    "title": "Workflow Explanation Request",
+    "focus_areas": [
+      "class",
+      "static",
+      "move",
+      "reference",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 12,
+    "emphasis_on_confusion_areas": [
+      "move"
+    ]
+  },
+  "topic_278": {
+    "title": "Latest C++ Features",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_279": {
+    "title": "Test Function Improvement",
+    "focus_areas": [
+      "move",
+      "class"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 12,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_280": {
+    "title": "Log Priority and Uploads",
+    "focus_areas": [
+      "move",
+      "class",
+      "copy",
+      "static",
+      "reference"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_281": {
+    "title": "CPU vs ECU Differences",
+    "focus_areas": [
+      "move",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_282": {
+    "title": "LED Configuration Changes",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_283": {
+    "title": "Merge branch into main",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_284": {
+    "title": "Log Message Categorization Guide",
+    "focus_areas": [
+      "move",
+      "const",
+      "constructor",
+      "struct",
+      "reference"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": [
+      "constructor",
+      "struct",
+      "reference"
+    ]
+  },
+  "topic_285": {
+    "title": "Add Signature and Date",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_286": {
+    "title": "Shift SSH Setup",
+    "focus_areas": [
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_287": {
+    "title": "POP3 to IMAP Setup",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_288": {
+    "title": "GitHub Multiple Account Setup",
+    "focus_areas": [
+      "move",
+      "reference"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 6,
+    "emphasis_on_confusion_areas": [
+      "move"
+    ]
+  },
+  "topic_289": {
+    "title": "File handle troubleshooting",
+    "focus_areas": [
+      "static",
+      "virtual",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_290": {
+    "title": "State Updates on Button Click",
+    "focus_areas": [
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_291": {
+    "title": "React Key Usage",
+    "focus_areas": [
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_292": {
+    "title": "Python Elixir Log Upload",
+    "focus_areas": [
+      "move",
+      "copy",
+      "struct",
+      "auto",
+      "class"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 19,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_293": {
+    "title": "Web Development Experience Summary",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 8,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_294": {
+    "title": "Resume Summary Enhancement",
+    "focus_areas": [
+      "template",
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_295": {
+    "title": "What is SASS",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_296": {
+    "title": "Real World App Building",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_297": {
+    "title": "Career Growth and Learning",
+    "focus_areas": [
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_298": {
+    "title": "Mongoose Number Field Validation",
+    "focus_areas": [
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_299": {
+    "title": "Adding Images in Comments",
+    "focus_areas": [
+      "constructor",
+      "class",
+      "struct",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_300": {
+    "title": "Free Elixir Phoenix Resources",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_301": {
+    "title": "Redirect logs to file",
+    "focus_areas": [
+      "override",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_302": {
+    "title": "ESP32 vs ESP8266",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_303": {
+    "title": "Log File Optimization",
+    "focus_areas": [
+      "auto",
+      "class",
+      "reference",
+      "struct",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 13,
+    "emphasis_on_confusion_areas": [
+      "class",
+      "reference"
+    ]
+  },
+  "topic_304": {
+    "title": "Challenges for Fintech Full-Stack Dev",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_305": {
+    "title": "Month as String in MongoDB",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_306": {
+    "title": "TVM Log Management Requirements",
+    "focus_areas": [
+      "auto",
+      "struct",
+      "template",
+      "move",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 12,
+    "emphasis_on_confusion_areas": [
+      "struct",
+      "move",
+      "const"
+    ]
+  },
+  "topic_307": {
+    "title": "ROS 2 log redirection",
+    "focus_areas": [
+      "constructor",
+      "class",
+      "struct",
+      "const",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_308": {
+    "title": "ROS2 Logging Mechanism",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_309": {
+    "title": "Pet Nap Illustration Request",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_310": {
+    "title": "ESLint Dev Config Tips",
+    "focus_areas": [
+      "class",
+      "struct",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_311": {
+    "title": "Full Stack Developer Skills",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_312": {
+    "title": "Locator Copy Constructor Error",
+    "focus_areas": [
+      "const",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_313": {
+    "title": "Practice MongoDB Mongoose Resources",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_314": {
+    "title": "Basic Express Backend Setup",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_315": {
+    "title": "Free Node.js Courses",
+    "focus_areas": [
+      "auto",
+      "move",
+      "template",
+      "reference",
+      "struct"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 9,
+    "emphasis_on_confusion_areas": [
+      "auto",
+      "move",
+      "template"
+    ]
+  },
+  "topic_316": {
+    "title": "Core Node.js Concepts",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_317": {
+    "title": "Next.js Adoption Reasons",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_318": {
+    "title": "Function declaration mismatch",
+    "focus_areas": [
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_319": {
+    "title": "Docker Certification Guide",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_320": {
+    "title": "ParcelPal Setup Process",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_321": {
+    "title": "Learning Elixir Programming Guide",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_322": {
+    "title": "Learning Cloud Docker Kubernetes",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_323": {
+    "title": "Markdown Format Conversion",
+    "focus_areas": [
+      "auto",
+      "move",
+      "override",
+      "class",
+      "static"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 12,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_324": {
+    "title": "Submit Button Not Appearing",
+    "focus_areas": [
+      "auto",
+      "copy",
+      "static",
+      "class",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": [
+      "static"
+    ]
+  },
+  "topic_325": {
+    "title": "Learning Rust After C++",
+    "focus_areas": [
+      "pointer",
+      "smart pointer"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_326": {
+    "title": "Elixir Process Communication Methods",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_327": {
+    "title": "Python Scripting Guide",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_328": {
+    "title": "Python Simplicity Compared to Java C++",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_329": {
+    "title": "Elixir Programming Language Benefits",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_330": {
+    "title": "Web App Development Guide",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_331": {
+    "title": "Elixir Language Learning Curve",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_332": {
+    "title": "Full Stack Learning Roadmap",
+    "focus_areas": [
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_333": {
+    "title": "Email Regex Explanation",
+    "focus_areas": [
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_334": {
+    "title": "Flexbox Overview and Properties",
+    "focus_areas": [
+      "override",
+      "class",
+      "auto",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": [
+      "override",
+      "class",
+      "auto"
+    ]
+  },
+  "topic_335": {
+    "title": "",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_336": {
+    "title": "Set DB_NAME Environment Variable",
+    "focus_areas": [
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_337": {
+    "title": "Full Stack Learning Guide",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_338": {
+    "title": "React Employee Form Setup",
+    "focus_areas": [
+      "struct",
+      "constructor",
+      "reference",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_339": {
+    "title": "Student Table Team Filter",
+    "focus_areas": [
+      "rvalue",
+      "auto",
+      "class",
+      "const",
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 15,
+    "emphasis_on_confusion_areas": [
+      "rvalue",
+      "auto",
+      "class"
+    ]
+  },
+  "topic_340": {
+    "title": "CMake Build Error Fix",
+    "focus_areas": [
+      "auto",
+      "copy",
+      "move",
+      "const",
+      "shared_ptr"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 16,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_341": {
+    "title": "ROS2 Message Publishing Update",
+    "focus_areas": [
+      "const",
+      "auto",
+      "shared_ptr",
+      "class",
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 14,
+    "emphasis_on_confusion_areas": [
+      "copy"
+    ]
+  },
+  "topic_342": {
+    "title": "Web Development Components Overview",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_343": {
+    "title": "Masala Measuring Machine Design",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 11,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_344": {
+    "title": "React Table Team Filter",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_345": {
+    "title": "Add Delete Action Dropdown",
+    "focus_areas": [
+      "class",
+      "const",
+      "copy",
+      "auto"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_346": {
+    "title": "Next.js and React Overview",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_347": {
+    "title": "Rust Language Overview and Careers",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_348": {
+    "title": "FUTURE Motivational Acronym Creation",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_349": {
+    "title": "Environment Variable Retrieval",
+    "focus_areas": [
+      "const",
+      "move",
+      "auto",
+      "class"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 7,
+    "emphasis_on_confusion_areas": [
+      "move",
+      "auto"
+    ]
+  },
+  "topic_350": {
+    "title": "Drogon Framework Backend Usage",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_351": {
+    "title": "Markdown File Overview",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_352": {
+    "title": "React useEffect Overview",
+    "focus_areas": [
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_353": {
+    "title": "Employee Management App",
+    "focus_areas": [
+      "static",
+      "reference",
+      "auto",
+      "struct",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 9,
+    "emphasis_on_confusion_areas": [
+      "static",
+      "reference",
+      "auto"
+    ]
+  },
+  "topic_354": {
+    "title": "Theme Selection Logic Fix",
+    "focus_areas": [
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_355": {
+    "title": "Shopping Cart App Project",
+    "focus_areas": [
+      "const",
+      "struct",
+      "move",
+      "auto",
+      "reference"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": [
+      "struct",
+      "move",
+      "auto"
+    ]
+  },
+  "topic_356": {
+    "title": "AbortController Integration in Redux",
+    "focus_areas": [
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_357": {
+    "title": "Adding Extra Reducers",
+    "focus_areas": [
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_358": {
+    "title": "Simulating Large Data Fetch",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_359": {
+    "title": "RMT TX Initialization Details",
+    "focus_areas": [
+      "class",
+      "move",
+      "reference"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_360": {
+    "title": "React Task Management App",
+    "focus_areas": [
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 6,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_361": {
+    "title": "Time Sheet and Salary App",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_362": {
+    "title": "Volume Control UI",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_363": {
+    "title": "Best React Icon Components",
+    "focus_areas": [
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_364": {
+    "title": "React Component Libraries",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_365": {
+    "title": "Drawbacks of Augmenting Lidar",
+    "focus_areas": [
+      "auto",
+      "const",
+      "class",
+      "struct",
+      "shared_ptr"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 15,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_366": {
+    "title": "Rclcpp Duration Overview",
+    "focus_areas": [
+      "class"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_367": {
+    "title": "Amazon Delivery Architecture",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_368": {
+    "title": "Component Breakdown Overview",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_369": {
+    "title": "TanStack Table vs React-Table",
+    "focus_areas": [
+      "struct",
+      "const",
+      "move",
+      "copy"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 17,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_370": {
+    "title": "Connecting with HR",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_371": {
+    "title": "HTML Form Input Types",
+    "focus_areas": [
+      "const",
+      "auto",
+      "reference",
+      "copy",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_372": {
+    "title": "Understanding User Personas",
+    "focus_areas": [
+      "const",
+      "lvalue"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 6,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_373": {
+    "title": "Visa Application Delay Request",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_374": {
+    "title": "Brightness Array Calculation",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_375": {
+    "title": "Model Version Inquiry",
+    "focus_areas": [],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_376": {
+    "title": "Understanding NVRAM Technology",
+    "focus_areas": [
+      "lvalue",
+      "const"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 5,
+    "emphasis_on_confusion_areas": []
+  },
+  "topic_377": {
+    "title": "FastLED fill_solid Usage",
+    "focus_areas": [
+      "const",
+      "class",
+      "copy",
+      "move"
+    ],
+    "suggested_difficulty": "beginner",
+    "recommended_practice_count": 20,
+    "emphasis_on_confusion_areas": []
+  }
+}

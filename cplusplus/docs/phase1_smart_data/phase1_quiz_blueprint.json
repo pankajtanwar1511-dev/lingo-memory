@@ -1,0 +1,113 @@
+{
+  "phase": 1,
+  "total_topics": 17,
+  "topics_with_complete_data": 7,
+  "quizzes": [
+    {
+      "topic_id": 1,
+      "topic_title": "1. C++ Object-Oriented Programming (OOP)",
+      "recommendations": {
+        "focus_areas": ["virtual", "vtable", "constructor", "destructor", "polymorphism"],
+        "suggested_difficulty": "medium",
+        "recommended_question_count": 20,
+        "question_types": {
+          "multiple_choice": 8,
+          "code_output": 6,
+          "find_bug": 4,
+          "fill_blank": 2
+        }
+      }
+    },
+    {
+      "topic_id": 3,
+      "topic_title": "3. Smart Pointers (C++11)",
+      "recommendations": {
+        "focus_areas": ["smart_pointer", "unique_ptr", "shared_ptr", "memory"],
+        "suggested_difficulty": "medium",
+        "recommended_question_count": 11,
+        "question_types": {
+          "multiple_choice": 5,
+          "code_output": 3,
+          "find_bug": 2,
+          "fill_blank": 1
+        }
+      }
+    },
+    {
+      "topic_id": 9,
+      "topic_title": "9. C++11 Features (Most Interview Relevant)",
+      "recommendations": {
+        "focus_areas": ["lambda", "auto", "move", "rvalue", "template"],
+        "suggested_difficulty": "medium",
+        "recommended_question_count": 20,
+        "question_types": {
+          "multiple_choice": 8,
+          "code_output": 6,
+          "find_bug": 4,
+          "fill_blank": 2
+        }
+      }
+    },
+    {
+      "topic_id": 11,
+      "topic_title": "11. Multithreading (C++11 Intro)",
+      "recommendations": {
+        "focus_areas": ["thread", "mutex", "lambda", "smart_pointer", "auto"],
+        "suggested_difficulty": "hard",
+        "recommended_question_count": 12,
+        "question_types": {
+          "multiple_choice": 5,
+          "code_output": 4,
+          "find_bug": 2,
+          "fill_blank": 1
+        }
+      }
+    },
+    {
+      "topic_id": 12,
+      "topic_title": "12. Design Patterns in C++",
+      "recommendations": {
+        "focus_areas": ["virtual", "polymorphism", "template", "inheritance"],
+        "suggested_difficulty": "medium",
+        "recommended_question_count": 10,
+        "question_types": {
+          "multiple_choice": 4,
+          "code_output": 3,
+          "find_bug": 2,
+          "fill_blank": 1
+        }
+      }
+    },
+    {
+      "topic_id": 16,
+      "topic_title": "16. C++14 Feature Deep Dive)",
+      "recommendations": {
+        "focus_areas": ["lambda", "auto", "template", "smart_pointer"],
+        "suggested_difficulty": "medium",
+        "recommended_question_count": 10,
+        "question_types": {
+          "multiple_choice": 4,
+          "code_output": 3,
+          "find_bug": 2,
+          "fill_blank": 1
+        }
+      }
+    },
+    {
+      "topic_id": 17,
+      "topic_title": "17. C++17 Features Overview",
+      "recommendations": {
+        "focus_areas": ["virtual", "constructor", "polymorphism", "template"],
+        "suggested_difficulty": "medium",
+        "recommended_question_count": 20,
+        "question_types": {
+          "multiple_choice": 8,
+          "code_output": 6,
+          "find_bug": 4,
+          "fill_blank": 2
+        }
+      }
+    }
+  ],
+  "generated_at": "2025-11-09T22:01:00.000000"
+}

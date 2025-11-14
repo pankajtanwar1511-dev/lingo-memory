@@ -1,0 +1,2252 @@
+{
+  "topic_01": {
+    "title": "1. C++ Object-Oriented Programming (OOP)",
+    "weakness_score": 1.2,
+    "total_questions": 39,
+    "confusion_rate": 0.1282051282051282
+  },
+  "topic_02": {
+    "title": "Skincare routine advice",
+    "weakness_score": 1,
+    "total_questions": 9,
+    "confusion_rate": 0.0
+  },
+  "topic_03": {
+    "title": "Confirm tagging schema",
+    "weakness_score": 1.3,
+    "total_questions": 8,
+    "confusion_rate": 0.375
+  },
+  "topic_04": {
+    "title": "Claude Code vs API pricing",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_05": {
+    "title": "Besan ke ladoo recipe",
+    "weakness_score": 1,
+    "total_questions": 83,
+    "confusion_rate": 0.024096385542168676
+  },
+  "topic_06": {
+    "title": "ROS2 performance improvement",
+    "weakness_score": 1.9,
+    "total_questions": 6,
+    "confusion_rate": 0.16666666666666666
+  },
+  "topic_07": {
+    "title": "DDS writer and reader",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_08": {
+    "title": "Fix sticky modak",
+    "weakness_score": 1,
+    "total_questions": 17,
+    "confusion_rate": 0.0
+  },
+  "topic_09": {
+    "title": "C++ Core Concepts Roadmap",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_10": {
+    "title": "5. Operator Overloading",
+    "weakness_score": 1,
+    "total_questions": 5,
+    "confusion_rate": 0.0
+  },
+  "topic_11": {
+    "title": "4. References, Copying, and Moving",
+    "weakness_score": 1,
+    "total_questions": 13,
+    "confusion_rate": 0.0
+  },
+  "topic_12": {
+    "title": "17. C++17 Features Overview",
+    "weakness_score": 1,
+    "total_questions": 35,
+    "confusion_rate": 0.08571428571428572
+  },
+  "topic_13": {
+    "title": "16. C++14 Feature Deep Dive",
+    "weakness_score": 1,
+    "total_questions": 8,
+    "confusion_rate": 0.0
+  },
+  "topic_14": {
+    "title": "15. Low-Level &amp; Tricky Topics",
+    "weakness_score": 2.6,
+    "total_questions": 8,
+    "confusion_rate": 0.0
+  },
+  "topic_15": {
+    "title": "13. Compile-Time Magic (Intro Only)",
+    "weakness_score": 1,
+    "total_questions": 7,
+    "confusion_rate": 0.0
+  },
+  "topic_16": {
+    "title": "12. Design Patterns in C++ part 2",
+    "weakness_score": 1,
+    "total_questions": 17,
+    "confusion_rate": 0.058823529411764705
+  },
+  "topic_17": {
+    "title": "12. Design Patterns in C++ part 3",
+    "weakness_score": 1,
+    "total_questions": 16,
+    "confusion_rate": 0.0
+  },
+  "topic_18": {
+    "title": "12. Design Patterns in C++",
+    "weakness_score": 1,
+    "total_questions": 6,
+    "confusion_rate": 0.0
+  },
+  "topic_19": {
+    "title": "12. Design Patterns in C++ Part 1",
+    "weakness_score": 1,
+    "total_questions": 48,
+    "confusion_rate": 0.020833333333333332
+  },
+  "topic_20": {
+    "title": "11. Multithreading (C++11 Intro)",
+    "weakness_score": 1.0,
+    "total_questions": 12,
+    "confusion_rate": 0.0
+  },
+  "topic_21": {
+    "title": "10. RAII and Resource Management",
+    "weakness_score": 1,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_22": {
+    "title": "9. C++11 Features (Most Interview Relevant)",
+    "weakness_score": 1,
+    "total_questions": 20,
+    "confusion_rate": 0.0
+  },
+  "topic_23": {
+    "title": "8. STL Containers and Algorithms",
+    "weakness_score": 1,
+    "total_questions": 14,
+    "confusion_rate": 0.0
+  },
+  "topic_24": {
+    "title": "7. Templates and Generics",
+    "weakness_score": 1.2,
+    "total_questions": 7,
+    "confusion_rate": 0.0
+  },
+  "topic_25": {
+    "title": "6. Type System and Casting",
+    "weakness_score": 1,
+    "total_questions": 11,
+    "confusion_rate": 0.0
+  },
+  "topic_26": {
+    "title": "3. Smart Pointers (C++11)",
+    "weakness_score": 1,
+    "total_questions": 9,
+    "confusion_rate": 0.0
+  },
+  "topic_27": {
+    "title": "2. C++ Memory Management",
+    "weakness_score": 1,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_28": {
+    "title": "N5 level word list",
+    "weakness_score": 1,
+    "total_questions": 21,
+    "confusion_rate": 0.0
+  },
+  "topic_29": {
+    "title": "Decoration suggestions provided",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_30": {
+    "title": "Apple for cough in toddlers",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_31": {
+    "title": "Beauty products in Japan",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_32": {
+    "title": "Translate book request Japanese",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_33": {
+    "title": "Minna no Nihongo test",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_34": {
+    "title": "Japanese long green onion",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_35": {
+    "title": "C++ tricky questions",
+    "weakness_score": 1,
+    "total_questions": 13,
+    "confusion_rate": 0.0
+  },
+  "topic_36": {
+    "title": "Perception Engineer roadmap",
+    "weakness_score": 1.7,
+    "total_questions": 45,
+    "confusion_rate": 0.26666666666666666
+  },
+  "topic_37": {
+    "title": "C++ memory concepts",
+    "weakness_score": 1.4,
+    "total_questions": 9,
+    "confusion_rate": 0.1111111111111111
+  },
+  "topic_38": {
+    "title": "Interview prep questions",
+    "weakness_score": 1,
+    "total_questions": 5,
+    "confusion_rate": 0.0
+  },
+  "topic_39": {
+    "title": "Software architecture review",
+    "weakness_score": 2.4,
+    "total_questions": 6,
+    "confusion_rate": 0.8333333333333334
+  },
+  "topic_40": {
+    "title": "Morgan Stanley interview prep",
+    "weakness_score": 1.1,
+    "total_questions": 31,
+    "confusion_rate": 0.06451612903225806
+  },
+  "topic_41": {
+    "title": "Interview prep questions",
+    "weakness_score": 1.1,
+    "total_questions": 22,
+    "confusion_rate": 0.045454545454545456
+  },
+  "topic_42": {
+    "title": "Multithreading in HFT systems",
+    "weakness_score": 2.2,
+    "total_questions": 3,
+    "confusion_rate": 0.6666666666666666
+  },
+  "topic_43": {
+    "title": "C++ interview preparation",
+    "weakness_score": 1.7,
+    "total_questions": 31,
+    "confusion_rate": 0.16129032258064516
+  },
+  "topic_44": {
+    "title": "Why Roaches Persist",
+    "weakness_score": 1,
+    "total_questions": 92,
+    "confusion_rate": 0.05434782608695652
+  },
+  "topic_45": {
+    "title": "OpenCV Day 3 preparation",
+    "weakness_score": 1,
+    "total_questions": 8,
+    "confusion_rate": 0.0
+  },
+  "topic_46": {
+    "title": "OpenCV Day 1–3 plan",
+    "weakness_score": 1,
+    "total_questions": 42,
+    "confusion_rate": 0.07142857142857142
+  },
+  "topic_47": {
+    "title": "OpenCV in perception pipeline",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_48": {
+    "title": "Polite event cancellation message",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_49": {
+    "title": "Becoming Robotics Expert",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_50": {
+    "title": "Robotics DSA Interview Prep",
+    "weakness_score": 2.6,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_51": {
+    "title": "Git Interview Prep",
+    "weakness_score": 1,
+    "total_questions": 27,
+    "confusion_rate": 0.0
+  },
+  "topic_52": {
+    "title": "Robotics Control Systems Interview",
+    "weakness_score": 1.3,
+    "total_questions": 15,
+    "confusion_rate": 0.0
+  },
+  "topic_53": {
+    "title": "Move constructor deletion behavior",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_54": {
+    "title": "ISO 26262 Overview",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_55": {
+    "title": "Design Patterns in Resume",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_56": {
+    "title": "T2 Interview Process Insights",
+    "weakness_score": 1,
+    "total_questions": 6,
+    "confusion_rate": 0.0
+  },
+  "topic_57": {
+    "title": "Virtual Destructor and Slicing",
+    "weakness_score": 1.9,
+    "total_questions": 10,
+    "confusion_rate": 0.0
+  },
+  "topic_58": {
+    "title": "pipeline till perception",
+    "weakness_score": 1,
+    "total_questions": 32,
+    "confusion_rate": 0.0625
+  },
+  "topic_59": {
+    "title": "Nav2 Mapping Localization Guide",
+    "weakness_score": 2.0,
+    "total_questions": 6,
+    "confusion_rate": 0.6666666666666666
+  },
+  "topic_60": {
+    "title": "Linux internals Interview Prep Plan",
+    "weakness_score": 1,
+    "total_questions": 10,
+    "confusion_rate": 0.1
+  },
+  "topic_61": {
+    "title": "ROS 2 Quiz Concepts",
+    "weakness_score": 1.2,
+    "total_questions": 11,
+    "confusion_rate": 0.09090909090909091
+  },
+  "topic_62": {
+    "title": "Job Role Qualifications Inquiry",
+    "weakness_score": 1.2,
+    "total_questions": 19,
+    "confusion_rate": 0.05263157894736842
+  },
+  "topic_63": {
+    "title": "MQTT Advanced Concepts Deep Dive",
+    "weakness_score": 1,
+    "total_questions": 17,
+    "confusion_rate": 0.0
+  },
+  "topic_64": {
+    "title": "MQTT Basics and Internals",
+    "weakness_score": 1,
+    "total_questions": 21,
+    "confusion_rate": 0.0
+  },
+  "topic_65": {
+    "title": "MQTT Retained Message Behavior",
+    "weakness_score": 1,
+    "total_questions": 9,
+    "confusion_rate": 0.1111111111111111
+  },
+  "topic_66": {
+    "title": "Introduction to MQTT",
+    "weakness_score": 1,
+    "total_questions": 6,
+    "confusion_rate": 0.0
+  },
+  "topic_67": {
+    "title": "C++ Jobs in Japan",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_68": {
+    "title": "Operator Overloading Fix",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_69": {
+    "title": "JLPT N5 Learning Time",
+    "weakness_score": 1,
+    "total_questions": 6,
+    "confusion_rate": 0.0
+  },
+  "topic_70": {
+    "title": "Free AI Resume Tools",
+    "weakness_score": 1,
+    "total_questions": 86,
+    "confusion_rate": 0.0
+  },
+  "topic_71": {
+    "title": "Autoware Perception Resume Tips",
+    "weakness_score": 1,
+    "total_questions": 10,
+    "confusion_rate": 0.1
+  },
+  "topic_72": {
+    "title": "AI Engineer Timeframe Guide",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_73": {
+    "title": "Top Medium LeetCode Problems",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_74": {
+    "title": "Linux Internals Interview Prep",
+    "weakness_score": 4.1,
+    "total_questions": 2,
+    "confusion_rate": 0.5
+  },
+  "topic_75": {
+    "title": "Linux Internals Learning Plan",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_76": {
+    "title": "Median Binary Search Visualization",
+    "weakness_score": 1,
+    "total_questions": 11,
+    "confusion_rate": 0.0
+  },
+  "topic_77": {
+    "title": "Custom Comparator Priority Queue",
+    "weakness_score": 1.2,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_78": {
+    "title": "Trunk Line Services Explained",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_79": {
+    "title": "C++ Position Inquiry",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_80": {
+    "title": "Online Interview Scheduling Reply",
+    "weakness_score": 1,
+    "total_questions": 40,
+    "confusion_rate": 0.025
+  },
+  "topic_81": {
+    "title": "C++ Role Inquiry Cyient",
+    "weakness_score": 1,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_82": {
+    "title": "C++ Opportunity Follow-up",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_83": {
+    "title": "Follow-up Interview Schedule",
+    "weakness_score": 1,
+    "total_questions": 12,
+    "confusion_rate": 0.0
+  },
+  "topic_84": {
+    "title": "CV vs Resume Guidance",
+    "weakness_score": 1.9,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_85": {
+    "title": "Lock-Free Queue Phases",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_86": {
+    "title": "Copy-on-Write String Implementation",
+    "weakness_score": 1.5,
+    "total_questions": 5,
+    "confusion_rate": 0.0
+  },
+  "topic_87": {
+    "title": "Fork COW Memory Copy",
+    "weakness_score": 1,
+    "total_questions": 5,
+    "confusion_rate": 0.2
+  },
+  "topic_88": {
+    "title": "Process vs Thread Explained",
+    "weakness_score": 1.2,
+    "total_questions": 45,
+    "confusion_rate": 0.28888888888888886
+  },
+  "topic_89": {
+    "title": "Understanding tar file structure",
+    "weakness_score": 1,
+    "total_questions": 11,
+    "confusion_rate": 0.18181818181818182
+  },
+  "topic_90": {
+    "title": "Israel vs Iran Military",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_91": {
+    "title": "Script vs Function Params",
+    "weakness_score": 1.2,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_92": {
+    "title": "Bash redirection shorthand",
+    "weakness_score": 1,
+    "total_questions": 21,
+    "confusion_rate": 0.0
+  },
+  "topic_93": {
+    "title": "Role Preference Clarification",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_94": {
+    "title": "Embedded Systems Resume Review",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_95": {
+    "title": "Embedded Systems Overview",
+    "weakness_score": 1.8,
+    "total_questions": 2,
+    "confusion_rate": 0.5
+  },
+  "topic_96": {
+    "title": "Hard Link vs Soft Link",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_97": {
+    "title": "Docker HTTP Server Command",
+    "weakness_score": 1,
+    "total_questions": 29,
+    "confusion_rate": 0.0
+  },
+  "topic_98": {
+    "title": "TF Broadcaster vs Listener",
+    "weakness_score": 1,
+    "total_questions": 30,
+    "confusion_rate": 0.06666666666666667
+  },
+  "topic_99": {
+    "title": "Low-Level Embedded Drivers",
+    "weakness_score": 1,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_100": {
+    "title": "Install netstat via net-tools",
+    "weakness_score": 1,
+    "total_questions": 31,
+    "confusion_rate": 0.0
+  },
+  "topic_101": {
+    "title": "Docker Overview and Usage",
+    "weakness_score": 1,
+    "total_questions": 32,
+    "confusion_rate": 0.0625
+  },
+  "topic_102": {
+    "title": "Docker permission issue fix",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_103": {
+    "title": "Map and Localization in Nav2",
+    "weakness_score": 1,
+    "total_questions": 15,
+    "confusion_rate": 0.0
+  },
+  "topic_104": {
+    "title": "Nav2 Behavior Trees Explained",
+    "weakness_score": 1,
+    "total_questions": 16,
+    "confusion_rate": 0.0625
+  },
+  "topic_105": {
+    "title": "C++ Developer Job Application",
+    "weakness_score": 1,
+    "total_questions": 30,
+    "confusion_rate": 0.03333333333333333
+  },
+  "topic_106": {
+    "title": "Undefined behavior fix",
+    "weakness_score": 1,
+    "total_questions": 5,
+    "confusion_rate": 0.0
+  },
+  "topic_107": {
+    "title": "ROS 2 QoS Overview",
+    "weakness_score": 1.4,
+    "total_questions": 18,
+    "confusion_rate": 0.16666666666666666
+  },
+  "topic_108": {
+    "title": "Delhi Capitals IPL 2025",
+    "weakness_score": 1,
+    "total_questions": 9,
+    "confusion_rate": 0.0
+  },
+  "topic_109": {
+    "title": "ROS 2 include error",
+    "weakness_score": 1.1,
+    "total_questions": 15,
+    "confusion_rate": 0.13333333333333333
+  },
+  "topic_110": {
+    "title": "QoS Depth and Transient",
+    "weakness_score": 1,
+    "total_questions": 8,
+    "confusion_rate": 0.0
+  },
+  "topic_111": {
+    "title": "Launch nodes after Autoware",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_112": {
+    "title": "ROS2 Core Concepts Interview Prep",
+    "weakness_score": 1,
+    "total_questions": 17,
+    "confusion_rate": 0.0
+  },
+  "topic_113": {
+    "title": "C++20 Features Overview",
+    "weakness_score": 1,
+    "total_questions": 15,
+    "confusion_rate": 0.0
+  },
+  "topic_114": {
+    "title": "Interview Prep and C++ Study",
+    "weakness_score": 1.2,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_115": {
+    "title": "ROS2 Actions Importance",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_116": {
+    "title": "ROS 2 Core Concepts",
+    "weakness_score": 5,
+    "total_questions": 1,
+    "confusion_rate": 1.0
+  },
+  "topic_117": {
+    "title": "Tricky OOPs Output Challenges",
+    "weakness_score": 1,
+    "total_questions": 14,
+    "confusion_rate": 0.0
+  },
+  "topic_118": {
+    "title": "ROS2 Certificate Verification Error",
+    "weakness_score": 1,
+    "total_questions": 7,
+    "confusion_rate": 0.0
+  },
+  "topic_119": {
+    "title": "New Features in C++20",
+    "weakness_score": 1,
+    "total_questions": 81,
+    "confusion_rate": 0.024691358024691357
+  },
+  "topic_120": {
+    "title": "Delete ChatGPT History",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_121": {
+    "title": "Types of Threads in C++",
+    "weakness_score": 1,
+    "total_questions": 14,
+    "confusion_rate": 0.0
+  },
+  "topic_122": {
+    "title": "Elementor Full Width Guide",
+    "weakness_score": 1,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_123": {
+    "title": "Responsive Layout Setup",
+    "weakness_score": 1,
+    "total_questions": 32,
+    "confusion_rate": 0.0
+  },
+  "topic_124": {
+    "title": "STL and Design Patterns",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_125": {
+    "title": "Update Resume C++ Focus",
+    "weakness_score": 1,
+    "total_questions": 15,
+    "confusion_rate": 0.0
+  },
+  "topic_126": {
+    "title": "Valgrind Memory Error Detection",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_127": {
+    "title": "C++ Performance Techniques Overview",
+    "weakness_score": 1,
+    "total_questions": 22,
+    "confusion_rate": 0.0
+  },
+  "topic_128": {
+    "title": "Japannext Interview Prep",
+    "weakness_score": 1,
+    "total_questions": 22,
+    "confusion_rate": 0.045454545454545456
+  },
+  "topic_129": {
+    "title": "Role Fit Mapping C++",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_130": {
+    "title": "C++ HFT Module Design",
+    "weakness_score": 1,
+    "total_questions": 7,
+    "confusion_rate": 0.14285714285714285
+  },
+  "topic_131": {
+    "title": "Layered UI Design Overview",
+    "weakness_score": 1.4,
+    "total_questions": 12,
+    "confusion_rate": 0.0
+  },
+  "topic_132": {
+    "title": "Design Patterns Explained",
+    "weakness_score": 1,
+    "total_questions": 5,
+    "confusion_rate": 0.0
+  },
+  "topic_133": {
+    "title": "Vectorization and SIMD Overview",
+    "weakness_score": 1,
+    "total_questions": 9,
+    "confusion_rate": 0.0
+  },
+  "topic_134": {
+    "title": "Thread Safety Concepts",
+    "weakness_score": 1,
+    "total_questions": 9,
+    "confusion_rate": 0.0
+  },
+  "topic_135": {
+    "title": "C++ FinTech Coding Questions",
+    "weakness_score": 1.2,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_136": {
+    "title": "False Sharing Identification Fix",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_137": {
+    "title": "Bit Manipulation Techniques",
+    "weakness_score": 1,
+    "total_questions": 9,
+    "confusion_rate": 0.0
+  },
+  "topic_138": {
+    "title": "C++ Advanced Concepts Guide",
+    "weakness_score": 1,
+    "total_questions": 20,
+    "confusion_rate": 0.0
+  },
+  "topic_139": {
+    "title": "Pointer Basics Implementation",
+    "weakness_score": 1.4,
+    "total_questions": 5,
+    "confusion_rate": 0.0
+  },
+  "topic_140": {
+    "title": "Sorting Searching Heaps Quickselect",
+    "weakness_score": 1,
+    "total_questions": 7,
+    "confusion_rate": 0.0
+  },
+  "topic_141": {
+    "title": "C++ FinTech Interview Prep",
+    "weakness_score": 1,
+    "total_questions": 7,
+    "confusion_rate": 0.0
+  },
+  "topic_142": {
+    "title": "Pointer Basics Implementation",
+    "weakness_score": 1.3,
+    "total_questions": 6,
+    "confusion_rate": 0.0
+  },
+  "topic_143": {
+    "title": "Memory Alignment in FinTech",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_144": {
+    "title": "Advanced Template Concepts",
+    "weakness_score": 1,
+    "total_questions": 19,
+    "confusion_rate": 0.10526315789473684
+  },
+  "topic_145": {
+    "title": "SFINAE and Template Metaprogramming",
+    "weakness_score": 1,
+    "total_questions": 24,
+    "confusion_rate": 0.08333333333333333
+  },
+  "topic_146": {
+    "title": "C++17 Features Overview",
+    "weakness_score": 1,
+    "total_questions": 81,
+    "confusion_rate": 0.012345679012345678
+  },
+  "topic_147": {
+    "title": "Cache Line Interview Questions",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_148": {
+    "title": "Fintech Interview Prep Resources",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_149": {
+    "title": "Japannext Interview Prep",
+    "weakness_score": 1.0,
+    "total_questions": 11,
+    "confusion_rate": 0.0
+  },
+  "topic_150": {
+    "title": "Meta Templates in C++",
+    "weakness_score": 1,
+    "total_questions": 13,
+    "confusion_rate": 0.0
+  },
+  "topic_151": {
+    "title": "Mutex vs Semaphore Explained",
+    "weakness_score": 1.2,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_152": {
+    "title": "std::async deferred behavior",
+    "weakness_score": 1,
+    "total_questions": 5,
+    "confusion_rate": 0.0
+  },
+  "topic_153": {
+    "title": "Dependent visa tax info",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_154": {
+    "title": "Nav2 Stack Overview",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_155": {
+    "title": "IKM C++20 Questions Summary",
+    "weakness_score": 1,
+    "total_questions": 10,
+    "confusion_rate": 0.0
+  },
+  "topic_156": {
+    "title": "Generic Algorithms Overview",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_157": {
+    "title": "HackerRank AvatarInn Questions",
+    "weakness_score": 1,
+    "total_questions": 6,
+    "confusion_rate": 0.0
+  },
+  "topic_158": {
+    "title": "URI Design Principles",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_159": {
+    "title": "HackerRank 16-Minute Test",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_160": {
+    "title": "Infinite loop with size_t",
+    "weakness_score": 1,
+    "total_questions": 5,
+    "confusion_rate": 0.0
+  },
+  "topic_161": {
+    "title": "Resume Update for C++ Developer",
+    "weakness_score": 1.4,
+    "total_questions": 6,
+    "confusion_rate": 0.0
+  },
+  "topic_162": {
+    "title": "Job Fit Assessment",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_163": {
+    "title": "ROS 2 Preparation Guide",
+    "weakness_score": 1,
+    "total_questions": 25,
+    "confusion_rate": 0.0
+  },
+  "topic_164": {
+    "title": "Lock-Free Ring Buffer Explanation",
+    "weakness_score": 1,
+    "total_questions": 11,
+    "confusion_rate": 0.0
+  },
+  "topic_165": {
+    "title": "C++ System Design Guide",
+    "weakness_score": 1,
+    "total_questions": 59,
+    "confusion_rate": 0.01694915254237288
+  },
+  "topic_166": {
+    "title": "Ring Buffer Thread Pool",
+    "weakness_score": 1,
+    "total_questions": 9,
+    "confusion_rate": 0.0
+  },
+  "topic_167": {
+    "title": "C++ System Design Questions",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_168": {
+    "title": "Random Problem Selection",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_169": {
+    "title": "Nuclear Bomb Air Interception",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_170": {
+    "title": "Code Fix and Optimization",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_171": {
+    "title": "HDMI flickering fix",
+    "weakness_score": 1,
+    "total_questions": 8,
+    "confusion_rate": 0.0
+  },
+  "topic_172": {
+    "title": "USB installation error fix",
+    "weakness_score": 1,
+    "total_questions": 16,
+    "confusion_rate": 0.0
+  },
+  "topic_173": {
+    "title": "Log out of Chrome",
+    "weakness_score": 1.2,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_174": {
+    "title": "Remove Windows Keep Ubuntu",
+    "weakness_score": 1,
+    "total_questions": 56,
+    "confusion_rate": 0.0
+  },
+  "topic_175": {
+    "title": "Remove Ubuntu and Keep Windows",
+    "weakness_score": 1.2,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_176": {
+    "title": "Task Scheduler with Retries",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_177": {
+    "title": "Nav2 ROS Overview",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_178": {
+    "title": "Web vs C++ System Design",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_179": {
+    "title": "Lucas-Kanade Optical Flow Code",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_180": {
+    "title": "C++ Practice Programs",
+    "weakness_score": 1,
+    "total_questions": 7,
+    "confusion_rate": 0.0
+  },
+  "topic_181": {
+    "title": "OpenCV setup VSCode Linux",
+    "weakness_score": 1,
+    "total_questions": 59,
+    "confusion_rate": 0.03389830508474576
+  },
+  "topic_182": {
+    "title": "Free OpenCV C++ YouTube",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_183": {
+    "title": "OpenCV C++ Basics",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_184": {
+    "title": "Changing constexpr Variables",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_185": {
+    "title": "OpenCV Overview",
+    "weakness_score": 1,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_186": {
+    "title": "Low-latency systems explained",
+    "weakness_score": 1,
+    "total_questions": 7,
+    "confusion_rate": 0.0
+  },
+  "topic_187": {
+    "title": "Targeting Jobs in UAE",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_188": {
+    "title": "Job Change Email Template",
+    "weakness_score": 1.2,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_189": {
+    "title": "Software Engineer Resume Summary",
+    "weakness_score": 1,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_190": {
+    "title": "Professional Bio Enhancement",
+    "weakness_score": 1.8,
+    "total_questions": 2,
+    "confusion_rate": 0.5
+  },
+  "topic_191": {
+    "title": "Exploring LinkedIn Roles",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_192": {
+    "title": "Update Resume LinkedIn",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_193": {
+    "title": "Autonomous Vehicle Resume Update",
+    "weakness_score": 1,
+    "total_questions": 30,
+    "confusion_rate": 0.0
+  },
+  "topic_194": {
+    "title": "UI Middleware Architecture Design",
+    "weakness_score": 1,
+    "total_questions": 29,
+    "confusion_rate": 0.0
+  },
+  "topic_195": {
+    "title": "C++ Software Architecture Insights",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_196": {
+    "title": "GitHub Push Error Solution",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_197": {
+    "title": "Short JS Video Courses",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_198": {
+    "title": "Best C++ Learning Resources",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_199": {
+    "title": "Route planning initialization issue",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_200": {
+    "title": "Address Change Request",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_201": {
+    "title": "Poetry install no update",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_202": {
+    "title": "ISO 26262 vs SOTIF",
+    "weakness_score": 1,
+    "total_questions": 9,
+    "confusion_rate": 0.0
+  },
+  "topic_203": {
+    "title": "ROS Msg Two Strings",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_204": {
+    "title": "Poetry Configuration Issues",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_205": {
+    "title": "TaskInfo Constructor Issue",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_206": {
+    "title": "ROS2 C++ Delay",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_207": {
+    "title": "Refactor Fault Publishing",
+    "weakness_score": 1,
+    "total_questions": 43,
+    "confusion_rate": 0.0
+  },
+  "topic_208": {
+    "title": "Test failure troubleshooting",
+    "weakness_score": 1,
+    "total_questions": 26,
+    "confusion_rate": 0.07692307692307693
+  },
+  "topic_209": {
+    "title": "Refactor Fault Detection Code",
+    "weakness_score": 3.0,
+    "total_questions": 1,
+    "confusion_rate": 1.0
+  },
+  "topic_210": {
+    "title": "ROS2 launch file issue",
+    "weakness_score": 1,
+    "total_questions": 42,
+    "confusion_rate": 0.09523809523809523
+  },
+  "topic_211": {
+    "title": "Fault detection optimization",
+    "weakness_score": 1.2,
+    "total_questions": 12,
+    "confusion_rate": 0.25
+  },
+  "topic_212": {
+    "title": "Diagnostics Status Data Structure",
+    "weakness_score": 1,
+    "total_questions": 19,
+    "confusion_rate": 0.10526315789473684
+  },
+  "topic_213": {
+    "title": "Launch Configuration Explanation",
+    "weakness_score": 1,
+    "total_questions": 11,
+    "confusion_rate": 0.0
+  },
+  "topic_214": {
+    "title": "Shared Pointer Ownership",
+    "weakness_score": 1,
+    "total_questions": 16,
+    "confusion_rate": 0.0
+  },
+  "topic_215": {
+    "title": "ROS 2 Launch Explanation",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_216": {
+    "title": "SEO Backend Challenges",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_217": {
+    "title": "Grid Map Plugin Error",
+    "weakness_score": 1,
+    "total_questions": 9,
+    "confusion_rate": 0.0
+  },
+  "topic_218": {
+    "title": "Create C++ Node Autoware",
+    "weakness_score": 1,
+    "total_questions": 7,
+    "confusion_rate": 0.0
+  },
+  "topic_219": {
+    "title": "Template Specialization Explanation",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_220": {
+    "title": "Checking key existence",
+    "weakness_score": 1,
+    "total_questions": 9,
+    "confusion_rate": 0.0
+  },
+  "topic_221": {
+    "title": "Automated Driving Safety Overview",
+    "weakness_score": 1,
+    "total_questions": 14,
+    "confusion_rate": 0.0
+  },
+  "topic_222": {
+    "title": "Active PID with execlp",
+    "weakness_score": 1,
+    "total_questions": 99,
+    "confusion_rate": 0.0
+  },
+  "topic_223": {
+    "title": "Vehicle Charging Status Check",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_224": {
+    "title": "BMS Data Read Explanation",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_225": {
+    "title": "Install xdotool Error",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_226": {
+    "title": "Sudo passwordless setup",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_227": {
+    "title": "Automating Sudo Password",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_228": {
+    "title": "Open Terminal on Boot",
+    "weakness_score": 1,
+    "total_questions": 17,
+    "confusion_rate": 0.0
+  },
+  "topic_229": {
+    "title": "Setting up rosdep Humble",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_230": {
+    "title": "LIDAR Localization Test Cases",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_231": {
+    "title": "Unknown Object Detection Test",
+    "weakness_score": 1.8,
+    "total_questions": 1,
+    "confusion_rate": 1.0
+  },
+  "topic_232": {
+    "title": "ISO 26262 vs ISO 21448",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_233": {
+    "title": "Tools for Flow Diagrams",
+    "weakness_score": 1,
+    "total_questions": 24,
+    "confusion_rate": 0.0
+  },
+  "topic_234": {
+    "title": "自動運転車テスト概要",
+    "weakness_score": 1.9,
+    "total_questions": 9,
+    "confusion_rate": 0.5555555555555556
+  },
+  "topic_236": {
+    "title": "Dezyne Interfaces Components Systems",
+    "weakness_score": 1,
+    "total_questions": 7,
+    "confusion_rate": 0.0
+  },
+  "topic_237": {
+    "title": "UI_bridge Protocol Update",
+    "weakness_score": 1,
+    "total_questions": 22,
+    "confusion_rate": 0.0
+  },
+  "topic_238": {
+    "title": "UI_bridge autoware_bridge contract",
+    "weakness_score": 1,
+    "total_questions": 34,
+    "confusion_rate": 0.029411764705882353
+  },
+  "topic_239": {
+    "title": "ROS2 service response handling",
+    "weakness_score": 1.2,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_240": {
+    "title": "Dezyne Interface and Component",
+    "weakness_score": 1,
+    "total_questions": 33,
+    "confusion_rate": 0.0
+  },
+  "topic_241": {
+    "title": "GTest linker error solution",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_242": {
+    "title": "Parallel Task Execution",
+    "weakness_score": 1,
+    "total_questions": 6,
+    "confusion_rate": 0.0
+  },
+  "topic_243": {
+    "title": "Override method issue",
+    "weakness_score": 1,
+    "total_questions": 40,
+    "confusion_rate": 0.0
+  },
+  "topic_244": {
+    "title": "EmergencyHandler Test Cases",
+    "weakness_score": 1,
+    "total_questions": 9,
+    "confusion_rate": 0.0
+  },
+  "topic_245": {
+    "title": "Overriding with Different Parameters",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_246": {
+    "title": "Class Refactoring for Testing",
+    "weakness_score": 1,
+    "total_questions": 10,
+    "confusion_rate": 0.0
+  },
+  "topic_247": {
+    "title": "Mode Manager Design Discussion",
+    "weakness_score": 2.6,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_248": {
+    "title": "ROS2 Timestamp vs Chrono",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_249": {
+    "title": "EmergencyHandler Code Review",
+    "weakness_score": 1,
+    "total_questions": 13,
+    "confusion_rate": 0.0
+  },
+  "topic_250": {
+    "title": "Admin UI Overview",
+    "weakness_score": 2.6,
+    "total_questions": 6,
+    "confusion_rate": 0.3333333333333333
+  },
+  "topic_251": {
+    "title": "Condition Variable in C++",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_252": {
+    "title": "Autoware Key Topics",
+    "weakness_score": 1,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_253": {
+    "title": "UI Design Suggestions",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_254": {
+    "title": "UI Design Suggestions",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_255": {
+    "title": "Building Selection UI Design",
+    "weakness_score": 1,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_256": {
+    "title": "AppImage Installation Guide",
+    "weakness_score": 1,
+    "total_questions": 82,
+    "confusion_rate": 0.0
+  },
+  "topic_257": {
+    "title": "iPhone Video Brightness Tips",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_258": {
+    "title": "Check NVIDIA Version Ubuntu",
+    "weakness_score": 1,
+    "total_questions": 25,
+    "confusion_rate": 0.0
+  },
+  "topic_259": {
+    "title": "Uninstall Visual Studio Completely",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_260": {
+    "title": "Cannot open sys/wait.h",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_261": {
+    "title": "VSCode ROS2 Setup",
+    "weakness_score": 1,
+    "total_questions": 21,
+    "confusion_rate": 0.0
+  },
+  "topic_262": {
+    "title": "Cannot find rclcpp.hpp",
+    "weakness_score": 1,
+    "total_questions": 12,
+    "confusion_rate": 0.0
+  },
+  "topic_263": {
+    "title": "Emergency Hazard Handling ROS2",
+    "weakness_score": 1,
+    "total_questions": 17,
+    "confusion_rate": 0.0
+  },
+  "topic_264": {
+    "title": "Code Refactoring and Testing",
+    "weakness_score": 1,
+    "total_questions": 31,
+    "confusion_rate": 0.06451612903225806
+  },
+  "topic_266": {
+    "title": "Autoware Python Module Integration",
+    "weakness_score": 1,
+    "total_questions": 47,
+    "confusion_rate": 0.0425531914893617
+  },
+  "topic_267": {
+    "title": "rclpy version resolution",
+    "weakness_score": 1,
+    "total_questions": 9,
+    "confusion_rate": 0.0
+  },
+  "topic_268": {
+    "title": "ROS2 Node Review",
+    "weakness_score": 1,
+    "total_questions": 10,
+    "confusion_rate": 0.0
+  },
+  "topic_269": {
+    "title": "Chunk Upload Process",
+    "weakness_score": 1,
+    "total_questions": 13,
+    "confusion_rate": 0.07692307692307693
+  },
+  "topic_270": {
+    "title": "JLPT N5 Verbs List",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_271": {
+    "title": "YouTube Channel Ideas Rianna",
+    "weakness_score": 1,
+    "total_questions": 6,
+    "confusion_rate": 0.0
+  },
+  "topic_272": {
+    "title": "LogUpload Filename Handling",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_273": {
+    "title": "Log upload models creation",
+    "weakness_score": 1,
+    "total_questions": 16,
+    "confusion_rate": 0.125
+  },
+  "topic_274": {
+    "title": "Dezyne Language Overview",
+    "weakness_score": 1,
+    "total_questions": 7,
+    "confusion_rate": 0.0
+  },
+  "topic_275": {
+    "title": "Minno no Nihongo JLPT N5",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_276": {
+    "title": "ROS2 Starhawk Bridge",
+    "weakness_score": 1,
+    "total_questions": 21,
+    "confusion_rate": 0.09523809523809523
+  },
+  "topic_277": {
+    "title": "Workflow Explanation Request",
+    "weakness_score": 1.4,
+    "total_questions": 25,
+    "confusion_rate": 0.08
+  },
+  "topic_278": {
+    "title": "Latest C++ Features",
+    "weakness_score": 1,
+    "total_questions": 6,
+    "confusion_rate": 0.0
+  },
+  "topic_279": {
+    "title": "Test Function Improvement",
+    "weakness_score": 1.6,
+    "total_questions": 24,
+    "confusion_rate": 0.125
+  },
+  "topic_280": {
+    "title": "Log Priority and Uploads",
+    "weakness_score": 1,
+    "total_questions": 96,
+    "confusion_rate": 0.07291666666666667
+  },
+  "topic_281": {
+    "title": "CPU vs ECU Differences",
+    "weakness_score": 1,
+    "total_questions": 5,
+    "confusion_rate": 0.0
+  },
+  "topic_282": {
+    "title": "LED Configuration Changes",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_283": {
+    "title": "Merge branch into main",
+    "weakness_score": 1,
+    "total_questions": 9,
+    "confusion_rate": 0.1111111111111111
+  },
+  "topic_284": {
+    "title": "Log Message Categorization Guide",
+    "weakness_score": 1.0,
+    "total_questions": 11,
+    "confusion_rate": 0.09090909090909091
+  },
+  "topic_285": {
+    "title": "Add Signature and Date",
+    "weakness_score": 1.2,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_286": {
+    "title": "Shift SSH Setup",
+    "weakness_score": 1,
+    "total_questions": 11,
+    "confusion_rate": 0.0
+  },
+  "topic_287": {
+    "title": "POP3 to IMAP Setup",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_288": {
+    "title": "GitHub Multiple Account Setup",
+    "weakness_score": 1,
+    "total_questions": 12,
+    "confusion_rate": 0.08333333333333333
+  },
+  "topic_289": {
+    "title": "File handle troubleshooting",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_290": {
+    "title": "State Updates on Button Click",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_291": {
+    "title": "React Key Usage",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_292": {
+    "title": "Python Elixir Log Upload",
+    "weakness_score": 1,
+    "total_questions": 39,
+    "confusion_rate": 0.05128205128205128
+  },
+  "topic_293": {
+    "title": "Web Development Experience Summary",
+    "weakness_score": 1,
+    "total_questions": 17,
+    "confusion_rate": 0.0
+  },
+  "topic_294": {
+    "title": "Resume Summary Enhancement",
+    "weakness_score": 1,
+    "total_questions": 6,
+    "confusion_rate": 0.0
+  },
+  "topic_295": {
+    "title": "What is SASS",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_296": {
+    "title": "Real World App Building",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_297": {
+    "title": "Career Growth and Learning",
+    "weakness_score": 1,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_298": {
+    "title": "Mongoose Number Field Validation",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_299": {
+    "title": "Adding Images in Comments",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_300": {
+    "title": "Free Elixir Phoenix Resources",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_301": {
+    "title": "Redirect logs to file",
+    "weakness_score": 1,
+    "total_questions": 6,
+    "confusion_rate": 0.0
+  },
+  "topic_302": {
+    "title": "ESP32 vs ESP8266",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_303": {
+    "title": "Log File Optimization",
+    "weakness_score": 1,
+    "total_questions": 26,
+    "confusion_rate": 0.15384615384615385
+  },
+  "topic_304": {
+    "title": "Challenges for Fintech Full-Stack Dev",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_305": {
+    "title": "Month as String in MongoDB",
+    "weakness_score": 1,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_306": {
+    "title": "TVM Log Management Requirements",
+    "weakness_score": 1,
+    "total_questions": 25,
+    "confusion_rate": 0.12
+  },
+  "topic_307": {
+    "title": "ROS 2 log redirection",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_308": {
+    "title": "ROS2 Logging Mechanism",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_309": {
+    "title": "Pet Nap Illustration Request",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_310": {
+    "title": "ESLint Dev Config Tips",
+    "weakness_score": 1,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_311": {
+    "title": "Full Stack Developer Skills",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_312": {
+    "title": "Locator Copy Constructor Error",
+    "weakness_score": 1.2,
+    "total_questions": 10,
+    "confusion_rate": 0.2
+  },
+  "topic_313": {
+    "title": "Practice MongoDB Mongoose Resources",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_314": {
+    "title": "Basic Express Backend Setup",
+    "weakness_score": 1,
+    "total_questions": 5,
+    "confusion_rate": 0.0
+  },
+  "topic_315": {
+    "title": "Free Node.js Courses",
+    "weakness_score": 1.4,
+    "total_questions": 18,
+    "confusion_rate": 0.3888888888888889
+  },
+  "topic_316": {
+    "title": "Core Node.js Concepts",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_317": {
+    "title": "Next.js Adoption Reasons",
+    "weakness_score": 1.2,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_318": {
+    "title": "Function declaration mismatch",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_319": {
+    "title": "Docker Certification Guide",
+    "weakness_score": 1,
+    "total_questions": 6,
+    "confusion_rate": 0.0
+  },
+  "topic_320": {
+    "title": "ParcelPal Setup Process",
+    "weakness_score": 1,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_321": {
+    "title": "Learning Elixir Programming Guide",
+    "weakness_score": 1,
+    "total_questions": 10,
+    "confusion_rate": 0.0
+  },
+  "topic_322": {
+    "title": "Learning Cloud Docker Kubernetes",
+    "weakness_score": 1,
+    "total_questions": 5,
+    "confusion_rate": 0.0
+  },
+  "topic_323": {
+    "title": "Markdown Format Conversion",
+    "weakness_score": 1,
+    "total_questions": 25,
+    "confusion_rate": 0.04
+  },
+  "topic_324": {
+    "title": "Submit Button Not Appearing",
+    "weakness_score": 1,
+    "total_questions": 59,
+    "confusion_rate": 0.05084745762711865
+  },
+  "topic_325": {
+    "title": "Learning Rust After C++",
+    "weakness_score": 1,
+    "total_questions": 7,
+    "confusion_rate": 0.0
+  },
+  "topic_326": {
+    "title": "Elixir Process Communication Methods",
+    "weakness_score": 1.2,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_327": {
+    "title": "Python Scripting Guide",
+    "weakness_score": 1.2,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_328": {
+    "title": "Python Simplicity Compared to Java C++",
+    "weakness_score": 1,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_329": {
+    "title": "Elixir Programming Language Benefits",
+    "weakness_score": 1,
+    "total_questions": 8,
+    "confusion_rate": 0.0
+  },
+  "topic_330": {
+    "title": "Web App Development Guide",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_331": {
+    "title": "Elixir Language Learning Curve",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_332": {
+    "title": "Full Stack Learning Roadmap",
+    "weakness_score": 1,
+    "total_questions": 5,
+    "confusion_rate": 0.0
+  },
+  "topic_333": {
+    "title": "Email Regex Explanation",
+    "weakness_score": 1.2,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_334": {
+    "title": "Flexbox Overview and Properties",
+    "weakness_score": 1,
+    "total_questions": 6,
+    "confusion_rate": 0.16666666666666666
+  },
+  "topic_335": {
+    "title": "",
+    "weakness_score": 1.2,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_336": {
+    "title": "Set DB_NAME Environment Variable",
+    "weakness_score": 1,
+    "total_questions": 5,
+    "confusion_rate": 0.0
+  },
+  "topic_337": {
+    "title": "Full Stack Learning Guide",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_338": {
+    "title": "React Employee Form Setup",
+    "weakness_score": 1,
+    "total_questions": 11,
+    "confusion_rate": 0.0
+  },
+  "topic_339": {
+    "title": "Student Table Team Filter",
+    "weakness_score": 1.1,
+    "total_questions": 31,
+    "confusion_rate": 0.2903225806451613
+  },
+  "topic_340": {
+    "title": "CMake Build Error Fix",
+    "weakness_score": 1,
+    "total_questions": 32,
+    "confusion_rate": 0.09375
+  },
+  "topic_341": {
+    "title": "ROS2 Message Publishing Update",
+    "weakness_score": 1,
+    "total_questions": 29,
+    "confusion_rate": 0.034482758620689655
+  },
+  "topic_342": {
+    "title": "Web Development Components Overview",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_343": {
+    "title": "Masala Measuring Machine Design",
+    "weakness_score": 1,
+    "total_questions": 22,
+    "confusion_rate": 0.0
+  },
+  "topic_344": {
+    "title": "React Table Team Filter",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_345": {
+    "title": "Add Delete Action Dropdown",
+    "weakness_score": 1.2,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_346": {
+    "title": "Next.js and React Overview",
+    "weakness_score": 1,
+    "total_questions": 5,
+    "confusion_rate": 0.0
+  },
+  "topic_347": {
+    "title": "Rust Language Overview and Careers",
+    "weakness_score": 1.2,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_348": {
+    "title": "FUTURE Motivational Acronym Creation",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_349": {
+    "title": "Environment Variable Retrieval",
+    "weakness_score": 1,
+    "total_questions": 15,
+    "confusion_rate": 0.13333333333333333
+  },
+  "topic_350": {
+    "title": "Drogon Framework Backend Usage",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_351": {
+    "title": "Markdown File Overview",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_352": {
+    "title": "React useEffect Overview",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_353": {
+    "title": "Employee Management App",
+    "weakness_score": 1.8,
+    "total_questions": 19,
+    "confusion_rate": 0.3157894736842105
+  },
+  "topic_354": {
+    "title": "Theme Selection Logic Fix",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_355": {
+    "title": "Shopping Cart App Project",
+    "weakness_score": 1,
+    "total_questions": 69,
+    "confusion_rate": 0.043478260869565216
+  },
+  "topic_356": {
+    "title": "AbortController Integration in Redux",
+    "weakness_score": 1,
+    "total_questions": 7,
+    "confusion_rate": 0.0
+  },
+  "topic_357": {
+    "title": "Adding Extra Reducers",
+    "weakness_score": 1,
+    "total_questions": 8,
+    "confusion_rate": 0.0
+  },
+  "topic_358": {
+    "title": "Simulating Large Data Fetch",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_359": {
+    "title": "RMT TX Initialization Details",
+    "weakness_score": 1,
+    "total_questions": 7,
+    "confusion_rate": 0.0
+  },
+  "topic_360": {
+    "title": "React Task Management App",
+    "weakness_score": 1,
+    "total_questions": 12,
+    "confusion_rate": 0.08333333333333333
+  },
+  "topic_361": {
+    "title": "Time Sheet and Salary App",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_362": {
+    "title": "Volume Control UI",
+    "weakness_score": 1,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_363": {
+    "title": "Best React Icon Components",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_364": {
+    "title": "React Component Libraries",
+    "weakness_score": 1,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_365": {
+    "title": "Drawbacks of Augmenting Lidar",
+    "weakness_score": 1,
+    "total_questions": 30,
+    "confusion_rate": 0.0
+  },
+  "topic_366": {
+    "title": "Rclcpp Duration Overview",
+    "weakness_score": 1,
+    "total_questions": 2,
+    "confusion_rate": 0.0
+  },
+  "topic_367": {
+    "title": "Amazon Delivery Architecture",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_368": {
+    "title": "Component Breakdown Overview",
+    "weakness_score": 1.2,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_369": {
+    "title": "TanStack Table vs React-Table",
+    "weakness_score": 1,
+    "total_questions": 34,
+    "confusion_rate": 0.0
+  },
+  "topic_370": {
+    "title": "Connecting with HR",
+    "weakness_score": 1.2,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_371": {
+    "title": "HTML Form Input Types",
+    "weakness_score": 1,
+    "total_questions": 102,
+    "confusion_rate": 0.0
+  },
+  "topic_372": {
+    "title": "Understanding User Personas",
+    "weakness_score": 1,
+    "total_questions": 12,
+    "confusion_rate": 0.0
+  },
+  "topic_373": {
+    "title": "Visa Application Delay Request",
+    "weakness_score": 1,
+    "total_questions": 1,
+    "confusion_rate": 0.0
+  },
+  "topic_374": {
+    "title": "Brightness Array Calculation",
+    "weakness_score": 1.2,
+    "total_questions": 4,
+    "confusion_rate": 0.0
+  },
+  "topic_375": {
+    "title": "Model Version Inquiry",
+    "weakness_score": 1,
+    "total_questions": 3,
+    "confusion_rate": 0.0
+  },
+  "topic_376": {
+    "title": "Understanding NVRAM Technology",
+    "weakness_score": 1,
+    "total_questions": 9,
+    "confusion_rate": 0.1111111111111111
+  },
+  "topic_377": {
+    "title": "FastLED fill_solid Usage",
+    "weakness_score": 1,
+    "total_questions": 52,
+    "confusion_rate": 0.0
+  }
+}
