@@ -9349,16 +9349,16 @@
       "context": null,
       "teFormExamples": [
         {
-          "japanese": "してください。",
-          "kana": "してください。",
-          "english": "Please do.",
-          "highlight": "polite request"
+          "japanese": "宿題をしてから、遊びます。",
+          "kana": "しゅくだいをしてから、あそびます。",
+          "english": "I will play after doing homework.",
+          "highlight": "sequential actions"
         },
         {
-          "japanese": "今、しています。",
-          "kana": "いま、しています。",
-          "english": "Currently doing.",
-          "highlight": "progressive"
+          "japanese": "運動をしてください。",
+          "kana": "うんどうをしてください。",
+          "english": "Please exercise.",
+          "highlight": "polite request"
         }
       ]
     },
@@ -10978,16 +10978,16 @@
       "context": null,
       "teFormExamples": [
         {
-          "japanese": "連れて来るください。",
-          "kana": "つれてくるください。",
-          "english": "Please bring (someone).",
-          "highlight": "polite request"
+          "japanese": "友達をパーティーに連れて来てください。",
+          "kana": "ともだちをパーティーにつれてきてください。",
+          "english": "Please bring your friend to the party.",
+          "highlight": "polite request with movement"
         },
         {
-          "japanese": "今、連れて来るいます。",
-          "kana": "いま、つれてくるいます。",
-          "english": "Currently bring (someone)ing.",
-          "highlight": "progressive"
+          "japanese": "妹を連れて来ています。",
+          "kana": "いもうとをつれてきています。",
+          "english": "I am bringing my younger sister.",
+          "highlight": "progressive with movement"
         }
       ]
     },
@@ -11053,16 +11053,16 @@
       "context": null,
       "teFormExamples": [
         {
-          "japanese": "持って来るください。",
-          "kana": "もってくるください。",
-          "english": "Please bring (something).",
-          "highlight": "polite request"
+          "japanese": "明日、教科書を持って来てください。",
+          "kana": "あした、きょうかしょをもってきてください。",
+          "english": "Please bring your textbook tomorrow.",
+          "highlight": "polite request with object"
         },
         {
-          "japanese": "今、持って来るいます。",
-          "kana": "いま、もってくるいます。",
-          "english": "Currently bring (something)ing.",
-          "highlight": "progressive"
+          "japanese": "お弁当を持って来ています。",
+          "kana": "おべんとうをもってきています。",
+          "english": "I am bringing a lunch box.",
+          "highlight": "progressive with object"
         }
       ]
     }
