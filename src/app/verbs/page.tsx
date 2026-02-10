@@ -507,7 +507,16 @@ export default function VerbsPage() {
             Complete collection of JLPT N5 verbs with conjugations, meanings, and practice modes
           </p>
 
-          <div className="flex justify-center gap-3 pt-2">
+          <div className="flex flex-wrap justify-center gap-3 pt-2">
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={() => window.location.href = '/verbs/dictionary-form-learning'}
+              className="gap-2"
+            >
+              <GraduationCap className="h-5 w-5" />
+              Learn Masu → Dictionary Form Rules
+            </Button>
             <Button
               variant="outline"
               size="lg"
@@ -515,7 +524,7 @@ export default function VerbsPage() {
               className="gap-2"
             >
               <GraduationCap className="h-5 w-5" />
-              Learn Masu → Te Conversion Rules
+              Learn Masu → Te Form Rules
             </Button>
           </div>
         </motion.div>
