@@ -1,0 +1,1472 @@
+[
+  {
+    "id": "duo_1",
+    "japanese": "あそびたいです",
+    "english": "want to play",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_4",
+    "japanese": "後で",
+    "english": "later, after, afterwards",
+    "type": "adverb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_5",
+    "japanese": "いたいです",
+    "english": "hurts, painful, it hurts",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_6",
+    "japanese": "もうすこし",
+    "english": "more, a bit longer",
+    "type": "adverb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_8",
+    "japanese": "会いたくないです",
+    "english": "don't want to see, don't want to meet",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_9",
+    "japanese": "ねました",
+    "english": "went to sleep, slept",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_12",
+    "japanese": "行きたくないです",
+    "english": "do not want to go",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_13",
+    "japanese": "食べたいです",
+    "english": "want to eat",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_14",
+    "japanese": "ねたいです",
+    "english": "want to sleep",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_19",
+    "japanese": "今",
+    "english": "this, now, just",
+    "type": "adverb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_21",
+    "japanese": "ねむい",
+    "english": "sleepy",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_23",
+    "japanese": "かたづけます",
+    "english": "(will) clean up, going to tidy up",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_24",
+    "japanese": "帰ります",
+    "english": "am going home, goes home, am going back",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_26",
+    "japanese": "いそがしくない",
+    "english": "not busy",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_29",
+    "japanese": "とおくない",
+    "english": "not far",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_33",
+    "japanese": "前に",
+    "english": "previously, ago, in front of",
+    "type": "adverb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_37",
+    "japanese": "になります",
+    "english": "will be, becomes, become",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_38",
+    "japanese": "四日",
+    "english": "fourth, four days, 4th",
+    "type": "counter",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_39",
+    "japanese": "三月",
+    "english": "March",
+    "type": "counter",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_44",
+    "japanese": "たのしくない",
+    "english": "aren't fun",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_47",
+    "japanese": "くらくない",
+    "english": "not dark",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_48",
+    "japanese": "一月",
+    "english": "January",
+    "type": "counter",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_55",
+    "japanese": "つけます",
+    "english": "put on, turns on, turn on",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_58",
+    "japanese": "さきます",
+    "english": "bloom, blooms, will bloom",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_59",
+    "japanese": "住んでいます",
+    "english": "live, lives",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_64",
+    "japanese": "キラキラ",
+    "english": "sparkle, glisten, sparkly",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_71",
+    "japanese": "ふわふわ",
+    "english": "fluffy",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_76",
+    "japanese": "まっすぐ",
+    "english": "straight",
+    "type": "adverb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_79",
+    "japanese": "ボロボロ",
+    "english": "worn-out",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_88",
+    "japanese": "ふべん",
+    "english": "inconvenient",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_90",
+    "japanese": "しんせつ",
+    "english": "nice, kind",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_92",
+    "japanese": "しまります",
+    "english": "close, closes",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_101",
+    "japanese": "そつぎょうします",
+    "english": "graduate",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_102",
+    "japanese": "はいります",
+    "english": "enter, join, go in",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_104",
+    "japanese": "また",
+    "english": "again, back, see you ...",
+    "type": "adverb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_105",
+    "japanese": "つかれました",
+    "english": "was tired, am tired, is tired",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_106",
+    "japanese": "もう",
+    "english": "yet, now, already",
+    "type": "adverb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_110",
+    "japanese": "話したいです",
+    "english": "want to talk",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_112",
+    "japanese": "ならびます",
+    "english": "(will) wait in line, (will) form a line, (will) queue",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_113",
+    "japanese": "飲みたいです",
+    "english": "want to drink",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_116",
+    "japanese": "もどります",
+    "english": "will return, return",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_120",
+    "japanese": "でかけたいです",
+    "english": "want to go out",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_123",
+    "japanese": "行きたいです",
+    "english": "would like to go, want to go, wants to go",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_124",
+    "japanese": "会いたいです",
+    "english": "want to meet",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_128",
+    "japanese": "おもい",
+    "english": "heavy",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_133",
+    "japanese": "ひかります",
+    "english": "lights up",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_135",
+    "japanese": "万",
+    "english": "ten thousand",
+    "type": "counter",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_137",
+    "japanese": "かるい",
+    "english": "light, lightweight",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_140",
+    "japanese": "安い",
+    "english": "inexpensive, cheap, cheaper",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_147",
+    "japanese": "きります",
+    "english": "going to cut",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_148",
+    "japanese": "あるきます",
+    "english": "walk, walking, am walking",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_156",
+    "japanese": "わたります",
+    "english": "cross",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_169",
+    "japanese": "れんしゅうしました",
+    "english": "practiced",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_768",
+    "japanese": "ダニエル",
+    "english": "Daniel",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_769",
+    "japanese": "はしります",
+    "english": "runs, run",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_771",
+    "japanese": "パスタ",
+    "english": "pasta",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_772",
+    "japanese": "ねます",
+    "english": "sleep, go to sleep, will go to sleep",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_773",
+    "japanese": "シャワーをあびます",
+    "english": "take a shower",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_774",
+    "japanese": "メールを読みます",
+    "english": "check emails",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_777",
+    "japanese": "バレーボール",
+    "english": "volleyball",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_778",
+    "japanese": "まいしゅう",
+    "english": "every week",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_779",
+    "japanese": "四時",
+    "english": "four o'clock",
+    "type": "counter",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_782",
+    "japanese": "何時に",
+    "english": "(at) what time",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_784",
+    "japanese": "新聞",
+    "english": "newspaper",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_785",
+    "japanese": "ラジオ",
+    "english": "radio",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_787",
+    "japanese": "いつも",
+    "english": "always, all the time",
+    "type": "adverb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_788",
+    "japanese": "でぐち",
+    "english": "exit",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_789",
+    "japanese": "じはんき",
+    "english": "vending machines, vending machine",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_790",
+    "japanese": "コインロッカー",
+    "english": "storage lockers",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_791",
+    "japanese": "ちかい",
+    "english": "close",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_795",
+    "japanese": "コンセント",
+    "english": "outlet",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_796",
+    "japanese": "とおい",
+    "english": "far",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_797",
+    "japanese": "でんわ",
+    "english": "phone",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_798",
+    "japanese": "ちか",
+    "english": "underground level",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_801",
+    "japanese": "おてあらい",
+    "english": "restroom",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_802",
+    "japanese": "wifi",
+    "english": "wifi",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_804",
+    "japanese": "ゴミばこ",
+    "english": "trash can",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_805",
+    "japanese": "のりかえ",
+    "english": "transfer",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_809",
+    "japanese": "いっかい",
+    "english": "first floor",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_810",
+    "japanese": "ホーム",
+    "english": "platform",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_812",
+    "japanese": "じゅうどう",
+    "english": "judo",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_813",
+    "japanese": "テニス",
+    "english": "tennis",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_814",
+    "japanese": "話します",
+    "english": "speaks, speak, tells",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_815",
+    "japanese": "日曜日",
+    "english": "Sunday",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_817",
+    "japanese": "からて",
+    "english": "karate",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_821",
+    "japanese": "スポーツ",
+    "english": "sports",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_824",
+    "japanese": "ドラマ",
+    "english": "drama",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_825",
+    "japanese": "あそびます",
+    "english": "hang out, hangs out, (I) will play",
+    "type": "verb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_827",
+    "japanese": "しゅうまつ",
+    "english": "weekend",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_829",
+    "japanese": "アイスコーヒー",
+    "english": "iced coffee",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_831",
+    "japanese": "こうちゃ",
+    "english": "black teas, black tea, tea",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_832",
+    "japanese": "小さい",
+    "english": "small, little",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_833",
+    "japanese": "すこし",
+    "english": "a bit",
+    "type": "adverb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_835",
+    "japanese": "サラダ",
+    "english": "salad, salads",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_837",
+    "japanese": "大きい",
+    "english": "big",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_838",
+    "japanese": "おにぎり",
+    "english": "rice balls, rice ball, onigiri",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_839",
+    "japanese": "よっつ",
+    "english": "four",
+    "type": "counter",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_840",
+    "japanese": "ええと",
+    "english": "um",
+    "type": "other",
+    "subtype": "interjection",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_841",
+    "japanese": "みっつ",
+    "english": "three",
+    "type": "counter",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_843",
+    "japanese": "ふたつ",
+    "english": "two",
+    "type": "counter",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_844",
+    "japanese": "あ",
+    "english": "ah, oh",
+    "type": "other",
+    "subtype": "interjection",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_845",
+    "japanese": "ひとつ",
+    "english": "one",
+    "type": "counter",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_846",
+    "japanese": "水",
+    "english": "water, waters",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_847",
+    "japanese": "レストラン",
+    "english": "restaurant",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_849",
+    "japanese": "うどん",
+    "english": "udon",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_850",
+    "japanese": "てんぷら",
+    "english": "tempura",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_852",
+    "japanese": "たかい",
+    "english": "expensive, big, tall",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_854",
+    "japanese": "みせ",
+    "english": "store",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_856",
+    "japanese": "千",
+    "english": "thousand",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_858",
+    "japanese": "ネクタイ",
+    "english": "tie, necktie, ties",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_859",
+    "japanese": "えん",
+    "english": "yen",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_860",
+    "japanese": "やすい",
+    "english": "cheap, inexpensive",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_861",
+    "japanese": "百",
+    "english": "hundred",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_862",
+    "japanese": "あの",
+    "english": "those, ah, that (over there)",
+    "type": "other",
+    "subtype": "determiner",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_863",
+    "japanese": "あおい",
+    "english": "blue",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_865",
+    "japanese": "ドレス",
+    "english": "dress",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_866",
+    "japanese": "すてき",
+    "english": "lovely, nice, cute",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_870",
+    "japanese": "新しい",
+    "english": "new, newer",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_871",
+    "japanese": "ね",
+    "english": "isn't it?",
+    "type": "particle",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_872",
+    "japanese": "ふく",
+    "english": "clothes",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_873",
+    "japanese": "ダサい",
+    "english": "hideous",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_875",
+    "japanese": "さいふ",
+    "english": "wallet",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_876",
+    "japanese": "古い",
+    "english": "old",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_878",
+    "japanese": "まいばん",
+    "english": "every night",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_880",
+    "japanese": "半",
+    "english": "thirty",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_881",
+    "japanese": "八",
+    "english": "eight",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_882",
+    "japanese": "べんとう",
+    "english": "boxed lunch",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_883",
+    "japanese": "ひるごはん",
+    "english": "lunch",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_884",
+    "japanese": "十二",
+    "english": "twelve",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_885",
+    "japanese": "十",
+    "english": "ten",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_886",
+    "japanese": "十一",
+    "english": "eleven",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_889",
+    "japanese": "時",
+    "english": "o'clock",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_893",
+    "japanese": "ジュース",
+    "english": "juice",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_895",
+    "japanese": "パン",
+    "english": "bread",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_896",
+    "japanese": "サンドイッチ",
+    "english": "sandwich",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_901",
+    "japanese": "やきゅう",
+    "english": "baseball",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_902",
+    "japanese": "ざっし",
+    "english": "magazines",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_903",
+    "japanese": "本",
+    "english": "books",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_905",
+    "japanese": "ニュース",
+    "english": "news",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_906",
+    "japanese": "おんがく",
+    "english": "music",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_909",
+    "japanese": "ジャズ",
+    "english": "jazz",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_914",
+    "japanese": "を",
+    "english": "through, with, for",
+    "type": "particle",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_917",
+    "japanese": "テレビ",
+    "english": "TV",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_919",
+    "japanese": "おっと",
+    "english": "my husband",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_920",
+    "japanese": "七",
+    "english": "7, seven, seventh",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_921",
+    "japanese": "あたまがいい",
+    "english": "smart",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_924",
+    "japanese": "むすめ",
+    "english": "my daughter",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_925",
+    "japanese": "六",
+    "english": "six",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_927",
+    "japanese": "だいがくせい",
+    "english": "college student",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_929",
+    "japanese": "かんごし",
+    "english": "nurse",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_932",
+    "japanese": "五",
+    "english": "5, five",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_934",
+    "japanese": "かいしゃいん",
+    "english": "office worker",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_935",
+    "japanese": "あね",
+    "english": "my older sister",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_936",
+    "japanese": "四",
+    "english": "four",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_938",
+    "japanese": "さい",
+    "english": "years old",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_939",
+    "japanese": "いそがしい",
+    "english": "busy",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_940",
+    "japanese": "エンジニア",
+    "english": "engineer",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_941",
+    "japanese": "父",
+    "english": "dad",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_942",
+    "japanese": "かぞく",
+    "english": "family",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_943",
+    "japanese": "母",
+    "english": "mom, mother, my mom",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_945",
+    "japanese": "とても",
+    "english": "very",
+    "type": "adverb",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_946",
+    "japanese": "きれい",
+    "english": "clean",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_948",
+    "japanese": "トロント",
+    "english": "Toronto",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_950",
+    "japanese": "とし",
+    "english": "years, cities, city",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_952",
+    "japanese": "日本",
+    "english": "Japan, Japanese",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_956",
+    "japanese": "ニューヨーク",
+    "english": "New York",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_957",
+    "japanese": "も",
+    "english": "even, any, also",
+    "type": "particle",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_960",
+    "japanese": "私",
+    "english": "I",
+    "type": "pronoun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_961",
+    "japanese": "ようこそ",
+    "english": "welcome",
+    "type": "phrase",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_964",
+    "japanese": "おなまえは",
+    "english": "what's your name",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_965",
+    "japanese": "かばん",
+    "english": "bag",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_966",
+    "japanese": "中山",
+    "english": "Nakayama",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_967",
+    "japanese": "田中",
+    "english": "Tanaka",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_968",
+    "japanese": "山口",
+    "english": "Yamaguchi",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_970",
+    "japanese": "の",
+    "english": "for, 's, one",
+    "type": "particle",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_972",
+    "japanese": "ちず",
+    "english": "map",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_973",
+    "japanese": "きっぷ",
+    "english": "ticket",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_976",
+    "japanese": "くうこう",
+    "english": "airport",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_977",
+    "japanese": "はん",
+    "english": "thirty",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_979",
+    "japanese": "ごろ",
+    "english": "around, about",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_980",
+    "japanese": "いま",
+    "english": "now, current",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_981",
+    "japanese": "一",
+    "english": "one, an, a",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_982",
+    "japanese": "二",
+    "english": "two, 2",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_983",
+    "japanese": "なんじ",
+    "english": "what time",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_984",
+    "japanese": "三",
+    "english": "3, three, third",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_985",
+    "japanese": "じ",
+    "english": "o'clock",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_986",
+    "japanese": "に",
+    "english": "to, in, as (a)",
+    "type": "particle",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_987",
+    "japanese": "いち",
+    "english": "one, an",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_990",
+    "japanese": "その",
+    "english": "the, that, its",
+    "type": "other",
+    "subtype": "determiner",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_993",
+    "japanese": "たなか",
+    "english": "Tanaka",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_996",
+    "japanese": "それら",
+    "english": "they, them, those",
+    "type": "pronoun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_999",
+    "japanese": "しろい",
+    "english": "white",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1012",
+    "japanese": "コンビニ",
+    "english": "convenience store",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1018",
+    "japanese": "にほんじん",
+    "english": "Japanese",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1019",
+    "japanese": "カナダ",
+    "english": "Canada",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1020",
+    "japanese": "アメリカじん",
+    "english": "American",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1023",
+    "japanese": "ちいさい",
+    "english": "small, little",
+    "type": "adjective",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1024",
+    "japanese": "にほん",
+    "english": "Japan",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1026",
+    "japanese": "か",
+    "english": "or, is it?, that",
+    "type": "particle",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1027",
+    "japanese": "いいえ",
+    "english": "no",
+    "type": "other",
+    "subtype": "interjection",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1028",
+    "japanese": "はい",
+    "english": "yes",
+    "type": "other",
+    "subtype": "interjection",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1030",
+    "japanese": "ピザ",
+    "english": "pizza",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1035",
+    "japanese": "は",
+    "english": "is, with, regarding",
+    "type": "particle",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1039",
+    "japanese": "さん",
+    "english": "Mr., Miss, Mrs.",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1041",
+    "japanese": "なおみ",
+    "english": "Naomi",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1046",
+    "japanese": "がくせい",
+    "english": "student, students",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1047",
+    "japanese": "ひと",
+    "english": "person, people",
+    "type": "noun",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1053",
+    "japanese": "です",
+    "english": "there is, it's, I'm",
+    "type": "other",
+    "subtype": "copula",
+    "exampleSentences": []
+  },
+  {
+    "id": "duo_1054",
+    "japanese": "と",
+    "english": "and, that, door",
+    "type": "particle",
+    "exampleSentences": []
+  }
+]

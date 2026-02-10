@@ -1,0 +1,7422 @@
+[
+  {
+    "id": 1,
+    "japanese": "しょうせつ",
+    "english": "novel",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 2,
+    "japanese": "あそびたいです",
+    "english": "want to play",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 3,
+    "japanese": "したいです",
+    "english": "want to do, want to play",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 4,
+    "japanese": "したくないです",
+    "english": "don't want to do",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 5,
+    "japanese": "後で",
+    "english": "later, after, afterwards",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 6,
+    "japanese": "いたいです",
+    "english": "want to be, hurts, hurt",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 7,
+    "japanese": "もうすこし",
+    "english": "more, a bit longer",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 8,
+    "japanese": "キャンセルします",
+    "english": "going to cancel",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 9,
+    "japanese": "会いたくないです",
+    "english": "see, meet",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 10,
+    "japanese": "ねました",
+    "english": "went to sleep, slept",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 11,
+    "japanese": "ゆっくりしたいです",
+    "english": "want to relax",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 12,
+    "japanese": "バナナ",
+    "english": "banana",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 13,
+    "japanese": "行きたくないです",
+    "english": "do not want to go",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 14,
+    "japanese": "食べたいです",
+    "english": "want to eat",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 15,
+    "japanese": "ねたいです",
+    "english": "want to sleep",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 16,
+    "japanese": "ブランケット",
+    "english": "blanket",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 17,
+    "japanese": "でたくないです",
+    "english": "don't want to get out",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 18,
+    "japanese": "リモコン",
+    "english": "remote, controller, controllers",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 19,
+    "japanese": "アラーム",
+    "english": "alarms, alarm",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 20,
+    "japanese": "今",
+    "english": "this, now, just",
+    "partOfSpeech": "time-expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 21,
+    "japanese": "おきたくないです",
+    "english": "don't want to get up",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 22,
+    "japanese": "ねむい",
+    "english": "sleepy",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 23,
+    "japanese": "そろそろ",
+    "english": "soon, shortly, in a bit",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 24,
+    "japanese": "かたづけます",
+    "english": "(will) clean up, going to tidy up",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 25,
+    "japanese": "帰ります",
+    "english": "am going home, goes home, am going back",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 26,
+    "japanese": "ひさしぶりです",
+    "english": "long time no see",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 27,
+    "japanese": "いそがしくない",
+    "english": "not busy",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 28,
+    "japanese": "チーズ",
+    "english": "cheese",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 29,
+    "japanese": "さいきん",
+    "english": "recently",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 30,
+    "japanese": "とおくない",
+    "english": "not far",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 31,
+    "japanese": "ようじ",
+    "english": "stuff to do",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 32,
+    "japanese": "じてんしゃ",
+    "english": "bike",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 33,
+    "japanese": "ゆうがた",
+    "english": "evening",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 34,
+    "japanese": "前に",
+    "english": "previously, ago, in front of",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 35,
+    "japanese": "車",
+    "english": "car",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 36,
+    "japanese": "さいたま",
+    "english": "Saitama",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 37,
+    "japanese": "はたち",
+    "english": "twenty years old",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 38,
+    "japanese": "になります",
+    "english": "will be, becomes, become",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 39,
+    "japanese": "四日",
+    "english": "fourth, four days, 4th",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 40,
+    "japanese": "三月",
+    "english": "March",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 41,
+    "japanese": "みかん",
+    "english": "mandarin oranges",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 42,
+    "japanese": "スキー",
+    "english": "skiing, ski, skis",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 43,
+    "japanese": "二月",
+    "english": "February",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 44,
+    "japanese": "スノボ",
+    "english": "snowboarding",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 45,
+    "japanese": "たのしくない",
+    "english": "aren't fun",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 46,
+    "japanese": "スケート",
+    "english": "skating, skate, ice skating",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 47,
+    "japanese": "なべ",
+    "english": "hot pot",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 48,
+    "japanese": "くらくない",
+    "english": "not dark",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 49,
+    "japanese": "一月",
+    "english": "January",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 50,
+    "japanese": "さつまいも",
+    "english": "sweet potato",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 51,
+    "japanese": "さむくない",
+    "english": "not cold, not very cold",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 52,
+    "japanese": "だんぼう",
+    "english": "heater",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 53,
+    "japanese": "あつくない",
+    "english": "not hot, not very hot",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 54,
+    "japanese": "夜",
+    "english": "night, nights, evening",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 55,
+    "japanese": "すいか",
+    "english": "watermelon",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 56,
+    "japanese": "つけます",
+    "english": "put on, turns on, turn on",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 57,
+    "japanese": "さくら",
+    "english": "cherry blossoms",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 58,
+    "japanese": "四月",
+    "english": "April",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 59,
+    "japanese": "さきます",
+    "english": "bloom, blooms, will bloom",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 60,
+    "japanese": "住んでいます",
+    "english": "live, lives",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 61,
+    "japanese": "こんど",
+    "english": "next time",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 62,
+    "japanese": "八千",
+    "english": "eight thousand",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 63,
+    "japanese": "ポイントカード",
+    "english": "rewards card, rewards cards",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 64,
+    "japanese": "レジ",
+    "english": "register, cash register, cash registers",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 65,
+    "japanese": "キラキラ",
+    "english": "sparkle, glisten, sparkly",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 66,
+    "japanese": "マフラー",
+    "english": "scarf",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 67,
+    "japanese": "アクセサリー",
+    "english": "accessories, jewelry, accessory",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 68,
+    "japanese": "右",
+    "english": "right",
+    "partOfSpeech": "location",
+    "source": "duolingo"
+  },
+  {
+    "id": 69,
+    "japanese": "まがります",
+    "english": "turn, turns",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 70,
+    "japanese": "レディース",
+    "english": "women's, women",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 71,
+    "japanese": "左",
+    "english": "left",
+    "partOfSpeech": "location",
+    "source": "duolingo"
+  },
+  {
+    "id": 72,
+    "japanese": "ふわふわ",
+    "english": "fluffy",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 73,
+    "japanese": "上がります",
+    "english": "go up",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 74,
+    "japanese": "メンズ",
+    "english": "men's, men",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 75,
+    "japanese": "まず",
+    "english": "first, first of all, bad",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 76,
+    "japanese": "パーカー",
+    "english": "hoodie",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 77,
+    "japanese": "まっすぐ",
+    "english": "straight",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 78,
+    "japanese": "むらさき",
+    "english": "purple",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 79,
+    "japanese": "くつした",
+    "english": "socks",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 80,
+    "japanese": "ボロボロ",
+    "english": "worn-out",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 81,
+    "japanese": "ジーンズ",
+    "english": "jeans",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 82,
+    "japanese": "セーター",
+    "english": "sweater",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 83,
+    "japanese": "クラスメイト",
+    "english": "classmates, classmate",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 84,
+    "japanese": "ふくや",
+    "english": "clothing store",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 85,
+    "japanese": "えんぴつ",
+    "english": "pencil",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 86,
+    "japanese": "ショッピングセンター",
+    "english": "center",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 87,
+    "japanese": "くうき",
+    "english": "air",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 88,
+    "japanese": "ドラッグストア",
+    "english": "drugstore",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 89,
+    "japanese": "ふべん",
+    "english": "inconvenient",
+    "partOfSpeech": "na-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 90,
+    "japanese": "ぎんこう",
+    "english": "bank",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 91,
+    "japanese": "しんせつ",
+    "english": "nice, kind",
+    "partOfSpeech": "na-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 92,
+    "japanese": "ゆうびんきょく",
+    "english": "post office",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 93,
+    "japanese": "しまります",
+    "english": "close, closes",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 94,
+    "japanese": "スタジアム",
+    "english": "stadium",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 95,
+    "japanese": "アメフト",
+    "english": "football",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 96,
+    "japanese": "先生",
+    "english": "Mr., Miss, Mister",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 97,
+    "japanese": "木",
+    "english": "tree, Thursday, wood",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 98,
+    "japanese": "こうこう",
+    "english": "high school",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 99,
+    "japanese": "いなか",
+    "english": "countryside",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 100,
+    "japanese": "れきし",
+    "english": "history",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 101,
+    "japanese": "大学",
+    "english": "university, college, universities",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 102,
+    "japanese": "そつぎょうします",
+    "english": "graduate",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 103,
+    "japanese": "はいります",
+    "english": "need",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 104,
+    "japanese": "グッズ",
+    "english": "merch",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 105,
+    "japanese": "また",
+    "english": "again, back, see you ...",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 106,
+    "japanese": "つかれました",
+    "english": "was tired, am tired, is tired",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 107,
+    "japanese": "もう",
+    "english": "yet, now, already",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 108,
+    "japanese": "買いたいです",
+    "english": "want to buy",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 109,
+    "japanese": "サイン",
+    "english": "signature, signatures, autograph",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 110,
+    "japanese": "ペン",
+    "english": "pen",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 111,
+    "japanese": "話したいです",
+    "english": "want to talk",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 112,
+    "japanese": "ひがしぐち",
+    "english": "east exit",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 113,
+    "japanese": "ならびます",
+    "english": "(will) wait in line, (will) form a line, (will) queue",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 114,
+    "japanese": "飲みたいです",
+    "english": "want to drink",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 115,
+    "japanese": "ききたいです",
+    "english": "want to hear",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 116,
+    "japanese": "外",
+    "english": "out, outside",
+    "partOfSpeech": "location",
+    "source": "duolingo"
+  },
+  {
+    "id": 117,
+    "japanese": "もどります",
+    "english": "will return, return",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 118,
+    "japanese": "ステージ",
+    "english": "stage",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 119,
+    "japanese": "まんなか",
+    "english": "middle",
+    "partOfSpeech": "location",
+    "source": "duolingo"
+  },
+  {
+    "id": 120,
+    "japanese": "すわりたい",
+    "english": "want to sit",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 121,
+    "japanese": "でかけたいです",
+    "english": "want to go out",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 122,
+    "japanese": "アーティスト",
+    "english": "artist",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 123,
+    "japanese": "今夜",
+    "english": "tonight",
+    "partOfSpeech": "time-expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 124,
+    "japanese": "行きたいです",
+    "english": "would like to go, want to go, wants to go",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 125,
+    "japanese": "会いたいです",
+    "english": "want to meet",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 126,
+    "japanese": "レシート",
+    "english": "receipt, receipts",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 127,
+    "japanese": "レジぶくろ",
+    "english": "shopping bag, shopping bags",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 128,
+    "japanese": "でんち",
+    "english": "batteries",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 129,
+    "japanese": "おもい",
+    "english": "heavy",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 130,
+    "japanese": "グレー",
+    "english": "gray",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 131,
+    "japanese": "ワイヤレス",
+    "english": "wireless",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 132,
+    "japanese": "ケーブル",
+    "english": "cable",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 133,
+    "japanese": "スピーカー",
+    "english": "speakers, speaker",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 134,
+    "japanese": "ひかります",
+    "english": "lights up",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 135,
+    "japanese": "キーボード",
+    "english": "keyboard",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 136,
+    "japanese": "万",
+    "english": "ten thousand",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 137,
+    "japanese": "マウス",
+    "english": "mouse",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 138,
+    "japanese": "かるい",
+    "english": "light, lightweight",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 139,
+    "japanese": "インチ",
+    "english": "inches, inch",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 140,
+    "japanese": "一万",
+    "english": "ten thousand, 10,000",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 141,
+    "japanese": "安い",
+    "english": "inexpensive, cheap, cheaper",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 142,
+    "japanese": "モニター",
+    "english": "monitor",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 143,
+    "japanese": "前",
+    "english": "ago, before, front",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 144,
+    "japanese": "ゲーミング",
+    "english": "gaming",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 145,
+    "japanese": "今日",
+    "english": "today",
+    "partOfSpeech": "time-expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 146,
+    "japanese": "おさら",
+    "english": "plate",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 147,
+    "japanese": "ナイフ",
+    "english": "knife",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 148,
+    "japanese": "きります",
+    "english": "going to cut",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 149,
+    "japanese": "あるきます",
+    "english": "walk, walking, am walking",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 150,
+    "japanese": "おもちゃ",
+    "english": "toy",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 151,
+    "japanese": "でんきや",
+    "english": "electronics store",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 152,
+    "japanese": "ヘッドホン",
+    "english": "headphones",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 153,
+    "japanese": "六百",
+    "english": "six hundred",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 154,
+    "japanese": "カップ",
+    "english": "cup",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 155,
+    "japanese": "フォーク",
+    "english": "fork",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 156,
+    "japanese": "百円ショップ",
+    "english": "hundred yen shop",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 157,
+    "japanese": "わたります",
+    "english": "cross",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 158,
+    "japanese": "ポテトチップス",
+    "english": "chips, potato chips",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 159,
+    "japanese": "どうやって",
+    "english": "how",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 160,
+    "japanese": "とちゅうで",
+    "english": "on the way",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 161,
+    "japanese": "みち",
+    "english": "path, road, street",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 162,
+    "japanese": "フライドチキン",
+    "english": "fried chicken",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 163,
+    "japanese": "円",
+    "english": "circle, yen",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 164,
+    "japanese": "家",
+    "english": "house, home, homes",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 165,
+    "japanese": "いとこ",
+    "english": "(my) cousin, (my) cousins",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 166,
+    "japanese": "タイご",
+    "english": "Thai",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 167,
+    "japanese": "ぞう",
+    "english": "elephant",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 168,
+    "japanese": "タイ",
+    "english": "Thailand, Thai",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 169,
+    "japanese": "来週",
+    "english": "next week",
+    "partOfSpeech": "time-expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 170,
+    "japanese": "れんしゅうしました",
+    "english": "practiced",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 171,
+    "japanese": "ピーナッツ",
+    "english": "peanuts, (a) peanut",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 172,
+    "japanese": "明日",
+    "english": "tomorrow",
+    "partOfSpeech": "time-expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 173,
+    "japanese": "すいぞくかん",
+    "english": "aquarium",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 174,
+    "japanese": "ちば",
+    "english": "Chiba",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 175,
+    "japanese": "見つけました",
+    "english": "found, caught",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 176,
+    "japanese": "きのう",
+    "english": "yesterday",
+    "partOfSpeech": "time-expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 177,
+    "japanese": "クレープ",
+    "english": "crepe",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 178,
+    "japanese": "はじめて",
+    "english": "for the first time",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 179,
+    "japanese": "あそびました",
+    "english": "played",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 180,
+    "japanese": "行きました",
+    "english": "went, (I) went",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 181,
+    "japanese": "先週",
+    "english": "last week",
+    "partOfSpeech": "time-expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 182,
+    "japanese": "食べました",
+    "english": "ate, (I) ate, had",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 183,
+    "japanese": "ぎんざ",
+    "english": "Ginza",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 184,
+    "japanese": "ぶんか",
+    "english": "culture",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 185,
+    "japanese": "見ました",
+    "english": "watched, saw, looked at",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 186,
+    "japanese": "来ました",
+    "english": "have come, came, has arrived",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 187,
+    "japanese": "先月",
+    "english": "last month",
+    "partOfSpeech": "counter",
+    "source": "duolingo"
+  },
+  {
+    "id": 188,
+    "japanese": "きょねん",
+    "english": "last year",
+    "partOfSpeech": "time-expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 189,
+    "japanese": "かぶき",
+    "english": "kabuki, kabuki performance, Kabuki performances",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 190,
+    "japanese": "トースト",
+    "english": "toast",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 191,
+    "japanese": "コーヒーメーカー",
+    "english": "coffee maker",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 192,
+    "japanese": "チェックアウト",
+    "english": "check-out",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 193,
+    "japanese": "ぎゅうにゅう",
+    "english": "milk",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 194,
+    "japanese": "四階",
+    "english": "fourth floor",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 195,
+    "japanese": "タオル",
+    "english": "towel",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 196,
+    "japanese": "うしろ",
+    "english": "behind",
+    "partOfSpeech": "location",
+    "source": "duolingo"
+  },
+  {
+    "id": 197,
+    "japanese": "むりょう",
+    "english": "free",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 198,
+    "japanese": "スパ",
+    "english": "spa, spas",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 199,
+    "japanese": "パスワード",
+    "english": "password",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 200,
+    "japanese": "三階",
+    "english": "third floor",
+    "partOfSpeech": "counter",
+    "source": "duolingo"
+  },
+  {
+    "id": 201,
+    "japanese": "ルームサービス",
+    "english": "room service",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 202,
+    "japanese": "こおり",
+    "english": "ice",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 203,
+    "japanese": "まえ",
+    "english": "front",
+    "partOfSpeech": "location",
+    "source": "duolingo"
+  },
+  {
+    "id": 204,
+    "japanese": "ばんごう",
+    "english": "number",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 205,
+    "japanese": "クレジットカード",
+    "english": "credit card",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 206,
+    "japanese": "となり",
+    "english": "next door, next to, neighboring",
+    "partOfSpeech": "location",
+    "source": "duolingo"
+  },
+  {
+    "id": 207,
+    "japanese": "チェックイン",
+    "english": "check-in",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 208,
+    "japanese": "かぎ",
+    "english": "key",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 209,
+    "japanese": "ネット",
+    "english": "internet",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 210,
+    "japanese": "三日",
+    "english": "third, three days",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 211,
+    "japanese": "二日",
+    "english": "two days, second, 2",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 212,
+    "japanese": "とまりませんか",
+    "english": "Shall we not stay",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 213,
+    "japanese": "さがします",
+    "english": "will look for, am going to look for",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 214,
+    "japanese": "ぎょうざ",
+    "english": "fried dumpling, fried dumplings",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 215,
+    "japanese": "おつり",
+    "english": "change",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 216,
+    "japanese": "七つ",
+    "english": "seven (things), seven",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 217,
+    "japanese": "ぜんぶで",
+    "english": "in total",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 218,
+    "japanese": "かいけい",
+    "english": "cashier",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 219,
+    "japanese": "おおい",
+    "english": "a lot of, large, a lot",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 220,
+    "japanese": "えび",
+    "english": "shrimp",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 221,
+    "japanese": "六つ",
+    "english": "six (things), six",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 222,
+    "japanese": "てんいん",
+    "english": "salesperson, waiter",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 223,
+    "japanese": "ナプキン",
+    "english": "napkin",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 224,
+    "japanese": "マーボーどうふ",
+    "english": "mapo tofu",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 225,
+    "japanese": "はし",
+    "english": "bridges, chopsticks, bridge",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 226,
+    "japanese": "からい",
+    "english": "spicy",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 227,
+    "japanese": "スープ",
+    "english": "soup",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 228,
+    "japanese": "五つ",
+    "english": "five (things), five",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 229,
+    "japanese": "いらっしゃいませ",
+    "english": "welcome",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 230,
+    "japanese": "ウーロンちゃ",
+    "english": "oolong tea",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 231,
+    "japanese": "二人",
+    "english": "two people, they, two",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 232,
+    "japanese": "なんめいさま",
+    "english": "how many people",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 233,
+    "japanese": "メニュー",
+    "english": "menu",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 234,
+    "japanese": "四人",
+    "english": "four",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 235,
+    "japanese": "つめたい",
+    "english": "cold",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 236,
+    "japanese": "タピオカティー",
+    "english": "bubble tea",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 237,
+    "japanese": "ちゅうかがい",
+    "english": "Chinatown",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 238,
+    "japanese": "ちゅうかりょうり",
+    "english": "Chinese food",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 239,
+    "japanese": "あきます",
+    "english": "opens, open",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 240,
+    "japanese": "シーフード",
+    "english": "seafood",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 241,
+    "japanese": "ぎゅうにく",
+    "english": "beef",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 242,
+    "japanese": "こしょう",
+    "english": "pepper",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 243,
+    "japanese": "やきます",
+    "english": "bake, am going to bake, grill",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 244,
+    "japanese": "そと",
+    "english": "outside, outdoors",
+    "partOfSpeech": "location",
+    "source": "duolingo"
+  },
+  {
+    "id": 245,
+    "japanese": "すずしい",
+    "english": "cool",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 246,
+    "japanese": "けしき",
+    "english": "view",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 247,
+    "japanese": "川",
+    "english": "(the) river, (the) rivers, rivers",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 248,
+    "japanese": "たのしみます",
+    "english": "going to enjoy",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 249,
+    "japanese": "雨",
+    "english": "rainy, (it) rains, rain",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 250,
+    "japanese": "くらい",
+    "english": "dark",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 251,
+    "japanese": "ピクニック",
+    "english": "picnic",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 252,
+    "japanese": "バーベキュー",
+    "english": "barbecue",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 253,
+    "japanese": "一日",
+    "english": "one day, first, a day",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 254,
+    "japanese": "五月",
+    "english": "May",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 255,
+    "japanese": "がいいです",
+    "english": "sounds good, sound good",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 256,
+    "japanese": "キャンプ",
+    "english": "camping",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 257,
+    "japanese": "ハイキング",
+    "english": "hiking",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 258,
+    "japanese": "バックパック",
+    "english": "backpack",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 259,
+    "japanese": "ほっかいどう",
+    "english": "Hokkaido",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 260,
+    "japanese": "すみ",
+    "english": "corner",
+    "partOfSpeech": "location",
+    "source": "duolingo"
+  },
+  {
+    "id": 261,
+    "japanese": "カラフルな",
+    "english": "colorful",
+    "partOfSpeech": "na-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 262,
+    "japanese": "よんひき",
+    "english": "four",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 263,
+    "japanese": "カメレオン",
+    "english": "chameleon",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 264,
+    "japanese": "なんびき",
+    "english": "how many",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 265,
+    "japanese": "さんびき",
+    "english": "three",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 266,
+    "japanese": "へや",
+    "english": "room",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 267,
+    "japanese": "口",
+    "english": "mouths, (a) mouth, tastes",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 268,
+    "japanese": "トマト",
+    "english": "tomato, tomatoes, (a) tomato",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 269,
+    "japanese": "みみ",
+    "english": "ear",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 270,
+    "japanese": "いぬ",
+    "english": "dog",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 271,
+    "japanese": "にひき",
+    "english": "two animals",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 272,
+    "japanese": "ハムスター",
+    "english": "hamster",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 273,
+    "japanese": "ちゃいろ",
+    "english": "brown",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 274,
+    "japanese": "パンケーキ",
+    "english": "pancake",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 275,
+    "japanese": "め",
+    "english": "eye",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 276,
+    "japanese": "いっぴき",
+    "english": "one",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 277,
+    "japanese": "カプチーノ",
+    "english": "cappuccinos, (a) cappuccino",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 278,
+    "japanese": "にんき",
+    "english": "popular",
+    "partOfSpeech": "na-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 279,
+    "japanese": "どうぶつ",
+    "english": "animal",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 280,
+    "japanese": "ねこ",
+    "english": "cat",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 281,
+    "japanese": "チェス",
+    "english": "chess",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 282,
+    "japanese": "ボランティア",
+    "english": "volunteer",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 283,
+    "japanese": "サークル",
+    "english": "club, clubs",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 284,
+    "japanese": "ボードゲーム",
+    "english": "board game",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 285,
+    "japanese": "キャンパス",
+    "english": "campus",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 286,
+    "japanese": "ルームメイト",
+    "english": "roommate, roommates",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 287,
+    "japanese": "りょう",
+    "english": "dorm",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 288,
+    "japanese": "駅",
+    "english": "station, train station, stations",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 289,
+    "japanese": "タガログご",
+    "english": "Tagalog",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 290,
+    "japanese": "ドイツご",
+    "english": "German",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 291,
+    "japanese": "げんご",
+    "english": "language, languages",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 292,
+    "japanese": "ドイツ",
+    "english": "Germany, German",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 293,
+    "japanese": "フィリピン",
+    "english": "the Philippines",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 294,
+    "japanese": "すうがく",
+    "english": "math",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 295,
+    "japanese": "ビジネス",
+    "english": "business",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 296,
+    "japanese": "せんこう",
+    "english": "major",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 297,
+    "japanese": "四年生",
+    "english": "senior, seniors",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 298,
+    "japanese": "三年生",
+    "english": "third grade student, junior",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 299,
+    "japanese": "サム",
+    "english": "Sam",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 300,
+    "japanese": "かい",
+    "english": "are you, will you, buy",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 301,
+    "japanese": "二年生",
+    "english": "sophomore",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 302,
+    "japanese": "一年生",
+    "english": "freshman",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 303,
+    "japanese": "何年生",
+    "english": "what school year",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 304,
+    "japanese": "みなみぐち",
+    "english": "south exit",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 305,
+    "japanese": "飲み物",
+    "english": "beverage, drink, drinks",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 306,
+    "japanese": "よびます",
+    "english": "(will) call, calls, going to call",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 307,
+    "japanese": "ゆっくりします",
+    "english": "going to relax",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 308,
+    "japanese": "ツアー",
+    "english": "tour",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 309,
+    "japanese": "インフォメーション",
+    "english": "information desk",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 310,
+    "japanese": "八百",
+    "english": "800",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 311,
+    "japanese": "はらいます",
+    "english": "pay, going to pay, will pay",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 312,
+    "japanese": "エスカレーター",
+    "english": "escalator",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 313,
+    "japanese": "きたぐち",
+    "english": "north exit",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 314,
+    "japanese": "三ばん",
+    "english": "number three",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 315,
+    "japanese": "のりかえます",
+    "english": "switching, going to transfer, are switching",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 316,
+    "japanese": "かいそく",
+    "english": "rapid-service",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 317,
+    "japanese": "二ばん",
+    "english": "number two",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 318,
+    "japanese": "オレンジ",
+    "english": "orange",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 319,
+    "japanese": "おります",
+    "english": "(we) are, (will) get off, getting off",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 320,
+    "japanese": "一ばん",
+    "english": "number one",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 321,
+    "japanese": "きっぷうりば",
+    "english": "ticket area",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 322,
+    "japanese": "モノレール",
+    "english": "monorail",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 323,
+    "japanese": "三百",
+    "english": "300, three hundred",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 324,
+    "japanese": "のります",
+    "english": "take, ride, getting on",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 325,
+    "japanese": "うた",
+    "english": "song",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 326,
+    "japanese": "ワイン",
+    "english": "wine",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 327,
+    "japanese": "ステーキ",
+    "english": "steak",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 328,
+    "japanese": "かんとく",
+    "english": "director",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 329,
+    "japanese": "ポップコーン",
+    "english": "popcorn",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 330,
+    "japanese": "えいがかん",
+    "english": "movie theater",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 331,
+    "japanese": "ホットドッグ",
+    "english": "hot dog",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 332,
+    "japanese": "よやくします",
+    "english": "am going to reserve, book, will reserve",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 333,
+    "japanese": "ブラウス",
+    "english": "blouse",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 334,
+    "japanese": "スーツ",
+    "english": "suit",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 335,
+    "japanese": "きます",
+    "english": "wears, wear, comes",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 336,
+    "japanese": "うでどけい",
+    "english": "watch",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 337,
+    "japanese": "ネックレス",
+    "english": "necklace",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 338,
+    "japanese": "プレゼント",
+    "english": "present",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 339,
+    "japanese": "げんき",
+    "english": "well, lively, fine",
+    "partOfSpeech": "na-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 340,
+    "japanese": "たんじょうび",
+    "english": "birthday",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 341,
+    "japanese": "人",
+    "english": "people, human, someone",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 342,
+    "japanese": "デート",
+    "english": "date",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 343,
+    "japanese": "カウントダウン",
+    "english": "countdown",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 344,
+    "japanese": "クリスマス",
+    "english": "Christmas",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 345,
+    "japanese": "おおみそか",
+    "english": "New Year's Eve",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 346,
+    "japanese": "イルミネーション",
+    "english": "lights display",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 347,
+    "japanese": "十二月",
+    "english": "December",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 348,
+    "japanese": "パレード",
+    "english": "parade",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 349,
+    "japanese": "ハロウィン",
+    "english": "Halloween",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 350,
+    "japanese": "パーティー",
+    "english": "party",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 351,
+    "japanese": "十月",
+    "english": "October",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 352,
+    "japanese": "三十一日",
+    "english": "thirty-first",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 353,
+    "japanese": "ダンス",
+    "english": "dance",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 354,
+    "japanese": "コミュニティーセンター",
+    "english": "community center, Community center",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 355,
+    "japanese": "コンテスト",
+    "english": "contest",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 356,
+    "japanese": "たいこ",
+    "english": "taiko drum",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 357,
+    "japanese": "食べませんか",
+    "english": "do you want to eat, won't you eat, would you like to eat",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 358,
+    "japanese": "チョコバナナ",
+    "english": "chocolate covered bananas, chocolate covered banana",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 359,
+    "japanese": "食べ物",
+    "english": "food",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 360,
+    "japanese": "おまつり",
+    "english": "festival",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 361,
+    "japanese": "八月",
+    "english": "August",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 362,
+    "japanese": "はなびたいかい",
+    "english": "fireworks display",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 363,
+    "japanese": "あそびませんか",
+    "english": "play",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 364,
+    "japanese": "行きませんか",
+    "english": "do you want to go, would you like to go, why don't we go",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 365,
+    "japanese": "こんしゅうまつ",
+    "english": "this weekend",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 366,
+    "japanese": "きじ",
+    "english": "post",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 367,
+    "japanese": "ブログ",
+    "english": "blog",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 368,
+    "japanese": "ファッション",
+    "english": "fashion",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 369,
+    "japanese": "作ります",
+    "english": "going to make, make, (I) make",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 370,
+    "japanese": "書きます",
+    "english": "will write",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 371,
+    "japanese": "バレエ",
+    "english": "ballet",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 372,
+    "japanese": "レッスン",
+    "english": "lesson",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 373,
+    "japanese": "パフォーマンス",
+    "english": "performance",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 374,
+    "japanese": "おどります",
+    "english": "dance, going to dance",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 375,
+    "japanese": "はじまります",
+    "english": "is starting, starts, begins",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 376,
+    "japanese": "こんや",
+    "english": "tonight",
+    "partOfSpeech": "time-expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 377,
+    "japanese": "かんじ",
+    "english": "kanji, Chinese character, Chinese characters",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 378,
+    "japanese": "ひらがな",
+    "english": "hiragana",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 379,
+    "japanese": "べんきょうします",
+    "english": "study, will study, studies",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 380,
+    "japanese": "ピアノ",
+    "english": "piano",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 381,
+    "japanese": "九時間",
+    "english": "nine hours",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 382,
+    "japanese": "がっき",
+    "english": "instrument",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 383,
+    "japanese": "ギター",
+    "english": "(a) guitar, (the) guitars, (the) guitar",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 384,
+    "japanese": "ひきます",
+    "english": "play, will consult, consults (a dictionary)",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 385,
+    "japanese": "何時間",
+    "english": "how many hours",
+    "partOfSpeech": "counter",
+    "source": "duolingo"
+  },
+  {
+    "id": 386,
+    "japanese": "れんしゅう",
+    "english": "practice",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 387,
+    "japanese": "バドミントン",
+    "english": "badminton",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 388,
+    "japanese": "しあい",
+    "english": "game",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 389,
+    "japanese": "四時間",
+    "english": "for four hours",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 390,
+    "japanese": "バー",
+    "english": "bar",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 391,
+    "japanese": "カラオケ",
+    "english": "karaoke",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 392,
+    "japanese": "さいご",
+    "english": "last",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 393,
+    "japanese": "うたいます",
+    "english": "sing, will sing, am going to sing",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 394,
+    "japanese": "クライアント",
+    "english": "client",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 395,
+    "japanese": "プレゼン",
+    "english": "presentation",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 396,
+    "japanese": "パソコン",
+    "english": "computer",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 397,
+    "japanese": "まで",
+    "english": "through, even, before",
+    "partOfSpeech": "particle",
+    "source": "duolingo"
+  },
+  {
+    "id": 398,
+    "japanese": "ひる休み",
+    "english": "lunch break",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 399,
+    "japanese": "しょくどう",
+    "english": "cafeteria",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 400,
+    "japanese": "二階",
+    "english": "the second floor",
+    "partOfSpeech": "counter",
+    "source": "duolingo"
+  },
+  {
+    "id": 401,
+    "japanese": "チャーハン",
+    "english": "fried rice",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 402,
+    "japanese": "フライドポテト",
+    "english": "french fries",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 403,
+    "japanese": "トレーニング",
+    "english": "job training",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 404,
+    "japanese": "プリンター",
+    "english": "printer",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 405,
+    "japanese": "から",
+    "english": "because, starting, through",
+    "partOfSpeech": "particle",
+    "source": "duolingo"
+  },
+  {
+    "id": 406,
+    "japanese": "ミーティング",
+    "english": "meeting",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 407,
+    "japanese": "一階",
+    "english": "street level",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 408,
+    "japanese": "うけつけ",
+    "english": "front desk",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 409,
+    "japanese": "よろしくおねがいします",
+    "english": "nice to meet you, glad to work with you",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 410,
+    "japanese": "何階",
+    "english": "which floor",
+    "partOfSpeech": "counter",
+    "source": "duolingo"
+  },
+  {
+    "id": 411,
+    "japanese": "ドキュメンタリー",
+    "english": "documentary",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 412,
+    "japanese": "ポスター",
+    "english": "poster",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 413,
+    "japanese": "はいゆう",
+    "english": "actor",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 414,
+    "japanese": "見ません",
+    "english": "does not see, do not watch, does not look at",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 415,
+    "japanese": "カードゲーム",
+    "english": "card game",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 416,
+    "japanese": "むずかしい",
+    "english": "difficult",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 417,
+    "japanese": "しません",
+    "english": "do not, will not, does not",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 418,
+    "japanese": "パズル",
+    "english": "puzzle",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 419,
+    "japanese": "バンド",
+    "english": "band",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 420,
+    "japanese": "アニソン",
+    "english": "anime music",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 421,
+    "japanese": "アルバム",
+    "english": "album",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 422,
+    "japanese": "ききません",
+    "english": "don't really listen to",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 423,
+    "japanese": "ポップス",
+    "english": "pop",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 424,
+    "japanese": "ノンフィクション",
+    "english": "non-fiction",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 425,
+    "japanese": "読みません",
+    "english": "does not read, do not read, (never) reads",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 426,
+    "japanese": "フィクション",
+    "english": "fiction",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 427,
+    "japanese": "あまり",
+    "english": "(not) a lot of, (not) so, (not) too",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 428,
+    "japanese": "話",
+    "english": "talking, conversation, chat",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 429,
+    "japanese": "本や",
+    "english": "bookstore",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 430,
+    "japanese": "セール",
+    "english": "sale",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 431,
+    "japanese": "コーナー",
+    "english": "section",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 432,
+    "japanese": "チョコミント",
+    "english": "mint chocolate chip",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 433,
+    "japanese": "あじ",
+    "english": "flavor",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 434,
+    "japanese": "バニラ",
+    "english": "vanilla",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 435,
+    "japanese": "かお",
+    "english": "face",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 436,
+    "japanese": "きいろい",
+    "english": "yellow",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 437,
+    "japanese": "ショー",
+    "english": "show",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 438,
+    "japanese": "キャラクター",
+    "english": "mascot",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 439,
+    "japanese": "見ましょうか",
+    "english": "should we see",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 440,
+    "japanese": "ゴーカート",
+    "english": "go-kart",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 441,
+    "japanese": "ジェットコースター",
+    "english": "rollercoaster",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 442,
+    "japanese": "すきな",
+    "english": "favorite",
+    "partOfSpeech": "na-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 443,
+    "japanese": "アトラクション",
+    "english": "attraction",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 444,
+    "japanese": "こわい",
+    "english": "scary",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 445,
+    "japanese": "おとな",
+    "english": "(the) adult, (the) adults, (an) adult",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 446,
+    "japanese": "三千",
+    "english": "3,000",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 447,
+    "japanese": "にゅうじょうりょう",
+    "english": "admission fee",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 448,
+    "japanese": "いりぐち",
+    "english": "entrance",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 449,
+    "japanese": "ごご",
+    "english": "afternoon, p.m., p.m",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 450,
+    "japanese": "つまらない",
+    "english": "boring",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 451,
+    "japanese": "はくぶつかん",
+    "english": "museum",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 452,
+    "japanese": "ゆうえんち",
+    "english": "theme park",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 453,
+    "japanese": "でかけましょう",
+    "english": "we should go out",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 454,
+    "japanese": "ジム",
+    "english": "gym",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 455,
+    "japanese": "うんどうします",
+    "english": "exercise, am going to exercise",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 456,
+    "japanese": "せんしゅ",
+    "english": "athlete, athletes, player",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 457,
+    "japanese": "プロの",
+    "english": "professional, pro",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 458,
+    "japanese": "チーム",
+    "english": "team",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 459,
+    "japanese": "しゃしんか",
+    "english": "photographer",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 460,
+    "japanese": "カメラ",
+    "english": "camera",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 461,
+    "japanese": "イベント",
+    "english": "event",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 462,
+    "japanese": "りょこうします",
+    "english": "travel, travels",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 463,
+    "japanese": "とります",
+    "english": "takes, get, going to take",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 464,
+    "japanese": "ごぜん",
+    "english": "a.m., morning",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 465,
+    "japanese": "うんてんします",
+    "english": "drive",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 466,
+    "japanese": "ナビ",
+    "english": "GPS",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 467,
+    "japanese": "うんてんしゅ",
+    "english": "driver",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 468,
+    "japanese": "あらいます",
+    "english": "wash, going to wash, washes",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 469,
+    "japanese": "ほんやくか",
+    "english": "translator",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 470,
+    "japanese": "ほんやくします",
+    "english": "translate",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 471,
+    "japanese": "としょかん",
+    "english": "library",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 472,
+    "japanese": "じしょ",
+    "english": "dictionary",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 473,
+    "japanese": "つかいます",
+    "english": "will use, uses",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 474,
+    "japanese": "マネージャー",
+    "english": "manager",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 475,
+    "japanese": "かいしゃ",
+    "english": "company",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 476,
+    "japanese": "どうりょう",
+    "english": "coworker",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 477,
+    "japanese": "しごとします",
+    "english": "work",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 478,
+    "japanese": "ききましょう",
+    "english": "we should ask",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 479,
+    "japanese": "水曜日",
+    "english": "Wednesday, Wednesdays",
+    "partOfSpeech": "counter",
+    "source": "duolingo"
+  },
+  {
+    "id": 480,
+    "japanese": "プロジェクト",
+    "english": "project",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 481,
+    "japanese": "しめきり",
+    "english": "deadline",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 482,
+    "japanese": "ななつ",
+    "english": "seven",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 483,
+    "japanese": "むっつ",
+    "english": "six",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 484,
+    "japanese": "おわります",
+    "english": "ends, end",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 485,
+    "japanese": "ききましょうか",
+    "english": "should we ask",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 486,
+    "japanese": "火曜日",
+    "english": "Tuesday, Tuesdays",
+    "partOfSpeech": "counter",
+    "source": "duolingo"
+  },
+  {
+    "id": 487,
+    "japanese": "しつもん",
+    "english": "question",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 488,
+    "japanese": "はやく",
+    "english": "fast, early, quickly",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 489,
+    "japanese": "いつつ",
+    "english": "five",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 490,
+    "japanese": "テスト",
+    "english": "test",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 491,
+    "japanese": "何曜日",
+    "english": "what day",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 492,
+    "japanese": "あります",
+    "english": "is, (they) are, have",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 493,
+    "japanese": "スミス",
+    "english": "Smith",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 494,
+    "japanese": "山田",
+    "english": "Yamada",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 495,
+    "japanese": "たくさん",
+    "english": "a lot of",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 496,
+    "japanese": "じゅぎょう",
+    "english": "class",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 497,
+    "japanese": "スペインご",
+    "english": "Spanish",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 498,
+    "japanese": "きょうしつ",
+    "english": "classroom",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 499,
+    "japanese": "ぶたにく",
+    "english": "pork",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 500,
+    "japanese": "しょっぱい",
+    "english": "salty",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 501,
+    "japanese": "コーラ",
+    "english": "cola",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 502,
+    "japanese": "飲みません",
+    "english": "(I) won't drink, don't take, (I) do not drink",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 503,
+    "japanese": "ビール",
+    "english": "beer",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 504,
+    "japanese": "とんかつ",
+    "english": "pork cutlet",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 505,
+    "japanese": "しお",
+    "english": "salt",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 506,
+    "japanese": "ソース",
+    "english": "sauce",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 507,
+    "japanese": "つかいましょう",
+    "english": "we should use",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 508,
+    "japanese": "なま",
+    "english": "raw",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 509,
+    "japanese": "とうふ",
+    "english": "(the) tofu, bean curd, tofu",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 510,
+    "japanese": "食べません",
+    "english": "don't eat, do not eat, will not eat",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 511,
+    "japanese": "魚",
+    "english": "fish",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 512,
+    "japanese": "でも",
+    "english": "but, however, neither",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 513,
+    "japanese": "ぎゅうどん",
+    "english": "beef bowl",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 514,
+    "japanese": "やさい",
+    "english": "vegetable",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 515,
+    "japanese": "しょうゆ",
+    "english": "soy sauce",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 516,
+    "japanese": "もっと",
+    "english": "more",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 517,
+    "japanese": "スーパー",
+    "english": "supermarket",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 518,
+    "japanese": "卵",
+    "english": "egg, eggs",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 519,
+    "japanese": "いっしょに",
+    "english": "together",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 520,
+    "japanese": "つくりましょう",
+    "english": "we should make",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 521,
+    "japanese": "ひま",
+    "english": "available, bored, free",
+    "partOfSpeech": "na-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 522,
+    "japanese": "木曜日",
+    "english": "Thursday, Thursdays",
+    "partOfSpeech": "counter",
+    "source": "duolingo"
+  },
+  {
+    "id": 523,
+    "japanese": "つくりましょうか",
+    "english": "shall I make, should we make, should I make",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 524,
+    "japanese": "パイ",
+    "english": "pie, pies",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 525,
+    "japanese": "四つ",
+    "english": "four (things), four",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 526,
+    "japanese": "チョコレート",
+    "english": "chocolate, chocolates",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 527,
+    "japanese": "ドーナツ",
+    "english": "donut",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 528,
+    "japanese": "二つ",
+    "english": "two",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 529,
+    "japanese": "いちご",
+    "english": "strawberry, strawberries",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 530,
+    "japanese": "クッキー",
+    "english": "cookies, cookie",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 531,
+    "japanese": "三つ",
+    "english": "three",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 532,
+    "japanese": "まっちゃ",
+    "english": "matcha",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 533,
+    "japanese": "みどり",
+    "english": "green",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 534,
+    "japanese": "一つ",
+    "english": "one (thing), one",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 535,
+    "japanese": "カップケーキ",
+    "english": "cupcake",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 536,
+    "japanese": "チーズケーキ",
+    "english": "cheesecake",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 537,
+    "japanese": "買いましょうか",
+    "english": "should we buy",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 538,
+    "japanese": "おかしや",
+    "english": "pastry shop",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 539,
+    "japanese": "がだいすきです",
+    "english": "love, loves",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 540,
+    "japanese": "あまい",
+    "english": "sweet",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 541,
+    "japanese": "はすきですか",
+    "english": "do ... like",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 542,
+    "japanese": "ケーキや",
+    "english": "cake shop",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 543,
+    "japanese": "行きましょうか",
+    "english": "should we go, would you like to go",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 544,
+    "japanese": "もの",
+    "english": "stuff",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 545,
+    "japanese": "みじかい",
+    "english": "short",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 546,
+    "japanese": "がたのしみです",
+    "english": "looking forward to, am looking forward to",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 547,
+    "japanese": "月曜日",
+    "english": "Monday",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 548,
+    "japanese": "まちます",
+    "english": "wait for",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 549,
+    "japanese": "みそかつ",
+    "english": "miso pork cutlet",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 550,
+    "japanese": "にわ",
+    "english": "garden",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 551,
+    "japanese": "かんこう",
+    "english": "sightseeing",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 552,
+    "japanese": "しろ",
+    "english": "castle",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 553,
+    "japanese": "せき",
+    "english": "seat",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 554,
+    "japanese": "べんり",
+    "english": "convenient",
+    "partOfSpeech": "na-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 555,
+    "japanese": "にのります",
+    "english": "get on, going to ride, take",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 556,
+    "japanese": "しんかんせん",
+    "english": "bullet train",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 557,
+    "japanese": "なごや",
+    "english": "Nagoya",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 558,
+    "japanese": "日本りょうり",
+    "english": "Japanese food",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 559,
+    "japanese": "金曜日",
+    "english": "Friday, Fridays",
+    "partOfSpeech": "counter",
+    "source": "duolingo"
+  },
+  {
+    "id": 560,
+    "japanese": "お母さん",
+    "english": "mom, mother, (your) mom",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 561,
+    "japanese": "すしや",
+    "english": "sushi restaurant",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 562,
+    "japanese": "ロビー",
+    "english": "(the) lobby",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 563,
+    "japanese": "りょうしん",
+    "english": "parents",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 564,
+    "japanese": "お父さん",
+    "english": "dad, (your) dad, (your) father",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 565,
+    "japanese": "食べましょう",
+    "english": "we should eat",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 566,
+    "japanese": "にく",
+    "english": "meat",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 567,
+    "japanese": "フランスりょうり",
+    "english": "French food",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 568,
+    "japanese": "かえりましょう",
+    "english": "we should return",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 569,
+    "japanese": "休みましょう",
+    "english": "we should rest",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 570,
+    "japanese": "どうぶつえん",
+    "english": "zoo",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 571,
+    "japanese": "ライオン",
+    "english": "lion",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 572,
+    "japanese": "とりましょう",
+    "english": "we should take",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 573,
+    "japanese": "ひろば",
+    "english": "plaza",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 574,
+    "japanese": "しゃしん",
+    "english": "photo",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 575,
+    "japanese": "え",
+    "english": "painting",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 576,
+    "japanese": "で",
+    "english": "as a, under, through",
+    "partOfSpeech": "particle",
+    "source": "duolingo"
+  },
+  {
+    "id": 577,
+    "japanese": "見ましょう",
+    "english": "let's see, let's view, let's watch",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 578,
+    "japanese": "びじゅつかん",
+    "english": "art museum",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 579,
+    "japanese": "飲みましょう",
+    "english": "let's have, let's drink",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 580,
+    "japanese": "チケット",
+    "english": "ticket, tickets",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 581,
+    "japanese": "買いましょう",
+    "english": "we should buy, let's buy",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 582,
+    "japanese": "会います",
+    "english": "am going to meet up, (will) meet, (is) meeting",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 583,
+    "japanese": "スーツケース",
+    "english": "suitcase",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 584,
+    "japanese": "ひこうき",
+    "english": "plane",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 585,
+    "japanese": "会いましょう",
+    "english": "let's meet, see you",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 586,
+    "japanese": "りょこう",
+    "english": "trip",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 587,
+    "japanese": "フランス",
+    "english": "French, France",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 588,
+    "japanese": "行きましょう",
+    "english": "let's go",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 589,
+    "japanese": "しましょうか",
+    "english": "shall (we), should (we)",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 590,
+    "japanese": "来月",
+    "english": "next month",
+    "partOfSpeech": "counter",
+    "source": "duolingo"
+  },
+  {
+    "id": 591,
+    "japanese": "休みの日",
+    "english": "day off",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 592,
+    "japanese": "ガーデニング",
+    "english": "gardening",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 593,
+    "japanese": "たのしい",
+    "english": "fun",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 594,
+    "japanese": "りょうり",
+    "english": "cuisine, dish, food",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 595,
+    "japanese": "買い物",
+    "english": "shopping",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 596,
+    "japanese": "そして",
+    "english": "then",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 597,
+    "japanese": "たいへん",
+    "english": "tough, very, hard",
+    "partOfSpeech": "na-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 598,
+    "japanese": "ストレッチ",
+    "english": "stretch",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 599,
+    "japanese": "にはいります",
+    "english": "am going to take, take, going to enroll",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 600,
+    "japanese": "おふろ",
+    "english": "bath",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 601,
+    "japanese": "せんたく",
+    "english": "laundry",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 602,
+    "japanese": "だれ",
+    "english": "who",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 603,
+    "japanese": "いろいろ",
+    "english": "all sorts of",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 604,
+    "japanese": "そうじ",
+    "english": "cleaning, clean",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 605,
+    "japanese": "てつだいます",
+    "english": "help",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 606,
+    "japanese": "しゅくだい",
+    "english": "homework",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 607,
+    "japanese": "何",
+    "english": "anything, which, what",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 608,
+    "japanese": "がっこう",
+    "english": "school",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 609,
+    "japanese": "かじ",
+    "english": "chore",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 610,
+    "japanese": "あと",
+    "english": "after",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 611,
+    "japanese": "しごと",
+    "english": "work",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 612,
+    "japanese": "うち",
+    "english": "we, (my) house, home",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 613,
+    "japanese": "かえります",
+    "english": "am returning, will return home, returning",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 614,
+    "japanese": "ひとり",
+    "english": "one",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 615,
+    "japanese": "こども",
+    "english": "kid, (the) child, (the) children",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 616,
+    "japanese": "おこさん",
+    "english": "kid, kids",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 617,
+    "japanese": "ソウル",
+    "english": "Seoul",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 618,
+    "japanese": "かんこくご",
+    "english": "Korean",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 619,
+    "japanese": "ふたり",
+    "english": "two",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 620,
+    "japanese": "マレーシア",
+    "english": "Malaysia",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 621,
+    "japanese": "えいご",
+    "english": "English",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 622,
+    "japanese": "おにいさん",
+    "english": "big brother, older brothers, older brother",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 623,
+    "japanese": "いもうとさん",
+    "english": "younger sister",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 624,
+    "japanese": "ちゅうごくご",
+    "english": "Chinese",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 625,
+    "japanese": "ができます",
+    "english": "know, can play",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 626,
+    "japanese": "たいわん",
+    "english": "Taiwan",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 627,
+    "japanese": "日本ご",
+    "english": "Japanese",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 628,
+    "japanese": "コーチ",
+    "english": "coach",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 629,
+    "japanese": "オーストラリア",
+    "english": "Australia, Australian",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 630,
+    "japanese": "おねえさん",
+    "english": "big sister, big sisters, older sisters",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 631,
+    "japanese": "が",
+    "english": "(softens the tone), (indicates the subject), but",
+    "partOfSpeech": "particle",
+    "source": "duolingo"
+  },
+  {
+    "id": 632,
+    "japanese": "います",
+    "english": "is, am, has been",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 633,
+    "japanese": "はいますか",
+    "english": "do ... have",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 634,
+    "japanese": "きょうだい",
+    "english": "sibling",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 635,
+    "japanese": "おとうとさん",
+    "english": "younger brother",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 636,
+    "japanese": "さむい",
+    "english": "cold",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 637,
+    "japanese": "ゆき",
+    "english": "snowy",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 638,
+    "japanese": "ココア",
+    "english": "cocoa",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 639,
+    "japanese": "おんせん",
+    "english": "hot spring",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 640,
+    "japanese": "ふゆ",
+    "english": "winter",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 641,
+    "japanese": "こんばん",
+    "english": "this evening, tonight",
+    "partOfSpeech": "time-expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 642,
+    "japanese": "九月",
+    "english": "September, (in) September",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 643,
+    "japanese": "くもり",
+    "english": "cloudy",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 644,
+    "japanese": "コンサート",
+    "english": "concert, concerts",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 645,
+    "japanese": "あき",
+    "english": "fall",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 646,
+    "japanese": "休み",
+    "english": "break",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 647,
+    "japanese": "はなび",
+    "english": "fireworks",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 648,
+    "japanese": "あつい",
+    "english": "hot, thick",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 649,
+    "japanese": "プール",
+    "english": "swimming pools, pools, pool",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 650,
+    "japanese": "七月",
+    "english": "July",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 651,
+    "japanese": "はれ",
+    "english": "sunny",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 652,
+    "japanese": "なつ",
+    "english": "summer",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 653,
+    "japanese": "日",
+    "english": "day, the sun, (a) day",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 654,
+    "japanese": "うみ",
+    "english": "beach",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 655,
+    "japanese": "こうえん",
+    "english": "park, performance, parks",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 656,
+    "japanese": "はる",
+    "english": "spring",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 657,
+    "japanese": "あめ",
+    "english": "rainy",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 658,
+    "japanese": "てんき",
+    "english": "weather",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 659,
+    "japanese": "あたたかい",
+    "english": "warm",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 660,
+    "japanese": "ちゃんと",
+    "english": "proper, properly, full",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 661,
+    "japanese": "くすりを飲みます",
+    "english": "take",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 662,
+    "japanese": "休みます",
+    "english": "rest, take a break, absent (from)",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 663,
+    "japanese": "きょう",
+    "english": "today",
+    "partOfSpeech": "time-expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 664,
+    "japanese": "ちかく",
+    "english": "nearby",
+    "partOfSpeech": "location",
+    "source": "duolingo"
+  },
+  {
+    "id": 665,
+    "japanese": "ごかぞく",
+    "english": "your family, family",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 666,
+    "japanese": "アレルギー",
+    "english": "allergy",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 667,
+    "japanese": "ごりょうしん",
+    "english": "(your) parents, parents",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 668,
+    "japanese": "でんわばんごう",
+    "english": "phone number",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 669,
+    "japanese": "何さい",
+    "english": "how old",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 670,
+    "japanese": "〇",
+    "english": "0, zero",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 671,
+    "japanese": "九",
+    "english": "nine",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 672,
+    "japanese": "きゅうきゅうしゃ",
+    "english": "ambulance",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 673,
+    "japanese": "おねがいします",
+    "english": "please, I need ... please",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 674,
+    "japanese": "びょういん",
+    "english": "hospital",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 675,
+    "japanese": "けいさつ",
+    "english": "police",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 676,
+    "japanese": "あぶない",
+    "english": "dangerous",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 677,
+    "japanese": "ぐあいがわるい",
+    "english": "unwell",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 678,
+    "japanese": "すわります",
+    "english": "sit, going to sit",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 679,
+    "japanese": "だいじょうぶ",
+    "english": "OK",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 680,
+    "japanese": "どうですか",
+    "english": "how are things, why don't, how is",
+    "partOfSpeech": "expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 681,
+    "japanese": "おみやげ",
+    "english": "souvenir",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 682,
+    "japanese": "おかし",
+    "english": "snack",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 683,
+    "japanese": "ポストカード",
+    "english": "postcard",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 684,
+    "japanese": "ふじさん",
+    "english": "Mt. Fuji",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 685,
+    "japanese": "高い",
+    "english": "tall",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 686,
+    "japanese": "山",
+    "english": "mountain, mount, mountains",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 687,
+    "japanese": "じんじゃ",
+    "english": "shrine",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 688,
+    "japanese": "ラーメンや",
+    "english": "ramen shop",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 689,
+    "japanese": "ピザや",
+    "english": "pizza shop",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 690,
+    "japanese": "はらじゅく",
+    "english": "Harajuku",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 691,
+    "japanese": "デザート",
+    "english": "dessert",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 692,
+    "japanese": "あれ",
+    "english": "hey, that (one) (over there), what",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 693,
+    "japanese": "何ですか",
+    "english": "what (is), what are, what's",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 694,
+    "japanese": "おてら",
+    "english": "temple",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 695,
+    "japanese": "たてもの",
+    "english": "building",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 696,
+    "japanese": "な",
+    "english": "do not, (adjective ending), don't",
+    "partOfSpeech": "particle",
+    "source": "duolingo"
+  },
+  {
+    "id": 697,
+    "japanese": "ところ",
+    "english": "place",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 698,
+    "japanese": "ほんとうに",
+    "english": "really, truly",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 699,
+    "japanese": "ながい",
+    "english": "long",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 700,
+    "japanese": "しゅうてん",
+    "english": "final stop",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 701,
+    "japanese": "時間",
+    "english": "time, hour, hours",
+    "partOfSpeech": "counter",
+    "source": "duolingo"
+  },
+  {
+    "id": 702,
+    "japanese": "分",
+    "english": "minute, minutes",
+    "partOfSpeech": "counter",
+    "source": "duolingo"
+  },
+  {
+    "id": 703,
+    "japanese": "ぐらい",
+    "english": "about",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 704,
+    "japanese": "かかります",
+    "english": "take, (it) takes, (it) will take",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 705,
+    "japanese": "はやい",
+    "english": "fast",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 706,
+    "japanese": "十分",
+    "english": "sufficient, enough, adequate",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 707,
+    "japanese": "どの",
+    "english": "any, each, which",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 708,
+    "japanese": "もうすぐ",
+    "english": "soon, almost, shortly",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 709,
+    "japanese": "あさくさ",
+    "english": "Asakusa",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 710,
+    "japanese": "うえのこうえん",
+    "english": "Ueno Park",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 711,
+    "japanese": "来ます",
+    "english": "will be here, will come, is coming",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 712,
+    "japanese": "つぎの",
+    "english": "next",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 713,
+    "japanese": "つぎ",
+    "english": "next",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 714,
+    "japanese": "よこはま",
+    "english": "Yokohama",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 715,
+    "japanese": "バス",
+    "english": "bus",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 716,
+    "japanese": "あきはばら",
+    "english": "Akihabara",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 717,
+    "japanese": "しぶや",
+    "english": "Shibuya",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 718,
+    "japanese": "行きます",
+    "english": "am going, are going, go",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 719,
+    "japanese": "でんしゃ",
+    "english": "train",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 720,
+    "japanese": "こんしゅう",
+    "english": "this week",
+    "partOfSpeech": "time-expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 721,
+    "japanese": "いつ",
+    "english": "when, what time",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 722,
+    "japanese": "つくえ",
+    "english": "desk",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 723,
+    "japanese": "せんたくき",
+    "english": "washing machine",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 724,
+    "japanese": "れいぞうこ",
+    "english": "fridge",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 725,
+    "japanese": "いす",
+    "english": "chair, chairs",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 726,
+    "japanese": "テーブル",
+    "english": "table, tables",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 727,
+    "japanese": "でんしレンジ",
+    "english": "microwave",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 728,
+    "japanese": "ふとん",
+    "english": "futon, futons",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 729,
+    "japanese": "たぶん",
+    "english": "probably",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 730,
+    "japanese": "ほんだな",
+    "english": "bookshelf",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 731,
+    "japanese": "シャワー",
+    "english": "shower, showers",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 732,
+    "japanese": "そうじき",
+    "english": "vacuum cleaner",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 733,
+    "japanese": "エアコン",
+    "english": "air conditioning, air conditioners, air conditioner",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 734,
+    "japanese": "ベッド",
+    "english": "bed, beds",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 735,
+    "japanese": "せまい",
+    "english": "cramped",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 736,
+    "japanese": "リビング",
+    "english": "living room",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 737,
+    "japanese": "キッチン",
+    "english": "kitchen",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 738,
+    "japanese": "があります",
+    "english": "is, there is, there are",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 739,
+    "japanese": "アパート",
+    "english": "apartment building, apartment, apartments",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 740,
+    "japanese": "ひっこします",
+    "english": "am going to move, is going to move, move",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 741,
+    "japanese": "まだ",
+    "english": "still, yet, too",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 742,
+    "japanese": "ひろい",
+    "english": "spacious",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 743,
+    "japanese": "いえ",
+    "english": "house",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 744,
+    "japanese": "れんあい",
+    "english": "romance",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 745,
+    "japanese": "コメディ",
+    "english": "comedy",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 746,
+    "japanese": "ほんとうですか",
+    "english": "really",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 747,
+    "japanese": "アクション",
+    "english": "action",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 748,
+    "japanese": "アメリカの",
+    "english": "... of the US, American, ... of the United States",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 749,
+    "japanese": "どんな",
+    "english": "any, what kind of, what (sort of)",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 750,
+    "japanese": "ファンタジー",
+    "english": "fantasy",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 751,
+    "japanese": "ホラー",
+    "english": "horror",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 752,
+    "japanese": "がすきですか",
+    "english": "do you like",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 753,
+    "japanese": "しゅみはありますか",
+    "english": "do you have a hobby",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 754,
+    "japanese": "ミステリー",
+    "english": "mystery",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 755,
+    "japanese": "Kポップ",
+    "english": "K-pop",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 756,
+    "japanese": "日本の",
+    "english": "Japan's, of Japan, Japanese",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 757,
+    "japanese": "がすきです",
+    "english": "like",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 758,
+    "japanese": "ベトナム",
+    "english": "Vietnam",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 759,
+    "japanese": "かんこく",
+    "english": "Korea, korean",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 760,
+    "japanese": "かのじょ",
+    "english": "she, girlfriend, her",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 761,
+    "japanese": "ちゅうごく",
+    "english": "China",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 762,
+    "japanese": "さんは",
+    "english": "Mr./Ms.",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 763,
+    "japanese": "かれし",
+    "english": "boyfriend",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 764,
+    "japanese": "アンドリュー",
+    "english": "Andrew",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 765,
+    "japanese": "と言います",
+    "english": "tell, say, says",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 766,
+    "japanese": "エリカ",
+    "english": "Erica, Erika",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 767,
+    "japanese": "言います",
+    "english": "tell, tells, say",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 768,
+    "japanese": "こちら",
+    "english": "this, these, (over) here",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 769,
+    "japanese": "ダニエル",
+    "english": "Daniel",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 770,
+    "japanese": "はしります",
+    "english": "runs, run",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 771,
+    "japanese": "飲みます",
+    "english": "will have, drink, having",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 772,
+    "japanese": "パスタ",
+    "english": "pasta",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 773,
+    "japanese": "ねます",
+    "english": "sleep, go to sleep, will go to sleep",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 774,
+    "japanese": "シャワーをあびます",
+    "english": "take a shower",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 775,
+    "japanese": "メールを読みます",
+    "english": "check emails",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 776,
+    "japanese": "あした",
+    "english": "tomorrow",
+    "partOfSpeech": "time-expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 777,
+    "japanese": "らいしゅう",
+    "english": "next week",
+    "partOfSpeech": "time-expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 778,
+    "japanese": "バレーボール",
+    "english": "volleyball",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 779,
+    "japanese": "まいしゅう",
+    "english": "every week",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 780,
+    "japanese": "四時",
+    "english": "four o'clock",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 781,
+    "japanese": "つくります",
+    "english": "make",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 782,
+    "japanese": "食べます",
+    "english": "eat, am going to eat, will eat",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 783,
+    "japanese": "何時に",
+    "english": "(at) what time",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 784,
+    "japanese": "おきます",
+    "english": "get up, going to wake up, wake up",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 785,
+    "japanese": "新聞",
+    "english": "newspaper",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 786,
+    "japanese": "ラジオ",
+    "english": "radio",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 787,
+    "japanese": "何時",
+    "english": "when, what time",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 788,
+    "japanese": "いつも",
+    "english": "always, all the time, never",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 789,
+    "japanese": "でぐち",
+    "english": "exit",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 790,
+    "japanese": "じはんき",
+    "english": "vending machines, vending machine",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 791,
+    "japanese": "コインロッカー",
+    "english": "storage lockers",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 792,
+    "japanese": "ちかい",
+    "english": "close",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 793,
+    "japanese": "カフェ",
+    "english": "cafe",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 794,
+    "japanese": "にかい",
+    "english": "the second floor, two",
+    "partOfSpeech": "counter",
+    "source": "duolingo"
+  },
+  {
+    "id": 795,
+    "japanese": "かいだん",
+    "english": "stairs",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 796,
+    "japanese": "コンセント",
+    "english": "outlet",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 797,
+    "japanese": "とおい",
+    "english": "far",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 798,
+    "japanese": "でんわ",
+    "english": "phone",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 799,
+    "japanese": "ちか",
+    "english": "underground level",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 800,
+    "japanese": "タクシー",
+    "english": "taxi",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 801,
+    "japanese": "エレベーター",
+    "english": "elevator",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 802,
+    "japanese": "おてあらい",
+    "english": "restroom",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 803,
+    "japanese": "wifi",
+    "english": "wifi",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 804,
+    "japanese": "ありません",
+    "english": "there are no, (it) is not, has nothing",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 805,
+    "japanese": "ゴミばこ",
+    "english": "trash can",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 806,
+    "japanese": "のりかえ",
+    "english": "transfer",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 807,
+    "japanese": "あそこ",
+    "english": "over there",
+    "partOfSpeech": "location",
+    "source": "duolingo"
+  },
+  {
+    "id": 808,
+    "japanese": "かいさつ",
+    "english": "ticket gate",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 809,
+    "japanese": "ありますか",
+    "english": "is (there), is (it), are (there)",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 810,
+    "japanese": "いっかい",
+    "english": "first floor",
+    "partOfSpeech": "counter",
+    "source": "duolingo"
+  },
+  {
+    "id": 811,
+    "japanese": "ホーム",
+    "english": "platform",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 812,
+    "japanese": "どうが",
+    "english": "video",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 813,
+    "japanese": "じゅうどう",
+    "english": "judo",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 814,
+    "japanese": "テニス",
+    "english": "tennis",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 815,
+    "japanese": "話します",
+    "english": "speaks, speak, tells",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 816,
+    "japanese": "日曜日",
+    "english": "Sunday",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 817,
+    "japanese": "ゲーム",
+    "english": "video games",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 818,
+    "japanese": "からて",
+    "english": "karate",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 819,
+    "japanese": "でかけます",
+    "english": "go out, am going to go out",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 820,
+    "japanese": "土曜日",
+    "english": "Saturday, Saturdays",
+    "partOfSpeech": "counter",
+    "source": "duolingo"
+  },
+  {
+    "id": 821,
+    "japanese": "買います",
+    "english": "will buy",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 822,
+    "japanese": "スポーツ",
+    "english": "sports",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 823,
+    "japanese": "ヨガ",
+    "english": "yoga",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 824,
+    "japanese": "ともだち",
+    "english": "friend, friends",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 825,
+    "japanese": "ドラマ",
+    "english": "drama",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 826,
+    "japanese": "あそびます",
+    "english": "hang out, hangs out, (I) will play",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 827,
+    "japanese": "およぎます",
+    "english": "swim, will swim, swims",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 828,
+    "japanese": "しゅうまつ",
+    "english": "weekend",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 829,
+    "japanese": "ひとりで",
+    "english": "by myself, by herself, alone",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 830,
+    "japanese": "アイスコーヒー",
+    "english": "iced coffee",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 831,
+    "japanese": "アイスクリーム",
+    "english": "ice cream, ice creams",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 832,
+    "japanese": "こうちゃ",
+    "english": "black teas, black tea, tea",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 833,
+    "japanese": "小さい",
+    "english": "small, little",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 834,
+    "japanese": "すこし",
+    "english": "a bit",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 835,
+    "japanese": "みそしる",
+    "english": "miso soup",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 836,
+    "japanese": "サラダ",
+    "english": "salad, salads",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 837,
+    "japanese": "そば",
+    "english": "soba",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 838,
+    "japanese": "大きい",
+    "english": "big",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 839,
+    "japanese": "おにぎり",
+    "english": "rice balls, rice ball, onigiri",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 840,
+    "japanese": "よっつ",
+    "english": "four",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 841,
+    "japanese": "ええと",
+    "english": "um",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 842,
+    "japanese": "みっつ",
+    "english": "three",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 843,
+    "japanese": "じゃあ",
+    "english": "well then, well, see you",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 844,
+    "japanese": "ふたつ",
+    "english": "two",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 845,
+    "japanese": "あ",
+    "english": "ah, oh",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 846,
+    "japanese": "ひとつ",
+    "english": "one",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 847,
+    "japanese": "水",
+    "english": "water, waters",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 848,
+    "japanese": "レストラン",
+    "english": "restaurant",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 849,
+    "japanese": "ていしょく",
+    "english": "meal set, meal sets",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 850,
+    "japanese": "うどん",
+    "english": "udon",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 851,
+    "japanese": "てんぷら",
+    "english": "tempura",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 852,
+    "japanese": "ジャケット",
+    "english": "jacket",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 853,
+    "japanese": "たかい",
+    "english": "expensive, big, tall",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 854,
+    "japanese": "くろい",
+    "english": "black",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 855,
+    "japanese": "みせ",
+    "english": "store",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 856,
+    "japanese": "ありがとうございます",
+    "english": "thank you",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 857,
+    "japanese": "千",
+    "english": "thousand",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 858,
+    "japanese": "いくら",
+    "english": "how much",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 859,
+    "japanese": "ネクタイ",
+    "english": "tie, necktie, ties",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 860,
+    "japanese": "えん",
+    "english": "yen",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 861,
+    "japanese": "やすい",
+    "english": "cheap, inexpensive",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 862,
+    "japanese": "百",
+    "english": "hundred",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 863,
+    "japanese": "あの",
+    "english": "those, ah, that (over there)",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 864,
+    "japanese": "あおい",
+    "english": "blue",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 865,
+    "japanese": "いい",
+    "english": "good, like, well",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 866,
+    "japanese": "ドレス",
+    "english": "dress",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 867,
+    "japanese": "すてき",
+    "english": "lovely, nice, cute",
+    "partOfSpeech": "na-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 868,
+    "japanese": "がほしいです",
+    "english": "want",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 869,
+    "japanese": "スカート",
+    "english": "skirt",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 870,
+    "japanese": "Tシャツ",
+    "english": "t-shirt",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 871,
+    "japanese": "新しい",
+    "english": "new, newer",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 872,
+    "japanese": "ね",
+    "english": "isn't it?",
+    "partOfSpeech": "particle",
+    "source": "duolingo"
+  },
+  {
+    "id": 873,
+    "japanese": "ふく",
+    "english": "clothes",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 874,
+    "japanese": "ダサい",
+    "english": "hideous",
+    "partOfSpeech": "na-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 875,
+    "japanese": "はちょっと",
+    "english": "I don't really like, doesn't work very well, kind of",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 876,
+    "japanese": "さいふ",
+    "english": "wallet",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 877,
+    "japanese": "古い",
+    "english": "old",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 878,
+    "japanese": "ばんごはん",
+    "english": "dinner",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 879,
+    "japanese": "まいばん",
+    "english": "every night",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 880,
+    "japanese": "九時",
+    "english": "nine o'clock",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 881,
+    "japanese": "半",
+    "english": "thirty",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 882,
+    "japanese": "八",
+    "english": "eight",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 883,
+    "japanese": "べんとう",
+    "english": "boxed lunch",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 884,
+    "japanese": "ひるごはん",
+    "english": "lunch",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 885,
+    "japanese": "十二",
+    "english": "twelve",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 886,
+    "japanese": "十",
+    "english": "ten",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 887,
+    "japanese": "十一",
+    "english": "eleven",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 888,
+    "japanese": "あさごはん",
+    "english": "breakfast",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 889,
+    "japanese": "七時",
+    "english": "seven o'clock",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 890,
+    "japanese": "時",
+    "english": "o'clock",
+    "partOfSpeech": "counter",
+    "source": "duolingo"
+  },
+  {
+    "id": 891,
+    "japanese": "コーヒー",
+    "english": "coffee",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 892,
+    "japanese": "まいあさ",
+    "english": "every morning",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 893,
+    "japanese": "のみます",
+    "english": "drink, drinks, (will) drink",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 894,
+    "japanese": "ジュース",
+    "english": "juice",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 895,
+    "japanese": "まいにち",
+    "english": "every day",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 896,
+    "japanese": "パン",
+    "english": "bread",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 897,
+    "japanese": "サンドイッチ",
+    "english": "sandwich",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 898,
+    "japanese": "たべます",
+    "english": "eat, eats",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 899,
+    "japanese": "Jポップ",
+    "english": "J-pop",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 900,
+    "japanese": "まんが",
+    "english": "manga",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 901,
+    "japanese": "アニメ",
+    "english": "anime",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 902,
+    "japanese": "やきゅう",
+    "english": "baseball",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 903,
+    "japanese": "ざっし",
+    "english": "magazines",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 904,
+    "japanese": "本",
+    "english": "books",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 905,
+    "japanese": "読みます",
+    "english": "read, will read, reads",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 906,
+    "japanese": "ニュース",
+    "english": "news",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 907,
+    "japanese": "おんがく",
+    "english": "music",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 908,
+    "japanese": "ロック",
+    "english": "rock",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 909,
+    "japanese": "ききます",
+    "english": "listen, listens, ask",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 910,
+    "japanese": "ジャズ",
+    "english": "jazz",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 911,
+    "japanese": "サッカー",
+    "english": "soccer",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 912,
+    "japanese": "ときどき",
+    "english": "sometimes",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 913,
+    "japanese": "します",
+    "english": "makes, are doing, make",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 914,
+    "japanese": "バスケットボール",
+    "english": "basketball",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 915,
+    "japanese": "を",
+    "english": "through, with, for",
+    "partOfSpeech": "particle",
+    "source": "duolingo"
+  },
+  {
+    "id": 916,
+    "japanese": "よく",
+    "english": "often",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 917,
+    "japanese": "えいが",
+    "english": "movies",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 918,
+    "japanese": "テレビ",
+    "english": "TV",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 919,
+    "japanese": "見ます",
+    "english": "watch, will watch, watches",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 920,
+    "japanese": "おっと",
+    "english": "my husband",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 921,
+    "japanese": "七",
+    "english": "7, seven, seventh",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 922,
+    "japanese": "あたまがいい",
+    "english": "smart",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 923,
+    "japanese": "むすこ",
+    "english": "my son",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 924,
+    "japanese": "おしゃれ",
+    "english": "fashionable, stylish, well-dressed",
+    "partOfSpeech": "na-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 925,
+    "japanese": "むすめ",
+    "english": "my daughter",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 926,
+    "japanese": "六",
+    "english": "six",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 927,
+    "japanese": "つま",
+    "english": "my wife",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 928,
+    "japanese": "だいがくせい",
+    "english": "college student",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 929,
+    "japanese": "ゆうめい",
+    "english": "famous",
+    "partOfSpeech": "na-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 930,
+    "japanese": "かんごし",
+    "english": "nurse",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 931,
+    "japanese": "おとうと",
+    "english": "my younger brother",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 932,
+    "japanese": "うるさい",
+    "english": "noisy",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 933,
+    "japanese": "五",
+    "english": "5, five",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 934,
+    "japanese": "あに",
+    "english": "my older brother",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 935,
+    "japanese": "かいしゃいん",
+    "english": "office worker",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 936,
+    "japanese": "あね",
+    "english": "my older sister",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 937,
+    "japanese": "四",
+    "english": "four",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 938,
+    "japanese": "いもうと",
+    "english": "my younger sister",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 939,
+    "japanese": "さい",
+    "english": "years old",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 940,
+    "japanese": "いそがしい",
+    "english": "busy",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 941,
+    "japanese": "エンジニア",
+    "english": "engineer",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 942,
+    "japanese": "父",
+    "english": "dad",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 943,
+    "japanese": "かぞく",
+    "english": "family",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 944,
+    "japanese": "母",
+    "english": "mom, mother, my mom",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 945,
+    "japanese": "まち",
+    "english": "town, wait, city",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 946,
+    "japanese": "とても",
+    "english": "very",
+    "partOfSpeech": "adverb",
+    "source": "duolingo"
+  },
+  {
+    "id": 947,
+    "japanese": "きれい",
+    "english": "clean",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 948,
+    "japanese": "しずか",
+    "english": "quiet",
+    "partOfSpeech": "na-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 949,
+    "japanese": "トロント",
+    "english": "Toronto",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 950,
+    "japanese": "にぎやか",
+    "english": "lively",
+    "partOfSpeech": "na-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 951,
+    "japanese": "とし",
+    "english": "years, cities, city",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 952,
+    "japanese": "どう",
+    "english": "how (about), what, how",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 953,
+    "japanese": "日本",
+    "english": "Japan, Japanese",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 954,
+    "japanese": "おおさか",
+    "english": "Osaka",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 955,
+    "japanese": "京都",
+    "english": "Kyoto",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 956,
+    "japanese": "にすんでいます",
+    "english": "is living",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 957,
+    "japanese": "ニューヨーク",
+    "english": "New York",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 958,
+    "japanese": "も",
+    "english": "even, any, also",
+    "partOfSpeech": "particle",
+    "source": "duolingo"
+  },
+  {
+    "id": 959,
+    "japanese": "しゅっしん",
+    "english": "from, origin, hometown",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 960,
+    "japanese": "東京",
+    "english": "Tokyo",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 961,
+    "japanese": "私",
+    "english": "I",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 962,
+    "japanese": "ようこそ",
+    "english": "welcome",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 963,
+    "japanese": "おはようございます",
+    "english": "good morning",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 964,
+    "japanese": "はじめまして",
+    "english": "nice to meet you, how do you do",
+    "partOfSpeech": "expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 965,
+    "japanese": "おなまえは",
+    "english": "what's your name",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 966,
+    "japanese": "かばん",
+    "english": "bag",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 967,
+    "japanese": "中山",
+    "english": "Nakayama",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 968,
+    "japanese": "田中",
+    "english": "Tanaka",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 969,
+    "japanese": "山口",
+    "english": "Yamaguchi",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 970,
+    "japanese": "パスポート",
+    "english": "passport",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 971,
+    "japanese": "の",
+    "english": "for, 's, one",
+    "partOfSpeech": "particle",
+    "source": "duolingo"
+  },
+  {
+    "id": 972,
+    "japanese": "スマホ",
+    "english": "smartphone",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 973,
+    "japanese": "ちず",
+    "english": "map",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 974,
+    "japanese": "きっぷ",
+    "english": "ticket",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 975,
+    "japanese": "じゃないです",
+    "english": "is not, we're not, aren't",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 976,
+    "japanese": "ちかてつ",
+    "english": "subway",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 977,
+    "japanese": "くうこう",
+    "english": "airport",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 978,
+    "japanese": "はん",
+    "english": "thirty",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 979,
+    "japanese": "すみません",
+    "english": "excuse me",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 980,
+    "japanese": "ごろ",
+    "english": "around, about",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 981,
+    "japanese": "いま",
+    "english": "now, current",
+    "partOfSpeech": "time-expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 982,
+    "japanese": "一",
+    "english": "one, an, a",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 983,
+    "japanese": "二",
+    "english": "two, 2",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 984,
+    "japanese": "なんじ",
+    "english": "what time",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 985,
+    "japanese": "三",
+    "english": "3, three, third",
+    "partOfSpeech": "number",
+    "source": "duolingo"
+  },
+  {
+    "id": 986,
+    "japanese": "じ",
+    "english": "o'clock",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 987,
+    "japanese": "に",
+    "english": "to, in, as (a)",
+    "partOfSpeech": "particle",
+    "source": "duolingo"
+  },
+  {
+    "id": 988,
+    "japanese": "いち",
+    "english": "one, an",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 989,
+    "japanese": "やまぐち",
+    "english": "Yamaguchi",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 990,
+    "japanese": "おもしろい",
+    "english": "interesting, fun, funny",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 991,
+    "japanese": "その",
+    "english": "the, that, its",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 992,
+    "japanese": "かわいい",
+    "english": "cuter, cute, pretty",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 993,
+    "japanese": "あかるい",
+    "english": "bright, cheerful, well-lit",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 994,
+    "japanese": "たなか",
+    "english": "Tanaka",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 995,
+    "japanese": "この",
+    "english": "this, these",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 996,
+    "japanese": "なかやま",
+    "english": "Nakayama",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 997,
+    "japanese": "それら",
+    "english": "they, them, those",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 998,
+    "japanese": "これら",
+    "english": "these",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 999,
+    "japanese": "くつ",
+    "english": "shoes, shoe",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1000,
+    "japanese": "しろい",
+    "english": "white",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 1001,
+    "japanese": "コート",
+    "english": "coat",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1002,
+    "japanese": "あかい",
+    "english": "red",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 1003,
+    "japanese": "わたしの",
+    "english": "my, mine",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1004,
+    "japanese": "かさ",
+    "english": "umbrella, umbrellas",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1005,
+    "japanese": "ぼうし",
+    "english": "hat, hats",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1006,
+    "japanese": "そこ",
+    "english": "there",
+    "partOfSpeech": "location",
+    "source": "duolingo"
+  },
+  {
+    "id": 1007,
+    "japanese": "だいがく",
+    "english": "university, college",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1008,
+    "japanese": "えき",
+    "english": "station, train station, stations",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1009,
+    "japanese": "デパート",
+    "english": "department store",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1010,
+    "japanese": "ここ",
+    "english": "here",
+    "partOfSpeech": "location",
+    "source": "duolingo"
+  },
+  {
+    "id": 1011,
+    "japanese": "バスてい",
+    "english": "bus stop",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1012,
+    "japanese": "ホテル",
+    "english": "hotel",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1013,
+    "japanese": "コンビニ",
+    "english": "convenience store",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1014,
+    "japanese": "どこ",
+    "english": "where",
+    "partOfSpeech": "question-word",
+    "source": "duolingo"
+  },
+  {
+    "id": 1015,
+    "japanese": "ブラジルじん",
+    "english": "Brazilian",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1016,
+    "japanese": "イギリスじん",
+    "english": "British",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1017,
+    "japanese": "ブラジル",
+    "english": "Brazil",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1018,
+    "japanese": "イギリス",
+    "english": "Britain, the United Kingdom, British",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1019,
+    "japanese": "にほんじん",
+    "english": "Japanese",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1020,
+    "japanese": "カナダ",
+    "english": "Canada",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1021,
+    "japanese": "アメリカじん",
+    "english": "American",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1022,
+    "japanese": "カナダじん",
+    "english": "Canadian",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1023,
+    "japanese": "アメリカ",
+    "english": "America, the USA, the US",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1024,
+    "japanese": "ちいさい",
+    "english": "small, little",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 1025,
+    "japanese": "にほん",
+    "english": "Japan",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1026,
+    "japanese": "おおきい",
+    "english": "big, large",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 1027,
+    "japanese": "か",
+    "english": "or, is it?, that",
+    "partOfSpeech": "particle",
+    "source": "duolingo"
+  },
+  {
+    "id": 1028,
+    "japanese": "いいえ",
+    "english": "no",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1029,
+    "japanese": "はい",
+    "english": "yes",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1030,
+    "japanese": "ケーキ",
+    "english": "cake",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1031,
+    "japanese": "ピザ",
+    "english": "pizza",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1032,
+    "japanese": "それ",
+    "english": "that (one), it, that",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1033,
+    "japanese": "これ",
+    "english": "this (one), these, this",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1034,
+    "japanese": "ラーメン",
+    "english": "ramen",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1035,
+    "japanese": "おいしい",
+    "english": "good, delicious, tasty",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 1036,
+    "japanese": "は",
+    "english": "is, with, regarding",
+    "partOfSpeech": "particle",
+    "source": "duolingo"
+  },
+  {
+    "id": 1037,
+    "japanese": "カレー",
+    "english": "curry",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1038,
+    "japanese": "またあした",
+    "english": "see you tomorrow",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 1039,
+    "japanese": "じゃあね",
+    "english": "bye",
+    "partOfSpeech": "expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 1040,
+    "japanese": "さん",
+    "english": "Mr., Miss, Mrs.",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1041,
+    "japanese": "こんばんは",
+    "english": "tonight, good evening, this evening",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 1042,
+    "japanese": "なおみ",
+    "english": "Naomi",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1043,
+    "japanese": "はな",
+    "english": "flowers, flower, Hana",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1044,
+    "japanese": "どうぞよろしく",
+    "english": "nice to meet you",
+    "partOfSpeech": "expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 1045,
+    "japanese": "こんにちは",
+    "english": "hello, hi",
+    "partOfSpeech": "expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 1046,
+    "japanese": "けん",
+    "english": "Ken, ticket",
+    "partOfSpeech": "proper-noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1047,
+    "japanese": "がくせい",
+    "english": "student, students",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1048,
+    "japanese": "ひと",
+    "english": "person, people",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1049,
+    "japanese": "かっこいい",
+    "english": "cool, good-looking, stylish",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 1050,
+    "japanese": "べんごし",
+    "english": "lawyer, lawyers",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1051,
+    "japanese": "やさしい",
+    "english": "kind, easy, nice",
+    "partOfSpeech": "i-adjective",
+    "source": "duolingo"
+  },
+  {
+    "id": 1052,
+    "japanese": "せんせい",
+    "english": "teacher, Professor, teachers",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1053,
+    "japanese": "いしゃ",
+    "english": "doctor, doctors",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1054,
+    "japanese": "です",
+    "english": "there is, it's, I'm",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1055,
+    "japanese": "と",
+    "english": "and, that, door",
+    "partOfSpeech": "particle",
+    "source": "duolingo"
+  },
+  {
+    "id": 1056,
+    "japanese": "みず",
+    "english": "water",
+    "partOfSpeech": "verb",
+    "source": "duolingo"
+  },
+  {
+    "id": 1057,
+    "japanese": "ごはん",
+    "english": "rice, meal, meals",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1058,
+    "japanese": "すし",
+    "english": "sushi",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  },
+  {
+    "id": 1059,
+    "japanese": "ください",
+    "english": "please",
+    "partOfSpeech": "expression",
+    "source": "duolingo"
+  },
+  {
+    "id": 1060,
+    "japanese": "おちゃ",
+    "english": "green teas, green tea, tea",
+    "partOfSpeech": "noun",
+    "source": "duolingo"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "totalWords": 877,
+  "totalExamples": 2631,
+  "averageExamplesPerWord": "3.0",
+  "levelDistribution": {
+    "1": 742,
+    "2": 1192,
+    "3": 697
+  },
+  "coverage": {
+    "covered": 0,
+    "missing": 209
+  },
+  "issues": 200,
+  "status": "HAS_ISSUES"
+}

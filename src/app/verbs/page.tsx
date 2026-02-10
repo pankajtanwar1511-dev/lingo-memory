@@ -14,10 +14,17 @@ import {
   BookOpen, Search, Filter, Zap, BarChart3,
   ChevronRight, Sparkles, Target, TrendingUp,
   CheckCircle2, Circle, Grid3x3, List, Eye, EyeOff, Layers, RefreshCw,
-  Shuffle, GraduationCap, ThumbsUp, ThumbsDown, SkipForward, RotateCcw
+  Shuffle, GraduationCap, ThumbsUp, ThumbsDown, SkipForward, RotateCcw, BookText
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
+
+interface VerbExample {
+  japanese: string
+  kana: string
+  english: string
+  highlight: string
+}
 
 interface N5Verb {
   id: string
@@ -39,6 +46,8 @@ interface N5Verb {
     masuKana: string
   }
   tags: string[]
+  context?: string | null
+  examples?: VerbExample[]
 }
 
 interface VerbsData {
@@ -87,6 +96,8 @@ export default function VerbsPage() {
   const [showAnswer, setShowAnswer] = useState(false)
   const [showOnlyUnknown, setShowOnlyUnknown] = useState(false)
   const [expandedMeanings, setExpandedMeanings] = useState<Set<string>>(new Set())
+  const [expandedExamples, setExpandedExamples] = useState<Set<string>>(new Set())
+  const [examplesPopup, setExamplesPopup] = useState<{ verbId: string; verb: N5Verb; position: { x: number; y: number }; showKana: boolean } | null>(null)
 
   // Load verbs data
   useEffect(() => {
@@ -185,11 +196,82 @@ export default function VerbsPage() {
   useEffect(() => {
     setFlippedCards(new Set())
     setExpandedMeanings(new Set())
+    setExpandedExamples(new Set())
   }, [viewMode, flipMode, frontSide, backSide])
 
   const toggleMeaningExpansion = (verbId: string, e: React.MouseEvent) => {
     e.stopPropagation()
     setExpandedMeanings(prev => {
+      const newSet = new Set(prev)
+      if (newSet.has(verbId)) {
+        newSet.delete(verbId)
+      } else {
+        newSet.add(verbId)
+      }
+      return newSet
+    })
+  }
+
+  const toggleExamplesPopup = (verb: N5Verb, e: React.MouseEvent, currentSide?: FlipSide) => {
+    e.stopPropagation()
+
+    // If clicking the same verb, close the popup
+    if (examplesPopup?.verbId === verb.id) {
+      setExamplesPopup(null)
+      return
+    }
+
+    // Determine if we should show kana based on current side AND the other side
+    const isFlipped = flippedCards.has(verb.id)
+    const displaySide = currentSide || (isFlipped ? backSide : frontSide)
+    const otherSide = isFlipped ? frontSide : backSide
+
+    // Show kana if current side, other side, or view mode is kana-related
+    // This ensures that when practicing English -> Kana, BOTH sides show kana examples
+    const showKana = displaySide === 'masu-kana' || displaySide === 'kana' ||
+                     otherSide === 'masu-kana' || otherSide === 'kana' ||
+                     viewMode === 'kana-masu' || viewMode === 'dictionary-kana'
+
+    // Get button position for popup placement
+    const button = e.currentTarget as HTMLElement
+    const rect = button.getBoundingClientRect()
+
+    // Calculate popup dimensions (approximate)
+    const popupWidth = 350
+    const popupHeight = 400
+
+    // Calculate position - try to show to the right, but if not enough space, show to the left
+    let x = rect.right + 10
+    let y = rect.top
+
+    // Check if popup would go off screen to the right
+    if (x + popupWidth > window.innerWidth) {
+      // Show to the left of the button instead
+      x = rect.left - popupWidth - 10
+    }
+
+    // Check if popup would go off screen at the bottom
+    if (y + popupHeight > window.innerHeight) {
+      // Adjust to show from bottom
+      y = Math.max(10, window.innerHeight - popupHeight - 10)
+    }
+
+    // Make sure it's not off screen at the top
+    if (y < 10) {
+      y = 10
+    }
+
+    setExamplesPopup({
+      verbId: verb.id,
+      verb: verb,
+      position: { x, y },
+      showKana
+    })
+  }
+
+  const toggleExamplesExpansion = (verbId: string, e: React.MouseEvent) => {
+    e.stopPropagation()
+    setExpandedExamples(prev => {
       const newSet = new Set(prev)
       if (newSet.has(verbId)) {
         newSet.delete(verbId)
@@ -302,8 +384,15 @@ export default function VerbsPage() {
         )
       case "kanji":
         return (
-          <div className="text-4xl font-bold text-primary">
-            {verb.kanji}
+          <div className="flex flex-col items-center gap-2">
+            <div className="text-4xl font-bold text-primary">
+              {verb.kanji}
+            </div>
+            {verb.context && (
+              <Badge variant="secondary" className="text-xs">
+                {verb.context}
+              </Badge>
+            )}
           </div>
         )
       case "kana":
@@ -711,19 +800,37 @@ export default function VerbsPage() {
                                 minHeight: "180px"
                               }}
                             >
-                              {frontSide === 'english' && verb.meaning.length > 2 && (
-                                <button
-                                  onClick={(e) => toggleMeaningExpansion(verb.id, e)}
-                                  className="absolute top-2 right-2 z-10 p-1.5 rounded-full hover:bg-accent transition-colors"
-                                  title={expandedMeanings.has(verb.id) ? "Show less" : "Show all meanings"}
-                                >
-                                  {expandedMeanings.has(verb.id) ? (
-                                    <EyeOff className="h-4 w-4 text-muted-foreground" />
-                                  ) : (
-                                    <Eye className="h-4 w-4 text-muted-foreground" />
-                                  )}
-                                </button>
-                              )}
+                              {/* Button Group in Top Right */}
+                              <div className="absolute top-2 right-2 z-10 flex items-center gap-1">
+                                {/* Examples Toggle */}
+                                {verb.examples && verb.examples.length > 0 && (
+                                  <button
+                                    onClick={(e) => toggleExamplesPopup(verb, e)}
+                                    className="p-1.5 rounded-full hover:bg-accent transition-colors"
+                                    title={examplesPopup?.verbId === verb.id ? "Hide examples" : "Show examples"}
+                                  >
+                                    {examplesPopup?.verbId === verb.id ? (
+                                      <BookText className="h-4 w-4 text-primary" />
+                                    ) : (
+                                      <BookText className="h-4 w-4 text-muted-foreground" />
+                                    )}
+                                  </button>
+                                )}
+                                {/* Meanings Toggle */}
+                                {frontSide === 'english' && verb.meaning.length > 2 && (
+                                  <button
+                                    onClick={(e) => toggleMeaningExpansion(verb.id, e)}
+                                    className="p-1.5 rounded-full hover:bg-accent transition-colors"
+                                    title={expandedMeanings.has(verb.id) ? "Show less meanings" : "Show all meanings"}
+                                  >
+                                    {expandedMeanings.has(verb.id) ? (
+                                      <EyeOff className="h-4 w-4 text-muted-foreground" />
+                                    ) : (
+                                      <Eye className="h-4 w-4 text-muted-foreground" />
+                                    )}
+                                  </button>
+                                )}
+                              </div>
                               <CardContent className="p-6 text-center min-h-[180px] flex items-center justify-center">
                                 {renderCardContent(verb, frontSide, false)}
                               </CardContent>
@@ -739,19 +846,37 @@ export default function VerbsPage() {
                                 minHeight: "180px"
                               }}
                             >
-                              {backSide === 'english' && verb.meaning.length > 2 && (
-                                <button
-                                  onClick={(e) => toggleMeaningExpansion(verb.id, e)}
-                                  className="absolute top-2 right-2 z-10 p-1.5 rounded-full hover:bg-accent transition-colors"
-                                  title={expandedMeanings.has(verb.id) ? "Show less" : "Show all meanings"}
-                                >
-                                  {expandedMeanings.has(verb.id) ? (
-                                    <EyeOff className="h-4 w-4 text-muted-foreground" />
-                                  ) : (
-                                    <Eye className="h-4 w-4 text-muted-foreground" />
-                                  )}
-                                </button>
-                              )}
+                              {/* Button Group in Top Right (Back) */}
+                              <div className="absolute top-2 right-2 z-10 flex items-center gap-1">
+                                {/* Examples Toggle */}
+                                {verb.examples && verb.examples.length > 0 && (
+                                  <button
+                                    onClick={(e) => toggleExamplesPopup(verb, e)}
+                                    className="p-1.5 rounded-full hover:bg-accent transition-colors"
+                                    title={examplesPopup?.verbId === verb.id ? "Hide examples" : "Show examples"}
+                                  >
+                                    {examplesPopup?.verbId === verb.id ? (
+                                      <BookText className="h-4 w-4 text-primary" />
+                                    ) : (
+                                      <BookText className="h-4 w-4 text-muted-foreground" />
+                                    )}
+                                  </button>
+                                )}
+                                {/* Meanings Toggle */}
+                                {backSide === 'english' && verb.meaning.length > 2 && (
+                                  <button
+                                    onClick={(e) => toggleMeaningExpansion(verb.id, e)}
+                                    className="p-1.5 rounded-full hover:bg-accent transition-colors"
+                                    title={expandedMeanings.has(verb.id) ? "Show less meanings" : "Show all meanings"}
+                                  >
+                                    {expandedMeanings.has(verb.id) ? (
+                                      <EyeOff className="h-4 w-4 text-muted-foreground" />
+                                    ) : (
+                                      <Eye className="h-4 w-4 text-muted-foreground" />
+                                    )}
+                                  </button>
+                                )}
+                              </div>
                               <CardContent className="p-4 text-center min-h-[180px] flex flex-col items-center justify-between bg-secondary/20">
                                 <div className="flex-1 flex items-center justify-center w-full">
                                   {renderCardContent(verb, backSide, false)}
@@ -856,19 +981,37 @@ export default function VerbsPage() {
                             minHeight: "180px"
                           }}
                         >
-                          {frontSide === 'english' && verb.meaning.length > 2 && (
-                            <button
-                              onClick={(e) => toggleMeaningExpansion(verb.id, e)}
-                              className="absolute top-2 right-2 z-10 p-1.5 rounded-full hover:bg-accent transition-colors"
-                              title={expandedMeanings.has(verb.id) ? "Show less" : "Show all meanings"}
-                            >
-                              {expandedMeanings.has(verb.id) ? (
-                                <EyeOff className="h-4 w-4 text-muted-foreground" />
-                              ) : (
-                                <Eye className="h-4 w-4 text-muted-foreground" />
-                              )}
-                            </button>
-                          )}
+                          {/* Button Group in Top Right */}
+                          <div className="absolute top-2 right-2 z-10 flex items-center gap-1">
+                            {/* Examples Toggle */}
+                            {verb.examples && verb.examples.length > 0 && (
+                              <button
+                                onClick={(e) => toggleExamplesPopup(verb, e)}
+                                className="p-1.5 rounded-full hover:bg-accent transition-colors"
+                                title={examplesPopup?.verbId === verb.id ? "Hide examples" : "Show examples"}
+                              >
+                                {examplesPopup?.verbId === verb.id ? (
+                                  <BookText className="h-4 w-4 text-primary" />
+                                ) : (
+                                  <BookText className="h-4 w-4 text-muted-foreground" />
+                                )}
+                              </button>
+                            )}
+                            {/* Meanings Toggle */}
+                            {frontSide === 'english' && verb.meaning.length > 2 && (
+                              <button
+                                onClick={(e) => toggleMeaningExpansion(verb.id, e)}
+                                className="p-1.5 rounded-full hover:bg-accent transition-colors"
+                                title={expandedMeanings.has(verb.id) ? "Show less meanings" : "Show all meanings"}
+                              >
+                                {expandedMeanings.has(verb.id) ? (
+                                  <EyeOff className="h-4 w-4 text-muted-foreground" />
+                                ) : (
+                                  <Eye className="h-4 w-4 text-muted-foreground" />
+                                )}
+                              </button>
+                            )}
+                          </div>
                           <CardContent className="p-6 text-center min-h-[180px] flex items-center justify-center">
                             {renderCardContent(verb, frontSide, false)}
                           </CardContent>
@@ -884,19 +1027,37 @@ export default function VerbsPage() {
                             minHeight: "180px"
                           }}
                         >
-                          {backSide === 'english' && verb.meaning.length > 2 && (
-                            <button
-                              onClick={(e) => toggleMeaningExpansion(verb.id, e)}
-                              className="absolute top-2 right-2 z-10 p-1.5 rounded-full hover:bg-accent transition-colors"
-                              title={expandedMeanings.has(verb.id) ? "Show less" : "Show all meanings"}
-                            >
-                              {expandedMeanings.has(verb.id) ? (
-                                <EyeOff className="h-4 w-4 text-muted-foreground" />
-                              ) : (
-                                <Eye className="h-4 w-4 text-muted-foreground" />
-                              )}
-                            </button>
-                          )}
+                          {/* Button Group in Top Right (Back) */}
+                          <div className="absolute top-2 right-2 z-10 flex items-center gap-1">
+                            {/* Examples Toggle */}
+                            {verb.examples && verb.examples.length > 0 && (
+                              <button
+                                onClick={(e) => toggleExamplesPopup(verb, e)}
+                                className="p-1.5 rounded-full hover:bg-accent transition-colors"
+                                title={examplesPopup?.verbId === verb.id ? "Hide examples" : "Show examples"}
+                              >
+                                {examplesPopup?.verbId === verb.id ? (
+                                  <BookText className="h-4 w-4 text-primary" />
+                                ) : (
+                                  <BookText className="h-4 w-4 text-muted-foreground" />
+                                )}
+                              </button>
+                            )}
+                            {/* Meanings Toggle */}
+                            {backSide === 'english' && verb.meaning.length > 2 && (
+                              <button
+                                onClick={(e) => toggleMeaningExpansion(verb.id, e)}
+                                className="p-1.5 rounded-full hover:bg-accent transition-colors"
+                                title={expandedMeanings.has(verb.id) ? "Show less meanings" : "Show all meanings"}
+                              >
+                                {expandedMeanings.has(verb.id) ? (
+                                  <EyeOff className="h-4 w-4 text-muted-foreground" />
+                                ) : (
+                                  <Eye className="h-4 w-4 text-muted-foreground" />
+                                )}
+                              </button>
+                            )}
+                          </div>
                           <CardContent className="p-6 text-center min-h-[180px] flex items-center justify-center bg-secondary/20">
                             {renderCardContent(verb, backSide, false)}
                           </CardContent>
@@ -929,6 +1090,11 @@ export default function VerbsPage() {
                                 {verb.kanji}
                               </div>
                               <div className="text-sm text-muted-foreground">{verb.kana}</div>
+                              {verb.context && (
+                                <Badge variant="secondary" className="text-xs mt-1">
+                                  {verb.context}
+                                </Badge>
+                              )}
                             </>
                           )}
                           {viewMode === "masu" && (
@@ -990,7 +1156,14 @@ export default function VerbsPage() {
                       <CardHeader className="pb-3">
                         <div className="flex items-start justify-between">
                           <div className="space-y-1 flex-1">
-                            <CardTitle className="text-2xl font-bold">{verb.kanji}</CardTitle>
+                            <div className="flex items-center gap-2">
+                              <CardTitle className="text-2xl font-bold">{verb.kanji}</CardTitle>
+                              {verb.context && (
+                                <Badge variant="secondary" className="text-xs">
+                                  {verb.context}
+                                </Badge>
+                              )}
+                            </div>
                             <div className="flex items-center gap-2">
                               <span className="text-lg text-muted-foreground">{verb.kana}</span>
                               <Badge variant={
@@ -1038,6 +1211,65 @@ export default function VerbsPage() {
                             <Badge variant="outline" className="text-xs">Intransitive</Badge>
                           )}
                         </div>
+
+                        {/* Examples Section */}
+                        {verb.examples && verb.examples.length > 0 && (
+                          <div className="pt-3 border-t mt-3">
+                            <div className="flex items-center justify-between mb-2">
+                              <div className="flex items-center gap-2">
+                                <BookText className="h-4 w-4 text-primary" />
+                                <p className="text-sm font-semibold text-primary">Examples ({verb.examples.length})</p>
+                              </div>
+                              <button
+                                onClick={(e) => toggleExamplesExpansion(verb.id, e)}
+                                className="p-1.5 rounded-full hover:bg-accent transition-colors"
+                                title={expandedExamples.has(verb.id) ? "Hide examples" : "Show examples"}
+                              >
+                                {expandedExamples.has(verb.id) ? (
+                                  <EyeOff className="h-4 w-4 text-muted-foreground" />
+                                ) : (
+                                  <Eye className="h-4 w-4 text-muted-foreground" />
+                                )}
+                              </button>
+                            </div>
+
+                            {expandedExamples.has(verb.id) && (
+                              <motion.div
+                                initial={{ opacity: 0, height: 0 }}
+                                animate={{ opacity: 1, height: "auto" }}
+                                exit={{ opacity: 0, height: 0 }}
+                                transition={{ duration: 0.2 }}
+                                className="space-y-3"
+                              >
+                                {verb.examples.map((example, idx) => (
+                                  <div
+                                    key={idx}
+                                    className="p-3 rounded-lg bg-muted/50 border border-border/50 space-y-1.5"
+                                  >
+                                    <div className="flex items-start gap-2">
+                                      <Badge variant="outline" className="text-xs shrink-0 mt-0.5">
+                                        {idx + 1}
+                                      </Badge>
+                                      <div className="space-y-1 flex-1">
+                                        <p className="text-sm font-medium leading-relaxed">
+                                          {example.japanese}
+                                        </p>
+                                        <p className="text-xs text-muted-foreground leading-relaxed">
+                                          {example.english}
+                                        </p>
+                                        {example.highlight && (
+                                          <Badge variant="secondary" className="text-xs mt-1">
+                                            {example.highlight}
+                                          </Badge>
+                                        )}
+                                      </div>
+                                    </div>
+                                  </div>
+                                ))}
+                              </motion.div>
+                            )}
+                          </div>
+                        )}
                       </CardContent>
                     </Card>
                   </motion.div>
@@ -1059,6 +1291,84 @@ export default function VerbsPage() {
             </Button>
           </div>
         )}
+
+        {/* Examples Popup */}
+        <AnimatePresence>
+          {examplesPopup && examplesPopup.verb.examples && (
+            <>
+              {/* Backdrop to close popup when clicking outside */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="fixed inset-0 bg-black/20 z-40"
+                onClick={() => setExamplesPopup(null)}
+              />
+
+              {/* Popup Card */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.2 }}
+                className="fixed z-50 w-[350px]"
+                style={{
+                  left: `${examplesPopup.position.x}px`,
+                  top: `${examplesPopup.position.y}px`
+                }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <Card className="shadow-2xl border-2 bg-background">
+                  <CardHeader className="pb-2 pt-3">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <BookText className="h-4 w-4 text-primary" />
+                        <CardTitle className="text-base">
+                          {examplesPopup.verb.kanji}
+                        </CardTitle>
+                      </div>
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        onClick={() => setExamplesPopup(null)}
+                        className="h-6 w-6 p-0"
+                      >
+                        <EyeOff className="h-3 w-3" />
+                      </Button>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-2 max-h-[350px] overflow-y-auto pb-3">
+                    {examplesPopup.verb.examples.map((example, idx) => (
+                      <div
+                        key={idx}
+                        className="p-2 rounded-md bg-muted/50 border space-y-1"
+                      >
+                        <div className="flex items-start gap-2">
+                          <Badge variant="outline" className="text-xs shrink-0 h-5">
+                            {idx + 1}
+                          </Badge>
+                          <div className="space-y-0.5 flex-1">
+                            <p className="text-sm font-medium">
+                              {examplesPopup.showKana ? example.kana : example.japanese}
+                            </p>
+                            <p className="text-xs text-muted-foreground">
+                              {example.english}
+                            </p>
+                            {example.highlight && (
+                              <Badge variant="secondary" className="text-xs">
+                                {example.highlight}
+                              </Badge>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </>
+          )}
+        </AnimatePresence>
       </main>
     </div>
   )

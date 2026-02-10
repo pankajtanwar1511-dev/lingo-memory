@@ -1,0 +1,2931 @@
+{
+  "timestamp": "2025-12-13T11:30:32.063Z",
+  "summary": {
+    "notInVocab": 162,
+    "withoutExamples": 264,
+    "withoutExamplesInBatch": 0,
+    "withoutExamplesNotInBatch": 264,
+    "typeMismatches": 4
+  },
+  "lists": {
+    "notInVocab": [
+      {
+        "japanese": "あし",
+        "english": "leg, foot",
+        "type": "noun",
+        "aiId": "duo_171",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "て",
+        "english": "hand",
+        "type": "noun",
+        "aiId": "duo_172",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "くち",
+        "english": "mouth",
+        "type": "noun",
+        "aiId": "duo_174",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "あたま",
+        "english": "head",
+        "type": "noun",
+        "aiId": "duo_175",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "おなか",
+        "english": "stomach",
+        "type": "noun",
+        "aiId": "duo_179",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "せなか",
+        "english": "back (body part)",
+        "type": "noun",
+        "aiId": "duo_180",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "かみ",
+        "english": "hair",
+        "type": "noun",
+        "aiId": "duo_181",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "びよういん",
+        "english": "hair salon",
+        "type": "noun",
+        "aiId": "duo_182",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "くすり",
+        "english": "medicine",
+        "type": "noun",
+        "aiId": "duo_183",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "かぜ",
+        "english": "cold (illness)",
+        "type": "noun",
+        "aiId": "duo_186",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "ねつ",
+        "english": "fever",
+        "type": "noun",
+        "aiId": "duo_187",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "のど",
+        "english": "throat",
+        "type": "noun",
+        "aiId": "duo_189",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "けが",
+        "english": "injury",
+        "type": "noun",
+        "aiId": "duo_190",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "トイレ",
+        "english": "bathroom, toilet",
+        "type": "noun",
+        "aiId": "duo_195",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "せっけん",
+        "english": "soap",
+        "type": "noun",
+        "aiId": "duo_196",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "バスルーム",
+        "english": "bathroom",
+        "type": "noun",
+        "aiId": "duo_197",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "はブラシ",
+        "english": "toothbrush",
+        "type": "noun",
+        "aiId": "duo_198",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "はみがきこ",
+        "english": "toothpaste",
+        "type": "noun",
+        "aiId": "duo_199",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "しかい",
+        "english": "dentist",
+        "type": "noun",
+        "aiId": "duo_201",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "シャツ",
+        "english": "shirt",
+        "type": "noun",
+        "aiId": "duo_203",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "ズボン",
+        "english": "trousers, pants",
+        "type": "noun",
+        "aiId": "duo_204",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "ワンピース",
+        "english": "dress",
+        "type": "noun",
+        "aiId": "duo_208",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "めがね",
+        "english": "glasses",
+        "type": "noun",
+        "aiId": "duo_212",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "サングラス",
+        "english": "sunglasses",
+        "type": "noun",
+        "aiId": "duo_213",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "てぶくろ",
+        "english": "gloves",
+        "type": "noun",
+        "aiId": "duo_215",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "とけい",
+        "english": "watch, clock",
+        "type": "noun",
+        "aiId": "duo_219",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "じゅうでんき",
+        "english": "charger",
+        "type": "noun",
+        "aiId": "duo_224",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "タブレット",
+        "english": "tablet",
+        "type": "noun",
+        "aiId": "duo_226",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "しんぶん",
+        "english": "newspaper",
+        "type": "noun",
+        "aiId": "duo_238",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "マンガ",
+        "english": "manga",
+        "type": "noun",
+        "aiId": "duo_239",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "ゴルフ",
+        "english": "golf",
+        "type": "noun",
+        "aiId": "duo_248",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "すいえい",
+        "english": "swimming",
+        "type": "noun",
+        "aiId": "duo_249",
+        "exampleCount": 3,
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "あたらしい",
+        "english": "new, newer",
+        "type": "adjective",
+        "aiId": "duo_296",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ふるい",
+        "english": "old",
+        "type": "adjective",
+        "aiId": "duo_297",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "わるい",
+        "english": "bad",
+        "type": "adjective",
+        "aiId": "duo_299",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "おそい",
+        "english": "slow, late",
+        "type": "adjective",
+        "aiId": "duo_314",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ゆっくり",
+        "english": "slowly",
+        "type": "adverb",
+        "aiId": "duo_343",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "たまご",
+        "english": "egg, eggs",
+        "type": "noun",
+        "aiId": "duo_413",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "くだもの",
+        "english": "fruit",
+        "type": "noun",
+        "aiId": "duo_419",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "たべもの",
+        "english": "food",
+        "type": "noun",
+        "aiId": "duo_447",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "のみもの",
+        "english": "beverage, drink, drinks",
+        "type": "noun",
+        "aiId": "duo_448",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "おみせ",
+        "english": "store, restaurant",
+        "type": "noun",
+        "aiId": "duo_450",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "あさ",
+        "english": "morning",
+        "type": "noun",
+        "aiId": "duo_455",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ひる",
+        "english": "noon, daytime",
+        "type": "noun",
+        "aiId": "duo_456",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "よる",
+        "english": "night, nights, evening",
+        "type": "noun",
+        "aiId": "duo_457",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "こんげつ",
+        "english": "this month",
+        "type": "noun",
+        "aiId": "duo_470",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ことし",
+        "english": "this year",
+        "type": "noun",
+        "aiId": "duo_473",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "らいねん",
+        "english": "next year",
+        "type": "noun",
+        "aiId": "duo_474",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "じかん",
+        "english": "time, hour",
+        "type": "noun",
+        "aiId": "duo_488",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "おはよう",
+        "english": "good morning",
+        "type": "phrase",
+        "aiId": "duo_571",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "おやすみなさい",
+        "english": "good night",
+        "type": "phrase",
+        "aiId": "duo_575",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "さようなら",
+        "english": "goodbye",
+        "type": "phrase",
+        "aiId": "duo_576",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ありがとう",
+        "english": "thank you, thanks",
+        "type": "phrase",
+        "aiId": "duo_578",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ごめんなさい",
+        "english": "sorry, I'm sorry",
+        "type": "phrase",
+        "aiId": "duo_581",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "いただきます",
+        "english": "bon appetit",
+        "type": "phrase",
+        "aiId": "duo_583",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ごちそうさま",
+        "english": "thanks for the food",
+        "type": "phrase",
+        "aiId": "duo_584",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "いってきます",
+        "english": "see you later",
+        "type": "phrase",
+        "aiId": "duo_585",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "いってらっしゃい",
+        "english": "see you later",
+        "type": "phrase",
+        "aiId": "duo_586",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ただいま",
+        "english": "I'm home",
+        "type": "phrase",
+        "aiId": "duo_587",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "おかえりなさい",
+        "english": "welcome home",
+        "type": "phrase",
+        "aiId": "duo_588",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "おめでとう",
+        "english": "congratulations",
+        "type": "phrase",
+        "aiId": "duo_591",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "おめでとうございます",
+        "english": "congratulations",
+        "type": "phrase",
+        "aiId": "duo_592",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "おつかれさま",
+        "english": "good work",
+        "type": "phrase",
+        "aiId": "duo_593",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "がんばって",
+        "english": "good luck, do your best",
+        "type": "phrase",
+        "aiId": "duo_594",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "どういたしまして",
+        "english": "you're welcome",
+        "type": "phrase",
+        "aiId": "duo_596",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ちょっとまって",
+        "english": "wait a moment",
+        "type": "phrase",
+        "aiId": "duo_598",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "もういちど",
+        "english": "one more time",
+        "type": "phrase",
+        "aiId": "duo_599",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "わかりました",
+        "english": "I understand, got it",
+        "type": "phrase",
+        "aiId": "duo_600",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "しりません",
+        "english": "I don't know",
+        "type": "phrase",
+        "aiId": "duo_601",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "そうですね",
+        "english": "that's right, I see",
+        "type": "phrase",
+        "aiId": "duo_602",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "そうですか",
+        "english": "is that so, I see",
+        "type": "phrase",
+        "aiId": "duo_603",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "なるほど",
+        "english": "I see, indeed",
+        "type": "phrase",
+        "aiId": "duo_604",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "もちろん",
+        "english": "of course",
+        "type": "phrase",
+        "aiId": "duo_605",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ぜんぜん",
+        "english": "not at all",
+        "type": "adverb",
+        "aiId": "duo_606",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ほんとう",
+        "english": "really, true",
+        "type": "noun",
+        "aiId": "duo_608",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "だめ",
+        "english": "no good, not allowed",
+        "type": "adjective",
+        "aiId": "duo_609",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "すごい",
+        "english": "amazing, great",
+        "type": "adjective",
+        "aiId": "duo_610",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "あいます",
+        "english": "meet, will meet",
+        "type": "verb",
+        "aiId": "duo_614",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "おくります",
+        "english": "send, will send",
+        "type": "verb",
+        "aiId": "duo_616",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "もらいます",
+        "english": "receive, will receive",
+        "type": "verb",
+        "aiId": "duo_617",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "あげます",
+        "english": "give, will give",
+        "type": "verb",
+        "aiId": "duo_618",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "かします",
+        "english": "lend, will lend",
+        "type": "verb",
+        "aiId": "duo_619",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "かります",
+        "english": "borrow, will borrow",
+        "type": "verb",
+        "aiId": "duo_620",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "しります",
+        "english": "know, will know",
+        "type": "verb",
+        "aiId": "duo_621",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "わすれます",
+        "english": "forget, will forget",
+        "type": "verb",
+        "aiId": "duo_622",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "おぼえます",
+        "english": "remember, memorize",
+        "type": "verb",
+        "aiId": "duo_623",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "おしえます",
+        "english": "teach, tell",
+        "type": "verb",
+        "aiId": "duo_624",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ならいます",
+        "english": "learn, take lessons",
+        "type": "verb",
+        "aiId": "duo_625",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "はたらきます",
+        "english": "work, will work",
+        "type": "verb",
+        "aiId": "duo_626",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "やすみます",
+        "english": "rest, take a day off",
+        "type": "verb",
+        "aiId": "duo_627",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "あびます",
+        "english": "shower, bathe",
+        "type": "verb",
+        "aiId": "duo_628",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ぬぎます",
+        "english": "take off",
+        "type": "verb",
+        "aiId": "duo_630",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "かけます",
+        "english": "make (a call), hang",
+        "type": "verb",
+        "aiId": "duo_631",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "けします",
+        "english": "turn off, erase",
+        "type": "verb",
+        "aiId": "duo_632",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "あけます",
+        "english": "open",
+        "type": "verb",
+        "aiId": "duo_634",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "しめます",
+        "english": "close",
+        "type": "verb",
+        "aiId": "duo_635",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "おします",
+        "english": "push, press",
+        "type": "verb",
+        "aiId": "duo_636",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ひっぱります",
+        "english": "pull",
+        "type": "verb",
+        "aiId": "duo_637",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "みつけます",
+        "english": "find",
+        "type": "verb",
+        "aiId": "duo_639",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "すてます",
+        "english": "throw away",
+        "type": "verb",
+        "aiId": "duo_640",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ひろいます",
+        "english": "pick up",
+        "type": "verb",
+        "aiId": "duo_641",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "なおします",
+        "english": "fix, correct",
+        "type": "verb",
+        "aiId": "duo_642",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "こわします",
+        "english": "break",
+        "type": "verb",
+        "aiId": "duo_643",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "きめます",
+        "english": "decide",
+        "type": "verb",
+        "aiId": "duo_644",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "えらびます",
+        "english": "choose",
+        "type": "verb",
+        "aiId": "duo_645",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "そうだんします",
+        "english": "consult, discuss",
+        "type": "verb",
+        "aiId": "duo_648",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "せつめいします",
+        "english": "explain",
+        "type": "verb",
+        "aiId": "duo_649",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "しょうかいします",
+        "english": "introduce",
+        "type": "verb",
+        "aiId": "duo_650",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "こと",
+        "english": "thing, matter",
+        "type": "noun",
+        "aiId": "duo_652",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "おかね",
+        "english": "money",
+        "type": "noun",
+        "aiId": "duo_653",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "きもち",
+        "english": "feeling",
+        "type": "noun",
+        "aiId": "duo_654",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "こころ",
+        "english": "heart, mind",
+        "type": "noun",
+        "aiId": "duo_655",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "いみ",
+        "english": "meaning",
+        "type": "noun",
+        "aiId": "duo_656",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "じょうほう",
+        "english": "information",
+        "type": "noun",
+        "aiId": "duo_660",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "けいけん",
+        "english": "experience",
+        "type": "noun",
+        "aiId": "duo_661",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "もんだい",
+        "english": "problem, question",
+        "type": "noun",
+        "aiId": "duo_662",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "こたえ",
+        "english": "answer",
+        "type": "noun",
+        "aiId": "duo_663",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "いけん",
+        "english": "opinion",
+        "type": "noun",
+        "aiId": "duo_665",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "かんがえ",
+        "english": "thought, idea",
+        "type": "noun",
+        "aiId": "duo_666",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ゆめ",
+        "english": "dream",
+        "type": "noun",
+        "aiId": "duo_667",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "しゅみ",
+        "english": "hobby",
+        "type": "noun",
+        "aiId": "duo_668",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "よてい",
+        "english": "plan, schedule",
+        "type": "noun",
+        "aiId": "duo_669",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "やくそく",
+        "english": "promise, appointment",
+        "type": "noun",
+        "aiId": "duo_670",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "きせつ",
+        "english": "season",
+        "type": "noun",
+        "aiId": "duo_672",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "かぜ",
+        "english": "wind",
+        "type": "noun",
+        "aiId": "duo_679",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "そら",
+        "english": "sky",
+        "type": "noun",
+        "aiId": "duo_680",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ほし",
+        "english": "star",
+        "type": "noun",
+        "aiId": "duo_681",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "つき",
+        "english": "moon, month",
+        "type": "noun",
+        "aiId": "duo_682",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ひ",
+        "english": "day, sun, fire",
+        "type": "noun",
+        "aiId": "duo_683",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "いろ",
+        "english": "color",
+        "type": "noun",
+        "aiId": "duo_684",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "かたち",
+        "english": "shape, form",
+        "type": "noun",
+        "aiId": "duo_685",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "おと",
+        "english": "sound",
+        "type": "noun",
+        "aiId": "duo_686",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "におい",
+        "english": "smell",
+        "type": "noun",
+        "aiId": "duo_687",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "さいしょ",
+        "english": "first, beginning",
+        "type": "noun",
+        "aiId": "duo_690",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "みぎ",
+        "english": "right",
+        "type": "noun",
+        "aiId": "duo_691",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ひだり",
+        "english": "left",
+        "type": "noun",
+        "aiId": "duo_692",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "うえ",
+        "english": "on, above, up",
+        "type": "noun",
+        "aiId": "duo_697",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "した",
+        "english": "under, below",
+        "type": "noun",
+        "aiId": "duo_698",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "なか",
+        "english": "inside, in",
+        "type": "noun",
+        "aiId": "duo_699",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "あいだ",
+        "english": "between",
+        "type": "noun",
+        "aiId": "duo_701",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "どれ",
+        "english": "which",
+        "type": "pronoun",
+        "aiId": "duo_709",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "わたし",
+        "english": "I, me",
+        "type": "pronoun",
+        "aiId": "duo_710",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "あなた",
+        "english": "you",
+        "type": "pronoun",
+        "aiId": "duo_711",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "かれ",
+        "english": "he, him",
+        "type": "pronoun",
+        "aiId": "duo_712",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "わたしたち",
+        "english": "we, us",
+        "type": "pronoun",
+        "aiId": "duo_713",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "なに",
+        "english": "what",
+        "type": "pronoun",
+        "aiId": "duo_718",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "なぜ",
+        "english": "why",
+        "type": "pronoun",
+        "aiId": "duo_721",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "いくつ",
+        "english": "how many",
+        "type": "adverb",
+        "aiId": "duo_724",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "どのぐらい",
+        "english": "how long, how much",
+        "type": "adverb",
+        "aiId": "duo_725",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "とり",
+        "english": "bird",
+        "type": "noun",
+        "aiId": "duo_728",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "さかな",
+        "english": "fish (animal)",
+        "type": "noun",
+        "aiId": "duo_729",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "き",
+        "english": "tree",
+        "type": "noun",
+        "aiId": "duo_731",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "くさ",
+        "english": "grass",
+        "type": "noun",
+        "aiId": "duo_732",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "かみ",
+        "english": "paper",
+        "type": "noun",
+        "aiId": "duo_733",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ほん",
+        "english": "book",
+        "type": "noun",
+        "aiId": "duo_734",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ノート",
+        "english": "notebook",
+        "type": "noun",
+        "aiId": "duo_736",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "ことば",
+        "english": "word, language",
+        "type": "noun",
+        "aiId": "duo_752",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "にほんご",
+        "english": "Japanese language",
+        "type": "noun",
+        "aiId": "duo_753",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "なまえ",
+        "english": "name",
+        "type": "noun",
+        "aiId": "duo_755",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "じゅうしょ",
+        "english": "address",
+        "type": "noun",
+        "aiId": "duo_756",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "おいわい",
+        "english": "celebration",
+        "type": "noun",
+        "aiId": "duo_759",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "じかんわり",
+        "english": "schedule, timetable",
+        "type": "noun",
+        "aiId": "duo_762",
+        "exampleCount": 3,
+        "source": "batch_remaining.json"
+      }
+    ],
+    "withoutExamples": [
+      {
+        "japanese": "明日",
+        "english": "tomorrow",
+        "type": "noun",
+        "vocabId": "duo_888"
+      },
+      {
+        "japanese": "ちば",
+        "english": "Chiba",
+        "type": "noun",
+        "vocabId": "duo_886"
+      },
+      {
+        "japanese": "見つけました",
+        "english": "found, caught",
+        "type": "verb",
+        "vocabId": "duo_885"
+      },
+      {
+        "japanese": "クレープ",
+        "english": "crepe",
+        "type": "noun",
+        "vocabId": "duo_883"
+      },
+      {
+        "japanese": "はじめて",
+        "english": "for the first time",
+        "type": "adverb",
+        "vocabId": "duo_882"
+      },
+      {
+        "japanese": "あそびました",
+        "english": "played",
+        "type": "verb",
+        "vocabId": "duo_881"
+      },
+      {
+        "japanese": "行きました",
+        "english": "went, (I) went",
+        "type": "verb",
+        "vocabId": "duo_880"
+      },
+      {
+        "japanese": "食べました",
+        "english": "ate, (I) ate, had",
+        "type": "verb",
+        "vocabId": "duo_878"
+      },
+      {
+        "japanese": "ぎんざ",
+        "english": "Ginza",
+        "type": "noun",
+        "vocabId": "duo_877"
+      },
+      {
+        "japanese": "来ました",
+        "english": "have come, came, has arrived",
+        "type": "verb",
+        "vocabId": "duo_874"
+      },
+      {
+        "japanese": "トースト",
+        "english": "toast",
+        "type": "noun",
+        "vocabId": "duo_870"
+      },
+      {
+        "japanese": "コーヒーメーカー",
+        "english": "coffee maker",
+        "type": "noun",
+        "vocabId": "duo_869"
+      },
+      {
+        "japanese": "四階",
+        "english": "fourth floor",
+        "type": "counter",
+        "vocabId": "duo_866"
+      },
+      {
+        "japanese": "むりょう",
+        "english": "free",
+        "type": "adjective",
+        "vocabId": "duo_863"
+      },
+      {
+        "japanese": "スパ",
+        "english": "spa, spas",
+        "type": "noun",
+        "vocabId": "duo_862"
+      },
+      {
+        "japanese": "パスワード",
+        "english": "password",
+        "type": "noun",
+        "vocabId": "duo_861"
+      },
+      {
+        "japanese": "ルームサービス",
+        "english": "room service",
+        "type": "noun",
+        "vocabId": "duo_859"
+      },
+      {
+        "japanese": "こおり",
+        "english": "ice",
+        "type": "noun",
+        "vocabId": "duo_858"
+      },
+      {
+        "japanese": "ネット",
+        "english": "internet",
+        "type": "noun",
+        "vocabId": "duo_851"
+      },
+      {
+        "japanese": "三日",
+        "english": "third, three days",
+        "type": "counter",
+        "vocabId": "duo_850"
+      },
+      {
+        "japanese": "二日",
+        "english": "two days, second, 2",
+        "type": "counter",
+        "vocabId": "duo_849"
+      },
+      {
+        "japanese": "とまりませんか",
+        "english": "Shall we not stay",
+        "type": "verb",
+        "vocabId": "duo_848"
+      },
+      {
+        "japanese": "おつり",
+        "english": "change",
+        "type": "noun",
+        "vocabId": "duo_845"
+      },
+      {
+        "japanese": "かいけい",
+        "english": "cashier",
+        "type": "noun",
+        "vocabId": "duo_842"
+      },
+      {
+        "japanese": "おおい",
+        "english": "a lot of, large, a lot",
+        "type": "adjective",
+        "vocabId": "duo_841"
+      },
+      {
+        "japanese": "えび",
+        "english": "shrimp",
+        "type": "noun",
+        "vocabId": "duo_840"
+      },
+      {
+        "japanese": "ナプキン",
+        "english": "napkin",
+        "type": "noun",
+        "vocabId": "duo_837"
+      },
+      {
+        "japanese": "マーボーどうふ",
+        "english": "mapo tofu",
+        "type": "noun",
+        "vocabId": "duo_836"
+      },
+      {
+        "japanese": "はし",
+        "english": "bridges, chopsticks, bridge",
+        "type": "noun",
+        "vocabId": "duo_835"
+      },
+      {
+        "japanese": "からい",
+        "english": "spicy",
+        "type": "adjective",
+        "vocabId": "duo_834"
+      },
+      {
+        "japanese": "つめたい",
+        "english": "cold",
+        "type": "adjective",
+        "vocabId": "duo_825"
+      },
+      {
+        "japanese": "タピオカティー",
+        "english": "bubble tea",
+        "type": "noun",
+        "vocabId": "duo_824"
+      },
+      {
+        "japanese": "ちゅうかがい",
+        "english": "Chinatown",
+        "type": "noun",
+        "vocabId": "duo_823"
+      },
+      {
+        "japanese": "ちゅうかりょうり",
+        "english": "Chinese food",
+        "type": "noun",
+        "vocabId": "duo_822"
+      },
+      {
+        "japanese": "あきます",
+        "english": "opens, open",
+        "type": "verb",
+        "vocabId": "duo_821"
+      },
+      {
+        "japanese": "シーフード",
+        "english": "seafood",
+        "type": "noun",
+        "vocabId": "duo_820"
+      },
+      {
+        "japanese": "こしょう",
+        "english": "pepper",
+        "type": "noun",
+        "vocabId": "duo_818"
+      },
+      {
+        "japanese": "やきます",
+        "english": "bake, am going to bake, grill",
+        "type": "verb",
+        "vocabId": "duo_817"
+      },
+      {
+        "japanese": "たのしみます",
+        "english": "going to enjoy",
+        "type": "verb",
+        "vocabId": "duo_812"
+      },
+      {
+        "japanese": "雨",
+        "english": "rain",
+        "type": "noun",
+        "vocabId": "duo_811"
+      },
+      {
+        "japanese": "ピクニック",
+        "english": "picnic",
+        "type": "noun",
+        "vocabId": "duo_809"
+      },
+      {
+        "japanese": "一日",
+        "english": "one day, first, a day",
+        "type": "counter",
+        "vocabId": "duo_807"
+      },
+      {
+        "japanese": "キャンプ",
+        "english": "camping",
+        "type": "noun",
+        "vocabId": "duo_804"
+      },
+      {
+        "japanese": "ハイキング",
+        "english": "hiking",
+        "type": "noun",
+        "vocabId": "duo_803"
+      },
+      {
+        "japanese": "バックパック",
+        "english": "backpack",
+        "type": "noun",
+        "vocabId": "duo_802"
+      },
+      {
+        "japanese": "すみ",
+        "english": "corner",
+        "type": "noun",
+        "vocabId": "duo_800"
+      },
+      {
+        "japanese": "カラフルな",
+        "english": "colorful",
+        "type": "adjective",
+        "vocabId": "duo_799"
+      },
+      {
+        "japanese": "カメレオン",
+        "english": "chameleon",
+        "type": "noun",
+        "vocabId": "duo_797"
+      },
+      {
+        "japanese": "なんびき",
+        "english": "how many",
+        "type": "noun",
+        "vocabId": "duo_796"
+      },
+      {
+        "japanese": "口",
+        "english": "mouths, (a) mouth, tastes",
+        "type": "noun",
+        "vocabId": "duo_793"
+      },
+      {
+        "japanese": "トマト",
+        "english": "tomato, tomatoes, (a) tomato",
+        "type": "noun",
+        "vocabId": "duo_792"
+      },
+      {
+        "japanese": "ちゃいろ",
+        "english": "brown",
+        "type": "noun",
+        "vocabId": "duo_787"
+      },
+      {
+        "japanese": "パンケーキ",
+        "english": "pancake",
+        "type": "noun",
+        "vocabId": "duo_786"
+      },
+      {
+        "japanese": "カプチーノ",
+        "english": "cappuccinos, (a) cappuccino",
+        "type": "noun",
+        "vocabId": "duo_783"
+      },
+      {
+        "japanese": "チェス",
+        "english": "chess",
+        "type": "noun",
+        "vocabId": "duo_779"
+      },
+      {
+        "japanese": "ボードゲーム",
+        "english": "board game",
+        "type": "noun",
+        "vocabId": "duo_776"
+      },
+      {
+        "japanese": "りょう",
+        "english": "dorm",
+        "type": "noun",
+        "vocabId": "duo_773"
+      },
+      {
+        "japanese": "駅",
+        "english": "station, train station, stations",
+        "type": "noun",
+        "vocabId": "duo_772"
+      },
+      {
+        "japanese": "タガログご",
+        "english": "Tagalog",
+        "type": "noun",
+        "vocabId": "duo_771"
+      },
+      {
+        "japanese": "ドイツご",
+        "english": "German",
+        "type": "noun",
+        "vocabId": "duo_770"
+      },
+      {
+        "japanese": "げんご",
+        "english": "language, languages",
+        "type": "noun",
+        "vocabId": "duo_769"
+      },
+      {
+        "japanese": "ビジネス",
+        "english": "business",
+        "type": "noun",
+        "vocabId": "duo_765"
+      },
+      {
+        "japanese": "四年生",
+        "english": "senior, seniors",
+        "type": "counter",
+        "vocabId": "duo_763"
+      },
+      {
+        "japanese": "三年生",
+        "english": "third grade student, junior",
+        "type": "counter",
+        "vocabId": "duo_762"
+      },
+      {
+        "japanese": "サム",
+        "english": "Sam",
+        "type": "noun",
+        "vocabId": "duo_761"
+      },
+      {
+        "japanese": "かい",
+        "english": "are you, will you, buy",
+        "type": "noun",
+        "vocabId": "duo_760"
+      },
+      {
+        "japanese": "二年生",
+        "english": "sophomore",
+        "type": "counter",
+        "vocabId": "duo_759"
+      },
+      {
+        "japanese": "一年生",
+        "english": "freshman",
+        "type": "counter",
+        "vocabId": "duo_758"
+      },
+      {
+        "japanese": "みなみぐち",
+        "english": "south exit",
+        "type": "noun",
+        "vocabId": "duo_756"
+      },
+      {
+        "japanese": "飲み物",
+        "english": "beverage, drink, drinks",
+        "type": "noun",
+        "vocabId": "duo_755"
+      },
+      {
+        "japanese": "よびます",
+        "english": "(will) call, calls, going to call",
+        "type": "verb",
+        "vocabId": "duo_754"
+      },
+      {
+        "japanese": "ゆっくりします",
+        "english": "going to relax",
+        "type": "verb",
+        "vocabId": "duo_753"
+      },
+      {
+        "japanese": "ツアー",
+        "english": "tour",
+        "type": "noun",
+        "vocabId": "duo_752"
+      },
+      {
+        "japanese": "インフォメーション",
+        "english": "information desk",
+        "type": "noun",
+        "vocabId": "duo_751"
+      },
+      {
+        "japanese": "八百",
+        "english": "800",
+        "type": "noun",
+        "vocabId": "duo_750"
+      },
+      {
+        "japanese": "はらいます",
+        "english": "pay, going to pay, will pay",
+        "type": "verb",
+        "vocabId": "duo_749"
+      },
+      {
+        "japanese": "エスカレーター",
+        "english": "escalator",
+        "type": "noun",
+        "vocabId": "duo_748"
+      },
+      {
+        "japanese": "三ばん",
+        "english": "number three",
+        "type": "noun",
+        "vocabId": "duo_746"
+      },
+      {
+        "japanese": "のりかえます",
+        "english": "switching, going to transfer, are switching",
+        "type": "verb",
+        "vocabId": "duo_745"
+      },
+      {
+        "japanese": "かいそく",
+        "english": "rapid-service",
+        "type": "noun",
+        "vocabId": "duo_744"
+      },
+      {
+        "japanese": "二ばん",
+        "english": "number two",
+        "type": "noun",
+        "vocabId": "duo_743"
+      },
+      {
+        "japanese": "オレンジ",
+        "english": "orange",
+        "type": "noun",
+        "vocabId": "duo_742"
+      },
+      {
+        "japanese": "一ばん",
+        "english": "number one",
+        "type": "noun",
+        "vocabId": "duo_740"
+      },
+      {
+        "japanese": "きっぷうりば",
+        "english": "ticket area",
+        "type": "noun",
+        "vocabId": "duo_739"
+      },
+      {
+        "japanese": "モノレール",
+        "english": "monorail",
+        "type": "noun",
+        "vocabId": "duo_738"
+      },
+      {
+        "japanese": "三百",
+        "english": "300, three hundred",
+        "type": "noun",
+        "vocabId": "duo_737"
+      },
+      {
+        "japanese": "ステーキ",
+        "english": "steak",
+        "type": "noun",
+        "vocabId": "duo_733"
+      },
+      {
+        "japanese": "かんとく",
+        "english": "director",
+        "type": "noun",
+        "vocabId": "duo_732"
+      },
+      {
+        "japanese": "ポップコーン",
+        "english": "popcorn",
+        "type": "noun",
+        "vocabId": "duo_731"
+      },
+      {
+        "japanese": "ホットドッグ",
+        "english": "hot dog",
+        "type": "noun",
+        "vocabId": "duo_729"
+      },
+      {
+        "japanese": "スーツ",
+        "english": "suit",
+        "type": "noun",
+        "vocabId": "duo_726"
+      },
+      {
+        "japanese": "うでどけい",
+        "english": "watch",
+        "type": "noun",
+        "vocabId": "duo_724"
+      },
+      {
+        "japanese": "ネックレス",
+        "english": "necklace",
+        "type": "noun",
+        "vocabId": "duo_723"
+      },
+      {
+        "japanese": "人",
+        "english": "people, human, someone",
+        "type": "noun",
+        "vocabId": "duo_719"
+      },
+      {
+        "japanese": "カウントダウン",
+        "english": "countdown",
+        "type": "noun",
+        "vocabId": "duo_717"
+      },
+      {
+        "japanese": "クリスマス",
+        "english": "Christmas",
+        "type": "noun",
+        "vocabId": "duo_716"
+      },
+      {
+        "japanese": "イルミネーション",
+        "english": "lights display",
+        "type": "noun",
+        "vocabId": "duo_714"
+      },
+      {
+        "japanese": "パレード",
+        "english": "parade",
+        "type": "noun",
+        "vocabId": "duo_712"
+      },
+      {
+        "japanese": "ダンス",
+        "english": "dance",
+        "type": "noun",
+        "vocabId": "duo_707"
+      },
+      {
+        "japanese": "コミュニティーセンター",
+        "english": "community center, Community center",
+        "type": "noun",
+        "vocabId": "duo_706"
+      },
+      {
+        "japanese": "食べませんか",
+        "english": "do you want to eat, won't you eat, would you like to eat",
+        "type": "verb",
+        "vocabId": "duo_703"
+      },
+      {
+        "japanese": "チョコバナナ",
+        "english": "chocolate covered bananas, chocolate covered banana",
+        "type": "noun",
+        "vocabId": "duo_702"
+      },
+      {
+        "japanese": "食べ物",
+        "english": "food",
+        "type": "noun",
+        "vocabId": "duo_701"
+      },
+      {
+        "japanese": "はなびたいかい",
+        "english": "fireworks display",
+        "type": "noun",
+        "vocabId": "duo_698"
+      },
+      {
+        "japanese": "あそびませんか",
+        "english": "play",
+        "type": "verb",
+        "vocabId": "duo_697"
+      },
+      {
+        "japanese": "こんしゅうまつ",
+        "english": "this weekend",
+        "type": "noun",
+        "vocabId": "duo_695"
+      },
+      {
+        "japanese": "きじ",
+        "english": "post",
+        "type": "noun",
+        "vocabId": "duo_694"
+      },
+      {
+        "japanese": "ブログ",
+        "english": "blog",
+        "type": "noun",
+        "vocabId": "duo_693"
+      },
+      {
+        "japanese": "バレエ",
+        "english": "ballet",
+        "type": "noun",
+        "vocabId": "duo_689"
+      },
+      {
+        "japanese": "パフォーマンス",
+        "english": "performance",
+        "type": "noun",
+        "vocabId": "duo_687"
+      },
+      {
+        "japanese": "かんじ",
+        "english": "kanji, Chinese character, Chinese characters",
+        "type": "noun",
+        "vocabId": "duo_683"
+      },
+      {
+        "japanese": "ピアノ",
+        "english": "piano",
+        "type": "noun",
+        "vocabId": "duo_680"
+      },
+      {
+        "japanese": "九時間",
+        "english": "nine hours",
+        "type": "counter",
+        "vocabId": "duo_679"
+      },
+      {
+        "japanese": "がっき",
+        "english": "instrument",
+        "type": "noun",
+        "vocabId": "duo_678"
+      },
+      {
+        "japanese": "何時間",
+        "english": "how many hours",
+        "type": "noun",
+        "vocabId": "duo_675"
+      },
+      {
+        "japanese": "れんしゅう",
+        "english": "practice",
+        "type": "noun",
+        "vocabId": "duo_674"
+      },
+      {
+        "japanese": "バドミントン",
+        "english": "badminton",
+        "type": "noun",
+        "vocabId": "duo_673"
+      },
+      {
+        "japanese": "四時間",
+        "english": "for four hours",
+        "type": "counter",
+        "vocabId": "duo_671"
+      },
+      {
+        "japanese": "バー",
+        "english": "bar",
+        "type": "noun",
+        "vocabId": "duo_670"
+      },
+      {
+        "japanese": "クライアント",
+        "english": "client",
+        "type": "noun",
+        "vocabId": "duo_666"
+      },
+      {
+        "japanese": "プレゼン",
+        "english": "presentation",
+        "type": "noun",
+        "vocabId": "duo_665"
+      },
+      {
+        "japanese": "まで",
+        "english": "through, even, before",
+        "type": "particle",
+        "vocabId": "duo_663"
+      },
+      {
+        "japanese": "ひる休み",
+        "english": "lunch break",
+        "type": "noun",
+        "vocabId": "duo_662"
+      },
+      {
+        "japanese": "二階",
+        "english": "the second floor",
+        "type": "counter",
+        "vocabId": "duo_660"
+      },
+      {
+        "japanese": "チャーハン",
+        "english": "fried rice",
+        "type": "noun",
+        "vocabId": "duo_659"
+      },
+      {
+        "japanese": "フライドポテト",
+        "english": "french fries",
+        "type": "noun",
+        "vocabId": "duo_658"
+      },
+      {
+        "japanese": "プリンター",
+        "english": "printer",
+        "type": "noun",
+        "vocabId": "duo_656"
+      },
+      {
+        "japanese": "から",
+        "english": "because, starting, through",
+        "type": "particle",
+        "vocabId": "duo_655"
+      },
+      {
+        "japanese": "うけつけ",
+        "english": "front desk",
+        "type": "noun",
+        "vocabId": "duo_652"
+      },
+      {
+        "japanese": "ドキュメンタリー",
+        "english": "documentary",
+        "type": "noun",
+        "vocabId": "duo_649"
+      },
+      {
+        "japanese": "ポスター",
+        "english": "poster",
+        "type": "noun",
+        "vocabId": "duo_648"
+      },
+      {
+        "japanese": "はいゆう",
+        "english": "actor",
+        "type": "noun",
+        "vocabId": "duo_647"
+      },
+      {
+        "japanese": "見ません",
+        "english": "does not see, do not watch, does not look at",
+        "type": "verb",
+        "vocabId": "duo_646"
+      },
+      {
+        "japanese": "カードゲーム",
+        "english": "card game",
+        "type": "noun",
+        "vocabId": "duo_645"
+      },
+      {
+        "japanese": "しません",
+        "english": "do not, will not, does not",
+        "type": "verb",
+        "vocabId": "duo_643"
+      },
+      {
+        "japanese": "パズル",
+        "english": "puzzle",
+        "type": "noun",
+        "vocabId": "duo_642"
+      },
+      {
+        "japanese": "ききません",
+        "english": "don't really listen to",
+        "type": "verb",
+        "vocabId": "duo_638"
+      },
+      {
+        "japanese": "ポップス",
+        "english": "pop",
+        "type": "noun",
+        "vocabId": "duo_637"
+      },
+      {
+        "japanese": "ノンフィクション",
+        "english": "non-fiction",
+        "type": "noun",
+        "vocabId": "duo_636"
+      },
+      {
+        "japanese": "話",
+        "english": "talking, conversation, chat",
+        "type": "noun",
+        "vocabId": "duo_632"
+      },
+      {
+        "japanese": "チョコミント",
+        "english": "mint chocolate chip",
+        "type": "noun",
+        "vocabId": "duo_628"
+      },
+      {
+        "japanese": "バニラ",
+        "english": "vanilla",
+        "type": "noun",
+        "vocabId": "duo_626"
+      },
+      {
+        "japanese": "きいろい",
+        "english": "yellow",
+        "type": "adjective",
+        "vocabId": "duo_624"
+      },
+      {
+        "japanese": "ショー",
+        "english": "show",
+        "type": "noun",
+        "vocabId": "duo_623"
+      },
+      {
+        "japanese": "見ましょうか",
+        "english": "should we see",
+        "type": "verb",
+        "vocabId": "duo_621"
+      },
+      {
+        "japanese": "ゴーカート",
+        "english": "go-kart",
+        "type": "noun",
+        "vocabId": "duo_620"
+      },
+      {
+        "japanese": "すきな",
+        "english": "favorite",
+        "type": "adjective",
+        "vocabId": "duo_618"
+      },
+      {
+        "japanese": "アトラクション",
+        "english": "attraction",
+        "type": "noun",
+        "vocabId": "duo_617"
+      },
+      {
+        "japanese": "こわい",
+        "english": "scary",
+        "type": "adjective",
+        "vocabId": "duo_616"
+      },
+      {
+        "japanese": "三千",
+        "english": "3,000",
+        "type": "noun",
+        "vocabId": "duo_614"
+      },
+      {
+        "japanese": "ゆうえんち",
+        "english": "theme park",
+        "type": "noun",
+        "vocabId": "duo_608"
+      },
+      {
+        "japanese": "せんしゅ",
+        "english": "athlete, athletes, player",
+        "type": "noun",
+        "vocabId": "duo_604"
+      },
+      {
+        "japanese": "プロの",
+        "english": "professional, pro",
+        "type": "adjective",
+        "vocabId": "duo_603"
+      },
+      {
+        "japanese": "チーム",
+        "english": "team",
+        "type": "noun",
+        "vocabId": "duo_602"
+      },
+      {
+        "japanese": "ごぜん",
+        "english": "a.m., morning",
+        "type": "noun",
+        "vocabId": "duo_596"
+      },
+      {
+        "japanese": "うんてんします",
+        "english": "drive",
+        "type": "verb",
+        "vocabId": "duo_595"
+      },
+      {
+        "japanese": "ナビ",
+        "english": "GPS",
+        "type": "noun",
+        "vocabId": "duo_594"
+      },
+      {
+        "japanese": "ほんやくか",
+        "english": "translator",
+        "type": "noun",
+        "vocabId": "duo_591"
+      },
+      {
+        "japanese": "ほんやくします",
+        "english": "translate",
+        "type": "verb",
+        "vocabId": "duo_590"
+      },
+      {
+        "japanese": "じしょ",
+        "english": "dictionary",
+        "type": "noun",
+        "vocabId": "duo_588"
+      },
+      {
+        "japanese": "かいしゃ",
+        "english": "company",
+        "type": "noun",
+        "vocabId": "duo_585"
+      },
+      {
+        "japanese": "プロジェクト",
+        "english": "project",
+        "type": "noun",
+        "vocabId": "duo_580"
+      },
+      {
+        "japanese": "しめきり",
+        "english": "deadline",
+        "type": "noun",
+        "vocabId": "duo_579"
+      },
+      {
+        "japanese": "何曜日",
+        "english": "what day",
+        "type": "noun",
+        "vocabId": "duo_569"
+      },
+      {
+        "japanese": "スミス",
+        "english": "Smith",
+        "type": "noun",
+        "vocabId": "duo_567"
+      },
+      {
+        "japanese": "山田",
+        "english": "Yamada",
+        "type": "noun",
+        "vocabId": "duo_566"
+      },
+      {
+        "japanese": "スペインご",
+        "english": "Spanish",
+        "type": "noun",
+        "vocabId": "duo_563"
+      },
+      {
+        "japanese": "きょうしつ",
+        "english": "classroom",
+        "type": "noun",
+        "vocabId": "duo_562"
+      },
+      {
+        "japanese": "しょっぱい",
+        "english": "salty",
+        "type": "adjective",
+        "vocabId": "duo_560"
+      },
+      {
+        "japanese": "コーラ",
+        "english": "cola",
+        "type": "noun",
+        "vocabId": "duo_559"
+      },
+      {
+        "japanese": "飲みません",
+        "english": "(I) won't drink, don't take, (I) do not drink",
+        "type": "verb",
+        "vocabId": "duo_558"
+      },
+      {
+        "japanese": "とんかつ",
+        "english": "pork cutlet",
+        "type": "noun",
+        "vocabId": "duo_556"
+      },
+      {
+        "japanese": "しお",
+        "english": "salt",
+        "type": "noun",
+        "vocabId": "duo_555"
+      },
+      {
+        "japanese": "ソース",
+        "english": "sauce",
+        "type": "noun",
+        "vocabId": "duo_554"
+      },
+      {
+        "japanese": "つかいましょう",
+        "english": "we should use",
+        "type": "verb",
+        "vocabId": "duo_553"
+      },
+      {
+        "japanese": "なま",
+        "english": "raw",
+        "type": "noun",
+        "vocabId": "duo_552"
+      },
+      {
+        "japanese": "とうふ",
+        "english": "(the) tofu, bean curd, tofu",
+        "type": "noun",
+        "vocabId": "duo_551"
+      },
+      {
+        "japanese": "でも",
+        "english": "but, however, neither",
+        "type": "other",
+        "vocabId": "duo_548"
+      },
+      {
+        "japanese": "ぎゅうどん",
+        "english": "beef bowl",
+        "type": "noun",
+        "vocabId": "duo_547"
+      },
+      {
+        "japanese": "卵",
+        "english": "egg, eggs",
+        "type": "noun",
+        "vocabId": "duo_542"
+      },
+      {
+        "japanese": "つくりましょうか",
+        "english": "shall I make, should we make, should I make",
+        "type": "verb",
+        "vocabId": "duo_537"
+      },
+      {
+        "japanese": "いちご",
+        "english": "strawberry, strawberries",
+        "type": "noun",
+        "vocabId": "duo_531"
+      },
+      {
+        "japanese": "クッキー",
+        "english": "cookies, cookie",
+        "type": "noun",
+        "vocabId": "duo_530"
+      },
+      {
+        "japanese": "みどり",
+        "english": "green",
+        "type": "noun",
+        "vocabId": "duo_527"
+      },
+      {
+        "japanese": "カップケーキ",
+        "english": "cupcake",
+        "type": "noun",
+        "vocabId": "duo_525"
+      },
+      {
+        "japanese": "あまい",
+        "english": "sweet",
+        "type": "adjective",
+        "vocabId": "duo_520"
+      },
+      {
+        "japanese": "ケーキや",
+        "english": "cake shop",
+        "type": "noun",
+        "vocabId": "duo_518"
+      },
+      {
+        "japanese": "みそかつ",
+        "english": "miso pork cutlet",
+        "type": "noun",
+        "vocabId": "duo_511"
+      },
+      {
+        "japanese": "にわ",
+        "english": "garden",
+        "type": "noun",
+        "vocabId": "duo_510"
+      },
+      {
+        "japanese": "しろ",
+        "english": "castle",
+        "type": "noun",
+        "vocabId": "duo_508"
+      },
+      {
+        "japanese": "せき",
+        "english": "seat",
+        "type": "noun",
+        "vocabId": "duo_507"
+      },
+      {
+        "japanese": "にのります",
+        "english": "get on, going to ride, take",
+        "type": "verb",
+        "vocabId": "duo_505"
+      },
+      {
+        "japanese": "日本りょうり",
+        "english": "Japanese food",
+        "type": "noun",
+        "vocabId": "duo_502"
+      },
+      {
+        "japanese": "すしや",
+        "english": "sushi restaurant",
+        "type": "noun",
+        "vocabId": "duo_499"
+      },
+      {
+        "japanese": "食べましょう",
+        "english": "we should eat",
+        "type": "verb",
+        "vocabId": "duo_495"
+      },
+      {
+        "japanese": "フランスりょうり",
+        "english": "French food",
+        "type": "noun",
+        "vocabId": "duo_493"
+      },
+      {
+        "japanese": "かえりましょう",
+        "english": "we should return",
+        "type": "verb",
+        "vocabId": "duo_492"
+      },
+      {
+        "japanese": "休みましょう",
+        "english": "we should rest",
+        "type": "verb",
+        "vocabId": "duo_491"
+      },
+      {
+        "japanese": "ライオン",
+        "english": "lion",
+        "type": "noun",
+        "vocabId": "duo_489"
+      },
+      {
+        "japanese": "とりましょう",
+        "english": "we should take",
+        "type": "verb",
+        "vocabId": "duo_488"
+      },
+      {
+        "japanese": "で",
+        "english": "as a, under, through",
+        "type": "particle",
+        "vocabId": "duo_484"
+      },
+      {
+        "japanese": "見ましょう",
+        "english": "let's see, let's view, let's watch",
+        "type": "verb",
+        "vocabId": "duo_483"
+      },
+      {
+        "japanese": "会います",
+        "english": "am going to meet up, (will) meet, (is) meeting",
+        "type": "verb",
+        "vocabId": "duo_478"
+      },
+      {
+        "japanese": "会いましょう",
+        "english": "let's meet, see you",
+        "type": "verb",
+        "vocabId": "duo_475"
+      },
+      {
+        "japanese": "買い物",
+        "english": "shopping",
+        "type": "noun",
+        "vocabId": "duo_465"
+      },
+      {
+        "japanese": "ストレッチ",
+        "english": "stretch",
+        "type": "noun",
+        "vocabId": "duo_462"
+      },
+      {
+        "japanese": "にはいります",
+        "english": "am going to take, take, going to enroll",
+        "type": "verb",
+        "vocabId": "duo_461"
+      },
+      {
+        "japanese": "せんたく",
+        "english": "laundry",
+        "type": "noun",
+        "vocabId": "duo_459"
+      },
+      {
+        "japanese": "いろいろ",
+        "english": "all sorts of",
+        "type": "adverb",
+        "vocabId": "duo_457"
+      },
+      {
+        "japanese": "何",
+        "english": "anything, which, what",
+        "type": "pronoun",
+        "vocabId": "duo_453"
+      },
+      {
+        "japanese": "かじ",
+        "english": "chore",
+        "type": "noun",
+        "vocabId": "duo_451"
+      },
+      {
+        "japanese": "かえります",
+        "english": "am returning, will return home, returning",
+        "type": "verb",
+        "vocabId": "duo_447"
+      },
+      {
+        "japanese": "ソウル",
+        "english": "Seoul",
+        "type": "noun",
+        "vocabId": "duo_443"
+      },
+      {
+        "japanese": "かんこくご",
+        "english": "Korean",
+        "type": "noun",
+        "vocabId": "duo_442"
+      },
+      {
+        "japanese": "たいわん",
+        "english": "Taiwan",
+        "type": "noun",
+        "vocabId": "duo_434"
+      },
+      {
+        "japanese": "コーチ",
+        "english": "coach",
+        "type": "noun",
+        "vocabId": "duo_432"
+      },
+      {
+        "japanese": "が",
+        "english": "(softens the tone), (indicates the subject), but",
+        "type": "particle",
+        "vocabId": "duo_429"
+      },
+      {
+        "japanese": "ココア",
+        "english": "cocoa",
+        "type": "noun",
+        "vocabId": "duo_422"
+      },
+      {
+        "japanese": "こんばん",
+        "english": "this evening, tonight",
+        "type": "noun",
+        "vocabId": "duo_419"
+      },
+      {
+        "japanese": "くもり",
+        "english": "cloudy weather, cloudiness",
+        "type": "noun",
+        "vocabId": "duo_417"
+      },
+      {
+        "japanese": "はなび",
+        "english": "fireworks",
+        "type": "noun",
+        "vocabId": "duo_413"
+      },
+      {
+        "japanese": "日",
+        "english": "day, the sun, (a) day",
+        "type": "noun",
+        "vocabId": "duo_407"
+      },
+      {
+        "japanese": "くすりを飲みます",
+        "english": "take",
+        "type": "verb",
+        "vocabId": "duo_399"
+      },
+      {
+        "japanese": "休みます",
+        "english": "rest, take a break, absent (from)",
+        "type": "verb",
+        "vocabId": "duo_398"
+      },
+      {
+        "japanese": "ごかぞく",
+        "english": "your family, family",
+        "type": "noun",
+        "vocabId": "duo_395"
+      },
+      {
+        "japanese": "何さい",
+        "english": "how old",
+        "type": "noun",
+        "vocabId": "duo_391"
+      },
+      {
+        "japanese": "〇",
+        "english": "0, zero",
+        "type": "noun",
+        "vocabId": "duo_390"
+      },
+      {
+        "japanese": "九",
+        "english": "nine",
+        "type": "noun",
+        "vocabId": "duo_389"
+      },
+      {
+        "japanese": "けいさつ",
+        "english": "police",
+        "type": "noun",
+        "vocabId": "duo_385"
+      },
+      {
+        "japanese": "あぶない",
+        "english": "dangerous",
+        "type": "adjective",
+        "vocabId": "duo_384"
+      },
+      {
+        "japanese": "すわります",
+        "english": "sit, going to sit",
+        "type": "verb",
+        "vocabId": "duo_382"
+      },
+      {
+        "japanese": "ラーメンや",
+        "english": "ramen shop",
+        "type": "noun",
+        "vocabId": "duo_372"
+      },
+      {
+        "japanese": "ピザや",
+        "english": "pizza shop",
+        "type": "noun",
+        "vocabId": "duo_371"
+      },
+      {
+        "japanese": "はらじゅく",
+        "english": "Harajuku",
+        "type": "noun",
+        "vocabId": "duo_370"
+      },
+      {
+        "japanese": "おてら",
+        "english": "temple",
+        "type": "noun",
+        "vocabId": "duo_366"
+      },
+      {
+        "japanese": "な",
+        "english": "do not, (adjective ending), don't",
+        "type": "particle",
+        "vocabId": "duo_364"
+      },
+      {
+        "japanese": "ところ",
+        "english": "place",
+        "type": "noun",
+        "vocabId": "duo_363"
+      },
+      {
+        "japanese": "しゅうてん",
+        "english": "final stop",
+        "type": "noun",
+        "vocabId": "duo_360"
+      },
+      {
+        "japanese": "十分",
+        "english": "sufficient, enough, adequate",
+        "type": "counter",
+        "vocabId": "duo_354"
+      },
+      {
+        "japanese": "もうすぐ",
+        "english": "soon, almost, shortly",
+        "type": "adverb",
+        "vocabId": "duo_352"
+      },
+      {
+        "japanese": "あさくさ",
+        "english": "Asakusa",
+        "type": "noun",
+        "vocabId": "duo_351"
+      },
+      {
+        "japanese": "うえのこうえん",
+        "english": "Ueno Park",
+        "type": "noun",
+        "vocabId": "duo_350"
+      },
+      {
+        "japanese": "あきはばら",
+        "english": "Akihabara",
+        "type": "noun",
+        "vocabId": "duo_344"
+      },
+      {
+        "japanese": "いつ",
+        "english": "when, what time",
+        "type": "adverb",
+        "vocabId": "duo_339"
+      },
+      {
+        "japanese": "つくえ",
+        "english": "desk",
+        "type": "noun",
+        "vocabId": "duo_338"
+      },
+      {
+        "japanese": "れいぞうこ",
+        "english": "fridge",
+        "type": "noun",
+        "vocabId": "duo_336"
+      },
+      {
+        "japanese": "いす",
+        "english": "chair, chairs",
+        "type": "noun",
+        "vocabId": "duo_335"
+      },
+      {
+        "japanese": "テーブル",
+        "english": "table, tables",
+        "type": "noun",
+        "vocabId": "duo_334"
+      },
+      {
+        "japanese": "でんしレンジ",
+        "english": "microwave",
+        "type": "noun",
+        "vocabId": "duo_333"
+      },
+      {
+        "japanese": "ふとん",
+        "english": "futon, futons",
+        "type": "noun",
+        "vocabId": "duo_332"
+      },
+      {
+        "japanese": "そうじき",
+        "english": "vacuum cleaner",
+        "type": "noun",
+        "vocabId": "duo_328"
+      },
+      {
+        "japanese": "れんあい",
+        "english": "romance",
+        "type": "noun",
+        "vocabId": "duo_316"
+      },
+      {
+        "japanese": "コメディ",
+        "english": "comedy",
+        "type": "noun",
+        "vocabId": "duo_315"
+      },
+      {
+        "japanese": "ほんとうですか",
+        "english": "really",
+        "type": "phrase",
+        "vocabId": "duo_314"
+      },
+      {
+        "japanese": "アクション",
+        "english": "action",
+        "type": "noun",
+        "vocabId": "duo_313"
+      },
+      {
+        "japanese": "アメリカの",
+        "english": "... of the US, American, ... of the United States",
+        "type": "noun",
+        "vocabId": "duo_312"
+      },
+      {
+        "japanese": "どんな",
+        "english": "any, what kind of, what (sort of)",
+        "type": "other",
+        "vocabId": "duo_311"
+      },
+      {
+        "japanese": "ファンタジー",
+        "english": "fantasy",
+        "type": "noun",
+        "vocabId": "duo_310"
+      },
+      {
+        "japanese": "ホラー",
+        "english": "horror",
+        "type": "noun",
+        "vocabId": "duo_309"
+      },
+      {
+        "japanese": "がすきですか",
+        "english": "do you like",
+        "type": "phrase",
+        "vocabId": "duo_308"
+      },
+      {
+        "japanese": "ミステリー",
+        "english": "mystery",
+        "type": "noun",
+        "vocabId": "duo_306"
+      },
+      {
+        "japanese": "Kポップ",
+        "english": "K-pop",
+        "type": "noun",
+        "vocabId": "duo_305"
+      },
+      {
+        "japanese": "日本の",
+        "english": "Japan's, of Japan, Japanese",
+        "type": "noun",
+        "vocabId": "duo_304"
+      },
+      {
+        "japanese": "さんは",
+        "english": "Mr./Ms.",
+        "type": "noun",
+        "vocabId": "duo_298"
+      }
+    ],
+    "withoutExamplesButInBatch": [],
+    "typeMismatches": [
+      {
+        "japanese": "は",
+        "aiType": "noun",
+        "vocabTypes": "particle",
+        "aiId": "duo_200",
+        "vocabIds": "duo_24",
+        "source": "batch_3.md"
+      },
+      {
+        "japanese": "だいじょうぶ",
+        "aiType": "phrase",
+        "vocabTypes": "adjective",
+        "aiId": "duo_597",
+        "vocabIds": "duo_381",
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "いつ",
+        "aiType": "pronoun",
+        "vocabTypes": "adverb",
+        "aiId": "duo_720",
+        "vocabIds": "duo_339",
+        "source": "batch_remaining.json"
+      },
+      {
+        "japanese": "いくら",
+        "aiType": "adverb",
+        "vocabTypes": "noun",
+        "aiId": "duo_723",
+        "vocabIds": "duo_202",
+        "source": "batch_remaining.json"
+      }
+    ]
+  }
+}

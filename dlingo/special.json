@@ -1,0 +1,3614 @@
+{
+  "vocabularyCategories": [
+    {
+      "category": "1. Numbers",
+      "subcategories": [
+        {
+          "subcategory": "Basic Numbers (0-10)",
+          "words": [
+            {
+              "japanese": "ゼロ/れい",
+              "english": "zero",
+              "type": "number",
+              "special": true,
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "いち",
+              "english": "one",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "に",
+              "english": "two",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "さん",
+              "english": "three",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "よん/し",
+              "english": "four",
+              "type": "number",
+              "special": true,
+              "note": "Two readings: よん (preferred) and し (used in some compounds)",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "ご",
+              "english": "five",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "ろく",
+              "english": "six",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "なな/しち",
+              "english": "seven",
+              "type": "number",
+              "special": true,
+              "note": "Two readings: なな (preferred) and しち (used in some compounds)",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "はち",
+              "english": "eight",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "きゅう/く",
+              "english": "nine",
+              "type": "number",
+              "special": true,
+              "note": "Two readings: きゅう (preferred) and く (used in some compounds)",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "じゅう",
+              "english": "ten",
+              "type": "number",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Numbers 11-20",
+          "words": [
+            {
+              "japanese": "じゅういち",
+              "english": "eleven",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "じゅうに",
+              "english": "twelve",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "じゅうさん",
+              "english": "thirteen",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "じゅうよん/じゅうし",
+              "english": "fourteen",
+              "type": "number",
+              "special": true,
+              "note": "Two readings available",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "じゅうご",
+              "english": "fifteen",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "じゅうろく",
+              "english": "sixteen",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "じゅうなな/じゅうしち",
+              "english": "seventeen",
+              "type": "number",
+              "special": true,
+              "note": "Two readings available",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "じゅうはち",
+              "english": "eighteen",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "じゅうきゅう/じゅうく",
+              "english": "nineteen",
+              "type": "number",
+              "special": true,
+              "note": "Two readings available",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "にじゅう",
+              "english": "twenty",
+              "type": "number",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Tens (30-90)",
+          "words": [
+            {
+              "japanese": "さんじゅう",
+              "english": "thirty",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "よんじゅう",
+              "english": "forty",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "ごじゅう",
+              "english": "fifty",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "ろくじゅう",
+              "english": "sixty",
+              "type": "number",
+              "special": true,
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ななじゅう",
+              "english": "seventy",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "はちじゅう",
+              "english": "eighty",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "きゅうじゅう",
+              "english": "ninety",
+              "type": "number",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Hundreds (100-900)",
+          "note": "Sound changes occur with 3, 6, and 8",
+          "words": [
+            {
+              "japanese": "ひゃく",
+              "english": "one hundred",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "にひゃく",
+              "english": "two hundred",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "さんびゃく",
+              "english": "three hundred",
+              "type": "number",
+              "special": true,
+              "note": "ひゃく → びゃく (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "よんひゃく",
+              "english": "four hundred",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "ごひゃく",
+              "english": "five hundred",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "ろっぴゃく",
+              "english": "six hundred",
+              "type": "number",
+              "special": true,
+              "note": "ろく → ろっ, ひゃく → ぴゃく (double sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ななひゃく",
+              "english": "seven hundred",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "はっぴゃく",
+              "english": "eight hundred",
+              "type": "number",
+              "special": true,
+              "note": "はち → はっ, ひゃく → ぴゃく (double sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "きゅうひゃく",
+              "english": "nine hundred",
+              "type": "number",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Thousands (1,000-9,000)",
+          "note": "Sound changes occur with 3 and 8",
+          "words": [
+            {
+              "japanese": "せん",
+              "english": "one thousand",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "にせん",
+              "english": "two thousand",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "さんぜん",
+              "english": "three thousand",
+              "type": "number",
+              "special": true,
+              "note": "せん → ぜん (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "よんせん",
+              "english": "four thousand",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "ごせん",
+              "english": "five thousand",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "ろくせん",
+              "english": "six thousand",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "ななせん",
+              "english": "seven thousand",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "はっせん",
+              "english": "eight thousand",
+              "type": "number",
+              "special": true,
+              "note": "はち → はっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "きゅうせん",
+              "english": "nine thousand",
+              "type": "number",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Large Numbers (10,000+)",
+          "words": [
+            {
+              "japanese": "いちまん",
+              "english": "ten thousand (10,000)",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "じゅうまん",
+              "english": "one hundred thousand (100,000)",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "ひゃくまん",
+              "english": "one million (1,000,000)",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "いっせんまん",
+              "english": "ten million (10,000,000)",
+              "type": "number",
+              "special": true,
+              "note": "いち → いっ (sound change before せん)"
+            },
+            {
+              "japanese": "いちおく",
+              "english": "one hundred million (100,000,000)",
+              "type": "number",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Decimals and Fractions",
+          "words": [
+            {
+              "japanese": "てん",
+              "english": "point (decimal)",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "じゅうに てん なな",
+              "english": "12.7 (twelve point seven)",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "ゼロ てん はち なな ろく",
+              "english": "0.876",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "ぶんの",
+              "english": "divided by (for fractions)",
+              "type": "number",
+              "special": true,
+              "note": "Fractions read bottom-up: denominator + ぶんの + numerator"
+            },
+            {
+              "japanese": "にぶんのいち",
+              "english": "one half (1/2)",
+              "type": "number",
+              "special": true,
+              "note": "Read as 'of two parts, one' = 1/2"
+            },
+            {
+              "japanese": "よんぶんのさん",
+              "english": "three quarters (3/4)",
+              "type": "number",
+              "special": true,
+              "note": "Read as 'of four parts, three' = 3/4"
+            },
+            {
+              "japanese": "さんぶんのいち",
+              "english": "one third (1/3)",
+              "type": "number",
+              "special": false
+            },
+            {
+              "japanese": "よんぶんのいち",
+              "english": "one quarter (1/4)",
+              "type": "number",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Number Questions",
+          "words": [
+            {
+              "japanese": "いくつ",
+              "english": "how many (things)",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            },
+            {
+              "japanese": "いくら",
+              "english": "how much (price)",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            },
+            {
+              "japanese": "なんばん",
+              "english": "what number",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "2. Time Expressions",
+      "subcategories": [
+        {
+          "subcategory": "Day Expressions",
+          "words": [
+            {
+              "japanese": "おととい",
+              "english": "the day before yesterday",
+              "type": "noun",
+              "special": true,
+              "note": "Irregular word, not formed from regular pattern"
+            },
+            {
+              "japanese": "きのう",
+              "english": "yesterday",
+              "type": "noun",
+              "special": true,
+              "note": "Irregular word"
+            },
+            {
+              "japanese": "きょう",
+              "english": "today",
+              "type": "noun",
+              "special": true,
+              "note": "Irregular word"
+            },
+            {
+              "japanese": "あした/あす",
+              "english": "tomorrow",
+              "type": "noun",
+              "special": true,
+              "note": "Two forms: あした (casual), あす (formal)",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "あさって",
+              "english": "the day after tomorrow",
+              "type": "noun",
+              "special": true,
+              "note": "Irregular word"
+            },
+            {
+              "japanese": "まいにち",
+              "english": "every day",
+              "type": "noun",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Morning Expressions",
+          "words": [
+            {
+              "japanese": "おとといのあさ",
+              "english": "the morning of the day before yesterday",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "きのうのあさ",
+              "english": "yesterday morning",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "けさ",
+              "english": "this morning",
+              "type": "noun",
+              "special": true,
+              "note": "Contracted form (not きょうのあさ)"
+            },
+            {
+              "japanese": "あしたのあさ",
+              "english": "tomorrow morning",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "あさってのあさ",
+              "english": "the morning of the day after tomorrow",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "まいあさ",
+              "english": "every morning",
+              "type": "noun",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Night Expressions",
+          "words": [
+            {
+              "japanese": "おとといのよる",
+              "english": "the night of the day before yesterday",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "ゆうべ",
+              "english": "last night",
+              "type": "noun",
+              "special": true,
+              "note": "Special word for last night (not きのうのよる)"
+            },
+            {
+              "japanese": "こんや/こんばん",
+              "english": "tonight / this evening",
+              "type": "noun",
+              "special": true,
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "あしたのよる",
+              "english": "tomorrow night",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "あさってのよる",
+              "english": "the night of the day after tomorrow",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "まいばん/まいよる",
+              "english": "every night",
+              "type": "noun",
+              "special": true,
+              "specialReason": "multiple-readings"
+            }
+          ]
+        },
+        {
+          "subcategory": "Week Expressions",
+          "words": [
+            {
+              "japanese": "せんせんしゅう",
+              "english": "the week before last",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "せんしゅう",
+              "english": "last week",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "こんしゅう",
+              "english": "this week",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "らいしゅう",
+              "english": "next week",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "さらいしゅう",
+              "english": "the week after next",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "まいしゅう",
+              "english": "every week",
+              "type": "noun",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Month Expressions",
+          "words": [
+            {
+              "japanese": "せんせんげつ",
+              "english": "the month before last",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "せんげつ",
+              "english": "last month",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "こんげつ",
+              "english": "this month",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "らいげつ",
+              "english": "next month",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "さらいげつ",
+              "english": "the month after next",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "まいつき/まいげつ",
+              "english": "every month",
+              "type": "noun",
+              "special": true,
+              "specialReason": "multiple-readings"
+            }
+          ]
+        },
+        {
+          "subcategory": "Year Expressions",
+          "words": [
+            {
+              "japanese": "おととし",
+              "english": "the year before last",
+              "type": "noun",
+              "special": true,
+              "note": "Irregular word (not せんせんねん)"
+            },
+            {
+              "japanese": "きょねん",
+              "english": "last year",
+              "type": "noun",
+              "special": true,
+              "note": "Irregular word (not せんねん)"
+            },
+            {
+              "japanese": "ことし",
+              "english": "this year",
+              "type": "noun",
+              "special": true,
+              "note": "Irregular word (not こんねん)"
+            },
+            {
+              "japanese": "らいねん",
+              "english": "next year",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "さらいねん",
+              "english": "the year after next",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "まいとし/まいねん",
+              "english": "every year",
+              "type": "noun",
+              "special": true,
+              "specialReason": "multiple-readings"
+            }
+          ]
+        },
+        {
+          "subcategory": "Time Expression Questions",
+          "words": [
+            {
+              "japanese": "いつ",
+              "english": "when",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            },
+            {
+              "japanese": "なんにち",
+              "english": "what day (of month) / how many days",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            },
+            {
+              "japanese": "なんしゅうかん",
+              "english": "how many weeks",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            },
+            {
+              "japanese": "なんかげつ",
+              "english": "how many months",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            },
+            {
+              "japanese": "なんねん",
+              "english": "what year / how many years",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "3. Telling Time",
+      "subcategories": [
+        {
+          "subcategory": "Hours (O'Clock)",
+          "note": "Special readings for 4, 7, and 9",
+          "words": [
+            {
+              "japanese": "いちじ",
+              "english": "one o'clock",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "にじ",
+              "english": "two o'clock",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんじ",
+              "english": "three o'clock",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "よじ",
+              "english": "four o'clock",
+              "type": "counter",
+              "special": true,
+              "note": "よん → よ (not よんじ)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ごじ",
+              "english": "five o'clock",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろくじ",
+              "english": "six o'clock",
+              "type": "counter",
+              "special": true,
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "しちじ",
+              "english": "seven o'clock",
+              "type": "counter",
+              "special": true,
+              "note": "Uses しち (not なな)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "はちじ",
+              "english": "eight o'clock",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "くじ",
+              "english": "nine o'clock",
+              "type": "counter",
+              "special": true,
+              "note": "Uses く (not きゅう)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "じゅうじ",
+              "english": "ten o'clock",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅういちじ",
+              "english": "eleven o'clock",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅうにじ",
+              "english": "twelve o'clock",
+              "type": "counter",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Minutes",
+          "note": "Many sound changes occur with ふん/ぷん",
+          "words": [
+            {
+              "japanese": "いっぷん",
+              "english": "one minute",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ, ふん → ぷん",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "にふん",
+              "english": "two minutes",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんぷん",
+              "english": "three minutes",
+              "type": "counter",
+              "special": true,
+              "note": "ふん → ぷん",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "よんぷん",
+              "english": "four minutes",
+              "type": "counter",
+              "special": true,
+              "note": "ふん → ぷん",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ごふん",
+              "english": "five minutes",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろっぷん",
+              "english": "six minutes",
+              "type": "counter",
+              "special": true,
+              "note": "ろく → ろっ, ふん → ぷん",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ななふん",
+              "english": "seven minutes",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はっぷん/はちふん",
+              "english": "eight minutes",
+              "type": "counter",
+              "special": true,
+              "note": "Two forms: はっぷん (common) or はちふん",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "きゅうふん",
+              "english": "nine minutes",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅっぷん/じっぷん",
+              "english": "ten minutes",
+              "type": "counter",
+              "special": true,
+              "note": "じゅう → じゅっ/じっ, ふん → ぷん",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "じゅうごふん",
+              "english": "fifteen minutes",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "にじゅっぷん",
+              "english": "twenty minutes",
+              "type": "counter",
+              "special": true,
+              "note": "Sound change with じゅう",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "にじゅうごふん",
+              "english": "twenty-five minutes",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんじゅっぷん/はん",
+              "english": "thirty minutes / half past",
+              "type": "counter",
+              "special": true,
+              "note": "はん is commonly used for 'half past'",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "よんじゅうごふん",
+              "english": "forty-five minutes",
+              "type": "counter",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Time-Related Words",
+          "words": [
+            {
+              "japanese": "ごぜん",
+              "english": "a.m. / morning",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "ごご",
+              "english": "p.m. / afternoon",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "しょうご",
+              "english": "noon",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "まよなか",
+              "english": "midnight",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "はん",
+              "english": "half (past)",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "まえ",
+              "english": "before (e.g., 10分まえ = 10 minutes before)",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "すぎ",
+              "english": "past/after (e.g., 10分すぎ = 10 minutes past)",
+              "type": "noun",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Time Questions",
+          "words": [
+            {
+              "japanese": "なんじ",
+              "english": "what time",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            },
+            {
+              "japanese": "なんぷん",
+              "english": "how many minutes / what minute",
+              "type": "question",
+              "special": true,
+              "note": "ふん → ぷん after なん",
+              "specialReason": "question"
+            },
+            {
+              "japanese": "なんじなんぷん",
+              "english": "what time (hour and minute)",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "4. Days of the Week",
+      "subcategories": [
+        {
+          "subcategory": "Weekdays",
+          "words": [
+            {
+              "japanese": "にちようび",
+              "english": "Sunday",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "げつようび",
+              "english": "Monday",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "かようび",
+              "english": "Tuesday",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "すいようび",
+              "english": "Wednesday",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "もくようび",
+              "english": "Thursday",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "きんようび",
+              "english": "Friday",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "どようび",
+              "english": "Saturday",
+              "type": "noun",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Day of Week Questions",
+          "words": [
+            {
+              "japanese": "なんようび",
+              "english": "what day of the week",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "5. Date",
+      "subcategories": [
+        {
+          "subcategory": "Months",
+          "note": "4, 7, 9 use し, しち, く readings",
+          "words": [
+            {
+              "japanese": "いちがつ",
+              "english": "January",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "にがつ",
+              "english": "February",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "さんがつ",
+              "english": "March",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "しがつ",
+              "english": "April",
+              "type": "noun",
+              "special": true,
+              "note": "Uses し (not よん)"
+            },
+            {
+              "japanese": "ごがつ",
+              "english": "May",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "ろくがつ",
+              "english": "June",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "しちがつ",
+              "english": "July",
+              "type": "noun",
+              "special": true,
+              "note": "Uses しち (not なな)"
+            },
+            {
+              "japanese": "はちがつ",
+              "english": "August",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "くがつ",
+              "english": "September",
+              "type": "noun",
+              "special": true,
+              "note": "Uses く (not きゅう)"
+            },
+            {
+              "japanese": "じゅうがつ",
+              "english": "October",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "じゅういちがつ",
+              "english": "November",
+              "type": "noun",
+              "special": false
+            },
+            {
+              "japanese": "じゅうにがつ",
+              "english": "December",
+              "type": "noun",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Days of the Month",
+          "note": "Days 1-10, 14, 20, 24 have irregular readings",
+          "words": [
+            {
+              "japanese": "ついたち",
+              "english": "1st (day)",
+              "type": "counter",
+              "special": true,
+              "note": "Completely irregular reading",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ふつか",
+              "english": "2nd (day)",
+              "type": "counter",
+              "special": true,
+              "note": "Irregular - uses native Japanese number",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "みっか",
+              "english": "3rd (day)",
+              "type": "counter",
+              "special": true,
+              "note": "Irregular - uses native Japanese number",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "よっか",
+              "english": "4th (day)",
+              "type": "counter",
+              "special": true,
+              "note": "Irregular - uses native Japanese number",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "いつか",
+              "english": "5th (day)",
+              "type": "counter",
+              "special": true,
+              "note": "Irregular - uses native Japanese number",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "むいか",
+              "english": "6th (day)",
+              "type": "counter",
+              "special": true,
+              "note": "Irregular - uses native Japanese number",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "なのか",
+              "english": "7th (day)",
+              "type": "counter",
+              "special": true,
+              "note": "Irregular - uses native Japanese number",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ようか",
+              "english": "8th (day)",
+              "type": "counter",
+              "special": true,
+              "note": "Irregular - uses native Japanese number",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ここのか",
+              "english": "9th (day)",
+              "type": "counter",
+              "special": true,
+              "note": "Irregular - uses native Japanese number",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "とおか",
+              "english": "10th (day)",
+              "type": "counter",
+              "special": true,
+              "note": "Irregular - uses native Japanese number",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "じゅういちにち",
+              "english": "11th (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅうににち",
+              "english": "12th (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅうさんにち",
+              "english": "13th (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅうよっか",
+              "english": "14th (day)",
+              "type": "counter",
+              "special": true,
+              "note": "Irregular - uses よっか pattern",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "じゅうごにち",
+              "english": "15th (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅうろくにち",
+              "english": "16th (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅうしちにち",
+              "english": "17th (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅうはちにち",
+              "english": "18th (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅうくにち",
+              "english": "19th (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はつか",
+              "english": "20th (day)",
+              "type": "counter",
+              "special": true,
+              "note": "Completely irregular reading",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "にじゅういちにち",
+              "english": "21st (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "にじゅうににち",
+              "english": "22nd (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "にじゅうさんにち",
+              "english": "23rd (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "にじゅうよっか",
+              "english": "24th (day)",
+              "type": "counter",
+              "special": true,
+              "note": "Irregular - uses よっか pattern",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "にじゅうごにち",
+              "english": "25th (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "にじゅうろくにち",
+              "english": "26th (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "にじゅうしちにち",
+              "english": "27th (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "にじゅうはちにち",
+              "english": "28th (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "にじゅうくにち",
+              "english": "29th (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんじゅうにち",
+              "english": "30th (day)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんじゅういちにち",
+              "english": "31st (day)",
+              "type": "counter",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Date Questions",
+          "words": [
+            {
+              "japanese": "なんがつ",
+              "english": "what month",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            },
+            {
+              "japanese": "なんにち",
+              "english": "what day (of the month)",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            },
+            {
+              "japanese": "なんねん",
+              "english": "what year",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            },
+            {
+              "japanese": "なんがつなんにち",
+              "english": "what month and day",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "6. Time Duration",
+      "subcategories": [
+        {
+          "subcategory": "Hour Duration",
+          "note": "4 and 9 have special readings",
+          "words": [
+            {
+              "japanese": "いちじかん",
+              "english": "one hour",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "にじかん",
+              "english": "two hours",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんじかん",
+              "english": "three hours",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "よじかん",
+              "english": "four hours",
+              "type": "counter",
+              "special": true,
+              "note": "Uses よ (not よん)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ごじかん",
+              "english": "five hours",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろくじかん",
+              "english": "six hours",
+              "type": "counter",
+              "special": true,
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ななじかん/しちじかん",
+              "english": "seven hours",
+              "type": "counter",
+              "special": true,
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "はちじかん",
+              "english": "eight hours",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "くじかん",
+              "english": "nine hours",
+              "type": "counter",
+              "special": true,
+              "note": "Uses く (not きゅう)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "じゅうじかん",
+              "english": "ten hours",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅういちじかん",
+              "english": "eleven hours",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅうにじかん",
+              "english": "twelve hours",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "にじゅうよじかん",
+              "english": "twenty-four hours",
+              "type": "counter",
+              "special": true,
+              "note": "Uses よ (not よん)",
+              "specialReason": "irregular"
+            }
+          ]
+        },
+        {
+          "subcategory": "Minute Duration",
+          "note": "Same sound changes as telling time minutes",
+          "words": [
+            {
+              "japanese": "いっぷんかん",
+              "english": "one minute (duration)",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ, ふん → ぷん",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "にふんかん",
+              "english": "two minutes (duration)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんぷんかん",
+              "english": "three minutes (duration)",
+              "type": "counter",
+              "special": true,
+              "note": "ふん → ぷん",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ごふんかん",
+              "english": "five minutes (duration)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅっぷんかん",
+              "english": "ten minutes (duration)",
+              "type": "counter",
+              "special": true,
+              "note": "じゅう → じゅっ, ふん → ぷん",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "じゅうごふんかん",
+              "english": "fifteen minutes (duration)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんじゅっぷんかん",
+              "english": "thirty minutes (duration)",
+              "type": "counter",
+              "special": true,
+              "note": "Sound change",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "よんじゅうごふんかん",
+              "english": "forty-five minutes (duration)",
+              "type": "counter",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Time Duration Questions",
+          "words": [
+            {
+              "japanese": "なんじかん",
+              "english": "how many hours",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            },
+            {
+              "japanese": "なんぷんかん",
+              "english": "how many minutes (duration)",
+              "type": "question",
+              "special": true,
+              "note": "ふん → ぷん after なん",
+              "specialReason": "question"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "7. Period",
+      "subcategories": [
+        {
+          "subcategory": "Day Period",
+          "note": "Days 1-10 use same irregular readings as dates",
+          "words": [
+            {
+              "japanese": "いちにち",
+              "english": "one day",
+              "type": "counter",
+              "special": true,
+              "note": "Different from ついたち (1st)"
+            },
+            {
+              "japanese": "ふつか",
+              "english": "two days",
+              "type": "counter",
+              "special": true,
+              "note": "Same as 2nd - irregular",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "みっか",
+              "english": "three days",
+              "type": "counter",
+              "special": true,
+              "note": "Same as 3rd - irregular",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "よっか",
+              "english": "four days",
+              "type": "counter",
+              "special": true,
+              "note": "Same as 4th - irregular",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "いつか",
+              "english": "five days",
+              "type": "counter",
+              "special": true,
+              "note": "Same as 5th - irregular",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "むいか",
+              "english": "six days",
+              "type": "counter",
+              "special": true,
+              "note": "Same as 6th - irregular",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "なのか",
+              "english": "seven days",
+              "type": "counter",
+              "special": true,
+              "note": "Same as 7th - irregular",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ようか",
+              "english": "eight days",
+              "type": "counter",
+              "special": true,
+              "note": "Same as 8th - irregular",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ここのか",
+              "english": "nine days",
+              "type": "counter",
+              "special": true,
+              "note": "Same as 9th - irregular",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "とおか",
+              "english": "ten days",
+              "type": "counter",
+              "special": true,
+              "note": "Same as 10th - irregular",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "じゅういちにち",
+              "english": "eleven days",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅうよっか",
+              "english": "fourteen days",
+              "type": "counter",
+              "special": true,
+              "note": "Uses irregular よっか",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "はつか",
+              "english": "twenty days",
+              "type": "counter",
+              "special": true,
+              "note": "Same as 20th - completely irregular",
+              "specialReason": "irregular"
+            }
+          ]
+        },
+        {
+          "subcategory": "Week Period",
+          "note": "1 week has sound change",
+          "words": [
+            {
+              "japanese": "いっしゅうかん",
+              "english": "one week",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ (sound change)"
+            },
+            {
+              "japanese": "にしゅうかん",
+              "english": "two weeks",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんしゅうかん",
+              "english": "three weeks",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "よんしゅうかん",
+              "english": "four weeks",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ごしゅうかん",
+              "english": "five weeks",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろくしゅうかん",
+              "english": "six weeks",
+              "type": "counter",
+              "special": false
+            }
+          ]
+        },
+        {
+          "subcategory": "Month Period",
+          "note": "Several sound changes with かげつ",
+          "words": [
+            {
+              "japanese": "いっかげつ",
+              "english": "one month",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ (sound change)"
+            },
+            {
+              "japanese": "にかげつ",
+              "english": "two months",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんかげつ",
+              "english": "three months",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "よんかげつ",
+              "english": "four months",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ごかげつ",
+              "english": "five months",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろっかげつ/はんとし",
+              "english": "six months / half a year",
+              "type": "counter",
+              "special": true,
+              "note": "ろく → ろっ; はんとし is alternative",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "ななかげつ",
+              "english": "seven months",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はちかげつ/はっかげつ",
+              "english": "eight months",
+              "type": "counter",
+              "special": true,
+              "note": "Two forms possible",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "きゅうかげつ",
+              "english": "nine months",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅっかげつ",
+              "english": "ten months",
+              "type": "counter",
+              "special": true,
+              "note": "じゅう → じゅっ (sound change)"
+            },
+            {
+              "japanese": "じゅういっかげつ",
+              "english": "eleven months",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ (sound change)"
+            },
+            {
+              "japanese": "じゅうにかげつ/いちねん",
+              "english": "twelve months / one year",
+              "type": "counter",
+              "special": true,
+              "specialReason": "multiple-readings"
+            }
+          ]
+        },
+        {
+          "subcategory": "Year Period",
+          "note": "4 uses よ, 7 and 9 have variations",
+          "words": [
+            {
+              "japanese": "いちねん/いちねんかん",
+              "english": "one year",
+              "type": "counter",
+              "special": true,
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "にねん/にねんかん",
+              "english": "two years",
+              "type": "counter",
+              "special": true,
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "さんねん/さんねんかん",
+              "english": "three years",
+              "type": "counter",
+              "special": true,
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "よねん/よねんかん",
+              "english": "four years",
+              "type": "counter",
+              "special": true,
+              "note": "Uses よ (not よん)",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "ごねん/ごねんかん",
+              "english": "five years",
+              "type": "counter",
+              "special": true,
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "ろくねん/ろくねんかん",
+              "english": "six years",
+              "type": "counter",
+              "special": true,
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "ななねん/しちねん",
+              "english": "seven years",
+              "type": "counter",
+              "special": true,
+              "note": "Both readings acceptable",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "はちねん/はちねんかん",
+              "english": "eight years",
+              "type": "counter",
+              "special": true,
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "きゅうねん/くねん",
+              "english": "nine years",
+              "type": "counter",
+              "special": true,
+              "note": "Both readings acceptable",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "じゅうねん/じゅうねんかん",
+              "english": "ten years",
+              "type": "counter",
+              "special": true,
+              "specialReason": "multiple-readings"
+            }
+          ]
+        },
+        {
+          "subcategory": "Period Questions",
+          "words": [
+            {
+              "japanese": "なんにち",
+              "english": "how many days",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            },
+            {
+              "japanese": "なんしゅうかん",
+              "english": "how many weeks",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            },
+            {
+              "japanese": "なんかげつ",
+              "english": "how many months",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            },
+            {
+              "japanese": "なんねん/なんねんかん",
+              "english": "how many years",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "8. Counter Suffixes",
+      "subcategories": [
+        {
+          "subcategory": "General Things (つ) - Native Japanese",
+          "note": "Uses native Japanese numbers 1-10 only; all are special/irregular",
+          "words": [
+            {
+              "japanese": "ひとつ",
+              "english": "one (thing)",
+              "type": "counter",
+              "special": true,
+              "note": "Native Japanese counting system",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ふたつ",
+              "english": "two (things)",
+              "type": "counter",
+              "special": true,
+              "note": "Native Japanese counting system",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "みっつ",
+              "english": "three (things)",
+              "type": "counter",
+              "special": true,
+              "note": "Native Japanese counting system",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "よっつ",
+              "english": "four (things)",
+              "type": "counter",
+              "special": true,
+              "note": "Native Japanese counting system",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "いつつ",
+              "english": "five (things)",
+              "type": "counter",
+              "special": true,
+              "note": "Native Japanese counting system",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "むっつ",
+              "english": "six (things)",
+              "type": "counter",
+              "special": true,
+              "note": "Native Japanese counting system",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ななつ",
+              "english": "seven (things)",
+              "type": "counter",
+              "special": true,
+              "note": "Native Japanese counting system",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "やっつ",
+              "english": "eight (things)",
+              "type": "counter",
+              "special": true,
+              "note": "Native Japanese counting system",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ここのつ",
+              "english": "nine (things)",
+              "type": "counter",
+              "special": true,
+              "note": "Native Japanese counting system",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "とお",
+              "english": "ten (things)",
+              "type": "counter",
+              "special": true,
+              "note": "Native Japanese counting system; no つ",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "いくつ",
+              "english": "how many (things)",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "People (人/にん)",
+          "note": "1 and 2 people are completely irregular",
+          "words": [
+            {
+              "japanese": "ひとり",
+              "english": "one person",
+              "type": "counter",
+              "special": true,
+              "note": "Completely irregular (not いちにん)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ふたり",
+              "english": "two people",
+              "type": "counter",
+              "special": true,
+              "note": "Completely irregular (not ににん)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "さんにん",
+              "english": "three people",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "よにん",
+              "english": "four people",
+              "type": "counter",
+              "special": true,
+              "note": "Uses よ (not よん)"
+            },
+            {
+              "japanese": "ごにん",
+              "english": "five people",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろくにん",
+              "english": "six people",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ななにん/しちにん",
+              "english": "seven people",
+              "type": "counter",
+              "special": true,
+              "note": "Both readings used",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "はちにん",
+              "english": "eight people",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "きゅうにん/くにん",
+              "english": "nine people",
+              "type": "counter",
+              "special": true,
+              "note": "Both readings used",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "じゅうにん",
+              "english": "ten people",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "なんにん",
+              "english": "how many people",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "Order/Ranking (番/ばん)",
+          "note": "3 changes to ばん (voiced)",
+          "words": [
+            {
+              "japanese": "いちばん",
+              "english": "first / number one",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "にばん",
+              "english": "second / number two",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんばん",
+              "english": "third / number three",
+              "type": "counter",
+              "special": true,
+              "note": "ばん → ばん (voiced after ん)"
+            },
+            {
+              "japanese": "よんばん",
+              "english": "fourth / number four",
+              "type": "counter",
+              "special": true,
+              "note": "ばん voiced"
+            },
+            {
+              "japanese": "ごばん",
+              "english": "fifth / number five",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろくばん",
+              "english": "sixth / number six",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ななばん",
+              "english": "seventh / number seven",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はちばん",
+              "english": "eighth / number eight",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "きゅうばん",
+              "english": "ninth / number nine",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅうばん",
+              "english": "tenth / number ten",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "なんばん",
+              "english": "what number / which",
+              "type": "question",
+              "special": true,
+              "note": "ばん voiced after ん",
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "Thin/Flat Things (枚/まい)",
+          "note": "Regular counter - no sound changes",
+          "words": [
+            {
+              "japanese": "いちまい",
+              "english": "one (flat thing)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "にまい",
+              "english": "two (flat things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんまい",
+              "english": "three (flat things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "よんまい",
+              "english": "four (flat things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ごまい",
+              "english": "five (flat things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろくまい",
+              "english": "six (flat things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ななまい",
+              "english": "seven (flat things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はちまい",
+              "english": "eight (flat things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "きゅうまい",
+              "english": "nine (flat things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅうまい",
+              "english": "ten (flat things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "なんまい",
+              "english": "how many (flat things)",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "Machines/Vehicles (台/だい)",
+          "note": "Regular counter - no sound changes",
+          "words": [
+            {
+              "japanese": "いちだい",
+              "english": "one (machine/vehicle)",
+              "type": "counter",
+              "special": true,
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "にだい",
+              "english": "two (machines/vehicles)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんだい",
+              "english": "three (machines/vehicles)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "よんだい",
+              "english": "four (machines/vehicles)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ごだい",
+              "english": "five (machines/vehicles)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろくだい",
+              "english": "six (machines/vehicles)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ななだい",
+              "english": "seven (machines/vehicles)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はちだい",
+              "english": "eight (machines/vehicles)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "きゅうだい",
+              "english": "nine (machines/vehicles)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅうだい",
+              "english": "ten (machines/vehicles)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "なんだい",
+              "english": "how many (machines/vehicles)",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "Age (歳/さい)",
+          "note": "1, 8, 10, and 20 have special forms",
+          "words": [
+            {
+              "japanese": "いっさい",
+              "english": "one year old",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "にさい",
+              "english": "two years old",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんさい",
+              "english": "three years old",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "よんさい",
+              "english": "four years old",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ごさい",
+              "english": "five years old",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろくさい",
+              "english": "six years old",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ななさい",
+              "english": "seven years old",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はっさい",
+              "english": "eight years old",
+              "type": "counter",
+              "special": true,
+              "note": "はち → はっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "きゅうさい",
+              "english": "nine years old",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅっさい/じっさい",
+              "english": "ten years old",
+              "type": "counter",
+              "special": true,
+              "note": "じゅう → じゅっ/じっ (sound change)",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "はたち",
+              "english": "twenty years old",
+              "type": "counter",
+              "special": true,
+              "note": "Completely irregular reading",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "なんさい/おいくつ",
+              "english": "how old",
+              "type": "question",
+              "special": true,
+              "note": "おいくつ is polite form",
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "Books/Notebooks (冊/さつ)",
+          "note": "1, 8, 10 have sound changes",
+          "words": [
+            {
+              "japanese": "いっさつ",
+              "english": "one (book)",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "にさつ",
+              "english": "two (books)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんさつ",
+              "english": "three (books)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "よんさつ",
+              "english": "four (books)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ごさつ",
+              "english": "five (books)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろくさつ",
+              "english": "six (books)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ななさつ",
+              "english": "seven (books)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はっさつ",
+              "english": "eight (books)",
+              "type": "counter",
+              "special": true,
+              "note": "はち → はっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "きゅうさつ",
+              "english": "nine (books)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅっさつ/じっさつ",
+              "english": "ten (books)",
+              "type": "counter",
+              "special": true,
+              "note": "じゅう → じゅっ/じっ (sound change)",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "なんさつ",
+              "english": "how many (books)",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "Clothes (着/ちゃく)",
+          "note": "1, 8, 10 have sound changes",
+          "words": [
+            {
+              "japanese": "いっちゃく",
+              "english": "one (piece of clothing)",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "にちゃく",
+              "english": "two (pieces of clothing)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんちゃく",
+              "english": "three (pieces of clothing)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "よんちゃく",
+              "english": "four (pieces of clothing)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ごちゃく",
+              "english": "five (pieces of clothing)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろくちゃく",
+              "english": "six (pieces of clothing)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ななちゃく",
+              "english": "seven (pieces of clothing)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はっちゃく",
+              "english": "eight (pieces of clothing)",
+              "type": "counter",
+              "special": true,
+              "note": "はち → はっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "きゅうちゃく",
+              "english": "nine (pieces of clothing)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅっちゃく",
+              "english": "ten (pieces of clothing)",
+              "type": "counter",
+              "special": true,
+              "note": "じゅう → じゅっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "なんちゃく",
+              "english": "how many (pieces of clothing)",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "Frequency (回/かい)",
+          "note": "1, 6, 8, 10 have sound changes",
+          "words": [
+            {
+              "japanese": "いっかい",
+              "english": "one time / once",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "にかい",
+              "english": "two times / twice",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんかい",
+              "english": "three times",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "よんかい",
+              "english": "four times",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ごかい",
+              "english": "five times",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろっかい",
+              "english": "six times",
+              "type": "counter",
+              "special": true,
+              "note": "ろく → ろっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ななかい",
+              "english": "seven times",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はちかい/はっかい",
+              "english": "eight times",
+              "type": "counter",
+              "special": true,
+              "note": "Both forms used",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "きゅうかい",
+              "english": "nine times",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅっかい/じっかい",
+              "english": "ten times",
+              "type": "counter",
+              "special": true,
+              "note": "じゅう → じゅっ/じっ (sound change)",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "なんかい",
+              "english": "how many times",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "Small Things (個/こ)",
+          "note": "1, 6, 8, 10 have sound changes",
+          "words": [
+            {
+              "japanese": "いっこ",
+              "english": "one (small thing)",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "にこ",
+              "english": "two (small things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんこ",
+              "english": "three (small things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "よんこ",
+              "english": "four (small things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ごこ",
+              "english": "five (small things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろっこ",
+              "english": "six (small things)",
+              "type": "counter",
+              "special": true,
+              "note": "ろく → ろっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ななこ",
+              "english": "seven (small things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はちこ/はっこ",
+              "english": "eight (small things)",
+              "type": "counter",
+              "special": true,
+              "note": "Both forms used",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "きゅうこ",
+              "english": "nine (small things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅっこ/じっこ",
+              "english": "ten (small things)",
+              "type": "counter",
+              "special": true,
+              "note": "じゅう → じゅっ/じっ (sound change)",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "なんこ",
+              "english": "how many (small things)",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "Shoes/Socks Pairs (足/そく)",
+          "note": "1, 3, 8, 10 have sound changes",
+          "words": [
+            {
+              "japanese": "いっそく",
+              "english": "one pair (shoes/socks)",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ (sound change)"
+            },
+            {
+              "japanese": "にそく",
+              "english": "two pairs (shoes/socks)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんぞく",
+              "english": "three pairs (shoes/socks)",
+              "type": "counter",
+              "special": true,
+              "note": "そく → ぞく (voiced after ん)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "よんそく",
+              "english": "four pairs (shoes/socks)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ごそく",
+              "english": "five pairs (shoes/socks)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろくそく",
+              "english": "six pairs (shoes/socks)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ななそく",
+              "english": "seven pairs (shoes/socks)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はっそく",
+              "english": "eight pairs (shoes/socks)",
+              "type": "counter",
+              "special": true,
+              "note": "はち → はっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "きゅうそく",
+              "english": "nine pairs (shoes/socks)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅっそく",
+              "english": "ten pairs (shoes/socks)",
+              "type": "counter",
+              "special": true,
+              "note": "じゅう → じゅっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "なんそく",
+              "english": "how many pairs (shoes/socks)",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "Houses/Buildings (軒/けん)",
+          "note": "1, 3, 6, 8, 10 have sound changes",
+          "words": [
+            {
+              "japanese": "いっけん",
+              "english": "one (house/building)",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ (sound change)"
+            },
+            {
+              "japanese": "にけん",
+              "english": "two (houses/buildings)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんげん",
+              "english": "three (houses/buildings)",
+              "type": "counter",
+              "special": true,
+              "note": "けん → げん (voiced after ん)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "よんけん",
+              "english": "four (houses/buildings)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ごけん",
+              "english": "five (houses/buildings)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろっけん",
+              "english": "six (houses/buildings)",
+              "type": "counter",
+              "special": true,
+              "note": "ろく → ろっ (sound change)"
+            },
+            {
+              "japanese": "ななけん",
+              "english": "seven (houses/buildings)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はちけん/はっけん",
+              "english": "eight (houses/buildings)",
+              "type": "counter",
+              "special": true,
+              "note": "Both forms used",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "きゅうけん",
+              "english": "nine (houses/buildings)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅっけん",
+              "english": "ten (houses/buildings)",
+              "type": "counter",
+              "special": true,
+              "note": "じゅう → じゅっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "なんけん/なんげん",
+              "english": "how many (houses/buildings)",
+              "type": "question",
+              "special": true,
+              "note": "Both forms used",
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "Floors of a Building (階/かい)",
+          "note": "1, 3, 6, 8, 10 have sound changes; Question uses がい",
+          "words": [
+            {
+              "japanese": "いっかい",
+              "english": "first floor",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "にかい",
+              "english": "second floor",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんがい",
+              "english": "third floor",
+              "type": "counter",
+              "special": true,
+              "note": "かい → がい (voiced after ん)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "よんかい",
+              "english": "fourth floor",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ごかい",
+              "english": "fifth floor",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろっかい",
+              "english": "sixth floor",
+              "type": "counter",
+              "special": true,
+              "note": "ろく → ろっ (sound change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ななかい",
+              "english": "seventh floor",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はちかい/はっかい",
+              "english": "eighth floor",
+              "type": "counter",
+              "special": true,
+              "note": "Both forms used",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "きゅうかい",
+              "english": "ninth floor",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅっかい/じっかい",
+              "english": "tenth floor",
+              "type": "counter",
+              "special": true,
+              "note": "じゅう → じゅっ/じっ (sound change)",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "ちかいっかい",
+              "english": "basement first floor (B1)",
+              "type": "counter",
+              "special": true,
+              "note": "ちか (underground) + いっかい",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "なんがい",
+              "english": "what floor",
+              "type": "question",
+              "special": true,
+              "note": "Uses がい (voiced), not かい",
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "Thin/Long Things (本/ほん)",
+          "note": "Many sound changes: 1,6,8,10 → っぽん; 3 → ぼん",
+          "words": [
+            {
+              "japanese": "いっぽん",
+              "english": "one (long thing)",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ, ほん → ぽん (double change)"
+            },
+            {
+              "japanese": "にほん",
+              "english": "two (long things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんぼん",
+              "english": "three (long things)",
+              "type": "counter",
+              "special": true,
+              "note": "ほん → ぼん (voiced after ん)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "よんほん",
+              "english": "four (long things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ごほん",
+              "english": "five (long things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろっぽん",
+              "english": "six (long things)",
+              "type": "counter",
+              "special": true,
+              "note": "ろく → ろっ, ほん → ぽん (double change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ななほん",
+              "english": "seven (long things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はちほん/はっぽん",
+              "english": "eight (long things)",
+              "type": "counter",
+              "special": true,
+              "note": "Both forms used; はっぽん common",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "きゅうほん",
+              "english": "nine (long things)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅっぽん",
+              "english": "ten (long things)",
+              "type": "counter",
+              "special": true,
+              "note": "じゅう → じゅっ, ほん → ぽん (double change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "なんぼん",
+              "english": "how many (long things)",
+              "type": "question",
+              "special": true,
+              "note": "ほん → ぼん (voiced after ん)",
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "Cups/Glasses of Drinks (杯/はい)",
+          "note": "Many sound changes: 1,6,8,10 → っぱい; 3 → ばい",
+          "words": [
+            {
+              "japanese": "いっぱい",
+              "english": "one cup/glass",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ, はい → ぱい (double change)"
+            },
+            {
+              "japanese": "にはい",
+              "english": "two cups/glasses",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんばい",
+              "english": "three cups/glasses",
+              "type": "counter",
+              "special": true,
+              "note": "はい → ばい (voiced after ん)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "よんはい",
+              "english": "four cups/glasses",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ごはい",
+              "english": "five cups/glasses",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろっぱい",
+              "english": "six cups/glasses",
+              "type": "counter",
+              "special": true,
+              "note": "ろく → ろっ, はい → ぱい (double change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ななはい",
+              "english": "seven cups/glasses",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はちはい/はっぱい",
+              "english": "eight cups/glasses",
+              "type": "counter",
+              "special": true,
+              "note": "Both forms used",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "きゅうはい",
+              "english": "nine cups/glasses",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅっぱい",
+              "english": "ten cups/glasses",
+              "type": "counter",
+              "special": true,
+              "note": "じゅう → じゅっ, はい → ぱい (double change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "なんばい",
+              "english": "how many cups/glasses",
+              "type": "question",
+              "special": true,
+              "note": "はい → ばい (voiced after ん)",
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "Small Animals/Fish/Insects (匹/ひき)",
+          "note": "Many sound changes: 1,6,8,10 → っぴき; 3 → びき",
+          "words": [
+            {
+              "japanese": "いっぴき",
+              "english": "one (small animal)",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ, ひき → ぴき (double change)"
+            },
+            {
+              "japanese": "にひき",
+              "english": "two (small animals)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんびき",
+              "english": "three (small animals)",
+              "type": "counter",
+              "special": true,
+              "note": "ひき → びき (voiced after ん)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "よんひき",
+              "english": "four (small animals)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ごひき",
+              "english": "five (small animals)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろっぴき",
+              "english": "six (small animals)",
+              "type": "counter",
+              "special": true,
+              "note": "ろく → ろっ, ひき → ぴき (double change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "ななひき",
+              "english": "seven (small animals)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はちひき/はっぴき",
+              "english": "eight (small animals)",
+              "type": "counter",
+              "special": true,
+              "note": "Both forms used",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "きゅうひき",
+              "english": "nine (small animals)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅっぴき",
+              "english": "ten (small animals)",
+              "type": "counter",
+              "special": true,
+              "note": "じゅう → じゅっ, ひき → ぴき (double change)",
+              "specialReason": "irregular"
+            },
+            {
+              "japanese": "なんびき",
+              "english": "how many (small animals)",
+              "type": "question",
+              "special": true,
+              "note": "ひき → びき (voiced after ん)",
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "Large Animals (頭/とう)",
+          "note": "1, 8, 10 have sound changes",
+          "words": [
+            {
+              "japanese": "いっとう",
+              "english": "one (large animal)",
+              "type": "counter",
+              "special": true,
+              "note": "いち → いっ (sound change)"
+            },
+            {
+              "japanese": "にとう",
+              "english": "two (large animals)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんとう",
+              "english": "three (large animals)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "よんとう",
+              "english": "four (large animals)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ごとう",
+              "english": "five (large animals)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろくとう",
+              "english": "six (large animals)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ななとう",
+              "english": "seven (large animals)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はっとう",
+              "english": "eight (large animals)",
+              "type": "counter",
+              "special": true,
+              "note": "はち → はっ (sound change)"
+            },
+            {
+              "japanese": "きゅうとう",
+              "english": "nine (large animals)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅっとう",
+              "english": "ten (large animals)",
+              "type": "counter",
+              "special": true,
+              "note": "じゅう → じゅっ (sound change)"
+            },
+            {
+              "japanese": "なんとう",
+              "english": "how many (large animals)",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        },
+        {
+          "subcategory": "Birds/Rabbits (羽/わ)",
+          "note": "3, 4, 6 can use ば/ぱ variants",
+          "words": [
+            {
+              "japanese": "いちわ",
+              "english": "one (bird/rabbit)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "にわ",
+              "english": "two (birds/rabbits)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "さんわ/さんば",
+              "english": "three (birds/rabbits)",
+              "type": "counter",
+              "special": true,
+              "note": "Both forms used",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "よんわ/よんば",
+              "english": "four (birds/rabbits)",
+              "type": "counter",
+              "special": true,
+              "note": "Both forms used",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "ごわ",
+              "english": "five (birds/rabbits)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "ろくわ/ろっぱ",
+              "english": "six (birds/rabbits)",
+              "type": "counter",
+              "special": true,
+              "note": "ろっぱ also used",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "ななわ",
+              "english": "seven (birds/rabbits)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "はちわ/はっぱ",
+              "english": "eight (birds/rabbits)",
+              "type": "counter",
+              "special": true,
+              "note": "Both forms used",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "きゅうわ",
+              "english": "nine (birds/rabbits)",
+              "type": "counter",
+              "special": false
+            },
+            {
+              "japanese": "じゅうわ/じゅっぱ",
+              "english": "ten (birds/rabbits)",
+              "type": "counter",
+              "special": true,
+              "note": "じゅっぱ also used",
+              "specialReason": "multiple-readings"
+            },
+            {
+              "japanese": "なんわ",
+              "english": "how many (birds/rabbits)",
+              "type": "question",
+              "special": true,
+              "specialReason": "question"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "specialReadingSummary": {
+    "commonSoundChangePatterns": [
+      {
+        "pattern": "いち → いっ",
+        "description": "One becomes いっ before k, s, t, p sounds",
+        "examples": [
+          "いっぷん",
+          "いっさい",
+          "いっかい",
+          "いっぽん",
+          "いっぴき"
+        ]
+      },
+      {
+        "pattern": "ろく → ろっ",
+        "description": "Six becomes ろっ before k, p sounds",
+        "examples": [
+          "ろっぴゃく",
+          "ろっぷん",
+          "ろっかい",
+          "ろっぽん",
+          "ろっぴき"
+        ]
+      },
+      {
+        "pattern": "はち → はっ",
+        "description": "Eight becomes はっ before k, s, t, p sounds",
+        "examples": [
+          "はっぴゃく",
+          "はっさい",
+          "はっぽん",
+          "はっぴき"
+        ]
+      },
+      {
+        "pattern": "じゅう → じゅっ/じっ",
+        "description": "Ten becomes じゅっ or じっ before k, s, t, p sounds",
+        "examples": [
+          "じゅっぷん",
+          "じゅっさい",
+          "じゅっかい",
+          "じゅっぽん"
+        ]
+      },
+      {
+        "pattern": "h → b (after ん)",
+        "description": "H-sounds become B-sounds after ん",
+        "examples": [
+          "さんびゃく",
+          "さんぼん",
+          "さんばい",
+          "さんびき"
+        ]
+      },
+      {
+        "pattern": "h → p (after っ)",
+        "description": "H-sounds become P-sounds after っ",
+        "examples": [
+          "ろっぴゃく",
+          "いっぽん",
+          "ろっぱい",
+          "いっぴき"
+        ]
+      },
+      {
+        "pattern": "k → g (after ん)",
+        "description": "K-sounds become G-sounds after ん in some counters",
+        "examples": [
+          "さんがい (3rd floor)",
+          "さんげん (3 buildings)"
+        ]
+      },
+      {
+        "pattern": "s → z (after ん)",
+        "description": "S-sounds become Z-sounds after ん in some words",
+        "examples": [
+          "さんぜん (3000)"
+        ]
+      }
+    ],
+    "completelyIrregularWords": [
+      {
+        "japanese": "ついたち",
+        "english": "1st day",
+        "note": "No relation to いち"
+      },
+      {
+        "japanese": "ふつか",
+        "english": "2nd day / 2 days",
+        "note": "Native Japanese number"
+      },
+      {
+        "japanese": "はつか",
+        "english": "20th day / 20 days",
+        "note": "No relation to にじゅう"
+      },
+      {
+        "japanese": "はたち",
+        "english": "20 years old",
+        "note": "No relation to にじゅう"
+      },
+      {
+        "japanese": "ひとり",
+        "english": "1 person",
+        "note": "Native Japanese, not いちにん"
+      },
+      {
+        "japanese": "ふたり",
+        "english": "2 people",
+        "note": "Native Japanese, not ににん"
+      },
+      {
+        "japanese": "きょう",
+        "english": "today",
+        "note": "Not こんにち"
+      },
+      {
+        "japanese": "きのう",
+        "english": "yesterday",
+        "note": "Not せんにち"
+      },
+      {
+        "japanese": "あした",
+        "english": "tomorrow",
+        "note": "Not らいにち"
+      },
+      {
+        "japanese": "ことし",
+        "english": "this year",
+        "note": "Not こんねん"
+      },
+      {
+        "japanese": "きょねん",
+        "english": "last year",
+        "note": "Not せんねん"
+      },
+      {
+        "japanese": "おととし",
+        "english": "year before last",
+        "note": "Unique word"
+      },
+      {
+        "japanese": "けさ",
+        "english": "this morning",
+        "note": "Contracted form"
+      }
+    ],
+    "numbersWithMultipleReadings": [
+      {
+        "number": "4",
+        "readings": "よん / し / よ",
+        "usage": "よん (general), し (months, some counters), よ (time, years)"
+      },
+      {
+        "number": "7",
+        "readings": "なな / しち",
+        "usage": "なな (general), しち (months, time)"
+      },
+      {
+        "number": "9",
+        "readings": "きゅう / く",
+        "usage": "きゅう (general), く (months, time, some counters)"
+      }
+    ]
+  },
+  "summary": {
+    "totalCategories": 8,
+    "totalSubcategories": 42,
+    "totalVocabulary": "~450 words",
+    "totalSpecialReadings": "~150 marked as special",
+    "questionWordsIncluded": true
+  }
+}

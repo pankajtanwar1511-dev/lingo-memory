@@ -1,0 +1,2252 @@
+[
+  {
+    "japanese": "したいです",
+    "issues": [
+      "ID mismatch: vocab has \"duo_1057\", examples has \"duo_2\""
+    ]
+  },
+  {
+    "japanese": "したくないです",
+    "issues": [
+      "ID mismatch: vocab has \"duo_1056\", examples has \"duo_3\""
+    ]
+  },
+  {
+    "japanese": "キャンセルします",
+    "issues": [
+      "ID mismatch: vocab has \"duo_1052\", examples has \"duo_7\""
+    ]
+  },
+  {
+    "japanese": "ゆっくりしたいです",
+    "issues": [
+      "ID mismatch: vocab has \"duo_1049\", examples has \"duo_10\""
+    ]
+  },
+  {
+    "japanese": "でたくないです",
+    "issues": [
+      "ID mismatch: vocab has \"duo_1043\", examples has \"duo_16\""
+    ]
+  },
+  {
+    "japanese": "おきたくないです",
+    "issues": [
+      "ID mismatch: vocab has \"duo_1039\", examples has \"duo_20\""
+    ]
+  },
+  {
+    "japanese": "そろそろ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_1037\", examples has \"duo_22\""
+    ]
+  },
+  {
+    "japanese": "ひさしぶりです",
+    "issues": [
+      "ID mismatch: vocab has \"duo_1034\", examples has \"duo_25\""
+    ]
+  },
+  {
+    "japanese": "さいきん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_1031\", examples has \"duo_28\""
+    ]
+  },
+  {
+    "japanese": "二月",
+    "issues": [
+      "ID mismatch: vocab has \"duo_1017\", examples has \"duo_42\""
+    ]
+  },
+  {
+    "japanese": "スノボ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_1016\", examples has \"duo_43\""
+    ]
+  },
+  {
+    "japanese": "さむくない",
+    "issues": [
+      "ID mismatch: vocab has \"duo_1009\", examples has \"duo_50\""
+    ]
+  },
+  {
+    "japanese": "あつくない",
+    "issues": [
+      "ID mismatch: vocab has \"duo_1007\", examples has \"duo_52\""
+    ]
+  },
+  {
+    "japanese": "四月",
+    "issues": [
+      "ID mismatch: vocab has \"duo_1002\", examples has \"duo_57\""
+    ]
+  },
+  {
+    "japanese": "ポイントカード",
+    "issues": [
+      "ID mismatch: vocab has \"duo_997\", examples has \"duo_62\""
+    ]
+  },
+  {
+    "japanese": "レジ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_996\", examples has \"duo_63\""
+    ]
+  },
+  {
+    "japanese": "まがります",
+    "issues": [
+      "ID mismatch: vocab has \"duo_991\", examples has \"duo_68\""
+    ]
+  },
+  {
+    "japanese": "レディース",
+    "issues": [
+      "ID mismatch: vocab has \"duo_990\", examples has \"duo_69\""
+    ]
+  },
+  {
+    "japanese": "上がります",
+    "issues": [
+      "ID mismatch: vocab has \"duo_987\", examples has \"duo_72\""
+    ]
+  },
+  {
+    "japanese": "まず",
+    "issues": [
+      "ID mismatch: vocab has \"duo_985\", examples has \"duo_74\""
+    ]
+  },
+  {
+    "japanese": "ジーンズ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_979\", examples has \"duo_80\""
+    ]
+  },
+  {
+    "japanese": "ショッピングセンター",
+    "issues": [
+      "ID mismatch: vocab has \"duo_974\", examples has \"duo_85\""
+    ]
+  },
+  {
+    "japanese": "いなか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_961\", examples has \"duo_98\""
+    ]
+  },
+  {
+    "japanese": "大学",
+    "issues": [
+      "ID mismatch: vocab has \"duo_959\", examples has \"duo_100\""
+    ]
+  },
+  {
+    "japanese": "買いたいです",
+    "issues": [
+      "ID mismatch: vocab has \"duo_952\", examples has \"duo_107\""
+    ]
+  },
+  {
+    "japanese": "ききたいです",
+    "issues": [
+      "ID mismatch: vocab has \"duo_945\", examples has \"duo_114\""
+    ]
+  },
+  {
+    "japanese": "ステージ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_942\", examples has \"duo_117\""
+    ]
+  },
+  {
+    "japanese": "すわりたい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_940\", examples has \"duo_119\""
+    ]
+  },
+  {
+    "japanese": "レシート",
+    "issues": [
+      "ID mismatch: vocab has \"duo_934\", examples has \"duo_125\""
+    ]
+  },
+  {
+    "japanese": "ワイヤレス",
+    "issues": [
+      "ID mismatch: vocab has \"duo_929\", examples has \"duo_130\""
+    ]
+  },
+  {
+    "japanese": "マウス",
+    "issues": [
+      "ID mismatch: vocab has \"duo_923\", examples has \"duo_136\""
+    ]
+  },
+  {
+    "japanese": "モニター",
+    "issues": [
+      "ID mismatch: vocab has \"duo_918\", examples has \"duo_141\""
+    ]
+  },
+  {
+    "japanese": "今日",
+    "issues": [
+      "ID mismatch: vocab has \"duo_915\", examples has \"duo_144\""
+    ]
+  },
+  {
+    "japanese": "でんきや",
+    "issues": [
+      "ID mismatch: vocab has \"duo_909\", examples has \"duo_150\""
+    ]
+  },
+  {
+    "japanese": "どうやって",
+    "issues": [
+      "ID mismatch: vocab has \"duo_901\", examples has \"duo_158\""
+    ]
+  },
+  {
+    "japanese": "とちゅうで",
+    "issues": [
+      "ID mismatch: vocab has \"duo_900\", examples has \"duo_159\""
+    ]
+  },
+  {
+    "japanese": "すいぞくかん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_887\", examples has \"duo_172\""
+    ]
+  },
+  {
+    "japanese": "見ました",
+    "issues": [
+      "ID mismatch: vocab has \"duo_875\", examples has \"duo_184\""
+    ]
+  },
+  {
+    "japanese": "かぶき",
+    "issues": [
+      "ID mismatch: vocab has \"duo_871\", examples has \"duo_188\""
+    ]
+  },
+  {
+    "japanese": "チェックアウト",
+    "issues": [
+      "ID mismatch: vocab has \"duo_868\", examples has \"duo_191\""
+    ]
+  },
+  {
+    "japanese": "うしろ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_864\", examples has \"duo_195\""
+    ]
+  },
+  {
+    "japanese": "三階",
+    "issues": [
+      "ID mismatch: vocab has \"duo_860\", examples has \"duo_199\""
+    ]
+  },
+  {
+    "japanese": "ばんごう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_856\", examples has \"duo_203\""
+    ]
+  },
+  {
+    "japanese": "クレジットカード",
+    "issues": [
+      "ID mismatch: vocab has \"duo_855\", examples has \"duo_204\""
+    ]
+  },
+  {
+    "japanese": "チェックイン",
+    "issues": [
+      "ID mismatch: vocab has \"duo_853\", examples has \"duo_206\""
+    ]
+  },
+  {
+    "japanese": "ぎょうざ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_846\", examples has \"duo_213\""
+    ]
+  },
+  {
+    "japanese": "ぜんぶで",
+    "issues": [
+      "ID mismatch: vocab has \"duo_843\", examples has \"duo_216\""
+    ]
+  },
+  {
+    "japanese": "てんいん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_838\", examples has \"duo_221\""
+    ]
+  },
+  {
+    "japanese": "いらっしゃいませ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_831\", examples has \"duo_228\""
+    ]
+  },
+  {
+    "japanese": "ウーロンちゃ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_830\", examples has \"duo_229\""
+    ]
+  },
+  {
+    "japanese": "なんめいさま",
+    "issues": [
+      "ID mismatch: vocab has \"duo_828\", examples has \"duo_231\""
+    ]
+  },
+  {
+    "japanese": "四人",
+    "issues": [
+      "ID mismatch: vocab has \"duo_826\", examples has \"duo_233\""
+    ]
+  },
+  {
+    "japanese": "けしき",
+    "issues": [
+      "ID mismatch: vocab has \"duo_814\", examples has \"duo_245\""
+    ]
+  },
+  {
+    "japanese": "バーベキュー",
+    "issues": [
+      "ID mismatch: vocab has \"duo_808\", examples has \"duo_251\""
+    ]
+  },
+  {
+    "japanese": "がいいです",
+    "issues": [
+      "ID mismatch: vocab has \"duo_805\", examples has \"duo_254\""
+    ]
+  },
+  {
+    "japanese": "ほっかいどう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_801\", examples has \"duo_258\""
+    ]
+  },
+  {
+    "japanese": "よんひき",
+    "issues": [
+      "ID mismatch: vocab has \"duo_798\", examples has \"duo_261\""
+    ]
+  },
+  {
+    "japanese": "さんびき",
+    "issues": [
+      "ID mismatch: vocab has \"duo_795\", examples has \"duo_264\""
+    ]
+  },
+  {
+    "japanese": "へや",
+    "issues": [
+      "ID mismatch: vocab has \"duo_794\", examples has \"duo_265\""
+    ]
+  },
+  {
+    "japanese": "みみ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_791\", examples has \"duo_268\""
+    ]
+  },
+  {
+    "japanese": "いぬ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_790\", examples has \"duo_269\""
+    ]
+  },
+  {
+    "japanese": "ハムスター",
+    "issues": [
+      "ID mismatch: vocab has \"duo_788\", examples has \"duo_271\""
+    ]
+  },
+  {
+    "japanese": "にんき",
+    "issues": [
+      "ID mismatch: vocab has \"duo_782\", examples has \"duo_277\""
+    ]
+  },
+  {
+    "japanese": "どうぶつ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_781\", examples has \"duo_278\""
+    ]
+  },
+  {
+    "japanese": "ボランティア",
+    "issues": [
+      "ID mismatch: vocab has \"duo_778\", examples has \"duo_281\""
+    ]
+  },
+  {
+    "japanese": "サークル",
+    "issues": [
+      "ID mismatch: vocab has \"duo_777\", examples has \"duo_282\""
+    ]
+  },
+  {
+    "japanese": "キャンパス",
+    "issues": [
+      "ID mismatch: vocab has \"duo_775\", examples has \"duo_284\""
+    ]
+  },
+  {
+    "japanese": "すうがく",
+    "issues": [
+      "ID mismatch: vocab has \"duo_766\", examples has \"duo_293\""
+    ]
+  },
+  {
+    "japanese": "せんこう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_764\", examples has \"duo_295\""
+    ]
+  },
+  {
+    "japanese": "何年生",
+    "issues": [
+      "ID mismatch: vocab has \"duo_757\", examples has \"duo_302\""
+    ]
+  },
+  {
+    "japanese": "きたぐち",
+    "issues": [
+      "ID mismatch: vocab has \"duo_747\", examples has \"duo_312\""
+    ]
+  },
+  {
+    "japanese": "おります",
+    "issues": [
+      "ID mismatch: vocab has \"duo_741\", examples has \"duo_318\""
+    ]
+  },
+  {
+    "japanese": "うた",
+    "issues": [
+      "ID mismatch: vocab has \"duo_735\", examples has \"duo_324\""
+    ]
+  },
+  {
+    "japanese": "えいがかん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_730\", examples has \"duo_329\""
+    ]
+  },
+  {
+    "japanese": "ブラウス",
+    "issues": [
+      "ID mismatch: vocab has \"duo_727\", examples has \"duo_332\""
+    ]
+  },
+  {
+    "japanese": "きます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_725\", examples has \"duo_334\""
+    ]
+  },
+  {
+    "japanese": "プレゼント",
+    "issues": [
+      "ID mismatch: vocab has \"duo_722\", examples has \"duo_337\""
+    ]
+  },
+  {
+    "japanese": "たんじょうび",
+    "issues": [
+      "ID mismatch: vocab has \"duo_720\", examples has \"duo_339\""
+    ]
+  },
+  {
+    "japanese": "デート",
+    "issues": [
+      "ID mismatch: vocab has \"duo_718\", examples has \"duo_341\""
+    ]
+  },
+  {
+    "japanese": "おおみそか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_715\", examples has \"duo_344\""
+    ]
+  },
+  {
+    "japanese": "ハロウィン",
+    "issues": [
+      "ID mismatch: vocab has \"duo_711\", examples has \"duo_348\""
+    ]
+  },
+  {
+    "japanese": "パーティー",
+    "issues": [
+      "ID mismatch: vocab has \"duo_710\", examples has \"duo_349\""
+    ]
+  },
+  {
+    "japanese": "三十一日",
+    "issues": [
+      "ID mismatch: vocab has \"duo_708\", examples has \"duo_351\""
+    ]
+  },
+  {
+    "japanese": "コンテスト",
+    "issues": [
+      "ID mismatch: vocab has \"duo_705\", examples has \"duo_354\""
+    ]
+  },
+  {
+    "japanese": "たいこ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_704\", examples has \"duo_355\""
+    ]
+  },
+  {
+    "japanese": "おまつり",
+    "issues": [
+      "ID mismatch: vocab has \"duo_700\", examples has \"duo_359\""
+    ]
+  },
+  {
+    "japanese": "八月",
+    "issues": [
+      "ID mismatch: vocab has \"duo_699\", examples has \"duo_360\""
+    ]
+  },
+  {
+    "japanese": "行きませんか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_696\", examples has \"duo_363\""
+    ]
+  },
+  {
+    "japanese": "ファッション",
+    "issues": [
+      "ID mismatch: vocab has \"duo_692\", examples has \"duo_367\""
+    ]
+  },
+  {
+    "japanese": "レッスン",
+    "issues": [
+      "ID mismatch: vocab has \"duo_688\", examples has \"duo_371\""
+    ]
+  },
+  {
+    "japanese": "こんや",
+    "issues": [
+      "ID mismatch: vocab has \"duo_684\", examples has \"duo_375\""
+    ]
+  },
+  {
+    "japanese": "ひらがな",
+    "issues": [
+      "ID mismatch: vocab has \"duo_682\", examples has \"duo_377\""
+    ]
+  },
+  {
+    "japanese": "べんきょうします",
+    "issues": [
+      "ID mismatch: vocab has \"duo_681\", examples has \"duo_378\""
+    ]
+  },
+  {
+    "japanese": "ギター",
+    "issues": [
+      "ID mismatch: vocab has \"duo_677\", examples has \"duo_382\""
+    ]
+  },
+  {
+    "japanese": "ひきます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_676\", examples has \"duo_383\""
+    ]
+  },
+  {
+    "japanese": "しあい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_672\", examples has \"duo_387\""
+    ]
+  },
+  {
+    "japanese": "カラオケ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_669\", examples has \"duo_390\""
+    ]
+  },
+  {
+    "japanese": "うたいます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_667\", examples has \"duo_392\""
+    ]
+  },
+  {
+    "japanese": "パソコン",
+    "issues": [
+      "ID mismatch: vocab has \"duo_664\", examples has \"duo_395\""
+    ]
+  },
+  {
+    "japanese": "トレーニング",
+    "issues": [
+      "ID mismatch: vocab has \"duo_657\", examples has \"duo_402\""
+    ]
+  },
+  {
+    "japanese": "ミーティング",
+    "issues": [
+      "ID mismatch: vocab has \"duo_654\", examples has \"duo_405\""
+    ]
+  },
+  {
+    "japanese": "一階",
+    "issues": [
+      "ID mismatch: vocab has \"duo_653\", examples has \"duo_406\""
+    ]
+  },
+  {
+    "japanese": "何階",
+    "issues": [
+      "ID mismatch: vocab has \"duo_650\", examples has \"duo_409\""
+    ]
+  },
+  {
+    "japanese": "バンド",
+    "issues": [
+      "ID mismatch: vocab has \"duo_641\", examples has \"duo_418\""
+    ]
+  },
+  {
+    "japanese": "アニソン",
+    "issues": [
+      "ID mismatch: vocab has \"duo_640\", examples has \"duo_419\""
+    ]
+  },
+  {
+    "japanese": "アルバム",
+    "issues": [
+      "ID mismatch: vocab has \"duo_639\", examples has \"duo_420\""
+    ]
+  },
+  {
+    "japanese": "読みません",
+    "issues": [
+      "ID mismatch: vocab has \"duo_635\", examples has \"duo_424\""
+    ]
+  },
+  {
+    "japanese": "フィクション",
+    "issues": [
+      "ID mismatch: vocab has \"duo_634\", examples has \"duo_425\""
+    ]
+  },
+  {
+    "japanese": "本や",
+    "issues": [
+      "ID mismatch: vocab has \"duo_631\", examples has \"duo_428\""
+    ]
+  },
+  {
+    "japanese": "セール",
+    "issues": [
+      "ID mismatch: vocab has \"duo_630\", examples has \"duo_429\""
+    ]
+  },
+  {
+    "japanese": "コーナー",
+    "issues": [
+      "ID mismatch: vocab has \"duo_629\", examples has \"duo_430\""
+    ]
+  },
+  {
+    "japanese": "あじ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_627\", examples has \"duo_432\""
+    ]
+  },
+  {
+    "japanese": "かお",
+    "issues": [
+      "ID mismatch: vocab has \"duo_625\", examples has \"duo_434\""
+    ]
+  },
+  {
+    "japanese": "キャラクター",
+    "issues": [
+      "ID mismatch: vocab has \"duo_622\", examples has \"duo_437\""
+    ]
+  },
+  {
+    "japanese": "ジェットコースター",
+    "issues": [
+      "ID mismatch: vocab has \"duo_619\", examples has \"duo_440\""
+    ]
+  },
+  {
+    "japanese": "おとな",
+    "issues": [
+      "ID mismatch: vocab has \"duo_615\", examples has \"duo_444\""
+    ]
+  },
+  {
+    "japanese": "にゅうじょうりょう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_613\", examples has \"duo_446\""
+    ]
+  },
+  {
+    "japanese": "ごご",
+    "issues": [
+      "ID mismatch: vocab has \"duo_611\", examples has \"duo_448\""
+    ]
+  },
+  {
+    "japanese": "でかけましょう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_607\", examples has \"duo_452\""
+    ]
+  },
+  {
+    "japanese": "しゃしんか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_601\", examples has \"duo_458\""
+    ]
+  },
+  {
+    "japanese": "イベント",
+    "issues": [
+      "ID mismatch: vocab has \"duo_599\", examples has \"duo_460\""
+    ]
+  },
+  {
+    "japanese": "とります",
+    "issues": [
+      "ID mismatch: vocab has \"duo_597\", examples has \"duo_462\""
+    ]
+  },
+  {
+    "japanese": "しごとします",
+    "issues": [
+      "ID mismatch: vocab has \"duo_583\", examples has \"duo_476\""
+    ]
+  },
+  {
+    "japanese": "ききましょう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_582\", examples has \"duo_477\""
+    ]
+  },
+  {
+    "japanese": "おわります",
+    "issues": [
+      "ID mismatch: vocab has \"duo_576\", examples has \"duo_483\""
+    ]
+  },
+  {
+    "japanese": "ききましょうか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_575\", examples has \"duo_484\""
+    ]
+  },
+  {
+    "japanese": "あります",
+    "issues": [
+      "ID mismatch: vocab has \"duo_568\", examples has \"duo_491\""
+    ]
+  },
+  {
+    "japanese": "じゅぎょう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_564\", examples has \"duo_495\""
+    ]
+  },
+  {
+    "japanese": "食べません",
+    "issues": [
+      "ID mismatch: vocab has \"duo_550\", examples has \"duo_509\""
+    ]
+  },
+  {
+    "japanese": "やさい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_546\", examples has \"duo_513\""
+    ]
+  },
+  {
+    "japanese": "しょうゆ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_545\", examples has \"duo_514\""
+    ]
+  },
+  {
+    "japanese": "もっと",
+    "issues": [
+      "ID mismatch: vocab has \"duo_544\", examples has \"duo_515\""
+    ]
+  },
+  {
+    "japanese": "スーパー",
+    "issues": [
+      "ID mismatch: vocab has \"duo_543\", examples has \"duo_516\""
+    ]
+  },
+  {
+    "japanese": "いっしょに",
+    "issues": [
+      "ID mismatch: vocab has \"duo_541\", examples has \"duo_518\""
+    ]
+  },
+  {
+    "japanese": "つくりましょう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_540\", examples has \"duo_519\""
+    ]
+  },
+  {
+    "japanese": "パイ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_536\", examples has \"duo_523\""
+    ]
+  },
+  {
+    "japanese": "チョコレート",
+    "issues": [
+      "ID mismatch: vocab has \"duo_534\", examples has \"duo_525\""
+    ]
+  },
+  {
+    "japanese": "ドーナツ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_533\", examples has \"duo_526\""
+    ]
+  },
+  {
+    "japanese": "二つ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_532\", examples has \"duo_527\""
+    ]
+  },
+  {
+    "japanese": "まっちゃ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_528\", examples has \"duo_531\""
+    ]
+  },
+  {
+    "japanese": "チーズケーキ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_524\", examples has \"duo_535\""
+    ]
+  },
+  {
+    "japanese": "買いましょうか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_523\", examples has \"duo_536\""
+    ]
+  },
+  {
+    "japanese": "おかしや",
+    "issues": [
+      "ID mismatch: vocab has \"duo_522\", examples has \"duo_537\""
+    ]
+  },
+  {
+    "japanese": "がだいすきです",
+    "issues": [
+      "ID mismatch: vocab has \"duo_521\", examples has \"duo_538\""
+    ]
+  },
+  {
+    "japanese": "はすきですか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_519\", examples has \"duo_540\""
+    ]
+  },
+  {
+    "japanese": "行きましょうか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_517\", examples has \"duo_542\""
+    ]
+  },
+  {
+    "japanese": "がたのしみです",
+    "issues": [
+      "ID mismatch: vocab has \"duo_514\", examples has \"duo_545\""
+    ]
+  },
+  {
+    "japanese": "しんかんせん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_504\", examples has \"duo_555\""
+    ]
+  },
+  {
+    "japanese": "なごや",
+    "issues": [
+      "ID mismatch: vocab has \"duo_503\", examples has \"duo_556\""
+    ]
+  },
+  {
+    "japanese": "金曜日",
+    "issues": [
+      "ID mismatch: vocab has \"duo_501\", examples has \"duo_558\""
+    ]
+  },
+  {
+    "japanese": "ロビー",
+    "issues": [
+      "ID mismatch: vocab has \"duo_498\", examples has \"duo_561\""
+    ]
+  },
+  {
+    "japanese": "どうぶつえん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_490\", examples has \"duo_569\""
+    ]
+  },
+  {
+    "japanese": "しゃしん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_486\", examples has \"duo_573\""
+    ]
+  },
+  {
+    "japanese": "びじゅつかん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_482\", examples has \"duo_577\""
+    ]
+  },
+  {
+    "japanese": "飲みましょう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_481\", examples has \"duo_578\""
+    ]
+  },
+  {
+    "japanese": "チケット",
+    "issues": [
+      "ID mismatch: vocab has \"duo_480\", examples has \"duo_579\""
+    ]
+  },
+  {
+    "japanese": "買いましょう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_479\", examples has \"duo_580\""
+    ]
+  },
+  {
+    "japanese": "ひこうき",
+    "issues": [
+      "ID mismatch: vocab has \"duo_476\", examples has \"duo_583\""
+    ]
+  },
+  {
+    "japanese": "りょこう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_474\", examples has \"duo_585\""
+    ]
+  },
+  {
+    "japanese": "フランス",
+    "issues": [
+      "ID mismatch: vocab has \"duo_473\", examples has \"duo_586\""
+    ]
+  },
+  {
+    "japanese": "行きましょう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_472\", examples has \"duo_587\""
+    ]
+  },
+  {
+    "japanese": "しましょうか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_471\", examples has \"duo_588\""
+    ]
+  },
+  {
+    "japanese": "休みの日",
+    "issues": [
+      "ID mismatch: vocab has \"duo_469\", examples has \"duo_590\""
+    ]
+  },
+  {
+    "japanese": "ガーデニング",
+    "issues": [
+      "ID mismatch: vocab has \"duo_468\", examples has \"duo_591\""
+    ]
+  },
+  {
+    "japanese": "たのしい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_467\", examples has \"duo_592\""
+    ]
+  },
+  {
+    "japanese": "そして",
+    "issues": [
+      "ID mismatch: vocab has \"duo_464\", examples has \"duo_595\""
+    ]
+  },
+  {
+    "japanese": "だれ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_458\", examples has \"duo_601\""
+    ]
+  },
+  {
+    "japanese": "そうじ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_456\", examples has \"duo_603\""
+    ]
+  },
+  {
+    "japanese": "てつだいます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_455\", examples has \"duo_604\""
+    ]
+  },
+  {
+    "japanese": "しゅくだい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_454\", examples has \"duo_605\""
+    ]
+  },
+  {
+    "japanese": "あと",
+    "issues": [
+      "ID mismatch: vocab has \"duo_450\", examples has \"duo_609\""
+    ]
+  },
+  {
+    "japanese": "しごと",
+    "issues": [
+      "ID mismatch: vocab has \"duo_449\", examples has \"duo_610\""
+    ]
+  },
+  {
+    "japanese": "うち",
+    "issues": [
+      "ID mismatch: vocab has \"duo_448\", examples has \"duo_611\""
+    ]
+  },
+  {
+    "japanese": "こども",
+    "issues": [
+      "ID mismatch: vocab has \"duo_445\", examples has \"duo_614\""
+    ]
+  },
+  {
+    "japanese": "おこさん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_444\", examples has \"duo_615\""
+    ]
+  },
+  {
+    "japanese": "ちゅうごくご",
+    "issues": [
+      "ID mismatch: vocab has \"duo_436\", examples has \"duo_623\""
+    ]
+  },
+  {
+    "japanese": "ができます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_435\", examples has \"duo_624\""
+    ]
+  },
+  {
+    "japanese": "日本ご",
+    "issues": [
+      "ID mismatch: vocab has \"duo_433\", examples has \"duo_626\""
+    ]
+  },
+  {
+    "japanese": "オーストラリア",
+    "issues": [
+      "ID mismatch: vocab has \"duo_431\", examples has \"duo_628\""
+    ]
+  },
+  {
+    "japanese": "います",
+    "issues": [
+      "ID mismatch: vocab has \"duo_428\", examples has \"duo_631\""
+    ]
+  },
+  {
+    "japanese": "はいますか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_427\", examples has \"duo_632\""
+    ]
+  },
+  {
+    "japanese": "きょうだい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_426\", examples has \"duo_633\""
+    ]
+  },
+  {
+    "japanese": "ゆき",
+    "issues": [
+      "ID mismatch: vocab has \"duo_423\", examples has \"duo_636\""
+    ]
+  },
+  {
+    "japanese": "九月",
+    "issues": [
+      "ID mismatch: vocab has \"duo_418\", examples has \"duo_641\""
+    ]
+  },
+  {
+    "japanese": "コンサート",
+    "issues": [
+      "ID mismatch: vocab has \"duo_416\", examples has \"duo_643\""
+    ]
+  },
+  {
+    "japanese": "休み",
+    "issues": [
+      "ID mismatch: vocab has \"duo_414\", examples has \"duo_645\""
+    ]
+  },
+  {
+    "japanese": "はれ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_409\", examples has \"duo_650\""
+    ]
+  },
+  {
+    "japanese": "うみ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_406\", examples has \"duo_653\""
+    ]
+  },
+  {
+    "japanese": "こうえん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_405\", examples has \"duo_654\""
+    ]
+  },
+  {
+    "japanese": "あめ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_403\", examples has \"duo_656\""
+    ]
+  },
+  {
+    "japanese": "てんき",
+    "issues": [
+      "ID mismatch: vocab has \"duo_402\", examples has \"duo_657\""
+    ]
+  },
+  {
+    "japanese": "あたたかい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_401\", examples has \"duo_658\""
+    ]
+  },
+  {
+    "japanese": "ちゃんと",
+    "issues": [
+      "ID mismatch: vocab has \"duo_400\", examples has \"duo_659\""
+    ]
+  },
+  {
+    "japanese": "きょう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_397\", examples has \"duo_662\""
+    ]
+  },
+  {
+    "japanese": "ちかく",
+    "issues": [
+      "ID mismatch: vocab has \"duo_396\", examples has \"duo_663\""
+    ]
+  },
+  {
+    "japanese": "アレルギー",
+    "issues": [
+      "ID mismatch: vocab has \"duo_394\", examples has \"duo_665\""
+    ]
+  },
+  {
+    "japanese": "ごりょうしん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_393\", examples has \"duo_666\""
+    ]
+  },
+  {
+    "japanese": "でんわばんごう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_392\", examples has \"duo_667\""
+    ]
+  },
+  {
+    "japanese": "きゅうきゅうしゃ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_388\", examples has \"duo_671\""
+    ]
+  },
+  {
+    "japanese": "おねがいします",
+    "issues": [
+      "ID mismatch: vocab has \"duo_387\", examples has \"duo_672\""
+    ]
+  },
+  {
+    "japanese": "ぐあいがわるい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_383\", examples has \"duo_676\""
+    ]
+  },
+  {
+    "japanese": "だいじょうぶ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_381\", examples has \"duo_678\""
+    ]
+  },
+  {
+    "japanese": "どうですか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_380\", examples has \"duo_679\""
+    ]
+  },
+  {
+    "japanese": "おかし",
+    "issues": [
+      "ID mismatch: vocab has \"duo_378\", examples has \"duo_681\""
+    ]
+  },
+  {
+    "japanese": "ポストカード",
+    "issues": [
+      "ID mismatch: vocab has \"duo_377\", examples has \"duo_682\""
+    ]
+  },
+  {
+    "japanese": "ふじさん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_376\", examples has \"duo_683\""
+    ]
+  },
+  {
+    "japanese": "高い",
+    "issues": [
+      "ID mismatch: vocab has \"duo_375\", examples has \"duo_684\""
+    ]
+  },
+  {
+    "japanese": "じんじゃ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_373\", examples has \"duo_686\""
+    ]
+  },
+  {
+    "japanese": "何ですか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_367\", examples has \"duo_692\""
+    ]
+  },
+  {
+    "japanese": "たてもの",
+    "issues": [
+      "ID mismatch: vocab has \"duo_365\", examples has \"duo_694\""
+    ]
+  },
+  {
+    "japanese": "ほんとうに",
+    "issues": [
+      "ID mismatch: vocab has \"duo_362\", examples has \"duo_697\""
+    ]
+  },
+  {
+    "japanese": "ながい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_361\", examples has \"duo_698\""
+    ]
+  },
+  {
+    "japanese": "ぐらい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_357\", examples has \"duo_702\""
+    ]
+  },
+  {
+    "japanese": "かかります",
+    "issues": [
+      "ID mismatch: vocab has \"duo_356\", examples has \"duo_703\""
+    ]
+  },
+  {
+    "japanese": "来ます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_349\", examples has \"duo_710\""
+    ]
+  },
+  {
+    "japanese": "つぎの",
+    "issues": [
+      "ID mismatch: vocab has \"duo_348\", examples has \"duo_711\""
+    ]
+  },
+  {
+    "japanese": "つぎ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_347\", examples has \"duo_712\""
+    ]
+  },
+  {
+    "japanese": "よこはま",
+    "issues": [
+      "ID mismatch: vocab has \"duo_346\", examples has \"duo_713\""
+    ]
+  },
+  {
+    "japanese": "バス",
+    "issues": [
+      "ID mismatch: vocab has \"duo_345\", examples has \"duo_714\""
+    ]
+  },
+  {
+    "japanese": "しぶや",
+    "issues": [
+      "ID mismatch: vocab has \"duo_343\", examples has \"duo_716\""
+    ]
+  },
+  {
+    "japanese": "行きます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_342\", examples has \"duo_717\""
+    ]
+  },
+  {
+    "japanese": "でんしゃ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_341\", examples has \"duo_718\""
+    ]
+  },
+  {
+    "japanese": "こんしゅう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_340\", examples has \"duo_719\""
+    ]
+  },
+  {
+    "japanese": "せんたくき",
+    "issues": [
+      "ID mismatch: vocab has \"duo_337\", examples has \"duo_722\""
+    ]
+  },
+  {
+    "japanese": "ほんだな",
+    "issues": [
+      "ID mismatch: vocab has \"duo_330\", examples has \"duo_729\""
+    ]
+  },
+  {
+    "japanese": "エアコン",
+    "issues": [
+      "ID mismatch: vocab has \"duo_327\", examples has \"duo_732\""
+    ]
+  },
+  {
+    "japanese": "ベッド",
+    "issues": [
+      "ID mismatch: vocab has \"duo_326\", examples has \"duo_733\""
+    ]
+  },
+  {
+    "japanese": "キッチン",
+    "issues": [
+      "ID mismatch: vocab has \"duo_323\", examples has \"duo_736\""
+    ]
+  },
+  {
+    "japanese": "があります",
+    "issues": [
+      "ID mismatch: vocab has \"duo_322\", examples has \"duo_737\""
+    ]
+  },
+  {
+    "japanese": "アパート",
+    "issues": [
+      "ID mismatch: vocab has \"duo_321\", examples has \"duo_738\""
+    ]
+  },
+  {
+    "japanese": "ひっこします",
+    "issues": [
+      "ID mismatch: vocab has \"duo_320\", examples has \"duo_739\""
+    ]
+  },
+  {
+    "japanese": "しゅみはありますか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_307\", examples has \"duo_752\""
+    ]
+  },
+  {
+    "japanese": "がすきです",
+    "issues": [
+      "ID mismatch: vocab has \"duo_303\", examples has \"duo_756\""
+    ]
+  },
+  {
+    "japanese": "かのじょ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_300\", examples has \"duo_759\""
+    ]
+  },
+  {
+    "japanese": "アンドリュー",
+    "issues": [
+      "ID mismatch: vocab has \"duo_296\", examples has \"duo_763\""
+    ]
+  },
+  {
+    "japanese": "と言います",
+    "issues": [
+      "ID mismatch: vocab has \"duo_295\", examples has \"duo_764\""
+    ]
+  },
+  {
+    "japanese": "エリカ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_294\", examples has \"duo_765\""
+    ]
+  },
+  {
+    "japanese": "言います",
+    "issues": [
+      "ID mismatch: vocab has \"duo_293\", examples has \"duo_766\""
+    ]
+  },
+  {
+    "japanese": "こちら",
+    "issues": [
+      "ID mismatch: vocab has \"duo_292\", examples has \"duo_767\""
+    ]
+  },
+  {
+    "japanese": "飲みます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_289\", examples has \"duo_770\""
+    ]
+  },
+  {
+    "japanese": "あした",
+    "issues": [
+      "ID mismatch: vocab has \"duo_284\", examples has \"duo_775\""
+    ]
+  },
+  {
+    "japanese": "らいしゅう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_283\", examples has \"duo_776\""
+    ]
+  },
+  {
+    "japanese": "つくります",
+    "issues": [
+      "ID mismatch: vocab has \"duo_279\", examples has \"duo_780\""
+    ]
+  },
+  {
+    "japanese": "食べます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_278\", examples has \"duo_781\""
+    ]
+  },
+  {
+    "japanese": "おきます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_276\", examples has \"duo_783\""
+    ]
+  },
+  {
+    "japanese": "何時",
+    "issues": [
+      "ID mismatch: vocab has \"duo_273\", examples has \"duo_786\""
+    ]
+  },
+  {
+    "japanese": "カフェ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_267\", examples has \"duo_792\""
+    ]
+  },
+  {
+    "japanese": "にかい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_266\", examples has \"duo_793\""
+    ]
+  },
+  {
+    "japanese": "かいだん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_265\", examples has \"duo_794\""
+    ]
+  },
+  {
+    "japanese": "タクシー",
+    "issues": [
+      "ID mismatch: vocab has \"duo_260\", examples has \"duo_799\""
+    ]
+  },
+  {
+    "japanese": "エレベーター",
+    "issues": [
+      "ID mismatch: vocab has \"duo_259\", examples has \"duo_800\""
+    ]
+  },
+  {
+    "japanese": "ありません",
+    "issues": [
+      "ID mismatch: vocab has \"duo_256\", examples has \"duo_803\""
+    ]
+  },
+  {
+    "japanese": "あそこ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_253\", examples has \"duo_806\""
+    ]
+  },
+  {
+    "japanese": "かいさつ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_252\", examples has \"duo_807\""
+    ]
+  },
+  {
+    "japanese": "ありますか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_251\", examples has \"duo_808\""
+    ]
+  },
+  {
+    "japanese": "どうが",
+    "issues": [
+      "ID mismatch: vocab has \"duo_248\", examples has \"duo_811\""
+    ]
+  },
+  {
+    "japanese": "ゲーム",
+    "issues": [
+      "ID mismatch: vocab has \"duo_243\", examples has \"duo_816\""
+    ]
+  },
+  {
+    "japanese": "でかけます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_241\", examples has \"duo_818\""
+    ]
+  },
+  {
+    "japanese": "土曜日",
+    "issues": [
+      "ID mismatch: vocab has \"duo_240\", examples has \"duo_819\""
+    ]
+  },
+  {
+    "japanese": "買います",
+    "issues": [
+      "ID mismatch: vocab has \"duo_239\", examples has \"duo_820\""
+    ]
+  },
+  {
+    "japanese": "ヨガ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_237\", examples has \"duo_822\""
+    ]
+  },
+  {
+    "japanese": "ともだち",
+    "issues": [
+      "ID mismatch: vocab has \"duo_236\", examples has \"duo_823\""
+    ]
+  },
+  {
+    "japanese": "およぎます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_233\", examples has \"duo_826\""
+    ]
+  },
+  {
+    "japanese": "ひとりで",
+    "issues": [
+      "ID mismatch: vocab has \"duo_231\", examples has \"duo_828\""
+    ]
+  },
+  {
+    "japanese": "アイスクリーム",
+    "issues": [
+      "ID mismatch: vocab has \"duo_229\", examples has \"duo_830\""
+    ]
+  },
+  {
+    "japanese": "みそしる",
+    "issues": [
+      "ID mismatch: vocab has \"duo_225\", examples has \"duo_834\""
+    ]
+  },
+  {
+    "japanese": "そば",
+    "issues": [
+      "ID mismatch: vocab has \"duo_223\", examples has \"duo_836\""
+    ]
+  },
+  {
+    "japanese": "じゃあ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_217\", examples has \"duo_842\""
+    ]
+  },
+  {
+    "japanese": "ていしょく",
+    "issues": [
+      "ID mismatch: vocab has \"duo_211\", examples has \"duo_848\""
+    ]
+  },
+  {
+    "japanese": "ジャケット",
+    "issues": [
+      "ID mismatch: vocab has \"duo_208\", examples has \"duo_851\""
+    ]
+  },
+  {
+    "japanese": "くろい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_206\", examples has \"duo_853\""
+    ]
+  },
+  {
+    "japanese": "ありがとうございます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_204\", examples has \"duo_855\""
+    ]
+  },
+  {
+    "japanese": "いくら",
+    "issues": [
+      "ID mismatch: vocab has \"duo_202\", examples has \"duo_857\""
+    ]
+  },
+  {
+    "japanese": "いい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_195\", examples has \"duo_864\""
+    ]
+  },
+  {
+    "japanese": "がほしいです",
+    "issues": [
+      "ID mismatch: vocab has \"duo_192\", examples has \"duo_867\""
+    ]
+  },
+  {
+    "japanese": "スカート",
+    "issues": [
+      "ID mismatch: vocab has \"duo_191\", examples has \"duo_868\""
+    ]
+  },
+  {
+    "japanese": "Tシャツ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_190\", examples has \"duo_869\""
+    ]
+  },
+  {
+    "japanese": "はちょっと",
+    "issues": [
+      "ID mismatch: vocab has \"duo_185\", examples has \"duo_874\""
+    ]
+  },
+  {
+    "japanese": "ばんごはん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_182\", examples has \"duo_877\""
+    ]
+  },
+  {
+    "japanese": "九時",
+    "issues": [
+      "ID mismatch: vocab has \"duo_180\", examples has \"duo_879\""
+    ]
+  },
+  {
+    "japanese": "あさごはん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_172\", examples has \"duo_887\""
+    ]
+  },
+  {
+    "japanese": "七時",
+    "issues": [
+      "ID mismatch: vocab has \"duo_171\", examples has \"duo_888\""
+    ]
+  },
+  {
+    "japanese": "コーヒー",
+    "issues": [
+      "ID mismatch: vocab has \"duo_169\", examples has \"duo_890\""
+    ]
+  },
+  {
+    "japanese": "まいあさ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_168\", examples has \"duo_891\""
+    ]
+  },
+  {
+    "japanese": "のみます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_167\", examples has \"duo_892\""
+    ]
+  },
+  {
+    "japanese": "まいにち",
+    "issues": [
+      "ID mismatch: vocab has \"duo_165\", examples has \"duo_894\""
+    ]
+  },
+  {
+    "japanese": "たべます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_162\", examples has \"duo_897\""
+    ]
+  },
+  {
+    "japanese": "Jポップ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_161\", examples has \"duo_898\""
+    ]
+  },
+  {
+    "japanese": "まんが",
+    "issues": [
+      "ID mismatch: vocab has \"duo_160\", examples has \"duo_899\""
+    ]
+  },
+  {
+    "japanese": "アニメ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_159\", examples has \"duo_900\""
+    ]
+  },
+  {
+    "japanese": "読みます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_155\", examples has \"duo_904\""
+    ]
+  },
+  {
+    "japanese": "ロック",
+    "issues": [
+      "ID mismatch: vocab has \"duo_152\", examples has \"duo_907\""
+    ]
+  },
+  {
+    "japanese": "ききます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_151\", examples has \"duo_908\""
+    ]
+  },
+  {
+    "japanese": "サッカー",
+    "issues": [
+      "ID mismatch: vocab has \"duo_149\", examples has \"duo_910\""
+    ]
+  },
+  {
+    "japanese": "ときどき",
+    "issues": [
+      "ID mismatch: vocab has \"duo_148\", examples has \"duo_911\""
+    ]
+  },
+  {
+    "japanese": "します",
+    "issues": [
+      "ID mismatch: vocab has \"duo_147\", examples has \"duo_912\""
+    ]
+  },
+  {
+    "japanese": "バスケットボール",
+    "issues": [
+      "ID mismatch: vocab has \"duo_146\", examples has \"duo_913\""
+    ]
+  },
+  {
+    "japanese": "よく",
+    "issues": [
+      "ID mismatch: vocab has \"duo_144\", examples has \"duo_915\""
+    ]
+  },
+  {
+    "japanese": "えいが",
+    "issues": [
+      "ID mismatch: vocab has \"duo_143\", examples has \"duo_916\""
+    ]
+  },
+  {
+    "japanese": "見ます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_141\", examples has \"duo_918\""
+    ]
+  },
+  {
+    "japanese": "むすこ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_137\", examples has \"duo_922\""
+    ]
+  },
+  {
+    "japanese": "おしゃれ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_136\", examples has \"duo_923\""
+    ]
+  },
+  {
+    "japanese": "つま",
+    "issues": [
+      "ID mismatch: vocab has \"duo_133\", examples has \"duo_926\""
+    ]
+  },
+  {
+    "japanese": "ゆうめい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_131\", examples has \"duo_928\""
+    ]
+  },
+  {
+    "japanese": "おとうと",
+    "issues": [
+      "ID mismatch: vocab has \"duo_129\", examples has \"duo_930\""
+    ]
+  },
+  {
+    "japanese": "うるさい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_128\", examples has \"duo_931\""
+    ]
+  },
+  {
+    "japanese": "あに",
+    "issues": [
+      "ID mismatch: vocab has \"duo_126\", examples has \"duo_933\""
+    ]
+  },
+  {
+    "japanese": "いもうと",
+    "issues": [
+      "ID mismatch: vocab has \"duo_122\", examples has \"duo_937\""
+    ]
+  },
+  {
+    "japanese": "まち",
+    "issues": [
+      "ID mismatch: vocab has \"duo_115\", examples has \"duo_944\""
+    ]
+  },
+  {
+    "japanese": "しずか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_112\", examples has \"duo_947\""
+    ]
+  },
+  {
+    "japanese": "にぎやか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_110\", examples has \"duo_949\""
+    ]
+  },
+  {
+    "japanese": "どう",
+    "issues": [
+      "ID mismatch: vocab has \"duo_108\", examples has \"duo_951\""
+    ]
+  },
+  {
+    "japanese": "おおさか",
+    "issues": [
+      "ID mismatch: vocab has \"duo_106\", examples has \"duo_953\""
+    ]
+  },
+  {
+    "japanese": "京都",
+    "issues": [
+      "ID mismatch: vocab has \"duo_105\", examples has \"duo_954\""
+    ]
+  },
+  {
+    "japanese": "にすんでいます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_104\", examples has \"duo_955\""
+    ]
+  },
+  {
+    "japanese": "しゅっしん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_101\", examples has \"duo_958\""
+    ]
+  },
+  {
+    "japanese": "東京",
+    "issues": [
+      "ID mismatch: vocab has \"duo_100\", examples has \"duo_959\""
+    ]
+  },
+  {
+    "japanese": "おはようございます",
+    "issues": [
+      "ID mismatch: vocab has \"duo_97\", examples has \"duo_962\""
+    ]
+  },
+  {
+    "japanese": "はじめまして",
+    "issues": [
+      "ID mismatch: vocab has \"duo_96\", examples has \"duo_963\""
+    ]
+  },
+  {
+    "japanese": "パスポート",
+    "issues": [
+      "ID mismatch: vocab has \"duo_90\", examples has \"duo_969\""
+    ]
+  },
+  {
+    "japanese": "スマホ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_88\", examples has \"duo_971\""
+    ]
+  },
+  {
+    "japanese": "じゃないです",
+    "issues": [
+      "ID mismatch: vocab has \"duo_85\", examples has \"duo_974\""
+    ]
+  },
+  {
+    "japanese": "ちかてつ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_84\", examples has \"duo_975\""
+    ]
+  },
+  {
+    "japanese": "すみません",
+    "issues": [
+      "ID mismatch: vocab has \"duo_81\", examples has \"duo_978\""
+    ]
+  },
+  {
+    "japanese": "やまぐち",
+    "issues": [
+      "ID mismatch: vocab has \"duo_71\", examples has \"duo_988\""
+    ]
+  },
+  {
+    "japanese": "おもしろい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_70\", examples has \"duo_989\""
+    ]
+  },
+  {
+    "japanese": "かわいい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_68\", examples has \"duo_991\""
+    ]
+  },
+  {
+    "japanese": "あかるい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_67\", examples has \"duo_992\""
+    ]
+  },
+  {
+    "japanese": "この",
+    "issues": [
+      "ID mismatch: vocab has \"duo_65\", examples has \"duo_994\""
+    ]
+  },
+  {
+    "japanese": "なかやま",
+    "issues": [
+      "ID mismatch: vocab has \"duo_64\", examples has \"duo_995\""
+    ]
+  },
+  {
+    "japanese": "これら",
+    "issues": [
+      "ID mismatch: vocab has \"duo_62\", examples has \"duo_997\""
+    ]
+  },
+  {
+    "japanese": "くつ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_61\", examples has \"duo_998\""
+    ]
+  },
+  {
+    "japanese": "コート",
+    "issues": [
+      "ID mismatch: vocab has \"duo_59\", examples has \"duo_1000\""
+    ]
+  },
+  {
+    "japanese": "あかい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_58\", examples has \"duo_1001\""
+    ]
+  },
+  {
+    "japanese": "わたしの",
+    "issues": [
+      "ID mismatch: vocab has \"duo_57\", examples has \"duo_1002\""
+    ]
+  },
+  {
+    "japanese": "かさ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_56\", examples has \"duo_1003\""
+    ]
+  },
+  {
+    "japanese": "ぼうし",
+    "issues": [
+      "ID mismatch: vocab has \"duo_55\", examples has \"duo_1004\""
+    ]
+  },
+  {
+    "japanese": "そこ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_54\", examples has \"duo_1005\""
+    ]
+  },
+  {
+    "japanese": "だいがく",
+    "issues": [
+      "ID mismatch: vocab has \"duo_53\", examples has \"duo_1006\""
+    ]
+  },
+  {
+    "japanese": "えき",
+    "issues": [
+      "ID mismatch: vocab has \"duo_52\", examples has \"duo_1007\""
+    ]
+  },
+  {
+    "japanese": "デパート",
+    "issues": [
+      "ID mismatch: vocab has \"duo_51\", examples has \"duo_1008\""
+    ]
+  },
+  {
+    "japanese": "ここ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_50\", examples has \"duo_1009\""
+    ]
+  },
+  {
+    "japanese": "バスてい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_49\", examples has \"duo_1010\""
+    ]
+  },
+  {
+    "japanese": "ホテル",
+    "issues": [
+      "ID mismatch: vocab has \"duo_48\", examples has \"duo_1011\""
+    ]
+  },
+  {
+    "japanese": "どこ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_46\", examples has \"duo_1013\""
+    ]
+  },
+  {
+    "japanese": "ブラジルじん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_45\", examples has \"duo_1014\""
+    ]
+  },
+  {
+    "japanese": "イギリスじん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_44\", examples has \"duo_1015\""
+    ]
+  },
+  {
+    "japanese": "ブラジル",
+    "issues": [
+      "ID mismatch: vocab has \"duo_43\", examples has \"duo_1016\""
+    ]
+  },
+  {
+    "japanese": "イギリス",
+    "issues": [
+      "ID mismatch: vocab has \"duo_42\", examples has \"duo_1017\""
+    ]
+  },
+  {
+    "japanese": "カナダじん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_38\", examples has \"duo_1021\""
+    ]
+  },
+  {
+    "japanese": "アメリカ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_37\", examples has \"duo_1022\""
+    ]
+  },
+  {
+    "japanese": "おおきい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_34\", examples has \"duo_1025\""
+    ]
+  },
+  {
+    "japanese": "ケーキ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_30\", examples has \"duo_1029\""
+    ]
+  },
+  {
+    "japanese": "それ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_28\", examples has \"duo_1031\""
+    ]
+  },
+  {
+    "japanese": "これ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_27\", examples has \"duo_1032\""
+    ]
+  },
+  {
+    "japanese": "ラーメン",
+    "issues": [
+      "ID mismatch: vocab has \"duo_26\", examples has \"duo_1033\""
+    ]
+  },
+  {
+    "japanese": "おいしい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_25\", examples has \"duo_1034\""
+    ]
+  },
+  {
+    "japanese": "カレー",
+    "issues": [
+      "ID mismatch: vocab has \"duo_23\", examples has \"duo_1036\""
+    ]
+  },
+  {
+    "japanese": "またあした",
+    "issues": [
+      "ID mismatch: vocab has \"duo_22\", examples has \"duo_1037\""
+    ]
+  },
+  {
+    "japanese": "じゃあね",
+    "issues": [
+      "ID mismatch: vocab has \"duo_21\", examples has \"duo_1038\""
+    ]
+  },
+  {
+    "japanese": "こんばんは",
+    "issues": [
+      "ID mismatch: vocab has \"duo_19\", examples has \"duo_1040\""
+    ]
+  },
+  {
+    "japanese": "はな",
+    "issues": [
+      "ID mismatch: vocab has \"duo_17\", examples has \"duo_1042\""
+    ]
+  },
+  {
+    "japanese": "どうぞよろしく",
+    "issues": [
+      "ID mismatch: vocab has \"duo_16\", examples has \"duo_1043\""
+    ]
+  },
+  {
+    "japanese": "こんにちは",
+    "issues": [
+      "ID mismatch: vocab has \"duo_15\", examples has \"duo_1044\""
+    ]
+  },
+  {
+    "japanese": "けん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_14\", examples has \"duo_1045\""
+    ]
+  },
+  {
+    "japanese": "かっこいい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_11\", examples has \"duo_1048\""
+    ]
+  },
+  {
+    "japanese": "べんごし",
+    "issues": [
+      "ID mismatch: vocab has \"duo_10\", examples has \"duo_1049\""
+    ]
+  },
+  {
+    "japanese": "やさしい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_9\", examples has \"duo_1050\""
+    ]
+  },
+  {
+    "japanese": "せんせい",
+    "issues": [
+      "ID mismatch: vocab has \"duo_8\", examples has \"duo_1051\""
+    ]
+  },
+  {
+    "japanese": "いしゃ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_7\", examples has \"duo_1052\""
+    ]
+  },
+  {
+    "japanese": "みず",
+    "issues": [
+      "ID mismatch: vocab has \"duo_4\", examples has \"duo_1055\""
+    ]
+  },
+  {
+    "japanese": "ごはん",
+    "issues": [
+      "ID mismatch: vocab has \"duo_3\", examples has \"duo_1056\""
+    ]
+  },
+  {
+    "japanese": "すし",
+    "issues": [
+      "ID mismatch: vocab has \"duo_2\", examples has \"duo_1057\""
+    ]
+  },
+  {
+    "japanese": "ください",
+    "issues": [
+      "ID mismatch: vocab has \"duo_1\", examples has \"duo_1058\""
+    ]
+  },
+  {
+    "japanese": "おちゃ",
+    "issues": [
+      "ID mismatch: vocab has \"duo_0\", examples has \"duo_1059\""
+    ]
+  }
+]

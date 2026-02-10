@@ -56,6 +56,7 @@ export interface QuizSettings {
   dueCardsOnly?: boolean // Only quiz cards due for review (FSRS)
   smartMode?: boolean // Use FSRS to prioritize card selection
   kanaOnly?: boolean // For sentence-building - use kana field instead of japanese (no kanji)
+  presetId?: string // Preset identifier for special quiz modes (e.g., "lingo-special")
 }
 
 export interface QuizQuestion {

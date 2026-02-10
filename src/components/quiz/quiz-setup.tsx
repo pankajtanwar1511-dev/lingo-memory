@@ -62,6 +62,7 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
   const [dueCardsCount, setDueCardsCount] = useState(0)
   const [rememberSetup, setRememberSetup] = useState(true)
   const [showQuickStart, setShowQuickStart] = useState(false)
+  const [presetId, setPresetId] = useState<string | undefined>(undefined)
 
   // Direction selector state
   const [leftSelection, setLeftSelection] = useState<DirectionOption>("kanji")
@@ -259,9 +260,12 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
 
   // Apply a preset configuration
   const handlePresetClick = (preset: QuizPreset) => {
+    console.log("🎨 Preset clicked:", preset.id, preset.name)
     // Set all settings from preset directly (don't use handleContentTypeChange)
     // Order matters: set mode and direction AFTER content type to prevent overrides
     setContentType(preset.contentType)
+    setPresetId(preset.id) // Store preset ID for special quiz modes
+    console.log("✅ PresetId set to:", preset.id)
 
     // Update direction selector state first (before setting mode)
     if (shouldShowDirectionSelector(preset.mode)) {
@@ -315,7 +319,8 @@ export function QuizSetup({ onStart, availableVocabCount, availableKanjiCount }:
       bookmarkedOnly,
       kanaOnly,
       smartMode,
-      dueCardsOnly
+      dueCardsOnly,
+      presetId // Pass preset ID for special quiz modes
     }
 
     // Save settings to localStorage if "Remember my setup" is checked

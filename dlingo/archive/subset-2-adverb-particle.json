@@ -1,0 +1,1321 @@
+[
+  {
+    "id": "duo_4",
+    "japanese": "後で",
+    "english": "later, after, afterwards",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "後で でんわ します。",
+        "english": "I'll call later.",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "後で また きます。",
+        "english": "I'll come back later.",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "しごと が おわった 後で、ともだち と ごはん を たべます。",
+        "english": "After work ends, I'll eat with my friend.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_6",
+    "japanese": "もうすこし",
+    "english": "more, a bit longer",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "もうすこし まって ください。",
+        "english": "Please wait a bit longer.",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "もうすこし やすい の は ありますか。",
+        "english": "Do you have something a bit cheaper?",
+        "context": "question",
+        "level": "2-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "もうすこし べんきょう したら、テスト に ごうかく できます。",
+        "english": "If you study a bit more, you can pass the test.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_19",
+    "japanese": "今",
+    "english": "this, now, just",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "今 いそがしい です。",
+        "english": "I'm busy now.",
+        "context": "statement",
+        "level": "1-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "今 何 を して いますか。",
+        "english": "What are you doing now?",
+        "context": "question",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "今 から かいもの に 行って、それから ごはん を たべます。",
+        "english": "I'll go shopping now and then eat.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_22",
+    "japanese": "そろそろ",
+    "english": "soon, shortly, in a bit",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "そろそろ帰りましょうか。",
+        "english": "Should we go home in a bit?",
+        "context": "question",
+        "level": "3-14",
+        "isAIGenerated": false
+      }
+    ]
+  },
+  {
+    "id": "duo_28",
+    "japanese": "さいきん",
+    "english": "recently",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "サムさん、さいきんしごとはどうですか。",
+        "english": "Sam, how's work recently?",
+        "context": "question",
+        "level": "3-14",
+        "isAIGenerated": false
+      }
+    ]
+  },
+  {
+    "id": "duo_33",
+    "japanese": "前に",
+    "english": "previously, ago, in front of",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "えき の 前に まって います。",
+        "english": "I'm waiting in front of the station.",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "三年 前に 日本 に きました。",
+        "english": "I came to Japan three years ago.",
+        "context": "statement",
+        "level": "2-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "ねる 前に、かならず は を みがきます。",
+        "english": "I always brush my teeth before sleeping.",
+        "context": "statement",
+        "level": "2-4",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_74",
+    "japanese": "まず",
+    "english": "first, first of all",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "まず、かいだんを上がります。",
+        "english": "First, you go up the stairs.",
+        "context": "statement",
+        "level": "3-12",
+        "isAIGenerated": false
+      }
+    ]
+  },
+  {
+    "id": "duo_76",
+    "japanese": "まっすぐ",
+    "english": "straight",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "まっすぐ 行って ください。",
+        "english": "Please go straight.",
+        "context": "statement",
+        "level": "1-3",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "この みち を まっすぐ 行くと、えき が あります。",
+        "english": "If you go straight on this road, there's a station.",
+        "context": "statement",
+        "level": "2-3",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "しごと の あとで まっすぐ うち に かえります。",
+        "english": "I'll go straight home after work.",
+        "context": "statement",
+        "level": "2-4",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_104",
+    "japanese": "また",
+    "english": "again, back, see you ...",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "また あした。",
+        "english": "See you tomorrow.",
+        "context": "statement",
+        "level": "1-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "また 日本 に きて ください。",
+        "english": "Please come to Japan again.",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "また まちがえて しまいました。",
+        "english": "I made a mistake again.",
+        "context": "statement",
+        "level": "2-3",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_106",
+    "japanese": "もう",
+    "english": "yet, now, already",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "もう たべました。",
+        "english": "I already ate.",
+        "context": "statement",
+        "level": "1-3",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "しゅくだい は もう おわりましたか。",
+        "english": "Have you already finished your homework?",
+        "context": "question",
+        "level": "2-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "もう じかん が ないから、いそぎましょう。",
+        "english": "We don't have time anymore, so let's hurry.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_158",
+    "japanese": "どうやって",
+    "english": "how",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "スーパーまでどうやって行きますか。",
+        "english": "How do we get to the supermarket?",
+        "context": "answer",
+        "level": "3-8",
+        "isAIGenerated": false
+      }
+    ]
+  },
+  {
+    "id": "duo_177",
+    "japanese": "はじめて",
+    "english": "for the first time",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "みみ が いたいです。",
+        "english": "My ear hurts.",
+        "context": "statement",
+        "level": "1-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "うさぎ の みみ は ながいです。",
+        "english": "Rabbits' ears are long.",
+        "context": "statement",
+        "level": "2-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "おんがく を 大きい おと で きく と、みみ に わるいです。気をつけてください。",
+        "english": "Listening to music at loud volume is bad for your ears. Please be careful.",
+        "context": "statement",
+        "level": "3-4",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_216",
+    "japanese": "ぜんぶで",
+    "english": "in total",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "ぜんぶでいくらですか。",
+        "english": "How much is it in total?",
+        "context": "question",
+        "level": "3-5",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "ぜんぶで六千えんです。",
+        "english": "It's six thousand yen in total.",
+        "context": "answer",
+        "level": "3-5",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "マフラー を します。",
+        "english": "I wear a scarf.",
+        "context": "statement",
+        "level": "1-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "この マフラー は あたたかいです。",
+        "english": "This scarf is warm.",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "おかあさん が この マフラー を つくりました。ふゆ に いつも つかいます。",
+        "english": "My mother made this scarf. I always use it in winter.",
+        "context": "statement",
+        "level": "3-3",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_396",
+    "japanese": "まで",
+    "english": "through, even, before",
+    "type": "particle",
+    "exampleSentences": [
+      {
+        "japanese": "いなか は しずか です。",
+        "english": "The countryside is quiet.",
+        "context": "statement",
+        "level": "1-3",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "いなか に すみたい ですか。",
+        "english": "Do you want to live in the countryside?",
+        "context": "question",
+        "level": "2-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "いなか は まち から とおい ですが、くうき が きれい です。",
+        "english": "The countryside is far from the city, but the air is clean.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_404",
+    "japanese": "から",
+    "english": "because, starting, through",
+    "type": "particle",
+    "exampleSentences": [
+      {
+        "japanese": "しょくどう で たべます。",
+        "english": "I eat in the cafeteria.",
+        "context": "statement",
+        "level": "1-3",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "かいしゃ の しょくどう は やすい ですか。",
+        "english": "Is the company cafeteria cheap?",
+        "context": "question",
+        "level": "2-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "ひる休み に しょくどう で どうりょう と ごはん を たべます。",
+        "english": "During lunch break, I eat with my coworker at the cafeteria.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_426",
+    "japanese": "あまり",
+    "english": "(not) a lot of, (not) so, (not) too",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "カレー が すき です。",
+        "english": "I like curry.",
+        "context": "statement",
+        "level": "1-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "日本 の カレー は からい ですか。",
+        "english": "Is Japanese curry spicy?",
+        "context": "question",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "日曜日 に かぞく と いっしょに カレー を つくります。",
+        "english": "On Sunday I make curry together with my family.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_487",
+    "japanese": "はやく",
+    "english": "fast, early, quickly",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "十分 まって ください。",
+        "english": "Please wait ten minutes.",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "えき まで 何分 かかりますか。",
+        "english": "How many minutes does it take to the station?",
+        "context": "question",
+        "level": "2-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "えき から うち まで あるいて 十五分 ぐらい かかります。",
+        "english": "It takes about fifteen minutes to walk from the station to my house.",
+        "context": "statement",
+        "level": "2-4",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_494",
+    "japanese": "たくさん",
+    "english": "a lot of",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "りょうしん は げんき です。",
+        "english": "My parents are well.",
+        "context": "statement",
+        "level": "1-3",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "りょうしん は どこ に すんで いますか。",
+        "english": "Where do your parents live?",
+        "context": "question",
+        "level": "2-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "らいしゅう りょうしん が 日本 に 来るから、くうこう に むかえ に 行きます。",
+        "english": "My parents are coming to Japan next week, so I'll go pick them up at the airport.",
+        "context": "statement",
+        "level": "3-2",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_515",
+    "japanese": "もっと",
+    "english": "more",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "もっとやさいを買いましょう！",
+        "english": "We should buy more vegetables!",
+        "context": "statement",
+        "level": "2-22",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "かのじょ は やさしい です。",
+        "english": "She is kind. / My girlfriend is kind.",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "かのじょ は 何 が すき ですか。",
+        "english": "What does she like?",
+        "context": "question",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "かのじょ の たんじょうび に アクセサリー を プレゼント しました。",
+        "english": "I gave her accessories as a present for her birthday.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_518",
+    "japanese": "いっしょに",
+    "english": "together",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "いっしょにばんごはんをつくりましょう！",
+        "english": "We should make dinner together!",
+        "context": "statement",
+        "level": "2-22",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "またいっしょにコンサートに行きましょう。",
+        "english": "We should go to a concert together again.",
+        "context": "statement",
+        "level": "3-10",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "いっしょにバスで行きましょうか。",
+        "english": "Should we go together by bus?",
+        "context": "answer",
+        "level": "3-14",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "だいがくせい です。",
+        "english": "I'm a college student.",
+        "context": "statement",
+        "level": "1-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "だいがくせい は アルバイト を しますか。",
+        "english": "Do college students work part-time?",
+        "context": "question",
+        "level": "2-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "だいがくせい の とき に いろいろな ところ に りょこう しました。",
+        "english": "When I was a college student, I traveled to various places.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_575",
+    "japanese": "で",
+    "english": "as a, under, through",
+    "type": "particle",
+    "exampleSentences": [
+      {
+        "japanese": "おやすみなさい、また あした。",
+        "english": "Good night, see you tomorrow.",
+        "context": "statement",
+        "level": "1-3",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "ねる まえ に かぞく に おやすみなさい と いいます。",
+        "english": "I say good night to my family before sleeping.",
+        "context": "statement",
+        "level": "2-3",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "こども が ねる とき、おやすみなさい と いって、でんき を けします。",
+        "english": "When the children go to sleep, I say good night and turn off the light.",
+        "context": "statement",
+        "level": "3-2",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_602",
+    "japanese": "いろいろ",
+    "english": "all sorts of",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "そうですね、いい かんがえ ですね。",
+        "english": "That's right, that's a good idea.",
+        "context": "statement",
+        "level": "2-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "ともだち の いけん に さんせい して、そうですね と いいました。",
+        "english": "I agreed with my friend's opinion and said that's right.",
+        "context": "statement",
+        "level": "2-4",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "そうですね は どうい する とき や かんがえる とき に つかいます。",
+        "english": "Sou desu ne is used when agreeing or thinking.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_630",
+    "japanese": "が",
+    "english": "(softens the tone), (indicates the subject), but",
+    "type": "particle",
+    "exampleSentences": [
+      {
+        "japanese": "くつ を ぬぎます。",
+        "english": "I take off my shoes.",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "日本 の いえ では くつ を ぬぎますか。",
+        "english": "Do you take off shoes in Japanese houses?",
+        "context": "question",
+        "level": "2-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "日本 では いえ に はいる まえ に くつ を ぬぎます。",
+        "english": "In Japan, you take off shoes before entering a house.",
+        "context": "statement",
+        "level": "2-4",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_659",
+    "japanese": "ちゃんと",
+    "english": "proper, properly, full",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "いつもちゃんとしゅくだいをします。",
+        "english": "I always make sure to do homework.",
+        "context": "statement",
+        "level": "2-18",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "ニュース を 見ます。",
+        "english": "I watch the news.",
+        "context": "statement",
+        "level": "1-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "きょう の ニュース を ききましたか。",
+        "english": "Did you hear today's news?",
+        "context": "question",
+        "level": "2-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "まいあさ テレビ で ニュース を 見て から、しごと に 行きます。",
+        "english": "Every morning I watch news on TV before going to work.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_695",
+    "japanese": "な",
+    "english": "do not, (adjective ending), don't",
+    "type": "particle",
+    "exampleSentences": [
+      {
+        "japanese": "となり に すわって いい ですか。",
+        "english": "May I sit next to you?",
+        "context": "question",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "えき の となり に コンビニ が あります。",
+        "english": "There's a convenience store next to the station.",
+        "context": "statement",
+        "level": "2-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "となり の ひと が うるさくて、ねられませんでした。",
+        "english": "The person next door was noisy, so I couldn't sleep.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_697",
+    "japanese": "ほんとうに",
+    "english": "really, truly",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "京都えきはほんとうにきれいなえきですね。",
+        "english": "Kyoto Station is a really pretty train station, isn't it?",
+        "context": "statement",
+        "level": "2-14",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "このひこうきのチケットはほんとうに高いですね。",
+        "english": "This plane ticket is really expensive, isn't it?",
+        "context": "statement",
+        "level": "2-19",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "テーブル の うえ に あります。",
+        "english": "It's on the table.",
+        "context": "statement",
+        "level": "1-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "三かい より うえ に いきますか。",
+        "english": "Will you go above the third floor?",
+        "context": "question",
+        "level": "2-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "ほん の うえ に めがね を おいて ください。",
+        "english": "Please put the glasses on top of the book.",
+        "context": "statement",
+        "level": "2-3",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_707",
+    "japanese": "もうすぐ",
+    "english": "soon, almost, shortly",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "それ は 何 ですか。",
+        "english": "What is that?",
+        "context": "question",
+        "level": "1-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "それ を みせて ください。",
+        "english": "Please show me that.",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "それ は いい かんがえ ですね。",
+        "english": "That's a good idea.",
+        "context": "statement",
+        "level": "2-2",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_720",
+    "japanese": "いつ",
+    "english": "when, what time",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "いつ 行きますか。",
+        "english": "When will you go?",
+        "context": "question",
+        "level": "1-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "いつ 日本 に きましたか。",
+        "english": "When did you come to Japan?",
+        "context": "question",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "いつ から 日本ご を べんきょうして いますか。",
+        "english": "Since when have you been studying Japanese?",
+        "context": "question",
+        "level": "2-3",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_728",
+    "japanese": "たぶん",
+    "english": "probably",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "とり が います。",
+        "english": "There is a bird.",
+        "context": "statement",
+        "level": "1-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "とり の こえ が きこえますか。",
+        "english": "Can you hear the bird's voice?",
+        "context": "question",
+        "level": "2-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "あさ とり の こえ で めが さめました。",
+        "english": "I woke up to the sound of birds in the morning.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_740",
+    "japanese": "まだ",
+    "english": "still, yet, too",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "パソコン を つかいます。",
+        "english": "I use a computer.",
+        "context": "statement",
+        "level": "1-3",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "パソコン で 何 を しますか。",
+        "english": "What do you do on the computer?",
+        "context": "question",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "しごと で まいにち パソコン を つかって います。",
+        "english": "I use a computer every day for work.",
+        "context": "statement",
+        "level": "2-4",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_787",
+    "japanese": "いつも",
+    "english": "always, all the time",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "いつも コーヒー を のみます。",
+        "english": "I always drink coffee.",
+        "context": "statement",
+        "level": "1-3",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "いつも 何時 に おきますか。",
+        "english": "What time do you always wake up?",
+        "context": "question",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "いつも やさしく して くれて、ありがとう ございます。",
+        "english": "Thank you for always being kind to me.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_828",
+    "japanese": "ひとりで",
+    "english": "by myself, by herself, alone",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "土曜日はひとりでまんがを読みます。",
+        "english": "On Saturdays, I read manga by myself.",
+        "context": "statement",
+        "level": "2-8",
+        "isAIGenerated": false
+      }
+    ]
+  },
+  {
+    "id": "duo_833",
+    "japanese": "すこし",
+    "english": "a bit",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "すこし つかれました。",
+        "english": "I'm a bit tired.",
+        "context": "statement",
+        "level": "1-3",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "日本ご が すこし わかります。",
+        "english": "I understand Japanese a little.",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "すこし やすんだら、また がんばりましょう。",
+        "english": "After resting a bit, let's try again.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_871",
+    "japanese": "ね",
+    "english": "isn't it?",
+    "type": "particle",
+    "exampleSentences": [
+      {
+        "japanese": "きょう は いい てんき ですね。",
+        "english": "It's nice weather today, isn't it?",
+        "context": "statement",
+        "level": "1-3",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "この りょうり は おいしい ですね。",
+        "english": "This dish is delicious, isn't it?",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "日本 は きれいな くに ですね。",
+        "english": "Japan is a beautiful country, isn't it?",
+        "context": "statement",
+        "level": "2-2",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_911",
+    "japanese": "ときどき",
+    "english": "sometimes",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "ときどきすしを食べます。",
+        "english": "I sometimes eat sushi.",
+        "context": "answer",
+        "level": "2-5",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "はい、ときどきけんさんとヨガをします。",
+        "english": "Yes, I sometimes do yoga with Ken.",
+        "context": "answer",
+        "level": "2-8",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "ときどき四時ごろドラマを見ます。",
+        "english": "I sometimes watch dramas around four o'clock.",
+        "context": "statement",
+        "level": "2-10",
+        "isAIGenerated": false
+      }
+    ]
+  },
+  {
+    "id": "duo_914",
+    "japanese": "を",
+    "english": "through, with, for",
+    "type": "particle",
+    "exampleSentences": [
+      {
+        "japanese": "ごはん を たべます。",
+        "english": "I eat rice.",
+        "context": "statement",
+        "level": "1-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "日本ご を べんきょうして います。",
+        "english": "I'm studying Japanese.",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "まいあさ コーヒー を のみながら ニュース を みます。",
+        "english": "Every morning I watch news while drinking coffee.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_915",
+    "japanese": "よく",
+    "english": "often",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "よくともだちとゲームをします。",
+        "english": "I often play video games with friends.",
+        "context": "statement",
+        "level": "2-8",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "よくかじをてつだいます。",
+        "english": "I often help with chores.",
+        "context": "statement",
+        "level": "2-18",
+        "isAIGenerated": false
+      }
+    ]
+  },
+  {
+    "id": "duo_945",
+    "japanese": "とても",
+    "english": "very",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "とても おいしい です。",
+        "english": "It's very delicious.",
+        "context": "statement",
+        "level": "1-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "きょう は とても あつい ですね。",
+        "english": "It's very hot today, isn't it?",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "この えいが は とても おもしろくて、三回 みました。",
+        "english": "This movie is very interesting, so I watched it three times.",
+        "context": "statement",
+        "level": "3-1",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_951",
+    "japanese": "どう",
+    "english": "how (about), what, how",
+    "type": "adverb",
+    "exampleSentences": [
+      {
+        "japanese": "はなさん、みそしるはどうですか。",
+        "english": "Hana, how is the miso soup?",
+        "context": "question",
+        "level": "2-7",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "新しいアパートはどうですか。",
+        "english": "How's the new apartment?",
+        "context": "question",
+        "level": "2-12",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "てんきはどうですか。",
+        "english": "How's the weather?",
+        "context": "question",
+        "level": "2-16",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "りょこうはどうですか。",
+        "english": "How about a trip?",
+        "context": "answer",
+        "level": "2-19",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "そのまっちゃのチーズケーキはどうですか。",
+        "english": "How about that matcha cheesecake?",
+        "context": "answer",
+        "level": "2-21",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "スーパーまでどうやって行きますか。",
+        "english": "How do we get to the supermarket?",
+        "context": "answer",
+        "level": "3-8",
+        "isAIGenerated": false
+      },
+      {
+        "japanese": "サムさん、さいきんしごとはどうですか。",
+        "english": "Sam, how's work recently?",
+        "context": "question",
+        "level": "3-14",
+        "isAIGenerated": false
+      }
+    ]
+  },
+  {
+    "id": "duo_957",
+    "japanese": "も",
+    "english": "even, any, also",
+    "type": "particle",
+    "exampleSentences": [
+      {
+        "japanese": "わたし も がくせい です。",
+        "english": "I'm also a student.",
+        "context": "statement",
+        "level": "1-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "日本 にも いきたい です。",
+        "english": "I want to go to Japan too.",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "えいご も 日本ご も はなせます。",
+        "english": "I can speak both English and Japanese.",
+        "context": "statement",
+        "level": "2-4",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_970",
+    "japanese": "の",
+    "english": "for, 's, one",
+    "type": "particle",
+    "exampleSentences": [
+      {
+        "japanese": "わたし の ほん です。",
+        "english": "It's my book.",
+        "context": "statement",
+        "level": "1-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "日本 の りょうり が すき です。",
+        "english": "I like Japanese food.",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "あね の むすめ は 五さい です。",
+        "english": "My older sister's daughter is five.",
+        "context": "statement",
+        "level": "2-3",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_986",
+    "japanese": "に",
+    "english": "to, in, as (a)",
+    "type": "particle",
+    "exampleSentences": [
+      {
+        "japanese": "がっこう に いきます。",
+        "english": "I go to school.",
+        "context": "statement",
+        "level": "1-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "七じ に おきます。",
+        "english": "I wake up at seven.",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "ともだち に プレゼント を あげました。",
+        "english": "I gave a present to my friend.",
+        "context": "statement",
+        "level": "2-3",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_1026",
+    "japanese": "か",
+    "english": "or, is it?, that",
+    "type": "particle",
+    "exampleSentences": [
+      {
+        "japanese": "がくせい ですか。",
+        "english": "Are you a student?",
+        "context": "statement",
+        "level": "1-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "コーヒー か おちゃ を のみますか。",
+        "english": "Would you like coffee or tea?",
+        "context": "statement",
+        "level": "2-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "あした いくか どうか まだ きめて いません。",
+        "english": "I haven't decided whether I'll go tomorrow or not.",
+        "context": "statement",
+        "level": "3-2",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_1035",
+    "japanese": "は",
+    "english": "is, with, regarding",
+    "type": "particle",
+    "exampleSentences": [
+      {
+        "japanese": "わたし は がくせい です。",
+        "english": "I am a student.",
+        "context": "statement",
+        "level": "1-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "これ は なん ですか。",
+        "english": "What is this?",
+        "context": "statement",
+        "level": "1-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "わたし は まいにち 日本ご を べんきょうして います。",
+        "english": "I study Japanese every day.",
+        "context": "statement",
+        "level": "2-3",
+        "isAIGenerated": true
+      }
+    ]
+  },
+  {
+    "id": "duo_1054",
+    "japanese": "と",
+    "english": "and, that, door",
+    "type": "particle",
+    "exampleSentences": [
+      {
+        "japanese": "ともだち と いきます。",
+        "english": "I go with my friend.",
+        "context": "statement",
+        "level": "1-2",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "パン と コーヒー を たべます。",
+        "english": "I eat bread and coffee.",
+        "context": "statement",
+        "level": "2-1",
+        "isAIGenerated": true
+      },
+      {
+        "japanese": "母 と でんわ で はなしました。",
+        "english": "I talked with my mother on the phone.",
+        "context": "statement",
+        "level": "2-2",
+        "isAIGenerated": true
+      }
+    ]
+  }
+]

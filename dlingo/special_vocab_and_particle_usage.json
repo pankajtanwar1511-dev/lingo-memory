@@ -1,0 +1,695 @@
+{
+  "title": "Japanese Particles & Vocabulary Usage Guide",
+  "description": "Practical tips and example sentences showing how to use particles with numbers, time expressions, and counters",
+  
+  "particleGuide": [
+    {
+      "particle": "に",
+      "primaryUse": "Time marker / Target / Location of existence",
+      "tips": [
+        "Use に for SPECIFIC times (clock time, days, dates, months, years)",
+        "Do NOT use に with relative time words (きょう, あした, きのう, まいにち, etc.)",
+        "Use に for the target of giving/receiving",
+        "Use に with あります/います for location"
+      ],
+      "examples": [
+        {
+          "japanese": "七時に おきます。",
+          "english": "I wake up at 7 o'clock.",
+          "note": "に with specific clock time"
+        },
+        {
+          "japanese": "四月に 日本に 行きます。",
+          "english": "I will go to Japan in April.",
+          "note": "に with specific month"
+        },
+        {
+          "japanese": "十五日に パーティーが あります。",
+          "english": "There's a party on the 15th.",
+          "note": "に with specific date"
+        },
+        {
+          "japanese": "2025年に そつぎょうします。",
+          "english": "I will graduate in 2025.",
+          "note": "に with specific year"
+        },
+        {
+          "japanese": "月曜日に テストが あります。",
+          "english": "There's a test on Monday.",
+          "note": "に with day of the week"
+        },
+        {
+          "japanese": "ともだちに 本を 三さつ あげました。",
+          "english": "I gave three books to my friend.",
+          "note": "に marks the recipient"
+        },
+        {
+          "japanese": "へやに ねこが 二ひき います。",
+          "english": "There are two cats in the room.",
+          "note": "に with います for location of living things"
+        }
+      ],
+      "noParticleExamples": [
+        {
+          "japanese": "きょう ✓ / きょうに ✗",
+          "english": "Today (no particle needed)",
+          "note": "Relative time - no に"
+        },
+        {
+          "japanese": "あした しごとが あります。",
+          "english": "I have work tomorrow.",
+          "note": "あした is relative time - no に"
+        },
+        {
+          "japanese": "まいにち コーヒーを 三ばい 飲みます。",
+          "english": "I drink three cups of coffee every day.",
+          "note": "まいにち is relative time - no に"
+        },
+        {
+          "japanese": "らいしゅう りょこうします。",
+          "english": "I will travel next week.",
+          "note": "らいしゅう is relative time - no に"
+        }
+      ]
+    },
+    {
+      "particle": "を",
+      "primaryUse": "Direct object marker / Route/Path",
+      "tips": [
+        "Marks what you DO something to (eat, drink, buy, read, etc.)",
+        "Also marks the PATH you move through (walk, run, cross, pass)",
+        "Counter comes AFTER を or AFTER the verb"
+      ],
+      "examples": [
+        {
+          "japanese": "りんごを 三つ 買いました。",
+          "english": "I bought three apples.",
+          "note": "を marks object; counter after を"
+        },
+        {
+          "japanese": "ビールを 二はい 飲みました。",
+          "english": "I drank two glasses of beer.",
+          "note": "を marks the drink; 杯 counter for cups/glasses"
+        },
+        {
+          "japanese": "本を 五さつ 読みました。",
+          "english": "I read five books.",
+          "note": "を marks object; 冊 counter for books"
+        },
+        {
+          "japanese": "Tシャツを 二ちゃく 買いたいです。",
+          "english": "I want to buy two t-shirts.",
+          "note": "着 counter for clothing"
+        },
+        {
+          "japanese": "はしを わたります。",
+          "english": "I cross the bridge.",
+          "note": "を marks the path/route crossed"
+        },
+        {
+          "japanese": "こうえんを さんぽします。",
+          "english": "I take a walk through the park.",
+          "note": "を marks the area walked through"
+        },
+        {
+          "japanese": "みちを まっすぐ 行きます。",
+          "english": "I go straight down the road.",
+          "note": "を marks the route taken"
+        }
+      ]
+    },
+    {
+      "particle": "が",
+      "primaryUse": "Subject marker / Existence / Ability / Desire",
+      "tips": [
+        "Use が with あります/います (existence)",
+        "Use が with すき/きらい/ほしい (likes/dislikes/wants)",
+        "Use が with できます/わかります (ability/understanding)",
+        "Use が to mark the subject in new information"
+      ],
+      "examples": [
+        {
+          "japanese": "こどもが 三人 います。",
+          "english": "I have three children. / There are three children.",
+          "note": "が with います + 人 counter"
+        },
+        {
+          "japanese": "くるまが 二だい あります。",
+          "english": "I have two cars. / There are two cars.",
+          "note": "が with あります + 台 counter"
+        },
+        {
+          "japanese": "ねこが 一ぴき ほしいです。",
+          "english": "I want one cat.",
+          "note": "が with ほしい + 匹 counter"
+        },
+        {
+          "japanese": "日本ごが すこし わかります。",
+          "english": "I understand a little Japanese.",
+          "note": "が with わかります"
+        },
+        {
+          "japanese": "じかんが 三十分 あります。",
+          "english": "There are 30 minutes (of time).",
+          "note": "が with あります for time available"
+        },
+        {
+          "japanese": "でんしゃが 五分で きます。",
+          "english": "The train will come in 5 minutes.",
+          "note": "が marks the subject (train)"
+        }
+      ]
+    },
+    {
+      "particle": "で",
+      "primaryUse": "Location of action / Means / Reason / Scope",
+      "tips": [
+        "Use で for WHERE an action happens (not existence)",
+        "Use で for means/method (by train, by hand, in Japanese)",
+        "Use で for total/scope (ぜんぶで = in total)",
+        "Use で for reason (びょうきで = due to illness)"
+      ],
+      "examples": [
+        {
+          "japanese": "デパートで ふくを 五ちゃく 買いました。",
+          "english": "I bought five pieces of clothing at the department store.",
+          "note": "で marks location of action"
+        },
+        {
+          "japanese": "ぜんぶで 三千円です。",
+          "english": "It's 3,000 yen in total.",
+          "note": "ぜんぶで = in total"
+        },
+        {
+          "japanese": "五人で いきましょう。",
+          "english": "Let's go with five people. / Let's go as a group of five.",
+          "note": "Number + で = as a group of X"
+        },
+        {
+          "japanese": "三十分で できます。",
+          "english": "I can do it in 30 minutes.",
+          "note": "Time + で = within (time needed)"
+        },
+        {
+          "japanese": "ひとりで りょこうします。",
+          "english": "I travel alone.",
+          "note": "ひとりで = alone, by oneself"
+        },
+        {
+          "japanese": "バスで 二十分 かかります。",
+          "english": "It takes 20 minutes by bus.",
+          "note": "で marks means of transportation"
+        },
+        {
+          "japanese": "千円で たりますか。",
+          "english": "Is 1,000 yen enough?",
+          "note": "Amount + で = with (amount)"
+        }
+      ]
+    },
+    {
+      "particle": "から / まで",
+      "primaryUse": "From / Until (time and place)",
+      "tips": [
+        "から = starting point (from)",
+        "まで = ending point (until/to)",
+        "Often used together for ranges",
+        "Works with both time and location"
+      ],
+      "examples": [
+        {
+          "japanese": "九時から 五時まで はたらきます。",
+          "english": "I work from 9 to 5.",
+          "note": "Time range with から〜まで"
+        },
+        {
+          "japanese": "月曜日から 金曜日まで がっこうに 行きます。",
+          "english": "I go to school from Monday to Friday.",
+          "note": "Day range"
+        },
+        {
+          "japanese": "一月から 三月まで さむいです。",
+          "english": "It's cold from January to March.",
+          "note": "Month range"
+        },
+        {
+          "japanese": "ここから えきまで 十分です。",
+          "english": "It's 10 minutes from here to the station.",
+          "note": "Place range + duration"
+        },
+        {
+          "japanese": "あさから ばんまで いそがしいです。",
+          "english": "I'm busy from morning until night.",
+          "note": "Time of day range"
+        },
+        {
+          "japanese": "らいしゅうから 日本ごを べんきょうします。",
+          "english": "I will start studying Japanese from next week.",
+          "note": "Starting point only"
+        },
+        {
+          "japanese": "五時まで まってください。",
+          "english": "Please wait until 5 o'clock.",
+          "note": "End point only"
+        }
+      ]
+    },
+    {
+      "particle": "と",
+      "primaryUse": "With (someone) / And / Quotation",
+      "tips": [
+        "Use と for doing something WITH someone",
+        "Use と to list items (A と B)",
+        "Number + と + number for addition"
+      ],
+      "examples": [
+        {
+          "japanese": "ともだちと 二人で 行きました。",
+          "english": "I went with a friend, just the two of us.",
+          "note": "と for 'with' + 人 counter"
+        },
+        {
+          "japanese": "三と 五は 八です。",
+          "english": "Three and five is eight.",
+          "note": "と for addition"
+        },
+        {
+          "japanese": "ねこと いぬが います。",
+          "english": "There are cats and dogs.",
+          "note": "と for listing"
+        },
+        {
+          "japanese": "かぞくと 旅行します。",
+          "english": "I travel with my family.",
+          "note": "と for 'with'"
+        }
+      ]
+    },
+    {
+      "particle": "の",
+      "primaryUse": "Possession / Connection / Noun modification",
+      "tips": [
+        "Connects nouns (A の B = A's B, B of A)",
+        "Time expressions often use の",
+        "Can replace nouns (この赤いの = this red one)"
+      ],
+      "examples": [
+        {
+          "japanese": "三月の ついたち",
+          "english": "March 1st",
+          "note": "の connects month and day"
+        },
+        {
+          "japanese": "きょねんの 四月",
+          "english": "April of last year",
+          "note": "の connects year and month"
+        },
+        {
+          "japanese": "あしたの ごぜん",
+          "english": "Tomorrow morning",
+          "note": "の connects day and time of day"
+        },
+        {
+          "japanese": "五分の 休み",
+          "english": "A 5-minute break",
+          "note": "の connects duration and noun"
+        },
+        {
+          "japanese": "二かいの へや",
+          "english": "A room on the second floor",
+          "note": "の connects floor and location"
+        },
+        {
+          "japanese": "いちばんの ともだち",
+          "english": "Best friend / Number one friend",
+          "note": "の with ranking"
+        }
+      ]
+    },
+    {
+      "particle": "も",
+      "primaryUse": "Also / Too / Even / (with question words) Every/Any",
+      "tips": [
+        "Replaces は/が/を when meaning 'also'",
+        "With question word + も + negative = nothing/nobody/nowhere",
+        "With numbers for emphasis (even X)"
+      ],
+      "examples": [
+        {
+          "japanese": "コーヒーも 二はい 飲みました。",
+          "english": "I also drank two cups of coffee.",
+          "note": "も replaces を for 'also'"
+        },
+        {
+          "japanese": "一人も いません。",
+          "english": "There isn't even one person. / Nobody is here.",
+          "note": "Number + も + negative = not even one"
+        },
+        {
+          "japanese": "いっかいも 行ったことが ありません。",
+          "english": "I have never gone even once.",
+          "note": "回 counter + も + negative"
+        },
+        {
+          "japanese": "十分も まちました。",
+          "english": "I waited for as long as 10 minutes!",
+          "note": "も for emphasis (as much as)"
+        },
+        {
+          "japanese": "何人も きました。",
+          "english": "Many people came.",
+          "note": "Question word + も = many"
+        }
+      ]
+    },
+    {
+      "particle": "ぐらい / ごろ",
+      "primaryUse": "Approximate amount / Approximate time",
+      "tips": [
+        "ぐらい/くらい = approximately (amount, duration, quantity)",
+        "ごろ = around (point in time only)",
+        "ぐらい can be used with almost anything",
+        "ごろ only with specific clock times or dates"
+      ],
+      "examples": [
+        {
+          "japanese": "三十分ぐらい かかります。",
+          "english": "It takes about 30 minutes.",
+          "note": "ぐらい with duration"
+        },
+        {
+          "japanese": "五人ぐらい きました。",
+          "english": "About 5 people came.",
+          "note": "ぐらい with people counter"
+        },
+        {
+          "japanese": "千円ぐらい です。",
+          "english": "It's about 1,000 yen.",
+          "note": "ぐらい with money"
+        },
+        {
+          "japanese": "十ぽんぐらい 買いました。",
+          "english": "I bought about 10 (bottles/pens/etc.).",
+          "note": "ぐらい with 本 counter"
+        },
+        {
+          "japanese": "七時ごろ おきます。",
+          "english": "I wake up around 7 o'clock.",
+          "note": "ごろ with specific time"
+        },
+        {
+          "japanese": "四月ごろ さくらが さきます。",
+          "english": "Cherry blossoms bloom around April.",
+          "note": "ごろ with month"
+        },
+        {
+          "japanese": "いつごろ 行きますか。",
+          "english": "Around when will you go?",
+          "note": "ごろ with question word"
+        }
+      ]
+    },
+    {
+      "particle": "ずつ",
+      "primaryUse": "Each / Per / At a time",
+      "tips": [
+        "Number + counter + ずつ = X each/per",
+        "Used for distribution or repetition"
+      ],
+      "examples": [
+        {
+          "japanese": "一人に りんごを 二つずつ あげました。",
+          "english": "I gave two apples each to each person.",
+          "note": "ずつ for distribution"
+        },
+        {
+          "japanese": "まいにち 三ページずつ 読みます。",
+          "english": "I read 3 pages per day.",
+          "note": "ずつ for daily amount"
+        },
+        {
+          "japanese": "五分ずつ 休みましょう。",
+          "english": "Let's take breaks of 5 minutes each.",
+          "note": "ずつ with time"
+        },
+        {
+          "japanese": "二人ずつ はいってください。",
+          "english": "Please enter two people at a time.",
+          "note": "ずつ for grouping"
+        },
+        {
+          "japanese": "いっぽんずつ ください。",
+          "english": "Please give me one (long thing) each.",
+          "note": "ずつ with 本 counter"
+        }
+      ]
+    },
+    {
+      "particle": "か",
+      "primaryUse": "Question marker / Or / Uncertainty",
+      "tips": [
+        "At end of sentence = question",
+        "Between options = or",
+        "After question word = some-/any-"
+      ],
+      "examples": [
+        {
+          "japanese": "なんじですか。",
+          "english": "What time is it?",
+          "note": "か for question"
+        },
+        {
+          "japanese": "何人 きましたか。",
+          "english": "How many people came?",
+          "note": "か with counter question"
+        },
+        {
+          "japanese": "コーヒーか こうちゃ、どちらが いいですか。",
+          "english": "Which is better, coffee or tea?",
+          "note": "か for 'or'"
+        },
+        {
+          "japanese": "一つか 二つ ください。",
+          "english": "Please give me one or two.",
+          "note": "か between numbers"
+        },
+        {
+          "japanese": "いつか 日本に 行きたいです。",
+          "english": "I want to go to Japan someday.",
+          "note": "いつか = sometime"
+        },
+        {
+          "japanese": "だれか いますか。",
+          "english": "Is someone there?",
+          "note": "だれか = someone"
+        }
+      ]
+    }
+  ],
+
+  "counterPlacementRules": {
+    "title": "Where to Put Counters in a Sentence",
+    "rules": [
+      {
+        "pattern": "Subject + が/は + Number+Counter + います/あります",
+        "example": "ねこが 三びき います。",
+        "english": "There are three cats.",
+        "note": "Counter before the verb for existence"
+      },
+      {
+        "pattern": "Object + を + Number+Counter + Verb",
+        "example": "りんごを 五つ 買いました。",
+        "english": "I bought five apples.",
+        "note": "Counter between を and verb"
+      },
+      {
+        "pattern": "Number+Counter + の + Noun",
+        "example": "三びきの ねこ",
+        "english": "Three cats",
+        "note": "Counter before noun with の (more formal/written)"
+      },
+      {
+        "pattern": "Noun + Number+Counter",
+        "example": "ねこ 三びき",
+        "english": "Three cats",
+        "note": "Counter directly after noun (casual)"
+      },
+      {
+        "pattern": "Time + に + Duration + Verb",
+        "example": "九時に 三十分 べんきょうしました。",
+        "english": "I studied for 30 minutes at 9 o'clock.",
+        "note": "Point in time uses に; duration has no particle"
+      }
+    ]
+  },
+
+  "commonMistakes": [
+    {
+      "mistake": "きょうに 行きます ✗",
+      "correct": "きょう 行きます ✓",
+      "explanation": "Don't use に with relative time words (きょう, あした, まいにち, らいしゅう, etc.)"
+    },
+    {
+      "mistake": "二人が います ✗",
+      "correct": "二人 います ✓ / 人が 二人 います ✓",
+      "explanation": "Don't put が directly after a number+counter"
+    },
+    {
+      "mistake": "七じごろに ✗",
+      "correct": "七じごろ ✓",
+      "explanation": "Don't use に after ごろ (ごろ already implies approximation)"
+    },
+    {
+      "mistake": "三十分ごろ かかります ✗",
+      "correct": "三十分ぐらい かかります ✓",
+      "explanation": "Use ぐらい for duration/amount, ごろ for point in time"
+    },
+    {
+      "mistake": "よんじ ✗",
+      "correct": "よじ ✓",
+      "explanation": "4 o'clock is よじ, not よんじ"
+    },
+    {
+      "mistake": "しちふん ✗",
+      "correct": "ななふん ✓",
+      "explanation": "7 minutes is ななふん, not しちふん"
+    },
+    {
+      "mistake": "くじかん ✗",
+      "correct": "きゅうじかん ✓",
+      "explanation": "9 hours is きゅうじかん (but 9 o'clock is くじ)"
+    }
+  ],
+
+  "usefulPatterns": [
+    {
+      "pattern": "Number + 目 (め)",
+      "meaning": "Ordinal numbers (1st, 2nd, 3rd...)",
+      "examples": [
+        {"japanese": "一つ目", "english": "the first one"},
+        {"japanese": "二人目", "english": "the second person"},
+        {"japanese": "三かい目", "english": "the third time"},
+        {"japanese": "四さつ目の 本", "english": "the fourth book"}
+      ]
+    },
+    {
+      "pattern": "Counter + も + Negative",
+      "meaning": "Not even one...",
+      "examples": [
+        {"japanese": "一人も いません", "english": "There's nobody (not even one person)"},
+        {"japanese": "一つも ありません", "english": "There isn't any (not even one)"},
+        {"japanese": "いっかいも 行きませんでした", "english": "I didn't go even once"}
+      ]
+    },
+    {
+      "pattern": "Counter + しか + Negative",
+      "meaning": "Only... (with nuance of 'not enough')",
+      "examples": [
+        {"japanese": "三人しか いません", "english": "There are only 3 people (not enough)"},
+        {"japanese": "五分しか ありません", "english": "There are only 5 minutes (not enough time)"},
+        {"japanese": "千円しか もっていません", "english": "I only have 1,000 yen"}
+      ]
+    },
+    {
+      "pattern": "Counter + だけ",
+      "meaning": "Only... (neutral)",
+      "examples": [
+        {"japanese": "一つだけ ください", "english": "Please give me just one"},
+        {"japanese": "二人だけで 行きました", "english": "Only two people went"},
+        {"japanese": "十分だけ まってください", "english": "Please wait just 10 minutes"}
+      ]
+    },
+    {
+      "pattern": "何 + Counter",
+      "meaning": "Question form (how many...?)",
+      "examples": [
+        {"japanese": "なんにん?", "english": "How many people?"},
+        {"japanese": "なんじ?", "english": "What time?"},
+        {"japanese": "なんさい?", "english": "How old?"},
+        {"japanese": "なんぼん?", "english": "How many (long things)?"},
+        {"japanese": "なんびき?", "english": "How many (small animals)?"}
+      ]
+    }
+  ],
+
+  "practiceDialogues": [
+    {
+      "title": "At a Restaurant",
+      "dialogue": [
+        {"speaker": "店員", "japanese": "なんめいさまですか。", "english": "How many people?"},
+        {"speaker": "客", "japanese": "三人です。", "english": "Three people."},
+        {"speaker": "店員", "japanese": "こちらへ どうぞ。おのみものは?", "english": "This way please. Drinks?"},
+        {"speaker": "客", "japanese": "ビールを 二はいと、みずを 一つ ください。", "english": "Two beers and one water, please."},
+        {"speaker": "店員", "japanese": "かしこまりました。ごちゅうもんは?", "english": "Certainly. Your order?"},
+        {"speaker": "客", "japanese": "ラーメンを 三つ おねがいします。", "english": "Three ramens, please."},
+        {"speaker": "店員", "japanese": "十五分ぐらい かかりますが、よろしいですか。", "english": "It will take about 15 minutes, is that okay?"},
+        {"speaker": "客", "japanese": "はい、だいじょうぶです。", "english": "Yes, that's fine."}
+      ]
+    },
+    {
+      "title": "Shopping for Clothes",
+      "dialogue": [
+        {"speaker": "客", "japanese": "すみません、このTシャツは いくらですか。", "english": "Excuse me, how much is this T-shirt?"},
+        {"speaker": "店員", "japanese": "二千五百円です。", "english": "It's 2,500 yen."},
+        {"speaker": "客", "japanese": "じゃあ、二ちゃく ください。", "english": "Then, I'll take two."},
+        {"speaker": "店員", "japanese": "ぜんぶで 五千円です。", "english": "That's 5,000 yen in total."},
+        {"speaker": "客", "japanese": "一万円で おねがいします。", "english": "Here's 10,000 yen."},
+        {"speaker": "店員", "japanese": "五千円の おかえしです。", "english": "Here's 5,000 yen change."}
+      ]
+    },
+    {
+      "title": "Making Plans",
+      "dialogue": [
+        {"speaker": "A", "japanese": "らいしゅうの どようび、ひまですか。", "english": "Are you free next Saturday?"},
+        {"speaker": "B", "japanese": "どようびは ちょっと... 日曜日は どうですか。", "english": "Saturday is a bit... How about Sunday?"},
+        {"speaker": "A", "japanese": "日曜日、いいですね。なんじに 会いましょうか。", "english": "Sunday is good. What time shall we meet?"},
+        {"speaker": "B", "japanese": "十時ごろは どうですか。", "english": "How about around 10?"},
+        {"speaker": "A", "japanese": "いいですね。どこで 会いましょうか。", "english": "Sounds good. Where shall we meet?"},
+        {"speaker": "B", "japanese": "えきで 会いましょう。えきから カフェまで 五分ぐらいです。", "english": "Let's meet at the station. It's about 5 minutes from the station to the cafe."},
+        {"speaker": "A", "japanese": "わかりました。日曜日の 十時に えきで。", "english": "Got it. Sunday at 10 at the station."}
+      ]
+    },
+    {
+      "title": "At the Train Station",
+      "dialogue": [
+        {"speaker": "客", "japanese": "すみません、東京まで いくらですか。", "english": "Excuse me, how much is it to Tokyo?"},
+        {"speaker": "駅員", "japanese": "五百八十円です。", "english": "It's 580 yen."},
+        {"speaker": "客", "japanese": "じかんは どのぐらい かかりますか。", "english": "How long does it take?"},
+        {"speaker": "駅員", "japanese": "三十分ぐらいです。", "english": "About 30 minutes."},
+        {"speaker": "客", "japanese": "つぎの でんしゃは なんじですか。", "english": "What time is the next train?"},
+        {"speaker": "駅員", "japanese": "九時十五分です。あと 五分で きます。", "english": "9:15. It's coming in 5 minutes."},
+        {"speaker": "客", "japanese": "ありがとうございます。きっぷを 二まい ください。", "english": "Thank you. Two tickets, please."}
+      ]
+    },
+    {
+      "title": "At the Pet Shop",
+      "dialogue": [
+        {"speaker": "客", "japanese": "あのう、ここに ねこは なんびき いますか。", "english": "Um, how many cats are here?"},
+        {"speaker": "店員", "japanese": "今は 八ひき います。", "english": "We have 8 right now."},
+        {"speaker": "客", "japanese": "あの 白い ねこは なんさいですか。", "english": "How old is that white cat?"},
+        {"speaker": "店員", "japanese": "三さいです。とても おとなしいですよ。", "english": "It's 3 years old. It's very calm."},
+        {"speaker": "客", "japanese": "かわいいですね。いくらですか。", "english": "It's cute. How much is it?"},
+        {"speaker": "店員", "japanese": "三万五千円です。", "english": "35,000 yen."}
+      ]
+    }
+  ],
+
+  "quickReferenceChart": {
+    "title": "Particle Quick Reference with Numbers/Counters",
+    "chart": [
+      {"situation": "Specific time (clock, day, date, month, year)", "particle": "に", "example": "七時に / 月曜日に / 三月に"},
+      {"situation": "Relative time (today, tomorrow, every day)", "particle": "∅ (none)", "example": "きょう / あした / まいにち"},
+      {"situation": "Approximate time (point)", "particle": "ごろ", "example": "三時ごろ / 四月ごろ"},
+      {"situation": "Approximate amount/duration", "particle": "ぐらい", "example": "三十分ぐらい / 五人ぐらい"},
+      {"situation": "Time/place range", "particle": "から〜まで", "example": "九時から五時まで"},
+      {"situation": "Duration needed", "particle": "で", "example": "三十分で できます"},
+      {"situation": "Group size", "particle": "で", "example": "五人で 行きます"},
+      {"situation": "Total", "particle": "で", "example": "ぜんぶで 千円"},
+      {"situation": "Each/per", "particle": "ずつ", "example": "二つずつ"},
+      {"situation": "Only (neutral)", "particle": "だけ", "example": "一つだけ"},
+      {"situation": "Only (not enough)", "particle": "しか+neg", "example": "三人しか いません"},
+      {"situation": "Not even one", "particle": "も+neg", "example": "一人も いません"},
+      {"situation": "Ordinal (1st, 2nd)", "particle": "目", "example": "三つ目 / 二人目"}
+    ]
+  }
+}

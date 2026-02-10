@@ -1,0 +1,603 @@
+VALIDATION REQUEST FOR CLAUDE AI
+================================================================================
+
+Subset: 2-adverb-particle
+Total words: 45
+Word types: adverb, particle
+
+INSTRUCTIONS:
+Please validate that each example sentence actually contains or uses the target Japanese word.
+The word might appear in different forms (conjugations, particles, kanji vs hiragana, etc.)
+Report any examples that clearly don't contain the target word.
+
+================================================================================
+
+[1/45] ID: duo_4
+Target Word: 後で (later, after, afterwards)
+Type: adverb
+Example Sentences:
+  1. JP: 後で でんわ します。
+     EN: I'll call later.
+  2. JP: 後で また きます。
+     EN: I'll come back later.
+  3. JP: しごと が おわった 後で、ともだち と ごはん を たべます。
+     EN: After work ends, I'll eat with my friend.
+
+--------------------------------------------------------------------------------
+
+[2/45] ID: duo_6
+Target Word: もうすこし (more, a bit longer)
+Type: adverb
+Example Sentences:
+  1. JP: もうすこし まって ください。
+     EN: Please wait a bit longer.
+  2. JP: もうすこし やすい の は ありますか。
+     EN: Do you have something a bit cheaper?
+  3. JP: もうすこし べんきょう したら、テスト に ごうかく できます。
+     EN: If you study a bit more, you can pass the test.
+
+--------------------------------------------------------------------------------
+
+[3/45] ID: duo_19
+Target Word: 今 (this, now, just)
+Type: adverb
+Example Sentences:
+  1. JP: 今 いそがしい です。
+     EN: I'm busy now.
+  2. JP: 今 何 を して いますか。
+     EN: What are you doing now?
+  3. JP: 今 から かいもの に 行って、それから ごはん を たべます。
+     EN: I'll go shopping now and then eat.
+
+--------------------------------------------------------------------------------
+
+[4/45] ID: duo_22
+Target Word: そろそろ (soon, shortly, in a bit)
+Type: adverb
+Example Sentences:
+  1. JP: そろそろ帰りましょうか。
+     EN: Should we go home in a bit?
+
+--------------------------------------------------------------------------------
+
+[5/45] ID: duo_28
+Target Word: さいきん (recently)
+Type: adverb
+Example Sentences:
+  1. JP: サムさん、さいきんしごとはどうですか。
+     EN: Sam, how's work recently?
+
+--------------------------------------------------------------------------------
+
+[6/45] ID: duo_33
+Target Word: 前に (previously, ago, in front of)
+Type: adverb
+Example Sentences:
+  1. JP: えき の 前に まって います。
+     EN: I'm waiting in front of the station.
+  2. JP: 三年 前に 日本 に きました。
+     EN: I came to Japan three years ago.
+  3. JP: ねる 前に、かならず は を みがきます。
+     EN: I always brush my teeth before sleeping.
+
+--------------------------------------------------------------------------------
+
+[7/45] ID: duo_74
+Target Word: まず (first, first of all)
+Type: adverb
+Example Sentences:
+  1. JP: まず、かいだんを上がります。
+     EN: First, you go up the stairs.
+
+--------------------------------------------------------------------------------
+
+[8/45] ID: duo_76
+Target Word: まっすぐ (straight)
+Type: adverb
+Example Sentences:
+  1. JP: まっすぐ 行って ください。
+     EN: Please go straight.
+  2. JP: この みち を まっすぐ 行くと、えき が あります。
+     EN: If you go straight on this road, there's a station.
+  3. JP: しごと の あとで まっすぐ うち に かえります。
+     EN: I'll go straight home after work.
+
+--------------------------------------------------------------------------------
+
+[9/45] ID: duo_104
+Target Word: また (again, back, see you ...)
+Type: adverb
+Example Sentences:
+  1. JP: また あした。
+     EN: See you tomorrow.
+  2. JP: また 日本 に きて ください。
+     EN: Please come to Japan again.
+  3. JP: また まちがえて しまいました。
+     EN: I made a mistake again.
+
+--------------------------------------------------------------------------------
+
+[10/45] ID: duo_106
+Target Word: もう (yet, now, already)
+Type: adverb
+Example Sentences:
+  1. JP: もう たべました。
+     EN: I already ate.
+  2. JP: しゅくだい は もう おわりましたか。
+     EN: Have you already finished your homework?
+  3. JP: もう じかん が ないから、いそぎましょう。
+     EN: We don't have time anymore, so let's hurry.
+
+--------------------------------------------------------------------------------
+
+[11/45] ID: duo_158
+Target Word: どうやって (how)
+Type: adverb
+Example Sentences:
+  1. JP: スーパーまでどうやって行きますか。
+     EN: How do we get to the supermarket?
+
+--------------------------------------------------------------------------------
+
+[12/45] ID: duo_177
+Target Word: はじめて (for the first time)
+Type: adverb
+Example Sentences:
+  1. JP: みみ が いたいです。
+     EN: My ear hurts.
+  2. JP: うさぎ の みみ は ながいです。
+     EN: Rabbits' ears are long.
+  3. JP: おんがく を 大きい おと で きく と、みみ に わるいです。気をつけてください。
+     EN: Listening to music at loud volume is bad for your ears. Please be careful.
+
+--------------------------------------------------------------------------------
+
+[13/45] ID: duo_216
+Target Word: ぜんぶで (in total)
+Type: adverb
+Example Sentences:
+  1. JP: ぜんぶでいくらですか。
+     EN: How much is it in total?
+  2. JP: ぜんぶで六千えんです。
+     EN: It's six thousand yen in total.
+  3. JP: マフラー を します。
+     EN: I wear a scarf.
+  4. JP: この マフラー は あたたかいです。
+     EN: This scarf is warm.
+  5. JP: おかあさん が この マフラー を つくりました。ふゆ に いつも つかいます。
+     EN: My mother made this scarf. I always use it in winter.
+
+--------------------------------------------------------------------------------
+
+[14/45] ID: duo_396
+Target Word: まで (through, even, before)
+Type: particle
+Example Sentences:
+  1. JP: いなか は しずか です。
+     EN: The countryside is quiet.
+  2. JP: いなか に すみたい ですか。
+     EN: Do you want to live in the countryside?
+  3. JP: いなか は まち から とおい ですが、くうき が きれい です。
+     EN: The countryside is far from the city, but the air is clean.
+
+--------------------------------------------------------------------------------
+
+[15/45] ID: duo_404
+Target Word: から (because, starting, through)
+Type: particle
+Example Sentences:
+  1. JP: しょくどう で たべます。
+     EN: I eat in the cafeteria.
+  2. JP: かいしゃ の しょくどう は やすい ですか。
+     EN: Is the company cafeteria cheap?
+  3. JP: ひる休み に しょくどう で どうりょう と ごはん を たべます。
+     EN: During lunch break, I eat with my coworker at the cafeteria.
+
+--------------------------------------------------------------------------------
+
+[16/45] ID: duo_426
+Target Word: あまり ((not) a lot of, (not) so, (not) too)
+Type: adverb
+Example Sentences:
+  1. JP: カレー が すき です。
+     EN: I like curry.
+  2. JP: 日本 の カレー は からい ですか。
+     EN: Is Japanese curry spicy?
+  3. JP: 日曜日 に かぞく と いっしょに カレー を つくります。
+     EN: On Sunday I make curry together with my family.
+
+--------------------------------------------------------------------------------
+
+[17/45] ID: duo_487
+Target Word: はやく (fast, early, quickly)
+Type: adverb
+Example Sentences:
+  1. JP: 十分 まって ください。
+     EN: Please wait ten minutes.
+  2. JP: えき まで 何分 かかりますか。
+     EN: How many minutes does it take to the station?
+  3. JP: えき から うち まで あるいて 十五分 ぐらい かかります。
+     EN: It takes about fifteen minutes to walk from the station to my house.
+
+--------------------------------------------------------------------------------
+
+[18/45] ID: duo_494
+Target Word: たくさん (a lot of)
+Type: adverb
+Example Sentences:
+  1. JP: りょうしん は げんき です。
+     EN: My parents are well.
+  2. JP: りょうしん は どこ に すんで いますか。
+     EN: Where do your parents live?
+  3. JP: らいしゅう りょうしん が 日本 に 来るから、くうこう に むかえ に 行きます。
+     EN: My parents are coming to Japan next week, so I'll go pick them up at the airport.
+
+--------------------------------------------------------------------------------
+
+[19/45] ID: duo_515
+Target Word: もっと (more)
+Type: adverb
+Example Sentences:
+  1. JP: もっとやさいを買いましょう！
+     EN: We should buy more vegetables!
+  2. JP: かのじょ は やさしい です。
+     EN: She is kind. / My girlfriend is kind.
+  3. JP: かのじょ は 何 が すき ですか。
+     EN: What does she like?
+  4. JP: かのじょ の たんじょうび に アクセサリー を プレゼント しました。
+     EN: I gave her accessories as a present for her birthday.
+
+--------------------------------------------------------------------------------
+
+[20/45] ID: duo_518
+Target Word: いっしょに (together)
+Type: adverb
+Example Sentences:
+  1. JP: いっしょにばんごはんをつくりましょう！
+     EN: We should make dinner together!
+  2. JP: またいっしょにコンサートに行きましょう。
+     EN: We should go to a concert together again.
+  3. JP: いっしょにバスで行きましょうか。
+     EN: Should we go together by bus?
+  4. JP: だいがくせい です。
+     EN: I'm a college student.
+  5. JP: だいがくせい は アルバイト を しますか。
+     EN: Do college students work part-time?
+  6. JP: だいがくせい の とき に いろいろな ところ に りょこう しました。
+     EN: When I was a college student, I traveled to various places.
+
+--------------------------------------------------------------------------------
+
+[21/45] ID: duo_575
+Target Word: で (as a, under, through)
+Type: particle
+Example Sentences:
+  1. JP: おやすみなさい、また あした。
+     EN: Good night, see you tomorrow.
+  2. JP: ねる まえ に かぞく に おやすみなさい と いいます。
+     EN: I say good night to my family before sleeping.
+  3. JP: こども が ねる とき、おやすみなさい と いって、でんき を けします。
+     EN: When the children go to sleep, I say good night and turn off the light.
+
+--------------------------------------------------------------------------------
+
+[22/45] ID: duo_602
+Target Word: いろいろ (all sorts of)
+Type: adverb
+Example Sentences:
+  1. JP: そうですね、いい かんがえ ですね。
+     EN: That's right, that's a good idea.
+  2. JP: ともだち の いけん に さんせい して、そうですね と いいました。
+     EN: I agreed with my friend's opinion and said that's right.
+  3. JP: そうですね は どうい する とき や かんがえる とき に つかいます。
+     EN: Sou desu ne is used when agreeing or thinking.
+
+--------------------------------------------------------------------------------
+
+[23/45] ID: duo_630
+Target Word: が ((softens the tone), (indicates the subject), but)
+Type: particle
+Example Sentences:
+  1. JP: くつ を ぬぎます。
+     EN: I take off my shoes.
+  2. JP: 日本 の いえ では くつ を ぬぎますか。
+     EN: Do you take off shoes in Japanese houses?
+  3. JP: 日本 では いえ に はいる まえ に くつ を ぬぎます。
+     EN: In Japan, you take off shoes before entering a house.
+
+--------------------------------------------------------------------------------
+
+[24/45] ID: duo_659
+Target Word: ちゃんと (proper, properly, full)
+Type: adverb
+Example Sentences:
+  1. JP: いつもちゃんとしゅくだいをします。
+     EN: I always make sure to do homework.
+  2. JP: ニュース を 見ます。
+     EN: I watch the news.
+  3. JP: きょう の ニュース を ききましたか。
+     EN: Did you hear today's news?
+  4. JP: まいあさ テレビ で ニュース を 見て から、しごと に 行きます。
+     EN: Every morning I watch news on TV before going to work.
+
+--------------------------------------------------------------------------------
+
+[25/45] ID: duo_695
+Target Word: な (do not, (adjective ending), don't)
+Type: particle
+Example Sentences:
+  1. JP: となり に すわって いい ですか。
+     EN: May I sit next to you?
+  2. JP: えき の となり に コンビニ が あります。
+     EN: There's a convenience store next to the station.
+  3. JP: となり の ひと が うるさくて、ねられませんでした。
+     EN: The person next door was noisy, so I couldn't sleep.
+
+--------------------------------------------------------------------------------
+
+[26/45] ID: duo_697
+Target Word: ほんとうに (really, truly)
+Type: adverb
+Example Sentences:
+  1. JP: 京都えきはほんとうにきれいなえきですね。
+     EN: Kyoto Station is a really pretty train station, isn't it?
+  2. JP: このひこうきのチケットはほんとうに高いですね。
+     EN: This plane ticket is really expensive, isn't it?
+  3. JP: テーブル の うえ に あります。
+     EN: It's on the table.
+  4. JP: 三かい より うえ に いきますか。
+     EN: Will you go above the third floor?
+  5. JP: ほん の うえ に めがね を おいて ください。
+     EN: Please put the glasses on top of the book.
+
+--------------------------------------------------------------------------------
+
+[27/45] ID: duo_707
+Target Word: もうすぐ (soon, almost, shortly)
+Type: adverb
+Example Sentences:
+  1. JP: それ は 何 ですか。
+     EN: What is that?
+  2. JP: それ を みせて ください。
+     EN: Please show me that.
+  3. JP: それ は いい かんがえ ですね。
+     EN: That's a good idea.
+
+--------------------------------------------------------------------------------
+
+[28/45] ID: duo_720
+Target Word: いつ (when, what time)
+Type: adverb
+Example Sentences:
+  1. JP: いつ 行きますか。
+     EN: When will you go?
+  2. JP: いつ 日本 に きましたか。
+     EN: When did you come to Japan?
+  3. JP: いつ から 日本ご を べんきょうして いますか。
+     EN: Since when have you been studying Japanese?
+
+--------------------------------------------------------------------------------
+
+[29/45] ID: duo_728
+Target Word: たぶん (probably)
+Type: adverb
+Example Sentences:
+  1. JP: とり が います。
+     EN: There is a bird.
+  2. JP: とり の こえ が きこえますか。
+     EN: Can you hear the bird's voice?
+  3. JP: あさ とり の こえ で めが さめました。
+     EN: I woke up to the sound of birds in the morning.
+
+--------------------------------------------------------------------------------
+
+[30/45] ID: duo_740
+Target Word: まだ (still, yet, too)
+Type: adverb
+Example Sentences:
+  1. JP: パソコン を つかいます。
+     EN: I use a computer.
+  2. JP: パソコン で 何 を しますか。
+     EN: What do you do on the computer?
+  3. JP: しごと で まいにち パソコン を つかって います。
+     EN: I use a computer every day for work.
+
+--------------------------------------------------------------------------------
+
+[31/45] ID: duo_787
+Target Word: いつも (always, all the time)
+Type: adverb
+Example Sentences:
+  1. JP: いつも コーヒー を のみます。
+     EN: I always drink coffee.
+  2. JP: いつも 何時 に おきますか。
+     EN: What time do you always wake up?
+  3. JP: いつも やさしく して くれて、ありがとう ございます。
+     EN: Thank you for always being kind to me.
+
+--------------------------------------------------------------------------------
+
+[32/45] ID: duo_828
+Target Word: ひとりで (by myself, by herself, alone)
+Type: adverb
+Example Sentences:
+  1. JP: 土曜日はひとりでまんがを読みます。
+     EN: On Saturdays, I read manga by myself.
+
+--------------------------------------------------------------------------------
+
+[33/45] ID: duo_833
+Target Word: すこし (a bit)
+Type: adverb
+Example Sentences:
+  1. JP: すこし つかれました。
+     EN: I'm a bit tired.
+  2. JP: 日本ご が すこし わかります。
+     EN: I understand Japanese a little.
+  3. JP: すこし やすんだら、また がんばりましょう。
+     EN: After resting a bit, let's try again.
+
+--------------------------------------------------------------------------------
+
+[34/45] ID: duo_871
+Target Word: ね (isn't it?)
+Type: particle
+Example Sentences:
+  1. JP: きょう は いい てんき ですね。
+     EN: It's nice weather today, isn't it?
+  2. JP: この りょうり は おいしい ですね。
+     EN: This dish is delicious, isn't it?
+  3. JP: 日本 は きれいな くに ですね。
+     EN: Japan is a beautiful country, isn't it?
+
+--------------------------------------------------------------------------------
+
+[35/45] ID: duo_911
+Target Word: ときどき (sometimes)
+Type: adverb
+Example Sentences:
+  1. JP: ときどきすしを食べます。
+     EN: I sometimes eat sushi.
+  2. JP: はい、ときどきけんさんとヨガをします。
+     EN: Yes, I sometimes do yoga with Ken.
+  3. JP: ときどき四時ごろドラマを見ます。
+     EN: I sometimes watch dramas around four o'clock.
+
+--------------------------------------------------------------------------------
+
+[36/45] ID: duo_914
+Target Word: を (through, with, for)
+Type: particle
+Example Sentences:
+  1. JP: ごはん を たべます。
+     EN: I eat rice.
+  2. JP: 日本ご を べんきょうして います。
+     EN: I'm studying Japanese.
+  3. JP: まいあさ コーヒー を のみながら ニュース を みます。
+     EN: Every morning I watch news while drinking coffee.
+
+--------------------------------------------------------------------------------
+
+[37/45] ID: duo_915
+Target Word: よく (often)
+Type: adverb
+Example Sentences:
+  1. JP: よくともだちとゲームをします。
+     EN: I often play video games with friends.
+  2. JP: よくかじをてつだいます。
+     EN: I often help with chores.
+
+--------------------------------------------------------------------------------
+
+[38/45] ID: duo_945
+Target Word: とても (very)
+Type: adverb
+Example Sentences:
+  1. JP: とても おいしい です。
+     EN: It's very delicious.
+  2. JP: きょう は とても あつい ですね。
+     EN: It's very hot today, isn't it?
+  3. JP: この えいが は とても おもしろくて、三回 みました。
+     EN: This movie is very interesting, so I watched it three times.
+
+--------------------------------------------------------------------------------
+
+[39/45] ID: duo_951
+Target Word: どう (how (about), what, how)
+Type: adverb
+Example Sentences:
+  1. JP: はなさん、みそしるはどうですか。
+     EN: Hana, how is the miso soup?
+  2. JP: 新しいアパートはどうですか。
+     EN: How's the new apartment?
+  3. JP: てんきはどうですか。
+     EN: How's the weather?
+  4. JP: りょこうはどうですか。
+     EN: How about a trip?
+  5. JP: そのまっちゃのチーズケーキはどうですか。
+     EN: How about that matcha cheesecake?
+  6. JP: スーパーまでどうやって行きますか。
+     EN: How do we get to the supermarket?
+  7. JP: サムさん、さいきんしごとはどうですか。
+     EN: Sam, how's work recently?
+
+--------------------------------------------------------------------------------
+
+[40/45] ID: duo_957
+Target Word: も (even, any, also)
+Type: particle
+Example Sentences:
+  1. JP: わたし も がくせい です。
+     EN: I'm also a student.
+  2. JP: 日本 にも いきたい です。
+     EN: I want to go to Japan too.
+  3. JP: えいご も 日本ご も はなせます。
+     EN: I can speak both English and Japanese.
+
+--------------------------------------------------------------------------------
+
+[41/45] ID: duo_970
+Target Word: の (for, 's, one)
+Type: particle
+Example Sentences:
+  1. JP: わたし の ほん です。
+     EN: It's my book.
+  2. JP: 日本 の りょうり が すき です。
+     EN: I like Japanese food.
+  3. JP: あね の むすめ は 五さい です。
+     EN: My older sister's daughter is five.
+
+--------------------------------------------------------------------------------
+
+[42/45] ID: duo_986
+Target Word: に (to, in, as (a))
+Type: particle
+Example Sentences:
+  1. JP: がっこう に いきます。
+     EN: I go to school.
+  2. JP: 七じ に おきます。
+     EN: I wake up at seven.
+  3. JP: ともだち に プレゼント を あげました。
+     EN: I gave a present to my friend.
+
+--------------------------------------------------------------------------------
+
+[43/45] ID: duo_1026
+Target Word: か (or, is it?, that)
+Type: particle
+Example Sentences:
+  1. JP: がくせい ですか。
+     EN: Are you a student?
+  2. JP: コーヒー か おちゃ を のみますか。
+     EN: Would you like coffee or tea?
+  3. JP: あした いくか どうか まだ きめて いません。
+     EN: I haven't decided whether I'll go tomorrow or not.
+
+--------------------------------------------------------------------------------
+
+[44/45] ID: duo_1035
+Target Word: は (is, with, regarding)
+Type: particle
+Example Sentences:
+  1. JP: わたし は がくせい です。
+     EN: I am a student.
+  2. JP: これ は なん ですか。
+     EN: What is this?
+  3. JP: わたし は まいにち 日本ご を べんきょうして います。
+     EN: I study Japanese every day.
+
+--------------------------------------------------------------------------------
+
+[45/45] ID: duo_1054
+Target Word: と (and, that, door)
+Type: particle
+Example Sentences:
+  1. JP: ともだち と いきます。
+     EN: I go with my friend.
+  2. JP: パン と コーヒー を たべます。
+     EN: I eat bread and coffee.
+  3. JP: 母 と でんわ で はなしました。
+     EN: I talked with my mother on the phone.
+
+--------------------------------------------------------------------------------
+

@@ -163,6 +163,21 @@ export const quizPresets: QuizPreset[] = [
     category: "production",
     recommendedFor: ["N5", "N4"]
   },
+
+  // ===== LINGOSPECIAL - ULTRA HARD MODE =====
+  {
+    id: "lingo-special",
+    name: "LingoSpecial 🔥",
+    description: "ULTRA HARD: Confusable options, bidirectional, 6 choices, 20s limit - Expert challenge!",
+    icon: "💀",
+    contentType: "vocabulary",
+    mode: "multiple-choice",
+    direction: "japanese-to-english", // Will alternate in generator
+    difficulty: "hard",
+    questionCount: 30,
+    category: "comprehensive",
+    recommendedFor: ["N4", "N3", "advanced", "expert"]
+  },
 ]
 
 /**

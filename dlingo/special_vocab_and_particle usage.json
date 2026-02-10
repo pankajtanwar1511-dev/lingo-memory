@@ -1,0 +1,604 @@
+{
+  "title": "Particles & Special Vocabulary Mastery",
+  "description": "Master Japanese particles and special vocabulary with tricks, examples, and interactive learning",
+  "sections": [
+    {
+      "id": "topic-particle-wa",
+      "category": "particles",
+      "particle": "は",
+      "romaji": "wa",
+      "name": "Topic Particle",
+      "emoji": "🎯",
+      "difficulty": "beginner",
+      "mainFunction": "Marks the topic of the sentence",
+      "trick": "Think of は as pointing a spotlight 🔦 on the topic - 'As for THIS...'",
+      "usageTips": [
+        "Used for general statements and known information",
+        "Can show contrast (especially with emphasis)",
+        "Cannot be used with question words (なに、だれ, etc.)"
+      ],
+      "examples": [
+        {
+          "japanese": "私は学生です。",
+          "romaji": "Watashi wa gakusei desu.",
+          "english": "I am a student.",
+          "explanation": "は marks '私' as the topic"
+        },
+        {
+          "japanese": "今日は暑いです。",
+          "romaji": "Kyou wa atsui desu.",
+          "english": "Today is hot.",
+          "explanation": "は marks 'today' as what we're talking about"
+        },
+        {
+          "japanese": "リンゴは好きですが、バナナは嫌いです。",
+          "romaji": "Ringo wa suki desu ga, banana wa kirai desu.",
+          "english": "I like apples, but I hate bananas.",
+          "explanation": "は shows contrast between two items"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "何は食べますか？",
+          "right": "何を食べますか？",
+          "explanation": "Never use は with question words! Use を, が, or other particles instead."
+        }
+      ],
+      "vsComparison": {
+        "particle": "が",
+        "difference": "は = topic/contrast | が = subject/new info",
+        "example": "私は犬が好きです。(As for me, I like dogs) - は marks topic, が marks what is liked"
+      },
+      "quiz": [
+        {
+          "question": "Fill in: 私___学生です。",
+          "options": ["は", "が", "を", "に"],
+          "correct": "は",
+          "explanation": "Use は to mark yourself as the topic"
+        },
+        {
+          "question": "Which is correct?",
+          "options": ["誰は来ますか？", "誰が来ますか？"],
+          "correct": "誰が来ますか？",
+          "explanation": "Never use は with question words!"
+        }
+      ]
+    },
+    {
+      "id": "subject-particle-ga",
+      "category": "particles",
+      "particle": "が",
+      "romaji": "ga",
+      "name": "Subject Particle",
+      "emoji": "⭐",
+      "difficulty": "beginner",
+      "mainFunction": "Marks the grammatical subject, introduces new information",
+      "trick": "が highlights NEW or IMPORTANT info - like a ✨ spotlight on something new!",
+      "usageTips": [
+        "Use with question words (who, what, which)",
+        "Introduces new information or emphasis",
+        "Required with certain verbs (好き、嫌い、分かる、できる、ある、いる)",
+        "Used in relative clauses"
+      ],
+      "examples": [
+        {
+          "japanese": "誰が来ましたか？",
+          "romaji": "Dare ga kimashita ka?",
+          "english": "Who came?",
+          "explanation": "が must be used with question word 誰"
+        },
+        {
+          "japanese": "私は日本語が分かります。",
+          "romaji": "Watashi wa nihongo ga wakarimasu.",
+          "english": "I understand Japanese.",
+          "explanation": "分かる requires が for what is understood"
+        },
+        {
+          "japanese": "猫がいます。",
+          "romaji": "Neko ga imasu.",
+          "english": "There is a cat.",
+          "explanation": "Introducing new information (a cat exists)"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "私は日本語は分かります。",
+          "right": "私は日本語が分かります。",
+          "explanation": "Verbs like 分かる, 好き, できる require が for the object"
+        }
+      ],
+      "specialVerbs": [
+        "好き (suki) - like",
+        "嫌い (kirai) - dislike",
+        "欲しい (hoshii) - want",
+        "分かる (wakaru) - understand",
+        "できる (dekiru) - can do",
+        "ある (aru) - exist (inanimate)",
+        "いる (iru) - exist (animate)"
+      ],
+      "quiz": [
+        {
+          "question": "私___寿司___好きです。",
+          "options": ["は、は", "は、が", "が、は", "が、が"],
+          "correct": "は、が",
+          "explanation": "は for topic (I), が for what is liked (sushi)"
+        },
+        {
+          "question": "Which needs が?",
+          "options": ["先生です", "好きです", "行きます", "食べます"],
+          "correct": "好きです",
+          "explanation": "好き is a special adjective requiring が"
+        }
+      ]
+    },
+    {
+      "id": "object-particle-wo",
+      "category": "particles",
+      "particle": "を",
+      "romaji": "o/wo",
+      "name": "Object Particle",
+      "emoji": "🎯",
+      "difficulty": "beginner",
+      "mainFunction": "Marks the direct object of an action",
+      "trick": "を points like an arrow ➡️ from action to target!",
+      "usageTips": [
+        "Use with action verbs (eat, drink, read, watch, etc.)",
+        "Also marks the space through which you move (歩く、走る、泳ぐ)",
+        "Pronounced 'o' not 'wo' in modern Japanese"
+      ],
+      "examples": [
+        {
+          "japanese": "本を読みます。",
+          "romaji": "Hon o yomimasu.",
+          "english": "I read a book.",
+          "explanation": "を marks 'book' as the direct object"
+        },
+        {
+          "japanese": "公園を歩きます。",
+          "romaji": "Kouen o arukimasu.",
+          "english": "I walk through the park.",
+          "explanation": "を marks the space you move through"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "水___飲みます。",
+          "options": ["を", "が", "に", "で"],
+          "correct": "を",
+          "explanation": "Direct object of drinking"
+        }
+      ]
+    },
+    {
+      "id": "direction-particle-ni",
+      "category": "particles",
+      "particle": "に",
+      "romaji": "ni",
+      "name": "Direction/Time/Existence Particle",
+      "emoji": "📍",
+      "difficulty": "beginner",
+      "mainFunction": "Marks destination, time, location of existence, indirect object",
+      "trick": "に is like a GPS pin 📍 - exact point in time or space!",
+      "usageTips": [
+        "Destination of movement (行く、来る、帰る + に)",
+        "Specific time points (3時に、月曜日に)",
+        "Location where things exist (います、あります + に)",
+        "Indirect object (person you give to, etc.)",
+        "Purpose (買い物に行く = go TO shop)"
+      ],
+      "examples": [
+        {
+          "japanese": "学校に行きます。",
+          "romaji": "Gakkou ni ikimasu.",
+          "english": "I go to school.",
+          "explanation": "に marks destination"
+        },
+        {
+          "japanese": "7時に起きます。",
+          "romaji": "Shichi-ji ni okimasu.",
+          "english": "I wake up at 7 o'clock.",
+          "explanation": "に marks specific time"
+        },
+        {
+          "japanese": "机の上に本があります。",
+          "romaji": "Tsukue no ue ni hon ga arimasu.",
+          "english": "There is a book on the desk.",
+          "explanation": "に marks location of existence"
+        },
+        {
+          "japanese": "友達にプレゼントをあげます。",
+          "romaji": "Tomodachi ni purezento o agemasu.",
+          "english": "I give a present to my friend.",
+          "explanation": "に marks indirect object (recipient)"
+        }
+      ],
+      "vsComparison": {
+        "particle": "で",
+        "difference": "に = destination/static location | で = action location",
+        "example": "学校に行きます (go TO school) vs 学校で勉強します (study AT school)"
+      },
+      "quiz": [
+        {
+          "question": "東京___住んでいます。",
+          "options": ["に", "で", "を", "へ"],
+          "correct": "に",
+          "explanation": "住む (to live) uses に for location"
+        }
+      ]
+    },
+    {
+      "id": "location-particle-de",
+      "category": "particles",
+      "particle": "で",
+      "romaji": "de",
+      "name": "Location/Means Particle",
+      "emoji": "🏃",
+      "difficulty": "beginner",
+      "mainFunction": "Marks location of action or means/method",
+      "trick": "で = where the ACTION happens! Think: 'doing it WITH/AT'",
+      "usageTips": [
+        "Location where action occurs",
+        "Means/method (by car, with chopsticks, in Japanese)",
+        "Material/ingredient (made of, made with)",
+        "Reason/cause"
+      ],
+      "examples": [
+        {
+          "japanese": "図書館で勉強します。",
+          "romaji": "Toshokan de benkyou shimasu.",
+          "english": "I study at the library.",
+          "explanation": "で marks where the action (studying) happens"
+        },
+        {
+          "japanese": "車で行きます。",
+          "romaji": "Kuruma de ikimasu.",
+          "english": "I go by car.",
+          "explanation": "で marks means of transportation"
+        },
+        {
+          "japanese": "日本語で話します。",
+          "romaji": "Nihongo de hanashimasu.",
+          "english": "I speak in Japanese.",
+          "explanation": "で marks the method/means"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "レストラン___食べます。",
+          "options": ["で", "に", "を", "が"],
+          "correct": "で",
+          "explanation": "Location where action (eating) happens"
+        }
+      ]
+    },
+    {
+      "id": "also-particle-mo",
+      "category": "particles",
+      "particle": "も",
+      "romaji": "mo",
+      "name": "Also/Too Particle",
+      "emoji": "➕",
+      "difficulty": "beginner",
+      "mainFunction": "Means 'also', 'too', replaces は/が/を",
+      "trick": "も = ME TOO! ✋ Adds something to the list",
+      "usageTips": [
+        "Replaces は, が, を (but not に, で, etc.)",
+        "Can combine with other particles: にも, でも, からも",
+        "Use with negatives for 'not...either'"
+      ],
+      "examples": [
+        {
+          "japanese": "私も学生です。",
+          "romaji": "Watashi mo gakusei desu.",
+          "english": "I am also a student.",
+          "explanation": "も replaces は"
+        },
+        {
+          "japanese": "リンゴも好きです。",
+          "romaji": "Ringo mo suki desu.",
+          "english": "I also like apples.",
+          "explanation": "も replaces が"
+        },
+        {
+          "japanese": "日本にも行きたいです。",
+          "romaji": "Nihon ni mo ikitai desu.",
+          "english": "I want to go to Japan too.",
+          "explanation": "も adds to に"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "A: 私は学生です。 B: 私___学生です。",
+          "options": ["も", "は", "が", "を"],
+          "correct": "も",
+          "explanation": "Use も to say 'me too'"
+        }
+      ]
+    },
+    {
+      "id": "possessive-particle-no",
+      "category": "particles",
+      "particle": "の",
+      "romaji": "no",
+      "name": "Possessive/Modifier Particle",
+      "emoji": "🔗",
+      "difficulty": "beginner",
+      "mainFunction": "Shows possession or connects nouns",
+      "trick": "の = 's in English! Links things together like a chain 🔗",
+      "usageTips": [
+        "Possession (my, your, his, etc.)",
+        "Connects two nouns (modifies)",
+        "Can replace nouns (this one = これの → この)",
+        "Shows origin or category"
+      ],
+      "examples": [
+        {
+          "japanese": "私の本",
+          "romaji": "Watashi no hon",
+          "english": "My book",
+          "explanation": "Shows possession"
+        },
+        {
+          "japanese": "日本の食べ物",
+          "romaji": "Nihon no tabemono",
+          "english": "Japanese food (Japan's food)",
+          "explanation": "Shows origin/category"
+        },
+        {
+          "japanese": "赤いのをください。",
+          "romaji": "Akai no o kudasai.",
+          "english": "Please give me the red one.",
+          "explanation": "の replaces a noun"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "友達___車",
+          "options": ["の", "が", "を", "に"],
+          "correct": "の",
+          "explanation": "Friend's car - possessive"
+        }
+      ]
+    },
+    {
+      "id": "question-particle-ka",
+      "category": "particles",
+      "particle": "か",
+      "romaji": "ka",
+      "name": "Question Particle",
+      "emoji": "❓",
+      "difficulty": "beginner",
+      "mainFunction": "Marks questions, 'or', 'some/any'",
+      "trick": "か = ? in English! Turns statements into questions",
+      "usageTips": [
+        "Place at end of sentence for yes/no questions",
+        "With question words for WH-questions",
+        "Between options for 'or' (AかB)",
+        "With question word + か = some/any (何か、誰か、どこか)"
+      ],
+      "examples": [
+        {
+          "japanese": "学生ですか？",
+          "romaji": "Gakusei desu ka?",
+          "english": "Are you a student?",
+          "explanation": "か makes it a question"
+        },
+        {
+          "japanese": "何を食べますか？",
+          "romaji": "Nani o tabemasu ka?",
+          "english": "What will you eat?",
+          "explanation": "WH-question with か"
+        },
+        {
+          "japanese": "コーヒーか紅茶をください。",
+          "romaji": "Kouhii ka koucha o kudasai.",
+          "english": "Please give me coffee or tea.",
+          "explanation": "か means 'or'"
+        },
+        {
+          "japanese": "何か食べたいです。",
+          "romaji": "Nanika tabetai desu.",
+          "english": "I want to eat something.",
+          "explanation": "何か = something/anything"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How do you say 'somewhere' in Japanese?",
+          "options": ["どこか", "だれか", "何か", "いつか"],
+          "correct": "どこか",
+          "explanation": "どこ (where) + か = somewhere"
+        }
+      ]
+    }
+  ],
+  "specialVocabulary": [
+    {
+      "id": "giving-receiving",
+      "title": "Giving & Receiving Verbs",
+      "emoji": "🎁",
+      "difficulty": "intermediate",
+      "description": "Master the tricky system of giving and receiving in Japanese",
+      "trick": "Direction matters! あげる = ⬆️ up/away, くれる = ⬇️ down/to me, もらう = ⬅️ receive",
+      "items": [
+        {
+          "word": "あげる",
+          "meaning": "to give (I/we give to others)",
+          "usage": "AがBにXをあげる",
+          "example": "私は友達に本をあげました。",
+          "translation": "I gave a book to my friend.",
+          "direction": "away from speaker"
+        },
+        {
+          "word": "くれる",
+          "meaning": "to give (someone gives to me/us)",
+          "usage": "AがBにXをくれる",
+          "example": "友達が私に本をくれました。",
+          "translation": "My friend gave me a book.",
+          "direction": "toward speaker"
+        },
+        {
+          "word": "もらう",
+          "meaning": "to receive",
+          "usage": "AがBにXをもらう",
+          "example": "私は友達に本をもらいました。",
+          "translation": "I received a book from my friend.",
+          "direction": "receive (use に for giver!)"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "I gave my teacher a present. → 先生___プレゼント___あげました。",
+          "options": ["に、を", "が、を", "を、に", "に、が"],
+          "correct": "に、を",
+          "explanation": "に for recipient, を for object"
+        },
+        {
+          "question": "My friend gave me a present. Which verb?",
+          "options": ["あげる", "くれる", "もらう", "もらえる"],
+          "correct": "くれる",
+          "explanation": "くれる when someone gives TO ME"
+        }
+      ]
+    },
+    {
+      "id": "question-words",
+      "title": "Question Words",
+      "emoji": "❔",
+      "difficulty": "beginner",
+      "description": "Essential question words to ask anything",
+      "items": [
+        {
+          "word": "何 (なに/なん)",
+          "meaning": "what",
+          "example": "何を食べますか？",
+          "translation": "What will you eat?",
+          "tip": "なに before particles, なん before です/の/counter"
+        },
+        {
+          "word": "誰 (だれ)",
+          "meaning": "who",
+          "example": "誰が来ますか？",
+          "translation": "Who will come?",
+          "tip": "Always use が, never は!"
+        },
+        {
+          "word": "どこ",
+          "meaning": "where",
+          "example": "どこに行きますか？",
+          "translation": "Where will you go?",
+          "tip": "どこか = somewhere, どこも = everywhere"
+        },
+        {
+          "word": "いつ",
+          "meaning": "when",
+          "example": "いつ来ますか？",
+          "translation": "When will you come?",
+          "tip": "No に particle needed!"
+        },
+        {
+          "word": "なぜ/どうして",
+          "meaning": "why",
+          "example": "なぜ日本語を勉強しますか？",
+          "translation": "Why do you study Japanese?",
+          "tip": "Answer with から (because)"
+        },
+        {
+          "word": "どう/どのように",
+          "meaning": "how",
+          "example": "どう思いますか？",
+          "translation": "What do you think? (How do you think?)",
+          "tip": "どう = how (in general), どのように = in what way"
+        },
+        {
+          "word": "どれ/どの",
+          "meaning": "which",
+          "example": "どれが好きですか？",
+          "translation": "Which one do you like?",
+          "tip": "どれ = which one, どの = which + noun"
+        }
+      ]
+    }
+  ],
+  "trickyPairs": [
+    {
+      "title": "は vs が",
+      "emoji": "⚔️",
+      "difficulty": "intermediate",
+      "comparison": [
+        {
+          "scenario": "Introducing yourself",
+          "useThis": "は",
+          "example": "私は田中です。",
+          "reason": "Topic marker for general statement"
+        },
+        {
+          "scenario": "Answering 'who?'",
+          "useThis": "が",
+          "example": "誰が来ますか？ → 田中さんが来ます。",
+          "reason": "New information / answer to question"
+        },
+        {
+          "scenario": "With 好き、嫌い、分かる",
+          "useThis": "が",
+          "example": "私は寿司が好きです。",
+          "reason": "These words require が for object"
+        }
+      ]
+    },
+    {
+      "title": "に vs で",
+      "emoji": "🎯",
+      "difficulty": "intermediate",
+      "comparison": [
+        {
+          "scenario": "Destination (go, come, return)",
+          "useThis": "に",
+          "example": "学校に行きます。",
+          "reason": "Direction/destination of movement"
+        },
+        {
+          "scenario": "Action location",
+          "useThis": "で",
+          "example": "学校で勉強します。",
+          "reason": "Where the action takes place"
+        },
+        {
+          "scenario": "Existence location (ある、いる)",
+          "useThis": "に",
+          "example": "猫が部屋にいます。",
+          "reason": "Static location of existence"
+        },
+        {
+          "scenario": "Means of transport",
+          "useThis": "で",
+          "example": "電車で行きます。",
+          "reason": "Method/means"
+        }
+      ]
+    }
+  ],
+  "funChallenges": [
+    {
+      "id": "particle-master",
+      "title": "Particle Master Challenge",
+      "description": "Fill in ALL the particles correctly!",
+      "difficulty": "hard",
+      "sentence": "私___毎朝7時___起きて、朝ご飯___食べて、学校___行きます。学校___友達___勉強します。",
+      "answer": "は、に、を、に、で、と",
+      "explanation": "は(topic), に(time), を(object), に(destination), で(location), と(together with)"
+    },
+    {
+      "id": "speed-round",
+      "title": "Speed Round",
+      "description": "Quick! Choose the right particle in 5 seconds!",
+      "questions": [
+        {"q": "水___飲みます", "a": "を"},
+        {"q": "学校___行きます", "a": "に"},
+        {"q": "日本語___勉強します", "a": "を"},
+        {"q": "公園___遊びます", "a": "で"},
+        {"q": "誰___来ますか", "a": "が"}
+      ]
+    }
+  ]
+}

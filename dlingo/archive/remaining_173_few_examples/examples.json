@@ -1,0 +1,3738 @@
+{
+  "updatedWords": [
+    {
+      "id": "duo_1057",
+      "japanese": "したいです",
+      "english": "want to do, want to play",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "私は来週、友達とテニスをしたいです。",
+          "english": "I want to play tennis with my friend next week.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "今日は何をしたいですか。",
+          "english": "What do you want to do today?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_1056",
+      "japanese": "したくないです",
+      "english": "don't want to do",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "私は今日、しゅくだいをしたくないです。",
+          "english": "I don't want to do homework today.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あしたはそうじをしたくないです。",
+          "english": "I don't want to clean tomorrow.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_1049",
+      "japanese": "ゆっくりしたいです",
+      "english": "want to relax",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "しゅうまつは家でゆっくりしたいです。",
+          "english": "I want to relax at home on the weekend.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "しごとのあと、おふろでゆっくりしたいです。",
+          "english": "After work, I want to relax in the bath.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_1043",
+      "japanese": "でたくないです",
+      "english": "don't want to get out",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "今日はさむいから、ふとんからでたくないです。",
+          "english": "It's cold today, so I don't want to get out of the futon.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "おふろがあたたかいから、でたくないです。",
+          "english": "The bath is warm, so I don't want to get out.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_1039",
+      "japanese": "おきたくないです",
+      "english": "don't want to get up",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あしたは休みだから、はやくおきたくないです。",
+          "english": "Tomorrow is my day off, so I don't want to get up early.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "ねむいから、まだおきたくないです。",
+          "english": "I'm sleepy, so I don't want to get up yet.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_1037",
+      "japanese": "そろそろ",
+      "english": "soon, shortly, in a bit",
+      "type": "adverb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "そろそろでんしゃが来ます。",
+          "english": "The train will come soon.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "そろそろ帰りましょうか。もう九時ですよ。",
+          "english": "Shall we head home soon? It's already 9 o'clock.",
+          "context": "question",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_1034",
+      "japanese": "ひさしぶりです",
+      "english": "long time no see",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あ、田中さん！ひさしぶりですね。",
+          "english": "Oh, Mr. Tanaka! Long time no see!",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "ひさしぶりです。おげんきですか。",
+          "english": "Long time no see. How are you?",
+          "context": "question",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_1031",
+      "japanese": "さいきん",
+      "english": "recently",
+      "type": "adverb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "さいきん、何をしていますか。",
+          "english": "What have you been doing recently?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "さいきん、日本ごのべんきょうをたくさんしています。",
+          "english": "Recently, I've been studying Japanese a lot.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_1016",
+      "japanese": "スノボ",
+      "english": "snowboarding",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "ふゆにほっかいどうでスノボをしたいです。",
+          "english": "I want to go snowboarding in Hokkaido in winter.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "スノボとスキー、どちらがすきですか。",
+          "english": "Which do you like, snowboarding or skiing?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_1009",
+      "japanese": "さむくない",
+      "english": "not cold, not very cold",
+      "type": "adjective",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "今日はさむくないですね。",
+          "english": "It's not cold today, is it?",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "このへやはエアコンがあるから、さむくないです。",
+          "english": "This room has air conditioning, so it's not cold.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_1007",
+      "japanese": "あつくない",
+      "english": "not hot, not very hot",
+      "type": "adjective",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "このコーヒーはあつくないです。",
+          "english": "This coffee is not hot.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "きょうはあつくないから、こうえんであそびましょう。",
+          "english": "It's not hot today, so let's play at the park.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_997",
+      "japanese": "ポイントカード",
+      "english": "rewards card, rewards cards",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "ポイントカードはありますか。",
+          "english": "Do you have a rewards card?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "いいえ、ポイントカードはありません。",
+          "english": "No, I don't have a rewards card.",
+          "context": "answer",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_996",
+      "japanese": "レジ",
+      "english": "register, cash register, cash registers",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "レジはあそこにあります。",
+          "english": "The cash register is over there.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "レジでクレジットカードがつかえますか。",
+          "english": "Can I use a credit card at the register?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_990",
+      "japanese": "レディース",
+      "english": "women's, women",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "レディースのふくはどこですか。",
+          "english": "Where are the women's clothes?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "三階にレディースのくつがあります。",
+          "english": "There are women's shoes on the third floor.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_987",
+      "japanese": "上がります",
+      "english": "go up",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "かいだんで三階に上がります。",
+          "english": "I'll go up to the third floor by the stairs.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "エレベーターで上がりますか、エスカレーターで上がりますか。",
+          "english": "Will you go up by elevator or escalator?",
+          "context": "question",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_985",
+      "japanese": "まず",
+      "english": "first, first of all",
+      "type": "adverb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "まず、ここにパスワードを書いてください。",
+          "english": "First, please write your password here.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "まず、あさごはんを食べましょう。",
+          "english": "First, let's eat breakfast.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_979",
+      "japanese": "ジーンズ",
+      "english": "jeans",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "私はあたらしいジーンズがほしいです。",
+          "english": "I want new jeans.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "このジーンズはすこしながいです。",
+          "english": "These jeans are a bit long.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_974",
+      "japanese": "ショッピングセンター",
+      "english": "center",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あしたショッピングセンターに行きませんか。",
+          "english": "Would you like to go to the shopping center tomorrow?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "このショッピングセンターには、たくさんのみせがあります。",
+          "english": "This shopping center has many stores.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_959",
+      "japanese": "大学",
+      "english": "university, college, universities",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "私は東京の大学にかよっています。",
+          "english": "I attend a university in Tokyo.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "どの大学でべんきょうしていますか。",
+          "english": "Which university are you studying at?",
+          "context": "question",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_945",
+      "japanese": "ききたいです",
+      "english": "want to hear",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "私はあのバンドのあたらしいアルバムをききたいです。",
+          "english": "I want to hear that band's new album.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あなたの話をもっとききたいです。",
+          "english": "I want to hear more of your story.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_942",
+      "japanese": "ステージ",
+      "english": "stage",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "アーティストがステージにいます。",
+          "english": "The artist is on the stage.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "ステージのまんなかでダンスをおどります。",
+          "english": "I will dance in the middle of the stage.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_940",
+      "japanese": "すわりたい",
+      "english": "want to sit",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "つかれたから、すわりたいです。",
+          "english": "I'm tired, so I want to sit.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あのカフェのいすにすわりたいです。",
+          "english": "I want to sit in that cafe's chair.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_934",
+      "japanese": "レシート",
+      "english": "receipt, receipts",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "レシートはいりますか。",
+          "english": "Do you need a receipt?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "はい、レシートをください。",
+          "english": "Yes, please give me the receipt.",
+          "context": "answer",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_929",
+      "japanese": "ワイヤレス",
+      "english": "wireless",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "ワイヤレスのマウスがほしいです。",
+          "english": "I want a wireless mouse.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "これはワイヤレスのキーボードです。とてもべんりですよ。",
+          "english": "This is a wireless keyboard. It's very convenient.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_923",
+      "japanese": "マウス",
+      "english": "mouse",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あたらしいマウスを買いました。",
+          "english": "I bought a new mouse.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "このマウスはとてもかるいです。",
+          "english": "This mouse is very light.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_918",
+      "japanese": "モニター",
+      "english": "monitor",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あのモニターは三十インチです。",
+          "english": "That monitor is 30 inches.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "でんきやで大きいモニターを見ました。",
+          "english": "I saw a big monitor at the electronics store.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_901",
+      "japanese": "どうやって",
+      "english": "how",
+      "type": "adverb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "どうやってえきに行きますか。",
+          "english": "How do you get to the station?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "このりょうりはどうやってつくりますか。",
+          "english": "How do you make this dish?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_900",
+      "japanese": "とちゅうで",
+      "english": "on the way",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "とちゅうでコンビニによりましょう。",
+          "english": "Let's stop by the convenience store on the way.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "かいしゃへのとちゅうで、コーヒーを買いました。",
+          "english": "I bought coffee on the way to the office.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_860",
+      "japanese": "三階",
+      "english": "third floor",
+      "type": "counter",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "レストランは三階にあります。",
+          "english": "The restaurant is on the third floor.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "三階にはレディースのふくがあります。",
+          "english": "There are women's clothes on the third floor.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_856",
+      "japanese": "ばんごう",
+      "english": "number",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "でんわばんごうをおしえてください。",
+          "english": "Please tell me your phone number.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "へやのばんごうは何ですか。",
+          "english": "What is the room number?",
+          "context": "question",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_855",
+      "japanese": "クレジットカード",
+      "english": "credit card",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "クレジットカードでおねがいします。",
+          "english": "Credit card, please.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "このみせでクレジットカードがつかえますか。",
+          "english": "Can I use a credit card at this store?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_853",
+      "japanese": "チェックイン",
+      "english": "check-in",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "チェックインは何時ですか。",
+          "english": "What time is check-in?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "チェックインのときに、パスポートをみせてください。",
+          "english": "Please show your passport at check-in.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_846",
+      "japanese": "ぎょうざ",
+      "english": "fried dumpling, fried dumplings",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "私はぎょうざがだいすきです。",
+          "english": "I love fried dumplings.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "ちゅうかがいでおいしいぎょうざを食べました。",
+          "english": "I ate delicious fried dumplings in Chinatown.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_830",
+      "japanese": "ウーロンちゃ",
+      "english": "oolong tea",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "つめたいウーロンちゃをください。",
+          "english": "Please give me cold oolong tea.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "ウーロンちゃとこうちゃ、どちらがすきですか。",
+          "english": "Which do you like, oolong tea or black tea?",
+          "context": "question",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_828",
+      "japanese": "なんめいさま",
+      "english": "how many people",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "なんめいさまですか。",
+          "english": "How many people?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "いらっしゃいませ。なんめいさまですか。",
+          "english": "Welcome. How many people?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_814",
+      "japanese": "けしき",
+      "english": "view",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "やまのけしきがとてもきれいです。",
+          "english": "The mountain view is very beautiful.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "ここからふじさんのけしきが見えます。",
+          "english": "You can see the view of Mt. Fuji from here.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_808",
+      "japanese": "バーベキュー",
+      "english": "barbecue",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "しゅうまつにバーベキューをしませんか。",
+          "english": "Would you like to have a barbecue on the weekend?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "友達とこうえんでバーベキューをしました。",
+          "english": "I had a barbecue with friends at the park.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_798",
+      "japanese": "よんひき",
+      "english": "four",
+      "type": "counter",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "私の家にはねこがよんひきいます。",
+          "english": "There are four cats in my house.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "このへやにいぬがよんひきいますか。",
+          "english": "Are there four dogs in this room?",
+          "context": "question",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_795",
+      "japanese": "さんびき",
+      "english": "three",
+      "type": "counter",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "どうぶつえんにカメレオンがさんびきいます。",
+          "english": "There are three chameleons at the zoo.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "友達のうちにはハムスターがさんびきいます。",
+          "english": "There are three hamsters at my friend's house.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_788",
+      "japanese": "ハムスター",
+      "english": "hamster",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "このハムスターはとてもかわいいですね。",
+          "english": "This hamster is very cute, isn't it?",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "ハムスターとねこ、どちらがすきですか。",
+          "english": "Which do you like, hamsters or cats?",
+          "context": "question",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_782",
+      "japanese": "にんき",
+      "english": "popular",
+      "type": "adjective",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "このアニメはにんきがあります。",
+          "english": "This anime is popular.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "そのラーメンやはとてもにんきです。",
+          "english": "That ramen shop is very popular.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_781",
+      "japanese": "どうぶつ",
+      "english": "animal",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "どんなどうぶつがすきですか。",
+          "english": "What kind of animal do you like?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "私はどうぶつがだいすきです。とくにいぬがすきです。",
+          "english": "I love animals. Especially dogs.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_778",
+      "japanese": "ボランティア",
+      "english": "volunteer",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "しゅうまつにボランティアをします。",
+          "english": "I volunteer on the weekend.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "大学のボランティアサークルにはいりました。",
+          "english": "I joined a volunteer club at university.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_777",
+      "japanese": "サークル",
+      "english": "club, clubs",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "何のサークルにはいっていますか。",
+          "english": "What club are you in?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "私はテニスのサークルにはいっています。",
+          "english": "I am in a tennis club.",
+          "context": "answer",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_766",
+      "japanese": "すうがく",
+      "english": "math",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "私はすうがくがむずかしいとおもいます。",
+          "english": "I think math is difficult.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あなたはすうがくがすきですか。",
+          "english": "Do you like math?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_757",
+      "japanese": "何年生",
+      "english": "what school year",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あなたは大学何年生ですか。",
+          "english": "What year are you in college?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "私は二年生です。",
+          "english": "I am a sophomore.",
+          "context": "answer",
+          "level": "1-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_747",
+      "japanese": "きたぐち",
+      "english": "north exit",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "きたぐちでまちましょう。",
+          "english": "Let's wait at the north exit.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "ホテルはえきのきたぐちのちかくにあります。",
+          "english": "The hotel is near the north exit of the station.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_727",
+      "japanese": "ブラウス",
+      "english": "blouse",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "このしろいブラウスはすてきですね。",
+          "english": "This white blouse is lovely, isn't it?",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あたらしいブラウスを買いたいです。",
+          "english": "I want to buy a new blouse.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_718",
+      "japanese": "デート",
+      "english": "date",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あしたはかれしとデートです。",
+          "english": "Tomorrow I have a date with my boyfriend.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "デートにはどこに行きたいですか。",
+          "english": "Where would you like to go on a date?",
+          "context": "question",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_715",
+      "japanese": "おおみそか",
+      "english": "New Year's Eve",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "おおみそかにはかぞくとごはんを食べます。",
+          "english": "On New Year's Eve, I eat dinner with my family.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "おおみそかは何をしますか。",
+          "english": "What will you do on New Year's Eve?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_711",
+      "japanese": "ハロウィン",
+      "english": "Halloween",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "ハロウィンのパーティーに行きますか。",
+          "english": "Are you going to the Halloween party?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "ハロウィンにしぶやでパレードがあります。",
+          "english": "There is a parade in Shibuya on Halloween.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_708",
+      "japanese": "三十一日",
+      "english": "thirty-first",
+      "type": "counter",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "おおみそかは十二月三十一日です。",
+          "english": "New Year's Eve is December 31st.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "三十一日はいそがしいですか。",
+          "english": "Are you busy on the 31st?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_705",
+      "japanese": "コンテスト",
+      "english": "contest",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "日本ごのコンテストにでます。",
+          "english": "I will participate in a Japanese contest.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "らいしゅうダンスのコンテストがあります。",
+          "english": "There is a dance contest next week.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_704",
+      "japanese": "たいこ",
+      "english": "taiko drum",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "おまつりでたいこをききました。",
+          "english": "I heard taiko drums at the festival.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "たいこのおとはとても大きいです。",
+          "english": "The sound of the taiko drum is very loud.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_692",
+      "japanese": "ファッション",
+      "english": "fashion",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "日本のファッションがすきです。",
+          "english": "I like Japanese fashion.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "ファッションにきょうみがありますか。",
+          "english": "Are you interested in fashion?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_688",
+      "japanese": "レッスン",
+      "english": "lesson",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "ピアノのレッスンは何時ですか。",
+          "english": "What time is the piano lesson?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "まいしゅう土曜日にバレエのレッスンがあります。",
+          "english": "I have ballet lessons every Saturday.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_684",
+      "japanese": "こんや",
+      "english": "tonight",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "こんやはいっしょにばんごはんを食べましょう。",
+          "english": "Let's have dinner together tonight.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "こんや何をしますか。",
+          "english": "What are you doing tonight?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_682",
+      "japanese": "ひらがな",
+      "english": "hiragana",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "まずひらがなをべんきょうしましょう。",
+          "english": "First, let's study hiragana.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "ひらがなはかんじよりやさしいです。",
+          "english": "Hiragana is easier than kanji.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_672",
+      "japanese": "しあい",
+      "english": "game",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あしたサッカーのしあいがあります。",
+          "english": "There is a soccer game tomorrow.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "そのしあいはスタジアムで見ましたか。",
+          "english": "Did you watch that game at the stadium?",
+          "context": "question",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_669",
+      "japanese": "カラオケ",
+      "english": "karaoke",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "金曜日のよるにカラオケに行きませんか。",
+          "english": "Would you like to go to karaoke on Friday night?",
+          "context": "question",
+          "level": "3-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "私はカラオケでJポップをうたいます。",
+          "english": "I sing J-pop at karaoke.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_653",
+      "japanese": "一階",
+      "english": "street level",
+      "type": "counter",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "うけつけは一階にあります。",
+          "english": "The front desk is on the first floor.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "一階にはカフェとコンビニがあります。",
+          "english": "There is a cafe and convenience store on the first floor.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_650",
+      "japanese": "何階",
+      "english": "which floor",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "すみません、レストランは何階ですか。",
+          "english": "Excuse me, what floor is the restaurant on?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "エレベーターで何階にいきますか。",
+          "english": "What floor are you going to by elevator?",
+          "context": "question",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_641",
+      "japanese": "バンド",
+      "english": "band",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あのバンドのおんがくがすきです。",
+          "english": "I like that band's music.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "友達はロックバンドでギターをひきます。",
+          "english": "My friend plays guitar in a rock band.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_640",
+      "japanese": "アニソン",
+      "english": "anime music",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "私はアニソンがだいすきです。",
+          "english": "I love anime music.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "カラオケでアニソンをうたいませんか。",
+          "english": "Won't you sing anime music at karaoke?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_639",
+      "japanese": "アルバム",
+      "english": "album",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あたらしいアルバムを買いました。",
+          "english": "I bought a new album.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "そのアーティストのアルバムは何まいありますか。",
+          "english": "How many albums does that artist have?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_635",
+      "japanese": "読みません",
+      "english": "does not read, do not read, (never) reads",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "私はあまりしんぶんを読みません。",
+          "english": "I don't read the newspaper much.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あの人はまんがを読みません。",
+          "english": "That person doesn't read manga.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_631",
+      "japanese": "本や",
+      "english": "bookstore",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "えきのちかくに大きい本やがあります。",
+          "english": "There is a big bookstore near the station.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あした本やに行きませんか。",
+          "english": "Would you like to go to the bookstore tomorrow?",
+          "context": "question",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_630",
+      "japanese": "セール",
+      "english": "sale",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あのみせでセールがあります。",
+          "english": "There is a sale at that store.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "セールでやすいふくをたくさん買いました。",
+          "english": "I bought a lot of cheap clothes at the sale.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_622",
+      "japanese": "キャラクター",
+      "english": "mascot",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "そのキャラクターはにんきがあります。",
+          "english": "That mascot is popular.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "どのキャラクターがすきですか。",
+          "english": "Which mascot do you like?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_619",
+      "japanese": "ジェットコースター",
+      "english": "rollercoaster",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "ジェットコースターにのりたいです。",
+          "english": "I want to ride the rollercoaster.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あのジェットコースターはとてもはやいです。",
+          "english": "That rollercoaster is very fast.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_613",
+      "japanese": "にゅうじょうりょう",
+      "english": "admission fee",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "にゅうじょうりょうはいくらですか。",
+          "english": "How much is the admission fee?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "このはくぶつかんのにゅうじょうりょうはむりょうです。",
+          "english": "The admission fee for this museum is free.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_611",
+      "japanese": "ごご",
+      "english": "afternoon, p.m., p.m",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "ごご三時にあいましょう。",
+          "english": "Let's meet at 3 p.m.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "しあいはごご二時からはじまります。",
+          "english": "The game starts at 2 p.m.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_607",
+      "japanese": "でかけましょう",
+      "english": "we should go out",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あしたいっしょにでかけましょう。",
+          "english": "Let's go out together tomorrow.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "てんきがいいから、でかけましょうか。",
+          "english": "The weather is nice, so shall we go out?",
+          "context": "question",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_601",
+      "japanese": "しゃしんか",
+      "english": "photographer",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あの人はゆうめいなしゃしんかです。",
+          "english": "That person is a famous photographer.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "しゃしんかになりたいです。",
+          "english": "I want to become a photographer.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_575",
+      "japanese": "ききましょうか",
+      "english": "should we ask",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "てんいんにききましょうか。",
+          "english": "Should we ask the salesperson?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "みちがわからないから、だれかにききましょうか。",
+          "english": "We don't know the way, so should we ask someone?",
+          "context": "question",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_550",
+      "japanese": "食べません",
+      "english": "don't eat, do not eat, will not eat",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "私はあまりにくを食べません。",
+          "english": "I don't eat much meat.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あさはいそがしいから、あさごはんを食べません。",
+          "english": "I'm busy in the morning, so I don't eat breakfast.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_540",
+      "japanese": "つくりましょう",
+      "english": "we should make",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "いっしょにケーキをつくりましょう。",
+          "english": "Let's make a cake together.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "こんやは日本りょうりをつくりましょう。",
+          "english": "Let's make Japanese food tonight.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_536",
+      "japanese": "パイ",
+      "english": "pie, pies",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "このパイはおいしいですか。",
+          "english": "Is this pie delicious?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "おかしやであまいパイを買いました。",
+          "english": "I bought a sweet pie at the pastry shop.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_533",
+      "japanese": "ドーナツ",
+      "english": "donut",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "コーヒーとドーナツをください。",
+          "english": "Please give me coffee and a donut.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "このドーナツはあまくておいしいです。",
+          "english": "This donut is sweet and delicious.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_528",
+      "japanese": "まっちゃ",
+      "english": "matcha",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "まっちゃのアイスクリームがすきです。",
+          "english": "I like matcha ice cream.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "このカフェのまっちゃはとてもおいしいです。",
+          "english": "The matcha at this cafe is very delicious.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_524",
+      "japanese": "チーズケーキ",
+      "english": "cheesecake",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "そのケーキやのチーズケーキはゆうめいです。",
+          "english": "The cheesecake at that cake shop is famous.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "チーズケーキを一つください。",
+          "english": "Please give me one cheesecake.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_523",
+      "japanese": "買いましょうか",
+      "english": "should we buy",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "何を買いましょうか。",
+          "english": "What should we buy?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "友達のたんじょうびにプレゼントを買いましょうか。",
+          "english": "Should we buy a present for our friend's birthday?",
+          "context": "question",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_522",
+      "japanese": "おかしや",
+      "english": "pastry shop",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "えきのまえにおかしやがあります。",
+          "english": "There is a pastry shop in front of the station.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あのおかしやのクッキーはおいしいですよ。",
+          "english": "The cookies at that pastry shop are delicious!",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_517",
+      "japanese": "行きましょうか",
+      "english": "should we go, would you like to go",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "いっしょにえいがかんに行きましょうか。",
+          "english": "Shall we go to the movie theater together?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "おなかがすいたから、レストランに行きましょうか。",
+          "english": "I'm hungry, so shall we go to a restaurant?",
+          "context": "question",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_514",
+      "japanese": "がたのしみです",
+      "english": "looking forward to, am looking forward to",
+      "type": "phrase",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "りょこうがたのしみです。",
+          "english": "I'm looking forward to the trip.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あしたのパーティーがたのしみです。",
+          "english": "I'm looking forward to tomorrow's party.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_498",
+      "japanese": "ロビー",
+      "english": "(the) lobby",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "ロビーでまちましょう。",
+          "english": "Let's wait in the lobby.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "ホテルのロビーで友達に会います。",
+          "english": "I will meet my friend in the hotel lobby.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_490",
+      "japanese": "どうぶつえん",
+      "english": "zoo",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "しゅうまつにどうぶつえんに行きませんか。",
+          "english": "Would you like to go to the zoo on the weekend?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "どうぶつえんでぞうを見ました。とても大きかったです。",
+          "english": "I saw an elephant at the zoo. It was very big.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_481",
+      "japanese": "飲みましょう",
+      "english": "let's have, let's drink",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "コーヒーを飲みましょう。",
+          "english": "Let's have coffee.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "しごとのあとでビールを飲みましょう。",
+          "english": "Let's have beer after work.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_468",
+      "japanese": "ガーデニング",
+      "english": "gardening",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "母はガーデニングがすきです。",
+          "english": "My mother likes gardening.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "しゅうまつに、にわでガーデニングをします。",
+          "english": "I do gardening in the garden on the weekend.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_464",
+      "japanese": "そして",
+      "english": "then",
+      "type": "other",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あさごはんを食べました。そして、がっこうに行きました。",
+          "english": "I ate breakfast. Then, I went to school.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "まずシャワーをあびます。そして、ねます。",
+          "english": "First, I take a shower. Then, I go to sleep.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_456",
+      "japanese": "そうじ",
+      "english": "cleaning, clean",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "まいしゅう土曜日にそうじをします。",
+          "english": "I clean every Saturday.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "へやのそうじをてつだってください。",
+          "english": "Please help with cleaning the room.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_455",
+      "japanese": "てつだいます",
+      "english": "help",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "りょうりをてつだいましょうか。",
+          "english": "Shall I help with cooking?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "しゅうまつに母のかじをてつだいます。",
+          "english": "I help my mother with chores on the weekend.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_427",
+      "japanese": "はいますか",
+      "english": "do ... have",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "いぬがうちにいますか。",
+          "english": "Do you have a dog at home?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "ねこはいますか。",
+          "english": "Do you have cats?",
+          "context": "question",
+          "level": "1-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_409",
+      "japanese": "はれ",
+      "english": "clear weather, sunny",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あしたはれですか。",
+          "english": "Will it be sunny tomorrow?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "きょうははれだから、こうえんに行きましょう。",
+          "english": "It's sunny today, so let's go to the park.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_400",
+      "japanese": "ちゃんと",
+      "english": "proper, properly, full",
+      "type": "adverb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "しゅくだいをちゃんとしてください。",
+          "english": "Please do your homework properly.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "まいにちちゃんとあさごはんを食べますか。",
+          "english": "Do you eat breakfast properly every day?",
+          "context": "question",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_393",
+      "japanese": "ごりょうしん",
+      "english": "(your) parents, parents",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "ごりょうしんはおげんきですか。",
+          "english": "Are your parents well?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "ごりょうしんはどこにすんでいますか。",
+          "english": "Where do your parents live?",
+          "context": "question",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_388",
+      "japanese": "きゅうきゅうしゃ",
+      "english": "ambulance",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "きゅうきゅうしゃをよんでください。",
+          "english": "Please call an ambulance.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "きゅうきゅうしゃがびょういんに行きました。",
+          "english": "The ambulance went to the hospital.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_383",
+      "japanese": "ぐあいがわるい",
+      "english": "unwell",
+      "type": "phrase",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "きょうはぐあいがわるいです。",
+          "english": "I feel unwell today.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "ぐあいがわるいから、きょうは休みます。",
+          "english": "I'm feeling unwell, so I'll take the day off today.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_376",
+      "japanese": "ふじさん",
+      "english": "Mt. Fuji",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "ふじさんはとても高いです。",
+          "english": "Mt. Fuji is very tall.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "らいねんのなつにふじさんにのぼりたいです。",
+          "english": "I want to climb Mt. Fuji next summer.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_375",
+      "japanese": "高い",
+      "english": "tall",
+      "type": "adjective",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あのたてものは高いですね。",
+          "english": "That building is tall, isn't it?",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "日本で一ばん高い山はふじさんです。",
+          "english": "The tallest mountain in Japan is Mt. Fuji.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_373",
+      "japanese": "じんじゃ",
+      "english": "shrine",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "京都にはたくさんじんじゃがあります。",
+          "english": "There are many shrines in Kyoto.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あのじんじゃはゆうめいですか。",
+          "english": "Is that shrine famous?",
+          "context": "question",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_357",
+      "japanese": "ぐらい",
+      "english": "about",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "えきまで十分ぐらいかかります。",
+          "english": "It takes about 10 minutes to the station.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "まいにちコーヒーを三ばいぐらい飲みます。",
+          "english": "I drink about three cups of coffee every day.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_348",
+      "japanese": "つぎの",
+      "english": "next",
+      "type": "other",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "つぎのでんしゃは何時ですか。",
+          "english": "What time is the next train?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "つぎのえきでおります。",
+          "english": "I'm getting off at the next station.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_343",
+      "japanese": "しぶや",
+      "english": "Shibuya",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "しぶやはとてもにぎやかです。",
+          "english": "Shibuya is very lively.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あした友達としぶやで買い物をします。",
+          "english": "Tomorrow I will go shopping in Shibuya with friends.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_337",
+      "japanese": "せんたくき",
+      "english": "washing machine",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あたらしいせんたくきを買いました。",
+          "english": "I bought a new washing machine.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "せんたくきはキッチンのとなりにあります。",
+          "english": "The washing machine is next to the kitchen.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_330",
+      "japanese": "ほんだな",
+      "english": "bookshelf",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "ほんだなに本がたくさんあります。",
+          "english": "There are many books on the bookshelf.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "新しいほんだながほしいです。",
+          "english": "I want a new bookshelf.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_327",
+      "japanese": "エアコン",
+      "english": "air conditioning, air conditioners, air conditioner",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "エアコンをつけてください。",
+          "english": "Please turn on the air conditioner.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "このへやはエアコンがあるから、すずしいです。",
+          "english": "This room has air conditioning, so it's cool.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_326",
+      "japanese": "ベッド",
+      "english": "bed, beds",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あたらしいベッドを買いたいです。",
+          "english": "I want to buy a new bed.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "このベッドはとても大きいですね。",
+          "english": "This bed is very big, isn't it?",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_321",
+      "japanese": "アパート",
+      "english": "apartment building, apartment, apartments",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "えきのちかくにアパートをさがしています。",
+          "english": "I'm looking for an apartment near the station.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "このアパートはやちんが安いです。",
+          "english": "This apartment has cheap rent.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_320",
+      "japanese": "ひっこします",
+      "english": "am going to move, is going to move, move",
+      "type": "verb",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "らいげつ東京にひっこします。",
+          "english": "I'm going to move to Tokyo next month.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "友達はあたらしいアパートにひっこします。",
+          "english": "My friend is going to move to a new apartment.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_307",
+      "japanese": "しゅみはありますか",
+      "english": "do you have a hobby",
+      "type": "phrase",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "しゅみはありますか。私はおんがくがすきです。",
+          "english": "Do you have a hobby? I like music.",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あなたのしゅみはありますか。",
+          "english": "Do you have any hobbies?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_294",
+      "japanese": "エリカ",
+      "english": "Erica, Erika",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "エリカさんはアメリカじんです。",
+          "english": "Erika is American.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "エリカさんは日本ごをべんきょうしています。",
+          "english": "Erika is studying Japanese.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_292",
+      "japanese": "こちら",
+      "english": "this, these, (over) here",
+      "type": "pronoun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "こちらは田中さんです。",
+          "english": "This is Mr. Tanaka.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "こちらにどうぞ。せきがあります。",
+          "english": "Please come this way. There are seats.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_266",
+      "japanese": "にかい",
+      "english": "the second floor, two",
+      "type": "counter",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "カフェはにかいにあります。",
+          "english": "The cafe is on the second floor.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "にかいにおてあらいがありますか。",
+          "english": "Is there a restroom on the second floor?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_265",
+      "japanese": "かいだん",
+      "english": "stairs",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "かいだんでにかいに上がります。",
+          "english": "I'll go up to the second floor by the stairs.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "かいだんはどこですか。",
+          "english": "Where are the stairs?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_248",
+      "japanese": "どうが",
+      "english": "video",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "このどうがはおもしろいですね。",
+          "english": "This video is interesting, isn't it?",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "日本ごのどうがをよく見ます。",
+          "english": "I often watch Japanese videos.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_225",
+      "japanese": "みそしる",
+      "english": "miso soup",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あさごはんにみそしるを飲みます。",
+          "english": "I have miso soup for breakfast.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "このみそしるはとてもおいしいです。",
+          "english": "This miso soup is very delicious.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_217",
+      "japanese": "じゃあ",
+      "english": "well then, well, see you",
+      "type": "phrase",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "じゃあ、行きましょう。",
+          "english": "Well then, let's go.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "じゃあ、あした九時にえきで会いましょう。",
+          "english": "Well then, let's meet at the station at 9 o'clock tomorrow.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_211",
+      "japanese": "ていしょく",
+      "english": "meal set, meal sets",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "このていしょくはいくらですか。",
+          "english": "How much is this meal set?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "てんぷらていしょくをください。",
+          "english": "I'll have the tempura meal set, please.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_206",
+      "japanese": "くろい",
+      "english": "black",
+      "type": "adjective",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "くろいかばんがほしいです。",
+          "english": "I want a black bag.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あのくろいくつはいくらですか。",
+          "english": "How much are those black shoes?",
+          "context": "question",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_190",
+      "japanese": "Tシャツ",
+      "english": "t-shirt",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あたらしいTシャツを買いました。",
+          "english": "I bought a new t-shirt.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "このTシャツはすこし小さいです。",
+          "english": "This t-shirt is a bit small.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_185",
+      "japanese": "はちょっと",
+      "english": "I don't really like, doesn't work very well, kind of",
+      "type": "phrase",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "からいものはちょっと。",
+          "english": "Spicy food is kind of... (I don't really like it).",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あしたはちょっと。しごとがあります。",
+          "english": "Tomorrow doesn't work very well. I have work.",
+          "context": "answer",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_180",
+      "japanese": "九時",
+      "english": "nine o'clock",
+      "type": "counter",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "まいあさ九時におきます。",
+          "english": "I wake up at nine o'clock every morning.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "しごとは九時からはじまります。",
+          "english": "Work starts at nine o'clock.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_171",
+      "japanese": "七時",
+      "english": "seven o'clock",
+      "type": "counter",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "まいにち七時にあさごはんを食べます。",
+          "english": "I eat breakfast at seven o'clock every day.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "七時にえきで会いましょう。",
+          "english": "Let's meet at the station at seven o'clock.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_161",
+      "japanese": "Jポップ",
+      "english": "J-pop",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "私はJポップがだいすきです。",
+          "english": "I love J-pop.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "Jポップをよくききますか。",
+          "english": "Do you often listen to J-pop?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_160",
+      "japanese": "まんが",
+      "english": "manga",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "日本のまんががすきですか。",
+          "english": "Do you like Japanese manga?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "まいしゅうあたらしいまんがを読みます。",
+          "english": "I read new manga every week.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_152",
+      "japanese": "ロック",
+      "english": "rock",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "ロックとJポップ、どちらがすきですか。",
+          "english": "Which do you like, rock or J-pop?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "父はロックがすきです。",
+          "english": "My father likes rock music.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_128",
+      "japanese": "うるさい",
+      "english": "noisy",
+      "type": "adjective",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "このみせはすこしうるさいですね。",
+          "english": "This store is a bit noisy, isn't it?",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "となりのへやがうるさいです。",
+          "english": "The next room is noisy.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_85",
+      "japanese": "じゃないです",
+      "english": "is not, we're not, aren't",
+      "type": "phrase",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "私はがくせいじゃないです。",
+          "english": "I am not a student.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "これはわたしのかばんじゃないです。",
+          "english": "This is not my bag.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_71",
+      "japanese": "やまぐち",
+      "english": "Yamaguchi",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "やまぐちさんはエンジニアです。",
+          "english": "Mr. Yamaguchi is an engineer.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "やまぐちさんはどこにすんでいますか。",
+          "english": "Where does Mr. Yamaguchi live?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_62",
+      "japanese": "これら",
+      "english": "these",
+      "type": "pronoun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "これらはいくらですか。",
+          "english": "How much are these?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "これらのくつはぜんぶ日本のです。",
+          "english": "All of these shoes are Japanese.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_58",
+      "japanese": "あかい",
+      "english": "red",
+      "type": "adjective",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あかいドレスがほしいです。",
+          "english": "I want a red dress.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "あのあかい車はだれのですか。",
+          "english": "Whose is that red car?",
+          "context": "question",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_45",
+      "japanese": "ブラジルじん",
+      "english": "Brazilian",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "あの人はブラジルじんですか。",
+          "english": "Is that person Brazilian?",
+          "context": "question",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "ブラジルじんの友達がサッカーをおしえてくれます。",
+          "english": "My Brazilian friend teaches me soccer.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_44",
+      "japanese": "イギリスじん",
+      "english": "British",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "スミスさんはイギリスじんです。",
+          "english": "Mr. Smith is British.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "イギリスじんの先生にえいごをならいます。",
+          "english": "I learn English from a British teacher.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_38",
+      "japanese": "カナダじん",
+      "english": "Canadian",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "私のともだちはカナダじんです。",
+          "english": "My friend is Canadian.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "カナダじんのルームメイトとすんでいます。",
+          "english": "I live with a Canadian roommate.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_22",
+      "japanese": "またあした",
+      "english": "see you tomorrow",
+      "type": "phrase",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "じゃあ、またあした。",
+          "english": "Well then, see you tomorrow.",
+          "context": "statement",
+          "level": "1-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "またあした、がっこうで会いましょう。",
+          "english": "See you tomorrow, let's meet at school.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_16",
+      "japanese": "どうぞよろしく",
+      "english": "nice to meet you",
+      "type": "phrase",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "はじめまして、田中です。どうぞよろしく。",
+          "english": "Nice to meet you, I'm Tanaka. Nice to meet you.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "こちらこそ、どうぞよろしく。",
+          "english": "Nice to meet you too.",
+          "context": "answer",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_14",
+      "japanese": "けん",
+      "english": "Ken, ticket",
+      "type": "noun",
+      "currentExamples": 1,
+      "newExampleSentences": [
+        {
+          "japanese": "けんさんは日本にすんでいます。",
+          "english": "Ken lives in Japan.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        },
+        {
+          "japanese": "けんさんと私はともだちです。",
+          "english": "Ken and I are friends.",
+          "context": "statement",
+          "level": "2-2",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_952",
+      "japanese": "買いたいです",
+      "english": "want to buy",
+      "type": "verb",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "あたらしいスマホを買いたいですが、たかいです。",
+          "english": "I want to buy a new smartphone, but it's expensive.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_909",
+      "japanese": "でんきや",
+      "english": "electronics store",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "あきはばらのでんきやはとても大きいです。",
+          "english": "The electronics stores in Akihabara are very big.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_871",
+      "japanese": "かぶき",
+      "english": "kabuki, kabuki performance, Kabuki performances",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "はじめてかぶきを見ました。とてもおもしろかったです。",
+          "english": "I saw kabuki for the first time. It was very interesting.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_868",
+      "japanese": "チェックアウト",
+      "english": "check-out",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "チェックアウトのまえにロビーで会いましょう。",
+          "english": "Let's meet in the lobby before check-out.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_843",
+      "japanese": "ぜんぶで",
+      "english": "in total",
+      "type": "adverb",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "ぜんぶで三千円です。",
+          "english": "It's 3,000 yen in total.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_764",
+      "japanese": "せんこう",
+      "english": "major",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "私のせんこうはビジネスです。あなたのせんこうは何ですか。",
+          "english": "My major is business. What is your major?",
+          "context": "question",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_700",
+      "japanese": "おまつり",
+      "english": "festival",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "なつにおまつりでたいこをききました。とてもたのしかったです。",
+          "english": "I heard taiko drums at the festival in summer. It was very fun.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_677",
+      "japanese": "ギター",
+      "english": "(a) guitar, (the) guitars, (the) guitar",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "まいにち三十分ぐらいギターをれんしゅうします。",
+          "english": "I practice guitar for about 30 minutes every day.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_657",
+      "japanese": "トレーニング",
+      "english": "job training",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "あたらしいかいしゃでトレーニングがあります。",
+          "english": "There is job training at my new company.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_634",
+      "japanese": "フィクション",
+      "english": "fiction",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "フィクションとノンフィクション、どちらをよく読みますか。",
+          "english": "Which do you read more, fiction or non-fiction?",
+          "context": "question",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_629",
+      "japanese": "コーナー",
+      "english": "section",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "まんがのコーナーはどこですか。",
+          "english": "Where is the manga section?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_599",
+      "japanese": "イベント",
+      "english": "event",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "らいしゅうまちで大きいイベントがあります。",
+          "english": "There is a big event in town next week.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_582",
+      "japanese": "ききましょう",
+      "english": "we should ask",
+      "type": "verb",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "わからないから、先生にききましょう。",
+          "english": "I don't understand, so let's ask the teacher.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_545",
+      "japanese": "しょうゆ",
+      "english": "soy sauce",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "すしにしょうゆをつけて食べます。",
+          "english": "I eat sushi with soy sauce.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_521",
+      "japanese": "がだいすきです",
+      "english": "love, loves",
+      "type": "phrase",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "私は日本りょうりがだいすきです。とくにすしがすきです。",
+          "english": "I love Japanese food. Especially sushi.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_519",
+      "japanese": "はすきですか",
+      "english": "do ... like",
+      "type": "phrase",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "あなたはどんなおんがくがすきですか。ロックはすきですか。",
+          "english": "What kind of music do you like? Do you like rock?",
+          "context": "question",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_471",
+      "japanese": "しましょうか",
+      "english": "shall (we), should (we)",
+      "type": "verb",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "つかれましたね。すこし休みましょうか。",
+          "english": "You look tired. Shall we take a break?",
+          "context": "question",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_450",
+      "japanese": "あと",
+      "english": "after",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "じゅぎょうのあと、としょかんでべんきょうします。",
+          "english": "After class, I study at the library.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_436",
+      "japanese": "ちゅうごくご",
+      "english": "Chinese",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "ちゅうごくごはむずかしいですが、たのしいです。",
+          "english": "Chinese is difficult, but it's fun.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_416",
+      "japanese": "コンサート",
+      "english": "concert, concerts",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "らいげつ東京でコンサートがあります。いっしょに行きませんか。",
+          "english": "There's a concert in Tokyo next month. Would you like to go together?",
+          "context": "question",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_377",
+      "japanese": "ポストカード",
+      "english": "postcard",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "京都できれいなポストカードを買いました。",
+          "english": "I bought a beautiful postcard in Kyoto.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_367",
+      "japanese": "何ですか",
+      "english": "what (is), what are, what's",
+      "type": "phrase",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "すみません、あのたてものは何ですか。",
+          "english": "Excuse me, what is that building?",
+          "context": "question",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_365",
+      "japanese": "たてもの",
+      "english": "building",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "東京にはたかいたてものがたくさんあります。",
+          "english": "There are many tall buildings in Tokyo.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_362",
+      "japanese": "ほんとうに",
+      "english": "really, truly",
+      "type": "adverb",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "このレストランのりょうりはほんとうにおいしいです。",
+          "english": "The food at this restaurant is really delicious.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_303",
+      "japanese": "がすきです",
+      "english": "like",
+      "type": "phrase",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "私はあたたかいてんきがすきです。",
+          "english": "I like warm weather.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_295",
+      "japanese": "と言います",
+      "english": "tell, say, says",
+      "type": "verb",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "日本ごで「ありがとう」と言います。",
+          "english": "In Japanese, we say 'arigatou.'",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_293",
+      "japanese": "言います",
+      "english": "tell, tells, say",
+      "type": "verb",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "先生にあした休むと言います。",
+          "english": "I will tell the teacher that I will be absent tomorrow.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_278",
+      "japanese": "食べます",
+      "english": "eat, am going to eat, will eat",
+      "type": "verb",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "まいあさパンとたまごを食べます。",
+          "english": "I eat bread and eggs every morning.",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_237",
+      "japanese": "ヨガ",
+      "english": "yoga",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "まいあさヨガをします。からだにいいです。",
+          "english": "I do yoga every morning. It's good for my body.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_192",
+      "japanese": "がほしいです",
+      "english": "want",
+      "type": "phrase",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "たんじょうびにあたらしいかばんがほしいです。",
+          "english": "I want a new bag for my birthday.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_136",
+      "japanese": "おしゃれ",
+      "english": "fashionable, stylish, well-dressed",
+      "type": "adjective",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "あのカフェはとてもおしゃれですね。",
+          "english": "That cafe is very stylish, isn't it?",
+          "context": "statement",
+          "level": "2-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_104",
+      "japanese": "にすんでいます",
+      "english": "is living",
+      "type": "verb",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "私は今、東京にすんでいます。えきのちかくです。",
+          "english": "I am currently living in Tokyo. It's near the station.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_101",
+      "japanese": "しゅっしん",
+      "english": "from, origin, hometown",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "私のしゅっしんはおおさかです。いまは東京にすんでいます。",
+          "english": "I'm from Osaka. Now I live in Tokyo.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_68",
+      "japanese": "かわいい",
+      "english": "cuter, cute, pretty",
+      "type": "adjective",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "このねこはとてもかわいいですね。なまえは何ですか。",
+          "english": "This cat is very cute, isn't it? What's its name?",
+          "context": "question",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    },
+    {
+      "id": "duo_64",
+      "japanese": "なかやま",
+      "english": "Nakayama",
+      "type": "noun",
+      "currentExamples": 2,
+      "newExampleSentences": [
+        {
+          "japanese": "なかやまさんは私のどうりょうです。とてもやさしいです。",
+          "english": "Mr. Nakayama is my coworker. He is very kind.",
+          "context": "statement",
+          "level": "3-1",
+          "isAIGenerated": true
+        }
+      ]
+    }
+  ]
+}

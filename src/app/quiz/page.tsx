@@ -10,7 +10,7 @@ import { useBookmarksStore } from "@/store/bookmarks-store"
 import { useLiveVocabulary, useDatabase } from "@/hooks/useDatabase"
 import { VocabularyCard } from "@/types/vocabulary"
 import { KanjiCard } from "@/types/kanji"
-import { QuizSettings } from "@/types/quiz"
+import { QuizSettings, QuizSession } from "@/types/quiz"
 import { Button } from "@/components/ui/button"
 import { X, Pause, Play, Loader2 } from "lucide-react"
 import { Header } from "@/components/layout/header"
@@ -80,8 +80,65 @@ export default function QuizPage() {
   }, [])
 
   const handleStartQuiz = async (settings: QuizSettings) => {
+    console.log("🎯 Quiz Starting with settings:", settings)
+    console.log("🔍 PresetId:", settings.presetId)
+
     const { bookmarkedVocab, bookmarkedKanji } = useBookmarksStore.getState()
     let cards: (VocabularyCard | KanjiCard)[]
+
+    // LINGOSPECIAL MODE: Use Dlingo data with confusable options
+    const isLingoSpecial = settings.presetId === "lingo-special"
+    console.log("❓ Is LingoSpecial?", isLingoSpecial)
+
+    if (isLingoSpecial) {
+      try {
+        console.log("💀 LingoSpecial Mode Activated!")
+
+        // Load Dlingo data
+        const { loadDlingoData } = await import("@/services/dlingo.service")
+        const { generateLingoSpecialSession } = await import("@/lib/lingo-special-generator")
+
+        const dlingoWords = await loadDlingoData()
+        console.log(`✅ Loaded ${dlingoWords.length} Dlingo words`)
+
+        // Generate LingoSpecial questions with confusable options
+        const lingoSpecialQuestions = generateLingoSpecialSession(dlingoWords, settings.questionCount)
+        console.log(`🔥 Generated ${lingoSpecialQuestions.length} ultra-hard LingoSpecial questions`)
+
+        // Create a special session directly with these questions
+        const sessionId = `lingospecial_${Date.now()}`
+        const session: QuizSession = {
+          id: sessionId,
+          settings,
+          questions: lingoSpecialQuestions,
+          answers: [],
+          progress: {
+            currentQuestionIndex: 0,
+            totalQuestions: lingoSpecialQuestions.length,
+            answeredCount: 0,
+            correctCount: 0,
+            startTime: new Date(),
+            elapsedTime: 0,
+            isPaused: false
+          },
+          startedAt: new Date(),
+          status: "in-progress"
+        }
+
+        // Use the quiz store's internal state setter
+        useQuizStore.setState({
+          currentSession: session,
+          currentQuestionIndex: 0
+        })
+
+        setQuizState("in-progress")
+        return
+      } catch (error) {
+        console.error("Failed to load LingoSpecial mode:", error)
+        alert("Failed to load LingoSpecial quiz. Please try again.")
+        return
+      }
+    }
 
     // FSRS SMART MODE: Load cards from study cards table with prioritization
     if (settings.smartMode && settings.contentType === "vocabulary") {

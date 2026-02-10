@@ -1,0 +1,719 @@
+# Words Without Examples
+
+**Total**: 685 words
+**Date**: 2025-12-12
+
+---
+
+## NOUN (457 words)
+
+- **しょうせつ** (novel) | duo_0
+- **バナナ** (banana) | duo_11
+- **ブランケット** (blanket) | duo_15
+- **リモコン** (remote, controller, controllers) | duo_17
+- **アラーム** (alarms, alarm) | duo_18
+- **チーズ** (cheese) | duo_27
+- **ようじ** (stuff to do) | duo_30
+- **じてんしゃ** (bike) | duo_31
+- **ゆうがた** (evening) | duo_32
+- **車** (car) | duo_34
+- **さいたま** (Saitama) | duo_35
+- **はたち** (twenty years old) | duo_36
+- **みかん** (mandarin oranges) | duo_40
+- **スキー** (skiing, ski, skis) | duo_41
+- **スケート** (skating, skate, ice skating) | duo_45
+- **なべ** (hot pot) | duo_46
+- **さつまいも** (sweet potato) | duo_49
+- **だんぼう** (heater) | duo_51
+- **夜** (night, nights, evening) | duo_53
+- **すいか** (watermelon) | duo_54
+- **さくら** (cherry blossoms) | duo_56
+- **こんど** (next time) | duo_60
+- **八千** (eight thousand) | duo_61
+- **マフラー** (scarf) | duo_65
+- **アクセサリー** (accessories, jewelry, accessory) | duo_66
+- **右** (right) | duo_67
+- **左** (left) | duo_70
+- **メンズ** (men's, men) | duo_73
+- **パーカー** (hoodie) | duo_75
+- **むらさき** (purple) | duo_77
+- **くつした** (socks) | duo_78
+- **セーター** (sweater) | duo_81
+- **クラスメイト** (classmates, classmate) | duo_82
+- **ふくや** (clothing store) | duo_83
+- **えんぴつ** (pencil) | duo_84
+- **くうき** (air) | duo_86
+- **ドラッグストア** (drugstore) | duo_87
+- **ぎんこう** (bank) | duo_89
+- **ゆうびんきょく** (post office) | duo_91
+- **スタジアム** (stadium) | duo_93
+- **アメフト** (football) | duo_94
+- **先生** (teacher, professor, Mr., Miss) | duo_95
+- **木** (tree, Thursday, wood) | duo_96
+- **こうこう** (high school) | duo_97
+- **れきし** (history) | duo_99
+- **グッズ** (merch) | duo_103
+- **サイン** (signature, signatures, autograph) | duo_108
+- **ペン** (pen) | duo_109
+- **ひがしぐち** (east exit) | duo_111
+- **外** (out, outside) | duo_115
+- **まんなか** (middle) | duo_118
+- **アーティスト** (artist) | duo_121
+- **今夜** (tonight) | duo_122
+- **レジぶくろ** (shopping bag, shopping bags) | duo_126
+- **でんち** (batteries) | duo_127
+- **グレー** (gray) | duo_129
+- **ケーブル** (cable) | duo_131
+- **スピーカー** (speakers, speaker) | duo_132
+- **キーボード** (keyboard) | duo_134
+- **インチ** (inches, inch) | duo_138
+- **一万** (ten thousand, 10,000) | duo_139
+- **前** (ago, before, front) | duo_142
+- **ゲーミング** (gaming) | duo_143
+- **おさら** (plate) | duo_145
+- **ナイフ** (knife) | duo_146
+- **おもちゃ** (toy) | duo_149
+- **ヘッドホン** (headphones) | duo_151
+- **六百** (six hundred) | duo_152
+- **カップ** (cup) | duo_153
+- **フォーク** (fork) | duo_154
+- **百円ショップ** (hundred yen shop) | duo_155
+- **ポテトチップス** (chips, potato chips) | duo_157
+- **みち** (path, road, street) | duo_160
+- **フライドチキン** (fried chicken) | duo_161
+- **円** (circle, yen) | duo_162
+- **家** (house, home, homes) | duo_163
+- **いとこ** ((my) cousin, (my) cousins) | duo_164
+- **タイご** (Thai) | duo_165
+- **ぞう** (elephant) | duo_166
+- **タイ** (Thailand, Thai) | duo_167
+- **来週** (next week) | duo_168
+- **ピーナッツ** (peanuts, (a) peanut) | duo_170
+- **明日** (tomorrow) | duo_171
+- **ちば** (Chiba) | duo_173
+- **きのう** (yesterday) | duo_175
+- **クレープ** (crepe) | duo_176
+- **先週** (last week) | duo_180
+- **ぎんざ** (Ginza) | duo_182
+- **ぶんか** (culture) | duo_183
+- **先月** (last month) | duo_186
+- **きょねん** (last year) | duo_187
+- **トースト** (toast) | duo_189
+- **コーヒーメーカー** (coffee maker) | duo_190
+- **ぎゅうにゅう** (milk) | duo_192
+- **タオル** (towel) | duo_194
+- **スパ** (spa, spas) | duo_197
+- **パスワード** (password) | duo_198
+- **ルームサービス** (room service) | duo_200
+- **こおり** (ice) | duo_201
+- **まえ** (front) | duo_202
+- **となり** (next door, next to, neighboring) | duo_205
+- **かぎ** (key) | duo_207
+- **ネット** (internet) | duo_208
+- **おつり** (change) | duo_214
+- **かいけい** (cashier) | duo_217
+- **えび** (shrimp) | duo_219
+- **ナプキン** (napkin) | duo_222
+- **マーボーどうふ** (mapo tofu) | duo_223
+- **はし** (bridges, chopsticks, bridge) | duo_224
+- **スープ** (soup) | duo_226
+- **メニュー** (menu) | duo_232
+- **タピオカティー** (bubble tea) | duo_235
+- **ちゅうかがい** (Chinatown) | duo_236
+- **ちゅうかりょうり** (Chinese food) | duo_237
+- **シーフード** (seafood) | duo_239
+- **ぎゅうにく** (beef) | duo_240
+- **こしょう** (pepper) | duo_241
+- **そと** (outside, outdoors) | duo_243
+- **川** ((the) river, (the) rivers, rivers) | duo_246
+- **雨** (rain) | duo_248
+- **ピクニック** (picnic) | duo_250
+- **キャンプ** (camping) | duo_255
+- **ハイキング** (hiking) | duo_256
+- **バックパック** (backpack) | duo_257
+- **すみ** (corner) | duo_259
+- **カメレオン** (chameleon) | duo_262
+- **なんびき** (how many) | duo_263
+- **口** (mouths, (a) mouth, tastes) | duo_266
+- **トマト** (tomato, tomatoes, (a) tomato) | duo_267
+- **ちゃいろ** (brown) | duo_272
+- **パンケーキ** (pancake) | duo_273
+- **め** (eye) | duo_274
+- **カプチーノ** (cappuccinos, (a) cappuccino) | duo_276
+- **ねこ** (cat) | duo_279
+- **チェス** (chess) | duo_280
+- **ボードゲーム** (board game) | duo_283
+- **ルームメイト** (roommate, roommates) | duo_285
+- **りょう** (dorm) | duo_286
+- **駅** (station, train station, stations) | duo_287
+- **タガログご** (Tagalog) | duo_288
+- **ドイツご** (German) | duo_289
+- **げんご** (language, languages) | duo_290
+- **ドイツ** (Germany, German) | duo_291
+- **フィリピン** (the Philippines) | duo_292
+- **ビジネス** (business) | duo_294
+- **サム** (Sam) | duo_298
+- **かい** (are you, will you, buy) | duo_299
+- **みなみぐち** (south exit) | duo_303
+- **飲み物** (beverage, drink, drinks) | duo_304
+- **ツアー** (tour) | duo_307
+- **インフォメーション** (information desk) | duo_308
+- **八百** (800) | duo_309
+- **エスカレーター** (escalator) | duo_311
+- **三ばん** (number three) | duo_313
+- **かいそく** (rapid-service) | duo_315
+- **二ばん** (number two) | duo_316
+- **オレンジ** (orange) | duo_317
+- **一ばん** (number one) | duo_319
+- **きっぷうりば** (ticket area) | duo_320
+- **モノレール** (monorail) | duo_321
+- **三百** (300, three hundred) | duo_322
+- **ワイン** (wine) | duo_325
+- **ステーキ** (steak) | duo_326
+- **かんとく** (director) | duo_327
+- **ポップコーン** (popcorn) | duo_328
+- **ホットドッグ** (hot dog) | duo_330
+- **スーツ** (suit) | duo_333
+- **うでどけい** (watch) | duo_335
+- **ネックレス** (necklace) | duo_336
+- **人** (people, human, someone) | duo_340
+- **カウントダウン** (countdown) | duo_342
+- **クリスマス** (Christmas) | duo_343
+- **イルミネーション** (lights display) | duo_345
+- **パレード** (parade) | duo_347
+- **ダンス** (dance) | duo_352
+- **コミュニティーセンター** (community center, Community center) | duo_353
+- **チョコバナナ** (chocolate covered bananas, chocolate covered banana) | duo_357
+- **食べ物** (food) | duo_358
+- **はなびたいかい** (fireworks display) | duo_361
+- **こんしゅうまつ** (this weekend) | duo_364
+- **きじ** (post) | duo_365
+- **ブログ** (blog) | duo_366
+- **バレエ** (ballet) | duo_370
+- **パフォーマンス** (performance) | duo_372
+- **かんじ** (kanji, Chinese character, Chinese characters) | duo_376
+- **ピアノ** (piano) | duo_379
+- **がっき** (instrument) | duo_381
+- **何時間** (how many hours) | duo_384
+- **れんしゅう** (practice) | duo_385
+- **バドミントン** (badminton) | duo_386
+- **バー** (bar) | duo_389
+- **さいご** (last) | duo_391
+- **クライアント** (client) | duo_393
+- **プレゼン** (presentation) | duo_394
+- **ひる休み** (lunch break) | duo_397
+- **しょくどう** (cafeteria) | duo_398
+- **チャーハン** (fried rice) | duo_400
+- **フライドポテト** (french fries) | duo_401
+- **プリンター** (printer) | duo_403
+- **うけつけ** (front desk) | duo_407
+- **ドキュメンタリー** (documentary) | duo_410
+- **ポスター** (poster) | duo_411
+- **はいゆう** (actor) | duo_412
+- **カードゲーム** (card game) | duo_414
+- **パズル** (puzzle) | duo_417
+- **ポップス** (pop) | duo_422
+- **ノンフィクション** (non-fiction) | duo_423
+- **話** (talking, conversation, chat) | duo_427
+- **チョコミント** (mint chocolate chip) | duo_431
+- **バニラ** (vanilla) | duo_433
+- **ショー** (show) | duo_436
+- **ゴーカート** (go-kart) | duo_439
+- **アトラクション** (attraction) | duo_442
+- **三千** (3,000) | duo_445
+- **いりぐち** (entrance) | duo_447
+- **はくぶつかん** (museum) | duo_450
+- **ゆうえんち** (theme park) | duo_451
+- **ジム** (gym) | duo_453
+- **せんしゅ** (athlete, athletes, player) | duo_455
+- **チーム** (team) | duo_457
+- **カメラ** (camera) | duo_459
+- **ごぜん** (a.m., morning) | duo_463
+- **ナビ** (GPS) | duo_465
+- **うんてんしゅ** (driver) | duo_466
+- **ほんやくか** (translator) | duo_468
+- **としょかん** (library) | duo_470
+- **じしょ** (dictionary) | duo_471
+- **マネージャー** (manager) | duo_473
+- **かいしゃ** (company) | duo_474
+- **どうりょう** (coworker) | duo_475
+- **水曜日** (Wednesday, Wednesdays) | duo_478
+- **プロジェクト** (project) | duo_479
+- **しめきり** (deadline) | duo_480
+- **火曜日** (Tuesday, Tuesdays) | duo_485
+- **しつもん** (question) | duo_486
+- **テスト** (test) | duo_489
+- **何曜日** (what day) | duo_490
+- **スミス** (Smith) | duo_492
+- **山田** (Yamada) | duo_493
+- **スペインご** (Spanish) | duo_496
+- **きょうしつ** (classroom) | duo_497
+- **ぶたにく** (pork) | duo_498
+- **コーラ** (cola) | duo_500
+- **ビール** (beer) | duo_502
+- **とんかつ** (pork cutlet) | duo_503
+- **しお** (salt) | duo_504
+- **ソース** (sauce) | duo_505
+- **なま** (raw) | duo_507
+- **とうふ** ((the) tofu, bean curd, tofu) | duo_508
+- **魚** (fish) | duo_510
+- **ぎゅうどん** (beef bowl) | duo_512
+- **卵** (egg, eggs) | duo_517
+- **木曜日** (Thursday, Thursdays) | duo_521
+- **いちご** (strawberry, strawberries) | duo_528
+- **クッキー** (cookies, cookie) | duo_529
+- **みどり** (green) | duo_532
+- **カップケーキ** (cupcake) | duo_534
+- **ケーキや** (cake shop) | duo_541
+- **もの** (stuff) | duo_543
+- **月曜日** (Monday) | duo_546
+- **みそかつ** (miso pork cutlet) | duo_548
+- **にわ** (garden) | duo_549
+- **かんこう** (sightseeing) | duo_550
+- **しろ** (castle) | duo_551
+- **せき** (seat) | duo_552
+- **日本りょうり** (Japanese food) | duo_557
+- **お母さん** (mom, mother, (your) mom) | duo_559
+- **すしや** (sushi restaurant) | duo_560
+- **りょうしん** (parents) | duo_562
+- **お父さん** (dad, (your) dad, (your) father) | duo_563
+- **にく** (meat) | duo_565
+- **フランスりょうり** (French food) | duo_566
+- **ライオン** (lion) | duo_570
+- **ひろば** (plaza) | duo_572
+- **え** (painting) | duo_574
+- **スーツケース** (suitcase) | duo_582
+- **来月** (next month) | duo_589
+- **りょうり** (cuisine, dish, food) | duo_593
+- **買い物** (shopping) | duo_594
+- **ストレッチ** (stretch) | duo_597
+- **おふろ** (bath) | duo_599
+- **せんたく** (laundry) | duo_600
+- **がっこう** (school) | duo_607
+- **かじ** (chore) | duo_608
+- **ソウル** (Seoul) | duo_616
+- **かんこくご** (Korean) | duo_617
+- **マレーシア** (Malaysia) | duo_619
+- **えいご** (English) | duo_620
+- **おにいさん** (big brother, older brothers, older brother) | duo_621
+- **いもうとさん** (younger sister) | duo_622
+- **たいわん** (Taiwan) | duo_625
+- **コーチ** (coach) | duo_627
+- **おねえさん** (big sister, big sisters, older sisters) | duo_629
+- **おとうとさん** (younger brother) | duo_634
+- **ココア** (cocoa) | duo_637
+- **おんせん** (hot spring) | duo_638
+- **ふゆ** (winter) | duo_639
+- **こんばん** (this evening, tonight) | duo_640
+- **くもり** (cloudy weather, cloudiness) | duo_642
+- **あき** (fall) | duo_644
+- **はなび** (fireworks) | duo_646
+- **プール** (swimming pools, pools, pool) | duo_648
+- **なつ** (summer) | duo_651
+- **日** (day, the sun, (a) day) | duo_652
+- **はる** (spring) | duo_655
+- **ごかぞく** (your family, family) | duo_664
+- **何さい** (how old) | duo_668
+- **〇** (0, zero) | duo_669
+- **九** (nine) | duo_670
+- **びょういん** (hospital) | duo_673
+- **けいさつ** (police) | duo_674
+- **おみやげ** (souvenir) | duo_680
+- **山** (mountain, mount, mountains) | duo_685
+- **ラーメンや** (ramen shop) | duo_687
+- **ピザや** (pizza shop) | duo_688
+- **はらじゅく** (Harajuku) | duo_689
+- **デザート** (dessert) | duo_690
+- **おてら** (temple) | duo_693
+- **ところ** (place) | duo_696
+- **しゅうてん** (final stop) | duo_699
+- **時間** (time, hour, hours) | duo_700
+- **分** (minute, minutes) | duo_701
+- **あさくさ** (Asakusa) | duo_708
+- **うえのこうえん** (Ueno Park) | duo_709
+- **あきはばら** (Akihabara) | duo_715
+- **つくえ** (desk) | duo_721
+- **れいぞうこ** (fridge) | duo_723
+- **いす** (chair, chairs) | duo_724
+- **テーブル** (table, tables) | duo_725
+- **でんしレンジ** (microwave) | duo_726
+- **ふとん** (futon, futons) | duo_727
+- **シャワー** (shower, showers) | duo_730
+- **そうじき** (vacuum cleaner) | duo_731
+- **リビング** (living room) | duo_735
+- **いえ** (house) | duo_742
+- **れんあい** (romance) | duo_743
+- **コメディ** (comedy) | duo_744
+- **アクション** (action) | duo_746
+- **アメリカの** (... of the US, American, ... of the United States) | duo_747
+- **ファンタジー** (fantasy) | duo_749
+- **ホラー** (horror) | duo_750
+- **ミステリー** (mystery) | duo_753
+- **Kポップ** (K-pop) | duo_754
+- **日本の** (Japan's, of Japan, Japanese) | duo_755
+- **ベトナム** (Vietnam) | duo_757
+- **かんこく** (Korea, korean) | duo_758
+- **ちゅうごく** (China) | duo_760
+- **さんは** (Mr./Ms.) | duo_761
+- **かれし** (boyfriend) | duo_762
+- **ダニエル** (Daniel) | duo_768
+- **パスタ** (pasta) | duo_771
+- **バレーボール** (volleyball) | duo_777
+- **まいしゅう** (every week) | duo_778
+- **何時に** ((at) what time) | duo_782
+- **新聞** (newspaper) | duo_784
+- **ラジオ** (radio) | duo_785
+- **でぐち** (exit) | duo_788
+- **じはんき** (vending machines, vending machine) | duo_789
+- **コインロッカー** (storage lockers) | duo_790
+- **コンセント** (outlet) | duo_795
+- **でんわ** (phone) | duo_797
+- **ちか** (underground level) | duo_798
+- **おてあらい** (restroom) | duo_801
+- **wifi** (wifi) | duo_802
+- **ゴミばこ** (trash can) | duo_804
+- **のりかえ** (transfer) | duo_805
+- **いっかい** (first floor) | duo_809
+- **ホーム** (platform) | duo_810
+- **じゅうどう** (judo) | duo_812
+- **テニス** (tennis) | duo_813
+- **日曜日** (Sunday) | duo_815
+- **からて** (karate) | duo_817
+- **スポーツ** (sports) | duo_821
+- **ドラマ** (drama) | duo_824
+- **しゅうまつ** (weekend) | duo_827
+- **アイスコーヒー** (iced coffee) | duo_829
+- **こうちゃ** (black teas, black tea, tea) | duo_831
+- **サラダ** (salad, salads) | duo_835
+- **おにぎり** (rice balls, rice ball, onigiri) | duo_838
+- **水** (water, waters) | duo_846
+- **レストラン** (restaurant) | duo_847
+- **うどん** (udon) | duo_849
+- **てんぷら** (tempura) | duo_850
+- **みせ** (store) | duo_854
+- **千** (thousand) | duo_856
+- **ネクタイ** (tie, necktie, ties) | duo_858
+- **えん** (yen) | duo_859
+- **百** (hundred) | duo_861
+- **ドレス** (dress) | duo_865
+- **ふく** (clothes) | duo_872
+- **さいふ** (wallet) | duo_875
+- **まいばん** (every night) | duo_878
+- **半** (thirty) | duo_880
+- **八** (eight) | duo_881
+- **べんとう** (boxed lunch) | duo_882
+- **ひるごはん** (lunch) | duo_883
+- **十二** (twelve) | duo_884
+- **十** (ten) | duo_885
+- **十一** (eleven) | duo_886
+- **時** (o'clock) | duo_889
+- **ジュース** (juice) | duo_893
+- **パン** (bread) | duo_895
+- **サンドイッチ** (sandwich) | duo_896
+- **やきゅう** (baseball) | duo_901
+- **ざっし** (magazines) | duo_902
+- **本** (books) | duo_903
+- **ニュース** (news) | duo_905
+- **おんがく** (music) | duo_906
+- **ジャズ** (jazz) | duo_909
+- **テレビ** (TV) | duo_917
+- **おっと** (my husband) | duo_919
+- **七** (7, seven, seventh) | duo_920
+- **むすめ** (my daughter) | duo_924
+- **六** (six) | duo_925
+- **だいがくせい** (college student) | duo_927
+- **かんごし** (nurse) | duo_929
+- **五** (5, five) | duo_932
+- **かいしゃいん** (office worker) | duo_934
+- **あね** (my older sister) | duo_935
+- **四** (four) | duo_936
+- **さい** (years old) | duo_938
+- **エンジニア** (engineer) | duo_940
+- **父** (dad) | duo_941
+- **かぞく** (family) | duo_942
+- **母** (mom, mother, my mom) | duo_943
+- **トロント** (Toronto) | duo_948
+- **とし** (years, cities, city) | duo_950
+- **日本** (Japan, Japanese) | duo_952
+- **ニューヨーク** (New York) | duo_956
+- **おなまえは** (what's your name) | duo_964
+- **かばん** (bag) | duo_965
+- **中山** (Nakayama) | duo_966
+- **田中** (Tanaka) | duo_967
+- **山口** (Yamaguchi) | duo_968
+- **ちず** (map) | duo_972
+- **きっぷ** (ticket) | duo_973
+- **くうこう** (airport) | duo_976
+- **はん** (thirty) | duo_977
+- **ごろ** (around, about) | duo_979
+- **いま** (now, current) | duo_980
+- **一** (one, an, a) | duo_981
+- **二** (two, 2) | duo_982
+- **なんじ** (what time) | duo_983
+- **三** (3, three, third) | duo_984
+- **じ** (o'clock) | duo_985
+- **いち** (one, an) | duo_987
+- **たなか** (Tanaka) | duo_993
+- **コンビニ** (convenience store) | duo_1012
+- **にほんじん** (Japanese) | duo_1018
+- **カナダ** (Canada) | duo_1019
+- **アメリカじん** (American) | duo_1020
+- **にほん** (Japan) | duo_1024
+- **ピザ** (pizza) | duo_1030
+- **さん** (Mr., Miss, Mrs.) | duo_1039
+- **なおみ** (Naomi) | duo_1041
+- **がくせい** (student, students) | duo_1046
+- **ひと** (person, people) | duo_1047
+
+## VERB (83 words)
+
+- **あそびたいです** (want to play) | duo_1
+- **会いたくないです** (don't want to see, don't want to meet) | duo_8
+- **ねました** (went to sleep, slept) | duo_9
+- **行きたくないです** (do not want to go) | duo_12
+- **食べたいです** (want to eat) | duo_13
+- **ねたいです** (want to sleep) | duo_14
+- **かたづけます** ((will) clean up, going to tidy up) | duo_23
+- **帰ります** (am going home, goes home, am going back) | duo_24
+- **になります** (will be, becomes, become) | duo_37
+- **つけます** (put on, turns on, turn on) | duo_55
+- **さきます** (bloom, blooms, will bloom) | duo_58
+- **住んでいます** (live, lives) | duo_59
+- **しまります** (close, closes) | duo_92
+- **そつぎょうします** (graduate) | duo_101
+- **はいります** (enter, join, go in) | duo_102
+- **つかれました** (was tired, am tired, is tired) | duo_105
+- **話したいです** (want to talk) | duo_110
+- **ならびます** ((will) wait in line, (will) form a line, (will) queue) | duo_112
+- **飲みたいです** (want to drink) | duo_113
+- **もどります** (will return, return) | duo_116
+- **でかけたいです** (want to go out) | duo_120
+- **行きたいです** (would like to go, want to go, wants to go) | duo_123
+- **会いたいです** (want to meet) | duo_124
+- **ひかります** (lights up) | duo_133
+- **きります** (going to cut) | duo_147
+- **あるきます** (walk, walking, am walking) | duo_148
+- **わたります** (cross) | duo_156
+- **れんしゅうしました** (practiced) | duo_169
+- **見つけました** (found, caught) | duo_174
+- **あそびました** (played) | duo_178
+- **行きました** (went, (I) went) | duo_179
+- **食べました** (ate, (I) ate, had) | duo_181
+- **来ました** (have come, came, has arrived) | duo_185
+- **とまりませんか** (Shall we not stay) | duo_211
+- **さがします** (will look for, am going to look for) | duo_212
+- **あきます** (opens, open) | duo_238
+- **やきます** (bake, am going to bake, grill) | duo_242
+- **たのしみます** (going to enjoy) | duo_247
+- **よびます** ((will) call, calls, going to call) | duo_305
+- **ゆっくりします** (going to relax) | duo_306
+- **はらいます** (pay, going to pay, will pay) | duo_310
+- **のりかえます** (switching, going to transfer, are switching) | duo_314
+- **のります** (take, ride, getting on) | duo_323
+- **よやくします** (am going to reserve, book, will reserve) | duo_331
+- **食べませんか** (do you want to eat, won't you eat, would you like to eat) | duo_356
+- **あそびませんか** (play) | duo_362
+- **作ります** (going to make, make, (I) make) | duo_368
+- **書きます** (will write) | duo_369
+- **おどります** (dance, going to dance) | duo_373
+- **はじまります** (is starting, starts, begins) | duo_374
+- **見ません** (does not see, do not watch, does not look at) | duo_413
+- **しません** (do not, will not, does not) | duo_416
+- **ききません** (don't really listen to) | duo_421
+- **見ましょうか** (should we see) | duo_438
+- **うんどうします** (exercise, am going to exercise) | duo_454
+- **りょこうします** (travel, travels) | duo_461
+- **うんてんします** (drive) | duo_464
+- **あらいます** (wash, going to wash, washes) | duo_467
+- **ほんやくします** (translate) | duo_469
+- **つかいます** (will use, uses) | duo_472
+- **飲みません** ((I) won't drink, don't take, (I) do not drink) | duo_501
+- **つかいましょう** (we should use) | duo_506
+- **つくりましょうか** (shall I make, should we make, should I make) | duo_522
+- **まちます** (wait for) | duo_547
+- **にのります** (get on, going to ride, take) | duo_554
+- **食べましょう** (we should eat) | duo_564
+- **かえりましょう** (we should return) | duo_567
+- **休みましょう** (we should rest) | duo_568
+- **とりましょう** (we should take) | duo_571
+- **見ましょう** (let's see, let's view, let's watch) | duo_576
+- **会います** (am going to meet up, (will) meet, (is) meeting) | duo_581
+- **会いましょう** (let's meet, see you) | duo_584
+- **にはいります** (am going to take, take, going to enroll) | duo_598
+- **かえります** (am returning, will return home, returning) | duo_612
+- **くすりを飲みます** (take) | duo_660
+- **休みます** (rest, take a break, absent (from)) | duo_661
+- **すわります** (sit, going to sit) | duo_677
+- **はしります** (runs, run) | duo_769
+- **ねます** (sleep, go to sleep, will go to sleep) | duo_772
+- **シャワーをあびます** (take a shower) | duo_773
+- **メールを読みます** (check emails) | duo_774
+- **話します** (speaks, speak, tells) | duo_814
+- **あそびます** (hang out, hangs out, (I) will play) | duo_825
+
+## ADJECTIVE (56 words)
+
+- **いたいです** (hurts, painful, it hurts) | duo_5
+- **ねむい** (sleepy) | duo_21
+- **いそがしくない** (not busy) | duo_26
+- **とおくない** (not far) | duo_29
+- **たのしくない** (aren't fun) | duo_44
+- **くらくない** (not dark) | duo_47
+- **キラキラ** (sparkle, glisten, sparkly) | duo_64
+- **ふわふわ** (fluffy) | duo_71
+- **ボロボロ** (worn-out) | duo_79
+- **ふべん** (inconvenient) | duo_88
+- **しんせつ** (nice, kind) | duo_90
+- **おもい** (heavy) | duo_128
+- **かるい** (light, lightweight) | duo_137
+- **安い** (inexpensive, cheap, cheaper) | duo_140
+- **むりょう** (free) | duo_196
+- **おおい** (a lot of, large, a lot) | duo_218
+- **からい** (spicy) | duo_225
+- **つめたい** (cold) | duo_234
+- **すずしい** (cool) | duo_244
+- **くらい** (dark) | duo_249
+- **カラフルな** (colorful) | duo_260
+- **げんき** (well, lively, fine) | duo_338
+- **むずかしい** (difficult) | duo_415
+- **きいろい** (yellow) | duo_435
+- **すきな** (favorite) | duo_441
+- **こわい** (scary) | duo_443
+- **つまらない** (boring) | duo_449
+- **プロの** (professional, pro) | duo_456
+- **しょっぱい** (salty) | duo_499
+- **ひま** (available, bored, free) | duo_520
+- **あまい** (sweet) | duo_539
+- **みじかい** (short) | duo_544
+- **べんり** (convenient) | duo_553
+- **たいへん** (tough, very, hard) | duo_596
+- **さむい** (cold) | duo_635
+- **あつい** (hot, thick) | duo_647
+- **あぶない** (dangerous) | duo_675
+- **はやい** (fast) | duo_704
+- **せまい** (cramped) | duo_734
+- **ひろい** (spacious) | duo_741
+- **ちかい** (close) | duo_791
+- **とおい** (far) | duo_796
+- **小さい** (small, little) | duo_832
+- **大きい** (big) | duo_837
+- **たかい** (expensive, big, tall) | duo_852
+- **やすい** (cheap, inexpensive) | duo_860
+- **あおい** (blue) | duo_863
+- **すてき** (lovely, nice, cute) | duo_866
+- **新しい** (new, newer) | duo_870
+- **ダサい** (hideous) | duo_873
+- **古い** (old) | duo_876
+- **あたまがいい** (smart) | duo_921
+- **いそがしい** (busy) | duo_939
+- **きれい** (clean) | duo_946
+- **しろい** (white) | duo_999
+- **ちいさい** (small, little) | duo_1023
+
+## COUNTER (39 words)
+
+- **四日** (fourth, four days, 4th) | duo_38
+- **三月** (March) | duo_39
+- **一月** (January) | duo_48
+- **万** (ten thousand) | duo_135
+- **四階** (fourth floor) | duo_193
+- **三日** (third, three days) | duo_209
+- **二日** (two days, second, 2) | duo_210
+- **七つ** (seven (things), seven) | duo_215
+- **六つ** (six (things), six) | duo_220
+- **五つ** (five (things), five) | duo_227
+- **二人** (two people, they, two) | duo_230
+- **一日** (one day, first, a day) | duo_252
+- **五月** (May) | duo_253
+- **にひき** (two animals) | duo_270
+- **いっぴき** (one) | duo_275
+- **四年生** (senior, seniors) | duo_296
+- **三年生** (third grade student, junior) | duo_297
+- **二年生** (sophomore) | duo_300
+- **一年生** (freshman) | duo_301
+- **十二月** (December) | duo_346
+- **十月** (October) | duo_350
+- **九時間** (nine hours) | duo_380
+- **四時間** (for four hours) | duo_388
+- **二階** (the second floor) | duo_399
+- **ななつ** (seven) | duo_481
+- **むっつ** (six) | duo_482
+- **いつつ** (five) | duo_488
+- **四つ** (four (things), four) | duo_524
+- **三つ** (three) | duo_530
+- **一つ** (one (thing), one) | duo_533
+- **ひとり** (one) | duo_613
+- **ふたり** (two) | duo_618
+- **七月** (July) | duo_649
+- **十分** (sufficient, enough, adequate) | duo_705
+- **四時** (four o'clock) | duo_779
+- **よっつ** (four) | duo_839
+- **みっつ** (three) | duo_841
+- **ふたつ** (two) | duo_843
+- **ひとつ** (one) | duo_845
+
+## ADVERB (19 words)
+
+- **後で** (later, after, afterwards) | duo_4
+- **もうすこし** (more, a bit longer) | duo_6
+- **今** (this, now, just) | duo_19
+- **前に** (previously, ago, in front of) | duo_33
+- **まっすぐ** (straight) | duo_76
+- **また** (again, back, see you ...) | duo_104
+- **もう** (yet, now, already) | duo_106
+- **はじめて** (for the first time) | duo_177
+- **あまり** ((not) a lot of, (not) so, (not) too) | duo_426
+- **はやく** (fast, early, quickly) | duo_487
+- **たくさん** (a lot of) | duo_494
+- **いろいろ** (all sorts of) | duo_602
+- **もうすぐ** (soon, almost, shortly) | duo_707
+- **いつ** (when, what time) | duo_720
+- **たぶん** (probably) | duo_728
+- **まだ** (still, yet, too) | duo_740
+- **いつも** (always, all the time) | duo_787
+- **すこし** (a bit) | duo_833
+- **とても** (very) | duo_945
+
+## PARTICLE (13 words)
+
+- **まで** (through, even, before) | duo_396
+- **から** (because, starting, through) | duo_404
+- **で** (as a, under, through) | duo_575
+- **が** ((softens the tone), (indicates the subject), but) | duo_630
+- **な** (do not, (adjective ending), don't) | duo_695
+- **ね** (isn't it?) | duo_871
+- **を** (through, with, for) | duo_914
+- **も** (even, any, also) | duo_957
+- **の** (for, 's, one) | duo_970
+- **に** (to, in, as (a)) | duo_986
+- **か** (or, is it?, that) | duo_1026
+- **は** (is, with, regarding) | duo_1035
+- **と** (and, that, door) | duo_1054
+
+## OTHER (10 words)
+
+- **でも** (but, however, neither) - _conjunction_ | duo_511
+- **どの** (any, each, which) - _determiner_ | duo_706
+- **どんな** (any, what kind of, what (sort of)) - _determiner_ | duo_748
+- **ええと** (um) - _interjection_ | duo_840
+- **あ** (ah, oh) - _interjection_ | duo_844
+- **あの** (those, ah, that (over there)) - _determiner_ | duo_862
+- **その** (the, that, its) - _determiner_ | duo_990
+- **いいえ** (no) - _interjection_ | duo_1027
+- **はい** (yes) - _interjection_ | duo_1028
+- **です** (there is, it's, I'm) - _copula_ | duo_1053
+
+## PHRASE (4 words)
+
+- **よろしくおねがいします** (nice to meet you, glad to work with you) | duo_408
+- **ほんとうですか** (really) | duo_745
+- **がすきですか** (do you like) | duo_751
+- **ようこそ** (welcome) | duo_961
+
+## PRONOUN (4 words)
+
+- **何** (anything, which, what) | duo_606
+- **あれ** (hey, that (one) (over there), what) | duo_691
+- **私** (I) | duo_960
+- **それら** (they, them, those) | duo_996
+
