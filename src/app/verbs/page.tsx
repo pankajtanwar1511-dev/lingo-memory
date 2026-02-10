@@ -509,13 +509,22 @@ export default function VerbsPage() {
 
           <div className="flex flex-wrap justify-center gap-3 pt-2">
             <Button
+              variant="default"
+              size="lg"
+              onClick={() => window.location.href = '/verbs/conjugation-rules'}
+              className="gap-2"
+            >
+              <BookOpen className="h-5 w-5" />
+              Quick Reference: All Rules
+            </Button>
+            <Button
               variant="outline"
               size="lg"
               onClick={() => window.location.href = '/verbs/dictionary-form-learning'}
               className="gap-2"
             >
               <GraduationCap className="h-5 w-5" />
-              Learn Masu → Dictionary Form Rules
+              Learn Dictionary Form
             </Button>
             <Button
               variant="outline"
@@ -524,7 +533,7 @@ export default function VerbsPage() {
               className="gap-2"
             >
               <GraduationCap className="h-5 w-5" />
-              Learn Masu → Te Form Rules
+              Learn Te Form
             </Button>
           </div>
         </motion.div>
