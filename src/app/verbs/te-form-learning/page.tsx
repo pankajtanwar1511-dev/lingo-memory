@@ -6,6 +6,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
+import { Switch } from "@/components/ui/switch"
+import { Label } from "@/components/ui/label"
 import { ArrowRight, BookOpen, Lightbulb, CheckCircle2, AlertTriangle, Sparkles } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -145,6 +147,7 @@ export default function TeFormLearningPage() {
   const [currentRuleIndex, setCurrentRuleIndex] = useState(0)
   const [showExceptions, setShowExceptions] = useState(false)
   const [completedRules, setCompletedRules] = useState<Set<string>>(new Set())
+  const [showKana, setShowKana] = useState(false)
 
   useEffect(() => {
     async function loadVerbs() {
@@ -279,6 +282,30 @@ export default function TeFormLearningPage() {
           </CardContent>
         </Card>
 
+        {/* Kanji/Kana Toggle */}
+        <Card>
+          <CardContent className="pt-6">
+            <div className="flex items-center justify-center gap-4">
+              <Label htmlFor="kana-toggle" className="text-base font-medium">
+                Display Mode:
+              </Label>
+              <div className="flex items-center gap-3">
+                <span className={`text-sm ${!showKana ? 'font-bold text-primary' : 'text-muted-foreground'}`}>
+                  Kanji
+                </span>
+                <Switch
+                  id="kana-toggle"
+                  checked={showKana}
+                  onCheckedChange={setShowKana}
+                />
+                <span className={`text-sm ${showKana ? 'font-bold text-primary' : 'text-muted-foreground'}`}>
+                  Kana
+                </span>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Rule Card */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -368,7 +395,7 @@ export default function TeFormLearningPage() {
                   <CardContent className="p-4 space-y-3">
                     <div className="text-center space-y-1">
                       <div className="text-2xl font-bold text-primary">
-                        {verb.kanji}
+                        {showKana ? verb.kana : verb.kanji}
                       </div>
                       <div className="text-sm text-muted-foreground">
                         {verb.primaryMeaning}
@@ -378,14 +405,18 @@ export default function TeFormLearningPage() {
                     <div className="space-y-2 text-sm">
                       <div className="flex items-center justify-between p-2 bg-muted/50 rounded">
                         <span className="text-muted-foreground">Masu:</span>
-                        <span className="font-medium">{verb.conjugations.masu}</span>
+                        <span className="font-medium">
+                          {showKana ? verb.conjugations.masuKana : verb.conjugations.masu}
+                        </span>
                       </div>
                       <div className="flex items-center justify-center">
                         <ArrowRight className="h-4 w-4 text-muted-foreground" />
                       </div>
                       <div className="flex items-center justify-between p-2 bg-primary/10 rounded border-2 border-primary/20">
                         <span className="text-primary font-semibold">Te:</span>
-                        <span className="font-bold text-primary">{verb.conjugations.te}</span>
+                        <span className="font-bold text-primary">
+                          {showKana ? verb.conjugations.teKana : verb.conjugations.te}
+                        </span>
                       </div>
                     </div>
                   </CardContent>
