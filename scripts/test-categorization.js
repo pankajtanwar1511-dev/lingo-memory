@@ -8,7 +8,11 @@ const categorizeVerb = (verb) => {
 
   // Exceptions first
   if (verb.kanji === '行く') return 'exceptions';
-  if (verb.kanji === '来る') return 'exceptions';
+
+  // 来る and compound 来る verbs are exceptions
+  if (verb.kanji === '来る' || verb.kanji.includes('来る')) return 'exceptions';
+
+  // する and compound する verbs follow the して pattern
   if (verb.kanji === 'する' || verb.kanji.endsWith('する')) return 'shite';
 
   // Ichidan verbs

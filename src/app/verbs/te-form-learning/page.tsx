@@ -121,10 +121,10 @@ const teFormRules: TeFormRule[] = [
       "Verbs ending in -shimasu",
       "Convert to して",
       "Common with speaking/lending verbs",
-      "Also includes irregular する"
+      "Also includes all する verbs (irregular but same pattern)"
     ],
-    examples: ["話します → 話して", "貸します → 貸して", "押します → 押して"],
-    examplesKana: ["はなします → はなして", "かします → かして", "おします → おして"],
+    examples: ["話します → 話して", "貸します → 貸して", "します → して", "勉強します → 勉強して"],
+    examplesKana: ["はなします → はなして", "かします → かして", "します → して", "べんきょうします → べんきょうして"],
     color: "bg-gradient-to-r from-red-500 to-pink-500"
   }
 ]
@@ -135,20 +135,22 @@ const exceptions: TeFormRule = {
   pattern: "Special Cases",
   rule: "Must be memorized",
   description: [
-    "行く is the ONLY common き→いて exception",
-    "It follows the って pattern instead",
-    "Irregular verbs: する and 来る",
-    "These don't follow normal patterns"
+    "行く is the ONLY き→いて exception (follows って instead)",
+    "Irregular verbs: する and 来る (25 total with compounds)",
+    "22 compound する verbs + 2 compound 来る verbs",
+    "These don't follow normal godan/ichidan patterns"
   ],
   examples: [
     "行きます → 行って (NOT 行いて!)",
+    "します → して",
     "来ます → 来て",
-    "します → して"
+    "持って来ます → 持って来て"
   ],
   examplesKana: [
     "いきます → いって (NOT いいて!)",
+    "します → して",
     "きます → きて",
-    "します → して"
+    "もってきます → もってきて"
   ],
   color: "bg-gradient-to-r from-red-600 to-orange-600"
 }
@@ -181,7 +183,11 @@ export default function TeFormLearningPage() {
 
     // Exceptions first
     if (verb.kanji === '行く') return 'exceptions'
-    if (verb.kanji === '来る') return 'exceptions'
+
+    // 来る and compound 来る verbs are exceptions
+    if (verb.kanji === '来る' || verb.kanji.includes('来る')) return 'exceptions'
+
+    // する and compound する verbs follow the して pattern (same as godan し verbs)
     if (verb.kanji === 'する' || verb.kanji.endsWith('する')) return 'shite'
 
     // Ichidan verbs

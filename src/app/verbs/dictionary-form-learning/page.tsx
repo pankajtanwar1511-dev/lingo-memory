@@ -195,20 +195,22 @@ const exceptions: DictionaryFormRule = {
   pattern: "Special Cases",
   rule: "Must be memorized",
   description: [
-    "する and 来る are irregular verbs",
+    "する and 来る are the only truly irregular verbs",
     "They don't follow the normal godan/ichidan patterns",
-    "Compound verbs with する follow the same pattern",
+    "22 compound する verbs + 2 compound 来る verbs = 25 total",
     "These are essential verbs - memorize them!"
   ],
   examples: [
     "します → する",
     "来ます → 来る",
-    "勉強します → 勉強する"
+    "勉強します → 勉強する",
+    "持って来ます → 持って来る"
   ],
   examplesKana: [
     "します → する",
     "きます → くる",
-    "べんきょうします → べんきょうする"
+    "べんきょうします → べんきょうする",
+    "もってきます → もってくる"
   ],
   color: "bg-gradient-to-r from-red-600 to-orange-600"
 }
@@ -239,9 +241,8 @@ export default function DictionaryFormLearningPage() {
   const categorizeVerb = (verb: N5Verb): string => {
     const masuKana = verb.conjugations.masuKana
 
-    // Exceptions first
-    if (verb.kanji === 'する' || verb.kanji.endsWith('する')) return 'exceptions'
-    if (verb.kanji === '来る') return 'exceptions'
+    // Exceptions first - all irregular verbs (group 3)
+    if (verb.verbGroup === 'irregular') return 'exceptions'
 
     // Ichidan verbs
     if (verb.verbGroup === 'ichidan') return 'ichidan'

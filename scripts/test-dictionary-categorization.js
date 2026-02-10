@@ -6,9 +6,8 @@ const data = JSON.parse(fs.readFileSync(path.join(__dirname, '../public/seed-dat
 const categorizeVerb = (verb) => {
   const masuKana = verb.conjugations.masuKana;
 
-  // Exceptions first
-  if (verb.kanji === 'する' || verb.kanji.endsWith('する')) return 'exceptions';
-  if (verb.kanji === '来る') return 'exceptions';
+  // Exceptions first - all irregular verbs (group 3)
+  if (verb.verbGroup === 'irregular') return 'exceptions';
 
   // Ichidan verbs
   if (verb.verbGroup === 'ichidan') return 'ichidan';
