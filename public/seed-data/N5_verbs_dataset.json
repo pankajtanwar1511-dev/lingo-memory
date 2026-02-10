@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "version": "1.2.0",
-    "generatedAt": "2026-02-09T15:57:43.739Z",
-    "description": "Complete JLPT N5 verbs with comprehensive contextual examples - ALL 141 verbs enhanced with N5-level sentences",
+    "version": "1.3.0",
+    "generatedAt": "2026-02-10T08:46:53.062Z",
+    "description": "Complete JLPT N5 verbs with te-form conjugations and contextual examples",
     "totalEntries": 141,
     "uniqueVerbs": 141,
     "verbsWithJMdictData": 131,
@@ -41,7 +41,9 @@
         "dictionary": "会う",
         "dictionaryKana": "あう",
         "masu": "会います",
-        "masuKana": "あいます"
+        "masuKana": "あいます",
+        "te": "会って",
+        "teKana": "あって"
       },
       "tags": [
         "verb",
@@ -75,7 +77,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "友達に会って、映画を見ました。",
+          "kana": "ともだちにあって、えいがをみました。",
+          "english": "I met my friend and watched a movie.",
+          "highlight": "sequential actions"
+        },
+        {
+          "japanese": "駅で待っている人に会ってください。",
+          "kana": "えきでまっているひとにあってください。",
+          "english": "Please meet the person waiting at the station.",
+          "highlight": "polite request"
+        }
+      ]
     },
     {
       "id": "n5_verb_0002",
@@ -104,7 +120,9 @@
         "dictionary": "遊ぶ",
         "dictionaryKana": "あそぶ",
         "masu": "遊びます",
-        "masuKana": "あそびます"
+        "masuKana": "あそびます",
+        "te": "遊んで",
+        "teKana": "あそんで"
       },
       "tags": [
         "verb",
@@ -138,7 +156,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "公園で遊んでいます。",
+          "kana": "こうえんであそんでいます。",
+          "english": "I am playing in the park.",
+          "highlight": "progressive"
+        },
+        {
+          "japanese": "友達と遊んでもいいですか。",
+          "kana": "ともだちとあそんでもいいですか。",
+          "english": "May I play with friends?",
+          "highlight": "permission"
+        }
+      ]
     },
     {
       "id": "n5_verb_0003",
@@ -168,7 +200,9 @@
         "dictionary": "洗う",
         "dictionaryKana": "あらう",
         "masu": "洗います",
-        "masuKana": "あらいます"
+        "masuKana": "あらいます",
+        "te": "洗って",
+        "teKana": "あらって"
       },
       "tags": [
         "verb",
@@ -202,7 +236,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "手を洗ってください。",
+          "kana": "てをあらってください。",
+          "english": "Please wash your hands.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "毎日、顔を洗っています。",
+          "kana": "まいにち、かおをあらっています。",
+          "english": "I wash my face every day.",
+          "highlight": "habitual action"
+        }
+      ]
     },
     {
       "id": "n5_verb_0004",
@@ -228,7 +276,9 @@
         "dictionary": "ある",
         "dictionaryKana": "ある",
         "masu": "あります",
-        "masuKana": "あります"
+        "masuKana": "あります",
+        "te": "あって",
+        "teKana": "あって"
       },
       "tags": [
         "verb",
@@ -262,7 +312,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": "existence"
+      "context": "existence",
+      "teFormExamples": [
+        {
+          "japanese": "机の上にあって、すぐ見つかりました。",
+          "kana": "つくえのうえにあって、すぐみつかりました。",
+          "english": "It was on the desk and was found immediately.",
+          "highlight": "result"
+        },
+        {
+          "japanese": "ここにあっても、使いません。",
+          "kana": "ここにあっても、つかいません。",
+          "english": "Even if it's here, I won't use it.",
+          "highlight": "conditional"
+        }
+      ]
     },
     {
       "id": "n5_verb_0007",
@@ -287,7 +351,9 @@
         "dictionary": "歩く",
         "dictionaryKana": "あるく",
         "masu": "歩きます",
-        "masuKana": "あるきます"
+        "masuKana": "あるきます",
+        "te": "歩いて",
+        "teKana": "あるいて"
       },
       "tags": [
         "verb",
@@ -321,7 +387,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "駅まで歩いて行きます。",
+          "kana": "えきまであるいていきます。",
+          "english": "I will walk to the station.",
+          "highlight": "manner of movement"
+        },
+        {
+          "japanese": "ゆっくり歩いてください。",
+          "kana": "ゆっくりあるいてください。",
+          "english": "Please walk slowly.",
+          "highlight": "polite request with manner"
+        }
+      ]
     },
     {
       "id": "n5_verb_0008",
@@ -350,7 +430,9 @@
         "dictionary": "言う",
         "dictionaryKana": "いう",
         "masu": "言います",
-        "masuKana": "いいます"
+        "masuKana": "いいます",
+        "te": "言って",
+        "teKana": "いって"
       },
       "tags": [
         "verb",
@@ -384,7 +466,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "もう一度言ってください。",
+          "kana": "もういちどいってください。",
+          "english": "Please say it one more time.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "名前を言って、席に座りました。",
+          "kana": "なまえをいって、せきにすわりました。",
+          "english": "I said my name and sat down.",
+          "highlight": "sequential actions"
+        }
+      ]
     },
     {
       "id": "n5_verb_0009",
@@ -416,7 +512,9 @@
         "dictionary": "行く",
         "dictionaryKana": "いく",
         "masu": "行きます",
-        "masuKana": "いきます"
+        "masuKana": "いきます",
+        "te": "行って",
+        "teKana": "いって"
       },
       "tags": [
         "verb",
@@ -450,7 +548,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "学校に行ってきます。",
+          "kana": "がっこうにいってきます。",
+          "english": "I'm going to school (and will be back).",
+          "highlight": "going and returning"
+        },
+        {
+          "japanese": "買い物に行っています。",
+          "kana": "かいものにいっています。",
+          "english": "I am going shopping.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0010",
@@ -478,7 +590,9 @@
         "dictionary": "急ぐ",
         "dictionaryKana": "いそぐ",
         "masu": "急ぎます",
-        "masuKana": "いそぎます"
+        "masuKana": "いそぎます",
+        "te": "急いで",
+        "teKana": "いそいで"
       },
       "tags": [
         "verb",
@@ -512,7 +626,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "急いでください。",
+          "kana": "いそいでください。",
+          "english": "Please hurry.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "急いで駅に行きました。",
+          "kana": "いそいでえきにいきました。",
+          "english": "I hurried to the station.",
+          "highlight": "manner adverb"
+        }
+      ]
     },
     {
       "id": "n5_verb_0011",
@@ -542,7 +670,9 @@
         "dictionary": "要る",
         "dictionaryKana": "いる",
         "masu": "要ります",
-        "masuKana": "います"
+        "masuKana": "います",
+        "te": "要って",
+        "teKana": "いって"
       },
       "tags": [
         "verb",
@@ -576,7 +706,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "お金がいって、困っています。",
+          "kana": "おかねがいって、こまっています。",
+          "english": "I need money and am in trouble.",
+          "highlight": "reason"
+        },
+        {
+          "japanese": "これはいらなくて、あれがいります。",
+          "kana": "これはいらなくて、あれがいります。",
+          "english": "I don't need this, but I need that.",
+          "highlight": "contrast"
+        }
+      ]
     },
     {
       "id": "n5_verb_0012",
@@ -609,7 +753,9 @@
         "dictionary": "動く",
         "dictionaryKana": "うごく",
         "masu": "動きます",
-        "masuKana": "うごきます"
+        "masuKana": "うごきます",
+        "te": "動いて",
+        "teKana": "うごいて"
       },
       "tags": [
         "verb",
@@ -643,7 +789,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "車が動いています。",
+          "kana": "くるまがうごいています。",
+          "english": "The car is moving.",
+          "highlight": "progressive"
+        },
+        {
+          "japanese": "動いてはいけません。",
+          "kana": "うごいてはいけません。",
+          "english": "You must not move.",
+          "highlight": "prohibition"
+        }
+      ]
     },
     {
       "id": "n5_verb_0013",
@@ -671,7 +831,9 @@
         "dictionary": "歌う",
         "dictionaryKana": "うたう",
         "masu": "歌います",
-        "masuKana": "うたいます"
+        "masuKana": "うたいます",
+        "te": "歌って",
+        "teKana": "うたって"
       },
       "tags": [
         "verb",
@@ -705,7 +867,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "一緒に歌ってください。",
+          "kana": "いっしょにうたってください。",
+          "english": "Please sing together.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "歌を歌って、楽しみました。",
+          "kana": "うたをうたって、たのしみました。",
+          "english": "I sang a song and had fun.",
+          "highlight": "sequential pleasure"
+        }
+      ]
     },
     {
       "id": "n5_verb_0014",
@@ -732,7 +908,9 @@
         "dictionary": "売る",
         "dictionaryKana": "うる",
         "masu": "売ります",
-        "masuKana": "うります"
+        "masuKana": "うります",
+        "te": "売って",
+        "teKana": "うって"
       },
       "tags": [
         "verb",
@@ -766,7 +944,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "この本を売ってください。",
+          "kana": "このほんをうってください。",
+          "english": "Please sell this book.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "お店で野菜を売っています。",
+          "kana": "おみせでやさいをうっています。",
+          "english": "They are selling vegetables at the store.",
+          "highlight": "progressive business"
+        }
+      ]
     },
     {
       "id": "n5_verb_0015",
@@ -793,7 +985,9 @@
         "dictionary": "置く",
         "dictionaryKana": "おく",
         "masu": "置きます",
-        "masuKana": "おきます"
+        "masuKana": "おきます",
+        "te": "置いて",
+        "teKana": "おいて"
       },
       "tags": [
         "verb",
@@ -827,7 +1021,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "置いてください。",
+          "kana": "おいてください。",
+          "english": "Please put.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、置いています。",
+          "kana": "いま、おいています。",
+          "english": "Currently puting.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0016",
@@ -854,7 +1062,9 @@
         "dictionary": "送る",
         "dictionaryKana": "おくる",
         "masu": "送ります",
-        "masuKana": "おくります"
+        "masuKana": "おくります",
+        "te": "送って",
+        "teKana": "おくって"
       },
       "tags": [
         "verb",
@@ -888,7 +1098,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": "transportation"
+      "context": "transportation",
+      "teFormExamples": [
+        {
+          "japanese": "送ってください。",
+          "kana": "おくってください。",
+          "english": "Please send; escort.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、送っています。",
+          "kana": "いま、おくっています。",
+          "english": "Currently send; escorting.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0018",
@@ -918,7 +1142,9 @@
         "dictionary": "押す",
         "dictionaryKana": "おす",
         "masu": "押します",
-        "masuKana": "おします"
+        "masuKana": "おします",
+        "te": "押して",
+        "teKana": "おして"
       },
       "tags": [
         "verb",
@@ -952,7 +1178,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "押してください。",
+          "kana": "おしてください。",
+          "english": "Please push, press.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、押しています。",
+          "kana": "いま、おしています。",
+          "english": "Currently push, pressing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0019",
@@ -979,7 +1219,9 @@
         "dictionary": "思い出す",
         "dictionaryKana": "おもいだす",
         "masu": "思い出します",
-        "masuKana": "おもいだします"
+        "masuKana": "おもいだします",
+        "te": "思い出して",
+        "teKana": "おもいだして"
       },
       "tags": [
         "verb",
@@ -1013,7 +1255,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "思い出してください。",
+          "kana": "おもいだしてください。",
+          "english": "Please remember, recollect.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、思い出しています。",
+          "kana": "いま、おもいだしています。",
+          "english": "Currently remember, recollecting.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0020",
@@ -1043,7 +1299,9 @@
         "dictionary": "思う",
         "dictionaryKana": "おもう",
         "masu": "思います",
-        "masuKana": "おもいます"
+        "masuKana": "おもいます",
+        "te": "思って",
+        "teKana": "おもって"
       },
       "tags": [
         "verb",
@@ -1077,7 +1335,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "思ってください。",
+          "kana": "おもってください。",
+          "english": "Please think.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、思っています。",
+          "kana": "いま、おもっています。",
+          "english": "Currently thinking.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0021",
@@ -1103,7 +1375,9 @@
         "dictionary": "泳ぐ",
         "dictionaryKana": "およぐ",
         "masu": "泳ぎます",
-        "masuKana": "およぎます"
+        "masuKana": "およぎます",
+        "te": "泳いで",
+        "teKana": "およいで"
       },
       "tags": [
         "verb",
@@ -1137,7 +1411,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "泳いでください。",
+          "kana": "およいでください。",
+          "english": "Please swim.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、泳いでいます。",
+          "kana": "いま、およいでいます。",
+          "english": "Currently swiming.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0022",
@@ -1168,7 +1456,9 @@
         "dictionary": "下ろす",
         "dictionaryKana": "おろす",
         "masu": "下ろします",
-        "masuKana": "おろします"
+        "masuKana": "おろします",
+        "te": "下ろして",
+        "teKana": "おろして"
       },
       "tags": [
         "verb",
@@ -1202,7 +1492,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "下ろしてください。",
+          "kana": "おろしてください。",
+          "english": "Please withdraw.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、下ろしています。",
+          "kana": "いま、おろしています。",
+          "english": "Currently withdrawing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0023",
@@ -1233,7 +1537,9 @@
         "dictionary": "終わる",
         "dictionaryKana": "おわる",
         "masu": "終わります",
-        "masuKana": "おわります"
+        "masuKana": "おわります",
+        "te": "終わって",
+        "teKana": "おわって"
       },
       "tags": [
         "verb",
@@ -1267,7 +1573,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "終わってください。",
+          "kana": "おわってください。",
+          "english": "Please finish.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、終わっています。",
+          "kana": "いま、おわっています。",
+          "english": "Currently finishing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0024",
@@ -1298,7 +1618,9 @@
         "dictionary": "買う",
         "dictionaryKana": "かう",
         "masu": "買います",
-        "masuKana": "かいます"
+        "masuKana": "かいます",
+        "te": "買って",
+        "teKana": "かって"
       },
       "tags": [
         "verb",
@@ -1332,7 +1654,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "買ってください。",
+          "kana": "かってください。",
+          "english": "Please buy.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、買っています。",
+          "kana": "いま、かっています。",
+          "english": "Currently buying.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0025",
@@ -1362,7 +1698,9 @@
         "dictionary": "返す",
         "dictionaryKana": "かえす",
         "masu": "返します",
-        "masuKana": "かえします"
+        "masuKana": "かえします",
+        "te": "返して",
+        "teKana": "かえして"
       },
       "tags": [
         "verb",
@@ -1396,7 +1734,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "返してください。",
+          "kana": "かえしてください。",
+          "english": "Please give back, return.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、返しています。",
+          "kana": "いま、かえしています。",
+          "english": "Currently give back, returning.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0026",
@@ -1426,7 +1778,9 @@
         "dictionary": "帰る",
         "dictionaryKana": "かえる",
         "masu": "帰ります",
-        "masuKana": "かえます"
+        "masuKana": "かえます",
+        "te": "帰って",
+        "teKana": "かえって"
       },
       "tags": [
         "verb",
@@ -1460,7 +1814,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "帰ってください。",
+          "kana": "かえってください。",
+          "english": "Please go home, return.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、帰っています。",
+          "kana": "いま、かえっています。",
+          "english": "Currently go home, returning.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0027",
@@ -1486,7 +1854,9 @@
         "dictionary": "掛かる",
         "dictionaryKana": "かかる",
         "masu": "掛かります",
-        "masuKana": "かかります"
+        "masuKana": "かかります",
+        "te": "掛かって",
+        "teKana": "かかって"
       },
       "tags": [
         "verb",
@@ -1520,7 +1890,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "掛かってください。",
+          "kana": "かかってください。",
+          "english": "Please take; cost (time/money).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、掛かっています。",
+          "kana": "いま、かかっています。",
+          "english": "Currently take; cost (time/money)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0028",
@@ -1549,7 +1933,9 @@
         "dictionary": "書く",
         "dictionaryKana": "かく",
         "masu": "書きます",
-        "masuKana": "かきます"
+        "masuKana": "かきます",
+        "te": "書いて",
+        "teKana": "かいて"
       },
       "tags": [
         "verb",
@@ -1583,7 +1969,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "書いてください。",
+          "kana": "かいてください。",
+          "english": "Please write, draw, paint.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、書いています。",
+          "kana": "いま、かいています。",
+          "english": "Currently write, draw, painting.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0029",
@@ -1611,7 +2011,9 @@
         "dictionary": "貸す",
         "dictionaryKana": "かす",
         "masu": "貸します",
-        "masuKana": "かします"
+        "masuKana": "かします",
+        "te": "貸して",
+        "teKana": "かして"
       },
       "tags": [
         "verb",
@@ -1645,7 +2047,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "貸してください。",
+          "kana": "かしてください。",
+          "english": "Please lend.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、貸しています。",
+          "kana": "いま、かしています。",
+          "english": "Currently lending.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0030",
@@ -1671,7 +2087,9 @@
         "dictionary": "勝つ",
         "dictionaryKana": "かつ",
         "masu": "勝ちます",
-        "masuKana": "かちます"
+        "masuKana": "かちます",
+        "te": "勝って",
+        "teKana": "かって"
       },
       "tags": [
         "verb",
@@ -1705,7 +2123,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "勝ってください。",
+          "kana": "かってください。",
+          "english": "Please win.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、勝っています。",
+          "kana": "いま、かっています。",
+          "english": "Currently wining.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0031",
@@ -1738,7 +2170,9 @@
         "dictionary": "被る",
         "dictionaryKana": "かぶる",
         "masu": "被ります",
-        "masuKana": "かぶります"
+        "masuKana": "かぶります",
+        "te": "被って",
+        "teKana": "かぶって"
       },
       "tags": [
         "verb",
@@ -1772,7 +2206,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "被ってください。",
+          "kana": "かぶってください。",
+          "english": "Please put on (hat).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、被っています。",
+          "kana": "いま、かぶっています。",
+          "english": "Currently put on (hat)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0032",
@@ -1804,7 +2252,9 @@
         "dictionary": "頑張る",
         "dictionaryKana": "がんばる",
         "masu": "頑張ります",
-        "masuKana": "がんばります"
+        "masuKana": "がんばります",
+        "te": "頑張って",
+        "teKana": "がんばって"
       },
       "tags": [
         "verb",
@@ -1838,7 +2288,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "頑張ってください。",
+          "kana": "がんばってください。",
+          "english": "Please do one's best.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、頑張っています。",
+          "kana": "いま、がんばっています。",
+          "english": "Currently do one's besting.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0033",
@@ -1864,7 +2328,9 @@
         "dictionary": "聞く",
         "dictionaryKana": "きく",
         "masu": "聞きます",
-        "masuKana": "ききます"
+        "masuKana": "ききます",
+        "te": "聞いて",
+        "teKana": "きいて"
       },
       "tags": [
         "verb",
@@ -1898,7 +2364,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": "listening"
+      "context": "listening",
+      "teFormExamples": [
+        {
+          "japanese": "聞いてください。",
+          "kana": "きいてください。",
+          "english": "Please hear; listen.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、聞いています。",
+          "kana": "いま、きいています。",
+          "english": "Currently hear; listening.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0034",
@@ -1924,7 +2404,9 @@
         "dictionary": "聞く",
         "dictionaryKana": "きく",
         "masu": "聞きます",
-        "masuKana": "ききます"
+        "masuKana": "ききます",
+        "te": "聞いて",
+        "teKana": "きいて"
       },
       "tags": [
         "verb",
@@ -1958,7 +2440,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": "asking"
+      "context": "asking",
+      "teFormExamples": [
+        {
+          "japanese": "聞いてください。",
+          "kana": "きいてください。",
+          "english": "Please ask.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、聞いています。",
+          "kana": "いま、きいています。",
+          "english": "Currently asking.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0035",
@@ -1987,7 +2483,9 @@
         "dictionary": "切る",
         "dictionaryKana": "きる",
         "masu": "切ります",
-        "masuKana": "きます"
+        "masuKana": "きます",
+        "te": "切って",
+        "teKana": "きって"
       },
       "tags": [
         "verb",
@@ -2021,7 +2519,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "切ってください。",
+          "kana": "きってください。",
+          "english": "Please cut, slice.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、切っています。",
+          "kana": "いま、きっています。",
+          "english": "Currently cut, sliceing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0036",
@@ -2052,7 +2564,9 @@
         "dictionary": "消す",
         "dictionaryKana": "けす",
         "masu": "消します",
-        "masuKana": "けします"
+        "masuKana": "けします",
+        "te": "消して",
+        "teKana": "けして"
       },
       "tags": [
         "verb",
@@ -2086,7 +2600,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "消してください。",
+          "kana": "けしてください。",
+          "english": "Please turn off.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、消しています。",
+          "kana": "いま、けしています。",
+          "english": "Currently turn offing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0037",
@@ -2115,7 +2643,9 @@
         "dictionary": "触る",
         "dictionaryKana": "さわる",
         "masu": "触ります",
-        "masuKana": "さわります"
+        "masuKana": "さわります",
+        "te": "触って",
+        "teKana": "さわって"
       },
       "tags": [
         "verb",
@@ -2149,7 +2679,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "触ってください。",
+          "kana": "さわってください。",
+          "english": "Please touch.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、触っています。",
+          "kana": "いま、さわっています。",
+          "english": "Currently touching.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0038",
@@ -2181,7 +2725,9 @@
         "dictionary": "知る",
         "dictionaryKana": "しる",
         "masu": "知ります",
-        "masuKana": "しります"
+        "masuKana": "しります",
+        "te": "知って",
+        "teKana": "しって"
       },
       "tags": [
         "verb",
@@ -2215,7 +2761,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "知ってください。",
+          "kana": "しってください。",
+          "english": "Please get to know.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、知っています。",
+          "kana": "いま、しっています。",
+          "english": "Currently get to knowing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0039",
@@ -2244,7 +2804,9 @@
         "dictionary": "吸う",
         "dictionaryKana": "すう",
         "masu": "吸います",
-        "masuKana": "すいます"
+        "masuKana": "すいます",
+        "te": "吸って",
+        "teKana": "すって"
       },
       "tags": [
         "verb",
@@ -2278,7 +2840,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "吸ってください。",
+          "kana": "すってください。",
+          "english": "Please smoke.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、吸っています。",
+          "kana": "いま、すっています。",
+          "english": "Currently smokeing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0040",
@@ -2307,7 +2883,9 @@
         "dictionary": "住む",
         "dictionaryKana": "すむ",
         "masu": "住みます",
-        "masuKana": "すみます"
+        "masuKana": "すみます",
+        "te": "住んで",
+        "teKana": "すんで"
       },
       "tags": [
         "verb",
@@ -2341,7 +2919,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "住んでください。",
+          "kana": "すんでください。",
+          "english": "Please be going to live.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、住んでいます。",
+          "kana": "いま、すんでいます。",
+          "english": "Currently be going to liveing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0041",
@@ -2372,7 +2964,9 @@
         "dictionary": "座る",
         "dictionaryKana": "すわる",
         "masu": "座ります",
-        "masuKana": "すわります"
+        "masuKana": "すわります",
+        "te": "座って",
+        "teKana": "すわって"
       },
       "tags": [
         "verb",
@@ -2406,7 +3000,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "座ってください。",
+          "kana": "すわってください。",
+          "english": "Please sit down.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、座っています。",
+          "kana": "いま、すわっています。",
+          "english": "Currently sit downing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0042",
@@ -2435,7 +3043,9 @@
         "dictionary": "出す",
         "dictionaryKana": "だす",
         "masu": "出します",
-        "masuKana": "だします"
+        "masuKana": "だします",
+        "te": "出して",
+        "teKana": "だして"
       },
       "tags": [
         "verb",
@@ -2469,7 +3079,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "出してください。",
+          "kana": "だしてください。",
+          "english": "Please take out; send.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、出しています。",
+          "kana": "いま、だしています。",
+          "english": "Currently take out; sending.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0043",
@@ -2504,7 +3128,9 @@
         "dictionary": "立つ",
         "dictionaryKana": "たつ",
         "masu": "立ちます",
-        "masuKana": "たちます"
+        "masuKana": "たちます",
+        "te": "立って",
+        "teKana": "たって"
       },
       "tags": [
         "verb",
@@ -2538,7 +3164,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "立ってください。",
+          "kana": "たってください。",
+          "english": "Please stand up.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、立っています。",
+          "kana": "いま、たっています。",
+          "english": "Currently stand uping.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0044",
@@ -2570,7 +3210,9 @@
         "dictionary": "使う",
         "dictionaryKana": "つかう",
         "masu": "使います",
-        "masuKana": "つかいます"
+        "masuKana": "つかいます",
+        "te": "使って",
+        "teKana": "つかって"
       },
       "tags": [
         "verb",
@@ -2604,7 +3246,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "使ってください。",
+          "kana": "つかってください。",
+          "english": "Please use.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、使っています。",
+          "kana": "いま、つかっています。",
+          "english": "Currently useing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0045",
@@ -2632,7 +3288,9 @@
         "dictionary": "着く",
         "dictionaryKana": "つく",
         "masu": "着きます",
-        "masuKana": "つきます"
+        "masuKana": "つきます",
+        "te": "着いて",
+        "teKana": "ついて"
       },
       "tags": [
         "verb",
@@ -2666,7 +3324,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "着いてください。",
+          "kana": "ついてください。",
+          "english": "Please arrive.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、着いています。",
+          "kana": "いま、ついています。",
+          "english": "Currently arriveing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0046",
@@ -2699,7 +3371,9 @@
         "dictionary": "作る",
         "dictionaryKana": "つくる",
         "masu": "作ります",
-        "masuKana": "つくります"
+        "masuKana": "つくります",
+        "te": "作って",
+        "teKana": "つくって"
       },
       "tags": [
         "verb",
@@ -2733,7 +3407,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "作ってください。",
+          "kana": "つくってください。",
+          "english": "Please make, produce.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、作っています。",
+          "kana": "いま、つくっています。",
+          "english": "Currently make, produceing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0047",
@@ -2761,7 +3449,9 @@
         "dictionary": "連れて行く",
         "dictionaryKana": "つれていく",
         "masu": "連れて行きます",
-        "masuKana": "つれていきます"
+        "masuKana": "つれていきます",
+        "te": "連れて行いて",
+        "teKana": "つれていいて"
       },
       "tags": [
         "verb",
@@ -2795,7 +3485,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "連れて行いてください。",
+          "kana": "つれていいてください。",
+          "english": "Please take (someone).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、連れて行いています。",
+          "kana": "いま、つれていいています。",
+          "english": "Currently take (someone)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0048",
@@ -2824,7 +3528,9 @@
         "dictionary": "手伝う",
         "dictionaryKana": "てつだう",
         "masu": "手伝います",
-        "masuKana": "てつだいます"
+        "masuKana": "てつだいます",
+        "te": "手伝って",
+        "teKana": "てつだって"
       },
       "tags": [
         "verb",
@@ -2858,7 +3564,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "手伝ってください。",
+          "kana": "てつだってください。",
+          "english": "Please help (with a task).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、手伝っています。",
+          "kana": "いま、てつだっています。",
+          "english": "Currently help (with a task)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0049",
@@ -2886,7 +3606,9 @@
         "dictionary": "泊まる",
         "dictionaryKana": "とまる",
         "masu": "泊まります",
-        "masuKana": "とまります"
+        "masuKana": "とまります",
+        "te": "泊まって",
+        "teKana": "とまって"
       },
       "tags": [
         "verb",
@@ -2920,7 +3642,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "泊まってください。",
+          "kana": "とまってください。",
+          "english": "Please stay.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、泊まっています。",
+          "kana": "いま、とまっています。",
+          "english": "Currently staying.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0050",
@@ -2952,7 +3688,9 @@
         "dictionary": "取る",
         "dictionaryKana": "とる",
         "masu": "取ります",
-        "masuKana": "とります"
+        "masuKana": "とります",
+        "te": "取って",
+        "teKana": "とって"
       },
       "tags": [
         "verb",
@@ -2986,7 +3724,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "取ってください。",
+          "kana": "とってください。",
+          "english": "Please take, pass.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、取っています。",
+          "kana": "いま、とっています。",
+          "english": "Currently take, passing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0051",
@@ -3014,7 +3766,9 @@
         "dictionary": "撮る",
         "dictionaryKana": "とる",
         "masu": "撮ります",
-        "masuKana": "とります"
+        "masuKana": "とります",
+        "te": "撮って",
+        "teKana": "とって"
       },
       "tags": [
         "verb",
@@ -3048,7 +3802,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "撮ってください。",
+          "kana": "とってください。",
+          "english": "Please take.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、撮っています。",
+          "kana": "いま、とっています。",
+          "english": "Currently takeing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0052",
@@ -3074,7 +3842,9 @@
         "dictionary": "年を取る",
         "dictionaryKana": "としをとる",
         "masu": "年を取ります",
-        "masuKana": "としをとります"
+        "masuKana": "としをとります",
+        "te": "年を取って",
+        "teKana": "としをとって"
       },
       "tags": [
         "verb",
@@ -3108,7 +3878,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "年を取ってください。",
+          "kana": "としをとってください。",
+          "english": "Please grow old.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、年を取っています。",
+          "kana": "いま、としをとっています。",
+          "english": "Currently grow olding.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0053",
@@ -3145,7 +3929,9 @@
         "dictionary": "直す",
         "dictionaryKana": "なおす",
         "masu": "直します",
-        "masuKana": "なおします"
+        "masuKana": "なおします",
+        "te": "直して",
+        "teKana": "なおして"
       },
       "tags": [
         "verb",
@@ -3179,7 +3965,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "直してください。",
+          "kana": "なおしてください。",
+          "english": "Please repair, correct.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、直しています。",
+          "kana": "いま、なおしています。",
+          "english": "Currently repair, correcting.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0054",
@@ -3209,7 +4009,9 @@
         "dictionary": "無くす",
         "dictionaryKana": "なくす",
         "masu": "無くします",
-        "masuKana": "なくします"
+        "masuKana": "なくします",
+        "te": "無くして",
+        "teKana": "なくして"
       },
       "tags": [
         "verb",
@@ -3243,7 +4045,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "無くしてください。",
+          "kana": "なくしてください。",
+          "english": "Please lose.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、無くしています。",
+          "kana": "いま、なくしています。",
+          "english": "Currently loseing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0055",
@@ -3272,7 +4088,9 @@
         "dictionary": "習う",
         "dictionaryKana": "ならう",
         "masu": "習います",
-        "masuKana": "ならいます"
+        "masuKana": "ならいます",
+        "te": "習って",
+        "teKana": "ならって"
       },
       "tags": [
         "verb",
@@ -3306,7 +4124,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "習ってください。",
+          "kana": "ならってください。",
+          "english": "Please learn.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、習っています。",
+          "kana": "いま、ならっています。",
+          "english": "Currently learning.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0056",
@@ -3340,7 +4172,9 @@
         "dictionary": "なる",
         "dictionaryKana": "なる",
         "masu": "なります",
-        "masuKana": "なります"
+        "masuKana": "なります",
+        "te": "なって",
+        "teKana": "なって"
       },
       "tags": [
         "verb",
@@ -3374,7 +4208,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "なってください。",
+          "kana": "なってください。",
+          "english": "Please become.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、なっています。",
+          "kana": "いま、なっています。",
+          "english": "Currently becomeing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0057",
@@ -3400,7 +4248,9 @@
         "dictionary": "脱ぐ",
         "dictionaryKana": "ぬぐ",
         "masu": "脱ぎます",
-        "masuKana": "ぬぎます"
+        "masuKana": "ぬぎます",
+        "te": "脱いで",
+        "teKana": "ぬいで"
       },
       "tags": [
         "verb",
@@ -3434,7 +4284,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "脱いでください。",
+          "kana": "ぬいでください。",
+          "english": "Please take off (clothes).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、脱いでいます。",
+          "kana": "いま、ぬいでいます。",
+          "english": "Currently take off (clothes)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0058",
@@ -3462,7 +4326,9 @@
         "dictionary": "登る",
         "dictionaryKana": "のぼる",
         "masu": "登ります",
-        "masuKana": "のぼります"
+        "masuKana": "のぼります",
+        "te": "登って",
+        "teKana": "のぼって"
       },
       "tags": [
         "verb",
@@ -3496,7 +4362,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "登ってください。",
+          "kana": "のぼってください。",
+          "english": "Please climb, go up.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、登っています。",
+          "kana": "いま、のぼっています。",
+          "english": "Currently climb, go uping.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0059",
@@ -3523,7 +4403,9 @@
         "dictionary": "飲む",
         "dictionaryKana": "のむ",
         "masu": "飲みます",
-        "masuKana": "のみます"
+        "masuKana": "のみます",
+        "te": "飲んで",
+        "teKana": "のんで"
       },
       "tags": [
         "verb",
@@ -3557,7 +4439,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": "consumption"
+      "context": "consumption",
+      "teFormExamples": [
+        {
+          "japanese": "飲んでください。",
+          "kana": "のんでください。",
+          "english": "Please drink; take (medicine).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、飲んでいます。",
+          "kana": "いま、のんでいます。",
+          "english": "Currently drink; take (medicine)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0062",
@@ -3591,7 +4487,9 @@
         "dictionary": "乗る",
         "dictionaryKana": "のる",
         "masu": "乗ります",
-        "masuKana": "のります"
+        "masuKana": "のります",
+        "te": "乗って",
+        "teKana": "のって"
       },
       "tags": [
         "verb",
@@ -3625,7 +4523,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "乗ってください。",
+          "kana": "のってください。",
+          "english": "Please ride, get on.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、乗っています。",
+          "kana": "いま、のっています。",
+          "english": "Currently ride, get oning.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0063",
@@ -3652,7 +4564,9 @@
         "dictionary": "入る",
         "dictionaryKana": "はいる",
         "masu": "入ります",
-        "masuKana": "はいります"
+        "masuKana": "はいります",
+        "te": "入って",
+        "teKana": "はいって"
       },
       "tags": [
         "verb",
@@ -3686,7 +4600,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": "entering"
+      "context": "entering",
+      "teFormExamples": [
+        {
+          "japanese": "入ってください。",
+          "kana": "はいってください。",
+          "english": "Please enter; join.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、入っています。",
+          "kana": "いま、はいっています。",
+          "english": "Currently enter; joining.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0066",
@@ -3713,7 +4641,9 @@
         "dictionary": "履く",
         "dictionaryKana": "はく",
         "masu": "履きます",
-        "masuKana": "はきます"
+        "masuKana": "はきます",
+        "te": "履いて",
+        "teKana": "はいて"
       },
       "tags": [
         "verb",
@@ -3747,7 +4677,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "履いてください。",
+          "kana": "はいてください。",
+          "english": "Please put on (shoes/pants).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、履いています。",
+          "kana": "いま、はいています。",
+          "english": "Currently put on (shoes/pants)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0067",
@@ -3779,7 +4723,9 @@
         "dictionary": "働く",
         "dictionaryKana": "はたらく",
         "masu": "働きます",
-        "masuKana": "はたらきます"
+        "masuKana": "はたらきます",
+        "te": "働いて",
+        "teKana": "はたらいて"
       },
       "tags": [
         "verb",
@@ -3813,7 +4759,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "働いてください。",
+          "kana": "はたらいてください。",
+          "english": "Please work.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、働いています。",
+          "kana": "いま、はたらいています。",
+          "english": "Currently working.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0068",
@@ -3842,7 +4802,9 @@
         "dictionary": "話す",
         "dictionaryKana": "はなす",
         "masu": "話します",
-        "masuKana": "はなします"
+        "masuKana": "はなします",
+        "te": "話して",
+        "teKana": "はなして"
       },
       "tags": [
         "verb",
@@ -3876,7 +4838,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "話してください。",
+          "kana": "はなしてください。",
+          "english": "Please speak, talk.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、話しています。",
+          "kana": "いま、はなしています。",
+          "english": "Currently speak, talking.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0069",
@@ -3903,7 +4879,9 @@
         "dictionary": "払う",
         "dictionaryKana": "はらう",
         "masu": "払います",
-        "masuKana": "はらいます"
+        "masuKana": "はらいます",
+        "te": "払って",
+        "teKana": "はらって"
       },
       "tags": [
         "verb",
@@ -3937,7 +4915,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "払ってください。",
+          "kana": "はらってください。",
+          "english": "Please pay.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、払っています。",
+          "kana": "いま、はらっています。",
+          "english": "Currently paying.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0070",
@@ -3962,7 +4954,9 @@
         "dictionary": "弾く",
         "dictionaryKana": "ひく",
         "masu": "弾きます",
-        "masuKana": "ひきます"
+        "masuKana": "ひきます",
+        "te": "弾いて",
+        "teKana": "ひいて"
       },
       "tags": [
         "verb",
@@ -3996,7 +4990,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "弾いてください。",
+          "kana": "ひいてください。",
+          "english": "Please play (instrument).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、弾いています。",
+          "kana": "いま、ひいています。",
+          "english": "Currently play (instrument)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0071",
@@ -4026,7 +5034,9 @@
         "dictionary": "引く",
         "dictionaryKana": "ひく",
         "masu": "引きます",
-        "masuKana": "ひきます"
+        "masuKana": "ひきます",
+        "te": "引いて",
+        "teKana": "ひいて"
       },
       "tags": [
         "verb",
@@ -4060,7 +5070,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "引いてください。",
+          "kana": "ひいてください。",
+          "english": "Please pull.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、引いています。",
+          "kana": "いま、ひいています。",
+          "english": "Currently pulling.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0072",
@@ -4087,7 +5111,9 @@
         "dictionary": "降る",
         "dictionaryKana": "ふる",
         "masu": "降ります",
-        "masuKana": "ふります"
+        "masuKana": "ふります",
+        "te": "降って",
+        "teKana": "ふって"
       },
       "tags": [
         "verb",
@@ -4121,7 +5147,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "降ってください。",
+          "kana": "ふってください。",
+          "english": "Please rain.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、降っています。",
+          "kana": "いま、ふっています。",
+          "english": "Currently raining.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0073",
@@ -4151,7 +5191,9 @@
         "dictionary": "曲がる",
         "dictionaryKana": "まがる",
         "masu": "曲がります",
-        "masuKana": "まがります"
+        "masuKana": "まがります",
+        "te": "曲がって",
+        "teKana": "まがって"
       },
       "tags": [
         "verb",
@@ -4185,7 +5227,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "曲がってください。",
+          "kana": "まがってください。",
+          "english": "Please turn.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、曲がっています。",
+          "kana": "いま、まがっています。",
+          "english": "Currently turning.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0074",
@@ -4213,7 +5269,9 @@
         "dictionary": "待つ",
         "dictionaryKana": "まつ",
         "masu": "待ちます",
-        "masuKana": "まちます"
+        "masuKana": "まちます",
+        "te": "待って",
+        "teKana": "まって"
       },
       "tags": [
         "verb",
@@ -4247,7 +5305,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "待ってください。",
+          "kana": "まってください。",
+          "english": "Please wait.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、待っています。",
+          "kana": "いま、まっています。",
+          "english": "Currently waiting.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0075",
@@ -4278,7 +5350,9 @@
         "dictionary": "回す",
         "dictionaryKana": "まわす",
         "masu": "回します",
-        "masuKana": "まわします"
+        "masuKana": "まわします",
+        "te": "回して",
+        "teKana": "まわして"
       },
       "tags": [
         "verb",
@@ -4312,7 +5386,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "回してください。",
+          "kana": "まわしてください。",
+          "english": "Please turn.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、回しています。",
+          "kana": "いま、まわしています。",
+          "english": "Currently turning.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0076",
@@ -4341,7 +5429,9 @@
         "dictionary": "持つ",
         "dictionaryKana": "もつ",
         "masu": "持ちます",
-        "masuKana": "もちます"
+        "masuKana": "もちます",
+        "te": "持って",
+        "teKana": "もって"
       },
       "tags": [
         "verb",
@@ -4375,7 +5465,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "持ってください。",
+          "kana": "もってください。",
+          "english": "Please hold.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、持っています。",
+          "kana": "いま、もっています。",
+          "english": "Currently holding.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0077",
@@ -4403,7 +5507,9 @@
         "dictionary": "持って行く",
         "dictionaryKana": "もっていく",
         "masu": "持って行きます",
-        "masuKana": "もっていきます"
+        "masuKana": "もっていきます",
+        "te": "持って行いて",
+        "teKana": "もっていいて"
       },
       "tags": [
         "verb",
@@ -4437,7 +5543,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "持って行いてください。",
+          "kana": "もっていいてください。",
+          "english": "Please take (something).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、持って行いています。",
+          "kana": "いま、もっていいています。",
+          "english": "Currently take (something)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0078",
@@ -4465,7 +5585,9 @@
         "dictionary": "もらう",
         "dictionaryKana": "もらう",
         "masu": "もらいます",
-        "masuKana": "もらいます"
+        "masuKana": "もらいます",
+        "te": "もらって",
+        "teKana": "もらって"
       },
       "tags": [
         "verb",
@@ -4499,7 +5621,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "もらってください。",
+          "kana": "もらってください。",
+          "english": "Please receive.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、もらっています。",
+          "kana": "いま、もらっています。",
+          "english": "Currently receiveing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0079",
@@ -4525,7 +5661,9 @@
         "dictionary": "役に立つ",
         "dictionaryKana": "やくにたつ",
         "masu": "役に立ちます",
-        "masuKana": "やくにたちます"
+        "masuKana": "やくにたちます",
+        "te": "役に立って",
+        "teKana": "やくにたって"
       },
       "tags": [
         "verb",
@@ -4559,7 +5697,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "役に立ってください。",
+          "kana": "やくにたってください。",
+          "english": "Please be useful.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、役に立っています。",
+          "kana": "いま、やくにたっています。",
+          "english": "Currently be usefuling.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0080",
@@ -4586,7 +5738,9 @@
         "dictionary": "休む",
         "dictionaryKana": "やすむ",
         "masu": "休みます",
-        "masuKana": "やすみます"
+        "masuKana": "やすみます",
+        "te": "休んで",
+        "teKana": "やすんで"
       },
       "tags": [
         "verb",
@@ -4620,7 +5774,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": "resting"
+      "context": "resting",
+      "teFormExamples": [
+        {
+          "japanese": "休んでください。",
+          "kana": "やすんでください。",
+          "english": "Please rest; take a day off.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、休んでいます。",
+          "kana": "いま、やすんでいます。",
+          "english": "Currently rest; take a day offing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0082",
@@ -4648,7 +5816,9 @@
         "dictionary": "呼ぶ",
         "dictionaryKana": "よぶ",
         "masu": "呼びます",
-        "masuKana": "よびます"
+        "masuKana": "よびます",
+        "te": "呼んで",
+        "teKana": "よんで"
       },
       "tags": [
         "verb",
@@ -4682,7 +5852,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "呼んでください。",
+          "kana": "よんでください。",
+          "english": "Please call.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、呼んでいます。",
+          "kana": "いま、よんでいます。",
+          "english": "Currently calling.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0083",
@@ -4713,7 +5897,9 @@
         "dictionary": "読む",
         "dictionaryKana": "よむ",
         "masu": "読みます",
-        "masuKana": "よみます"
+        "masuKana": "よみます",
+        "te": "読んで",
+        "teKana": "よんで"
       },
       "tags": [
         "verb",
@@ -4747,7 +5933,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "読んでください。",
+          "kana": "よんでください。",
+          "english": "Please read.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、読んでいます。",
+          "kana": "いま、よんでいます。",
+          "english": "Currently reading.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0084",
@@ -4783,7 +5983,9 @@
         "dictionary": "分かる",
         "dictionaryKana": "わかる",
         "masu": "分かります",
-        "masuKana": "わかります"
+        "masuKana": "わかります",
+        "te": "分かって",
+        "teKana": "わかって"
       },
       "tags": [
         "verb",
@@ -4817,7 +6019,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "分かってください。",
+          "kana": "わかってください。",
+          "english": "Please understand.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、分かっています。",
+          "kana": "いま、わかっています。",
+          "english": "Currently understanding.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0085",
@@ -4847,7 +6063,9 @@
         "dictionary": "渡る",
         "dictionaryKana": "わたる",
         "masu": "渡ります",
-        "masuKana": "わたります"
+        "masuKana": "わたります",
+        "te": "渡って",
+        "teKana": "わたって"
       },
       "tags": [
         "verb",
@@ -4881,7 +6099,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "渡ってください。",
+          "kana": "わたってください。",
+          "english": "Please cross.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、渡っています。",
+          "kana": "いま、わたっています。",
+          "english": "Currently crossing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0086",
@@ -4909,7 +6141,9 @@
         "dictionary": "開ける",
         "dictionaryKana": "あける",
         "masu": "開けます",
-        "masuKana": "あけます"
+        "masuKana": "あけます",
+        "te": "開けて",
+        "teKana": "あけて"
       },
       "tags": [
         "verb",
@@ -4943,7 +6177,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "開けてください。",
+          "kana": "あけてください。",
+          "english": "Please open.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、開けています。",
+          "kana": "いま、あけています。",
+          "english": "Currently opening.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0087",
@@ -4971,7 +6219,9 @@
         "dictionary": "上げる",
         "dictionaryKana": "あげる",
         "masu": "上げます",
-        "masuKana": "あげます"
+        "masuKana": "あげます",
+        "te": "上げて",
+        "teKana": "あげて"
       },
       "tags": [
         "verb",
@@ -5005,7 +6255,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "上げてください。",
+          "kana": "あげてください。",
+          "english": "Please give.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、上げています。",
+          "kana": "いま、あげています。",
+          "english": "Currently giveing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0088",
@@ -5032,7 +6296,9 @@
         "dictionary": "集める",
         "dictionaryKana": "あつめる",
         "masu": "集めます",
-        "masuKana": "あつめます"
+        "masuKana": "あつめます",
+        "te": "集めて",
+        "teKana": "あつめて"
       },
       "tags": [
         "verb",
@@ -5066,7 +6332,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "集めてください。",
+          "kana": "あつめてください。",
+          "english": "Please collect, gather.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、集めています。",
+          "kana": "いま、あつめています。",
+          "english": "Currently collect, gathering.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0089",
@@ -5100,7 +6380,9 @@
         "dictionary": "浴びる",
         "dictionaryKana": "あびる",
         "masu": "浴びます",
-        "masuKana": "あびます"
+        "masuKana": "あびます",
+        "te": "浴びて",
+        "teKana": "あびて"
       },
       "tags": [
         "verb",
@@ -5134,7 +6416,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "浴びてください。",
+          "kana": "あびてください。",
+          "english": "Please take.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、浴びています。",
+          "kana": "いま、あびています。",
+          "english": "Currently takeing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0090",
@@ -5162,7 +6458,9 @@
         "dictionary": "いる",
         "dictionaryKana": "いる",
         "masu": "います",
-        "masuKana": "います"
+        "masuKana": "います",
+        "te": "いて",
+        "teKana": "いて"
       },
       "tags": [
         "verb",
@@ -5196,7 +6494,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": "existence"
+      "context": "existence",
+      "teFormExamples": [
+        {
+          "japanese": "いてください。",
+          "kana": "いてください。",
+          "english": "Please exist; be (animate).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、いています。",
+          "kana": "いま、いています。",
+          "english": "Currently exist; be (animate)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0093",
@@ -5229,7 +6541,9 @@
         "dictionary": "入れる",
         "dictionaryKana": "いれる",
         "masu": "入れます",
-        "masuKana": "いれます"
+        "masuKana": "いれます",
+        "te": "入れて",
+        "teKana": "いれて"
       },
       "tags": [
         "verb",
@@ -5263,7 +6577,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "入れてください。",
+          "kana": "いれてください。",
+          "english": "Please put in, insert.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、入れています。",
+          "kana": "いま、いれています。",
+          "english": "Currently put in, inserting.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0094",
@@ -5288,7 +6616,9 @@
         "dictionary": "生まれる",
         "dictionaryKana": "うまれる",
         "masu": "生まれます",
-        "masuKana": "うまれます"
+        "masuKana": "うまれます",
+        "te": "生まれて",
+        "teKana": "うまれて"
       },
       "tags": [
         "verb",
@@ -5322,7 +6652,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "生まれてください。",
+          "kana": "うまれてください。",
+          "english": "Please be born.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、生まれています。",
+          "kana": "いま、うまれています。",
+          "english": "Currently be borning.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0095",
@@ -5352,7 +6696,9 @@
         "dictionary": "起きる",
         "dictionaryKana": "おきる",
         "masu": "起きます",
-        "masuKana": "おきます"
+        "masuKana": "おきます",
+        "te": "起きて",
+        "teKana": "おきて"
       },
       "tags": [
         "verb",
@@ -5386,7 +6732,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "起きてください。",
+          "kana": "おきてください。",
+          "english": "Please get up, wake up.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、起きています。",
+          "kana": "いま、おきています。",
+          "english": "Currently get up, wake uping.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0096",
@@ -5415,7 +6775,9 @@
         "dictionary": "教える",
         "dictionaryKana": "おしえる",
         "masu": "教えます",
-        "masuKana": "おしえます"
+        "masuKana": "おしえます",
+        "te": "教えて",
+        "teKana": "おしえて"
       },
       "tags": [
         "verb",
@@ -5449,7 +6811,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": "teaching"
+      "context": "teaching",
+      "teFormExamples": [
+        {
+          "japanese": "教えてください。",
+          "kana": "おしえてください。",
+          "english": "Please teach.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、教えています。",
+          "kana": "いま、おしえています。",
+          "english": "Currently teaching.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0097",
@@ -5478,7 +6854,9 @@
         "dictionary": "教える",
         "dictionaryKana": "おしえる",
         "masu": "教えます",
-        "masuKana": "おしえます"
+        "masuKana": "おしえます",
+        "te": "教えて",
+        "teKana": "おしえて"
       },
       "tags": [
         "verb",
@@ -5512,7 +6890,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": "informing"
+      "context": "informing",
+      "teFormExamples": [
+        {
+          "japanese": "教えてください。",
+          "kana": "おしえてください。",
+          "english": "Please tell; inform.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、教えています。",
+          "kana": "いま、おしえています。",
+          "english": "Currently tell; informing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0098",
@@ -5545,7 +6937,9 @@
         "dictionary": "覚える",
         "dictionaryKana": "おぼえる",
         "masu": "覚えます",
-        "masuKana": "おぼえます"
+        "masuKana": "おぼえます",
+        "te": "覚えて",
+        "teKana": "おぼえて"
       },
       "tags": [
         "verb",
@@ -5579,7 +6973,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "覚えてください。",
+          "kana": "おぼえてください。",
+          "english": "Please memorise.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、覚えています。",
+          "kana": "いま、おぼえています。",
+          "english": "Currently memoriseing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0099",
@@ -5610,7 +7018,9 @@
         "dictionary": "降りる",
         "dictionaryKana": "おりる",
         "masu": "降ります",
-        "masuKana": "おります"
+        "masuKana": "おります",
+        "te": "降りて",
+        "teKana": "おりて"
       },
       "tags": [
         "verb",
@@ -5644,7 +7054,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "降りてください。",
+          "kana": "おりてください。",
+          "english": "Please get off.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、降りています。",
+          "kana": "いま、おりています。",
+          "english": "Currently get offing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0100",
@@ -5677,7 +7101,9 @@
         "dictionary": "換える/変える",
         "dictionaryKana": "かえる",
         "masu": "換えます/変えます",
-        "masuKana": "かえます"
+        "masuKana": "かえます",
+        "te": "換える/変えて",
+        "teKana": "かえて"
       },
       "tags": [
         "verb",
@@ -5711,7 +7137,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "換える/変えてください。",
+          "kana": "かえてください。",
+          "english": "Please exchange, change.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、換える/変えています。",
+          "kana": "いま、かえています。",
+          "english": "Currently exchange, changeing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0101",
@@ -5738,7 +7178,9 @@
         "dictionary": "かける",
         "dictionaryKana": "かける",
         "masu": "かけます",
-        "masuKana": "かけます"
+        "masuKana": "かけます",
+        "te": "かけて",
+        "teKana": "かけて"
       },
       "tags": [
         "verb",
@@ -5772,7 +7214,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": "wearing"
+      "context": "wearing",
+      "teFormExamples": [
+        {
+          "japanese": "かけてください。",
+          "kana": "かけてください。",
+          "english": "Please put on; make (call).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、かけています。",
+          "kana": "いま、かけています。",
+          "english": "Currently put on; make (call)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0103",
@@ -5799,7 +7255,9 @@
         "dictionary": "借りる",
         "dictionaryKana": "かりる",
         "masu": "借ります",
-        "masuKana": "かります"
+        "masuKana": "かります",
+        "te": "借りて",
+        "teKana": "かりて"
       },
       "tags": [
         "verb",
@@ -5833,7 +7291,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "借りてください。",
+          "kana": "かりてください。",
+          "english": "Please borrow.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、借りています。",
+          "kana": "いま、かりています。",
+          "english": "Currently borrowing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0104",
@@ -5867,7 +7339,9 @@
         "dictionary": "考える",
         "dictionaryKana": "かんがえる",
         "masu": "考えます",
-        "masuKana": "かんがえます"
+        "masuKana": "かんがえます",
+        "te": "考えて",
+        "teKana": "かんがえて"
       },
       "tags": [
         "verb",
@@ -5901,7 +7375,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "考えてください。",
+          "kana": "かんがえてください。",
+          "english": "Please think, consider.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、考えています。",
+          "kana": "いま、かんがえています。",
+          "english": "Currently think, considering.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0105",
@@ -5929,7 +7417,9 @@
         "dictionary": "着る",
         "dictionaryKana": "きる",
         "masu": "着ます",
-        "masuKana": "きます"
+        "masuKana": "きます",
+        "te": "着て",
+        "teKana": "きて"
       },
       "tags": [
         "verb",
@@ -5963,7 +7453,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "着てください。",
+          "kana": "きてください。",
+          "english": "Please wear; put on (shirt).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、着ています。",
+          "kana": "いま、きています。",
+          "english": "Currently wear; put on (shirt)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0106",
@@ -5990,7 +7494,9 @@
         "dictionary": "気をつける",
         "dictionaryKana": "きをつける",
         "masu": "気をつけます",
-        "masuKana": "きをつけます"
+        "masuKana": "きをつけます",
+        "te": "気をつけて",
+        "teKana": "きをつけて"
       },
       "tags": [
         "verb",
@@ -6024,7 +7530,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "気をつけてください。",
+          "kana": "きをつけてください。",
+          "english": "Please pay attention, take care.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、気をつけています。",
+          "kana": "いま、きをつけています。",
+          "english": "Currently pay attention, take careing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0107",
@@ -6050,7 +7570,9 @@
         "dictionary": "くれる",
         "dictionaryKana": "くれる",
         "masu": "くれます",
-        "masuKana": "くれます"
+        "masuKana": "くれます",
+        "te": "くれて",
+        "teKana": "くれて"
       },
       "tags": [
         "verb",
@@ -6084,7 +7606,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "くれてください。",
+          "kana": "くれてください。",
+          "english": "Please give (me).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、くれています。",
+          "kana": "いま、くれています。",
+          "english": "Currently give (me)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0108",
@@ -6110,7 +7646,9 @@
         "dictionary": "閉める",
         "dictionaryKana": "しめる",
         "masu": "閉めます",
-        "masuKana": "しめます"
+        "masuKana": "しめます",
+        "te": "閉めて",
+        "teKana": "しめて"
       },
       "tags": [
         "verb",
@@ -6144,7 +7682,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "閉めてください。",
+          "kana": "しめてください。",
+          "english": "Please close, shut.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、閉めています。",
+          "kana": "いま、しめています。",
+          "english": "Currently close, shuting.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0109",
@@ -6176,7 +7728,9 @@
         "dictionary": "調べる",
         "dictionaryKana": "しらべる",
         "masu": "調べます",
-        "masuKana": "しらべます"
+        "masuKana": "しらべます",
+        "te": "調べて",
+        "teKana": "しらべて"
       },
       "tags": [
         "verb",
@@ -6210,7 +7764,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "調べてください。",
+          "kana": "しらべてください。",
+          "english": "Please check, investigate.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、調べています。",
+          "kana": "いま、しらべています。",
+          "english": "Currently check, investigateing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0110",
@@ -6241,7 +7809,9 @@
         "dictionary": "捨てる",
         "dictionaryKana": "すてる",
         "masu": "捨てます",
-        "masuKana": "すてます"
+        "masuKana": "すてます",
+        "te": "捨てて",
+        "teKana": "すてて"
       },
       "tags": [
         "verb",
@@ -6275,7 +7845,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "捨ててください。",
+          "kana": "すててください。",
+          "english": "Please throw away.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、捨てています。",
+          "kana": "いま、すてています。",
+          "english": "Currently throw awaying.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0111",
@@ -6303,7 +7887,9 @@
         "dictionary": "食べる",
         "dictionaryKana": "たべる",
         "masu": "食べます",
-        "masuKana": "たべます"
+        "masuKana": "たべます",
+        "te": "食べて",
+        "teKana": "たべて"
       },
       "tags": [
         "verb",
@@ -6337,7 +7923,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "食べてください。",
+          "kana": "たべてください。",
+          "english": "Please eat.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、食べています。",
+          "kana": "いま、たべています。",
+          "english": "Currently eating.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0112",
@@ -6366,7 +7966,9 @@
         "dictionary": "足りる",
         "dictionaryKana": "たりる",
         "masu": "足ります",
-        "masuKana": "たります"
+        "masuKana": "たります",
+        "te": "足りて",
+        "teKana": "たりて"
       },
       "tags": [
         "verb",
@@ -6400,7 +8002,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "足りてください。",
+          "kana": "たりてください。",
+          "english": "Please be enough, be sufficient.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、足りています。",
+          "kana": "いま、たりています。",
+          "english": "Currently be enough, be sufficienting.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0113",
@@ -6430,7 +8046,9 @@
         "dictionary": "疲れる",
         "dictionaryKana": "つかれる",
         "masu": "疲れます",
-        "masuKana": "つかれます"
+        "masuKana": "つかれます",
+        "te": "疲れて",
+        "teKana": "つかれて"
       },
       "tags": [
         "verb",
@@ -6464,7 +8082,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "疲れてください。",
+          "kana": "つかれてください。",
+          "english": "Please get tired.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、疲れています。",
+          "kana": "いま、つかれています。",
+          "english": "Currently get tireding.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0114",
@@ -6491,7 +8123,9 @@
         "dictionary": "つける",
         "dictionaryKana": "つける",
         "masu": "つけます",
-        "masuKana": "つけます"
+        "masuKana": "つけます",
+        "te": "つけて",
+        "teKana": "つけて"
       },
       "tags": [
         "verb",
@@ -6525,7 +8159,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "つけてください。",
+          "kana": "つけてください。",
+          "english": "Please turn on.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、つけています。",
+          "kana": "いま、つけています。",
+          "english": "Currently turn oning.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0115",
@@ -6556,7 +8204,9 @@
         "dictionary": "出かける",
         "dictionaryKana": "でかける",
         "masu": "出かけます",
-        "masuKana": "でかけます"
+        "masuKana": "でかけます",
+        "te": "出かけて",
+        "teKana": "でかけて"
       },
       "tags": [
         "verb",
@@ -6590,7 +8240,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "出かけてください。",
+          "kana": "でかけてください。",
+          "english": "Please go out.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、出かけています。",
+          "kana": "いま、でかけています。",
+          "english": "Currently go outing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0116",
@@ -6616,7 +8280,9 @@
         "dictionary": "できる",
         "dictionaryKana": "できる",
         "masu": "できます",
-        "masuKana": "できます"
+        "masuKana": "できます",
+        "te": "できて",
+        "teKana": "できて"
       },
       "tags": [
         "verb",
@@ -6650,7 +8316,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "できてください。",
+          "kana": "できてください。",
+          "english": "Please be able to, can.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、できています。",
+          "kana": "いま、できています。",
+          "english": "Currently be able to, caning.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0117",
@@ -6678,7 +8358,9 @@
         "dictionary": "出る",
         "dictionaryKana": "でる",
         "masu": "出ます",
-        "masuKana": "でます"
+        "masuKana": "でます",
+        "te": "出て",
+        "teKana": "でて"
       },
       "tags": [
         "verb",
@@ -6712,7 +8394,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": "exiting"
+      "context": "exiting",
+      "teFormExamples": [
+        {
+          "japanese": "出てください。",
+          "kana": "でてください。",
+          "english": "Please leave; go out; graduate.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、出ています。",
+          "kana": "いま、でています。",
+          "english": "Currently leave; go out; graduateing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0120",
@@ -6739,7 +8435,9 @@
         "dictionary": "止める/停める",
         "dictionaryKana": "とめる",
         "masu": "止めます/停めます",
-        "masuKana": "とめます"
+        "masuKana": "とめます",
+        "te": "止める/停めて",
+        "teKana": "とめて"
       },
       "tags": [
         "verb",
@@ -6773,7 +8471,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "止める/停めてください。",
+          "kana": "とめてください。",
+          "english": "Please stop, park.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、止める/停めています。",
+          "kana": "いま、とめています。",
+          "english": "Currently stop, parking.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0121",
@@ -6800,7 +8512,9 @@
         "dictionary": "寝る",
         "dictionaryKana": "ねる",
         "masu": "寝ます",
-        "masuKana": "ねます"
+        "masuKana": "ねます",
+        "te": "寝て",
+        "teKana": "ねて"
       },
       "tags": [
         "verb",
@@ -6834,7 +8548,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "寝てください。",
+          "kana": "ねてください。",
+          "english": "Please sleep, go to bed.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、寝ています。",
+          "kana": "いま、ねています。",
+          "english": "Currently sleep, go to beding.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0122",
@@ -6863,7 +8591,9 @@
         "dictionary": "乗り換える",
         "dictionaryKana": "のりかえる",
         "masu": "乗り換えます",
-        "masuKana": "のりかえます"
+        "masuKana": "のりかえます",
+        "te": "乗り換えて",
+        "teKana": "のりかえて"
       },
       "tags": [
         "verb",
@@ -6897,7 +8627,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "乗り換えてください。",
+          "kana": "のりかえてください。",
+          "english": "Please change (train, etc.).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、乗り換えています。",
+          "kana": "いま、のりかえています。",
+          "english": "Currently change (train, etc.)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0123",
@@ -6928,7 +8672,9 @@
         "dictionary": "始める",
         "dictionaryKana": "はじめる",
         "masu": "始めます",
-        "masuKana": "はじめます"
+        "masuKana": "はじめます",
+        "te": "始めて",
+        "teKana": "はじめて"
       },
       "tags": [
         "verb",
@@ -6962,7 +8708,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "始めてください。",
+          "kana": "はじめてください。",
+          "english": "Please start, begin.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、始めています。",
+          "kana": "いま、はじめています。",
+          "english": "Currently start, begining.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0124",
@@ -6989,7 +8749,9 @@
         "dictionary": "負ける",
         "dictionaryKana": "まける",
         "masu": "負けます",
-        "masuKana": "まけます"
+        "masuKana": "まけます",
+        "te": "負けて",
+        "teKana": "まけて"
       },
       "tags": [
         "verb",
@@ -7023,7 +8785,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "負けてください。",
+          "kana": "まけてください。",
+          "english": "Please lose, be beaten.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、負けています。",
+          "kana": "いま、まけています。",
+          "english": "Currently lose, be beatening.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0125",
@@ -7052,7 +8828,9 @@
         "dictionary": "見せる",
         "dictionaryKana": "みせる",
         "masu": "見せます",
-        "masuKana": "みせます"
+        "masuKana": "みせます",
+        "te": "見せて",
+        "teKana": "みせて"
       },
       "tags": [
         "verb",
@@ -7086,7 +8864,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "見せてください。",
+          "kana": "みせてください。",
+          "english": "Please show.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、見せています。",
+          "kana": "いま、みせています。",
+          "english": "Currently showing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0126",
@@ -7119,7 +8911,9 @@
         "dictionary": "見る",
         "dictionaryKana": "みる",
         "masu": "見ます",
-        "masuKana": "みます"
+        "masuKana": "みます",
+        "te": "見て",
+        "teKana": "みて"
       },
       "tags": [
         "verb",
@@ -7153,7 +8947,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "見てください。",
+          "kana": "みてください。",
+          "english": "Please see, look at, watch.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、見ています。",
+          "kana": "いま、みています。",
+          "english": "Currently see, look at, watching.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0127",
@@ -7186,7 +8994,9 @@
         "dictionary": "迎える",
         "dictionaryKana": "むかえる",
         "masu": "迎えます",
-        "masuKana": "むかえます"
+        "masuKana": "むかえます",
+        "te": "迎えて",
+        "teKana": "むかえて"
       },
       "tags": [
         "verb",
@@ -7220,7 +9030,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "迎えてください。",
+          "kana": "むかえてください。",
+          "english": "Please go to meet, welcome.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、迎えています。",
+          "kana": "いま、むかえています。",
+          "english": "Currently go to meet, welcomeing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0128",
@@ -7248,7 +9072,9 @@
         "dictionary": "辞める",
         "dictionaryKana": "やめる",
         "masu": "辞めます",
-        "masuKana": "やめます"
+        "masuKana": "やめます",
+        "te": "辞めて",
+        "teKana": "やめて"
       },
       "tags": [
         "verb",
@@ -7282,7 +9108,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "辞めてください。",
+          "kana": "やめてください。",
+          "english": "Please quit; retire; stop.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、辞めています。",
+          "kana": "いま、やめています。",
+          "english": "Currently quit; retire; stoping.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0129",
@@ -7311,7 +9151,9 @@
         "dictionary": "忘れる",
         "dictionaryKana": "わすれる",
         "masu": "忘れます",
-        "masuKana": "わすれます"
+        "masuKana": "わすれます",
+        "te": "忘れて",
+        "teKana": "わすれて"
       },
       "tags": [
         "verb",
@@ -7345,7 +9187,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "忘れてください。",
+          "kana": "わすれてください。",
+          "english": "Please forget.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、忘れています。",
+          "kana": "いま、わすれています。",
+          "english": "Currently forgeting.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0130",
@@ -7374,7 +9230,9 @@
         "dictionary": "来る",
         "dictionaryKana": "くる",
         "masu": "来ます",
-        "masuKana": "きます"
+        "masuKana": "きます",
+        "te": "来て",
+        "teKana": "きて"
       },
       "tags": [
         "verb",
@@ -7408,7 +9266,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "来てください。",
+          "kana": "きてください。",
+          "english": "Please come.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、来ています。",
+          "kana": "いま、きています。",
+          "english": "Currently comeing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0131",
@@ -7438,7 +9310,9 @@
         "dictionary": "する",
         "dictionaryKana": "する",
         "masu": "します",
-        "masuKana": "します"
+        "masuKana": "します",
+        "te": "して",
+        "teKana": "して"
       },
       "tags": [
         "verb",
@@ -7472,7 +9346,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "してください。",
+          "kana": "してください。",
+          "english": "Please do.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、しています。",
+          "kana": "いま、しています。",
+          "english": "Currently doing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0132",
@@ -7496,7 +9384,9 @@
         "dictionary": "案内する",
         "dictionaryKana": "あんないする",
         "masu": "案内します",
-        "masuKana": "あんないします"
+        "masuKana": "あんないします",
+        "te": "案内して",
+        "teKana": "あんないして"
       },
       "tags": [
         "verb",
@@ -7530,7 +9420,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "案内してください。",
+          "kana": "あんないしてください。",
+          "english": "Please show around; guide.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、案内しています。",
+          "kana": "いま、あんないしています。",
+          "english": "Currently show around; guideing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0133",
@@ -7554,7 +9458,9 @@
         "dictionary": "運転する",
         "dictionaryKana": "うんてんする",
         "masu": "運転します",
-        "masuKana": "うんてんします"
+        "masuKana": "うんてんします",
+        "te": "運転して",
+        "teKana": "うんてんして"
       },
       "tags": [
         "verb",
@@ -7588,7 +9494,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "運転してください。",
+          "kana": "うんてんしてください。",
+          "english": "Please drive.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、運転しています。",
+          "kana": "いま、うんてんしています。",
+          "english": "Currently driveing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0134",
@@ -7612,7 +9532,9 @@
         "dictionary": "買い物する",
         "dictionaryKana": "かいものする",
         "masu": "買い物します",
-        "masuKana": "かいものします"
+        "masuKana": "かいものします",
+        "te": "買い物して",
+        "teKana": "かいものして"
       },
       "tags": [
         "verb",
@@ -7646,7 +9568,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "買い物してください。",
+          "kana": "かいものしてください。",
+          "english": "Please do shopping.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、買い物しています。",
+          "kana": "いま、かいものしています。",
+          "english": "Currently do shoppinging.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0135",
@@ -7670,7 +9606,9 @@
         "dictionary": "結婚する",
         "dictionaryKana": "けっこんする",
         "masu": "結婚します",
-        "masuKana": "けっこんします"
+        "masuKana": "けっこんします",
+        "te": "結婚して",
+        "teKana": "けっこんして"
       },
       "tags": [
         "verb",
@@ -7704,7 +9642,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "結婚してください。",
+          "kana": "けっこんしてください。",
+          "english": "Please marry, get married.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、結婚しています。",
+          "kana": "いま、けっこんしています。",
+          "english": "Currently marry, get marrieding.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0136",
@@ -7728,7 +9680,9 @@
         "dictionary": "見学する",
         "dictionaryKana": "けんがくする",
         "masu": "見学します",
-        "masuKana": "けんがくします"
+        "masuKana": "けんがくします",
+        "te": "見学して",
+        "teKana": "けんがくして"
       },
       "tags": [
         "verb",
@@ -7762,7 +9716,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "見学してください。",
+          "kana": "けんがくしてください。",
+          "english": "Please tour; visit (to study).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、見学しています。",
+          "kana": "いま、けんがくしています。",
+          "english": "Currently tour; visit (to study)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0137",
@@ -7786,7 +9754,9 @@
         "dictionary": "研究する",
         "dictionaryKana": "けんきゅうする",
         "masu": "研究します",
-        "masuKana": "けんきゅうします"
+        "masuKana": "けんきゅうします",
+        "te": "研究して",
+        "teKana": "けんきゅうして"
       },
       "tags": [
         "verb",
@@ -7820,7 +9790,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "研究してください。",
+          "kana": "けんきゅうしてください。",
+          "english": "Please do research.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、研究しています。",
+          "kana": "いま、けんきゅうしています。",
+          "english": "Currently do researching.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0138",
@@ -7844,7 +9828,9 @@
         "dictionary": "コピーする",
         "dictionaryKana": "コピーする",
         "masu": "コピーします",
-        "masuKana": "コピーします"
+        "masuKana": "コピーします",
+        "te": "コピーして",
+        "teKana": "コピーして"
       },
       "tags": [
         "verb",
@@ -7878,7 +9864,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "コピーしてください。",
+          "kana": "コピーしてください。",
+          "english": "Please copy.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、コピーしています。",
+          "kana": "いま、コピーしています。",
+          "english": "Currently copying.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0139",
@@ -7902,7 +9902,9 @@
         "dictionary": "散歩する",
         "dictionaryKana": "さんぽする",
         "masu": "散歩します",
-        "masuKana": "さんぽします"
+        "masuKana": "さんぽします",
+        "te": "散歩して",
+        "teKana": "さんぽして"
       },
       "tags": [
         "verb",
@@ -7936,7 +9938,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "散歩してください。",
+          "kana": "さんぽしてください。",
+          "english": "Please take a walk.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、散歩しています。",
+          "kana": "いま、さんぽしています。",
+          "english": "Currently take a walking.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0140",
@@ -7960,7 +9976,9 @@
         "dictionary": "残業する",
         "dictionaryKana": "ざんぎょうする",
         "masu": "残業します",
-        "masuKana": "ざんぎょうします"
+        "masuKana": "ざんぎょうします",
+        "te": "残業して",
+        "teKana": "ざんぎょうして"
       },
       "tags": [
         "verb",
@@ -7994,7 +10012,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "残業してください。",
+          "kana": "ざんぎょうしてください。",
+          "english": "Please work overtime.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、残業しています。",
+          "kana": "いま、ざんぎょうしています。",
+          "english": "Currently work overtimeing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0141",
@@ -8018,7 +10050,9 @@
         "dictionary": "修理する",
         "dictionaryKana": "しゅうりする",
         "masu": "修理します",
-        "masuKana": "しゅうりします"
+        "masuKana": "しゅうりします",
+        "te": "修理して",
+        "teKana": "しゅうりして"
       },
       "tags": [
         "verb",
@@ -8052,7 +10086,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "修理してください。",
+          "kana": "しゅうりしてください。",
+          "english": "Please repair.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、修理しています。",
+          "kana": "いま、しゅうりしています。",
+          "english": "Currently repairing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0142",
@@ -8076,7 +10124,9 @@
         "dictionary": "出張する",
         "dictionaryKana": "しゅっちょうする",
         "masu": "出張します",
-        "masuKana": "しゅっちょうします"
+        "masuKana": "しゅっちょうします",
+        "te": "出張して",
+        "teKana": "しゅっちょうして"
       },
       "tags": [
         "verb",
@@ -8110,7 +10160,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "出張してください。",
+          "kana": "しゅっちょうしてください。",
+          "english": "Please go on business trip.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、出張しています。",
+          "kana": "いま、しゅっちょうしています。",
+          "english": "Currently go on business triping.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0143",
@@ -8134,7 +10198,9 @@
         "dictionary": "紹介する",
         "dictionaryKana": "しょうかいする",
         "masu": "紹介します",
-        "masuKana": "しょうかいします"
+        "masuKana": "しょうかいします",
+        "te": "紹介して",
+        "teKana": "しょうかいして"
       },
       "tags": [
         "verb",
@@ -8168,7 +10234,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "紹介してください。",
+          "kana": "しょうかいしてください。",
+          "english": "Please introduce.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、紹介しています。",
+          "kana": "いま、しょうかいしています。",
+          "english": "Currently introduceing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0144",
@@ -8192,7 +10272,9 @@
         "dictionary": "食事する",
         "dictionaryKana": "しょくじする",
         "masu": "食事します",
-        "masuKana": "しょくじします"
+        "masuKana": "しょくじします",
+        "te": "食事して",
+        "teKana": "しょくじして"
       },
       "tags": [
         "verb",
@@ -8226,7 +10308,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "食事してください。",
+          "kana": "しょくじしてください。",
+          "english": "Please have a meal, dine.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、食事しています。",
+          "kana": "いま、しょくじしています。",
+          "english": "Currently have a meal, dineing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0145",
@@ -8250,7 +10346,9 @@
         "dictionary": "心配する",
         "dictionaryKana": "しんぱいする",
         "masu": "心配します",
-        "masuKana": "しんぱいします"
+        "masuKana": "しんぱいします",
+        "te": "心配して",
+        "teKana": "しんぱいして"
       },
       "tags": [
         "verb",
@@ -8284,7 +10382,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "心配してください。",
+          "kana": "しんぱいしてください。",
+          "english": "Please worry.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、心配しています。",
+          "kana": "いま、しんぱいしています。",
+          "english": "Currently worrying.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0146",
@@ -8308,7 +10420,9 @@
         "dictionary": "説明する",
         "dictionaryKana": "せつめいする",
         "masu": "説明します",
-        "masuKana": "せつめいします"
+        "masuKana": "せつめいします",
+        "te": "説明して",
+        "teKana": "せつめいして"
       },
       "tags": [
         "verb",
@@ -8342,7 +10456,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "説明してください。",
+          "kana": "せつめいしてください。",
+          "english": "Please explain.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、説明しています。",
+          "kana": "いま、せつめいしています。",
+          "english": "Currently explaining.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0147",
@@ -8366,7 +10494,9 @@
         "dictionary": "洗濯する",
         "dictionaryKana": "せんたくする",
         "masu": "洗濯します",
-        "masuKana": "せんたくします"
+        "masuKana": "せんたくします",
+        "te": "洗濯して",
+        "teKana": "せんたくして"
       },
       "tags": [
         "verb",
@@ -8400,7 +10530,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "洗濯してください。",
+          "kana": "せんたくしてください。",
+          "english": "Please wash (clothes).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、洗濯しています。",
+          "kana": "いま、せんたくしています。",
+          "english": "Currently wash (clothes)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0148",
@@ -8424,7 +10568,9 @@
         "dictionary": "掃除する",
         "dictionaryKana": "そうじする",
         "masu": "掃除します",
-        "masuKana": "そうじします"
+        "masuKana": "そうじします",
+        "te": "掃除して",
+        "teKana": "そうじして"
       },
       "tags": [
         "verb",
@@ -8458,7 +10604,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "掃除してください。",
+          "kana": "そうじしてください。",
+          "english": "Please clean (a room).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、掃除しています。",
+          "kana": "いま、そうじしています。",
+          "english": "Currently clean (a room)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0149",
@@ -8482,7 +10642,9 @@
         "dictionary": "電話する",
         "dictionaryKana": "でんわする",
         "masu": "電話します",
-        "masuKana": "でんわします"
+        "masuKana": "でんわします",
+        "te": "電話して",
+        "teKana": "でんわして"
       },
       "tags": [
         "verb",
@@ -8516,7 +10678,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "電話してください。",
+          "kana": "でんわしてください。",
+          "english": "Please phone.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、電話しています。",
+          "kana": "いま、でんわしています。",
+          "english": "Currently phoneing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0150",
@@ -8540,7 +10716,9 @@
         "dictionary": "勉強する",
         "dictionaryKana": "べんきょうする",
         "masu": "勉強します",
-        "masuKana": "べんきょうします"
+        "masuKana": "べんきょうします",
+        "te": "勉強して",
+        "teKana": "べんきょうして"
       },
       "tags": [
         "verb",
@@ -8574,7 +10752,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "勉強してください。",
+          "kana": "べんきょうしてください。",
+          "english": "Please study.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、勉強しています。",
+          "kana": "いま、べんきょうしています。",
+          "english": "Currently studying.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0151",
@@ -8598,7 +10790,9 @@
         "dictionary": "予約する",
         "dictionaryKana": "よやくする",
         "masu": "予約します",
-        "masuKana": "よやくします"
+        "masuKana": "よやくします",
+        "te": "予約して",
+        "teKana": "よやくして"
       },
       "tags": [
         "verb",
@@ -8632,7 +10826,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "予約してください。",
+          "kana": "よやくしてください。",
+          "english": "Please reserve, book.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、予約しています。",
+          "kana": "いま、よやくしています。",
+          "english": "Currently reserve, booking.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0152",
@@ -8656,7 +10864,9 @@
         "dictionary": "留学する",
         "dictionaryKana": "りゅうがくする",
         "masu": "留学します",
-        "masuKana": "りゅうがくします"
+        "masuKana": "りゅうがくします",
+        "te": "留学して",
+        "teKana": "りゅうがくして"
       },
       "tags": [
         "verb",
@@ -8690,7 +10900,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "留学してください。",
+          "kana": "りゅうがくしてください。",
+          "english": "Please study abroad.",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、留学しています。",
+          "kana": "いま、りゅうがくしています。",
+          "english": "Currently study abroading.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0153",
@@ -8715,7 +10939,9 @@
         "dictionary": "連れて来る",
         "dictionaryKana": "つれてくる",
         "masu": "連れて来ます",
-        "masuKana": "つれてきます"
+        "masuKana": "つれてきます",
+        "te": "連れて来て",
+        "teKana": "つれてきて"
       },
       "tags": [
         "verb",
@@ -8749,7 +10975,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "連れて来るください。",
+          "kana": "つれてくるください。",
+          "english": "Please bring (someone).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、連れて来るいます。",
+          "kana": "いま、つれてくるいます。",
+          "english": "Currently bring (someone)ing.",
+          "highlight": "progressive"
+        }
+      ]
     },
     {
       "id": "n5_verb_0154",
@@ -8774,7 +11014,9 @@
         "dictionary": "持って来る",
         "dictionaryKana": "もってくる",
         "masu": "持って来ます",
-        "masuKana": "もってきます"
+        "masuKana": "もってきます",
+        "te": "持って来て",
+        "teKana": "もってきて"
       },
       "tags": [
         "verb",
@@ -8808,7 +11050,21 @@
         "text": "CC BY-SA 4.0",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "context": null
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "持って来るください。",
+          "kana": "もってくるください。",
+          "english": "Please bring (something).",
+          "highlight": "polite request"
+        },
+        {
+          "japanese": "今、持って来るいます。",
+          "kana": "いま、もってくるいます。",
+          "english": "Currently bring (something)ing.",
+          "highlight": "progressive"
+        }
+      ]
     }
   ]
 }

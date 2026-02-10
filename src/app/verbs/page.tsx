@@ -44,7 +44,10 @@ interface N5Verb {
     dictionaryKana: string
     masu: string
     masuKana: string
+    te: string
+    teKana: string
   }
+  teFormExamples?: VerbExample[]
   tags: string[]
   context?: string | null
   examples?: VerbExample[]
@@ -64,8 +67,8 @@ interface VerbsData {
   verbs: N5Verb[]
 }
 
-type ViewMode = "all" | "dictionary" | "masu" | "kana-masu" | "dictionary-kana"
-type FlipSide = "english" | "kanji" | "kana" | "masu-kanji" | "masu-kana"
+type ViewMode = "all" | "dictionary" | "masu" | "kana-masu" | "dictionary-kana" | "te-form" | "te-form-kana"
+type FlipSide = "english" | "kanji" | "kana" | "masu-kanji" | "masu-kana" | "te-kanji" | "te-kana"
 
 interface VerbProgress {
   verbId: string
@@ -413,6 +416,18 @@ export default function VerbsPage() {
             {verb.conjugations.masuKana}
           </div>
         )
+      case "te-kanji":
+        return (
+          <div className="text-4xl font-bold text-primary">
+            {verb.conjugations.te}
+          </div>
+        )
+      case "te-kana":
+        return (
+          <div className="text-4xl font-bold text-primary">
+            {verb.conjugations.teKana}
+          </div>
+        )
       default:
         return (
           <div className="relative w-full h-full flex items-center justify-center px-2 py-4">
@@ -605,6 +620,8 @@ export default function VerbsPage() {
                         <option value="kana">Dictionary (Kana)</option>
                         <option value="masu-kanji">Masu (Kanji)</option>
                         <option value="masu-kana">Masu (Kana)</option>
+                        <option value="te-kanji">Te-form (Kanji)</option>
+                        <option value="te-kana">Te-form (Kana)</option>
                       </select>
                     </div>
 
@@ -622,6 +639,8 @@ export default function VerbsPage() {
                         <option value="kana">Dictionary (Kana)</option>
                         <option value="masu-kanji">Masu (Kanji)</option>
                         <option value="masu-kana">Masu (Kana)</option>
+                        <option value="te-kanji">Te-form (Kanji)</option>
+                        <option value="te-kana">Te-form (Kana)</option>
                       </select>
                     </div>
                   </div>
@@ -668,6 +687,20 @@ export default function VerbsPage() {
                       onClick={() => setViewMode("dictionary-kana")}
                     >
                       Dictionary (Kana)
+                    </Button>
+                    <Button
+                      variant={viewMode === "te-form" ? "default" : "outline"}
+                      size="sm"
+                      onClick={() => setViewMode("te-form")}
+                    >
+                      Te-form (Kanji)
+                    </Button>
+                    <Button
+                      variant={viewMode === "te-form-kana" ? "default" : "outline"}
+                      size="sm"
+                      onClick={() => setViewMode("te-form-kana")}
+                    >
+                      Te-form (Kana)
                     </Button>
                   </div>
                 </div>
@@ -1121,6 +1154,22 @@ export default function VerbsPage() {
                               <div className="text-sm text-muted-foreground">{verb.kanji}</div>
                             </>
                           )}
+                          {viewMode === "te-form" && (
+                            <>
+                              <div className="text-3xl font-bold group-hover:text-primary transition-colors">
+                                {verb.conjugations.te}
+                              </div>
+                              <div className="text-sm text-muted-foreground">{verb.conjugations.teKana}</div>
+                            </>
+                          )}
+                          {viewMode === "te-form-kana" && (
+                            <>
+                              <div className="text-3xl font-bold group-hover:text-primary transition-colors">
+                                {verb.conjugations.teKana}
+                              </div>
+                              <div className="text-sm text-muted-foreground">{verb.conjugations.te}</div>
+                            </>
+                          )}
                         </div>
 
                         {/* Meaning */}
@@ -1190,6 +1239,14 @@ export default function VerbsPage() {
                           </div>
                         </div>
 
+                        <div>
+                          <p className="text-sm font-semibold text-muted-foreground mb-1">Te-form:</p>
+                          <div className="flex items-baseline gap-2">
+                            <span className="text-lg font-bold">{verb.conjugations.te}</span>
+                            <span className="text-sm text-muted-foreground">({verb.conjugations.teKana})</span>
+                          </div>
+                        </div>
+
                         {verb.meaning.length > 1 && (
                           <details className="text-sm">
                             <summary className="cursor-pointer text-muted-foreground hover:text-foreground">
@@ -1218,7 +1275,7 @@ export default function VerbsPage() {
                             <div className="flex items-center justify-between mb-2">
                               <div className="flex items-center gap-2">
                                 <BookText className="h-4 w-4 text-primary" />
-                                <p className="text-sm font-semibold text-primary">Examples ({verb.examples.length})</p>
+                                <p className="text-sm font-semibold text-primary">Basic Examples ({verb.examples.length})</p>
                               </div>
                               <button
                                 onClick={(e) => toggleExamplesExpansion(verb.id, e)}
