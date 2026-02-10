@@ -32,6 +32,7 @@ interface TeFormRule {
   rule: string
   description: string[]
   examples: string[]
+  examplesKana?: string[]
   color: string
 }
 
@@ -48,6 +49,7 @@ const teFormRules: TeFormRule[] = [
       "Works 99% of the time for ichidan verbs"
     ],
     examples: ["食べます → 食べて", "見ます → 見て", "起きます → 起きて"],
+    examplesKana: ["たべます → たべて", "みます → みて", "おきます → おきて"],
     color: "bg-gradient-to-r from-green-500 to-teal-500"
   },
   {
@@ -62,6 +64,7 @@ const teFormRules: TeFormRule[] = [
       "Easy to remember as a group"
     ],
     examples: ["会います → 会って", "待ちます → 待って", "帰ります → 帰って"],
+    examplesKana: ["あいます → あって", "まちます → まって", "かえります → かえって"],
     color: "bg-gradient-to-r from-blue-500 to-cyan-500"
   },
   {
@@ -76,6 +79,7 @@ const teFormRules: TeFormRule[] = [
       "Common with drinking/reading verbs"
     ],
     examples: ["飲みます → 飲んで", "遊びます → 遊んで", "死にます → 死んで"],
+    examplesKana: ["のみます → のんで", "あそびます → あそんで", "しにます → しんで"],
     color: "bg-gradient-to-r from-purple-500 to-pink-500"
   },
   {
@@ -90,6 +94,7 @@ const teFormRules: TeFormRule[] = [
       "Watch out for the 行く exception!"
     ],
     examples: ["書きます → 書いて", "歩きます → 歩いて", "聞きます → 聞いて"],
+    examplesKana: ["かきます → かいて", "あるきます → あるいて", "ききます → きいて"],
     color: "bg-gradient-to-r from-yellow-500 to-orange-500"
   },
   {
@@ -104,6 +109,7 @@ const teFormRules: TeFormRule[] = [
       "Not many N5 verbs use this"
     ],
     examples: ["泳ぎます → 泳いで", "急ぎます → 急いで"],
+    examplesKana: ["およぎます → およいで", "いそぎます → いそいで"],
     color: "bg-gradient-to-r from-indigo-500 to-purple-500"
   },
   {
@@ -118,6 +124,7 @@ const teFormRules: TeFormRule[] = [
       "Also includes irregular する"
     ],
     examples: ["話します → 話して", "貸します → 貸して", "押します → 押して"],
+    examplesKana: ["はなします → はなして", "かします → かして", "おします → おして"],
     color: "bg-gradient-to-r from-red-500 to-pink-500"
   }
 ]
@@ -136,6 +143,11 @@ const exceptions: TeFormRule = {
   examples: [
     "行きます → 行って (NOT 行いて!)",
     "来ます → 来て",
+    "します → して"
+  ],
+  examplesKana: [
+    "いきます → いって (NOT いいて!)",
+    "きます → きて",
     "します → して"
   ],
   color: "bg-gradient-to-r from-red-600 to-orange-600"
@@ -353,7 +365,7 @@ export default function TeFormLearningPage() {
 
                 {/* Quick Examples */}
                 <div className="grid md:grid-cols-3 gap-3">
-                  {currentRule.examples.map((example, idx) => (
+                  {(showKana && currentRule.examplesKana ? currentRule.examplesKana : currentRule.examples).map((example, idx) => (
                     <div
                       key={idx}
                       className="p-4 rounded-lg bg-muted/50 border-2 border-border text-center space-y-1"
