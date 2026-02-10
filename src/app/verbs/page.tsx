@@ -100,7 +100,7 @@ export default function VerbsPage() {
   const [showOnlyUnknown, setShowOnlyUnknown] = useState(false)
   const [expandedMeanings, setExpandedMeanings] = useState<Set<string>>(new Set())
   const [expandedExamples, setExpandedExamples] = useState<Set<string>>(new Set())
-  const [examplesPopup, setExamplesPopup] = useState<{ verbId: string; verb: N5Verb; position: { x: number; y: number }; showKana: boolean } | null>(null)
+  const [examplesPopup, setExamplesPopup] = useState<{ verbId: string; verb: N5Verb; position: { x: number; y: number }; showKana: boolean; showTeFormExamples?: boolean } | null>(null)
 
   // Load verbs data
   useEffect(() => {
@@ -233,7 +233,14 @@ export default function VerbsPage() {
     // This ensures that when practicing English -> Kana, BOTH sides show kana examples
     const showKana = displaySide === 'masu-kana' || displaySide === 'kana' ||
                      otherSide === 'masu-kana' || otherSide === 'kana' ||
-                     viewMode === 'kana-masu' || viewMode === 'dictionary-kana'
+                     viewMode === 'kana-masu' || viewMode === 'dictionary-kana' ||
+                     displaySide === 'te-kana' || otherSide === 'te-kana' ||
+                     viewMode === 'te-form-kana'
+
+    // Determine if we should show te-form examples
+    const showTeFormExamples = displaySide === 'te-kanji' || displaySide === 'te-kana' ||
+                                otherSide === 'te-kanji' || otherSide === 'te-kana' ||
+                                viewMode === 'te-form' || viewMode === 'te-form-kana'
 
     // Get button position for popup placement
     const button = e.currentTarget as HTMLElement
@@ -268,7 +275,8 @@ export default function VerbsPage() {
       verbId: verb.id,
       verb: verb,
       position: { x, y },
-      showKana
+      showKana,
+      showTeFormExamples
     })
   }
 
@@ -498,6 +506,18 @@ export default function VerbsPage() {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Complete collection of JLPT N5 verbs with conjugations, meanings, and practice modes
           </p>
+
+          <div className="flex justify-center gap-3 pt-2">
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={() => window.location.href = '/verbs/te-form-learning'}
+              className="gap-2"
+            >
+              <GraduationCap className="h-5 w-5" />
+              Learn Masu → Te Conversion Rules
+            </Button>
+          </div>
         </motion.div>
 
         {/* Stats Cards */}
@@ -1351,7 +1371,7 @@ export default function VerbsPage() {
 
         {/* Examples Popup */}
         <AnimatePresence>
-          {examplesPopup && examplesPopup.verb.examples && (
+          {examplesPopup && ((examplesPopup.showTeFormExamples && examplesPopup.verb.teFormExamples) || examplesPopup.verb.examples) && (
             <>
               {/* Backdrop to close popup when clicking outside */}
               <motion.div
@@ -1382,6 +1402,9 @@ export default function VerbsPage() {
                         <BookText className="h-4 w-4 text-primary" />
                         <CardTitle className="text-base">
                           {examplesPopup.verb.kanji}
+                          {examplesPopup.showTeFormExamples && (
+                            <span className="text-xs text-muted-foreground ml-2">(Te-form)</span>
+                          )}
                         </CardTitle>
                       </div>
                       <Button
@@ -1395,7 +1418,9 @@ export default function VerbsPage() {
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-2 max-h-[350px] overflow-y-auto pb-3">
-                    {examplesPopup.verb.examples.map((example, idx) => (
+                    {(examplesPopup.showTeFormExamples && examplesPopup.verb.teFormExamples
+                      ? examplesPopup.verb.teFormExamples
+                      : examplesPopup.verb.examples || []).map((example, idx) => (
                       <div
                         key={idx}
                         className="p-2 rounded-md bg-muted/50 border space-y-1"
