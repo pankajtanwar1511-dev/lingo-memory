@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=LingoMemory
+Comment=Japanese Language Learning App
+Exec=/home/pankaj/bumble/lingomemory/start-lingomemory.sh
+Icon=/home/pankaj/bumble/lingomemory/public/icons/icon-192x192.png
+Terminal=true
+Categories=Education;Languages;
+StartupNotify=true
+Path=/home/pankaj/bumble/lingomemory
