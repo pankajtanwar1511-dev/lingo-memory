@@ -25,39 +25,45 @@ let fixedCount = 0;
 const fixes = {
   '要る': {
     fix: 'masuKana',
-    old: 'います',
+    old: 'いります',
     new: 'いります',
-    reason: 'Incorrect kana - confused with いる (exist)'
+    reason: 'Correct kana (already fixed)'
   },
   '曲がる': {
     fix: 'primaryMeaning',
-    old: 'turn',
-    new: 'turn (corner), bend',
-    reason: 'Clarify type of turn - directional turn'
+    old: null,
+    new: 'turn corner/direction',
+    reason: 'Match exact type from table'
   },
   '回す': {
     fix: 'primaryMeaning',
-    old: 'turn',
-    new: 'rotate, turn (around)',
-    reason: 'Clarify type of turn - rotational turn'
+    old: null,
+    new: 'rotate/spin object',
+    reason: 'Match exact type from table'
   },
   '消す': {
     fix: 'primaryMeaning',
-    old: 'turn off',
-    new: 'turn off (light/device), erase',
-    reason: 'Clarify usage context'
+    old: null,
+    new: 'turn OFF device',
+    reason: 'Match exact type from table'
   },
   'つける': {
     fix: 'primaryMeaning',
-    old: 'turn on',
-    new: 'turn on (light/device), attach',
-    reason: 'Clarify usage context'
+    old: null,
+    new: 'turn ON device',
+    reason: 'Match exact type from table'
+  },
+  'なる': {
+    fix: 'primaryMeaning',
+    old: null,
+    new: 'turn INTO (become)',
+    reason: 'Match exact type from table'
   },
   '止める/停める': {
     fix: 'primaryMeaning',
-    old: 'stop, park',
-    new: 'stop, turn off (engine), park',
-    reason: 'Clarify turn off for engines'
+    old: null,
+    new: 'stop/turn off machine',
+    reason: 'Match exact type from table'
   }
 };
 
@@ -99,10 +105,11 @@ console.log(`💾 Saved: ${filePath}\n`);
 
 console.log('Summary of fixes:');
 console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-console.log('1. 要る: Fixed masuKana (います → いります)');
-console.log('2. 曲がる: Clarified as "turn (corner), bend"');
-console.log('3. 回す: Clarified as "rotate, turn (around)"');
-console.log('4. 消す: Clarified as "turn off (light/device), erase"');
-console.log('5. つける: Clarified as "turn on (light/device), attach"');
-console.log('6. 止める: Clarified as "stop, turn off (engine), park"');
+console.log('1. 要る: masuKana verified as いります ✓');
+console.log('2. 曲がる: → "turn corner/direction"');
+console.log('3. 回す: → "rotate/spin object"');
+console.log('4. 消す: → "turn OFF device"');
+console.log('5. つける: → "turn ON device"');
+console.log('6. なる: → "turn INTO (become)"');
+console.log('7. 止める: → "stop/turn off machine"');
 console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.3.1",
-    "generatedAt": "2026-02-10T15:27:03.015Z",
+    "generatedAt": "2026-02-10T15:49:37.551Z",
     "description": "Complete JLPT N5 verbs with corrected conjugations and clarified meanings",
     "totalEntries": 141,
     "uniqueVerbs": 141,
@@ -1778,7 +1778,7 @@
         "dictionary": "帰る",
         "dictionaryKana": "かえる",
         "masu": "帰ります",
-        "masuKana": "かえます",
+        "masuKana": "かえります",
         "te": "帰って",
         "teKana": "かえって"
       },
@@ -2550,7 +2550,7 @@
         "to cross out",
         "to delete"
       ],
-      "primaryMeaning": "turn off (light/device), erase",
+      "primaryMeaning": "turn OFF device",
       "jlptLevel": "N5",
       "partOfSpeech": [
         "verb"
@@ -4158,7 +4158,7 @@
         "to end up",
         "to prove (to be)"
       ],
-      "primaryMeaning": "become",
+      "primaryMeaning": "turn INTO (become)",
       "jlptLevel": "N5",
       "partOfSpeech": [
         "verb"
@@ -5177,7 +5177,7 @@
         "to wind",
         "to twist"
       ],
-      "primaryMeaning": "turn (corner), bend",
+      "primaryMeaning": "turn corner/direction",
       "jlptLevel": "N5",
       "partOfSpeech": [
         "verb"
@@ -5336,7 +5336,7 @@
         "to turn (to a new use)",
         "to use (for something else)"
       ],
-      "primaryMeaning": "rotate, turn (around)",
+      "primaryMeaning": "rotate/spin object",
       "jlptLevel": "N5",
       "partOfSpeech": [
         "verb"
@@ -8109,7 +8109,7 @@
         "to appoint (to a post)",
         "to promote"
       ],
-      "primaryMeaning": "turn on (light/device), attach",
+      "primaryMeaning": "turn ON device",
       "jlptLevel": "N5",
       "partOfSpeech": [
         "verb"
@@ -8421,7 +8421,7 @@
         "to turn off",
         "to park"
       ],
-      "primaryMeaning": "stop, turn off (engine), park",
+      "primaryMeaning": "stop/turn off machine",
       "jlptLevel": "N5",
       "partOfSpeech": [
         "verb"

@@ -102,6 +102,22 @@ export default function VerbsPage() {
   const [expandedExamples, setExpandedExamples] = useState<Set<string>>(new Set())
   const [examplesPopup, setExamplesPopup] = useState<{ verbId: string; verb: N5Verb; position: { x: number; y: number }; showKana: boolean; showTeFormExamples?: boolean } | null>(null)
 
+  // Matching exercise states
+  const [matchingMode, setMatchingMode] = useState(false)
+  const [matchingLeftForm, setMatchingLeftForm] = useState<FlipSide>("english")
+  const [matchingRightForm, setMatchingRightForm] = useState<FlipSide>("kanji")
+  const [currentBatch, setCurrentBatch] = useState(0)
+  const [selectedLeft, setSelectedLeft] = useState<string | null>(null)
+  const [selectedRight, setSelectedRight] = useState<string | null>(null)
+  const [matches, setMatches] = useState<Map<string, string>>(new Map())
+  const [correctMatches, setCorrectMatches] = useState<Set<string>>(new Set())
+  const [wrongAttempts, setWrongAttempts] = useState<Set<string>>(new Set())
+  const [shuffledRightVerbs, setShuffledRightVerbs] = useState<N5Verb[]>([])
+  const [matchingTestMode, setMatchingTestMode] = useState(false)
+  const [batchScores, setBatchScores] = useState<number[]>([])
+  const [showBatchResult, setShowBatchResult] = useState(false)
+  const [totalAttempts, setTotalAttempts] = useState(0)
+
   // Load verbs data
   useEffect(() => {
     async function loadVerbs() {
@@ -175,6 +191,22 @@ export default function VerbsPage() {
     setCurrentTestIndex(0)
     setShowAnswer(false)
   }, [searchQuery, selectedGroup, verbsData, shuffleMode, showOnlyUnknown, testMode, verbProgress])
+
+  // Matching exercise functions - defined here before useEffect
+  const getBatchVerbs = () => {
+    const batchSize = 10
+    const start = currentBatch * batchSize
+    const end = start + batchSize
+    return filteredVerbs.slice(start, end)
+  }
+
+  // Shuffle right side when batch changes or matching mode is enabled
+  useEffect(() => {
+    if (matchingMode && filteredVerbs.length > 0) {
+      const batchVerbs = getBatchVerbs()
+      setShuffledRightVerbs([...batchVerbs].sort(() => Math.random() - 0.5))
+    }
+  }, [currentBatch, matchingMode, filteredVerbs])
 
   const verbGroups = [
     { id: "all", label: "All Verbs", count: verbsData?.metadata.totalEntries || 0, color: "bg-gradient-to-r from-purple-500 to-pink-500" },
@@ -361,6 +393,123 @@ export default function VerbsPage() {
     }
   }
 
+  const handleLeftClick = (verbId: string) => {
+    if (correctMatches.has(verbId)) return // Already matched correctly
+
+    if (selectedLeft === verbId) {
+      setSelectedLeft(null) // Deselect
+    } else {
+      setSelectedLeft(verbId)
+      // If right side is selected, try to match
+      if (selectedRight) {
+        checkMatch(verbId, selectedRight)
+      }
+    }
+  }
+
+  const handleRightClick = (verbId: string) => {
+    if (correctMatches.has(verbId)) return // Already matched correctly
+
+    if (selectedRight === verbId) {
+      setSelectedRight(null) // Deselect
+    } else {
+      setSelectedRight(verbId)
+      // If left side is selected, try to match
+      if (selectedLeft) {
+        checkMatch(selectedLeft, verbId)
+      }
+    }
+  }
+
+  const checkMatch = (leftId: string, rightId: string) => {
+    setTotalAttempts(prev => prev + 1)
+
+    if (leftId === rightId) {
+      // Correct match!
+      const newCorrectMatches = new Set([...correctMatches, leftId])
+      setCorrectMatches(newCorrectMatches)
+      setMatches(prev => new Map([...prev, [leftId, rightId]]))
+      setSelectedLeft(null)
+      setSelectedRight(null)
+      setWrongAttempts(prev => {
+        const newSet = new Set(prev)
+        newSet.delete(leftId)
+        return newSet
+      })
+
+      // Check if batch is complete
+      if (newCorrectMatches.size === getBatchVerbs().length) {
+        if (matchingTestMode) {
+          // Calculate score (penalize for wrong attempts)
+          const batchSize = getBatchVerbs().length
+          const wrongCount = totalAttempts + 1 - newCorrectMatches.size
+          const score = Math.max(0, Math.round((batchSize / (totalAttempts + 1)) * 100))
+
+          setBatchScores(prev => [...prev, score])
+          setShowBatchResult(true)
+
+          // Auto-advance after 2 seconds if not the last batch
+          const maxBatch = Math.ceil(filteredVerbs.length / 10) - 1
+          if (currentBatch < maxBatch) {
+            setTimeout(() => {
+              nextBatch()
+              setShowBatchResult(false)
+            }, 2000)
+          }
+        }
+      }
+    } else {
+      // Wrong match
+      setWrongAttempts(prev => new Set([...prev, leftId]))
+      setTimeout(() => {
+        setSelectedLeft(null)
+        setSelectedRight(null)
+      }, 500)
+    }
+  }
+
+  const nextBatch = () => {
+    const batchSize = 10
+    const maxBatch = Math.ceil(filteredVerbs.length / batchSize) - 1
+    if (currentBatch < maxBatch) {
+      setCurrentBatch(currentBatch + 1)
+      resetMatchingState()
+    }
+  }
+
+  const previousBatch = () => {
+    if (currentBatch > 0) {
+      setCurrentBatch(currentBatch - 1)
+      resetMatchingState()
+    }
+  }
+
+  const resetMatchingState = () => {
+    setSelectedLeft(null)
+    setSelectedRight(null)
+    setMatches(new Map())
+    setCorrectMatches(new Set())
+    setWrongAttempts(new Set())
+    setTotalAttempts(0)
+  }
+
+  const resetAllMatchingProgress = () => {
+    setCurrentBatch(0)
+    setBatchScores([])
+    setShowBatchResult(false)
+    resetMatchingState()
+  }
+
+  const calculateFinalScore = () => {
+    if (batchScores.length === 0) return 0
+    const average = batchScores.reduce((a, b) => a + b, 0) / batchScores.length
+    return Math.round(average)
+  }
+
+  const isMatchingComplete = () => {
+    return correctMatches.size === getBatchVerbs().length
+  }
+
   const renderCardContent = (verb: N5Verb, side: FlipSide, showExpandButton: boolean = false) => {
     const isExpanded = expandedMeanings.has(verb.id)
 
@@ -370,7 +519,7 @@ export default function VerbsPage() {
           <div className="relative w-full h-full flex items-center justify-center px-2 py-4">
             <div className="space-y-1 flex-1 w-full overflow-hidden">
               <div className="text-base font-bold text-primary break-words leading-tight">
-                {verb.meaning[0]}
+                {verb.primaryMeaning}
               </div>
               {isExpanded && verb.meaning.length > 1 && (
                 <div className="text-xs text-muted-foreground break-words leading-tight">
@@ -441,7 +590,7 @@ export default function VerbsPage() {
           <div className="relative w-full h-full flex items-center justify-center px-2 py-4">
             <div className="space-y-1 flex-1 w-full overflow-hidden">
               <div className="text-base font-bold text-primary break-words leading-tight">
-                {verb.meaning[0]}
+                {verb.primaryMeaning}
               </div>
               {isExpanded && verb.meaning.length > 1 && (
                 <div className="text-xs text-muted-foreground break-words leading-tight">
@@ -590,9 +739,9 @@ export default function VerbsPage() {
                   </div>
                 </div>
 
-                {/* Shuffle & Test Mode */}
+                {/* Shuffle, Test Mode & Matching Mode */}
                 <div className="flex flex-col gap-3 p-4 border rounded-lg bg-muted/30">
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-4 flex-wrap">
                     <div className="flex items-center space-x-2">
                       <Switch
                         id="shuffle-mode"
@@ -613,6 +762,7 @@ export default function VerbsPage() {
                           setTestMode(checked)
                           if (checked) {
                             setFlipMode(true) // Auto-enable flip mode for tests
+                            setMatchingMode(false) // Disable matching mode
                             setCurrentTestIndex(0)
                             setShowAnswer(false)
                           }
@@ -621,6 +771,26 @@ export default function VerbsPage() {
                       <Label htmlFor="test-mode" className="font-semibold">
                         <GraduationCap className="h-4 w-4 inline mr-2" />
                         Test Mode
+                      </Label>
+                    </div>
+
+                    <div className="flex items-center space-x-2">
+                      <Switch
+                        id="matching-mode"
+                        checked={matchingMode}
+                        onCheckedChange={(checked) => {
+                          setMatchingMode(checked)
+                          if (checked) {
+                            setTestMode(false) // Disable test mode
+                            setFlipMode(false) // Disable flip mode
+                            setCurrentBatch(0)
+                            resetMatchingState()
+                          }
+                        }}
+                      />
+                      <Label htmlFor="matching-mode" className="font-semibold">
+                        <Target className="h-4 w-4 inline mr-2" />
+                        Matching Exercise
                       </Label>
                     </div>
                   </div>
@@ -643,7 +813,7 @@ export default function VerbsPage() {
               </div>
 
               {/* Flip Side Selection - Only when flip mode is ON and NOT in test mode */}
-              {flipMode && !testMode && (
+              {flipMode && !testMode && !matchingMode && (
                 <div className="flex items-center gap-4 p-4 border rounded-lg bg-muted/30">
                   <div className="flex items-center gap-4 flex-1">
                     <div className="flex items-center gap-2">
@@ -681,6 +851,82 @@ export default function VerbsPage() {
                         <option value="te-kana">Te-form (Kana)</option>
                       </select>
                     </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Matching Mode Form Selection */}
+              {matchingMode && (
+                <div className="p-4 border rounded-lg bg-muted/30 space-y-3">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <Target className="h-4 w-4 text-primary" />
+                      <Label className="font-semibold">Matching Exercise Settings</Label>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <Switch
+                        id="matching-test-mode"
+                        checked={matchingTestMode}
+                        onCheckedChange={(checked) => {
+                          setMatchingTestMode(checked)
+                          if (checked) {
+                            resetAllMatchingProgress()
+                          }
+                        }}
+                      />
+                      <Label htmlFor="matching-test-mode" className="text-sm font-semibold">
+                        <BarChart3 className="h-4 w-4 inline mr-1" />
+                        Test Mode (Auto-advance)
+                      </Label>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4 flex-1 flex-wrap">
+                    <div className="flex items-center gap-2">
+                      <Label className="text-sm whitespace-nowrap">Left Side:</Label>
+                      <select
+                        value={matchingLeftForm}
+                        onChange={(e) => {
+                          setMatchingLeftForm(e.target.value as FlipSide)
+                          resetAllMatchingProgress()
+                        }}
+                        className="px-3 py-1.5 border rounded-md bg-background"
+                      >
+                        <option value="english">English</option>
+                        <option value="kanji">Dictionary (Kanji)</option>
+                        <option value="kana">Dictionary (Kana)</option>
+                        <option value="masu-kanji">Masu (Kanji)</option>
+                        <option value="masu-kana">Masu (Kana)</option>
+                        <option value="te-kanji">Te-form (Kanji)</option>
+                        <option value="te-kana">Te-form (Kana)</option>
+                      </select>
+                    </div>
+
+                    <div className="text-muted-foreground">⟷</div>
+
+                    <div className="flex items-center gap-2">
+                      <Label className="text-sm whitespace-nowrap">Right Side:</Label>
+                      <select
+                        value={matchingRightForm}
+                        onChange={(e) => {
+                          setMatchingRightForm(e.target.value as FlipSide)
+                          resetAllMatchingProgress()
+                        }}
+                        className="px-3 py-1.5 border rounded-md bg-background"
+                      >
+                        <option value="english">English</option>
+                        <option value="kanji">Dictionary (Kanji)</option>
+                        <option value="kana">Dictionary (Kana)</option>
+                        <option value="masu-kanji">Masu (Kanji)</option>
+                        <option value="masu-kana">Masu (Kana)</option>
+                        <option value="te-kanji">Te-form (Kanji)</option>
+                        <option value="te-kana">Te-form (Kana)</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    {matchingTestMode
+                      ? "Test mode: Complete each batch to auto-advance. Final score shown at the end."
+                      : "Practice mode: Match verbs at your own pace. Use Next/Previous buttons to navigate."}
                   </div>
                 </div>
               )}
@@ -781,8 +1027,293 @@ export default function VerbsPage() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
           >
+            {/* Matching Mode */}
+            {matchingMode && (
+              <div className="space-y-4">
+                {/* Final Results Screen */}
+                {matchingTestMode && currentBatch >= Math.ceil(filteredVerbs.length / 10) - 1 && isMatchingComplete() && (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4"
+                  >
+                    <Card className="max-w-2xl w-full">
+                      <CardHeader>
+                        <div className="text-center space-y-2">
+                          <div className="text-6xl">🎉</div>
+                          <CardTitle className="text-3xl">Test Complete!</CardTitle>
+                          <CardDescription>You've completed all {Math.ceil(filteredVerbs.length / 10)} batches</CardDescription>
+                        </div>
+                      </CardHeader>
+                      <CardContent className="space-y-6">
+                        {/* Overall Score */}
+                        <div className="text-center p-6 bg-muted/50 rounded-lg">
+                          <div className="text-5xl font-bold gradient-text mb-2">
+                            {calculateFinalScore()}%
+                          </div>
+                          <div className="text-sm text-muted-foreground">Overall Score</div>
+                        </div>
+
+                        {/* Batch Scores */}
+                        <div>
+                          <h3 className="text-sm font-semibold mb-3">Batch Scores:</h3>
+                          <div className="grid grid-cols-5 gap-2">
+                            {batchScores.map((score, idx) => (
+                              <div key={idx} className="text-center p-2 bg-muted/30 rounded">
+                                <div className="text-xs text-muted-foreground mb-1">Batch {idx + 1}</div>
+                                <div className={cn(
+                                  "font-bold text-sm",
+                                  score >= 90 ? "text-green-600" : score >= 70 ? "text-yellow-600" : "text-red-600"
+                                )}>
+                                  {score}%
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+
+                        {/* Actions */}
+                        <div className="flex gap-3">
+                          <Button
+                            onClick={resetAllMatchingProgress}
+                            className="flex-1"
+                            size="lg"
+                          >
+                            <RefreshCw className="h-4 w-4 mr-2" />
+                            Try Again
+                          </Button>
+                          <Button
+                            onClick={() => {
+                              setMatchingMode(false)
+                              setMatchingTestMode(false)
+                              resetAllMatchingProgress()
+                            }}
+                            variant="outline"
+                            className="flex-1"
+                            size="lg"
+                          >
+                            Exit
+                          </Button>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
+                )}
+
+                {/* Progress Summary */}
+                <Card className="bg-muted/30">
+                  <CardContent className="p-3">
+                    <div className="flex items-center justify-between flex-wrap gap-3">
+                      <div className="flex items-center gap-4 flex-wrap">
+                        <div className="text-sm font-semibold">
+                          Batch {currentBatch + 1} of {Math.ceil(filteredVerbs.length / 10)}
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                          <span className="text-sm">
+                            Matched: {correctMatches.size} / {getBatchVerbs().length}
+                          </span>
+                        </div>
+                        {matchingTestMode && totalAttempts > 0 && (
+                          <div className="text-sm text-muted-foreground">
+                            Attempts: {totalAttempts}
+                          </div>
+                        )}
+                        {isMatchingComplete() && !matchingTestMode && (
+                          <Badge variant="default" className="animate-pulse">
+                            <CheckCircle2 className="h-3 w-3 mr-1" />
+                            Complete!
+                          </Badge>
+                        )}
+                        {showBatchResult && matchingTestMode && (
+                          <Badge variant="default" className="animate-pulse">
+                            Score: {batchScores[batchScores.length - 1]}%
+                          </Badge>
+                        )}
+                      </div>
+                      {!matchingTestMode && (
+                        <div className="flex gap-2">
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={previousBatch}
+                            disabled={currentBatch === 0}
+                          >
+                            <ChevronRight className="h-3 w-3 rotate-180 mr-1" />
+                            Prev
+                          </Button>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={resetMatchingState}
+                          >
+                            <RefreshCw className="h-3 w-3 mr-1" />
+                            Reset
+                          </Button>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={nextBatch}
+                            disabled={currentBatch >= Math.ceil(filteredVerbs.length / 10) - 1}
+                          >
+                            Next
+                            <ChevronRight className="h-3 w-3 ml-1" />
+                          </Button>
+                        </div>
+                      )}
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Matching Grid */}
+                <div className="max-w-5xl mx-auto">
+                  <div className="grid grid-cols-2 gap-3">
+                    {/* Left Column */}
+                    <div className="space-y-2">
+                    <div className="relative overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-md"></div>
+                      <div className="relative text-xs font-bold text-center py-2 px-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-md shadow-md">
+                        <div className="flex items-center justify-center gap-1.5">
+                          <List className="h-3.5 w-3.5" />
+                          <span>
+                            {matchingLeftForm === 'english' ? 'English' :
+                             matchingLeftForm === 'kanji' ? 'Dictionary (Kanji)' :
+                             matchingLeftForm === 'kana' ? 'Dictionary (Kana)' :
+                             matchingLeftForm === 'masu-kanji' ? 'Masu (Kanji)' :
+                             matchingLeftForm === 'masu-kana' ? 'Masu (Kana)' :
+                             matchingLeftForm === 'te-kanji' ? 'Te-form (Kanji)' :
+                             'Te-form (Kana)'}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    {getBatchVerbs().map((verb, index) => (
+                      <motion.div
+                        key={verb.id}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: index * 0.03 }}
+                      >
+                        <Card
+                          onClick={() => handleLeftClick(verb.id)}
+                          className={cn(
+                            "cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 border-2",
+                            selectedLeft === verb.id && "ring-4 ring-blue-400/50 shadow-xl scale-[1.03] border-blue-500 bg-blue-50 dark:bg-blue-950/30",
+                            correctMatches.has(verb.id) && "ring-4 ring-green-400/50 border-green-500 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20",
+                            wrongAttempts.has(verb.id) && !correctMatches.has(verb.id) && "ring-4 ring-red-400/50 border-red-500 animate-shake bg-red-50 dark:bg-red-950/20",
+                            !selectedLeft && !correctMatches.has(verb.id) && !wrongAttempts.has(verb.id) && "border-border hover:border-blue-300"
+                          )}
+                        >
+                          <CardContent className="p-2.5 px-3 min-h-[48px] flex items-center">
+                            <div className="flex items-center gap-2.5 w-full">
+                              <Badge
+                                variant="outline"
+                                className={cn(
+                                  "text-xs h-5 w-6 flex items-center justify-center p-0 font-bold border-2",
+                                  selectedLeft === verb.id && "bg-blue-500 text-white border-blue-600",
+                                  correctMatches.has(verb.id) && "bg-green-500 text-white border-green-600",
+                                  wrongAttempts.has(verb.id) && !correctMatches.has(verb.id) && "bg-red-500 text-white border-red-600"
+                                )}
+                              >
+                                {index + 1}
+                              </Badge>
+                              <div className="flex-1 text-sm font-semibold">
+                                {matchingLeftForm === 'english' ? (
+                                  <span className="text-sm">{verb.primaryMeaning}</span>
+                                ) : matchingLeftForm === 'kanji' || matchingLeftForm === 'kana' ? (
+                                  <span className="text-xl font-bold">{matchingLeftForm === 'kanji' ? verb.kanji : verb.kana}</span>
+                                ) : matchingLeftForm === 'masu-kanji' || matchingLeftForm === 'masu-kana' ? (
+                                  <span className="text-xl font-bold">{matchingLeftForm === 'masu-kanji' ? verb.conjugations.masu : verb.conjugations.masuKana}</span>
+                                ) : (
+                                  <span className="text-xl font-bold">{matchingLeftForm === 'te-kanji' ? verb.conjugations.te : verb.conjugations.teKana}</span>
+                                )}
+                              </div>
+                              {correctMatches.has(verb.id) && (
+                                <motion.div
+                                  initial={{ scale: 0 }}
+                                  animate={{ scale: 1 }}
+                                  transition={{ type: "spring", stiffness: 500, damping: 15 }}
+                                >
+                                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0" />
+                                </motion.div>
+                              )}
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </motion.div>
+                    ))}
+                  </div>
+
+                  {/* Right Column - Shuffled */}
+                  <div className="space-y-2">
+                    <div className="relative overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-md"></div>
+                      <div className="relative text-xs font-bold text-center py-2 px-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-md shadow-md">
+                        <div className="flex items-center justify-center gap-1.5">
+                          <Shuffle className="h-3.5 w-3.5" />
+                          <span>
+                            {matchingRightForm === 'english' ? 'English' :
+                             matchingRightForm === 'kanji' ? 'Dictionary (Kanji)' :
+                             matchingRightForm === 'kana' ? 'Dictionary (Kana)' :
+                             matchingRightForm === 'masu-kanji' ? 'Masu (Kanji)' :
+                             matchingRightForm === 'masu-kana' ? 'Masu (Kana)' :
+                             matchingRightForm === 'te-kanji' ? 'Te-form (Kanji)' :
+                             'Te-form (Kana)'}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    {shuffledRightVerbs.map((verb, index) => (
+                      <motion.div
+                        key={verb.id}
+                        initial={{ opacity: 0, x: 20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: index * 0.03 }}
+                      >
+                        <Card
+                          onClick={() => handleRightClick(verb.id)}
+                          className={cn(
+                            "cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 border-2",
+                            selectedRight === verb.id && "ring-4 ring-purple-400/50 shadow-xl scale-[1.03] border-purple-500 bg-purple-50 dark:bg-purple-950/30",
+                            correctMatches.has(verb.id) && "ring-4 ring-green-400/50 border-green-500 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20",
+                            !selectedRight && !correctMatches.has(verb.id) && "border-border hover:border-purple-300"
+                          )}
+                        >
+                          <CardContent className="p-2.5 px-3 min-h-[48px] flex items-center justify-center">
+                            <div className="flex items-center gap-2.5 w-full justify-center">
+                              <div className="flex-1 text-center text-sm font-semibold">
+                                {matchingRightForm === 'english' ? (
+                                  <span className="text-sm">{verb.primaryMeaning}</span>
+                                ) : matchingRightForm === 'kanji' || matchingRightForm === 'kana' ? (
+                                  <span className="text-xl font-bold">{matchingRightForm === 'kanji' ? verb.kanji : verb.kana}</span>
+                                ) : matchingRightForm === 'masu-kanji' || matchingRightForm === 'masu-kana' ? (
+                                  <span className="text-xl font-bold">{matchingRightForm === 'masu-kanji' ? verb.conjugations.masu : verb.conjugations.masuKana}</span>
+                                ) : (
+                                  <span className="text-xl font-bold">{matchingRightForm === 'te-kanji' ? verb.conjugations.te : verb.conjugations.teKana}</span>
+                                )}
+                              </div>
+                              {correctMatches.has(verb.id) && (
+                                <motion.div
+                                  initial={{ scale: 0 }}
+                                  animate={{ scale: 1 }}
+                                  transition={{ type: "spring", stiffness: 500, damping: 15 }}
+                                >
+                                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0" />
+                                </motion.div>
+                              )}
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </motion.div>
+                    ))}
+                  </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* Test Mode - Grid with Know/Don't Know on each card */}
-            {flipMode && testMode && (
+            {!matchingMode && flipMode && testMode && (
               <div className="space-y-4">
                 {/* Progress Summary */}
                 <Card className="bg-muted/30">
@@ -1001,7 +1532,7 @@ export default function VerbsPage() {
             )}
 
             {/* Normal Flip Card Views - Grid of all cards */}
-            {flipMode && !testMode && (
+            {!matchingMode && flipMode && !testMode && (
               <div className="space-y-4">
                 {/* Flip All Back Button for normal mode */}
                 {flippedCards.size > 0 && (
@@ -1142,7 +1673,7 @@ export default function VerbsPage() {
             )}
 
             {/* Simplified Views - Grid Layout */}
-            {!flipMode && viewMode !== "all" && (
+            {!matchingMode && !flipMode && viewMode !== "all" && (
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
                 {filteredVerbs.map((verb, index) => (
                   <motion.div
@@ -1230,7 +1761,7 @@ export default function VerbsPage() {
             )}
 
             {/* Full Information View */}
-            {!flipMode && viewMode === "all" && (
+            {!matchingMode && !flipMode && viewMode === "all" && (
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {filteredVerbs.map((verb, index) => (
                   <motion.div
@@ -1374,7 +1905,7 @@ export default function VerbsPage() {
           </motion.div>
         </AnimatePresence>
 
-        {filteredVerbs.length === 0 && (
+        {!matchingMode && filteredVerbs.length === 0 && (
           <div className="text-center py-16">
             <p className="text-xl text-muted-foreground">No verbs found matching your criteria</p>
             <Button
