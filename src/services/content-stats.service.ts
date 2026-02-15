@@ -95,13 +95,14 @@ export class ContentStatsService {
         totalExamples += card.examples.length
       }
 
-      if (card.audioUrl) {
+      if (card.audio?.pronunciationUrl) {
         stats.withAudio++
       }
 
-      if (card.imageUrl) {
-        stats.withImages++
-      }
+      // Note: imageUrl not currently supported in VocabularyCard type
+      // if (card.imageUrl) {
+      //   stats.withImages++
+      // }
 
       if (card.kanji) {
         stats.withKanji++
@@ -155,7 +156,7 @@ export class ContentStatsService {
         stats.withExamples++
       }
 
-      if (card.audioUrl) {
+      if (card.audio?.pronunciationUrl) {
         stats.withAudio++
       }
     })

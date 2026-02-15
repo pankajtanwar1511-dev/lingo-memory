@@ -66,9 +66,7 @@ export function VocabularySearch({
       // Search query (matches kanji, kana, or meaning)
       if (filters.searchQuery) {
         const query = filters.searchQuery.toLowerCase()
-        const meaning = Array.isArray(card.meaning)
-          ? card.meaning.join(" ").toLowerCase()
-          : card.meaning.toLowerCase()
+        const meaning = card.meaning.join(" ").toLowerCase()
 
         const matches =
           card.kanji?.toLowerCase().includes(query) ||

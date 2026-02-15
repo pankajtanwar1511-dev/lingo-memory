@@ -5,24 +5,27 @@ export const sampleN5Deck: VocabularyCard[] = [
     id: "n5_001",
     kanji: "水",
     kana: "みず",
-    meaning: "water",
+    meaning: ["water"],
     examples: [
       {
         japanese: "水を飲みます",
-        hiragana: "みずをのみます",
+        kana: "みずをのみます",
         english: "I drink water",
-        source: { type: "tatoeba", id: "204677" }
+        source: { type: "tatoeba", id: "204677" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "お水をください",
-        hiragana: "おみずをください",
+        kana: "おみずをください",
         english: "Water please",
-        source: { type: "tatoeba", id: "434980" }
+        source: { type: "tatoeba", id: "434980" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["noun", "common", "nature"],
     jlptLevel: "N5",
     partOfSpeech: ["noun"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY 2.0",
       url: "https://creativecommons.org/licenses/by/2.0/"
@@ -32,24 +35,27 @@ export const sampleN5Deck: VocabularyCard[] = [
     id: "n5_002",
     kanji: "食べる",
     kana: "たべる",
-    meaning: "to eat",
+    meaning: ["to eat"],
     examples: [
       {
         japanese: "朝ごはんを食べる",
-        hiragana: "あさごはんをたべる",
+        kana: "あさごはんをたべる",
         english: "To eat breakfast",
-        source: { type: "tatoeba", id: "143754" }
+        source: { type: "tatoeba", id: "143754" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "すしを食べたい",
-        hiragana: "すしをたべたい",
+        kana: "すしをたべたい",
         english: "I want to eat sushi",
-        source: { type: "tatoeba", id: "258598" }
+        source: { type: "tatoeba", id: "258598" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["verb", "common", "food"],
     jlptLevel: "N5",
     partOfSpeech: ["verb", "ichidan"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY 2.0",
       url: "https://creativecommons.org/licenses/by/2.0/"
@@ -59,24 +65,27 @@ export const sampleN5Deck: VocabularyCard[] = [
     id: "n5_003",
     kanji: "見る",
     kana: "みる",
-    meaning: "to see, to watch",
+    meaning: ["to see, to watch"],
     examples: [
       {
         japanese: "テレビを見る",
-        hiragana: "テレビをみる",
+        kana: "テレビをみる",
         english: "To watch TV",
-        source: { type: "tatoeba", id: "204808" }
+        source: { type: "tatoeba", id: "204808" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "映画を見ましょう",
-        hiragana: "えいがをみましょう",
+        kana: "えいがをみましょう",
         english: "Let's watch a movie",
-        source: { type: "tatoeba", id: "406642" }
+        source: { type: "tatoeba", id: "406642" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["verb", "common", "perception"],
     jlptLevel: "N5",
     partOfSpeech: ["verb", "ichidan"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY 2.0",
       url: "https://creativecommons.org/licenses/by/2.0/"
@@ -86,24 +95,27 @@ export const sampleN5Deck: VocabularyCard[] = [
     id: "n5_004",
     kanji: "大きい",
     kana: "おおきい",
-    meaning: "big, large",
+    meaning: ["big, large"],
     examples: [
       {
         japanese: "大きい家",
-        hiragana: "おおきいいえ",
+        kana: "おおきいいえ",
         english: "A big house",
-        source: { type: "jmdict" }
+        source: { type: "jmdict" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "この部屋は大きいです",
-        hiragana: "このへやはおおきいです",
+        kana: "このへやはおおきいです",
         english: "This room is big",
-        source: { type: "tatoeba", id: "223345" }
+        source: { type: "tatoeba", id: "223345" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["adjective", "common", "size"],
     jlptLevel: "N5",
     partOfSpeech: ["i-adjective"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY-SA 4.0",
       url: "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -113,24 +125,27 @@ export const sampleN5Deck: VocabularyCard[] = [
     id: "n5_005",
     kanji: "小さい",
     kana: "ちいさい",
-    meaning: "small, little",
+    meaning: ["small, little"],
     examples: [
       {
         japanese: "小さい犬",
-        hiragana: "ちいさいいぬ",
+        kana: "ちいさいいぬ",
         english: "A small dog",
-        source: { type: "jmdict" }
+        source: { type: "jmdict" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "この靴は小さいです",
-        hiragana: "このくつはちいさいです",
+        kana: "このくつはちいさいです",
         english: "These shoes are small",
-        source: { type: "tatoeba", id: "200731" }
+        source: { type: "tatoeba", id: "200731" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["adjective", "common", "size"],
     jlptLevel: "N5",
     partOfSpeech: ["i-adjective"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY-SA 4.0",
       url: "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -140,24 +155,27 @@ export const sampleN5Deck: VocabularyCard[] = [
     id: "n5_006",
     kanji: "今日",
     kana: "きょう",
-    meaning: "today",
+    meaning: ["today"],
     examples: [
       {
         japanese: "今日は月曜日です",
-        hiragana: "きょうはげつようびです",
+        kana: "きょうはげつようびです",
         english: "Today is Monday",
-        source: { type: "tatoeba", id: "200843" }
+        source: { type: "tatoeba", id: "200843" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "今日は暑い",
-        hiragana: "きょうはあつい",
+        kana: "きょうはあつい",
         english: "It's hot today",
-        source: { type: "tatoeba", id: "200911" }
+        source: { type: "tatoeba", id: "200911" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["noun", "time", "common"],
     jlptLevel: "N5",
     partOfSpeech: ["noun", "temporal"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY 2.0",
       url: "https://creativecommons.org/licenses/by/2.0/"
@@ -167,24 +185,27 @@ export const sampleN5Deck: VocabularyCard[] = [
     id: "n5_007",
     kanji: "明日",
     kana: "あした",
-    meaning: "tomorrow",
+    meaning: ["tomorrow"],
     examples: [
       {
         japanese: "明日会いましょう",
-        hiragana: "あしたあいましょう",
+        kana: "あしたあいましょう",
         english: "Let's meet tomorrow",
-        source: { type: "tatoeba", id: "185542" }
+        source: { type: "tatoeba", id: "185542" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "明日は雨です",
-        hiragana: "あしたはあめです",
+        kana: "あしたはあめです",
         english: "It will rain tomorrow",
-        source: { type: "tatoeba", id: "425620" }
+        source: { type: "tatoeba", id: "425620" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["noun", "time", "common"],
     jlptLevel: "N5",
     partOfSpeech: ["noun", "temporal"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY 2.0",
       url: "https://creativecommons.org/licenses/by/2.0/"
@@ -194,24 +215,27 @@ export const sampleN5Deck: VocabularyCard[] = [
     id: "n5_008",
     kanji: "友達",
     kana: "ともだち",
-    meaning: "friend",
+    meaning: ["friend"],
     examples: [
       {
         japanese: "友達と遊ぶ",
-        hiragana: "ともだちとあそぶ",
+        kana: "ともだちとあそぶ",
         english: "To play with friends",
-        source: { type: "tatoeba", id: "108788" }
+        source: { type: "tatoeba", id: "108788" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "新しい友達ができました",
-        hiragana: "あたらしいともだちができました",
+        kana: "あたらしいともだちができました",
         english: "I made new friends",
-        source: { type: "tatoeba", id: "406779" }
+        source: { type: "tatoeba", id: "406779" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["noun", "people", "common"],
     jlptLevel: "N5",
     partOfSpeech: ["noun"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY 2.0",
       url: "https://creativecommons.org/licenses/by/2.0/"
@@ -221,24 +245,27 @@ export const sampleN5Deck: VocabularyCard[] = [
     id: "n5_009",
     kanji: "学校",
     kana: "がっこう",
-    meaning: "school",
+    meaning: ["school"],
     examples: [
       {
         japanese: "学校に行く",
-        hiragana: "がっこうにいく",
+        kana: "がっこうにいく",
         english: "To go to school",
-        source: { type: "tatoeba", id: "74904" }
+        source: { type: "tatoeba", id: "74904" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "学校は楽しいです",
-        hiragana: "がっこうはたのしいです",
+        kana: "がっこうはたのしいです",
         english: "School is fun",
-        source: { type: "custom" }
+        source: { type: "custom" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["noun", "education", "common"],
     jlptLevel: "N5",
     partOfSpeech: ["noun"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY 2.0",
       url: "https://creativecommons.org/licenses/by/2.0/"
@@ -248,24 +275,27 @@ export const sampleN5Deck: VocabularyCard[] = [
     id: "n5_010",
     kanji: "本",
     kana: "ほん",
-    meaning: "book",
+    meaning: ["book"],
     examples: [
       {
         japanese: "本を読む",
-        hiragana: "ほんをよむ",
+        kana: "ほんをよむ",
         english: "To read a book",
-        source: { type: "tatoeba", id: "258463" }
+        source: { type: "tatoeba", id: "258463" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "この本は面白い",
-        hiragana: "このほんはおもしろい",
+        kana: "このほんはおもしろい",
         english: "This book is interesting",
-        source: { type: "tatoeba", id: "60273" }
+        source: { type: "tatoeba", id: "60273" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["noun", "education", "common"],
     jlptLevel: "N5",
     partOfSpeech: ["noun"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY 2.0",
       url: "https://creativecommons.org/licenses/by/2.0/"
@@ -279,20 +309,23 @@ export const sampleN5Deck: VocabularyCard[] = [
     examples: [
       {
         japanese: "山が高い",
-        hiragana: "やまがたかい",
+        kana: "やまがたかい",
         english: "The mountain is high",
-        source: { type: "jmdict" }
+        source: { type: "jmdict" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "これは高いです",
-        hiragana: "これはたかいです",
+        kana: "これはたかいです",
         english: "This is expensive",
-        source: { type: "tatoeba", id: "60887" }
+        source: { type: "tatoeba", id: "60887" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["adjective", "common"],
     jlptLevel: "N5",
     partOfSpeech: ["i-adjective"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY-SA 4.0",
       url: "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -302,24 +335,27 @@ export const sampleN5Deck: VocabularyCard[] = [
     id: "n5_012",
     kanji: "安い",
     kana: "やすい",
-    meaning: "cheap, inexpensive",
+    meaning: ["cheap, inexpensive"],
     examples: [
       {
         japanese: "この店は安い",
-        hiragana: "このみせはやすい",
+        kana: "このみせはやすい",
         english: "This store is cheap",
-        source: { type: "custom" }
+        source: { type: "custom" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "安い服を買う",
-        hiragana: "やすいふくをかう",
+        kana: "やすいふくをかう",
         english: "To buy cheap clothes",
-        source: { type: "tatoeba", id: "1193534" }
+        source: { type: "tatoeba", id: "1193534" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["adjective", "shopping", "common"],
     jlptLevel: "N5",
     partOfSpeech: ["i-adjective"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY 2.0",
       url: "https://creativecommons.org/licenses/by/2.0/"
@@ -329,24 +365,27 @@ export const sampleN5Deck: VocabularyCard[] = [
     id: "n5_013",
     kanji: "新しい",
     kana: "あたらしい",
-    meaning: "new",
+    meaning: ["new"],
     examples: [
       {
         japanese: "新しい車",
-        hiragana: "あたらしいくるま",
+        kana: "あたらしいくるま",
         english: "A new car",
-        source: { type: "jmdict" }
+        source: { type: "jmdict" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "新しい服を着る",
-        hiragana: "あたらしいふくをきる",
+        kana: "あたらしいふくをきる",
         english: "To wear new clothes",
-        source: { type: "tatoeba", id: "406968" }
+        source: { type: "tatoeba", id: "406968" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["adjective", "common"],
     jlptLevel: "N5",
     partOfSpeech: ["i-adjective"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY-SA 4.0",
       url: "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -356,24 +395,27 @@ export const sampleN5Deck: VocabularyCard[] = [
     id: "n5_014",
     kanji: "古い",
     kana: "ふるい",
-    meaning: "old (for things)",
+    meaning: ["old (for things)"],
     examples: [
       {
         japanese: "古い建物",
-        hiragana: "ふるいたてもの",
+        kana: "ふるいたてもの",
         english: "An old building",
-        source: { type: "jmdict" }
+        source: { type: "jmdict" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "この家は古いです",
-        hiragana: "このいえはふるいです",
+        kana: "このいえはふるいです",
         english: "This house is old",
-        source: { type: "tatoeba", id: "60825" }
+        source: { type: "tatoeba", id: "60825" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["adjective", "common"],
     jlptLevel: "N5",
     partOfSpeech: ["i-adjective"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY-SA 4.0",
       url: "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -383,24 +425,27 @@ export const sampleN5Deck: VocabularyCard[] = [
     id: "n5_015",
     kanji: "好き",
     kana: "すき",
-    meaning: "like, favorite",
+    meaning: ["like, favorite"],
     examples: [
       {
         japanese: "音楽が好きです",
-        hiragana: "おんがくがすきです",
+        kana: "おんがくがすきです",
         english: "I like music",
-        source: { type: "tatoeba", id: "257225" }
+        source: { type: "tatoeba", id: "257225" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "何が好きですか",
-        hiragana: "なにがすきですか",
+        kana: "なにがすきですか",
         english: "What do you like?",
-        source: { type: "tatoeba", id: "1105642" }
+        source: { type: "tatoeba", id: "1105642" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["adjective", "emotion", "common"],
     jlptLevel: "N5",
     partOfSpeech: ["na-adjective"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY 2.0",
       url: "https://creativecommons.org/licenses/by/2.0/"
@@ -409,24 +454,27 @@ export const sampleN5Deck: VocabularyCard[] = [
   {
     id: "n5_016",
     kana: "いつ",
-    meaning: "when",
+    meaning: ["when"],
     examples: [
       {
         japanese: "いつ来ますか",
-        hiragana: "いつきますか",
+        kana: "いつきますか",
         english: "When will you come?",
-        source: { type: "tatoeba", id: "1652" }
+        source: { type: "tatoeba", id: "1652" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "いつがいいですか",
-        hiragana: "いつがいいですか",
+        kana: "いつがいいですか",
         english: "When is good?",
-        source: { type: "custom" }
+        source: { type: "custom" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["adverb", "question", "common"],
     jlptLevel: "N5",
     partOfSpeech: ["adverb"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY 2.0",
       url: "https://creativecommons.org/licenses/by/2.0/"
@@ -435,24 +483,27 @@ export const sampleN5Deck: VocabularyCard[] = [
   {
     id: "n5_017",
     kana: "どこ",
-    meaning: "where",
+    meaning: ["where"],
     examples: [
       {
         japanese: "どこに行きますか",
-        hiragana: "どこにいきますか",
+        kana: "どこにいきますか",
         english: "Where are you going?",
-        source: { type: "tatoeba", id: "434985" }
+        source: { type: "tatoeba", id: "434985" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "駅はどこですか",
-        hiragana: "えきはどこですか",
+        kana: "えきはどこですか",
         english: "Where is the station?",
-        source: { type: "tatoeba", id: "28069" }
+        source: { type: "tatoeba", id: "28069" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["pronoun", "question", "common"],
     jlptLevel: "N5",
     partOfSpeech: ["pronoun"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY 2.0",
       url: "https://creativecommons.org/licenses/by/2.0/"
@@ -462,24 +513,27 @@ export const sampleN5Deck: VocabularyCard[] = [
     id: "n5_018",
     kanji: "毎日",
     kana: "まいにち",
-    meaning: "every day",
+    meaning: ["every day"],
     examples: [
       {
         japanese: "毎日勉強します",
-        hiragana: "まいにちべんきょうします",
+        kana: "まいにちべんきょうします",
         english: "I study every day",
-        source: { type: "tatoeba", id: "108789" }
+        source: { type: "tatoeba", id: "108789" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "毎日運動する",
-        hiragana: "まいにちうんどうする",
+        kana: "まいにちうんどうする",
         english: "To exercise every day",
-        source: { type: "custom" }
+        source: { type: "custom" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["noun", "time", "frequency", "common"],
     jlptLevel: "N5",
     partOfSpeech: ["noun", "temporal"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY 2.0",
       url: "https://creativecommons.org/licenses/by/2.0/"
@@ -493,20 +547,23 @@ export const sampleN5Deck: VocabularyCard[] = [
     examples: [
       {
         japanese: "お元気ですか",
-        hiragana: "おげんきですか",
+        kana: "おげんきですか",
         english: "How are you?",
-        source: { type: "tatoeba", id: "238498" }
+        source: { type: "tatoeba", id: "238498" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "元気です",
-        hiragana: "げんきです",
+        kana: "げんきです",
         english: "I'm fine",
-        source: { type: "tatoeba", id: "257213" }
+        source: { type: "tatoeba", id: "257213" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["adjective", "health", "greeting", "common"],
     jlptLevel: "N5",
     partOfSpeech: ["na-adjective", "noun"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY 2.0",
       url: "https://creativecommons.org/licenses/by/2.0/"
@@ -516,24 +573,27 @@ export const sampleN5Deck: VocabularyCard[] = [
     id: "n5_020",
     kanji: "天気",
     kana: "てんき",
-    meaning: "weather",
+    meaning: ["weather"],
     examples: [
       {
         japanese: "今日の天気はどうですか",
-        hiragana: "きょうのてんきはどうですか",
+        kana: "きょうのてんきはどうですか",
         english: "How's the weather today?",
-        source: { type: "tatoeba", id: "423478" }
+        source: { type: "tatoeba", id: "423478" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       },
       {
         japanese: "いい天気ですね",
-        hiragana: "いいてんきですね",
+        kana: "いいてんきですね",
         english: "Nice weather, isn't it?",
-        source: { type: "tatoeba", id: "65873" }
+        source: { type: "tatoeba", id: "65873" },
+        license: { text: "CC BY 2.0 FR (Tatoeba)", url: "https://creativecommons.org/licenses/by/2.0/" }
       }
     ],
     tags: ["noun", "weather", "common"],
     jlptLevel: "N5",
     partOfSpeech: ["noun"],
+    source: { type: "sample-deck" },
     license: {
       text: "CC BY 2.0",
       url: "https://creativecommons.org/licenses/by/2.0/"

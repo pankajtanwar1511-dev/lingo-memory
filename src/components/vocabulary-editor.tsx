@@ -21,7 +21,7 @@ export function VocabularyEditor({ card, onSave, onCancel }: VocabularyEditorPro
     id: "",
     kanji: "",
     kana: "",
-    meaning: "",
+    meaning: [],
     examples: [],
     tags: [],
     jlptLevel: undefined,
@@ -30,9 +30,10 @@ export function VocabularyEditor({ card, onSave, onCancel }: VocabularyEditorPro
 
   const [newExample, setNewExample] = useState<Example>({
     japanese: "",
+    kana: "",
     english: "",
-    hiragana: "",
-    source: { type: "custom" }
+    source: { type: "custom" },
+    license: { text: "Custom", url: "" }
   })
 
   const [newTag, setNewTag] = useState("")
@@ -40,10 +41,7 @@ export function VocabularyEditor({ card, onSave, onCancel }: VocabularyEditorPro
 
   useEffect(() => {
     if (card) {
-      setFormData({
-        ...card,
-        meaning: Array.isArray(card.meaning) ? card.meaning.join("; ") : card.meaning
-      })
+      setFormData(card)
     } else {
       // Generate new ID for new card
       setFormData(prev => ({
@@ -59,7 +57,7 @@ export function VocabularyEditor({ card, onSave, onCancel }: VocabularyEditorPro
       return
     }
 
-    if (!formData.meaning?.toString().trim()) {
+    if (!formData.meaning || formData.meaning.length === 0) {
       alert("Meaning is required")
       return
     }
@@ -71,8 +69,10 @@ export function VocabularyEditor({ card, onSave, onCancel }: VocabularyEditorPro
       meaning: formData.meaning!,
       examples: formData.examples || [],
       tags: formData.tags || [],
-      jlptLevel: formData.jlptLevel,
+      jlptLevel: formData.jlptLevel!,
       partOfSpeech: formData.partOfSpeech || [],
+      source: formData.source || { type: "custom" },
+      license: formData.license || { text: "Custom", url: "" },
       createdAt: card?.createdAt || new Date(),
       updatedAt: new Date()
     }
@@ -92,9 +92,10 @@ export function VocabularyEditor({ card, onSave, onCancel }: VocabularyEditorPro
 
     setNewExample({
       japanese: "",
+      kana: "",
       english: "",
-      hiragana: "",
-      source: { type: "custom" }
+      source: { type: "custom" },
+      license: { text: "Custom", url: "" }
     })
   }
 
@@ -201,9 +202,12 @@ export function VocabularyEditor({ card, onSave, onCancel }: VocabularyEditorPro
           <Input
             type="text"
             placeholder="Chinese character; kanji"
-            value={formData.meaning || ""}
+            value={Array.isArray(formData.meaning) ? formData.meaning.join("; ") : ""}
             onChange={(e) =>
-              setFormData(prev => ({ ...prev, meaning: e.target.value }))
+              setFormData(prev => ({
+                ...prev,
+                meaning: e.target.value.split(";").map(m => m.trim()).filter(m => m)
+              }))
             }
           />
           <p className="text-xs text-gray-500 mt-1">
@@ -313,9 +317,9 @@ export function VocabularyEditor({ card, onSave, onCancel }: VocabularyEditorPro
           <Input
             type="text"
             placeholder="Hiragana reading (optional)"
-            value={newExample.hiragana}
+            value={newExample.kana}
             onChange={(e) =>
-              setNewExample(prev => ({ ...prev, hiragana: e.target.value }))
+              setNewExample(prev => ({ ...prev, kana: e.target.value }))
             }
           />
           <Input

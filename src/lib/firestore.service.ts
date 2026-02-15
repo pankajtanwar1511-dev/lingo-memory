@@ -268,7 +268,7 @@ export class FirestoreService {
       tags: data.tags || [],
       examples: data.examples || [],
       source: data.source,
-      sourceUrl: data.sourceUrl,
+      license: data.license || { text: "Unknown", url: "" },
       createdAt: data.createdAt?.toDate() || new Date(),
       updatedAt: data.updatedAt?.toDate() || new Date(),
     } as VocabularyCard

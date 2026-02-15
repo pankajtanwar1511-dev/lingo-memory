@@ -55,8 +55,10 @@ const BADGE_LABELS = {
 
 export function PersonaBadge({ type, status, className = '' }: PersonaBadgeProps) {
   const styleKey = status as keyof typeof BADGE_STYLES[typeof type]
-  const style = BADGE_STYLES[type][styleKey] || BADGE_STYLES[type].custom || 'bg-gray-100 text-gray-700'
-  const label = BADGE_LABELS[type][styleKey] || status
+  const styles = BADGE_STYLES[type] as any
+  const labels = BADGE_LABELS[type] as any
+  const style = styles?.[styleKey] || styles?.custom || 'bg-gray-100 text-gray-700'
+  const label = labels?.[styleKey] || status
 
   return (
     <span

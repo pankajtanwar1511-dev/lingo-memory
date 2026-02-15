@@ -152,11 +152,12 @@ export function parseJMdictEntry(entry: JMdictEntry): VocabularyCard {
     id,
     kanji: primaryKanji,
     kana: primaryReading,
-    meaning: meanings.join("; "),
+    meaning: meanings,
     examples: [], // JMdict doesn't include examples, use Tatoeba integration
     tags: allTags.filter(t => !t.toLowerCase().includes("jlpt")), // Remove JLPT tags (stored separately)
-    jlptLevel,
+    jlptLevel: jlptLevel || "N5",
     partOfSpeech,
+    source: { type: "jmdict" },
     license: {
       text: "CC BY-SA 4.0",
       url: "https://creativecommons.org/licenses/by-sa/4.0/"

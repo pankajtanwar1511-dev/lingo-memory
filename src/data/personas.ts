@@ -13,6 +13,7 @@ import personasData from "./personas.json"
  */
 export const personas: Persona[] = personasData.personas.map((p) => ({
   ...p,
+  id: p.id as PersonaId,
   tone: p.tone as Persona["tone"],
   grammarLevel: p.grammarLevel as Persona["grammarLevel"],
   exampleStyle: p.exampleStyle as Persona["exampleStyle"],

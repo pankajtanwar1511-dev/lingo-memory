@@ -179,7 +179,8 @@ export function QuizQuestion({
 
     // For listening mode, speak the Japanese text
     if (question.mode === "listening" && question.card && question.contentType === "vocabulary") {
-      const textToSpeak = question.card.kanji || question.card.kana
+      const card = question.card as any // Type narrow
+      const textToSpeak = card.kanji || card.kana
       try {
         await audioService.speak(textToSpeak, {
           lang: "ja-JP",

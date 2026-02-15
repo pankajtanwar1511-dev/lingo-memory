@@ -1,6 +1,6 @@
 "use client"
 
-import { Badge } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 
 interface CalendarVisualProps {
   year?: number

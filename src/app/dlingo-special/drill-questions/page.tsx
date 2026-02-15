@@ -76,6 +76,11 @@ export default function QuestionsDrillPage() {
     }
   }, [phase, startTime])
 
+  // Current question and stats (used in multiple places)
+  const currentQuestion = questions[currentQuestionIndex]
+  const correctCount = questions.filter(q => q.isCorrect).length
+  const accuracy = questions.length > 0 ? (correctCount / questions.length) * 100 : 0
+
   // Keyboard shortcuts
   useEffect(() => {
     if (phase !== "drilling" || !currentQuestion || currentQuestion.userAnswer) return
@@ -99,6 +104,7 @@ export default function QuestionsDrillPage() {
 
     window.addEventListener("keydown", handleKeyPress)
     return () => window.removeEventListener("keydown", handleKeyPress)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase, currentQuestion])
 
   // Collect all question words
@@ -227,10 +233,6 @@ export default function QuestionsDrillPage() {
       </div>
     )
   }
-
-  const currentQuestion = questions[currentQuestionIndex]
-  const correctCount = questions.filter(q => q.isCorrect).length
-  const accuracy = questions.length > 0 ? (correctCount / questions.length) * 100 : 0
 
   // Setup Phase
   if (phase === "setup") {

@@ -280,7 +280,7 @@ export function SentenceBuilder({
   const renderWordBankWord = (item: WordItem, onClick: () => void) => (
     <button
       key={item.id}
-      ref={el => wordRefs.current[item.id] = el}
+      ref={el => { wordRefs.current[item.id] = el }}
       onClick={onClick}
       disabled={hasSubmitted || disabled}
       style={wordWidths[item.id] ? { width: `${wordWidths[item.id]}px` } : undefined}

@@ -266,7 +266,7 @@ export function hasKanji(card: VocabularyCard | KanjiCard): boolean {
 export function hasAudio(card: VocabularyCard | KanjiCard): boolean {
   if ("kana" in card) {
     // Vocabulary card
-    return !!(card.audio && (card.audio.url || card.audio.googleTTS))
+    return !!(card.audio && card.audio.pronunciationUrl)
   } else {
     // Kanji cards don't have audio field in current schema
     return false

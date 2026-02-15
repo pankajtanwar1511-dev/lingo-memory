@@ -180,6 +180,11 @@ function generateDummySentence(japanese: string, english: string, type: WordType
       { japanese: `${japanese}ください`, english: `${english}, please` },
       { japanese: japanese, english: english }
     ],
+    pronoun: [
+      { japanese: `${japanese}は学生です`, english: `${english} am/is/are a student` },
+      { japanese: `${japanese}が好きです`, english: `I like ${english}` },
+      { japanese: japanese, english: english }
+    ],
     other: [
       { japanese: japanese, english: english },
       { japanese: `${japanese}です`, english: `It's ${english}` },
@@ -187,7 +192,7 @@ function generateDummySentence(japanese: string, english: string, type: WordType
     ]
   }
 
-  const options = sentences[type] || sentences.other
+  const options = sentences[type as keyof typeof sentences] || sentences.other
   return options[Math.floor(Math.random() * options.length)]
 }
 

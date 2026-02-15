@@ -135,10 +135,7 @@ export class QualityScorerService {
     }
 
     // Meaning (10 points)
-    const hasMeaning = card.meaning && (
-      (typeof card.meaning === 'string' && card.meaning.trim()) ||
-      (Array.isArray(card.meaning) && card.meaning.length > 0)
-    )
+    const hasMeaning = card.meaning && card.meaning.length > 0
     if (hasMeaning) {
       score += 10
     } else {
@@ -266,17 +263,17 @@ export class QualityScorerService {
   private scoreAudio(card: VocabularyCard, issues: QualityIssue[]): number {
     let score = 0
 
-    if (card.audioUrl && card.audioUrl.trim()) {
+    if (card.audio?.pronunciationUrl && card.audio.pronunciationUrl.trim()) {
       score += 20
 
       // Check if URL looks valid
-      const url = card.audioUrl.trim()
+      const url = card.audio.pronunciationUrl.trim()
       if (!url.startsWith('http://') && !url.startsWith('https://')) {
         issues.push({
           severity: 'warning',
           category: 'audio',
           message: 'Audio URL does not start with http:// or https://',
-          field: 'audioUrl',
+          field: 'audio.pronunciationUrl',
         })
         score -= 5
       }
@@ -288,7 +285,7 @@ export class QualityScorerService {
           severity: 'info',
           category: 'audio',
           message: 'Audio URL does not end with common audio extension',
-          field: 'audioUrl',
+          field: 'audio.pronunciationUrl',
         })
       }
     } else {
@@ -297,14 +294,14 @@ export class QualityScorerService {
           severity: 'critical',
           category: 'audio',
           message: 'Missing audio URL',
-          field: 'audioUrl',
+          field: 'audio.pronunciationUrl',
         })
       } else {
         issues.push({
           severity: 'warning',
           category: 'audio',
           message: 'Missing audio URL',
-          field: 'audioUrl',
+          field: 'audio.pronunciationUrl',
         })
         score += 10 // Partial credit if audio is optional
       }
@@ -362,20 +359,7 @@ export class QualityScorerService {
       score -= 3
     }
 
-    if (card.meaning) {
-      const hasWhitespace = typeof card.meaning === 'string'
-        ? card.meaning !== card.meaning.trim()
-        : false // Arrays don't have whitespace issues
-      if (hasWhitespace) {
-        issues.push({
-          severity: 'warning',
-          category: 'consistency',
-          message: 'Meaning has leading/trailing whitespace',
-          field: 'meaning',
-        })
-        score -= 3
-      }
-    }
+    // Arrays don't have whitespace issues, so skip whitespace check for meaning
 
     // Check kanji contains actual kanji (if present)
     if (card.kanji && card.kanji.trim()) {

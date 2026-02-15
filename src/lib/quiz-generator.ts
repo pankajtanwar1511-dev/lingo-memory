@@ -390,7 +390,7 @@ function createListeningQuestion(
     question,
     correctAnswer,
     choices,
-    audioUrl: card.audioUrl, // Use card's audioUrl if available, otherwise audio service will use TTS
+    audioUrl: card.audio?.pronunciationUrl, // Use card's audioUrl if available, otherwise audio service will use TTS
     hint: getHint(card, "japanese-to-english")
   }
 }

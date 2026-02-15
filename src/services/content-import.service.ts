@@ -218,8 +218,6 @@ export class ContentImportService {
         kana: row.kana,
         meaning: meanings,
         examples,
-        audioUrl: row.audioUrl || undefined,
-        imageUrl: row.imageUrl || undefined,
         tags: tags.length > 0 ? tags : undefined,
         jlptLevel: row.jlptLevel as JLPTLevel,
         partOfSpeech: partOfSpeech.length > 0 ? partOfSpeech : undefined,
@@ -374,8 +372,7 @@ export class ContentImportService {
       partOfSpeech: card.partOfSpeech?.join(', ') || '',
       tags: card.tags?.join(', ') || '',
       examples: JSON.stringify(card.examples),
-      audioUrl: card.audioUrl || '',
-      imageUrl: card.imageUrl || '',
+      audioUrl: card.audio?.pronunciationUrl || '',
       licenseText: card.license?.text || '',
       licenseUrl: card.license?.url || ''
     }))

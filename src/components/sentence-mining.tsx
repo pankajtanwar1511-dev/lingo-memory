@@ -77,16 +77,22 @@ export function SentenceMining({ onAddCard }: SentenceMiningProps) {
   }) => {
     const example: Example = {
       japanese: word.context,
+      kana: word.context,
       english: "Translation needed",
-      source: { type: "custom" }
+      source: { type: "custom" },
+      license: { text: "Custom", url: "" }
     }
 
     const card: Omit<VocabularyCard, "id"> = {
       kanji: word.word,
       kana: word.reading,
-      meaning: word.meaning,
-      examples: [example],
+      meaning: [word.meaning],
+      jlptLevel: "N5",
+      partOfSpeech: [],
       tags: ["mined", "needs-review"],
+      examples: [example],
+      source: { type: "custom" },
+      license: { text: "Custom", url: "" },
       createdAt: new Date(),
       updatedAt: new Date()
     }

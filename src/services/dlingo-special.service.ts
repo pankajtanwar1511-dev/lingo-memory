@@ -30,6 +30,9 @@ export async function loadSpecialData(): Promise<SpecialVocabularyData> {
       throw new Error(`Failed to load special vocabulary: ${response.statusText}`)
     }
     specialData = await response.json()
+    if (!specialData) {
+      throw new Error('Failed to parse special vocabulary data')
+    }
     return specialData
   } catch (error) {
     console.error('Error loading special vocabulary:', error)

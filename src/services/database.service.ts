@@ -514,9 +514,7 @@ export class DatabaseService {
     const lowerQuery = query.toLowerCase()
 
     const filtered = allCards.filter(card => {
-      const meaning = Array.isArray(card.meaning)
-        ? card.meaning.join(' ').toLowerCase()
-        : card.meaning.toLowerCase()
+      const meaning = card.meaning.join(' ').toLowerCase()
 
       return (
         card.kanji?.toLowerCase().includes(lowerQuery) ||

@@ -312,11 +312,16 @@ export class SentenceMatcherService {
   convertToExamples(matches: SentenceMatch[]): Example[] {
     return matches.map(match => ({
       japanese: match.sentence.japanese.text,
+      kana: match.sentence.japanese.text, // Tatoeba doesn't provide separate kana
       english: match.sentence.english.text,
       source: {
         type: 'tatoeba' as const,
         id: match.sentence.japanese.id,
       },
+      license: {
+        text: 'CC BY 2.0 FR',
+        url: 'https://creativecommons.org/licenses/by/2.0/fr/'
+      }
     }))
   }
 

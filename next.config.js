@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    typedRoutes: true,
+    // typedRoutes: true, // Disabled for deployment - some routes are placeholders
   },
   images: {
     domains: ['localhost'],

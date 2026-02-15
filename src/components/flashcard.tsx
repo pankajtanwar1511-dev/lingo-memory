@@ -182,8 +182,8 @@ export function Flashcard({
                           return true
                         })
                         .map((example, index) => {
-                        const persona = example.source.type === 'generated' && example.source.persona
-                          ? getPersonaById(example.source.persona)
+                        const persona = example.source.type === 'generated' && 'persona' in example.source
+                          ? getPersonaById(example.source.persona as any)
                           : undefined
 
                         // Get persona color

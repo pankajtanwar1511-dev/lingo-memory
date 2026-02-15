@@ -238,8 +238,10 @@ function parseCSVRow(
   if (fields.length >= 4 && fields[2] && fields[3]) {
     examples.push({
       japanese: fields[2],
+      kana: "",
       english: fields[3],
-      source: { type: "custom" }
+      source: { type: "custom" },
+      license: { text: "Imported", url: "" }
     })
   }
 
@@ -267,11 +269,13 @@ function parseCSVRow(
     id,
     kanji,
     kana,
-    meaning,
+    meaning: [meaning],
     examples,
     tags,
-    jlptLevel,
+    jlptLevel: jlptLevel || "N5",
     partOfSpeech,
+    source: { type: "imported" },
+    license: { text: "Imported", url: "" },
     createdAt: new Date(),
     updatedAt: new Date()
   }

@@ -273,14 +273,14 @@ export default function VocabularyPage() {
                       <div className="flex-1">
                         <CardTitle className="text-2xl flex items-center gap-2">
                           {card.kanji || card.kana}
-                          {card.audioUrl && (
+                          {card.audio?.pronunciationUrl && (
                             <Button
                               variant="ghost"
                               size="sm"
                               className="h-6 w-6 p-0"
                               onClick={(e) => {
                                 e.stopPropagation()
-                                playAudio(card.audioUrl!)
+                                playAudio(card.audio!.pronunciationUrl)
                               }}
                             >
                               <Volume2 className="h-4 w-4" />
@@ -329,16 +329,10 @@ export default function VocabularyPage() {
 
                       {/* Features */}
                       <div className="flex gap-2 text-xs text-muted-foreground">
-                        {card.audioUrl && (
+                        {card.audio?.pronunciationUrl && (
                           <div className="flex items-center gap-1">
                             <Volume2 className="h-3 w-3" />
                             Audio
-                          </div>
-                        )}
-                        {card.imageUrl && (
-                          <div className="flex items-center gap-1">
-                            <ImageIcon className="h-3 w-3" />
-                            Image
                           </div>
                         )}
                         {card.examples && (
@@ -386,11 +380,11 @@ export default function VocabularyPage() {
                     <div className="flex-1">
                       <DialogTitle className="text-3xl flex items-center gap-2">
                         {selectedCard.kanji || selectedCard.kana}
-                        {selectedCard.audioUrl && (
+                        {selectedCard.audio?.pronunciationUrl && (
                           <Button
                             variant="ghost"
                             size="sm"
-                            onClick={() => playAudio(selectedCard.audioUrl!)}
+                            onClick={() => playAudio(selectedCard.audio!.pronunciationUrl)}
                           >
                             <Volume2 className="h-5 w-5" />
                           </Button>
