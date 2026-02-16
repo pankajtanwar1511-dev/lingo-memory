@@ -55,6 +55,20 @@ export interface VerbData {
     english: string
     highlight?: string
   }[]
+  teFormExamples?: {
+    japanese: string
+    kana: string
+    english: string
+    highlight?: string
+    pattern?: string
+  }[]
+  dictFormExamples?: {
+    japanese: string
+    kana: string
+    english: string
+    highlight?: string
+    pattern?: string
+  }[]
 }
 
 /**
@@ -202,18 +216,15 @@ function generateExplanation(form: string, isPast: boolean): string {
 export function generateQuestionsFromVerb(verb: VerbData): VerbFormQuestion[] {
   const questions: VerbFormQuestion[] = []
 
-  if (!verb.examples || verb.examples.length === 0) {
-    return questions
-  }
-
   // Pre-generate all forms
   const { ta, taKana } = generateTaForm(verb.conjugations.te, verb.conjugations.teKana)
   const { mashita, mashitaKana } = generateMashitaForm(verb.conjugations.masu, verb.conjugations.masuKana)
   const { nai, naiKana } = generateNaiForm(verb.conjugations.dictionary, verb.conjugations.dictionaryKana, verb.verbGroup)
   const { masen, masenKana } = generateMasenForm(verb.conjugations.masu, verb.conjugations.masuKana)
 
-  // For each example sentence, detect what form it uses and create a question
-  verb.examples.forEach((example, index) => {
+  // Process regular examples (ます/ました forms)
+  if (verb.examples) {
+    verb.examples.forEach((example, index) => {
     const detected = detectVerbForm(example.japanese, verb)
 
     if (!detected) {
@@ -310,8 +321,130 @@ export function generateQuestionsFromVerb(verb: VerbData): VerbFormQuestion[] {
         difficulty: 2,
         explanation: generateExplanation('te', false)
       })
+    } else if (detected.form === 'dictionary') {
+      // Dictionary form question
+      questions.push({
+        id: `${verb.id}-ex${index}-dict`,
+        sentence: blankSentence,
+        sentenceKana: blankKana,
+        english: example.english,
+
+        verbId: verb.id,
+        verbKanji: verb.kanji,
+        verbMeaning: verb.primaryMeaning,
+
+        correctForm: 'dictionary',
+        correctAnswer: verb.conjugations.dictionary,
+        correctAnswerKana: verb.conjugations.dictionaryKana,
+
+        options: [
+          { form: 'dictionary', text: verb.conjugations.dictionary, kana: verb.conjugations.dictionaryKana, isCorrect: true },
+          { form: 'masu', text: verb.conjugations.masu, kana: verb.conjugations.masuKana, isCorrect: false },
+          { form: 'te', text: verb.conjugations.te, kana: verb.conjugations.teKana, isCorrect: false },
+          { form: 'mashita', text: mashita, kana: mashitaKana, isCorrect: false },
+        ],
+
+        context: 'casual',
+        difficulty: 1,
+        explanation: generateExplanation('dictionary', false)
+      })
     }
-  })
+    })
+  }
+
+  // Process te-form examples
+  if (verb.teFormExamples) {
+    verb.teFormExamples.forEach((example, index) => {
+      const detected = detectVerbForm(example.japanese, verb)
+
+      if (!detected) {
+        console.warn(`Could not detect verb form in te-form example: ${example.japanese}`)
+        return
+      }
+
+      const { sentence: blankSentence, kana: blankKana } = createSentenceWithBlank(
+        example.japanese,
+        example.kana,
+        detected.verbText,
+        detected.verbKana
+      )
+
+      if (detected.form === 'te') {
+        questions.push({
+          id: `${verb.id}-te${index}`,
+          sentence: blankSentence,
+          sentenceKana: blankKana,
+          english: example.english,
+
+          verbId: verb.id,
+          verbKanji: verb.kanji,
+          verbMeaning: verb.primaryMeaning,
+
+          correctForm: 'te',
+          correctAnswer: verb.conjugations.te,
+          correctAnswerKana: verb.conjugations.teKana,
+
+          options: [
+            { form: 'dictionary', text: verb.conjugations.dictionary, kana: verb.conjugations.dictionaryKana, isCorrect: false },
+            { form: 'masu', text: verb.conjugations.masu, kana: verb.conjugations.masuKana, isCorrect: false },
+            { form: 'te', text: verb.conjugations.te, kana: verb.conjugations.teKana, isCorrect: true },
+            { form: 'ta', text: ta, kana: taKana, isCorrect: false },
+          ],
+
+          context: example.pattern || 'connection',
+          difficulty: 2,
+          explanation: generateExplanation('te', false)
+        })
+      }
+    })
+  }
+
+  // Process dictionary form examples
+  if (verb.dictFormExamples) {
+    verb.dictFormExamples.forEach((example, index) => {
+      const detected = detectVerbForm(example.japanese, verb)
+
+      if (!detected) {
+        console.warn(`Could not detect verb form in dict example: ${example.japanese}`)
+        return
+      }
+
+      const { sentence: blankSentence, kana: blankKana } = createSentenceWithBlank(
+        example.japanese,
+        example.kana,
+        detected.verbText,
+        detected.verbKana
+      )
+
+      if (detected.form === 'dictionary') {
+        questions.push({
+          id: `${verb.id}-dict${index}`,
+          sentence: blankSentence,
+          sentenceKana: blankKana,
+          english: example.english,
+
+          verbId: verb.id,
+          verbKanji: verb.kanji,
+          verbMeaning: verb.primaryMeaning,
+
+          correctForm: 'dictionary',
+          correctAnswer: verb.conjugations.dictionary,
+          correctAnswerKana: verb.conjugations.dictionaryKana,
+
+          options: [
+            { form: 'dictionary', text: verb.conjugations.dictionary, kana: verb.conjugations.dictionaryKana, isCorrect: true },
+            { form: 'masu', text: verb.conjugations.masu, kana: verb.conjugations.masuKana, isCorrect: false },
+            { form: 'te', text: verb.conjugations.te, kana: verb.conjugations.teKana, isCorrect: false },
+            { form: 'ta', text: ta, kana: taKana, isCorrect: false },
+          ],
+
+          context: example.pattern || 'casual',
+          difficulty: 1,
+          explanation: generateExplanation('dictionary', false)
+        })
+      }
+    })
+  }
 
   return questions
 }

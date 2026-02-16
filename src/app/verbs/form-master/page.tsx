@@ -30,6 +30,7 @@ export default function VerbFormMasterPage() {
 
       // Generate all questions
       const allQuestions = generateAllQuestions(verbs)
+      console.log(`✅ Generated ${allQuestions.length} total questions from ${verbs.length} verbs`)
 
       // Get random questions for this session
       const sessionQuestions = getRandomQuestions(allQuestions, count)
