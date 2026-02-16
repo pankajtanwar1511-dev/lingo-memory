@@ -79,7 +79,7 @@ export default function ParticleLearningPage() {
           <Link href="/dlingo-special">
             <Button variant="ghost" className="mb-4 gap-2">
               <Home className="h-4 w-4" />
-              Back to Special Dashboard
+              Back to Dlingo Special
             </Button>
           </Link>
 

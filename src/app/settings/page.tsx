@@ -8,6 +8,8 @@ import { PrivacyTab } from "@/components/settings/privacy-tab"
 import { SyncTab } from "@/components/settings/sync-tab"
 import { SecurityTab } from "@/components/settings/security-tab"
 import { DataTab } from "@/components/settings/data-tab"
+import { ManageTab } from "@/components/settings/manage-tab"
+import { DatabaseTab } from "@/components/settings/database-tab"
 import { useSettings } from "@/contexts/settings-context"
 import { Loader2 } from "lucide-react"
 
@@ -37,13 +39,15 @@ export default function SettingsPage() {
           </div>
 
           <Tabs defaultValue="account" className="space-y-6">
-            <TabsList className="grid w-full grid-cols-6">
+            <TabsList className="grid w-full grid-cols-4 lg:grid-cols-8">
               <TabsTrigger value="account">Account</TabsTrigger>
               <TabsTrigger value="preferences">Preferences</TabsTrigger>
               <TabsTrigger value="privacy">Privacy</TabsTrigger>
               <TabsTrigger value="sync">Sync</TabsTrigger>
               <TabsTrigger value="security">Security</TabsTrigger>
               <TabsTrigger value="data">Data</TabsTrigger>
+              <TabsTrigger value="manage">Manage</TabsTrigger>
+              <TabsTrigger value="database">Database</TabsTrigger>
             </TabsList>
 
             <TabsContent value="account">
@@ -68,6 +72,14 @@ export default function SettingsPage() {
 
             <TabsContent value="data">
               <DataTab />
+            </TabsContent>
+
+            <TabsContent value="manage">
+              <ManageTab />
+            </TabsContent>
+
+            <TabsContent value="database">
+              <DatabaseTab />
             </TabsContent>
           </Tabs>
         </div>

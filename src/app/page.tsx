@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import {
   BookOpen, Zap, Trophy, Users, ArrowRight, Star,
   Globe, Smartphone, Cloud, Shield, ChevronRight,
-  Sparkles, TrendingUp, Clock, Target
+  Sparkles, TrendingUp, Clock, Target, LayoutDashboard
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -91,15 +91,16 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Link href="/study">
+              <Link href="/dashboard">
                 <Button size="lg" variant="gradient" className="group w-full sm:w-auto">
-                  Start Learning Free
+                  <LayoutDashboard className="mr-2 h-4 w-4" />
+                  Go to Dashboard
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <Link href="/vocabulary">
+              <Link href="/study">
                 <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                  View Demo Deck
+                  Start Learning Free
                 </Button>
               </Link>
             </div>

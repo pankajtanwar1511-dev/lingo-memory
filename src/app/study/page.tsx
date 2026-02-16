@@ -668,7 +668,7 @@ export default function StudyPage() {
                       Continue Studying
                     </Button>
                     <Button onClick={handleEndSession} variant="outline">
-                      Back to Dashboard
+                      End Session
                     </Button>
                   </div>
                 </CardContent>
