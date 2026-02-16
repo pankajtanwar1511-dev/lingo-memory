@@ -1306,7 +1306,7 @@ export default function VerbsPage() {
                         {/* Batch Scores */}
                         <div>
                           <h3 className="text-sm font-semibold mb-3">Batch Scores:</h3>
-                          <div className="grid grid-cols-5 gap-2">
+                          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
                             {batchScores.map((score, idx) => (
                               <div key={idx} className="text-center p-2 bg-muted/30 rounded">
                                 <div className="text-xs text-muted-foreground mb-1">Batch {idx + 1}</div>
@@ -2233,9 +2233,9 @@ export default function VerbsPage() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.2 }}
-                  className="fixed z-50 w-[420px]"
+                  className="fixed z-50 w-[95vw] sm:w-[420px] max-w-[420px]"
                   style={{
-                    left: `${examplesPopup.position.x}px`,
+                    left: typeof window !== 'undefined' && window.innerWidth < 640 ? '2.5vw' : `${examplesPopup.position.x}px`,
                     top: `${examplesPopup.position.y}px`
                   }}
                   onClick={(e) => e.stopPropagation()}

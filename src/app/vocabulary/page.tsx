@@ -188,7 +188,7 @@ export default function VocabularyPage() {
               <CardDescription>Vocabulary count by proficiency level</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-5 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
                 {(['N5', 'N4', 'N3', 'N2', 'N1'] as JLPTLevel[]).map(level => (
                   <div key={level} className="text-center">
                     <div className="text-2xl font-bold text-primary">

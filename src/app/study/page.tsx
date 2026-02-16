@@ -516,7 +516,7 @@ export default function StudyPage() {
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3 }}
               >
-                <Card className="min-h-[500px]">
+                <Card className="min-h-[300px] sm:min-h-[400px] md:min-h-[500px]">
                   <CardContent className="p-8">
                     {/* Card state badges */}
                     <div className="flex justify-between mb-6">
@@ -598,7 +598,7 @@ export default function StudyPage() {
                           </div>
 
                           {/* Rating buttons */}
-                          <div className="grid grid-cols-4 gap-3">
+                          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                             {ratingButtons.map(({ rating, label, color, icon: Icon, shortcut }) => {
                               // Get the next interval for this rating
                               const nextCard = currentCard

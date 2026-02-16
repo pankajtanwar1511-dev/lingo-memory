@@ -531,7 +531,7 @@ export default function KanjiPracticePage() {
 
       {/* Flashcard */}
       <div className="relative">
-        <Card className="h-[500px] flex items-center justify-center relative cursor-pointer" onClick={handleFlip}>
+        <Card className="h-[300px] sm:h-[400px] md:h-[500px] flex items-center justify-center relative cursor-pointer" onClick={handleFlip}>
           {/* LM Circle Rating - Bottom Right (shown on both sides) */}
           <div
             className="absolute bottom-0 right-0 flex flex-col items-end gap-2 z-10 p-4 bg-gray-50/30 dark:bg-gray-900/30 rounded-tl-lg min-w-[240px]"
@@ -697,34 +697,37 @@ export default function KanjiPracticePage() {
       </div>
 
       {/* Navigation */}
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex items-center justify-center gap-2 sm:gap-4 max-w-md mx-auto">
         <Button
           variant="outline"
           size="lg"
           onClick={handlePrevious}
-          className="gap-2 w-[140px]"
+          className="gap-2 flex-1 min-w-[100px]"
         >
           <ChevronLeft className="h-5 w-5" />
-          Previous
+          <span className="hidden sm:inline">Previous</span>
+          <span className="sm:hidden">Prev</span>
         </Button>
 
         <Button
           variant="default"
           size="lg"
           onClick={handleFlip}
-          className="gap-2 w-[180px] flex-shrink-0"
+          className="gap-2 flex-1 min-w-[120px]"
         >
           {isFlipped ? <EyeOff className="h-5 w-5 flex-shrink-0" /> : <Eye className="h-5 w-5 flex-shrink-0" />}
-          <span>{isFlipped ? 'Hide' : 'Show'} Answer</span>
+          <span className="hidden sm:inline">{isFlipped ? 'Hide' : 'Show'} Answer</span>
+          <span className="sm:hidden">{isFlipped ? 'Hide' : 'Show'}</span>
         </Button>
 
         <Button
           variant="outline"
           size="lg"
           onClick={handleNext}
-          className="gap-2 w-[140px]"
+          className="gap-2 flex-1 min-w-[100px]"
         >
-          Next
+          <span className="hidden sm:inline">Next</span>
+          <span className="sm:hidden">Next</span>
           <ChevronRight className="h-5 w-5" />
         </Button>
       </div>

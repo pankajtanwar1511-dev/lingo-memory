@@ -477,7 +477,7 @@ export default function QuestionsDrillPage() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.2 }}
         >
-          <Card className="min-h-[400px]">
+          <Card className="min-h-[280px] sm:min-h-[350px] md:min-h-[400px]">
             <CardContent className="p-8">
               <div className="text-center mb-8">
                 <h2 className="text-5xl font-bold text-gray-900 dark:text-white mb-4">

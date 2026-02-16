@@ -174,7 +174,7 @@ export default function VerbFormMasterPage() {
                 <label className="text-base font-semibold text-foreground">Number of Questions</label>
                 <p className="text-sm text-muted-foreground mt-1">How many questions do you want to practice?</p>
               </div>
-              <div className="grid grid-cols-4 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {[
                   { count: 5, label: 'Quick', time: '~2 min', color: 'green' },
                   { count: 10, label: 'Standard', time: '~5 min', color: 'blue' },
