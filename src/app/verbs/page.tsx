@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { useSearchParams, useRouter } from "next/navigation"
 import { Header } from "@/components/layout/header"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -14,16 +15,18 @@ import {
   BookOpen, Search, Filter, Zap, BarChart3,
   ChevronRight, Sparkles, Target, TrendingUp,
   CheckCircle2, Circle, Grid3x3, List, Eye, EyeOff, Layers, RefreshCw,
-  Shuffle, GraduationCap, ThumbsUp, ThumbsDown, SkipForward, RotateCcw, BookText
+  Shuffle, GraduationCap, ThumbsUp, ThumbsDown, SkipForward, RotateCcw, BookText, ListChecks, X, Star
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
+import { ALL_PREDEFINED_LISTS, type VerbList } from "@/data/verb-lists"
 
 interface VerbExample {
   japanese: string
   kana: string
   english: string
   highlight: string
+  pattern?: string
 }
 
 interface N5Verb {
@@ -47,10 +50,11 @@ interface N5Verb {
     te: string
     teKana: string
   }
+  examples?: VerbExample[]
+  dictFormExamples?: VerbExample[]
   teFormExamples?: VerbExample[]
   tags: string[]
   context?: string | null
-  examples?: VerbExample[]
 }
 
 interface VerbsData {
@@ -81,6 +85,9 @@ interface VerbProgress {
 }
 
 export default function VerbsPage() {
+  const searchParams = useSearchParams()
+  const router = useRouter()
+
   const [verbsData, setVerbsData] = useState<VerbsData | null>(null)
   const [filteredVerbs, setFilteredVerbs] = useState<N5Verb[]>([])
   const [searchQuery, setSearchQuery] = useState("")
@@ -91,6 +98,14 @@ export default function VerbsPage() {
   const [flipMode, setFlipMode] = useState(false)
   const [frontSide, setFrontSide] = useState<FlipSide>("english")
   const [backSide, setBackSide] = useState<FlipSide>("kanji")
+
+  // List filtering
+  const [activeList, setActiveList] = useState<VerbList | null>(null)
+  const [customLists, setCustomLists] = useState<VerbList[]>([])
+
+  // Favorites
+  const [favoriteVerbs, setFavoriteVerbs] = useState<Set<string>>(new Set())
+  const [showOnlyFavorites, setShowOnlyFavorites] = useState(false)
 
   // English Quiz Mode - stores random form type for each verb
   const [quizMode, setQuizMode] = useState(false)
@@ -105,7 +120,8 @@ export default function VerbsPage() {
   const [showOnlyUnknown, setShowOnlyUnknown] = useState(false)
   const [expandedMeanings, setExpandedMeanings] = useState<Set<string>>(new Set())
   const [expandedExamples, setExpandedExamples] = useState<Set<string>>(new Set())
-  const [examplesPopup, setExamplesPopup] = useState<{ verbId: string; verb: N5Verb; position: { x: number; y: number }; showKana: boolean; showTeFormExamples?: boolean } | null>(null)
+  const [selectedExampleForm, setSelectedExampleForm] = useState<'masu' | 'dict' | 'te'>('masu')
+  const [examplesPopup, setExamplesPopup] = useState<{ verbId: string; verb: N5Verb; position: { x: number; y: number }; showKana: boolean; formType?: 'masu' | 'dict' | 'te' } | null>(null)
 
   // Matching exercise states
   const [matchingMode, setMatchingMode] = useState(false)
@@ -122,6 +138,54 @@ export default function VerbsPage() {
   const [batchScores, setBatchScores] = useState<number[]>([])
   const [showBatchResult, setShowBatchResult] = useState(false)
   const [totalAttempts, setTotalAttempts] = useState(0)
+
+  // Load custom lists and favorites from localStorage
+  useEffect(() => {
+    const savedCustomLists = localStorage.getItem('customVerbLists')
+    if (savedCustomLists) {
+      setCustomLists(JSON.parse(savedCustomLists))
+    }
+
+    const savedFavorites = localStorage.getItem('favoriteVerbs')
+    if (savedFavorites) {
+      setFavoriteVerbs(new Set(JSON.parse(savedFavorites)))
+    }
+  }, [])
+
+  // Load active list from URL params
+  useEffect(() => {
+    const listId = searchParams.get('list')
+    if (listId) {
+      // Check predefined lists
+      const predefinedList = ALL_PREDEFINED_LISTS.find(l => l.id === listId)
+      if (predefinedList) {
+        setActiveList(predefinedList)
+        return
+      }
+
+      // Check for combined temporary list
+      if (listId === 'combined_temp') {
+        const savedCombinedList = localStorage.getItem('tempCombinedList')
+        if (savedCombinedList) {
+          try {
+            const combinedList = JSON.parse(savedCombinedList)
+            setActiveList(combinedList)
+            return
+          } catch (error) {
+            console.error('Failed to load combined list:', error)
+          }
+        }
+      }
+
+      // Check custom lists
+      const customList = customLists.find(l => l.id === listId)
+      if (customList) {
+        setActiveList(customList)
+      }
+    } else {
+      setActiveList(null)
+    }
+  }, [searchParams, customLists])
 
   // Load verbs data
   useEffect(() => {
@@ -161,6 +225,12 @@ export default function VerbsPage() {
 
     let filtered = verbsData.verbs
 
+    // Filter by active list (takes precedence)
+    if (activeList && activeList.verbIds.length > 0) {
+      const listVerbIds = new Set(activeList.verbIds)
+      filtered = filtered.filter(v => listVerbIds.has(v.id))
+    }
+
     // Filter by group
     if (selectedGroup !== "all") {
       filtered = filtered.filter(v => v.verbGroup === selectedGroup)
@@ -176,6 +246,11 @@ export default function VerbsPage() {
         v.meaning.some(m => m.toLowerCase().includes(query)) ||
         v.primaryMeaning.toLowerCase().includes(query)
       )
+    }
+
+    // Filter by favorites
+    if (showOnlyFavorites) {
+      filtered = filtered.filter(v => favoriteVerbs.has(v.id))
     }
 
     // Filter by progress (show only unknown/need practice)
@@ -206,7 +281,7 @@ export default function VerbsPage() {
       })
       setVerbFormTypes(formTypesMap)
     }
-  }, [searchQuery, selectedGroup, verbsData, shuffleMode, showOnlyUnknown, testMode, verbProgress, quizMode])
+  }, [searchQuery, selectedGroup, verbsData, shuffleMode, showOnlyUnknown, testMode, verbProgress, quizMode, activeList, showOnlyFavorites, favoriteVerbs])
 
   // Matching exercise functions - defined here before useEffect
   const getBatchVerbs = () => {
@@ -239,6 +314,23 @@ export default function VerbsPage() {
       } else {
         newSet.add(verbId)
       }
+      return newSet
+    })
+  }
+
+  const toggleFavorite = (verbId: string, e?: React.MouseEvent) => {
+    if (e) e.stopPropagation()
+
+    setFavoriteVerbs(prev => {
+      const newSet = new Set(prev)
+      if (newSet.has(verbId)) {
+        newSet.delete(verbId)
+      } else {
+        newSet.add(verbId)
+      }
+
+      // Save to localStorage
+      localStorage.setItem('favoriteVerbs', JSON.stringify(Array.from(newSet)))
       return newSet
     })
   }
@@ -285,17 +377,23 @@ export default function VerbsPage() {
                      displaySide === 'te-kana' || otherSide === 'te-kana' ||
                      viewMode === 'te-form-kana'
 
-    // Determine if we should show te-form examples
-    const showTeFormExamples = displaySide === 'te-kanji' || displaySide === 'te-kana' ||
-                                otherSide === 'te-kanji' || otherSide === 'te-kana' ||
-                                viewMode === 'te-form' || viewMode === 'te-form-kana'
+    // Determine which form to show based on current view mode
+    const formType: 'masu' | 'dict' | 'te' =
+      displaySide === 'te-kanji' || displaySide === 'te-kana' ||
+      otherSide === 'te-kanji' || otherSide === 'te-kana' ||
+      viewMode === 'te-form' || viewMode === 'te-form-kana'
+        ? 'te'
+        : viewMode === 'dictionary' || viewMode === 'dictionary-kana' ||
+          displaySide === 'kanji' || displaySide === 'kana'
+        ? 'dict'
+        : 'masu'
 
     // Get button position for popup placement
     const button = e.currentTarget as HTMLElement
     const rect = button.getBoundingClientRect()
 
     // Calculate popup dimensions (approximate)
-    const popupWidth = 350
+    const popupWidth = 420
     const popupHeight = 400
 
     // Calculate position - try to show to the right, but if not enough space, show to the left
@@ -324,7 +422,7 @@ export default function VerbsPage() {
       verb: verb,
       position: { x, y },
       showKana,
-      showTeFormExamples
+      formType
     })
   }
 
@@ -698,11 +796,29 @@ export default function VerbsPage() {
             <Button
               variant="default"
               size="lg"
-              onClick={() => window.location.href = '/verbs/conjugation-rules'}
+              onClick={() => window.location.href = '/verbs/lists'}
+              className="gap-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
+            >
+              <ListChecks className="h-5 w-5" />
+              Verb Lists
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={() => window.location.href = '/verbs/forms-usage-guide'}
               className="gap-2"
             >
               <BookOpen className="h-5 w-5" />
-              Quick Reference: All Rules
+              Forms Usage Guide
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={() => window.location.href = '/verbs/conjugation-rules'}
+              className="gap-2"
+            >
+              <GraduationCap className="h-5 w-5" />
+              Conjugation Rules
             </Button>
             <Button
               variant="outline"
@@ -750,6 +866,45 @@ export default function VerbsPage() {
           ))}
         </div>
 
+        {/* Active List Filter Banner */}
+        {activeList && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+          >
+            <Card className="bg-gradient-to-r from-purple-50 to-pink-50 border-purple-200">
+              <CardContent className="pt-6">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 bg-white rounded-lg shadow-sm">
+                      <ListChecks className="h-5 w-5 text-purple-600" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-lg flex items-center gap-2">
+                        {activeList.icon && <span>{activeList.icon}</span>}
+                        {activeList.name}
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        Practicing {filteredVerbs.length} verbs from this list
+                      </p>
+                    </div>
+                  </div>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => router.push('/verbs')}
+                    className="gap-2"
+                  >
+                    <X className="h-4 w-4" />
+                    Clear Filter
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+        )}
+
         {/* Search, Filters, and View Mode */}
         <Card>
           <CardHeader>
@@ -789,6 +944,18 @@ export default function VerbsPage() {
                       <Label htmlFor="shuffle-mode" className="font-semibold">
                         <Shuffle className="h-4 w-4 inline mr-2" />
                         Shuffle
+                      </Label>
+                    </div>
+
+                    <div className="flex items-center space-x-2">
+                      <Switch
+                        id="favorites-only"
+                        checked={showOnlyFavorites}
+                        onCheckedChange={setShowOnlyFavorites}
+                      />
+                      <Label htmlFor="favorites-only" className="font-semibold">
+                        <Star className="h-4 w-4 inline mr-2 fill-yellow-400 text-yellow-400" />
+                        Favorites Only
                       </Label>
                     </div>
 
@@ -1479,6 +1646,21 @@ export default function VerbsPage() {
                             >
                               {/* Button Group in Top Right */}
                               <div className="absolute top-2 right-2 z-10 flex items-center gap-1">
+                                {/* Favorite Toggle */}
+                                <button
+                                  onClick={(e) => toggleFavorite(verb.id, e)}
+                                  className="p-1.5 rounded-full hover:bg-accent transition-colors"
+                                  title={favoriteVerbs.has(verb.id) ? "Remove from favorites" : "Add to favorites"}
+                                >
+                                  <Star
+                                    className={cn(
+                                      "h-4 w-4 transition-all",
+                                      favoriteVerbs.has(verb.id)
+                                        ? "fill-yellow-400 text-yellow-400"
+                                        : "text-muted-foreground hover:text-yellow-400"
+                                    )}
+                                  />
+                                </button>
                                 {/* Examples Toggle */}
                                 {verb.examples && verb.examples.length > 0 && (
                                   <button
@@ -2017,85 +2199,132 @@ export default function VerbsPage() {
 
         {/* Examples Popup */}
         <AnimatePresence>
-          {examplesPopup && ((examplesPopup.showTeFormExamples && examplesPopup.verb.teFormExamples) || examplesPopup.verb.examples) && (
-            <>
-              {/* Backdrop to close popup when clicking outside */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                className="fixed inset-0 bg-black/20 z-40"
-                onClick={() => setExamplesPopup(null)}
-              />
+          {examplesPopup && (() => {
+            const formType = examplesPopup.formType || selectedExampleForm
+            const examples = formType === 'dict'
+              ? examplesPopup.verb.dictFormExamples
+              : formType === 'te'
+              ? examplesPopup.verb.teFormExamples
+              : examplesPopup.verb.examples
 
-              {/* Popup Card */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.2 }}
-                className="fixed z-50 w-[350px]"
-                style={{
-                  left: `${examplesPopup.position.x}px`,
-                  top: `${examplesPopup.position.y}px`
-                }}
-                onClick={(e) => e.stopPropagation()}
-              >
-                <Card className="shadow-2xl border-2 bg-background">
-                  <CardHeader className="pb-2 pt-3">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <BookText className="h-4 w-4 text-primary" />
-                        <CardTitle className="text-base">
-                          {examplesPopup.verb.kanji}
-                          {examplesPopup.showTeFormExamples && (
-                            <span className="text-xs text-muted-foreground ml-2">(Te-form)</span>
-                          )}
-                        </CardTitle>
+            return examples && examples.length > 0 && (
+              <>
+                {/* Backdrop to close popup when clicking outside */}
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="fixed inset-0 bg-black/20 z-40"
+                  onClick={() => setExamplesPopup(null)}
+                />
+
+                {/* Popup Card */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.2 }}
+                  className="fixed z-50 w-[420px]"
+                  style={{
+                    left: `${examplesPopup.position.x}px`,
+                    top: `${examplesPopup.position.y}px`
+                  }}
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <Card className="shadow-2xl border-2 bg-background">
+                    <CardHeader className="pb-2 pt-3">
+                      <div className="flex items-center justify-between mb-2">
+                        <div className="flex items-center gap-2">
+                          <BookText className="h-4 w-4 text-primary" />
+                          <CardTitle className="text-base">
+                            {examplesPopup.verb.kanji}
+                          </CardTitle>
+                        </div>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          onClick={() => setExamplesPopup(null)}
+                          className="h-6 w-6 p-0"
+                        >
+                          <EyeOff className="h-3 w-3" />
+                        </Button>
                       </div>
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        onClick={() => setExamplesPopup(null)}
-                        className="h-6 w-6 p-0"
-                      >
-                        <EyeOff className="h-3 w-3" />
-                      </Button>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="space-y-2 max-h-[350px] overflow-y-auto pb-3">
-                    {(examplesPopup.showTeFormExamples && examplesPopup.verb.teFormExamples
-                      ? examplesPopup.verb.teFormExamples
-                      : examplesPopup.verb.examples || []).map((example, idx) => (
-                      <div
-                        key={idx}
-                        className="p-2 rounded-md bg-muted/50 border space-y-1"
-                      >
-                        <div className="flex items-start gap-2">
-                          <Badge variant="outline" className="text-xs shrink-0 h-5">
-                            {idx + 1}
-                          </Badge>
-                          <div className="space-y-0.5 flex-1">
-                            <p className="text-sm font-medium">
-                              {examplesPopup.showKana ? example.kana : example.japanese}
-                            </p>
-                            <p className="text-xs text-muted-foreground">
-                              {example.english}
-                            </p>
-                            {example.highlight && (
-                              <Badge variant="secondary" className="text-xs">
-                                {example.highlight}
-                              </Badge>
-                            )}
+                      {/* Form Selector Tabs */}
+                      <div className="flex gap-1 p-1 bg-muted rounded-lg">
+                        <button
+                          onClick={() => setExamplesPopup({...examplesPopup, formType: 'masu'})}
+                          className={cn(
+                            "flex-1 px-2 py-1 text-xs font-medium rounded transition-colors",
+                            formType === 'masu'
+                              ? "bg-background shadow-sm text-foreground"
+                              : "text-muted-foreground hover:text-foreground"
+                          )}
+                        >
+                          Masu Form
+                        </button>
+                        <button
+                          onClick={() => setExamplesPopup({...examplesPopup, formType: 'dict'})}
+                          className={cn(
+                            "flex-1 px-2 py-1 text-xs font-medium rounded transition-colors",
+                            formType === 'dict'
+                              ? "bg-background shadow-sm text-foreground"
+                              : "text-muted-foreground hover:text-foreground"
+                          )}
+                        >
+                          Dict Form
+                        </button>
+                        <button
+                          onClick={() => setExamplesPopup({...examplesPopup, formType: 'te'})}
+                          className={cn(
+                            "flex-1 px-2 py-1 text-xs font-medium rounded transition-colors",
+                            formType === 'te'
+                              ? "bg-background shadow-sm text-foreground"
+                              : "text-muted-foreground hover:text-foreground"
+                          )}
+                        >
+                          Te Form
+                        </button>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="space-y-2 max-h-[400px] overflow-y-auto pb-3">
+                      {examples.map((example, idx) => (
+                        <div
+                          key={idx}
+                          className="p-2 rounded-md bg-muted/50 border space-y-1"
+                        >
+                          <div className="flex items-start gap-2">
+                            <Badge variant="outline" className="text-xs shrink-0 h-5">
+                              {idx + 1}
+                            </Badge>
+                            <div className="space-y-0.5 flex-1">
+                              <p className="text-sm font-medium">
+                                {examplesPopup.showKana ? example.kana : example.japanese}
+                              </p>
+                              <p className="text-xs text-muted-foreground">
+                                {example.english}
+                              </p>
+                              <div className="flex gap-1 flex-wrap">
+                                {example.highlight && (
+                                  <Badge variant="secondary" className="text-xs">
+                                    {example.highlight}
+                                  </Badge>
+                                )}
+                                {example.pattern && (
+                                  <Badge variant="outline" className="text-xs">
+                                    {example.pattern}
+                                  </Badge>
+                                )}
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    ))}
-                  </CardContent>
-                </Card>
-              </motion.div>
-            </>
-          )}
+                      ))}
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              </>
+            )
+          })()}
         </AnimatePresence>
       </main>
     </div>
