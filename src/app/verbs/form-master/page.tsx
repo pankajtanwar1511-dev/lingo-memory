@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button'
 import { Progress } from '@/components/ui/progress'
 import { Badge } from '@/components/ui/badge'
-import { ArrowLeft, Trophy, Target, CheckCircle2, XCircle, RotateCcw } from 'lucide-react'
+import { ArrowLeft, Trophy, Target, CheckCircle2, XCircle, RotateCcw, Settings } from 'lucide-react'
 import { generateAllQuestions, getRandomQuestions, VerbFormQuestion, type VerbData } from '@/lib/verb-form-questions'
 
 export default function VerbFormMasterPage() {
@@ -17,14 +17,11 @@ export default function VerbFormMasterPage() {
   const [showFeedback, setShowFeedback] = useState(false)
   const [score, setScore] = useState(0)
   const [isComplete, setIsComplete] = useState(false)
-  const [difficulty, setDifficulty] = useState<1 | 2 | 3>(1)
-  const [questionsPerSession] = useState(10)
+  const [showSetup, setShowSetup] = useState(true)
+  const [displayMode, setDisplayMode] = useState<'kanji' | 'kana'>('kanji')
+  const [questionsPerSession, setQuestionsPerSession] = useState(10)
 
-  useEffect(() => {
-    loadQuestions()
-  }, [])
-
-  const loadQuestions = async () => {
+  const loadQuestions = async (count: number) => {
     try {
       // Load verb dataset
       const response = await fetch('/seed-data/N5_verbs_dataset.json')
@@ -35,12 +32,17 @@ export default function VerbFormMasterPage() {
       const allQuestions = generateAllQuestions(verbs)
 
       // Get random questions for this session
-      const sessionQuestions = getRandomQuestions(allQuestions, questionsPerSession)
+      const sessionQuestions = getRandomQuestions(allQuestions, count)
 
       setQuestions(sessionQuestions)
+      setShowSetup(false)
     } catch (error) {
       console.error('Failed to load questions:', error)
     }
+  }
+
+  const handleStartQuiz = () => {
+    loadQuestions(questionsPerSession)
   }
 
   const currentQuestion = questions[currentQuestionIndex]
@@ -73,16 +75,93 @@ export default function VerbFormMasterPage() {
     setShowFeedback(false)
     setScore(0)
     setIsComplete(false)
-    loadQuestions()
+    setShowSetup(true)
   }
 
-  if (questions.length === 0) {
+  // Setup screen
+  if (showSetup) {
     return (
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
-          <p className="mt-4 text-muted-foreground">Loading questions...</p>
-        </div>
+        <Button
+          variant="ghost"
+          onClick={() => router.push('/verbs')}
+          className="mb-6"
+        >
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          Back to Verbs
+        </Button>
+
+        <Card>
+          <CardHeader>
+            <div className="flex items-center justify-center mb-4">
+              <Settings className="w-12 h-12 text-primary" />
+            </div>
+            <CardTitle className="text-center text-3xl">Verb Form Master Setup</CardTitle>
+            <CardDescription className="text-center text-lg">
+              Configure your practice session
+            </CardDescription>
+          </CardHeader>
+
+          <CardContent className="space-y-8">
+            {/* Display Mode */}
+            <div className="space-y-3">
+              <label className="text-sm font-semibold">Display Mode</label>
+              <div className="grid grid-cols-2 gap-3">
+                <button
+                  onClick={() => setDisplayMode('kanji')}
+                  className={`p-4 rounded-lg border-2 transition-all ${
+                    displayMode === 'kanji'
+                      ? 'border-primary bg-primary/10'
+                      : 'border-border hover:border-primary/50'
+                  }`}
+                >
+                  <div className="text-center">
+                    <p className="text-2xl font-bold mb-1">漢字</p>
+                    <p className="text-sm text-muted-foreground">Kanji</p>
+                  </div>
+                </button>
+                <button
+                  onClick={() => setDisplayMode('kana')}
+                  className={`p-4 rounded-lg border-2 transition-all ${
+                    displayMode === 'kana'
+                      ? 'border-primary bg-primary/10'
+                      : 'border-border hover:border-primary/50'
+                  }`}
+                >
+                  <div className="text-center">
+                    <p className="text-2xl font-bold mb-1">かな</p>
+                    <p className="text-sm text-muted-foreground">Kana Only</p>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            {/* Question Count */}
+            <div className="space-y-3">
+              <label className="text-sm font-semibold">Number of Questions</label>
+              <div className="grid grid-cols-4 gap-3">
+                {[5, 10, 15, 20].map((count) => (
+                  <button
+                    key={count}
+                    onClick={() => setQuestionsPerSession(count)}
+                    className={`p-3 rounded-lg border-2 transition-all ${
+                      questionsPerSession === count
+                        ? 'border-primary bg-primary/10'
+                        : 'border-border hover:border-primary/50'
+                    }`}
+                  >
+                    <p className="text-xl font-bold">{count}</p>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Start Button */}
+            <Button onClick={handleStartQuiz} className="w-full" size="lg">
+              Start Practice
+            </Button>
+          </CardContent>
+        </Card>
       </div>
     )
   }
@@ -186,8 +265,12 @@ export default function VerbFormMasterPage() {
         <CardContent className="space-y-6">
           {/* Sentence */}
           <div className="bg-muted/30 rounded-lg p-6 space-y-2">
-            <p className="text-2xl font-bold text-center">{currentQuestion.sentence}</p>
-            <p className="text-lg text-muted-foreground text-center">{currentQuestion.sentenceKana}</p>
+            <p className="text-2xl font-bold text-center">
+              {displayMode === 'kanji' ? currentQuestion.sentence : currentQuestion.sentenceKana}
+            </p>
+            {displayMode === 'kanji' && (
+              <p className="text-lg text-muted-foreground text-center">{currentQuestion.sentenceKana}</p>
+            )}
             <p className="text-sm text-center italic">{currentQuestion.english}</p>
           </div>
 
@@ -216,8 +299,12 @@ export default function VerbFormMasterPage() {
                 >
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-xl font-bold">{option.text}</p>
-                      <p className="text-sm text-muted-foreground">{option.kana}</p>
+                      <p className="text-xl font-bold">
+                        {displayMode === 'kanji' ? option.text : option.kana}
+                      </p>
+                      {displayMode === 'kanji' && (
+                        <p className="text-sm text-muted-foreground">{option.kana}</p>
+                      )}
                       <Badge variant="outline" className="mt-1 text-xs">{option.form}-form</Badge>
                     </div>
                     {showCorrect && (
