@@ -209,8 +209,8 @@ export const THEMATIC_LISTS: VerbList[] = [
     verbIds: [
       'n5_verb_0003', 'n5_verb_0025', 'n5_verb_0027', 'n5_verb_0028', 'n5_verb_0033',
       'n5_verb_0035', 'n5_verb_0037', 'n5_verb_0041', 'n5_verb_0045', 'n5_verb_0050',
-      'n5_verb_0052', 'n5_verb_0053', 'n5_verb_0061', 'n5_verb_0066', 'n5_verb_0075',
-      'n5_verb_0095', 'n5_verb_0099', 'n5_verb_0102', 'n5_verb_0107', 'n5_verb_0125',
+      'n5_verb_0052', 'n5_verb_0053', 'n5_verb_0040', 'n5_verb_0066', 'n5_verb_0075',
+      'n5_verb_0095', 'n5_verb_0099', 'n5_verb_0063', 'n5_verb_0107', 'n5_verb_0125',
       'n5_verb_0126', 'n5_verb_0127', 'n5_verb_0057'
     ]
   },
@@ -223,9 +223,9 @@ export const THEMATIC_LISTS: VerbList[] = [
     color: 'teal',
     verbIds: [
       'n5_verb_0007', 'n5_verb_0009', 'n5_verb_0024', 'n5_verb_0044', 'n5_verb_0055',
-      'n5_verb_0056', 'n5_verb_0059', 'n5_verb_0060', 'n5_verb_0070', 'n5_verb_0114',
+      'n5_verb_0056', 'n5_verb_0059', 'n5_verb_0058', 'n5_verb_0070', 'n5_verb_0114',
       'n5_verb_0117', 'n5_verb_0112', 'n5_verb_0113', 'n5_verb_0108', 'n5_verb_0109',
-      'n5_verb_0110', 'n5_verb_0111', 'n5_verb_0115', 'n5_verb_0116', 'n5_verb_0118'
+      'n5_verb_0110', 'n5_verb_0111', 'n5_verb_0115', 'n5_verb_0116'
     ]
   },
   {
@@ -281,9 +281,9 @@ export const THEMATIC_LISTS: VerbList[] = [
     color: 'green',
     verbIds: [
       'n5_verb_0002', // 遊ぶ - play
-      'n5_verb_0064', // 泳ぐ - swim
-      'n5_verb_0065', // 歌う - sing
-      'n5_verb_0063', // 弾く - play (instrument)
+      'n5_verb_0021', // 泳ぐ - swim
+      'n5_verb_0013', // 歌う - sing
+      'n5_verb_0070', // 弾く - play (instrument)
       'n5_verb_0067', // 踊る - dance
       'n5_verb_0030', // 勝つ - win
       'n5_verb_0068', // 負ける - lose
@@ -305,8 +305,8 @@ export const THEMATIC_LISTS: VerbList[] = [
       'n5_verb_0004', // ある - exist/have
       'n5_verb_0011', // 要る - need
       'n5_verb_0086', // あげる - give
-      'n5_verb_0091', // もらう - receive
-      'n5_verb_0092'  // くれる - give (to me)
+      'n5_verb_0078', // もらう - receive
+      'n5_verb_0107'  // くれる - give (to me)
     ]
   },
   {
@@ -317,12 +317,7 @@ export const THEMATIC_LISTS: VerbList[] = [
     icon: '🌤️',
     color: 'violet',
     verbIds: [
-      'n5_verb_0078', // 吹く - blow (wind)
-      'n5_verb_0072', // 降る - rain/fall (precipitation)
-      'n5_verb_0080', // 晴れる - clear up
-      'n5_verb_0081', // 曇る - become cloudy
-      'n5_verb_0085', // 光る - shine
-      'n5_verb_0084'  // 鳴る - ring/sound
+      'n5_verb_0072'  // 降る - rain
     ]
   },
   {
@@ -385,9 +380,7 @@ export const THEMATIC_LISTS: VerbList[] = [
       'n5_verb_0134', // 濡れる - get wet
       'n5_verb_0135', // 乾く - dry
       'n5_verb_0138', // 焼ける - be grilled
-      'n5_verb_0141', // 冷える - get cold
-      'n5_verb_0080', // 晴れる - clear up
-      'n5_verb_0081'  // 曇る - become cloudy
+      'n5_verb_0141'  // 冷える - get cold
     ]
   },
   {
