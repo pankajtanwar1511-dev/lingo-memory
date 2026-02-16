@@ -308,35 +308,57 @@ export default function VerbFormMasterPage() {
       </div>
 
       {/* Question Card */}
-      <Card className="mb-6">
-        <CardHeader>
-          <div className="flex items-center justify-between mb-2">
-            <CardTitle className="text-lg">
-              {currentQuestion.verbKanji} - {currentQuestion.verbMeaning}
-            </CardTitle>
-            <Badge variant={currentQuestion.difficulty === 1 ? 'default' : currentQuestion.difficulty === 2 ? 'secondary' : 'destructive'}>
+      <Card className="mb-6 shadow-lg border-2">
+        <CardHeader className="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-950 dark:to-purple-950 border-b-2">
+          <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center gap-3">
+              <div className="bg-white dark:bg-gray-800 rounded-lg p-2 shadow-sm">
+                <Target className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
+              </div>
+              <div>
+                <CardTitle className="text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                  {currentQuestion.verbKanji}
+                </CardTitle>
+                <p className="text-sm text-muted-foreground">{currentQuestion.verbMeaning}</p>
+              </div>
+            </div>
+            <Badge
+              variant={currentQuestion.difficulty === 1 ? 'default' : currentQuestion.difficulty === 2 ? 'secondary' : 'destructive'}
+              className="text-sm py-1 px-3 shadow-sm"
+            >
               Level {currentQuestion.difficulty}
             </Badge>
           </div>
-          <CardDescription>
+          <CardDescription className="text-sm font-medium">
             Choose the correct verb form to complete the sentence
           </CardDescription>
         </CardHeader>
 
-        <CardContent className="space-y-6">
+        <CardContent className="space-y-6 p-6">
           {/* Sentence */}
-          <div className="bg-muted/30 rounded-lg p-6 space-y-2">
-            <p className="text-2xl font-bold text-center">
-              {displayMode === 'kanji' ? currentQuestion.sentence : currentQuestion.sentenceKana}
-            </p>
-            {displayMode === 'kanji' && (
-              <p className="text-lg text-muted-foreground text-center">{currentQuestion.sentenceKana}</p>
-            )}
-            <p className="text-sm text-center italic">{currentQuestion.english}</p>
+          <div className="relative bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 rounded-2xl p-8 shadow-inner border-2 border-blue-100 dark:border-blue-900">
+            <div className="absolute top-3 right-3">
+              <div className="bg-white dark:bg-gray-800 rounded-full p-2 shadow-md">
+                <span className="text-xs font-semibold text-blue-600 dark:text-blue-400">📝</span>
+              </div>
+            </div>
+            <div className="space-y-3">
+              <p className="text-3xl font-bold text-center leading-relaxed text-gray-900 dark:text-gray-100">
+                {displayMode === 'kanji' ? currentQuestion.sentence : currentQuestion.sentenceKana}
+              </p>
+              {displayMode === 'kanji' && (
+                <p className="text-xl text-center text-gray-600 dark:text-gray-400">{currentQuestion.sentenceKana}</p>
+              )}
+              <div className="pt-2 border-t border-blue-200 dark:border-blue-800">
+                <p className="text-base text-center text-gray-700 dark:text-gray-300 italic">
+                  {currentQuestion.english}
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Options */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {currentQuestion.options.map((option, index) => {
               const isSelected = selectedAnswer === option.text
               const isCorrect = option.isCorrect
@@ -349,30 +371,70 @@ export default function VerbFormMasterPage() {
                   onClick={() => handleAnswerSelect(option.text)}
                   disabled={showFeedback}
                   className={`
-                    relative p-4 rounded-lg border-2 transition-all text-left
-                    ${!showFeedback && 'hover:border-primary hover:bg-primary/5'}
-                    ${showCorrect && 'border-green-500 bg-green-50 dark:bg-green-950'}
-                    ${showIncorrect && 'border-red-500 bg-red-50 dark:bg-red-950'}
-                    ${!showFeedback && isSelected && 'border-primary bg-primary/10'}
-                    ${!showFeedback && !isSelected && 'border-border'}
-                    ${showFeedback && !isCorrect && !isSelected && 'opacity-50'}
+                    group relative p-5 rounded-xl border-2 transition-all duration-200 text-left
+                    ${!showFeedback && !isSelected && 'bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 border-gray-200 dark:border-gray-700 hover:border-indigo-400 hover:shadow-lg hover:scale-[1.02]'}
+                    ${!showFeedback && isSelected && 'bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950 dark:to-purple-950 border-indigo-500 shadow-lg scale-[1.02]'}
+                    ${showCorrect && 'bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950 dark:to-emerald-950 border-green-500 shadow-xl scale-105'}
+                    ${showIncorrect && 'bg-gradient-to-br from-red-50 to-rose-50 dark:from-red-950 dark:to-rose-950 border-red-500 shadow-xl'}
+                    ${showFeedback && !isCorrect && !isSelected && 'opacity-40 blur-[1px]'}
+                    shadow-md
                   `}
                 >
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="text-xl font-bold">
-                        {displayMode === 'kanji' ? option.text : option.kana}
-                      </p>
-                      {displayMode === 'kanji' && (
-                        <p className="text-sm text-muted-foreground">{option.kana}</p>
-                      )}
-                      <Badge variant="outline" className="mt-1 text-xs">{option.form}-form</Badge>
+                  <div className="flex items-center justify-between gap-3">
+                    <div className="flex-1 space-y-2">
+                      <div className="flex items-center gap-2">
+                        <div className={`w-1.5 h-8 rounded-full ${
+                          showCorrect ? 'bg-green-500' :
+                          showIncorrect ? 'bg-red-500' :
+                          isSelected ? 'bg-indigo-500' :
+                          'bg-gray-300 dark:bg-gray-600 group-hover:bg-indigo-400'
+                        }`} />
+                        <div>
+                          <p className={`text-2xl font-bold leading-tight ${
+                            showCorrect ? 'text-green-700 dark:text-green-300' :
+                            showIncorrect ? 'text-red-700 dark:text-red-300' :
+                            isSelected ? 'text-indigo-700 dark:text-indigo-300' :
+                            'text-gray-900 dark:text-gray-100'
+                          }`}>
+                            {displayMode === 'kanji' ? option.text : option.kana}
+                          </p>
+                          {displayMode === 'kanji' && (
+                            <p className="text-sm text-gray-600 dark:text-gray-400 mt-0.5">{option.kana}</p>
+                          )}
+                        </div>
+                      </div>
+                      <Badge
+                        variant="outline"
+                        className={`text-xs font-semibold ${
+                          showCorrect ? 'border-green-400 text-green-700 dark:text-green-300' :
+                          showIncorrect ? 'border-red-400 text-red-700 dark:text-red-300' :
+                          isSelected ? 'border-indigo-400 text-indigo-700 dark:text-indigo-300' :
+                          'border-gray-300 text-gray-600 dark:text-gray-400'
+                        }`}
+                      >
+                        {option.form}-form
+                      </Badge>
                     </div>
                     {showCorrect && (
-                      <CheckCircle2 className="w-6 h-6 text-green-600" />
+                      <div className="flex-shrink-0">
+                        <div className="bg-green-500 rounded-full p-2 shadow-lg">
+                          <CheckCircle2 className="w-6 h-6 text-white" />
+                        </div>
+                      </div>
                     )}
                     {showIncorrect && (
-                      <XCircle className="w-6 h-6 text-red-600" />
+                      <div className="flex-shrink-0">
+                        <div className="bg-red-500 rounded-full p-2 shadow-lg">
+                          <XCircle className="w-6 h-6 text-white" />
+                        </div>
+                      </div>
+                    )}
+                    {!showFeedback && isSelected && (
+                      <div className="flex-shrink-0">
+                        <div className="bg-indigo-500 rounded-full p-1.5 shadow-md animate-pulse">
+                          <div className="w-2 h-2 bg-white rounded-full" />
+                        </div>
+                      </div>
                     )}
                   </div>
                 </button>
@@ -382,23 +444,69 @@ export default function VerbFormMasterPage() {
 
           {/* Feedback */}
           {showFeedback && (
-            <div className={`p-4 rounded-lg ${selectedAnswer === currentQuestion.correctAnswer ? 'bg-green-50 dark:bg-green-950' : 'bg-red-50 dark:bg-red-950'}`}>
-              <p className="font-semibold mb-2">
-                {selectedAnswer === currentQuestion.correctAnswer ? '✅ Correct!' : '❌ Incorrect'}
-              </p>
-              <p className="text-sm">{currentQuestion.explanation}</p>
-              {selectedAnswer !== currentQuestion.correctAnswer && (
-                <p className="text-sm mt-2">
-                  <strong>Correct answer:</strong> {currentQuestion.correctAnswer} ({currentQuestion.correctAnswerKana})
-                </p>
-              )}
+            <div className={`relative rounded-2xl p-6 shadow-lg border-2 ${
+              selectedAnswer === currentQuestion.correctAnswer
+                ? 'bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950 dark:to-emerald-950 border-green-400'
+                : 'bg-gradient-to-br from-red-50 to-rose-50 dark:from-red-950 dark:to-rose-950 border-red-400'
+            }`}>
+              <div className="flex items-start gap-3">
+                <div className={`flex-shrink-0 rounded-full p-2 ${
+                  selectedAnswer === currentQuestion.correctAnswer
+                    ? 'bg-green-500'
+                    : 'bg-red-500'
+                }`}>
+                  {selectedAnswer === currentQuestion.correctAnswer ? (
+                    <CheckCircle2 className="w-6 h-6 text-white" />
+                  ) : (
+                    <XCircle className="w-6 h-6 text-white" />
+                  )}
+                </div>
+                <div className="flex-1 space-y-2">
+                  <p className={`text-lg font-bold ${
+                    selectedAnswer === currentQuestion.correctAnswer
+                      ? 'text-green-700 dark:text-green-300'
+                      : 'text-red-700 dark:text-red-300'
+                  }`}>
+                    {selectedAnswer === currentQuestion.correctAnswer ? 'Correct! Great job! 🎉' : 'Not quite right'}
+                  </p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                    {currentQuestion.explanation}
+                  </p>
+                  {selectedAnswer !== currentQuestion.correctAnswer && (
+                    <div className="mt-3 p-3 bg-white/50 dark:bg-black/20 rounded-lg border border-gray-300 dark:border-gray-700">
+                      <p className="text-sm font-semibold text-gray-900 dark:text-gray-100">
+                        ✓ Correct answer:
+                      </p>
+                      <p className="text-lg font-bold text-green-700 dark:text-green-300 mt-1">
+                        {currentQuestion.correctAnswer}
+                      </p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                        {currentQuestion.correctAnswerKana}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
           )}
 
           {/* Next Button */}
           {showFeedback && (
-            <Button onClick={handleNext} className="w-full" size="lg">
-              {currentQuestionIndex < questions.length - 1 ? 'Next Question' : 'See Results'}
+            <Button
+              onClick={handleNext}
+              className="w-full bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
+              size="lg"
+            >
+              {currentQuestionIndex < questions.length - 1 ? (
+                <>
+                  Next Question →
+                </>
+              ) : (
+                <>
+                  <Trophy className="w-5 h-5 mr-2" />
+                  See Results
+                </>
+              )}
             </Button>
           )}
         </CardContent>
