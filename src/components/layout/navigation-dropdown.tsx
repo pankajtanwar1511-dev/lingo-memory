@@ -13,7 +13,7 @@ export interface NavigationItem {
   href: string
   icon: LucideIcon
   badge?: string
-  badgeVariant?: "default" | "success" | "warning" | "destructive"
+  badgeVariant?: "default" | "secondary" | "success" | "destructive" | "outline" | "gradient"
   description?: string
 }
 
