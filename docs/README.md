@@ -9,7 +9,6 @@
 
 1. **[APP_OVERVIEW.md](./APP_OVERVIEW.md)** - Complete feature guide, architecture, and user workflows
 2. **[DATA_GUIDE.md](./DATA_GUIDE.md)** - Dataset details, data creation process, and quality metrics
-3. **Archive** - Old documentation in `./archive/old-docs/`
 
 ---
 
@@ -108,17 +107,6 @@ lingomemory/
 - Adding routes: Create files in `src/app/`
 - Adding components: Create in `src/components/`
 - Adding services: Create in `src/services/`
-
----
-
-## 🗂️ Archive
-
-Old documentation (19 files) archived in `./archive/old-docs/`:
-- Numbered guides (00-08)
-- Implementation docs (content, kanji, quiz, vocabulary)
-- Project summaries and session logs
-
-These are kept for historical reference but may be outdated.
 
 ---
 
