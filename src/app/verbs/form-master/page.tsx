@@ -104,60 +104,121 @@ export default function VerbFormMasterPage() {
 
           <CardContent className="space-y-8">
             {/* Display Mode */}
-            <div className="space-y-3">
-              <label className="text-sm font-semibold">Display Mode</label>
-              <div className="grid grid-cols-2 gap-3">
+            <div className="space-y-4">
+              <div>
+                <label className="text-base font-semibold text-foreground">Display Mode</label>
+                <p className="text-sm text-muted-foreground mt-1">Choose how you want to see the sentences</p>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
                 <button
                   onClick={() => setDisplayMode('kanji')}
-                  className={`p-4 rounded-lg border-2 transition-all ${
+                  className={`group relative p-6 rounded-xl border-2 transition-all duration-200 ${
                     displayMode === 'kanji'
-                      ? 'border-primary bg-primary/10'
-                      : 'border-border hover:border-primary/50'
+                      ? 'border-blue-500 bg-blue-50 dark:bg-blue-950 shadow-md scale-105'
+                      : 'border-border hover:border-blue-300 hover:shadow-sm'
                   }`}
                 >
-                  <div className="text-center">
-                    <p className="text-2xl font-bold mb-1">漢字</p>
-                    <p className="text-sm text-muted-foreground">Kanji</p>
+                  <div className="text-center space-y-2">
+                    <div className={`text-4xl font-bold mb-2 ${
+                      displayMode === 'kanji' ? 'text-blue-600 dark:text-blue-400' : ''
+                    }`}>
+                      漢字
+                    </div>
+                    <p className={`text-sm font-medium ${
+                      displayMode === 'kanji' ? 'text-blue-700 dark:text-blue-300' : 'text-muted-foreground'
+                    }`}>
+                      Kanji + Furigana
+                    </p>
+                    <p className="text-xs text-muted-foreground">Best for learning</p>
                   </div>
+                  {displayMode === 'kanji' && (
+                    <div className="absolute top-3 right-3">
+                      <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                    </div>
+                  )}
                 </button>
                 <button
                   onClick={() => setDisplayMode('kana')}
-                  className={`p-4 rounded-lg border-2 transition-all ${
+                  className={`group relative p-6 rounded-xl border-2 transition-all duration-200 ${
                     displayMode === 'kana'
-                      ? 'border-primary bg-primary/10'
-                      : 'border-border hover:border-primary/50'
+                      ? 'border-purple-500 bg-purple-50 dark:bg-purple-950 shadow-md scale-105'
+                      : 'border-border hover:border-purple-300 hover:shadow-sm'
                   }`}
                 >
-                  <div className="text-center">
-                    <p className="text-2xl font-bold mb-1">かな</p>
-                    <p className="text-sm text-muted-foreground">Kana Only</p>
+                  <div className="text-center space-y-2">
+                    <div className={`text-4xl font-bold mb-2 ${
+                      displayMode === 'kana' ? 'text-purple-600 dark:text-purple-400' : ''
+                    }`}>
+                      かな
+                    </div>
+                    <p className={`text-sm font-medium ${
+                      displayMode === 'kana' ? 'text-purple-700 dark:text-purple-300' : 'text-muted-foreground'
+                    }`}>
+                      Kana Only
+                    </p>
+                    <p className="text-xs text-muted-foreground">Challenge mode</p>
                   </div>
+                  {displayMode === 'kana' && (
+                    <div className="absolute top-3 right-3">
+                      <CheckCircle2 className="w-5 h-5 text-purple-600 dark:text-purple-400" />
+                    </div>
+                  )}
                 </button>
               </div>
             </div>
 
             {/* Question Count */}
-            <div className="space-y-3">
-              <label className="text-sm font-semibold">Number of Questions</label>
+            <div className="space-y-4">
+              <div>
+                <label className="text-base font-semibold text-foreground">Number of Questions</label>
+                <p className="text-sm text-muted-foreground mt-1">How many questions do you want to practice?</p>
+              </div>
               <div className="grid grid-cols-4 gap-3">
-                {[5, 10, 15, 20].map((count) => (
+                {[
+                  { count: 5, label: 'Quick', time: '~2 min', color: 'green' },
+                  { count: 10, label: 'Standard', time: '~5 min', color: 'blue' },
+                  { count: 15, label: 'Extended', time: '~8 min', color: 'orange' },
+                  { count: 20, label: 'Marathon', time: '~10 min', color: 'red' }
+                ].map((option) => (
                   <button
-                    key={count}
-                    onClick={() => setQuestionsPerSession(count)}
-                    className={`p-3 rounded-lg border-2 transition-all ${
-                      questionsPerSession === count
-                        ? 'border-primary bg-primary/10'
-                        : 'border-border hover:border-primary/50'
+                    key={option.count}
+                    onClick={() => setQuestionsPerSession(option.count)}
+                    className={`relative p-4 rounded-xl border-2 transition-all duration-200 ${
+                      questionsPerSession === option.count
+                        ? `border-${option.color}-500 bg-${option.color}-50 dark:bg-${option.color}-950 shadow-md scale-105`
+                        : 'border-border hover:border-primary/50 hover:shadow-sm'
                     }`}
                   >
-                    <p className="text-xl font-bold">{count}</p>
+                    <div className="text-center space-y-1">
+                      <p className={`text-3xl font-bold ${
+                        questionsPerSession === option.count ? `text-${option.color}-600 dark:text-${option.color}-400` : ''
+                      }`}>
+                        {option.count}
+                      </p>
+                      <p className={`text-xs font-medium ${
+                        questionsPerSession === option.count ? `text-${option.color}-700 dark:text-${option.color}-300` : 'text-muted-foreground'
+                      }`}>
+                        {option.label}
+                      </p>
+                      <p className="text-[10px] text-muted-foreground">{option.time}</p>
+                    </div>
+                    {questionsPerSession === option.count && (
+                      <div className="absolute -top-1 -right-1">
+                        <CheckCircle2 className={`w-4 h-4 text-${option.color}-600 dark:text-${option.color}-400`} />
+                      </div>
+                    )}
                   </button>
                 ))}
               </div>
             </div>
 
             {/* Start Button */}
-            <Button onClick={handleStartQuiz} className="w-full" size="lg">
+            <Button
+              onClick={handleStartQuiz}
+              className="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
+              size="lg"
+            >
+              <Target className="w-5 h-5 mr-2" />
               Start Practice
             </Button>
           </CardContent>
