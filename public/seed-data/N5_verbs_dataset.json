@@ -376,9 +376,9 @@
           "pattern": "sequential"
         },
         {
-          "japanese": "質問があったら、聞いてください。",
-          "kana": "しつもんがあったら、きいてください。",
-          "english": "If you have questions, please ask.",
+          "japanese": "質問があって、嬉しいです。",
+          "kana": "しつもんがあって、うれしいです。",
+          "english": "I have a question, and I'm happy (to ask).",
           "highlight": "conditional request",
           "pattern": "request"
         }
@@ -860,11 +860,11 @@
           "pattern": "sequential"
         },
         {
-          "japanese": "何が要っているか教えてください。",
-          "kana": "なにがいっているかおしえてください。",
-          "english": "Please tell me what is needed.",
-          "highlight": "present progressive + request",
-          "pattern": "request"
+          "japanese": "お金が要って、困っています。",
+          "kana": "おかねがいって、こまっています。",
+          "english": "I need money, and I'm troubled.",
+          "highlight": "sequential state",
+          "pattern": "sequential"
         }
       ],
       "dictFormExamples": [
@@ -3248,9 +3248,9 @@
       ],
       "examples": [
         {
-          "japanese": "美術館で展示品に触らないでください。",
-          "kana": "びじゅつかんでてんじひんにさわらないでください。",
-          "english": "Please don't touch the exhibits at the museum.",
+          "japanese": "美術館で展示品に触ります。",
+          "kana": "びじゅつかんでてんじひんにさわります。",
+          "english": "I touch the exhibits at the museum.",
           "highlight": "museum rule"
         },
         {
@@ -4043,9 +4043,9 @@
           "highlight": "arrival time"
         },
         {
-          "japanese": "家に着いたら電話してください。",
-          "kana": "いえについたらでんわしてください。",
-          "english": "Please call me when you arrive home.",
+          "japanese": "家に着きました。",
+          "kana": "いえにつきました。",
+          "english": "I arrived home.",
           "highlight": "arrival notification"
         }
       ],
@@ -4629,9 +4629,9 @@
           "highlight": "travel photography"
         },
         {
-          "japanese": "桜の木の前で写真を撮りましょう。",
-          "kana": "さくらのきのまえでしゃしんをとりましょう。",
-          "english": "Let's take a photo in front of the cherry tree.",
+          "japanese": "桜の木の前で写真を撮りました。",
+          "kana": "さくらのきのまえでしゃしんをとりました。",
+          "english": "I took a photo in front of the cherry blossom tree.",
           "highlight": "photo opportunity"
         }
       ],
@@ -4926,9 +4926,9 @@
           "highlight": "losing belongings"
         },
         {
-          "japanese": "鍵を無くさないでください。",
-          "kana": "かぎをなくさないでください。",
-          "english": "Please don't lose your keys.",
+          "japanese": "鍵を無くしました。",
+          "kana": "かぎをなくしました。",
+          "english": "I lost my key.",
           "highlight": "warning about loss"
         }
       ],
@@ -5119,9 +5119,9 @@
       ],
       "examples": [
         {
-          "japanese": "将来、医者になりたいです。",
-          "kana": "しょうらい、いしゃになりたいです。",
-          "english": "I want to become a doctor in the future.",
+          "japanese": "将来、医者になります。",
+          "kana": "しょうらい、いしゃになります。",
+          "english": "I will become a doctor in the future.",
           "highlight": "career aspiration"
         },
         {
@@ -6179,9 +6179,9 @@
       ],
       "examples": [
         {
-          "japanese": "風邪を引いたので学校を休みます。",
-          "kana": "かぜをひいたのでがっこうをやすみます。",
-          "english": "I'll take a day off from school because I caught a cold.",
+          "japanese": "風邪を引きました。",
+          "kana": "かぜをひきました。",
+          "english": "I caught a cold.",
           "highlight": "illness absence"
         },
         {
@@ -6766,9 +6766,9 @@
           "highlight": "bringing lunch"
         },
         {
-          "japanese": "図書館に本を持って行ってください。",
-          "kana": "としょかんにほんをもっていってください。",
-          "english": "Please take the books to the library.",
+          "japanese": "図書館に本を持って行きました。",
+          "kana": "としょかんにほんをもっていきました。",
+          "english": "I brought the book to the library.",
           "highlight": "transporting items"
         }
       ],
@@ -7962,11 +7962,11 @@
           "pattern": "request"
         },
         {
-          "japanese": "いています。",
-          "kana": "いています。",
-          "english": "I am exist; be (animate)ing.",
-          "highlight": "present progressive",
-          "pattern": "progressive"
+          "japanese": "家にいて、勉強します。",
+          "kana": "いえにいて、べんきょうします。",
+          "english": "I stay at home and study.",
+          "highlight": "sequential actions",
+          "pattern": "sequential"
         }
       ],
       "dictFormExamples": [
@@ -10163,9 +10163,9 @@
       ],
       "examples": [
         {
-          "japanese": "やっと難しい漢字が書けるようになりました。",
-          "kana": "やっとむずかしいかんじがかけるようになりました。",
-          "english": "I can finally write difficult kanji.",
+          "japanese": "やっと難しい仕事ができました。",
+          "kana": "やっとむずかしいしごとができました。",
+          "english": "I was finally able to do the difficult job.",
           "highlight": "achievement with adverb and adjective"
         },
         {
@@ -11709,9 +11709,9 @@
           "highlight": "shopping routine with adjective"
         },
         {
-          "japanese": "昨日、ゆっくり美味しい食べ物の買い物をしました。",
-          "kana": "きのう、ゆっくりおいしいたべもののかいものをしました。",
-          "english": "Yesterday, I leisurely did shopping for delicious food.",
+          "japanese": "昨日、スーパーで買い物しました。",
+          "kana": "きのう、スーパーでかいものしました。",
+          "english": "I went shopping at the supermarket yesterday.",
           "highlight": "relaxed shopping with adverb and adjective"
         }
       ],

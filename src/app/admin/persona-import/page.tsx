@@ -90,7 +90,7 @@ export default function PersonaImportPage() {
               Import Demo Data
             </CardTitle>
             <CardDescription>
-              Import persona examples from demo-output.json
+              Import persona examples (demo data has been removed)
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -233,7 +233,7 @@ export default function PersonaImportPage() {
             <CardTitle>Instructions</CardTitle>
           </CardHeader>
           <CardContent className="space-y-2 text-sm text-gray-600">
-            <p><strong>Import Demo Examples:</strong> Adds persona examples from demo-output.json to the database</p>
+            <p><strong>Import Demo Examples:</strong> Demo data has been removed. Use custom import instead.</p>
             <p><strong>Load Stats:</strong> Refresh statistics about current persona data</p>
             <p><strong>Clear Generated:</strong> Removes all AI-generated examples (keeps authentic ones)</p>
             <p className="text-xs text-gray-500 mt-4">

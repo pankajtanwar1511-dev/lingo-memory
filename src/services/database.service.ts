@@ -2,7 +2,6 @@ import { db, DBVocabularyCard, DBStudyCard, DBDeck } from '@/lib/db'
 import { VocabularyCard, JLPTLevel } from '@/types/vocabulary'
 import { StudyCard } from '@/store/study-store'
 import { fsrs } from '@/lib/fsrs'
-import { sampleN5Deck, sampleN5DeckMetadata } from '@/data/sample-n5-deck'
 
 // Default user ID for local-only mode
 const DEFAULT_USER_ID = 'local-user'
@@ -15,70 +14,13 @@ export class DatabaseService {
   }
 
   /**
-   * Initialize database with sample data
+   * Initialize database (vocabulary loaded via seed-loader service)
    */
   async initializeDatabase(): Promise<void> {
     try {
-      // Check if we already have data
-      const existingDecks = await db.decks.where('userId').equals(this.userId).count()
-
-      if (existingDecks === 0) {
-        console.log('Initializing database with sample data...')
-
-        // Create sample deck
-        const deckId = `deck_${Date.now()}`
-        const deck: Omit<DBDeck, 'id'> = {
-          name: sampleN5DeckMetadata.name,
-          description: sampleN5DeckMetadata.description,
-          jlptLevel: sampleN5DeckMetadata.jlptLevel,
-          cardIds: sampleN5Deck.map(card => card.id),
-          visibility: sampleN5DeckMetadata.visibility,
-          premiumOnly: sampleN5DeckMetadata.premiumOnly,
-          credits: sampleN5DeckMetadata.credits,
-          createdAt: sampleN5DeckMetadata.createdAt,
-          updatedAt: sampleN5DeckMetadata.updatedAt,
-          userId: this.userId
-        }
-
-        // Add deck to database
-        await db.decks.add({ ...deck, id: deckId })
-
-        // Add vocabulary cards
-        const vocabCards: DBVocabularyCard[] = sampleN5Deck.map(card => ({
-          ...card,
-          deckId,
-          addedAt: new Date(),
-          modifiedAt: new Date()
-        }))
-
-        await db.vocabulary.bulkAdd(vocabCards)
-
-        // Create study cards for each vocabulary
-        // Only add study cards that don't already exist
-        const existingStudyCards = await db.studyCards
-          .where('[userId+vocabularyId]')
-          .anyOf(sampleN5Deck.map(card => [this.userId, card.id]))
-          .toArray()
-
-        const existingVocabIds = new Set(existingStudyCards.map(sc => sc.vocabularyId))
-
-        const studyCards: DBStudyCard[] = sampleN5Deck
-          .filter(card => !existingVocabIds.has(card.id))
-          .map(card => ({
-            ...fsrs.initCard(),
-            vocabularyId: card.id,
-            userId: this.userId
-          }))
-
-        if (studyCards.length > 0) {
-          await db.studyCards.bulkAdd(studyCards)
-          console.log(`Created ${studyCards.length} new study cards`)
-        } else {
-          console.log('Study cards already exist, skipping creation')
-        }
-
-        console.log('Database initialized successfully')
-      }
+      // Database will be populated by seed-loader service automatically
+      // This method is kept for backward compatibility
+      console.log('Database initialization - vocabulary will be loaded via seed-loader service')
     } catch (error) {
       console.error('Error initializing database:', error)
       throw error

@@ -20,9 +20,9 @@ export interface SeedFile {
  */
 export const SEED_FILES: SeedFile[] = [
   {
-    name: 'N5 Verified Dataset',
+    name: 'N5 Enhanced Dataset',
     path: '/seed-data/N5_vocab_dataset.json',
-    description: '662 JLPT N5 words with AI-verified examples (387 production-ready)',
+    description: '863 JLPT N5 words - complete N5 coverage with 98.9% JMdict integration',
     priority: 1
   }
 ]
@@ -42,7 +42,7 @@ export interface SeedResult {
 }
 
 export class SeedLoaderService {
-  private hasLoadedKey = 'vocab_seed_loaded_v1'
+  private hasLoadedKey = 'vocab_seed_loaded_v30_phase3' // v3.0 Phase 3: Complete N5 coverage (863 cards)
 
   /**
    * Check if seed data has already been loaded

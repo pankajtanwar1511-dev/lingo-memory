@@ -2,7 +2,6 @@ import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { VocabularyCard } from '@/types/vocabulary'
 import { FSRSCard, Rating, fsrs, CardState } from '@/lib/fsrs'
-import { sampleN5Deck } from '@/data/sample-n5-deck'
 
 export interface StudyCard extends FSRSCard {
   vocabularyId: string
@@ -67,7 +66,7 @@ const useStudyStore = create<StudyStore>()(
   persist(
     (set, get) => ({
       // Initial state
-      vocabulary: sampleN5Deck,
+      vocabulary: [],
       studyCards: [],
       currentSession: null,
       currentCard: null,

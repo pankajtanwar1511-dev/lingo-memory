@@ -13,12 +13,55 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Header } from "@/components/layout/header"
 import { Flashcard } from "@/components/flashcard"
-import { sampleN5Deck } from "@/data/sample-n5-deck"
 import { Progress } from "@/components/ui/progress"
+import { VocabularyCard } from "@/types/vocabulary"
+
+// Demo vocabulary cards for landing page preview
+const demoDeck: VocabularyCard[] = [
+  {
+    id: "demo_001",
+    kanji: "水",
+    kana: "みず",
+    romaji: "mizu",
+    meaning: ["water"],
+    jlptLevel: "N5",
+    partOfSpeech: ["noun"],
+    tags: ["nature", "drink"],
+    examples: [],
+    source: { type: "custom" },
+    license: { text: "Demo card", url: "" }
+  },
+  {
+    id: "demo_002",
+    kanji: "食べる",
+    kana: "たべる",
+    romaji: "taberu",
+    meaning: ["to eat"],
+    jlptLevel: "N5",
+    partOfSpeech: ["verb"],
+    tags: ["action", "food"],
+    examples: [],
+    source: { type: "custom" },
+    license: { text: "Demo card", url: "" }
+  },
+  {
+    id: "demo_003",
+    kanji: "学校",
+    kana: "がっこう",
+    romaji: "gakkou",
+    meaning: ["school"],
+    jlptLevel: "N5",
+    partOfSpeech: ["noun"],
+    tags: ["education", "place"],
+    examples: [],
+    source: { type: "custom" },
+    license: { text: "Demo card", url: "" }
+  }
+]
 
 export default function HomePage() {
   const [currentCardIndex, setCurrentCardIndex] = useState(0)
-  const currentCard = sampleN5Deck[currentCardIndex]
+  const currentCard = demoDeck[currentCardIndex]
 
   const features = [
     {
@@ -119,8 +162,8 @@ export default function HomePage() {
           >
             <Flashcard
               card={currentCard}
-              onNext={() => setCurrentCardIndex((i) => (i + 1) % sampleN5Deck.length)}
-              onPrevious={() => setCurrentCardIndex((i) => (i - 1 + sampleN5Deck.length) % sampleN5Deck.length)}
+              onNext={() => setCurrentCardIndex((i) => (i + 1) % demoDeck.length)}
+              onPrevious={() => setCurrentCardIndex((i) => (i - 1 + demoDeck.length) % demoDeck.length)}
             />
           </motion.div>
         </section>

@@ -1,0 +1,2915 @@
+{
+  "metadata": {
+    "analysisDate": "2026-02-16",
+    "source": "N5_807 Dataset v2.3.0",
+    "target": "N5_vocab_dataset_ENHANCED v1.25.0-phase25",
+    "currentCards": 703,
+    "targetCards": 807,
+    "missingCards": 160,
+    "projectedTotal": 863
+  },
+  "summary": {
+    "verbs": 29,
+    "nouns": 61,
+    "adjectives": 8,
+    "expressions": 4,
+    "counters": 6,
+    "numbers": 35,
+    "interjections": 3,
+    "other": 14
+  },
+  "categories": {
+    "verbs": [
+      {
+        "kana": "ゆく",
+        "kanji": "行く",
+        "meaning": [
+          "to go",
+          "to move (towards)",
+          "to head (towards)"
+        ],
+        "partOfSpeech": [
+          "Godan verb - Iku/Yuku special class",
+          "intransitive verb"
+        ],
+        "tags": [
+          "verb",
+          "godan"
+        ],
+        "source_id": "n5_vocab_0405"
+      },
+      {
+        "kana": "あいます",
+        "kanji": "",
+        "meaning": [
+          "to brush against",
+          "to rub together"
+        ],
+        "partOfSpeech": [
+          "su verb - precursor to the modern suru"
+        ],
+        "tags": [
+          "verb"
+        ],
+        "source_id": "n5_vocab_0502"
+      },
+      {
+        "kana": "いい",
+        "kanji": "",
+        "meaning": [
+          "having fun",
+          "rejoicing"
+        ],
+        "partOfSpeech": [
+          "'taru' adjective",
+          "adverb taking the 'to' particle"
+        ],
+        "tags": [
+          "verb",
+          "adjective",
+          "adverb",
+          "particle"
+        ],
+        "source_id": "n5_vocab_0521"
+      },
+      {
+        "kana": "えー",
+        "kanji": "",
+        "meaning": [
+          "yes",
+          "that is correct",
+          "right"
+        ],
+        "partOfSpeech": [
+          "interjection (kandoushi)",
+          "noun or verb acting prenominally"
+        ],
+        "tags": [
+          "verb",
+          "noun"
+        ],
+        "source_id": "n5_vocab_0551"
+      },
+      {
+        "kana": "おそく",
+        "kanji": "",
+        "meaning": [
+          "late",
+          "slowly"
+        ],
+        "partOfSpeech": [
+          "adverb (fukushi)",
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "verb",
+          "noun",
+          "adverb"
+        ],
+        "source_id": "n5_vocab_0559"
+      },
+      {
+        "kana": "かかん",
+        "kanji": "",
+        "meaning": [
+          "looking down on",
+          "getting a bird's-eye view"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "noun or participle which takes the aux. verb suru"
+        ],
+        "tags": [
+          "verb",
+          "noun"
+        ],
+        "source_id": "n5_vocab_0581"
+      },
+      {
+        "kana": "かんたん",
+        "kanji": "",
+        "meaning": [
+          "admiration",
+          "wonder",
+          "astonishment"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "noun or participle which takes the aux. verb suru"
+        ],
+        "tags": [
+          "verb",
+          "noun",
+          "particle"
+        ],
+        "source_id": "n5_vocab_0592"
+      },
+      {
+        "kana": "さんぽ",
+        "kanji": "",
+        "meaning": [
+          "walk",
+          "stroll"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "noun or participle which takes the aux. verb suru"
+        ],
+        "tags": [
+          "verb",
+          "noun"
+        ],
+        "source_id": "n5_vocab_0634"
+      },
+      {
+        "kana": "しゅうかん",
+        "kanji": "",
+        "meaning": [
+          "imprisonment"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "noun or participle which takes the aux. verb suru"
+        ],
+        "tags": [
+          "verb",
+          "noun"
+        ],
+        "source_id": "n5_vocab_0643"
+      },
+      {
+        "kana": "そうじ",
+        "kanji": "",
+        "meaning": [
+          "concentration",
+          "diligence",
+          "devotion"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "noun or participle which takes the aux. verb suru"
+        ],
+        "tags": [
+          "verb",
+          "noun"
+        ],
+        "source_id": "n5_vocab_0667"
+      },
+      {
+        "kana": "たいてい",
+        "kanji": "",
+        "meaning": [
+          "mostly",
+          "ordinarily",
+          "usually"
+        ],
+        "partOfSpeech": [
+          "adjectival nouns or quasi-adjectives (keiyodoshi)",
+          "adverb (fukushi)"
+        ],
+        "tags": [
+          "verb",
+          "noun",
+          "adjective",
+          "adverb",
+          "particle"
+        ],
+        "source_id": "n5_vocab_0681"
+      },
+      {
+        "kana": "だいたい",
+        "kanji": "",
+        "meaning": [
+          "generally",
+          "on the whole",
+          "mostly"
+        ],
+        "partOfSpeech": [
+          "adverb (fukushi)",
+          "nouns which may take the genitive case particle 'no'"
+        ],
+        "tags": [
+          "verb",
+          "noun",
+          "adverb",
+          "particle"
+        ],
+        "source_id": "n5_vocab_0693"
+      },
+      {
+        "kana": "ちゅう",
+        "kanji": "",
+        "meaning": [
+          "kiss",
+          "squeak (of a mouse)",
+          "with a slurp"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "noun or participle which takes the aux. verb suru"
+        ],
+        "tags": [
+          "verb",
+          "noun",
+          "adverb",
+          "particle"
+        ],
+        "source_id": "n5_vocab_0701"
+      },
+      {
+        "kana": "とおく",
+        "kanji": "",
+        "meaning": [
+          "far away",
+          "distant place",
+          "a (great) distance"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "adverb (fukushi)"
+        ],
+        "tags": [
+          "verb",
+          "noun",
+          "adverb",
+          "particle"
+        ],
+        "source_id": "n5_vocab_0720"
+      },
+      {
+        "kana": "どこか",
+        "kanji": "",
+        "meaning": [
+          "somewhere",
+          "in some respects",
+          "in some way"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "adverb (fukushi)"
+        ],
+        "tags": [
+          "verb",
+          "noun",
+          "adverb"
+        ],
+        "source_id": "n5_vocab_0733"
+      },
+      {
+        "kana": "なに",
+        "kanji": "",
+        "meaning": [
+          "what",
+          "you-know-what",
+          "that thing"
+        ],
+        "partOfSpeech": [
+          "pronoun",
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "verb",
+          "noun",
+          "adverb"
+        ],
+        "source_id": "n5_vocab_0743"
+      },
+      {
+        "kana": "なにか",
+        "kanji": "",
+        "meaning": [
+          "something",
+          "some",
+          "any"
+        ],
+        "partOfSpeech": [
+          "pronoun",
+          "adverb (fukushi)"
+        ],
+        "tags": [
+          "verb",
+          "noun",
+          "adverb"
+        ],
+        "source_id": "n5_vocab_0744"
+      },
+      {
+        "kana": "ぶん",
+        "kanji": "",
+        "meaning": [
+          "part",
+          "portion",
+          "share"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "noun, used as a suffix"
+        ],
+        "tags": [
+          "verb",
+          "noun",
+          "adverb"
+        ],
+        "source_id": "n5_vocab_0783"
+      },
+      {
+        "kana": "まいげつ",
+        "kanji": "",
+        "meaning": [
+          "every month",
+          "each month",
+          "monthly"
+        ],
+        "partOfSpeech": [
+          "adverb (fukushi)",
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "verb",
+          "noun",
+          "adverb"
+        ],
+        "source_id": "n5_vocab_0791"
+      },
+      {
+        "kana": "まいねん",
+        "kanji": "",
+        "meaning": [
+          "every year",
+          "yearly",
+          "annually"
+        ],
+        "partOfSpeech": [
+          "adverb (fukushi)",
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "verb",
+          "noun",
+          "adverb"
+        ],
+        "source_id": "n5_vocab_0793"
+      },
+      {
+        "kana": "もちろん",
+        "kanji": "",
+        "meaning": [
+          "of course",
+          "certainly",
+          "naturally"
+        ],
+        "partOfSpeech": [
+          "adverb (fukushi)"
+        ],
+        "tags": [
+          "verb",
+          "adverb"
+        ],
+        "source_id": "n5_vocab_0808"
+      },
+      {
+        "kana": "ゆっくり",
+        "kanji": "",
+        "meaning": [
+          "slowly",
+          "unhurriedly",
+          "without haste"
+        ],
+        "partOfSpeech": [
+          "adverb (fukushi)",
+          "adverb taking the 'to' particle"
+        ],
+        "tags": [
+          "verb",
+          "noun",
+          "adverb",
+          "particle"
+        ],
+        "source_id": "n5_vocab_0819"
+      },
+      {
+        "kana": "れんしゅう",
+        "kanji": "",
+        "meaning": [
+          "practice",
+          "training",
+          "drill"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "noun or participle which takes the aux. verb suru"
+        ],
+        "tags": [
+          "verb",
+          "noun"
+        ],
+        "source_id": "n5_vocab_0830"
+      },
+      {
+        "kana": "コピー",
+        "kanji": "",
+        "meaning": [
+          "copy",
+          "photocopy",
+          "book jacket blurb"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "noun or participle which takes the aux. verb suru"
+        ],
+        "tags": [
+          "verb",
+          "noun"
+        ],
+        "source_id": "n5_vocab_0854"
+      },
+      {
+        "kana": "メモ",
+        "kanji": "",
+        "meaning": [
+          "note",
+          "memo",
+          "memorandum"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "noun or participle which takes the aux. verb suru"
+        ],
+        "tags": [
+          "verb",
+          "noun"
+        ],
+        "source_id": "n5_vocab_0909"
+      },
+      {
+        "kana": "えらぶ",
+        "kanji": "選ぶ",
+        "meaning": [
+          "to choose",
+          "to select",
+          "to pick (out)"
+        ],
+        "partOfSpeech": [
+          "Godan verb with 'bu' ending",
+          "transitive verb"
+        ],
+        "tags": [
+          "verb",
+          "verb"
+        ],
+        "source_id": "n5_vocab_0918"
+      },
+      {
+        "kana": "ぬる",
+        "kanji": "塗る",
+        "meaning": [
+          "to paint",
+          "to spread",
+          "to plaster",
+          "to apply (cream, lotion)",
+          "to smear",
+          "to lacquer",
+          "to varnish",
+          "to put up (wallpaper)"
+        ],
+        "partOfSpeech": [
+          "Godan verb with 'ru' ending",
+          "transitive verb"
+        ],
+        "tags": [
+          "verb",
+          "verb"
+        ],
+        "source_id": "n5_vocab_0927"
+      },
+      {
+        "kana": "より",
+        "kanji": "",
+        "meaning": [
+          "than",
+          "rather than",
+          "instead of",
+          "over",
+          "above",
+          "from",
+          "out of",
+          "since",
+          "at",
+          "on (and after)",
+          "except",
+          "but",
+          "other than",
+          "more"
+        ],
+        "partOfSpeech": [
+          "particle",
+          "adverb (fukushi)"
+        ],
+        "tags": [
+          "particle",
+          "verb"
+        ],
+        "source_id": "n5_vocab_0933"
+      },
+      {
+        "kana": "おねがい",
+        "kanji": "お願い",
+        "meaning": [
+          "request",
+          "favour (to ask)",
+          "wish",
+          "please"
+        ],
+        "partOfSpeech": [
+          "noun (common)",
+          "transitive verb",
+          "expression"
+        ],
+        "tags": [
+          "noun",
+          "verb",
+          "expression"
+        ],
+        "source_id": "n5_vocab_0934"
+      }
+    ],
+    "nouns": [
+      {
+        "kana": "ついたち",
+        "kanji": "一日",
+        "meaning": [
+          "first day of the month",
+          "the first of the month"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0019"
+      },
+      {
+        "kana": "わたし",
+        "kanji": "私",
+        "meaning": [
+          "I",
+          "me"
+        ],
+        "partOfSpeech": [
+          "pronoun"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0367"
+      },
+      {
+        "kana": "いもうとさん",
+        "kanji": "",
+        "meaning": [
+          "younger sister"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0538"
+      },
+      {
+        "kana": "お",
+        "kanji": "",
+        "meaning": [
+          "cord",
+          "strap",
+          "thong"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0552"
+      },
+      {
+        "kana": "おくに",
+        "kanji": "",
+        "meaning": [
+          "your native country",
+          "your hometown",
+          "my home country (i.e. Japan)"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0555"
+      },
+      {
+        "kana": "おとうとさん",
+        "kanji": "",
+        "meaning": [
+          "younger brother"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0560"
+      },
+      {
+        "kana": "おみせ",
+        "kanji": "",
+        "meaning": [
+          "store",
+          "shop",
+          "establishment"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0567"
+      },
+      {
+        "kana": "かい",
+        "kanji": "",
+        "meaning": [
+          "low rank",
+          "lower position",
+          "subordinate position"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "nouns which may take the genitive case particle 'no'"
+        ],
+        "tags": [
+          "noun",
+          "particle"
+        ],
+        "source_id": "n5_vocab_0573"
+      },
+      {
+        "kana": "かいとうようし",
+        "kanji": "",
+        "meaning": [
+          "answer sheet"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0574"
+      },
+      {
+        "kana": "かお",
+        "kanji": "",
+        "meaning": [
+          "face",
+          "visage",
+          "look"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0578"
+      },
+      {
+        "kana": "かげつ",
+        "kanji": "",
+        "meaning": [
+          "good month",
+          "bright moon"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0585"
+      },
+      {
+        "kana": "がわ",
+        "kanji": "",
+        "meaning": [
+          "river",
+          "stream",
+          "River"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "suffix"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0595"
+      },
+      {
+        "kana": "きょうと",
+        "kanji": "",
+        "meaning": [
+          "believer",
+          "adherent"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0598"
+      },
+      {
+        "kana": "けしゴム",
+        "kanji": "",
+        "meaning": [
+          "eraser",
+          "rubber"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0606"
+      },
+      {
+        "kana": "げつ",
+        "kanji": "",
+        "meaning": [
+          "Monday"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0608"
+      },
+      {
+        "kana": "こ",
+        "kanji": "",
+        "meaning": [
+          "sea cucumber (Holothuroidea spp.)"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0609"
+      },
+      {
+        "kana": "こたえ",
+        "kanji": "",
+        "meaning": [
+          "answer",
+          "reply",
+          "response"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0611"
+      },
+      {
+        "kana": "ごしゅじん",
+        "kanji": "",
+        "meaning": [
+          "your husband",
+          "her husband"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0622"
+      },
+      {
+        "kana": "さい",
+        "kanji": "",
+        "meaning": [
+          "difference",
+          "disparity",
+          "gap"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0628"
+      },
+      {
+        "kana": "さつ",
+        "kanji": "",
+        "meaning": [
+          "cops",
+          "police"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0632"
+      },
+      {
+        "kana": "じ",
+        "kanji": "",
+        "meaning": [
+          "child",
+          "boy",
+          "I"
+        ],
+        "partOfSpeech": [
+          "noun, used as a suffix",
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0646"
+      },
+      {
+        "kana": "すぎ",
+        "kanji": "",
+        "meaning": [
+          "past",
+          "after",
+          "too (much)"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "noun, used as a suffix"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0655"
+      },
+      {
+        "kana": "すし",
+        "kanji": "",
+        "meaning": [
+          "sushi",
+          "range of dishes made with vinegared rice combined with fish, vegetables, egg, etc."
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0657"
+      },
+      {
+        "kana": "すしや",
+        "kanji": "",
+        "meaning": [
+          "sushi shop",
+          "sushi restaurant",
+          "sushi bar"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0658"
+      },
+      {
+        "kana": "たち",
+        "kanji": "",
+        "meaning": [
+          "mansion",
+          "palace",
+          "manor house"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0686"
+      },
+      {
+        "kana": "ちち",
+        "kanji": "",
+        "meaning": [
+          "milk",
+          "breast",
+          "loop"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0699"
+      },
+      {
+        "kana": "つくりかた",
+        "kanji": "",
+        "meaning": [
+          "style of building",
+          "construction",
+          "workmanship"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0707"
+      },
+      {
+        "kana": "とうきょう",
+        "kanji": "",
+        "meaning": [
+          "Tokyo"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0717"
+      },
+      {
+        "kana": "とうふ",
+        "kanji": "",
+        "meaning": [
+          "tofu",
+          "bean curd",
+          "beancurd"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0718"
+      },
+      {
+        "kana": "とお",
+        "kanji": "",
+        "meaning": [
+          "distant"
+        ],
+        "partOfSpeech": [
+          "nouns which may take the genitive case particle 'no'"
+        ],
+        "tags": [
+          "noun",
+          "particle"
+        ],
+        "source_id": "n5_vocab_0719"
+      },
+      {
+        "kana": "どんな",
+        "kanji": "",
+        "meaning": [
+          "what kind of",
+          "what sort of",
+          "what"
+        ],
+        "partOfSpeech": [
+          "pre-noun adjectival (rentaishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0739"
+      },
+      {
+        "kana": "なん",
+        "kanji": "",
+        "meaning": [
+          "difficulty",
+          "trouble",
+          "hardship"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "noun, used as a suffix"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0749"
+      },
+      {
+        "kana": "なんじ",
+        "kanji": "",
+        "meaning": [
+          "what time",
+          "which hour"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0751"
+      },
+      {
+        "kana": "なんにち",
+        "kanji": "",
+        "meaning": [
+          "what day",
+          "how many days"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0752"
+      },
+      {
+        "kana": "にほん",
+        "kanji": "",
+        "meaning": [
+          "Japan"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0755"
+      },
+      {
+        "kana": "にほんご",
+        "kanji": "",
+        "meaning": [
+          "Japanese (language)"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0756"
+      },
+      {
+        "kana": "にん",
+        "kanji": "",
+        "meaning": [
+          "benevolence (esp. as a virtue of Confucianism)",
+          "consideration",
+          "compassion"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0757"
+      },
+      {
+        "kana": "ねん",
+        "kanji": "",
+        "meaning": [
+          "sense",
+          "idea",
+          "thought"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0760"
+      },
+      {
+        "kana": "はは",
+        "kanji": "",
+        "meaning": [
+          "mother-in-law",
+          "foster mother",
+          "step mother"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0773"
+      },
+      {
+        "kana": "ひ",
+        "kanji": "",
+        "meaning": [
+          "fire",
+          "flame",
+          "blaze"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0775"
+      },
+      {
+        "kana": "ひき",
+        "kanji": "",
+        "meaning": [
+          "toad (esp. the Japanese toad, Bufo japonicus)"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0776"
+      },
+      {
+        "kana": "ひらがな",
+        "kanji": "",
+        "meaning": [
+          "hiragana",
+          "cursive Japanese syllabary used primarily for native Japanese words (esp. function words, inflections, etc.)"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0778"
+      },
+      {
+        "kana": "ほう",
+        "kanji": "",
+        "meaning": [
+          "salary"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0785"
+      },
+      {
+        "kana": "ほんや",
+        "kanji": "",
+        "meaning": [
+          "bookstore",
+          "bookshop",
+          "publisher"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0788"
+      },
+      {
+        "kana": "ぼく",
+        "kanji": "",
+        "meaning": [
+          "I",
+          "me",
+          "you"
+        ],
+        "partOfSpeech": [
+          "pronoun",
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0789"
+      },
+      {
+        "kana": "もんだいようし",
+        "kanji": "",
+        "meaning": [
+          "question sheet",
+          "question paper"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0812"
+      },
+      {
+        "kana": "や",
+        "kanji": "",
+        "meaning": [
+          "melting"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0814"
+      },
+      {
+        "kana": "りょこうがいしゃ",
+        "kanji": "",
+        "meaning": [
+          "travel agent",
+          "travel agency"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0827"
+      },
+      {
+        "kana": "りんご",
+        "kanji": "",
+        "meaning": [
+          "apple (fruit)",
+          "apple tree (Malus pumila)"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0829"
+      },
+      {
+        "kana": "アメリカ",
+        "kanji": "",
+        "meaning": [
+          "(United States of) America",
+          "United States",
+          "US"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0838"
+      },
+      {
+        "kana": "カタカナ",
+        "kanji": "",
+        "meaning": [
+          "katakana",
+          "angular Japanese syllabary used primarily for loanwords"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0841"
+      },
+      {
+        "kana": "キロ",
+        "kanji": "",
+        "meaning": [
+          "kilo-",
+          "1000",
+          "kilogram"
+        ],
+        "partOfSpeech": [
+          "prefix",
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0846"
+      },
+      {
+        "kana": "ケーキ",
+        "kanji": "",
+        "meaning": [
+          "cake"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0852"
+      },
+      {
+        "kana": "サッカー",
+        "kanji": "",
+        "meaning": [
+          "soccer",
+          "(association) football"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0859"
+      },
+      {
+        "kana": "ティッシュペーパー",
+        "kanji": "",
+        "meaning": [
+          "tissue paper",
+          "tissue",
+          "facial tissue"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0872"
+      },
+      {
+        "kana": "トイレットペーパー",
+        "kanji": "",
+        "meaning": [
+          "toilet paper",
+          "lavatory paper"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0880"
+      },
+      {
+        "kana": "バスてい",
+        "kanji": "",
+        "meaning": [
+          "bus stop"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0889"
+      },
+      {
+        "kana": "パンや",
+        "kanji": "",
+        "meaning": [
+          "bakery",
+          "baker"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0893"
+      },
+      {
+        "kana": "ビル",
+        "kanji": "",
+        "meaning": [
+          "multi-floor building",
+          "multi-storey building"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0895"
+      },
+      {
+        "kana": "ラーメン",
+        "kanji": "",
+        "meaning": [
+          "ramen",
+          "Chinese-style noodles"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0914"
+      },
+      {
+        "kana": "ラジオカセット",
+        "kanji": "",
+        "meaning": [
+          "radio-cassette",
+          "tape recorder"
+        ],
+        "partOfSpeech": [
+          "noun (common)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0936"
+      }
+    ],
+    "adjectives": [
+      {
+        "kana": "うれしい",
+        "kanji": "",
+        "meaning": [
+          "happy",
+          "glad",
+          "pleased"
+        ],
+        "partOfSpeech": [
+          "adjective (keiyoushi)"
+        ],
+        "tags": [
+          "adjective"
+        ],
+        "source_id": "n5_vocab_0545"
+      },
+      {
+        "kana": "おいしい",
+        "kanji": "",
+        "meaning": [
+          "good(-tasting)",
+          "nice",
+          "delicious"
+        ],
+        "partOfSpeech": [
+          "adjective (keiyoushi)"
+        ],
+        "tags": [
+          "adjective"
+        ],
+        "source_id": "n5_vocab_0553"
+      },
+      {
+        "kana": "おもしろい",
+        "kanji": "",
+        "meaning": [
+          "interesting",
+          "fascinating",
+          "intriguing"
+        ],
+        "partOfSpeech": [
+          "adjective (keiyoushi)"
+        ],
+        "tags": [
+          "adjective"
+        ],
+        "source_id": "n5_vocab_0568"
+      },
+      {
+        "kana": "か",
+        "kanji": "",
+        "meaning": [
+          "beautiful",
+          "good",
+          "excellent"
+        ],
+        "partOfSpeech": [
+          "adjectival nouns or quasi-adjectives (keiyodoshi)",
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun",
+          "adjective"
+        ],
+        "source_id": "n5_vocab_0572"
+      },
+      {
+        "kana": "かわいい",
+        "kanji": "",
+        "meaning": [
+          "cute",
+          "adorable",
+          "charming"
+        ],
+        "partOfSpeech": [
+          "adjective (keiyoushi)"
+        ],
+        "tags": [
+          "adjective"
+        ],
+        "source_id": "n5_vocab_0590"
+      },
+      {
+        "kana": "すい",
+        "kanji": "",
+        "meaning": [
+          "sour",
+          "acid"
+        ],
+        "partOfSpeech": [
+          "adjective (keiyoushi)"
+        ],
+        "tags": [
+          "adjective"
+        ],
+        "source_id": "n5_vocab_0653"
+      },
+      {
+        "kana": "ただしい",
+        "kanji": "",
+        "meaning": [
+          "right",
+          "correct",
+          "proper"
+        ],
+        "partOfSpeech": [
+          "adjective (keiyoushi)"
+        ],
+        "tags": [
+          "adjective"
+        ],
+        "source_id": "n5_vocab_0685"
+      },
+      {
+        "kana": "まずい",
+        "kanji": "",
+        "meaning": [
+          "bad(-tasting)",
+          "unpalatable",
+          "unsavoury"
+        ],
+        "partOfSpeech": [
+          "adjective (keiyoushi)"
+        ],
+        "tags": [
+          "adjective"
+        ],
+        "source_id": "n5_vocab_0796"
+      }
+    ],
+    "expressions": [
+      {
+        "kana": "ありがとう",
+        "kanji": "",
+        "meaning": [
+          "thank you",
+          "thanks"
+        ],
+        "partOfSpeech": [
+          "expression"
+        ],
+        "tags": [
+          "expression"
+        ],
+        "source_id": "n5_vocab_0928"
+      },
+      {
+        "kana": "おはよう",
+        "kanji": "",
+        "meaning": [
+          "good morning"
+        ],
+        "partOfSpeech": [
+          "expression"
+        ],
+        "tags": [
+          "expression"
+        ],
+        "source_id": "n5_vocab_0929"
+      },
+      {
+        "kana": "ではまた",
+        "kanji": "",
+        "meaning": [
+          "see you later",
+          "goodbye",
+          "sincerely"
+        ],
+        "partOfSpeech": [
+          "expression"
+        ],
+        "tags": [
+          "expression"
+        ],
+        "source_id": "n5_vocab_0931"
+      },
+      {
+        "kana": "そうだ",
+        "kanji": "",
+        "meaning": [
+          "that is so",
+          "that is right",
+          "it looks to me",
+          "that's my impression",
+          "people say that",
+          "it is said that",
+          "I hear that"
+        ],
+        "partOfSpeech": [
+          "expression"
+        ],
+        "tags": [
+          "expression"
+        ],
+        "source_id": "n5_vocab_0932"
+      }
+    ],
+    "counters": [
+      {
+        "kana": "しゅう",
+        "kanji": "",
+        "meaning": [
+          "counter for laps or circuits",
+          "perimeter",
+          "Zhou dynasty (of China; approx. 1046-256 BCE)"
+        ],
+        "partOfSpeech": [
+          "counter",
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun",
+          "counter"
+        ],
+        "source_id": "n5_vocab_0642"
+      },
+      {
+        "kana": "だい",
+        "kanji": "",
+        "meaning": [
+          "stand",
+          "rest",
+          "base"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "noun, used as a suffix"
+        ],
+        "tags": [
+          "noun",
+          "counter"
+        ],
+        "source_id": "n5_vocab_0692"
+      },
+      {
+        "kana": "つ",
+        "kanji": "",
+        "meaning": [
+          "general-purpose counter",
+          "... years old"
+        ],
+        "partOfSpeech": [
+          "counter"
+        ],
+        "tags": [
+          "counter"
+        ],
+        "source_id": "n5_vocab_0704"
+      },
+      {
+        "kana": "ど",
+        "kanji": "",
+        "meaning": [
+          "degree (angle, temperature, scale, etc.)",
+          "counter for occurrences",
+          "strength (of glasses)"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "noun, used as a suffix"
+        ],
+        "tags": [
+          "noun",
+          "counter"
+        ],
+        "source_id": "n5_vocab_0725"
+      },
+      {
+        "kana": "にち",
+        "kanji": "",
+        "meaning": [
+          "Sunday",
+          "nth day (of the month)",
+          "counter for days"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "suffix"
+        ],
+        "tags": [
+          "noun",
+          "counter"
+        ],
+        "source_id": "n5_vocab_0753"
+      },
+      {
+        "kana": "まい",
+        "kanji": "",
+        "meaning": [
+          "counter for thin, flat objects (e.g. sheets of paper, plates, coins)",
+          "counter for portions of gyōza or soba",
+          "counter for ranks"
+        ],
+        "partOfSpeech": [
+          "counter"
+        ],
+        "tags": [
+          "counter"
+        ],
+        "source_id": "n5_vocab_0790"
+      }
+    ],
+    "numbers": [
+      {
+        "kana": "しち",
+        "kanji": "七",
+        "meaning": [
+          "seven"
+        ],
+        "partOfSpeech": [
+          "numeric"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0024"
+      },
+      {
+        "kana": "きゅう",
+        "kanji": "九",
+        "meaning": [
+          "nine",
+          "9"
+        ],
+        "partOfSpeech": [
+          "numeric"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0045"
+      },
+      {
+        "kana": "じゅう",
+        "kanji": "十",
+        "meaning": [
+          "ten",
+          "10",
+          "ten years of age"
+        ],
+        "partOfSpeech": [
+          "numeric",
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0124"
+      },
+      {
+        "kana": "し",
+        "kanji": "四",
+        "meaning": [
+          "four",
+          "4"
+        ],
+        "partOfSpeech": [
+          "numeric"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0151"
+      },
+      {
+        "kana": "あ",
+        "kanji": "",
+        "meaning": [
+          "muteness",
+          "speech impairment",
+          "mute"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0500"
+      },
+      {
+        "kana": "いちど",
+        "kanji": "",
+        "meaning": [
+          "once",
+          "one time",
+          "on one occasion"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "adverb (fukushi)"
+        ],
+        "tags": [
+          "verb",
+          "noun",
+          "adverb"
+        ],
+        "source_id": "n5_vocab_0532"
+      },
+      {
+        "kana": "うち",
+        "kanji": "",
+        "meaning": [
+          "one's house",
+          "one's home",
+          "one's family"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0543"
+      },
+      {
+        "kana": "えん",
+        "kanji": "",
+        "meaning": [
+          "yen (Japanese monetary unit)",
+          "circle"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0550"
+      },
+      {
+        "kana": "おにぎり",
+        "kanji": "",
+        "meaning": [
+          "onigiri",
+          "rice ball (often triangular, sometimes with a filling and wrapped in nori)"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0562"
+      },
+      {
+        "kana": "かいます",
+        "kanji": "",
+        "meaning": [
+          "to buy more",
+          "to increase one's holdings"
+        ],
+        "partOfSpeech": [
+          "Godan verb with 'su' ending",
+          "transitive verb"
+        ],
+        "tags": [
+          "verb",
+          "godan"
+        ],
+        "source_id": "n5_vocab_0575"
+      },
+      {
+        "kana": "かない",
+        "kanji": "",
+        "meaning": [
+          "(my) wife",
+          "inside the home",
+          "one's family"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0587"
+      },
+      {
+        "kana": "きん",
+        "kanji": "",
+        "meaning": [
+          "kin",
+          "catty",
+          "traditional unit of weight, 600g"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "counter"
+        ],
+        "tags": [
+          "noun",
+          "counter"
+        ],
+        "source_id": "n5_vocab_0601"
+      },
+      {
+        "kana": "く",
+        "kanji": "",
+        "meaning": [
+          "section (i.e. of text)",
+          "sentence",
+          "passage"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "noun, used as a suffix"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0602"
+      },
+      {
+        "kana": "ごろ",
+        "kanji": "",
+        "meaning": [
+          "sound (of a sentence)",
+          "euphony",
+          "wordplay"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0626"
+      },
+      {
+        "kana": "さいご",
+        "kanji": "",
+        "meaning": [
+          "one's last moment",
+          "one's death",
+          "one's end"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "adverb (fukushi)"
+        ],
+        "tags": [
+          "verb",
+          "noun",
+          "adverb"
+        ],
+        "source_id": "n5_vocab_0629"
+      },
+      {
+        "kana": "でんわばんごう",
+        "kanji": "",
+        "meaning": [
+          "telephone number"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0716"
+      },
+      {
+        "kana": "にねん",
+        "kanji": "",
+        "meaning": [
+          "two ideas"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0754"
+      },
+      {
+        "kana": "ふん",
+        "kanji": "",
+        "meaning": [
+          "minute (unit of time)",
+          "fun (one tenth of a monme, 5.787 grains)"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0782"
+      },
+      {
+        "kana": "みる",
+        "kanji": "",
+        "meaning": [
+          "to look after (often medically)",
+          "to take care of"
+        ],
+        "partOfSpeech": [
+          "Ichidan verb",
+          "transitive verb"
+        ],
+        "tags": [
+          "verb",
+          "ichidan"
+        ],
+        "source_id": "n5_vocab_0802"
+      },
+      {
+        "kana": "もく",
+        "kanji": "",
+        "meaning": [
+          "order",
+          "item (of a budget revision, etc.)",
+          "counter for played stones"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)",
+          "counter"
+        ],
+        "tags": [
+          "noun",
+          "counter"
+        ],
+        "source_id": "n5_vocab_0805"
+      },
+      {
+        "kana": "もしもし",
+        "kanji": "",
+        "meaning": [
+          "hello (e.g. on phone)",
+          "excuse me! (when calling out to someone)"
+        ],
+        "partOfSpeech": [
+          "interjection (kandoushi)"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0806"
+      },
+      {
+        "kana": "やじるし",
+        "kanji": "",
+        "meaning": [
+          "arrow (symbol)",
+          "(romantic) interest (for a certain person)",
+          "direction (of one's attention, etc.)"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0815"
+      },
+      {
+        "kana": "ろっぽん",
+        "kanji": "",
+        "meaning": [
+          "six (long cylindrical things)"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0832"
+      },
+      {
+        "kana": "エアコン",
+        "kanji": "",
+        "meaning": [
+          "air conditioner",
+          "air conditioning",
+          "aircon"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0839"
+      },
+      {
+        "kana": "ジュース",
+        "kanji": "",
+        "meaning": [
+          "juice",
+          "soft drink (usu. fruit-based)",
+          "sweetened drink"
+        ],
+        "partOfSpeech": [
+          "noun (common) (futsuumeishi)"
+        ],
+        "tags": [
+          "noun"
+        ],
+        "source_id": "n5_vocab_0862"
+      },
+      {
+        "kana": "おくる",
+        "kanji": "送る",
+        "meaning": [
+          "to send",
+          "to dispatch",
+          "to forward",
+          "to transmit",
+          "to ship",
+          "to remit",
+          "to see (someone) off",
+          "to escort",
+          "to accompany",
+          "to take",
+          "to bid farewell to (the departed)",
+          "to say goodbye to",
+          "to bury",
+          "to spend (time)",
+          "to pass",
+          "to lead (a life)",
+          "to live",
+          "to pass (on, along)",
+          "to advance (a runner)",
+          "to affix (okurigana)"
+        ],
+        "partOfSpeech": [
+          "Godan verb with 'ru' ending",
+          "transitive verb",
+          "Godan verb with 'ru' ending",
+          "transitive verb",
+          "Godan verb with 'ru' ending",
+          "transitive verb",
+          "Godan verb with 'ru' ending",
+          "transitive verb",
+          "Godan verb with 'ru' ending",
+          "transitive verb",
+          "Godan verb with 'ru' ending",
+          "transitive verb"
+        ],
+        "tags": [
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb"
+        ],
+        "source_id": "n5_vocab_0919"
+      },
+      {
+        "kana": "かぶる",
+        "kanji": "被る",
+        "meaning": [
+          "to put on (one's head)",
+          "to wear",
+          "to have on",
+          "to pull over (one's head)",
+          "to crown (oneself)",
+          "to be covered with (dust, snow, etc.)",
+          "to pour (water, etc.) on oneself",
+          "to dash on oneself",
+          "to ship water",
+          "to bear (e.g. someone's debts, faults, etc.)",
+          "to take (blame)",
+          "to assume (responsibility)",
+          "to shoulder (burden)",
+          "to overlap (e.g. sound or color)",
+          "to be similar",
+          "to be redundant",
+          "to be fogged (due to overexposure, etc.)",
+          "to close",
+          "to come to an end",
+          "to get a full house",
+          "to sell out",
+          "to blunder",
+          "to bungle",
+          "to fail",
+          "to be deceived"
+        ],
+        "partOfSpeech": [
+          "Godan verb with 'ru' ending",
+          "transitive verb",
+          "Godan verb with 'ru' ending",
+          "transitive verb",
+          "Godan verb with 'ru' ending",
+          "transitive verb",
+          "Godan verb with 'ru' ending",
+          "transitive verb",
+          "Godan verb with 'ru' ending",
+          "transitive verb",
+          "Godan verb with 'ru' ending",
+          "intransitive verb",
+          "Godan verb with 'ru' ending",
+          "intransitive verb",
+          "Godan verb with 'ru' ending",
+          "intransitive verb",
+          "Godan verb with 'ru' ending",
+          "intransitive verb",
+          "Godan verb with 'ru' ending",
+          "intransitive verb"
+        ],
+        "tags": [
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb"
+        ],
+        "source_id": "n5_vocab_0920"
+      },
+      {
+        "kana": "はく",
+        "kanji": "履く",
+        "meaning": [
+          "to put on (lower-body clothing, e.g. pants, skirt, footwear)",
+          "to wear",
+          "to affix (a sword to one's hip)",
+          "to affix (a bowstring to a bow)"
+        ],
+        "partOfSpeech": [
+          "Godan verb with 'ku' ending",
+          "transitive verb",
+          "Godan verb with 'ku' ending",
+          "transitive verb",
+          "Godan verb with 'ku' ending",
+          "transitive verb"
+        ],
+        "tags": [
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb"
+        ],
+        "source_id": "n5_vocab_0921"
+      },
+      {
+        "kana": "もらう",
+        "kanji": "貰う",
+        "meaning": [
+          "to receive",
+          "to take",
+          "to accept",
+          "to get someone to do something",
+          "to have in one's pocket (a fight, match)",
+          "to contract (a disease)",
+          "to catch",
+          "to be affected"
+        ],
+        "partOfSpeech": [
+          "Godan verb with 'u' ending",
+          "transitive verb",
+          "auxiliary verb",
+          "Godan verb with 'u' ending",
+          "Godan verb with 'u' ending",
+          "transitive verb",
+          "Godan verb with 'u' ending",
+          "transitive verb"
+        ],
+        "tags": [
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb"
+        ],
+        "source_id": "n5_vocab_0922"
+      },
+      {
+        "kana": "もっていく",
+        "kanji": "持っていく",
+        "meaning": [
+          "to take (something) along",
+          "to bring with one",
+          "to carry (something) away",
+          "to bear"
+        ],
+        "partOfSpeech": [
+          "expression",
+          "Godan verb - Iku/Yuku special class"
+        ],
+        "tags": [
+          "expression",
+          "verb"
+        ],
+        "source_id": "n5_vocab_0923"
+      },
+      {
+        "kana": "みる",
+        "kanji": "見る",
+        "meaning": [
+          "to see",
+          "to look",
+          "to watch",
+          "to view",
+          "to observe",
+          "to examine",
+          "to look over",
+          "to assess",
+          "to check",
+          "to judge",
+          "to look after",
+          "to attend to",
+          "to take care of",
+          "to keep an eye on",
+          "to experience",
+          "to meet with (misfortune, success, etc.)",
+          "to try ...",
+          "to have a go at ...",
+          "to give ... a try",
+          "to see (that) ...",
+          "to find (that) ..."
+        ],
+        "partOfSpeech": [
+          "Ichidan verb",
+          "transitive verb",
+          "Ichidan verb",
+          "transitive verb",
+          "Ichidan verb",
+          "transitive verb",
+          "Ichidan verb",
+          "transitive verb",
+          "auxiliary verb",
+          "Ichidan verb",
+          "auxiliary verb",
+          "Ichidan verb"
+        ],
+        "tags": [
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb"
+        ],
+        "source_id": "n5_vocab_0924"
+      },
+      {
+        "kana": "みる",
+        "kanji": "観る",
+        "meaning": [
+          "to see",
+          "to look",
+          "to watch",
+          "to view",
+          "to observe",
+          "to examine",
+          "to look over",
+          "to assess",
+          "to check",
+          "to judge",
+          "to look after",
+          "to attend to",
+          "to take care of",
+          "to keep an eye on",
+          "to experience",
+          "to meet with (misfortune, success, etc.)",
+          "to try ...",
+          "to have a go at ...",
+          "to give ... a try",
+          "to see (that) ...",
+          "to find (that) ..."
+        ],
+        "partOfSpeech": [
+          "Ichidan verb",
+          "transitive verb",
+          "Ichidan verb",
+          "transitive verb",
+          "Ichidan verb",
+          "transitive verb",
+          "Ichidan verb",
+          "transitive verb",
+          "auxiliary verb",
+          "Ichidan verb",
+          "auxiliary verb",
+          "Ichidan verb"
+        ],
+        "tags": [
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb"
+        ],
+        "source_id": "n5_vocab_0925"
+      },
+      {
+        "kana": "いちばん",
+        "kanji": "一番",
+        "meaning": [
+          "number one",
+          "first",
+          "first place",
+          "best",
+          "most",
+          "game",
+          "round",
+          "bout",
+          "as a test",
+          "as an experiment",
+          "by way of experiment",
+          "by way of trial",
+          "tentatively",
+          "song (e.g. in noh)",
+          "piece"
+        ],
+        "partOfSpeech": [
+          "noun (common)",
+          "adverb (fukushi)",
+          "adverb (fukushi)"
+        ],
+        "tags": [
+          "noun",
+          "verb",
+          "verb"
+        ],
+        "source_id": "n5_vocab_0926"
+      },
+      {
+        "kana": "いただく",
+        "kanji": "",
+        "meaning": [
+          "to receive",
+          "to get",
+          "to accept",
+          "to take",
+          "to buy",
+          "to eat",
+          "to drink",
+          "to be crowned with",
+          "to wear (on one's head)",
+          "to have (on top)",
+          "to have (as one's leader)",
+          "to live under (a ruler)",
+          "to install (a president)",
+          "to get someone to do something"
+        ],
+        "partOfSpeech": [
+          "Godan verb with 'ku' ending",
+          "transitive verb",
+          "Godan verb with 'ku' ending",
+          "transitive verb",
+          "Godan verb with 'ku' ending",
+          "transitive verb",
+          "Godan verb with 'ku' ending",
+          "transitive verb",
+          "auxiliary verb",
+          "Godan verb with 'ku' ending"
+        ],
+        "tags": [
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb",
+          "verb"
+        ],
+        "source_id": "n5_vocab_0930"
+      },
+      {
+        "kana": "しつれい",
+        "kanji": "失礼",
+        "meaning": [
+          "discourtesy",
+          "impoliteness",
+          "excuse me",
+          "goodbye",
+          "to leave",
+          "to be rude"
+        ],
+        "partOfSpeech": [
+          "noun (common)",
+          "intransitive verb",
+          "expression"
+        ],
+        "tags": [
+          "noun",
+          "verb",
+          "expression"
+        ],
+        "source_id": "n5_vocab_0935"
+      }
+    ],
+    "interjections": [
+      {
+        "kana": "ああ",
+        "kanji": "",
+        "meaning": [
+          "ah!",
+          "oh!",
+          "alas!"
+        ],
+        "partOfSpeech": [
+          "interjection (kandoushi)"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0501"
+      },
+      {
+        "kana": "あのう",
+        "kanji": "",
+        "meaning": [
+          "say",
+          "well",
+          "um"
+        ],
+        "partOfSpeech": [
+          "interjection (kandoushi)"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0512"
+      },
+      {
+        "kana": "うーん",
+        "kanji": "",
+        "meaning": [
+          "um",
+          "er",
+          "well"
+        ],
+        "partOfSpeech": [
+          "interjection (kandoushi)"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0546"
+      }
+    ],
+    "other": [
+      {
+        "kana": "いただきます",
+        "kanji": "",
+        "meaning": [
+          "thank you (for the meal just served)",
+          "I receive (this meal)"
+        ],
+        "partOfSpeech": [
+          "expressions (phrases, clauses, etc.)"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0531"
+      },
+      {
+        "kana": "いってきます",
+        "kanji": "",
+        "meaning": [
+          "I'm off",
+          "see you later"
+        ],
+        "partOfSpeech": [
+          "expressions (phrases, clauses, etc.)"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0535"
+      },
+      {
+        "kana": "えっ",
+        "kanji": "",
+        "meaning": [
+          "huh?",
+          "what's up?"
+        ],
+        "partOfSpeech": [
+          "interjection (kandoushi)"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0548"
+      },
+      {
+        "kana": "おねがいします",
+        "kanji": "",
+        "meaning": [
+          "please"
+        ],
+        "partOfSpeech": [
+          "expressions (phrases, clauses, etc.)"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0563"
+      },
+      {
+        "kana": "ごちそうさまでした",
+        "kanji": "",
+        "meaning": [
+          "thank you for the meal",
+          "that was a delicious meal",
+          "what a wonderful meal"
+        ],
+        "partOfSpeech": [
+          "expressions (phrases, clauses, etc.)"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0623"
+      },
+      {
+        "kana": "しつれいしました",
+        "kanji": "",
+        "meaning": [
+          "my apologies",
+          "I'm sorry",
+          "excuse me"
+        ],
+        "partOfSpeech": [
+          "expressions (phrases, clauses, etc.)"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0638"
+      },
+      {
+        "kana": "しつれいします",
+        "kanji": "",
+        "meaning": [
+          "excuse me",
+          "pardon me",
+          "I beg your pardon"
+        ],
+        "partOfSpeech": [
+          "expressions (phrases, clauses, etc.)"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0639"
+      },
+      {
+        "kana": "じん",
+        "kanji": "",
+        "meaning": [
+          "-ian (e.g. Italian)",
+          "-ite (e.g. Tokyoite)",
+          "-er (e.g. performer, etc.)"
+        ],
+        "partOfSpeech": [
+          "suffix"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0652"
+      },
+      {
+        "kana": "ずつ",
+        "kanji": "",
+        "meaning": [
+          "apiece",
+          "each",
+          "at a time"
+        ],
+        "partOfSpeech": [
+          "suffix"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0663"
+      },
+      {
+        "kana": "そして",
+        "kanji": "",
+        "meaning": [
+          "and",
+          "and then",
+          "thus"
+        ],
+        "partOfSpeech": [
+          "conjunction"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0673"
+      },
+      {
+        "kana": "だから",
+        "kanji": "",
+        "meaning": [
+          "so",
+          "therefore",
+          "accordingly"
+        ],
+        "partOfSpeech": [
+          "conjunction",
+          "expressions (phrases, clauses, etc.)"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0694"
+      },
+      {
+        "kana": "はじめに",
+        "kanji": "",
+        "meaning": [
+          "first",
+          "firstly",
+          "first of all"
+        ],
+        "partOfSpeech": [
+          "expressions (phrases, clauses, etc.)"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0769"
+      },
+      {
+        "kana": "はじめまして",
+        "kanji": "",
+        "meaning": [
+          "nice to meet you",
+          "I'm glad to make your acquaintance",
+          "how do you do?"
+        ],
+        "partOfSpeech": [
+          "expressions (phrases, clauses, etc.)"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0770"
+      },
+      {
+        "kana": "じゅうご",
+        "kanji": "十五",
+        "meaning": [
+          "fifteen",
+          "15"
+        ],
+        "partOfSpeech": [
+          "unknown"
+        ],
+        "tags": [
+          "unknown"
+        ],
+        "source_id": "n5_vocab_0937"
+      }
+    ]
+  }
+}
