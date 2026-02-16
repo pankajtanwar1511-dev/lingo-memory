@@ -68,7 +68,8 @@ interface VerbsData {
 }
 
 type ViewMode = "all" | "dictionary" | "masu" | "kana-masu" | "dictionary-kana" | "te-form" | "te-form-kana"
-type FlipSide = "english" | "kanji" | "kana" | "masu-kanji" | "masu-kana" | "te-kanji" | "te-kana"
+type FlipSide = "english" | "kanji" | "kana" | "masu-kanji" | "masu-kana" | "te-kanji" | "te-kana" | "kana-mixed"
+type ConjugationFormType = "dict" | "masu" | "te"
 
 interface VerbProgress {
   verbId: string
@@ -90,6 +91,10 @@ export default function VerbsPage() {
   const [flipMode, setFlipMode] = useState(false)
   const [frontSide, setFrontSide] = useState<FlipSide>("english")
   const [backSide, setBackSide] = useState<FlipSide>("kanji")
+
+  // English Quiz Mode - stores random form type for each verb
+  const [quizMode, setQuizMode] = useState(false)
+  const [verbFormTypes, setVerbFormTypes] = useState<Map<string, ConjugationFormType>>(new Map())
 
   // New features
   const [shuffleMode, setShuffleMode] = useState(false)
@@ -190,7 +195,18 @@ export default function VerbsPage() {
     setFilteredVerbs(filtered)
     setCurrentTestIndex(0)
     setShowAnswer(false)
-  }, [searchQuery, selectedGroup, verbsData, shuffleMode, showOnlyUnknown, testMode, verbProgress])
+
+    // Initialize random form types for quiz mode
+    if (quizMode) {
+      const formTypesMap = new Map<string, ConjugationFormType>()
+      const forms: ConjugationFormType[] = ["dict", "masu", "te"]
+      filtered.forEach(verb => {
+        const randomForm = forms[Math.floor(Math.random() * forms.length)]
+        formTypesMap.set(verb.id, randomForm)
+      })
+      setVerbFormTypes(formTypesMap)
+    }
+  }, [searchQuery, selectedGroup, verbsData, shuffleMode, showOnlyUnknown, testMode, verbProgress, quizMode])
 
   // Matching exercise functions - defined here before useEffect
   const getBatchVerbs = () => {
@@ -585,6 +601,28 @@ export default function VerbsPage() {
             {verb.conjugations.teKana}
           </div>
         )
+      case "kana-mixed":
+        // Show the appropriate kana based on quiz mode
+        if (quizMode) {
+          const formType = verbFormTypes.get(verb.id) || "dict"
+          let kanaText = verb.kana
+          if (formType === "masu") {
+            kanaText = verb.conjugations.masuKana
+          } else if (formType === "te") {
+            kanaText = verb.conjugations.teKana
+          }
+          return (
+            <div className="text-4xl font-bold text-primary">
+              {kanaText}
+            </div>
+          )
+        }
+        // Default: show dictionary form kana
+        return (
+          <div className="text-4xl font-bold text-primary">
+            {verb.kana}
+          </div>
+        )
       default:
         return (
           <div className="relative w-full h-full flex items-center justify-center px-2 py-4">
@@ -814,43 +852,76 @@ export default function VerbsPage() {
 
               {/* Flip Side Selection - Only when flip mode is ON and NOT in test mode */}
               {flipMode && !testMode && !matchingMode && (
-                <div className="flex items-center gap-4 p-4 border rounded-lg bg-muted/30">
-                  <div className="flex items-center gap-4 flex-1">
-                    <div className="flex items-center gap-2">
-                      <Label className="text-sm whitespace-nowrap">Front:</Label>
-                      <select
-                        value={frontSide}
-                        onChange={(e) => setFrontSide(e.target.value as FlipSide)}
-                        className="px-3 py-1.5 border rounded-md bg-background"
-                      >
-                        <option value="english">English</option>
-                        <option value="kanji">Dictionary (Kanji)</option>
-                        <option value="kana">Dictionary (Kana)</option>
-                        <option value="masu-kanji">Masu (Kanji)</option>
-                        <option value="masu-kana">Masu (Kana)</option>
-                        <option value="te-kanji">Te-form (Kanji)</option>
-                        <option value="te-kana">Te-form (Kana)</option>
-                      </select>
-                    </div>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-4 p-4 border rounded-lg bg-muted/30">
+                    <div className="flex items-center gap-4 flex-1">
+                      <div className="flex items-center gap-2">
+                        <Label className="text-sm whitespace-nowrap">Front:</Label>
+                        <select
+                          value={frontSide}
+                          onChange={(e) => setFrontSide(e.target.value as FlipSide)}
+                          className="px-3 py-1.5 border rounded-md bg-background"
+                          disabled={quizMode}
+                        >
+                          <option value="english">English</option>
+                          <option value="kanji">Dictionary (Kanji)</option>
+                          <option value="kana">Dictionary (Kana)</option>
+                          <option value="kana-mixed">Mixed Kana</option>
+                          <option value="masu-kanji">Masu (Kanji)</option>
+                          <option value="masu-kana">Masu (Kana)</option>
+                          <option value="te-kanji">Te-form (Kanji)</option>
+                          <option value="te-kana">Te-form (Kana)</option>
+                        </select>
+                      </div>
 
-                    <div className="text-muted-foreground">→</div>
+                      <div className="text-muted-foreground">→</div>
 
-                    <div className="flex items-center gap-2">
-                      <Label className="text-sm whitespace-nowrap">Back:</Label>
-                      <select
-                        value={backSide}
-                        onChange={(e) => setBackSide(e.target.value as FlipSide)}
-                        className="px-3 py-1.5 border rounded-md bg-background"
-                      >
-                        <option value="english">English</option>
-                        <option value="kanji">Dictionary (Kanji)</option>
-                        <option value="kana">Dictionary (Kana)</option>
-                        <option value="masu-kanji">Masu (Kanji)</option>
-                        <option value="masu-kana">Masu (Kana)</option>
-                        <option value="te-kanji">Te-form (Kanji)</option>
-                        <option value="te-kana">Te-form (Kana)</option>
-                      </select>
+                      <div className="flex items-center gap-2">
+                        <Label className="text-sm whitespace-nowrap">Back:</Label>
+                        <select
+                          value={backSide}
+                          onChange={(e) => setBackSide(e.target.value as FlipSide)}
+                          className="px-3 py-1.5 border rounded-md bg-background"
+                          disabled={quizMode}
+                        >
+                          <option value="english">English</option>
+                          <option value="kanji">Dictionary (Kanji)</option>
+                          <option value="kana">Dictionary (Kana)</option>
+                          <option value="kana-mixed">Mixed Kana</option>
+                          <option value="masu-kanji">Masu (Kanji)</option>
+                          <option value="masu-kana">Masu (Kana)</option>
+                          <option value="te-kanji">Te-form (Kanji)</option>
+                          <option value="te-kana">Te-form (Kana)</option>
+                        </select>
+                      </div>
                     </div>
+                  </div>
+
+                  {/* English Conjugation Quiz Mode Button */}
+                  <div className="flex items-center gap-3 p-3 border rounded-lg bg-gradient-to-r from-purple-500/10 to-pink-500/10">
+                    <div className="flex items-center space-x-2">
+                      <Switch
+                        id="quiz-mode"
+                        checked={quizMode}
+                        onCheckedChange={(checked) => {
+                          setQuizMode(checked)
+                          if (checked) {
+                            // Auto-configure for quiz mode
+                            setFrontSide("english")
+                            setBackSide("kana-mixed")
+                          }
+                        }}
+                      />
+                      <Label htmlFor="quiz-mode" className="font-semibold">
+                        <Zap className="h-4 w-4 inline mr-2" />
+                        English Conjugation Quiz
+                      </Label>
+                    </div>
+                    {quizMode && (
+                      <Badge variant="secondary" className="text-xs">
+                        Random forms: Dict / Masu / Te
+                      </Badge>
+                    )}
                   </div>
                 </div>
               )}
@@ -894,6 +965,7 @@ export default function VerbsPage() {
                         <option value="english">English</option>
                         <option value="kanji">Dictionary (Kanji)</option>
                         <option value="kana">Dictionary (Kana)</option>
+                        <option value="kana-mixed">Mixed Kana</option>
                         <option value="masu-kanji">Masu (Kanji)</option>
                         <option value="masu-kana">Masu (Kana)</option>
                         <option value="te-kanji">Te-form (Kanji)</option>
@@ -916,6 +988,7 @@ export default function VerbsPage() {
                         <option value="english">English</option>
                         <option value="kanji">Dictionary (Kanji)</option>
                         <option value="kana">Dictionary (Kana)</option>
+                        <option value="kana-mixed">Mixed Kana</option>
                         <option value="masu-kanji">Masu (Kanji)</option>
                         <option value="masu-kana">Masu (Kana)</option>
                         <option value="te-kanji">Te-form (Kanji)</option>
@@ -1179,6 +1252,7 @@ export default function VerbsPage() {
                             {matchingLeftForm === 'english' ? 'English' :
                              matchingLeftForm === 'kanji' ? 'Dictionary (Kanji)' :
                              matchingLeftForm === 'kana' ? 'Dictionary (Kana)' :
+                             matchingLeftForm === 'kana-mixed' ? 'Mixed Kana' :
                              matchingLeftForm === 'masu-kanji' ? 'Masu (Kanji)' :
                              matchingLeftForm === 'masu-kana' ? 'Masu (Kana)' :
                              matchingLeftForm === 'te-kanji' ? 'Te-form (Kanji)' :
@@ -1220,7 +1294,7 @@ export default function VerbsPage() {
                               <div className="flex-1 text-sm font-semibold">
                                 {matchingLeftForm === 'english' ? (
                                   <span className="text-sm">{verb.primaryMeaning}</span>
-                                ) : matchingLeftForm === 'kanji' || matchingLeftForm === 'kana' ? (
+                                ) : matchingLeftForm === 'kanji' || matchingLeftForm === 'kana' || matchingLeftForm === 'kana-mixed' ? (
                                   <span className="text-xl font-bold">{matchingLeftForm === 'kanji' ? verb.kanji : verb.kana}</span>
                                 ) : matchingLeftForm === 'masu-kanji' || matchingLeftForm === 'masu-kana' ? (
                                   <span className="text-xl font-bold">{matchingLeftForm === 'masu-kanji' ? verb.conjugations.masu : verb.conjugations.masuKana}</span>
@@ -1255,6 +1329,7 @@ export default function VerbsPage() {
                             {matchingRightForm === 'english' ? 'English' :
                              matchingRightForm === 'kanji' ? 'Dictionary (Kanji)' :
                              matchingRightForm === 'kana' ? 'Dictionary (Kana)' :
+                             matchingRightForm === 'kana-mixed' ? 'Mixed Kana' :
                              matchingRightForm === 'masu-kanji' ? 'Masu (Kanji)' :
                              matchingRightForm === 'masu-kana' ? 'Masu (Kana)' :
                              matchingRightForm === 'te-kanji' ? 'Te-form (Kanji)' :
@@ -1284,7 +1359,7 @@ export default function VerbsPage() {
                               <div className="flex-1 text-center text-sm font-semibold">
                                 {matchingRightForm === 'english' ? (
                                   <span className="text-sm">{verb.primaryMeaning}</span>
-                                ) : matchingRightForm === 'kanji' || matchingRightForm === 'kana' ? (
+                                ) : matchingRightForm === 'kanji' || matchingRightForm === 'kana' || matchingRightForm === 'kana-mixed' ? (
                                   <span className="text-xl font-bold">{matchingRightForm === 'kanji' ? verb.kanji : verb.kana}</span>
                                 ) : matchingRightForm === 'masu-kanji' || matchingRightForm === 'masu-kana' ? (
                                   <span className="text-xl font-bold">{matchingRightForm === 'masu-kanji' ? verb.conjugations.masu : verb.conjugations.masuKana}</span>
@@ -1433,6 +1508,17 @@ export default function VerbsPage() {
                                   </button>
                                 )}
                               </div>
+
+                              {/* Quiz mode badge - at bottom right corner */}
+                              {quizMode && frontSide === 'english' && (
+                                <div className="absolute bottom-2 right-2 z-10">
+                                  <Badge variant="default" className="text-xs font-bold px-2 py-0.5">
+                                    {verbFormTypes.get(verb.id) === 'dict' ? 'Dict' :
+                                     verbFormTypes.get(verb.id) === 'masu' ? 'Masu' : 'Te'}
+                                  </Badge>
+                                </div>
+                              )}
+
                               <CardContent className="p-6 text-center min-h-[180px] flex items-center justify-center">
                                 {renderCardContent(verb, frontSide, false)}
                               </CardContent>
@@ -1614,6 +1700,17 @@ export default function VerbsPage() {
                               </button>
                             )}
                           </div>
+
+                          {/* Quiz mode badge - at bottom right corner */}
+                          {quizMode && frontSide === 'english' && (
+                            <div className="absolute bottom-2 right-2 z-10">
+                              <Badge variant="default" className="text-xs font-bold px-2 py-0.5">
+                                {verbFormTypes.get(verb.id) === 'dict' ? 'Dict' :
+                                 verbFormTypes.get(verb.id) === 'masu' ? 'Masu' : 'Te'}
+                              </Badge>
+                            </div>
+                          )}
+
                           <CardContent className="p-6 text-center min-h-[180px] flex items-center justify-center">
                             {renderCardContent(verb, frontSide, false)}
                           </CardContent>
