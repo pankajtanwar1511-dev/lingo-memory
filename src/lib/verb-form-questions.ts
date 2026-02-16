@@ -15,7 +15,7 @@ export interface VerbFormQuestion {
   verbKanji: string
   verbMeaning: string
 
-  correctForm: 'dictionary' | 'masu' | 'te' | 'ta' | 'nai' | 'masen'
+  correctForm: 'dictionary' | 'masu' | 'te' | 'ta' | 'mashita' | 'nai' | 'masen'
   correctAnswer: string
   correctAnswerKana: string
 
@@ -69,18 +69,23 @@ function generateTaForm(teForm: string, teKana: string): { ta: string, taKana: s
 }
 
 /**
+ * Generate ました-form from ます-form
+ */
+function generateMashitaForm(masu: string, masuKana: string): { mashita: string, mashitaKana: string } {
+  const mashita = masu.replace(/ます$/, 'ました')
+  const mashitaKana = masuKana.replace(/ます$/, 'ました')
+  return { mashita, mashitaKana }
+}
+
+/**
  * Generate ない-form (negative) from dictionary form
- * Simplified version - handles most common N5 patterns
  */
 function generateNaiForm(dictionary: string, dictionaryKana: string, verbGroup: string): { nai: string, naiKana: string } {
   if (verbGroup === 'Ichidan') {
-    // る-verbs: 食べる → 食べない
     const nai = dictionary.replace(/る$/, 'ない')
     const naiKana = dictionaryKana.replace(/る$/, 'ない')
     return { nai, naiKana }
   } else if (verbGroup === 'Godan') {
-    // u-verbs: Change う sound to あ sound + ない
-    // 会う → 会わない, 買う → 買わない
     const nai = dictionary.replace(/う$/, 'わない')
       .replace(/く$/, 'かない')
       .replace(/ぐ$/, 'がない')
@@ -103,7 +108,6 @@ function generateNaiForm(dictionary: string, dictionaryKana: string, verbGroup: 
 
     return { nai, naiKana }
   } else {
-    // Irregular (する → しない, 来る → 来ない)
     if (dictionary === 'する' || dictionary.endsWith('する')) {
       return { nai: dictionary.replace('する', 'しない'), naiKana: dictionaryKana.replace('する', 'しない') }
     } else if (dictionary === '来る') {
@@ -124,10 +128,48 @@ function generateMasenForm(masu: string, masuKana: string): { masen: string, mas
 }
 
 /**
+ * Detect which verb form is actually used in the sentence
+ */
+function detectVerbForm(sentence: string, verb: VerbData): {
+  form: 'masu' | 'mashita' | 'te' | 'ta' | 'dictionary' | null
+  verbText: string
+  verbKana: string
+} | null {
+  const { ta, taKana } = generateTaForm(verb.conjugations.te, verb.conjugations.teKana)
+  const { mashita, mashitaKana } = generateMashitaForm(verb.conjugations.masu, verb.conjugations.masuKana)
+
+  // Check for ました (past polite)
+  if (sentence.includes(mashita)) {
+    return { form: 'mashita', verbText: mashita, verbKana: mashitaKana }
+  }
+
+  // Check for ます (present polite)
+  if (sentence.includes(verb.conjugations.masu)) {
+    return { form: 'masu', verbText: verb.conjugations.masu, verbKana: verb.conjugations.masuKana }
+  }
+
+  // Check for て-form
+  if (sentence.includes(verb.conjugations.te)) {
+    return { form: 'te', verbText: verb.conjugations.te, verbKana: verb.conjugations.teKana }
+  }
+
+  // Check for た-form (casual past)
+  if (sentence.includes(ta)) {
+    return { form: 'ta', verbText: ta, verbKana: taKana }
+  }
+
+  // Check for dictionary form
+  if (sentence.includes(verb.conjugations.dictionary)) {
+    return { form: 'dictionary', verbText: verb.conjugations.dictionary, verbKana: verb.conjugations.dictionaryKana }
+  }
+
+  return null
+}
+
+/**
  * Replace verb in sentence with blank marker
  */
 function createSentenceWithBlank(sentence: string, sentenceKana: string, verbForm: string, verbFormKana: string): { sentence: string, kana: string } {
-  // Replace the verb form with ___
   const blankSentence = sentence.replace(verbForm, '___')
   const blankKana = sentenceKana.replace(verbFormKana, '___')
 
@@ -138,32 +180,20 @@ function createSentenceWithBlank(sentence: string, sentenceKana: string, verbFor
 }
 
 /**
- * Determine difficulty based on form and context
- */
-function calculateDifficulty(form: 'dictionary' | 'masu' | 'te' | 'ta' | 'nai' | 'masen'): 1 | 2 | 3 {
-  if (form === 'masu' || form === 'dictionary') return 1
-  if (form === 'te' || form === 'ta') return 2
-  return 3 // nai, masen
-}
-
-/**
  * Generate explanation for why a form is correct
  */
-function generateExplanation(form: string, context: string): string {
+function generateExplanation(form: string, isPast: boolean): string {
   const explanations: Record<string, string> = {
-    'masu-polite-present': 'Use ます-form for polite present tense statements',
-    'masu-polite-habitual': 'Use ます-form for polite habitual actions',
-    'dictionary-casual': 'Use dictionary form for casual speech',
-    'dictionary-future': 'Use dictionary form after time expressions',
-    'te-connection': 'Use て-form to connect sequential actions',
-    'te-request': 'Use て-form for making requests (てください)',
-    'ta-past': 'Use た-form for completed past actions',
-    'ta-past-polite': 'Use ました for polite past tense',
-    'nai-negative': 'Use ない-form for negative (casual)',
-    'masen-negative-polite': 'Use ません-form for negative (polite)'
+    'masu': 'Use ます-form for polite present tense or habitual actions',
+    'mashita': 'Use ました-form for polite past tense (completed actions)',
+    'te': 'Use て-form to connect sequential actions',
+    'ta': 'Use た-form for casual past tense',
+    'dictionary': 'Use dictionary form in casual speech or after time expressions',
+    'nai': 'Use ない-form for negative (casual)',
+    'masen': 'Use ません-form for negative (polite)'
   }
 
-  return explanations[`${form}-${context}`] || `Use ${form}-form in this context`
+  return explanations[form] || `Use ${form}-form in this context`
 }
 
 /**
@@ -176,76 +206,111 @@ export function generateQuestionsFromVerb(verb: VerbData): VerbFormQuestion[] {
     return questions
   }
 
-  // Generate た-form and ない-form
+  // Pre-generate all forms
   const { ta, taKana } = generateTaForm(verb.conjugations.te, verb.conjugations.teKana)
+  const { mashita, mashitaKana } = generateMashitaForm(verb.conjugations.masu, verb.conjugations.masuKana)
   const { nai, naiKana } = generateNaiForm(verb.conjugations.dictionary, verb.conjugations.dictionaryKana, verb.verbGroup)
   const { masen, masenKana } = generateMasenForm(verb.conjugations.masu, verb.conjugations.masuKana)
 
-  // For each example sentence (assuming they use ます-form)
+  // For each example sentence, detect what form it uses and create a question
   verb.examples.forEach((example, index) => {
-    // Question 1: ます-form (what's in the sentence)
+    const detected = detectVerbForm(example.japanese, verb)
+
+    if (!detected) {
+      console.warn(`Could not detect verb form in: ${example.japanese}`)
+      return
+    }
+
     const { sentence: blankSentence, kana: blankKana } = createSentenceWithBlank(
       example.japanese,
       example.kana,
-      verb.conjugations.masu,
-      verb.conjugations.masuKana
+      detected.verbText,
+      detected.verbKana
     )
 
-    questions.push({
-      id: `${verb.id}-ex${index}-masu`,
-      sentence: blankSentence,
-      sentenceKana: blankKana,
-      english: example.english,
+    // Create question based on detected form
+    if (detected.form === 'masu') {
+      // Present tense question
+      questions.push({
+        id: `${verb.id}-ex${index}-masu`,
+        sentence: blankSentence,
+        sentenceKana: blankKana,
+        english: example.english,
 
-      verbId: verb.id,
-      verbKanji: verb.kanji,
-      verbMeaning: verb.primaryMeaning,
+        verbId: verb.id,
+        verbKanji: verb.kanji,
+        verbMeaning: verb.primaryMeaning,
 
-      correctForm: 'masu',
-      correctAnswer: verb.conjugations.masu,
-      correctAnswerKana: verb.conjugations.masuKana,
+        correctForm: 'masu',
+        correctAnswer: verb.conjugations.masu,
+        correctAnswerKana: verb.conjugations.masuKana,
 
-      options: [
-        { form: 'dictionary', text: verb.conjugations.dictionary, kana: verb.conjugations.dictionaryKana, isCorrect: false },
-        { form: 'masu', text: verb.conjugations.masu, kana: verb.conjugations.masuKana, isCorrect: true },
-        { form: 'te', text: verb.conjugations.te, kana: verb.conjugations.teKana, isCorrect: false },
-      ],
+        options: [
+          { form: 'dictionary', text: verb.conjugations.dictionary, kana: verb.conjugations.dictionaryKana, isCorrect: false },
+          { form: 'masu', text: verb.conjugations.masu, kana: verb.conjugations.masuKana, isCorrect: true },
+          { form: 'te', text: verb.conjugations.te, kana: verb.conjugations.teKana, isCorrect: false },
+          { form: 'mashita', text: mashita, kana: mashitaKana, isCorrect: false },
+        ],
 
-      context: 'polite-present',
-      difficulty: 1,
-      explanation: generateExplanation('masu', 'polite-present')
-    })
+        context: 'polite-present',
+        difficulty: 1,
+        explanation: generateExplanation('masu', false)
+      })
+    } else if (detected.form === 'mashita') {
+      // Past tense question
+      questions.push({
+        id: `${verb.id}-ex${index}-mashita`,
+        sentence: blankSentence,
+        sentenceKana: blankKana,
+        english: example.english,
 
-    // Question 2: て-form variant (modify sentence to need て-form)
-    // Example: "毎週、大切な友達に会って、話します。"
-    const teBlankSentence = blankSentence.replace('。', '、話します。')
-    const teBlankKana = blankKana.replace('。', '、はなします。')
+        verbId: verb.id,
+        verbKanji: verb.kanji,
+        verbMeaning: verb.primaryMeaning,
 
-    questions.push({
-      id: `${verb.id}-ex${index}-te`,
-      sentence: teBlankSentence,
-      sentenceKana: teBlankKana,
-      english: example.english.replace('.', ', and we talk.'),
+        correctForm: 'mashita',
+        correctAnswer: mashita,
+        correctAnswerKana: mashitaKana,
 
-      verbId: verb.id,
-      verbKanji: verb.kanji,
-      verbMeaning: verb.primaryMeaning,
+        options: [
+          { form: 'dictionary', text: verb.conjugations.dictionary, kana: verb.conjugations.dictionaryKana, isCorrect: false },
+          { form: 'masu', text: verb.conjugations.masu, kana: verb.conjugations.masuKana, isCorrect: false },
+          { form: 'mashita', text: mashita, kana: mashitaKana, isCorrect: true },
+          { form: 'te', text: verb.conjugations.te, kana: verb.conjugations.teKana, isCorrect: false },
+        ],
 
-      correctForm: 'te',
-      correctAnswer: verb.conjugations.te,
-      correctAnswerKana: verb.conjugations.teKana,
+        context: 'polite-past',
+        difficulty: 1,
+        explanation: generateExplanation('mashita', true)
+      })
+    } else if (detected.form === 'te') {
+      // て-form question
+      questions.push({
+        id: `${verb.id}-ex${index}-te`,
+        sentence: blankSentence,
+        sentenceKana: blankKana,
+        english: example.english,
 
-      options: [
-        { form: 'dictionary', text: verb.conjugations.dictionary, kana: verb.conjugations.dictionaryKana, isCorrect: false },
-        { form: 'masu', text: verb.conjugations.masu, kana: verb.conjugations.masuKana, isCorrect: false },
-        { form: 'te', text: verb.conjugations.te, kana: verb.conjugations.teKana, isCorrect: true },
-        { form: 'ta', text: ta, kana: taKana, isCorrect: false },
-      ],
+        verbId: verb.id,
+        verbKanji: verb.kanji,
+        verbMeaning: verb.primaryMeaning,
 
-      context: 'connection',
-      difficulty: 2,
-      explanation: generateExplanation('te', 'connection')
-    })
+        correctForm: 'te',
+        correctAnswer: verb.conjugations.te,
+        correctAnswerKana: verb.conjugations.teKana,
+
+        options: [
+          { form: 'dictionary', text: verb.conjugations.dictionary, kana: verb.conjugations.dictionaryKana, isCorrect: false },
+          { form: 'masu', text: verb.conjugations.masu, kana: verb.conjugations.masuKana, isCorrect: false },
+          { form: 'te', text: verb.conjugations.te, kana: verb.conjugations.teKana, isCorrect: true },
+          { form: 'ta', text: ta, kana: taKana, isCorrect: false },
+        ],
+
+        context: 'connection',
+        difficulty: 2,
+        explanation: generateExplanation('te', false)
+      })
+    }
   })
 
   return questions
