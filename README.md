@@ -2,28 +2,43 @@
 
 A modern, beautiful Japanese vocabulary learning app built with Next.js 14, TypeScript, and Tailwind CSS. Features FSRS spaced repetition algorithm, authentic content from JMdict and Tatoeba, and a delightful learning experience.
 
+**Version:** 1.0 (February 2026)
+**Status:** Production Ready
+
 ## 🚀 Features
 
 - **FSRS Algorithm**: Science-backed spaced repetition for optimal retention
-- **Authentic Content**: Real Japanese from verified sources with proper attribution
-- **401 N5 Words Ready**: Verified vocabulary with authentic examples from Tatoeba/JMdict
+- **863 N5 Vocabulary Cards**: Complete JLPT N5 coverage with authentic examples
+- **161 N5 Verbs**: Full conjugation tables with example sentences
+- **Multiple Learning Modes**: Study cards, quiz system, verb practice, special vocabulary
+- **Quiz System**: 6 preset modes including LingoSpecial ultra-hard challenge
+- **Progress Tracking**: Analytics, insights, study statistics, calendar heatmap
+- **Dlingo Special**: Numbers, counters, particles, calendar, clock (1000+ entries)
 - **Beautiful UI**: Modern design with smooth animations and dark mode support
 - **PWA Ready**: Works offline, installable on all devices
-- **JLPT Aligned**: Structured learning path from N5 to N1
 - **TypeScript**: Full type safety throughout the codebase
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 14 (App Router)
-- **Language**: TypeScript 5.3
-- **Styling**: Tailwind CSS 3.4
-- **UI Components**: Radix UI
-- **Animations**: Framer Motion
-- **State Management**: Zustand 4.5
-- **Database**: IndexedDB with Dexie 4.2
-- **Validation**: Zod 4.x
+**Frontend:**
+- Next.js 14 (App Router)
+- React 18
+- TypeScript 5.3
+- Tailwind CSS 3.4
+- Framer Motion (animations)
 
-## 📦 Installation
+**State & Data:**
+- Zustand 4.5 (state management)
+- Dexie.js 4.2 (IndexedDB wrapper)
+- FSRS algorithm (spaced repetition)
+
+**Key Libraries:**
+- Radix UI (accessible components)
+- Lucide React (icons)
+- Recharts (analytics charts)
+- Canvas Confetti (celebrations)
+
+## 📦 Quick Start
 
 ```bash
 # Clone the repository
@@ -39,161 +54,187 @@ npm run dev
 # Open http://localhost:3000 in your browser
 ```
 
-## 🏗️ Project Structure
-
-```
-lingomemory/
-├── src/
-│   ├── app/              # Next.js app router pages
-│   ├── components/       # React components (30+)
-│   ├── services/         # Business logic (14 services)
-│   ├── store/            # State management (Zustand)
-│   ├── types/            # TypeScript type definitions
-│   ├── schemas/          # Zod validation schemas
-│   ├── lib/              # Utility functions (JMdict parser, etc.)
-│   └── hooks/            # Custom React hooks
-├── public/
-│   ├── icons/            # PWA icons
-│   └── seed-data/        # N5 & N4 vocabulary datasets
-├── data/
-│   ├── verification/     # AI verification (batches, results, prompts)
-│   ├── production/       # Production-ready categorized examples
-│   ├── archive/          # Backups and old datasets
-│   └── backups/          # Dataset backups
-├── scripts/
-│   ├── verification/     # AI verification scripts (Python)
-│   └── deprecated/       # Old audio scripts (not in use)
-├── docs/                 # Documentation (01-08 + archive)
-├── reports/              # Validation reports & metrics
-└── tools/                # HTML utilities (reset DB, etc.)
-```
-
-## 🎨 Design System
-
-### Color Palette
-
-- **Primary**: Purple (#6B46C1) - Wisdom and learning
-- **Secondary**: Blue (#0EA5E9) - Progress and success
-- **Success**: Green (#10B981) - Correct answers
-- **Warning**: Amber (#F59E0B) - Reviews due
-- **Danger**: Red (#EF4444) - Incorrect answers
-
-### Typography
-
-- **Body**: Inter font family
-- **Japanese**: Noto Sans JP
-
-## 🚦 Getting Started
-
-### Development Commands
+### Build Commands
 
 ```bash
-# Start development server
-npm run dev
-
 # Build for production
 npm run build
 
 # Start production server
 npm start
 
-# Run linting
-npm run lint
-
 # Type checking
 npm run type-check
+
+# Linting
+npm run lint
 ```
 
-### Environment Variables
+## 🏗️ Project Structure
 
-Create a `.env.local` file in the root directory:
-
-```env
-# Add your environment variables here (coming in Phase 2)
-NEXT_PUBLIC_API_URL=your_api_url
+```
+lingomemory/
+├── src/                    # Application source code
+│   ├── app/                # Next.js pages (17 routes)
+│   ├── components/         # React components (69 components)
+│   ├── services/           # Business logic (17 services)
+│   ├── store/              # State management (Zustand)
+│   ├── types/              # TypeScript type definitions
+│   ├── lib/                # Utilities & configs
+│   └── hooks/              # Custom React hooks
+├── public/                 # Runtime assets
+│   ├── seed-data/          # Vocabulary JSON files
+│   │   ├── N5_vocab_dataset.json (863 cards)
+│   │   └── N5_verbs_dataset.json (161 verbs)
+│   └── dlingo/             # Dlingo special vocab
+│       └── dlingo_vocab_enhanced.json (1000+ entries)
+└── docs/                   # Documentation
+    ├── README.md           # Documentation index
+    ├── APP_OVERVIEW.md     # Complete application guide
+    ├── DATA_GUIDE.md       # Dataset details & creation process
+    ├── data-source/        # Source data for processing
+    ├── vocab_master/       # Vocabulary analysis
+    └── dlingo-source/      # Dlingo processing files
 ```
 
-## 📈 Current Status
+## 📊 Dataset Statistics
 
-**Production Readiness:** 58.5%
+| Dataset | Records | Coverage | File Size |
+|---------|---------|----------|-----------|
+| N5 Vocabulary | 863 cards | 100% JLPT N5 | ~2 MB |
+| N5 Verbs | 161 verbs | All N5 verbs | ~400 KB |
+| Dlingo Vocab | 1000+ entries | Specialized vocab | ~1.5 MB |
 
-### ✅ Completed (Phase 1, 2 & 3)
+**Quality Metrics:**
+- 98.9% JMdict coverage
+- 100% N5 JLPT coverage
+- All cards have examples
+- All data licensed (CC BY 2.0 FR)
 
-- ✅ **Core Application**: Next.js 14, full component library, study system
-- ✅ **Services**: 14 business logic services implemented
-- ✅ **Database**: IndexedDB with Dexie, seed loading, import/export
-- ✅ **UI/UX**: Flashcards, quiz mode, progress tracking, dark mode
-- ✅ **Data Pipeline**: Automated pipeline with Tatoeba/JMdict integration
-- ✅ **AI Verification**: 38 batches (1,859 examples) manually verified by Claude
-- ✅ **N5 Dataset**: 387 words production-ready (2+ verified examples each)
-- ✅ **Quality Control**: All examples verified for N5 grammar, kana accuracy, vocab presence
-- ✅ **Documentation**: 8 comprehensive guides + archived history
+## 🎯 Key Features
 
-### 🚧 In Progress
+### 1. Vocabulary System
+- 863 N5 cards with FSRS spaced repetition
+- Automatic scheduling based on memory retention
+- 4 difficulty levels (Again, Hard, Good, Easy)
+- Session statistics and progress tracking
 
-- 🚧 **N5 Completion**: 387/662 production-ready → 275 need examples
-  - 115 cards with 1 example (need 1 more)
-  - 160 cards with 0 examples (need 2 new)
-- 🚧 **N4 Dataset**: Not yet processed (planned for later)
-- 🚧 **Audio Generation**: Planned with official LLM models (TTS removed)
+### 2. Verb Learning
+- 161 N5 verbs with full conjugation tables
+- Flip card interface with customizable views
+- Spaced repetition tracking (L0-L5)
+- Filter by verb group (Godan, Ichidan, Irregular)
+- 2+ example sentences per verb
 
-### 📋 Next Phase
+### 3. Quiz System
+- 6 quiz presets (Quick Review, Daily Challenge, JLPT Practice, Speed Challenge, Master Test, LingoSpecial)
+- Custom quiz builder
+- Multiple question types (JP→EN, EN→JP, Kanji→Kana)
+- Smart distractor generation
+- Timed mode with countdown
+- Score tracking and review
 
-- [ ] Generate examples for 275 remaining N5 words (AI-assisted)
-- [ ] Audio generation with licensed TTS
-- [ ] Firebase authentication activation
-- [ ] Cloud sync with Firestore
-- [ ] Testing suite (unit + integration)
+### 4. Dlingo Special
+- Numbers (1-10,000)
+- Counters (~100 counters)
+- Particles (complete reference)
+- Calendar (days, months, dates)
+- Clock (time expressions)
 
-See `docs/07_DEVELOPMENT_ROADMAP.md` for detailed roadmap
+### 5. Progress Tracking
+- Daily study streak
+- Calendar heatmap
+- Analytics charts
+- Milestone achievements
+- Study time tracking
+
+### 6. PWA Support
+- Offline functionality
+- Installable on desktop/mobile
+- Service worker caching
+- Works without internet after first load
 
 ## 📚 Documentation
 
-### Active Development
-- **[Content Implementation](docs/content_implementation.md)** 🔥 - Current content features in development
-  - Vocabulary, Grammar, Particles, Listening, Gamification, etc.
-  - Single source of truth for all content work
+**Main Documentation:**
+- **[docs/README.md](docs/README.md)** - Documentation index and quick start
+- **[docs/APP_OVERVIEW.md](docs/APP_OVERVIEW.md)** - Complete application guide (700+ lines)
+  - All 17 routes documented
+  - Architecture overview
+  - Component breakdown
+  - User workflows
+- **[docs/DATA_GUIDE.md](docs/DATA_GUIDE.md)** - Dataset details (600+ lines)
+  - Data creation process (3-phase pipeline)
+  - Quality metrics
+  - Data schema
+  - How to modify data
 
-### Completed Features (Archived)
-- **[Quiz System](docs/quiz_implementation.md)** ✅ - Quiz modes, FSRS, statistics (98% complete)
-- **[Kanji System](docs/kanji_implementation.md)** ✅ - Kanji cards, stroke order (100% complete)
+**Additional Resources:**
+- **[PROJECT_HISTORY.md](PROJECT_HISTORY.md)** - Development history and changelog
+- **[CREDITS.md](CREDITS.md)** - Attribution and licensing
 
-### General Documentation
-1. **[Getting Started](docs/01_GETTING_STARTED.md)** - Installation & quick start
-2. **[Architecture](docs/02_ARCHITECTURE.md)** - Technical deep dive
-3. **[Data Pipeline](docs/03_DATA_PIPELINE.md)** - Data processing guide
-4. **[Data Schema](docs/04_DATA_SCHEMA.md)** - Complete schema reference
-5. **[Development Roadmap](docs/07_DEVELOPMENT_ROADMAP.md)** - Future plans
-6. **[Quality Assurance](docs/08_QUALITY_ASSURANCE.md)** - Validation & review
+## 🎨 Design System
 
-**Historical Docs:** See `docs/archive/` for archived development logs
+**Color Palette:**
+- Primary: Purple (#6B46C1) - Wisdom and learning
+- Secondary: Blue (#0EA5E9) - Progress and success
+- Success: Green (#10B981) - Correct answers
+- Warning: Amber (#F59E0B) - Reviews due
+- Danger: Red (#EF4444) - Incorrect answers
+
+**Typography:**
+- Body: Inter font family
+- Japanese: Noto Sans JP
+
+## 🚀 Deployment
+
+**Build:**
+```bash
+npm run build
+```
+
+**Deployment Options:**
+- Vercel (recommended, zero-config)
+- Netlify
+- AWS S3 + CloudFront
+- Any static host
+
+**Browser Compatibility:**
+- Chrome/Edge 90+
+- Firefox 88+
+- Safari 14+
+- Mobile browsers (iOS Safari, Chrome Mobile)
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 **Before contributing:**
-- Read `docs/01_GETTING_STARTED.md` for setup
-- Check `docs/07_DEVELOPMENT_ROADMAP.md` for priorities
-- Review `docs/08_QUALITY_ASSURANCE.md` for quality standards
+1. Read `docs/README.md` for setup
+2. Review `docs/APP_OVERVIEW.md` for architecture
+3. Check `docs/DATA_GUIDE.md` for data structures
 
 ## 📄 License
 
 This project uses open-source vocabulary data:
-- JMdict (EDRDG) - CC BY-SA 4.0
-- Tatoeba Project - CC BY 2.0
+- **JMdict** (EDRDG) - CC BY-SA 3.0
+- **Tatoeba Project** - CC BY 2.0 FR
+
+See [CREDITS.md](CREDITS.md) for complete attribution.
 
 ## 🙏 Credits
 
 - Vocabulary data from [JMdict](http://www.edrdg.org/jmdict/j_jmdict.html)
 - Example sentences from [Tatoeba](https://tatoeba.org)
 - Icons from [Lucide](https://lucide.dev)
-- UI components inspired by [shadcn/ui](https://ui.shadcn.com)
+- UI components from [Radix UI](https://radix-ui.com)
 
 ## 📧 Contact
 
-For questions or feedback, please open an issue on [GitHub](https://github.com/pankajtanwar1511-dev/lingo-memory).
+For questions or feedback, please open an issue on [GitHub](https://github.com/pankajtanwar1511-dev/lingo-memory/issues).
 
 ---
 
-Built with ❤️ for Japanese learners worldwide
+**Built with ❤️ for Japanese learners worldwide**
+
+**Last Updated:** February 16, 2026
