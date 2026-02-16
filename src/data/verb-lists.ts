@@ -207,11 +207,26 @@ export const THEMATIC_LISTS: VerbList[] = [
     icon: '🏠',
     color: 'orange',
     verbIds: [
-      'n5_verb_0003', 'n5_verb_0025', 'n5_verb_0027', 'n5_verb_0028', 'n5_verb_0033',
-      'n5_verb_0035', 'n5_verb_0037', 'n5_verb_0041', 'n5_verb_0045', 'n5_verb_0050',
-      'n5_verb_0052', 'n5_verb_0053', 'n5_verb_0040', 'n5_verb_0066', 'n5_verb_0075',
-      'n5_verb_0095', 'n5_verb_0099', 'n5_verb_0063', 'n5_verb_0107', 'n5_verb_0125',
-      'n5_verb_0126', 'n5_verb_0127', 'n5_verb_0057'
+      'n5_verb_0003', // 洗う - wash
+      'n5_verb_0025', // 着る - wear
+      'n5_verb_0028', // 食べる - eat
+      'n5_verb_0033', // 飲む - drink
+      'n5_verb_0035', // 使う - use
+      'n5_verb_0037', // 作る - make
+      'n5_verb_0045', // 消す - turn off
+      'n5_verb_0050', // つける - turn on
+      'n5_verb_0053', // 脱ぐ - take off
+      'n5_verb_0040', // 住む - live
+      'n5_verb_0066', // 履く - put on (shoes/pants)
+      'n5_verb_0095', // 起きる - wake up
+      'n5_verb_0099', // 寝る - sleep
+      'n5_verb_0063', // 入る - enter
+      'n5_verb_0107', // くれる - give (to me)
+      'n5_verb_0125', // 開く - open
+      'n5_verb_0126', // 閉まる - close (intransitive)
+      'n5_verb_0127', // 開ける - open (transitive)
+      'n5_verb_0057', // 閉める - close
+      'n5_verb_0108'  // 閉める - close/shut
     ]
   },
   {
@@ -222,10 +237,15 @@ export const THEMATIC_LISTS: VerbList[] = [
     icon: '🚶',
     color: 'teal',
     verbIds: [
-      'n5_verb_0007', 'n5_verb_0009', 'n5_verb_0024', 'n5_verb_0044', 'n5_verb_0055',
-      'n5_verb_0056', 'n5_verb_0059', 'n5_verb_0058', 'n5_verb_0070', 'n5_verb_0114',
-      'n5_verb_0117', 'n5_verb_0112', 'n5_verb_0113', 'n5_verb_0108', 'n5_verb_0109',
-      'n5_verb_0110', 'n5_verb_0111', 'n5_verb_0115', 'n5_verb_0116'
+      'n5_verb_0007', // 歩く - walk
+      'n5_verb_0009', // 行く - go
+      'n5_verb_0056', // なる - become/turn into
+      'n5_verb_0058', // 登る - climb
+      'n5_verb_0062', // 乗る - ride
+      'n5_verb_0114', // つける - turn on
+      'n5_verb_0117', // 出る - exit/leave
+      'n5_verb_0096', // 出かける - go out
+      'n5_verb_0115'  // 過ぎる - pass/exceed
     ]
   },
   {
@@ -236,9 +256,16 @@ export const THEMATIC_LISTS: VerbList[] = [
     icon: '💬',
     color: 'pink',
     verbIds: [
-      'n5_verb_0001', 'n5_verb_0008', 'n5_verb_0029', 'n5_verb_0042', 'n5_verb_0048',
-      'n5_verb_0058', 'n5_verb_0062', 'n5_verb_0071', 'n5_verb_0082', 'n5_verb_0074',
-      'n5_verb_0093', 'n5_verb_0094', 'n5_verb_0097', 'n5_verb_0014'
+      'n5_verb_0001', // 会う - meet
+      'n5_verb_0008', // 言う - say
+      'n5_verb_0029', // 教える - teach/tell
+      'n5_verb_0042', // 書く - write
+      'n5_verb_0048', // 聞く - listen/hear/ask
+      'n5_verb_0082', // 呼ぶ - call
+      'n5_verb_0093', // 見せる - show
+      'n5_verb_0094', // 教える - tell
+      'n5_verb_0097', // 掛ける - make (phone call)
+      'n5_verb_0014'  // 送る - send
     ]
   },
   {
@@ -337,6 +364,7 @@ export const THEMATIC_LISTS: VerbList[] = [
       'n5_verb_0099', // 寝る - sleep
       'n5_verb_0100', // 起こす - wake (someone)
       'n5_verb_0101', // 疲れる - get tired
+      'n5_verb_0113', // 疲れる - get tired
       'n5_verb_0104', // 触る - touch
       'n5_verb_0105', // 曲げる - bend
       'n5_verb_0106', // 折る - break/fold
@@ -531,6 +559,30 @@ export const THEMATIC_LISTS: VerbList[] = [
     color: 'violet',
     verbIds: [
       'n5_verb_0121'  // 寝る - sleep/go to bed
+    ]
+  },
+  {
+    id: 'mixed-general',
+    name: 'Mixed & General',
+    description: 'Common utility verbs used across various situations',
+    category: 'thematic',
+    icon: '⚙️',
+    color: 'gray',
+    verbIds: [
+      'n5_verb_0024', // 買う - buy
+      'n5_verb_0027', // 掛かる - take/cost (time/money)
+      'n5_verb_0044', // 使う - use
+      'n5_verb_0052', // 年を取る - grow old
+      'n5_verb_0055', // 習う - learn
+      'n5_verb_0059', // 飲む - drink
+      'n5_verb_0071', // 引く - pull
+      'n5_verb_0074', // 待つ - wait
+      'n5_verb_0075', // 回す - rotate/spin
+      'n5_verb_0109', // 調べる - check/investigate
+      'n5_verb_0110', // 捨てる - throw away
+      'n5_verb_0111', // 食べる - eat
+      'n5_verb_0112', // 足りる - be enough
+      'n5_verb_0116'  // できる - be able to/can
     ]
   }
 ]
