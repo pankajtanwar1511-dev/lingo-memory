@@ -1,989 +1,1032 @@
 {
   "metadata": {
-    "version": "1.3.1",
+    "version": "2.0.0",
+    "schema": "normalized-v2",
     "generatedAt": "2026-02-10T15:49:37.551Z",
-    "description": "Complete JLPT N5 verbs with corrected conjugations and clarified meanings",
-    "totalEntries": 141,
-    "uniqueVerbs": 141,
-    "verbsWithJMdictData": 131,
-    "dataSource": "Minna no Nihongo + JMdict",
-    "groups": {
-      "godan": 77,
-      "ichidan": 39,
-      "irregular": 25
-    }
+    "description": "JLPT N5 verbs - normalized v2 schema",
+    "totalEntries": 10
   },
   "verbs": [
     {
-      "id": "n5_verb_0001",
-      "kanji": "会う",
-      "kana": "あう",
-      "romaji": "au",
-      "meaning": [
-        "meet",
-        "to meet",
-        "to encounter",
-        "to see",
-        "to have an accident",
-        "to have a bad experience"
-      ],
-      "primaryMeaning": "meet",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": true
+      "id": "n5_v_0001",
+      "lemma": {
+        "kanji": "会う",
+        "kana": "あう"
       },
-      "conjugations": {
-        "dictionary": "会う",
-        "dictionaryKana": "あう",
-        "masu": "会います",
-        "masuKana": "あいます",
-        "te": "会って",
-        "teKana": "あって"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "毎週、大切な友達に会います。",
-          "kana": "まいしゅう、たいせつなともだちにあいます。",
-          "english": "I meet my important friends every week.",
-          "highlight": "regular meetings with adjective"
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [
+          "に"
+        ],
+        "coreStructure": "Person に 会う"
+      },
+      "meaning": {
+        "primary": "to meet",
+        "gloss": [
+          "meet",
+          "see someone"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "会う",
+          "kana": "あう"
         },
-        {
-          "japanese": "昨日、久しぶりに古い友達に会いました。",
-          "kana": "きのう、ひさしぶりにふるいともだちにあいました。",
-          "english": "Yesterday, I met an old friend for the first time in a while.",
-          "highlight": "reunion with adverb and adjective"
+        "masu": {
+          "kanji": "会います",
+          "kana": "あいます"
+        },
+        "te": {
+          "kanji": "会って",
+          "kana": "あって"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "毎週、友達に会う。",
+            "kana": "まいしゅう、ともだちにあう。",
+            "en": "I meet my friends every week.",
+            "grammarTag": "habitual",
+            "pattern": "Time + Person に + Verb(dictionary)",
+            "highlight": "daily habit"
+          },
+          {
+            "jp": "人に会う前に、服を着替える。",
+            "kana": "ひとにあうまえに、ふくをきがえる。",
+            "en": "I change clothes before meeting people.",
+            "grammarTag": "mae-ni",
+            "pattern": "Verb(dictionary) + 前に + Verb",
+            "highlight": "before action"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "毎週、大切な友達に会います。",
+            "kana": "まいしゅう、たいせつなともだちにあいます。",
+            "en": "I meet my important friends every week.",
+            "grammarTag": "habitual",
+            "pattern": "Time + Adjective + Person に + Verb(ます)",
+            "highlight": "regular meetings with adjective"
+          },
+          {
+            "jp": "昨日、久しぶりに古い友達に会いました。",
+            "kana": "きのう、ひさしぶりにふるいともだちにあいました。",
+            "en": "Yesterday, I met an old friend for the first time in a while.",
+            "grammarTag": "polite-past",
+            "pattern": "Time + Adverb + Person に + Verb(ました)",
+            "highlight": "reunion with adverb and adjective"
+          }
+        ],
+        "te": [
+          {
+            "jp": "友達に会って、話をしました。",
+            "kana": "ともだちにあって、はなしをしました。",
+            "en": "I met my friend and talked.",
+            "grammarTag": "te-sequence",
+            "pattern": "Verb(て) + Verb",
+            "highlight": "sequential actions"
+          },
+          {
+            "jp": "明日、先生に会ってください。",
+            "kana": "あした、せんせいにあってください。",
+            "en": "Please meet the teacher tomorrow.",
+            "grammarTag": "te-kudasai",
+            "pattern": "Verb(て) + ください",
+            "highlight": "polite request"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0001.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0001.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1198180",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "友達に会って、話をしました。",
-          "kana": "ともだちにあって、はなしをしました。",
-          "english": "I met my friend and talked.",
-          "highlight": "sequential actions",
-          "pattern": "sequential"
-        },
-        {
-          "japanese": "明日、先生に会ってください。",
-          "kana": "あした、せんせいにあってください。",
-          "english": "Please meet the teacher tomorrow.",
-          "highlight": "polite request",
-          "pattern": "request"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "毎週、友達に会う。",
-          "kana": "まいしゅう、ともだちにあう。",
-          "english": "I meet my friends every week.",
-          "highlight": "daily habit",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "人に会う前に、服を着替える。",
-          "kana": "ひとにあうまえに、ふくをきがえる。",
-          "english": "I change clothes before meeting people.",
-          "highlight": "before action",
-          "pattern": "before"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0002",
-      "kanji": "遊ぶ",
-      "kana": "あそぶ",
-      "romaji": "asobu",
-      "meaning": [
-        "enjoy oneself, play",
-        "to play (games, sports)",
-        "to enjoy oneself",
-        "to have a good time",
-        "to tease (someone)",
-        "to play (with)"
-      ],
-      "primaryMeaning": "enjoy oneself, play",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": true
+      "id": "n5_v_0002",
+      "lemma": {
+        "kanji": "遊ぶ",
+        "kana": "あそぶ"
       },
-      "conjugations": {
-        "dictionary": "遊ぶ",
-        "dictionaryKana": "あそぶ",
-        "masu": "遊びます",
-        "masuKana": "あそびます",
-        "te": "遊んで",
-        "teKana": "あそんで"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "子供は毎日、広い公園で楽しく遊びます。",
-          "kana": "こどもはまいにち、ひろいこうえんでたのしくあそびます。",
-          "english": "Children play happily in the spacious park every day.",
-          "highlight": "joyful play with adjectives and adverb"
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [
+          "で"
+        ],
+        "coreStructure": "Place で / Person と 遊ぶ"
+      },
+      "meaning": {
+        "primary": "to enjoy oneself, play",
+        "gloss": [
+          "play",
+          "enjoy oneself"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "遊ぶ",
+          "kana": "あそぶ"
         },
-        {
-          "japanese": "昨日、新しい友達とゆっくり遊びました。",
-          "kana": "きのう、あたらしいともだちとゆっくりあそびました。",
-          "english": "Yesterday, I leisurely played with new friends.",
-          "highlight": "relaxed playtime with adjective and adverb"
+        "masu": {
+          "kanji": "遊びます",
+          "kana": "あそびます"
+        },
+        "te": {
+          "kanji": "遊んで",
+          "kana": "あそんで"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "子供は毎日、公園で遊ぶ。",
+            "kana": "こどもはまいにち、こうえんであそぶ。",
+            "en": "Children play in the park every day.",
+            "grammarTag": "habitual",
+            "pattern": "Subject は + Time + Location で + Verb(dictionary)",
+            "highlight": "daily habit"
+          },
+          {
+            "jp": "友達と遊ぶのが好きです。",
+            "kana": "ともだちとあそぶのがすきです。",
+            "en": "I like playing with friends.",
+            "grammarTag": "no-ga",
+            "pattern": "Verb(dictionary) + のが + Adjective",
+            "highlight": "nominalization"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "子供は毎日、広い公園で楽しく遊びます。",
+            "kana": "こどもはまいにち、ひろいこうえんでたのしくあそびます。",
+            "en": "Children play happily in the spacious park every day.",
+            "grammarTag": "polite-nonpast",
+            "pattern": "Subject は + Time + Location で + Verb(ます)",
+            "highlight": "joyful play with adjectives and adverb"
+          },
+          {
+            "jp": "昨日、新しい友達とゆっくり遊びました。",
+            "kana": "きのう、あたらしいともだちとゆっくりあそびました。",
+            "en": "Yesterday, I leisurely played with new friends.",
+            "grammarTag": "polite-past",
+            "pattern": "Time + Person と + Adverb + Verb(ました)",
+            "highlight": "relaxed playtime with adjective and adverb"
+          }
+        ],
+        "te": [
+          {
+            "jp": "宿題をしてから、遊んでもいいですか。",
+            "kana": "しゅくだいをしてから、あそんでもいいですか。",
+            "en": "May I play after doing homework?",
+            "grammarTag": "te-mo-ii",
+            "pattern": "Verb(て) + もいいですか",
+            "highlight": "permission"
+          },
+          {
+            "jp": "外で遊んでいる子供たちが見えます。",
+            "kana": "そとであそんでいるこどもたちがみえます。",
+            "en": "I can see children playing outside.",
+            "grammarTag": "te-iru",
+            "pattern": "Verb(て) + いる",
+            "highlight": "present progressive"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0002.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0002.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1542160",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "宿題をしてから、遊んでもいいですか。",
-          "kana": "しゅくだいをしてから、あそんでもいいですか。",
-          "english": "May I play after doing homework?",
-          "highlight": "permission",
-          "pattern": "permission"
-        },
-        {
-          "japanese": "外で遊んでいる子供たちが見えます。",
-          "kana": "そとであそんでいるこどもたちがみえます。",
-          "english": "I can see children playing outside.",
-          "highlight": "present progressive",
-          "pattern": "progressive"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "子供は毎日、公園で遊ぶ。",
-          "kana": "こどもはまいにち、こうえんであそぶ。",
-          "english": "Children play in the park every day.",
-          "highlight": "daily habit",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "友達と遊ぶのが好きです。",
-          "kana": "ともだちとあそぶのがすきです。",
-          "english": "I like playing with friends.",
-          "highlight": "nominalization",
-          "pattern": "nominalization"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0003",
-      "kanji": "洗う",
-      "kana": "あらう",
-      "romaji": "arau",
-      "meaning": [
-        "wash",
-        "to wash",
-        "to cleanse",
-        "to rinse",
-        "to lave (e.g. shore)",
-        "to wash over (e.g. deck)",
-        "to sweep"
-      ],
-      "primaryMeaning": "wash",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": false
+      "id": "n5_v_0003",
+      "lemma": {
+        "kanji": "洗う",
+        "kana": "あらう"
       },
-      "conjugations": {
-        "dictionary": "洗う",
-        "dictionaryKana": "あらう",
-        "masu": "洗います",
-        "masuKana": "あらいます",
-        "te": "洗って",
-        "teKana": "あらって"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "毎朝、冷たい水で顔を洗います。",
-          "kana": "まいあさ、つめたいみずでかおをあらいます。",
-          "english": "I wash my face with cold water every morning.",
-          "highlight": "morning routine with adjective"
+      "valency": {
+        "type": "transitive",
+        "requiredParticles": [
+          "を"
+        ],
+        "coreStructure": "Object を 洗う"
+      },
+      "meaning": {
+        "primary": "to wash",
+        "gloss": [
+          "wash",
+          "rinse"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "洗う",
+          "kana": "あらう"
         },
-        {
-          "japanese": "食事の前に、きちんと手を洗いました。",
-          "kana": "しょくじのまえに、きちんとてをあらいました。",
-          "english": "I properly washed my hands before the meal.",
-          "highlight": "hygiene with adverb"
+        "masu": {
+          "kanji": "洗います",
+          "kana": "あらいます"
+        },
+        "te": {
+          "kanji": "洗って",
+          "kana": "あらって"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "食べる前に、手を洗う。",
+            "kana": "たべるまえに、てをあらう。",
+            "en": "I wash my hands before eating.",
+            "grammarTag": "mae-ni",
+            "pattern": "Verb(dictionary) + 前に + Verb",
+            "highlight": "before action"
+          },
+          {
+            "jp": "毎朝、顔を洗う。",
+            "kana": "まいあさ、かおをあらう。",
+            "en": "I wash my face every morning.",
+            "grammarTag": "habitual",
+            "pattern": "Time + Object を + Verb(dictionary)",
+            "highlight": "daily routine"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "毎朝、冷たい水で顔を洗います。",
+            "kana": "まいあさ、つめたいみずでかおをあらいます。",
+            "en": "I wash my face with cold water every morning.",
+            "grammarTag": "habitual",
+            "pattern": "Time + Instrument で + Object を + Verb(ます)",
+            "highlight": "morning routine with adjective"
+          },
+          {
+            "jp": "食事の前に、きちんと手を洗いました。",
+            "kana": "しょくじのまえに、きちんとてをあらいました。",
+            "en": "I properly washed my hands before the meal.",
+            "grammarTag": "polite-past",
+            "pattern": "Time + の前に + Object を + Verb(ました)",
+            "highlight": "hygiene with adverb"
+          }
+        ],
+        "te": [
+          {
+            "jp": "手を洗ってから、料理を作ります。",
+            "kana": "てをあらってから、りょうりをつくります。",
+            "en": "After washing hands, I cook.",
+            "grammarTag": "te-kara",
+            "pattern": "Verb(て) + から + Verb",
+            "highlight": "after action"
+          },
+          {
+            "jp": "野菜を洗ってください。",
+            "kana": "やさいをあらってください。",
+            "en": "Please wash the vegetables.",
+            "grammarTag": "te-kudasai",
+            "pattern": "Verb(て) + ください",
+            "highlight": "polite request"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0003.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0003.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1390930",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "手を洗ってから、料理を作ります。",
-          "kana": "てをあらってから、りょうりをつくります。",
-          "english": "After washing hands, I cook.",
-          "highlight": "after action",
-          "pattern": "after"
-        },
-        {
-          "japanese": "野菜を洗ってください。",
-          "kana": "やさいをあらってください。",
-          "english": "Please wash the vegetables.",
-          "highlight": "polite request",
-          "pattern": "request"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "食べる前に、手を洗う。",
-          "kana": "たべるまえに、てをあらう。",
-          "english": "I wash my hands before eating.",
-          "highlight": "before action",
-          "pattern": "before"
-        },
-        {
-          "japanese": "毎朝、顔を洗う。",
-          "kana": "まいあさ、かおをあらう。",
-          "english": "I wash my face every morning.",
-          "highlight": "daily routine",
-          "pattern": "habitual"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0004",
-      "kanji": "ある",
-      "kana": "ある",
-      "romaji": "aru",
-      "meaning": [
-        "exist; be; have",
-        "to exist, to be (inanimate)",
-        "to be held, to take place"
-      ],
-      "primaryMeaning": "exist; be; have",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": true
+      "id": "n5_v_0004",
+      "lemma": {
+        "kanji": "ある",
+        "kana": "ある"
       },
-      "conjugations": {
-        "dictionary": "ある",
-        "dictionaryKana": "ある",
-        "masu": "あります",
-        "masuKana": "あります",
-        "te": "あって",
-        "teKana": "あって"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "駅の近くに新しいコンビニがあります。",
-          "kana": "えきのちかくにあたらしいコンビニがあります。",
-          "english": "There is a new convenience store near the station.",
-          "highlight": "existence with adjective"
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [
+          "に"
+        ],
+        "coreStructure": "Place に Noun が ある"
+      },
+      "meaning": {
+        "primary": "to exist; be; have",
+        "gloss": [
+          "exist (inanimate)",
+          "be located"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "ある",
+          "kana": "ある"
         },
-        {
-          "japanese": "机の上に大切な書類がありました。",
-          "kana": "つくえのうえにたいせつなしょるいがありました。",
-          "english": "There were important documents on the desk.",
-          "highlight": "location with adjective"
+        "masu": {
+          "kanji": "あります",
+          "kana": "あります"
+        },
+        "te": {
+          "kanji": "あって",
+          "kana": "あって"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "駅の近くにスーパーがある。",
+            "kana": "えきのちかくにスーパーがある。",
+            "en": "There is a supermarket near the station.",
+            "grammarTag": "existence",
+            "pattern": "Location に + Noun が + ある",
+            "highlight": "existence"
+          },
+          {
+            "jp": "冷蔵庫に卵がある。",
+            "kana": "れいぞうこにたまごがある。",
+            "en": "There are eggs in the refrigerator.",
+            "grammarTag": "existence",
+            "pattern": "Location に + Noun が + ある",
+            "highlight": "locating an object"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "駅の近くに新しいコンビニがあります。",
+            "kana": "えきのちかくにあたらしいコンビニがあります。",
+            "en": "There is a new convenience store near the station.",
+            "grammarTag": "existence",
+            "pattern": "Location に + Noun が + ある",
+            "highlight": "existence with adjective"
+          },
+          {
+            "jp": "机の上に大切な書類がありました。",
+            "kana": "つくえのうえにたいせつなしょるいがありました。",
+            "en": "There were important documents on the desk.",
+            "grammarTag": "existence",
+            "pattern": "Location に + Noun が + ある",
+            "highlight": "location with adjective"
+          },
+          {
+            "jp": "机の上に本がありません。",
+            "kana": "つくえのうえにほんがありません。",
+            "en": "There are no books on the desk.",
+            "grammarTag": "negation",
+            "pattern": "Location に + Noun が + ありません",
+            "highlight": "non-existence (polite negative)"
+          }
+        ],
+        "te": [
+          {
+            "jp": "お金があって、助かりました。",
+            "kana": "おかねがあって、たすかりました。",
+            "en": "I had money, so it was a relief.",
+            "grammarTag": "te-sequence",
+            "pattern": "Verb(て) + よかった／助かる",
+            "highlight": "cause-result: state leads to relief"
+          },
+          {
+            "jp": "時間があって、よかったです。",
+            "kana": "じかんがあって、よかったです。",
+            "en": "I'm glad I had time.",
+            "grammarTag": "te-sequence",
+            "pattern": "Verb(て) + よかった",
+            "highlight": "positive outcome from state"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0004.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0004.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1296400",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": "existence",
-      "teFormExamples": [
-        {
-          "japanese": "お金があって、嬉しいです。",
-          "kana": "おかねがあって、うれしいです。",
-          "english": "I have money and I'm happy.",
-          "highlight": "sequential state",
-          "pattern": "sequential"
-        },
-        {
-          "japanese": "質問があって、嬉しいです。",
-          "kana": "しつもんがあって、うれしいです。",
-          "english": "I have a question, and I'm happy (to ask).",
-          "highlight": "conditional request",
-          "pattern": "request"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "駅の近くにスーパーがある。",
-          "kana": "えきのちかくにスーパーがある。",
-          "english": "There is a supermarket near the station.",
-          "highlight": "existence",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "本がたくさんあることができます。",
-          "kana": "ほんがたくさんあることができます。",
-          "english": "There can be many books.",
-          "highlight": "possibility",
-          "pattern": "ability"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0007",
-      "kanji": "歩く",
-      "kana": "あるく",
-      "romaji": "aruku",
-      "meaning": [
-        "walk",
-        "to walk"
-      ],
-      "primaryMeaning": "walk",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": true
+      "id": "n5_v_0007",
+      "lemma": {
+        "kanji": "歩く",
+        "kana": "あるく"
       },
-      "conjugations": {
-        "dictionary": "歩く",
-        "dictionaryKana": "あるく",
-        "masu": "歩きます",
-        "masuKana": "あるきます",
-        "te": "歩いて",
-        "teKana": "あるいて"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "毎朝、静かな公園をゆっくり歩きます。",
-          "kana": "まいあさ、しずかなこうえんをゆっくりあるきます。",
-          "english": "I walk slowly in the quiet park every morning.",
-          "highlight": "peaceful walk with adjective and adverb"
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [
+          "を"
+        ],
+        "coreStructure": "Place を 歩く"
+      },
+      "meaning": {
+        "primary": "to walk",
+        "gloss": [
+          "walk"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "歩く",
+          "kana": "あるく"
         },
-        {
-          "japanese": "昨日、長い道を一生懸命歩きました。",
-          "kana": "きのう、ながいみちをいっしょうけんめいあるきました。",
-          "english": "Yesterday, I walked hard on the long road.",
-          "highlight": "effort with adjective and adverb"
+        "masu": {
+          "kanji": "歩きます",
+          "kana": "あるきます"
+        },
+        "te": {
+          "kanji": "歩いて",
+          "kana": "あるいて"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "毎朝、公園を歩く。",
+            "kana": "まいあさ、こうえんをあるく。",
+            "en": "I walk in the park every morning.",
+            "grammarTag": "habitual",
+            "pattern": "Time + Place を + Verb(dictionary)",
+            "highlight": "daily habit"
+          },
+          {
+            "jp": "歩くのは健康にいいです。",
+            "kana": "あるくのはけんこうにいいです。",
+            "en": "Walking is good for health.",
+            "grammarTag": "nominalization-wa",
+            "pattern": "Verb(dictionary) + のは + Adjective",
+            "highlight": "nominalization"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "毎朝、静かな公園をゆっくり歩きます。",
+            "kana": "まいあさ、しずかなこうえんをゆっくりあるきます。",
+            "en": "I walk slowly in the quiet park every morning.",
+            "grammarTag": "polite-nonpast",
+            "pattern": "Time + Location を + Adverb + Verb(ます)",
+            "highlight": "peaceful walk with adjective and adverb"
+          },
+          {
+            "jp": "昨日、長い道を一生懸命歩きました。",
+            "kana": "きのう、ながいみちをいっしょうけんめいあるきました。",
+            "en": "Yesterday, I walked a long road with great effort.",
+            "grammarTag": "polite-past",
+            "pattern": "Time + Adjective + Noun を + Verb(ました)",
+            "highlight": "effort with adjective and adverb"
+          }
+        ],
+        "te": [
+          {
+            "jp": "駅まで歩いて行きます。",
+            "kana": "えきまであるいていきます。",
+            "en": "I walk to the station.",
+            "grammarTag": "te-sequence",
+            "pattern": "Verb(て) + Verb",
+            "highlight": "manner of movement"
+          },
+          {
+            "jp": "ゆっくり歩いてください。",
+            "kana": "ゆっくりあるいてください。",
+            "en": "Please walk slowly.",
+            "grammarTag": "te-kudasai",
+            "pattern": "Verb(て) + ください",
+            "highlight": "polite request"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0007.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0007.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1514320",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "駅まで歩いて行きます。",
-          "kana": "えきまであるいていきます。",
-          "english": "I walk to the station.",
-          "highlight": "manner of movement",
-          "pattern": "sequential"
-        },
-        {
-          "japanese": "ゆっくり歩いてください。",
-          "kana": "ゆっくりあるいてください。",
-          "english": "Please walk slowly.",
-          "highlight": "polite request",
-          "pattern": "request"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "毎朝、公園を歩く。",
-          "kana": "まいあさ、こうえんをあるく。",
-          "english": "I walk in the park every morning.",
-          "highlight": "daily habit",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "歩くのは健康にいいです。",
-          "kana": "あるくのはけんこうにいいです。",
-          "english": "Walking is good for health.",
-          "highlight": "nominalization",
-          "pattern": "nominalization"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0008",
-      "kanji": "言う",
-      "kana": "いう",
-      "romaji": "iu",
-      "meaning": [
-        "say",
-        "to say",
-        "to utter",
-        "to declare",
-        "to name",
-        "to call"
-      ],
-      "primaryMeaning": "say",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": false
+      "id": "n5_v_0008",
+      "lemma": {
+        "kanji": "言う",
+        "kana": "いう"
       },
-      "conjugations": {
-        "dictionary": "言う",
-        "dictionaryKana": "いう",
-        "masu": "言います",
-        "masuKana": "いいます",
-        "te": "言って",
-        "teKana": "いって"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "先生はいつも大切なことを丁寧に言います。",
-          "kana": "せんせいはいつもたいせつなことをていねいにいいます。",
-          "english": "The teacher always says important things politely.",
-          "highlight": "communication with adjective and adverb"
+      "valency": {
+        "type": "transitive",
+        "requiredParticles": [
+          "を"
+        ],
+        "coreStructure": "Object を 言う"
+      },
+      "meaning": {
+        "primary": "to say",
+        "gloss": [
+          "say",
+          "tell"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "言う",
+          "kana": "いう"
         },
-        {
-          "japanese": "友達に正しい答えをはっきり言いました。",
-          "kana": "ともだちにただしいこたえをはっきりいいました。",
-          "english": "I clearly told my friend the correct answer.",
-          "highlight": "clarity with adjective and adverb"
+        "masu": {
+          "kanji": "言います",
+          "kana": "いいます"
+        },
+        "te": {
+          "kanji": "言って",
+          "kana": "いって"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "いつも本当のことを言う。",
+            "kana": "いつもほんとうのことをいう。",
+            "en": "I always say the truth.",
+            "grammarTag": "habitual",
+            "pattern": "Adverb + Object を + Verb(dictionary)",
+            "highlight": "habitual action"
+          },
+          {
+            "jp": "日本語で言えますか。",
+            "kana": "にほんごでいえますか。",
+            "en": "Can you say it in Japanese?",
+            "grammarTag": "ability",
+            "pattern": "Language で + Verb(potential)",
+            "highlight": "ability in language"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "先生はいつも大切なことを丁寧に言います。",
+            "kana": "せんせいはいつもたいせつなことをていねいにいいます。",
+            "en": "The teacher always says important things politely.",
+            "grammarTag": "polite-nonpast",
+            "pattern": "Subject は + Adverb + Verb(ます)",
+            "highlight": "communication with adjective and adverb"
+          },
+          {
+            "jp": "友達に正しい答えをはっきり言いました。",
+            "kana": "ともだちにただしいこたえをはっきりいいました。",
+            "en": "I clearly told my friend the correct answer.",
+            "grammarTag": "polite-past",
+            "pattern": "Subject に + Object を + Adverb + Verb(ました)",
+            "highlight": "clarity with adjective and adverb"
+          }
+        ],
+        "te": [
+          {
+            "jp": "もう一度言ってください。",
+            "kana": "もういちどいってください。",
+            "en": "Please say it one more time.",
+            "grammarTag": "te-kudasai",
+            "pattern": "Verb(て) + ください",
+            "highlight": "polite request"
+          },
+          {
+            "jp": "先生が言っていることが分かりません。",
+            "kana": "せんせいがいっていることがわかりません。",
+            "en": "I don't understand what the teacher is saying.",
+            "grammarTag": "te-iru",
+            "pattern": "Verb(て) + いる",
+            "highlight": "present progressive"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0008.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0008.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1587040",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "もう一度言ってください。",
-          "kana": "もういちどいってください。",
-          "english": "Please say it one more time.",
-          "highlight": "polite request",
-          "pattern": "request"
-        },
-        {
-          "japanese": "先生が言っていることが分かりません。",
-          "kana": "せんせいがいっていることがわかりません。",
-          "english": "I don't understand what the teacher is saying.",
-          "highlight": "present progressive",
-          "pattern": "progressive"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "いつも本当のことを言う。",
-          "kana": "いつもほんとうのことをいう。",
-          "english": "I always say the truth.",
-          "highlight": "habitual action",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "日本語で言うことができますか。",
-          "kana": "にほんごでいうことができますか。",
-          "english": "Can you say it in Japanese?",
-          "highlight": "ability",
-          "pattern": "ability"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0009",
-      "kanji": "行く",
-      "kana": "いく",
-      "romaji": "iku",
-      "meaning": [
-        "go",
-        "to go",
-        "to move (towards)",
-        "to head (towards)",
-        "to leave (for)",
-        "to go (well, badly, etc.)",
-        "to proceed",
-        "to turn out",
-        "to get along"
-      ],
-      "primaryMeaning": "go",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": true
+      "id": "n5_v_0009",
+      "lemma": {
+        "kanji": "行く",
+        "kana": "いく"
       },
-      "conjugations": {
-        "dictionary": "行く",
-        "dictionaryKana": "いく",
-        "masu": "行きます",
-        "masuKana": "いきます",
-        "te": "行って",
-        "teKana": "いって"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "毎日、早く学校に行きます。",
-          "kana": "まいにち、はやくがっこうにいきます。",
-          "english": "I go to school early every day.",
-          "highlight": "daily routine with adverb"
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [
+          "に"
+        ],
+        "coreStructure": "Place に 行く"
+      },
+      "meaning": {
+        "primary": "to go",
+        "gloss": [
+          "go",
+          "head to"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "行く",
+          "kana": "いく"
         },
-        {
-          "japanese": "昨日、新しいレストランに行きました。",
-          "kana": "きのう、あたらしいレストランにいきました。",
-          "english": "Yesterday, I went to a new restaurant.",
-          "highlight": "visit with adjective"
+        "masu": {
+          "kanji": "行きます",
+          "kana": "いきます"
+        },
+        "te": {
+          "kanji": "行って",
+          "kana": "いって"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "毎日、学校に行く。",
+            "kana": "まいにち、がっこうにいく。",
+            "en": "I go to school every day.",
+            "grammarTag": "habitual",
+            "pattern": "Time + Place に + Verb(dictionary)",
+            "highlight": "daily routine"
+          },
+          {
+            "jp": "来年、日本に行くつもりです。",
+            "kana": "らいねん、にほんにいくつもりです。",
+            "en": "I plan to go to Japan next year.",
+            "grammarTag": "tsumori",
+            "pattern": "Verb(dictionary) + つもりです",
+            "highlight": "future plan"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "毎日、早く学校に行きます。",
+            "kana": "まいにち、はやくがっこうにいきます。",
+            "en": "I go to school early every day.",
+            "grammarTag": "habitual",
+            "pattern": "Time + Adverb + Place に + Verb(ます)",
+            "highlight": "daily routine with adverb"
+          },
+          {
+            "jp": "昨日、新しいレストランに行きました。",
+            "kana": "きのう、あたらしいレストランにいきました。",
+            "en": "Yesterday, I went to a new restaurant.",
+            "grammarTag": "polite-past",
+            "pattern": "Time + Adjective + Noun に + Verb(ました)",
+            "highlight": "visit with adjective"
+          }
+        ],
+        "te": [
+          {
+            "jp": "スーパーに行って、野菜を買いました。",
+            "kana": "スーパーにいって、やさいをかいました。",
+            "en": "I went to the supermarket and bought vegetables.",
+            "grammarTag": "te-sequence",
+            "pattern": "Verb(て) + Verb",
+            "highlight": "sequential actions"
+          },
+          {
+            "jp": "一緒に行ってもいいですか。",
+            "kana": "いっしょにいってもいいですか。",
+            "en": "May I go with you?",
+            "grammarTag": "te-mo-ii",
+            "pattern": "Verb(て) + もいいですか",
+            "highlight": "permission"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0009.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0009.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1578850",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "スーパーに行って、野菜を買いました。",
-          "kana": "スーパーにいって、やさいをかいました。",
-          "english": "I went to the supermarket and bought vegetables.",
-          "highlight": "sequential actions",
-          "pattern": "sequential"
-        },
-        {
-          "japanese": "一緒に行ってもいいですか。",
-          "kana": "いっしょにいってもいいですか。",
-          "english": "May I go with you?",
-          "highlight": "permission",
-          "pattern": "permission"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "毎日、学校に行く。",
-          "kana": "まいにち、がっこうにいく。",
-          "english": "I go to school every day.",
-          "highlight": "daily routine",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "来年、日本に行くつもりです。",
-          "kana": "らいねん、にほんにいくつもりです。",
-          "english": "I plan to go to Japan next year.",
-          "highlight": "future plan",
-          "pattern": "intention"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0010",
-      "kanji": "急ぐ",
-      "kana": "いそぐ",
-      "romaji": "isogu",
-      "meaning": [
-        "hurry",
-        "to hurry",
-        "to rush",
-        "to hasten",
-        "to make something happen sooner"
-      ],
-      "primaryMeaning": "hurry",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": true
+      "id": "n5_v_0010",
+      "lemma": {
+        "kanji": "急ぐ",
+        "kana": "いそぐ"
       },
-      "conjugations": {
-        "dictionary": "急ぐ",
-        "dictionaryKana": "いそぐ",
-        "masu": "急ぎます",
-        "masuKana": "いそぎます",
-        "te": "急いで",
-        "teKana": "いそいで"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "朝はいつも忙しくて急ぎます。",
-          "kana": "あさはいつもいそがしくていそぎます。",
-          "english": "I always hurry in the busy morning.",
-          "highlight": "morning rush with adjective and adverb"
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [],
+        "coreStructure": "Subject が 急ぐ"
+      },
+      "meaning": {
+        "primary": "to hurry",
+        "gloss": [
+          "hurry",
+          "rush"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "急ぐ",
+          "kana": "いそぐ"
         },
-        {
-          "japanese": "遅刻しそうなので、とても急ぎました。",
-          "kana": "ちこくしそうなので、とてもいそぎました。",
-          "english": "Because I was about to be late, I hurried very much.",
-          "highlight": "urgency with adverb"
+        "masu": {
+          "kanji": "急ぎます",
+          "kana": "いそぎます"
+        },
+        "te": {
+          "kanji": "急いで",
+          "kana": "いそいで"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "朝はいつも急ぐ。",
+            "kana": "あさはいつもいそぐ。",
+            "en": "I always hurry in the morning.",
+            "grammarTag": "habitual",
+            "pattern": "Time は + Adverb + Verb(dictionary)",
+            "highlight": "daily habit"
+          },
+          {
+            "jp": "急ぐ前に、忘れ物がないか確認する。",
+            "kana": "いそぐまえに、わすれものがないかかくにんする。",
+            "en": "Before hurrying, I check if I forgot anything.",
+            "grammarTag": "mae-ni",
+            "pattern": "Verb(dictionary) + 前に + Verb",
+            "highlight": "before action"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "遅刻しそうなので、急ぎます。",
+            "kana": "ちこくしそうなので、いそぎます。",
+            "en": "I'm hurrying because I'm about to be late.",
+            "grammarTag": "node-cause",
+            "pattern": "Reason + ので + Verb(ます)",
+            "highlight": "reason for urgency"
+          },
+          {
+            "jp": "遅刻しそうなので、とても急ぎました。",
+            "kana": "ちこくしそうなので、とてもいそぎました。",
+            "en": "Because I was about to be late, I hurried very much.",
+            "grammarTag": "node-cause",
+            "pattern": "Reason + ので + Verb(ました)",
+            "highlight": "urgency with adverb"
+          }
+        ],
+        "te": [
+          {
+            "jp": "急いで走りました。",
+            "kana": "いそいではしりました。",
+            "en": "I hurried and ran.",
+            "grammarTag": "te-sequence",
+            "pattern": "Verb(て) + Verb",
+            "highlight": "sequential actions"
+          },
+          {
+            "jp": "急いでください。遅れますよ。",
+            "kana": "いそいでください。おくれますよ。",
+            "en": "Please hurry. We'll be late.",
+            "grammarTag": "te-kudasai",
+            "pattern": "Verb(て) + ください",
+            "highlight": "polite request"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0010.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0010.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1228650",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "急いで走りました。",
-          "kana": "いそいではしりました。",
-          "english": "I hurried and ran.",
-          "highlight": "sequential actions",
-          "pattern": "sequential"
-        },
-        {
-          "japanese": "急いでください。遅れますよ。",
-          "kana": "いそいでください。おくれますよ。",
-          "english": "Please hurry. We'll be late.",
-          "highlight": "polite request",
-          "pattern": "request"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "朝はいつも急ぐ。",
-          "kana": "あさはいつもいそぐ。",
-          "english": "I always hurry in the morning.",
-          "highlight": "daily habit",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "急ぐ前に、忘れ物がないか確認する。",
-          "kana": "いそぐまえに、わすれものがないかかくにんする。",
-          "english": "Before hurrying, I check if I forgot anything.",
-          "highlight": "before action",
-          "pattern": "before"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0011",
-      "kanji": "要る",
-      "kana": "いる",
-      "romaji": "iru",
-      "meaning": [
-        "need, require",
-        "to be needed",
-        "to be necessary",
-        "to be required",
-        "to be wanted",
-        "to need",
-        "to want"
-      ],
-      "primaryMeaning": "need, require",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": true
+      "id": "n5_v_0011",
+      "lemma": {
+        "kanji": "要る",
+        "kana": "いる"
       },
-      "conjugations": {
-        "dictionary": "要る",
-        "dictionaryKana": "いる",
-        "masu": "要ります",
-        "masuKana": "いります",
-        "te": "要って",
-        "teKana": "いって"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "この仕事には長い時間が要ります。",
-          "kana": "このしごとにはながいじかんがいります。",
-          "english": "This job requires a long time.",
-          "highlight": "necessity with adjective"
+      "valency": {
+        "type": "ga-object",
+        "requiredParticles": [
+          "が"
+        ],
+        "coreStructure": "Noun が 要る"
+      },
+      "meaning": {
+        "primary": "to need, require",
+        "gloss": [
+          "need",
+          "be necessary"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "要る",
+          "kana": "いる"
         },
-        {
-          "japanese": "旅行には、たくさんのお金が要りました。",
-          "kana": "りょこうには、たくさんのおかねがいりました。",
-          "english": "The trip required a lot of money.",
-          "highlight": "requirement with quantity"
+        "masu": {
+          "kanji": "要ります",
+          "kana": "いります"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "毎日、お金が要る。",
+            "kana": "まいにち、おかねがいる。",
+            "en": "I need money every day.",
+            "grammarTag": "habitual",
+            "pattern": "Time + Noun が + Verb(dictionary)",
+            "highlight": "daily need"
+          },
+          {
+            "jp": "この仕事には時間が要ることが分かった。",
+            "kana": "このしごとにはじかんがいることがわかった。",
+            "en": "I understood that this work requires time.",
+            "grammarTag": "koto-clause",
+            "pattern": "Clause + ことが + Verb",
+            "highlight": "nominalization"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "この仕事には長い時間が要ります。",
+            "kana": "このしごとにはながいじかんがいります。",
+            "en": "This job requires a long time.",
+            "grammarTag": "polite-nonpast",
+            "pattern": "Noun + が + Verb(ます)",
+            "highlight": "necessity with adjective"
+          },
+          {
+            "jp": "旅行には、たくさんのお金が要りました。",
+            "kana": "りょこうには、たくさんのおかねがいりました。",
+            "en": "The trip required a lot of money.",
+            "grammarTag": "polite-past",
+            "pattern": "Noun + が + Verb(ます)",
+            "highlight": "requirement with quantity"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0011.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0011.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1546640",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "パスポートが要って、困りました。",
-          "kana": "パスポートがいって、こまりました。",
-          "english": "I needed a passport and was troubled.",
-          "highlight": "sequential state",
-          "pattern": "sequential"
-        },
-        {
-          "japanese": "お金が要って、困っています。",
-          "kana": "おかねがいって、こまっています。",
-          "english": "I need money, and I'm troubled.",
-          "highlight": "sequential state",
-          "pattern": "sequential"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "毎日、お金が要る。",
-          "kana": "まいにち、おかねがいる。",
-          "english": "I need money every day.",
-          "highlight": "daily need",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "この仕事には時間が要ることが分かった。",
-          "kana": "このしごとにはじかんがいることがわかった。",
-          "english": "I understood that this work requires time.",
-          "highlight": "nominalization",
-          "pattern": "nominalization"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0012",
-      "kanji": "動く",
-      "kana": "うごく",
-      "romaji": "ugoku",
-      "meaning": [
-        "move, work",
-        "to move",
-        "to stir",
-        "to shift",
-        "to shake",
-        "to swing",
-        "to operate",
-        "to run",
-        "to go",
-        "to work"
-      ],
-      "primaryMeaning": "move, work",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": true
+      "id": "n5_v_0012",
+      "lemma": {
+        "kanji": "動く",
+        "kana": "うごく"
       },
-      "conjugations": {
-        "dictionary": "動く",
-        "dictionaryKana": "うごく",
-        "masu": "動きます",
-        "masuKana": "うごきます",
-        "te": "動いて",
-        "teKana": "うごいて"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "古い機械がゆっくり動きます。",
-          "kana": "ふるいきかいがゆっくりうごきます。",
-          "english": "The old machine moves slowly.",
-          "highlight": "movement with adjective and adverb"
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [],
+        "coreStructure": "Noun が 動く"
+      },
+      "meaning": {
+        "primary": "to move, work",
+        "gloss": [
+          "move",
+          "operate"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "動く",
+          "kana": "うごく"
         },
-        {
-          "japanese": "新しい車が速く動きました。",
-          "kana": "あたらしいくるまがはやくうごきました。",
-          "english": "The new car moved fast.",
-          "highlight": "motion with adjective and adverb"
+        "masu": {
+          "kanji": "動きます",
+          "kana": "うごきます"
+        },
+        "te": {
+          "kanji": "動いて",
+          "kana": "うごいて"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "機械が毎日動く。",
+            "kana": "きかいがまいにちうごく。",
+            "en": "The machine operates every day.",
+            "grammarTag": "habitual",
+            "pattern": "Subject が + Time + Verb(dictionary)",
+            "highlight": "habitual action"
+          },
+          {
+            "jp": "動くことができません。",
+            "kana": "うごくことができません。",
+            "en": "It cannot move.",
+            "grammarTag": "koto-ga-dekiru",
+            "pattern": "Verb(dictionary) + ことができる",
+            "highlight": "ability (negative)"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "古い機械がゆっくり動きます。",
+            "kana": "ふるいきかいがゆっくりうごきます。",
+            "en": "The old machine moves slowly.",
+            "grammarTag": "polite-nonpast",
+            "pattern": "Subject が + Adverb + Verb(ます)",
+            "highlight": "movement with adjective and adverb"
+          },
+          {
+            "jp": "新しい車が速く動きました。",
+            "kana": "あたらしいくるまがはやくうごきました。",
+            "en": "The new car moved fast.",
+            "grammarTag": "polite-past",
+            "pattern": "Subject が + Adverb + Verb(ます)",
+            "highlight": "motion with adjective and adverb"
+          }
+        ],
+        "te": [
+          {
+            "jp": "車が動いています。",
+            "kana": "くるまがうごいています。",
+            "en": "The car is moving.",
+            "grammarTag": "te-iru",
+            "pattern": "Verb(て) + いる",
+            "highlight": "present progressive"
+          },
+          {
+            "jp": "少し動いてください。",
+            "kana": "すこしうごいてください。",
+            "en": "Please move a little.",
+            "grammarTag": "te-kudasai",
+            "pattern": "Verb(て) + ください",
+            "highlight": "polite request"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0012.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0012.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1451210",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "車が動いています。",
-          "kana": "くるまがうごいています。",
-          "english": "The car is moving.",
-          "highlight": "present progressive",
-          "pattern": "progressive"
-        },
-        {
-          "japanese": "少し動いてください。",
-          "kana": "すこしうごいてください。",
-          "english": "Please move a little.",
-          "highlight": "polite request",
-          "pattern": "request"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "機械が毎日動く。",
-          "kana": "きかいがまいにちうごく。",
-          "english": "The machine moves every day.",
-          "highlight": "habitual action",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "動くことができません。",
-          "kana": "うごくことができません。",
-          "english": "It cannot move.",
-          "highlight": "ability (negative)",
-          "pattern": "ability"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     }
   ]
 }
