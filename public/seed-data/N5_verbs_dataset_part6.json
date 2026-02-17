@@ -88,7 +88,7 @@
           {
             "jp": "無くしてください。",
             "kana": "なくしてください。",
-            "en": "Please don't lose it.",
+            "en": "Please get rid of it.",
             "grammarTag": "te-kudasai",
             "pattern": "Verb(て) + ください",
             "highlight": "polite request"
@@ -99,7 +99,7 @@
             "en": "I have lost it.",
             "grammarTag": "te-iru",
             "pattern": "Verb(て) + います",
-            "highlight": "resulting state of loss"
+            "highlight": "resulting state"
           }
         ]
       },
@@ -192,7 +192,7 @@
           {
             "jp": "習ってください。",
             "kana": "ならってください。",
-            "en": "Please teach me.",
+            "en": "Please learn.",
             "grammarTag": "te-kudasai",
             "pattern": "Verb(て) + ください",
             "highlight": "polite request"
@@ -203,7 +203,7 @@
             "en": "I am learning.",
             "grammarTag": "te-iru",
             "pattern": "Verb(て) + います",
-            "highlight": "present progressive"
+            "highlight": "resulting state"
           }
         ]
       },
@@ -307,7 +307,7 @@
             "en": "It has become (that way).",
             "grammarTag": "te-iru",
             "pattern": "Verb(て) + います",
-            "highlight": "resulting state of change"
+            "highlight": "resulting state"
           }
         ]
       },
@@ -408,7 +408,7 @@
           {
             "jp": "脱いでいます。",
             "kana": "ぬいでいます。",
-            "en": "I am taking off.",
+            "en": "I am taking off my clothes.",
             "grammarTag": "te-iru",
             "pattern": "Verb(て) + います",
             "highlight": "present progressive"
@@ -723,7 +723,7 @@
             "en": "I am riding.",
             "grammarTag": "te-iru",
             "pattern": "Verb(て) + います",
-            "highlight": "present progressive"
+            "highlight": "resulting state"
           }
         ]
       },
@@ -827,7 +827,7 @@
             "en": "I have entered.",
             "grammarTag": "te-iru",
             "pattern": "Verb(て) + います",
-            "highlight": "resulting state of entering"
+            "highlight": "resulting state"
           }
         ]
       },
@@ -928,10 +928,10 @@
           {
             "jp": "履いています。",
             "kana": "はいています。",
-            "en": "I am wearing.",
+            "en": "I am wearing shoes.",
             "grammarTag": "te-iru",
             "pattern": "Verb(て) + います",
-            "highlight": "current state of wearing"
+            "highlight": "resulting state"
           }
         ]
       },
