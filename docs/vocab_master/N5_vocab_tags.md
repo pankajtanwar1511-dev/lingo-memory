@@ -169,7 +169,6 @@ Total words: 824
 | かい |  | counter for times/floors | counter | |  |
 | かいしゃ | 会社 | company | noun |  |  |
 | かいだん | 階段 | stairs | noun |  |  |
-| かいとうようし | 解答用紙 | answer sheet | noun |  |  |
 | かいもの | 買い物 | shopping | noun |  |  |
 | かいものする | 買い物する | to go shopping |  | suru-verb |  |
 | かう | 買う | to buy | verb | godan |  |
@@ -242,7 +241,7 @@ Total words: 824
 | くもり | 曇り | cloudiness | noun |  |  |
 | くもる | 曇る | to get cloudy | verb | godan |  |
 | くらい | 暗い | dark | adjective |  | i-adjective |
-| くる | 来る | to come (spatially or temporally) |  | irregular |  |
+| くる | 来る | to come (spatially or temporally) | verb | sure-verb |  |
 | くるま | 車 | car | noun |  |  |
 | くろ | 黒 | black | noun |  |  |
 | くろい | 黒い | black | adjective |  | i-adjective |
@@ -359,7 +358,7 @@ Total words: 824
 | すずしい | 涼しい | cool | adjective |  | i-adjective |
 | すみません |  | excuse me | expression | |  |
 | すむ | 住む | to live (of humans) | verb | godan |  |
-| する |  | to do |  | irregular |  |
+| する |  | to do | verb | suru-verb |  |
 | すわる | 座る | to sit (down) | verb | godan |  |
 | ずつ |  | apiece | particle | |  |
 | せ | 背 | back | noun |  |  |
@@ -603,7 +602,6 @@ Total words: 824
 | ふん | 分 | minute | counter |  |  |
 | ぶたにく | 豚肉 | pork | noun |  |  |
 | ぶん | 文 | sentence | noun |  |  |
-| ぶんしょう | 文章 | writing | noun |  |  |
 | へた | 下手 | unskillful | adjective, noun |  | na-adjective |
 | へや | 部屋 | room | noun |  |  |
 | へん | 辺 | area | noun |  |  |
@@ -669,7 +667,6 @@ Total words: 824
 | もらう | 貰う | to receive | verb | godan |  |
 | もん | 門 | gate | noun |  |  |
 | もんだい | 問題 | question (e.g. on a test) | noun |  |  |
-| もんだいようし | 問題用紙 | question sheet | noun |  |  |
 | や | 屋 | shop | noun |  |  |
 | やおや | 八百屋 | greengrocer | noun |  |  |
 | やさい | 野菜 | vegetable | noun |  |  |
