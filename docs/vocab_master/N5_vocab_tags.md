@@ -299,7 +299,6 @@ Total words: 824
 | さき | 先 | ahead/point | noun |  |  |
 | さく | 咲く | to bloom | verb | godan |  |
 | さくぶん | 作文 | writing (an essay, prose, etc.) | noun |  |  |
-| さくぶんする | 作文する | to write a composition |  | suru-verb |  |
 | さす | 差す | to shine/hold up (umbrella) | verb | godan |  |
 | さつ | 冊 | counter for books | counter |  |  |
 | さとう | 砂糖 | sugar | noun |  |  |
@@ -313,7 +312,6 @@ Total words: 824
 | しお | 塩 | salt | noun |  |  |
 | しかし |  | however | conjunction | |  |
 | しごと | 仕事 | work | noun |  |  |
-| しごとする | 仕事する | to work |  | suru-verb |  |
 | しずか | 静か | quiet | adjective, noun |  | na-adjective |
 | した | 下 | below | noun |  |  |
 | しち | 七 | seven | noun |  |  |
@@ -346,7 +344,6 @@ Total words: 824
 | じゅう | 十 | ten | noun |  |  |
 | じゅうご | 十五 | fifteen | noun |  |  |
 | じゅぎょう | 授業 | lesson | noun |  |  |
-| じゅぎょうする | 授業する | to teach a lesson; to give a class |  | suru-verb |  |
 | じょうず | 上手 | skillful | adjective, noun |  | na-adjective |
 | じょうぶ | 丈夫 | healthy | adjective, noun |  | na-adjective |
 | じん | 人 | -ian (e.g. Italian) | suffix |  |  |
@@ -761,7 +758,6 @@ Total words: 824
 | タクシー |  | taxi | noun | |  |
 | ティッシュペーパー |  | tissue paper | noun | |  |
 | テスト |  | test (of ability, knowledge, etc.) | noun |  |  |
-| テストする |  | to test |  | suru-verb |  |
 | テレビ |  | television | noun | |  |
 | テーブル |  | table | noun | |  |
 | テープ |  | tape | noun | |  |
@@ -774,7 +770,6 @@ Total words: 824
 | ニュース |  | news | noun | |  |
 | ネクタイ |  | tie | noun | |  |
 | ノート |  | notebook | noun |  |  |
-| ノートする |  | to take notes |  | suru-verb |  |
 | ハンカチ |  | handkerchief | noun | |  |
 | バス |  | bus | noun | |  |
 | バスてい | バス停 | bus stop | noun |  |  |
@@ -786,7 +781,6 @@ Total words: 824
 | フィルム |  | film | noun | |  |
 | フォーク |  | fork | noun | |  |
 | プール |  | (swimming) pool | noun |  |  |
-| プールする |  | to pool; to share |  | suru-verb |  |
 | ベッド |  | bed | noun | |  |
 | ペット |  | pet | noun | |  |
 | ペン |  | pen | noun | |  |
@@ -796,7 +790,6 @@ Total words: 824
 | ボールペン |  | ball-point pen | noun | |  |
 | ポケット |  | pocket | noun | |  |
 | ポスト |  | postbox | noun |  |  |
-| ポストする |  | to post |  | suru-verb |  |
 | マッチ |  | match (for lighting a fire) | noun | |  |
 | メモ |  | note | noun |  |  |
 | メモする |  | to take a memo; to jot down |  | suru-verb |  |
