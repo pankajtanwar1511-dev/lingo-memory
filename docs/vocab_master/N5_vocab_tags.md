@@ -241,7 +241,7 @@ Total words: 824
 | くもり | 曇り | cloudiness | noun |  |  |
 | くもる | 曇る | to get cloudy | verb | godan |  |
 | くらい | 暗い | dark | adjective |  | i-adjective |
-| くる | 来る | to come (spatially or temporally) | verb | sure-verb |  |
+| くる | 来る | to come (spatially or temporally) | verb | irregular |  |
 | くるま | 車 | car | noun |  |  |
 | くろ | 黒 | black | noun |  |  |
 | くろい | 黒い | black | adjective |  | i-adjective |
@@ -332,7 +332,7 @@ Total words: 824
 | しろ | 白 | white | noun |  |  |
 | しろい | 白い | white | adjective |  | i-adjective |
 | しんぶん | 新聞 | newspaper | noun |  |  |
-| じ | 時 | o'clock | counter, noun |  |  |
+| じ | 時 | o'clock | counter |  |  |
 | じかん | 時間 | time | noun |  |  |
 | じしょ | 辞書 | dictionary | noun |  |  |
 | じてんしゃ | 自転車 | bicycle | noun |  |  |
@@ -373,7 +373,7 @@ Total words: 824
 | せんたくする | 洗濯する | to do laundry |  | suru-verb |  |
 | ぜんぶ | 全部 | all | adverb, noun |  |  |
 | そうじ | 掃除 | cleaning | noun |  |  |
-| そうだ |  | that is so; I hear that | expression | |  |
+| そうだ |  | that is so | expression | |  |
 | そうです |  | that is so | expression | |  |
 | そうですね |  | that\'s so, isn\'t it | expression | |  |
 | そこ |  | there (place relatively near listener) | noun | |  |
@@ -391,7 +391,7 @@ Total words: 824
 | たいてい |  | mostly | adverb, noun | |  |
 | たいへん | 大変 | very; tough; terrible | adjective, adverb, noun |  | na-adjective |
 | たかい | 高い | high | adjective |  | i-adjective |
-| たくさん |  | a lot | adjective, adverb, noun | | na-adjective |
+| たくさん |  | a lot | adverb, noun | |  |
 | ただいま |  | I\'m home! | expression | |  |
 | ただしい | 正しい | right | adjective |  | i-adjective |
 | たち | 達 | plural suffix | suffix |  |  |
@@ -610,7 +610,7 @@ Total words: 824
 | ほか | 他 | another place/other | noun |  |  |
 | ほしい | 欲しい | wanting (to have) | adjective |  | i-adjective |
 | ほそい | 細い | thin | adjective |  | i-adjective |
-| ほん | 本 | book; counter for long cylindrical objects | counter, noun |  |  |
+| ほん | 本 | book | noun |  |  |
 | ほんだな | 本棚 | bookshelves | noun |  |  |
 | ほんとう | 本当 | truth; real; true | noun, adjective |  | na-adjective |
 | ほんや | 本屋 | bookstore | noun |  |  |
@@ -629,7 +629,7 @@ Total words: 824
 | また |  | again/also | adverb | |  |
 | まだ |  | still/not yet | adverb | |  |
 | まち | 町 | town | noun |  |  |
-| まっすぐ |  | straight (ahead) | adjective, adverb | | na-adjective |
+| まっすぐ |  | straight (ahead) | adverb | | na-adjective |
 | まつ | 待つ | to wait | verb | godan |  |
 | まど | 窓 | window | noun |  |  |
 | まん | 万 | 10,000 | noun |  |  |
