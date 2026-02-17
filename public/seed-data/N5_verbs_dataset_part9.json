@@ -3,7 +3,7 @@
     "version": "3.1.0",
     "generatedAt": "2026-02-18T15:00:00.000Z",
     "description": "JLPT N5 verbs - Gold Standard Schema v3.1 Production-Locked",
-    "totalEntries": 10,
+    "totalEntries": 9,
     "schema": "gold-standard-v3.1"
   },
   "verbs": [
@@ -533,12 +533,13 @@
         ]
       },
       "meaning": {
-        "primary": "to teach",
+        "primary": "to teach; to tell",
         "gloss": [
           "teach",
           "instruct",
           "tell",
-          "inform"
+          "inform",
+          "let know"
         ]
       },
       "forms": {
@@ -584,11 +585,11 @@
             "highlight": "transitive: giver に + object を"
           },
           {
-            "jp": "友達に新しい駅への道を教えました。",
-            "kana": "ともだちにあたらしいえきへのみちをおしえました。",
-            "en": "I told my friend the way to the new station.",
-            "grammarTag": "polite-past",
-            "pattern": "Person に + い-adjective + Object を + Verb(ました)",
+            "jp": "先生に住所を教えます。",
+            "kana": "せんせいにじゅうしょをおしえます。",
+            "en": "I give the teacher my address.",
+            "grammarTag": "polite-nonpast",
+            "pattern": "Person に + Object を + Verb(ます)",
             "highlight": "transitive: giver に + object を"
           }
         ],
@@ -597,111 +598,6 @@
             "jp": "この言葉の意味を教えてください。",
             "kana": "このことばのいみをおしえてください。",
             "en": "Please tell me the meaning of this word.",
-            "grammarTag": "te-kudasai",
-            "pattern": "Object を + Verb(て) + ください",
-            "highlight": "polite request"
-          },
-          {
-            "jp": "今、学生に日本語を教えています。",
-            "kana": "いま、がくせいににほんごをおしえています。",
-            "en": "I am teaching Japanese to students right now.",
-            "grammarTag": "te-iru",
-            "pattern": "Time + Person に + Object を + Verb(て) + います",
-            "highlight": "present progressive"
-          }
-        ]
-      },
-      "audio": {
-        "file": "/audio/n5/verbs/n5_v_0096.mp3",
-        "status": "pending"
-      },
-      "meta": {
-        "license": "CC BY-SA 4.0"
-      }
-    },
-    {
-      "id": "n5_v_0097",
-      "lemma": {
-        "kanji": "教える",
-        "kana": "おしえる"
-      },
-      "jlpt": "N5",
-      "pos": "verb",
-      "morphology": {
-        "class": "ichidan",
-        "isIrregular": false
-      },
-      "valency": {
-        "type": "transitive",
-        "requiredParticles": [
-          "に",
-          "を"
-        ]
-      },
-      "meaning": {
-        "primary": "to tell",
-        "gloss": [
-          "tell",
-          "inform",
-          "let know"
-        ]
-      },
-      "forms": {
-        "dictionary": {
-          "kanji": "教える",
-          "kana": "おしえる"
-        },
-        "masu": {
-          "kanji": "教えます",
-          "kana": "おしえます"
-        },
-        "te": {
-          "kanji": "教えて",
-          "kana": "おしえて"
-        }
-      },
-      "examples": {
-        "dictionary": [
-          {
-            "jp": "友達に電話番号を教える。",
-            "kana": "ともだちにでんわばんごうをおしえる。",
-            "en": "I tell my friend my phone number.",
-            "grammarTag": "dictionary-nonpast",
-            "pattern": "Person に + Object を + Verb(dictionary)",
-            "highlight": "transitive: giver に + object を"
-          },
-          {
-            "jp": "人に道を教えるのが好きです。",
-            "kana": "ひとにみちをおしえるのがすきです。",
-            "en": "I like giving people directions.",
-            "grammarTag": "no-ga",
-            "pattern": "Person に + Object を + Verb(dictionary) + のが好きです",
-            "highlight": "nominalization"
-          }
-        ],
-        "masu": [
-          {
-            "jp": "先生に住所を教えます。",
-            "kana": "せんせいにじゅうしょをおしえます。",
-            "en": "I give the teacher my address.",
-            "grammarTag": "polite-nonpast",
-            "pattern": "Person に + Object を + Verb(ます)",
-            "highlight": "transitive: giver に + object を"
-          },
-          {
-            "jp": "友達に新しいお店の場所を教えました。",
-            "kana": "ともだちにあたらしいおみせのばしょをおしえました。",
-            "en": "I told my friend where the new shop is.",
-            "grammarTag": "polite-past",
-            "pattern": "Person に + い-adjective + Object を + Verb(ました)",
-            "highlight": "transitive: giver に + object を"
-          }
-        ],
-        "te": [
-          {
-            "jp": "名前を教えてください。",
-            "kana": "なまえをおしえてください。",
-            "en": "Please tell me your name.",
             "grammarTag": "te-kudasai",
             "pattern": "Object を + Verb(て) + ください",
             "highlight": "polite request"
@@ -717,7 +613,7 @@
         ]
       },
       "audio": {
-        "file": "/audio/n5/verbs/n5_v_0097.mp3",
+        "file": "/audio/n5/verbs/n5_v_0096.mp3",
         "status": "pending"
       },
       "meta": {
@@ -842,7 +738,7 @@
         "isIrregular": false
       },
       "valency": {
-        "type": "intransitive",
+        "type": "transitive",
         "requiredParticles": [
           "を"
         ]
@@ -878,7 +774,7 @@
             "en": "I get off the bus at the next station.",
             "grammarTag": "dictionary-nonpast",
             "pattern": "Place で + Vehicle を + Verb(dictionary)",
-            "highlight": "intransitive: subject が"
+            "highlight": "transitive: vehicle を"
           },
           {
             "jp": "この駅で電車を降りるのが好きです。",
@@ -895,8 +791,8 @@
             "kana": "つぎのおおきいえきででんしゃをおります。",
             "en": "I will get off the train at the next big station.",
             "grammarTag": "polite-nonpast",
-            "pattern": "い-adjective + Place で + Vehicle を + Verb(ます)",
-            "highlight": "intransitive: subject が"
+            "pattern": "Determiner + い-adjective + Place で + Vehicle を + Verb(ます)",
+            "highlight": "transitive: vehicle を"
           },
           {
             "jp": "急いでバスを降りました。",
@@ -904,7 +800,7 @@
             "en": "I hurriedly got off the bus.",
             "grammarTag": "polite-past",
             "pattern": "Adverb + Vehicle を + Verb(ました)",
-            "highlight": "intransitive: subject が"
+            "highlight": "transitive: vehicle を"
           }
         ],
         "te": [
