@@ -3,6 +3,20 @@ import { VocabularyCard, Deck, StudySession, UserProgress } from '@/types/vocabu
 import { StudyCard } from '@/store/study-store'
 import { DailyStats, Achievement } from '@/types/analytics'
 
+// Particle quiz analytics — one row per quiz session
+export interface DBParticleQuizResult {
+  id?: number            // auto-increment
+  sessionId: string      // unique session ID
+  date: Date
+  verbId: string
+  verbKanji: string
+  verbMeaning: string
+  valencyType: string    // 'transitive' | 'intransitive' | etc.
+  correctParticle: string
+  chosenParticle: string
+  correct: boolean
+}
+
 export interface DBVocabularyCard extends VocabularyCard {
   deckId?: string
   addedAt: Date
@@ -62,6 +76,7 @@ class LingoMemoryDB extends Dexie {
   progress!: Table<UserProgress>
   dailyStats!: Table<DailyStats>
   achievements!: Table<Achievement>
+  particleQuizResults!: Table<DBParticleQuizResult>
 
   constructor() {
     super('LingoMemoryDB')
@@ -102,6 +117,20 @@ class LingoMemoryDB extends Dexie {
       achievements: '&id, userId, type, unlocked, tier'
     })
 
+    // Version 4: Add particle quiz analytics table
+    this.version(4).stores({
+      vocabulary: '&id, deckId, jlptLevel, [deckId+jlptLevel], addedAt, modifiedAt, *tags',
+      studyCards: '++id, vocabularyId, userId, [userId+vocabularyId], due, state, [userId+state], [userId+due]',
+      decks: '&id, userId, name, jlptLevel, [userId+visibility], visibility, createdAt',
+      sessions: '&id, userId, deckId, [userId+startedAt], startedAt, mode',
+      settings: '++id, &userId, theme, language, updatedAt',
+      syncLog: '++id, userId, [userId+timestamp], timestamp, entityType, success',
+      progress: '&userId, totalCardsLearned, currentStreak, lastStudyDate',
+      dailyStats: '&id, userId, date, cardsStudied, streak',
+      achievements: '&id, userId, type, unlocked, tier',
+      particleQuizResults: '++id, sessionId, date, verbId, correct, valencyType, correctParticle, chosenParticle'
+    })
+
     // Initialize tables
     this.vocabulary = this.table('vocabulary')
     this.studyCards = this.table('studyCards')
@@ -112,6 +141,7 @@ class LingoMemoryDB extends Dexie {
     this.progress = this.table('progress')
     this.dailyStats = this.table('dailyStats')
     this.achievements = this.table('achievements')
+    this.particleQuizResults = this.table('particleQuizResults')
   }
 
   // Helper methods for common operations

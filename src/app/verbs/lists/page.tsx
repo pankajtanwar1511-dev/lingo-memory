@@ -10,20 +10,21 @@ import {
   ALL_PREDEFINED_LISTS,
   DIFFICULTY_LISTS,
   THEMATIC_LISTS,
+  GRAMMAR_LISTS,
   type VerbList
 } from '@/data/verb-lists'
 import { useAuth } from '@/contexts/auth-context'
 import { CreateCustomListDialog } from '@/components/verbs/create-custom-list-dialog'
 import { ManageListVerbsDialog } from '@/components/verbs/manage-list-verbs-dialog'
-import { Play, Plus, Star, BookOpen, GraduationCap, Edit, Trash2, ListPlus, CheckSquare, Square } from 'lucide-react'
+import { Play, Plus, Star, BookOpen, GraduationCap, Edit, Trash2, ListPlus, CheckSquare, Square, ArrowLeft } from 'lucide-react'
 import { Checkbox } from '@/components/ui/checkbox'
 
 interface N5Verb {
   id: string
-  kanji: string
-  kana: string
-  primaryMeaning: string
-  verbGroup: string
+  lemma: { kanji: string; kana: string }
+  meaning: { primary: string; gloss: string[] }
+  morphology: { class: string; isIrregular: boolean }
+  valency: { type: string; requiredParticles: string[] }
 }
 
 export default function VerbListsPage() {
@@ -32,8 +33,9 @@ export default function VerbListsPage() {
   const [customLists, setCustomLists] = useState<VerbList[]>([])
   const [favorites, setFavorites] = useState<string[]>([])
   const [verbProgress, setVerbProgress] = useState<Record<string, number>>({})
-  const [activeTab, setActiveTab] = useState<'difficulty' | 'thematic' | 'custom'>('difficulty')
+  const [activeTab, setActiveTab] = useState<'difficulty' | 'thematic' | 'grammar' | 'custom'>('difficulty')
   const [allVerbs, setAllVerbs] = useState<N5Verb[]>([])
+  const [dynamicGrammarLists, setDynamicGrammarLists] = useState<VerbList[]>(GRAMMAR_LISTS)
 
   // Multi-select state
   const [selectedLists, setSelectedLists] = useState<Set<string>>(new Set())
@@ -59,15 +61,34 @@ export default function VerbListsPage() {
 
   const loadVerbs = async () => {
     try {
-      const response = await fetch('/seed-data/N5_verbs_dataset.json')
+      const response = await fetch('/seed-data/N5_verbs_dataset_merged.json')
       const data = await response.json()
-      setAllVerbs(data.verbs.map((v: any) => ({
+      const verbs: N5Verb[] = data.verbs.map((v: any) => ({
         id: v.id,
-        kanji: v.kanji,
-        kana: v.kana,
-        primaryMeaning: v.primaryMeaning,
-        verbGroup: v.verbGroup
-      })))
+        lemma: v.lemma,
+        meaning: v.meaning,
+        morphology: v.morphology,
+        valency: v.valency ?? { type: 'unknown', requiredParticles: [] }
+      }))
+      setAllVerbs(verbs)
+
+      // Populate dynamic grammar lists from dataset
+      setDynamicGrammarLists(GRAMMAR_LISTS.map(list => {
+        switch (list.id) {
+          case 'godan':
+            return { ...list, verbIds: verbs.filter(v => v.morphology.class === 'godan').map(v => v.id) }
+          case 'ichidan':
+            return { ...list, verbIds: verbs.filter(v => v.morphology.class === 'ichidan').map(v => v.id) }
+          case 'irregular':
+            return { ...list, verbIds: verbs.filter(v => v.morphology.class === 'irregular').map(v => v.id) }
+          case 'transitive':
+            return { ...list, verbIds: verbs.filter(v => v.valency.type === 'transitive').map(v => v.id) }
+          case 'intransitive':
+            return { ...list, verbIds: verbs.filter(v => v.valency.type === 'intransitive').map(v => v.id) }
+          default:
+            return list
+        }
+      }))
     } catch (error) {
       console.error('Failed to load verbs:', error)
     }
@@ -124,7 +145,7 @@ export default function VerbListsPage() {
     if (selectedLists.size === 0) return
 
     // Combine all verb IDs from selected lists
-    const allLists = [...DIFFICULTY_LISTS, ...THEMATIC_LISTS, ...customLists]
+    const allLists = [...DIFFICULTY_LISTS, ...THEMATIC_LISTS, ...dynamicGrammarLists, ...customLists]
     const combinedVerbIds = new Set<string>()
 
     selectedLists.forEach(listId => {
@@ -306,6 +327,9 @@ export default function VerbListsPage() {
       case 'thematic':
         lists = THEMATIC_LISTS
         break
+      case 'grammar':
+        lists = dynamicGrammarLists
+        break
       case 'custom':
         lists = customLists
         break
@@ -335,62 +359,62 @@ export default function VerbListsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-muted/20 p-4 md:p-8">
+    <div className="min-h-screen bg-gradient-to-b from-background to-muted/20 p-3 sm:p-4 md:p-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-8">
-          <div className="flex items-center justify-between mb-4">
+        <div className="mb-6 sm:mb-8">
+          <div className="flex items-start sm:items-center justify-between gap-2 mb-4">
             <div>
-              <h1 className="text-4xl font-bold mb-2">Verb Lists</h1>
-              <p className="text-muted-foreground">
+              <h1 className="text-2xl sm:text-4xl font-bold mb-1 sm:mb-2">Verb Lists</h1>
+              <p className="text-sm sm:text-base text-muted-foreground">
                 Choose from curated lists or create your own to focus your learning
               </p>
             </div>
-            <Button onClick={() => router.push('/verbs')} variant="outline">
-              <BookOpen className="w-4 h-4 mr-2" />
-              All Verbs
+            <Button onClick={() => router.push('/verbs')} variant="ghost" size="sm">
+              <ArrowLeft className="w-4 h-4 mr-1.5" />
+              Back
             </Button>
           </div>
 
           {/* Stats bar */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-2 sm:gap-4">
             <Card>
-              <CardContent className="pt-6">
-                <div className="flex items-center gap-3">
-                  <div className="p-3 bg-green-100 rounded-lg">
-                    <GraduationCap className="w-6 h-6 text-green-600" />
+              <CardContent className="p-3 sm:pt-6">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3 text-center sm:text-left">
+                  <div className="p-2 sm:p-3 bg-green-100 rounded-lg self-center sm:self-auto">
+                    <GraduationCap className="w-4 h-4 sm:w-6 sm:h-6 text-green-600" />
                   </div>
                   <div>
-                    <p className="text-2xl font-bold">
+                    <p className="text-xl sm:text-2xl font-bold">
                       {Object.values(verbProgress).filter(p => p >= 5).length}
                     </p>
-                    <p className="text-xs text-muted-foreground">Mastered Verbs</p>
+                    <p className="text-[10px] sm:text-xs text-muted-foreground">Mastered</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
             <Card>
-              <CardContent className="pt-6">
-                <div className="flex items-center gap-3">
-                  <div className="p-3 bg-blue-100 rounded-lg">
-                    <Star className="w-6 h-6 text-blue-600" />
+              <CardContent className="p-3 sm:pt-6">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3 text-center sm:text-left">
+                  <div className="p-2 sm:p-3 bg-blue-100 rounded-lg self-center sm:self-auto">
+                    <Star className="w-4 h-4 sm:w-6 sm:h-6 text-blue-600" />
                   </div>
                   <div>
-                    <p className="text-2xl font-bold">{favorites.length}</p>
-                    <p className="text-xs text-muted-foreground">Favorite Verbs</p>
+                    <p className="text-xl sm:text-2xl font-bold">{favorites.length}</p>
+                    <p className="text-[10px] sm:text-xs text-muted-foreground">Favorites</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
             <Card>
-              <CardContent className="pt-6">
-                <div className="flex items-center gap-3">
-                  <div className="p-3 bg-purple-100 rounded-lg">
-                    <Star className="w-6 h-6 text-purple-600" />
+              <CardContent className="p-3 sm:pt-6">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3 text-center sm:text-left">
+                  <div className="p-2 sm:p-3 bg-purple-100 rounded-lg self-center sm:self-auto">
+                    <Star className="w-4 h-4 sm:w-6 sm:h-6 text-purple-600" />
                   </div>
                   <div>
-                    <p className="text-2xl font-bold">{customLists.length}</p>
-                    <p className="text-xs text-muted-foreground">Custom Lists</p>
+                    <p className="text-xl sm:text-2xl font-bold">{customLists.length}</p>
+                    <p className="text-[10px] sm:text-xs text-muted-foreground">Custom Lists</p>
                   </div>
                 </div>
               </CardContent>
@@ -405,28 +429,44 @@ export default function VerbListsPage() {
               <Button
                 variant={activeTab === 'difficulty' ? 'default' : 'ghost'}
                 onClick={() => setActiveTab('difficulty')}
-                className="rounded-full"
+                className="rounded-full px-2 sm:px-4"
+                size="sm"
               >
-                <GraduationCap className="w-4 h-4 mr-2" />
-                By Difficulty
+                <GraduationCap className="w-4 h-4 sm:mr-2 shrink-0" />
+                <span className="hidden sm:inline">By Difficulty</span>
+                <span className="sm:hidden text-xs">Level</span>
               </Button>
               <Button
                 variant={activeTab === 'thematic' ? 'default' : 'ghost'}
                 onClick={() => setActiveTab('thematic')}
-                className="rounded-full"
+                className="rounded-full px-2 sm:px-4"
+                size="sm"
               >
-                <BookOpen className="w-4 h-4 mr-2" />
-                By Theme
+                <BookOpen className="w-4 h-4 sm:mr-2 shrink-0" />
+                <span className="hidden sm:inline">By Theme</span>
+                <span className="sm:hidden text-xs">Theme</span>
+              </Button>
+              <Button
+                variant={activeTab === 'grammar' ? 'default' : 'ghost'}
+                onClick={() => setActiveTab('grammar')}
+                className="rounded-full px-2 sm:px-4"
+                size="sm"
+              >
+                <GraduationCap className="w-4 h-4 sm:mr-2 shrink-0" />
+                <span className="hidden sm:inline">By Grammar</span>
+                <span className="sm:hidden text-xs">Grammar</span>
               </Button>
               <Button
                 variant={activeTab === 'custom' ? 'default' : 'ghost'}
                 onClick={() => setActiveTab('custom')}
-                className="rounded-full"
+                className="rounded-full px-2 sm:px-4"
+                size="sm"
               >
-                <Star className="w-4 h-4 mr-2" />
-                My Lists
+                <Star className="w-4 h-4 sm:mr-2 shrink-0" />
+                <span className="hidden sm:inline">My Lists</span>
+                <span className="sm:hidden text-xs">Mine</span>
                 {customLists.length > 0 && (
-                  <Badge variant="secondary" className="ml-2">
+                  <Badge variant="secondary" className="ml-1">
                     {customLists.length}
                   </Badge>
                 )}
@@ -492,19 +532,19 @@ export default function VerbListsPage() {
 
         {/* Floating action bar for multi-select */}
         {selectedLists.size > 0 && (
-          <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 animate-in slide-in-from-bottom-4">
+          <div className="fixed bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 z-50 animate-in slide-in-from-bottom-4 w-[calc(100vw-2rem)] sm:w-auto max-w-lg">
             <Card className="shadow-2xl border-2 border-primary">
-              <CardContent className="p-4">
-                <div className="flex items-center gap-4">
+              <CardContent className="p-3 sm:p-4">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                   <div className="flex items-center gap-2">
-                    <CheckSquare className="w-5 h-5 text-primary" />
+                    <CheckSquare className="w-5 h-5 text-primary shrink-0" />
                     <div className="text-left">
-                      <p className="font-semibold">
+                      <p className="font-semibold text-sm">
                         {selectedLists.size} {selectedLists.size === 1 ? 'list' : 'lists'} selected
                       </p>
                       <p className="text-xs text-muted-foreground">
                         {(() => {
-                          const allLists = [...DIFFICULTY_LISTS, ...THEMATIC_LISTS, ...customLists]
+                          const allLists = [...DIFFICULTY_LISTS, ...THEMATIC_LISTS, ...dynamicGrammarLists, ...customLists]
                           const combinedVerbIds = new Set<string>()
                           selectedLists.forEach(listId => {
                             const list = allLists.find(l => l.id === listId)
@@ -517,12 +557,12 @@ export default function VerbListsPage() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex gap-2">
-                    <Button onClick={handlePracticeCombined} size="lg">
+                  <div className="flex gap-2 sm:ml-auto">
+                    <Button onClick={handlePracticeCombined} size="sm" className="flex-1 sm:flex-none">
                       <Play className="w-4 h-4 mr-2" />
                       Practice Combined
                     </Button>
-                    <Button variant="outline" onClick={clearSelection} size="lg">
+                    <Button variant="outline" onClick={clearSelection} size="sm">
                       Clear
                     </Button>
                   </div>

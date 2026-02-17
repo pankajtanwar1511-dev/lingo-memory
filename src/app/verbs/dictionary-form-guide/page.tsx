@@ -13,18 +13,14 @@ import { motion, AnimatePresence } from "framer-motion"
 
 interface N5Verb {
   id: string
-  kanji: string
-  kana: string
-  conjugations: {
-    dictionary: string
-    dictionaryKana: string
-    masu: string
-    masuKana: string
-    te: string
-    teKana: string
+  lemma: { kanji: string; kana: string }
+  forms: {
+    dictionary: { kanji: string; kana: string }
+    masu: { kanji: string; kana: string }
+    te: { kanji: string; kana: string }
   }
-  verbGroup: string
-  primaryMeaning: string
+  morphology: { class: string; isIrregular: boolean }
+  meaning: { primary: string; gloss: string[] }
 }
 
 interface UsagePattern {
@@ -314,7 +310,7 @@ export default function DictionaryFormGuidePage() {
   useEffect(() => {
     async function loadVerbs() {
       try {
-        const response = await fetch('/seed-data/N5_verbs_dataset.json')
+        const response = await fetch('/seed-data/N5_verbs_dataset_merged.json')
         const data = await response.json()
         setVerbsData(data.verbs.slice(0, 12)) // Get first 12 verbs for examples
         setIsLoading(false)
@@ -587,10 +583,10 @@ export default function DictionaryFormGuidePage() {
                     <CardContent className="p-4 space-y-3">
                       <div className="text-center space-y-1">
                         <div className="text-2xl font-bold text-primary">
-                          {showKana ? verb.kana : verb.kanji}
+                          {showKana ? verb.lemma.kana : verb.lemma.kanji}
                         </div>
                         <div className="text-sm text-muted-foreground">
-                          {verb.primaryMeaning}
+                          {verb.meaning.primary}
                         </div>
                       </div>
 
@@ -598,19 +594,19 @@ export default function DictionaryFormGuidePage() {
                         <div className="flex items-center justify-between p-2 bg-primary/10 rounded border-2 border-primary/20">
                           <span className="text-primary font-semibold">Dict:</span>
                           <span className="font-bold text-primary">
-                            {showKana ? verb.conjugations.dictionaryKana : verb.conjugations.dictionary}
+                            {showKana ? verb.forms.dictionary.kana : verb.forms.dictionary.kanji}
                           </span>
                         </div>
                         <div className="flex items-center justify-between p-2 bg-muted/50 rounded">
                           <span className="text-muted-foreground">Masu:</span>
                           <span className="font-medium">
-                            {showKana ? verb.conjugations.masuKana : verb.conjugations.masu}
+                            {showKana ? verb.forms.masu.kana : verb.forms.masu.kanji}
                           </span>
                         </div>
                         <div className="flex items-center justify-between p-2 bg-muted/50 rounded">
                           <span className="text-muted-foreground">Te:</span>
                           <span className="font-medium">
-                            {showKana ? verb.conjugations.teKana : verb.conjugations.te}
+                            {showKana ? verb.forms.te.kana : verb.forms.te.kanji}
                           </span>
                         </div>
                       </div>

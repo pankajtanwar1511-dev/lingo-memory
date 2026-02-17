@@ -20,53 +20,43 @@ import {
 import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
 import { ALL_PREDEFINED_LISTS, type VerbList } from "@/data/verb-lists"
+import { analyticsService } from "@/services/analytics.service"
 
 interface VerbExample {
-  japanese: string
+  jp: string
   kana: string
-  english: string
+  en: string
   highlight: string
+  grammarTag?: string
   pattern?: string
 }
 
 interface N5Verb {
   id: string
-  kanji: string
-  kana: string
-  romaji: string
-  meaning: string[]
-  primaryMeaning: string
-  jlptLevel: string
-  verbGroup: "godan" | "ichidan" | "irregular"
-  verbType: {
-    transitive: boolean | null
-    intransitive: boolean | null
+  jlpt: string
+  pos: string
+  lemma: { kanji: string; kana: string }
+  morphology: { class: "godan" | "ichidan" | "irregular"; isIrregular: boolean }
+  valency: { type: string; requiredParticles: string[] }
+  meaning: { primary: string; gloss: string[] }
+  forms: {
+    dictionary: { kanji: string; kana: string }
+    masu: { kanji: string; kana: string }
+    te: { kanji: string; kana: string }
   }
-  conjugations: {
-    dictionary: string
-    dictionaryKana: string
-    masu: string
-    masuKana: string
-    te: string
-    teKana: string
+  examples: {
+    dictionary: VerbExample[]
+    masu: VerbExample[]
+    te: VerbExample[]
   }
-  examples?: VerbExample[]
-  dictFormExamples?: VerbExample[]
-  teFormExamples?: VerbExample[]
-  tags: string[]
-  context?: string | null
+  audio?: { file: string; status: string }
+  meta?: { license: string }
 }
 
 interface VerbsData {
   metadata: {
     version: string
     totalEntries: number
-    uniqueVerbs: number
-    groups: {
-      godan: number
-      ichidan: number
-      irregular: number
-    }
   }
   verbs: N5Verb[]
 }
@@ -122,6 +112,17 @@ export default function VerbsPage() {
   const [expandedExamples, setExpandedExamples] = useState<Set<string>>(new Set())
   const [selectedExampleForm, setSelectedExampleForm] = useState<'masu' | 'dict' | 'te'>('masu')
   const [examplesPopup, setExamplesPopup] = useState<{ verbId: string; verb: N5Verb; position: { x: number; y: number }; showKana: boolean; formType?: 'masu' | 'dict' | 'te' } | null>(null)
+
+  // Particle quiz mode
+  const [particleQuizMode, setParticleQuizMode] = useState(false)
+  const [particleQuizIndex, setParticleQuizIndex] = useState(0)
+  const [particleQuizAnswer, setParticleQuizAnswer] = useState<string | null>(null)
+  const [particleQuizScore, setParticleQuizScore] = useState({ correct: 0, total: 0 })
+  const [particleQuizHistory, setParticleQuizHistory] = useState<Array<{ verbId: string; chosen: string; correct: boolean }>>([])
+  const [particleQuizVerbs, setParticleQuizVerbs] = useState<N5Verb[]>([])
+  const [particleQuizOptions, setParticleQuizOptions] = useState<string[][]>([])
+  const [particleQuizComplete, setParticleQuizComplete] = useState(false)
+  const [particleQuizStats, setParticleQuizStats] = useState<Awaited<ReturnType<typeof analyticsService.getParticleQuizStats>> | null>(null)
 
   // Matching exercise states
   const [matchingMode, setMatchingMode] = useState(false)
@@ -191,7 +192,7 @@ export default function VerbsPage() {
   useEffect(() => {
     async function loadVerbs() {
       try {
-        const response = await fetch('/seed-data/N5_verbs_dataset.json')
+        const response = await fetch('/seed-data/N5_verbs_dataset_merged.json')
         const data: VerbsData = await response.json()
         setVerbsData(data)
         setFilteredVerbs(data.verbs)
@@ -233,18 +234,17 @@ export default function VerbsPage() {
 
     // Filter by group
     if (selectedGroup !== "all") {
-      filtered = filtered.filter(v => v.verbGroup === selectedGroup)
+      filtered = filtered.filter(v => v.morphology.class === selectedGroup)
     }
 
     // Filter by search query
     if (searchQuery) {
       const query = searchQuery.toLowerCase()
       filtered = filtered.filter(v =>
-        v.kanji.includes(query) ||
-        v.kana.includes(query) ||
-        v.romaji.toLowerCase().includes(query) ||
-        v.meaning.some(m => m.toLowerCase().includes(query)) ||
-        v.primaryMeaning.toLowerCase().includes(query)
+        v.lemma.kanji.includes(query) ||
+        v.lemma.kana.includes(query) ||
+        v.meaning.gloss.some(m => m.toLowerCase().includes(query)) ||
+        v.meaning.primary.toLowerCase().includes(query)
       )
     }
 
@@ -300,10 +300,10 @@ export default function VerbsPage() {
   }, [currentBatch, matchingMode, filteredVerbs])
 
   const verbGroups = [
-    { id: "all", label: "All Verbs", count: verbsData?.metadata.totalEntries || 0, color: "bg-gradient-to-r from-purple-500 to-pink-500" },
-    { id: "godan", label: "Godan (う-verbs)", count: verbsData?.metadata.groups.godan || 0, color: "bg-gradient-to-r from-blue-500 to-cyan-500" },
-    { id: "ichidan", label: "Ichidan (る-verbs)", count: verbsData?.metadata.groups.ichidan || 0, color: "bg-gradient-to-r from-green-500 to-teal-500" },
-    { id: "irregular", label: "Irregular", count: verbsData?.metadata.groups.irregular || 0, color: "bg-gradient-to-r from-orange-500 to-red-500" }
+    { id: "all",       label: "All Verbs",       shortLabel: "All",      count: verbsData?.metadata.totalEntries || 0,                                          color: "bg-gradient-to-r from-purple-500 to-pink-500" },
+    { id: "godan",     label: "Godan (う-verbs)", shortLabel: "Godan",    count: verbsData?.verbs.filter(v => v.morphology.class === 'godan').length || 0,     color: "bg-gradient-to-r from-blue-500 to-cyan-500" },
+    { id: "ichidan",   label: "Ichidan (る-verbs)",shortLabel: "Ichidan", count: verbsData?.verbs.filter(v => v.morphology.class === 'ichidan').length || 0,   color: "bg-gradient-to-r from-green-500 to-teal-500" },
+    { id: "irregular", label: "Irregular",        shortLabel: "Irreg",   count: verbsData?.verbs.filter(v => v.morphology.class === 'irregular').length || 0,  color: "bg-gradient-to-r from-orange-500 to-red-500" }
   ]
 
   const toggleCardFlip = (verbId: string) => {
@@ -507,6 +507,80 @@ export default function VerbsPage() {
     }
   }
 
+  // ── Particle Quiz helpers ──────────────────────────────────────────────────
+
+  const ALL_PARTICLES = ['を', 'が', 'に', 'で', 'と', 'から']
+
+  const getParticleOptions = (verb: N5Verb): string[] => {
+    const correct = verb.valency.requiredParticles[0] || 'を'
+    const pool = ALL_PARTICLES.filter(p => p !== correct)
+    // Shuffle pool and take 3 distractors
+    const shuffled = pool.sort(() => Math.random() - 0.5).slice(0, 3)
+    const options = [correct, ...shuffled].sort(() => Math.random() - 0.5)
+    return options
+  }
+
+  const startParticleQuiz = () => {
+    // Only include verbs that have requiredParticles data
+    const eligible = filteredVerbs.filter(v => v.valency.requiredParticles.length > 0)
+    const shuffled = [...eligible].sort(() => Math.random() - 0.5)
+    // Pre-compute options for each verb so they stay stable during quiz
+    const opts = shuffled.map(v => getParticleOptions(v))
+    setParticleQuizVerbs(shuffled)
+    setParticleQuizOptions(opts)
+    setParticleQuizIndex(0)
+    setParticleQuizAnswer(null)
+    setParticleQuizScore({ correct: 0, total: 0 })
+    setParticleQuizHistory([])
+    setParticleQuizComplete(false)
+  }
+
+  const handleParticleAnswer = (chosen: string) => {
+    if (particleQuizAnswer !== null) return // already answered
+    const verb = particleQuizVerbs[particleQuizIndex]
+    const correctParticle = verb.valency.requiredParticles[0]
+    const isCorrect = chosen === correctParticle
+    setParticleQuizAnswer(chosen)
+    setParticleQuizScore(prev => ({
+      correct: prev.correct + (isCorrect ? 1 : 0),
+      total: prev.total + 1
+    }))
+    setParticleQuizHistory(prev => [
+      ...prev,
+      { verbId: verb.id, chosen, correct: isCorrect }
+    ])
+  }
+
+  const nextParticleQuestion = () => {
+    const nextIndex = particleQuizIndex + 1
+    if (nextIndex >= particleQuizVerbs.length) {
+      setParticleQuizComplete(true)
+      // Save this session to IndexedDB and refresh lifetime stats
+      const sessionId = `pq_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
+      const resultsToSave = particleQuizHistory.map(h => {
+        const v = particleQuizVerbs.find(v => v.id === h.verbId)!
+        return {
+          verbId: h.verbId,
+          verbKanji: v.lemma.kanji,
+          verbMeaning: v.meaning.primary,
+          valencyType: v.valency.type,
+          correctParticle: v.valency.requiredParticles[0],
+          chosenParticle: h.chosen,
+          correct: h.correct
+        }
+      })
+      analyticsService.saveParticleQuizSession(sessionId, resultsToSave)
+        .then(() => analyticsService.getParticleQuizStats())
+        .then(stats => setParticleQuizStats(stats))
+        .catch(err => console.error('Failed to save quiz analytics:', err))
+    } else {
+      setParticleQuizIndex(nextIndex)
+      setParticleQuizAnswer(null)
+    }
+  }
+
+  // ──────────────────────────────────────────────────────────────────────────
+
   const handleLeftClick = (verbId: string) => {
     if (correctMatches.has(verbId)) return // Already matched correctly
 
@@ -624,6 +698,66 @@ export default function VerbsPage() {
     return correctMatches.size === getBatchVerbs().length
   }
 
+  const renderValencyBadge = (verb: N5Verb, compact: boolean = true) => {
+    const type = verb.valency.type
+    const particles = verb.valency.requiredParticles
+
+    if (compact) {
+      // Small T / I / S badge for flip cards
+      if (type === 'transitive') {
+        return (
+          <span
+            title={`Transitive — takes ${particles.join('/')} particle`}
+            className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300 border border-blue-300 dark:border-blue-700"
+          >
+            T
+          </span>
+        )
+      }
+      if (type === 'intransitive') {
+        return (
+          <span
+            title="Intransitive — no direct object"
+            className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700"
+          >
+            I
+          </span>
+        )
+      }
+      // Special types
+      return (
+        <span
+          title={`${type} — ${particles.join('/')}`}
+          className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300 border border-amber-300 dark:border-amber-700"
+        >
+          S
+        </span>
+      )
+    }
+
+    // Full badge for "all info" view
+    const particleLabel = particles.length > 0 ? particles.join('/') : ''
+    if (type === 'transitive') {
+      return (
+        <Badge className="text-xs bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300 border border-blue-300 dark:border-blue-700 hover:bg-blue-100">
+          T · {particleLabel || 'を'}
+        </Badge>
+      )
+    }
+    if (type === 'intransitive') {
+      return (
+        <Badge className="text-xs bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700 hover:bg-emerald-100">
+          I{particleLabel ? ` · ${particleLabel}` : ''}
+        </Badge>
+      )
+    }
+    return (
+      <Badge className="text-xs bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300 border border-amber-300 dark:border-amber-700 hover:bg-amber-100">
+        {type.charAt(0).toUpperCase()}{type.slice(1)}{particleLabel ? ` · ${particleLabel}` : ''}
+      </Badge>
+    )
+  }
+
   const renderCardContent = (verb: N5Verb, side: FlipSide, showExpandButton: boolean = false) => {
     const isExpanded = expandedMeanings.has(verb.id)
 
@@ -633,15 +767,15 @@ export default function VerbsPage() {
           <div className="relative w-full h-full flex items-center justify-center px-2 py-4">
             <div className="space-y-1 flex-1 w-full overflow-hidden">
               <div className="text-base font-bold text-primary break-words leading-tight">
-                {verb.primaryMeaning}
+                {verb.meaning.primary}
               </div>
-              {isExpanded && verb.meaning.length > 1 && (
+              {isExpanded && verb.meaning.gloss.length > 1 && (
                 <div className="text-xs text-muted-foreground break-words leading-tight">
-                  {verb.meaning.slice(1).join(', ')}
+                  {verb.meaning.gloss.slice(1).join(', ')}
                 </div>
               )}
             </div>
-            {showExpandButton && verb.meaning.length > 2 && (
+            {showExpandButton && verb.meaning.gloss.length > 2 && (
               <button
                 onClick={(e) => toggleMeaningExpansion(verb.id, e)}
                 className="absolute top-2 right-2 p-1.5 rounded-full hover:bg-accent transition-colors"
@@ -659,66 +793,61 @@ export default function VerbsPage() {
       case "kanji":
         return (
           <div className="flex flex-col items-center gap-2">
-            <div className="text-4xl font-bold text-primary">
-              {verb.kanji}
+            <div className="text-2xl sm:text-4xl font-bold text-primary">
+              {verb.lemma.kanji}
             </div>
-            {verb.context && (
-              <Badge variant="secondary" className="text-xs">
-                {verb.context}
-              </Badge>
-            )}
           </div>
         )
       case "kana":
         return (
-          <div className="text-4xl font-bold text-primary">
-            {verb.kana}
+          <div className="text-2xl sm:text-4xl font-bold text-primary">
+            {verb.lemma.kana}
           </div>
         )
       case "masu-kanji":
         return (
-          <div className="text-4xl font-bold text-primary">
-            {verb.conjugations.masu}
+          <div className="text-2xl sm:text-4xl font-bold text-primary">
+            {verb.forms.masu.kanji}
           </div>
         )
       case "masu-kana":
         return (
-          <div className="text-4xl font-bold text-primary">
-            {verb.conjugations.masuKana}
+          <div className="text-2xl sm:text-4xl font-bold text-primary">
+            {verb.forms.masu.kana}
           </div>
         )
       case "te-kanji":
         return (
-          <div className="text-4xl font-bold text-primary">
-            {verb.conjugations.te}
+          <div className="text-2xl sm:text-4xl font-bold text-primary">
+            {verb.forms.te.kanji}
           </div>
         )
       case "te-kana":
         return (
-          <div className="text-4xl font-bold text-primary">
-            {verb.conjugations.teKana}
+          <div className="text-2xl sm:text-4xl font-bold text-primary">
+            {verb.forms.te.kana}
           </div>
         )
       case "kana-mixed":
         // Show the appropriate kana based on quiz mode
         if (quizMode) {
           const formType = verbFormTypes.get(verb.id) || "dict"
-          let kanaText = verb.kana
+          let kanaText = verb.lemma.kana
           if (formType === "masu") {
-            kanaText = verb.conjugations.masuKana
+            kanaText = verb.forms.masu.kana
           } else if (formType === "te") {
-            kanaText = verb.conjugations.teKana
+            kanaText = verb.forms.te.kana
           }
           return (
-            <div className="text-4xl font-bold text-primary">
+            <div className="text-2xl sm:text-4xl font-bold text-primary">
               {kanaText}
             </div>
           )
         }
         // Default: show dictionary form kana
         return (
-          <div className="text-4xl font-bold text-primary">
-            {verb.kana}
+          <div className="text-2xl sm:text-4xl font-bold text-primary">
+            {verb.lemma.kana}
           </div>
         )
       default:
@@ -726,15 +855,15 @@ export default function VerbsPage() {
           <div className="relative w-full h-full flex items-center justify-center px-2 py-4">
             <div className="space-y-1 flex-1 w-full overflow-hidden">
               <div className="text-base font-bold text-primary break-words leading-tight">
-                {verb.primaryMeaning}
+                {verb.meaning.primary}
               </div>
-              {isExpanded && verb.meaning.length > 1 && (
+              {isExpanded && verb.meaning.gloss.length > 1 && (
                 <div className="text-xs text-muted-foreground break-words leading-tight">
-                  {verb.meaning.slice(1).join(', ')}
+                  {verb.meaning.gloss.slice(1).join(', ')}
                 </div>
               )}
             </div>
-            {showExpandButton && verb.meaning.length > 2 && (
+            {showExpandButton && verb.meaning.gloss.length > 2 && (
               <button
                 onClick={(e) => toggleMeaningExpansion(verb.id, e)}
                 className="absolute top-2 right-2 p-1.5 rounded-full hover:bg-accent transition-colors"
@@ -772,498 +901,328 @@ export default function VerbsPage() {
     <div className="min-h-screen">
       <Header />
 
-      <main className="container mx-auto px-4 py-8 space-y-8">
-        {/* Hero Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center space-y-4"
-        >
-          <Badge variant="gradient" className="px-4 py-1.5">
-            <Sparkles className="h-3 w-3 mr-2" />
-            N5 Verb Collection
-          </Badge>
-
-          <h1 className="text-4xl md:text-6xl font-bold">
-            Master <span className="gradient-text">{verbsData?.metadata.totalEntries} N5 Verbs</span>
-          </h1>
-
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Complete collection of JLPT N5 verbs with conjugations, meanings, and practice modes
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-3 pt-2">
-            <Button
-              variant="default"
-              size="lg"
-              onClick={() => window.location.href = '/verbs/lists'}
-              className="gap-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
-            >
-              <ListChecks className="h-5 w-5" />
+      <main className="container mx-auto px-3 sm:px-4 py-4 sm:py-6 space-y-4 max-w-7xl">
+        {/* Hero — compact single row */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div>
+            <h1 className="text-2xl font-bold">
+              N5 Verbs <span className="text-muted-foreground font-normal text-lg">· {verbsData?.metadata.totalEntries} verbs</span>
+            </h1>
+            <p className="text-sm text-muted-foreground mt-0.5">JLPT N5 complete collection with conjugations and practice modes</p>
+          </div>
+          <div className="flex flex-wrap gap-2 sm:shrink-0">
+            <Button variant="outline" size="sm" onClick={() => window.location.href = '/verbs/lists'} className="gap-1.5 text-xs">
+              <ListChecks className="h-3.5 w-3.5" />
               Verb Lists
             </Button>
-            <Button
-              variant="default"
-              size="lg"
-              onClick={() => window.location.href = '/verbs/form-master'}
-              className="gap-2 bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600"
-            >
-              <Target className="h-5 w-5" />
-              Verb Form Master
+            <Button variant="outline" size="sm" onClick={() => window.location.href = '/verbs/form-master'} className="gap-1.5 text-xs">
+              <Target className="h-3.5 w-3.5" />
+              Form Master
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={() => window.location.href = '/verbs/forms-usage-guide'}
-              className="gap-2"
-            >
-              <BookOpen className="h-5 w-5" />
-              Forms Usage Guide
+            <Button variant="outline" size="sm" onClick={() => window.location.href = '/verbs/form-tutorials'} className="gap-1.5 text-xs">
+              <GraduationCap className="h-3.5 w-3.5" />
+              Tutorials
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={() => window.location.href = '/verbs/conjugation-rules'}
-              className="gap-2"
-            >
-              <GraduationCap className="h-5 w-5" />
-              Conjugation Rules
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={() => window.location.href = '/verbs/dictionary-form-learning'}
-              className="gap-2"
-            >
-              <GraduationCap className="h-5 w-5" />
-              Learn Dictionary Form
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={() => window.location.href = '/verbs/te-form-learning'}
-              className="gap-2"
-            >
-              <GraduationCap className="h-5 w-5" />
-              Learn Te Form
+            <Button variant="outline" size="sm" onClick={() => window.location.href = '/verbs/grammar-reference'} className="gap-1.5 text-xs">
+              <BookOpen className="h-3.5 w-3.5" />
+              Grammar
             </Button>
           </div>
-        </motion.div>
-
-        {/* Stats Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {verbGroups.map((group, index) => (
-            <motion.div
-              key={group.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-            >
-              <Card
-                className={`cursor-pointer transition-all hover:scale-105 ${selectedGroup === group.id ? 'ring-2 ring-primary' : ''}`}
-                onClick={() => setSelectedGroup(group.id)}
-              >
-                <CardContent className="pt-6">
-                  <div className={`w-12 h-12 rounded-full ${group.color} flex items-center justify-center mb-2 mx-auto`}>
-                    <BookOpen className="h-6 w-6 text-white" />
-                  </div>
-                  <p className="text-3xl font-bold text-center">{group.count}</p>
-                  <p className="text-sm text-muted-foreground text-center">{group.label}</p>
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
         </div>
 
         {/* Active List Filter Banner */}
         {activeList && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-          >
-            <Card className="bg-gradient-to-r from-purple-50 to-pink-50 border-purple-200">
-              <CardContent className="pt-6">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 bg-white rounded-lg shadow-sm">
-                      <ListChecks className="h-5 w-5 text-purple-600" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-lg flex items-center gap-2">
-                        {activeList.icon && <span>{activeList.icon}</span>}
-                        {activeList.name}
-                      </p>
-                      <p className="text-sm text-muted-foreground">
-                        Practicing {filteredVerbs.length} verbs from this list
-                      </p>
-                    </div>
-                  </div>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => router.push('/verbs')}
-                    className="gap-2"
-                  >
-                    <X className="h-4 w-4" />
-                    Clear Filter
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          </motion.div>
+          <div className="flex items-center gap-2 px-3 py-2 rounded-lg border bg-muted/40 text-sm">
+            <ListChecks className="h-4 w-4 text-primary shrink-0" />
+            <span className="font-medium">{activeList.icon} {activeList.name}</span>
+            <span className="text-muted-foreground">— {filteredVerbs.length} verbs</span>
+            <button
+              onClick={() => router.push('/verbs')}
+              className="ml-auto flex items-center gap-1 text-muted-foreground hover:text-foreground"
+            >
+              <X className="h-3.5 w-3.5" />
+              Clear
+            </button>
+          </div>
         )}
 
-        {/* Search, Filters, and View Mode */}
+        {/* Controls */}
         <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Layers className="h-5 w-5" />
-              Display Options
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="flex flex-col gap-4">
-              {/* Mode Toggles */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {/* Flip Mode Toggle */}
-                <div className="flex items-center gap-4 p-4 border rounded-lg bg-muted/30">
-                  <div className="flex items-center space-x-2">
-                    <Switch
-                      id="flip-mode"
-                      checked={flipMode}
-                      onCheckedChange={setFlipMode}
-                    />
-                    <Label htmlFor="flip-mode" className="font-semibold">
-                      <RefreshCw className="h-4 w-4 inline mr-2" />
-                      Flip Card Mode
-                    </Label>
-                  </div>
-                </div>
+          <CardContent className="pt-4 pb-4 space-y-3">
 
-                {/* Shuffle, Test Mode & Matching Mode */}
-                <div className="flex flex-col gap-3 p-4 border rounded-lg bg-muted/30">
-                  <div className="flex items-center gap-4 flex-wrap">
-                    <div className="flex items-center space-x-2">
-                      <Switch
-                        id="shuffle-mode"
-                        checked={shuffleMode}
-                        onCheckedChange={setShuffleMode}
-                      />
-                      <Label htmlFor="shuffle-mode" className="font-semibold">
-                        <Shuffle className="h-4 w-4 inline mr-2" />
-                        Shuffle
-                      </Label>
-                    </div>
-
-                    <div className="flex items-center space-x-2">
-                      <Switch
-                        id="favorites-only"
-                        checked={showOnlyFavorites}
-                        onCheckedChange={setShowOnlyFavorites}
-                      />
-                      <Label htmlFor="favorites-only" className="font-semibold">
-                        <Star className="h-4 w-4 inline mr-2 fill-yellow-400 text-yellow-400" />
-                        Favorites Only
-                      </Label>
-                    </div>
-
-                    <div className="flex items-center space-x-2">
-                      <Switch
-                        id="test-mode"
-                        checked={testMode}
-                        onCheckedChange={(checked) => {
-                          setTestMode(checked)
-                          if (checked) {
-                            setFlipMode(true) // Auto-enable flip mode for tests
-                            setMatchingMode(false) // Disable matching mode
-                            setCurrentTestIndex(0)
-                            setShowAnswer(false)
-                          }
-                        }}
-                      />
-                      <Label htmlFor="test-mode" className="font-semibold">
-                        <GraduationCap className="h-4 w-4 inline mr-2" />
-                        Test Mode
-                      </Label>
-                    </div>
-
-                    <div className="flex items-center space-x-2">
-                      <Switch
-                        id="matching-mode"
-                        checked={matchingMode}
-                        onCheckedChange={(checked) => {
-                          setMatchingMode(checked)
-                          if (checked) {
-                            setTestMode(false) // Disable test mode
-                            setFlipMode(false) // Disable flip mode
-                            setCurrentBatch(0)
-                            resetMatchingState()
-                          }
-                        }}
-                      />
-                      <Label htmlFor="matching-mode" className="font-semibold">
-                        <Target className="h-4 w-4 inline mr-2" />
-                        Matching Exercise
-                      </Label>
-                    </div>
-                  </div>
-
-                  {/* Show only unknown toggle - only visible in test mode */}
-                  {testMode && (
-                    <div className="flex items-center space-x-2 pl-2 border-l-2 border-primary/30">
-                      <Switch
-                        id="show-unknown"
-                        checked={showOnlyUnknown}
-                        onCheckedChange={setShowOnlyUnknown}
-                      />
-                      <Label htmlFor="show-unknown" className="text-sm">
-                        <Target className="h-4 w-4 inline mr-2" />
-                        Focus on Need Practice (Level &lt; 3)
-                      </Label>
-                    </div>
-                  )}
-                </div>
-              </div>
-
-              {/* Flip Side Selection - Only when flip mode is ON and NOT in test mode */}
-              {flipMode && !testMode && !matchingMode && (
-                <div className="space-y-3">
-                  <div className="flex items-center gap-4 p-4 border rounded-lg bg-muted/30">
-                    <div className="flex items-center gap-4 flex-1">
-                      <div className="flex items-center gap-2">
-                        <Label className="text-sm whitespace-nowrap">Front:</Label>
-                        <select
-                          value={frontSide}
-                          onChange={(e) => setFrontSide(e.target.value as FlipSide)}
-                          className="px-3 py-1.5 border rounded-md bg-background"
-                          disabled={quizMode}
-                        >
-                          <option value="english">English</option>
-                          <option value="kanji">Dictionary (Kanji)</option>
-                          <option value="kana">Dictionary (Kana)</option>
-                          <option value="kana-mixed">Mixed Kana</option>
-                          <option value="masu-kanji">Masu (Kanji)</option>
-                          <option value="masu-kana">Masu (Kana)</option>
-                          <option value="te-kanji">Te-form (Kanji)</option>
-                          <option value="te-kana">Te-form (Kana)</option>
-                        </select>
-                      </div>
-
-                      <div className="text-muted-foreground">→</div>
-
-                      <div className="flex items-center gap-2">
-                        <Label className="text-sm whitespace-nowrap">Back:</Label>
-                        <select
-                          value={backSide}
-                          onChange={(e) => setBackSide(e.target.value as FlipSide)}
-                          className="px-3 py-1.5 border rounded-md bg-background"
-                          disabled={quizMode}
-                        >
-                          <option value="english">English</option>
-                          <option value="kanji">Dictionary (Kanji)</option>
-                          <option value="kana">Dictionary (Kana)</option>
-                          <option value="kana-mixed">Mixed Kana</option>
-                          <option value="masu-kanji">Masu (Kanji)</option>
-                          <option value="masu-kana">Masu (Kana)</option>
-                          <option value="te-kanji">Te-form (Kanji)</option>
-                          <option value="te-kana">Te-form (Kana)</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* English Conjugation Quiz Mode Button */}
-                  <div className="flex items-center gap-3 p-3 border rounded-lg bg-gradient-to-r from-purple-500/10 to-pink-500/10">
-                    <div className="flex items-center space-x-2">
-                      <Switch
-                        id="quiz-mode"
-                        checked={quizMode}
-                        onCheckedChange={(checked) => {
-                          setQuizMode(checked)
-                          if (checked) {
-                            // Auto-configure for quiz mode
-                            setFrontSide("english")
-                            setBackSide("kana-mixed")
-                          }
-                        }}
-                      />
-                      <Label htmlFor="quiz-mode" className="font-semibold">
-                        <Zap className="h-4 w-4 inline mr-2" />
-                        English Conjugation Quiz
-                      </Label>
-                    </div>
-                    {quizMode && (
-                      <Badge variant="secondary" className="text-xs">
-                        Random forms: Dict / Masu / Te
-                      </Badge>
-                    )}
-                  </div>
-                </div>
-              )}
-
-              {/* Matching Mode Form Selection */}
-              {matchingMode && (
-                <div className="p-4 border rounded-lg bg-muted/30 space-y-3">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <Target className="h-4 w-4 text-primary" />
-                      <Label className="font-semibold">Matching Exercise Settings</Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Switch
-                        id="matching-test-mode"
-                        checked={matchingTestMode}
-                        onCheckedChange={(checked) => {
-                          setMatchingTestMode(checked)
-                          if (checked) {
-                            resetAllMatchingProgress()
-                          }
-                        }}
-                      />
-                      <Label htmlFor="matching-test-mode" className="text-sm font-semibold">
-                        <BarChart3 className="h-4 w-4 inline mr-1" />
-                        Test Mode (Auto-advance)
-                      </Label>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4 flex-1 flex-wrap">
-                    <div className="flex items-center gap-2">
-                      <Label className="text-sm whitespace-nowrap">Left Side:</Label>
-                      <select
-                        value={matchingLeftForm}
-                        onChange={(e) => {
-                          setMatchingLeftForm(e.target.value as FlipSide)
-                          resetAllMatchingProgress()
-                        }}
-                        className="px-3 py-1.5 border rounded-md bg-background"
-                      >
-                        <option value="english">English</option>
-                        <option value="kanji">Dictionary (Kanji)</option>
-                        <option value="kana">Dictionary (Kana)</option>
-                        <option value="kana-mixed">Mixed Kana</option>
-                        <option value="masu-kanji">Masu (Kanji)</option>
-                        <option value="masu-kana">Masu (Kana)</option>
-                        <option value="te-kanji">Te-form (Kanji)</option>
-                        <option value="te-kana">Te-form (Kana)</option>
-                      </select>
-                    </div>
-
-                    <div className="text-muted-foreground">⟷</div>
-
-                    <div className="flex items-center gap-2">
-                      <Label className="text-sm whitespace-nowrap">Right Side:</Label>
-                      <select
-                        value={matchingRightForm}
-                        onChange={(e) => {
-                          setMatchingRightForm(e.target.value as FlipSide)
-                          resetAllMatchingProgress()
-                        }}
-                        className="px-3 py-1.5 border rounded-md bg-background"
-                      >
-                        <option value="english">English</option>
-                        <option value="kanji">Dictionary (Kanji)</option>
-                        <option value="kana">Dictionary (Kana)</option>
-                        <option value="kana-mixed">Mixed Kana</option>
-                        <option value="masu-kanji">Masu (Kanji)</option>
-                        <option value="masu-kana">Masu (Kana)</option>
-                        <option value="te-kanji">Te-form (Kanji)</option>
-                        <option value="te-kana">Te-form (Kana)</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="text-xs text-muted-foreground">
-                    {matchingTestMode
-                      ? "Test mode: Complete each batch to auto-advance. Final score shown at the end."
-                      : "Practice mode: Match verbs at your own pace. Use Next/Previous buttons to navigate."}
-                  </div>
-                </div>
-              )}
-
-              {/* View Mode Buttons - Only show when flip mode is OFF */}
-              {!flipMode && (
-                <div>
-                  <label className="text-sm font-medium mb-3 block">View Mode</label>
-                  <div className="flex flex-wrap gap-2">
-                    <Button
-                      variant={viewMode === "all" ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => setViewMode("all")}
-                    >
-                      <Eye className="h-4 w-4 mr-2" />
-                      All Info
-                    </Button>
-                    <Button
-                      variant={viewMode === "dictionary" ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => setViewMode("dictionary")}
-                    >
-                      Dictionary Form
-                    </Button>
-                    <Button
-                      variant={viewMode === "masu" ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => setViewMode("masu")}
-                    >
-                      Masu (Kanji)
-                    </Button>
-                    <Button
-                      variant={viewMode === "kana-masu" ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => setViewMode("kana-masu")}
-                    >
-                      Masu (Kana)
-                    </Button>
-                    <Button
-                      variant={viewMode === "dictionary-kana" ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => setViewMode("dictionary-kana")}
-                    >
-                      Dictionary (Kana)
-                    </Button>
-                    <Button
-                      variant={viewMode === "te-form" ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => setViewMode("te-form")}
-                    >
-                      Te-form (Kanji)
-                    </Button>
-                    <Button
-                      variant={viewMode === "te-form-kana" ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => setViewMode("te-form-kana")}
-                    >
-                      Te-form (Kana)
-                    </Button>
-                  </div>
-                </div>
-              )}
-
-              {/* Search */}
-              <div>
-                <label className="text-sm font-medium mb-2 block">Search</label>
+            {/* Row 1: Search + group filter */}
+            <div className="flex flex-col sm:flex-row gap-2">
+              <div className="relative flex-1">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground pointer-events-none" />
                 <Input
-                  placeholder="Search by kanji, kana, romaji, or meaning..."
+                  placeholder="Search by kanji, kana, romaji, or meaning…"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full"
+                  className="pl-9 pr-20"
                 />
+                <span className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-muted-foreground">
+                  {filteredVerbs.length} / {verbsData?.metadata.totalEntries}
+                </span>
+              </div>
+              <div className="flex gap-1 sm:gap-1.5 flex-wrap sm:flex-nowrap">
+                {verbGroups.map(group => (
+                  <button
+                    key={group.id}
+                    onClick={() => setSelectedGroup(group.id)}
+                    className={`inline-flex items-center gap-1 px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-md text-xs font-medium border transition-colors whitespace-nowrap ${
+                      selectedGroup === group.id
+                        ? 'bg-primary text-primary-foreground border-primary'
+                        : 'bg-background text-muted-foreground border-border hover:border-primary/50 hover:text-foreground'
+                    }`}
+                  >
+                    <span className="hidden sm:inline">{group.label}</span>
+                    <span className="sm:hidden">{group.shortLabel ?? group.label}</span>
+                    <span className={`text-xs ${selectedGroup === group.id ? 'opacity-70' : 'text-muted-foreground'}`}>
+                      {group.count}
+                    </span>
+                  </button>
+                ))}
               </div>
             </div>
 
-            <div className="flex items-center justify-between text-sm text-muted-foreground">
-              <span>Showing {filteredVerbs.length} of {verbsData?.metadata.totalEntries} verbs</span>
-              <Button variant="ghost" size="sm" onClick={() => {
-                setSearchQuery("")
-                setSelectedGroup("all")
-                setViewMode("all")
-                setFlipMode(false)
-                setFrontSide("english")
-                setBackSide("kanji")
-              }}>
-                Reset all
-              </Button>
+            {/* Row 2: Practice Mode selector */}
+            <div className="flex flex-wrap gap-2">
+                {/* Browse */}
+                <button
+                  onClick={() => { setFlipMode(false); setTestMode(false); setMatchingMode(false); setParticleQuizMode(false) }}
+                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium border transition-colors ${
+                    !flipMode && !testMode && !matchingMode && !particleQuizMode
+                      ? 'bg-primary text-primary-foreground border-primary'
+                      : 'bg-background border-border text-muted-foreground hover:text-foreground hover:border-primary/40'
+                  }`}
+                >
+                  <Eye className="h-3.5 w-3.5" />
+                  Browse
+                </button>
+
+                {/* Flip Cards */}
+                <button
+                  onClick={() => { setFlipMode(true); setTestMode(false); setMatchingMode(false); setParticleQuizMode(false) }}
+                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium border transition-colors ${
+                    flipMode && !testMode
+                      ? 'bg-primary text-primary-foreground border-primary'
+                      : 'bg-background border-border text-muted-foreground hover:text-foreground hover:border-primary/40'
+                  }`}
+                >
+                  <RefreshCw className="h-3.5 w-3.5" />
+                  <span className="hidden sm:inline">Flip Cards</span>
+                  <span className="sm:hidden">Flip</span>
+                </button>
+
+                {/* Test */}
+                <button
+                  onClick={() => { setTestMode(true); setFlipMode(true); setMatchingMode(false); setParticleQuizMode(false); setCurrentTestIndex(0); setShowAnswer(false) }}
+                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium border transition-colors ${
+                    testMode
+                      ? 'bg-primary text-primary-foreground border-primary'
+                      : 'bg-background border-border text-muted-foreground hover:text-foreground hover:border-primary/40'
+                  }`}
+                >
+                  <GraduationCap className="h-3.5 w-3.5" />
+                  Test
+                </button>
+
+                {/* Matching */}
+                <button
+                  onClick={() => { setMatchingMode(true); setTestMode(false); setFlipMode(false); setParticleQuizMode(false); setCurrentBatch(0); resetMatchingState() }}
+                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium border transition-colors ${
+                    matchingMode
+                      ? 'bg-primary text-primary-foreground border-primary'
+                      : 'bg-background border-border text-muted-foreground hover:text-foreground hover:border-primary/40'
+                  }`}
+                >
+                  <Target className="h-3.5 w-3.5" />
+                  Match
+                </button>
+
+                {/* Particle Quiz */}
+                <button
+                  onClick={() => { setParticleQuizMode(true); setTestMode(false); setFlipMode(false); setMatchingMode(false); startParticleQuiz() }}
+                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium border transition-colors ${
+                    particleQuizMode
+                      ? 'bg-primary text-primary-foreground border-primary'
+                      : 'bg-background border-border text-muted-foreground hover:text-foreground hover:border-primary/40'
+                  }`}
+                >
+                  <Zap className="h-3.5 w-3.5" />
+                  <span className="hidden sm:inline">Particle Quiz</span>
+                  <span className="sm:hidden">Particles</span>
+                </button>
+              </div>
+
+            {/* Row 3: Options — context-sensitive */}
+            <div className="flex flex-wrap items-center gap-x-2 sm:gap-x-4 gap-y-2">
+              {/* Shuffle — always available */}
+              <label className="inline-flex items-center gap-2 cursor-pointer text-sm">
+                <Switch id="shuffle-mode" checked={shuffleMode} onCheckedChange={setShuffleMode} />
+                <span className="flex items-center gap-1 text-muted-foreground"><Shuffle className="h-3.5 w-3.5" />Shuffle</span>
+              </label>
+
+              {/* Favorites — always available */}
+              <label className="inline-flex items-center gap-2 cursor-pointer text-sm">
+                <Switch id="favorites-only" checked={showOnlyFavorites} onCheckedChange={setShowOnlyFavorites} />
+                <span className="flex items-center gap-1 text-muted-foreground"><Star className="h-3.5 w-3.5 fill-yellow-400 text-yellow-400" />Favorites</span>
+              </label>
+
+              {/* Conjugation Quiz — only in Flip Cards mode */}
+              {flipMode && !testMode && (
+                <label className="inline-flex items-center gap-2 cursor-pointer text-sm">
+                  <Switch
+                    id="quiz-mode"
+                    checked={quizMode}
+                    onCheckedChange={(checked) => {
+                      setQuizMode(checked)
+                      if (checked) { setFrontSide("english"); setBackSide("kana-mixed") }
+                    }}
+                  />
+                  <span className="flex items-center gap-1 text-muted-foreground"><Zap className="h-3.5 w-3.5" />Conjugation Quiz</span>
+                </label>
+              )}
+
+              {/* Focus Practice — only in Test mode */}
+              {testMode && (
+                <label className="inline-flex items-center gap-2 cursor-pointer text-sm">
+                  <Switch id="show-unknown" checked={showOnlyUnknown} onCheckedChange={setShowOnlyUnknown} />
+                  <span className="text-muted-foreground">Focus on needs practice</span>
+                </label>
+              )}
+
+              {/* Auto-advance — only in Matching mode */}
+              {matchingMode && (
+                <label className="inline-flex items-center gap-2 cursor-pointer text-sm">
+                  <Switch
+                    id="matching-test-mode"
+                    checked={matchingTestMode}
+                    onCheckedChange={(checked) => { setMatchingTestMode(checked); if (checked) resetAllMatchingProgress() }}
+                  />
+                  <span className="text-muted-foreground">Auto-advance</span>
+                </label>
+              )}
+
+              {/* Reset */}
+              <button
+                onClick={() => { setSearchQuery(""); setSelectedGroup("all"); setViewMode("all"); setFlipMode(false); setFrontSide("english"); setBackSide("kanji") }}
+                className="ml-auto text-xs text-muted-foreground hover:text-foreground underline-offset-2 hover:underline"
+              >
+                Reset
+              </button>
             </div>
+
+            {/* Row 4: Flip side selectors — only in Flip Cards mode (not test, not quiz) */}
+            {flipMode && !testMode && !quizMode && (
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 pt-1 border-t">
+                <div className="flex items-center gap-2 sm:contents">
+                  <span className="text-xs text-muted-foreground shrink-0 w-10 sm:w-auto">Front →</span>
+                  <select
+                    value={frontSide}
+                    onChange={(e) => setFrontSide(e.target.value as FlipSide)}
+                    className="text-sm px-2 py-1.5 border rounded-md bg-background flex-1 min-w-0"
+                  >
+                    <option value="english">English</option>
+                    <option value="kanji">Dictionary (Kanji)</option>
+                    <option value="kana">Dictionary (Kana)</option>
+                    <option value="kana-mixed">Mixed Kana</option>
+                    <option value="masu-kanji">Masu (Kanji)</option>
+                    <option value="masu-kana">Masu (Kana)</option>
+                    <option value="te-kanji">Te-form (Kanji)</option>
+                    <option value="te-kana">Te-form (Kana)</option>
+                  </select>
+                </div>
+                <div className="flex items-center gap-2 sm:contents">
+                  <span className="text-xs text-muted-foreground shrink-0 w-10 sm:w-auto">Back →</span>
+                  <select
+                    value={backSide}
+                    onChange={(e) => setBackSide(e.target.value as FlipSide)}
+                    className="text-sm px-2 py-1.5 border rounded-md bg-background flex-1 min-w-0"
+                  >
+                    <option value="english">English</option>
+                    <option value="kanji">Dictionary (Kanji)</option>
+                    <option value="kana">Dictionary (Kana)</option>
+                    <option value="kana-mixed">Mixed Kana</option>
+                    <option value="masu-kanji">Masu (Kanji)</option>
+                    <option value="masu-kana">Masu (Kana)</option>
+                    <option value="te-kanji">Te-form (Kanji)</option>
+                    <option value="te-kana">Te-form (Kana)</option>
+                  </select>
+                </div>
+              </div>
+            )}
+
+            {/* Row 5: Matching side selectors */}
+            {matchingMode && (
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 pt-1 border-t">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-muted-foreground shrink-0 w-10 sm:w-auto">Left →</span>
+                  <select
+                    value={matchingLeftForm}
+                    onChange={(e) => { setMatchingLeftForm(e.target.value as FlipSide); resetAllMatchingProgress() }}
+                    className="text-sm px-2 py-1.5 border rounded-md bg-background flex-1 min-w-0"
+                  >
+                    <option value="english">English</option>
+                    <option value="kanji">Dictionary (Kanji)</option>
+                    <option value="kana">Dictionary (Kana)</option>
+                    <option value="kana-mixed">Mixed Kana</option>
+                    <option value="masu-kanji">Masu (Kanji)</option>
+                    <option value="masu-kana">Masu (Kana)</option>
+                    <option value="te-kanji">Te-form (Kanji)</option>
+                    <option value="te-kana">Te-form (Kana)</option>
+                  </select>
+                </div>
+                <span className="hidden sm:block text-xs text-muted-foreground shrink-0">⟷</span>
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-muted-foreground shrink-0 w-10 sm:w-auto">Right →</span>
+                  <select
+                    value={matchingRightForm}
+                    onChange={(e) => { setMatchingRightForm(e.target.value as FlipSide); resetAllMatchingProgress() }}
+                    className="text-sm px-2 py-1.5 border rounded-md bg-background flex-1 min-w-0"
+                  >
+                    <option value="english">English</option>
+                    <option value="kanji">Dictionary (Kanji)</option>
+                    <option value="kana">Dictionary (Kana)</option>
+                    <option value="kana-mixed">Mixed Kana</option>
+                    <option value="masu-kanji">Masu (Kanji)</option>
+                    <option value="masu-kana">Masu (Kana)</option>
+                    <option value="te-kanji">Te-form (Kanji)</option>
+                    <option value="te-kana">Te-form (Kana)</option>
+                  </select>
+                </div>
+              </div>
+            )}
+
+            {/* Row 6: View mode pills — only in Browse mode */}
+            {!flipMode && !matchingMode && !particleQuizMode && (
+              <div className="flex flex-wrap gap-1 sm:gap-1.5 pt-1 border-t">
+                {(
+                  [
+                    { key: "all",             label: "All Info" },
+                    { key: "dictionary",      label: "Dict (Kanji)" },
+                    { key: "dictionary-kana", label: "Dict (Kana)" },
+                    { key: "masu",            label: "Masu (Kanji)" },
+                    { key: "kana-masu",       label: "Masu (Kana)" },
+                    { key: "te-form",         label: "Te (Kanji)" },
+                    { key: "te-form-kana",    label: "Te (Kana)" },
+                  ] as { key: ViewMode; label: string }[]
+                ).map(({ key, label }) => (
+                  <button
+                    key={key}
+                    onClick={() => setViewMode(key)}
+                    className={`px-2.5 py-1 rounded text-xs font-medium border transition-colors ${
+                      viewMode === key
+                        ? 'bg-primary text-primary-foreground border-primary'
+                        : 'bg-background border-border text-muted-foreground hover:text-foreground hover:border-primary/40'
+                    }`}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+            )}
+
           </CardContent>
         </Card>
 
@@ -1276,6 +1235,236 @@ export default function VerbsPage() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
           >
+            {/* ── Particle Quiz Mode ── */}
+            {particleQuizMode && (
+              <div className="max-w-xl mx-auto space-y-6">
+                {particleQuizComplete ? (
+                  /* Results Screen */
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                  >
+                    <Card>
+                      <CardHeader className="text-center">
+                        <div className="text-6xl mb-2">
+                          {particleQuizScore.correct / particleQuizScore.total >= 0.8 ? '🎉' : '📚'}
+                        </div>
+                        <CardTitle className="text-2xl">Quiz Complete!</CardTitle>
+                        <CardDescription>
+                          {particleQuizScore.correct} / {particleQuizScore.total} correct
+                        </CardDescription>
+                      </CardHeader>
+                      <CardContent className="space-y-4">
+                        <div className="text-center p-6 bg-muted/50 rounded-lg">
+                          <div className="text-3xl sm:text-5xl font-bold gradient-text mb-1">
+                            {Math.round((particleQuizScore.correct / particleQuizScore.total) * 100)}%
+                          </div>
+                          <div className="text-sm text-muted-foreground">Score</div>
+                        </div>
+
+                        {/* Mistake review */}
+                        {particleQuizHistory.filter(h => !h.correct).length > 0 && (
+                          <div>
+                            <p className="text-sm font-semibold mb-2 text-destructive">
+                              Review — {particleQuizHistory.filter(h => !h.correct).length} mistakes:
+                            </p>
+                            <div className="space-y-2 max-h-48 overflow-y-auto">
+                              {particleQuizHistory.filter(h => !h.correct).map((h, idx) => {
+                                const v = particleQuizVerbs.find(v => v.id === h.verbId)
+                                if (!v) return null
+                                return (
+                                  <div key={idx} className="flex items-center justify-between p-2 rounded bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-900 text-sm">
+                                    <span className="font-medium">{v.lemma.kanji} <span className="text-muted-foreground text-xs">({v.meaning.primary})</span></span>
+                                    <div className="flex items-center gap-2">
+                                      <span className="line-through text-red-500">{h.chosen}</span>
+                                      <span className="text-green-600 font-bold">{v.valency.requiredParticles[0]}</span>
+                                    </div>
+                                  </div>
+                                )
+                              })}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Lifetime confusion stats */}
+                        {particleQuizStats && particleQuizStats.totalAttempts > 0 && (
+                          <div className="rounded-lg border bg-muted/30 p-3 space-y-3">
+                            <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                              Lifetime Stats ({particleQuizStats.totalAttempts} attempts)
+                            </p>
+
+                            {/* By valency type */}
+                            {Object.keys(particleQuizStats.byValencyType).length > 0 && (
+                              <div className="space-y-1">
+                                {Object.entries(particleQuizStats.byValencyType).map(([type, data]) => (
+                                  <div key={type} className="flex items-center gap-2 text-sm">
+                                    <Badge variant="outline" className="text-xs w-24 justify-center shrink-0">
+                                      {type}
+                                    </Badge>
+                                    <Progress value={data.accuracy} className="h-2 flex-1" />
+                                    <span className="text-xs text-muted-foreground w-12 text-right">
+                                      {data.accuracy}%
+                                    </span>
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+
+                            {/* Worst verbs */}
+                            {particleQuizStats.worstVerbs.length > 0 && (
+                              <div>
+                                <p className="text-xs text-muted-foreground mb-1">Needs practice:</p>
+                                <div className="flex flex-wrap gap-1">
+                                  {particleQuizStats.worstVerbs.map(v => (
+                                    <Badge key={v.verbId} variant="secondary" className="text-xs">
+                                      {v.verbKanji} {v.accuracy}%
+                                    </Badge>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        )}
+
+                        <div className="flex gap-3">
+                          <Button onClick={startParticleQuiz} className="flex-1" size="lg">
+                            <RefreshCw className="h-4 w-4 mr-2" />
+                            Try Again
+                          </Button>
+                          <Button
+                            onClick={() => setParticleQuizMode(false)}
+                            variant="outline"
+                            className="flex-1"
+                            size="lg"
+                          >
+                            Exit
+                          </Button>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
+                ) : particleQuizVerbs.length === 0 ? (
+                  <Card>
+                    <CardContent className="p-8 text-center text-muted-foreground">
+                      No verbs with particle data in the current filter.
+                    </CardContent>
+                  </Card>
+                ) : (
+                  /* Active Quiz */
+                  (() => {
+                    const verb = particleQuizVerbs[particleQuizIndex]
+                    const options = particleQuizOptions[particleQuizIndex] || []
+                    const correctParticle = verb.valency.requiredParticles[0]
+                    const answered = particleQuizAnswer !== null
+
+                    return (
+                      <motion.div
+                        key={particleQuizIndex}
+                        initial={{ opacity: 0, x: 40 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.25 }}
+                        className="space-y-4"
+                      >
+                        {/* Progress bar */}
+                        <div className="space-y-1">
+                          <div className="flex justify-between text-sm text-muted-foreground">
+                            <span>Question {particleQuizIndex + 1} / {particleQuizVerbs.length}</span>
+                            <span>{particleQuizScore.correct} correct</span>
+                          </div>
+                          <Progress value={((particleQuizIndex) / particleQuizVerbs.length) * 100} className="h-2" />
+                        </div>
+
+                        {/* Verb card */}
+                        <Card className="text-center">
+                          <CardContent className="pt-8 pb-6 space-y-3">
+                            <div className="space-y-1">
+                              <div className="text-3xl sm:text-5xl font-bold text-primary">{verb.lemma.kanji}</div>
+                              <div className="text-lg sm:text-xl text-muted-foreground">{verb.lemma.kana}</div>
+                            </div>
+                            <p className="text-base text-muted-foreground">{verb.meaning.primary}</p>
+                            <div className="flex items-center justify-center gap-2">
+                              {renderValencyBadge(verb, false)}
+                            </div>
+                            <p className="text-sm font-semibold pt-2">
+                              Which particle does <span className="text-primary">{verb.lemma.kanji}</span> take?
+                            </p>
+                          </CardContent>
+                        </Card>
+
+                        {/* Particle choices */}
+                        <div className="grid grid-cols-2 gap-3">
+                          {options.map((particle) => {
+                            const isCorrect = particle === correctParticle
+                            const isChosen = particle === particleQuizAnswer
+                            let btnClass = "h-16 text-2xl font-bold border-2 transition-all"
+                            if (!answered) {
+                              btnClass += " hover:border-primary hover:bg-primary/10"
+                            } else if (isCorrect) {
+                              btnClass += " bg-green-100 border-green-500 dark:border-green-500 text-green-700 dark:bg-green-950 dark:text-green-300 shadow-md shadow-green-100 dark:shadow-green-900/40"
+                            } else if (isChosen) {
+                              btnClass += " bg-red-100 border-red-500 dark:border-red-500 text-red-700 dark:bg-red-950 dark:text-red-300 shadow-md shadow-red-100 dark:shadow-red-900/40"
+                            } else {
+                              btnClass += " opacity-40"
+                            }
+                            return (
+                              <Button
+                                key={particle}
+                                variant="outline"
+                                className={btnClass}
+                                onClick={() => handleParticleAnswer(particle)}
+                                disabled={answered}
+                              >
+                                {particle}
+                                {answered && isCorrect && (
+                                  <CheckCircle2 className="ml-2 h-5 w-5 text-green-600" />
+                                )}
+                                {answered && isChosen && !isCorrect && (
+                                  <X className="ml-2 h-5 w-5 text-red-600" />
+                                )}
+                              </Button>
+                            )
+                          })}
+                        </div>
+
+                        {/* Feedback + Next */}
+                        {answered && (
+                          <motion.div
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="space-y-3"
+                          >
+                            <div className={cn(
+                              "p-3 rounded-lg text-sm font-medium text-center",
+                              particleQuizAnswer === correctParticle
+                                ? "bg-green-50 dark:bg-green-950/30 text-green-700 dark:text-green-300 border border-green-200 dark:border-green-800"
+                                : "bg-red-50 dark:bg-red-950/30 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-800"
+                            )}>
+                              {particleQuizAnswer === correctParticle
+                                ? `Correct! ${verb.lemma.kanji} takes ${correctParticle}`
+                                : `The correct particle is ${correctParticle}`
+                              }
+                              {verb.valency.requiredParticles.length > 1 && (
+                                <span className="ml-1 text-muted-foreground">
+                                  (also: {verb.valency.requiredParticles.slice(1).join('/')})
+                                </span>
+                              )}
+                            </div>
+                            <Button onClick={nextParticleQuestion} className="w-full" size="lg">
+                              {particleQuizIndex + 1 < particleQuizVerbs.length ? (
+                                <>Next <ChevronRight className="ml-1 h-4 w-4" /></>
+                              ) : (
+                                <>See Results <ChevronRight className="ml-1 h-4 w-4" /></>
+                              )}
+                            </Button>
+                          </motion.div>
+                        )}
+                      </motion.div>
+                    )
+                  })()
+                )}
+              </div>
+            )}
+
             {/* Matching Mode */}
             {matchingMode && (
               <div className="space-y-4">
@@ -1297,7 +1486,7 @@ export default function VerbsPage() {
                       <CardContent className="space-y-6">
                         {/* Overall Score */}
                         <div className="text-center p-6 bg-muted/50 rounded-lg">
-                          <div className="text-5xl font-bold gradient-text mb-2">
+                          <div className="text-3xl sm:text-5xl font-bold gradient-text mb-2">
                             {calculateFinalScore()}%
                           </div>
                           <div className="text-sm text-muted-foreground">Overall Score</div>
@@ -1420,8 +1609,8 @@ export default function VerbsPage() {
                     {/* Left Column */}
                     <div className="space-y-2">
                     <div className="relative overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-md"></div>
-                      <div className="relative text-xs font-bold text-center py-2 px-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-md shadow-md">
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 dark:from-blue-400/20 dark:to-cyan-400/20 rounded-md"></div>
+                      <div className="relative text-xs font-bold text-center py-2 px-3 bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-500 dark:to-cyan-500 text-white rounded-md shadow-md">
                         <div className="flex items-center justify-center gap-1.5">
                           <List className="h-3.5 w-3.5" />
                           <span>
@@ -1447,11 +1636,11 @@ export default function VerbsPage() {
                         <Card
                           onClick={() => handleLeftClick(verb.id)}
                           className={cn(
-                            "cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 border-2",
-                            selectedLeft === verb.id && "ring-4 ring-blue-400/50 shadow-xl scale-[1.03] border-blue-500 bg-blue-50 dark:bg-blue-950/30",
-                            correctMatches.has(verb.id) && "ring-4 ring-green-400/50 border-green-500 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20",
-                            wrongAttempts.has(verb.id) && !correctMatches.has(verb.id) && "ring-4 ring-red-400/50 border-red-500 animate-shake bg-red-50 dark:bg-red-950/20",
-                            !selectedLeft && !correctMatches.has(verb.id) && !wrongAttempts.has(verb.id) && "border-border hover:border-blue-300"
+                            "cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 border",
+                            selectedLeft === verb.id && "ring-2 ring-blue-400 dark:ring-blue-400 shadow-lg shadow-blue-100 dark:shadow-blue-900/50 scale-[1.02] border-blue-400 dark:border-blue-400 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/20",
+                            correctMatches.has(verb.id) && "ring-2 ring-green-400 dark:ring-green-500 border-green-400 dark:border-green-500 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 opacity-70",
+                            wrongAttempts.has(verb.id) && !correctMatches.has(verb.id) && "ring-2 ring-red-400 dark:ring-red-500 border-red-400 dark:border-red-500 animate-shake bg-gradient-to-br from-red-50 to-rose-50 dark:from-red-950/20 dark:to-rose-950/20",
+                            !selectedLeft && !correctMatches.has(verb.id) && !wrongAttempts.has(verb.id) && "border-border hover:border-blue-300 dark:hover:border-blue-500 bg-gradient-to-br from-background to-muted/30"
                           )}
                         >
                           <CardContent className="p-2.5 px-3 min-h-[48px] flex items-center">
@@ -1469,13 +1658,13 @@ export default function VerbsPage() {
                               </Badge>
                               <div className="flex-1 text-sm font-semibold">
                                 {matchingLeftForm === 'english' ? (
-                                  <span className="text-sm">{verb.primaryMeaning}</span>
+                                  <span className="text-sm">{verb.meaning.primary}</span>
                                 ) : matchingLeftForm === 'kanji' || matchingLeftForm === 'kana' || matchingLeftForm === 'kana-mixed' ? (
-                                  <span className="text-xl font-bold">{matchingLeftForm === 'kanji' ? verb.kanji : verb.kana}</span>
+                                  <span className="text-xl font-bold">{matchingLeftForm === 'kanji' ? verb.lemma.kanji : verb.lemma.kana}</span>
                                 ) : matchingLeftForm === 'masu-kanji' || matchingLeftForm === 'masu-kana' ? (
-                                  <span className="text-xl font-bold">{matchingLeftForm === 'masu-kanji' ? verb.conjugations.masu : verb.conjugations.masuKana}</span>
+                                  <span className="text-xl font-bold">{matchingLeftForm === 'masu-kanji' ? verb.forms.masu.kanji : verb.forms.masu.kana}</span>
                                 ) : (
-                                  <span className="text-xl font-bold">{matchingLeftForm === 'te-kanji' ? verb.conjugations.te : verb.conjugations.teKana}</span>
+                                  <span className="text-xl font-bold">{matchingLeftForm === 'te-kanji' ? verb.forms.te.kanji : verb.forms.te.kana}</span>
                                 )}
                               </div>
                               {correctMatches.has(verb.id) && (
@@ -1497,8 +1686,8 @@ export default function VerbsPage() {
                   {/* Right Column - Shuffled */}
                   <div className="space-y-2">
                     <div className="relative overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-md"></div>
-                      <div className="relative text-xs font-bold text-center py-2 px-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-md shadow-md">
+                      <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 dark:from-purple-400/20 dark:to-pink-400/20 rounded-md"></div>
+                      <div className="relative text-xs font-bold text-center py-2 px-3 bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-500 dark:to-pink-500 text-white rounded-md shadow-md">
                         <div className="flex items-center justify-center gap-1.5">
                           <Shuffle className="h-3.5 w-3.5" />
                           <span>
@@ -1524,23 +1713,23 @@ export default function VerbsPage() {
                         <Card
                           onClick={() => handleRightClick(verb.id)}
                           className={cn(
-                            "cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 border-2",
-                            selectedRight === verb.id && "ring-4 ring-purple-400/50 shadow-xl scale-[1.03] border-purple-500 bg-purple-50 dark:bg-purple-950/30",
-                            correctMatches.has(verb.id) && "ring-4 ring-green-400/50 border-green-500 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20",
-                            !selectedRight && !correctMatches.has(verb.id) && "border-border hover:border-purple-300"
+                            "cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 border",
+                            selectedRight === verb.id && "ring-2 ring-purple-400 dark:ring-purple-400 shadow-lg shadow-purple-100 dark:shadow-purple-900/50 scale-[1.02] border-purple-400 dark:border-purple-400 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/20",
+                            correctMatches.has(verb.id) && "ring-2 ring-green-400 dark:ring-green-500 border-green-400 dark:border-green-500 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 opacity-70",
+                            !selectedRight && !correctMatches.has(verb.id) && "border-border hover:border-purple-300 dark:hover:border-purple-500 bg-gradient-to-br from-background to-muted/30"
                           )}
                         >
                           <CardContent className="p-2.5 px-3 min-h-[48px] flex items-center justify-center">
                             <div className="flex items-center gap-2.5 w-full justify-center">
                               <div className="flex-1 text-center text-sm font-semibold">
                                 {matchingRightForm === 'english' ? (
-                                  <span className="text-sm">{verb.primaryMeaning}</span>
+                                  <span className="text-sm">{verb.meaning.primary}</span>
                                 ) : matchingRightForm === 'kanji' || matchingRightForm === 'kana' || matchingRightForm === 'kana-mixed' ? (
-                                  <span className="text-xl font-bold">{matchingRightForm === 'kanji' ? verb.kanji : verb.kana}</span>
+                                  <span className="text-xl font-bold">{matchingRightForm === 'kanji' ? verb.lemma.kanji : verb.lemma.kana}</span>
                                 ) : matchingRightForm === 'masu-kanji' || matchingRightForm === 'masu-kana' ? (
-                                  <span className="text-xl font-bold">{matchingRightForm === 'masu-kanji' ? verb.conjugations.masu : verb.conjugations.masuKana}</span>
+                                  <span className="text-xl font-bold">{matchingRightForm === 'masu-kanji' ? verb.forms.masu.kanji : verb.forms.masu.kana}</span>
                                 ) : (
-                                  <span className="text-xl font-bold">{matchingRightForm === 'te-kanji' ? verb.conjugations.te : verb.conjugations.teKana}</span>
+                                  <span className="text-xl font-bold">{matchingRightForm === 'te-kanji' ? verb.forms.te.kanji : verb.forms.te.kana}</span>
                                 )}
                               </div>
                               {correctMatches.has(verb.id) && (
@@ -1564,7 +1753,7 @@ export default function VerbsPage() {
             )}
 
             {/* Test Mode - Grid with Know/Don't Know on each card */}
-            {!matchingMode && flipMode && testMode && (
+            {!matchingMode && !particleQuizMode && flipMode && testMode && (
               <div className="space-y-4">
                 {/* Progress Summary */}
                 <Card className="bg-muted/30">
@@ -1643,9 +1832,10 @@ export default function VerbsPage() {
                             {/* Front Side */}
                             <Card
                               className={cn(
-                                "hover:shadow-lg transition-shadow relative w-full",
-                                hasProgress && progress.level >= 3 && "ring-2 ring-green-500",
-                                hasProgress && progress.level < 3 && "ring-2 ring-red-500"
+                                "transition-all duration-200 relative w-full overflow-hidden border-0 shadow-lg",
+                                hasProgress && progress.level >= 3 ? "ring-2 ring-green-400 dark:ring-green-500 shadow-green-100 dark:shadow-green-900/50" :
+                                hasProgress && progress.level < 3 ? "ring-2 ring-red-400 dark:ring-red-500 shadow-red-100 dark:shadow-red-900/50" :
+                                "hover:shadow-xl hover:-translate-y-0.5"
                               )}
                               style={{
                                 backfaceVisibility: "hidden",
@@ -1653,6 +1843,18 @@ export default function VerbsPage() {
                                 minHeight: "180px"
                               }}
                             >
+                              {/* Level Badge - top left inside card */}
+                              {hasProgress && (
+                                <div className="absolute top-2 left-2 z-10">
+                                  <Badge
+                                    variant={progress.level >= 3 ? "default" : "destructive"}
+                                    className="text-[10px] px-1.5 py-0"
+                                  >
+                                    L{progress.level}
+                                  </Badge>
+                                </div>
+                              )}
+
                               {/* Button Group in Top Right */}
                               <div className="absolute top-2 right-2 z-10 flex items-center gap-1">
                                 {/* Favorite Toggle */}
@@ -1671,7 +1873,7 @@ export default function VerbsPage() {
                                   />
                                 </button>
                                 {/* Examples Toggle */}
-                                {verb.examples && verb.examples.length > 0 && (
+                                {verb.examples && (verb.examples.masu.length > 0 || verb.examples.dictionary.length > 0 || verb.examples.te.length > 0) && (
                                   <button
                                     onClick={(e) => toggleExamplesPopup(verb, e)}
                                     className="p-1.5 rounded-full hover:bg-accent transition-colors"
@@ -1685,7 +1887,7 @@ export default function VerbsPage() {
                                   </button>
                                 )}
                                 {/* Meanings Toggle */}
-                                {frontSide === 'english' && verb.meaning.length > 2 && (
+                                {frontSide === 'english' && verb.meaning.gloss.length > 2 && (
                                   <button
                                     onClick={(e) => toggleMeaningExpansion(verb.id, e)}
                                     className="p-1.5 rounded-full hover:bg-accent transition-colors"
@@ -1698,6 +1900,11 @@ export default function VerbsPage() {
                                     )}
                                   </button>
                                 )}
+                              </div>
+
+                              {/* Valency badge - bottom left */}
+                              <div className="absolute bottom-2 left-2 z-10">
+                                {renderValencyBadge(verb, true)}
                               </div>
 
                               {/* Quiz mode badge - at bottom right corner */}
@@ -1710,14 +1917,14 @@ export default function VerbsPage() {
                                 </div>
                               )}
 
-                              <CardContent className="p-6 text-center min-h-[180px] flex items-center justify-center">
+                              <CardContent className="p-6 text-center min-h-[180px] flex items-center justify-center bg-gradient-to-b from-background to-muted/30">
                                 {renderCardContent(verb, frontSide, false)}
                               </CardContent>
                             </Card>
 
                             {/* Back Side with Action Buttons */}
                             <Card
-                              className="absolute top-0 left-0 w-full hover:shadow-lg transition-shadow"
+                              className="absolute top-0 left-0 w-full overflow-hidden border-0 shadow-lg shadow-violet-200/60 dark:shadow-violet-900/40"
                               style={{
                                 backfaceVisibility: "hidden",
                                 WebkitBackfaceVisibility: "hidden",
@@ -1725,10 +1932,12 @@ export default function VerbsPage() {
                                 minHeight: "180px"
                               }}
                             >
+                              {/* Accent bar at top — thicker on mobile for at-a-glance recognition */}
+                              <div className="h-1.5 sm:h-1 w-full bg-gradient-to-r from-violet-500 via-purple-500 to-indigo-500" />
                               {/* Button Group in Top Right (Back) */}
                               <div className="absolute top-2 right-2 z-10 flex items-center gap-1">
                                 {/* Examples Toggle */}
-                                {verb.examples && verb.examples.length > 0 && (
+                                {verb.examples && (verb.examples.masu.length > 0 || verb.examples.dictionary.length > 0 || verb.examples.te.length > 0) && (
                                   <button
                                     onClick={(e) => toggleExamplesPopup(verb, e)}
                                     className="p-1.5 rounded-full hover:bg-accent transition-colors"
@@ -1742,7 +1951,7 @@ export default function VerbsPage() {
                                   </button>
                                 )}
                                 {/* Meanings Toggle */}
-                                {backSide === 'english' && verb.meaning.length > 2 && (
+                                {backSide === 'english' && verb.meaning.gloss.length > 2 && (
                                   <button
                                     onClick={(e) => toggleMeaningExpansion(verb.id, e)}
                                     className="p-1.5 rounded-full hover:bg-accent transition-colors"
@@ -1756,50 +1965,35 @@ export default function VerbsPage() {
                                   </button>
                                 )}
                               </div>
-                              <CardContent className="p-4 text-center min-h-[180px] flex flex-col items-center justify-between bg-secondary/20">
+                              <CardContent className="p-3 sm:p-4 text-center min-h-[180px] flex flex-col items-center justify-between bg-gradient-to-b from-violet-100/90 via-purple-50/60 to-muted/30 dark:from-violet-950/50 dark:via-purple-950/30 dark:to-muted/30">
                                 <div className="flex-1 flex items-center justify-center w-full">
                                   {renderCardContent(verb, backSide, false)}
                                 </div>
 
                                 {/* Action Buttons on Back */}
                                 {isFlipped && (
-                                  <div className="flex gap-2 mt-3 w-full" onClick={(e) => e.stopPropagation()}>
-                                    <Button
-                                      size="sm"
-                                      variant="outline"
+                                  <div className="flex justify-between mt-3 w-full px-2" onClick={(e) => e.stopPropagation()}>
+                                    <button
                                       onClick={() => markVerbKnown(verb.id, false)}
-                                      className="flex-1 bg-red-50 hover:bg-red-100 dark:bg-red-950/30 dark:hover:bg-red-950/50 border-red-200 dark:border-red-900 text-red-700 dark:text-red-400 text-xs"
+                                      title="Don't know"
+                                      className="p-2.5 rounded-full bg-red-50 hover:bg-red-100 dark:bg-red-950/40 dark:hover:bg-red-950/70 border border-red-200 dark:border-red-800 text-red-600 dark:text-red-400 transition-colors"
                                     >
-                                      <ThumbsDown className="h-3 w-3 mr-1" />
-                                      Don't Know
-                                    </Button>
+                                      <ThumbsDown className="h-4 w-4" />
+                                    </button>
 
-                                    <Button
-                                      size="sm"
-                                      variant="outline"
+                                    <button
                                       onClick={() => markVerbKnown(verb.id, true)}
-                                      className="flex-1 bg-green-50 hover:bg-green-100 dark:bg-green-950/30 dark:hover:bg-green-950/50 border-green-200 dark:border-green-900 text-green-700 dark:text-green-400 text-xs"
+                                      title="Know"
+                                      className="p-2.5 rounded-full bg-green-50 hover:bg-green-100 dark:bg-green-950/40 dark:hover:bg-green-950/70 border border-green-200 dark:border-green-800 text-green-600 dark:text-green-400 transition-colors"
                                     >
-                                      <ThumbsUp className="h-3 w-3 mr-1" />
-                                      Know
-                                    </Button>
+                                      <ThumbsUp className="h-4 w-4" />
+                                    </button>
                                   </div>
                                 )}
                               </CardContent>
                             </Card>
                           </div>
 
-                          {/* Progress Indicator Badge */}
-                          {hasProgress && (
-                            <div className="absolute -top-2 -right-2 z-10">
-                              <Badge
-                                variant={progress.level >= 3 ? "default" : "destructive"}
-                                className="text-xs px-2"
-                              >
-                                L{progress.level}
-                              </Badge>
-                            </div>
-                          )}
                         </div>
                       </motion.div>
                     )
@@ -1809,7 +2003,7 @@ export default function VerbsPage() {
             )}
 
             {/* Normal Flip Card Views - Grid of all cards */}
-            {!matchingMode && flipMode && !testMode && (
+            {!matchingMode && !particleQuizMode && flipMode && !testMode && (
               <div className="space-y-4">
                 {/* Flip All Back Button for normal mode */}
                 {flippedCards.size > 0 && (
@@ -1853,7 +2047,7 @@ export default function VerbsPage() {
                       >
                         {/* Front Side */}
                         <Card
-                          className="hover:shadow-lg transition-shadow relative w-full"
+                          className="relative w-full overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-200"
                           style={{
                             backfaceVisibility: "hidden",
                             WebkitBackfaceVisibility: "hidden",
@@ -1863,7 +2057,7 @@ export default function VerbsPage() {
                           {/* Button Group in Top Right */}
                           <div className="absolute top-2 right-2 z-10 flex items-center gap-1">
                             {/* Examples Toggle */}
-                            {verb.examples && verb.examples.length > 0 && (
+                            {verb.examples && (verb.examples.masu.length > 0 || verb.examples.dictionary.length > 0 || verb.examples.te.length > 0) && (
                               <button
                                 onClick={(e) => toggleExamplesPopup(verb, e)}
                                 className="p-1.5 rounded-full hover:bg-accent transition-colors"
@@ -1877,7 +2071,7 @@ export default function VerbsPage() {
                               </button>
                             )}
                             {/* Meanings Toggle */}
-                            {frontSide === 'english' && verb.meaning.length > 2 && (
+                            {frontSide === 'english' && verb.meaning.gloss.length > 2 && (
                               <button
                                 onClick={(e) => toggleMeaningExpansion(verb.id, e)}
                                 className="p-1.5 rounded-full hover:bg-accent transition-colors"
@@ -1890,6 +2084,11 @@ export default function VerbsPage() {
                                 )}
                               </button>
                             )}
+                          </div>
+
+                          {/* Valency badge - bottom left */}
+                          <div className="absolute bottom-2 left-2 z-10">
+                            {renderValencyBadge(verb, true)}
                           </div>
 
                           {/* Quiz mode badge - at bottom right corner */}
@@ -1902,14 +2101,14 @@ export default function VerbsPage() {
                             </div>
                           )}
 
-                          <CardContent className="p-6 text-center min-h-[180px] flex items-center justify-center">
+                          <CardContent className="p-6 text-center min-h-[180px] flex items-center justify-center bg-gradient-to-b from-background to-muted/30">
                             {renderCardContent(verb, frontSide, false)}
                           </CardContent>
                         </Card>
 
                         {/* Back Side */}
                         <Card
-                          className="absolute top-0 left-0 w-full hover:shadow-lg transition-shadow"
+                          className="absolute top-0 left-0 w-full overflow-hidden border-0 shadow-lg shadow-violet-200/60 dark:shadow-violet-900/40"
                           style={{
                             backfaceVisibility: "hidden",
                             WebkitBackfaceVisibility: "hidden",
@@ -1917,10 +2116,12 @@ export default function VerbsPage() {
                             minHeight: "180px"
                           }}
                         >
+                          {/* Accent bar at top — thicker on mobile for at-a-glance recognition */}
+                          <div className="h-1.5 sm:h-1 w-full bg-gradient-to-r from-violet-500 via-purple-500 to-indigo-500" />
                           {/* Button Group in Top Right (Back) */}
                           <div className="absolute top-2 right-2 z-10 flex items-center gap-1">
                             {/* Examples Toggle */}
-                            {verb.examples && verb.examples.length > 0 && (
+                            {verb.examples && (verb.examples.masu.length > 0 || verb.examples.dictionary.length > 0 || verb.examples.te.length > 0) && (
                               <button
                                 onClick={(e) => toggleExamplesPopup(verb, e)}
                                 className="p-1.5 rounded-full hover:bg-accent transition-colors"
@@ -1934,7 +2135,7 @@ export default function VerbsPage() {
                               </button>
                             )}
                             {/* Meanings Toggle */}
-                            {backSide === 'english' && verb.meaning.length > 2 && (
+                            {backSide === 'english' && verb.meaning.gloss.length > 2 && (
                               <button
                                 onClick={(e) => toggleMeaningExpansion(verb.id, e)}
                                 className="p-1.5 rounded-full hover:bg-accent transition-colors"
@@ -1948,7 +2149,7 @@ export default function VerbsPage() {
                               </button>
                             )}
                           </div>
-                          <CardContent className="p-6 text-center min-h-[180px] flex items-center justify-center bg-secondary/20">
+                          <CardContent className="p-4 sm:p-6 text-center min-h-[180px] flex items-center justify-center bg-gradient-to-b from-violet-100/90 via-purple-50/60 to-muted/30 dark:from-violet-950/50 dark:via-purple-950/30 dark:to-muted/30">
                             {renderCardContent(verb, backSide, false)}
                           </CardContent>
                         </Card>
@@ -1961,7 +2162,7 @@ export default function VerbsPage() {
             )}
 
             {/* Simplified Views - Grid Layout */}
-            {!matchingMode && !flipMode && viewMode !== "all" && (
+            {!matchingMode && !particleQuizMode && !flipMode && viewMode !== "all" && (
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
                 {filteredVerbs.map((verb, index) => (
                   <motion.div
@@ -1970,77 +2171,82 @@ export default function VerbsPage() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: Math.min(index * 0.02, 0.5) }}
                   >
-                    <Card className="hover:shadow-lg transition-all hover:scale-105 cursor-pointer group">
-                      <CardContent className="p-6 text-center space-y-3">
+                    <Card className="overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-200 cursor-pointer group border-0 shadow-md">
+                      {/* Glossy accent bar */}
+                      <div className={cn(
+                        "h-1 w-full",
+                        verb.morphology.class === 'godan' ? "bg-gradient-to-r from-blue-400 to-indigo-500" :
+                        verb.morphology.class === 'ichidan' ? "bg-gradient-to-r from-emerald-400 to-teal-500" :
+                        "bg-gradient-to-r from-orange-400 to-rose-500"
+                      )} />
+                      <CardContent className="p-5 text-center space-y-3 bg-gradient-to-b from-background to-muted/20">
                         {/* Main Display */}
-                        <div className="space-y-2">
+                        <div className="space-y-1.5">
                           {viewMode === "dictionary" && (
                             <>
-                              <div className="text-3xl font-bold group-hover:text-primary transition-colors">
-                                {verb.kanji}
+                              <div className="text-xl sm:text-3xl font-bold group-hover:text-primary transition-colors tracking-wide">
+                                {verb.lemma.kanji}
                               </div>
-                              <div className="text-sm text-muted-foreground">{verb.kana}</div>
-                              {verb.context && (
-                                <Badge variant="secondary" className="text-xs mt-1">
-                                  {verb.context}
-                                </Badge>
-                              )}
+                              <div className="text-sm text-muted-foreground">{verb.lemma.kana}</div>
                             </>
                           )}
                           {viewMode === "masu" && (
                             <>
-                              <div className="text-3xl font-bold group-hover:text-primary transition-colors">
-                                {verb.conjugations.masu}
+                              <div className="text-xl sm:text-3xl font-bold group-hover:text-primary transition-colors tracking-wide">
+                                {verb.forms.masu.kanji}
                               </div>
-                              <div className="text-sm text-muted-foreground">{verb.conjugations.masuKana}</div>
+                              <div className="text-sm text-muted-foreground">{verb.forms.masu.kana}</div>
                             </>
                           )}
                           {viewMode === "kana-masu" && (
                             <>
-                              <div className="text-3xl font-bold group-hover:text-primary transition-colors">
-                                {verb.conjugations.masuKana}
+                              <div className="text-xl sm:text-3xl font-bold group-hover:text-primary transition-colors tracking-wide">
+                                {verb.forms.masu.kana}
                               </div>
-                              <div className="text-sm text-muted-foreground">{verb.conjugations.masu}</div>
+                              <div className="text-sm text-muted-foreground">{verb.forms.masu.kanji}</div>
                             </>
                           )}
                           {viewMode === "dictionary-kana" && (
                             <>
-                              <div className="text-3xl font-bold group-hover:text-primary transition-colors">
-                                {verb.kana}
+                              <div className="text-xl sm:text-3xl font-bold group-hover:text-primary transition-colors tracking-wide">
+                                {verb.lemma.kana}
                               </div>
-                              <div className="text-sm text-muted-foreground">{verb.kanji}</div>
+                              <div className="text-sm text-muted-foreground">{verb.lemma.kanji}</div>
                             </>
                           )}
                           {viewMode === "te-form" && (
                             <>
-                              <div className="text-3xl font-bold group-hover:text-primary transition-colors">
-                                {verb.conjugations.te}
+                              <div className="text-xl sm:text-3xl font-bold group-hover:text-primary transition-colors tracking-wide">
+                                {verb.forms.te.kanji}
                               </div>
-                              <div className="text-sm text-muted-foreground">{verb.conjugations.teKana}</div>
+                              <div className="text-sm text-muted-foreground">{verb.forms.te.kana}</div>
                             </>
                           )}
                           {viewMode === "te-form-kana" && (
                             <>
-                              <div className="text-3xl font-bold group-hover:text-primary transition-colors">
-                                {verb.conjugations.teKana}
+                              <div className="text-xl sm:text-3xl font-bold group-hover:text-primary transition-colors tracking-wide">
+                                {verb.forms.te.kana}
                               </div>
-                              <div className="text-sm text-muted-foreground">{verb.conjugations.te}</div>
+                              <div className="text-sm text-muted-foreground">{verb.forms.te.kanji}</div>
                             </>
                           )}
                         </div>
 
                         {/* Meaning */}
-                        <div className="pt-2 border-t">
-                          <p className="text-sm font-medium">{verb.primaryMeaning}</p>
+                        <div className="pt-2 border-t border-border/50">
+                          <p className="text-sm font-medium">{verb.meaning.primary}</p>
                         </div>
 
-                        {/* Group Badge */}
-                        <Badge variant={
-                          verb.verbGroup === 'godan' ? 'default' :
-                          verb.verbGroup === 'ichidan' ? 'secondary' : 'outline'
-                        } className="text-xs">
-                          {verb.verbGroup}
-                        </Badge>
+                        {/* Group + Valency Badges */}
+                        <div className="flex flex-wrap items-center gap-1 justify-center">
+                          <Badge variant={
+                            verb.morphology.class === 'godan' ? 'default' :
+                            verb.morphology.class === 'ichidan' ? 'secondary' : 'outline'
+                          } className="text-xs">
+                            {verb.morphology.class}
+                          </Badge>
+                          {renderValencyBadge(verb, true)}
+                        </div>
                       </CardContent>
                     </Card>
                   </motion.div>
@@ -2049,7 +2255,7 @@ export default function VerbsPage() {
             )}
 
             {/* Full Information View */}
-            {!matchingMode && !flipMode && viewMode === "all" && (
+            {!matchingMode && !particleQuizMode && !flipMode && viewMode === "all" && (
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {filteredVerbs.map((verb, index) => (
                   <motion.div
@@ -2058,59 +2264,62 @@ export default function VerbsPage() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: Math.min(index * 0.05, 1) }}
                   >
-                    <Card className="hover:shadow-xl transition-all hover:scale-105 cursor-pointer h-full">
-                      <CardHeader className="pb-3">
+                    <Card className="overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-200 cursor-pointer h-full border-0 shadow-md">
+                      {/* Glossy header with gradient */}
+                      <div className={cn(
+                        "px-5 pt-4 pb-3",
+                        verb.morphology.class === 'godan'
+                          ? "bg-gradient-to-br from-blue-500/10 via-indigo-500/5 to-background"
+                          : verb.morphology.class === 'ichidan'
+                          ? "bg-gradient-to-br from-emerald-500/10 via-teal-500/5 to-background"
+                          : "bg-gradient-to-br from-orange-500/10 via-rose-500/5 to-background"
+                      )}>
                         <div className="flex items-start justify-between">
                           <div className="space-y-1 flex-1">
                             <div className="flex items-center gap-2">
-                              <CardTitle className="text-2xl font-bold">{verb.kanji}</CardTitle>
-                              {verb.context && (
-                                <Badge variant="secondary" className="text-xs">
-                                  {verb.context}
-                                </Badge>
-                              )}
+                              <CardTitle className="text-xl sm:text-2xl font-bold tracking-wide">{verb.lemma.kanji}</CardTitle>
                             </div>
                             <div className="flex items-center gap-2">
-                              <span className="text-lg text-muted-foreground">{verb.kana}</span>
+                              <span className="text-base sm:text-lg text-muted-foreground">{verb.lemma.kana}</span>
                               <Badge variant={
-                                verb.verbGroup === 'godan' ? 'default' :
-                                verb.verbGroup === 'ichidan' ? 'secondary' : 'outline'
+                                verb.morphology.class === 'godan' ? 'default' :
+                                verb.morphology.class === 'ichidan' ? 'secondary' : 'outline'
                               } className="text-xs">
-                                {verb.verbGroup}
+                                {verb.morphology.class}
                               </Badge>
                             </div>
                           </div>
                         </div>
-                      </CardHeader>
-                      <CardContent className="space-y-3">
+                      </div>
+                      <CardContent className="space-y-3 pt-3">
                         <div>
                           <p className="text-sm font-semibold text-muted-foreground mb-1">Primary Meaning:</p>
-                          <p className="font-medium">{verb.primaryMeaning}</p>
+                          <p className="font-medium">{verb.meaning.primary}</p>
                         </div>
 
                         <div>
                           <p className="text-sm font-semibold text-muted-foreground mb-1">Masu Form:</p>
                           <div className="flex items-baseline gap-2">
-                            <span className="text-lg font-bold">{verb.conjugations.masu}</span>
-                            <span className="text-sm text-muted-foreground">({verb.conjugations.masuKana})</span>
+                            <span className="text-lg font-bold">{verb.forms.masu.kanji}</span>
+                            <span className="text-sm text-muted-foreground">({verb.forms.masu.kana})</span>
                           </div>
                         </div>
 
                         <div>
                           <p className="text-sm font-semibold text-muted-foreground mb-1">Te-form:</p>
                           <div className="flex items-baseline gap-2">
-                            <span className="text-lg font-bold">{verb.conjugations.te}</span>
-                            <span className="text-sm text-muted-foreground">({verb.conjugations.teKana})</span>
+                            <span className="text-lg font-bold">{verb.forms.te.kanji}</span>
+                            <span className="text-sm text-muted-foreground">({verb.forms.te.kana})</span>
                           </div>
                         </div>
 
-                        {verb.meaning.length > 1 && (
+                        {verb.meaning.gloss.length > 1 && (
                           <details className="text-sm">
                             <summary className="cursor-pointer text-muted-foreground hover:text-foreground">
-                              +{verb.meaning.length - 1} more meanings
+                              +{verb.meaning.gloss.length - 1} more meanings
                             </summary>
                             <ul className="mt-2 space-y-1 pl-4 list-disc text-muted-foreground">
-                              {verb.meaning.slice(1, 4).map((m, i) => (
+                              {verb.meaning.gloss.slice(1, 4).map((m, i) => (
                                 <li key={i}>{m}</li>
                               ))}
                             </ul>
@@ -2118,21 +2327,21 @@ export default function VerbsPage() {
                         )}
 
                         <div className="flex items-center gap-2 pt-2">
-                          {verb.verbType.transitive && (
-                            <Badge variant="outline" className="text-xs">Transitive</Badge>
-                          )}
-                          {verb.verbType.intransitive && (
-                            <Badge variant="outline" className="text-xs">Intransitive</Badge>
+                          {renderValencyBadge(verb, false)}
+                          {verb.valency.requiredParticles.length > 1 && (
+                            <span className="text-xs text-muted-foreground">
+                              also: {verb.valency.requiredParticles.slice(1).join('/')}
+                            </span>
                           )}
                         </div>
 
                         {/* Examples Section */}
-                        {verb.examples && verb.examples.length > 0 && (
+                        {verb.examples && verb.examples.masu.length > 0 && (
                           <div className="pt-3 border-t mt-3">
                             <div className="flex items-center justify-between mb-2">
                               <div className="flex items-center gap-2">
                                 <BookText className="h-4 w-4 text-primary" />
-                                <p className="text-sm font-semibold text-primary">Basic Examples ({verb.examples.length})</p>
+                                <p className="text-sm font-semibold text-primary">Masu Examples ({verb.examples.masu.length})</p>
                               </div>
                               <button
                                 onClick={(e) => toggleExamplesExpansion(verb.id, e)}
@@ -2155,7 +2364,7 @@ export default function VerbsPage() {
                                 transition={{ duration: 0.2 }}
                                 className="space-y-3"
                               >
-                                {verb.examples.map((example, idx) => (
+                                {verb.examples.masu.map((example, idx) => (
                                   <div
                                     key={idx}
                                     className="p-3 rounded-lg bg-muted/50 border border-border/50 space-y-1.5"
@@ -2166,10 +2375,10 @@ export default function VerbsPage() {
                                       </Badge>
                                       <div className="space-y-1 flex-1">
                                         <p className="text-sm font-medium leading-relaxed">
-                                          {example.japanese}
+                                          {example.jp}
                                         </p>
                                         <p className="text-xs text-muted-foreground leading-relaxed">
-                                          {example.english}
+                                          {example.en}
                                         </p>
                                         {example.highlight && (
                                           <Badge variant="secondary" className="text-xs mt-1">
@@ -2211,10 +2420,10 @@ export default function VerbsPage() {
           {examplesPopup && (() => {
             const formType = examplesPopup.formType || selectedExampleForm
             const examples = formType === 'dict'
-              ? examplesPopup.verb.dictFormExamples
+              ? examplesPopup.verb.examples.dictionary
               : formType === 'te'
-              ? examplesPopup.verb.teFormExamples
-              : examplesPopup.verb.examples
+              ? examplesPopup.verb.examples.te
+              : examplesPopup.verb.examples.masu
 
             return examples && examples.length > 0 && (
               <>
@@ -2246,7 +2455,7 @@ export default function VerbsPage() {
                         <div className="flex items-center gap-2">
                           <BookText className="h-4 w-4 text-primary" />
                           <CardTitle className="text-base">
-                            {examplesPopup.verb.kanji}
+                            {examplesPopup.verb.lemma.kanji}
                           </CardTitle>
                         </div>
                         <Button
@@ -2307,10 +2516,10 @@ export default function VerbsPage() {
                             </Badge>
                             <div className="space-y-0.5 flex-1">
                               <p className="text-sm font-medium">
-                                {examplesPopup.showKana ? example.kana : example.japanese}
+                                {examplesPopup.showKana ? example.kana : example.jp}
                               </p>
                               <p className="text-xs text-muted-foreground">
-                                {example.english}
+                                {example.en}
                               </p>
                               <div className="flex gap-1 flex-wrap">
                                 {example.highlight && (

@@ -24,7 +24,7 @@ export default function VerbFormMasterPage() {
   const loadQuestions = async (count: number) => {
     try {
       // Load verb dataset
-      const response = await fetch('/seed-data/N5_verbs_dataset.json')
+      const response = await fetch('/seed-data/N5_verbs_dataset_merged.json')
       const data = await response.json()
       const verbs: VerbData[] = data.verbs
 
@@ -88,8 +88,8 @@ export default function VerbFormMasterPage() {
           onClick={() => router.push('/verbs')}
           className="mb-6"
         >
-          <ArrowLeft className="w-4 h-4 mr-2" />
-          Back to Verbs
+          <ArrowLeft className="w-4 h-4 mr-1.5" />
+          Back
         </Button>
 
         <Card>
@@ -97,7 +97,7 @@ export default function VerbFormMasterPage() {
             <div className="flex items-center justify-center mb-4">
               <Settings className="w-12 h-12 text-primary" />
             </div>
-            <CardTitle className="text-center text-3xl">Verb Form Master Setup</CardTitle>
+            <CardTitle className="text-center text-2xl sm:text-3xl">Verb Form Master Setup</CardTitle>
             <CardDescription className="text-center text-lg">
               Configure your practice session
             </CardDescription>
@@ -120,7 +120,7 @@ export default function VerbFormMasterPage() {
                   }`}
                 >
                   <div className="text-center space-y-2">
-                    <div className={`text-4xl font-bold mb-2 ${
+                    <div className={`text-2xl sm:text-4xl font-bold mb-2 ${
                       displayMode === 'kanji' ? 'text-blue-600 dark:text-blue-400' : ''
                     }`}>
                       漢字
@@ -147,7 +147,7 @@ export default function VerbFormMasterPage() {
                   }`}
                 >
                   <div className="text-center space-y-2">
-                    <div className={`text-4xl font-bold mb-2 ${
+                    <div className={`text-2xl sm:text-4xl font-bold mb-2 ${
                       displayMode === 'kana' ? 'text-purple-600 dark:text-purple-400' : ''
                     }`}>
                       かな
@@ -176,28 +176,28 @@ export default function VerbFormMasterPage() {
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {[
-                  { count: 5, label: 'Quick', time: '~2 min', color: 'green' },
-                  { count: 10, label: 'Standard', time: '~5 min', color: 'blue' },
-                  { count: 15, label: 'Extended', time: '~8 min', color: 'orange' },
-                  { count: 20, label: 'Marathon', time: '~10 min', color: 'red' }
+                  { count: 5, label: 'Quick', time: '~2 min', activeClass: 'border-green-500 bg-green-50 dark:bg-green-950', textClass: 'text-green-600 dark:text-green-400', subClass: 'text-green-700 dark:text-green-300' },
+                  { count: 10, label: 'Standard', time: '~5 min', activeClass: 'border-blue-500 bg-blue-50 dark:bg-blue-950', textClass: 'text-blue-600 dark:text-blue-400', subClass: 'text-blue-700 dark:text-blue-300' },
+                  { count: 15, label: 'Extended', time: '~8 min', activeClass: 'border-orange-500 bg-orange-50 dark:bg-orange-950', textClass: 'text-orange-600 dark:text-orange-400', subClass: 'text-orange-700 dark:text-orange-300' },
+                  { count: 20, label: 'Marathon', time: '~10 min', activeClass: 'border-red-500 bg-red-50 dark:bg-red-950', textClass: 'text-red-600 dark:text-red-400', subClass: 'text-red-700 dark:text-red-300' }
                 ].map((option) => (
                   <button
                     key={option.count}
                     onClick={() => setQuestionsPerSession(option.count)}
                     className={`relative p-4 rounded-xl border-2 transition-all duration-200 ${
                       questionsPerSession === option.count
-                        ? `border-${option.color}-500 bg-${option.color}-50 dark:bg-${option.color}-950 shadow-md scale-105`
+                        ? `${option.activeClass} shadow-md scale-105`
                         : 'border-border hover:border-primary/50 hover:shadow-sm'
                     }`}
                   >
                     <div className="text-center space-y-1">
-                      <p className={`text-3xl font-bold ${
-                        questionsPerSession === option.count ? `text-${option.color}-600 dark:text-${option.color}-400` : ''
+                      <p className={`text-2xl sm:text-3xl font-bold ${
+                        questionsPerSession === option.count ? option.textClass : ''
                       }`}>
                         {option.count}
                       </p>
                       <p className={`text-xs font-medium ${
-                        questionsPerSession === option.count ? `text-${option.color}-700 dark:text-${option.color}-300` : 'text-muted-foreground'
+                        questionsPerSession === option.count ? option.subClass : 'text-muted-foreground'
                       }`}>
                         {option.label}
                       </p>
@@ -205,7 +205,7 @@ export default function VerbFormMasterPage() {
                     </div>
                     {questionsPerSession === option.count && (
                       <div className="absolute -top-1 -right-1">
-                        <CheckCircle2 className={`w-4 h-4 text-${option.color}-600 dark:text-${option.color}-400`} />
+                        <CheckCircle2 className={`w-4 h-4 ${option.textClass}`} />
                       </div>
                     )}
                   </button>
@@ -244,7 +244,7 @@ export default function VerbFormMasterPage() {
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="text-center space-y-4">
-              <div className="text-6xl font-bold text-primary">{percentage}%</div>
+              <div className="text-4xl sm:text-6xl font-bold text-primary">{percentage}%</div>
               <p className="text-xl">
                 {score} out of {questions.length} correct
               </p>
@@ -267,9 +267,9 @@ export default function VerbFormMasterPage() {
                 <RotateCcw className="w-4 h-4 mr-2" />
                 Try Again
               </Button>
-              <Button onClick={() => router.push('/verbs')} variant="outline" size="lg">
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                Back to Verbs
+              <Button onClick={() => router.push('/verbs')} variant="ghost" size="lg">
+                <ArrowLeft className="w-4 h-4 mr-1.5" />
+                Back
               </Button>
             </div>
           </CardContent>
@@ -291,7 +291,7 @@ export default function VerbFormMasterPage() {
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back
         </Button>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 sm:gap-4">
           <Badge variant="outline" className="text-lg py-1 px-3">
             <Target className="w-4 h-4 mr-2" />
             {score}/{questions.length}
@@ -337,18 +337,18 @@ export default function VerbFormMasterPage() {
 
         <CardContent className="space-y-6 p-6">
           {/* Sentence */}
-          <div className="relative bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 rounded-2xl p-8 shadow-inner border-2 border-blue-100 dark:border-blue-900">
+          <div className="relative bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 rounded-2xl p-4 sm:p-8 shadow-inner border-2 border-blue-100 dark:border-blue-900">
             <div className="absolute top-3 right-3">
               <div className="bg-white dark:bg-gray-800 rounded-full p-2 shadow-md">
                 <span className="text-xs font-semibold text-blue-600 dark:text-blue-400">📝</span>
               </div>
             </div>
             <div className="space-y-3">
-              <p className="text-3xl font-bold text-center leading-relaxed text-gray-900 dark:text-gray-100">
+              <p className="text-xl sm:text-3xl font-bold text-center leading-relaxed text-gray-900 dark:text-gray-100">
                 {displayMode === 'kanji' ? currentQuestion.sentence : currentQuestion.sentenceKana}
               </p>
               {displayMode === 'kanji' && (
-                <p className="text-xl text-center text-gray-600 dark:text-gray-400">{currentQuestion.sentenceKana}</p>
+                <p className="text-base sm:text-xl text-center text-gray-600 dark:text-gray-400">{currentQuestion.sentenceKana}</p>
               )}
               <div className="pt-2 border-t border-blue-200 dark:border-blue-800">
                 <p className="text-base text-center text-gray-700 dark:text-gray-300 italic">
@@ -391,7 +391,7 @@ export default function VerbFormMasterPage() {
                           'bg-gray-300 dark:bg-gray-600 group-hover:bg-indigo-400'
                         }`} />
                         <div>
-                          <p className={`text-2xl font-bold leading-tight ${
+                          <p className={`text-lg sm:text-2xl font-bold leading-tight ${
                             showCorrect ? 'text-green-700 dark:text-green-300' :
                             showIncorrect ? 'text-red-700 dark:text-red-300' :
                             isSelected ? 'text-indigo-700 dark:text-indigo-300' :

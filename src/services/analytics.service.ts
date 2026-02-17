@@ -5,7 +5,7 @@
  * Provides insights and recommendations based on study patterns.
  */
 
-import { db } from '@/lib/db'
+import { db, DBParticleQuizResult } from '@/lib/db'
 import { DailyStats, ProgressSnapshot, StreakInfo, PerformanceMetrics, ActivityDataPoint } from '@/types/analytics'
 import { StudySession } from '@/types/vocabulary'
 import { CardState } from '@/lib/fsrs'
@@ -412,6 +412,105 @@ export class AnalyticsService {
       .reverse()
       .limit(limit)
       .toArray()
+  }
+
+  /**
+   * Save all answers from a single particle quiz session
+   */
+  async saveParticleQuizSession(
+    sessionId: string,
+    results: Array<{
+      verbId: string
+      verbKanji: string
+      verbMeaning: string
+      valencyType: string
+      correctParticle: string
+      chosenParticle: string
+      correct: boolean
+    }>
+  ): Promise<void> {
+    const rows: DBParticleQuizResult[] = results.map(r => ({
+      sessionId,
+      date: new Date(),
+      verbId: r.verbId,
+      verbKanji: r.verbKanji,
+      verbMeaning: r.verbMeaning,
+      valencyType: r.valencyType,
+      correctParticle: r.correctParticle,
+      chosenParticle: r.chosenParticle,
+      correct: r.correct
+    }))
+    await db.particleQuizResults.bulkAdd(rows)
+  }
+
+  /**
+   * Aggregate particle quiz stats across all stored sessions
+   */
+  async getParticleQuizStats(): Promise<{
+    totalAttempts: number
+    overallAccuracy: number
+    byValencyType: Record<string, { attempts: number; correct: number; accuracy: number }>
+    byParticle: Record<string, { attempts: number; correct: number; confusion: Record<string, number> }>
+    worstVerbs: Array<{ verbId: string; verbKanji: string; verbMeaning: string; attempts: number; accuracy: number }>
+  }> {
+    const all = await db.particleQuizResults.toArray()
+
+    if (all.length === 0) {
+      return {
+        totalAttempts: 0,
+        overallAccuracy: 0,
+        byValencyType: {},
+        byParticle: {},
+        worstVerbs: []
+      }
+    }
+
+    const totalCorrect = all.filter(r => r.correct).length
+    const overallAccuracy = Math.round((totalCorrect / all.length) * 100)
+
+    // By valency type
+    const byValencyType: Record<string, { attempts: number; correct: number; accuracy: number }> = {}
+    for (const r of all) {
+      if (!byValencyType[r.valencyType]) {
+        byValencyType[r.valencyType] = { attempts: 0, correct: 0, accuracy: 0 }
+      }
+      byValencyType[r.valencyType].attempts++
+      if (r.correct) byValencyType[r.valencyType].correct++
+    }
+    for (const key of Object.keys(byValencyType)) {
+      const v = byValencyType[key]
+      v.accuracy = Math.round((v.correct / v.attempts) * 100)
+    }
+
+    // By correct particle — confusion map: what did user choose instead?
+    const byParticle: Record<string, { attempts: number; correct: number; confusion: Record<string, number> }> = {}
+    for (const r of all) {
+      const p = r.correctParticle
+      if (!byParticle[p]) byParticle[p] = { attempts: 0, correct: 0, confusion: {} }
+      byParticle[p].attempts++
+      if (r.correct) {
+        byParticle[p].correct++
+      } else {
+        byParticle[p].confusion[r.chosenParticle] = (byParticle[p].confusion[r.chosenParticle] || 0) + 1
+      }
+    }
+
+    // Worst verbs (min 2 attempts, sorted by ascending accuracy)
+    const verbMap: Record<string, { verbId: string; verbKanji: string; verbMeaning: string; attempts: number; correct: number }> = {}
+    for (const r of all) {
+      if (!verbMap[r.verbId]) {
+        verbMap[r.verbId] = { verbId: r.verbId, verbKanji: r.verbKanji, verbMeaning: r.verbMeaning, attempts: 0, correct: 0 }
+      }
+      verbMap[r.verbId].attempts++
+      if (r.correct) verbMap[r.verbId].correct++
+    }
+    const worstVerbs = Object.values(verbMap)
+      .filter(v => v.attempts >= 2)
+      .map(v => ({ ...v, accuracy: Math.round((v.correct / v.attempts) * 100) }))
+      .sort((a, b) => a.accuracy - b.accuracy)
+      .slice(0, 5)
+
+    return { totalAttempts: all.length, overallAccuracy, byValencyType, byParticle, worstVerbs }
   }
 }
 

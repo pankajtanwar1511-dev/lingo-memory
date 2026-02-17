@@ -19,10 +19,9 @@ import { Search, Loader2, Check } from 'lucide-react'
 
 interface N5Verb {
   id: string
-  kanji: string
-  kana: string
-  primaryMeaning: string
-  verbGroup: string
+  lemma: { kanji: string; kana: string }
+  meaning: { primary: string; gloss: string[] }
+  morphology: { class: string; isIrregular: boolean }
 }
 
 interface ManageListVerbsDialogProps {
@@ -51,9 +50,9 @@ export function ManageListVerbsDialog({
   const filteredVerbs = allVerbs.filter(verb => {
     const query = searchQuery.toLowerCase()
     return (
-      verb.kanji.includes(query) ||
-      verb.kana.includes(query) ||
-      verb.primaryMeaning.toLowerCase().includes(query)
+      verb.lemma.kanji.includes(query) ||
+      verb.lemma.kana.includes(query) ||
+      verb.meaning.primary.toLowerCase().includes(query)
     )
   })
 
@@ -146,14 +145,14 @@ export function ManageListVerbsDialog({
                     />
                     <div className="flex-1">
                       <div className="flex items-center gap-2">
-                        <span className="font-bold text-lg">{verb.kanji}</span>
-                        <span className="text-muted-foreground">({verb.kana})</span>
+                        <span className="font-bold text-lg">{verb.lemma.kanji}</span>
+                        <span className="text-muted-foreground">({verb.lemma.kana})</span>
                         <Badge variant="outline" className="ml-auto">
-                          {verb.verbGroup}
+                          {verb.morphology.class}
                         </Badge>
                       </div>
                       <p className="text-sm text-muted-foreground mt-1">
-                        {verb.primaryMeaning}
+                        {verb.meaning.primary}
                       </p>
                     </div>
                     {isSelected && (
