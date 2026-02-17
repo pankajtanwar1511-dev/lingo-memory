@@ -840,16 +840,16 @@ Total words: 824
 | あつめる | 集める | to collect; to gather | verb | ichidan |  |
 | あんないする | 案内する | to show around; to guide | verb | suru-verb |  |
 | いそぐ | 急ぐ | to hurry | verb | godan |  |
-| うごく | 動く | to move; to work | verb | godan |  |
+| うごく | 動く | to move; to operate (machine) | verb | godan |  |
 | うんてんする | 運転する | to drive | verb | suru-verb |  |
 | おもいだす | 思い出す | to remember; to recollect | verb | godan |  |
 | おもう | 思う | to think | verb | godan |  |
-| おろす | 下ろす | to withdraw; to take down | verb | godan |  |
+| おろす | 下ろす | to take down; to lower; to withdraw (money) | verb | godan |  |
 | かつ | 勝つ | to win | verb | godan |  |
 | かんがえる | 考える | to think; to consider | verb | ichidan |  |
 | がんばる | 頑張る | to do one's best; to persevere | verb | godan |  |
-| きをつける | 気をつける | to be careful; to pay attention | verb | ichidan |  |
-| くれる |  | to give (to me/us) | verb | ichidan |  |
+| きをつける | 気をつける | to be careful; to take care | verb | ichidan |  |
+| くれる | 呉れる | to give (to me/us) | verb | ichidan |  |
 | けんがくする | 見学する | to visit for study; to tour | verb | suru-verb |  |
 | けんきゅうする | 研究する | to do research; to study | verb | suru-verb |  |
 | さわる | 触る | to touch | verb | godan |  |
@@ -864,7 +864,7 @@ Total words: 824
 | せつめいする | 説明する | to explain | verb | suru-verb |  |
 | たりる | 足りる | to be enough; to be sufficient | verb | ichidan |  |
 | つれていく | 連れて行く | to take (someone) along | verb | godan (compound) |  |
-| つれてくる | 連れて来る | to bring (someone) | verb | irregular (compound) |  |
+| つれてくる | 連れて来る | to bring (someone) | verb | irregular (くる compound) |  |
 | てつだう | 手伝う | to help (with a task) | verb | godan |  |
 | としをとる | 年を取る | to grow old; to age | verb | godan (compound) |  |
 | とめる | 止める | to stop; to turn off | verb | ichidan |  |
@@ -875,8 +875,8 @@ Total words: 824
 | まける | 負ける | to lose; to be beaten | verb | ichidan |  |
 | まわす | 回す | to rotate; to spin | verb | godan |  |
 | むかえる | 迎える | to go to meet; to welcome | verb | ichidan |  |
-| もってくる | 持って来る | to bring (something) | verb | irregular (compound) |  |
-| やくにたつ | 役に立つ | to be useful; to be helpful | verb | godan (compound) |  |
-| やめる | 辞める | to quit; to retire; to stop | verb | ichidan |  |
+| もってくる | 持って来る | to bring (something) | verb | irregular (くる compound) |  |
+| やくにたつ | 役に立つ | to be useful; to be of help | verb | godan (compound) |  |
+| やめる |  | to quit; to stop; to give up | verb | ichidan |  |
 | よやくする | 予約する | to reserve; to book | verb | suru-verb |  |
 | りゅうがくする | 留学する | to study abroad | verb | suru-verb |  |
