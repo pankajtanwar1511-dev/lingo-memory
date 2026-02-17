@@ -49,7 +49,7 @@ Total words: 824
 | ある |  | to exist (inanimate) | verb | godan |  |
 | あるく | 歩く | to walk | verb | godan |  |
 | あれ |  | that | noun |  |  |
-| いい |  | good | adjective |  | i-adjective |
+| いい |  | good | adjective |  | i-adjective (irregular) |
 | いいえ |  | no | interjection |  |  |
 | いう | 言う | to say | verb | godan |  |
 | いえ | 家 | house | noun |  |  |
@@ -249,12 +249,12 @@ Total words: 824
 | けさ | 今朝 | this morning | adverb, noun |  |  |
 | けしゴム | 消しゴム | eraser | noun |  |  |
 | けす | 消す | to erase | verb | godan |  |
-| けっこう | 結構 | quite; fine; no thank you | adjective, noun, adverb |  | na-adjective |
+| けっこう | 結構 | splendid; sufficient; "no thank you" (polite refusal) | adjective, noun, adverb |  | na-adjective |
 | けっこん | 結婚 | marriage | noun |  |  |
-| けっこんする | 結婚する | to get married | verb | suru-verb |  |
+| けっこんする | 結婚する | to marry | verb | suru-verb |  |
 | げつようび | 月曜日 | Monday | adverb, noun |  |  |
 | げんかん | 玄関 | entrance | noun |  |  |
-| げんき | 元気 | healthy; energetic | adjective, noun |  | na-adjective |
+| げんき | 元気 | healthy; energetic; well (in greetings) | adjective, noun |  | na-adjective |
 | こ | 子 | child | noun |  |  |
 | こうえん | 公園 | (public) park | noun |  |  |
 | こうさてん | 交差点 | crossing | noun |  |  |
@@ -265,7 +265,7 @@ Total words: 824
 | ここのか | 九日 | 9th day of the month | noun |  |  |
 | ここのつ | 九つ | nine | noun |  |  |
 | こたえ | 答え | answer | noun |  |  |
-| こたえる | 答える | to answer | verb | ichidan |  |
+| こたえる | 答える | to answer (a question) | verb | ichidan |  |
 | こちら |  | this way | noun |  |  |
 | こちらこそ |  | it is I who should say so | expression |  |  |
 | こっち |  | this way | noun |  |  |
@@ -328,7 +328,7 @@ Total words: 824
 | しゅくだい | 宿題 | homework | noun |  |  |
 | しょうゆ | 醤油 | soy sauce | noun |  |  |
 | しょくどう | 食堂 | dining room | noun |  |  |
-| しる | 知る | to know | verb | godan |  |
+| しる | 知る | to know; to learn (a fact) | verb | godan |  |
 | しろ | 白 | white | noun |  |  |
 | しろい | 白い | white | adjective |  | i-adjective |
 | しんぶん | 新聞 | newspaper | noun |  |  |
@@ -357,7 +357,7 @@ Total words: 824
 | すしや |  | sushi shop | noun |  |  |
 | すずしい | 涼しい | cool | adjective |  | i-adjective |
 | すみません |  | excuse me | expression |  |  |
-| すむ | 住む | to live (of humans) | verb | godan |  |
+| すむ | 住む | to live; to reside | verb | godan |  |
 | する |  | to do | verb | irregular |  |
 | すわる | 座る | to sit (down) | verb | godan |  |
 | ずつ |  | apiece | particle |  |  |
@@ -408,7 +408,7 @@ Total words: 824
 | たんじょうび | 誕生日 | birthday | noun |  |  |
 | だい | 台 | counter for machines/vehicles | counter |  |  |
 | だいがく | 大学 | university | noun |  |  |
-| だいじょうぶ | 大丈夫 | safe; okay | adjective, noun, adverb |  | na-adjective |
+| だいじょうぶ | 大丈夫 | all right; okay; safe; no problem | adjective, noun, adverb |  | na-adjective |
 | だいすき | 大好き | very fond of; love (something) | adjective, noun |  | na-adjective |
 | だいたい |  | generally | adverb, noun |  |  |
 | だいどころ | 台所 | kitchen | noun |  |  |
@@ -446,12 +446,12 @@ Total words: 824
 | てがみ | 手紙 | letter | noun |  |  |
 | てんき | 天気 | weather | noun |  |  |
 | でかける | 出かける | to go out (e.g. on an excursion or outing) | verb | ichidan |  |
-| できる | 出来る | can do; be able to | verb | ichidan |  |
+| できる | 出来る | can do; be able to; to be completed; to be made | verb | ichidan |  |
 | でぐち | 出口 | exit | noun |  |  |
 | では |  | then | conjunction |  |  |
 | ではまた |  | see you later | expression |  |  |
 | でも |  | but | conjunction, particle |  |  |
-| でる | 出る | to leave | verb | ichidan |  |
+| でる | 出る | to go out; to leave; to appear | verb | ichidan |  |
 | でんき | 電気 | electricity | noun |  |  |
 | でんしゃ | 電車 | train | noun |  |  |
 | でんわ | 電話 | telephone call | noun |  |  |
@@ -475,7 +475,7 @@ Total words: 824
 | ともだち | 友達 | friend | noun |  |  |
 | とり | 鳥 | bird | noun |  |  |
 | とりにく | 鶏肉 | chicken meat | noun |  |  |
-| とる | 取る | to take | verb | godan |  |
+| とる | 取る | to take; to pick up; to obtain | verb | godan |  |
 | とる | 撮る | to take (a photograph) | verb | godan |  |
 | ど | 度 | counter for degrees | counter |  |  |
 | どう |  | how | adverb |  |  |
@@ -537,14 +537,14 @@ Total words: 824
 | は | 歯 | tooth | noun |  |  |
 | はい |  | yes | interjection |  |  |
 | はいざら | 灰皿 | ashtray | noun |  |  |
-| はいる | 入る | to enter | verb | godan |  |
+| はいる | 入る | to enter; to go in | verb | godan |  |
 | はがき | 葉書 | postcard | noun |  |  |
 | はく | 掃く | to sweep | verb | godan |  |
 | はく | 履く | to put on (lower-body clothing, e.g. pants, skirt, footwear) | verb | godan |  |
 | はこ | 箱 | box | noun |  |  |
 | はし | 橋 | bridge | noun |  |  |
 | はしる | 走る | to run | verb | godan |  |
-| はじまる | 始まる | to begin | verb | godan |  |
+| はじまる | 始まる | to begin (intransitive) | verb | godan |  |
 | はじめて | 初めて | for the first time | adverb |  |  |
 | はじめに |  | first | adverb |  |  |
 | はじめまして |  | nice to meet you | expression |  |  |
@@ -608,7 +608,7 @@ Total words: 824
 | べんり | 便利 | convenient | adjective, noun |  | na-adjective |
 | ほう | 方 | direction; person (polite) | noun |  |  |
 | ほか | 他 | another place/other | noun |  |  |
-| ほしい | 欲しい | wanting (to have) | adjective |  | i-adjective |
+| ほしい | 欲しい | to want (something) | adjective |  | i-adjective |
 | ほそい | 細い | thin | adjective |  | i-adjective |
 | ほん | 本 | book | noun |  |  |
 | ほんだな | 本棚 | bookshelves | noun |  |  |
@@ -629,7 +629,7 @@ Total words: 824
 | また |  | again/also | adverb |  |  |
 | まだ |  | still/not yet | adverb |  |  |
 | まち | 町 | town | noun |  |  |
-| まっすぐ |  | straight; direct | adjective, adverb |  | na-adjective |
+| まっすぐ |  | straight; straight ahead | adjective, adverb |  | na-adjective |
 | まつ | 待つ | to wait | verb | godan |  |
 | まど | 窓 | window | noun |  |  |
 | まん | 万 | 10,000 | noun |  |  |
@@ -677,7 +677,7 @@ Total words: 824
 | やすむ | 休む | to be absent | verb | godan |  |
 | やっつ | 八つ | eight | noun |  |  |
 | やま | 山 | mountain | noun |  |  |
-| やる |  | to do; to give (casual) | verb | godan |  |
+| やる |  | to do; to give (to someone lower / casual) | verb | godan |  |
 | ゆうがた | 夕方 | early evening (usu. from 3pm to 6pm) | noun |  |  |
 | ゆうはん | 夕飯 | evening meal | noun |  |  |
 | ゆうびんきょく | 郵便局 | post office | noun |  |  |
@@ -870,7 +870,7 @@ Total words: 824
 | とめる | 止める | to stop; to turn off | verb | ichidan |  |
 | なおす | 直す | to repair; to correct | verb | godan |  |
 | のりかえる | 乗り換える | to change (trains, buses, etc.) | verb | ichidan |  |
-| はじめる | 始める | to start; to begin | verb | ichidan |  |
+| はじめる | 始める | to start; to begin (something) | verb | ichidan |  |
 | はらう | 払う | to pay | verb | godan |  |
 | まける | 負ける | to lose; to be beaten | verb | ichidan |  |
 | まわす | 回す | to rotate; to spin | verb | godan |  |
