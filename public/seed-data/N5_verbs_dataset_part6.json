@@ -1,992 +1,1051 @@
 {
   "metadata": {
-    "version": "1.3.1",
+    "version": "2.0.0",
     "generatedAt": "2026-02-10T15:49:37.551Z",
-    "description": "Complete JLPT N5 verbs with corrected conjugations and clarified meanings",
-    "totalEntries": 141,
-    "uniqueVerbs": 141,
-    "verbsWithJMdictData": 131,
-    "dataSource": "Minna no Nihongo + JMdict",
-    "groups": {
-      "godan": 77,
-      "ichidan": 39,
-      "irregular": 25
-    }
+    "description": "JLPT N5 verbs - normalized schema v2",
+    "totalEntries": 10,
+    "schema": "normalized-v2"
   },
   "verbs": [
     {
-      "id": "n5_verb_0054",
-      "kanji": "無くす",
-      "kana": "なくす",
-      "romaji": "nakusu",
-      "meaning": [
-        "lose",
-        "to lose (something)",
-        "to get rid of",
-        "to eliminate",
-        "to remove",
-        "to eradicate",
-        "to abolish"
-      ],
-      "primaryMeaning": "lose",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": false
+      "id": "n5_v_0054",
+      "lemma": {
+        "kanji": "無くす",
+        "kana": "なくす"
       },
-      "conjugations": {
-        "dictionary": "無くす",
-        "dictionaryKana": "なくす",
-        "masu": "無くします",
-        "masuKana": "なくします",
-        "te": "無くして",
-        "teKana": "なくして"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "財布を無くしました。",
-          "kana": "さいふをなくしました。",
-          "english": "I lost my wallet.",
-          "highlight": "losing belongings"
+      "valency": {
+        "type": "transitive",
+        "requiredParticles": [
+          "を"
+        ]
+      },
+      "meaning": {
+        "primary": "to lose",
+        "gloss": [
+          "lose",
+          "misplace",
+          "get rid of"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "無くす",
+          "kana": "なくす"
         },
-        {
-          "japanese": "鍵を無くしました。",
-          "kana": "かぎをなくしました。",
-          "english": "I lost my key.",
-          "highlight": "warning about loss"
+        "masu": {
+          "kanji": "無くします",
+          "kana": "なくします"
+        },
+        "te": {
+          "kanji": "無くして",
+          "kana": "なくして"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "毎日、物を無くす。",
+            "kana": "まいにち、ものをなくす。",
+            "en": "I lose things every day.",
+            "grammarTag": "dictionary-nonpast",
+            "pattern": "Time + Object を + Verb(dictionary)",
+            "highlight": "transitive: direct object を"
+          },
+          {
+            "jp": "無くすのが好きです。",
+            "kana": "なくすのがすきです。",
+            "en": "I tend to lose things.",
+            "grammarTag": "no-ga",
+            "pattern": "Verb(dictionary) + のが + Adjective",
+            "highlight": "nominalization"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "よく大切なものを無くします。",
+            "kana": "よくたいせつなものをなくします。",
+            "en": "I often lose important things.",
+            "grammarTag": "polite-nonpast",
+            "pattern": "Adverb + Adjective + Object を + Verb(ます)",
+            "highlight": "tendency with adjective"
+          },
+          {
+            "jp": "鍵を無くしました。",
+            "kana": "かぎをなくしました。",
+            "en": "I lost my key.",
+            "grammarTag": "polite-past",
+            "pattern": "Object を + Verb(ました)",
+            "highlight": "warning about loss"
+          }
+        ],
+        "te": [
+          {
+            "jp": "無くしてください。",
+            "kana": "なくしてください。",
+            "en": "Please don't lose it.",
+            "grammarTag": "te-kudasai",
+            "pattern": "Verb(て) + ください",
+            "highlight": "polite request"
+          },
+          {
+            "jp": "無くしています。",
+            "kana": "なくしています。",
+            "en": "I have lost it.",
+            "grammarTag": "te-iru",
+            "pattern": "Verb(て) + います",
+            "highlight": "resulting state of loss"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0054.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0054.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1529530",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "無くしてください。",
-          "kana": "なくしてください。",
-          "english": "Please lose.",
-          "highlight": "polite request",
-          "pattern": "request"
-        },
-        {
-          "japanese": "無くしています。",
-          "kana": "なくしています。",
-          "english": "I am loseing.",
-          "highlight": "present progressive",
-          "pattern": "progressive"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "毎日、無くす。",
-          "kana": "まいにち、なくす。",
-          "english": "I lose every day.",
-          "highlight": "daily habit",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "無くすのが好きです。",
-          "kana": "なくすのがすきです。",
-          "english": "I like to lose.",
-          "highlight": "nominalization",
-          "pattern": "nominalization"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0055",
-      "kanji": "習う",
-      "kana": "ならう",
-      "romaji": "narau",
-      "meaning": [
-        "learn",
-        "to take lessons in",
-        "to be taught",
-        "to learn (from a teacher)",
-        "to study (under a teacher)",
-        "to get training in"
-      ],
-      "primaryMeaning": "learn",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": false
+      "id": "n5_v_0055",
+      "lemma": {
+        "kanji": "習う",
+        "kana": "ならう"
       },
-      "conjugations": {
-        "dictionary": "習う",
-        "dictionaryKana": "ならう",
-        "masu": "習います",
-        "masuKana": "ならいます",
-        "te": "習って",
-        "teKana": "ならって"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "毎週、新しい日本語を習います。",
-          "kana": "まいしゅう、あたらしいにほんごをならいます。",
-          "english": "I learn new Japanese every week.",
-          "highlight": "learning routine with adjective"
+      "valency": {
+        "type": "transitive",
+        "requiredParticles": [
+          "を"
+        ]
+      },
+      "meaning": {
+        "primary": "to learn",
+        "gloss": [
+          "learn",
+          "take lessons in",
+          "be taught"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "習う",
+          "kana": "ならう"
         },
-        {
-          "japanese": "昨日、難しいピアノを習いました。",
-          "kana": "きのう、むずかしいピアノをならいました。",
-          "english": "Yesterday, I learned difficult piano.",
-          "highlight": "lesson with adjective"
+        "masu": {
+          "kanji": "習います",
+          "kana": "ならいます"
+        },
+        "te": {
+          "kanji": "習って",
+          "kana": "ならって"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "毎日、日本語を習う。",
+            "kana": "まいにち、にほんごをならう。",
+            "en": "I study Japanese every day.",
+            "grammarTag": "dictionary-nonpast",
+            "pattern": "Time + Object を + Verb(dictionary)",
+            "highlight": "transitive: direct object を"
+          },
+          {
+            "jp": "習うのが好きです。",
+            "kana": "ならうのがすきです。",
+            "en": "I like to learn.",
+            "grammarTag": "no-ga",
+            "pattern": "Verb(dictionary) + のが + Adjective",
+            "highlight": "nominalization"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "毎週、新しい日本語を習います。",
+            "kana": "まいしゅう、あたらしいにほんごをならいます。",
+            "en": "I learn new Japanese every week.",
+            "grammarTag": "polite-nonpast",
+            "pattern": "Time + Adjective + Object を + Verb(ます)",
+            "highlight": "learning routine with adjective"
+          },
+          {
+            "jp": "昨日、難しい曲を習いました。",
+            "kana": "きのう、むずかしいきょくをならいました。",
+            "en": "Yesterday, I learned a difficult piece.",
+            "grammarTag": "polite-past",
+            "pattern": "Time + Adjective + Object を + Verb(ました)",
+            "highlight": "lesson with adjective"
+          }
+        ],
+        "te": [
+          {
+            "jp": "習ってください。",
+            "kana": "ならってください。",
+            "en": "Please teach me.",
+            "grammarTag": "te-kudasai",
+            "pattern": "Verb(て) + ください",
+            "highlight": "polite request"
+          },
+          {
+            "jp": "習っています。",
+            "kana": "ならっています。",
+            "en": "I am learning.",
+            "grammarTag": "te-iru",
+            "pattern": "Verb(て) + います",
+            "highlight": "present progressive"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0055.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0055.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1333070",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "習ってください。",
-          "kana": "ならってください。",
-          "english": "Please learn.",
-          "highlight": "polite request",
-          "pattern": "request"
-        },
-        {
-          "japanese": "習っています。",
-          "kana": "ならっています。",
-          "english": "I am learning.",
-          "highlight": "present progressive",
-          "pattern": "progressive"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "毎日、習う。",
-          "kana": "まいにち、ならう。",
-          "english": "I learn every day.",
-          "highlight": "daily habit",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "習うのが好きです。",
-          "kana": "ならうのがすきです。",
-          "english": "I like to learn.",
-          "highlight": "nominalization",
-          "pattern": "nominalization"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0056",
-      "kanji": "なる",
-      "kana": "なる",
-      "romaji": "naru",
-      "meaning": [
-        "become",
-        "to become",
-        "to get",
-        "to grow",
-        "to turn",
-        "to reach",
-        "to attain",
-        "to result in",
-        "to turn out",
-        "to end up",
-        "to prove (to be)"
-      ],
-      "primaryMeaning": "turn INTO (become)",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": true
+      "id": "n5_v_0056",
+      "lemma": {
+        "kanji": "なる",
+        "kana": "なる"
       },
-      "conjugations": {
-        "dictionary": "なる",
-        "dictionaryKana": "なる",
-        "masu": "なります",
-        "masuKana": "なります",
-        "te": "なって",
-        "teKana": "なって"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "将来、医者になります。",
-          "kana": "しょうらい、いしゃになります。",
-          "english": "I will become a doctor in the future.",
-          "highlight": "career aspiration"
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [
+          "に"
+        ]
+      },
+      "meaning": {
+        "primary": "to become",
+        "gloss": [
+          "become",
+          "get",
+          "turn into"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "なる",
+          "kana": "なる"
         },
-        {
-          "japanese": "春になると桜が咲きます。",
-          "kana": "はるになるとさくらがさきます。",
-          "english": "When spring comes, cherry blossoms bloom.",
-          "highlight": "seasonal change"
+        "masu": {
+          "kanji": "なります",
+          "kana": "なります"
+        },
+        "te": {
+          "kanji": "なって",
+          "kana": "なって"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "毎日、少しずつ上手になる。",
+            "kana": "まいにち、すこしずつじょうずになる。",
+            "en": "I get a little better every day.",
+            "grammarTag": "dictionary-nonpast",
+            "pattern": "Time + Adverb + Result に + Verb(dictionary)",
+            "highlight": "intransitive: result に"
+          },
+          {
+            "jp": "春になると桜が咲きます。",
+            "kana": "はるになるとさくらがさきます。",
+            "en": "When spring comes, cherry blossoms bloom.",
+            "grammarTag": "dictionary-nonpast",
+            "pattern": "Noun + に + Verb(dictionary) + と + Result",
+            "highlight": "seasonal change"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "将来、医者になります。",
+            "kana": "しょうらい、いしゃになります。",
+            "en": "I will become a doctor in the future.",
+            "grammarTag": "polite-nonpast",
+            "pattern": "Time + Goal に + Verb(ます)",
+            "highlight": "career aspiration"
+          },
+          {
+            "jp": "寒くなりました。",
+            "kana": "さむくなりました。",
+            "en": "It became cold.",
+            "grammarTag": "polite-past",
+            "pattern": "Adjective + Verb(ました)",
+            "highlight": "weather change"
+          }
+        ],
+        "te": [
+          {
+            "jp": "先生になってください。",
+            "kana": "せんせいになってください。",
+            "en": "Please become a teacher.",
+            "grammarTag": "te-kudasai",
+            "pattern": "Goal に + Verb(て) + ください",
+            "highlight": "request to become"
+          },
+          {
+            "jp": "なっています。",
+            "kana": "なっています。",
+            "en": "It has become (that way).",
+            "grammarTag": "te-iru",
+            "pattern": "Verb(て) + います",
+            "highlight": "resulting state of change"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0056.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0056.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1375610",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "なってください。",
-          "kana": "なってください。",
-          "english": "Please turn INTO (become).",
-          "highlight": "polite request",
-          "pattern": "request"
-        },
-        {
-          "japanese": "なっています。",
-          "kana": "なっています。",
-          "english": "I am turn INTO (become)ing.",
-          "highlight": "present progressive",
-          "pattern": "progressive"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "毎日、なる。",
-          "kana": "まいにち、なる。",
-          "english": "I turn INTO (become) every day.",
-          "highlight": "daily habit",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "なるのが好きです。",
-          "kana": "なるのがすきです。",
-          "english": "I like to turn INTO (become).",
-          "highlight": "nominalization",
-          "pattern": "nominalization"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0057",
-      "kanji": "脱ぐ",
-      "kana": "ぬぐ",
-      "romaji": "nugu",
-      "meaning": [
-        "take off (clothes, shoes, etc.)",
-        "to take off (clothes, shoes, etc.)",
-        "to undress"
-      ],
-      "primaryMeaning": "take off (clothes)",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": false
+      "id": "n5_v_0057",
+      "lemma": {
+        "kanji": "脱ぐ",
+        "kana": "ぬぐ"
       },
-      "conjugations": {
-        "dictionary": "脱ぐ",
-        "dictionaryKana": "ぬぐ",
-        "masu": "脱ぎます",
-        "masuKana": "ぬぎます",
-        "te": "脱いで",
-        "teKana": "ぬいで"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "家に入る時、いつも靴を脱ぎます。",
-          "kana": "いえにはいるとき、いつもくつをぬぎます。",
-          "english": "I always take off my shoes when entering the house.",
-          "highlight": "routine action with adverb"
+      "valency": {
+        "type": "transitive",
+        "requiredParticles": [
+          "を"
+        ]
+      },
+      "meaning": {
+        "primary": "to take off",
+        "gloss": [
+          "take off",
+          "undress",
+          "remove (clothing)"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "脱ぐ",
+          "kana": "ぬぐ"
         },
-        {
-          "japanese": "暑いので、すぐに上着を脱ぎました。",
-          "kana": "あついので、すぐにうわぎをぬぎました。",
-          "english": "Because it was hot, I immediately took off my jacket.",
-          "highlight": "quick action with adverb"
+        "masu": {
+          "kanji": "脱ぎます",
+          "kana": "ぬぎます"
+        },
+        "te": {
+          "kanji": "脱いで",
+          "kana": "ぬいで"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "毎日、服を脱ぐ。",
+            "kana": "まいにち、ふくをぬぐ。",
+            "en": "I take off my clothes every day.",
+            "grammarTag": "dictionary-nonpast",
+            "pattern": "Time + Object を + Verb(dictionary)",
+            "highlight": "transitive: direct object を"
+          },
+          {
+            "jp": "脱ぐのが好きです。",
+            "kana": "ぬぐのがすきです。",
+            "en": "I like taking off my clothes.",
+            "grammarTag": "no-ga",
+            "pattern": "Verb(dictionary) + のが + Adjective",
+            "highlight": "nominalization"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "家に入る時、いつも靴を脱ぎます。",
+            "kana": "いえにはいるとき、いつもくつをぬぎます。",
+            "en": "I always take off my shoes when entering the house.",
+            "grammarTag": "polite-nonpast",
+            "pattern": "Time に + Adverb + Object を + Verb(ます)",
+            "highlight": "routine action with adverb"
+          },
+          {
+            "jp": "暑いので、すぐに上着を脱ぎました。",
+            "kana": "あついので、すぐにうわぎをぬぎました。",
+            "en": "Because it was hot, I immediately took off my jacket.",
+            "grammarTag": "polite-past",
+            "pattern": "Reason ので + Adverb + Object を + Verb(ました)",
+            "highlight": "quick action with adverb"
+          }
+        ],
+        "te": [
+          {
+            "jp": "靴を脱いでください。",
+            "kana": "くつをぬいでください。",
+            "en": "Please take off your shoes.",
+            "grammarTag": "te-kudasai",
+            "pattern": "Object を + Verb(て) + ください",
+            "highlight": "polite request"
+          },
+          {
+            "jp": "脱いでいます。",
+            "kana": "ぬいでいます。",
+            "en": "I am taking off.",
+            "grammarTag": "te-iru",
+            "pattern": "Verb(て) + います",
+            "highlight": "present progressive"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0057.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0057.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1416400",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "脱いでください。",
-          "kana": "ぬいでください。",
-          "english": "Please take off (clothes).",
-          "highlight": "polite request",
-          "pattern": "request"
-        },
-        {
-          "japanese": "脱いでいます。",
-          "kana": "ぬいでいます。",
-          "english": "I am take off (clothes)ing.",
-          "highlight": "present progressive",
-          "pattern": "progressive"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "毎日、脱ぐ。",
-          "kana": "まいにち、ぬぐ。",
-          "english": "I take off (clothes) every day.",
-          "highlight": "daily habit",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "脱ぐのが好きです。",
-          "kana": "ぬぐのがすきです。",
-          "english": "I like to take off (clothes).",
-          "highlight": "nominalization",
-          "pattern": "nominalization"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0058",
-      "kanji": "登る",
-      "kana": "のぼる",
-      "romaji": "noboru",
-      "meaning": [
-        "climb, go up",
-        "to ascend",
-        "to go up",
-        "to climb",
-        "to go to (the capital)"
-      ],
-      "primaryMeaning": "climb, go up",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": true
+      "id": "n5_v_0058",
+      "lemma": {
+        "kanji": "登る",
+        "kana": "のぼる"
       },
-      "conjugations": {
-        "dictionary": "登る",
-        "dictionaryKana": "のぼる",
-        "masu": "登ります",
-        "masuKana": "のぼります",
-        "te": "登って",
-        "teKana": "のぼって"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "毎週末、高い山を登ります。",
-          "kana": "まいしゅうまつ、たかいやまをのぼります。",
-          "english": "I climb high mountains every weekend.",
-          "highlight": "climbing routine with adjective"
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [
+          "を"
+        ]
+      },
+      "meaning": {
+        "primary": "to climb",
+        "gloss": [
+          "climb",
+          "ascend",
+          "go up"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "登る",
+          "kana": "のぼる"
         },
-        {
-          "japanese": "昨日、難しい山をゆっくり登りました。",
-          "kana": "きのう、むずかしいやまをゆっくりのぼりました。",
-          "english": "Yesterday, I slowly climbed a difficult mountain.",
-          "highlight": "challenging climb with adjective and adverb"
+        "masu": {
+          "kanji": "登ります",
+          "kana": "のぼります"
+        },
+        "te": {
+          "kanji": "登って",
+          "kana": "のぼって"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "毎週末、山を登る。",
+            "kana": "まいしゅうまつ、やまをのぼる。",
+            "en": "I climb mountains every weekend.",
+            "grammarTag": "dictionary-nonpast",
+            "pattern": "Time + Path を + Verb(dictionary)",
+            "highlight": "path-object intransitive: route を"
+          },
+          {
+            "jp": "登るのが好きです。",
+            "kana": "のぼるのがすきです。",
+            "en": "I like to climb.",
+            "grammarTag": "no-ga",
+            "pattern": "Verb(dictionary) + のが + Adjective",
+            "highlight": "nominalization"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "毎週末、高い山を登ります。",
+            "kana": "まいしゅうまつ、たかいやまをのぼります。",
+            "en": "I climb high mountains every weekend.",
+            "grammarTag": "polite-nonpast",
+            "pattern": "Time + Adjective + Path を + Verb(ます)",
+            "highlight": "climbing routine with adjective"
+          },
+          {
+            "jp": "昨日、難しい山をゆっくり登りました。",
+            "kana": "きのう、むずかしいやまをゆっくりのぼりました。",
+            "en": "Yesterday, I slowly climbed a difficult mountain.",
+            "grammarTag": "polite-past",
+            "pattern": "Time + Adjective + Path を + Adverb + Verb(ました)",
+            "highlight": "challenging climb with adjective and adverb"
+          }
+        ],
+        "te": [
+          {
+            "jp": "登ってください。",
+            "kana": "のぼってください。",
+            "en": "Please climb.",
+            "grammarTag": "te-kudasai",
+            "pattern": "Verb(て) + ください",
+            "highlight": "polite request"
+          },
+          {
+            "jp": "登っています。",
+            "kana": "のぼっています。",
+            "en": "I am climbing.",
+            "grammarTag": "te-iru",
+            "pattern": "Verb(て) + います",
+            "highlight": "present progressive"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0058.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0058.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1352570",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "登ってください。",
-          "kana": "のぼってください。",
-          "english": "Please climb, go up.",
-          "highlight": "polite request",
-          "pattern": "request"
-        },
-        {
-          "japanese": "登っています。",
-          "kana": "のぼっています。",
-          "english": "I am climb, go uping.",
-          "highlight": "present progressive",
-          "pattern": "progressive"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "毎日、登る。",
-          "kana": "まいにち、のぼる。",
-          "english": "I climb, go up every day.",
-          "highlight": "daily habit",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "登るのが好きです。",
-          "kana": "のぼるのがすきです。",
-          "english": "I like to climb, go up.",
-          "highlight": "nominalization",
-          "pattern": "nominalization"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0059",
-      "kanji": "飲む",
-      "kana": "のむ",
-      "romaji": "nomu",
-      "meaning": [
-        "drink; take (medicine)",
-        "to drink",
-        "to swallow",
-        "to take (medicine)"
-      ],
-      "primaryMeaning": "drink; take (medicine)",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": false
+      "id": "n5_v_0059",
+      "lemma": {
+        "kanji": "飲む",
+        "kana": "のむ"
       },
-      "conjugations": {
-        "dictionary": "飲む",
-        "dictionaryKana": "のむ",
-        "masu": "飲みます",
-        "masuKana": "のみます",
-        "te": "飲んで",
-        "teKana": "のんで"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "朝、コーヒーを飲みます。",
-          "kana": "あさ、コーヒーをのみます。",
-          "english": "I drink coffee in the morning.",
-          "highlight": "morning beverage"
+      "valency": {
+        "type": "transitive",
+        "requiredParticles": [
+          "を"
+        ]
+      },
+      "meaning": {
+        "primary": "to drink",
+        "gloss": [
+          "drink",
+          "swallow",
+          "take (medicine)"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "飲む",
+          "kana": "のむ"
         },
-        {
-          "japanese": "薬を食後に飲んでください。",
-          "kana": "くすりをしょくごにのんでください。",
-          "english": "Please take medicine after meals.",
-          "highlight": "medication instruction"
+        "masu": {
+          "kanji": "飲みます",
+          "kana": "のみます"
+        },
+        "te": {
+          "kanji": "飲んで",
+          "kana": "のんで"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "毎日、水を飲む。",
+            "kana": "まいにち、みずをのむ。",
+            "en": "I drink water every day.",
+            "grammarTag": "dictionary-nonpast",
+            "pattern": "Time + Object を + Verb(dictionary)",
+            "highlight": "transitive: direct object を"
+          },
+          {
+            "jp": "飲むのが好きです。",
+            "kana": "のむのがすきです。",
+            "en": "I like to drink.",
+            "grammarTag": "no-ga",
+            "pattern": "Verb(dictionary) + のが + Adjective",
+            "highlight": "nominalization"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "朝、コーヒーを飲みます。",
+            "kana": "あさ、コーヒーをのみます。",
+            "en": "I drink coffee in the morning.",
+            "grammarTag": "polite-nonpast",
+            "pattern": "Time + Object を + Verb(ます)",
+            "highlight": "morning beverage"
+          },
+          {
+            "jp": "昨日、薬を飲みました。",
+            "kana": "きのう、くすりをのみました。",
+            "en": "Yesterday, I took medicine.",
+            "grammarTag": "polite-past",
+            "pattern": "Time + Object を + Verb(ました)",
+            "highlight": "taking medicine"
+          }
+        ],
+        "te": [
+          {
+            "jp": "飲んでください。",
+            "kana": "のんでください。",
+            "en": "Please drink it.",
+            "grammarTag": "te-kudasai",
+            "pattern": "Verb(て) + ください",
+            "highlight": "polite request"
+          },
+          {
+            "jp": "飲んでいます。",
+            "kana": "のんでいます。",
+            "en": "I am drinking.",
+            "grammarTag": "te-iru",
+            "pattern": "Verb(て) + います",
+            "highlight": "present progressive"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0059.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0059.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1169870",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": "consumption",
-      "teFormExamples": [
-        {
-          "japanese": "飲んでください。",
-          "kana": "のんでください。",
-          "english": "Please drink; take (medicine).",
-          "highlight": "polite request",
-          "pattern": "request"
-        },
-        {
-          "japanese": "飲んでいます。",
-          "kana": "のんでいます。",
-          "english": "I am drink; take (medicine)ing.",
-          "highlight": "present progressive",
-          "pattern": "progressive"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "毎日、飲む。",
-          "kana": "まいにち、のむ。",
-          "english": "I drink; take (medicine) every day.",
-          "highlight": "daily habit",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "飲むのが好きです。",
-          "kana": "のむのがすきです。",
-          "english": "I like to drink; take (medicine).",
-          "highlight": "nominalization",
-          "pattern": "nominalization"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0062",
-      "kanji": "乗る",
-      "kana": "のる",
-      "romaji": "noru",
-      "meaning": [
-        "ride, get on",
-        "to get on (train, plane, bus, ship, etc.)",
-        "to get in",
-        "to board",
-        "to take",
-        "to embark",
-        "to get on (e.g. a footstool)",
-        "to step on",
-        "to jump on",
-        "to sit on",
-        "to mount"
-      ],
-      "primaryMeaning": "ride, get on",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": true
+      "id": "n5_v_0062",
+      "lemma": {
+        "kanji": "乗る",
+        "kana": "のる"
       },
-      "conjugations": {
-        "dictionary": "乗る",
-        "dictionaryKana": "のる",
-        "masu": "乗ります",
-        "masuKana": "のります",
-        "te": "乗って",
-        "teKana": "のって"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "毎朝、新しい電車に乗ります。",
-          "kana": "まいあさ、あたらしいでんしゃにのります。",
-          "english": "I ride the new train every morning.",
-          "highlight": "commute routine with adjective"
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [
+          "に"
+        ]
+      },
+      "meaning": {
+        "primary": "to ride",
+        "gloss": [
+          "ride",
+          "get on",
+          "board"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "乗る",
+          "kana": "のる"
         },
-        {
-          "japanese": "昨日、速いバスに乗りました。",
-          "kana": "きのう、はやいバスにのりました。",
-          "english": "Yesterday, I rode a fast bus.",
-          "highlight": "transportation with adjective"
+        "masu": {
+          "kanji": "乗ります",
+          "kana": "のります"
+        },
+        "te": {
+          "kanji": "乗って",
+          "kana": "のって"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "毎日、電車に乗る。",
+            "kana": "まいにち、でんしゃにのる。",
+            "en": "I ride the train every day.",
+            "grammarTag": "dictionary-nonpast",
+            "pattern": "Time + Vehicle に + Verb(dictionary)",
+            "highlight": "intransitive: vehicle に"
+          },
+          {
+            "jp": "乗るのが好きです。",
+            "kana": "のるのがすきです。",
+            "en": "I like to ride.",
+            "grammarTag": "no-ga",
+            "pattern": "Verb(dictionary) + のが + Adjective",
+            "highlight": "nominalization"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "毎朝、新しい電車に乗ります。",
+            "kana": "まいあさ、あたらしいでんしゃにのります。",
+            "en": "I ride the new train every morning.",
+            "grammarTag": "polite-nonpast",
+            "pattern": "Time + Adjective + Vehicle に + Verb(ます)",
+            "highlight": "commute routine with adjective"
+          },
+          {
+            "jp": "昨日、速いバスに乗りました。",
+            "kana": "きのう、はやいバスにのりました。",
+            "en": "Yesterday, I rode a fast bus.",
+            "grammarTag": "polite-past",
+            "pattern": "Time + Adjective + Vehicle に + Verb(ました)",
+            "highlight": "transportation with adjective"
+          }
+        ],
+        "te": [
+          {
+            "jp": "乗ってください。",
+            "kana": "のってください。",
+            "en": "Please get on.",
+            "grammarTag": "te-kudasai",
+            "pattern": "Verb(て) + ください",
+            "highlight": "polite request"
+          },
+          {
+            "jp": "乗っています。",
+            "kana": "のっています。",
+            "en": "I am riding.",
+            "grammarTag": "te-iru",
+            "pattern": "Verb(て) + います",
+            "highlight": "present progressive"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0062.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0062.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1355120",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "乗ってください。",
-          "kana": "のってください。",
-          "english": "Please ride, get on.",
-          "highlight": "polite request",
-          "pattern": "request"
-        },
-        {
-          "japanese": "乗っています。",
-          "kana": "のっています。",
-          "english": "I am ride, get oning.",
-          "highlight": "present progressive",
-          "pattern": "progressive"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "毎日、乗る。",
-          "kana": "まいにち、のる。",
-          "english": "I ride, get on every day.",
-          "highlight": "daily habit",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "乗るのが好きです。",
-          "kana": "のるのがすきです。",
-          "english": "I like to ride, get on.",
-          "highlight": "nominalization",
-          "pattern": "nominalization"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0063",
-      "kanji": "入る",
-      "kana": "はいる",
-      "romaji": "hairu",
-      "meaning": [
-        "enter; join",
-        "to enter",
-        "to join (club, company)",
-        "to take (bath)"
-      ],
-      "primaryMeaning": "enter; join",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": true
+      "id": "n5_v_0063",
+      "lemma": {
+        "kanji": "入る",
+        "kana": "はいる"
       },
-      "conjugations": {
-        "dictionary": "入る",
-        "dictionaryKana": "はいる",
-        "masu": "入ります",
-        "masuKana": "はいります",
-        "te": "入って",
-        "teKana": "はいって"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "毎日、きれいな部屋に入ります。",
-          "kana": "まいにち、きれいなへやにはいります。",
-          "english": "I enter the clean room every day.",
-          "highlight": "daily routine with adjective"
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [
+          "に"
+        ]
+      },
+      "meaning": {
+        "primary": "to enter",
+        "gloss": [
+          "enter",
+          "go into",
+          "join"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "入る",
+          "kana": "はいる"
         },
-        {
-          "japanese": "昨日、新しい会社に入りました。",
-          "kana": "きのう、あたらしいかいしゃにはいりました。",
-          "english": "Yesterday, I joined a new company.",
-          "highlight": "joining with adjective"
+        "masu": {
+          "kanji": "入ります",
+          "kana": "はいります"
+        },
+        "te": {
+          "kanji": "入って",
+          "kana": "はいって"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "毎日、部屋に入る。",
+            "kana": "まいにち、へやにはいる。",
+            "en": "I enter the room every day.",
+            "grammarTag": "dictionary-nonpast",
+            "pattern": "Time + Location に + Verb(dictionary)",
+            "highlight": "intransitive: location に"
+          },
+          {
+            "jp": "入るのが好きです。",
+            "kana": "はいるのがすきです。",
+            "en": "I like entering places.",
+            "grammarTag": "no-ga",
+            "pattern": "Verb(dictionary) + のが + Adjective",
+            "highlight": "nominalization"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "毎日、きれいな部屋に入ります。",
+            "kana": "まいにち、きれいなへやにはいります。",
+            "en": "I enter the clean room every day.",
+            "grammarTag": "polite-nonpast",
+            "pattern": "Time + Adjective + Location に + Verb(ます)",
+            "highlight": "daily routine with adjective"
+          },
+          {
+            "jp": "昨日、新しい会社に入りました。",
+            "kana": "きのう、あたらしいかいしゃにはいりました。",
+            "en": "Yesterday, I joined a new company.",
+            "grammarTag": "polite-past",
+            "pattern": "Time + Adjective + Location に + Verb(ました)",
+            "highlight": "joining with adjective"
+          }
+        ],
+        "te": [
+          {
+            "jp": "入ってください。",
+            "kana": "はいってください。",
+            "en": "Please enter.",
+            "grammarTag": "te-kudasai",
+            "pattern": "Verb(て) + ください",
+            "highlight": "polite request"
+          },
+          {
+            "jp": "入っています。",
+            "kana": "はいっています。",
+            "en": "I have entered.",
+            "grammarTag": "te-iru",
+            "pattern": "Verb(て) + います",
+            "highlight": "resulting state of entering"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0063.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0063.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1465590",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": "entering",
-      "teFormExamples": [
-        {
-          "japanese": "入ってください。",
-          "kana": "はいってください。",
-          "english": "Please enter; join.",
-          "highlight": "polite request",
-          "pattern": "request"
-        },
-        {
-          "japanese": "入っています。",
-          "kana": "はいっています。",
-          "english": "I am enter; joining.",
-          "highlight": "present progressive",
-          "pattern": "progressive"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "毎日、入る。",
-          "kana": "まいにち、はいる。",
-          "english": "I enter; join every day.",
-          "highlight": "daily habit",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "入るのが好きです。",
-          "kana": "はいるのがすきです。",
-          "english": "I like to enter; join.",
-          "highlight": "nominalization",
-          "pattern": "nominalization"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0066",
-      "kanji": "履く",
-      "kana": "はく",
-      "romaji": "haku",
-      "meaning": [
-        "put on (shoes, trousers, etc.)",
-        "to put on (lower-body clothing, e.g. pants, skirt, footwear)",
-        "to wear",
-        "to affix (a sword to one's hip)"
-      ],
-      "primaryMeaning": "put on (shoes/pants)",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": false
+      "id": "n5_v_0066",
+      "lemma": {
+        "kanji": "履く",
+        "kana": "はく"
       },
-      "conjugations": {
-        "dictionary": "履く",
-        "dictionaryKana": "はく",
-        "masu": "履きます",
-        "masuKana": "はきます",
-        "te": "履いて",
-        "teKana": "はいて"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "寒い冬に厚い靴下を履きます。",
-          "kana": "さむいふゆにあついくつしたをはきます。",
-          "english": "I wear thick socks in cold winter.",
-          "highlight": "winter clothing"
+      "valency": {
+        "type": "transitive",
+        "requiredParticles": [
+          "を"
+        ]
+      },
+      "meaning": {
+        "primary": "to put on",
+        "gloss": [
+          "put on (shoes)",
+          "wear",
+          "slip on"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "履く",
+          "kana": "はく"
         },
-        {
-          "japanese": "学校で上履きを履いてください。",
-          "kana": "がっこうでうわばきをはいてください。",
-          "english": "Please wear indoor shoes at school.",
-          "highlight": "school rule"
+        "masu": {
+          "kanji": "履きます",
+          "kana": "はきます"
+        },
+        "te": {
+          "kanji": "履いて",
+          "kana": "はいて"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "毎日、靴を履く。",
+            "kana": "まいにち、くつをはく。",
+            "en": "I put on my shoes every day.",
+            "grammarTag": "dictionary-nonpast",
+            "pattern": "Time + Object を + Verb(dictionary)",
+            "highlight": "transitive: direct object を"
+          },
+          {
+            "jp": "履くのが好きです。",
+            "kana": "はくのがすきです。",
+            "en": "I like putting on shoes.",
+            "grammarTag": "no-ga",
+            "pattern": "Verb(dictionary) + のが + Adjective",
+            "highlight": "nominalization"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "寒い冬に厚い靴下を履きます。",
+            "kana": "さむいふゆにあついくつしたをはきます。",
+            "en": "I wear thick socks in cold winter.",
+            "grammarTag": "polite-nonpast",
+            "pattern": "Time + Adjective + Object を + Verb(ます)",
+            "highlight": "winter clothing"
+          },
+          {
+            "jp": "昨日、新しい靴を履きました。",
+            "kana": "きのう、あたらしいくつをはきました。",
+            "en": "Yesterday, I put on new shoes.",
+            "grammarTag": "polite-past",
+            "pattern": "Time + Adjective + Object を + Verb(ました)",
+            "highlight": "wearing with adjective"
+          }
+        ],
+        "te": [
+          {
+            "jp": "靴を履いてください。",
+            "kana": "くつをはいてください。",
+            "en": "Please put on your shoes.",
+            "grammarTag": "te-kudasai",
+            "pattern": "Object を + Verb(て) + ください",
+            "highlight": "polite request"
+          },
+          {
+            "jp": "履いています。",
+            "kana": "はいています。",
+            "en": "I am wearing.",
+            "grammarTag": "te-iru",
+            "pattern": "Verb(て) + います",
+            "highlight": "current state of wearing"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0066.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0066.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1607260",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "履いてください。",
-          "kana": "はいてください。",
-          "english": "Please put on (shoes/pants).",
-          "highlight": "polite request",
-          "pattern": "request"
-        },
-        {
-          "japanese": "履いています。",
-          "kana": "はいています。",
-          "english": "I am put on (shoes/pants)ing.",
-          "highlight": "present progressive",
-          "pattern": "progressive"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "毎日、履く。",
-          "kana": "まいにち、はく。",
-          "english": "I put on (shoes/pants) every day.",
-          "highlight": "daily habit",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "履くのが好きです。",
-          "kana": "はくのがすきです。",
-          "english": "I like to put on (shoes/pants).",
-          "highlight": "nominalization",
-          "pattern": "nominalization"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
-      "id": "n5_verb_0067",
-      "kanji": "働く",
-      "kana": "はたらく",
-      "romaji": "hataraku",
-      "meaning": [
-        "work",
-        "to work",
-        "to labor",
-        "to labour",
-        "to function",
-        "to operate",
-        "to be effective",
-        "to work (i.e. ... works)",
-        "to come into play"
-      ],
-      "primaryMeaning": "work",
-      "jlptLevel": "N5",
-      "partOfSpeech": [
-        "verb"
-      ],
-      "verbGroup": "godan",
-      "verbType": {
-        "transitive": true,
-        "intransitive": true
+      "id": "n5_v_0067",
+      "lemma": {
+        "kanji": "働く",
+        "kana": "はたらく"
       },
-      "conjugations": {
-        "dictionary": "働く",
-        "dictionaryKana": "はたらく",
-        "masu": "働きます",
-        "masuKana": "はたらきます",
-        "te": "働いて",
-        "teKana": "はたらいて"
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
       },
-      "tags": [
-        "verb",
-        "godan",
-        "n5"
-      ],
-      "examples": [
-        {
-          "japanese": "毎日、大きい会社で一生懸命働きます。",
-          "kana": "まいにち、おおきいかいしゃでいっしょうけんめいはたらきます。",
-          "english": "I work hard at a big company every day.",
-          "highlight": "work routine with adjective and adverb"
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [
+          "で"
+        ]
+      },
+      "meaning": {
+        "primary": "to work",
+        "gloss": [
+          "work",
+          "labor",
+          "be employed"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "働く",
+          "kana": "はたらく"
         },
-        {
-          "japanese": "昨日、新しいオフィスで働きました。",
-          "kana": "きのう、あたらしいオフィスではたらきました。",
-          "english": "Yesterday, I worked in a new office.",
-          "highlight": "working with adjective"
+        "masu": {
+          "kanji": "働きます",
+          "kana": "はたらきます"
+        },
+        "te": {
+          "kanji": "働いて",
+          "kana": "はたらいて"
         }
-      ],
+      },
+      "examples": {
+        "dictionary": [
+          {
+            "jp": "毎日、会社で働く。",
+            "kana": "まいにち、かいしゃではたらく。",
+            "en": "I work at a company every day.",
+            "grammarTag": "dictionary-nonpast",
+            "pattern": "Time + Location で + Verb(dictionary)",
+            "highlight": "intransitive: workplace で"
+          },
+          {
+            "jp": "働くのが好きです。",
+            "kana": "はたらくのがすきです。",
+            "en": "I like to work.",
+            "grammarTag": "no-ga",
+            "pattern": "Verb(dictionary) + のが + Adjective",
+            "highlight": "nominalization"
+          }
+        ],
+        "masu": [
+          {
+            "jp": "毎日、大きい会社で一生懸命働きます。",
+            "kana": "まいにち、おおきいかいしゃでいっしょうけんめいはたらきます。",
+            "en": "I work hard at a big company every day.",
+            "grammarTag": "polite-nonpast",
+            "pattern": "Time + Adjective + Location で + Adverb + Verb(ます)",
+            "highlight": "work routine with adjective and adverb"
+          },
+          {
+            "jp": "昨日、新しいオフィスで働きました。",
+            "kana": "きのう、あたらしいオフィスではたらきました。",
+            "en": "Yesterday, I worked in a new office.",
+            "grammarTag": "polite-past",
+            "pattern": "Time + Adjective + Location で + Verb(ました)",
+            "highlight": "working with adjective"
+          }
+        ],
+        "te": [
+          {
+            "jp": "働いてください。",
+            "kana": "はたらいてください。",
+            "en": "Please work hard.",
+            "grammarTag": "te-kudasai",
+            "pattern": "Verb(て) + ください",
+            "highlight": "polite request"
+          },
+          {
+            "jp": "働いています。",
+            "kana": "はたらいています。",
+            "en": "I am working.",
+            "grammarTag": "te-iru",
+            "pattern": "Verb(て) + います",
+            "highlight": "present progressive"
+          }
+        ]
+      },
       "audio": {
-        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0067.mp3",
-        "source": "pending"
+        "file": "/audio/n5/verbs/n5_v_0067.mp3",
+        "status": "pending"
       },
-      "source": {
-        "type": "minna-no-nihongo",
-        "jmdict_ent_seq": "1451150",
-        "url": "https://www.3anetwork.com"
-      },
-      "license": {
-        "text": "CC BY-SA 4.0",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-      },
-      "context": null,
-      "teFormExamples": [
-        {
-          "japanese": "働いてください。",
-          "kana": "はたらいてください。",
-          "english": "Please work.",
-          "highlight": "polite request",
-          "pattern": "request"
-        },
-        {
-          "japanese": "働いています。",
-          "kana": "はたらいています。",
-          "english": "I am working.",
-          "highlight": "present progressive",
-          "pattern": "progressive"
-        }
-      ],
-      "dictFormExamples": [
-        {
-          "japanese": "毎日、働く。",
-          "kana": "まいにち、はたらく。",
-          "english": "I work every day.",
-          "highlight": "daily habit",
-          "pattern": "habitual"
-        },
-        {
-          "japanese": "働くのが好きです。",
-          "kana": "はたらくのがすきです。",
-          "english": "I like to work.",
-          "highlight": "nominalization",
-          "pattern": "nominalization"
-        }
-      ]
+      "meta": {
+        "license": "CC BY-SA 4.0"
+      }
     }
   ]
 }
