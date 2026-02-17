@@ -354,7 +354,7 @@ Total words: 824
 | すぐに |  | immediately | adverb |  |  |
 | すこし | 少し | a little | adverb |  |  |
 | すし |  | sushi | noun |  |  |
-| すしや |  | sushi shop | noun |  |  |
+| すしや | 寿司屋 | sushi shop | noun |  |  |
 | すずしい | 涼しい | cool | adjective |  | i-adjective |
 | すみません |  | excuse me | expression |  |  |
 | すむ | 住む | to live; to reside | verb | godan |  |
@@ -400,7 +400,7 @@ Total words: 824
 | たてもの | 建物 | building | noun |  |  |
 | たのしい | 楽しい | enjoyable | adjective |  | i-adjective |
 | たのむ | 頼む | to request | verb | godan |  |
-| たばこ |  | tobacco | noun |  |  |
+| たばこ | 煙草 | tobacco | noun |  |  |
 | たぶん |  | probably | adverb |  |  |
 | たべもの | 食べ物 | food | noun |  |  |
 | たべる | 食べる | to eat | verb | ichidan |  |
@@ -446,7 +446,7 @@ Total words: 824
 | てがみ | 手紙 | letter | noun |  |  |
 | てんき | 天気 | weather | noun |  |  |
 | でかける | 出かける | to go out (e.g. on an excursion or outing) | verb | ichidan |  |
-| できる | 出来る | can do; be able to; to be completed; to be made | verb | ichidan |  |
+| できる |  | can do; be able to; to be completed; to be made | verb | ichidan |  |
 | でぐち | 出口 | exit | noun |  |  |
 | では |  | then | conjunction |  |  |
 | ではまた |  | see you later | expression |  |  |
@@ -459,7 +459,7 @@ Total words: 824
 | でんわばんごう | 電話番号 | telephone number | noun |  |  |
 | と | 戸 | door (esp. Japanese-style) | noun |  |  |
 | とうきょう | 東京 | Tokyo | proper noun |  |  |
-| とうふ |  | tofu | noun |  |  |
+| とうふ | 豆腐 | tofu | noun |  |  |
 | とおい | 遠い | far | adjective |  | i-adjective |
 | とおか | 十日 | 10th day of the month | noun |  |  |
 | とおく |  | far away | adverb, noun |  |  |
@@ -497,7 +497,7 @@ Total words: 824
 | なか | 中 | inside | noun |  |  |
 | ながい | 長い | long (distance, length) | adjective |  | i-adjective |
 | なく | 鳴く | to make sound (of an animal) | verb | godan |  |
-| なくす |  | to lose (something) | verb | godan |  |
+| なくす | 無くす | to lose (something) | verb | godan |  |
 | なぜ |  | why | adverb |  |  |
 | なつ | 夏 | summer | noun |  |  |
 | なつやすみ | 夏休み | summer vacation | noun |  |  |
@@ -510,7 +510,7 @@ Total words: 824
 | ならう | 習う | to take lessons in | verb | godan |  |
 | ならぶ | 並ぶ | to line up | verb | godan |  |
 | ならべる | 並べる | to line up | verb | ichidan |  |
-| なる |  | to become; to turn into | verb | godan |  |
+| なる | 成る | to become; to turn into | verb | godan |  |
 | なん |  | what | noun |  |  |
 | なんじ | 何時 | what time | noun |  |  |
 | なんにち | 何日 | what day | noun |  |  |
@@ -582,7 +582,7 @@ Total words: 824
 | ひとり | 一人 | one person | noun |  |  |
 | ひま | 暇 | free (not busy); spare time | adjective, noun |  | na-adjective |
 | ひゃく | 百 | hundred | noun |  |  |
-| ひらがな |  | hiragana | noun |  |  |
+| ひらがな | 平仮名 | hiragana | noun |  |  |
 | ひる | 昼 | noon/daytime | noun |  |  |
 | ひるごはん | 昼御飯 | lunch | noun |  |  |
 | ひろい | 広い | spacious | adjective |  | i-adjective |
@@ -625,7 +625,7 @@ Total words: 824
 | まいばん | 毎晩 | every night | adverb, noun |  |  |
 | まえ | 前 | in front (of) | noun |  |  |
 | まがる | 曲がる | to bend | verb | godan |  |
-| まずい |  | bad(-tasting) | adjective |  | i-adjective |
+| まずい | 不味い | bad(-tasting) | adjective |  | i-adjective |
 | また |  | again/also | adverb |  |  |
 | まだ |  | still/not yet | adverb |  |  |
 | まち | 町 | town | noun |  |  |
@@ -677,7 +677,7 @@ Total words: 824
 | やすむ | 休む | to be absent | verb | godan |  |
 | やっつ | 八つ | eight | noun |  |  |
 | やま | 山 | mountain | noun |  |  |
-| やる |  | to do; to give (to someone lower / casual) | verb | godan |  |
+| やる | 遣る | to do; to give (to someone lower / casual) | verb | godan |  |
 | ゆうがた | 夕方 | early evening (usu. from 3pm to 6pm) | noun |  |  |
 | ゆうはん | 夕飯 | evening meal | noun |  |  |
 | ゆうびんきょく | 郵便局 | post office | noun |  |  |
