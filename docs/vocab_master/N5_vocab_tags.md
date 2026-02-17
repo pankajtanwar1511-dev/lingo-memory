@@ -37,7 +37,7 @@ Total words: 824
 | あね | 姉 | older sister | noun |  |  |
 | あの |  | that | determiner |  |  |
 | あのう |  | say/um | interjection |  |  |
-| あびる |  | to bathe in; to pour over oneself | verb | ichidan |  |
+| あびる | 浴びる | to bathe in; to pour over oneself | verb | ichidan |  |
 | あぶない | 危ない | dangerous | adjective |  | i-adjective |
 | あまい | 甘い | sweet-tasting | adjective |  | i-adjective |
 | あまり |  | not very (with negative) | adverb |  |  |
@@ -92,7 +92,7 @@ Total words: 824
 | うすい | 薄い | thin (of an object) | adjective |  | i-adjective |
 | うた | 歌 | song | noun |  |  |
 | うたう | 歌う | to sing | verb | godan |  |
-| うち |  | one's house | noun |  |  |
+| うち | 家 | one's house | noun |  |  |
 | うまれる | 生まれる | to be born | verb | ichidan |  |
 | うみ | 海 | sea | noun |  |  |
 | うる | 売る | to sell | verb | godan |  |
@@ -107,7 +107,7 @@ Total words: 824
 | ええ |  | yes | interjection |  |  |
 | えき | 駅 | railway station | noun |  |  |
 | えっ |  | huh? | interjection |  |  |
-| えん |  | yen (currency) | noun |  |  |
+| えん | 円 | yen (currency) | noun |  |  |
 | えんぴつ | 鉛筆 | pencil | noun |  |  |
 | えー |  | yes | interjection |  |  |
 | お |  | honorific prefix | prefix |  |  |
@@ -122,7 +122,7 @@ Total words: 824
 | おきる | 起きる | to get up | verb | ichidan |  |
 | おく | 置く | to put | verb | godan |  |
 | おくさん | 奥さん | wife | noun |  |  |
-| おくに |  | your native country | noun |  |  |
+| おくに | お国 | your native country | noun |  |  |
 | おくる | 送る | to send | verb | godan |  |
 | おさけ | お酒 | alcohol | noun |  |  |
 | おさら | お皿 | plate | noun |  |  |
@@ -140,10 +140,10 @@ Total words: 824
 | おととい | 一昨日 | day before yesterday | adverb, noun |  |  |
 | おととし | 一昨年 | year before last | adverb, noun |  |  |
 | おとな | 大人 | adult | noun |  |  |
-| おなか |  | belly | noun |  |  |
+| おなか | お腹 | belly | noun |  |  |
 | おなじ | 同じ | same | adjective, noun, adverb |  | na-adjective |
 | おにいさん | お兄さん | older brother | noun |  |  |
-| おにぎり |  | onigiri | noun |  |  |
+| おにぎり | お握り | onigiri | noun |  |  |
 | おねえさん | お姉さん | older sister | noun |  |  |
 | おねがい | お願い | request | expression, noun |  |  |
 | おねがいする | お願いする | to make a request; to ask | verb | suru-verb |  |
@@ -154,8 +154,8 @@ Total words: 824
 | おふろ | お風呂 | bath | noun |  |  |
 | おべんとう | お弁当 | bento | noun |  |  |
 | おぼえる | 覚える | to memorize | verb | ichidan |  |
-| おまわりさん |  | police officer | noun |  |  |
-| おみせ |  | store | noun |  |  |
+| おまわりさん | お巡りさん | police officer | noun |  |  |
+| おみせ | お店 | store | noun |  |  |
 | おもい | 重い | heavy | adjective |  | i-adjective |
 | おもしろい | 面白い | interesting | adjective |  | i-adjective |
 | おやすみなさい |  | good night | expression |  |  |
@@ -305,7 +305,7 @@ Total words: 824
 | さようなら |  | farewell | expression |  |  |
 | さらいねん | 再来年 | year after next | adverb, noun |  |  |
 | さん | 三 | three | noun |  |  |
-| さんぽ |  | walk | noun |  |  |
+| さんぽ | 散歩 | walk | noun |  |  |
 | ざっし | 雑誌 | magazine | noun |  |  |
 | し | 四 | four | noun |  |  |
 | しお | 塩 | salt | noun |  |  |
@@ -363,7 +363,7 @@ Total words: 824
 | ずつ |  | apiece | particle |  |  |
 | せ | 背 | back | noun |  |  |
 | せいと | 生徒 | pupil | noun |  |  |
-| せっけん |  | soap | noun |  |  |
+| せっけん | 石鹸 | soap | noun |  |  |
 | せまい | 狭い | narrow | adjective |  | i-adjective |
 | せん | 千 | thousand | noun |  |  |
 | せんげつ | 先月 | last month | adverb, noun |  |  |
@@ -382,7 +382,7 @@ Total words: 824
 | そっち |  | that way | noun |  |  |
 | そと | 外 | outside | noun |  |  |
 | その |  | that | determiner |  |  |
-| そば |  | near; beside; buckwheat noodles | noun |  |  |
+| そば | 蕎麦 | near; beside; buckwheat noodles | noun |  |  |
 | そら | 空 | sky | noun |  |  |
 | それ |  | that | noun |  |  |
 | それから |  | and then | conjunction |  |  |
@@ -439,7 +439,7 @@ Total words: 824
 | つくりかた | 作り方 | how to make | noun |  |  |
 | つくる | 作る | to make | verb | godan |  |
 | つける | 付ける | to turn on/attach | verb | ichidan |  |
-| つまらない |  | dull | adjective |  | i-adjective |
+| つまらない | 詰まらない | dull | adjective |  | i-adjective |
 | つめたい | 冷たい | cold (to the touch) | adjective |  | i-adjective |
 | つよい | 強い | strong | adjective |  | i-adjective |
 | て | 手 | hand | noun |  |  |
