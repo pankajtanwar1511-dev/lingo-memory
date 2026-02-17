@@ -71,7 +71,7 @@
             "kana": "まいあさ、しんせんなやさいをかいます。",
             "en": "I buy fresh vegetables every morning.",
             "grammarTag": "polite-nonpast",
-            "pattern": "Time + Verb(ます)",
+            "pattern": "Time + Adjective + Object を + Verb(ます)",
             "highlight": "shopping routine with adjective"
           },
           {
@@ -79,7 +79,7 @@
             "kana": "きのう、やすいほんをたくさんかいました。",
             "en": "Yesterday, I bought many cheap books.",
             "grammarTag": "polite-past",
-            "pattern": "Subject + Verb(ます)",
+            "pattern": "Time + Adjective + Object を + Quantity + Verb(ました)",
             "highlight": "purchase with adjective and quantity"
           }
         ],
@@ -175,7 +175,7 @@
             "kana": "まいしゅう、としょかんにふるいほんをかえします。",
             "en": "I return old books to the library every week.",
             "grammarTag": "polite-nonpast",
-            "pattern": "Subject + Verb(ます)",
+            "pattern": "Time + Destination に + Adjective + Object を + Verb(ます)",
             "highlight": "returning items with adjective"
           },
           {
@@ -183,7 +183,7 @@
             "kana": "きのう、かりたおかねをすぐにかえしました。",
             "en": "Yesterday, I immediately returned the borrowed money.",
             "grammarTag": "polite-past",
-            "pattern": "Subject + Verb(ます)",
+            "pattern": "Time + Adjective + Object を + Adverb + Verb(ました)",
             "highlight": "prompt repayment with adverb"
           }
         ],
@@ -279,7 +279,7 @@
             "kana": "まいばん、おそくいえにかえります。",
             "en": "I return home late every night.",
             "grammarTag": "polite-nonpast",
-            "pattern": "Time + Verb(ます)",
+            "pattern": "Time + Adverb + Destination に + Verb(ます)",
             "highlight": "daily routine with adverb"
           },
           {
@@ -287,7 +287,7 @@
             "kana": "きのう、はやくいえにかえりました。",
             "en": "Yesterday, I returned home early.",
             "grammarTag": "polite-past",
-            "pattern": "Subject + Verb(ます)",
+            "pattern": "Time + Adverb + Destination に + Verb(ました)",
             "highlight": "early return with adverb"
           }
         ],
@@ -363,20 +363,20 @@
       "examples": {
         "dictionary": [
           {
-            "jp": "この仕事に三時間掛かる。",
-            "kana": "このしごとにさんじかんかかる。",
+            "jp": "この仕事には三時間が掛かる。",
+            "kana": "このしごとにはさんじかんがかかる。",
             "en": "This job takes three hours.",
             "grammarTag": "dictionary-nonpast",
-            "pattern": "Subject + に + Duration + Verb(dictionary)",
-            "highlight": "resource cost: time"
+            "pattern": "Subject に + Duration が + Verb(dictionary)",
+            "highlight": "resource cost: が marks time required"
           },
           {
-            "jp": "掛かるのが好きです。",
-            "kana": "かかるのがすきです。",
-            "en": "I like it when things don't take long.",
+            "jp": "掛かるのが大変です。",
+            "kana": "かかるのがたいへんです。",
+            "en": "It is tough when things take time.",
             "grammarTag": "no-ga",
             "pattern": "Verb(dictionary) + のが + Adjective",
-            "highlight": "nominalization"
+            "highlight": "nominalization expressing difficulty"
           }
         ],
         "masu": [
@@ -393,7 +393,7 @@
             "kana": "りょこうにはたくさんのおかねがかかりました。",
             "en": "The trip cost a lot of money.",
             "grammarTag": "polite-past",
-            "pattern": "Subject + Verb(ます)",
+            "pattern": "Subject に + Quantity + Resource が + Verb(ました)",
             "highlight": "expense with quantity"
           }
         ],
@@ -407,12 +407,12 @@
             "highlight": "ongoing process: te-iru"
           },
           {
-            "jp": "掛かっています。",
-            "kana": "かかっています。",
-            "en": "It is taking time.",
+            "jp": "お金が掛かっています。",
+            "kana": "おかねがかかっています。",
+            "en": "It is costing money.",
             "grammarTag": "te-iru",
-            "pattern": "Verb(て) + いる",
-            "highlight": "present progressive"
+            "pattern": "Subject が + Verb(て) + います",
+            "highlight": "ongoing cost: が marks resource"
           }
         ]
       },
@@ -487,9 +487,9 @@
           {
             "jp": "毎日、大切な日記を丁寧に書きます。",
             "kana": "まいにち、たいせつなにっきをていねいにかきます。",
-            "en": "I carefully write my important diary every day.",
+            "en": "I carefully write in my important diary every day.",
             "grammarTag": "polite-nonpast",
-            "pattern": "Time + Verb(ます)",
+            "pattern": "Time + Adjective + Object を + Adverb + Verb(ます)",
             "highlight": "writing routine with adjective and adverb"
           },
           {
@@ -497,7 +497,7 @@
             "kana": "きのう、ながいてがみをかきました。",
             "en": "Yesterday, I wrote a long letter.",
             "grammarTag": "polite-past",
-            "pattern": "Subject + Verb(ます)",
+            "pattern": "Time + Adjective + Object を + Verb(ました)",
             "highlight": "writing with adjective"
           }
         ],
@@ -595,7 +595,7 @@
             "kana": "ともだちにたいせつなほんをよくかします。",
             "en": "I often lend important books to friends.",
             "grammarTag": "polite-nonpast",
-            "pattern": "Subject + Verb(ます)",
+            "pattern": "Recipient に + Adjective + Object を + Adverb + Verb(ます)",
             "highlight": "lending habit with adjective and adverb"
           },
           {
@@ -603,7 +603,7 @@
             "kana": "きのう、あたらしいペンをかしました。",
             "en": "Yesterday, I lent a new pen.",
             "grammarTag": "polite-past",
-            "pattern": "Subject + Verb(ます)",
+            "pattern": "Time + Adjective + Object を + Verb(ました)",
             "highlight": "lending with adjective"
           }
         ],
@@ -698,7 +698,7 @@
             "kana": "まいかい、むずかしいしあいにかちます。",
             "en": "I win difficult matches every time.",
             "grammarTag": "polite-nonpast",
-            "pattern": "Subject + Verb(ます)",
+            "pattern": "Time + Adjective + Opponent に + Verb(ます)",
             "highlight": "consistent victory with adjective"
           },
           {
@@ -706,7 +706,7 @@
             "kana": "きのう、つよいあいてにかちました。",
             "en": "Yesterday, I won against a strong opponent.",
             "grammarTag": "polite-past",
-            "pattern": "Subject + Verb(ます)",
+            "pattern": "Time + Adjective + Opponent に + Verb(ました)",
             "highlight": "victory with adjective"
           }
         ],
@@ -802,7 +802,7 @@
             "kana": "まいにち、あたらしいぼうしをかぶります。",
             "en": "I wear a new hat every day.",
             "grammarTag": "polite-nonpast",
-            "pattern": "Time + Verb(ます)",
+            "pattern": "Time + Adjective + Object を + Verb(ます)",
             "highlight": "daily routine with adjective"
           },
           {
@@ -810,7 +810,7 @@
             "kana": "さむいので、あたたかいぼうしをかぶりました。",
             "en": "Because it was cold, I wore a warm hat.",
             "grammarTag": "polite-past",
-            "pattern": "Subject + Verb(ます)",
+            "pattern": "Reason ので + Adjective + Object を + Verb(ました)",
             "highlight": "weather-appropriate wearing with adjective"
           }
         ],
@@ -900,11 +900,11 @@
         ],
         "masu": [
           {
-            "jp": "毎日、難しい勉強を一生懸命頑張ります。",
-            "kana": "まいにち、むずかしいべんきょうをいっしょうけんめいがんばります。",
+            "jp": "毎日、難しい勉強を頑張ります。",
+            "kana": "まいにち、むずかしいべんきょうをがんばります。",
             "en": "I do my best at difficult studying every day.",
             "grammarTag": "polite-nonpast",
-            "pattern": "Subject + Verb(ます)",
+            "pattern": "Time + Adjective + Object を + Verb(ます)",
             "highlight": "persistent effort with adjective and adverb"
           },
           {
@@ -912,7 +912,7 @@
             "kana": "きのう、たいせつなしけんのためにがんばりました。",
             "en": "Yesterday, I worked hard for an important exam.",
             "grammarTag": "polite-past",
-            "pattern": "Subject + Verb(ます)",
+            "pattern": "Time + Adjective + Goal のために + Verb(ました)",
             "highlight": "dedicated effort with adjective"
           }
         ],
@@ -1008,9 +1008,9 @@
           {
             "jp": "毎日、新しい音楽をよく聞きます。",
             "kana": "まいにち、あたらしいおんがくをよくききます。",
-            "en": "I listen to new music often every day.",
+            "en": "I often listen to new music every day.",
             "grammarTag": "polite-nonpast",
-            "pattern": "Subject + Verb(ます)",
+            "pattern": "Time + Adjective + Object を + Adverb + Verb(ます)",
             "highlight": "listening habit with adjective and adverb"
           },
           {
@@ -1018,7 +1018,7 @@
             "kana": "せんせいのたいせつなはなしをていねいにききました。",
             "en": "I carefully listened to the teacher's important talk.",
             "grammarTag": "polite-past",
-            "pattern": "Subject + Verb(ます)",
+            "pattern": "Possessive + Adjective + Object を + Adverb + Verb(ました)",
             "highlight": "attentive listening with adjective and adverb"
           }
         ],
