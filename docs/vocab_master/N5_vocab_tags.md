@@ -63,7 +63,7 @@ Total words: 824
 | いそがしい | 忙しい | busy | adjective |  | i-adjective |
 | いたい | 痛い | painful | adjective |  | i-adjective |
 | いただきます |  | thank you (for the meal just served) | expression |  |  |
-| いただく | 頂く | to receive (humble) | verb | godan |  |
+| いただく | 頂く | to receive; to eat/drink (humble) | verb | godan |  |
 | いち | 一 | one | noun |  |  |
 | いちど | 一度 | once | adverb, noun |  |  |
 | いちにち | 一日 | one day | noun |  |  |
@@ -78,11 +78,11 @@ Total words: 824
 | いま | 今 | now | adverb, noun |  |  |
 | いみ | 意味 | meaning | noun |  |  |
 | いもうと | 妹 | younger sister | noun |  |  |
-| いもうとさん |  | younger sister | noun |  |  |
+| いもうとさん | 妹さん | younger sister | noun |  |  |
 | いや | 嫌 | disliking | adjective, noun |  | na-adjective |
 | いらっしゃいませ |  | welcome | expression |  |  |
 | いりぐち | 入口 | entrance | noun |  |  |
-| いる | 居る | to be (of animate objects) | verb | ichidan |  |
+| いる |  | to be (of animate objects) | verb | ichidan |  |
 | いる | 要る | to need | verb | godan |  |
 | いれる | 入れる | to put in | verb | ichidan |  |
 | いろ | 色 | colour | noun |  |  |
@@ -134,7 +134,7 @@ Total words: 824
 | おてあらい | お手洗い | toilet | noun |  |  |
 | おとうさん | お父さん | father | noun |  |  |
 | おとうと | 弟 | younger brother | noun |  |  |
-| おとうとさん |  | younger brother | noun |  |  |
+| おとうとさん | 弟さん | younger brother | noun |  |  |
 | おとこ | 男 | man | noun |  |  |
 | おとこのこ | 男の子 | boy | noun |  |  |
 | おととい | 一昨日 | day before yesterday | adverb, noun |  |  |
@@ -150,7 +150,7 @@ Total words: 824
 | おねがいします |  | please | expression |  |  |
 | おはよう |  | good morning | expression |  |  |
 | おはようございます |  | good morning | expression |  |  |
-| おばあさん |  | grandmother | noun |  |  |
+| おばあさん | お婆さん | grandmother | noun |  |  |
 | おふろ | お風呂 | bath | noun |  |  |
 | おべんとう | お弁当 | bento | noun |  |  |
 | おぼえる | 覚える | to memorize | verb | ichidan |  |
@@ -187,7 +187,7 @@ Total words: 824
 | かぞく | 家族 | family | noun |  |  |
 | かた | 方 | direction | noun |  |  |
 | かど | 角 | corner | noun |  |  |
-| かない |  | (my) wife | noun |  |  |
+| かない | 家内 | (my) wife | noun |  |  |
 | かばん | 鞄 | bag | noun |  |  |
 | かびん | 花瓶 | (flower) vase | noun |  |  |
 | かぶる | 被る | to put on (one's head) | verb | godan |  |
@@ -197,7 +197,7 @@ Total words: 824
 | からだ | 体 | body | noun |  |  |
 | かりる | 借りる | to borrow | verb | ichidan |  |
 | かるい | 軽い | light (i.e. not heavy) | adjective |  | i-adjective |
-| かわいい |  | cute | adjective |  | i-adjective |
+| かわいい | 可愛い | cute | adjective |  | i-adjective |
 | かんじ | 漢字 | kanji | noun |  |  |
 | かんたん | 簡単 | simple | adjective, noun |  | na-adjective |
 | がいこく | 外国 | foreign country | noun |  |  |
@@ -349,7 +349,7 @@ Total words: 824
 | すいようび | 水曜日 | Wednesday | adverb, noun |  |  |
 | すう | 吸う | to suck/inhale (smoke) | verb | godan |  |
 | すき | 好き | liking | adjective, noun |  | na-adjective |
-| すぎ |  | after/past | suffix |  |  |
+| すぎ | 過ぎ | past; after (time expression suffix) | suffix |  |  |
 | すくない | 少ない | few | adjective |  | i-adjective |
 | すぐに |  | immediately | adverb |  |  |
 | すこし | 少し | a little | adverb |  |  |
@@ -426,7 +426,7 @@ Total words: 824
 | ちち | 父 | father | noun |  |  |
 | ちゃいろ | 茶色 | brown | noun |  |  |
 | ちゃわん | 茶碗 | rice bowl | noun |  |  |
-| ちゅう | 中 | during; in the middle of | suffix |  |  |
+| ちゅう | 中 | during; while (suffix) | suffix |  |  |
 | ちょうど |  | exactly | adverb |  |  |
 | ちょっと |  | a little | adverb |  |  |
 | つ |  | general-purpose counter | counter |  |  |
@@ -497,7 +497,7 @@ Total words: 824
 | なか | 中 | inside | noun |  |  |
 | ながい | 長い | long (distance, length) | adjective |  | i-adjective |
 | なく | 鳴く | to make sound (of an animal) | verb | godan |  |
-| なくす | 無くす | to lose (something) | verb | godan |  |
+| なくす |  | to lose (something) | verb | godan |  |
 | なぜ |  | why | adverb |  |  |
 | なつ | 夏 | summer | noun |  |  |
 | なつやすみ | 夏休み | summer vacation | noun |  |  |
