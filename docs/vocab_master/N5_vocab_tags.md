@@ -4,8 +4,8 @@ Total words: 824
 
 | Kana | Kanji | Meaning | Tags | Verb Type | Adjective Type |
 |------|-------|---------|------|----------|----------------|
-| あ |  | ah! | interjection | |  |
-| ああ |  | ah! | interjection | |  |
+| あ |  | ah! | interjection |  |  |
+| ああ |  | ah! | interjection |  |  |
 | あう | 会う | to meet | verb | godan |  |
 | あお | 青 | blue | noun |  |  |
 | あおい | 青い | blue | adjective |  | i-adjective |
@@ -13,104 +13,104 @@ Total words: 824
 | あかい | 赤い | red | adjective |  | i-adjective |
 | あかるい | 明るい | bright | adjective |  | i-adjective |
 | あき | 秋 | autumn | noun |  |  |
-| あく | 開く | to open (e.g. doors) | verb | godan |  |
-| あける | 開ける | to open (a door, etc.) | verb | ichidan |  |
+| あく | 開く | to open (intransitive) | verb | godan |  |
+| あける | 開ける | to open (something) | verb | ichidan |  |
 | あげる | 上げる | to raise | verb | ichidan |  |
 | あさ | 朝 | morning | noun |  |  |
-| あさごはん | 朝御飯 | breakfast | noun |  |  |
-| あさって |  | day after tomorrow | adverb, noun | |  |
+| あさごはん | 朝ご飯 | breakfast | noun |  |  |
+| あさって |  | day after tomorrow | adverb, noun |  |  |
 | あし | 足 | foot | noun |  |  |
 | あした | 明日 | tomorrow | adverb, noun |  |  |
-| あそこ |  | there | noun | |  |
+| あそこ |  | there | noun |  |  |
 | あそぶ | 遊ぶ | to play (games, sports) | verb | godan |  |
 | あたたかい | 暖かい | warm | adjective |  | i-adjective |
 | あたま | 頭 | head | noun |  |  |
 | あたらしい | 新しい | new | adjective |  | i-adjective |
-| あちら |  | that way | noun | |  |
-| あっち |  | that way | noun | |  |
+| あちら |  | that way | noun |  |  |
+| あっち |  | that way | noun |  |  |
 | あつい | 厚い | thick | adjective |  | i-adjective |
 | あつい | 暑い | hot | adjective |  | i-adjective |
 | あつい | 熱い | hot (to the touch) | adjective |  | i-adjective |
 | あと | 後 | behind/after | adverb, noun |  |  |
-| あなた |  | you | noun | |  |
+| あなた |  | you | noun |  |  |
 | あに | 兄 | older brother | noun |  |  |
 | あね | 姉 | older sister | noun |  |  |
-| あの |  | that | determiner | |  |
-| あのう |  | say/um | interjection | |  |
+| あの |  | that | determiner |  |  |
+| あのう |  | say/um | interjection |  |  |
 | あびる |  | to bathe in; to pour over oneself | verb | ichidan |  |
 | あぶない | 危ない | dangerous | adjective |  | i-adjective |
 | あまい | 甘い | sweet-tasting | adjective |  | i-adjective |
-| あまり |  | not very (with negative) | adverb | |  |
+| あまり |  | not very (with negative) | adverb |  |  |
 | あめ | 雨 | rain | noun |  |  |
 | あめ | 飴 | (hard) candy | noun |  |  |
 | あらう | 洗う | to wash | verb | godan |  |
-| ありがとう |  | thank you | expression | |  |
-| ありがとうございます |  | thank you | expression | |  |
+| ありがとう |  | thank you | expression |  |  |
+| ありがとうございます |  | thank you | expression |  |  |
 | ある |  | to exist (inanimate) | verb | godan |  |
 | あるく | 歩く | to walk | verb | godan |  |
-| あれ |  | that | noun | |  |
-| いい |  | good | adjective | | i-adjective |
-| いいえ |  | no | interjection | |  |
+| あれ |  | that | noun |  |  |
+| いい |  | good | adjective |  | i-adjective |
+| いいえ |  | no | interjection |  |  |
 | いう | 言う | to say | verb | godan |  |
 | いえ | 家 | house | noun |  |  |
-| いかが |  | how (polite) | adverb | |  |
+| いかが |  | how (polite) | adverb |  |  |
 | いく | 行く | to go | verb | godan |  |
-| いくつ |  | how many | noun | |  |
-| いくら |  | how much (money) | adverb | |  |
+| いくつ |  | how many | noun |  |  |
+| いくら |  | how much (money) | adverb |  |  |
 | いけ | 池 | pond | noun |  |  |
 | いしゃ | 医者 | doctor | noun |  |  |
-| いす |  | chair | noun | |  |
+| いす |  | chair | noun |  |  |
 | いそがしい | 忙しい | busy | adjective |  | i-adjective |
 | いたい | 痛い | painful | adjective |  | i-adjective |
-| いただきます |  | thank you (for the meal just served) | expression | |  |
-| いただく |  | to receive (humble) | verb | godan |  |
+| いただきます |  | thank you (for the meal just served) | expression |  |  |
+| いただく | 頂く | to receive (humble) | verb | godan |  |
 | いち | 一 | one | noun |  |  |
 | いちど | 一度 | once | adverb, noun |  |  |
 | いちにち | 一日 | one day | noun |  |  |
 | いちばん | 一番 | number one/most | adverb, noun |  |  |
 | いっしょ | 一緒 | together | noun |  |  |
-| いってきます |  | I\'m off | expression | |  |
-| いつ |  | when | noun | |  |
-| いつか |  | someday | adverb | |  |
+| いってきます |  | I\'m off | expression |  |  |
+| いつ |  | when | noun |  |  |
+| いつか |  | someday | adverb |  |  |
 | いつつ | 五つ | five | noun |  |  |
-| いつも |  | always | adverb | |  |
+| いつも |  | always | adverb |  |  |
 | いぬ | 犬 | dog | noun |  |  |
 | いま | 今 | now | adverb, noun |  |  |
 | いみ | 意味 | meaning | noun |  |  |
 | いもうと | 妹 | younger sister | noun |  |  |
-| いもうとさん |  | younger sister | noun | |  |
+| いもうとさん |  | younger sister | noun |  |  |
 | いや | 嫌 | disliking | adjective, noun |  | na-adjective |
-| いらっしゃいませ |  | welcome | expression | |  |
+| いらっしゃいませ |  | welcome | expression |  |  |
 | いりぐち | 入口 | entrance | noun |  |  |
 | いる | 居る | to be (of animate objects) | verb | ichidan |  |
 | いる | 要る | to need | verb | godan |  |
 | いれる | 入れる | to put in | verb | ichidan |  |
 | いろ | 色 | colour | noun |  |  |
-| いろいろ |  | various | adjective, adverb, noun | | na-adjective |
+| いろいろ |  | various | adjective, noun, adverb |  | na-adjective |
 | うえ | 上 | above/on top | noun |  |  |
 | うしろ | 後ろ | back/behind | noun |  |  |
 | うすい | 薄い | thin (of an object) | adjective |  | i-adjective |
 | うた | 歌 | song | noun |  |  |
 | うたう | 歌う | to sing | verb | godan |  |
-| うち |  | one's house | noun | |  |
+| うち |  | one's house | noun |  |  |
 | うまれる | 生まれる | to be born | verb | ichidan |  |
 | うみ | 海 | sea | noun |  |  |
 | うる | 売る | to sell | verb | godan |  |
 | うるさい | 煩い | noisy | adjective |  | i-adjective |
 | うれしい | 嬉しい | happy | adjective |  | i-adjective |
 | うわぎ | 上着 | coat | noun |  |  |
-| うーん |  | um | interjection | |  |
+| うーん |  | um | interjection |  |  |
 | え | 絵 | picture | noun |  |  |
 | えいが | 映画 | movie | noun |  |  |
 | えいがかん | 映画館 | movie theatre | noun |  |  |
 | えいご | 英語 | English (language) | noun |  |  |
-| ええ |  | yes | interjection | |  |
+| ええ |  | yes | interjection |  |  |
 | えき | 駅 | railway station | noun |  |  |
-| えっ |  | huh? | interjection | |  |
-| えん |  | yen (currency) | noun | |  |
+| えっ |  | huh? | interjection |  |  |
+| えん |  | yen (currency) | noun |  |  |
 | えんぴつ | 鉛筆 | pencil | noun |  |  |
-| えー |  | yes | interjection | |  |
-| お |  | honorific prefix | prefix | |  |
+| えー |  | yes | interjection |  |  |
+| お |  | honorific prefix | prefix |  |  |
 | おいしい | 美味しい | good(-tasting) | adjective |  | i-adjective |
 | おおい | 多い | many | adjective |  | i-adjective |
 | おおきい | 大きい | big | adjective |  | i-adjective |
@@ -122,55 +122,55 @@ Total words: 824
 | おきる | 起きる | to get up | verb | ichidan |  |
 | おく | 置く | to put | verb | godan |  |
 | おくさん | 奥さん | wife | noun |  |  |
-| おくに |  | your native country | noun | |  |
+| おくに |  | your native country | noun |  |  |
 | おくる | 送る | to send | verb | godan |  |
 | おさけ | お酒 | alcohol | noun |  |  |
 | おさら | お皿 | plate | noun |  |  |
 | おしえる | 教える | to teach | verb | ichidan |  |
 | おす | 押す | to push | verb | godan |  |
 | おそい | 遅い | slow | adjective |  | i-adjective |
-| おそく |  | late | adverb | |  |
+| おそく |  | late | adverb |  |  |
 | おちゃ | お茶 | tea (esp. green or barley) | noun |  |  |
 | おてあらい | お手洗い | toilet | noun |  |  |
 | おとうさん | お父さん | father | noun |  |  |
 | おとうと | 弟 | younger brother | noun |  |  |
-| おとうとさん |  | younger brother | noun | |  |
+| おとうとさん |  | younger brother | noun |  |  |
 | おとこ | 男 | man | noun |  |  |
 | おとこのこ | 男の子 | boy | noun |  |  |
 | おととい | 一昨日 | day before yesterday | adverb, noun |  |  |
 | おととし | 一昨年 | year before last | adverb, noun |  |  |
 | おとな | 大人 | adult | noun |  |  |
-| おなか |  | belly | noun | |  |
-| おなじ | 同じ | same | adjective, adverb, noun |  | na-adjective |
+| おなか |  | belly | noun |  |  |
+| おなじ | 同じ | same | adjective, noun, adverb |  | na-adjective |
 | おにいさん | お兄さん | older brother | noun |  |  |
-| おにぎり |  | onigiri | noun | |  |
+| おにぎり |  | onigiri | noun |  |  |
 | おねえさん | お姉さん | older sister | noun |  |  |
 | おねがい | お願い | request | expression, noun |  |  |
-| おねがいする | お願いする | to make a request; to ask |  | suru-verb |  |
-| おねがいします |  | please | expression | |  |
-| おはよう |  | good morning | expression | |  |
-| おはようございます |  | good morning | expression | |  |
-| おばあさん |  | grandmother | noun | |  |
+| おねがいする | お願いする | to make a request; to ask | verb | suru-verb |  |
+| おねがいします |  | please | expression |  |  |
+| おはよう |  | good morning | expression |  |  |
+| おはようございます |  | good morning | expression |  |  |
+| おばあさん |  | grandmother | noun |  |  |
 | おふろ | お風呂 | bath | noun |  |  |
 | おべんとう | お弁当 | bento | noun |  |  |
 | おぼえる | 覚える | to memorize | verb | ichidan |  |
-| おまわりさん |  | police officer | noun | |  |
-| おみせ |  | store | noun | |  |
+| おまわりさん |  | police officer | noun |  |  |
+| おみせ |  | store | noun |  |  |
 | おもい | 重い | heavy | adjective |  | i-adjective |
 | おもしろい | 面白い | interesting | adjective |  | i-adjective |
-| おやすみなさい |  | good night | expression | |  |
+| おやすみなさい |  | good night | expression |  |  |
 | およぐ | 泳ぐ | to swim | verb | godan |  |
 | おりる | 降りる | to descend (e.g. a mountain) | verb | ichidan |  |
 | おわる | 終わる | to end | verb | godan |  |
 | おんがく | 音楽 | music | noun |  |  |
 | おんな | 女 | woman | noun |  |  |
 | おんなのこ | 女の子 | girl | noun |  |  |
-| か |  | question particle | particle | |  |
-| かい |  | counter for times/floors | counter | |  |
+| か |  | question particle | particle |  |  |
+| かい |  | counter for times/floors | counter |  |  |
 | かいしゃ | 会社 | company | noun |  |  |
 | かいだん | 階段 | stairs | noun |  |  |
 | かいもの | 買い物 | shopping | noun |  |  |
-| かいものする | 買い物する | to go shopping |  | suru-verb |  |
+| かいものする | 買い物する | to go shopping | verb | suru-verb |  |
 | かう | 買う | to buy | verb | godan |  |
 | かえす | 返す | to return (something) | verb | godan |  |
 | かえる | 帰る | to return | verb | godan |  |
@@ -187,7 +187,7 @@ Total words: 824
 | かぞく | 家族 | family | noun |  |  |
 | かた | 方 | direction | noun |  |  |
 | かど | 角 | corner | noun |  |  |
-| かない |  | (my) wife | noun | |  |
+| かない |  | (my) wife | noun |  |  |
 | かばん | 鞄 | bag | noun |  |  |
 | かびん | 花瓶 | (flower) vase | noun |  |  |
 | かぶる | 被る | to put on (one's head) | verb | godan |  |
@@ -197,7 +197,7 @@ Total words: 824
 | からだ | 体 | body | noun |  |  |
 | かりる | 借りる | to borrow | verb | ichidan |  |
 | かるい | 軽い | light (i.e. not heavy) | adjective |  | i-adjective |
-| かわいい |  | cute | adjective | | i-adjective |
+| かわいい |  | cute | adjective |  | i-adjective |
 | かんじ | 漢字 | kanji | noun |  |  |
 | かんたん | 簡単 | simple | adjective, noun |  | na-adjective |
 | がいこく | 外国 | foreign country | noun |  |  |
@@ -232,7 +232,7 @@ Total words: 824
 | ぎんこう | 銀行 | bank | noun |  |  |
 | く | 区 | ward | noun |  |  |
 | くすり | 薬 | medicine | noun |  |  |
-| ください |  | please (give me) | expression | |  |
+| ください |  | please (give me) | expression |  |  |
 | くだもの | 果物 | fruit | noun |  |  |
 | くち | 口 | mouth | noun |  |  |
 | くつ | 靴 | shoe | noun |  |  |
@@ -249,9 +249,9 @@ Total words: 824
 | けさ | 今朝 | this morning | adverb, noun |  |  |
 | けしゴム | 消しゴム | eraser | noun |  |  |
 | けす | 消す | to erase | verb | godan |  |
-| けっこう | 結構 | quite; fine; no thank you | adjective, adverb, noun |  | na-adjective |
+| けっこう | 結構 | quite; fine; no thank you | adjective, noun, adverb |  | na-adjective |
 | けっこん | 結婚 | marriage | noun |  |  |
-| けっこんする | 結婚する | to get married |  | suru-verb |  |
+| けっこんする | 結婚する | to get married | verb | suru-verb |  |
 | げつようび | 月曜日 | Monday | adverb, noun |  |  |
 | げんかん | 玄関 | entrance | noun |  |  |
 | げんき | 元気 | healthy; energetic | adjective, noun |  | na-adjective |
@@ -261,38 +261,38 @@ Total words: 824
 | こうちゃ | 紅茶 | black tea | noun |  |  |
 | こうばん | 交番 | police box | noun |  |  |
 | こえ | 声 | voice | noun |  |  |
-| ここ |  | here | noun | |  |
+| ここ |  | here | noun |  |  |
 | ここのか | 九日 | 9th day of the month | noun |  |  |
 | ここのつ | 九つ | nine | noun |  |  |
 | こたえ | 答え | answer | noun |  |  |
 | こたえる | 答える | to answer | verb | ichidan |  |
-| こちら |  | this way | noun | |  |
-| こちらこそ |  | it is I who should say so | expression | |  |
-| こっち |  | this way | noun | |  |
+| こちら |  | this way | noun |  |  |
+| こちらこそ |  | it is I who should say so | expression |  |  |
+| こっち |  | this way | noun |  |  |
 | ことし | 今年 | this year | adverb, noun |  |  |
 | ことば | 言葉 | language | noun |  |  |
 | こども | 子供 | child | noun |  |  |
-| この |  | this | determiner | |  |
+| この |  | this | determiner |  |  |
 | こまる | 困る | to be troubled | verb | godan |  |
-| これ |  | this | noun | |  |
+| これ |  | this | noun |  |  |
 | こんげつ | 今月 | this month | adverb, noun |  |  |
 | こんしゅう | 今週 | this week | adverb, noun |  |  |
-| こんな |  | this sort of | determiner | |  |
-| こんにちは |  | hello | expression | |  |
+| こんな |  | this sort of | determiner |  |  |
+| こんにちは |  | hello | expression |  |  |
 | こんばん | 今晩 | tonight | adverb, noun |  |  |
-| こんばんは |  | good evening | expression | |  |
+| こんばんは |  | good evening | expression |  |  |
 | ご | 五 | five | noun |  |  |
 | ごご | 午後 | afternoon | noun |  |  |
-| ごしゅじん |  | your husband | noun | |  |
+| ごしゅじん |  | your husband | noun |  |  |
 | ごぜん | 午前 | morning | noun |  |  |
-| ごちそうさまでした |  | thank you for the meal | expression | |  |
+| ごちそうさまでした |  | thank you for the meal | expression |  |  |
 | ごはん | 御飯 | cooked rice; meal | noun |  |  |
-| ごめんください |  | may I come in? | expression | |  |
-| ごめんなさい |  | I\'m sorry | expression | |  |
-| ごろ |  | about/around (time) | particle | |  |
-| さあ |  | come (on) | interjection | |  |
+| ごめんください |  | may I come in? | expression |  |  |
+| ごめんなさい |  | I\'m sorry | expression |  |  |
+| ごろ |  | about/around (time) | particle |  |  |
+| さあ |  | come (on) | interjection |  |  |
 | さい | 歳 | counter for age | counter |  |  |
-| さいご | 最後 | last | noun |  |  |
+| さいご | 最後 | last; end | noun |  |  |
 | さいふ | 財布 | wallet | noun |  |  |
 | さかな | 魚 | fish | noun |  |  |
 | さき | 先 | ahead/point | noun |  |  |
@@ -302,23 +302,23 @@ Total words: 824
 | さつ | 冊 | counter for books | counter |  |  |
 | さとう | 砂糖 | sugar | noun |  |  |
 | さむい | 寒い | cold (e.g. weather) | adjective |  | i-adjective |
-| さようなら |  | farewell | expression | |  |
+| さようなら |  | farewell | expression |  |  |
 | さらいねん | 再来年 | year after next | adverb, noun |  |  |
 | さん | 三 | three | noun |  |  |
 | さんぽ |  | walk | noun |  |  |
 | ざっし | 雑誌 | magazine | noun |  |  |
 | し | 四 | four | noun |  |  |
 | しお | 塩 | salt | noun |  |  |
-| しかし |  | however | conjunction | |  |
+| しかし |  | however | conjunction |  |  |
 | しごと | 仕事 | work | noun |  |  |
 | しずか | 静か | quiet | adjective, noun |  | na-adjective |
 | した | 下 | below | noun |  |  |
 | しち | 七 | seven | noun |  |  |
 | しつもん | 質問 | question | noun |  |  |
 | しつれい | 失礼 | discourtesy | expression, noun |  |  |
-| しつれいする | 失礼する | to be rude; to excuse oneself |  | suru-verb |  |
-| しつれいしました |  | my apologies | expression | |  |
-| しつれいします |  | excuse me | expression | |  |
+| しつれいする | 失礼する | to be rude; to excuse oneself | verb | suru-verb |  |
+| しつれいしました |  | my apologies | expression |  |  |
+| しつれいします |  | excuse me | expression |  |  |
 | しぬ | 死ぬ | to die | verb | godan |  |
 | しまる | 閉まる | to be shut | verb | godan |  |
 | しめる | 締める | to tie | verb | ichidan |  |
@@ -338,8 +338,8 @@ Total words: 824
 | じてんしゃ | 自転車 | bicycle | noun |  |  |
 | じどうしゃ | 自動車 | car | noun |  |  |
 | じぶん | 自分 | myself | noun |  |  |
-| じゃ |  | then | conjunction | |  |
-| じゃあ |  | then | conjunction | |  |
+| じゃ |  | then | conjunction |  |  |
+| じゃあ |  | then | conjunction |  |  |
 | じゅう | 十 | ten | noun |  |  |
 | じゅうご | 十五 | fifteen | noun |  |  |
 | じゅぎょう | 授業 | lesson | noun |  |  |
@@ -349,50 +349,50 @@ Total words: 824
 | すいようび | 水曜日 | Wednesday | adverb, noun |  |  |
 | すう | 吸う | to suck/inhale (smoke) | verb | godan |  |
 | すき | 好き | liking | adjective, noun |  | na-adjective |
-| すぎ |  | after/past | suffix | |  |
+| すぎ |  | after/past | suffix |  |  |
 | すくない | 少ない | few | adjective |  | i-adjective |
-| すぐに |  | immediately | adverb | |  |
+| すぐに |  | immediately | adverb |  |  |
 | すこし | 少し | a little | adverb |  |  |
-| すし |  | sushi | noun | |  |
-| すしや |  | sushi shop | noun | |  |
+| すし |  | sushi | noun |  |  |
+| すしや |  | sushi shop | noun |  |  |
 | すずしい | 涼しい | cool | adjective |  | i-adjective |
-| すみません |  | excuse me | expression | |  |
+| すみません |  | excuse me | expression |  |  |
 | すむ | 住む | to live (of humans) | verb | godan |  |
-| する |  | to do | verb | suru-verb |  |
+| する |  | to do | verb | irregular |  |
 | すわる | 座る | to sit (down) | verb | godan |  |
-| ずつ |  | apiece | particle | |  |
+| ずつ |  | apiece | particle |  |  |
 | せ | 背 | back | noun |  |  |
 | せいと | 生徒 | pupil | noun |  |  |
-| せっけん |  | soap | noun | |  |
+| せっけん |  | soap | noun |  |  |
 | せまい | 狭い | narrow | adjective |  | i-adjective |
 | せん | 千 | thousand | noun |  |  |
 | せんげつ | 先月 | last month | adverb, noun |  |  |
 | せんしゅう | 先週 | last week | adverb, noun |  |  |
 | せんせい | 先生 | teacher | noun |  |  |
 | せんたく | 洗濯 | washing | noun |  |  |
-| せんたくする | 洗濯する | to do laundry |  | suru-verb |  |
+| せんたくする | 洗濯する | to do laundry | verb | suru-verb |  |
 | ぜんぶ | 全部 | all | adverb, noun |  |  |
 | そうじ | 掃除 | cleaning | noun |  |  |
-| そうだ |  | that is so | expression | |  |
-| そうです |  | that is so | expression | |  |
-| そうですね |  | that\'s so, isn\'t it | expression | |  |
-| そこ |  | there (place relatively near listener) | noun | |  |
-| そして |  | and | conjunction | |  |
-| そちら |  | that way | noun | |  |
-| そっち |  | that way | noun | |  |
+| そうだ |  | that is so | expression |  |  |
+| そうです |  | that is so | expression |  |  |
+| そうですね |  | that\'s so, isn\'t it | expression |  |  |
+| そこ |  | there (place relatively near listener) | noun |  |  |
+| そして |  | and | conjunction |  |  |
+| そちら |  | that way | noun |  |  |
+| そっち |  | that way | noun |  |  |
 | そと | 外 | outside | noun |  |  |
-| その |  | that | determiner | |  |
-| そば |  | near; beside; buckwheat noodles | noun | |  |
+| その |  | that | determiner |  |  |
+| そば |  | near; beside; buckwheat noodles | noun |  |  |
 | そら | 空 | sky | noun |  |  |
-| それ |  | that | noun | |  |
-| それから |  | and then | conjunction | |  |
-| それでは |  | well, ... | expression | |  |
+| それ |  | that | noun |  |  |
+| それから |  | and then | conjunction |  |  |
+| それでは |  | well, ... | expression |  |  |
 | たいせつ | 大切 | important | adjective, noun |  | na-adjective |
-| たいてい |  | mostly | adverb, noun | |  |
-| たいへん | 大変 | very; tough; terrible | adjective, adverb, noun |  | na-adjective |
+| たいてい |  | mostly | adverb, noun |  |  |
+| たいへん | 大変 | very; tough; terrible | adjective, noun, adverb |  | na-adjective |
 | たかい | 高い | high | adjective |  | i-adjective |
-| たくさん |  | a lot | adverb, noun | |  |
-| ただいま |  | I\'m home! | expression | |  |
+| たくさん |  | a lot | adverb, noun |  |  |
+| ただいま |  | I\'m home! | expression |  |  |
 | ただしい | 正しい | right | adjective |  | i-adjective |
 | たち | 達 | plural suffix | suffix |  |  |
 | たつ | 立つ | to stand (up) | verb | godan |  |
@@ -400,22 +400,22 @@ Total words: 824
 | たてもの | 建物 | building | noun |  |  |
 | たのしい | 楽しい | enjoyable | adjective |  | i-adjective |
 | たのむ | 頼む | to request | verb | godan |  |
-| たばこ |  | tobacco | noun | |  |
-| たぶん |  | probably | adverb | |  |
+| たばこ |  | tobacco | noun |  |  |
+| たぶん |  | probably | adverb |  |  |
 | たべもの | 食べ物 | food | noun |  |  |
 | たべる | 食べる | to eat | verb | ichidan |  |
 | たまご | 卵 | eggs | noun |  |  |
 | たんじょうび | 誕生日 | birthday | noun |  |  |
 | だい | 台 | counter for machines/vehicles | counter |  |  |
 | だいがく | 大学 | university | noun |  |  |
-| だいじょうぶ | 大丈夫 | safe; okay | adjective, adverb, noun |  | na-adjective |
-| だいすき | 大好き | liking very much | adjective, noun |  | na-adjective |
-| だいたい |  | generally | adverb, noun | |  |
+| だいじょうぶ | 大丈夫 | safe; okay | adjective, noun, adverb |  | na-adjective |
+| だいすき | 大好き | very fond of; love (something) | adjective, noun |  | na-adjective |
+| だいたい |  | generally | adverb, noun |  |  |
 | だいどころ | 台所 | kitchen | noun |  |  |
-| だから |  | so | conjunction | |  |
+| だから |  | so | conjunction |  |  |
 | だす | 出す | to take out | verb | godan |  |
 | だれ | 誰 | who | noun |  |  |
-| だんだん |  | gradually | adverb | |  |
+| だんだん |  | gradually | adverb |  |  |
 | ちいさい | 小さい | small | adjective |  | i-adjective |
 | ちいさな | 小さな | small | determiner |  |  |
 | ちかい | 近い | near | adjective |  | i-adjective |
@@ -427,9 +427,9 @@ Total words: 824
 | ちゃいろ | 茶色 | brown | noun |  |  |
 | ちゃわん | 茶碗 | rice bowl | noun |  |  |
 | ちゅう | 中 | during; in the middle of | suffix |  |  |
-| ちょうど |  | exactly | adverb | |  |
-| ちょっと |  | a little | adverb | |  |
-| つ |  | general-purpose counter | counter | |  |
+| ちょうど |  | exactly | adverb |  |  |
+| ちょっと |  | a little | adverb |  |  |
+| つ |  | general-purpose counter | counter |  |  |
 | ついたち | 一日 | first day of the month | noun |  |  |
 | つかう | 使う | to use (a tool, method, etc.) | verb | godan |  |
 | つかれる | 疲れる | to get tired | verb | ichidan |  |
@@ -439,36 +439,36 @@ Total words: 824
 | つくりかた | 作り方 | how to make | noun |  |  |
 | つくる | 作る | to make | verb | godan |  |
 | つける | 付ける | to turn on/attach | verb | ichidan |  |
-| つまらない |  | dull | adjective | | i-adjective |
+| つまらない |  | dull | adjective |  | i-adjective |
 | つめたい | 冷たい | cold (to the touch) | adjective |  | i-adjective |
 | つよい | 強い | strong | adjective |  | i-adjective |
 | て | 手 | hand | noun |  |  |
 | てがみ | 手紙 | letter | noun |  |  |
 | てんき | 天気 | weather | noun |  |  |
 | でかける | 出かける | to go out (e.g. on an excursion or outing) | verb | ichidan |  |
-| できる |  | can do/be able to | verb | ichidan |  |
+| できる | 出来る | can do; be able to | verb | ichidan |  |
 | でぐち | 出口 | exit | noun |  |  |
-| では |  | then | conjunction | |  |
-| ではまた |  | see you later | expression | |  |
-| でも |  | but | conjunction, particle | |  |
+| では |  | then | conjunction |  |  |
+| ではまた |  | see you later | expression |  |  |
+| でも |  | but | conjunction, particle |  |  |
 | でる | 出る | to leave | verb | ichidan |  |
 | でんき | 電気 | electricity | noun |  |  |
 | でんしゃ | 電車 | train | noun |  |  |
 | でんわ | 電話 | telephone call | noun |  |  |
-| でんわする | 電話する | to make a phone call |  | suru-verb |  |
+| でんわする | 電話する | to make a phone call | verb | suru-verb |  |
 | でんわばんごう | 電話番号 | telephone number | noun |  |  |
 | と | 戸 | door (esp. Japanese-style) | noun |  |  |
 | とうきょう | 東京 | Tokyo | proper noun |  |  |
-| とうふ |  | tofu | noun | |  |
+| とうふ |  | tofu | noun |  |  |
 | とおい | 遠い | far | adjective |  | i-adjective |
 | とおか | 十日 | 10th day of the month | noun |  |  |
-| とおく |  | far away | adverb, noun | |  |
+| とおく |  | far away | adverb, noun |  |  |
 | ときどき | 時々 | sometimes | adverb |  |  |
 | とけい | 時計 | clock | noun |  |  |
 | ところ | 所 | place | noun |  |  |
 | とし | 年 | year | noun |  |  |
 | としょかん | 図書館 | library | noun |  |  |
-| とても |  | very | adverb | |  |
+| とても |  | very | adverb |  |  |
 | となり | 隣 | next (to) | noun |  |  |
 | とぶ | 飛ぶ | to fly | verb | godan |  |
 | とまる | 止まる | to stop (moving) | verb | godan |  |
@@ -478,40 +478,40 @@ Total words: 824
 | とる | 取る | to take | verb | godan |  |
 | とる | 撮る | to take (a photograph) | verb | godan |  |
 | ど | 度 | counter for degrees | counter |  |  |
-| どう |  | how | adverb | |  |
-| どういたしまして |  | you\'re welcome | expression | |  |
-| どうして |  | why | adverb | |  |
-| どうぞ |  | please | adverb | |  |
+| どう |  | how | adverb |  |  |
+| どういたしまして |  | you\'re welcome | expression |  |  |
+| どうして |  | why | adverb |  |  |
+| どうぞ |  | please | adverb |  |  |
 | どうぶつ | 動物 | animal | noun |  |  |
-| どうも |  | thanks; somehow | adverb | |  |
-| どうもありがとう |  | thank you very much | expression | |  |
-| どこ |  | where | noun | |  |
-| どこか |  | somewhere | noun | |  |
-| どちら |  | which way | noun | |  |
-| どっち |  | which way | noun | |  |
-| どなた |  | who (polite) | noun | |  |
-| どの |  | which | determiner | |  |
+| どうも |  | thanks; somehow | adverb, expression |  |
+| どうもありがとう |  | thank you very much | expression |  |  |
+| どこ |  | where | noun |  |  |
+| どこか |  | somewhere | noun |  |  |
+| どちら |  | which way | noun |  |  |
+| どっち |  | which way | noun |  |  |
+| どなた |  | who (polite) | noun |  |  |
+| どの |  | which | determiner |  |  |
 | どようび | 土曜日 | Saturday | adverb, noun |  |  |
-| どれ |  | which (of three or more) | noun | |  |
-| どんな |  | what kind of | determiner | |  |
+| どれ |  | which (of three or more) | noun |  |  |
+| どんな |  | what kind of | determiner |  |  |
 | なか | 中 | inside | noun |  |  |
 | ながい | 長い | long (distance, length) | adjective |  | i-adjective |
 | なく | 鳴く | to make sound (of an animal) | verb | godan |  |
 | なくす | 無くす | to lose (something) | verb | godan |  |
-| なぜ |  | why | adverb | |  |
+| なぜ |  | why | adverb |  |  |
 | なつ | 夏 | summer | noun |  |  |
 | なつやすみ | 夏休み | summer vacation | noun |  |  |
-| など |  | et cetera | particle | |  |
+| など |  | et cetera | particle |  |  |
 | ななつ | 七つ | seven | noun |  |  |
-| なに |  | what | noun | |  |
-| なにか |  | something | noun | |  |
+| なに |  | what | noun |  |  |
+| なにか |  | something | noun |  |  |
 | なのか | 七日 | 7th day of the month | noun |  |  |
 | なまえ | 名前 | name | noun |  |  |
 | ならう | 習う | to take lessons in | verb | godan |  |
 | ならぶ | 並ぶ | to line up | verb | godan |  |
 | ならべる | 並べる | to line up | verb | ichidan |  |
 | なる |  | to become; to turn into | verb | godan |  |
-| なん |  | what | noun | |  |
+| なん |  | what | noun |  |  |
 | なんじ | 何時 | what time | noun |  |  |
 | なんにち | 何日 | what day | noun |  |  |
 | に | 二 | two | noun |  |  |
@@ -535,7 +535,7 @@ Total words: 824
 | のむ | 飲む | to drink | verb | godan |  |
 | のる | 乗る | to get on (train, plane, bus, ship, etc.) | verb | godan |  |
 | は | 歯 | tooth | noun |  |  |
-| はい |  | yes | interjection | |  |
+| はい |  | yes | interjection |  |  |
 | はいざら | 灰皿 | ashtray | noun |  |  |
 | はいる | 入る | to enter | verb | godan |  |
 | はがき | 葉書 | postcard | noun |  |  |
@@ -546,8 +546,8 @@ Total words: 824
 | はしる | 走る | to run | verb | godan |  |
 | はじまる | 始まる | to begin | verb | godan |  |
 | はじめて | 初めて | for the first time | adverb |  |  |
-| はじめに |  | first | adverb | |  |
-| はじめまして |  | nice to meet you | expression | |  |
+| はじめに |  | first | adverb |  |  |
+| はじめまして |  | nice to meet you | expression |  |  |
 | はたち | 二十歳 | 20 years old | noun |  |  |
 | はたらく | 働く | to work | verb | godan |  |
 | はち | 八 | eight | noun |  |  |
@@ -580,9 +580,9 @@ Total words: 824
 | ひとつ | 一つ | one | noun |  |  |
 | ひとつき | 一月 | one month (duration) | noun |  |  |
 | ひとり | 一人 | one person | noun |  |  |
-| ひま | 暇 | free; spare time | adjective, noun |  | na-adjective |
+| ひま | 暇 | free (not busy); spare time | adjective, noun |  | na-adjective |
 | ひゃく | 百 | hundred | noun |  |  |
-| ひらがな |  | hiragana | noun | |  |
+| ひらがな |  | hiragana | noun |  |  |
 | ひる | 昼 | noon/daytime | noun |  |  |
 | ひるごはん | 昼御飯 | lunch | noun |  |  |
 | ひろい | 広い | spacious | adjective |  | i-adjective |
@@ -612,11 +612,11 @@ Total words: 824
 | ほそい | 細い | thin | adjective |  | i-adjective |
 | ほん | 本 | book | noun |  |  |
 | ほんだな | 本棚 | bookshelves | noun |  |  |
-| ほんとう | 本当 | truth; real; true | noun, adjective |  | na-adjective |
+| ほんとう | 本当 | truth; real; true | adjective, noun |  | na-adjective |
 | ほんや | 本屋 | bookstore | noun |  |  |
 | ぼうし | 帽子 | hat | noun |  |  |
 | ぼく | 僕 | I | noun |  |  |
-| まい |  | counter for thin, flat objects (e.g. sheets of paper, plates, coins) | counter | |  |
+| まい |  | counter for thin, flat objects (e.g. sheets of paper, plates, coins) | counter |  |  |
 | まいあさ | 毎朝 | every morning | adverb, noun |  |  |
 | まいげつ | 毎月 | every month | adverb, noun |  |  |
 | まいしゅう | 毎週 | every week | adverb, noun |  |  |
@@ -625,11 +625,11 @@ Total words: 824
 | まいばん | 毎晩 | every night | adverb, noun |  |  |
 | まえ | 前 | in front (of) | noun |  |  |
 | まがる | 曲がる | to bend | verb | godan |  |
-| まずい |  | bad(-tasting) | adjective | | i-adjective |
-| また |  | again/also | adverb | |  |
-| まだ |  | still/not yet | adverb | |  |
+| まずい |  | bad(-tasting) | adjective |  | i-adjective |
+| また |  | again/also | adverb |  |  |
+| まだ |  | still/not yet | adverb |  |  |
 | まち | 町 | town | noun |  |  |
-| まっすぐ |  | straight (ahead) | adverb | | na-adjective |
+| まっすぐ |  | straight; direct | adjective, adverb |  | na-adjective |
 | まつ | 待つ | to wait | verb | godan |  |
 | まど | 窓 | window | noun |  |  |
 | まん | 万 | 10,000 | noun |  |  |
@@ -647,7 +647,7 @@ Total words: 824
 | みなみ | 南 | south | noun |  |  |
 | みみ | 耳 | ear | noun |  |  |
 | みる | 見る | to see; to watch | verb | ichidan |  |
-| みんな |  | everyone | noun | |  |
+| みんな |  | everyone | noun |  |  |
 | むいか | 六日 | 6th day of the month | noun |  |  |
 | むこう | 向こう | opposite side | noun |  |  |
 | むずかしい | 難しい | difficult | adjective |  | i-adjective |
@@ -655,13 +655,13 @@ Total words: 824
 | むら | 村 | village | noun |  |  |
 | め | 目 | eye | noun |  |  |
 | めがね | 眼鏡 | glasses | noun |  |  |
-| もう |  | already | adverb | |  |
+| もう |  | already | adverb |  |  |
 | もういちど | もう一度 | once more | adverb |  |  |
 | もくようび | 木曜日 | Thursday | adverb, noun |  |  |
-| もしもし |  | hello (e.g. on phone) | expression | |  |
-| もちろん |  | of course | adverb | |  |
-| もっていく | 持っていく | to take (something) along | verb | godan |  |
-| もっと |  | (some) more | adverb | |  |
+| もしもし |  | hello (e.g. on phone) | expression |  |  |
+| もちろん |  | of course | adverb |  |  |
+| もっていく | 持っていく | to take (something) along | verb | godan (compound) |  |
+| もっと |  | (some) more | adverb |  |  |
 | もつ | 持つ | to hold (in one's hand) | verb | godan |  |
 | もの | 物 | thing | noun |  |  |
 | もらう | 貰う | to receive | verb | godan |  |
@@ -684,36 +684,36 @@ Total words: 824
 | ゆうべ | 昨夜 | last night | adverb, noun |  |  |
 | ゆうめい | 有名 | famous | adjective, noun |  | na-adjective |
 | ゆき | 雪 | snow | noun |  |  |
-| ゆっくり |  | slowly | adverb | |  |
+| ゆっくり |  | slowly | adverb |  |  |
 | ようか | 八日 | 8th day of the month | noun |  |  |
 | ようふく | 洋服 | Western-style clothes (cf. traditional Japanese clothes) | noun |  |  |
-| よく |  | well/often | adverb | |  |
+| よく |  | well/often | adverb |  |  |
 | よこ | 横 | horizontal (as opposed to vertical) | noun |  |  |
 | よっか | 四日 | 4th day of the month | noun |  |  |
 | よっつ | 四つ | four | noun |  |  |
 | よぶ | 呼ぶ | to call out (to) | verb | godan |  |
 | よむ | 読む | to read | verb | godan |  |
-| より |  | than | particle | |  |
+| より |  | than | particle |  |  |
 | よる | 夜 | night | noun |  |  |
-| よろしく |  | well | adverb | |  |
+| よろしく |  | well | adverb |  |  |
 | よわい | 弱い | weak | adjective |  | i-adjective |
 | らいげつ | 来月 | next month | adverb, noun |  |  |
 | らいしゅう | 来週 | next week | adverb, noun |  |  |
 | らいねん | 来年 | next year | adverb, noun |  |  |
 | りょうしん | 両親 | parents | noun |  |  |
 | りょうり | 料理 | cooking | noun |  |  |
-| りょうりする | 料理する | to cook |  | suru-verb |  |
+| りょうりする | 料理する | to cook | verb | suru-verb |  |
 | りょこう | 旅行 | travel | noun |  |  |
-| りょこうする | 旅行する | to travel |  | suru-verb |  |
+| りょこうする | 旅行する | to travel | verb | suru-verb |  |
 | りょこうがいしゃ | 旅行会社 | travel agent | noun |  |  |
-| りんご |  | apple (fruit) | noun | |  |
+| りんご |  | apple (fruit) | noun |  |  |
 | れい | 零 | zero | noun |  |  |
 | れいぞうこ | 冷蔵庫 | refrigerator | noun |  |  |
 | れんしゅう | 練習 | practice | noun |  |  |
-| れんしゅうする | 練習する | to practice |  | suru-verb |  |
+| れんしゅうする | 練習する | to practice | verb | suru-verb |  |
 | ろうか | 廊下 | corridor | noun |  |  |
 | ろく | 六 | six | noun |  |  |
-| ろっぽん |  | six (long cylindrical things) | counter | |  |
+| ろっぽん |  | six (long cylindrical things) | counter |  |  |
 | わかい | 若い | young | adjective |  | i-adjective |
 | わかる | 分かる | to understand | verb | godan |  |
 | わすれる | 忘れる | to forget | verb | ichidan |  |
@@ -722,87 +722,87 @@ Total words: 824
 | わたす | 渡す | to hand over/pass/give | verb | godan |  |
 | わたる | 渡る | to cross over | verb | godan |  |
 | わるい | 悪い | bad | adjective |  | i-adjective |
-| アパート |  | apartment building | noun | |  |
-| アメリカ |  | (United States of) America | proper noun | |  |
-| エアコン |  | air conditioner | noun | |  |
-| エレベーター |  | elevator | noun | |  |
-| カタカナ |  | katakana | noun | |  |
-| カップ |  | cup (drinking vessel, measure, brassiere, prize, etc.) | noun | |  |
-| カメラ |  | camera | noun | |  |
-| カレンダー |  | calendar | noun | |  |
-| カレー |  | curry (esp. Japanese curry) | noun | |  |
-| キロ |  | kilogram/kilometer (kilo-) | noun | |  |
-| ギター |  | guitar | noun | |  |
-| クラス |  | class | noun | |  |
-| グラム |  | gram | noun | |  |
-| ケーキ |  | cake | noun | |  |
-| コップ |  | glass (drinking vessel) | noun | |  |
+| アパート |  | apartment building | noun |  |  |
+| アメリカ |  | (United States of) America | proper noun |  |  |
+| エアコン |  | air conditioner | noun |  |  |
+| エレベーター |  | elevator | noun |  |  |
+| カタカナ |  | katakana | noun |  |  |
+| カップ |  | cup (drinking vessel, measure, brassiere, prize, etc.) | noun |  |  |
+| カメラ |  | camera | noun |  |  |
+| カレンダー |  | calendar | noun |  |  |
+| カレー |  | curry (esp. Japanese curry) | noun |  |  |
+| キロ |  | kilogram/kilometer (kilo-) | noun |  |  |
+| ギター |  | guitar | noun |  |  |
+| クラス |  | class | noun |  |  |
+| グラム |  | gram | noun |  |  |
+| ケーキ |  | cake | noun |  |  |
+| コップ |  | glass (drinking vessel) | noun |  |  |
 | コピー |  | copy | noun |  |  |
-| コート |  | coat | noun | |  |
-| コーヒー |  | coffee | noun | |  |
-| サッカー |  | soccer | noun | |  |
-| シャツ |  | shirt (undergarment) | noun | |  |
-| シャワー |  | shower | noun | |  |
-| ジュース |  | juice | noun | |  |
-| スカート |  | skirt | noun | |  |
-| ストーブ |  | (room) heater | noun | |  |
-| スプーン |  | spoon | noun | |  |
-| スポーツ |  | sport | noun | |  |
-| スリッパ |  | slipper | noun | |  |
-| ズボン |  | trousers | noun | |  |
-| セーター |  | sweater | noun | |  |
-| ゼロ |  | zero | noun | |  |
-| タクシー |  | taxi | noun | |  |
-| ティッシュペーパー |  | tissue paper | noun | |  |
+| コート |  | coat | noun |  |  |
+| コーヒー |  | coffee | noun |  |  |
+| サッカー |  | soccer | noun |  |  |
+| シャツ |  | shirt (undergarment) | noun |  |  |
+| シャワー |  | shower | noun |  |  |
+| ジュース |  | juice | noun |  |  |
+| スカート |  | skirt | noun |  |  |
+| ストーブ |  | (room) heater | noun |  |  |
+| スプーン |  | spoon | noun |  |  |
+| スポーツ |  | sport | noun |  |  |
+| スリッパ |  | slipper | noun |  |  |
+| ズボン |  | trousers | noun |  |  |
+| セーター |  | sweater | noun |  |  |
+| ゼロ |  | zero | noun |  |  |
+| タクシー |  | taxi | noun |  |  |
+| ティッシュペーパー |  | tissue paper | noun |  |  |
 | テスト |  | test (of ability, knowledge, etc.) | noun |  |  |
-| テレビ |  | television | noun | |  |
-| テーブル |  | table | noun | |  |
-| テープ |  | tape | noun | |  |
-| テープレコーダー |  | tape recorder | noun | |  |
-| デパート |  | department store | noun | |  |
-| トイレ |  | toilet | noun | |  |
-| トイレットペーパー |  | toilet paper | noun | |  |
-| ドア |  | door | noun | |  |
-| ナイフ |  | knife | noun | |  |
-| ニュース |  | news | noun | |  |
-| ネクタイ |  | tie | noun | |  |
+| テレビ |  | television | noun |  |  |
+| テーブル |  | table | noun |  |  |
+| テープ |  | tape | noun |  |  |
+| テープレコーダー |  | tape recorder | noun |  |  |
+| デパート |  | department store | noun |  |  |
+| トイレ |  | toilet | noun |  |  |
+| トイレットペーパー |  | toilet paper | noun |  |  |
+| ドア |  | door | noun |  |  |
+| ナイフ |  | knife | noun |  |  |
+| ニュース |  | news | noun |  |  |
+| ネクタイ |  | tie | noun |  |  |
 | ノート |  | notebook | noun |  |  |
-| ハンカチ |  | handkerchief | noun | |  |
-| バス |  | bus | noun | |  |
+| ハンカチ |  | handkerchief | noun |  |  |
+| バス |  | bus | noun |  |  |
 | バスてい | バス停 | bus stop | noun |  |  |
-| バター |  | butter | noun | |  |
-| パン |  | bread | noun | |  |
+| バター |  | butter | noun |  |  |
+| パン |  | bread | noun |  |  |
 | パンや | パン屋 | bakery | noun |  |  |
-| パーティー |  | party (social gathering) | noun | |  |
-| ビル |  | multi-floor building | noun | |  |
-| フィルム |  | film | noun | |  |
-| フォーク |  | fork | noun | |  |
+| パーティー |  | party (social gathering) | noun |  |  |
+| ビル |  | multi-floor building | noun |  |  |
+| フィルム |  | film | noun |  |  |
+| フォーク |  | fork | noun |  |  |
 | プール |  | (swimming) pool | noun |  |  |
-| ベッド |  | bed | noun | |  |
-| ペット |  | pet | noun | |  |
-| ペン |  | pen | noun | |  |
-| ページ |  | page | noun | |  |
-| ホテル |  | hotel | noun | |  |
-| ボタン |  | button (clothing) | noun | |  |
-| ボールペン |  | ball-point pen | noun | |  |
-| ポケット |  | pocket | noun | |  |
+| ベッド |  | bed | noun |  |  |
+| ペット |  | pet | noun |  |  |
+| ペン |  | pen | noun |  |  |
+| ページ |  | page | noun |  |  |
+| ホテル |  | hotel | noun |  |  |
+| ボタン |  | button (clothing) | noun |  |  |
+| ボールペン |  | ball-point pen | noun |  |  |
+| ポケット |  | pocket | noun |  |  |
 | ポスト |  | postbox | noun |  |  |
-| マッチ |  | match (for lighting a fire) | noun | |  |
+| マッチ |  | match (for lighting a fire) | noun |  |  |
 | メモ |  | note | noun |  |  |
-| メモする |  | to take a memo; to jot down |  | suru-verb |  |
-| メートル |  | metre (unit of length) | noun | |  |
-| ラジオ |  | radio | noun | |  |
-| ラジオカセット |  | radio-cassette | noun | |  |
-| ラーメン |  | ramen | noun | |  |
-| レコード |  | record (e.g. LP) | noun | |  |
-| レストラン |  | restaurant (esp. Western-style) | noun | |  |
-| ワイシャツ |  | (formal) shirt | noun | |  |
+| メモする |  | to take a memo; to jot down | verb | suru-verb |  |
+| メートル |  | metre (unit of length) | noun |  |  |
+| ラジオ |  | radio | noun |  |  |
+| ラジオカセット |  | radio-cassette | noun |  |  |
+| ラーメン |  | ramen | noun |  |  |
+| レコード |  | record (e.g. LP) | noun |  |  |
+| レストラン |  | restaurant (esp. Western-style) | noun |  |  |
+| ワイシャツ |  | (formal) shirt | noun |  |  |
 | きゅう/く | 九 | nine | noun, numbers |  |  |
 | じゅう | 十 | ten | noun, numbers |  |  |
 | なん/なに | 何 | what | interrogative pronoun |  |  |
 | まいげつ/まいつき | 毎月 | every month | noun, time |  |  |
 | いい/よい | いい/良い | good | adjective |  | i-adjective |
-| そうじする | 掃除する | to clean |  | suru-verb |  |
+| そうじする | 掃除する | to clean | verb | suru-verb |  |
 | キロ/キログラム |  | kilogram | noun |  |  |
 | ラジカセ/ラジオカセット |  | radio cassette player | noun |  |  |
 | し/よん | 四 | four | noun, numbers |  |  |
@@ -813,9 +813,9 @@ Total words: 824
 | じゃ/じゃあ |  | well then… | conjunction |  |  |
 | まいねん/まいとし | 毎年 | every year | noun, time |  |  |
 | かわ | 川 | river | noun |  |  |
-| さんぽする | 散歩する | to stroll |  | suru-verb |  |
-| べんきょうする | 勉強する | to study |  | suru-verb |  |
-| コピーする |  | to copy |  | suru-verb |  |
+| さんぽする | 散歩する | to stroll | verb | suru-verb |  |
+| べんきょうする | 勉強する | to study | verb | suru-verb |  |
+| コピーする |  | to copy | verb | suru-verb |  |
 | おじいさん | お祖父さん | grandfather | family, noun |  |  |
 | より、ほう |  | Used for comparison | grammar pattern |  |  |
 | まるい | 丸い | round | adjective |  | i-adjective |
