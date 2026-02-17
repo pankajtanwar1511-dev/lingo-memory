@@ -145,7 +145,8 @@ Total words: 824
 | おにいさん | お兄さん | older brother | noun |  |  |
 | おにぎり |  | onigiri | noun | |  |
 | おねえさん | お姉さん | older sister | noun |  |  |
-| おねがい | お願い | request | expression, noun, verb | irregular |  |
+| おねがい | お願い | request | expression, noun |  |  |
+| おねがいする | お願いする | to make a request; to ask |  | suru-verb |  |
 | おねがいします |  | please | expression | |  |
 | おはよう |  | good morning | expression | |  |
 | おはようございます |  | good morning | expression | |  |
@@ -169,7 +170,8 @@ Total words: 824
 | かいしゃ | 会社 | company | noun |  |  |
 | かいだん | 階段 | stairs | noun |  |  |
 | かいとうようし | 解答用紙 | answer sheet | noun |  |  |
-| かいもの | 買い物 | shopping | noun, verb | irregular |  |
+| かいもの | 買い物 | shopping | noun |  |  |
+| かいものする | 買い物する | to go shopping |  | suru-verb |  |
 | かう | 買う | to buy | verb | godan |  |
 | かえす | 返す | to return (something) | verb | godan |  |
 | かえる | 帰る | to return | verb | godan |  |
@@ -249,7 +251,8 @@ Total words: 824
 | けしゴム | 消しゴム | eraser | noun |  |  |
 | けす | 消す | to erase | verb | godan |  |
 | けっこう | 結構 | quite; fine; no thank you | adjective, adverb, noun |  | na-adjective |
-| けっこん | 結婚 | marriage | noun, verb | irregular |  |
+| けっこん | 結婚 | marriage | noun |  |  |
+| けっこんする | 結婚する | to get married |  | suru-verb |  |
 | げつようび | 月曜日 | Monday | adverb, noun |  |  |
 | げんかん | 玄関 | entrance | noun |  |  |
 | げんき | 元気 | healthy; energetic | adjective, noun |  | na-adjective |
@@ -295,7 +298,8 @@ Total words: 824
 | さかな | 魚 | fish | noun |  |  |
 | さき | 先 | ahead/point | noun |  |  |
 | さく | 咲く | to bloom | verb | godan |  |
-| さくぶん | 作文 | writing (an essay, prose, etc.) | noun, verb | irregular |  |
+| さくぶん | 作文 | writing (an essay, prose, etc.) | noun |  |  |
+| さくぶんする | 作文する | to write a composition |  | suru-verb |  |
 | さす | 差す | to shine/hold up (umbrella) | verb | godan |  |
 | さつ | 冊 | counter for books | counter |  |  |
 | さとう | 砂糖 | sugar | noun |  |  |
@@ -303,17 +307,19 @@ Total words: 824
 | さようなら |  | farewell | expression | |  |
 | さらいねん | 再来年 | year after next | adverb, noun |  |  |
 | さん | 三 | three | noun |  |  |
-| さんぽ |  | walk | noun, verb | irregular |  |
+| さんぽ |  | walk | noun |  |  |
 | ざっし | 雑誌 | magazine | noun |  |  |
 | し | 四 | four | noun |  |  |
 | しお | 塩 | salt | noun |  |  |
 | しかし |  | however | conjunction | |  |
-| しごと | 仕事 | work | noun, verb | irregular |  |
+| しごと | 仕事 | work | noun |  |  |
+| しごとする | 仕事する | to work |  | suru-verb |  |
 | しずか | 静か | quiet | adjective, noun |  | na-adjective |
 | した | 下 | below | noun |  |  |
 | しち | 七 | seven | noun |  |  |
 | しつもん | 質問 | question | noun |  |  |
-| しつれい | 失礼 | discourtesy | expression, noun, verb | irregular |  |
+| しつれい | 失礼 | discourtesy | expression, noun |  |  |
+| しつれいする | 失礼する | to be rude; to excuse oneself |  | suru-verb |  |
 | しつれいしました |  | my apologies | expression | |  |
 | しつれいします |  | excuse me | expression | |  |
 | しぬ | 死ぬ | to die | verb | godan |  |
@@ -339,7 +345,8 @@ Total words: 824
 | じゃあ |  | then | conjunction | |  |
 | じゅう | 十 | ten | noun |  |  |
 | じゅうご | 十五 | fifteen | noun |  |  |
-| じゅぎょう | 授業 | lesson | noun, verb | irregular |  |
+| じゅぎょう | 授業 | lesson | noun |  |  |
+| じゅぎょうする | 授業する | to teach a lesson; to give a class |  | suru-verb |  |
 | じょうず | 上手 | skillful | adjective, noun |  | na-adjective |
 | じょうぶ | 丈夫 | healthy | adjective, noun |  | na-adjective |
 | じん | 人 | -ian (e.g. Italian) | suffix |  |  |
@@ -366,9 +373,10 @@ Total words: 824
 | せんげつ | 先月 | last month | adverb, noun |  |  |
 | せんしゅう | 先週 | last week | adverb, noun |  |  |
 | せんせい | 先生 | teacher | noun |  |  |
-| せんたく | 洗濯 | washing | noun, verb | irregular |  |
+| せんたく | 洗濯 | washing | noun |  |  |
+| せんたくする | 洗濯する | to do laundry |  | suru-verb |  |
 | ぜんぶ | 全部 | all | adverb, noun |  |  |
-| そうじ | 掃除 | cleaning | noun, verb | irregular |  |
+| そうじ | 掃除 | cleaning | noun |  |  |
 | そうだ |  | that is so; I hear that | expression | |  |
 | そうです |  | that is so | expression | |  |
 | そうですね |  | that\'s so, isn\'t it | expression | |  |
@@ -450,7 +458,8 @@ Total words: 824
 | でる | 出る | to leave | verb | ichidan |  |
 | でんき | 電気 | electricity | noun |  |  |
 | でんしゃ | 電車 | train | noun |  |  |
-| でんわ | 電話 | telephone call | noun, verb | irregular |  |
+| でんわ | 電話 | telephone call | noun |  |  |
+| でんわする | 電話する | to make a phone call |  | suru-verb |  |
 | でんわばんごう | 電話番号 | telephone number | noun |  |  |
 | と | 戸 | door (esp. Japanese-style) | noun |  |  |
 | とうきょう | 東京 | Tokyo | proper noun |  |  |
@@ -698,13 +707,16 @@ Total words: 824
 | らいしゅう | 来週 | next week | adverb, noun |  |  |
 | らいねん | 来年 | next year | adverb, noun |  |  |
 | りょうしん | 両親 | parents | noun |  |  |
-| りょうり | 料理 | cooking | noun, verb | irregular |  |
-| りょこう | 旅行 | travel | noun, verb | irregular |  |
+| りょうり | 料理 | cooking | noun |  |  |
+| りょうりする | 料理する | to cook |  | suru-verb |  |
+| りょこう | 旅行 | travel | noun |  |  |
+| りょこうする | 旅行する | to travel |  | suru-verb |  |
 | りょこうがいしゃ | 旅行会社 | travel agent | noun |  |  |
 | りんご |  | apple (fruit) | noun | |  |
 | れい | 零 | zero | noun |  |  |
 | れいぞうこ | 冷蔵庫 | refrigerator | noun |  |  |
-| れんしゅう | 練習 | practice | noun, verb | irregular |  |
+| れんしゅう | 練習 | practice | noun |  |  |
+| れんしゅうする | 練習する | to practice |  | suru-verb |  |
 | ろうか | 廊下 | corridor | noun |  |  |
 | ろく | 六 | six | noun |  |  |
 | ろっぽん |  | six (long cylindrical things) | counter | |  |
@@ -731,7 +743,7 @@ Total words: 824
 | グラム |  | gram | noun | |  |
 | ケーキ |  | cake | noun | |  |
 | コップ |  | glass (drinking vessel) | noun | |  |
-| コピー |  | copy | noun, verb | irregular |  |
+| コピー |  | copy | noun |  |  |
 | コート |  | coat | noun | |  |
 | コーヒー |  | coffee | noun | |  |
 | サッカー |  | soccer | noun | |  |
@@ -748,7 +760,8 @@ Total words: 824
 | ゼロ |  | zero | noun | |  |
 | タクシー |  | taxi | noun | |  |
 | ティッシュペーパー |  | tissue paper | noun | |  |
-| テスト |  | test (of ability, knowledge, etc.) | noun, verb | irregular |  |
+| テスト |  | test (of ability, knowledge, etc.) | noun |  |  |
+| テストする |  | to test |  | suru-verb |  |
 | テレビ |  | television | noun | |  |
 | テーブル |  | table | noun | |  |
 | テープ |  | tape | noun | |  |
@@ -760,7 +773,8 @@ Total words: 824
 | ナイフ |  | knife | noun | |  |
 | ニュース |  | news | noun | |  |
 | ネクタイ |  | tie | noun | |  |
-| ノート |  | notebook | noun, verb | irregular |  |
+| ノート |  | notebook | noun |  |  |
+| ノートする |  | to take notes |  | suru-verb |  |
 | ハンカチ |  | handkerchief | noun | |  |
 | バス |  | bus | noun | |  |
 | バスてい | バス停 | bus stop | noun |  |  |
@@ -771,7 +785,8 @@ Total words: 824
 | ビル |  | multi-floor building | noun | |  |
 | フィルム |  | film | noun | |  |
 | フォーク |  | fork | noun | |  |
-| プール |  | (swimming) pool | noun, verb | irregular |  |
+| プール |  | (swimming) pool | noun |  |  |
+| プールする |  | to pool; to share |  | suru-verb |  |
 | ベッド |  | bed | noun | |  |
 | ペット |  | pet | noun | |  |
 | ペン |  | pen | noun | |  |
@@ -780,9 +795,11 @@ Total words: 824
 | ボタン |  | button (clothing) | noun | |  |
 | ボールペン |  | ball-point pen | noun | |  |
 | ポケット |  | pocket | noun | |  |
-| ポスト |  | postbox | noun, verb | irregular |  |
+| ポスト |  | postbox | noun |  |  |
+| ポストする |  | to post |  | suru-verb |  |
 | マッチ |  | match (for lighting a fire) | noun | |  |
-| メモ |  | note | noun, verb | irregular |  |
+| メモ |  | note | noun |  |  |
+| メモする |  | to take a memo; to jot down |  | suru-verb |  |
 | メートル |  | metre (unit of length) | noun | |  |
 | ラジオ |  | radio | noun | |  |
 | ラジオカセット |  | radio-cassette | noun | |  |
