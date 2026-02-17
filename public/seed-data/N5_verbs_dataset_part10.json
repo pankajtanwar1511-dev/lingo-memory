@@ -22,7 +22,6 @@
       "valency": {
         "type": "transitive",
         "requiredParticles": [
-          "に",
           "を"
         ]
       },
@@ -476,7 +475,7 @@
             "en": "I watch out on dark roads.",
             "grammarTag": "dictionary-nonpast",
             "pattern": "い-adjective + Place に + Verb(dictionary)",
-            "highlight": "intransitive: subject が"
+            "highlight": "intransitive: に target"
           },
           {
             "jp": "食べ物に気をつけるのが好きです。",
@@ -494,7 +493,7 @@
             "en": "I am always careful on dark roads.",
             "grammarTag": "polite-nonpast",
             "pattern": "い-adjective + Place では + Adverb + Verb(ます)",
-            "highlight": "intransitive: subject が"
+            "highlight": "intransitive: に target"
           },
           {
             "jp": "危ない場所で、とても気をつけました。",
@@ -502,7 +501,7 @@
             "en": "I was very careful at the dangerous spot.",
             "grammarTag": "polite-past",
             "pattern": "い-adjective + Place で + Adverb + Verb(ました)",
-            "highlight": "intransitive: subject が"
+            "highlight": "intransitive: に target"
           }
         ],
         "te": [
@@ -610,14 +609,6 @@
           }
         ],
         "te": [
-          {
-            "jp": "そのペンをくれてください。",
-            "kana": "そのペンをくれてください。",
-            "en": "Please give me that pen.",
-            "grammarTag": "te-kudasai",
-            "pattern": "Object を + Verb(て) + ください",
-            "highlight": "polite request"
-          },
           {
             "jp": "母がいつもお弁当をくれています。",
             "kana": "ははがいつもおべんとうをくれています。",
