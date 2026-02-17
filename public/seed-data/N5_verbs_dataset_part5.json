@@ -1,0 +1,999 @@
+{
+  "metadata": {
+    "version": "1.3.1",
+    "generatedAt": "2026-02-10T15:49:37.551Z",
+    "description": "Complete JLPT N5 verbs with corrected conjugations and clarified meanings",
+    "totalEntries": 141,
+    "uniqueVerbs": 141,
+    "verbsWithJMdictData": 131,
+    "dataSource": "Minna no Nihongo + JMdict",
+    "groups": {
+      "godan": 77,
+      "ichidan": 39,
+      "irregular": 25
+    }
+  },
+  "verbs": [
+    {
+      "id": "n5_verb_0044",
+      "kanji": "使う",
+      "kana": "つかう",
+      "romaji": "tsukau",
+      "meaning": [
+        "use",
+        "to use (a tool, method, etc.)",
+        "to make use of",
+        "to put to use",
+        "to use (a person, animal, puppet, etc.)",
+        "to employ",
+        "to handle",
+        "to manage",
+        "to manipulate"
+      ],
+      "primaryMeaning": "use",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "使う",
+        "dictionaryKana": "つかう",
+        "masu": "使います",
+        "masuKana": "つかいます",
+        "te": "使って",
+        "teKana": "つかって"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎日、新しいパソコンを使います。",
+          "kana": "まいにち、あたらしいパソコンをつかいます。",
+          "english": "I use a new computer every day.",
+          "highlight": "daily use with adjective"
+        },
+        {
+          "japanese": "昨日、便利な道具を上手に使いました。",
+          "kana": "きのう、べんりなどうぐをじょうずにつかいました。",
+          "english": "Yesterday, I skillfully used a convenient tool.",
+          "highlight": "skillful use with adjective and adverb"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0044.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1305990",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "使ってください。",
+          "kana": "つかってください。",
+          "english": "Please use.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "使っています。",
+          "kana": "つかっています。",
+          "english": "I am useing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、使う。",
+          "kana": "まいにち、つかう。",
+          "english": "I use every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "使うのが好きです。",
+          "kana": "つかうのがすきです。",
+          "english": "I like to use.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0045",
+      "kanji": "着く",
+      "kana": "つく",
+      "romaji": "tsuku",
+      "meaning": [
+        "arrive",
+        "to arrive at",
+        "to reach",
+        "to sit on",
+        "to sit at (e.g. the table)"
+      ],
+      "primaryMeaning": "arrive",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": true
+      },
+      "conjugations": {
+        "dictionary": "着く",
+        "dictionaryKana": "つく",
+        "masu": "着きます",
+        "masuKana": "つきます",
+        "te": "着いて",
+        "teKana": "ついて"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "電車は午後三時に東京駅に着きます。",
+          "kana": "でんしゃはごごさんじにとうきょうえきにつきます。",
+          "english": "The train arrives at Tokyo Station at 3 PM.",
+          "highlight": "arrival time"
+        },
+        {
+          "japanese": "家に着きました。",
+          "kana": "いえにつきました。",
+          "english": "I arrived home.",
+          "highlight": "arrival notification"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0045.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1422970",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "着いてください。",
+          "kana": "ついてください。",
+          "english": "Please arrive.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "着いています。",
+          "kana": "ついています。",
+          "english": "I am arriveing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、着く。",
+          "kana": "まいにち、つく。",
+          "english": "I arrive every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "着くのが好きです。",
+          "kana": "つくのがすきです。",
+          "english": "I like to arrive.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0046",
+      "kanji": "作る",
+      "kana": "つくる",
+      "romaji": "tsukuru",
+      "meaning": [
+        "make, produce",
+        "to make",
+        "to produce",
+        "to manufacture",
+        "to build",
+        "to construct",
+        "to draw up (a document)",
+        "to make out",
+        "to prepare",
+        "to write"
+      ],
+      "primaryMeaning": "make, produce",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "作る",
+        "dictionaryKana": "つくる",
+        "masu": "作ります",
+        "masuKana": "つくります",
+        "te": "作って",
+        "teKana": "つくって"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎晩、美味しい料理を作ります。",
+          "kana": "まいばん、おいしいりょうりをつくります。",
+          "english": "I make delicious food every night.",
+          "highlight": "cooking routine with adjective"
+        },
+        {
+          "japanese": "昨日、新しいケーキを丁寧に作りました。",
+          "kana": "きのう、あたらしいケーキをていねいにつくりました。",
+          "english": "Yesterday, I carefully made a new cake.",
+          "highlight": "baking with adjective and adverb"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0046.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1597890",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "作ってください。",
+          "kana": "つくってください。",
+          "english": "Please make, produce.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "作っています。",
+          "kana": "つくっています。",
+          "english": "I am make, produceing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、作る。",
+          "kana": "まいにち、つくる。",
+          "english": "I make, produce every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "作るのが好きです。",
+          "kana": "つくるのがすきです。",
+          "english": "I like to make, produce.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0047",
+      "kanji": "連れて行く",
+      "kana": "つれていく",
+      "romaji": "tsureteiku",
+      "meaning": [
+        "take (someone)",
+        "to take (someone to a place)",
+        "to take (someone) with one",
+        "to take along",
+        "to lead away"
+      ],
+      "primaryMeaning": "take (someone)",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "連れて行く",
+        "dictionaryKana": "つれていく",
+        "masu": "連れて行きます",
+        "masuKana": "つれていきます",
+        "te": "連れて行いて",
+        "teKana": "つれていいて"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎週末、子供を楽しい公園に連れて行きます。",
+          "kana": "まいしゅうまつ、こどもをたのしいこうえんにつれていきます。",
+          "english": "I take my child to the fun park every weekend.",
+          "highlight": "family outing with adjective"
+        },
+        {
+          "japanese": "昨日、友達を新しいレストランに連れて行きました。",
+          "kana": "きのう、ともだちをあたらしいレストランにつれていきました。",
+          "english": "Yesterday, I took my friend to a new restaurant.",
+          "highlight": "social outing with adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0047.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1598220",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "連れて行いてください。",
+          "kana": "つれていいてください。",
+          "english": "Please take (someone).",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "連れて行いています。",
+          "kana": "つれていいています。",
+          "english": "I am take (someone)ing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、連れて行く。",
+          "kana": "まいにち、つれていく。",
+          "english": "I take (someone) every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "連れて行くのが好きです。",
+          "kana": "つれていくのがすきです。",
+          "english": "I like to take (someone).",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0048",
+      "kanji": "手伝う",
+      "kana": "てつだう",
+      "romaji": "tetsudau",
+      "meaning": [
+        "help (with a task)",
+        "to help",
+        "to assist",
+        "to aid",
+        "to contribute to",
+        "to be a factor in"
+      ],
+      "primaryMeaning": "help (with a task)",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "手伝う",
+        "dictionaryKana": "てつだう",
+        "masu": "手伝います",
+        "masuKana": "てつだいます",
+        "te": "手伝って",
+        "teKana": "てつだって"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎日、母の大変な仕事を手伝います。",
+          "kana": "まいにち、ははのたいへんなしごとをてつだいます。",
+          "english": "I help my mother with her hard work every day.",
+          "highlight": "helping routine with adjective"
+        },
+        {
+          "japanese": "昨日、友達の難しい宿題を手伝いました。",
+          "kana": "きのう、ともだちのむずかしいしゅくだいをてつだいました。",
+          "english": "Yesterday, I helped my friend with difficult homework.",
+          "highlight": "assistance with adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0048.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1328190",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "手伝ってください。",
+          "kana": "てつだってください。",
+          "english": "Please help (with a task).",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "手伝っています。",
+          "kana": "てつだっています。",
+          "english": "I am help (with a task)ing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、手伝う。",
+          "kana": "まいにち、てつだう。",
+          "english": "I help (with a task) every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "手伝うのが好きです。",
+          "kana": "てつだうのがすきです。",
+          "english": "I like to help (with a task).",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0049",
+      "kanji": "泊まる",
+      "kana": "とまる",
+      "romaji": "tomaru",
+      "meaning": [
+        "stay",
+        "to stay at (e.g. hotel)",
+        "to be docked",
+        "to be berthed",
+        "to be moored"
+      ],
+      "primaryMeaning": "stay",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": true
+      },
+      "conjugations": {
+        "dictionary": "泊まる",
+        "dictionaryKana": "とまる",
+        "masu": "泊まります",
+        "masuKana": "とまります",
+        "te": "泊まって",
+        "teKana": "とまって"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎年、きれいなホテルに泊まります。",
+          "kana": "まいとし、きれいなホテルにとまります。",
+          "english": "I stay at beautiful hotels every year.",
+          "highlight": "travel routine with adjective"
+        },
+        {
+          "japanese": "昨日、新しい旅館に泊まりました。",
+          "kana": "きのう、あたらしいりょかんにとまりました。",
+          "english": "Yesterday, I stayed at a new inn.",
+          "highlight": "accommodation with adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0049.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1474850",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "泊まってください。",
+          "kana": "とまってください。",
+          "english": "Please stay.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "泊まっています。",
+          "kana": "とまっています。",
+          "english": "I am staying.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、泊まる。",
+          "kana": "まいにち、とまる。",
+          "english": "I stay every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "泊まるのが好きです。",
+          "kana": "とまるのがすきです。",
+          "english": "I like to stay.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0050",
+      "kanji": "取る",
+      "kana": "とる",
+      "romaji": "toru",
+      "meaning": [
+        "take, pass",
+        "to take",
+        "to pick up",
+        "to grab",
+        "to catch",
+        "to hold",
+        "to pass",
+        "to hand",
+        "to give"
+      ],
+      "primaryMeaning": "take, pass",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "取る",
+        "dictionaryKana": "とる",
+        "masu": "取ります",
+        "masuKana": "とります",
+        "te": "取って",
+        "teKana": "とって"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎朝、新鮮な野菜を取ります。",
+          "kana": "まいあさ、しんせんなやさいをとります。",
+          "english": "I pick fresh vegetables every morning.",
+          "highlight": "gathering routine with adjective"
+        },
+        {
+          "japanese": "昨日、大切な写真を丁寧に取りました。",
+          "kana": "きのう、たいせつなしゃしんをていねいにとりました。",
+          "english": "Yesterday, I carefully took important photos.",
+          "highlight": "photography with adjective and adverb"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0050.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1326980",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "取ってください。",
+          "kana": "とってください。",
+          "english": "Please take, pass.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "取っています。",
+          "kana": "とっています。",
+          "english": "I am take, passing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、取る。",
+          "kana": "まいにち、とる。",
+          "english": "I take, pass every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "取るのが好きです。",
+          "kana": "とるのがすきです。",
+          "english": "I like to take, pass.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0051",
+      "kanji": "撮る",
+      "kana": "とる",
+      "romaji": "toru",
+      "meaning": [
+        "take",
+        "to take (a photograph)",
+        "to record (audio or video)",
+        "to film",
+        "to shoot"
+      ],
+      "primaryMeaning": "take",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "撮る",
+        "dictionaryKana": "とる",
+        "masu": "撮ります",
+        "masuKana": "とります",
+        "te": "撮って",
+        "teKana": "とって"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "旅行で写真をたくさん撮ります。",
+          "kana": "りょこうでしゃしんをたくさんとります。",
+          "english": "I take many photos during trips.",
+          "highlight": "travel photography"
+        },
+        {
+          "japanese": "桜の木の前で写真を撮りました。",
+          "kana": "さくらのきのまえでしゃしんをとりました。",
+          "english": "I took a photo in front of the cherry blossom tree.",
+          "highlight": "photo opportunity"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0051.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1298790",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "撮ってください。",
+          "kana": "とってください。",
+          "english": "Please take.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "撮っています。",
+          "kana": "とっています。",
+          "english": "I am takeing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、撮る。",
+          "kana": "まいにち、とる。",
+          "english": "I take every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "撮るのが好きです。",
+          "kana": "とるのがすきです。",
+          "english": "I like to take.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0052",
+      "kanji": "年を取る",
+      "kana": "としをとる",
+      "romaji": "toshiwotoru",
+      "meaning": [
+        "grow old",
+        "to grow old",
+        "to age"
+      ],
+      "primaryMeaning": "grow old",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": false,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "年を取る",
+        "dictionaryKana": "としをとる",
+        "masu": "年を取ります",
+        "masuKana": "としをとります",
+        "te": "年を取って",
+        "teKana": "としをとって"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "祖父は年を取りました。",
+          "kana": "そふはとしをとりました。",
+          "english": "My grandfather has gotten old.",
+          "highlight": "aging process"
+        },
+        {
+          "japanese": "年を取ると体が弱くなります。",
+          "kana": "としをとるとからだがよわくなります。",
+          "english": "When you get old, your body becomes weak.",
+          "highlight": "aging effects"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0052.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1468190",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "年を取ってください。",
+          "kana": "としをとってください。",
+          "english": "Please grow old.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "年を取っています。",
+          "kana": "としをとっています。",
+          "english": "I am grow olding.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、年を取る。",
+          "kana": "まいにち、としをとる。",
+          "english": "I grow old every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "年を取るのが好きです。",
+          "kana": "としをとるのがすきです。",
+          "english": "I like to grow old.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0053",
+      "kanji": "直す",
+      "kana": "なおす",
+      "romaji": "naosu",
+      "meaning": [
+        "repair, correct",
+        "to repair",
+        "to mend",
+        "to fix",
+        "to correct (a mistake, bad habit, etc.)",
+        "to put right",
+        "to restore",
+        "to straighten (e.g. a tie)",
+        "to tidy up (one's hair, make-up, etc.)",
+        "to revive (one's spirits)",
+        "to change",
+        "to alter",
+        "to convert",
+        "to translate"
+      ],
+      "primaryMeaning": "repair, correct",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "直す",
+        "dictionaryKana": "なおす",
+        "masu": "直します",
+        "masuKana": "なおします",
+        "te": "直して",
+        "teKana": "なおして"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "壊れた時計を直しました。",
+          "kana": "こわれたとけいをなおしました。",
+          "english": "I fixed the broken clock.",
+          "highlight": "repair work"
+        },
+        {
+          "japanese": "間違いを直してください。",
+          "kana": "まちがいをなおしてください。",
+          "english": "Please correct the mistakes.",
+          "highlight": "error correction"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0053.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1599390",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "直してください。",
+          "kana": "なおしてください。",
+          "english": "Please repair, correct.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "直しています。",
+          "kana": "なおしています。",
+          "english": "I am repair, correcting.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、直す。",
+          "kana": "まいにち、なおす。",
+          "english": "I repair, correct every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "直すのが好きです。",
+          "kana": "なおすのがすきです。",
+          "english": "I like to repair, correct.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    }
+  ]
+}

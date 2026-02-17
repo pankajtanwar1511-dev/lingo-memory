@@ -1,0 +1,1032 @@
+{
+  "metadata": {
+    "version": "1.3.1",
+    "generatedAt": "2026-02-10T15:49:37.551Z",
+    "description": "Complete JLPT N5 verbs with corrected conjugations and clarified meanings",
+    "totalEntries": 141,
+    "uniqueVerbs": 141,
+    "verbsWithJMdictData": 131,
+    "dataSource": "Minna no Nihongo + JMdict",
+    "groups": {
+      "godan": 77,
+      "ichidan": 39,
+      "irregular": 25
+    }
+  },
+  "verbs": [
+    {
+      "id": "n5_verb_0144",
+      "kanji": "食事する",
+      "kana": "しょくじする",
+      "romaji": "shokujisuru",
+      "meaning": [
+        "have a meal, dine"
+      ],
+      "primaryMeaning": "have a meal, dine",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "食事する",
+        "dictionaryKana": "しょくじする",
+        "masu": "食事します",
+        "masuKana": "しょくじします",
+        "te": "食事して",
+        "teKana": "しょくじして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎日、美味しいレストランでゆっくり食事します。",
+          "kana": "まいにち、おいしいレストランでゆっくりしょくじします。",
+          "english": "I leisurely dine at delicious restaurants every day.",
+          "highlight": "relaxed dining with adverb and adjective"
+        },
+        {
+          "japanese": "昨晩、静かな場所で食事しました。",
+          "kana": "さくばん、しずかなばしょでしょくじしました。",
+          "english": "Last night, I had a meal in a quiet place.",
+          "highlight": "peaceful dining with adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0144.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "食事してください。",
+          "kana": "しょくじしてください。",
+          "english": "Please have a meal, dine.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "食事しています。",
+          "kana": "しょくじしています。",
+          "english": "I am have a meal, dineing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、食事する。",
+          "kana": "まいにち、しょくじする。",
+          "english": "I have a meal, dine every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "食事するのが好きです。",
+          "kana": "しょくじするのがすきです。",
+          "english": "I like to have a meal, dine.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0145",
+      "kanji": "心配する",
+      "kana": "しんぱいする",
+      "romaji": "shinpaisuru",
+      "meaning": [
+        "worry"
+      ],
+      "primaryMeaning": "worry",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "心配する",
+        "dictionaryKana": "しんぱいする",
+        "masu": "心配します",
+        "masuKana": "しんぱいします",
+        "te": "心配して",
+        "teKana": "しんぱいして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "大切な試験についていつも心配します。",
+          "kana": "たいせつなしけんについていつもしんぱいします。",
+          "english": "I always worry about important exams.",
+          "highlight": "constant worry with adverb and adjective"
+        },
+        {
+          "japanese": "病気の母をとても心配しました。",
+          "kana": "びょうきのははをとてもしんぱいしました。",
+          "english": "I worried very much about my sick mother.",
+          "highlight": "deep concern with adverb"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0145.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "心配してください。",
+          "kana": "しんぱいしてください。",
+          "english": "Please worry.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "心配しています。",
+          "kana": "しんぱいしています。",
+          "english": "I am worrying.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、心配する。",
+          "kana": "まいにち、しんぱいする。",
+          "english": "I worry every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "心配するのが好きです。",
+          "kana": "しんぱいするのがすきです。",
+          "english": "I like to worry.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0146",
+      "kanji": "説明する",
+      "kana": "せつめいする",
+      "romaji": "setsumeisuru",
+      "meaning": [
+        "explain"
+      ],
+      "primaryMeaning": "explain",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "説明する",
+        "dictionaryKana": "せつめいする",
+        "masu": "説明します",
+        "masuKana": "せつめいします",
+        "te": "説明して",
+        "teKana": "せつめいして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "難しい文法を丁寧に説明します。",
+          "kana": "むずかしいぶんぽうをていねいにせつめいします。",
+          "english": "I carefully explain difficult grammar.",
+          "highlight": "thorough explanation with adverb and adjective"
+        },
+        {
+          "japanese": "新しいルールをゆっくり説明しました。",
+          "kana": "あたらしいルールをゆっくりせつめいしました。",
+          "english": "I slowly explained the new rules.",
+          "highlight": "patient explanation with adverb and adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0146.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "説明してください。",
+          "kana": "せつめいしてください。",
+          "english": "Please explain.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "説明しています。",
+          "kana": "せつめいしています。",
+          "english": "I am explaining.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、説明する。",
+          "kana": "まいにち、せつめいする。",
+          "english": "I explain every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "説明するのが好きです。",
+          "kana": "せつめいするのがすきです。",
+          "english": "I like to explain.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0147",
+      "kanji": "洗濯する",
+      "kana": "せんたくする",
+      "romaji": "sentakusuru",
+      "meaning": [
+        "wash (clothes)"
+      ],
+      "primaryMeaning": "wash (clothes)",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "洗濯する",
+        "dictionaryKana": "せんたくする",
+        "masu": "洗濯します",
+        "masuKana": "せんたくします",
+        "te": "洗濯して",
+        "teKana": "せんたくして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎週末、汚い服をきちんと洗濯します。",
+          "kana": "まいしゅうまつ、きたないふくをきちんとせんたくします。",
+          "english": "I properly wash dirty clothes every weekend.",
+          "highlight": "laundry routine with adverb and adjective"
+        },
+        {
+          "japanese": "今朝、大切なシャツを丁寧に洗濯しました。",
+          "kana": "けさ、たいせつなシャツをていねいにせんたくしました。",
+          "english": "This morning, I carefully washed important shirts.",
+          "highlight": "careful washing with adverb and adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0147.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "洗濯してください。",
+          "kana": "せんたくしてください。",
+          "english": "Please wash (clothes).",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "洗濯しています。",
+          "kana": "せんたくしています。",
+          "english": "I am wash (clothes)ing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、洗濯する。",
+          "kana": "まいにち、せんたくする。",
+          "english": "I wash (clothes) every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "洗濯するのが好きです。",
+          "kana": "せんたくするのがすきです。",
+          "english": "I like to wash (clothes).",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0148",
+      "kanji": "掃除する",
+      "kana": "そうじする",
+      "romaji": "soujisuru",
+      "meaning": [
+        "clean (a room)"
+      ],
+      "primaryMeaning": "clean (a room)",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "掃除する",
+        "dictionaryKana": "そうじする",
+        "masu": "掃除します",
+        "masuKana": "そうじします",
+        "te": "掃除して",
+        "teKana": "そうじして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎日、広い部屋をきれいに掃除します。",
+          "kana": "まいにち、ひろいへやをきれいにそうじします。",
+          "english": "I clean the spacious room thoroughly every day.",
+          "highlight": "daily cleaning with adverb and adjective"
+        },
+        {
+          "japanese": "古い家を一生懸命掃除しました。",
+          "kana": "ふるいいえをいっしょうけんめいそうじしました。",
+          "english": "I cleaned the old house hard.",
+          "highlight": "intensive cleaning with adverb and adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0148.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "掃除してください。",
+          "kana": "そうじしてください。",
+          "english": "Please clean (a room).",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "掃除しています。",
+          "kana": "そうじしています。",
+          "english": "I am clean (a room)ing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、掃除する。",
+          "kana": "まいにち、そうじする。",
+          "english": "I clean (a room) every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "掃除するのが好きです。",
+          "kana": "そうじするのがすきです。",
+          "english": "I like to clean (a room).",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0149",
+      "kanji": "電話する",
+      "kana": "でんわする",
+      "romaji": "denwasuru",
+      "meaning": [
+        "phone"
+      ],
+      "primaryMeaning": "phone",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "電話する",
+        "dictionaryKana": "でんわする",
+        "masu": "電話します",
+        "masuKana": "でんわします",
+        "te": "電話して",
+        "teKana": "でんわして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎晩、大切な友達に電話します。",
+          "kana": "まいばん、たいせつなともだちにでんわします。",
+          "english": "I call important friends every night.",
+          "highlight": "regular calls with adjective"
+        },
+        {
+          "japanese": "急いで新しい会社に電話しました。",
+          "kana": "いそいであたらしいかいしゃにでんわしました。",
+          "english": "I hurriedly called the new company.",
+          "highlight": "urgent call with adverb and adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0149.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "電話してください。",
+          "kana": "でんわしてください。",
+          "english": "Please phone.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "電話しています。",
+          "kana": "でんわしています。",
+          "english": "I am phoneing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、電話する。",
+          "kana": "まいにち、でんわする。",
+          "english": "I phone every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "電話するのが好きです。",
+          "kana": "でんわするのがすきです。",
+          "english": "I like to phone.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0150",
+      "kanji": "勉強する",
+      "kana": "べんきょうする",
+      "romaji": "benkyousuru",
+      "meaning": [
+        "study"
+      ],
+      "primaryMeaning": "study",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "勉強する",
+        "dictionaryKana": "べんきょうする",
+        "masu": "勉強します",
+        "masuKana": "べんきょうします",
+        "te": "勉強して",
+        "teKana": "べんきょうして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎日、難しい漢字を一生懸命勉強します。",
+          "kana": "まいにち、むずかしいかんじをいっしょうけんめいべんきょうします。",
+          "english": "I study difficult kanji hard every day.",
+          "highlight": "dedicated study with adverb and adjective"
+        },
+        {
+          "japanese": "静かな図書館でじっくり勉強しました。",
+          "kana": "しずかなとしょかんでじっくりべんきょうしました。",
+          "english": "I studied thoroughly in the quiet library.",
+          "highlight": "focused study with adverb and adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0150.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "勉強してください。",
+          "kana": "べんきょうしてください。",
+          "english": "Please study.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "勉強しています。",
+          "kana": "べんきょうしています。",
+          "english": "I am studying.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、勉強する。",
+          "kana": "まいにち、べんきょうする。",
+          "english": "I study every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "勉強するのが好きです。",
+          "kana": "べんきょうするのがすきです。",
+          "english": "I like to study.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0151",
+      "kanji": "予約する",
+      "kana": "よやくする",
+      "romaji": "yoyakusuru",
+      "meaning": [
+        "reserve, book"
+      ],
+      "primaryMeaning": "reserve, book",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "予約する",
+        "dictionaryKana": "よやくする",
+        "masu": "予約します",
+        "masuKana": "よやくします",
+        "te": "予約して",
+        "teKana": "よやくして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "新しいホテルを早く予約します。",
+          "kana": "あたらしいホテルをはやくよやくします。",
+          "english": "I book a new hotel early.",
+          "highlight": "advance booking with adverb and adjective"
+        },
+        {
+          "japanese": "有名なレストランをやっと予約しました。",
+          "kana": "ゆうめいなレストランをやっとよやくしました。",
+          "english": "I finally reserved a famous restaurant.",
+          "highlight": "successful booking with adverb and adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0151.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "予約してください。",
+          "kana": "よやくしてください。",
+          "english": "Please reserve, book.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "予約しています。",
+          "kana": "よやくしています。",
+          "english": "I am reserve, booking.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、予約する。",
+          "kana": "まいにち、よやくする。",
+          "english": "I reserve, book every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "予約するのが好きです。",
+          "kana": "よやくするのがすきです。",
+          "english": "I like to reserve, book.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0152",
+      "kanji": "留学する",
+      "kana": "りゅうがくする",
+      "romaji": "ryuugakusuru",
+      "meaning": [
+        "study abroad"
+      ],
+      "primaryMeaning": "study abroad",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "留学する",
+        "dictionaryKana": "りゅうがくする",
+        "masu": "留学します",
+        "masuKana": "りゅうがくします",
+        "te": "留学して",
+        "teKana": "りゅうがくして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "来年、有名な大学に留学します。",
+          "kana": "らいねん、ゆうめいなだいがくにりゅうがくします。",
+          "english": "I'll study abroad at a famous university next year.",
+          "highlight": "future plans with adjective"
+        },
+        {
+          "japanese": "友達が遠い国に留学しました。",
+          "kana": "ともだちがとおいくににりゅうがくしました。",
+          "english": "My friend studied abroad in a distant country.",
+          "highlight": "overseas study with adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0152.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "留学してください。",
+          "kana": "りゅうがくしてください。",
+          "english": "Please study abroad.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "留学しています。",
+          "kana": "りゅうがくしています。",
+          "english": "I am study abroading.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、留学する。",
+          "kana": "まいにち、りゅうがくする。",
+          "english": "I study abroad every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "留学するのが好きです。",
+          "kana": "りゅうがくするのがすきです。",
+          "english": "I like to study abroad.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0153",
+      "kanji": "連れて来る",
+      "kana": "つれてくる",
+      "romaji": "tsuretekuru",
+      "meaning": [
+        "bring (someone)",
+        "to bring someone along"
+      ],
+      "primaryMeaning": "bring (someone)",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": true,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "連れて来る",
+        "dictionaryKana": "つれてくる",
+        "masu": "連れて来ます",
+        "masuKana": "つれてきます",
+        "te": "連れて来て",
+        "teKana": "つれてきて"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "明日、新しい友達をパーティーに連れて来ます。",
+          "kana": "あした、あたらしいともだちをパーティーにつれてきます。",
+          "english": "Tomorrow, I'll bring a new friend to the party.",
+          "highlight": "bringing someone with adjective"
+        },
+        {
+          "japanese": "弟を静かな場所に連れて来ました。",
+          "kana": "おとうとをしずかなばしょにつれてきました。",
+          "english": "I brought my younger brother to a quiet place.",
+          "highlight": "accompaniment with adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0153.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "連れて来てください。",
+          "kana": "つれてきてください。",
+          "english": "Please bring (someone).",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "連れて来ています。",
+          "kana": "つれてきています。",
+          "english": "I am bring (someone)ing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、連れて来る。",
+          "kana": "まいにち、つれてくる。",
+          "english": "I bring (someone) every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "連れて来るのが好きです。",
+          "kana": "つれてくるのがすきです。",
+          "english": "I like to bring (someone).",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0154",
+      "kanji": "持って来る",
+      "kana": "もってくる",
+      "romaji": "mottekuru",
+      "meaning": [
+        "bring (something)",
+        "to bring something along"
+      ],
+      "primaryMeaning": "bring (something)",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": true,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "持って来る",
+        "dictionaryKana": "もってくる",
+        "masu": "持って来ます",
+        "masuKana": "もってきます",
+        "te": "持って来て",
+        "teKana": "もってきて"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎日、美味しいお弁当を持って来ます。",
+          "kana": "まいにち、おいしいおべんとうをもってきます。",
+          "english": "I bring delicious lunch boxes every day.",
+          "highlight": "daily routine with adjective"
+        },
+        {
+          "japanese": "大切な書類をきちんと持って来ました。",
+          "kana": "たいせつなしょるいをきちんともってきました。",
+          "english": "I properly brought important documents.",
+          "highlight": "careful action with adverb and adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0154.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "持って来てください。",
+          "kana": "もってきてください。",
+          "english": "Please bring (something).",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "持って来ています。",
+          "kana": "もってきています。",
+          "english": "I am bring (something)ing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、持って来る。",
+          "kana": "まいにち、もってくる。",
+          "english": "I bring (something) every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "持って来るのが好きです。",
+          "kana": "もってくるのがすきです。",
+          "english": "I like to bring (something).",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    }
+  ]
+}

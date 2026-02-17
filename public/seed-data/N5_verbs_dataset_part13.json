@@ -1,0 +1,938 @@
+{
+  "metadata": {
+    "version": "1.3.1",
+    "generatedAt": "2026-02-10T15:49:37.551Z",
+    "description": "Complete JLPT N5 verbs with corrected conjugations and clarified meanings",
+    "totalEntries": 141,
+    "uniqueVerbs": 141,
+    "verbsWithJMdictData": 131,
+    "dataSource": "Minna no Nihongo + JMdict",
+    "groups": {
+      "godan": 77,
+      "ichidan": 39,
+      "irregular": 25
+    }
+  },
+  "verbs": [
+    {
+      "id": "n5_verb_0134",
+      "kanji": "買い物する",
+      "kana": "かいものする",
+      "romaji": "kaimonosuru",
+      "meaning": [
+        "do shopping"
+      ],
+      "primaryMeaning": "do shopping",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "買い物する",
+        "dictionaryKana": "かいものする",
+        "masu": "買い物します",
+        "masuKana": "かいものします",
+        "te": "買い物して",
+        "teKana": "かいものして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎週末、新しいデパートで買い物します。",
+          "kana": "まいしゅうまつ、あたらしいデパートでかいものします。",
+          "english": "I do shopping at the new department store every weekend.",
+          "highlight": "shopping routine with adjective"
+        },
+        {
+          "japanese": "昨日、スーパーで買い物しました。",
+          "kana": "きのう、スーパーでかいものしました。",
+          "english": "I went shopping at the supermarket yesterday.",
+          "highlight": "relaxed shopping with adverb and adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0134.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "買い物してください。",
+          "kana": "かいものしてください。",
+          "english": "Please do shopping.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "買い物しています。",
+          "kana": "かいものしています。",
+          "english": "I am do shoppinging.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、買い物する。",
+          "kana": "まいにち、かいものする。",
+          "english": "I do shopping every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "買い物するのが好きです。",
+          "kana": "かいものするのがすきです。",
+          "english": "I like to do shopping.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0135",
+      "kanji": "結婚する",
+      "kana": "けっこんする",
+      "romaji": "kekonsuru",
+      "meaning": [
+        "marry, get married"
+      ],
+      "primaryMeaning": "marry, get married",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "結婚する",
+        "dictionaryKana": "けっこんする",
+        "masu": "結婚します",
+        "masuKana": "けっこんします",
+        "te": "結婚して",
+        "teKana": "けっこんして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "来年、優しい人と結婚します。",
+          "kana": "らいねん、やさしいひととけっこんします。",
+          "english": "I'll marry a kind person next year.",
+          "highlight": "future marriage with adjective"
+        },
+        {
+          "japanese": "親友が有名な人と結婚しました。",
+          "kana": "しんゆうがゆうめいなひととけっこんしました。",
+          "english": "My close friend married a famous person.",
+          "highlight": "marriage with adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0135.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "結婚してください。",
+          "kana": "けっこんしてください。",
+          "english": "Please marry, get married.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "結婚しています。",
+          "kana": "けっこんしています。",
+          "english": "I am marry, get marrieding.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、結婚する。",
+          "kana": "まいにち、けっこんする。",
+          "english": "I marry, get married every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "結婚するのが好きです。",
+          "kana": "けっこんするのがすきです。",
+          "english": "I like to marry, get married.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0136",
+      "kanji": "見学する",
+      "kana": "けんがくする",
+      "romaji": "kengakusuru",
+      "meaning": [
+        "tour, visit a place to study it"
+      ],
+      "primaryMeaning": "tour; visit (to study)",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "見学する",
+        "dictionaryKana": "けんがくする",
+        "masu": "見学します",
+        "masuKana": "けんがくします",
+        "te": "見学して",
+        "teKana": "けんがくして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎月、新しい工場を丁寧に見学します。",
+          "kana": "まいつき、あたらしいこうじょうをていねいにけんがくします。",
+          "english": "I carefully tour new factories every month.",
+          "highlight": "study visit with adverb and adjective"
+        },
+        {
+          "japanese": "昨日、有名な美術館を見学しました。",
+          "kana": "きのう、ゆうめいなびじゅつかんをけんがくしました。",
+          "english": "Yesterday, I toured a famous museum.",
+          "highlight": "educational tour with adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0136.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "見学してください。",
+          "kana": "けんがくしてください。",
+          "english": "Please tour; visit (to study).",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "見学しています。",
+          "kana": "けんがくしています。",
+          "english": "I am tour; visit (to study)ing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、見学する。",
+          "kana": "まいにち、けんがくする。",
+          "english": "I tour; visit (to study) every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "見学するのが好きです。",
+          "kana": "けんがくするのがすきです。",
+          "english": "I like to tour; visit (to study).",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0137",
+      "kanji": "研究する",
+      "kana": "けんきゅうする",
+      "romaji": "kenkyuusuru",
+      "meaning": [
+        "do research"
+      ],
+      "primaryMeaning": "do research",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "研究する",
+        "dictionaryKana": "けんきゅうする",
+        "masu": "研究します",
+        "masuKana": "けんきゅうします",
+        "te": "研究して",
+        "teKana": "けんきゅうして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎日、新しい技術を一生懸命研究します。",
+          "kana": "まいにち、あたらしいぎじゅつをいっしょうけんめいけんきゅうします。",
+          "english": "I study new technology hard every day.",
+          "highlight": "dedicated research with adverb and adjective"
+        },
+        {
+          "japanese": "難しい問題をじっくり研究しました。",
+          "kana": "むずかしいもんだいをじっくりけんきゅうしました。",
+          "english": "I thoroughly researched the difficult problem.",
+          "highlight": "careful research with adverb and adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0137.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "研究してください。",
+          "kana": "けんきゅうしてください。",
+          "english": "Please do research.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "研究しています。",
+          "kana": "けんきゅうしています。",
+          "english": "I am do researching.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、研究する。",
+          "kana": "まいにち、けんきゅうする。",
+          "english": "I do research every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "研究するのが好きです。",
+          "kana": "けんきゅうするのがすきです。",
+          "english": "I like to do research.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0138",
+      "kanji": "コピーする",
+      "kana": "コピーする",
+      "romaji": "コピーsuru",
+      "meaning": [
+        "copy"
+      ],
+      "primaryMeaning": "copy",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "コピーする",
+        "dictionaryKana": "コピーする",
+        "masu": "コピーします",
+        "masuKana": "コピーします",
+        "te": "コピーして",
+        "teKana": "コピーして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎朝、大切な書類をきちんとコピーします。",
+          "kana": "まいあさ、たいせつなしょるいをきちんとコピーします。",
+          "english": "I properly copy important documents every morning.",
+          "highlight": "copying with adverb and adjective"
+        },
+        {
+          "japanese": "古い写真を丁寧にコピーしました。",
+          "kana": "ふるいしゃしんをていねいにコピーしました。",
+          "english": "I carefully copied old photos.",
+          "highlight": "careful copying with adverb and adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0138.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "コピーしてください。",
+          "kana": "コピーしてください。",
+          "english": "Please copy.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "コピーしています。",
+          "kana": "コピーしています。",
+          "english": "I am copying.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、コピーする。",
+          "kana": "まいにち、コピーする。",
+          "english": "I copy every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "コピーするのが好きです。",
+          "kana": "コピーするのがすきです。",
+          "english": "I like to copy.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0139",
+      "kanji": "散歩する",
+      "kana": "さんぽする",
+      "romaji": "sanposuru",
+      "meaning": [
+        "take a walk"
+      ],
+      "primaryMeaning": "take a walk",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "散歩する",
+        "dictionaryKana": "さんぽする",
+        "masu": "散歩します",
+        "masuKana": "さんぽします",
+        "te": "散歩して",
+        "teKana": "さんぽして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎朝、静かな公園をゆっくり散歩します。",
+          "kana": "まいあさ、しずかなこうえんをゆっくりさんぽします。",
+          "english": "I leisurely take a walk in the quiet park every morning.",
+          "highlight": "peaceful walk with adverb and adjective"
+        },
+        {
+          "japanese": "昨日、美しい海辺を散歩しました。",
+          "kana": "きのう、うつくしいうみべをさんぽしました。",
+          "english": "Yesterday, I took a walk along the beautiful seaside.",
+          "highlight": "scenic walk with adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0139.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "散歩してください。",
+          "kana": "さんぽしてください。",
+          "english": "Please take a walk.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "散歩しています。",
+          "kana": "さんぽしています。",
+          "english": "I am take a walking.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、散歩する。",
+          "kana": "まいにち、さんぽする。",
+          "english": "I take a walk every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "散歩するのが好きです。",
+          "kana": "さんぽするのがすきです。",
+          "english": "I like to take a walk.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0140",
+      "kanji": "残業する",
+      "kana": "ざんぎょうする",
+      "romaji": "zangyousuru",
+      "meaning": [
+        "work overtime"
+      ],
+      "primaryMeaning": "work overtime",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "残業する",
+        "dictionaryKana": "ざんぎょうする",
+        "masu": "残業します",
+        "masuKana": "ざんぎょうします",
+        "te": "残業して",
+        "teKana": "ざんぎょうして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "今週、大切なプロジェクトで毎日残業します。",
+          "kana": "こんしゅう、たいせつなプロジェクトでまいにちざんぎょうします。",
+          "english": "I work overtime every day this week on an important project.",
+          "highlight": "overtime work with adjective"
+        },
+        {
+          "japanese": "昨日、遅くまで残業しました。",
+          "kana": "きのう、おそくまでざんぎょうしました。",
+          "english": "Yesterday, I worked overtime until late.",
+          "highlight": "late overtime with adverb"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0140.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "残業してください。",
+          "kana": "ざんぎょうしてください。",
+          "english": "Please work overtime.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "残業しています。",
+          "kana": "ざんぎょうしています。",
+          "english": "I am work overtimeing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、残業する。",
+          "kana": "まいにち、ざんぎょうする。",
+          "english": "I work overtime every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "残業するのが好きです。",
+          "kana": "ざんぎょうするのがすきです。",
+          "english": "I like to work overtime.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0141",
+      "kanji": "修理する",
+      "kana": "しゅうりする",
+      "romaji": "shuurisuru",
+      "meaning": [
+        "repair"
+      ],
+      "primaryMeaning": "repair",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "修理する",
+        "dictionaryKana": "しゅうりする",
+        "masu": "修理します",
+        "masuKana": "しゅうりします",
+        "te": "修理して",
+        "teKana": "しゅうりして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "古い時計を丁寧に修理します。",
+          "kana": "ふるいとけいをていねいにしゅうりします。",
+          "english": "I carefully repair old watches.",
+          "highlight": "repair work with adverb and adjective"
+        },
+        {
+          "japanese": "壊れたパソコンをすぐに修理しました。",
+          "kana": "こわれたパソコンをすぐにしゅうりしました。",
+          "english": "I immediately repaired the broken computer.",
+          "highlight": "quick repair with adverb"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0141.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "修理してください。",
+          "kana": "しゅうりしてください。",
+          "english": "Please repair.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "修理しています。",
+          "kana": "しゅうりしています。",
+          "english": "I am repairing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、修理する。",
+          "kana": "まいにち、しゅうりする。",
+          "english": "I repair every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "修理するのが好きです。",
+          "kana": "しゅうりするのがすきです。",
+          "english": "I like to repair.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0142",
+      "kanji": "出張する",
+      "kana": "しゅっちょうする",
+      "romaji": "shuchousuru",
+      "meaning": [
+        "go on a business trip"
+      ],
+      "primaryMeaning": "go on business trip",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "出張する",
+        "dictionaryKana": "しゅっちょうする",
+        "masu": "出張します",
+        "masuKana": "しゅっちょうします",
+        "te": "出張して",
+        "teKana": "しゅっちょうして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎月、遠い国に出張します。",
+          "kana": "まいつき、とおいくににしゅっちょうします。",
+          "english": "I go on business trips to distant countries every month.",
+          "highlight": "frequent travel with adjective"
+        },
+        {
+          "japanese": "先週、突然大阪に出張しました。",
+          "kana": "せんしゅう、とつぜんおおさかにしゅっちょうしました。",
+          "english": "Last week, I suddenly went on a business trip to Osaka.",
+          "highlight": "unexpected trip with adverb"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0142.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "出張してください。",
+          "kana": "しゅっちょうしてください。",
+          "english": "Please go on business trip.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "出張しています。",
+          "kana": "しゅっちょうしています。",
+          "english": "I am go on business triping.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、出張する。",
+          "kana": "まいにち、しゅっちょうする。",
+          "english": "I go on business trip every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "出張するのが好きです。",
+          "kana": "しゅっちょうするのがすきです。",
+          "english": "I like to go on business trip.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0143",
+      "kanji": "紹介する",
+      "kana": "しょうかいする",
+      "romaji": "shoukaisuru",
+      "meaning": [
+        "introduce"
+      ],
+      "primaryMeaning": "introduce",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "irregular",
+      "verbType": {
+        "transitive": null,
+        "intransitive": null
+      },
+      "conjugations": {
+        "dictionary": "紹介する",
+        "dictionaryKana": "しょうかいする",
+        "masu": "紹介します",
+        "masuKana": "しょうかいします",
+        "te": "紹介して",
+        "teKana": "しょうかいして"
+      },
+      "tags": [
+        "verb",
+        "irregular",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "新しい友達を丁寧に紹介します。",
+          "kana": "あたらしいともだちをていねいにしょうかいします。",
+          "english": "I politely introduce new friends.",
+          "highlight": "introduction with adverb and adjective"
+        },
+        {
+          "japanese": "有名な先生を皆に紹介しました。",
+          "kana": "ゆうめいなせんせいをみんなにしょうかいしました。",
+          "english": "I introduced a famous teacher to everyone.",
+          "highlight": "formal introduction with adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0143.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "紹介してください。",
+          "kana": "しょうかいしてください。",
+          "english": "Please introduce.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "紹介しています。",
+          "kana": "しょうかいしています。",
+          "english": "I am introduceing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、紹介する。",
+          "kana": "まいにち、しょうかいする。",
+          "english": "I introduce every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "紹介するのが好きです。",
+          "kana": "しょうかいするのがすきです。",
+          "english": "I like to introduce.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    }
+  ]
+}

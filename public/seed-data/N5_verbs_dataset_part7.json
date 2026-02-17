@@ -1,0 +1,982 @@
+{
+  "metadata": {
+    "version": "1.3.1",
+    "generatedAt": "2026-02-10T15:49:37.551Z",
+    "description": "Complete JLPT N5 verbs with corrected conjugations and clarified meanings",
+    "totalEntries": 141,
+    "uniqueVerbs": 141,
+    "verbsWithJMdictData": 131,
+    "dataSource": "Minna no Nihongo + JMdict",
+    "groups": {
+      "godan": 77,
+      "ichidan": 39,
+      "irregular": 25
+    }
+  },
+  "verbs": [
+    {
+      "id": "n5_verb_0068",
+      "kanji": "話す",
+      "kana": "はなす",
+      "romaji": "hanasu",
+      "meaning": [
+        "speak, talk",
+        "to talk",
+        "to speak",
+        "to converse",
+        "to chat",
+        "to speak (a language)"
+      ],
+      "primaryMeaning": "speak, talk",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "話す",
+        "dictionaryKana": "はなす",
+        "masu": "話します",
+        "masuKana": "はなします",
+        "te": "話して",
+        "teKana": "はなして"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎日、友達と楽しく話します。",
+          "kana": "まいにち、ともだちとたのしくはなします。",
+          "english": "I talk happily with friends every day.",
+          "highlight": "conversation with adverb"
+        },
+        {
+          "japanese": "昨日、先生と大切なことを話しました。",
+          "kana": "きのう、せんせいとたいせつなことをはなしました。",
+          "english": "Yesterday, I talked about important things with the teacher.",
+          "highlight": "serious discussion with adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0068.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1562350",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "話してください。",
+          "kana": "はなしてください。",
+          "english": "Please speak, talk.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "話しています。",
+          "kana": "はなしています。",
+          "english": "I am speak, talking.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、話す。",
+          "kana": "まいにち、はなす。",
+          "english": "I speak, talk every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "話すのが好きです。",
+          "kana": "はなすのがすきです。",
+          "english": "I like to speak, talk.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0069",
+      "kanji": "払う",
+      "kana": "はらう",
+      "romaji": "harau",
+      "meaning": [
+        "pay",
+        "to pay (e.g. money, bill)",
+        "to pay (e.g. attention)",
+        "to show (e.g. respect, concern)"
+      ],
+      "primaryMeaning": "pay",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "払う",
+        "dictionaryKana": "はらう",
+        "masu": "払います",
+        "masuKana": "はらいます",
+        "te": "払って",
+        "teKana": "はらって"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "レストランで現金で払いました。",
+          "kana": "レストランでげんきんではらいました。",
+          "english": "I paid with cash at the restaurant.",
+          "highlight": "payment method"
+        },
+        {
+          "japanese": "来月、家賃を払います。",
+          "kana": "らいげつ、やちんをはらいます。",
+          "english": "I will pay rent next month.",
+          "highlight": "monthly payment"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0069.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1501620",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "払ってください。",
+          "kana": "はらってください。",
+          "english": "Please pay.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "払っています。",
+          "kana": "はらっています。",
+          "english": "I am paying.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、払う。",
+          "kana": "まいにち、はらう。",
+          "english": "I pay every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "払うのが好きです。",
+          "kana": "はらうのがすきです。",
+          "english": "I like to pay.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0070",
+      "kanji": "弾く",
+      "kana": "ひく",
+      "romaji": "hiku",
+      "meaning": [
+        "play (stringed instruments, piano, etc.)",
+        "to play (a stringed or keyboard instrument)"
+      ],
+      "primaryMeaning": "play (instrument)",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "弾く",
+        "dictionaryKana": "ひく",
+        "masu": "弾きます",
+        "masuKana": "ひきます",
+        "te": "弾いて",
+        "teKana": "ひいて"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎晩、美しい曲を弾きます。",
+          "kana": "まいばん、うつくしいきょくをひきます。",
+          "english": "I play beautiful songs every night.",
+          "highlight": "music practice with adjective"
+        },
+        {
+          "japanese": "昨日、新しいピアノを上手に弾きました。",
+          "kana": "きのう、あたらしいピアノをじょうずにひきました。",
+          "english": "Yesterday, I played the new piano skillfully.",
+          "highlight": "performance with adjective and adverb"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0070.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1419370",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "弾いてください。",
+          "kana": "ひいてください。",
+          "english": "Please play (instrument).",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "弾いています。",
+          "kana": "ひいています。",
+          "english": "I am play (instrument)ing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、弾く。",
+          "kana": "まいにち、ひく。",
+          "english": "I play (instrument) every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "弾くのが好きです。",
+          "kana": "ひくのがすきです。",
+          "english": "I like to play (instrument).",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0071",
+      "kanji": "引く",
+      "kana": "ひく",
+      "romaji": "hiku",
+      "meaning": [
+        "pull",
+        "to pull",
+        "to tug",
+        "to lead (e.g. a horse)",
+        "to draw back (e.g. one's hand)",
+        "to draw in (one's chin, stomach, etc.)",
+        "to pull in"
+      ],
+      "primaryMeaning": "pull",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "引く",
+        "dictionaryKana": "ひく",
+        "masu": "引きます",
+        "masuKana": "ひきます",
+        "te": "引いて",
+        "teKana": "ひいて"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "風邪を引きました。",
+          "kana": "かぜをひきました。",
+          "english": "I caught a cold.",
+          "highlight": "illness absence"
+        },
+        {
+          "japanese": "辞書を引いて言葉を調べます。",
+          "kana": "じしょをひいてことばをしらべます。",
+          "english": "I look up words by consulting a dictionary.",
+          "highlight": "study method"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0071.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1169250",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "引いてください。",
+          "kana": "ひいてください。",
+          "english": "Please pull.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "引いています。",
+          "kana": "ひいています。",
+          "english": "I am pulling.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、引く。",
+          "kana": "まいにち、ひく。",
+          "english": "I pull every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "引くのが好きです。",
+          "kana": "ひくのがすきです。",
+          "english": "I like to pull.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0072",
+      "kanji": "降る",
+      "kana": "ふる",
+      "romaji": "furu",
+      "meaning": [
+        "rain",
+        "to fall (of rain, snow, ash, etc.)",
+        "to come down",
+        "to form (of frost)"
+      ],
+      "primaryMeaning": "rain",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": true
+      },
+      "conjugations": {
+        "dictionary": "降る",
+        "dictionaryKana": "ふる",
+        "masu": "降ります",
+        "masuKana": "ふります",
+        "te": "降って",
+        "teKana": "ふって"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎日、冷たい雨が降ります。",
+          "kana": "まいにち、つめたいあめがふります。",
+          "english": "Cold rain falls every day.",
+          "highlight": "weather pattern with adjective"
+        },
+        {
+          "japanese": "昨日、大きい雪が降りました。",
+          "kana": "きのう、おおきいゆきがふりました。",
+          "english": "Yesterday, big snow fell.",
+          "highlight": "snowfall with adjective"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0072.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1282790",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "降ってください。",
+          "kana": "ふってください。",
+          "english": "Please rain.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "降っています。",
+          "kana": "ふっています。",
+          "english": "I am raining.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、降る。",
+          "kana": "まいにち、ふる。",
+          "english": "I rain every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "降るのが好きです。",
+          "kana": "ふるのがすきです。",
+          "english": "I like to rain.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0073",
+      "kanji": "曲がる",
+      "kana": "まがる",
+      "romaji": "magaru",
+      "meaning": [
+        "turn",
+        "to turn",
+        "to bend",
+        "to curve",
+        "to warp",
+        "to wind",
+        "to twist"
+      ],
+      "primaryMeaning": "turn corner/direction",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": true
+      },
+      "conjugations": {
+        "dictionary": "曲がる",
+        "dictionaryKana": "まがる",
+        "masu": "曲がります",
+        "masuKana": "まがります",
+        "te": "曲がって",
+        "teKana": "まがって"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "この道は右に大きく曲がります。",
+          "kana": "このみちはみぎにおおきくまがります。",
+          "english": "This road curves greatly to the right.",
+          "highlight": "turning with adverb"
+        },
+        {
+          "japanese": "昨日、左に急に曲がりました。",
+          "kana": "きのう、ひだりにきゅうにまがりました。",
+          "english": "Yesterday, I turned sharply to the left.",
+          "highlight": "sudden turn with adverb"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0073.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1239730",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "曲がってください。",
+          "kana": "まがってください。",
+          "english": "Please turn corner/direction.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "曲がっています。",
+          "kana": "まがっています。",
+          "english": "I am turn corner/directioning.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、曲がる。",
+          "kana": "まいにち、まがる。",
+          "english": "I turn corner/direction every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "曲がるのが好きです。",
+          "kana": "まがるのがすきです。",
+          "english": "I like to turn corner/direction.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0074",
+      "kanji": "待つ",
+      "kana": "まつ",
+      "romaji": "matsu",
+      "meaning": [
+        "wait",
+        "to wait",
+        "to await",
+        "to look forward to",
+        "to anticipate"
+      ],
+      "primaryMeaning": "wait",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": true
+      },
+      "conjugations": {
+        "dictionary": "待つ",
+        "dictionaryKana": "まつ",
+        "masu": "待ちます",
+        "masuKana": "まちます",
+        "te": "待って",
+        "teKana": "まって"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "駅で友達を三十分待ちました。",
+          "kana": "えきでともだちをさんじゅっぷんまちました。",
+          "english": "I waited for my friend at the station for 30 minutes.",
+          "highlight": "meeting delay"
+        },
+        {
+          "japanese": "バス停でバスを待っています。",
+          "kana": "バスていでバスをまっています。",
+          "english": "I'm waiting for the bus at the bus stop.",
+          "highlight": "public transport"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0074.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1410590",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "待ってください。",
+          "kana": "まってください。",
+          "english": "Please wait.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "待っています。",
+          "kana": "まっています。",
+          "english": "I am waiting.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、待つ。",
+          "kana": "まいにち、まつ。",
+          "english": "I wait every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "待つのが好きです。",
+          "kana": "まつのがすきです。",
+          "english": "I like to wait.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0075",
+      "kanji": "回す",
+      "kana": "まわす",
+      "romaji": "mawasu",
+      "meaning": [
+        "turn",
+        "to turn",
+        "to rotate",
+        "to spin",
+        "to twist",
+        "to gyrate",
+        "to turn (to a new use)",
+        "to use (for something else)"
+      ],
+      "primaryMeaning": "rotate/spin object",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "回す",
+        "dictionaryKana": "まわす",
+        "masu": "回します",
+        "masuKana": "まわします",
+        "te": "回して",
+        "teKana": "まわして"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "ドアのノブを回してください。",
+          "kana": "ドアのノブをまわしてください。",
+          "english": "Please turn the door knob.",
+          "highlight": "opening doors"
+        },
+        {
+          "japanese": "資料を回してください。",
+          "kana": "しりょうをまわしてください。",
+          "english": "Please pass around the documents.",
+          "highlight": "sharing materials"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0075.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1199350",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "回してください。",
+          "kana": "まわしてください。",
+          "english": "Please rotate/spin object.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "回しています。",
+          "kana": "まわしています。",
+          "english": "I am rotate/spin objecting.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、回す。",
+          "kana": "まいにち、まわす。",
+          "english": "I rotate/spin object every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "回すのが好きです。",
+          "kana": "まわすのがすきです。",
+          "english": "I like to rotate/spin object.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0076",
+      "kanji": "持つ",
+      "kana": "もつ",
+      "romaji": "motsu",
+      "meaning": [
+        "hold",
+        "to hold (in one's hand)",
+        "to take",
+        "to carry",
+        "to hold (meeting, etc.)",
+        "to have (opportunity, etc.)"
+      ],
+      "primaryMeaning": "hold",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": true,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "持つ",
+        "dictionaryKana": "もつ",
+        "masu": "持ちます",
+        "masuKana": "もちます",
+        "te": "持って",
+        "teKana": "もって"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "毎日、大切なカバンを持ちます。",
+          "kana": "まいにち、たいせつなカバンをもちます。",
+          "english": "I carry an important bag every day.",
+          "highlight": "carrying routine with adjective"
+        },
+        {
+          "japanese": "昨日、重い荷物をゆっくり持ちました。",
+          "kana": "きのう、おもいにもつをゆっくりもちました。",
+          "english": "Yesterday, I slowly carried heavy luggage.",
+          "highlight": "careful carrying with adjective and adverb"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0076.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1315720",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "持ってください。",
+          "kana": "もってください。",
+          "english": "Please hold.",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "持っています。",
+          "kana": "もっています。",
+          "english": "I am holding.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、持つ。",
+          "kana": "まいにち、もつ。",
+          "english": "I hold every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "持つのが好きです。",
+          "kana": "もつのがすきです。",
+          "english": "I like to hold.",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    },
+    {
+      "id": "n5_verb_0077",
+      "kanji": "持って行く",
+      "kana": "もっていく",
+      "romaji": "moteiku",
+      "meaning": [
+        "take (something)",
+        "to take (something) along",
+        "to bring with one",
+        "to carry (something) away",
+        "to bear"
+      ],
+      "primaryMeaning": "take (something)",
+      "jlptLevel": "N5",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "verbGroup": "godan",
+      "verbType": {
+        "transitive": false,
+        "intransitive": false
+      },
+      "conjugations": {
+        "dictionary": "持って行く",
+        "dictionaryKana": "もっていく",
+        "masu": "持って行きます",
+        "masuKana": "もっていきます",
+        "te": "持って行いて",
+        "teKana": "もっていいて"
+      },
+      "tags": [
+        "verb",
+        "godan",
+        "n5"
+      ],
+      "examples": [
+        {
+          "japanese": "学校に弁当を持って行きます。",
+          "kana": "がっこうにべんとうをもっていきます。",
+          "english": "I take a lunch box to school.",
+          "highlight": "bringing lunch"
+        },
+        {
+          "japanese": "図書館に本を持って行きました。",
+          "kana": "としょかんにほんをもっていきました。",
+          "english": "I brought the book to the library.",
+          "highlight": "transporting items"
+        }
+      ],
+      "audio": {
+        "pronunciationUrl": "/audio/n5/verbs/n5_verb_0077.mp3",
+        "source": "pending"
+      },
+      "source": {
+        "type": "minna-no-nihongo",
+        "jmdict_ent_seq": "1315700",
+        "url": "https://www.3anetwork.com"
+      },
+      "license": {
+        "text": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": null,
+      "teFormExamples": [
+        {
+          "japanese": "持って行いてください。",
+          "kana": "もっていいてください。",
+          "english": "Please take (something).",
+          "highlight": "polite request",
+          "pattern": "request"
+        },
+        {
+          "japanese": "持って行いています。",
+          "kana": "もっていいています。",
+          "english": "I am take (something)ing.",
+          "highlight": "present progressive",
+          "pattern": "progressive"
+        }
+      ],
+      "dictFormExamples": [
+        {
+          "japanese": "毎日、持って行く。",
+          "kana": "まいにち、もっていく。",
+          "english": "I take (something) every day.",
+          "highlight": "daily habit",
+          "pattern": "habitual"
+        },
+        {
+          "japanese": "持って行くのが好きです。",
+          "kana": "もっていくのがすきです。",
+          "english": "I like to take (something).",
+          "highlight": "nominalization",
+          "pattern": "nominalization"
+        }
+      ]
+    }
+  ]
+}
