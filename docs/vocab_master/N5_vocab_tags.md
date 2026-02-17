@@ -835,8 +835,6 @@ Total words: 824
 | かなしい | 悲しい | sad | adjective |  | i-adjective |
 | さびしい | 寂しい | lonely | adjective |  | i-adjective |
 | りゅうがくせい | 留学生 | overseas student | noun |  |  |
-
-
 | あつめる | 集める | to collect; to gather | verb | ichidan |  |
 | あんないする | 案内する | to show around; to guide | verb | suru-verb |  |
 | いそぐ | 急ぐ | to hurry | verb | godan |  |
