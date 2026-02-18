@@ -1,6 +1,6 @@
 # Office Japanese App — Build Progress
 
-> Last updated: 2026-02-18
+> Last updated: 2026-02-18 · Schema v2
 
 ---
 
@@ -8,8 +8,8 @@
 
 A dedicated `/office` section in the lingomemory app for Japanese used in a
 tech workplace (Slack, standups, PRs, incident response, 1-on-1s, etc.).
-Built alongside the existing `/verbs` section, sharing the same `VocabularyCard`
-type and generic UI components.
+Built alongside the existing `/verbs` section, using its own `OfficeCard`
+typed interface (separate from `VocabularyCard`).
 
 ---
 
@@ -28,28 +28,53 @@ type and generic UI components.
 
 ## Vocabulary Dataset (`office_vocabulary.json`)
 
-**148 entries** across 13 categories:
+**Version:** 2.0 (schema: `office-v2`)
+**148 entries** across 13 categories, each with one example sentence.
 
-| Category tag | Count | Examples |
+| Category | Count | Examples |
 |---|---|---|
-| `cat:verbs` | 25 | 確認する、報告する、依頼する、デプロイする、マージする |
-| `cat:meetings` | 16 | 議題、議事録、承認、フォローアップ、アジェンダ |
-| `cat:project` | 18 | 優先度、スケジュール、マイルストーン、リリース、要件 |
-| `cat:incident` | 12 | 障害、影響範囲、暫定対応、復旧、再発防止 |
-| `cat:status` | 10 | 完了、対応中、遅延、保留、未対応、対応済み |
-| `cat:keigo` | 12 | お疲れ様です、承知しました、ご確認ください、お手数をおかけします |
-| `cat:tech` | 12 | バグ、デプロイ、プルリクエスト、コードレビュー、本番環境、API |
-| `cat:time` | 11 | 期限、締め切り、本日、来週、至急、一時間後 |
-| `cat:hr` | 9 | 有給、在宅勤務、欠勤、育児休暇、フレックス |
-| `cat:roles` | 8 | エンジニア、マネージャー、チームリーダー、プロダクトオーナー |
-| `cat:communication` | 9 | 周知する、連絡する、報告する、フォロー、確認取り |
-| `cat:documents` | 6 | 仕様書、設計書、議事録、報告書、手順書 |
+| `verbs` | 25 | 確認する、報告する、依頼する、デプロイする、マージする |
+| `meetings` | 16 | 議題、議事録、承認、フォローアップ、アジェンダ |
+| `project` | 18 | 優先度、スケジュール、マイルストーン、リリース、要件 |
+| `incident` | 12 | 障害、影響範囲、暫定対応、復旧、再発防止 |
+| `status` | 10 | 完了、対応中、遅延、保留、未対応、対応済み |
+| `keigo` | 12 | お疲れ様です、承知しました、ご確認ください、お手数をおかけします |
+| `tech` | 12 | バグ、デプロイ、プルリクエスト、コードレビュー、本番環境、API |
+| `time` | 11 | 期限、締め切り、本日、来週、至急、一時間後 |
+| `hr` | 9 | 有給、在宅勤務、欠勤、育児休暇、フレックス |
+| `roles` | 8 | エンジニア、マネージャー、チームリーダー、プロダクトオーナー |
+| `communication` | 9 | 周知する、連絡する、報告する、フォロー、確認取り |
+| `documents` | 6 | 仕様書、設計書、議事録、報告書、手順書 |
 
-### Tag system
-- **Active/Passive:** `"active"` (produce it) / `"passive"` (recognize it)
-- **Frequency tier:** `"tier:S"` (daily) / `"tier:A"` (weekly) / `"tier:B"` (monthly) / `"tier:C"` (rare)
-- **Context:** `"ctx:standup"` / `"ctx:meeting"` / `"ctx:email"` / `"ctx:incident"` / `"ctx:1on1"` / `"ctx:hr"` / `"ctx:client"`
-- **Category:** `"cat:verbs"` / `"cat:meetings"` / … (see table above)
+### Schema v2 fields (typed — no tag strings)
+
+```json
+{
+  "id": "office-001",
+  "kanji": "確認する",
+  "kana": "かくにんする",
+  "romaji": "kakunin suru",
+  "meaning": ["to confirm", "to check"],
+  "partOfSpeech": ["verb"],
+  "active": true,
+  "tier": "S",
+  "contexts": ["standup", "email", "meeting"],
+  "category": "verbs",
+  "example": {
+    "japanese": "進捗を確認します。",
+    "kana": "しんちょくをかくにんします。",
+    "english": "I'll confirm the progress."
+  }
+}
+```
+
+- **`active`** `boolean` — true = produce (write/speak), false = recognize only
+- **`tier`** `"S"|"A"|"B"|"C"` — S=daily, A=weekly, B=monthly, C=rare
+- **`contexts`** `OfficeContext[]` — standup / meeting / email / incident / 1on1 / hr / client
+- **`category`** `OfficeCategory` — one of 12 categories above
+- **`example`** — one sentence per entry: `{ japanese, kana, english }`
+
+TypeScript types in `src/types/vocabulary.ts`: `OfficeCard`, `OfficeExample`, `OfficeTier`, `OfficeContext`, `OfficeCategory`.
 
 ---
 
@@ -114,16 +139,16 @@ Each frame has: `contextEn`, `japanese`, `kana`, `english`, `register` (neutral 
 
 ## Architecture Decisions
 
-### Why no new types
-`VocabularyCard` from `src/types/vocabulary.ts` already has `tags: string[]`.
-All office metadata (tier, active/passive, context, category) is encoded as
-structured tag strings — zero schema changes needed.
+### Dedicated `OfficeCard` type (schema v2)
+Office vocabulary uses its own typed interface instead of the generic
+`VocabularyCard`. Structured fields (`active`, `tier`, `contexts`, `category`,
+`example`) replace flat tag strings for type safety and simpler filter logic.
+`VocabularyCard` is unchanged — zero breakage to the `/verbs` section.
 
 ### What's shared with verbs
-- `<Flashcard>` component (generic, no verb-specific fields)
-- `VocabularyCard` interface
 - `<Header>` layout component
 - shadcn/ui primitives (Card, Badge, Button, Progress)
+- Animation library (framer-motion)
 
 ### What's office-only (skipped from verbs)
 - Particle quiz — verb grammar only
@@ -135,8 +160,13 @@ structured tag strings — zero schema changes needed.
 ## Pending / Future
 
 - [ ] Audio pronunciation (when audio files available)
-- [ ] Progress persistence (localStorage or DB) — know which words are "learned"
+- [x] Progress persistence (localStorage) — L0–L5 per card via Test mode
+- [x] Search / filter by keyword (kanji / kana / romaji / meaning)
 - [ ] Spaced repetition scheduling based on test results
-- [ ] More vocabulary entries (target: 100+)
+- [ ] Expand vocabulary: 148 → ~580 (following `japanese-office-vocabulary.md`)
+  - Phase 1 survival core: 120 words (currently 148, covers this)
+  - Final target: ~580 entries across 19 categories
 - [ ] More scenario packs (PR review, design review, project kick-off)
-- [ ] Search / filter by keyword within vocabulary
+- [ ] ChatGPT review of all 4 parts for kana/example accuracy
+  - Send `office_vocabulary_part{1..4}.json` to ChatGPT for review
+  - Apply corrections back to `office_vocabulary.json`
