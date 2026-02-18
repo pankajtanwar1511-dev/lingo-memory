@@ -1,67 +1,54 @@
 "use client"
 
-import { useState, useEffect, useMemo, useCallback } from "react"
+import { useState, useEffect, useMemo } from "react"
 import { useRouter } from "next/navigation"
 import { Header } from "@/components/layout/header"
-import { Flashcard } from "@/components/flashcard"
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { Input } from "@/components/ui/input"
 import { Progress } from "@/components/ui/progress"
+import { Switch } from "@/components/ui/switch"
 import { cn } from "@/lib/utils"
 import type { VocabularyCard } from "@/types/vocabulary"
 import {
-  ArrowLeft, List, Layers, Shuffle,
-  ChevronLeft, ChevronRight, Building2,
-  ThumbsUp, ThumbsDown, RotateCcw, MessageSquare,
-  CheckCircle2, XCircle, Zap
+  Building2, Search, MessageSquare, BookOpen,
+  Eye, RefreshCw, Target, Shuffle, Star,
+  GraduationCap, ThumbsUp, ThumbsDown, RotateCcw,
+  CheckCircle2, ChevronRight, List, X, EyeOff
 } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
 import officeData from "@/../public/seed-data/office_vocabulary.json"
 
-// ─── Types ───────────────────────────────────────────────────────────────────
+// ─── Types ────────────────────────────────────────────────────────────────────
 
 type FreqTier = "S" | "A" | "B" | "C" | "all"
 type ActiveFilter = "all" | "active" | "passive"
-type ViewMode = "flashcard" | "matching" | "test" | "list"
 
-// Matching game types
-interface MatchPair {
-  id: string
-  japanese: string
-  english: string
-}
-type MatchState = "idle" | "selected" | "matched" | "wrong"
-interface MatchCell {
-  pair: MatchPair
-  side: "jp" | "en"
-  state: MatchState
-}
-
-// Test mode types
-interface TestResult {
+interface CardProgress {
   cardId: string
-  known: boolean
+  knownCount: number
+  unknownCount: number
+  level: number  // 0–5
 }
 
-// ─── Constants ───────────────────────────────────────────────────────────────
+// ─── Constants ────────────────────────────────────────────────────────────────
 
 const CATEGORIES = [
-  { id: "all",               label: "All",       color: "bg-gray-100 dark:bg-gray-800" },
-  { id: "cat:verbs",         label: "Verbs",     color: "bg-blue-100 dark:bg-blue-950" },
-  { id: "cat:project",       label: "Project",   color: "bg-violet-100 dark:bg-violet-950" },
-  { id: "cat:meetings",      label: "Meetings",  color: "bg-emerald-100 dark:bg-emerald-950" },
-  { id: "cat:incident",      label: "Incident",  color: "bg-red-100 dark:bg-red-950" },
-  { id: "cat:status",        label: "Status",    color: "bg-orange-100 dark:bg-orange-950" },
-  { id: "cat:keigo",         label: "Keigo",     color: "bg-pink-100 dark:bg-pink-950" },
-  { id: "cat:time",          label: "Time",      color: "bg-yellow-100 dark:bg-yellow-950" },
-  { id: "cat:hr",            label: "HR",        color: "bg-teal-100 dark:bg-teal-950" },
-  { id: "cat:documents",     label: "Docs",      color: "bg-indigo-100 dark:bg-indigo-950" },
-  { id: "cat:communication", label: "Comms",     color: "bg-cyan-100 dark:bg-cyan-950" },
-  { id: "cat:roles",         label: "Roles",     color: "bg-purple-100 dark:bg-purple-950" },
+  { id: "all",               label: "All Office",  shortLabel: "All",      color: "bg-gradient-to-r from-purple-500 to-pink-500" },
+  { id: "cat:verbs",         label: "Verbs",       shortLabel: "Verbs",    color: "bg-gradient-to-r from-blue-500 to-cyan-500" },
+  { id: "cat:meetings",      label: "Meetings",    shortLabel: "Meetings", color: "bg-gradient-to-r from-emerald-500 to-teal-500" },
+  { id: "cat:project",       label: "Project",     shortLabel: "Project",  color: "bg-gradient-to-r from-violet-500 to-purple-500" },
+  { id: "cat:incident",      label: "Incident",    shortLabel: "Incident", color: "bg-gradient-to-r from-red-500 to-rose-500" },
+  { id: "cat:status",        label: "Status",      shortLabel: "Status",   color: "bg-gradient-to-r from-orange-500 to-amber-500" },
+  { id: "cat:keigo",         label: "Keigo",       shortLabel: "Keigo",    color: "bg-gradient-to-r from-pink-500 to-fuchsia-500" },
+  { id: "cat:time",          label: "Time",        shortLabel: "Time",     color: "bg-gradient-to-r from-yellow-500 to-amber-500" },
+  { id: "cat:hr",            label: "HR",          shortLabel: "HR",       color: "bg-gradient-to-r from-teal-500 to-cyan-500" },
+  { id: "cat:roles",         label: "Roles",       shortLabel: "Roles",    color: "bg-gradient-to-r from-slate-500 to-gray-500" },
 ]
 
-const CONTEXT_FILTERS = [
-  { id: "all",       label: "All Contexts" },
+const CONTEXT_TAGS = [
+  { id: "all",           label: "All Contexts" },
   { id: "ctx:standup",   label: "Standup" },
   { id: "ctx:meeting",   label: "Meeting" },
   { id: "ctx:email",     label: "Email" },
@@ -71,371 +58,24 @@ const CONTEXT_FILTERS = [
   { id: "ctx:client",    label: "Client" },
 ]
 
-const TIER_LABELS: Record<string, string> = {
-  S: "Daily", A: "Weekly", B: "Monthly", C: "Rare",
-}
+const TIER_LABELS: Record<string, string> = { S: "Daily", A: "Weekly", B: "Monthly", C: "Rare" }
+const MATCH_BATCH_SIZE = 10
 
-const MATCH_BATCH = 6
-
-// ─── Helpers ─────────────────────────────────────────────────────────────────
+// ─── Helpers ──────────────────────────────────────────────────────────────────
 
 function getTier(card: VocabularyCard): string {
-  const tierTag = card.tags.find(t => t.startsWith("tier:"))
-  return tierTag ? tierTag.split(":")[1] : "A"
+  return card.tags.find(t => t.startsWith("tier:"))?.split(":")[1] ?? "A"
 }
-
 function isActive(card: VocabularyCard): boolean {
   return card.tags.includes("active")
 }
-
 function getContextTags(card: VocabularyCard): string[] {
-  return card.tags
-    .filter(t => t.startsWith("ctx:"))
-    .map(t => t.split(":")[1])
+  return card.tags.filter(t => t.startsWith("ctx:")).map(t => t.split(":")[1])
 }
-
-function shuffleArray<T>(arr: T[]): T[] {
-  return [...arr].sort(() => Math.random() - 0.5)
-}
-
-// ─── Matching Game ────────────────────────────────────────────────────────────
-
-function buildMatchBatch(cards: VocabularyCard[]): MatchCell[] {
-  const pairs: MatchPair[] = cards.slice(0, MATCH_BATCH).map(c => ({
-    id: c.id,
-    japanese: c.kanji ?? c.kana,
-    english: c.meaning[0],
-  }))
-  const jpCells: MatchCell[] = shuffleArray(pairs).map(p => ({
-    pair: p, side: "jp", state: "idle",
-  }))
-  const enCells: MatchCell[] = shuffleArray(pairs).map(p => ({
-    pair: p, side: "en", state: "idle",
-  }))
-  return [...jpCells, ...enCells]
-}
-
-interface MatchingGameProps {
-  cards: VocabularyCard[]
-  onDone: () => void
-}
-
-function MatchingGame({ cards, onDone }: MatchingGameProps) {
-  const [batchStart, setBatchStart] = useState(0)
-  const [cells, setCells] = useState<MatchCell[]>(() =>
-    buildMatchBatch(cards)
-  )
-  const [selectedIdx, setSelectedIdx] = useState<number | null>(null)
-  const [matchedCount, setMatchedCount] = useState(0)
-  const [wrongFlash, setWrongFlash] = useState(false)
-  const [batchDone, setBatchDone] = useState(false)
-
-  const totalBatches = Math.ceil(cards.length / MATCH_BATCH)
-  const currentBatch = Math.floor(batchStart / MATCH_BATCH) + 1
-  const batchCards = cards.slice(batchStart, batchStart + MATCH_BATCH)
-
-  const resetBatch = useCallback((newStart: number) => {
-    const bCards = cards.slice(newStart, newStart + MATCH_BATCH)
-    setCells(buildMatchBatch(bCards))
-    setSelectedIdx(null)
-    setMatchedCount(0)
-    setBatchDone(false)
-  }, [cards])
-
-  function handleCellClick(idx: number) {
-    const cell = cells[idx]
-    if (cell.state === "matched" || cell.state === "wrong") return
-    if (selectedIdx === null) {
-      setSelectedIdx(idx)
-      setCells(prev => prev.map((c, i) => i === idx ? { ...c, state: "selected" } : c))
-    } else {
-      if (selectedIdx === idx) {
-        // Deselect
-        setCells(prev => prev.map((c, i) => i === idx ? { ...c, state: "idle" } : c))
-        setSelectedIdx(null)
-        return
-      }
-      const prev = cells[selectedIdx]
-      const curr = cells[idx]
-      if (prev.pair.id === curr.pair.id && prev.side !== curr.side) {
-        // Match!
-        const newCount = matchedCount + 1
-        setCells(c => c.map((cell, i) =>
-          i === idx || i === selectedIdx ? { ...cell, state: "matched" } : cell
-        ))
-        setMatchedCount(newCount)
-        setSelectedIdx(null)
-        if (newCount === batchCards.length) {
-          setTimeout(() => setBatchDone(true), 400)
-        }
-      } else {
-        // Wrong
-        setCells(c => c.map((cell, i) =>
-          i === idx || i === selectedIdx ? { ...cell, state: "wrong" } : cell
-        ))
-        setWrongFlash(true)
-        setTimeout(() => {
-          setCells(c => c.map((cell, i) =>
-            (i === idx || i === selectedIdx) && cell.state === "wrong"
-              ? { ...cell, state: "idle" }
-              : cell
-          ))
-          setWrongFlash(false)
-          setSelectedIdx(null)
-        }, 700)
-      }
-    }
-  }
-
-  const jpCells = cells.slice(0, MATCH_BATCH)
-  const enCells = cells.slice(MATCH_BATCH)
-
-  if (batchDone) {
-    const isLast = batchStart + MATCH_BATCH >= cards.length
-    return (
-      <div className="flex flex-col items-center gap-6 py-12">
-        <CheckCircle2 className="h-16 w-16 text-emerald-500" />
-        <div className="text-center">
-          <p className="text-xl font-bold">Batch {currentBatch} complete!</p>
-          <p className="text-muted-foreground mt-1">{batchCards.length} pairs matched</p>
-        </div>
-        {isLast ? (
-          <div className="flex gap-3">
-            <Button variant="outline" onClick={() => { setBatchStart(0); resetBatch(0) }}>
-              <RotateCcw className="h-4 w-4 mr-1" /> Restart
-            </Button>
-            <Button onClick={onDone}>Done</Button>
-          </div>
-        ) : (
-          <div className="flex gap-3">
-            <Button variant="outline" onClick={() => { setBatchStart(0); resetBatch(0) }}>
-              <RotateCcw className="h-4 w-4 mr-1" /> Restart
-            </Button>
-            <Button onClick={() => {
-              const next = batchStart + MATCH_BATCH
-              setBatchStart(next)
-              resetBatch(next)
-            }}>
-              Next Batch ({currentBatch + 1}/{totalBatches})
-              <ChevronRight className="h-4 w-4 ml-1" />
-            </Button>
-          </div>
-        )}
-      </div>
-    )
-  }
-
-  return (
-    <div className="space-y-4">
-      <div className="flex items-center justify-between text-sm text-muted-foreground">
-        <span>Batch {currentBatch} of {totalBatches}</span>
-        <span>{matchedCount} / {batchCards.length} matched</span>
-      </div>
-      <Progress value={(matchedCount / batchCards.length) * 100} className="h-1.5" />
-
-      <div className="grid grid-cols-2 gap-3">
-        {/* Japanese column */}
-        <div className="space-y-2">
-          {jpCells.map((cell, i) => (
-            <button
-              key={`jp-${i}`}
-              onClick={() => handleCellClick(i)}
-              className={cn(
-                "w-full text-left px-4 py-3 rounded-lg border text-sm font-japanese transition-all",
-                cell.state === "idle" && "bg-background border-border hover:border-violet-400 hover:bg-violet-50 dark:hover:bg-violet-950/30",
-                cell.state === "selected" && "bg-violet-100 dark:bg-violet-950/60 border-violet-500 ring-1 ring-violet-400",
-                cell.state === "matched" && "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-400 text-emerald-700 dark:text-emerald-300 opacity-60",
-                cell.state === "wrong" && "bg-red-50 dark:bg-red-950/40 border-red-400 text-red-700 dark:text-red-300",
-              )}
-              disabled={cell.state === "matched"}
-            >
-              {cell.pair.japanese}
-            </button>
-          ))}
-        </div>
-
-        {/* English column */}
-        <div className="space-y-2">
-          {enCells.map((cell, i) => (
-            <button
-              key={`en-${i}`}
-              onClick={() => handleCellClick(i + MATCH_BATCH)}
-              className={cn(
-                "w-full text-left px-4 py-3 rounded-lg border text-sm transition-all",
-                cell.state === "idle" && "bg-background border-border hover:border-violet-400 hover:bg-violet-50 dark:hover:bg-violet-950/30",
-                cell.state === "selected" && "bg-violet-100 dark:bg-violet-950/60 border-violet-500 ring-1 ring-violet-400",
-                cell.state === "matched" && "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-400 text-emerald-700 dark:text-emerald-300 opacity-60",
-                cell.state === "wrong" && "bg-red-50 dark:bg-red-950/40 border-red-400 text-red-700 dark:text-red-300",
-              )}
-              disabled={cell.state === "matched"}
-            >
-              {cell.pair.english}
-            </button>
-          ))}
-        </div>
-      </div>
-    </div>
-  )
-}
-
-// ─── Test Mode ───────────────────────────────────────────────────────────────
-
-interface TestModeProps {
-  cards: VocabularyCard[]
-  onDone: (results: TestResult[]) => void
-}
-
-function TestMode({ cards, onDone }: TestModeProps) {
-  const [idx, setIdx] = useState(0)
-  const [revealed, setRevealed] = useState(false)
-  const [results, setResults] = useState<TestResult[]>([])
-
-  const card = cards[idx]
-
-  function handleAnswer(known: boolean) {
-    const newResults = [...results, { cardId: card.id, known }]
-    setResults(newResults)
-    if (idx + 1 >= cards.length) {
-      onDone(newResults)
-    } else {
-      setIdx(i => i + 1)
-      setRevealed(false)
-    }
-  }
-
-  return (
-    <div className="space-y-4">
-      <div className="flex items-center justify-between text-sm text-muted-foreground">
-        <span>{idx + 1} / {cards.length}</span>
-        <div className="flex gap-3 text-xs">
-          <span className="text-emerald-600 dark:text-emerald-400">
-            ✓ {results.filter(r => r.known).length} known
-          </span>
-          <span className="text-red-500">
-            ✗ {results.filter(r => !r.known).length} learning
-          </span>
-        </div>
-      </div>
-      <Progress value={(idx / cards.length) * 100} className="h-1.5" />
-
-      {/* Card */}
-      <div className="rounded-xl border bg-card shadow-sm overflow-hidden">
-        {/* Front — Japanese */}
-        <div className="p-8 text-center bg-gradient-to-b from-violet-50/50 dark:from-violet-950/20 to-transparent">
-          {card.kanji && (
-            <p className="text-4xl font-bold font-japanese mb-2">{card.kanji}</p>
-          )}
-          <p className="text-xl text-muted-foreground font-japanese">{card.kana}</p>
-          {card.romaji && (
-            <p className="text-sm text-muted-foreground/60 mt-1">{card.romaji}</p>
-          )}
-        </div>
-
-        {/* Reveal button / Answer */}
-        {!revealed ? (
-          <div className="px-6 pb-8 text-center">
-            <Button
-              onClick={() => setRevealed(true)}
-              variant="outline"
-              className="w-full"
-            >
-              Reveal Meaning
-            </Button>
-          </div>
-        ) : (
-          <div className="px-6 pb-6 space-y-4">
-            <div className="text-center border-t pt-4">
-              <p className="text-lg font-medium">{card.meaning.join(", ")}</p>
-              {card.examples?.[0] && (
-                <div className="mt-3 text-sm text-muted-foreground bg-muted/40 rounded-lg p-3 text-left">
-                  <p className="font-japanese">{card.examples[0].japanese}</p>
-                  <p className="mt-1 text-xs">{card.examples[0].english}</p>
-                </div>
-              )}
-            </div>
-
-            {/* Self-assessment buttons */}
-            <div className="flex gap-3 justify-center">
-              <button
-                onClick={() => handleAnswer(false)}
-                className="flex items-center justify-center w-12 h-12 rounded-full bg-red-100 dark:bg-red-950/50 hover:bg-red-200 dark:hover:bg-red-900/60 text-red-600 dark:text-red-400 transition-all hover:scale-110"
-                title="Still learning"
-              >
-                <ThumbsDown className="h-5 w-5" />
-              </button>
-              <button
-                onClick={() => handleAnswer(true)}
-                className="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-950/50 hover:bg-emerald-200 dark:hover:bg-emerald-900/60 text-emerald-600 dark:text-emerald-400 transition-all hover:scale-110"
-                title="I knew it"
-              >
-                <ThumbsUp className="h-5 w-5" />
-              </button>
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  )
-}
-
-// ─── Test Results ─────────────────────────────────────────────────────────────
-
-interface TestResultsProps {
-  results: TestResult[]
-  cards: VocabularyCard[]
-  onRetry: () => void
-  onDone: () => void
-}
-
-function TestResults({ results, cards, onRetry, onDone }: TestResultsProps) {
-  const known = results.filter(r => r.known).length
-  const pct = Math.round((known / results.length) * 100)
-  const unknownCards = cards.filter(c => results.find(r => r.cardId === c.id && !r.known))
-
-  return (
-    <div className="space-y-6">
-      {/* Score */}
-      <div className="text-center py-8 space-y-2">
-        <div className={cn(
-          "text-5xl font-bold",
-          pct >= 80 ? "text-emerald-600 dark:text-emerald-400"
-            : pct >= 60 ? "text-amber-600 dark:text-amber-400"
-            : "text-red-600 dark:text-red-400"
-        )}>
-          {pct}%
-        </div>
-        <p className="text-muted-foreground">
-          {known} of {results.length} correct
-        </p>
-        <Progress value={pct} className="h-2 w-48 mx-auto" />
-      </div>
-
-      {/* Review unknowns */}
-      {unknownCards.length > 0 && (
-        <div className="space-y-2">
-          <p className="text-sm font-medium text-muted-foreground">Still learning ({unknownCards.length})</p>
-          <div className="space-y-1.5">
-            {unknownCards.map(card => (
-              <div key={card.id} className="flex items-center gap-3 px-3 py-2 rounded-lg bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-900">
-                <XCircle className="h-4 w-4 text-red-400 flex-shrink-0" />
-                <span className="font-japanese font-medium">{card.kanji ?? card.kana}</span>
-                <span className="text-muted-foreground text-sm ml-auto truncate">
-                  {card.meaning[0]}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      <div className="flex gap-3 justify-center">
-        <Button variant="outline" onClick={onRetry}>
-          <RotateCcw className="h-4 w-4 mr-1" /> Retry
-        </Button>
-        <Button onClick={onDone}>Done</Button>
-      </div>
-    </div>
-  )
+function getCategoryLabel(card: VocabularyCard): string {
+  const catTag = card.tags.find(t => t.startsWith("cat:"))
+  const cat = CATEGORIES.find(c => c.id === catTag)
+  return cat?.shortLabel ?? ""
 }
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -443,439 +83,1026 @@ function TestResults({ results, cards, onRetry, onDone }: TestResultsProps) {
 export default function OfficePage() {
   const router = useRouter()
 
-  const [viewMode, setViewMode] = useState<ViewMode>("flashcard")
-  const [categoryFilter, setCategoryFilter] = useState("all")
-  const [contextFilter, setContextFilter] = useState("all")
+  // Mode state — mirrors verbs page exactly
+  const [flipMode, setFlipMode] = useState(false)
+  const [testMode, setTestMode] = useState(false)
+  const [matchingMode, setMatchingMode] = useState(false)
+
+  // Filters
+  const [searchQuery, setSearchQuery] = useState("")
+  const [selectedCategory, setSelectedCategory] = useState("all")
+  const [selectedContext, setSelectedContext] = useState("all")
   const [tierFilter, setTierFilter] = useState<FreqTier>("all")
   const [activeFilter, setActiveFilter] = useState<ActiveFilter>("all")
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [shuffled, setShuffled] = useState(false)
 
-  // Test mode state
-  const [testDone, setTestDone] = useState(false)
-  const [testResults, setTestResults] = useState<TestResult[]>([])
-  const [testKey, setTestKey] = useState(0) // remount key for retry
+  // Options
+  const [shuffleMode, setShuffleMode] = useState(false)
+  const [showOnlyFavorites, setShowOnlyFavorites] = useState(false)
+  const [showOnlyUnknown, setShowOnlyUnknown] = useState(false)
+  const [favoriteCards, setFavoriteCards] = useState<Set<string>>(new Set())
 
-  // Load and type-cast JSON data
+  // Flip card state
+  const [flippedCards, setFlippedCards] = useState<Set<string>>(new Set())
+
+  // Test mode (grid)
+  const [cardProgress, setCardProgress] = useState<Map<string, CardProgress>>(new Map())
+
+  // Matching state
+  const [currentBatch, setCurrentBatch] = useState(0)
+  const [selectedLeft, setSelectedLeft] = useState<string | null>(null)
+  const [selectedRight, setSelectedRight] = useState<string | null>(null)
+  const [correctMatches, setCorrectMatches] = useState<Set<string>>(new Set())
+  const [wrongAttempts, setWrongAttempts] = useState<Set<string>>(new Set())
+  const [shuffledRight, setShuffledRight] = useState<VocabularyCard[]>([])
+  const [totalAttempts, setTotalAttempts] = useState(0)
+  const [batchScores, setBatchScores] = useState<number[]>([])
+  const [matchingTestMode, setMatchingTestMode] = useState(false)
+  const [showBatchResult, setShowBatchResult] = useState(false)
+
+  // Load favorites + progress from localStorage
+  useEffect(() => {
+    const fav = localStorage.getItem("officeFavorites")
+    if (fav) setFavoriteCards(new Set(JSON.parse(fav)))
+    const prog = localStorage.getItem("officeProgress")
+    if (prog) {
+      const obj = JSON.parse(prog)
+      setCardProgress(new Map(Object.entries(obj) as [string, CardProgress][]))
+    }
+  }, [])
+
+  // ── Data ──────────────────────────────────────────────────────────────────
+
   const allCards: VocabularyCard[] = useMemo(
     () => officeData.entries as VocabularyCard[],
     []
   )
 
-  // Filtered + optionally shuffled list
   const filteredCards = useMemo(() => {
     let cards = [...allCards]
 
-    if (categoryFilter !== "all") {
-      cards = cards.filter(c => c.tags.includes(categoryFilter))
+    if (selectedCategory !== "all") {
+      cards = cards.filter(c => c.tags.includes(selectedCategory))
     }
-
-    if (contextFilter !== "all") {
-      cards = cards.filter(c => c.tags.includes(contextFilter))
+    if (selectedContext !== "all") {
+      cards = cards.filter(c => c.tags.includes(selectedContext))
     }
-
     if (tierFilter !== "all") {
       cards = cards.filter(c => getTier(c) === tierFilter)
     }
-
     if (activeFilter === "active") {
       cards = cards.filter(c => isActive(c))
     } else if (activeFilter === "passive") {
       cards = cards.filter(c => !isActive(c))
     }
-
-    if (shuffled) {
-      cards = shuffleArray(cards)
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase()
+      cards = cards.filter(c =>
+        c.kanji?.toLowerCase().includes(q) ||
+        c.kana.includes(q) ||
+        c.romaji?.toLowerCase().includes(q) ||
+        c.meaning.some(m => m.toLowerCase().includes(q))
+      )
     }
-
+    if (showOnlyFavorites) {
+      cards = cards.filter(c => favoriteCards.has(c.id))
+    }
+    if (showOnlyUnknown && testMode) {
+      cards = cards.filter(c => {
+        const p = cardProgress.get(c.id)
+        return !p || p.level < 3
+      })
+    }
+    if (shuffleMode) {
+      cards = [...cards].sort(() => Math.random() - 0.5)
+    }
     return cards
-  }, [allCards, categoryFilter, contextFilter, tierFilter, activeFilter, shuffled])
+  }, [allCards, selectedCategory, selectedContext, tierFilter, activeFilter, searchQuery, showOnlyFavorites, favoriteCards, showOnlyUnknown, testMode, cardProgress, shuffleMode])
 
-  // Reset index + test state when filter or mode changes
+  // Reset flip cards when filters change
   useEffect(() => {
-    setCurrentIndex(0)
-    setTestDone(false)
-    setTestResults([])
-  }, [filteredCards, viewMode])
+    setFlippedCards(new Set())
+    setCurrentBatch(0)
+    resetMatchingState()
+  }, [filteredCards])
 
-  const currentCard = filteredCards[currentIndex]
+  // Shuffle right side when batch or matching mode changes
+  useEffect(() => {
+    if (matchingMode && filteredCards.length > 0) {
+      const batch = getBatchCards()
+      setShuffledRight([...batch].sort(() => Math.random() - 0.5))
+    }
+  }, [currentBatch, matchingMode, filteredCards])
 
-  const handleShuffle = () => {
-    setShuffled(s => !s)
-    setCurrentIndex(0)
+  // ── Helpers ───────────────────────────────────────────────────────────────
+
+  function getBatchCards(): VocabularyCard[] {
+    const start = currentBatch * MATCH_BATCH_SIZE
+    return filteredCards.slice(start, start + MATCH_BATCH_SIZE)
   }
 
-  function handleModeChange(mode: ViewMode) {
-    setViewMode(mode)
-    setTestDone(false)
-    setTestResults([])
-    setTestKey(k => k + 1)
+  function isMatchingComplete(): boolean {
+    return correctMatches.size === getBatchCards().length
   }
 
-  // ─── Render ───────────────────────────────────────────────────────────────
+  function resetMatchingState() {
+    setSelectedLeft(null)
+    setSelectedRight(null)
+    setCorrectMatches(new Set())
+    setWrongAttempts(new Set())
+    setTotalAttempts(0)
+  }
+
+  function resetAllMatchingProgress() {
+    setCurrentBatch(0)
+    setBatchScores([])
+    setShowBatchResult(false)
+    resetMatchingState()
+  }
+
+  function nextBatch() {
+    const maxBatch = Math.ceil(filteredCards.length / MATCH_BATCH_SIZE) - 1
+    if (currentBatch < maxBatch) {
+      setCurrentBatch(b => b + 1)
+      resetMatchingState()
+    }
+  }
+
+  function previousBatch() {
+    if (currentBatch > 0) {
+      setCurrentBatch(b => b - 1)
+      resetMatchingState()
+    }
+  }
+
+  function calculateFinalScore() {
+    if (batchScores.length === 0) return 0
+    return Math.round(batchScores.reduce((a, b) => a + b, 0) / batchScores.length)
+  }
+
+  // ── Matching handlers ─────────────────────────────────────────────────────
+
+  function handleLeftClick(cardId: string) {
+    if (correctMatches.has(cardId)) return
+    if (selectedLeft === cardId) { setSelectedLeft(null); return }
+    setSelectedLeft(cardId)
+    if (selectedRight) checkMatch(cardId, selectedRight)
+  }
+
+  function handleRightClick(cardId: string) {
+    if (correctMatches.has(cardId)) return
+    if (selectedRight === cardId) { setSelectedRight(null); return }
+    setSelectedRight(cardId)
+    if (selectedLeft) checkMatch(selectedLeft, cardId)
+  }
+
+  function checkMatch(leftId: string, rightId: string) {
+    setTotalAttempts(t => t + 1)
+    if (leftId === rightId) {
+      const newCorrect = new Set([...correctMatches, leftId])
+      setCorrectMatches(newCorrect)
+      setSelectedLeft(null)
+      setSelectedRight(null)
+      setWrongAttempts(prev => { const s = new Set(prev); s.delete(leftId); return s })
+
+      if (newCorrect.size === getBatchCards().length) {
+        if (matchingTestMode) {
+          const score = Math.max(0, Math.round((getBatchCards().length / (totalAttempts + 1)) * 100))
+          setBatchScores(prev => [...prev, score])
+          setShowBatchResult(true)
+          const maxBatch = Math.ceil(filteredCards.length / MATCH_BATCH_SIZE) - 1
+          if (currentBatch < maxBatch) {
+            setTimeout(() => { nextBatch(); setShowBatchResult(false) }, 2000)
+          }
+        }
+      }
+    } else {
+      setWrongAttempts(prev => new Set([...prev, leftId]))
+      setTimeout(() => { setSelectedLeft(null); setSelectedRight(null) }, 500)
+    }
+  }
+
+  // ── Card progress ─────────────────────────────────────────────────────────
+
+  function markCard(cardId: string, known: boolean) {
+    const now = new Date()
+    const current = cardProgress.get(cardId) || { cardId, knownCount: 0, unknownCount: 0, level: 0 }
+    const newLevel = known ? Math.min(5, current.level + 1) : Math.max(0, current.level - 1)
+    const updated: CardProgress = {
+      cardId,
+      knownCount: current.knownCount + (known ? 1 : 0),
+      unknownCount: current.unknownCount + (known ? 0 : 1),
+      level: newLevel,
+    }
+    const newProgress = new Map(cardProgress)
+    newProgress.set(cardId, updated)
+    setCardProgress(newProgress)
+    const obj: Record<string, CardProgress> = {}
+    newProgress.forEach((v, k) => { obj[k] = v })
+    localStorage.setItem("officeProgress", JSON.stringify(obj))
+    setTimeout(() => setFlippedCards(prev => { const s = new Set(prev); s.delete(cardId); return s }), 500)
+  }
+
+  function resetProgress() {
+    if (confirm("Reset all progress? This cannot be undone.")) {
+      setCardProgress(new Map())
+      localStorage.removeItem("officeProgress")
+    }
+  }
+
+  // ── Favorites ─────────────────────────────────────────────────────────────
+
+  function toggleFavorite(cardId: string, e?: React.MouseEvent) {
+    e?.stopPropagation()
+    setFavoriteCards(prev => {
+      const s = new Set(prev)
+      if (s.has(cardId)) s.delete(cardId); else s.add(cardId)
+      localStorage.setItem("officeFavorites", JSON.stringify(Array.from(s)))
+      return s
+    })
+  }
+
+  function toggleCardFlip(cardId: string) {
+    setFlippedCards(prev => {
+      const s = new Set(prev)
+      if (s.has(cardId)) s.delete(cardId); else s.add(cardId)
+      return s
+    })
+  }
+
+  // ── Mode selectors ────────────────────────────────────────────────────────
+
+  function activateBrowse() {
+    setFlipMode(false); setTestMode(false); setMatchingMode(false)
+  }
+  function activateFlip() {
+    setFlipMode(true); setTestMode(false); setMatchingMode(false)
+  }
+  function activateTest() {
+    setTestMode(true); setFlipMode(true); setMatchingMode(false)
+  }
+  function activateMatch() {
+    setMatchingMode(true); setTestMode(false); setFlipMode(false)
+    setCurrentBatch(0); resetMatchingState()
+  }
+
+  const isBrowse = !flipMode && !testMode && !matchingMode
+
+  // ── Card content renderer ─────────────────────────────────────────────────
+
+  function renderCardFront(card: VocabularyCard) {
+    return (
+      <div className="flex flex-col items-center justify-center gap-1 px-2 py-4 text-center">
+        <div className="text-base font-bold text-primary leading-tight">
+          {card.meaning[0]}
+        </div>
+        {card.meaning.length > 1 && (
+          <div className="text-xs text-muted-foreground leading-tight">
+            {card.meaning.slice(1, 3).join(", ")}
+          </div>
+        )}
+      </div>
+    )
+  }
+
+  function renderCardBack(card: VocabularyCard) {
+    return (
+      <div className="flex flex-col items-center justify-center gap-1 px-2 py-4 text-center">
+        {card.kanji && (
+          <div className="text-2xl sm:text-3xl font-bold text-primary font-japanese">
+            {card.kanji}
+          </div>
+        )}
+        <div className={cn("font-japanese text-muted-foreground", card.kanji ? "text-sm" : "text-2xl font-bold text-primary")}>
+          {card.kana}
+        </div>
+        {card.romaji && (
+          <div className="text-xs text-muted-foreground/60">{card.romaji}</div>
+        )}
+      </div>
+    )
+  }
+
+  // ── Render ────────────────────────────────────────────────────────────────
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <Header />
 
-      <div className="container max-w-4xl mx-auto px-4 py-6 space-y-6">
+      <main className="container mx-auto px-3 sm:px-4 py-4 sm:py-6 space-y-4 max-w-7xl">
 
-        {/* ── Page header ── */}
-        <div className="flex items-center gap-3">
-          <Button variant="ghost" size="sm" onClick={() => router.back()}>
-            <ArrowLeft className="h-4 w-4 mr-1" />
-            Back
-          </Button>
-          <div className="flex items-center gap-2">
-            <Building2 className="h-5 w-5 text-violet-600 dark:text-violet-400" />
-            <h1 className="text-xl font-bold">Office Japanese</h1>
+        {/* ── Hero ── */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div>
+            <h1 className="text-2xl font-bold">
+              Office Japanese{" "}
+              <span className="text-muted-foreground font-normal text-lg">
+                · {allCards.length} words
+              </span>
+            </h1>
+            <p className="text-sm text-muted-foreground mt-0.5">
+              Workplace vocabulary — standups, messages, incidents, keigo and more
+            </p>
           </div>
-          <div className="ml-auto flex items-center gap-2">
-            <Badge variant="outline" className="hidden sm:inline-flex">
-              {filteredCards.length} / {allCards.length} words
-            </Badge>
+          <div className="flex flex-wrap gap-2 sm:shrink-0">
             <Button
               variant="outline"
               size="sm"
               onClick={() => router.push("/office/scenarios")}
-              className="text-violet-600 dark:text-violet-400 border-violet-300 dark:border-violet-700 hover:bg-violet-50 dark:hover:bg-violet-950/40"
+              className="gap-1.5 text-xs"
             >
-              <MessageSquare className="h-3.5 w-3.5 mr-1" />
-              <span className="hidden sm:inline">Scenarios</span>
-              <span className="sm:hidden">Scene</span>
+              <MessageSquare className="h-3.5 w-3.5" />
+              Scenarios
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => router.push("/verbs/grammar-reference")}
+              className="gap-1.5 text-xs"
+            >
+              <BookOpen className="h-3.5 w-3.5" />
+              Grammar
             </Button>
           </div>
         </div>
 
-        {/* ── Mode tabs ── */}
-        <div className="flex gap-1 bg-muted p-1 rounded-lg w-fit">
-          {([
-            { id: "flashcard", label: "Cards",    icon: <Layers className="h-3.5 w-3.5" /> },
-            { id: "matching",  label: "Match",    icon: <Zap className="h-3.5 w-3.5" /> },
-            { id: "test",      label: "Test",     icon: <CheckCircle2 className="h-3.5 w-3.5" /> },
-            { id: "list",      label: "List",     icon: <List className="h-3.5 w-3.5" /> },
-          ] as { id: ViewMode; label: string; icon: React.ReactNode }[]).map(m => (
-            <button
-              key={m.id}
-              onClick={() => handleModeChange(m.id)}
-              className={cn(
-                "flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium transition-all",
-                viewMode === m.id
-                  ? "bg-background shadow-sm text-foreground"
-                  : "text-muted-foreground hover:text-foreground"
-              )}
-            >
-              {m.icon}
-              {m.label}
-            </button>
-          ))}
-        </div>
+        {/* ── Controls Card ── */}
+        <Card>
+          <CardContent className="pt-4 pb-4 space-y-3">
 
-        {/* ── Filters ── */}
-        <div className="space-y-3">
+            {/* Row 1: Search + category buttons */}
+            <div className="flex flex-col sm:flex-row gap-2">
+              <div className="relative flex-1">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground pointer-events-none" />
+                <Input
+                  placeholder="Search by kanji, kana, romaji, or meaning…"
+                  value={searchQuery}
+                  onChange={e => setSearchQuery(e.target.value)}
+                  className="pl-9 pr-20"
+                />
+                <span className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-muted-foreground">
+                  {filteredCards.length} / {allCards.length}
+                </span>
+              </div>
+              <div className="flex gap-1 overflow-x-auto pb-1 -mb-1">
+                {CATEGORIES.map(cat => (
+                  <button
+                    key={cat.id}
+                    onClick={() => setSelectedCategory(cat.id)}
+                    className={cn(
+                      "inline-flex items-center gap-1 px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-md text-xs font-medium border transition-colors whitespace-nowrap shrink-0",
+                      selectedCategory === cat.id
+                        ? "bg-primary text-primary-foreground border-primary"
+                        : "bg-background text-muted-foreground border-border hover:border-primary/50 hover:text-foreground"
+                    )}
+                  >
+                    <span className="hidden sm:inline">{cat.label}</span>
+                    <span className="sm:hidden">{cat.shortLabel}</span>
+                    <span className={cn("text-xs", selectedCategory === cat.id ? "opacity-70" : "text-muted-foreground")}>
+                      {cat.id === "all"
+                        ? allCards.length
+                        : allCards.filter(c => c.tags.includes(cat.id)).length}
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </div>
 
-          {/* Category chips */}
-          <div className="flex flex-wrap gap-1.5">
-            {CATEGORIES.map(cat => (
+            {/* Row 2: Practice Mode selector */}
+            <div className="flex flex-wrap gap-2">
               <button
-                key={cat.id}
-                onClick={() => setCategoryFilter(cat.id)}
+                onClick={activateBrowse}
                 className={cn(
-                  "px-3 py-1 rounded-full text-xs font-medium transition-all border",
-                  categoryFilter === cat.id
-                    ? "border-violet-500 bg-violet-100 dark:bg-violet-950 text-violet-700 dark:text-violet-300 ring-1 ring-violet-400"
-                    : "border-transparent " + cat.color + " text-gray-700 dark:text-gray-300 hover:border-gray-300 dark:hover:border-gray-600"
+                  "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium border transition-colors",
+                  isBrowse
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "bg-background border-border text-muted-foreground hover:text-foreground hover:border-primary/40"
                 )}
               >
-                {cat.label}
+                <Eye className="h-3.5 w-3.5" />
+                Browse
               </button>
-            ))}
-          </div>
 
-          {/* Context chips */}
-          <div className="flex flex-wrap gap-1.5 items-center">
-            <span className="text-xs text-muted-foreground shrink-0">Context:</span>
-            {CONTEXT_FILTERS.map(ctx => (
               <button
-                key={ctx.id}
-                onClick={() => setContextFilter(ctx.id)}
+                onClick={activateFlip}
                 className={cn(
-                  "px-2.5 py-1 rounded-full text-xs font-medium transition-all border",
-                  contextFilter === ctx.id
-                    ? "border-blue-500 bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 ring-1 ring-blue-400"
-                    : "border-transparent bg-muted text-muted-foreground hover:border-gray-300 dark:hover:border-gray-600"
+                  "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium border transition-colors",
+                  flipMode && !testMode
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "bg-background border-border text-muted-foreground hover:text-foreground hover:border-primary/40"
                 )}
               >
-                {ctx.label}
+                <RefreshCw className="h-3.5 w-3.5" />
+                <span className="hidden sm:inline">Flip Cards</span>
+                <span className="sm:hidden">Flip</span>
               </button>
-            ))}
-          </div>
 
-          {/* Tier + Active/Passive row */}
-          <div className="flex items-center gap-3 flex-wrap">
+              <button
+                onClick={activateTest}
+                className={cn(
+                  "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium border transition-colors",
+                  testMode
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "bg-background border-border text-muted-foreground hover:text-foreground hover:border-primary/40"
+                )}
+              >
+                <GraduationCap className="h-3.5 w-3.5" />
+                Test
+              </button>
 
-            {/* Tier filter */}
-            <div className="flex items-center gap-1">
-              <span className="text-xs text-muted-foreground mr-1">Tier:</span>
-              {(["all", "S", "A", "B", "C"] as FreqTier[]).map(t => (
-                <button
-                  key={t}
-                  onClick={() => setTierFilter(t)}
-                  className={cn(
-                    "px-2.5 py-1 rounded text-xs font-medium transition-all",
-                    tierFilter === t
-                      ? t === "S" ? "bg-emerald-600 text-white"
-                        : t === "A" ? "bg-blue-600 text-white"
-                        : t === "B" ? "bg-amber-600 text-white"
-                        : t === "C" ? "bg-gray-500 text-white"
-                        : "bg-violet-600 text-white"
-                      : "bg-muted text-muted-foreground hover:bg-muted/80"
-                  )}
-                >
-                  {t === "all" ? "All" : `${t} · ${TIER_LABELS[t]}`}
-                </button>
-              ))}
+              <button
+                onClick={activateMatch}
+                className={cn(
+                  "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium border transition-colors",
+                  matchingMode
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "bg-background border-border text-muted-foreground hover:text-foreground hover:border-primary/40"
+                )}
+              >
+                <Target className="h-3.5 w-3.5" />
+                Match
+              </button>
             </div>
 
-            <div className="h-4 w-px bg-border" />
+            {/* Row 3: Options */}
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+              <label className="inline-flex items-center gap-2 cursor-pointer text-sm">
+                <Switch checked={shuffleMode} onCheckedChange={setShuffleMode} />
+                <span className="flex items-center gap-1 text-muted-foreground">
+                  <Shuffle className="h-3.5 w-3.5" />Shuffle
+                </span>
+              </label>
 
-            {/* Active/Passive filter */}
-            <div className="flex items-center gap-1">
-              <span className="text-xs text-muted-foreground mr-1">Mode:</span>
-              {([
-                { id: "all",     label: "All" },
-                { id: "active",  label: "🔵 Active" },
-                { id: "passive", label: "⚪ Passive" },
-              ] as { id: ActiveFilter; label: string }[]).map(f => (
-                <button
-                  key={f.id}
-                  onClick={() => setActiveFilter(f.id)}
-                  className={cn(
-                    "px-2.5 py-1 rounded text-xs font-medium transition-all",
-                    activeFilter === f.id
-                      ? "bg-violet-600 text-white"
-                      : "bg-muted text-muted-foreground hover:bg-muted/80"
-                  )}
-                >
-                  {f.label}
-                </button>
-              ))}
-            </div>
+              <label className="inline-flex items-center gap-2 cursor-pointer text-sm">
+                <Switch checked={showOnlyFavorites} onCheckedChange={setShowOnlyFavorites} />
+                <span className="flex items-center gap-1 text-muted-foreground">
+                  <Star className="h-3.5 w-3.5 fill-yellow-400 text-yellow-400" />Favorites
+                </span>
+              </label>
 
-            <div className="ml-auto flex items-center gap-2">
-              {/* Shuffle (flashcard + test only) */}
-              {(viewMode === "flashcard" || viewMode === "test") && (
-                <Button
-                  variant={shuffled ? "default" : "outline"}
-                  size="sm"
-                  onClick={handleShuffle}
-                >
-                  <Shuffle className="h-3.5 w-3.5 mr-1" />
-                  {shuffled ? "Shuffled" : "Shuffle"}
-                </Button>
+              {testMode && (
+                <label className="inline-flex items-center gap-2 cursor-pointer text-sm">
+                  <Switch checked={showOnlyUnknown} onCheckedChange={setShowOnlyUnknown} />
+                  <span className="text-muted-foreground">Focus needs practice</span>
+                </label>
               )}
+
+              {matchingMode && (
+                <label className="inline-flex items-center gap-2 cursor-pointer text-sm">
+                  <Switch
+                    checked={matchingTestMode}
+                    onCheckedChange={checked => { setMatchingTestMode(checked); if (checked) resetAllMatchingProgress() }}
+                  />
+                  <span className="text-muted-foreground">Auto-advance</span>
+                </label>
+              )}
+
+              <button
+                onClick={() => {
+                  setSearchQuery(""); setSelectedCategory("all"); setSelectedContext("all")
+                  setTierFilter("all"); setActiveFilter("all")
+                  setFlipMode(false); setTestMode(false); setMatchingMode(false)
+                }}
+                className="ml-auto text-xs text-muted-foreground hover:text-foreground underline-offset-2 hover:underline"
+              >
+                Reset
+              </button>
             </div>
-          </div>
-        </div>
+
+            {/* Row 4: Context + Tier + Active/Passive — in Browse/Flip modes */}
+            {!matchingMode && (
+              <div className="flex flex-col gap-1.5 pt-1 border-t">
+                {/* Context filter — horizontal scroll on mobile */}
+                <div className="flex items-center gap-1 overflow-x-auto pb-0.5">
+                  <span className="text-xs text-muted-foreground shrink-0 mr-1 whitespace-nowrap">Context:</span>
+                  {CONTEXT_TAGS.map(ctx => (
+                    <button
+                      key={ctx.id}
+                      onClick={() => setSelectedContext(ctx.id)}
+                      className={cn(
+                        "px-2 py-0.5 rounded text-xs font-medium border transition-colors whitespace-nowrap shrink-0",
+                        selectedContext === ctx.id
+                          ? "bg-primary text-primary-foreground border-primary"
+                          : "bg-background border-border text-muted-foreground hover:text-foreground hover:border-primary/40"
+                      )}
+                    >
+                      {ctx.label}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Tier + Active/Passive — horizontal scroll on mobile */}
+                <div className="flex items-center gap-1 overflow-x-auto pb-0.5">
+                  <span className="text-xs text-muted-foreground shrink-0 mr-1 whitespace-nowrap">Tier:</span>
+                  {(["all", "S", "A", "B", "C"] as FreqTier[]).map(t => (
+                    <button
+                      key={t}
+                      onClick={() => setTierFilter(t)}
+                      className={cn(
+                        "px-2 py-0.5 rounded text-xs font-medium transition-all whitespace-nowrap shrink-0",
+                        tierFilter === t
+                          ? t === "S" ? "bg-emerald-600 text-white"
+                            : t === "A" ? "bg-blue-600 text-white"
+                            : t === "B" ? "bg-amber-600 text-white"
+                            : t === "C" ? "bg-gray-500 text-white"
+                            : "bg-primary text-primary-foreground"
+                          : "bg-muted text-muted-foreground hover:bg-muted/80"
+                      )}
+                    >
+                      {t === "all" ? "All" : t === "S" ? "S·Daily" : t === "A" ? "A·Weekly" : t === "B" ? "B·Monthly" : "C·Rare"}
+                    </button>
+                  ))}
+                  <div className="w-px h-3 bg-border mx-1 shrink-0" />
+                  <span className="text-xs text-muted-foreground shrink-0 whitespace-nowrap">Prod:</span>
+                  {([
+                    { id: "all", label: "All" },
+                    { id: "active", label: "🔵 Active" },
+                    { id: "passive", label: "⚪ Passive" },
+                  ] as { id: ActiveFilter; label: string }[]).map(f => (
+                    <button
+                      key={f.id}
+                      onClick={() => setActiveFilter(f.id)}
+                      className={cn(
+                        "px-2 py-0.5 rounded text-xs font-medium transition-all whitespace-nowrap shrink-0",
+                        activeFilter === f.id
+                          ? "bg-primary text-primary-foreground"
+                          : "bg-muted text-muted-foreground hover:bg-muted/80"
+                      )}
+                    >
+                      {f.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+          </CardContent>
+        </Card>
 
         {/* ── Empty state ── */}
         {filteredCards.length === 0 && (
           <div className="text-center py-20 text-muted-foreground">
             <Building2 className="h-10 w-10 mx-auto mb-3 opacity-30" />
             <p className="font-medium">No words match your filters</p>
-            <p className="text-sm mt-1">Try adjusting the category, tier, or mode</p>
+            <p className="text-sm mt-1">Try adjusting your search or filters</p>
           </div>
         )}
 
-        {/* ════════════════════════════════════════════════════════════
-            FLASHCARD MODE
-        ════════════════════════════════════════════════════════════ */}
-        {viewMode === "flashcard" && filteredCards.length > 0 && (
-          <div className="space-y-4">
+        {/* ════════ CONTENT AREA ════════ */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={`${flipMode}-${testMode}-${matchingMode}`}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+          >
 
-            {/* Card counter + meta */}
-            <div className="flex items-center justify-between text-sm text-muted-foreground">
-              <span>{currentIndex + 1} of {filteredCards.length}</span>
-              {currentCard && (
-                <div className="flex items-center gap-2">
-                  <span className="text-lg" title={isActive(currentCard) ? "Active — produce this" : "Passive — recognize this"}>
-                    {isActive(currentCard) ? "🔵" : "⚪"}
-                  </span>
-                  <Badge
-                    variant="outline"
-                    className={cn(
-                      "text-xs font-mono",
-                      getTier(currentCard) === "S" && "border-emerald-500 text-emerald-600 dark:text-emerald-400",
-                      getTier(currentCard) === "A" && "border-blue-500 text-blue-600 dark:text-blue-400",
-                      getTier(currentCard) === "B" && "border-amber-500 text-amber-600 dark:text-amber-400",
-                      getTier(currentCard) === "C" && "border-gray-400 text-gray-500",
-                    )}
+            {/* ── Matching Mode ── */}
+            {matchingMode && filteredCards.length > 0 && (
+              <div className="space-y-4">
+                {/* Completed modal */}
+                {matchingTestMode && currentBatch >= Math.ceil(filteredCards.length / MATCH_BATCH_SIZE) - 1 && isMatchingComplete() && (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    className="fixed inset-0 bg-black/50 z-50 flex items-start sm:items-center justify-center p-4 overflow-y-auto"
                   >
-                    Tier {getTier(currentCard)} · {TIER_LABELS[getTier(currentCard)]}
-                  </Badge>
-                  {getContextTags(currentCard).slice(0, 2).map(ctx => (
-                    <Badge key={ctx} variant="secondary" className="text-xs">
-                      {ctx}
-                    </Badge>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {currentCard && (
-              <Flashcard card={currentCard} showControls={false} />
-            )}
-
-            {/* Navigation */}
-            <div className="flex items-center justify-between">
-              <Button
-                variant="outline"
-                onClick={() => setCurrentIndex(i => Math.max(0, i - 1))}
-                disabled={currentIndex === 0}
-              >
-                <ChevronLeft className="h-4 w-4 mr-1" />
-                Previous
-              </Button>
-
-              {/* Progress dots (max 10) */}
-              <div className="flex gap-1.5">
-                {filteredCards.slice(0, 10).map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setCurrentIndex(i)}
-                    className={cn(
-                      "w-2 h-2 rounded-full transition-all",
-                      i === currentIndex
-                        ? "bg-violet-600 scale-125"
-                        : "bg-muted-foreground/30 hover:bg-muted-foreground/60"
-                    )}
-                  />
-                ))}
-                {filteredCards.length > 10 && (
-                  <span className="text-xs text-muted-foreground self-center">
-                    +{filteredCards.length - 10}
-                  </span>
+                    <Card className="max-w-md w-full my-4 sm:my-0">
+                      <CardHeader className="text-center">
+                        <div className="text-5xl mb-2">🎉</div>
+                        <CardTitle className="text-2xl">Test Complete!</CardTitle>
+                        <CardDescription>All {Math.ceil(filteredCards.length / MATCH_BATCH_SIZE)} batches done</CardDescription>
+                      </CardHeader>
+                      <CardContent className="space-y-4">
+                        <div className="text-center p-4 bg-muted/50 rounded-lg">
+                          <div className="text-4xl font-bold gradient-text mb-1">{calculateFinalScore()}%</div>
+                          <div className="text-sm text-muted-foreground">Overall Score</div>
+                        </div>
+                        <div className="grid grid-cols-3 gap-2">
+                          {batchScores.map((s, i) => (
+                            <div key={i} className="text-center p-2 bg-muted/30 rounded">
+                              <div className="text-xs text-muted-foreground">Batch {i + 1}</div>
+                              <div className={cn("font-bold text-sm", s >= 90 ? "text-green-600" : s >= 70 ? "text-yellow-600" : "text-red-600")}>
+                                {s}%
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                        <div className="flex gap-3">
+                          <Button onClick={resetAllMatchingProgress} className="flex-1">
+                            <RefreshCw className="h-4 w-4 mr-2" /> Try Again
+                          </Button>
+                          <Button variant="outline" onClick={() => { setMatchingMode(false); setMatchingTestMode(false); resetAllMatchingProgress() }} className="flex-1">
+                            Exit
+                          </Button>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
                 )}
-              </div>
 
-              <Button
-                variant="outline"
-                onClick={() => setCurrentIndex(i => Math.min(filteredCards.length - 1, i + 1))}
-                disabled={currentIndex === filteredCards.length - 1}
-              >
-                Next
-                <ChevronRight className="h-4 w-4 ml-1" />
-              </Button>
-            </div>
-          </div>
-        )}
-
-        {/* ════════════════════════════════════════════════════════════
-            MATCHING MODE
-        ════════════════════════════════════════════════════════════ */}
-        {viewMode === "matching" && filteredCards.length > 0 && (
-          <MatchingGame
-            key={`match-${categoryFilter}-${contextFilter}-${tierFilter}-${activeFilter}`}
-            cards={filteredCards}
-            onDone={() => handleModeChange("flashcard")}
-          />
-        )}
-
-        {/* ════════════════════════════════════════════════════════════
-            TEST MODE
-        ════════════════════════════════════════════════════════════ */}
-        {viewMode === "test" && filteredCards.length > 0 && (
-          testDone ? (
-            <TestResults
-              results={testResults}
-              cards={filteredCards}
-              onRetry={() => {
-                setTestDone(false)
-                setTestResults([])
-                setTestKey(k => k + 1)
-              }}
-              onDone={() => handleModeChange("flashcard")}
-            />
-          ) : (
-            <TestMode
-              key={testKey}
-              cards={filteredCards}
-              onDone={(results) => {
-                setTestResults(results)
-                setTestDone(true)
-              }}
-            />
-          )
-        )}
-
-        {/* ════════════════════════════════════════════════════════════
-            LIST MODE
-        ════════════════════════════════════════════════════════════ */}
-        {viewMode === "list" && filteredCards.length > 0 && (
-          <div className="space-y-2">
-            {filteredCards.map((card, i) => (
-              <Card
-                key={card.id}
-                className={cn(
-                  "transition-all hover:shadow-md cursor-pointer",
-                  i === currentIndex && "ring-2 ring-violet-500"
-                )}
-                onClick={() => {
-                  setCurrentIndex(i)
-                  setViewMode("flashcard")
-                }}
-              >
-                <CardContent className="py-3 px-4">
-                  <div className="flex items-center gap-3">
-
-                    {/* Active/Passive dot */}
-                    <span className="text-sm flex-shrink-0" title={isActive(card) ? "Active" : "Passive"}>
-                      {isActive(card) ? "🔵" : "⚪"}
-                    </span>
-
-                    {/* Word */}
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-baseline gap-2 flex-wrap">
-                        {card.kanji && (
-                          <span className="font-bold text-base font-japanese">{card.kanji}</span>
+                {/* Batch header */}
+                <Card className="bg-muted/30">
+                  <CardContent className="p-3">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-3">
+                      <div className="flex items-center gap-3 flex-wrap">
+                        <div className="text-sm font-semibold whitespace-nowrap">
+                          Batch {currentBatch + 1} / {Math.ceil(filteredCards.length / MATCH_BATCH_SIZE)}
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <div className="w-2.5 h-2.5 rounded-full bg-green-500 shrink-0" />
+                          <span className="text-xs sm:text-sm whitespace-nowrap">Matched: {correctMatches.size} / {getBatchCards().length}</span>
+                        </div>
+                        {isMatchingComplete() && !matchingTestMode && (
+                          <Badge variant="default" className="animate-pulse text-xs">
+                            <CheckCircle2 className="h-3 w-3 mr-1" /> Done!
+                          </Badge>
                         )}
-                        <span className="text-sm text-muted-foreground font-japanese">{card.kana}</span>
-                        {card.romaji && (
-                          <span className="text-xs text-muted-foreground/60">{card.romaji}</span>
+                        {showBatchResult && matchingTestMode && (
+                          <Badge variant="default" className="animate-pulse text-xs">
+                            Score: {batchScores[batchScores.length - 1]}%
+                          </Badge>
                         )}
                       </div>
-                      <p className="text-sm text-muted-foreground mt-0.5 truncate">
-                        {card.meaning.join(", ")}
-                      </p>
+                      {!matchingTestMode && (
+                        <div className="flex gap-2 shrink-0">
+                          <Button variant="outline" size="sm" onClick={previousBatch} disabled={currentBatch === 0} className="h-8 px-2.5">
+                            <ChevronRight className="h-3.5 w-3.5 rotate-180" />
+                            <span className="ml-1 text-xs">Prev</span>
+                          </Button>
+                          <Button variant="outline" size="sm" onClick={resetMatchingState} className="h-8 px-2.5">
+                            <RefreshCw className="h-3.5 w-3.5" />
+                            <span className="ml-1 text-xs">Reset</span>
+                          </Button>
+                          <Button variant="outline" size="sm" onClick={nextBatch} disabled={currentBatch >= Math.ceil(filteredCards.length / MATCH_BATCH_SIZE) - 1} className="h-8 px-2.5">
+                            <span className="mr-1 text-xs">Next</span>
+                            <ChevronRight className="h-3.5 w-3.5" />
+                          </Button>
+                        </div>
+                      )}
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Matching grid */}
+                <div className="max-w-5xl mx-auto">
+                  <div className="grid grid-cols-2 gap-3">
+                    {/* Left — Japanese */}
+                    <div className="space-y-2">
+                      <div className="relative overflow-hidden">
+                        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 dark:from-blue-400/20 dark:to-cyan-400/20 rounded-md" />
+                        <div className="relative text-xs font-bold text-center py-2 px-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-md shadow-md">
+                          Japanese
+                        </div>
+                      </div>
+                      {getBatchCards().map((card, i) => (
+                        <motion.div key={card.id} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.03 }}>
+                          <Card
+                            onClick={() => handleLeftClick(card.id)}
+                            className={cn(
+                              "cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 border",
+                              selectedLeft === card.id && "ring-2 ring-blue-400 dark:ring-blue-400 shadow-lg border-blue-400 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/20",
+                              correctMatches.has(card.id) && "ring-2 ring-green-400 border-green-400 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/20 opacity-70",
+                              wrongAttempts.has(card.id) && !correctMatches.has(card.id) && "ring-2 ring-red-400 border-red-400 bg-gradient-to-br from-red-50 to-rose-50 dark:from-red-950/20",
+                              !selectedLeft && !correctMatches.has(card.id) && !wrongAttempts.has(card.id) && "border-border hover:border-blue-300 dark:hover:border-blue-500"
+                            )}
+                          >
+                            <CardContent className="p-2 sm:p-2.5 px-2.5 sm:px-3 min-h-[44px] flex items-center gap-2">
+                              <Badge
+                                variant="outline"
+                                className={cn(
+                                  "text-[10px] h-4 w-5 flex items-center justify-center p-0 font-bold border-2 shrink-0",
+                                  selectedLeft === card.id && "bg-blue-500 text-white border-blue-600",
+                                  correctMatches.has(card.id) && "bg-green-500 text-white border-green-600",
+                                  wrongAttempts.has(card.id) && !correctMatches.has(card.id) && "bg-red-500 text-white border-red-600"
+                                )}
+                              >
+                                {i + 1}
+                              </Badge>
+                              <div className="flex-1 font-japanese font-semibold text-sm sm:text-base leading-snug">
+                                {card.kanji ?? card.kana}
+                              </div>
+                              {correctMatches.has(card.id) && (
+                                <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 500, damping: 15 }}>
+                                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0" />
+                                </motion.div>
+                              )}
+                            </CardContent>
+                          </Card>
+                        </motion.div>
+                      ))}
                     </div>
 
-                    {/* Right badges */}
-                    <div className="flex items-center gap-1.5 flex-shrink-0">
-                      <Badge
-                        variant="outline"
-                        className={cn(
-                          "text-xs font-mono",
-                          getTier(card) === "S" && "border-emerald-500 text-emerald-600 dark:text-emerald-400",
-                          getTier(card) === "A" && "border-blue-500 text-blue-600 dark:text-blue-400",
-                          getTier(card) === "B" && "border-amber-500 text-amber-600 dark:text-amber-400",
-                        )}
-                      >
-                        {getTier(card)}
-                      </Badge>
-                      {getContextTags(card).slice(0, 1).map(ctx => (
-                        <Badge key={ctx} variant="secondary" className="text-xs hidden sm:inline-flex">
-                          {ctx}
-                        </Badge>
+                    {/* Right — English (shuffled) */}
+                    <div className="space-y-2">
+                      <div className="relative overflow-hidden">
+                        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 dark:from-purple-400/20 dark:to-pink-400/20 rounded-md" />
+                        <div className="relative text-xs font-bold text-center py-2 px-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-md shadow-md">
+                          English
+                        </div>
+                      </div>
+                      {shuffledRight.map((card, i) => (
+                        <motion.div key={card.id} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.03 }}>
+                          <Card
+                            onClick={() => handleRightClick(card.id)}
+                            className={cn(
+                              "cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 border",
+                              selectedRight === card.id && "ring-2 ring-purple-400 dark:ring-purple-400 shadow-lg border-purple-400 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/20",
+                              correctMatches.has(card.id) && "ring-2 ring-green-400 border-green-400 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/20 opacity-70",
+                              !selectedRight && !correctMatches.has(card.id) && "border-border hover:border-purple-300 dark:hover:border-purple-500"
+                            )}
+                          >
+                            <CardContent className="p-2 sm:p-2.5 px-2.5 sm:px-3 min-h-[44px] flex items-center justify-center">
+                              <div className="text-xs sm:text-sm font-medium text-center flex-1 leading-snug">
+                                {card.meaning[0]}
+                              </div>
+                              {correctMatches.has(card.id) && (
+                                <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 500, damping: 15 }}>
+                                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0" />
+                                </motion.div>
+                              )}
+                            </CardContent>
+                          </Card>
+                        </motion.div>
                       ))}
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        )}
+                </div>
+              </div>
+            )}
 
-      </div>
+            {/* ── Test Mode (grid) ── */}
+            {!matchingMode && flipMode && testMode && filteredCards.length > 0 && (
+              <div className="space-y-4">
+                <Card className="bg-muted/30">
+                  <CardContent className="p-3 sm:p-4">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-3">
+                      <div className="flex items-center gap-3 flex-wrap">
+                        <div className="flex items-center gap-1.5">
+                          <div className="w-2.5 h-2.5 rounded-full bg-green-500 shrink-0" />
+                          <span className="text-xs sm:text-sm">Known: {Array.from(cardProgress.values()).filter(p => p.level >= 3).length}</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <div className="w-2.5 h-2.5 rounded-full bg-red-500 shrink-0" />
+                          <span className="text-xs sm:text-sm">Needs Practice: {Array.from(cardProgress.values()).filter(p => p.level < 3).length}</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <div className="w-2.5 h-2.5 rounded-full bg-gray-400 shrink-0" />
+                          <span className="text-xs sm:text-sm">Not Reviewed: {filteredCards.length - cardProgress.size}</span>
+                        </div>
+                      </div>
+                      <div className="flex gap-2 shrink-0">
+                        <Button variant="outline" size="sm" onClick={() => setFlippedCards(new Set())} disabled={flippedCards.size === 0} className="text-xs sm:text-sm h-8 sm:h-9">
+                          <RefreshCw className="h-3.5 w-3.5 mr-1 sm:mr-2" />
+                          <span className="hidden sm:inline">Flip All Back</span>
+                          <span className="sm:hidden">Flip Back</span>
+                        </Button>
+                        <Button variant="outline" size="sm" onClick={resetProgress} className="text-xs sm:text-sm h-8 sm:h-9">
+                          <RotateCcw className="h-3.5 w-3.5 mr-1 sm:mr-2" />
+                          <span className="hidden sm:inline">Reset Progress</span>
+                          <span className="sm:hidden">Reset</span>
+                        </Button>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
+                  {filteredCards.map((card, i) => {
+                    const isFlipped = flippedCards.has(card.id)
+                    const progress = cardProgress.get(card.id)
+                    return (
+                      <motion.div
+                        key={card.id}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: Math.min(i * 0.02, 0.5) }}
+                        style={{ perspective: "1000px" }}
+                      >
+                        <div className="relative w-full h-full">
+                          <div
+                            onClick={() => toggleCardFlip(card.id)}
+                            className="relative cursor-pointer w-full h-full"
+                            style={{
+                              transformStyle: "preserve-3d",
+                              transition: "transform 0.6s",
+                              transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
+                            }}
+                          >
+                            {/* Front */}
+                            <Card
+                              className={cn(
+                                "transition-all duration-200 relative w-full overflow-hidden border-0 shadow-lg",
+                                progress && progress.level >= 3 ? "ring-2 ring-green-400 dark:ring-green-500" :
+                                progress && progress.level < 3 ? "ring-2 ring-red-400 dark:ring-red-500" :
+                                "hover:shadow-xl hover:-translate-y-0.5"
+                              )}
+                              style={{ backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden", minHeight: "150px" }}
+                            >
+                              {progress && (
+                                <div className="absolute top-2 left-2 z-10">
+                                  <Badge variant={progress.level >= 3 ? "default" : "destructive"} className="text-[10px] px-1.5 py-0">
+                                    L{progress.level}
+                                  </Badge>
+                                </div>
+                              )}
+                              <div className="absolute top-2 right-2 z-10">
+                                <button onClick={e => toggleFavorite(card.id, e)} className="p-1.5 rounded-full hover:bg-accent">
+                                  <Star className={cn("h-4 w-4", favoriteCards.has(card.id) ? "fill-yellow-400 text-yellow-400" : "text-muted-foreground hover:text-yellow-400")} />
+                                </button>
+                              </div>
+                              <CardContent className="p-4 text-center min-h-[150px] flex items-center justify-center bg-gradient-to-b from-background to-muted/30">
+                                {renderCardFront(card)}
+                              </CardContent>
+                            </Card>
+
+                            {/* Back */}
+                            <Card
+                              className="absolute top-0 left-0 w-full overflow-hidden border-0 shadow-lg shadow-violet-200/60 dark:shadow-violet-900/40"
+                              style={{ backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden", transform: "rotateY(180deg)", minHeight: "150px" }}
+                            >
+                              <div className="h-1.5 sm:h-1 w-full bg-gradient-to-r from-violet-500 via-purple-500 to-indigo-500" />
+                              <CardContent className="p-4 text-center min-h-[140px] flex flex-col items-center justify-center gap-3">
+                                {renderCardBack(card)}
+                                {/* Tier + context badges */}
+                                <div className="flex flex-wrap gap-1 justify-center mt-1">
+                                  <span className={cn("text-[10px] px-1.5 py-0.5 rounded font-bold",
+                                    getTier(card) === "S" ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300" :
+                                    getTier(card) === "A" ? "bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300" :
+                                    "bg-muted text-muted-foreground"
+                                  )}>
+                                    {getTier(card)}·{TIER_LABELS[getTier(card)]}
+                                  </span>
+                                  {isActive(card) ? (
+                                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300 font-medium">🔵 Active</span>
+                                  ) : (
+                                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground font-medium">⚪ Passive</span>
+                                  )}
+                                </div>
+                                {/* Know/Don't know buttons */}
+                                <div className="flex gap-3">
+                                  <button
+                                    onClick={e => { e.stopPropagation(); markCard(card.id, false) }}
+                                    className="flex items-center justify-center w-10 h-10 rounded-full bg-red-100 dark:bg-red-950/50 hover:bg-red-200 text-red-600 dark:text-red-400 transition-all hover:scale-110"
+                                    title="Still learning"
+                                  >
+                                    <ThumbsDown className="h-4 w-4" />
+                                  </button>
+                                  <button
+                                    onClick={e => { e.stopPropagation(); markCard(card.id, true) }}
+                                    className="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-950/50 hover:bg-emerald-200 text-emerald-600 dark:text-emerald-400 transition-all hover:scale-110"
+                                    title="I knew it"
+                                  >
+                                    <ThumbsUp className="h-4 w-4" />
+                                  </button>
+                                </div>
+                              </CardContent>
+                            </Card>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* ── Flip Cards (not test) ── */}
+            {!matchingMode && flipMode && !testMode && filteredCards.length > 0 && (
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
+                {filteredCards.map((card, i) => {
+                  const isFlipped = flippedCards.has(card.id)
+                  return (
+                    <motion.div
+                      key={card.id}
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: Math.min(i * 0.02, 0.5) }}
+                      style={{ perspective: "1000px" }}
+                    >
+                      <div
+                        onClick={() => toggleCardFlip(card.id)}
+                        className="relative cursor-pointer w-full"
+                        style={{
+                          transformStyle: "preserve-3d",
+                          transition: "transform 0.6s",
+                          transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
+                        }}
+                      >
+                        <Card
+                          className="w-full overflow-hidden border-0 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all"
+                          style={{ backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden", minHeight: "150px" }}
+                        >
+                          <div className="absolute top-2 right-2 z-10">
+                            <button onClick={e => toggleFavorite(card.id, e)} className="p-1.5 rounded-full hover:bg-accent">
+                              <Star className={cn("h-3.5 w-3.5", favoriteCards.has(card.id) ? "fill-yellow-400 text-yellow-400" : "text-muted-foreground")} />
+                            </button>
+                          </div>
+                          <CardContent className="p-4 text-center min-h-[150px] flex items-center justify-center bg-gradient-to-b from-background to-muted/30">
+                            {renderCardFront(card)}
+                          </CardContent>
+                        </Card>
+
+                        <Card
+                          className="absolute top-0 left-0 w-full overflow-hidden border-0 shadow-lg shadow-violet-200/60 dark:shadow-violet-900/40"
+                          style={{ backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden", transform: "rotateY(180deg)", minHeight: "150px" }}
+                        >
+                          <div className="h-1.5 sm:h-1 w-full bg-gradient-to-r from-violet-500 via-purple-500 to-indigo-500" />
+                          <CardContent className="p-4 text-center min-h-[140px] flex items-center justify-center">
+                            {renderCardBack(card)}
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </motion.div>
+                  )
+                })}
+              </div>
+            )}
+
+            {/* ── Browse Mode ── */}
+            {isBrowse && filteredCards.length > 0 && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {filteredCards.map((card, i) => {
+                  const progress = cardProgress.get(card.id)
+                  const tier = getTier(card)
+                  return (
+                    <motion.div
+                      key={card.id}
+                      initial={{ opacity: 0, y: 15 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: Math.min(i * 0.02, 0.4) }}
+                    >
+                      <Card className="hover:shadow-md transition-all hover:-translate-y-0.5 border">
+                        <CardContent className="p-4">
+                          <div className="flex items-start justify-between gap-2">
+                            <div className="flex-1 min-w-0">
+                              {/* Japanese */}
+                              <div className="flex items-baseline gap-2 flex-wrap">
+                                {card.kanji && (
+                                  <span className="text-xl font-bold font-japanese">{card.kanji}</span>
+                                )}
+                                <span className={cn("font-japanese text-muted-foreground", !card.kanji && "text-xl font-bold text-foreground")}>
+                                  {card.kana}
+                                </span>
+                                {card.romaji && (
+                                  <span className="text-xs text-muted-foreground/60">{card.romaji}</span>
+                                )}
+                              </div>
+                              {/* English */}
+                              <p className="text-sm font-medium mt-1">{card.meaning[0]}</p>
+                              {card.meaning.length > 1 && (
+                                <p className="text-xs text-muted-foreground">{card.meaning.slice(1, 3).join(", ")}</p>
+                              )}
+                              {/* Tags row */}
+                              <div className="flex flex-wrap gap-1 mt-2">
+                                <span className={cn(
+                                  "text-[10px] px-1.5 py-0.5 rounded font-medium",
+                                  tier === "S" ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300" :
+                                  tier === "A" ? "bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300" :
+                                  tier === "B" ? "bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300" :
+                                  "bg-muted text-muted-foreground"
+                                )}>
+                                  {tier}·{TIER_LABELS[tier]}
+                                </span>
+                                {isActive(card) ? (
+                                  <span className="text-[10px] px-1.5 py-0.5 rounded bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300">🔵 Active</span>
+                                ) : (
+                                  <span className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground">⚪ Passive</span>
+                                )}
+                                {getContextTags(card).slice(0, 2).map(ctx => (
+                                  <span key={ctx} className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground">{ctx}</span>
+                                ))}
+                              </div>
+                              {/* Example */}
+                              {card.examples?.[0] && (
+                                <div className="mt-2 text-xs text-muted-foreground bg-muted/40 rounded p-2">
+                                  <p className="font-japanese">{card.examples[0].japanese}</p>
+                                  <p className="mt-0.5">{card.examples[0].english}</p>
+                                </div>
+                              )}
+                            </div>
+                            <div className="flex flex-col items-end gap-1 shrink-0">
+                              <button onClick={e => toggleFavorite(card.id, e)} className="p-1 rounded-full hover:bg-accent">
+                                <Star className={cn("h-4 w-4", favoriteCards.has(card.id) ? "fill-yellow-400 text-yellow-400" : "text-muted-foreground")} />
+                              </button>
+                              {progress && (
+                                <Badge variant={progress.level >= 3 ? "default" : "destructive"} className="text-[10px] px-1.5 py-0">
+                                  L{progress.level}
+                                </Badge>
+                              )}
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </motion.div>
+                  )
+                })}
+              </div>
+            )}
+
+          </motion.div>
+        </AnimatePresence>
+      </main>
     </div>
   )
 }

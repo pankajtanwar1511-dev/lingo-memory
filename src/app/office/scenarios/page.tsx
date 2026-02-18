@@ -141,30 +141,30 @@ function SituationDrill({ situation, onExit }: DrillProps) {
       {/* Drill card */}
       <div className="rounded-xl border bg-card shadow-sm overflow-hidden">
         {/* Japanese (always visible in drill — the prompt) */}
-        <div className={cn("p-8 text-center", colors.bg)}>
-          <p className="text-3xl font-japanese font-semibold leading-relaxed">
+        <div className={cn("px-4 py-6 sm:p-8 text-center", colors.bg)}>
+          <p className="text-2xl sm:text-3xl font-japanese font-semibold leading-relaxed">
             {frame.japanese}
           </p>
-          <p className="text-base text-muted-foreground font-japanese mt-3">
+          <p className="text-sm sm:text-base text-muted-foreground font-japanese mt-2 sm:mt-3">
             {frame.kana}
           </p>
         </div>
 
         {/* English — hidden until revealed */}
         {!revealed ? (
-          <div className="px-6 py-6 text-center">
+          <div className="px-4 sm:px-6 py-4 sm:py-6 text-center">
             <p className="text-sm text-muted-foreground mb-3">
               What does this mean?
             </p>
-            <Button onClick={handleReveal} className="w-full sm:w-auto">
+            <Button onClick={handleReveal} className="w-full">
               <Eye className="h-4 w-4 mr-2" />
               Reveal Translation
             </Button>
           </div>
         ) : (
-          <div className="px-6 py-6 space-y-4">
+          <div className="px-4 sm:px-6 py-4 sm:py-6 space-y-4">
             <div className="border-t pt-4 text-center">
-              <p className="text-lg font-medium">{frame.english}</p>
+              <p className="text-base sm:text-lg font-medium">{frame.english}</p>
               <div className="mt-2 flex items-center justify-center gap-2">
                 <span className={cn("text-xs px-2 py-0.5 rounded-full font-medium", REGISTER_BADGE[frame.register])}>
                   {REGISTER_LABEL[frame.register]}
@@ -258,14 +258,14 @@ function SituationBrowse({ situation, onStartDrill }: BrowseProps) {
                 {i + 1}. {frame.contextEn}
               </div>
               {/* Content */}
-              <div className="px-4 py-3 space-y-1">
-                <p className="font-japanese text-base font-semibold leading-relaxed">
+              <div className="px-3 sm:px-4 py-3 space-y-1">
+                <p className="font-japanese text-sm sm:text-base font-semibold leading-relaxed">
                   {frame.japanese}
                 </p>
-                <p className="font-japanese text-sm text-muted-foreground">
+                <p className="font-japanese text-xs sm:text-sm text-muted-foreground">
                   {frame.kana}
                 </p>
-                <p className="text-sm text-muted-foreground pt-1 border-t border-dashed">
+                <p className="text-xs sm:text-sm text-muted-foreground pt-1 border-t border-dashed">
                   {frame.english}
                 </p>
                 <div className="flex items-center gap-2 pt-1">
@@ -339,7 +339,7 @@ export default function ScenariosPage() {
         </div>
 
         {/* ── Situation selector tabs ── */}
-        <div className="flex gap-2 flex-wrap">
+        <div className="flex gap-2 overflow-x-auto pb-1">
           {situations.map(sit => {
             const colors = COLOR_MAP[sit.color] ?? COLOR_MAP.violet
             return (
@@ -347,14 +347,14 @@ export default function ScenariosPage() {
                 key={sit.id}
                 onClick={() => handleSelectSituation(sit.id)}
                 className={cn(
-                  "flex items-center gap-2 px-3 py-2 rounded-lg border text-sm font-medium transition-all",
+                  "flex items-center gap-2 px-3 py-2 rounded-lg border text-sm font-medium transition-all whitespace-nowrap shrink-0",
                   activeSitId === sit.id
                     ? cn("ring-2 ring-offset-1 ring-violet-400", colors.bg, colors.border, colors.text)
                     : "bg-background border-border text-muted-foreground hover:border-gray-300 dark:hover:border-gray-600 hover:text-foreground"
                 )}
               >
-                <span className="font-japanese text-base">{sit.titleJa}</span>
-                <span className="hidden sm:inline text-xs opacity-70">
+                <span className="font-japanese text-sm sm:text-base">{sit.titleJa}</span>
+                <span className="text-xs opacity-70">
                   {sit.frames.length}
                 </span>
               </button>
