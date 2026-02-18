@@ -15,7 +15,7 @@ import {
   Building2, Search, MessageSquare, BookOpen,
   Eye, RefreshCw, Target, Shuffle, Star,
   GraduationCap, ThumbsUp, ThumbsDown, RotateCcw,
-  CheckCircle2, ChevronRight, List, X, EyeOff
+  CheckCircle2, ChevronRight, List, X, EyeOff, Zap
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import officeData from "@/../public/seed-data/office_vocabulary.json"
@@ -396,6 +396,15 @@ export default function OfficePage() {
             </p>
           </div>
           <div className="flex flex-wrap gap-2 sm:shrink-0">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => router.push("/office/drills")}
+              className="gap-1.5 text-xs border-red-300 text-red-700 hover:bg-red-50 dark:border-red-700 dark:text-red-400 dark:hover:bg-red-950/30"
+            >
+              <Zap className="h-3.5 w-3.5" />
+              Drills
+            </Button>
             <Button
               variant="outline"
               size="sm"

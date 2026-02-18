@@ -1,0 +1,105 @@
+{
+  "version": "1.0",
+  "schema": "office-drills-v1",
+  "packs": [
+    {
+      "id": "incident-lifecycle",
+      "title": "Incident Response",
+      "titleJa": "障害対応",
+      "cluster": "incident",
+      "description": "Practice reporting and resolving a production incident end-to-end. Five stages: detect → scope → workaround → root cause → prevention.",
+      "stages": [
+        {
+          "id": "incident-s1",
+          "stage": 1,
+          "title": "Detect",
+          "titleJa": "発生報告",
+          "prompt": "A production system just went down. Report the outage to the team.",
+          "hint": "Use the word for 'occurrence' / 'something has happened' (はっせい)",
+          "targets": {
+            "required": ["office-039"],
+            "optional": ["office-008"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "システム障害が発生しました。確認中です。",
+            "kana": "システムしょうがいがはっせいしました。かくにんちゅうです。",
+            "english": "A system failure has occurred. We are investigating."
+          }
+        },
+        {
+          "id": "incident-s2",
+          "stage": 2,
+          "title": "Scope",
+          "titleJa": "影響確認",
+          "prompt": "You've confirmed the outage is real. Report the scope of impact to stakeholders.",
+          "hint": "Use the word for 'scope of impact' (えいきょうはんい)",
+          "targets": {
+            "required": ["office-043"],
+            "optional": ["office-095"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "影響範囲を確認中です。深刻度は高いです。",
+            "kana": "えいきょうはんいをかくにんちゅうです。しんこくどはたかいです。",
+            "english": "We are confirming the scope of impact. Severity is high."
+          }
+        },
+        {
+          "id": "incident-s3",
+          "stage": 3,
+          "title": "Workaround",
+          "titleJa": "暫定対応",
+          "prompt": "You've applied a temporary fix to restore service. Report it.",
+          "hint": "Use the word for 'temporary fix' / 'workaround' (ざんていたいおう)",
+          "targets": {
+            "required": ["office-093"],
+            "optional": ["office-041"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "暫定対応を実施しました。サービスは復旧しています。",
+            "kana": "ざんていたいおうをじっしました。サービスはふっきゅうしています。",
+            "english": "We have applied a temporary fix. Service has been restored."
+          }
+        },
+        {
+          "id": "incident-s4",
+          "stage": 4,
+          "title": "Root Cause",
+          "titleJa": "根本原因",
+          "prompt": "Investigation is complete. Explain the root cause of the incident.",
+          "hint": "Use the word for 'root cause' (こんぽんげんいん)",
+          "targets": {
+            "required": ["office-094"],
+            "optional": ["office-040"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "根本原因はDBの接続タイムアウトです。原因を特定しました。",
+            "kana": "こんぽんげんいんはDBのせつぞくタイムアウトです。げんいんをとくていしました。",
+            "english": "The root cause is a DB connection timeout. We have identified the cause."
+          }
+        },
+        {
+          "id": "incident-s5",
+          "stage": 5,
+          "title": "Prevention",
+          "titleJa": "再発防止",
+          "prompt": "Write your closing message with the plan to prevent recurrence.",
+          "hint": "Use the word for 'recurrence prevention' (さいはつぼうし)",
+          "targets": {
+            "required": ["office-044"],
+            "optional": ["office-034"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "再発防止策として、監視アラートを強化します。対策は来週までに実施します。",
+            "kana": "さいはつぼうしさくとして、かんしアラートをきょうかします。たいさくはらいしゅうまでにじっしします。",
+            "english": "As a recurrence prevention measure, we will strengthen monitoring alerts. The countermeasure will be implemented by next week."
+          }
+        }
+      ]
+    }
+  ]
+}
