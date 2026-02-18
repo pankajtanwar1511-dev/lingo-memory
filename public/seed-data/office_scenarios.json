@@ -1,0 +1,306 @@
+{
+  "version": "1.0",
+  "situations": [
+    {
+      "id": "standup",
+      "title": "Daily Standup",
+      "titleJa": "朝礼・日次報告",
+      "description": "Daily team sync — progress, delays, blockers",
+      "color": "violet",
+      "frames": [
+        {
+          "id": "std-001",
+          "contextEn": "Opening your standup",
+          "japanese": "本日の進捗を共有します。",
+          "kana": "ほんじつのしんちょくをきょうゆうします。",
+          "english": "I'll share today's progress.",
+          "register": "neutral"
+        },
+        {
+          "id": "std-002",
+          "contextEn": "Task is on track",
+          "japanese": "〇〇は完了しました。",
+          "kana": "〇〇はかんりょうしました。",
+          "english": "〇〇 is complete.",
+          "register": "neutral"
+        },
+        {
+          "id": "std-003",
+          "contextEn": "Task is in progress",
+          "japanese": "現在、〇〇を対応中です。",
+          "kana": "げんざい、〇〇をたいおうちゅうです。",
+          "english": "Currently handling 〇〇.",
+          "register": "neutral"
+        },
+        {
+          "id": "std-004",
+          "contextEn": "Running behind schedule",
+          "japanese": "〇〇が少し遅れています。",
+          "kana": "〇〇がすこしおくれています。",
+          "english": "〇〇 is running a bit behind.",
+          "register": "neutral"
+        },
+        {
+          "id": "std-005",
+          "contextEn": "Stuck / need help",
+          "japanese": "〇〇について相談があります。",
+          "kana": "〇〇についてそうだんがあります。",
+          "english": "I have something to discuss about 〇〇.",
+          "register": "neutral"
+        },
+        {
+          "id": "std-006",
+          "contextEn": "Today's plan",
+          "japanese": "本日は〇〇を予定しています。",
+          "kana": "ほんじつは〇〇をよていしています。",
+          "english": "Today I plan to work on 〇〇.",
+          "register": "neutral"
+        },
+        {
+          "id": "std-007",
+          "contextEn": "Closing your standup",
+          "japanese": "以上です。よろしくお願いします。",
+          "kana": "いじょうです。よろしくおねがいします。",
+          "english": "That's all. Thank you.",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "id": "message",
+      "title": "Business Messages",
+      "titleJa": "業務メッセージ",
+      "description": "Short written messages — requests, reports, acknowledgments",
+      "color": "blue",
+      "frames": [
+        {
+          "id": "msg-001",
+          "contextEn": "Opening any message",
+          "japanese": "お疲れ様です。〇〇です。",
+          "kana": "おつかれさまです。〇〇です。",
+          "english": "Hi, this is 〇〇. [universal opener]",
+          "register": "neutral"
+        },
+        {
+          "id": "msg-002",
+          "contextEn": "Acknowledging — casual",
+          "japanese": "了解です。",
+          "kana": "りょうかいです。",
+          "english": "Got it. / Understood.",
+          "register": "casual-neutral"
+        },
+        {
+          "id": "msg-003",
+          "contextEn": "Acknowledging — formal",
+          "japanese": "承知いたしました。",
+          "kana": "しょうちいたしました。",
+          "english": "Understood. I'll take care of it.",
+          "register": "formal"
+        },
+        {
+          "id": "msg-004",
+          "contextEn": "Making a request",
+          "japanese": "お手数ですが、〇〇をお願いします。",
+          "kana": "おてすうですが、〇〇をおねがいします。",
+          "english": "Sorry to trouble you, but please 〇〇.",
+          "register": "neutral"
+        },
+        {
+          "id": "msg-005",
+          "contextEn": "Sharing something",
+          "japanese": "ご参考までに共有します。",
+          "kana": "ごさんこうまでにきょうゆうします。",
+          "english": "Sharing for your reference.",
+          "register": "neutral"
+        },
+        {
+          "id": "msg-006",
+          "contextEn": "Reporting completion",
+          "japanese": "〇〇が完了しましたのでご報告します。",
+          "kana": "〇〇がかんりょうしましたのでごほうこくします。",
+          "english": "Reporting that 〇〇 is now complete.",
+          "register": "neutral"
+        },
+        {
+          "id": "msg-007",
+          "contextEn": "Closing any message",
+          "japanese": "よろしくお願いいたします。",
+          "kana": "よろしくおねがいいたします。",
+          "english": "Thank you / Best regards.",
+          "register": "formal"
+        }
+      ]
+    },
+    {
+      "id": "incident",
+      "title": "Incident Response",
+      "titleJa": "障害対応",
+      "description": "System failures, outages — alert, update, resolve",
+      "color": "red",
+      "frames": [
+        {
+          "id": "inc-001",
+          "contextEn": "Phase 1 — Initial alert",
+          "japanese": "【障害発生】〇〇においてシステム障害が発生しました。",
+          "kana": "【しょうがいはっせい】〇〇においてシステムしょうがいがはっせいしました。",
+          "english": "[INCIDENT] A system failure has occurred in 〇〇.",
+          "register": "neutral"
+        },
+        {
+          "id": "inc-002",
+          "contextEn": "Phase 1 — Confirming impact",
+          "japanese": "現在、影響範囲を確認中です。",
+          "kana": "げんざい、えいきょうはんいをかくにんちゅうです。",
+          "english": "Currently confirming the scope of impact.",
+          "register": "neutral"
+        },
+        {
+          "id": "inc-003",
+          "contextEn": "Phase 2 — Status update",
+          "japanese": "現在、原因を調査しています。続報をお待ちください。",
+          "kana": "げんざい、げんいんをちょうさしています。ぞくほうをおまちください。",
+          "english": "Currently investigating the cause. Please wait for updates.",
+          "register": "neutral"
+        },
+        {
+          "id": "inc-004",
+          "contextEn": "Phase 2 — Temporary fix applied",
+          "japanese": "暫定対応として、〇〇を実施しました。",
+          "kana": "ざんていたいおうとして、〇〇をじっしました。",
+          "english": "As a temporary fix, we have implemented 〇〇.",
+          "register": "neutral"
+        },
+        {
+          "id": "inc-005",
+          "contextEn": "Phase 3 — Resolved",
+          "japanese": "復旧完了しました。ご迷惑をおかけして申し訳ございませんでした。",
+          "kana": "ふっきゅうかんりょうしました。ごめいわくをおかけしてもうしわけございませんでした。",
+          "english": "Restoration is complete. We sincerely apologize for the inconvenience.",
+          "register": "formal"
+        },
+        {
+          "id": "inc-006",
+          "contextEn": "Phase 3 — Prevention plan",
+          "japanese": "再発防止策については、別途ご報告します。",
+          "kana": "さいはつぼうしさくについては、べっとごほうこくします。",
+          "english": "We will report separately on measures to prevent recurrence.",
+          "register": "neutral"
+        },
+        {
+          "id": "inc-007",
+          "contextEn": "Escalating the issue",
+          "japanese": "対応が難しい状況のため、エスカレーションさせていただきます。",
+          "kana": "たいおうがむずかしいじょうきょうのため、エスカレーションさせていただきます。",
+          "english": "Escalating as the situation is difficult to handle alone.",
+          "register": "formal"
+        }
+      ]
+    },
+    {
+      "id": "1on1",
+      "title": "1-on-1 Meeting",
+      "titleJa": "1on1ミーティング",
+      "description": "Regular check-in with your manager — progress, blockers, goals",
+      "color": "emerald",
+      "frames": [
+        {
+          "id": "1on1-001",
+          "contextEn": "Opening",
+          "japanese": "よろしくお願いします。最近の進捗を報告させてください。",
+          "kana": "よろしくおねがいします。さいきんのしんちょくをほうこくさせてください。",
+          "english": "Thank you. Let me report on my recent progress.",
+          "register": "neutral"
+        },
+        {
+          "id": "1on1-002",
+          "contextEn": "Task on track",
+          "japanese": "〇〇は予定通り進んでいます。",
+          "kana": "〇〇はよていどおりすすんでいます。",
+          "english": "〇〇 is progressing as scheduled.",
+          "register": "neutral"
+        },
+        {
+          "id": "1on1-003",
+          "contextEn": "Task slightly behind",
+          "japanese": "〇〇は少し遅れていますが、〇〇日までには完了できます。",
+          "kana": "〇〇はすこしおくれていますが、〇〇にちまでにはかんりょうできます。",
+          "english": "〇〇 is a bit behind, but I can complete it by 〇〇.",
+          "register": "neutral"
+        },
+        {
+          "id": "1on1-004",
+          "contextEn": "Raising a concern",
+          "japanese": "〇〇で詰まっていまして、ご意見をいただけますか？",
+          "kana": "〇〇でつまっていまして、ごいけんをいただけますか？",
+          "english": "I'm stuck on 〇〇. Could I get your input?",
+          "register": "neutral"
+        },
+        {
+          "id": "1on1-005",
+          "contextEn": "Discussing career goals",
+          "japanese": "今後は〇〇に取り組みたいと思っています。",
+          "kana": "こんごは〇〇にとりくみたいとおもっています。",
+          "english": "Going forward, I'd like to work on 〇〇.",
+          "register": "neutral"
+        },
+        {
+          "id": "1on1-006",
+          "contextEn": "Receiving feedback",
+          "japanese": "承知しました。ご指摘ありがとうございます。",
+          "kana": "しょうちしました。ごしてきありがとうございます。",
+          "english": "Understood. Thank you for the feedback.",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "id": "hr",
+      "title": "HR & Admin",
+      "titleJa": "人事・管理連絡",
+      "description": "Leave requests, absences, remote work notifications",
+      "color": "amber",
+      "frames": [
+        {
+          "id": "hr-001",
+          "contextEn": "Requesting paid leave",
+          "japanese": "〇月〇日に有給休暇を取得したいと思います。ご確認よろしくお願いいたします。",
+          "kana": "〇がつ〇にちにゆうきゅうきゅうかをしゅとくしたいとおもいます。ごかくにんよろしくおねがいいたします。",
+          "english": "I'd like to take paid leave on 〇/〇. Please confirm.",
+          "register": "formal"
+        },
+        {
+          "id": "hr-002",
+          "contextEn": "Sick / absent today",
+          "japanese": "本日、体調不良のため欠勤させていただきます。",
+          "kana": "ほんじつ、たいちょうふりょうのためけっきんさせていただきます。",
+          "english": "I'll be absent today due to illness.",
+          "register": "formal"
+        },
+        {
+          "id": "hr-003",
+          "contextEn": "Working from home",
+          "japanese": "本日は在宅にて業務いたします。何かあればメッセージでご連絡ください。",
+          "kana": "ほんじつはざいたくにてぎょうむいたします。なにかあればメッセージでごれんらくください。",
+          "english": "I'll be working from home today. Please message me if needed.",
+          "register": "neutral"
+        },
+        {
+          "id": "hr-004",
+          "contextEn": "Arriving late",
+          "japanese": "遅刻のご連絡です。〇時頃に出社予定です。",
+          "kana": "ちこくのごれんらくです。〇じごろにしゅっしゃよていです。",
+          "english": "Notifying you of a late arrival. Plan to arrive around 〇.",
+          "register": "neutral"
+        },
+        {
+          "id": "hr-005",
+          "contextEn": "Apology after absence",
+          "japanese": "ご迷惑をおかけして申し訳ございませんでした。",
+          "kana": "ごめいわくをおかけしてもうしわけございませんでした。",
+          "english": "I sincerely apologize for the inconvenience.",
+          "register": "formal"
+        }
+      ]
+    }
+  ]
+}
