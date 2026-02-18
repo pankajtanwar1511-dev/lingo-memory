@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input"
 import { Progress } from "@/components/ui/progress"
 import { Switch } from "@/components/ui/switch"
 import { cn } from "@/lib/utils"
-import type { VocabularyCard } from "@/types/vocabulary"
+import type { OfficeCard, OfficeTier, OfficeContext } from "@/types/vocabulary"
 import {
   Building2, Search, MessageSquare, BookOpen,
   Eye, RefreshCw, Target, Shuffle, Star,
@@ -35,30 +35,30 @@ interface CardProgress {
 // ─── Constants ────────────────────────────────────────────────────────────────
 
 const CATEGORIES = [
-  { id: "all",                   label: "All Office",     shortLabel: "All",     color: "bg-gradient-to-r from-purple-500 to-pink-500" },
-  { id: "cat:verbs",             label: "Verbs",          shortLabel: "Verbs",   color: "bg-gradient-to-r from-blue-500 to-cyan-500" },
-  { id: "cat:meetings",          label: "Meetings",       shortLabel: "Mtgs",    color: "bg-gradient-to-r from-emerald-500 to-teal-500" },
-  { id: "cat:project",           label: "Project",        shortLabel: "Proj",    color: "bg-gradient-to-r from-violet-500 to-purple-500" },
-  { id: "cat:incident",          label: "Incident",       shortLabel: "Inc",     color: "bg-gradient-to-r from-red-500 to-rose-500" },
-  { id: "cat:status",            label: "Status",         shortLabel: "Status",  color: "bg-gradient-to-r from-orange-500 to-amber-500" },
-  { id: "cat:keigo",             label: "Keigo",          shortLabel: "Keigo",   color: "bg-gradient-to-r from-pink-500 to-fuchsia-500" },
-  { id: "cat:tech",              label: "Tech",           shortLabel: "Tech",    color: "bg-gradient-to-r from-indigo-500 to-blue-500" },
-  { id: "cat:time",              label: "Time",           shortLabel: "Time",    color: "bg-gradient-to-r from-yellow-500 to-amber-500" },
-  { id: "cat:hr",                label: "HR",             shortLabel: "HR",      color: "bg-gradient-to-r from-teal-500 to-cyan-500" },
-  { id: "cat:roles",             label: "Roles",          shortLabel: "Roles",   color: "bg-gradient-to-r from-slate-500 to-gray-500" },
-  { id: "cat:communication",     label: "Communication",  shortLabel: "Comms",   color: "bg-gradient-to-r from-cyan-500 to-sky-500" },
-  { id: "cat:documents",         label: "Documents",      shortLabel: "Docs",    color: "bg-gradient-to-r from-stone-500 to-neutral-500" },
+  { id: "all",            label: "All Office",     shortLabel: "All",     color: "bg-gradient-to-r from-purple-500 to-pink-500" },
+  { id: "verbs",          label: "Verbs",          shortLabel: "Verbs",   color: "bg-gradient-to-r from-blue-500 to-cyan-500" },
+  { id: "meetings",       label: "Meetings",       shortLabel: "Mtgs",    color: "bg-gradient-to-r from-emerald-500 to-teal-500" },
+  { id: "project",        label: "Project",        shortLabel: "Proj",    color: "bg-gradient-to-r from-violet-500 to-purple-500" },
+  { id: "incident",       label: "Incident",       shortLabel: "Inc",     color: "bg-gradient-to-r from-red-500 to-rose-500" },
+  { id: "status",         label: "Status",         shortLabel: "Status",  color: "bg-gradient-to-r from-orange-500 to-amber-500" },
+  { id: "keigo",          label: "Keigo",          shortLabel: "Keigo",   color: "bg-gradient-to-r from-pink-500 to-fuchsia-500" },
+  { id: "tech",           label: "Tech",           shortLabel: "Tech",    color: "bg-gradient-to-r from-indigo-500 to-blue-500" },
+  { id: "time",           label: "Time",           shortLabel: "Time",    color: "bg-gradient-to-r from-yellow-500 to-amber-500" },
+  { id: "hr",             label: "HR",             shortLabel: "HR",      color: "bg-gradient-to-r from-teal-500 to-cyan-500" },
+  { id: "roles",          label: "Roles",          shortLabel: "Roles",   color: "bg-gradient-to-r from-slate-500 to-gray-500" },
+  { id: "communication",  label: "Communication",  shortLabel: "Comms",   color: "bg-gradient-to-r from-cyan-500 to-sky-500" },
+  { id: "documents",      label: "Documents",      shortLabel: "Docs",    color: "bg-gradient-to-r from-stone-500 to-neutral-500" },
 ]
 
 const CONTEXT_TAGS = [
-  { id: "all",           label: "All Contexts" },
-  { id: "ctx:standup",   label: "Standup" },
-  { id: "ctx:meeting",   label: "Meeting" },
-  { id: "ctx:email",     label: "Email" },
-  { id: "ctx:incident",  label: "Incident" },
-  { id: "ctx:1on1",      label: "1-on-1" },
-  { id: "ctx:hr",        label: "HR" },
-  { id: "ctx:client",    label: "Client" },
+  { id: "all",       label: "All Contexts" },
+  { id: "standup",   label: "Standup" },
+  { id: "meeting",   label: "Meeting" },
+  { id: "email",     label: "Email" },
+  { id: "incident",  label: "Incident" },
+  { id: "1on1",      label: "1-on-1" },
+  { id: "hr",        label: "HR" },
+  { id: "client",    label: "Client" },
 ]
 
 const TIER_LABELS: Record<string, string> = { S: "Daily", A: "Weekly", B: "Monthly", C: "Rare" }
@@ -66,19 +66,8 @@ const MATCH_BATCH_SIZE = 10
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
-function getTier(card: VocabularyCard): string {
-  return card.tags.find(t => t.startsWith("tier:"))?.split(":")[1] ?? "A"
-}
-function isActive(card: VocabularyCard): boolean {
-  return card.tags.includes("active")
-}
-function getContextTags(card: VocabularyCard): string[] {
-  return card.tags.filter(t => t.startsWith("ctx:")).map(t => t.split(":")[1])
-}
-function getCategoryLabel(card: VocabularyCard): string {
-  const catTag = card.tags.find(t => t.startsWith("cat:"))
-  const cat = CATEGORIES.find(c => c.id === catTag)
-  return cat?.shortLabel ?? ""
+function getCategoryLabel(card: OfficeCard): string {
+  return CATEGORIES.find(c => c.id === card.category)?.shortLabel ?? ""
 }
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -116,7 +105,7 @@ export default function OfficePage() {
   const [selectedRight, setSelectedRight] = useState<string | null>(null)
   const [correctMatches, setCorrectMatches] = useState<Set<string>>(new Set())
   const [wrongAttempts, setWrongAttempts] = useState<Set<string>>(new Set())
-  const [shuffledRight, setShuffledRight] = useState<VocabularyCard[]>([])
+  const [shuffledRight, setShuffledRight] = useState<OfficeCard[]>([])
   const [totalAttempts, setTotalAttempts] = useState(0)
   const [batchScores, setBatchScores] = useState<number[]>([])
   const [matchingTestMode, setMatchingTestMode] = useState(false)
@@ -135,8 +124,8 @@ export default function OfficePage() {
 
   // ── Data ──────────────────────────────────────────────────────────────────
 
-  const allCards: VocabularyCard[] = useMemo(
-    () => officeData.entries as VocabularyCard[],
+  const allCards: OfficeCard[] = useMemo(
+    () => officeData.entries as OfficeCard[],
     []
   )
 
@@ -144,18 +133,18 @@ export default function OfficePage() {
     let cards = [...allCards]
 
     if (selectedCategory !== "all") {
-      cards = cards.filter(c => c.tags.includes(selectedCategory))
+      cards = cards.filter(c => c.category === selectedCategory)
     }
     if (selectedContext !== "all") {
-      cards = cards.filter(c => c.tags.includes(selectedContext))
+      cards = cards.filter(c => c.contexts.includes(selectedContext as OfficeContext))
     }
     if (tierFilter !== "all") {
-      cards = cards.filter(c => getTier(c) === tierFilter)
+      cards = cards.filter(c => c.tier === tierFilter)
     }
     if (activeFilter === "active") {
-      cards = cards.filter(c => isActive(c))
+      cards = cards.filter(c => c.active)
     } else if (activeFilter === "passive") {
-      cards = cards.filter(c => !isActive(c))
+      cards = cards.filter(c => !c.active)
     }
     if (searchQuery) {
       const q = searchQuery.toLowerCase()
@@ -198,7 +187,7 @@ export default function OfficePage() {
 
   // ── Helpers ───────────────────────────────────────────────────────────────
 
-  function getBatchCards(): VocabularyCard[] {
+  function getBatchCards(): OfficeCard[] {
     const start = currentBatch * MATCH_BATCH_SIZE
     return filteredCards.slice(start, start + MATCH_BATCH_SIZE)
   }
@@ -352,7 +341,7 @@ export default function OfficePage() {
 
   // ── Card content renderer ─────────────────────────────────────────────────
 
-  function renderCardFront(card: VocabularyCard) {
+  function renderCardFront(card: OfficeCard) {
     return (
       <div className="flex flex-col items-center justify-center gap-1 px-2 py-4 text-center">
         <div className="text-base font-bold text-primary leading-tight">
@@ -367,7 +356,7 @@ export default function OfficePage() {
     )
   }
 
-  function renderCardBack(card: VocabularyCard) {
+  function renderCardBack(card: OfficeCard) {
     return (
       <div className="flex flex-col items-center justify-center gap-1 px-2 py-4 text-center">
         {card.kanji && (
@@ -463,7 +452,7 @@ export default function OfficePage() {
                     <span className={cn("text-xs", selectedCategory === cat.id ? "opacity-70" : "text-muted-foreground")}>
                       {cat.id === "all"
                         ? allCards.length
-                        : allCards.filter(c => c.tags.includes(cat.id)).length}
+                        : allCards.filter(c => c.category === cat.id).length}
                     </span>
                   </button>
                 ))}
@@ -927,16 +916,16 @@ export default function OfficePage() {
                               <div className="h-1.5 sm:h-1 w-full bg-gradient-to-r from-violet-500 via-purple-500 to-indigo-500" />
                               <CardContent className="p-4 text-center min-h-[140px] flex flex-col items-center justify-center gap-3">
                                 {renderCardBack(card)}
-                                {/* Tier + context badges */}
+                                {/* Tier + active badges */}
                                 <div className="flex flex-wrap gap-1 justify-center mt-1">
                                   <span className={cn("text-[10px] px-1.5 py-0.5 rounded font-bold",
-                                    getTier(card) === "S" ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300" :
-                                    getTier(card) === "A" ? "bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300" :
+                                    card.tier === "S" ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300" :
+                                    card.tier === "A" ? "bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300" :
                                     "bg-muted text-muted-foreground"
                                   )}>
-                                    {getTier(card)}·{TIER_LABELS[getTier(card)]}
+                                    {card.tier}·{TIER_LABELS[card.tier]}
                                   </span>
-                                  {isActive(card) ? (
+                                  {card.active ? (
                                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300 font-medium">🔵 Active</span>
                                   ) : (
                                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground font-medium">⚪ Passive</span>
@@ -1027,7 +1016,7 @@ export default function OfficePage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {filteredCards.map((card, i) => {
                   const progress = cardProgress.get(card.id)
-                  const tier = getTier(card)
+
                   return (
                     <motion.div
                       key={card.id}
@@ -1060,27 +1049,28 @@ export default function OfficePage() {
                               <div className="flex flex-wrap gap-1 mt-2">
                                 <span className={cn(
                                   "text-[10px] px-1.5 py-0.5 rounded font-medium",
-                                  tier === "S" ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300" :
-                                  tier === "A" ? "bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300" :
-                                  tier === "B" ? "bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300" :
+                                  card.tier === "S" ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300" :
+                                  card.tier === "A" ? "bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300" :
+                                  card.tier === "B" ? "bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300" :
                                   "bg-muted text-muted-foreground"
                                 )}>
-                                  {tier}·{TIER_LABELS[tier]}
+                                  {card.tier}·{TIER_LABELS[card.tier]}
                                 </span>
-                                {isActive(card) ? (
+                                {card.active ? (
                                   <span className="text-[10px] px-1.5 py-0.5 rounded bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300">🔵 Active</span>
                                 ) : (
                                   <span className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground">⚪ Passive</span>
                                 )}
-                                {getContextTags(card).slice(0, 2).map(ctx => (
+                                {card.contexts.slice(0, 2).map(ctx => (
                                   <span key={ctx} className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground">{ctx}</span>
                                 ))}
                               </div>
-                              {/* Example */}
-                              {card.examples?.[0] && (
-                                <div className="mt-2 text-xs text-muted-foreground bg-muted/40 rounded p-2">
-                                  <p className="font-japanese">{card.examples[0].japanese}</p>
-                                  <p className="mt-0.5">{card.examples[0].english}</p>
+                              {/* Example sentence */}
+                              {card.example && (
+                                <div className="mt-2 text-xs bg-muted/40 rounded p-2 space-y-0.5">
+                                  <p className="font-japanese font-medium text-foreground">{card.example.japanese}</p>
+                                  <p className="font-japanese text-[10px] text-muted-foreground">{card.example.kana}</p>
+                                  <p className="text-muted-foreground">{card.example.english}</p>
                                 </div>
                               )}
                             </div>

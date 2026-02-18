@@ -1,6 +1,7 @@
 {
-  "version": "1.2",
+  "version": "2.0",
   "description": "Office & workplace Japanese vocabulary — 148 entries",
+  "schema": "office-v2",
   "entries": [
     {
       "id": "office-001",
@@ -12,25 +13,21 @@
         "to check",
         "to verify"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:email",
-        "ctx:meeting",
-        "cat:verbs"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "email",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "verbs",
+      "example": {
+        "japanese": "進捗を確認します。",
+        "kana": "しんちょくをかくにんします。",
+        "english": "I'll confirm the progress."
       }
     },
     {
@@ -43,24 +40,20 @@
         "to inform",
         "to communicate"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:email",
-        "ctx:standup",
-        "cat:verbs"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email",
+        "standup"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "verbs",
+      "example": {
+        "japanese": "後ほど連絡します。",
+        "kana": "のちほどれんらくします。",
+        "english": "I'll contact you later."
       }
     },
     {
@@ -72,24 +65,20 @@
         "progress",
         "advancement"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:project"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "project",
+      "example": {
+        "japanese": "本日の進捗を共有します。",
+        "kana": "ほんじつのしんちょくをきょうゆうします。",
+        "english": "I'll share today's progress."
       }
     },
     {
@@ -101,24 +90,20 @@
         "deadline",
         "closing date"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:email",
-        "cat:time"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "email"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "time",
+      "example": {
+        "japanese": "締め切りは明日です。",
+        "kana": "しめきりはあしたです。",
+        "english": "The deadline is tomorrow."
       }
     },
     {
@@ -132,24 +117,20 @@
         "action item",
         "problem"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:project"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "project",
+      "example": {
+        "japanese": "課題を確認します。",
+        "kana": "かだいをかくにんします。",
+        "english": "I'll check on the issues."
       }
     },
     {
@@ -162,25 +143,21 @@
         "in progress",
         "being dealt with"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "expression",
         "status word"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:incident",
-        "cat:status"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "incident"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "status",
+      "example": {
+        "japanese": "現在、対応中です。",
+        "kana": "げんざい、たいおうちゅうです。",
+        "english": "I'm currently handling it."
       }
     },
     {
@@ -193,24 +170,20 @@
         "reference documents",
         "data"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:meeting",
-        "ctx:email",
-        "cat:documents"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "meeting",
+        "email"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "documents",
+      "example": {
+        "japanese": "資料を添付します。",
+        "kana": "しりょうをてんぷします。",
+        "english": "I'll attach the materials."
       }
     },
     {
@@ -223,24 +196,20 @@
         "outage",
         "incident"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:incident",
-        "ctx:standup",
-        "cat:incident"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident",
+        "standup"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "incident",
+      "example": {
+        "japanese": "システム障害が発生しました。",
+        "kana": "システムしょうがいがはっせいしました。",
+        "english": "A system failure has occurred."
       }
     },
     {
@@ -253,26 +222,22 @@
         "thanks for your hard work",
         "hello / goodbye (workplace)"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "phrase",
         "greeting"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:email",
-        "ctx:meeting",
-        "cat:keigo"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "email",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "keigo",
+      "example": {
+        "japanese": "お疲れ様です。本日もよろしくお願いします。",
+        "kana": "おつかれさまです。ほんじつもよろしくおねがいします。",
+        "english": "Good work. Thank you for today as well."
       }
     },
     {
@@ -285,26 +250,22 @@
         "thank you in advance",
         "best regards"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "phrase",
         "keigo"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:email",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:keigo"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email",
+        "standup",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "keigo",
+      "example": {
+        "japanese": "ご確認のほど、よろしくお願いいたします。",
+        "kana": "ごかくにんのほど、よろしくおねがいいたします。",
+        "english": "Please take care of the confirmation."
       }
     },
     {
@@ -316,25 +277,21 @@
         "to share",
         "to share information or files"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:meeting",
-        "ctx:email",
-        "cat:verbs"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting",
+        "email"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "verbs",
+      "example": {
+        "japanese": "資料を共有します。",
+        "kana": "しりょうをきょうゆうします。",
+        "english": "I'll share the materials."
       }
     },
     {
@@ -347,25 +304,21 @@
         "to deal with",
         "to respond to"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:incident",
-        "ctx:standup",
-        "ctx:email",
-        "cat:verbs"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "incident",
+        "standup",
+        "email"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "verbs",
+      "example": {
+        "japanese": "すぐに対応します。",
+        "kana": "すぐにたいおうします。",
+        "english": "I'll handle it right away."
       }
     },
     {
@@ -377,24 +330,20 @@
         "to explain",
         "to describe"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:verbs"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "verbs",
+      "example": {
+        "japanese": "仕様を説明します。",
+        "kana": "しようをせつめいします。",
+        "english": "I'll explain the specifications."
       }
     },
     {
@@ -406,23 +355,19 @@
         "to reply",
         "to respond (email / message)"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:email",
-        "cat:verbs"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "verbs",
+      "example": {
+        "japanese": "メールに返信します。",
+        "kana": "メールにへんしんします。",
+        "english": "I'll reply to the email."
       }
     },
     {
@@ -434,24 +379,20 @@
         "to report",
         "to brief"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:email",
-        "cat:verbs"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "email"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "verbs",
+      "example": {
+        "japanese": "状況を報告します。",
+        "kana": "じょうきょうをほうこくします。",
+        "english": "I'll report the situation."
       }
     },
     {
@@ -464,24 +405,20 @@
         "to discuss",
         "to ask for advice"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:1on1",
-        "ctx:standup",
-        "cat:verbs"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "1on1",
+        "standup"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "verbs",
+      "example": {
+        "japanese": "上司に相談します。",
+        "kana": "じょうしにそうだんします。",
+        "english": "I'll consult with my manager."
       }
     },
     {
@@ -494,24 +431,20 @@
         "to correct",
         "to fix"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:email",
-        "cat:verbs"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "email"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "verbs",
+      "example": {
+        "japanese": "バグを修正します。",
+        "kana": "バグをしゅうせいします。",
+        "english": "I'll fix the bug."
       }
     },
     {
@@ -523,24 +456,20 @@
         "to approve",
         "to authorize"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:meeting",
-        "ctx:email",
-        "cat:verbs"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting",
+        "email"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "verbs",
+      "example": {
+        "japanese": "リクエストを承認します。",
+        "kana": "リクエストをしょうにんします。",
+        "english": "I'll approve the request."
       }
     },
     {
@@ -552,23 +481,19 @@
         "meeting",
         "conference (formal)"
       ],
-      "jlptLevel": "N4",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:meeting",
-        "cat:meetings"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "meetings",
+      "example": {
+        "japanese": "会議は14時からです。",
+        "kana": "かいぎは14じからです。",
+        "english": "The meeting starts at 2 PM."
       }
     },
     {
@@ -580,24 +505,20 @@
         "meeting (casual)",
         "team meeting"
       ],
-      "jlptLevel": "N4",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:1on1",
-        "cat:meetings"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "1on1"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "meetings",
+      "example": {
+        "japanese": "ミーティングに参加します。",
+        "kana": "ミーティングにさんかします。",
+        "english": "I'll join the meeting."
       }
     },
     {
@@ -610,24 +531,20 @@
         "sync meeting",
         "informal discussion"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:meeting",
-        "ctx:client",
-        "cat:meetings"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting",
+        "client"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "meetings",
+      "example": {
+        "japanese": "明日、打ち合わせを予定しています。",
+        "kana": "あした、うちあわせをよていしています。",
+        "english": "I have a briefing scheduled tomorrow."
       }
     },
     {
@@ -639,23 +556,19 @@
         "meeting minutes",
         "meeting notes"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:meeting",
-        "cat:meetings"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "meetings",
+      "example": {
+        "japanese": "議事録をまとめます。",
+        "kana": "ぎじろくをまとめます。",
+        "english": "I'll compile the meeting minutes."
       }
     },
     {
@@ -667,24 +580,20 @@
         "proposal",
         "suggestion"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:meeting",
-        "ctx:client",
-        "cat:meetings"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting",
+        "client"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "meetings",
+      "example": {
+        "japanese": "新しい提案があります。",
+        "kana": "あたらしいていあんがあります。",
+        "english": "I have a new proposal."
       }
     },
     {
@@ -695,24 +604,20 @@
       "meaning": [
         "feedback"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:1on1",
-        "ctx:meeting",
-        "cat:meetings"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "1on1",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "meetings",
+      "example": {
+        "japanese": "フィードバックをありがとうございます。",
+        "kana": "フィードバックをありがとうございます。",
+        "english": "Thank you for the feedback."
       }
     },
     {
@@ -724,24 +629,20 @@
         "progress check",
         "status check"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun",
         "expression"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "cat:meetings"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "meetings",
+      "example": {
+        "japanese": "進捗確認をお願いします。",
+        "kana": "しんちょくかくにんをおねがいします。",
+        "english": "Please do a progress check."
       }
     },
     {
@@ -754,23 +655,19 @@
         "briefing",
         "update"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "cat:meetings"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "meetings",
+      "example": {
+        "japanese": "本日の報告をします。",
+        "kana": "ほんじつのほうこくをします。",
+        "english": "I'll give today's report."
       }
     },
     {
@@ -781,24 +678,20 @@
       "meaning": [
         "project"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:project"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "project",
+      "example": {
+        "japanese": "このプロジェクトを担当しています。",
+        "kana": "このプロジェクトをたんとうしています。",
+        "english": "I'm in charge of this project."
       }
     },
     {
@@ -810,23 +703,19 @@
         "task",
         "to-do item"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "cat:project"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "project",
+      "example": {
+        "japanese": "タスクを完了しました。",
+        "kana": "タスクをかんりょうしました。",
+        "english": "I've completed the task."
       }
     },
     {
@@ -838,24 +727,20 @@
         "priority",
         "order of priority"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:project"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "project",
+      "example": {
+        "japanese": "優先順位を確認します。",
+        "kana": "ゆうせんじゅんいをかくにんします。",
+        "english": "I'll check the priority."
       }
     },
     {
@@ -867,25 +752,21 @@
         "due date",
         "deadline"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:email",
-        "ctx:client",
-        "cat:project"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "email",
+        "client"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "project",
+      "example": {
+        "japanese": "期日までに完了します。",
+        "kana": "きじつまでにかんりょうします。",
+        "english": "I'll complete it by the due date."
       }
     },
     {
@@ -898,24 +779,20 @@
         "work effort",
         "engineering effort"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:project"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "project",
+      "example": {
+        "japanese": "工数を見積もります。",
+        "kana": "こうすうをみつもります。",
+        "english": "I'll estimate the man-hours."
       }
     },
     {
@@ -927,23 +804,19 @@
         "implementation",
         "coding / building a feature"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "cat:project"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "project",
+      "example": {
+        "japanese": "実装が完了しました。",
+        "kana": "じっそうがかんりょうしました。",
+        "english": "Implementation is complete."
       }
     },
     {
@@ -955,24 +828,20 @@
         "release",
         "product launch"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:project"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "project",
+      "example": {
+        "japanese": "来週リリース予定です。",
+        "kana": "らいしゅうリリースよていです。",
+        "english": "Release is scheduled for next week."
       }
     },
     {
@@ -985,24 +854,20 @@
         "solution",
         "action plan"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:incident",
-        "ctx:meeting",
-        "cat:project"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "project",
+      "example": {
+        "japanese": "対策を検討します。",
+        "kana": "たいさくをけんとうします。",
+        "english": "I'll consider countermeasures."
       }
     },
     {
@@ -1014,24 +879,20 @@
         "schedule",
         "timeline"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:time"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "time",
+      "example": {
+        "japanese": "スケジュールを確認します。",
+        "kana": "スケジュールをかくにんします。",
+        "english": "I'll check the schedule."
       }
     },
     {
@@ -1044,23 +905,19 @@
         "schedule",
         "appointment"
       ],
-      "jlptLevel": "N4",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "cat:time"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "time",
+      "example": {
+        "japanese": "本日は〇〇を予定しています。",
+        "kana": "ほんじつは〇〇をよていしています。",
+        "english": "Today I plan to work on 〇〇."
       }
     },
     {
@@ -1073,24 +930,20 @@
         "deadline",
         "expiry"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:email",
-        "ctx:standup",
-        "cat:time"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email",
+        "standup"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "time",
+      "example": {
+        "japanese": "期限は今週末です。",
+        "kana": "きげんはこんしゅうまつです。",
+        "english": "The deadline is this weekend."
       }
     },
     {
@@ -1102,25 +955,21 @@
         "weekly",
         "on a weekly basis"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun",
         "adverb"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:time"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "time",
+      "example": {
+        "japanese": "週次ミーティングがあります。",
+        "kana": "しゅうじミーティングがあります。",
+        "english": "There's a weekly meeting."
       }
     },
     {
@@ -1133,23 +982,19 @@
         "onset",
         "something has happened"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:incident",
-        "cat:incident"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "incident"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "incident",
+      "example": {
+        "japanese": "エラーが発生しました。",
+        "kana": "エラーがはっせいしました。",
+        "english": "An error has occurred."
       }
     },
     {
@@ -1161,23 +1006,19 @@
         "cause",
         "root cause"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:incident",
-        "cat:incident"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "incident"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "incident",
+      "example": {
+        "japanese": "原因を調査しています。",
+        "kana": "げんいんをちょうさしています。",
+        "english": "I'm investigating the cause."
       }
     },
     {
@@ -1190,23 +1031,19 @@
         "restoration",
         "system back up"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:incident",
-        "cat:incident"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "incident"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "incident",
+      "example": {
+        "japanese": "復旧が完了しました。",
+        "kana": "ふっきゅうがかんりょうしました。",
+        "english": "Recovery is complete."
       }
     },
     {
@@ -1220,24 +1057,20 @@
         "bug",
         "something is broken"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:incident",
-        "ctx:standup",
-        "cat:incident"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident",
+        "standup"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "incident",
+      "example": {
+        "japanese": "不具合を修正します。",
+        "kana": "ふぐあいをしゅうせいします。",
+        "english": "I'll fix the defect."
       }
     },
     {
@@ -1250,24 +1083,20 @@
         "blast radius",
         "affected range"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "noun",
         "expression"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:incident",
-        "cat:incident"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "incident",
+      "example": {
+        "japanese": "影響範囲を確認中です。",
+        "kana": "えいきょうはんいをかくにんちゅうです。",
+        "english": "I'm confirming the scope of impact."
       }
     },
     {
@@ -1279,24 +1108,20 @@
         "preventing recurrence",
         "post-incident prevention"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "noun",
         "expression"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:incident",
-        "cat:incident"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "incident",
+      "example": {
+        "japanese": "再発防止策を検討します。",
+        "kana": "さいはつぼうしさくをけんとうします。",
+        "english": "I'll consider measures to prevent recurrence."
       }
     },
     {
@@ -1309,25 +1134,21 @@
         "done",
         "finished"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun",
         "status word"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:email",
-        "cat:status"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "email"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "status",
+      "example": {
+        "japanese": "作業が完了しました。",
+        "kana": "さぎょうがかんりょうしました。",
+        "english": "The work is complete."
       }
     },
     {
@@ -1340,24 +1161,20 @@
         "current state",
         "status quo"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:status"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "status",
+      "example": {
+        "japanese": "現状を報告します。",
+        "kana": "げんじょうをほうこくします。",
+        "english": "I'll report the current situation."
       }
     },
     {
@@ -1369,24 +1186,20 @@
         "delay",
         "postponement"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:incident",
-        "cat:status"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "incident"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "status",
+      "example": {
+        "japanese": "遅延が発生しています。",
+        "kana": "ちえんがはっせいしています。",
+        "english": "A delay has occurred."
       }
     },
     {
@@ -1398,25 +1211,21 @@
         "under investigation",
         "being investigated"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "expression",
         "status word"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:incident",
-        "ctx:standup",
-        "cat:status"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "incident",
+        "standup"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "status",
+      "example": {
+        "japanese": "現在、調査中です。",
+        "kana": "げんざい、ちょうさちゅうです。",
+        "english": "Currently under investigation."
       }
     },
     {
@@ -1428,23 +1237,19 @@
         "email",
         "message"
       ],
-      "jlptLevel": "N4",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:email",
-        "cat:communication"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "communication",
+      "example": {
+        "japanese": "メールを送ります。",
+        "kana": "メールをおくります。",
+        "english": "I'll send an email."
       }
     },
     {
@@ -1456,23 +1261,19 @@
         "reply",
         "response (to email / message)"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:email",
-        "cat:communication"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "communication",
+      "example": {
+        "japanese": "返信をお待ちしています。",
+        "kana": "へんしんをおまちしています。",
+        "english": "I'm waiting for your reply."
       }
     },
     {
@@ -1484,25 +1285,21 @@
         "thank you for your continued support",
         "standard business email opener"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "phrase",
         "keigo"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:email",
-        "ctx:client",
-        "cat:keigo"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email",
+        "client"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "keigo",
+      "example": {
+        "japanese": "お世話になっております。〇〇の〇〇です。",
+        "kana": "おせわになっております。〇〇の〇〇です。",
+        "english": "Thank you for your continued support. This is 〇〇 from 〇〇."
       }
     },
     {
@@ -1515,25 +1312,21 @@
         "I understand (formal)",
         "I'll take care of it"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "phrase",
         "keigo"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:email",
-        "ctx:meeting",
-        "cat:keigo"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "keigo",
+      "example": {
+        "japanese": "承知いたしました。対応します。",
+        "kana": "しょうちいたしました。たいおうします。",
+        "english": "Understood. I'll take care of it."
       }
     },
     {
@@ -1546,24 +1339,20 @@
         "understood (casual)",
         "roger"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "phrase"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:email",
-        "cat:keigo"
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "email"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "keigo",
+      "example": {
+        "japanese": "了解です。後ほど確認します。",
+        "kana": "りょうかいです。のちほどかくにんします。",
+        "english": "Got it. I'll check on it later."
       }
     },
     {
@@ -1575,26 +1364,22 @@
         "I'm very sorry",
         "my sincerest apologies (formal)"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "phrase",
         "keigo"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:incident",
-        "ctx:email",
-        "ctx:client",
-        "cat:keigo"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident",
+        "email",
+        "client"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "keigo",
+      "example": {
+        "japanese": "ご迷惑をおかけして申し訳ございません。",
+        "kana": "ごめいわくをおかけしてもうしわけございません。",
+        "english": "I'm very sorry for the inconvenience."
       }
     },
     {
@@ -1606,23 +1391,19 @@
         "paid leave",
         "paid vacation (short form)"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:hr",
-        "cat:hr"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "hr"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "hr",
+      "example": {
+        "japanese": "明日、有給を取ります。",
+        "kana": "あした、ゆうきゅうをとります。",
+        "english": "I'll take paid leave tomorrow."
       }
     },
     {
@@ -1634,24 +1415,20 @@
         "working from home",
         "remote work"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:hr",
-        "ctx:standup",
-        "cat:hr"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "hr",
+        "standup"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "hr",
+      "example": {
+        "japanese": "本日は在宅です。",
+        "kana": "ほんじつはざいたくです。",
+        "english": "I'm working from home today."
       }
     },
     {
@@ -1663,23 +1440,19 @@
         "absence from work",
         "being absent"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:B",
-        "ctx:hr",
-        "cat:hr"
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "hr"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "hr",
+      "example": {
+        "japanese": "体調不良のため欠勤します。",
+        "kana": "たいちょうふりょうのためけっきんします。",
+        "english": "I'll be absent due to illness."
       }
     },
     {
@@ -1692,24 +1465,20 @@
         "superior",
         "anyone above you"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:1on1",
-        "ctx:standup",
-        "cat:roles"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "1on1",
+        "standup"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "roles",
+      "example": {
+        "japanese": "上司に確認します。",
+        "kana": "じょうしにかくにんします。",
+        "english": "I'll check with my manager."
       }
     },
     {
@@ -1721,24 +1490,20 @@
         "person in charge",
         "the responsible person"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:email",
-        "ctx:meeting",
-        "cat:roles"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email",
+        "meeting"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "roles",
+      "example": {
+        "japanese": "担当者に連絡します。",
+        "kana": "たんとうしゃにれんらくします。",
+        "english": "I'll contact the person in charge."
       }
     },
     {
@@ -1750,34 +1515,22 @@
         "senior colleague",
         "someone who joined before you"
       ],
-      "jlptLevel": "N4",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "cat:roles"
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup"
       ],
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
+      "category": "roles",
+      "example": {
+        "japanese": "先輩に相談します。",
+        "kana": "せんぱいにそうだんします。",
+        "english": "I'll consult with my senior colleague."
       }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-061",
       "kanji": "依頼する",
       "kana": "いらいする",
@@ -1786,27 +1539,23 @@
         "to request",
         "to ask someone to do"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:email",
-        "ctx:meeting",
-        "cat:verbs"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email",
+        "meeting"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "レビューを依頼します。",
+        "kana": "レビューをいらいします。",
+        "english": "I'll request a review."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-062",
       "kanji": "レビューする",
       "kana": "レビューする",
@@ -1815,27 +1564,23 @@
         "to review",
         "to do a code or design review"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:verbs"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "コードをレビューします。",
+        "kana": "コードをレビューします。",
+        "english": "I'll review the code."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-063",
       "kanji": "検討する",
       "kana": "けんとうする",
@@ -1845,27 +1590,23 @@
         "to examine",
         "to deliberate"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:meeting",
-        "ctx:email",
-        "cat:verbs"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "meeting",
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "方針を検討します。",
+        "kana": "ほうしんをけんとうします。",
+        "english": "I'll consider the approach."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-064",
       "kanji": "実施する",
       "kana": "じっしする",
@@ -1875,27 +1616,23 @@
         "to implement",
         "to execute"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:verbs"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "対策を実施します。",
+        "kana": "たいさくをじっしします。",
+        "english": "I'll carry out the countermeasure."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-065",
       "kanji": "更新する",
       "kana": "こうしんする",
@@ -1905,27 +1642,23 @@
         "to renew",
         "to refresh"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:email",
-        "cat:verbs"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "ドキュメントを更新します。",
+        "kana": "ドキュメントをこうしんします。",
+        "english": "I'll update the document."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-066",
       "kanji": "確定する",
       "kana": "かくていする",
@@ -1935,27 +1668,23 @@
         "to confirm",
         "to decide"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:meeting",
-        "ctx:email",
-        "cat:verbs"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting",
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "スケジュールを確定します。",
+        "kana": "スケジュールをかくていします。",
+        "english": "I'll finalize the schedule."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-067",
       "kanji": "把握する",
       "kana": "はあくする",
@@ -1965,27 +1694,23 @@
         "to understand fully",
         "to be aware of"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:meeting",
-        "ctx:standup",
-        "cat:verbs"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting",
+        "standup"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "状況を把握します。",
+        "kana": "じょうきょうをはあくします。",
+        "english": "I'll grasp the situation."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-068",
       "kanji": "デプロイする",
       "kana": "デプロイする",
@@ -1994,27 +1719,23 @@
         "to deploy",
         "to push to production"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:incident",
-        "cat:verbs"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "incident"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "本番にデプロイします。",
+        "kana": "ほんばんにデプロイします。",
+        "english": "I'll deploy to production."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-069",
       "kanji": "マージする",
       "kana": "マージする",
@@ -2023,26 +1744,22 @@
         "to merge",
         "to merge code branches"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "cat:verbs"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "プルリクをマージします。",
+        "kana": "プルリクをマージします。",
+        "english": "I'll merge the pull request."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-070",
       "kanji": "割り当てる",
       "kana": "わりあてる",
@@ -2052,27 +1769,23 @@
         "to allocate",
         "to delegate"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:meeting",
-        "ctx:standup",
-        "cat:verbs"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting",
+        "standup"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "タスクを割り当てます。",
+        "kana": "タスクをわりあてます。",
+        "english": "I'll assign the task."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-071",
       "kanji": "準備する",
       "kana": "じゅんびする",
@@ -2081,27 +1794,23 @@
         "to prepare",
         "to get ready"
       ],
-      "jlptLevel": "N4",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:verbs"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "資料を準備します。",
+        "kana": "しりょうをじゅんびします。",
+        "english": "I'll prepare the materials."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-072",
       "kanji": "まとめる",
       "kana": "まとめる",
@@ -2111,27 +1820,23 @@
         "to compile",
         "to wrap up"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:meeting",
-        "ctx:email",
-        "cat:verbs"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting",
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "議事録をまとめます。",
+        "kana": "ぎじろくをまとめます。",
+        "english": "I'll summarize the meeting minutes."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-073",
       "kanji": "作成する",
       "kana": "さくせいする",
@@ -2141,27 +1846,23 @@
         "to write up",
         "to produce a document"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:email",
-        "ctx:meeting",
-        "cat:verbs"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email",
+        "meeting"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "仕様書を作成します。",
+        "kana": "しようしょをさくせいします。",
+        "english": "I'll create the specification document."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-074",
       "kanji": "手配する",
       "kana": "てはいする",
@@ -2171,27 +1872,23 @@
         "to coordinate",
         "to set up"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:B",
-        "ctx:email",
-        "ctx:meeting",
-        "cat:verbs"
-      ]
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email",
+        "meeting"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "会議室を手配します。",
+        "kana": "かいぎしつをてはいします。",
+        "english": "I'll arrange the meeting room."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-075",
       "kanji": "提出する",
       "kana": "ていしゅつする",
@@ -2201,27 +1898,23 @@
         "to hand in",
         "to file"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "verb"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:email",
-        "ctx:meeting",
-        "cat:verbs"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email",
+        "meeting"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "報告書を提出します。",
+        "kana": "ほうこくしょをていしゅつします。",
+        "english": "I'll submit the report."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-076",
       "kanji": "アジェンダ",
       "kana": "アジェンダ",
@@ -2230,26 +1923,22 @@
         "agenda",
         "meeting agenda"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:meeting",
-        "cat:meetings"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "アジェンダを共有します。",
+        "kana": "アジェンダをきょうゆうします。",
+        "english": "I'll share the agenda."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-077",
       "kanji": "確認事項",
       "kana": "かくにんじこう",
@@ -2258,26 +1947,22 @@
         "items to confirm",
         "confirmation points"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:meeting",
-        "cat:meetings"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "確認事項をリストアップします。",
+        "kana": "かくにんじこうをリストアップします。",
+        "english": "I'll list the items to confirm."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-078",
       "kanji": "決定事項",
       "kana": "けっていじこう",
@@ -2286,26 +1971,22 @@
         "decisions made",
         "action decisions"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:meeting",
-        "cat:meetings"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "決定事項を議事録に記載します。",
+        "kana": "けっていじこうをぎじろくにきさいします。",
+        "english": "I'll document the decisions in the minutes."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-079",
       "kanji": "アクションアイテム",
       "kana": "アクションアイテム",
@@ -2315,27 +1996,23 @@
         "next action",
         "follow-up task"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:meeting",
-        "ctx:standup",
-        "cat:meetings"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting",
+        "standup"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "アクションアイテムを確認します。",
+        "kana": "アクションアイテムをかくにんします。",
+        "english": "I'll confirm the action items."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-080",
       "kanji": "参加者",
       "kana": "さんかしゃ",
@@ -2344,26 +2021,22 @@
         "participants",
         "attendees"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:B",
-        "ctx:meeting",
-        "cat:meetings"
-      ]
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "参加者リストを送ります。",
+        "kana": "さんかしゃリストをおくります。",
+        "english": "I'll send the participant list."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-081",
       "kanji": "オンライン会議",
       "kana": "オンラインかいぎ",
@@ -2373,26 +2046,22 @@
         "virtual meeting",
         "video call"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:meeting",
-        "cat:meetings"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "オンライン会議のリンクを共有します。",
+        "kana": "オンラインかいぎのリンクをきょうゆうします。",
+        "english": "I'll share the online meeting link."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-082",
       "kanji": "議題",
       "kana": "ぎだい",
@@ -2401,26 +2070,22 @@
         "agenda item",
         "topic for discussion"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:meeting",
-        "cat:meetings"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "議題を追加してもよいですか？",
+        "kana": "ぎだいをついかしてもよいですか？",
+        "english": "May I add an agenda item?"
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-083",
       "kanji": "司会",
       "kana": "しかい",
@@ -2430,26 +2095,22 @@
         "chairperson",
         "facilitator"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:B",
-        "ctx:meeting",
-        "cat:meetings"
-      ]
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "今日の司会を担当します。",
+        "kana": "きょうのしかいをたんとうします。",
+        "english": "I'll be the moderator today."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-084",
       "kanji": "マイルストーン",
       "kana": "マイルストーン",
@@ -2458,27 +2119,23 @@
         "milestone",
         "project milestone"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:project"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "マイルストーンを達成しました。",
+        "kana": "マイルストーンをたっせいしました。",
+        "english": "We've reached the milestone."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-085",
       "kanji": "バックログ",
       "kana": "バックログ",
@@ -2487,27 +2144,23 @@
         "backlog",
         "task backlog"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:project"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "バックログを整理します。",
+        "kana": "バックログをせいりします。",
+        "english": "I'll organize the backlog."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-086",
       "kanji": "要件",
       "kana": "ようけん",
@@ -2516,26 +2169,22 @@
         "requirements",
         "functional requirements"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:meeting",
-        "cat:project"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "要件を確認します。",
+        "kana": "ようけんをかくにんします。",
+        "english": "I'll confirm the requirements."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-087",
       "kanji": "見積もり",
       "kana": "みつもり",
@@ -2545,27 +2194,23 @@
         "effort estimate",
         "cost estimate"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:meeting",
-        "ctx:client",
-        "cat:project"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting",
+        "client"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "工数の見積もりを出します。",
+        "kana": "こうすうのみつもりをだします。",
+        "english": "I'll provide a man-hour estimate."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-088",
       "kanji": "ブロッカー",
       "kana": "ブロッカー",
@@ -2574,26 +2219,22 @@
         "blocker",
         "blocking issue"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "cat:project"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "ブロッカーがあります。",
+        "kana": "ブロッカーがあります。",
+        "english": "There's a blocker."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-089",
       "kanji": "品質",
       "kana": "ひんしつ",
@@ -2602,26 +2243,22 @@
         "quality",
         "quality level"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:A",
-        "ctx:meeting",
-        "cat:project"
-      ]
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "品質を確認します。",
+        "kana": "ひんしつをかくにんします。",
+        "english": "I'll check the quality."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-090",
       "kanji": "仕様",
       "kana": "しよう",
@@ -2630,26 +2267,22 @@
         "specification",
         "spec"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:meeting",
-        "cat:project"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "仕様を確認してください。",
+        "kana": "しようをかくにんしてください。",
+        "english": "Please check the specification."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-091",
       "kanji": "成果物",
       "kana": "せいかぶつ",
@@ -2659,27 +2292,23 @@
         "output",
         "work product"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:B",
-        "ctx:meeting",
-        "ctx:client",
-        "cat:project"
-      ]
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "meeting",
+        "client"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "成果物を提出します。",
+        "kana": "せいかぶつをていしゅつします。",
+        "english": "I'll submit the deliverable."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-092",
       "kanji": "エスカレーション",
       "kana": "エスカレーション",
@@ -2687,26 +2316,22 @@
       "meaning": [
         "escalation"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:incident",
-        "cat:incident"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident"
+      ],
+      "category": "incident",
+      "example": {
+        "japanese": "エスカレーションが必要です。",
+        "kana": "エスカレーションがひつようです。",
+        "english": "Escalation is necessary."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-093",
       "kanji": "暫定対応",
       "kana": "ざんていたいおう",
@@ -2716,27 +2341,23 @@
         "workaround",
         "interim measure"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun",
         "expression"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:incident",
-        "cat:incident"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident"
+      ],
+      "category": "incident",
+      "example": {
+        "japanese": "暫定対応を実施しました。",
+        "kana": "ざんていたいおうをじっしました。",
+        "english": "I've applied a temporary fix."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-094",
       "kanji": "根本原因",
       "kana": "こんぽんげんいん",
@@ -2745,26 +2366,22 @@
         "root cause",
         "fundamental cause"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:incident",
-        "cat:incident"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident"
+      ],
+      "category": "incident",
+      "example": {
+        "japanese": "根本原因を特定しました。",
+        "kana": "こんぽんげんいんをとくていしました。",
+        "english": "I've identified the root cause."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-095",
       "kanji": "深刻度",
       "kana": "しんこくど",
@@ -2773,26 +2390,22 @@
         "severity",
         "level of seriousness"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:incident",
-        "cat:incident"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident"
+      ],
+      "category": "incident",
+      "example": {
+        "japanese": "深刻度を評価します。",
+        "kana": "しんこくどをひょうかします。",
+        "english": "I'll assess the severity."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-096",
       "kanji": "監視",
       "kana": "かんし",
@@ -2801,27 +2414,23 @@
         "monitoring",
         "system monitoring"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:A",
-        "ctx:incident",
-        "ctx:standup",
-        "cat:incident"
-      ]
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "incident",
+        "standup"
+      ],
+      "category": "incident",
+      "example": {
+        "japanese": "システムを監視しています。",
+        "kana": "システムをかんししています。",
+        "english": "I'm monitoring the system."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-097",
       "kanji": "未対応",
       "kana": "みたいおう",
@@ -2831,28 +2440,24 @@
         "pending",
         "unaddressed"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun",
         "expression"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:status"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "status",
+      "example": {
+        "japanese": "まだ未対応のタスクがあります。",
+        "kana": "まだみたいおうのタスクがあります。",
+        "english": "There are still unhandled tasks."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-098",
       "kanji": "保留",
       "kana": "ほりゅう",
@@ -2862,27 +2467,23 @@
         "pending",
         "deferred"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:email",
-        "cat:status"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "status",
+      "example": {
+        "japanese": "この件は保留にします。",
+        "kana": "このけんはほりゅうにします。",
+        "english": "I'll put this matter on hold."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-099",
       "kanji": "優先",
       "kana": "ゆうせん",
@@ -2892,27 +2493,23 @@
         "high priority",
         "prioritized"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:status"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "status",
+      "example": {
+        "japanese": "これを優先で対応します。",
+        "kana": "これをゆうせんでたいおうします。",
+        "english": "I'll handle this with priority."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-100",
       "kanji": "対応済み",
       "kana": "たいおうずみ",
@@ -2922,28 +2519,24 @@
         "resolved",
         "addressed"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun",
         "expression"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:email",
-        "cat:status"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "status",
+      "example": {
+        "japanese": "対応済みです。ご確認ください。",
+        "kana": "たいおうずみです。ごかくにんください。",
+        "english": "It's been handled. Please check."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-101",
       "kanji": "確認済み",
       "kana": "かくにんずみ",
@@ -2953,28 +2546,24 @@
         "already verified",
         "checked"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun",
         "expression"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:email",
-        "cat:status"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "status",
+      "example": {
+        "japanese": "内容は確認済みです。",
+        "kana": "ないようはかくにんずみです。",
+        "english": "The content has been confirmed."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-102",
       "kanji": "ご確認ください",
       "kana": "ごかくにんください",
@@ -2983,28 +2572,24 @@
         "please check",
         "please confirm"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "phrase",
         "keigo"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:email",
-        "ctx:meeting",
-        "cat:keigo"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email",
+        "meeting"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "添付資料をご確認ください。",
+        "kana": "てんぷしりょうをごかくにんください。",
+        "english": "Please check the attached materials."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-103",
       "kanji": "お手数をおかけします",
       "kana": "おてすうをおかけします",
@@ -3013,27 +2598,23 @@
         "sorry for the trouble",
         "sorry to bother you"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "phrase",
         "keigo"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:email",
-        "cat:keigo"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "お手数をおかけしますが、ご確認をお願いします。",
+        "kana": "おてすうをおかけしますが、ごかくにんをおねがいします。",
+        "english": "Sorry for the trouble, but please confirm."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-104",
       "kanji": "ご対応よろしくお願いします",
       "kana": "ごたいおうよろしくおねがいします",
@@ -3042,28 +2623,24 @@
         "please take care of this",
         "please handle this"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "phrase",
         "keigo"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:email",
-        "ctx:meeting",
-        "cat:keigo"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email",
+        "meeting"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "ご対応よろしくお願いします。",
+        "kana": "ごたいおうよろしくおねがいします。",
+        "english": "Please take care of this."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-105",
       "kanji": "ご連絡ください",
       "kana": "ごれんらくください",
@@ -3072,27 +2649,23 @@
         "please contact me",
         "please let me know"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "phrase",
         "keigo"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:email",
-        "cat:keigo"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "ご不明な点はご連絡ください。",
+        "kana": "ごふめいなてんはごれんらくください。",
+        "english": "Please contact me if you have any questions."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-106",
       "kanji": "ご検討ください",
       "kana": "ごけんとうください",
@@ -3102,28 +2675,24 @@
         "please review",
         "please look into this"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "phrase",
         "keigo"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:email",
-        "ctx:client",
-        "cat:keigo"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email",
+        "client"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "ご検討のほどよろしくお願いします。",
+        "kana": "ごけんとうのほどよろしくおねがいします。",
+        "english": "Please consider this matter."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-107",
       "kanji": "お伝えします",
       "kana": "おつたえします",
@@ -3132,28 +2701,24 @@
         "I will let them know",
         "I'll pass the message along"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "phrase",
         "keigo"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:email",
-        "ctx:meeting",
-        "cat:keigo"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email",
+        "meeting"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "担当者にお伝えします。",
+        "kana": "たんとうしゃにおつたえします。",
+        "english": "I'll let the person in charge know."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-108",
       "kanji": "本日",
       "kana": "ほんじつ",
@@ -3162,27 +2727,23 @@
         "today (formal)",
         "this day"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:email",
-        "cat:time"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "本日の進捗を報告します。",
+        "kana": "ほんじつのしんちょくをほうこくします。",
+        "english": "I'll report today's progress."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-109",
       "kanji": "来週",
       "kana": "らいしゅう",
@@ -3190,27 +2751,23 @@
       "meaning": [
         "next week"
       ],
-      "jlptLevel": "N4",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:email",
-        "cat:time"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "来週までに完了します。",
+        "kana": "らいしゅうまでにかんりょうします。",
+        "english": "I'll complete it by next week."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-110",
       "kanji": "月次",
       "kana": "げつじ",
@@ -3219,27 +2776,23 @@
         "monthly",
         "on a monthly basis"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun",
         "adverb"
       ],
-      "tags": [
-        "passive",
-        "tier:B",
-        "ctx:meeting",
-        "cat:time"
-      ]
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "月次レポートを作成します。",
+        "kana": "つきじレポートをさくせいします。",
+        "english": "I'll create the monthly report."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-111",
       "kanji": "早急に",
       "kana": "そうきゅうに",
@@ -3249,27 +2802,23 @@
         "urgently",
         "ASAP"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "adverb"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:email",
-        "ctx:incident",
-        "cat:time"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email",
+        "incident"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "早急に対応します。",
+        "kana": "そうきゅうにたいおうします。",
+        "english": "I'll handle it as soon as possible."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-112",
       "kanji": "今週中",
       "kana": "こんしゅうちゅう",
@@ -3278,27 +2827,23 @@
         "by end of this week",
         "within this week"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "expression"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:email",
-        "cat:time"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "今週中に完了予定です。",
+        "kana": "こんしゅうちゅうにかんりょうよていです。",
+        "english": "Plan to complete it by end of this week."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-113",
       "kanji": "翌日",
       "kana": "よくじつ",
@@ -3307,26 +2852,22 @@
         "the next day",
         "following day (formal)"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:B",
-        "ctx:email",
-        "cat:time"
-      ]
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "翌日に報告します。",
+        "kana": "よくじつにほうこくします。",
+        "english": "I'll report the next day."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-114",
       "kanji": "出社",
       "kana": "しゅっしゃ",
@@ -3335,27 +2876,23 @@
         "coming to the office",
         "going to work at the office"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:hr",
-        "ctx:standup",
-        "cat:hr"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "hr",
+        "standup"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "本日は出社します。",
+        "kana": "ほんじつはしゅっしゃします。",
+        "english": "I'll come to the office today."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-115",
       "kanji": "早退",
       "kana": "そうたい",
@@ -3364,26 +2901,22 @@
         "leaving early",
         "early departure from work"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:B",
-        "ctx:hr",
-        "cat:hr"
-      ]
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "本日、早退させていただきます。",
+        "kana": "ほんじつ、そうたいさせていただきます。",
+        "english": "I'll be leaving early today."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-116",
       "kanji": "遅刻",
       "kana": "ちこく",
@@ -3393,26 +2926,22 @@
         "being late",
         "tardiness"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:hr",
-        "cat:hr"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "遅刻のご連絡です。",
+        "kana": "ちこくのごれんらくです。",
+        "english": "Notifying you of a late arrival."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-117",
       "kanji": "代休",
       "kana": "だいきゅう",
@@ -3421,26 +2950,22 @@
         "compensatory day off",
         "substitute holiday"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:B",
-        "ctx:hr",
-        "cat:hr"
-      ]
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "明日、代休を取ります。",
+        "kana": "あした、だいきゅうをとります。",
+        "english": "I'll take a compensatory day off tomorrow."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-118",
       "kanji": "休暇",
       "kana": "きゅうか",
@@ -3450,26 +2975,22 @@
         "leave of absence",
         "time off"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:hr",
-        "cat:hr"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "来週、休暇を取ります。",
+        "kana": "らいしゅう、きゅうかをとります。",
+        "english": "I'll take vacation next week."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-119",
       "kanji": "社内",
       "kana": "しゃない",
@@ -3479,28 +3000,24 @@
         "within the company",
         "in-house"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "noun",
         "prefix"
       ],
-      "tags": [
-        "passive",
-        "tier:A",
-        "ctx:email",
-        "ctx:meeting",
-        "cat:hr"
-      ]
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "email",
+        "meeting"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "社内で共有します。",
+        "kana": "しゃないできょうゆうします。",
+        "english": "I'll share it internally."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-120",
       "kanji": "後輩",
       "kana": "こうはい",
@@ -3509,26 +3026,22 @@
         "junior colleague",
         "someone who joined after you"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:A",
-        "ctx:standup",
-        "cat:roles"
-      ]
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "standup"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "後輩を指導します。",
+        "kana": "こうはいをしどうします。",
+        "english": "I'll mentor my junior colleague."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-121",
       "kanji": "同僚",
       "kana": "どうりょう",
@@ -3537,27 +3050,23 @@
         "colleague",
         "coworker"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:A",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:roles"
-      ]
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "同僚に確認します。",
+        "kana": "どうりょうにかくにんします。",
+        "english": "I'll check with my colleague."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-122",
       "kanji": "チームリーダー",
       "kana": "チームリーダー",
@@ -3566,27 +3075,23 @@
         "team leader",
         "tech lead"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:A",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:roles"
-      ]
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "チームリーダーに報告します。",
+        "kana": "チームリーダーにほうこくします。",
+        "english": "I'll report to the team leader."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-123",
       "kanji": "メンバー",
       "kana": "メンバー",
@@ -3595,26 +3100,22 @@
         "member",
         "team member"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:A",
-        "ctx:standup",
-        "cat:roles"
-      ]
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "standup"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "チームメンバー全員に共有します。",
+        "kana": "チームメンバーぜんいんにきょうゆうします。",
+        "english": "I'll share it with all team members."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-124",
       "kanji": "ステークホルダー",
       "kana": "ステークホルダー",
@@ -3623,27 +3124,23 @@
         "stakeholder",
         "interested party"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:B",
-        "ctx:meeting",
-        "ctx:client",
-        "cat:roles"
-      ]
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "meeting",
+        "client"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "ステークホルダーに報告します。",
+        "kana": "ステークホルダーにほうこくします。",
+        "english": "I'll report to the stakeholders."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-125",
       "kanji": "チャット",
       "kana": "チャット",
@@ -3653,27 +3150,23 @@
         "Slack message",
         "instant message"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:email",
-        "cat:communication"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "チャットで連絡します。",
+        "kana": "チャットでれんらくします。",
+        "english": "I'll contact you via chat."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-126",
       "kanji": "スレッド",
       "kana": "スレッド",
@@ -3682,26 +3175,22 @@
         "thread",
         "message thread"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:A",
-        "ctx:standup",
-        "cat:communication"
-      ]
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "standup"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "スレッドで返信します。",
+        "kana": "スレッドでへんしんします。",
+        "english": "I'll reply in the thread."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-127",
       "kanji": "メンション",
       "kana": "メンション",
@@ -3710,26 +3199,22 @@
         "mention",
         "@mention"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "cat:communication"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "スレッドでメンションします。",
+        "kana": "スレッドでメンションします。",
+        "english": "I'll mention you in the thread."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-128",
       "kanji": "周知",
       "kana": "しゅうち",
@@ -3739,27 +3224,23 @@
         "notifying everyone",
         "announcement"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:email",
-        "ctx:meeting",
-        "cat:communication"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email",
+        "meeting"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "全体に周知します。",
+        "kana": "ぜんたいにしゅうちします。",
+        "english": "I'll notify everyone company-wide."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-129",
       "kanji": "添付",
       "kana": "てんぷ",
@@ -3768,26 +3249,22 @@
         "attachment",
         "file attachment"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:email",
-        "cat:communication"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "資料を添付しました。",
+        "kana": "しりょうをてんぷしました。",
+        "english": "I've attached the materials."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-130",
       "kanji": "件名",
       "kana": "けんめい",
@@ -3796,26 +3273,22 @@
         "subject line",
         "email subject"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:email",
-        "cat:communication"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "件名を確認してください。",
+        "kana": "けんめいをかくにんしてください。",
+        "english": "Please check the subject line."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-131",
       "kanji": "DM",
       "kana": "DM",
@@ -3824,26 +3297,22 @@
         "direct message",
         "private message"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "cat:communication"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "DMで詳細を送ります。",
+        "kana": "DMでしょうさいをおくります。",
+        "english": "I'll send the details via DM."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-132",
       "kanji": "仕様書",
       "kana": "しようしょ",
@@ -3852,26 +3321,22 @@
         "specification document",
         "spec doc"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:A",
-        "ctx:meeting",
-        "cat:documents"
-      ]
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "仕様書を確認してください。",
+        "kana": "しようしょをかくにんしてください。",
+        "english": "Please check the specification document."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-133",
       "kanji": "設計書",
       "kana": "せっけいしょ",
@@ -3880,26 +3345,22 @@
         "design document",
         "design doc"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:B",
-        "ctx:meeting",
-        "cat:documents"
-      ]
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "設計書を作成します。",
+        "kana": "せっけいしょをさくせいします。",
+        "english": "I'll create the design document."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-134",
       "kanji": "手順書",
       "kana": "てじゅんしょ",
@@ -3909,26 +3370,22 @@
         "runbook",
         "how-to document"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:B",
-        "ctx:incident",
-        "cat:documents"
-      ]
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "incident"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "手順書を参照してください。",
+        "kana": "てじゅんしょをさんしょうしてください。",
+        "english": "Please refer to the procedure manual."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-135",
       "kanji": "報告書",
       "kana": "ほうこくしょ",
@@ -3937,27 +3394,23 @@
         "report document",
         "written report"
       ],
-      "jlptLevel": "N2",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:B",
-        "ctx:email",
-        "ctx:meeting",
-        "cat:documents"
-      ]
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email",
+        "meeting"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "報告書を提出します。",
+        "kana": "ほうこくしょをていしゅつします。",
+        "english": "I'll submit the report document."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-136",
       "kanji": "テンプレート",
       "kana": "テンプレート",
@@ -3965,26 +3418,22 @@
       "meaning": [
         "template"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:email",
-        "cat:documents"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "テンプレートを使ってください。",
+        "kana": "テンプレートをつかってください。",
+        "english": "Please use the template."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-137",
       "kanji": "バグ",
       "kana": "バグ",
@@ -3994,27 +3443,23 @@
         "software defect",
         "error in code"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:incident",
-        "cat:tech"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "incident"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "バグを発見しました。",
+        "kana": "バグをはっけんしました。",
+        "english": "I found a bug."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-138",
       "kanji": "デプロイ",
       "kana": "デプロイ",
@@ -4024,27 +3469,23 @@
         "deployment",
         "release to server"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:incident",
-        "cat:tech"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "incident"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "本番へのデプロイを完了しました。",
+        "kana": "ほんばんへのデプロイをかんりょうしました。",
+        "english": "Deployment to production is complete."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-139",
       "kanji": "プルリクエスト",
       "kana": "プルリクエスト",
@@ -4053,26 +3494,22 @@
         "pull request",
         "PR"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "cat:tech"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "プルリクエストをレビューしてください。",
+        "kana": "プルリクエストをレビューしてください。",
+        "english": "Please review the pull request."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-140",
       "kanji": "コードレビュー",
       "kana": "コードレビュー",
@@ -4081,27 +3518,23 @@
         "code review",
         "PR review"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:standup",
-        "ctx:meeting",
-        "cat:tech"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "コードレビューをお願いします。",
+        "kana": "コードレビューをおねがいします。",
+        "english": "Please do a code review."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-141",
       "kanji": "本番環境",
       "kana": "ほんばんかんきょう",
@@ -4110,27 +3543,23 @@
         "production environment",
         "live environment"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:standup",
-        "ctx:incident",
-        "cat:tech"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "incident"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "本番環境に反映しました。",
+        "kana": "ほんばんかんきょうにはんえいしました。",
+        "english": "I've applied it to the production environment."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-142",
       "kanji": "ステージング",
       "kana": "ステージング",
@@ -4139,26 +3568,22 @@
         "staging",
         "staging environment"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:A",
-        "ctx:standup",
-        "cat:tech"
-      ]
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "standup"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "ステージングで確認してください。",
+        "kana": "ステージングでかくにんしてください。",
+        "english": "Please confirm on staging."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-143",
       "kanji": "ログ",
       "kana": "ログ",
@@ -4167,27 +3592,23 @@
         "log",
         "system log"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:A",
-        "ctx:incident",
-        "ctx:standup",
-        "cat:tech"
-      ]
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident",
+        "standup"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "ログを確認します。",
+        "kana": "ログをかくにんします。",
+        "english": "I'll check the log."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-144",
       "kanji": "エラー",
       "kana": "エラー",
@@ -4196,27 +3617,23 @@
         "error",
         "system error"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "active",
-        "tier:S",
-        "ctx:incident",
-        "ctx:standup",
-        "cat:tech"
-      ]
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "incident",
+        "standup"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "エラーが発生しました。",
+        "kana": "エラーがはっせいしました。",
+        "english": "An error has occurred."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-145",
       "kanji": "環境",
       "kana": "かんきょう",
@@ -4225,26 +3642,22 @@
         "environment",
         "dev/staging/production environment"
       ],
-      "jlptLevel": "N3",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:A",
-        "ctx:standup",
-        "cat:tech"
-      ]
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "standup"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "開発環境を確認します。",
+        "kana": "かいはつかんきょうをかくにんします。",
+        "english": "I'll check the development environment."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-146",
       "kanji": "パフォーマンス",
       "kana": "パフォーマンス",
@@ -4253,27 +3666,23 @@
         "performance",
         "system performance"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:A",
-        "ctx:incident",
-        "ctx:meeting",
-        "cat:tech"
-      ]
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "incident",
+        "meeting"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "パフォーマンスを改善します。",
+        "kana": "パフォーマンスをかいぜんします。",
+        "english": "I'll improve the performance."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-147",
       "kanji": "API",
       "kana": "API",
@@ -4282,27 +3691,23 @@
         "API",
         "application programming interface"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:A",
-        "ctx:standup",
-        "ctx:incident",
-        "cat:tech"
-      ]
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "incident"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "APIの仕様を確認します。",
+        "kana": "APIのしようをかくにんします。",
+        "english": "I'll check the API specification."
+      }
     },
     {
-      "examples": [],
-      "source": {
-        "type": "custom"
-      },
-      "license": {
-        "text": "Custom",
-        "url": ""
-      },
       "id": "office-148",
       "kanji": "ダウンタイム",
       "kana": "ダウンタイム",
@@ -4311,16 +3716,20 @@
         "downtime",
         "system downtime"
       ],
-      "jlptLevel": "",
       "partOfSpeech": [
         "noun"
       ],
-      "tags": [
-        "passive",
-        "tier:A",
-        "ctx:incident",
-        "cat:tech"
-      ]
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "incident"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "ダウンタイムを最小限に抑えます。",
+        "kana": "ダウンタイムをさいしょうげんにおさえます。",
+        "english": "I'll minimize the downtime."
+      }
     }
   ]
 }

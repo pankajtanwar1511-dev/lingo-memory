@@ -1,0 +1,938 @@
+{
+  "version": "2.0",
+  "schema": "office-v2",
+  "review_part": 3,
+  "review_of": 4,
+  "entries": [
+    {
+      "id": "office-075",
+      "kanji": "提出する",
+      "kana": "ていしゅつする",
+      "romaji": "teishutsu suru",
+      "meaning": [
+        "to submit",
+        "to hand in",
+        "to file"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email",
+        "meeting"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "報告書を提出します。",
+        "kana": "ほうこくしょをていしゅつします。",
+        "english": "I'll submit the report."
+      }
+    },
+    {
+      "id": "office-076",
+      "kanji": "アジェンダ",
+      "kana": "アジェンダ",
+      "romaji": "ajenda",
+      "meaning": [
+        "agenda",
+        "meeting agenda"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "アジェンダを共有します。",
+        "kana": "アジェンダをきょうゆうします。",
+        "english": "I'll share the agenda."
+      }
+    },
+    {
+      "id": "office-077",
+      "kanji": "確認事項",
+      "kana": "かくにんじこう",
+      "romaji": "kakunin jikō",
+      "meaning": [
+        "items to confirm",
+        "confirmation points"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "確認事項をリストアップします。",
+        "kana": "かくにんじこうをリストアップします。",
+        "english": "I'll list the items to confirm."
+      }
+    },
+    {
+      "id": "office-078",
+      "kanji": "決定事項",
+      "kana": "けっていじこう",
+      "romaji": "kettei jikō",
+      "meaning": [
+        "decisions made",
+        "action decisions"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "決定事項を議事録に記載します。",
+        "kana": "けっていじこうをぎじろくにきさいします。",
+        "english": "I'll document the decisions in the minutes."
+      }
+    },
+    {
+      "id": "office-079",
+      "kanji": "アクションアイテム",
+      "kana": "アクションアイテム",
+      "romaji": "akushon aitemu",
+      "meaning": [
+        "action item",
+        "next action",
+        "follow-up task"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting",
+        "standup"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "アクションアイテムを確認します。",
+        "kana": "アクションアイテムをかくにんします。",
+        "english": "I'll confirm the action items."
+      }
+    },
+    {
+      "id": "office-080",
+      "kanji": "参加者",
+      "kana": "さんかしゃ",
+      "romaji": "sankasha",
+      "meaning": [
+        "participants",
+        "attendees"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "参加者リストを送ります。",
+        "kana": "さんかしゃリストをおくります。",
+        "english": "I'll send the participant list."
+      }
+    },
+    {
+      "id": "office-081",
+      "kanji": "オンライン会議",
+      "kana": "オンラインかいぎ",
+      "romaji": "onrain kaigi",
+      "meaning": [
+        "online meeting",
+        "virtual meeting",
+        "video call"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "オンライン会議のリンクを共有します。",
+        "kana": "オンラインかいぎのリンクをきょうゆうします。",
+        "english": "I'll share the online meeting link."
+      }
+    },
+    {
+      "id": "office-082",
+      "kanji": "議題",
+      "kana": "ぎだい",
+      "romaji": "gidai",
+      "meaning": [
+        "agenda item",
+        "topic for discussion"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "議題を追加してもよいですか？",
+        "kana": "ぎだいをついかしてもよいですか？",
+        "english": "May I add an agenda item?"
+      }
+    },
+    {
+      "id": "office-083",
+      "kanji": "司会",
+      "kana": "しかい",
+      "romaji": "shikai",
+      "meaning": [
+        "meeting moderator",
+        "chairperson",
+        "facilitator"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "今日の司会を担当します。",
+        "kana": "きょうのしかいをたんとうします。",
+        "english": "I'll be the moderator today."
+      }
+    },
+    {
+      "id": "office-084",
+      "kanji": "マイルストーン",
+      "kana": "マイルストーン",
+      "romaji": "mairustōn",
+      "meaning": [
+        "milestone",
+        "project milestone"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "マイルストーンを達成しました。",
+        "kana": "マイルストーンをたっせいしました。",
+        "english": "We've reached the milestone."
+      }
+    },
+    {
+      "id": "office-085",
+      "kanji": "バックログ",
+      "kana": "バックログ",
+      "romaji": "bakkurogu",
+      "meaning": [
+        "backlog",
+        "task backlog"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "バックログを整理します。",
+        "kana": "バックログをせいりします。",
+        "english": "I'll organize the backlog."
+      }
+    },
+    {
+      "id": "office-086",
+      "kanji": "要件",
+      "kana": "ようけん",
+      "romaji": "yōken",
+      "meaning": [
+        "requirements",
+        "functional requirements"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "要件を確認します。",
+        "kana": "ようけんをかくにんします。",
+        "english": "I'll confirm the requirements."
+      }
+    },
+    {
+      "id": "office-087",
+      "kanji": "見積もり",
+      "kana": "みつもり",
+      "romaji": "mitsumori",
+      "meaning": [
+        "estimate",
+        "effort estimate",
+        "cost estimate"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting",
+        "client"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "工数の見積もりを出します。",
+        "kana": "こうすうのみつもりをだします。",
+        "english": "I'll provide a man-hour estimate."
+      }
+    },
+    {
+      "id": "office-088",
+      "kanji": "ブロッカー",
+      "kana": "ブロッカー",
+      "romaji": "burokkā",
+      "meaning": [
+        "blocker",
+        "blocking issue"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "ブロッカーがあります。",
+        "kana": "ブロッカーがあります。",
+        "english": "There's a blocker."
+      }
+    },
+    {
+      "id": "office-089",
+      "kanji": "品質",
+      "kana": "ひんしつ",
+      "romaji": "hinshitsu",
+      "meaning": [
+        "quality",
+        "quality level"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "品質を確認します。",
+        "kana": "ひんしつをかくにんします。",
+        "english": "I'll check the quality."
+      }
+    },
+    {
+      "id": "office-090",
+      "kanji": "仕様",
+      "kana": "しよう",
+      "romaji": "shiyō",
+      "meaning": [
+        "specification",
+        "spec"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "仕様を確認してください。",
+        "kana": "しようをかくにんしてください。",
+        "english": "Please check the specification."
+      }
+    },
+    {
+      "id": "office-091",
+      "kanji": "成果物",
+      "kana": "せいかぶつ",
+      "romaji": "seika butsu",
+      "meaning": [
+        "deliverable",
+        "output",
+        "work product"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "meeting",
+        "client"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "成果物を提出します。",
+        "kana": "せいかぶつをていしゅつします。",
+        "english": "I'll submit the deliverable."
+      }
+    },
+    {
+      "id": "office-092",
+      "kanji": "エスカレーション",
+      "kana": "エスカレーション",
+      "romaji": "esukarēshon",
+      "meaning": [
+        "escalation"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident"
+      ],
+      "category": "incident",
+      "example": {
+        "japanese": "エスカレーションが必要です。",
+        "kana": "エスカレーションがひつようです。",
+        "english": "Escalation is necessary."
+      }
+    },
+    {
+      "id": "office-093",
+      "kanji": "暫定対応",
+      "kana": "ざんていたいおう",
+      "romaji": "zantei taiō",
+      "meaning": [
+        "temporary fix",
+        "workaround",
+        "interim measure"
+      ],
+      "partOfSpeech": [
+        "noun",
+        "expression"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident"
+      ],
+      "category": "incident",
+      "example": {
+        "japanese": "暫定対応を実施しました。",
+        "kana": "ざんていたいおうをじっしました。",
+        "english": "I've applied a temporary fix."
+      }
+    },
+    {
+      "id": "office-094",
+      "kanji": "根本原因",
+      "kana": "こんぽんげんいん",
+      "romaji": "konpon gen'in",
+      "meaning": [
+        "root cause",
+        "fundamental cause"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident"
+      ],
+      "category": "incident",
+      "example": {
+        "japanese": "根本原因を特定しました。",
+        "kana": "こんぽんげんいんをとくていしました。",
+        "english": "I've identified the root cause."
+      }
+    },
+    {
+      "id": "office-095",
+      "kanji": "深刻度",
+      "kana": "しんこくど",
+      "romaji": "shinkokudo",
+      "meaning": [
+        "severity",
+        "level of seriousness"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident"
+      ],
+      "category": "incident",
+      "example": {
+        "japanese": "深刻度を評価します。",
+        "kana": "しんこくどをひょうかします。",
+        "english": "I'll assess the severity."
+      }
+    },
+    {
+      "id": "office-096",
+      "kanji": "監視",
+      "kana": "かんし",
+      "romaji": "kanshi",
+      "meaning": [
+        "monitoring",
+        "system monitoring"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "incident",
+        "standup"
+      ],
+      "category": "incident",
+      "example": {
+        "japanese": "システムを監視しています。",
+        "kana": "システムをかんししています。",
+        "english": "I'm monitoring the system."
+      }
+    },
+    {
+      "id": "office-097",
+      "kanji": "未対応",
+      "kana": "みたいおう",
+      "romaji": "mi-taiō",
+      "meaning": [
+        "not yet handled",
+        "pending",
+        "unaddressed"
+      ],
+      "partOfSpeech": [
+        "noun",
+        "expression"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "status",
+      "example": {
+        "japanese": "まだ未対応のタスクがあります。",
+        "kana": "まだみたいおうのタスクがあります。",
+        "english": "There are still unhandled tasks."
+      }
+    },
+    {
+      "id": "office-098",
+      "kanji": "保留",
+      "kana": "ほりゅう",
+      "romaji": "horyū",
+      "meaning": [
+        "on hold",
+        "pending",
+        "deferred"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "status",
+      "example": {
+        "japanese": "この件は保留にします。",
+        "kana": "このけんはほりゅうにします。",
+        "english": "I'll put this matter on hold."
+      }
+    },
+    {
+      "id": "office-099",
+      "kanji": "優先",
+      "kana": "ゆうせん",
+      "romaji": "yūsen",
+      "meaning": [
+        "priority",
+        "high priority",
+        "prioritized"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "status",
+      "example": {
+        "japanese": "これを優先で対応します。",
+        "kana": "これをゆうせんでたいおうします。",
+        "english": "I'll handle this with priority."
+      }
+    },
+    {
+      "id": "office-100",
+      "kanji": "対応済み",
+      "kana": "たいおうずみ",
+      "romaji": "taiō zumi",
+      "meaning": [
+        "already handled",
+        "resolved",
+        "addressed"
+      ],
+      "partOfSpeech": [
+        "noun",
+        "expression"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "status",
+      "example": {
+        "japanese": "対応済みです。ご確認ください。",
+        "kana": "たいおうずみです。ごかくにんください。",
+        "english": "It's been handled. Please check."
+      }
+    },
+    {
+      "id": "office-101",
+      "kanji": "確認済み",
+      "kana": "かくにんずみ",
+      "romaji": "kakunin zumi",
+      "meaning": [
+        "confirmed",
+        "already verified",
+        "checked"
+      ],
+      "partOfSpeech": [
+        "noun",
+        "expression"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "status",
+      "example": {
+        "japanese": "内容は確認済みです。",
+        "kana": "ないようはかくにんずみです。",
+        "english": "The content has been confirmed."
+      }
+    },
+    {
+      "id": "office-102",
+      "kanji": "ご確認ください",
+      "kana": "ごかくにんください",
+      "romaji": "go-kakunin kudasai",
+      "meaning": [
+        "please check",
+        "please confirm"
+      ],
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email",
+        "meeting"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "添付資料をご確認ください。",
+        "kana": "てんぷしりょうをごかくにんください。",
+        "english": "Please check the attached materials."
+      }
+    },
+    {
+      "id": "office-103",
+      "kanji": "お手数をおかけします",
+      "kana": "おてすうをおかけします",
+      "romaji": "otesū wo okake shimasu",
+      "meaning": [
+        "sorry for the trouble",
+        "sorry to bother you"
+      ],
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "お手数をおかけしますが、ご確認をお願いします。",
+        "kana": "おてすうをおかけしますが、ごかくにんをおねがいします。",
+        "english": "Sorry for the trouble, but please confirm."
+      }
+    },
+    {
+      "id": "office-104",
+      "kanji": "ご対応よろしくお願いします",
+      "kana": "ごたいおうよろしくおねがいします",
+      "romaji": "go-taiō yoroshiku onegai shimasu",
+      "meaning": [
+        "please take care of this",
+        "please handle this"
+      ],
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email",
+        "meeting"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "ご対応よろしくお願いします。",
+        "kana": "ごたいおうよろしくおねがいします。",
+        "english": "Please take care of this."
+      }
+    },
+    {
+      "id": "office-105",
+      "kanji": "ご連絡ください",
+      "kana": "ごれんらくください",
+      "romaji": "go-renraku kudasai",
+      "meaning": [
+        "please contact me",
+        "please let me know"
+      ],
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "ご不明な点はご連絡ください。",
+        "kana": "ごふめいなてんはごれんらくください。",
+        "english": "Please contact me if you have any questions."
+      }
+    },
+    {
+      "id": "office-106",
+      "kanji": "ご検討ください",
+      "kana": "ごけんとうください",
+      "romaji": "go-kentō kudasai",
+      "meaning": [
+        "please consider",
+        "please review",
+        "please look into this"
+      ],
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email",
+        "client"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "ご検討のほどよろしくお願いします。",
+        "kana": "ごけんとうのほどよろしくおねがいします。",
+        "english": "Please consider this matter."
+      }
+    },
+    {
+      "id": "office-107",
+      "kanji": "お伝えします",
+      "kana": "おつたえします",
+      "romaji": "otsutae shimasu",
+      "meaning": [
+        "I will let them know",
+        "I'll pass the message along"
+      ],
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email",
+        "meeting"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "担当者にお伝えします。",
+        "kana": "たんとうしゃにおつたえします。",
+        "english": "I'll let the person in charge know."
+      }
+    },
+    {
+      "id": "office-108",
+      "kanji": "本日",
+      "kana": "ほんじつ",
+      "romaji": "honjitsu",
+      "meaning": [
+        "today (formal)",
+        "this day"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "本日の進捗を報告します。",
+        "kana": "ほんじつのしんちょくをほうこくします。",
+        "english": "I'll report today's progress."
+      }
+    },
+    {
+      "id": "office-109",
+      "kanji": "来週",
+      "kana": "らいしゅう",
+      "romaji": "raishū",
+      "meaning": [
+        "next week"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "来週までに完了します。",
+        "kana": "らいしゅうまでにかんりょうします。",
+        "english": "I'll complete it by next week."
+      }
+    },
+    {
+      "id": "office-110",
+      "kanji": "月次",
+      "kana": "げつじ",
+      "romaji": "getsuji",
+      "meaning": [
+        "monthly",
+        "on a monthly basis"
+      ],
+      "partOfSpeech": [
+        "noun",
+        "adverb"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "月次レポートを作成します。",
+        "kana": "つきじレポートをさくせいします。",
+        "english": "I'll create the monthly report."
+      }
+    },
+    {
+      "id": "office-111",
+      "kanji": "早急に",
+      "kana": "そうきゅうに",
+      "romaji": "sōkyū ni",
+      "meaning": [
+        "as soon as possible",
+        "urgently",
+        "ASAP"
+      ],
+      "partOfSpeech": [
+        "adverb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email",
+        "incident"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "早急に対応します。",
+        "kana": "そうきゅうにたいおうします。",
+        "english": "I'll handle it as soon as possible."
+      }
+    }
+  ]
+}

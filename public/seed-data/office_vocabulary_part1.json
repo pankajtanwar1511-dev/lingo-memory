@@ -1,0 +1,951 @@
+{
+  "version": "2.0",
+  "schema": "office-v2",
+  "review_part": 1,
+  "review_of": 4,
+  "entries": [
+    {
+      "id": "office-001",
+      "kanji": "確認する",
+      "kana": "かくにんする",
+      "romaji": "kakunin suru",
+      "meaning": [
+        "to confirm",
+        "to check",
+        "to verify"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "email",
+        "meeting"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "進捗を確認します。",
+        "kana": "しんちょくをかくにんします。",
+        "english": "I'll confirm the progress."
+      }
+    },
+    {
+      "id": "office-002",
+      "kanji": "連絡する",
+      "kana": "れんらくする",
+      "romaji": "renraku suru",
+      "meaning": [
+        "to contact",
+        "to inform",
+        "to communicate"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email",
+        "standup"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "後ほど連絡します。",
+        "kana": "のちほどれんらくします。",
+        "english": "I'll contact you later."
+      }
+    },
+    {
+      "id": "office-003",
+      "kanji": "進捗",
+      "kana": "しんちょく",
+      "romaji": "shinchoku",
+      "meaning": [
+        "progress",
+        "advancement"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "本日の進捗を共有します。",
+        "kana": "ほんじつのしんちょくをきょうゆうします。",
+        "english": "I'll share today's progress."
+      }
+    },
+    {
+      "id": "office-004",
+      "kanji": "締め切り",
+      "kana": "しめきり",
+      "romaji": "shimekiri",
+      "meaning": [
+        "deadline",
+        "closing date"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "締め切りは明日です。",
+        "kana": "しめきりはあしたです。",
+        "english": "The deadline is tomorrow."
+      }
+    },
+    {
+      "id": "office-005",
+      "kanji": "課題",
+      "kana": "かだい",
+      "romaji": "kadai",
+      "meaning": [
+        "issue",
+        "challenge",
+        "action item",
+        "problem"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "課題を確認します。",
+        "kana": "かだいをかくにんします。",
+        "english": "I'll check on the issues."
+      }
+    },
+    {
+      "id": "office-006",
+      "kanji": "対応中",
+      "kana": "たいおうちゅう",
+      "romaji": "taiou chuu",
+      "meaning": [
+        "currently handling",
+        "in progress",
+        "being dealt with"
+      ],
+      "partOfSpeech": [
+        "expression",
+        "status word"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "incident"
+      ],
+      "category": "status",
+      "example": {
+        "japanese": "現在、対応中です。",
+        "kana": "げんざい、たいおうちゅうです。",
+        "english": "I'm currently handling it."
+      }
+    },
+    {
+      "id": "office-007",
+      "kanji": "資料",
+      "kana": "しりょう",
+      "romaji": "shiryou",
+      "meaning": [
+        "materials",
+        "reference documents",
+        "data"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "meeting",
+        "email"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "資料を添付します。",
+        "kana": "しりょうをてんぷします。",
+        "english": "I'll attach the materials."
+      }
+    },
+    {
+      "id": "office-008",
+      "kanji": "障害",
+      "kana": "しょうがい",
+      "romaji": "shougai",
+      "meaning": [
+        "system failure",
+        "outage",
+        "incident"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident",
+        "standup"
+      ],
+      "category": "incident",
+      "example": {
+        "japanese": "システム障害が発生しました。",
+        "kana": "システムしょうがいがはっせいしました。",
+        "english": "A system failure has occurred."
+      }
+    },
+    {
+      "id": "office-009",
+      "kanji": "お疲れ様です",
+      "kana": "おつかれさまです",
+      "romaji": "otsukaresama desu",
+      "meaning": [
+        "good work",
+        "thanks for your hard work",
+        "hello / goodbye (workplace)"
+      ],
+      "partOfSpeech": [
+        "phrase",
+        "greeting"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "email",
+        "meeting"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "お疲れ様です。本日もよろしくお願いします。",
+        "kana": "おつかれさまです。ほんじつもよろしくおねがいします。",
+        "english": "Good work. Thank you for today as well."
+      }
+    },
+    {
+      "id": "office-010",
+      "kanji": "よろしくお願いいたします",
+      "kana": "よろしくおねがいいたします",
+      "romaji": "yoroshiku onegai itashimasu",
+      "meaning": [
+        "please take care of this",
+        "thank you in advance",
+        "best regards"
+      ],
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email",
+        "standup",
+        "meeting"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "ご確認のほど、よろしくお願いいたします。",
+        "kana": "ごかくにんのほど、よろしくおねがいいたします。",
+        "english": "Please take care of the confirmation."
+      }
+    },
+    {
+      "id": "office-011",
+      "kanji": "共有する",
+      "kana": "きょうゆうする",
+      "romaji": "kyouyuu suru",
+      "meaning": [
+        "to share",
+        "to share information or files"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting",
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "資料を共有します。",
+        "kana": "しりょうをきょうゆうします。",
+        "english": "I'll share the materials."
+      }
+    },
+    {
+      "id": "office-012",
+      "kanji": "対応する",
+      "kana": "たいおうする",
+      "romaji": "taiou suru",
+      "meaning": [
+        "to handle",
+        "to deal with",
+        "to respond to"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "incident",
+        "standup",
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "すぐに対応します。",
+        "kana": "すぐにたいおうします。",
+        "english": "I'll handle it right away."
+      }
+    },
+    {
+      "id": "office-013",
+      "kanji": "説明する",
+      "kana": "せつめいする",
+      "romaji": "setsumei suru",
+      "meaning": [
+        "to explain",
+        "to describe"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "仕様を説明します。",
+        "kana": "しようをせつめいします。",
+        "english": "I'll explain the specifications."
+      }
+    },
+    {
+      "id": "office-014",
+      "kanji": "返信する",
+      "kana": "へんしんする",
+      "romaji": "henshin suru",
+      "meaning": [
+        "to reply",
+        "to respond (email / message)"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "メールに返信します。",
+        "kana": "メールにへんしんします。",
+        "english": "I'll reply to the email."
+      }
+    },
+    {
+      "id": "office-015",
+      "kanji": "報告する",
+      "kana": "ほうこくする",
+      "romaji": "houkoku suru",
+      "meaning": [
+        "to report",
+        "to brief"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "状況を報告します。",
+        "kana": "じょうきょうをほうこくします。",
+        "english": "I'll report the situation."
+      }
+    },
+    {
+      "id": "office-016",
+      "kanji": "相談する",
+      "kana": "そうだんする",
+      "romaji": "soudan suru",
+      "meaning": [
+        "to consult",
+        "to discuss",
+        "to ask for advice"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "1on1",
+        "standup"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "上司に相談します。",
+        "kana": "じょうしにそうだんします。",
+        "english": "I'll consult with my manager."
+      }
+    },
+    {
+      "id": "office-017",
+      "kanji": "修正する",
+      "kana": "しゅうせいする",
+      "romaji": "shuusei suru",
+      "meaning": [
+        "to revise",
+        "to correct",
+        "to fix"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "バグを修正します。",
+        "kana": "バグをしゅうせいします。",
+        "english": "I'll fix the bug."
+      }
+    },
+    {
+      "id": "office-018",
+      "kanji": "承認する",
+      "kana": "しょうにんする",
+      "romaji": "shounin suru",
+      "meaning": [
+        "to approve",
+        "to authorize"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting",
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "リクエストを承認します。",
+        "kana": "リクエストをしょうにんします。",
+        "english": "I'll approve the request."
+      }
+    },
+    {
+      "id": "office-019",
+      "kanji": "会議",
+      "kana": "かいぎ",
+      "romaji": "kaigi",
+      "meaning": [
+        "meeting",
+        "conference (formal)"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "会議は14時からです。",
+        "kana": "かいぎは14じからです。",
+        "english": "The meeting starts at 2 PM."
+      }
+    },
+    {
+      "id": "office-020",
+      "kanji": "ミーティング",
+      "kana": "ミーティング",
+      "romaji": "miitingu",
+      "meaning": [
+        "meeting (casual)",
+        "team meeting"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "1on1"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "ミーティングに参加します。",
+        "kana": "ミーティングにさんかします。",
+        "english": "I'll join the meeting."
+      }
+    },
+    {
+      "id": "office-021",
+      "kanji": "打ち合わせ",
+      "kana": "うちあわせ",
+      "romaji": "uchiawase",
+      "meaning": [
+        "preliminary briefing",
+        "sync meeting",
+        "informal discussion"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting",
+        "client"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "明日、打ち合わせを予定しています。",
+        "kana": "あした、うちあわせをよていしています。",
+        "english": "I have a briefing scheduled tomorrow."
+      }
+    },
+    {
+      "id": "office-022",
+      "kanji": "議事録",
+      "kana": "ぎじろく",
+      "romaji": "gijiroku",
+      "meaning": [
+        "meeting minutes",
+        "meeting notes"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "議事録をまとめます。",
+        "kana": "ぎじろくをまとめます。",
+        "english": "I'll compile the meeting minutes."
+      }
+    },
+    {
+      "id": "office-023",
+      "kanji": "提案",
+      "kana": "ていあん",
+      "romaji": "teian",
+      "meaning": [
+        "proposal",
+        "suggestion"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting",
+        "client"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "新しい提案があります。",
+        "kana": "あたらしいていあんがあります。",
+        "english": "I have a new proposal."
+      }
+    },
+    {
+      "id": "office-024",
+      "kanji": "フィードバック",
+      "kana": "フィードバック",
+      "romaji": "fiidorakku",
+      "meaning": [
+        "feedback"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "1on1",
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "フィードバックをありがとうございます。",
+        "kana": "フィードバックをありがとうございます。",
+        "english": "Thank you for the feedback."
+      }
+    },
+    {
+      "id": "office-025",
+      "kanji": "進捗確認",
+      "kana": "しんちょくかくにん",
+      "romaji": "shinchoku kakunin",
+      "meaning": [
+        "progress check",
+        "status check"
+      ],
+      "partOfSpeech": [
+        "noun",
+        "expression"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "進捗確認をお願いします。",
+        "kana": "しんちょくかくにんをおねがいします。",
+        "english": "Please do a progress check."
+      }
+    },
+    {
+      "id": "office-026",
+      "kanji": "報告",
+      "kana": "ほうこく",
+      "romaji": "houkoku",
+      "meaning": [
+        "report",
+        "briefing",
+        "update"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "本日の報告をします。",
+        "kana": "ほんじつのほうこくをします。",
+        "english": "I'll give today's report."
+      }
+    },
+    {
+      "id": "office-027",
+      "kanji": "プロジェクト",
+      "kana": "プロジェクト",
+      "romaji": "purojekuto",
+      "meaning": [
+        "project"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "このプロジェクトを担当しています。",
+        "kana": "このプロジェクトをたんとうしています。",
+        "english": "I'm in charge of this project."
+      }
+    },
+    {
+      "id": "office-028",
+      "kanji": "タスク",
+      "kana": "タスク",
+      "romaji": "tasuku",
+      "meaning": [
+        "task",
+        "to-do item"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "タスクを完了しました。",
+        "kana": "タスクをかんりょうしました。",
+        "english": "I've completed the task."
+      }
+    },
+    {
+      "id": "office-029",
+      "kanji": "優先順位",
+      "kana": "ゆうせんじゅんい",
+      "romaji": "yuusen jun'i",
+      "meaning": [
+        "priority",
+        "order of priority"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "優先順位を確認します。",
+        "kana": "ゆうせんじゅんいをかくにんします。",
+        "english": "I'll check the priority."
+      }
+    },
+    {
+      "id": "office-030",
+      "kanji": "期日",
+      "kana": "きじつ",
+      "romaji": "kijitsu",
+      "meaning": [
+        "due date",
+        "deadline"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "email",
+        "client"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "期日までに完了します。",
+        "kana": "きじつまでにかんりょうします。",
+        "english": "I'll complete it by the due date."
+      }
+    },
+    {
+      "id": "office-031",
+      "kanji": "工数",
+      "kana": "こうすう",
+      "romaji": "kousuu",
+      "meaning": [
+        "man-hours",
+        "work effort",
+        "engineering effort"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "工数を見積もります。",
+        "kana": "こうすうをみつもります。",
+        "english": "I'll estimate the man-hours."
+      }
+    },
+    {
+      "id": "office-032",
+      "kanji": "実装",
+      "kana": "じっそう",
+      "romaji": "jissou",
+      "meaning": [
+        "implementation",
+        "coding / building a feature"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "実装が完了しました。",
+        "kana": "じっそうがかんりょうしました。",
+        "english": "Implementation is complete."
+      }
+    },
+    {
+      "id": "office-033",
+      "kanji": "リリース",
+      "kana": "リリース",
+      "romaji": "ririiisu",
+      "meaning": [
+        "release",
+        "product launch"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "来週リリース予定です。",
+        "kana": "らいしゅうリリースよていです。",
+        "english": "Release is scheduled for next week."
+      }
+    },
+    {
+      "id": "office-034",
+      "kanji": "対策",
+      "kana": "たいさく",
+      "romaji": "taisaku",
+      "meaning": [
+        "countermeasure",
+        "solution",
+        "action plan"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident",
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "対策を検討します。",
+        "kana": "たいさくをけんとうします。",
+        "english": "I'll consider countermeasures."
+      }
+    },
+    {
+      "id": "office-035",
+      "kanji": "スケジュール",
+      "kana": "スケジュール",
+      "romaji": "sukejuuru",
+      "meaning": [
+        "schedule",
+        "timeline"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "スケジュールを確認します。",
+        "kana": "スケジュールをかくにんします。",
+        "english": "I'll check the schedule."
+      }
+    },
+    {
+      "id": "office-036",
+      "kanji": "予定",
+      "kana": "よてい",
+      "romaji": "yotei",
+      "meaning": [
+        "plan",
+        "schedule",
+        "appointment"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "本日は〇〇を予定しています。",
+        "kana": "ほんじつは〇〇をよていしています。",
+        "english": "Today I plan to work on 〇〇."
+      }
+    },
+    {
+      "id": "office-037",
+      "kanji": "期限",
+      "kana": "きげん",
+      "romaji": "kigen",
+      "meaning": [
+        "time limit",
+        "deadline",
+        "expiry"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email",
+        "standup"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "期限は今週末です。",
+        "kana": "きげんはこんしゅうまつです。",
+        "english": "The deadline is this weekend."
+      }
+    }
+  ]
+}

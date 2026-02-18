@@ -188,3 +188,56 @@ export interface UserProgress {
   jlptProgress: Record<JLPTLevel, number> // percentage for each level
   studySessions: StudySession[]
 }
+
+// ─── Office Vocabulary Schema (v2) ───────────────────────────────────────────
+
+export type OfficeTier = "S" | "A" | "B" | "C"
+
+export type OfficeContext =
+  | "standup"
+  | "meeting"
+  | "email"
+  | "incident"
+  | "1on1"
+  | "hr"
+  | "client"
+
+export type OfficeCategory =
+  | "verbs"
+  | "meetings"
+  | "project"
+  | "incident"
+  | "status"
+  | "keigo"
+  | "tech"
+  | "time"
+  | "hr"
+  | "roles"
+  | "communication"
+  | "documents"
+
+/**
+ * A single example sentence (office vocabulary — no source/license overhead)
+ */
+export interface OfficeExample {
+  japanese: string  // kanji form
+  kana: string      // kana reading
+  english: string   // English translation
+}
+
+/**
+ * Office vocabulary card — structured fields instead of tag strings
+ */
+export interface OfficeCard {
+  id: string
+  kanji?: string         // kanji form (undefined for katakana-only words)
+  kana: string           // kana reading (required)
+  romaji?: string        // romaji transcription
+  meaning: string[]      // English meanings (first = primary)
+  partOfSpeech?: string[]
+  active: boolean        // true = produce (write/speak), false = recognize only
+  tier: OfficeTier       // S=daily, A=weekly, B=monthly, C=rare
+  contexts: OfficeContext[]  // usage contexts
+  category: OfficeCategory
+  example?: OfficeExample    // one example sentence
+}
