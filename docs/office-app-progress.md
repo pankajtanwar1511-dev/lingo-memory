@@ -235,6 +235,108 @@ Active/passive audit: 148 entries, **124 active / 24 passive** (83% active).
 
 ---
 
+## ChatGPT Review Protocol
+
+Use this process after every phase of changes — vocabulary expansion, new drill
+packs, model answer edits, or any data file update.
+
+---
+
+### Phase 1 — Vocabulary batch review
+
+**When:** After adding or editing any entries in `office_vocabulary.json`.
+
+**How to send:**
+1. Split the changed range into a part file (e.g. `office_vocabulary_part5.json`)
+2. Paste into ChatGPT with the prompt below
+
+**Review prompt (copy-paste):**
+```
+You are a Japanese linguist reviewing tech-workplace vocabulary for a language learning app.
+Review each entry for:
+1. kana — does it exactly match the kanji reading?
+2. romaji — double-vowel Hepburn only (oo/uu/aa, no macrons). Verify each one.
+3. example.kana — does it match the example.japanese sentence reading exactly?
+4. example.english — is it natural English for the Japanese sentence shown?
+5. partOfSpeech — is it accurate? (no "expression" unless truly idiomatic)
+6. category — is it correctly categorised? (e.g. 了解です → communication, not keigo)
+7. active — should a learner produce this in Slack/standup? (true) or just recognise it? (false)
+
+Score each entry 1–10. List every error with: entry ID, field, current value → correct value.
+Rate the batch overall. Flag anything needing native speaker confirmation.
+```
+
+**What to apply back:**
+- All field-level corrections → apply to `office_vocabulary.json`
+- Regenerate part files: split the full JSON into 4 parts (001–037, 038–074, 075–111, 112–end)
+- Run `tsc --noEmit` after any page.tsx changes
+
+**Log completed passes here** (see "Vocabulary quality status" section above).
+
+---
+
+### Phase 2 — Drill pack review
+
+**When:** After adding a new pack or editing stages/model answers in `office_drills.json`.
+
+**Review prompt (copy-paste):**
+```
+You are a Japanese linguist reviewing production writing drills for a tech workplace app.
+For each stage, check:
+1. modelAnswer.japanese — is it natural, grammatically correct Japanese for the prompt?
+2. modelAnswer.kana — does it exactly match the reading of modelAnswer.japanese?
+3. modelAnswer.english — is it an accurate, natural English translation?
+4. hint — does it correctly describe the required term (kana hint matches the vocab entry)?
+5. targets.required — is the required vocab ID the most important term for this stage?
+6. prompt (English) — is it clear and unambiguous for a Japanese learner?
+
+List every error with: pack ID, stage ID, field, current value → correct value.
+```
+
+**What to apply back:**
+- Model answer / kana / hint corrections → apply to `office_drills.json`
+- Do NOT change vocab IDs in targets without also checking `office_vocabulary.json`
+
+---
+
+### Phase 3 — Strategic / architecture review
+
+**When:** After completing a major feature (new page, new data schema, new mode).
+
+**Review prompt (copy-paste):**
+```
+I'm building a Japanese office vocabulary app for a software engineer learning to work in
+a Japanese tech company. Here is the current progress doc:
+
+[paste office-app-progress.md]
+
+Review from two angles:
+1. Pedagogy — is the learning flow effective? Are there gaps between recognition and production?
+2. Architecture — is the data model clean? Any structural debt to address before expanding?
+
+Give 3–5 prioritised recommendations. Be specific about what to build next and why.
+```
+
+**Use this output to:**
+- Update the Pending / Future section
+- Prioritise next feature vs. next data expansion
+- Identify any vocabulary or schema corrections before the next build phase
+
+---
+
+### Review log
+
+| Date | Phase | Scope | Outcome |
+|------|-------|-------|---------|
+| 2026-02-18 | Vocab batch | Part 1 (001–037) | 2 fixes: office-010 english, office-024 romaji |
+| 2026-02-18 | Vocab batch | Part 2 (038–074) | 4 fixes: partOfSpeech ×2, category ×1, romaji ×40 |
+| 2026-02-19 | Vocab batch | Part 3 (075–111) | 2 fixes: partOfSpeech ×1, example kana ×1 |
+| 2026-02-19 | Vocab batch | Part 4 (112–148) | 1 fix: DM kana + romaji |
+| 2026-02-18 | Strategic | Full app | Recommended: depth over breadth → linked drills |
+| 2026-02-19 | Strategic | Full app | Validated two-layer linking approach + drill schema |
+
+---
+
 ## Pending / Future
 
 - [ ] Audio pronunciation (when audio files available)
