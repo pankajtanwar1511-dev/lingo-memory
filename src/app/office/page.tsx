@@ -35,16 +35,19 @@ interface CardProgress {
 // ─── Constants ────────────────────────────────────────────────────────────────
 
 const CATEGORIES = [
-  { id: "all",               label: "All Office",  shortLabel: "All",      color: "bg-gradient-to-r from-purple-500 to-pink-500" },
-  { id: "cat:verbs",         label: "Verbs",       shortLabel: "Verbs",    color: "bg-gradient-to-r from-blue-500 to-cyan-500" },
-  { id: "cat:meetings",      label: "Meetings",    shortLabel: "Meetings", color: "bg-gradient-to-r from-emerald-500 to-teal-500" },
-  { id: "cat:project",       label: "Project",     shortLabel: "Project",  color: "bg-gradient-to-r from-violet-500 to-purple-500" },
-  { id: "cat:incident",      label: "Incident",    shortLabel: "Incident", color: "bg-gradient-to-r from-red-500 to-rose-500" },
-  { id: "cat:status",        label: "Status",      shortLabel: "Status",   color: "bg-gradient-to-r from-orange-500 to-amber-500" },
-  { id: "cat:keigo",         label: "Keigo",       shortLabel: "Keigo",    color: "bg-gradient-to-r from-pink-500 to-fuchsia-500" },
-  { id: "cat:time",          label: "Time",        shortLabel: "Time",     color: "bg-gradient-to-r from-yellow-500 to-amber-500" },
-  { id: "cat:hr",            label: "HR",          shortLabel: "HR",       color: "bg-gradient-to-r from-teal-500 to-cyan-500" },
-  { id: "cat:roles",         label: "Roles",       shortLabel: "Roles",    color: "bg-gradient-to-r from-slate-500 to-gray-500" },
+  { id: "all",                   label: "All Office",     shortLabel: "All",     color: "bg-gradient-to-r from-purple-500 to-pink-500" },
+  { id: "cat:verbs",             label: "Verbs",          shortLabel: "Verbs",   color: "bg-gradient-to-r from-blue-500 to-cyan-500" },
+  { id: "cat:meetings",          label: "Meetings",       shortLabel: "Mtgs",    color: "bg-gradient-to-r from-emerald-500 to-teal-500" },
+  { id: "cat:project",           label: "Project",        shortLabel: "Proj",    color: "bg-gradient-to-r from-violet-500 to-purple-500" },
+  { id: "cat:incident",          label: "Incident",       shortLabel: "Inc",     color: "bg-gradient-to-r from-red-500 to-rose-500" },
+  { id: "cat:status",            label: "Status",         shortLabel: "Status",  color: "bg-gradient-to-r from-orange-500 to-amber-500" },
+  { id: "cat:keigo",             label: "Keigo",          shortLabel: "Keigo",   color: "bg-gradient-to-r from-pink-500 to-fuchsia-500" },
+  { id: "cat:tech",              label: "Tech",           shortLabel: "Tech",    color: "bg-gradient-to-r from-indigo-500 to-blue-500" },
+  { id: "cat:time",              label: "Time",           shortLabel: "Time",    color: "bg-gradient-to-r from-yellow-500 to-amber-500" },
+  { id: "cat:hr",                label: "HR",             shortLabel: "HR",      color: "bg-gradient-to-r from-teal-500 to-cyan-500" },
+  { id: "cat:roles",             label: "Roles",          shortLabel: "Roles",   color: "bg-gradient-to-r from-slate-500 to-gray-500" },
+  { id: "cat:communication",     label: "Communication",  shortLabel: "Comms",   color: "bg-gradient-to-r from-cyan-500 to-sky-500" },
+  { id: "cat:documents",         label: "Documents",      shortLabel: "Docs",    color: "bg-gradient-to-r from-stone-500 to-neutral-500" },
 ]
 
 const CONTEXT_TAGS = [

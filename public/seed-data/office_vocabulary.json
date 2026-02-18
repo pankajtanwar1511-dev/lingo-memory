@@ -1,786 +1,4326 @@
 {
-  "version": "1.1",
-  "description": "Office & workplace Japanese vocabulary — 60 core entries",
+  "version": "1.2",
+  "description": "Office & workplace Japanese vocabulary — 148 entries",
   "entries": [
     {
       "id": "office-001",
       "kanji": "確認する",
       "kana": "かくにんする",
       "romaji": "kakunin suru",
-      "meaning": ["to confirm", "to check", "to verify"],
+      "meaning": [
+        "to confirm",
+        "to check",
+        "to verify"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["verb"],
-      "tags": ["active", "tier:S", "ctx:standup", "ctx:email", "ctx:meeting", "cat:verbs"],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:email",
+        "ctx:meeting",
+        "cat:verbs"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-002",
       "kanji": "連絡する",
       "kana": "れんらくする",
       "romaji": "renraku suru",
-      "meaning": ["to contact", "to inform", "to communicate"],
+      "meaning": [
+        "to contact",
+        "to inform",
+        "to communicate"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["verb"],
-      "tags": ["active", "tier:S", "ctx:email", "ctx:standup", "cat:verbs"],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:email",
+        "ctx:standup",
+        "cat:verbs"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-003",
       "kanji": "進捗",
       "kana": "しんちょく",
       "romaji": "shinchoku",
-      "meaning": ["progress", "advancement"],
+      "meaning": [
+        "progress",
+        "advancement"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:S", "ctx:standup", "ctx:meeting", "cat:project"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:project"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-004",
       "kanji": "締め切り",
       "kana": "しめきり",
       "romaji": "shimekiri",
-      "meaning": ["deadline", "closing date"],
+      "meaning": [
+        "deadline",
+        "closing date"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:S", "ctx:standup", "ctx:email", "cat:time"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:email",
+        "cat:time"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-005",
       "kanji": "課題",
       "kana": "かだい",
       "romaji": "kadai",
-      "meaning": ["issue", "challenge", "action item", "problem"],
+      "meaning": [
+        "issue",
+        "challenge",
+        "action item",
+        "problem"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:S", "ctx:standup", "ctx:meeting", "cat:project"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:project"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-006",
       "kanji": "対応中",
       "kana": "たいおうちゅう",
       "romaji": "taiou chuu",
-      "meaning": ["currently handling", "in progress", "being dealt with"],
+      "meaning": [
+        "currently handling",
+        "in progress",
+        "being dealt with"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["expression", "status word"],
-      "tags": ["active", "tier:S", "ctx:standup", "ctx:incident", "cat:status"],
+      "partOfSpeech": [
+        "expression",
+        "status word"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:incident",
+        "cat:status"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-007",
       "kanji": "資料",
       "kana": "しりょう",
       "romaji": "shiryou",
-      "meaning": ["materials", "reference documents", "data"],
+      "meaning": [
+        "materials",
+        "reference documents",
+        "data"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:S", "ctx:meeting", "ctx:email", "cat:documents"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:meeting",
+        "ctx:email",
+        "cat:documents"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-008",
       "kanji": "障害",
       "kana": "しょうがい",
       "romaji": "shougai",
-      "meaning": ["system failure", "outage", "incident"],
+      "meaning": [
+        "system failure",
+        "outage",
+        "incident"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:incident", "ctx:standup", "cat:incident"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:incident",
+        "ctx:standup",
+        "cat:incident"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-009",
       "kanji": "お疲れ様です",
       "kana": "おつかれさまです",
       "romaji": "otsukaresama desu",
-      "meaning": ["good work", "thanks for your hard work", "hello / goodbye (workplace)"],
+      "meaning": [
+        "good work",
+        "thanks for your hard work",
+        "hello / goodbye (workplace)"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["phrase", "greeting"],
-      "tags": ["active", "tier:S", "ctx:standup", "ctx:email", "ctx:meeting", "cat:keigo"],
+      "partOfSpeech": [
+        "phrase",
+        "greeting"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:email",
+        "ctx:meeting",
+        "cat:keigo"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-010",
       "kanji": "よろしくお願いいたします",
       "kana": "よろしくおねがいいたします",
       "romaji": "yoroshiku onegai itashimasu",
-      "meaning": ["please take care of this", "thank you in advance", "best regards"],
+      "meaning": [
+        "please take care of this",
+        "thank you in advance",
+        "best regards"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["phrase", "keigo"],
-      "tags": ["active", "tier:S", "ctx:email", "ctx:standup", "ctx:meeting", "cat:keigo"],
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:email",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:keigo"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-011",
       "kanji": "共有する",
       "kana": "きょうゆうする",
       "romaji": "kyouyuu suru",
-      "meaning": ["to share", "to share information or files"],
+      "meaning": [
+        "to share",
+        "to share information or files"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["verb"],
-      "tags": ["active", "tier:S", "ctx:standup", "ctx:meeting", "ctx:email", "cat:verbs"],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:meeting",
+        "ctx:email",
+        "cat:verbs"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-012",
       "kanji": "対応する",
       "kana": "たいおうする",
       "romaji": "taiou suru",
-      "meaning": ["to handle", "to deal with", "to respond to"],
+      "meaning": [
+        "to handle",
+        "to deal with",
+        "to respond to"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["verb"],
-      "tags": ["active", "tier:S", "ctx:incident", "ctx:standup", "ctx:email", "cat:verbs"],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:incident",
+        "ctx:standup",
+        "ctx:email",
+        "cat:verbs"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-013",
       "kanji": "説明する",
       "kana": "せつめいする",
       "romaji": "setsumei suru",
-      "meaning": ["to explain", "to describe"],
+      "meaning": [
+        "to explain",
+        "to describe"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["verb"],
-      "tags": ["active", "tier:S", "ctx:standup", "ctx:meeting", "cat:verbs"],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:verbs"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-014",
       "kanji": "返信する",
       "kana": "へんしんする",
       "romaji": "henshin suru",
-      "meaning": ["to reply", "to respond (email / message)"],
+      "meaning": [
+        "to reply",
+        "to respond (email / message)"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["verb"],
-      "tags": ["active", "tier:S", "ctx:email", "cat:verbs"],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:email",
+        "cat:verbs"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-015",
       "kanji": "報告する",
       "kana": "ほうこくする",
       "romaji": "houkoku suru",
-      "meaning": ["to report", "to brief"],
+      "meaning": [
+        "to report",
+        "to brief"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["verb"],
-      "tags": ["active", "tier:A", "ctx:standup", "ctx:email", "cat:verbs"],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:email",
+        "cat:verbs"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-016",
       "kanji": "相談する",
       "kana": "そうだんする",
       "romaji": "soudan suru",
-      "meaning": ["to consult", "to discuss", "to ask for advice"],
+      "meaning": [
+        "to consult",
+        "to discuss",
+        "to ask for advice"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["verb"],
-      "tags": ["active", "tier:A", "ctx:1on1", "ctx:standup", "cat:verbs"],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:1on1",
+        "ctx:standup",
+        "cat:verbs"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-017",
       "kanji": "修正する",
       "kana": "しゅうせいする",
       "romaji": "shuusei suru",
-      "meaning": ["to revise", "to correct", "to fix"],
+      "meaning": [
+        "to revise",
+        "to correct",
+        "to fix"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["verb"],
-      "tags": ["active", "tier:A", "ctx:standup", "ctx:email", "cat:verbs"],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:email",
+        "cat:verbs"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-018",
       "kanji": "承認する",
       "kana": "しょうにんする",
       "romaji": "shounin suru",
-      "meaning": ["to approve", "to authorize"],
+      "meaning": [
+        "to approve",
+        "to authorize"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["verb"],
-      "tags": ["active", "tier:A", "ctx:meeting", "ctx:email", "cat:verbs"],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:meeting",
+        "ctx:email",
+        "cat:verbs"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-019",
       "kanji": "会議",
       "kana": "かいぎ",
       "romaji": "kaigi",
-      "meaning": ["meeting", "conference (formal)"],
+      "meaning": [
+        "meeting",
+        "conference (formal)"
+      ],
       "jlptLevel": "N4",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:S", "ctx:meeting", "cat:meetings"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:meeting",
+        "cat:meetings"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-020",
       "kanji": "ミーティング",
       "kana": "ミーティング",
       "romaji": "miitingu",
-      "meaning": ["meeting (casual)", "team meeting"],
+      "meaning": [
+        "meeting (casual)",
+        "team meeting"
+      ],
       "jlptLevel": "N4",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:S", "ctx:standup", "ctx:1on1", "cat:meetings"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:1on1",
+        "cat:meetings"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-021",
       "kanji": "打ち合わせ",
       "kana": "うちあわせ",
       "romaji": "uchiawase",
-      "meaning": ["preliminary briefing", "sync meeting", "informal discussion"],
+      "meaning": [
+        "preliminary briefing",
+        "sync meeting",
+        "informal discussion"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:meeting", "ctx:client", "cat:meetings"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:meeting",
+        "ctx:client",
+        "cat:meetings"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-022",
       "kanji": "議事録",
       "kana": "ぎじろく",
       "romaji": "gijiroku",
-      "meaning": ["meeting minutes", "meeting notes"],
+      "meaning": [
+        "meeting minutes",
+        "meeting notes"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:meeting", "cat:meetings"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:meeting",
+        "cat:meetings"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-023",
       "kanji": "提案",
       "kana": "ていあん",
       "romaji": "teian",
-      "meaning": ["proposal", "suggestion"],
+      "meaning": [
+        "proposal",
+        "suggestion"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:meeting", "ctx:client", "cat:meetings"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:meeting",
+        "ctx:client",
+        "cat:meetings"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-024",
       "kanji": "フィードバック",
       "kana": "フィードバック",
       "romaji": "fiidorakku",
-      "meaning": ["feedback"],
+      "meaning": [
+        "feedback"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:1on1", "ctx:meeting", "cat:meetings"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:1on1",
+        "ctx:meeting",
+        "cat:meetings"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-025",
       "kanji": "進捗確認",
       "kana": "しんちょくかくにん",
       "romaji": "shinchoku kakunin",
-      "meaning": ["progress check", "status check"],
+      "meaning": [
+        "progress check",
+        "status check"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun", "expression"],
-      "tags": ["active", "tier:S", "ctx:standup", "cat:meetings"],
+      "partOfSpeech": [
+        "noun",
+        "expression"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "cat:meetings"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-026",
       "kanji": "報告",
       "kana": "ほうこく",
       "romaji": "houkoku",
-      "meaning": ["report", "briefing", "update"],
+      "meaning": [
+        "report",
+        "briefing",
+        "update"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:S", "ctx:standup", "cat:meetings"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "cat:meetings"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-027",
       "kanji": "プロジェクト",
       "kana": "プロジェクト",
       "romaji": "purojekuto",
-      "meaning": ["project"],
+      "meaning": [
+        "project"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:S", "ctx:standup", "ctx:meeting", "cat:project"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:project"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-028",
       "kanji": "タスク",
       "kana": "タスク",
       "romaji": "tasuku",
-      "meaning": ["task", "to-do item"],
+      "meaning": [
+        "task",
+        "to-do item"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:S", "ctx:standup", "cat:project"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "cat:project"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-029",
       "kanji": "優先順位",
       "kana": "ゆうせんじゅんい",
       "romaji": "yuusen jun'i",
-      "meaning": ["priority", "order of priority"],
+      "meaning": [
+        "priority",
+        "order of priority"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:standup", "ctx:meeting", "cat:project"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:project"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-030",
       "kanji": "期日",
       "kana": "きじつ",
       "romaji": "kijitsu",
-      "meaning": ["due date", "deadline"],
+      "meaning": [
+        "due date",
+        "deadline"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:standup", "ctx:email", "ctx:client", "cat:project"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:email",
+        "ctx:client",
+        "cat:project"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-031",
       "kanji": "工数",
       "kana": "こうすう",
       "romaji": "kousuu",
-      "meaning": ["man-hours", "work effort", "engineering effort"],
+      "meaning": [
+        "man-hours",
+        "work effort",
+        "engineering effort"
+      ],
       "jlptLevel": "N2",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:standup", "ctx:meeting", "cat:project"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:project"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-032",
       "kanji": "実装",
       "kana": "じっそう",
       "romaji": "jissou",
-      "meaning": ["implementation", "coding / building a feature"],
+      "meaning": [
+        "implementation",
+        "coding / building a feature"
+      ],
       "jlptLevel": "N2",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:standup", "cat:project"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "cat:project"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-033",
       "kanji": "リリース",
       "kana": "リリース",
       "romaji": "ririiisu",
-      "meaning": ["release", "product launch"],
+      "meaning": [
+        "release",
+        "product launch"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:standup", "ctx:meeting", "cat:project"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:project"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-034",
       "kanji": "対策",
       "kana": "たいさく",
       "romaji": "taisaku",
-      "meaning": ["countermeasure", "solution", "action plan"],
+      "meaning": [
+        "countermeasure",
+        "solution",
+        "action plan"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:incident", "ctx:meeting", "cat:project"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:incident",
+        "ctx:meeting",
+        "cat:project"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-035",
       "kanji": "スケジュール",
       "kana": "スケジュール",
       "romaji": "sukejuuru",
-      "meaning": ["schedule", "timeline"],
+      "meaning": [
+        "schedule",
+        "timeline"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:S", "ctx:standup", "ctx:meeting", "cat:time"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:time"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-036",
       "kanji": "予定",
       "kana": "よてい",
       "romaji": "yotei",
-      "meaning": ["plan", "schedule", "appointment"],
+      "meaning": [
+        "plan",
+        "schedule",
+        "appointment"
+      ],
       "jlptLevel": "N4",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:S", "ctx:standup", "cat:time"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "cat:time"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-037",
       "kanji": "期限",
       "kana": "きげん",
       "romaji": "kigen",
-      "meaning": ["time limit", "deadline", "expiry"],
+      "meaning": [
+        "time limit",
+        "deadline",
+        "expiry"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:email", "ctx:standup", "cat:time"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:email",
+        "ctx:standup",
+        "cat:time"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-038",
       "kanji": "週次",
       "kana": "しゅうじ",
       "romaji": "shuuji",
-      "meaning": ["weekly", "on a weekly basis"],
+      "meaning": [
+        "weekly",
+        "on a weekly basis"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun", "adverb"],
-      "tags": ["active", "tier:A", "ctx:standup", "ctx:meeting", "cat:time"],
+      "partOfSpeech": [
+        "noun",
+        "adverb"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:time"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-039",
       "kanji": "発生",
       "kana": "はっせい",
       "romaji": "hassei",
-      "meaning": ["occurrence", "onset", "something has happened"],
+      "meaning": [
+        "occurrence",
+        "onset",
+        "something has happened"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:S", "ctx:incident", "cat:incident"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:incident",
+        "cat:incident"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-040",
       "kanji": "原因",
       "kana": "げんいん",
       "romaji": "gen'in",
-      "meaning": ["cause", "root cause"],
+      "meaning": [
+        "cause",
+        "root cause"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:S", "ctx:incident", "cat:incident"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:incident",
+        "cat:incident"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-041",
       "kanji": "復旧",
       "kana": "ふっきゅう",
       "romaji": "fukkyuu",
-      "meaning": ["recovery", "restoration", "system back up"],
+      "meaning": [
+        "recovery",
+        "restoration",
+        "system back up"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:S", "ctx:incident", "cat:incident"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:incident",
+        "cat:incident"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-042",
       "kanji": "不具合",
       "kana": "ふぐあい",
       "romaji": "fuguai",
-      "meaning": ["defect", "malfunction", "bug", "something is broken"],
+      "meaning": [
+        "defect",
+        "malfunction",
+        "bug",
+        "something is broken"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:incident", "ctx:standup", "cat:incident"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:incident",
+        "ctx:standup",
+        "cat:incident"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-043",
       "kanji": "影響範囲",
       "kana": "えいきょうはんい",
       "romaji": "eikyou han'i",
-      "meaning": ["scope of impact", "blast radius", "affected range"],
+      "meaning": [
+        "scope of impact",
+        "blast radius",
+        "affected range"
+      ],
       "jlptLevel": "N2",
-      "partOfSpeech": ["noun", "expression"],
-      "tags": ["active", "tier:A", "ctx:incident", "cat:incident"],
+      "partOfSpeech": [
+        "noun",
+        "expression"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:incident",
+        "cat:incident"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-044",
       "kanji": "再発防止",
       "kana": "さいはつぼうし",
       "romaji": "saihatsu boushi",
-      "meaning": ["preventing recurrence", "post-incident prevention"],
+      "meaning": [
+        "preventing recurrence",
+        "post-incident prevention"
+      ],
       "jlptLevel": "N2",
-      "partOfSpeech": ["noun", "expression"],
-      "tags": ["active", "tier:A", "ctx:incident", "cat:incident"],
+      "partOfSpeech": [
+        "noun",
+        "expression"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:incident",
+        "cat:incident"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-045",
       "kanji": "完了",
       "kana": "かんりょう",
       "romaji": "kanryou",
-      "meaning": ["completed", "done", "finished"],
+      "meaning": [
+        "completed",
+        "done",
+        "finished"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun", "status word"],
-      "tags": ["active", "tier:S", "ctx:standup", "ctx:email", "cat:status"],
+      "partOfSpeech": [
+        "noun",
+        "status word"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:email",
+        "cat:status"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-046",
       "kanji": "現状",
       "kana": "げんじょう",
       "romaji": "genjou",
-      "meaning": ["current situation", "current state", "status quo"],
+      "meaning": [
+        "current situation",
+        "current state",
+        "status quo"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:standup", "ctx:meeting", "cat:status"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:status"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-047",
       "kanji": "遅延",
       "kana": "ちえん",
       "romaji": "chien",
-      "meaning": ["delay", "postponement"],
+      "meaning": [
+        "delay",
+        "postponement"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:standup", "ctx:incident", "cat:status"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:incident",
+        "cat:status"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-048",
       "kanji": "調査中",
       "kana": "ちょうさちゅう",
       "romaji": "chousa chuu",
-      "meaning": ["under investigation", "being investigated"],
+      "meaning": [
+        "under investigation",
+        "being investigated"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["expression", "status word"],
-      "tags": ["active", "tier:S", "ctx:incident", "ctx:standup", "cat:status"],
+      "partOfSpeech": [
+        "expression",
+        "status word"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:incident",
+        "ctx:standup",
+        "cat:status"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-049",
       "kanji": "メール",
       "kana": "メール",
       "romaji": "meeru",
-      "meaning": ["email", "message"],
+      "meaning": [
+        "email",
+        "message"
+      ],
       "jlptLevel": "N4",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:S", "ctx:email", "cat:communication"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:email",
+        "cat:communication"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-050",
       "kanji": "返信",
       "kana": "へんしん",
       "romaji": "henshin",
-      "meaning": ["reply", "response (to email / message)"],
+      "meaning": [
+        "reply",
+        "response (to email / message)"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:S", "ctx:email", "cat:communication"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:email",
+        "cat:communication"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-051",
       "kanji": "お世話になっております",
       "kana": "おせわになっております",
       "romaji": "osewa ni natte orimasu",
-      "meaning": ["thank you for your continued support", "standard business email opener"],
+      "meaning": [
+        "thank you for your continued support",
+        "standard business email opener"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["phrase", "keigo"],
-      "tags": ["active", "tier:S", "ctx:email", "ctx:client", "cat:keigo"],
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:email",
+        "ctx:client",
+        "cat:keigo"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-052",
       "kanji": "承知いたしました",
       "kana": "しょうちいたしました",
       "romaji": "shouchi itashimashita",
-      "meaning": ["understood", "I understand (formal)", "I'll take care of it"],
+      "meaning": [
+        "understood",
+        "I understand (formal)",
+        "I'll take care of it"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["phrase", "keigo"],
-      "tags": ["active", "tier:A", "ctx:email", "ctx:meeting", "cat:keigo"],
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:email",
+        "ctx:meeting",
+        "cat:keigo"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-053",
       "kanji": "了解です",
       "kana": "りょうかいです",
       "romaji": "ryoukai desu",
-      "meaning": ["got it", "understood (casual)", "roger"],
+      "meaning": [
+        "got it",
+        "understood (casual)",
+        "roger"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["phrase"],
-      "tags": ["active", "tier:S", "ctx:standup", "ctx:email", "cat:keigo"],
+      "partOfSpeech": [
+        "phrase"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:email",
+        "cat:keigo"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-054",
       "kanji": "申し訳ございません",
       "kana": "もうしわけございません",
       "romaji": "moushiwake gozaimasen",
-      "meaning": ["I'm very sorry", "my sincerest apologies (formal)"],
+      "meaning": [
+        "I'm very sorry",
+        "my sincerest apologies (formal)"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["phrase", "keigo"],
-      "tags": ["active", "tier:A", "ctx:incident", "ctx:email", "ctx:client", "cat:keigo"],
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:incident",
+        "ctx:email",
+        "ctx:client",
+        "cat:keigo"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-055",
       "kanji": "有給",
       "kana": "ゆうきゅう",
       "romaji": "yuukyuu",
-      "meaning": ["paid leave", "paid vacation (short form)"],
+      "meaning": [
+        "paid leave",
+        "paid vacation (short form)"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:hr", "cat:hr"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:hr",
+        "cat:hr"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-056",
       "kanji": "在宅",
       "kana": "ざいたく",
       "romaji": "zaitaku",
-      "meaning": ["working from home", "remote work"],
+      "meaning": [
+        "working from home",
+        "remote work"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:hr", "ctx:standup", "cat:hr"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:hr",
+        "ctx:standup",
+        "cat:hr"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-057",
       "kanji": "欠勤",
       "kana": "けっきん",
       "romaji": "kekkin",
-      "meaning": ["absence from work", "being absent"],
+      "meaning": [
+        "absence from work",
+        "being absent"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:B", "ctx:hr", "cat:hr"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:B",
+        "ctx:hr",
+        "cat:hr"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-058",
       "kanji": "上司",
       "kana": "じょうし",
       "romaji": "joushi",
-      "meaning": ["boss", "superior", "anyone above you"],
+      "meaning": [
+        "boss",
+        "superior",
+        "anyone above you"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:1on1", "ctx:standup", "cat:roles"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:1on1",
+        "ctx:standup",
+        "cat:roles"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-059",
       "kanji": "担当者",
       "kana": "たんとうしゃ",
       "romaji": "tantousha",
-      "meaning": ["person in charge", "the responsible person"],
+      "meaning": [
+        "person in charge",
+        "the responsible person"
+      ],
       "jlptLevel": "N3",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:email", "ctx:meeting", "cat:roles"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:email",
+        "ctx:meeting",
+        "cat:roles"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
     },
     {
       "id": "office-060",
       "kanji": "先輩",
       "kana": "せんぱい",
       "romaji": "senpai",
-      "meaning": ["senior colleague", "someone who joined before you"],
+      "meaning": [
+        "senior colleague",
+        "someone who joined before you"
+      ],
       "jlptLevel": "N4",
-      "partOfSpeech": ["noun"],
-      "tags": ["active", "tier:A", "ctx:standup", "cat:roles"],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "cat:roles"
+      ],
       "examples": [],
-      "source": { "type": "custom" },
-      "license": { "text": "Custom", "url": "" }
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      }
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-061",
+      "kanji": "依頼する",
+      "kana": "いらいする",
+      "romaji": "irai suru",
+      "meaning": [
+        "to request",
+        "to ask someone to do"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:email",
+        "ctx:meeting",
+        "cat:verbs"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-062",
+      "kanji": "レビューする",
+      "kana": "レビューする",
+      "romaji": "rebyū suru",
+      "meaning": [
+        "to review",
+        "to do a code or design review"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:verbs"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-063",
+      "kanji": "検討する",
+      "kana": "けんとうする",
+      "romaji": "kentō suru",
+      "meaning": [
+        "to consider",
+        "to examine",
+        "to deliberate"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:meeting",
+        "ctx:email",
+        "cat:verbs"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-064",
+      "kanji": "実施する",
+      "kana": "じっしする",
+      "romaji": "jisshi suru",
+      "meaning": [
+        "to carry out",
+        "to implement",
+        "to execute"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:verbs"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-065",
+      "kanji": "更新する",
+      "kana": "こうしんする",
+      "romaji": "kōshin suru",
+      "meaning": [
+        "to update",
+        "to renew",
+        "to refresh"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:email",
+        "cat:verbs"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-066",
+      "kanji": "確定する",
+      "kana": "かくていする",
+      "romaji": "kakutei suru",
+      "meaning": [
+        "to finalize",
+        "to confirm",
+        "to decide"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:meeting",
+        "ctx:email",
+        "cat:verbs"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-067",
+      "kanji": "把握する",
+      "kana": "はあくする",
+      "romaji": "haaku suru",
+      "meaning": [
+        "to grasp",
+        "to understand fully",
+        "to be aware of"
+      ],
+      "jlptLevel": "N2",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:meeting",
+        "ctx:standup",
+        "cat:verbs"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-068",
+      "kanji": "デプロイする",
+      "kana": "デプロイする",
+      "romaji": "depuroi suru",
+      "meaning": [
+        "to deploy",
+        "to push to production"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:incident",
+        "cat:verbs"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-069",
+      "kanji": "マージする",
+      "kana": "マージする",
+      "romaji": "māji suru",
+      "meaning": [
+        "to merge",
+        "to merge code branches"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "cat:verbs"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-070",
+      "kanji": "割り当てる",
+      "kana": "わりあてる",
+      "romaji": "wari-ateru",
+      "meaning": [
+        "to assign",
+        "to allocate",
+        "to delegate"
+      ],
+      "jlptLevel": "N2",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:meeting",
+        "ctx:standup",
+        "cat:verbs"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-071",
+      "kanji": "準備する",
+      "kana": "じゅんびする",
+      "romaji": "junbi suru",
+      "meaning": [
+        "to prepare",
+        "to get ready"
+      ],
+      "jlptLevel": "N4",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:verbs"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-072",
+      "kanji": "まとめる",
+      "kana": "まとめる",
+      "romaji": "matomeru",
+      "meaning": [
+        "to summarize",
+        "to compile",
+        "to wrap up"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:meeting",
+        "ctx:email",
+        "cat:verbs"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-073",
+      "kanji": "作成する",
+      "kana": "さくせいする",
+      "romaji": "sakusei suru",
+      "meaning": [
+        "to create",
+        "to write up",
+        "to produce a document"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:email",
+        "ctx:meeting",
+        "cat:verbs"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-074",
+      "kanji": "手配する",
+      "kana": "てはいする",
+      "romaji": "tehai suru",
+      "meaning": [
+        "to arrange",
+        "to coordinate",
+        "to set up"
+      ],
+      "jlptLevel": "N2",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:B",
+        "ctx:email",
+        "ctx:meeting",
+        "cat:verbs"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-075",
+      "kanji": "提出する",
+      "kana": "ていしゅつする",
+      "romaji": "teishutsu suru",
+      "meaning": [
+        "to submit",
+        "to hand in",
+        "to file"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:email",
+        "ctx:meeting",
+        "cat:verbs"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-076",
+      "kanji": "アジェンダ",
+      "kana": "アジェンダ",
+      "romaji": "ajenda",
+      "meaning": [
+        "agenda",
+        "meeting agenda"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:meeting",
+        "cat:meetings"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-077",
+      "kanji": "確認事項",
+      "kana": "かくにんじこう",
+      "romaji": "kakunin jikō",
+      "meaning": [
+        "items to confirm",
+        "confirmation points"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:meeting",
+        "cat:meetings"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-078",
+      "kanji": "決定事項",
+      "kana": "けっていじこう",
+      "romaji": "kettei jikō",
+      "meaning": [
+        "decisions made",
+        "action decisions"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:meeting",
+        "cat:meetings"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-079",
+      "kanji": "アクションアイテム",
+      "kana": "アクションアイテム",
+      "romaji": "akushon aitemu",
+      "meaning": [
+        "action item",
+        "next action",
+        "follow-up task"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:meeting",
+        "ctx:standup",
+        "cat:meetings"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-080",
+      "kanji": "参加者",
+      "kana": "さんかしゃ",
+      "romaji": "sankasha",
+      "meaning": [
+        "participants",
+        "attendees"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:B",
+        "ctx:meeting",
+        "cat:meetings"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-081",
+      "kanji": "オンライン会議",
+      "kana": "オンラインかいぎ",
+      "romaji": "onrain kaigi",
+      "meaning": [
+        "online meeting",
+        "virtual meeting",
+        "video call"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:meeting",
+        "cat:meetings"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-082",
+      "kanji": "議題",
+      "kana": "ぎだい",
+      "romaji": "gidai",
+      "meaning": [
+        "agenda item",
+        "topic for discussion"
+      ],
+      "jlptLevel": "N2",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:meeting",
+        "cat:meetings"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-083",
+      "kanji": "司会",
+      "kana": "しかい",
+      "romaji": "shikai",
+      "meaning": [
+        "meeting moderator",
+        "chairperson",
+        "facilitator"
+      ],
+      "jlptLevel": "N2",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:B",
+        "ctx:meeting",
+        "cat:meetings"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-084",
+      "kanji": "マイルストーン",
+      "kana": "マイルストーン",
+      "romaji": "mairustōn",
+      "meaning": [
+        "milestone",
+        "project milestone"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:project"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-085",
+      "kanji": "バックログ",
+      "kana": "バックログ",
+      "romaji": "bakkurogu",
+      "meaning": [
+        "backlog",
+        "task backlog"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:project"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-086",
+      "kanji": "要件",
+      "kana": "ようけん",
+      "romaji": "yōken",
+      "meaning": [
+        "requirements",
+        "functional requirements"
+      ],
+      "jlptLevel": "N2",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:meeting",
+        "cat:project"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-087",
+      "kanji": "見積もり",
+      "kana": "みつもり",
+      "romaji": "mitsumori",
+      "meaning": [
+        "estimate",
+        "effort estimate",
+        "cost estimate"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:meeting",
+        "ctx:client",
+        "cat:project"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-088",
+      "kanji": "ブロッカー",
+      "kana": "ブロッカー",
+      "romaji": "burokkā",
+      "meaning": [
+        "blocker",
+        "blocking issue"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "cat:project"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-089",
+      "kanji": "品質",
+      "kana": "ひんしつ",
+      "romaji": "hinshitsu",
+      "meaning": [
+        "quality",
+        "quality level"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:A",
+        "ctx:meeting",
+        "cat:project"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-090",
+      "kanji": "仕様",
+      "kana": "しよう",
+      "romaji": "shiyō",
+      "meaning": [
+        "specification",
+        "spec"
+      ],
+      "jlptLevel": "N2",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:meeting",
+        "cat:project"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-091",
+      "kanji": "成果物",
+      "kana": "せいかぶつ",
+      "romaji": "seika butsu",
+      "meaning": [
+        "deliverable",
+        "output",
+        "work product"
+      ],
+      "jlptLevel": "N2",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:B",
+        "ctx:meeting",
+        "ctx:client",
+        "cat:project"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-092",
+      "kanji": "エスカレーション",
+      "kana": "エスカレーション",
+      "romaji": "esukarēshon",
+      "meaning": [
+        "escalation"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:incident",
+        "cat:incident"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-093",
+      "kanji": "暫定対応",
+      "kana": "ざんていたいおう",
+      "romaji": "zantei taiō",
+      "meaning": [
+        "temporary fix",
+        "workaround",
+        "interim measure"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun",
+        "expression"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:incident",
+        "cat:incident"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-094",
+      "kanji": "根本原因",
+      "kana": "こんぽんげんいん",
+      "romaji": "konpon gen'in",
+      "meaning": [
+        "root cause",
+        "fundamental cause"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:incident",
+        "cat:incident"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-095",
+      "kanji": "深刻度",
+      "kana": "しんこくど",
+      "romaji": "shinkokudo",
+      "meaning": [
+        "severity",
+        "level of seriousness"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:incident",
+        "cat:incident"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-096",
+      "kanji": "監視",
+      "kana": "かんし",
+      "romaji": "kanshi",
+      "meaning": [
+        "monitoring",
+        "system monitoring"
+      ],
+      "jlptLevel": "N2",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:A",
+        "ctx:incident",
+        "ctx:standup",
+        "cat:incident"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-097",
+      "kanji": "未対応",
+      "kana": "みたいおう",
+      "romaji": "mi-taiō",
+      "meaning": [
+        "not yet handled",
+        "pending",
+        "unaddressed"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun",
+        "expression"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:status"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-098",
+      "kanji": "保留",
+      "kana": "ほりゅう",
+      "romaji": "horyū",
+      "meaning": [
+        "on hold",
+        "pending",
+        "deferred"
+      ],
+      "jlptLevel": "N2",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:email",
+        "cat:status"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-099",
+      "kanji": "優先",
+      "kana": "ゆうせん",
+      "romaji": "yūsen",
+      "meaning": [
+        "priority",
+        "high priority",
+        "prioritized"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:status"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-100",
+      "kanji": "対応済み",
+      "kana": "たいおうずみ",
+      "romaji": "taiō zumi",
+      "meaning": [
+        "already handled",
+        "resolved",
+        "addressed"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun",
+        "expression"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:email",
+        "cat:status"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-101",
+      "kanji": "確認済み",
+      "kana": "かくにんずみ",
+      "romaji": "kakunin zumi",
+      "meaning": [
+        "confirmed",
+        "already verified",
+        "checked"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun",
+        "expression"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:email",
+        "cat:status"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-102",
+      "kanji": "ご確認ください",
+      "kana": "ごかくにんください",
+      "romaji": "go-kakunin kudasai",
+      "meaning": [
+        "please check",
+        "please confirm"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:email",
+        "ctx:meeting",
+        "cat:keigo"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-103",
+      "kanji": "お手数をおかけします",
+      "kana": "おてすうをおかけします",
+      "romaji": "otesū wo okake shimasu",
+      "meaning": [
+        "sorry for the trouble",
+        "sorry to bother you"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:email",
+        "cat:keigo"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-104",
+      "kanji": "ご対応よろしくお願いします",
+      "kana": "ごたいおうよろしくおねがいします",
+      "romaji": "go-taiō yoroshiku onegai shimasu",
+      "meaning": [
+        "please take care of this",
+        "please handle this"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:email",
+        "ctx:meeting",
+        "cat:keigo"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-105",
+      "kanji": "ご連絡ください",
+      "kana": "ごれんらくください",
+      "romaji": "go-renraku kudasai",
+      "meaning": [
+        "please contact me",
+        "please let me know"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:email",
+        "cat:keigo"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-106",
+      "kanji": "ご検討ください",
+      "kana": "ごけんとうください",
+      "romaji": "go-kentō kudasai",
+      "meaning": [
+        "please consider",
+        "please review",
+        "please look into this"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:email",
+        "ctx:client",
+        "cat:keigo"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-107",
+      "kanji": "お伝えします",
+      "kana": "おつたえします",
+      "romaji": "otsutae shimasu",
+      "meaning": [
+        "I will let them know",
+        "I'll pass the message along"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "phrase",
+        "keigo"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:email",
+        "ctx:meeting",
+        "cat:keigo"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-108",
+      "kanji": "本日",
+      "kana": "ほんじつ",
+      "romaji": "honjitsu",
+      "meaning": [
+        "today (formal)",
+        "this day"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:email",
+        "cat:time"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-109",
+      "kanji": "来週",
+      "kana": "らいしゅう",
+      "romaji": "raishū",
+      "meaning": [
+        "next week"
+      ],
+      "jlptLevel": "N4",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:email",
+        "cat:time"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-110",
+      "kanji": "月次",
+      "kana": "げつじ",
+      "romaji": "getsuji",
+      "meaning": [
+        "monthly",
+        "on a monthly basis"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun",
+        "adverb"
+      ],
+      "tags": [
+        "passive",
+        "tier:B",
+        "ctx:meeting",
+        "cat:time"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-111",
+      "kanji": "早急に",
+      "kana": "そうきゅうに",
+      "romaji": "sōkyū ni",
+      "meaning": [
+        "as soon as possible",
+        "urgently",
+        "ASAP"
+      ],
+      "jlptLevel": "N2",
+      "partOfSpeech": [
+        "adverb"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:email",
+        "ctx:incident",
+        "cat:time"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-112",
+      "kanji": "今週中",
+      "kana": "こんしゅうちゅう",
+      "romaji": "konshū chū",
+      "meaning": [
+        "by end of this week",
+        "within this week"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "expression"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:email",
+        "cat:time"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-113",
+      "kanji": "翌日",
+      "kana": "よくじつ",
+      "romaji": "yokujitsu",
+      "meaning": [
+        "the next day",
+        "following day (formal)"
+      ],
+      "jlptLevel": "N2",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:B",
+        "ctx:email",
+        "cat:time"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-114",
+      "kanji": "出社",
+      "kana": "しゅっしゃ",
+      "romaji": "shussha",
+      "meaning": [
+        "coming to the office",
+        "going to work at the office"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:hr",
+        "ctx:standup",
+        "cat:hr"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-115",
+      "kanji": "早退",
+      "kana": "そうたい",
+      "romaji": "sōtai",
+      "meaning": [
+        "leaving early",
+        "early departure from work"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:B",
+        "ctx:hr",
+        "cat:hr"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-116",
+      "kanji": "遅刻",
+      "kana": "ちこく",
+      "romaji": "chikoku",
+      "meaning": [
+        "late arrival",
+        "being late",
+        "tardiness"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:hr",
+        "cat:hr"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-117",
+      "kanji": "代休",
+      "kana": "だいきゅう",
+      "romaji": "daikyū",
+      "meaning": [
+        "compensatory day off",
+        "substitute holiday"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:B",
+        "ctx:hr",
+        "cat:hr"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-118",
+      "kanji": "休暇",
+      "kana": "きゅうか",
+      "romaji": "kyūka",
+      "meaning": [
+        "vacation",
+        "leave of absence",
+        "time off"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:hr",
+        "cat:hr"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-119",
+      "kanji": "社内",
+      "kana": "しゃない",
+      "romaji": "shanai",
+      "meaning": [
+        "internal",
+        "within the company",
+        "in-house"
+      ],
+      "jlptLevel": "N2",
+      "partOfSpeech": [
+        "noun",
+        "prefix"
+      ],
+      "tags": [
+        "passive",
+        "tier:A",
+        "ctx:email",
+        "ctx:meeting",
+        "cat:hr"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-120",
+      "kanji": "後輩",
+      "kana": "こうはい",
+      "romaji": "kōhai",
+      "meaning": [
+        "junior colleague",
+        "someone who joined after you"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:A",
+        "ctx:standup",
+        "cat:roles"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-121",
+      "kanji": "同僚",
+      "kana": "どうりょう",
+      "romaji": "dōryō",
+      "meaning": [
+        "colleague",
+        "coworker"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:A",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:roles"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-122",
+      "kanji": "チームリーダー",
+      "kana": "チームリーダー",
+      "romaji": "chīmu rīdā",
+      "meaning": [
+        "team leader",
+        "tech lead"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:A",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:roles"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-123",
+      "kanji": "メンバー",
+      "kana": "メンバー",
+      "romaji": "menbā",
+      "meaning": [
+        "member",
+        "team member"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:A",
+        "ctx:standup",
+        "cat:roles"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-124",
+      "kanji": "ステークホルダー",
+      "kana": "ステークホルダー",
+      "romaji": "sutēkuhōrudā",
+      "meaning": [
+        "stakeholder",
+        "interested party"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:B",
+        "ctx:meeting",
+        "ctx:client",
+        "cat:roles"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-125",
+      "kanji": "チャット",
+      "kana": "チャット",
+      "romaji": "chatto",
+      "meaning": [
+        "chat",
+        "Slack message",
+        "instant message"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:email",
+        "cat:communication"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-126",
+      "kanji": "スレッド",
+      "kana": "スレッド",
+      "romaji": "sureddo",
+      "meaning": [
+        "thread",
+        "message thread"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:A",
+        "ctx:standup",
+        "cat:communication"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-127",
+      "kanji": "メンション",
+      "kana": "メンション",
+      "romaji": "menshon",
+      "meaning": [
+        "mention",
+        "@mention"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "cat:communication"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-128",
+      "kanji": "周知",
+      "kana": "しゅうち",
+      "romaji": "shūchi",
+      "meaning": [
+        "company-wide notification",
+        "notifying everyone",
+        "announcement"
+      ],
+      "jlptLevel": "N2",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:email",
+        "ctx:meeting",
+        "cat:communication"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-129",
+      "kanji": "添付",
+      "kana": "てんぷ",
+      "romaji": "tenpu",
+      "meaning": [
+        "attachment",
+        "file attachment"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:email",
+        "cat:communication"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-130",
+      "kanji": "件名",
+      "kana": "けんめい",
+      "romaji": "kenmei",
+      "meaning": [
+        "subject line",
+        "email subject"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:email",
+        "cat:communication"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-131",
+      "kanji": "DM",
+      "kana": "DM",
+      "romaji": "DM",
+      "meaning": [
+        "direct message",
+        "private message"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "cat:communication"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-132",
+      "kanji": "仕様書",
+      "kana": "しようしょ",
+      "romaji": "shiyōsho",
+      "meaning": [
+        "specification document",
+        "spec doc"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:A",
+        "ctx:meeting",
+        "cat:documents"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-133",
+      "kanji": "設計書",
+      "kana": "せっけいしょ",
+      "romaji": "sekkeisho",
+      "meaning": [
+        "design document",
+        "design doc"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:B",
+        "ctx:meeting",
+        "cat:documents"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-134",
+      "kanji": "手順書",
+      "kana": "てじゅんしょ",
+      "romaji": "tejunsho",
+      "meaning": [
+        "procedure manual",
+        "runbook",
+        "how-to document"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:B",
+        "ctx:incident",
+        "cat:documents"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-135",
+      "kanji": "報告書",
+      "kana": "ほうこくしょ",
+      "romaji": "hōkokusho",
+      "meaning": [
+        "report document",
+        "written report"
+      ],
+      "jlptLevel": "N2",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:B",
+        "ctx:email",
+        "ctx:meeting",
+        "cat:documents"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-136",
+      "kanji": "テンプレート",
+      "kana": "テンプレート",
+      "romaji": "tenpurēto",
+      "meaning": [
+        "template"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:email",
+        "cat:documents"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-137",
+      "kanji": "バグ",
+      "kana": "バグ",
+      "romaji": "bagu",
+      "meaning": [
+        "bug",
+        "software defect",
+        "error in code"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:incident",
+        "cat:tech"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-138",
+      "kanji": "デプロイ",
+      "kana": "デプロイ",
+      "romaji": "depuroi",
+      "meaning": [
+        "deploy",
+        "deployment",
+        "release to server"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:incident",
+        "cat:tech"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-139",
+      "kanji": "プルリクエスト",
+      "kana": "プルリクエスト",
+      "romaji": "puru rikuesuto",
+      "meaning": [
+        "pull request",
+        "PR"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "cat:tech"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-140",
+      "kanji": "コードレビュー",
+      "kana": "コードレビュー",
+      "romaji": "kōdo rebyū",
+      "meaning": [
+        "code review",
+        "PR review"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:standup",
+        "ctx:meeting",
+        "cat:tech"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-141",
+      "kanji": "本番環境",
+      "kana": "ほんばんかんきょう",
+      "romaji": "honban kankyō",
+      "meaning": [
+        "production environment",
+        "live environment"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:standup",
+        "ctx:incident",
+        "cat:tech"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-142",
+      "kanji": "ステージング",
+      "kana": "ステージング",
+      "romaji": "sutējingu",
+      "meaning": [
+        "staging",
+        "staging environment"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:A",
+        "ctx:standup",
+        "cat:tech"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-143",
+      "kanji": "ログ",
+      "kana": "ログ",
+      "romaji": "rogu",
+      "meaning": [
+        "log",
+        "system log"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:A",
+        "ctx:incident",
+        "ctx:standup",
+        "cat:tech"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-144",
+      "kanji": "エラー",
+      "kana": "エラー",
+      "romaji": "erā",
+      "meaning": [
+        "error",
+        "system error"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "active",
+        "tier:S",
+        "ctx:incident",
+        "ctx:standup",
+        "cat:tech"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-145",
+      "kanji": "環境",
+      "kana": "かんきょう",
+      "romaji": "kankyō",
+      "meaning": [
+        "environment",
+        "dev/staging/production environment"
+      ],
+      "jlptLevel": "N3",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:A",
+        "ctx:standup",
+        "cat:tech"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-146",
+      "kanji": "パフォーマンス",
+      "kana": "パフォーマンス",
+      "romaji": "pafōmansu",
+      "meaning": [
+        "performance",
+        "system performance"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:A",
+        "ctx:incident",
+        "ctx:meeting",
+        "cat:tech"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-147",
+      "kanji": "API",
+      "kana": "API",
+      "romaji": "API",
+      "meaning": [
+        "API",
+        "application programming interface"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:A",
+        "ctx:standup",
+        "ctx:incident",
+        "cat:tech"
+      ]
+    },
+    {
+      "examples": [],
+      "source": {
+        "type": "custom"
+      },
+      "license": {
+        "text": "Custom",
+        "url": ""
+      },
+      "id": "office-148",
+      "kanji": "ダウンタイム",
+      "kana": "ダウンタイム",
+      "romaji": "dauntaimu",
+      "meaning": [
+        "downtime",
+        "system downtime"
+      ],
+      "jlptLevel": "",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "tags": [
+        "passive",
+        "tier:A",
+        "ctx:incident",
+        "cat:tech"
+      ]
     }
   ]
 }

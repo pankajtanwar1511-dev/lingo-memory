@@ -17,7 +17,7 @@ type and generic UI components.
 
 | File | Status | Notes |
 |------|--------|-------|
-| `public/seed-data/office_vocabulary.json` | ✅ Done | 60 vocab entries, 9 categories |
+| `public/seed-data/office_vocabulary.json` | ✅ Done | 148 vocab entries, 13 categories |
 | `public/seed-data/office_scenarios.json` | ✅ Done | 5 situation packs, 32 sentence frames |
 | `src/app/office/page.tsx` | ✅ Done | 4 modes: Cards / Match / Test / List |
 | `src/app/office/scenarios/page.tsx` | ✅ Done | Browse + Drill mode, 5 situations |
@@ -28,19 +28,22 @@ type and generic UI components.
 
 ## Vocabulary Dataset (`office_vocabulary.json`)
 
-**60 entries** across 9 categories:
+**148 entries** across 13 categories:
 
 | Category tag | Count | Examples |
 |---|---|---|
-| `cat:verbs` | 18 | 確認する、報告する、対応する、レビューする |
-| `cat:meetings` | 8 | 議題、議事録、承認、フォローアップ |
-| `cat:project` | 8 | 優先度、スケジュール、マイルストーン、リリース |
-| `cat:time` | 4 | 期限、締め切り、本日、来週 |
-| `cat:incident` | 6 | 障害、影響範囲、暫定対応、復旧 |
-| `cat:status` | 4 | 完了、対応中、遅延、保留 |
-| `cat:keigo` | 6 | お疲れ様です、承知しました、よろしくお願いします |
-| `cat:hr` | 3 | 有給、在宅勤務、欠勤 |
-| `cat:roles` | 3 | エンジニア、マネージャー、チームリーダー |
+| `cat:verbs` | 25 | 確認する、報告する、依頼する、デプロイする、マージする |
+| `cat:meetings` | 16 | 議題、議事録、承認、フォローアップ、アジェンダ |
+| `cat:project` | 18 | 優先度、スケジュール、マイルストーン、リリース、要件 |
+| `cat:incident` | 12 | 障害、影響範囲、暫定対応、復旧、再発防止 |
+| `cat:status` | 10 | 完了、対応中、遅延、保留、未対応、対応済み |
+| `cat:keigo` | 12 | お疲れ様です、承知しました、ご確認ください、お手数をおかけします |
+| `cat:tech` | 12 | バグ、デプロイ、プルリクエスト、コードレビュー、本番環境、API |
+| `cat:time` | 11 | 期限、締め切り、本日、来週、至急、一時間後 |
+| `cat:hr` | 9 | 有給、在宅勤務、欠勤、育児休暇、フレックス |
+| `cat:roles` | 8 | エンジニア、マネージャー、チームリーダー、プロダクトオーナー |
+| `cat:communication` | 9 | 周知する、連絡する、報告する、フォロー、確認取り |
+| `cat:documents` | 6 | 仕様書、設計書、議事録、報告書、手順書 |
 
 ### Tag system
 - **Active/Passive:** `"active"` (produce it) / `"passive"` (recognize it)
@@ -81,7 +84,7 @@ Each frame has: `contextEn`, `japanese`, `kana`, `english`, `register` (neutral 
 
 | Filter | Options |
 |---|---|
-| Category | All / Verbs / Project / Meetings / Incident / Status / Keigo / Time / HR / Docs / Comms / Roles |
+| Category | All / Verbs / Meetings / Project / Incident / Status / Keigo / Tech / Time / HR / Roles / Communication / Documents |
 | Context | All Contexts / Standup / Meeting / Email / Incident / 1-on-1 / HR / Client |
 | Tier | All / S·Daily / A·Weekly / B·Monthly / C·Rare |
 | Mode | All / 🔵 Active / ⚪ Passive |
