@@ -266,7 +266,7 @@
       "example": {
         "japanese": "ご確認のほど、よろしくお願いいたします。",
         "kana": "ごかくにんのほど、よろしくおねがいいたします。",
-        "english": "Please take care of the confirmation."
+        "english": "I would appreciate your confirmation."
       }
     },
     {
@@ -601,7 +601,7 @@
       "id": "office-024",
       "kanji": "フィードバック",
       "kana": "フィードバック",
-      "romaji": "fiidorakku",
+      "romaji": "fiidobakku",
       "meaning": [
         "feedback"
       ],
