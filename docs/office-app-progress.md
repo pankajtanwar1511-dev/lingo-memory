@@ -1,6 +1,6 @@
 # Office Japanese App — Build Progress
 
-> Last updated: 2026-02-18 · Schema v2
+> Last updated: 2026-02-19 · Schema v2 · Drills v1
 
 ---
 
@@ -17,10 +17,13 @@ typed interface (separate from `VocabularyCard`).
 
 | File | Status | Notes |
 |------|--------|-------|
-| `public/seed-data/office_vocabulary.json` | ✅ Done | 148 vocab entries, 13 categories |
+| `public/seed-data/office_vocabulary.json` | ✅ Done | 148 vocab entries, 13 categories, schema v2 |
 | `public/seed-data/office_scenarios.json` | ✅ Done | 5 situation packs, 32 sentence frames |
-| `src/app/office/page.tsx` | ✅ Done | 4 modes: Cards / Match / Test / List |
+| `public/seed-data/office_drills.json` | ✅ Done | 1 pack (incident), 5 stages, schema v1 |
+| `src/app/office/page.tsx` | ✅ Done | 4 modes: Browse / Flip / Match / Test + Drills button |
 | `src/app/office/scenarios/page.tsx` | ✅ Done | Browse + Drill mode, 5 situations |
+| `src/app/office/drills/page.tsx` | ✅ Done | Production drill UI, stem validation, completion screen |
+| `src/types/vocabulary.ts` | ✅ Done | OfficeCard, OfficeTier, OfficeContext, OfficeCategory, OfficeExample |
 | `docs/japanese-office-vocabulary.md` | ✅ Done | 100+ word reference doc |
 | `docs/japanese-office-practice.md` | ✅ Done | Practice drills, 30-day plan |
 
@@ -116,7 +119,65 @@ Each frame has: `contextEn`, `japanese`, `kana`, `english`, `register` (neutral 
 | Shuffle | Toggle (Cards + Test modes only) |
 
 ### Navigation
-- **Scenarios** button in header → `/office/scenarios`
+- **Drills** button (red accent) in hero → `/office/drills`
+- **Scenarios** button in hero → `/office/scenarios`
+- **Grammar** button in hero → `/verbs/grammar-reference`
+
+---
+
+## Drills Page (`/office/drills`)
+
+Production writing drills — user types complete Japanese sentences, validated
+against required vocabulary terms from `office_vocabulary.json`.
+
+### Drill schema (`office_drills.json`)
+
+```json
+{
+  "version": "1.0",
+  "schema": "office-drills-v1",
+  "packs": [{
+    "id": "incident-lifecycle",
+    "title": "Incident Response",
+    "titleJa": "障害対応",
+    "cluster": "incident",
+    "stages": [{
+      "id": "incident-s1",
+      "stage": 1,
+      "title": "Detect",
+      "titleJa": "発生報告",
+      "prompt": "...",
+      "hint": "...",
+      "targets": { "required": ["office-039"], "optional": [], "anyOf": [] },
+      "modelAnswer": { "japanese": "...", "kana": "...", "english": "..." }
+    }]
+  }]
+}
+```
+
+- `targets.required` — vocab IDs that must appear in the user's answer
+- `targets.optional` — extra credit; not validated
+- `targets.anyOf` — reserved for future use (any-one-of groups)
+
+### Current packs
+
+| Pack | Stages | Vocab targets |
+|---|---|---|
+| Incident Response (障害対応) | 5 | 発生 → 影響範囲 → 暫定対応 → 根本原因 → 再発防止 |
+
+### Validation logic
+- Japanese character guard: `/[ぁ-んァ-ン一-龯]/`
+- Stem match: `input.includes(card.kanji) || input.includes(card.kana)`
+- MAX_ATTEMPTS = 2 before forced reveal
+
+### UI flow
+1. Pack selector (card with stage tiles)
+2. Stage progress bar (filled dot → active → upcoming)
+3. Prompt card + amber hint callout
+4. Japanese textarea (Cmd+Enter to submit)
+5. On fail: missed term badges + retry
+6. On pass/reveal: model answer + study vocab block
+7. Completion screen: passed/revealed counts + per-stage breakdown
 
 ---
 
@@ -157,16 +218,36 @@ Office vocabulary uses its own typed interface instead of the generic
 
 ---
 
+## Vocabulary quality status
+
+All 4 ChatGPT review passes completed (2026-02-18 / 2026-02-19):
+
+| Pass | Fixes applied |
+|---|---|
+| Part 1 (001–037) | office-010 translation, office-024 romaji (ba not ra) |
+| Part 2 (038–074) | office-043/044 partOfSpeech, office-053 category keigo→communication, 40 romaji macrons normalized |
+| Part 3 (075–111) | office-093 partOfSpeech, office-110 example kana (げつじ not つきじ) |
+| Part 4 (112–148) | office-131 DM kana/romaji (ディーエム / dii emu) |
+
+Active/passive audit: 148 entries, **124 active / 24 passive** (83% active).
+- office-038 (週次): active → passive
+- office-060 (先輩): active → passive
+
+---
+
 ## Pending / Future
 
 - [ ] Audio pronunciation (when audio files available)
 - [x] Progress persistence (localStorage) — L0–L5 per card via Test mode
 - [x] Search / filter by keyword (kanji / kana / romaji / meaning)
+- [x] Production drills (`/office/drills`) — incident lifecycle pack live
+- [ ] More drill packs (PR review, standup, 1-on-1)
+  - Next natural pack: Standup lifecycle (着手→完了→遅延→ブロッカー)
+  - After: PR/code review, keigo escalation
+- [ ] `anyOf` validation in drills (for synonym-accepting stages)
 - [ ] Spaced repetition scheduling based on test results
-- [ ] Expand vocabulary: 148 → ~580 (following `japanese-office-vocabulary.md`)
-  - Phase 1 survival core: 120 words (currently 148, covers this)
-  - Final target: ~580 entries across 19 categories
+- [ ] Expand vocabulary: 148 → ~250 (next phase)
+  - Priority: add ~30 more active tier-S verbs for standup + PR contexts
+  - After drills are validated with current 148
 - [ ] More scenario packs (PR review, design review, project kick-off)
-- [ ] ChatGPT review of all 4 parts for kana/example accuracy
-  - Send `office_vocabulary_part{1..4}.json` to ChatGPT for review
-  - Apply corrections back to `office_vocabulary.json`
+- [ ] Link scenarios.json to vocab IDs (like drills already do)
