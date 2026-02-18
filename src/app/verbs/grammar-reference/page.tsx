@@ -317,7 +317,7 @@ export default function GrammarReferencePage() {
                   </table>
                 </div>
                 <p className="text-xs text-muted-foreground mt-3 text-center">
-                  Godan verbs shift <span className="font-bold text-blue-600 dark:text-blue-400">i-row (ます)</span> → <span className="font-bold text-green-600 dark:text-green-400">u-row (dictionary)</span>
+                  Group I (Godan) verbs shift <span className="font-bold text-blue-600 dark:text-blue-400">i-row (ます)</span> → <span className="font-bold text-green-600 dark:text-green-400">u-row (dictionary)</span>
                 </p>
               </CardContent>
             </Card>
@@ -325,16 +325,16 @@ export default function GrammarReferencePage() {
             {/* Ichidan vs Godan explanation */}
             <Card className="border-2 border-purple-500/50">
               <CardHeader>
-                <CardTitle className="text-base">🎯 Why "Ichidan" and "Godan"?</CardTitle>
+                <CardTitle className="text-base">🎯 Why "Group II (Ichidan)" and "Group I (Godan)"?</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4 text-sm">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="p-3 rounded-lg border-2 border-blue-500 space-y-2">
-                    <p className="font-bold text-blue-700 dark:text-blue-400">Godan 五段 = "Five-step"</p>
+                    <p className="font-bold text-blue-700 dark:text-blue-400">Group I — Godan 五段 = "Five-step"</p>
                     <p className="text-muted-foreground">Steps through all 5 vowel rows when conjugating. Example 書く: か→き→く→け→こ</p>
                   </div>
                   <div className="p-3 rounded-lg border-2 border-green-500 space-y-2">
-                    <p className="font-bold text-green-700 dark:text-green-400">Ichidan 一段 = "One-step"</p>
+                    <p className="font-bold text-green-700 dark:text-green-400">Group II — Ichidan 一段 = "One-step"</p>
                     <p className="text-muted-foreground">Stem never changes — uses only one vowel row. Example 食べる: たべ always stays たべ</p>
                   </div>
                 </div>
@@ -360,7 +360,7 @@ export default function GrammarReferencePage() {
                         { pat: "びます → ぶ", rule: "び → ぶ", ex: "遊びます→遊ぶ", n: 2 },
                         { pat: "みます → む", rule: "み → む", ex: "飲みます→飲む", n: 4 },
                         { pat: "ります → る", rule: "り → る", ex: "帰ります→帰る", n: 24 },
-                        { pat: "Irregular", rule: "Memorize!", ex: "します→する, 来ます→来る", n: 25, err: true },
+                        { pat: "Group III (Irregular)", rule: "Memorize!", ex: "します→する, 来ます→来る", n: 25, err: true },
                       ].map((r, i) => (
                         <tr key={i} className={`border-b ${r.hi ? "bg-green-50 dark:bg-green-950/20" : r.err ? "bg-red-50 dark:bg-red-950/20" : "hover:bg-muted/30"}`}>
                           <td className={`p-2 font-mono font-bold ${r.err ? "text-red-600 dark:text-red-400" : ""}`}>{r.pat}</td>
@@ -409,31 +409,81 @@ export default function GrammarReferencePage() {
             <Card className="border-2 border-yellow-500/50 bg-yellow-50/50 dark:bg-yellow-950/10">
               <CardHeader><CardTitle className="text-base">💡 Key Insights</CardTitle></CardHeader>
               <CardContent className="text-sm space-y-3">
-                <div><p className="font-semibold">Ichidan (39 verbs):</p><p className="text-muted-foreground pl-4">Dict: remove ます add る → Te: remove ます add て — simple and consistent.</p></div>
-                <div><p className="font-semibold">Godan (77 verbs):</p><p className="text-muted-foreground pl-4">Dict: i-row → u-row shift. Te: more complex (って, んで, いて, いで, して).</p></div>
-                <div><p className="font-semibold">Irregular (25 verbs):</p><p className="text-muted-foreground pl-4">Core: する, 来る. Compounds: 勉強する etc. Note: する follows して in te-form.</p></div>
+                <div><p className="font-semibold">Group II — Ichidan (39 verbs):</p><p className="text-muted-foreground pl-4">Dict: remove ます add る → Te: remove ます add て — simple and consistent.</p></div>
+                <div><p className="font-semibold">Group I — Godan (77 verbs):</p><p className="text-muted-foreground pl-4">Dict: i-row → u-row shift. Te: more complex (って, んで, いて, いで, して).</p></div>
+                <div><p className="font-semibold">Group III — Irregular (25 verbs):</p><p className="text-muted-foreground pl-4">Core: する, 来る. Compounds: 勉強する etc. Note: する follows して in te-form.</p></div>
+
+                {/* します shortcuts */}
+                <div className="grid sm:grid-cols-2 gap-2 pt-1">
+                  <div className="p-3 bg-violet-50 dark:bg-violet-950/30 rounded border border-violet-300 dark:border-violet-700">
+                    <p className="font-semibold text-violet-800 dark:text-violet-300">⭐ Noun + します → always Group III (Irregular)</p>
+                    <p className="text-muted-foreground mt-1">If there is a <strong>noun before します</strong>, the verb is Group III (irregular). No exceptions in N5.</p>
+                    <div className="mt-2 space-y-0.5 text-xs text-muted-foreground">
+                      <p>勉強<strong>します</strong> → 勉強する (Group III)</p>
+                      <p>電話<strong>します</strong> → 電話する (Group III)</p>
+                      <p>運転<strong>します</strong> → 運転する (Group III)</p>
+                      <p className="text-violet-600 dark:text-violet-400 font-medium">21 such verbs in N5 — all Group III</p>
+                    </div>
+                  </div>
+                  <div className="p-3 bg-teal-50 dark:bg-teal-950/30 rounded border border-teal-300 dark:border-teal-700">
+                    <p className="font-semibold text-teal-800 dark:text-teal-300">⭐ No noun + します → always Group I (Godan)</p>
+                    <p className="text-muted-foreground mt-1">If します is the <strong>whole ending</strong> (no noun before it), it is Group I (Godan), dict form ends in す.</p>
+                    <div className="mt-2 space-y-0.5 text-xs text-muted-foreground">
+                      <p>話<strong>します</strong> → 話す (Group I)</p>
+                      <p>貸<strong>します</strong> → 貸す (Group I)</p>
+                      <p>消<strong>します</strong> → 消す (Group I)</p>
+                      <p className="text-teal-600 dark:text-teal-400 font-medium">11 such verbs in N5 — all Group I</p>
+                    </div>
+                  </div>
+                </div>
+
                 <div className="p-3 bg-orange-100 dark:bg-orange-900/30 rounded text-orange-800 dark:text-orange-300">
                   <p className="font-semibold">⚠️ Common trap:</p>
-                  <p>ります→る verbs look like ichidan but they're GODAN! 帰る, 乗る, 分かる — check the sound before る.</p>
+                  <p>ります→る verbs look like Group II (Ichidan) but they're Group I (Godan)! 帰る, 乗る, 分かる — check the sound before る.</p>
                 </div>
               </CardContent>
             </Card>
 
             {/* How to identify */}
             <Card className="border-2 border-blue-500/50">
-              <CardHeader><CardTitle className="text-base">🔍 How to Identify Ichidan vs Godan</CardTitle></CardHeader>
+              <CardHeader><CardTitle className="text-base">🔍 How to Identify Group II (Ichidan) vs Group I (Godan)</CardTitle></CardHeader>
               <CardContent className="text-sm space-y-3">
+
+                {/* Teacher's rule — the 1-kana shortcut */}
+                <div className="p-3 rounded bg-purple-50 dark:bg-purple-950/30 border-2 border-purple-400 dark:border-purple-600">
+                  <p className="font-bold text-purple-800 dark:text-purple-300">⭐ Best shortcut: count the kana before ます</p>
+                  <p className="mt-1 text-purple-700 dark:text-purple-400">
+                    If there is <strong>only 1 kana</strong> before ます → it is <strong>always Group II (Ichidan)</strong>
+                  </p>
+                  <div className="mt-2 grid grid-cols-2 gap-2 text-xs">
+                    <div>
+                      <p className="font-semibold text-purple-700 dark:text-purple-400 mb-1">1 kana → Group II (Ichidan) ✓</p>
+                      <p className="text-muted-foreground">み・ます → 見る</p>
+                      <p className="text-muted-foreground">ね・ます → 寝る</p>
+                      <p className="text-muted-foreground">き・ます → 着る</p>
+                      <p className="text-muted-foreground">で・ます → 出る</p>
+                      <p className="text-muted-foreground">い・ます → いる</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-red-600 dark:text-red-400 mb-1">Exceptions (irregular!) ⚠️</p>
+                      <p className="text-muted-foreground">き・ます → 来る (irregular)</p>
+                      <p className="text-muted-foreground">し・ます → する (irregular)</p>
+                      <p className="text-xs text-red-500 dark:text-red-400 mt-1">These are the only 2 exceptions — memorise them and the rule is bulletproof.</p>
+                    </div>
+                  </div>
+                </div>
+
                 <div className="p-3 rounded bg-green-50 dark:bg-green-950/30 border border-green-300">
-                  <p className="font-bold text-green-700 dark:text-green-400">✓ Ends in -えます? → Ichidan (99% certain)</p>
-                  <p className="text-muted-foreground text-xs pl-4">たべます, みせます, おしえます, かんがえます</p>
+                  <p className="font-bold text-green-700 dark:text-green-400">✓ Ends in -えます? → Group II — Ichidan (100% certain)</p>
+                  <p className="text-muted-foreground text-xs pl-4">たべます, みせます, おしえます, かんがえます — no Group I (Godan) verb ends in -えます</p>
                 </div>
                 <div className="p-3 rounded bg-blue-50 dark:bg-blue-950/30 border border-blue-300">
-                  <p className="font-bold text-blue-700 dark:text-blue-400">✓ Ends in -きます/-ぎます/-します/-ちます/-びます? → Godan</p>
-                  <p className="text-muted-foreground text-xs pl-4">かきます, およぎます, はなします, まちます, あそびます</p>
+                  <p className="font-bold text-blue-700 dark:text-blue-400">✓ Ends in -きます/-ぎます/-ちます/-びます/-にます? → Group I — Godan</p>
+                  <p className="text-muted-foreground text-xs pl-4">かきます, およぎます, まちます, あそびます — never Group II (Ichidan)</p>
                 </div>
                 <div className="p-3 rounded bg-orange-50 dark:bg-orange-950/30 border border-orange-300">
                   <p className="font-bold text-orange-700 dark:text-orange-400">⚠️ Ends in -います/-ります/-みます? → Could be either — must memorize</p>
-                  <p className="text-muted-foreground text-xs pl-4">Ichidan: みます, おきます | Godan: のみます, かえります</p>
+                  <p className="text-muted-foreground text-xs pl-4">Group II: みます (見る), おきます (起きる) | Group I: のみます (飲む), かえります (帰る)</p>
                 </div>
               </CardContent>
             </Card>

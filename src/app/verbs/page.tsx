@@ -65,6 +65,13 @@ type ViewMode = "all" | "dictionary" | "masu" | "kana-masu" | "dictionary-kana" 
 type FlipSide = "english" | "kanji" | "kana" | "masu-kanji" | "masu-kana" | "te-kanji" | "te-kana" | "kana-mixed"
 type ConjugationFormType = "dict" | "masu" | "te"
 
+/** Maps internal morphology.class key → user-facing group label */
+const verbGroupLabel = (cls: string): string => {
+  if (cls === 'godan')     return 'Group I'
+  if (cls === 'ichidan')   return 'Group II'
+  return 'Group III'
+}
+
 interface VerbProgress {
   verbId: string
   knownCount: number
@@ -227,9 +234,38 @@ export default function VerbsPage() {
     let filtered = verbsData.verbs
 
     // Filter by active list (takes precedence)
-    if (activeList && activeList.verbIds.length > 0) {
-      const listVerbIds = new Set(activeList.verbIds)
-      filtered = filtered.filter(v => listVerbIds.has(v.id))
+    // Grammar lists have empty verbIds in static data — populate dynamically here
+    if (activeList) {
+      let listVerbIds: Set<string>
+      if (activeList.verbIds.length === 0 && activeList.category === 'grammar') {
+        // Dynamically derive grammar list verb IDs from the loaded dataset
+        let grammarFiltered: N5Verb[]
+        switch (activeList.id) {
+          case 'godan':
+            grammarFiltered = verbsData.verbs.filter(v => v.morphology.class === 'godan')
+            break
+          case 'ichidan':
+            grammarFiltered = verbsData.verbs.filter(v => v.morphology.class === 'ichidan')
+            break
+          case 'irregular':
+            grammarFiltered = verbsData.verbs.filter(v => v.morphology.class === 'irregular')
+            break
+          case 'transitive':
+            grammarFiltered = verbsData.verbs.filter(v => v.valency.type === 'transitive')
+            break
+          case 'intransitive':
+            grammarFiltered = verbsData.verbs.filter(v => v.valency.type === 'intransitive')
+            break
+          default:
+            grammarFiltered = []
+        }
+        listVerbIds = new Set(grammarFiltered.map(v => v.id))
+      } else {
+        listVerbIds = new Set(activeList.verbIds)
+      }
+      if (listVerbIds.size > 0) {
+        filtered = filtered.filter(v => listVerbIds.has(v.id))
+      }
     }
 
     // Filter by group
@@ -301,9 +337,9 @@ export default function VerbsPage() {
 
   const verbGroups = [
     { id: "all",       label: "All Verbs",       shortLabel: "All",      count: verbsData?.metadata.totalEntries || 0,                                          color: "bg-gradient-to-r from-purple-500 to-pink-500" },
-    { id: "godan",     label: "Godan (う-verbs)", shortLabel: "Godan",    count: verbsData?.verbs.filter(v => v.morphology.class === 'godan').length || 0,     color: "bg-gradient-to-r from-blue-500 to-cyan-500" },
-    { id: "ichidan",   label: "Ichidan (る-verbs)",shortLabel: "Ichidan", count: verbsData?.verbs.filter(v => v.morphology.class === 'ichidan').length || 0,   color: "bg-gradient-to-r from-green-500 to-teal-500" },
-    { id: "irregular", label: "Irregular",        shortLabel: "Irreg",   count: verbsData?.verbs.filter(v => v.morphology.class === 'irregular').length || 0,  color: "bg-gradient-to-r from-orange-500 to-red-500" }
+    { id: "godan",     label: "Group I — Godan (う-verbs)",    shortLabel: "Gr.I",    count: verbsData?.verbs.filter(v => v.morphology.class === 'godan').length || 0,     color: "bg-gradient-to-r from-blue-500 to-cyan-500" },
+    { id: "ichidan",   label: "Group II — Ichidan (る-verbs)", shortLabel: "Gr.II",   count: verbsData?.verbs.filter(v => v.morphology.class === 'ichidan').length || 0,   color: "bg-gradient-to-r from-green-500 to-teal-500" },
+    { id: "irregular", label: "Group III — Irregular",         shortLabel: "Gr.III",  count: verbsData?.verbs.filter(v => v.morphology.class === 'irregular').length || 0,  color: "bg-gradient-to-r from-orange-500 to-red-500" }
   ]
 
   const toggleCardFlip = (verbId: string) => {
@@ -926,6 +962,10 @@ export default function VerbsPage() {
             <Button variant="outline" size="sm" onClick={() => window.location.href = '/verbs/grammar-reference'} className="gap-1.5 text-xs">
               <BookOpen className="h-3.5 w-3.5" />
               Grammar
+            </Button>
+            <Button variant="outline" size="sm" onClick={() => window.location.href = '/verbs/transitive-intransitive'} className="gap-1.5 text-xs">
+              <Layers className="h-3.5 w-3.5" />
+              T/I Guide
             </Button>
           </div>
         </div>
@@ -2243,7 +2283,7 @@ export default function VerbsPage() {
                             verb.morphology.class === 'godan' ? 'default' :
                             verb.morphology.class === 'ichidan' ? 'secondary' : 'outline'
                           } className="text-xs">
-                            {verb.morphology.class}
+                            {verbGroupLabel(verb.morphology.class)}
                           </Badge>
                           {renderValencyBadge(verb, true)}
                         </div>
@@ -2285,7 +2325,7 @@ export default function VerbsPage() {
                                 verb.morphology.class === 'godan' ? 'default' :
                                 verb.morphology.class === 'ichidan' ? 'secondary' : 'outline'
                               } className="text-xs">
-                                {verb.morphology.class}
+                                {verbGroupLabel(verb.morphology.class)}
                               </Badge>
                             </div>
                           </div>

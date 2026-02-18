@@ -648,7 +648,7 @@ export const THEMATIC_LISTS: VerbList[] = [
 export const GRAMMAR_LISTS: VerbList[] = [
   {
     id: 'godan',
-    name: 'Godan Verbs (Group 1 / U-verbs)',
+    name: 'Group I — Godan Verbs (U-verbs)',
     description: 'Consonant-stem verbs — 85 verbs with -u endings (行く, 書く, 飲む…)',
     category: 'grammar',
     icon: '1️⃣',
@@ -657,7 +657,7 @@ export const GRAMMAR_LISTS: VerbList[] = [
   },
   {
     id: 'ichidan',
-    name: 'Ichidan Verbs (Group 2 / Ru-verbs)',
+    name: 'Group II — Ichidan Verbs (Ru-verbs)',
     description: 'Vowel-stem verbs — 44 verbs ending in -る (食べる, 見る, 起きる…)',
     category: 'grammar',
     icon: '2️⃣',
@@ -666,7 +666,7 @@ export const GRAMMAR_LISTS: VerbList[] = [
   },
   {
     id: 'irregular',
-    name: 'Irregular Verbs (Group 3)',
+    name: 'Group III — Irregular Verbs',
     description: 'する、来る and all する-compound verbs (25 entries)',
     category: 'grammar',
     icon: '3️⃣',
