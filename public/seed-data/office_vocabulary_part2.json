@@ -17,7 +17,7 @@
         "noun",
         "adverb"
       ],
-      "active": true,
+      "active": false,
       "tier": "A",
       "contexts": [
         "standup",
@@ -574,7 +574,7 @@
       "partOfSpeech": [
         "noun"
       ],
-      "active": true,
+      "active": false,
       "tier": "A",
       "contexts": [
         "standup"
