@@ -2340,8 +2340,7 @@
         "interim measure"
       ],
       "partOfSpeech": [
-        "noun",
-        "expression"
+        "noun"
       ],
       "active": true,
       "tier": "A",
@@ -2786,7 +2785,7 @@
       "category": "time",
       "example": {
         "japanese": "月次レポートを作成します。",
-        "kana": "つきじレポートをさくせいします。",
+        "kana": "げつじレポートをさくせいします。",
         "english": "I'll create the monthly report."
       }
     },
