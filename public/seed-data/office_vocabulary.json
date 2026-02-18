@@ -1084,8 +1084,7 @@
         "affected range"
       ],
       "partOfSpeech": [
-        "noun",
-        "expression"
+        "noun"
       ],
       "active": true,
       "tier": "A",
@@ -1109,8 +1108,7 @@
         "post-incident prevention"
       ],
       "partOfSpeech": [
-        "noun",
-        "expression"
+        "noun"
       ],
       "active": true,
       "tier": "A",
@@ -1348,7 +1346,7 @@
         "standup",
         "email"
       ],
-      "category": "keigo",
+      "category": "communication",
       "example": {
         "japanese": "了解です。後ほど確認します。",
         "kana": "りょうかいです。のちほどかくにんします。",
@@ -1559,7 +1557,7 @@
       "id": "office-062",
       "kanji": "レビューする",
       "kana": "レビューする",
-      "romaji": "rebyū suru",
+      "romaji": "rebyuu suru",
       "meaning": [
         "to review",
         "to do a code or design review"
@@ -1584,7 +1582,7 @@
       "id": "office-063",
       "kanji": "検討する",
       "kana": "けんとうする",
-      "romaji": "kentō suru",
+      "romaji": "kentoo suru",
       "meaning": [
         "to consider",
         "to examine",
@@ -1636,7 +1634,7 @@
       "id": "office-065",
       "kanji": "更新する",
       "kana": "こうしんする",
-      "romaji": "kōshin suru",
+      "romaji": "kooshin suru",
       "meaning": [
         "to update",
         "to renew",
@@ -1739,7 +1737,7 @@
       "id": "office-069",
       "kanji": "マージする",
       "kana": "マージする",
-      "romaji": "māji suru",
+      "romaji": "maaji suru",
       "meaning": [
         "to merge",
         "to merge code branches"
@@ -1942,7 +1940,7 @@
       "id": "office-077",
       "kanji": "確認事項",
       "kana": "かくにんじこう",
-      "romaji": "kakunin jikō",
+      "romaji": "kakunin jikoo",
       "meaning": [
         "items to confirm",
         "confirmation points"
@@ -1966,7 +1964,7 @@
       "id": "office-078",
       "kanji": "決定事項",
       "kana": "けっていじこう",
-      "romaji": "kettei jikō",
+      "romaji": "kettei jikoo",
       "meaning": [
         "decisions made",
         "action decisions"
@@ -2114,7 +2112,7 @@
       "id": "office-084",
       "kanji": "マイルストーン",
       "kana": "マイルストーン",
-      "romaji": "mairustōn",
+      "romaji": "mairustoon",
       "meaning": [
         "milestone",
         "project milestone"
@@ -2164,7 +2162,7 @@
       "id": "office-086",
       "kanji": "要件",
       "kana": "ようけん",
-      "romaji": "yōken",
+      "romaji": "yooken",
       "meaning": [
         "requirements",
         "functional requirements"
@@ -2214,7 +2212,7 @@
       "id": "office-088",
       "kanji": "ブロッカー",
       "kana": "ブロッカー",
-      "romaji": "burokkā",
+      "romaji": "burokkaa",
       "meaning": [
         "blocker",
         "blocking issue"
@@ -2262,7 +2260,7 @@
       "id": "office-090",
       "kanji": "仕様",
       "kana": "しよう",
-      "romaji": "shiyō",
+      "romaji": "shiyoo",
       "meaning": [
         "specification",
         "spec"
@@ -2312,7 +2310,7 @@
       "id": "office-092",
       "kanji": "エスカレーション",
       "kana": "エスカレーション",
-      "romaji": "esukarēshon",
+      "romaji": "esukareeshon",
       "meaning": [
         "escalation"
       ],
@@ -2335,7 +2333,7 @@
       "id": "office-093",
       "kanji": "暫定対応",
       "kana": "ざんていたいおう",
-      "romaji": "zantei taiō",
+      "romaji": "zantei taioo",
       "meaning": [
         "temporary fix",
         "workaround",
@@ -2434,7 +2432,7 @@
       "id": "office-097",
       "kanji": "未対応",
       "kana": "みたいおう",
-      "romaji": "mi-taiō",
+      "romaji": "mi-taioo",
       "meaning": [
         "not yet handled",
         "pending",
@@ -2461,7 +2459,7 @@
       "id": "office-098",
       "kanji": "保留",
       "kana": "ほりゅう",
-      "romaji": "horyū",
+      "romaji": "horyuu",
       "meaning": [
         "on hold",
         "pending",
@@ -2487,7 +2485,7 @@
       "id": "office-099",
       "kanji": "優先",
       "kana": "ゆうせん",
-      "romaji": "yūsen",
+      "romaji": "yuusen",
       "meaning": [
         "priority",
         "high priority",
@@ -2513,7 +2511,7 @@
       "id": "office-100",
       "kanji": "対応済み",
       "kana": "たいおうずみ",
-      "romaji": "taiō zumi",
+      "romaji": "taioo zumi",
       "meaning": [
         "already handled",
         "resolved",
@@ -2593,7 +2591,7 @@
       "id": "office-103",
       "kanji": "お手数をおかけします",
       "kana": "おてすうをおかけします",
-      "romaji": "otesū wo okake shimasu",
+      "romaji": "otesuu wo okake shimasu",
       "meaning": [
         "sorry for the trouble",
         "sorry to bother you"
@@ -2618,7 +2616,7 @@
       "id": "office-104",
       "kanji": "ご対応よろしくお願いします",
       "kana": "ごたいおうよろしくおねがいします",
-      "romaji": "go-taiō yoroshiku onegai shimasu",
+      "romaji": "go-taioo yoroshiku onegai shimasu",
       "meaning": [
         "please take care of this",
         "please handle this"
@@ -2669,7 +2667,7 @@
       "id": "office-106",
       "kanji": "ご検討ください",
       "kana": "ごけんとうください",
-      "romaji": "go-kentō kudasai",
+      "romaji": "go-kentoo kudasai",
       "meaning": [
         "please consider",
         "please review",
@@ -2747,7 +2745,7 @@
       "id": "office-109",
       "kanji": "来週",
       "kana": "らいしゅう",
-      "romaji": "raishū",
+      "romaji": "raishuu",
       "meaning": [
         "next week"
       ],
@@ -2796,7 +2794,7 @@
       "id": "office-111",
       "kanji": "早急に",
       "kana": "そうきゅうに",
-      "romaji": "sōkyū ni",
+      "romaji": "sookyuu ni",
       "meaning": [
         "as soon as possible",
         "urgently",
@@ -2822,7 +2820,7 @@
       "id": "office-112",
       "kanji": "今週中",
       "kana": "こんしゅうちゅう",
-      "romaji": "konshū chū",
+      "romaji": "konshuu chuu",
       "meaning": [
         "by end of this week",
         "within this week"
@@ -2896,7 +2894,7 @@
       "id": "office-115",
       "kanji": "早退",
       "kana": "そうたい",
-      "romaji": "sōtai",
+      "romaji": "sootai",
       "meaning": [
         "leaving early",
         "early departure from work"
@@ -2945,7 +2943,7 @@
       "id": "office-117",
       "kanji": "代休",
       "kana": "だいきゅう",
-      "romaji": "daikyū",
+      "romaji": "daikyuu",
       "meaning": [
         "compensatory day off",
         "substitute holiday"
@@ -2969,7 +2967,7 @@
       "id": "office-118",
       "kanji": "休暇",
       "kana": "きゅうか",
-      "romaji": "kyūka",
+      "romaji": "kyuuka",
       "meaning": [
         "vacation",
         "leave of absence",
@@ -3021,7 +3019,7 @@
       "id": "office-120",
       "kanji": "後輩",
       "kana": "こうはい",
-      "romaji": "kōhai",
+      "romaji": "koohai",
       "meaning": [
         "junior colleague",
         "someone who joined after you"
@@ -3045,7 +3043,7 @@
       "id": "office-121",
       "kanji": "同僚",
       "kana": "どうりょう",
-      "romaji": "dōryō",
+      "romaji": "dooryoo",
       "meaning": [
         "colleague",
         "coworker"
@@ -3070,7 +3068,7 @@
       "id": "office-122",
       "kanji": "チームリーダー",
       "kana": "チームリーダー",
-      "romaji": "chīmu rīdā",
+      "romaji": "chiimu riidaa",
       "meaning": [
         "team leader",
         "tech lead"
@@ -3095,7 +3093,7 @@
       "id": "office-123",
       "kanji": "メンバー",
       "kana": "メンバー",
-      "romaji": "menbā",
+      "romaji": "menbaa",
       "meaning": [
         "member",
         "team member"
@@ -3119,7 +3117,7 @@
       "id": "office-124",
       "kanji": "ステークホルダー",
       "kana": "ステークホルダー",
-      "romaji": "sutēkuhōrudā",
+      "romaji": "suteekuhoorudaa",
       "meaning": [
         "stakeholder",
         "interested party"
@@ -3218,7 +3216,7 @@
       "id": "office-128",
       "kanji": "周知",
       "kana": "しゅうち",
-      "romaji": "shūchi",
+      "romaji": "shuuchi",
       "meaning": [
         "company-wide notification",
         "notifying everyone",
@@ -3316,7 +3314,7 @@
       "id": "office-132",
       "kanji": "仕様書",
       "kana": "しようしょ",
-      "romaji": "shiyōsho",
+      "romaji": "shiyoosho",
       "meaning": [
         "specification document",
         "spec doc"
@@ -3389,7 +3387,7 @@
       "id": "office-135",
       "kanji": "報告書",
       "kana": "ほうこくしょ",
-      "romaji": "hōkokusho",
+      "romaji": "hookokusho",
       "meaning": [
         "report document",
         "written report"
@@ -3414,7 +3412,7 @@
       "id": "office-136",
       "kanji": "テンプレート",
       "kana": "テンプレート",
-      "romaji": "tenpurēto",
+      "romaji": "tenpureeto",
       "meaning": [
         "template"
       ],
@@ -3513,7 +3511,7 @@
       "id": "office-140",
       "kanji": "コードレビュー",
       "kana": "コードレビュー",
-      "romaji": "kōdo rebyū",
+      "romaji": "koodo rebyuu",
       "meaning": [
         "code review",
         "PR review"
@@ -3538,7 +3536,7 @@
       "id": "office-141",
       "kanji": "本番環境",
       "kana": "ほんばんかんきょう",
-      "romaji": "honban kankyō",
+      "romaji": "honban kankyoo",
       "meaning": [
         "production environment",
         "live environment"
@@ -3563,7 +3561,7 @@
       "id": "office-142",
       "kanji": "ステージング",
       "kana": "ステージング",
-      "romaji": "sutējingu",
+      "romaji": "suteejingu",
       "meaning": [
         "staging",
         "staging environment"
@@ -3612,7 +3610,7 @@
       "id": "office-144",
       "kanji": "エラー",
       "kana": "エラー",
-      "romaji": "erā",
+      "romaji": "eraa",
       "meaning": [
         "error",
         "system error"
@@ -3637,7 +3635,7 @@
       "id": "office-145",
       "kanji": "環境",
       "kana": "かんきょう",
-      "romaji": "kankyō",
+      "romaji": "kankyoo",
       "meaning": [
         "environment",
         "dev/staging/production environment"
@@ -3661,7 +3659,7 @@
       "id": "office-146",
       "kanji": "パフォーマンス",
       "kana": "パフォーマンス",
-      "romaji": "pafōmansu",
+      "romaji": "pafoomansu",
       "meaning": [
         "performance",
         "system performance"

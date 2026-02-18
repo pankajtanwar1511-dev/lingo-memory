@@ -142,8 +142,7 @@
         "affected range"
       ],
       "partOfSpeech": [
-        "noun",
-        "expression"
+        "noun"
       ],
       "active": true,
       "tier": "A",
@@ -167,8 +166,7 @@
         "post-incident prevention"
       ],
       "partOfSpeech": [
-        "noun",
-        "expression"
+        "noun"
       ],
       "active": true,
       "tier": "A",
@@ -406,7 +404,7 @@
         "standup",
         "email"
       ],
-      "category": "keigo",
+      "category": "communication",
       "example": {
         "japanese": "了解です。後ほど確認します。",
         "kana": "りょうかいです。のちほどかくにんします。",
@@ -617,7 +615,7 @@
       "id": "office-062",
       "kanji": "レビューする",
       "kana": "レビューする",
-      "romaji": "rebyū suru",
+      "romaji": "rebyuu suru",
       "meaning": [
         "to review",
         "to do a code or design review"
@@ -642,7 +640,7 @@
       "id": "office-063",
       "kanji": "検討する",
       "kana": "けんとうする",
-      "romaji": "kentō suru",
+      "romaji": "kentoo suru",
       "meaning": [
         "to consider",
         "to examine",
@@ -694,7 +692,7 @@
       "id": "office-065",
       "kanji": "更新する",
       "kana": "こうしんする",
-      "romaji": "kōshin suru",
+      "romaji": "kooshin suru",
       "meaning": [
         "to update",
         "to renew",
@@ -797,7 +795,7 @@
       "id": "office-069",
       "kanji": "マージする",
       "kana": "マージする",
-      "romaji": "māji suru",
+      "romaji": "maaji suru",
       "meaning": [
         "to merge",
         "to merge code branches"
