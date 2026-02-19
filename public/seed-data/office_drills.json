@@ -490,9 +490,9 @@
             "anyOf": [["office-010", "office-099"]]
           },
           "modelAnswer": {
-            "japanese": "フィードバックありがとうございます。優先順位を見直してよろしくお願いします。",
-            "kana": "フィードバックありがとうございます。ゆうせんじゅんいをみなおしてよろしくおねがいします。",
-            "english": "Thank you for the feedback. I'll review the priorities. Thank you."
+            "japanese": "フィードバックありがとうございます。優先順位を見直します。今後ともよろしくお願いいたします。",
+            "kana": "フィードバックありがとうございます。ゆうせんじゅんいをみなおします。こんごともよろしくおねがいいたします。",
+            "english": "Thank you for the feedback. I'll review the priorities. Thank you for your continued guidance."
           }
         }
       ]
