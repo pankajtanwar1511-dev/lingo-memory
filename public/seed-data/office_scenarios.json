@@ -29,8 +29,8 @@
         {
           "id": "std-003",
           "contextEn": "Task is in progress",
-          "japanese": "現在、〇〇を対応中です。",
-          "kana": "げんざい、〇〇をたいおうちゅうです。",
+          "japanese": "現在、〇〇に対応中です。",
+          "kana": "げんざい、〇〇にたいおうちゅうです。",
           "english": "Currently handling 〇〇.",
           "register": "neutral",
           "vocabIds": ["office-006"]
@@ -191,8 +191,8 @@
         {
           "id": "inc-005",
           "contextEn": "Phase 3 — Resolved",
-          "japanese": "復旧完了しました。ご迷惑をおかけして申し訳ございませんでした。",
-          "kana": "ふっきゅうかんりょうしました。ごめいわくをおかけしてもうしわけございませんでした。",
+          "japanese": "復旧が完了しました。ご迷惑をおかけして申し訳ございませんでした。",
+          "kana": "ふっきゅうがかんりょうしました。ごめいわくをおかけしてもうしわけございませんでした。",
           "english": "Restoration is complete. We sincerely apologize for the inconvenience.",
           "register": "formal",
           "vocabIds": ["office-041", "office-045", "office-054"]
