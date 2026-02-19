@@ -1,6 +1,6 @@
 # Office Japanese App — Build Progress
 
-> Last updated: 2026-02-19 · Schema v2 · Drills v1 · 5 packs · vocabIds linking · register filter · 170 vocab · all data reviewed
+> Last updated: 2026-02-19 · Schema v2 · Drills v1 · 7 packs · vocabIds linking · register filter · 200 vocab · SRS in Test mode · coverage analyzer
 
 ---
 
@@ -17,13 +17,15 @@ typed interface (separate from `VocabularyCard`).
 
 | File | Status | Notes |
 |------|--------|-------|
-| `public/seed-data/office_vocabulary.json` | ✅ Done | 170 vocab entries, 12 categories, schema v2 |
-| `public/seed-data/office_scenarios.json` | ✅ Done | 5 situation packs, 32 sentence frames, vocabIds linked |
-| `public/seed-data/office_drills.json` | ✅ Done | 5 packs (incident + standup + PR + keigo + 1-on-1), 25 stages, schema v1 |
-| `src/app/office/page.tsx` | ✅ Done | 4 modes: Browse / Flip / Match / Test + Drills button |
+| `public/seed-data/office_vocabulary.json` | ✅ Done | 200 vocab entries, 12 categories, schema v2 |
+| `public/seed-data/office_vocabulary_part6.json` | ✅ Done | Entries 171–200 (tech/design, email, project, status) |
+| `public/seed-data/office_scenarios.json` | ✅ Done | 7 situation packs, 46 sentence frames, vocabIds linked |
+| `public/seed-data/office_drills.json` | ✅ Done | 7 packs (incident + standup + PR + keigo + 1-on-1 + design-review + email), 35 stages, schema v1 |
+| `src/app/office/page.tsx` | ✅ Done | 4 modes: Browse / Flip / Match / Test + SRS scheduling |
 | `src/app/office/scenarios/page.tsx` | ✅ Done | Browse + Drill mode, register filter, vocab study block on completion |
 | `src/app/office/drills/page.tsx` | ✅ Done | Production drill UI, stem + anyOf validation, completion screen |
 | `src/types/vocabulary.ts` | ✅ Done | OfficeCard, OfficeTier, OfficeContext, OfficeCategory, OfficeExample |
+| `scripts/coverage-analyzer.js` | ✅ Done | Cross-refs vocab IDs across all data files; `--uncovered` + `--category` flags |
 | `docs/japanese-office-vocabulary.md` | ✅ Done | 100+ word reference doc |
 | `docs/japanese-office-practice.md` | ✅ Done | Practice drills, 30-day plan |
 
@@ -32,22 +34,22 @@ typed interface (separate from `VocabularyCard`).
 ## Vocabulary Dataset (`office_vocabulary.json`)
 
 **Version:** 2.0 (schema: `office-v2`)
-**170 entries** across 12 categories, each with one example sentence.
+**200 entries** across 12 categories, each with one example sentence.
 
 | Category | Count | Examples |
 |---|---|---|
-| `verbs` | 30 | 確認する、報告する、着手する、進める、差し戻す、切り戻す |
-| `project` | 20 | 優先度、スケジュール、マイルストーン、タイムライン、スプリント |
-| `tech` | 18 | バグ、デプロイ、ブランチ、コミット、差分、リファクタリング、本番リリース |
+| `verbs` | 35 | 確認する、報告する、着手する、進める、差し戻す、切り戻す、議論する、決定する |
+| `project` | 25 | 優先度、スケジュール、マイルストーン、タイムライン、スプリント、ロードマップ、ゴール |
+| `tech` | 22 | バグ、デプロイ、ブランチ、コミット、差分、リファクタリング、本番リリース、仕様変更 |
 | `meetings` | 17 | 議題、議事録、承認、フォローアップ、アジェンダ |
-| `status` | 13 | 完了、対応中、遅延、保留、テスト中、リリース待ち、ステータス更新 |
-| `keigo` | 13 | お疲れ様です、承知しました、ご不明な点があれば、ご連絡いたします |
+| `communication` | 16 | 周知する、以下の通り、念のため、先日、取り急ぎ、件名、ご返信お待ちしております |
+| `status` | 16 | 完了、対応中、遅延、保留、テスト中、リリース待ち、検討中、確認待ち、着手済み |
+| `keigo` | 14 | お疲れ様です、承知しました、ご不明な点があれば、ご連絡いたします |
 | `incident` | 12 | 障害、影響範囲、暫定対応、復旧、再発防止 |
-| `communication` | 12 | 周知する、以下の通り、念のため、連絡する |
 | `time` | 11 | 期限、締め切り、本日、来週、至急 |
 | `hr` | 9 | 有給、在宅勤務、欠勤、育児休暇、フレックス |
 | `roles` | 8 | エンジニア、マネージャー、チームリーダー、プロダクトオーナー |
-| `documents` | 7 | 仕様書、設計書、議事録、報告書、ドキュメント |
+| `documents` | 8 | 仕様書、設計書、議事録、報告書、ドキュメント、方針 |
 
 ### Schema v2 fields (typed — no tag strings)
 
@@ -83,7 +85,7 @@ TypeScript types in `src/types/vocabulary.ts`: `OfficeCard`, `OfficeExample`, `O
 
 ## Scenarios Dataset (`office_scenarios.json`)
 
-**5 situation packs** with **32 sentence frames** total:
+**7 situation packs** with **46 sentence frames** total:
 
 | Situation | Frames | Description |
 |---|---|---|
@@ -92,6 +94,8 @@ TypeScript types in `src/types/vocabulary.ts`: `OfficeCard`, `OfficeExample`, `O
 | 🔴 Incident Response (`incident`) | 7 | Phase 1–3: alert → update → resolve → prevent; escalation |
 | 🟢 1-on-1 Meeting (`1on1`) | 6 | Opening, on-track, behind, concern, career goals, receiving feedback |
 | 🟡 HR & Admin (`hr`) | 5 | PTO request, sick/absent, WFH, late arrival, apology after absence |
+| 🔷 Design Review (`design-review`) | 7 | Request review, explain rationale, flag concern, request revision, approve, share spec, spec change |
+| 🩵 Project Kick-off (`kickoff`) | 7 | Announce project, share timeline, define requirements, assign responsibilities, milestones, sprint goal, close |
 
 Each frame has: `contextEn`, `japanese`, `kana`, `english`, `register` (neutral / casual-neutral / formal), `vocabIds?: string[]`.
 
@@ -114,10 +118,28 @@ Toggle buttons above the frame list: **All / Neutral / Casual / Formal**.
 
 | Mode | Description |
 |---|---|
-| **Cards** | Flip cards using the shared `<Flashcard>` component. Previous/Next nav + progress dots. |
-| **Match** | 6-pair matching game. Japanese column vs English column. Batches through all filtered cards. Idle → selected → matched (green) / wrong (red flash). |
-| **Test** | Show Japanese → reveal meaning → thumbs up/down self-assessment. Score % at end with list of "still learning" words. Retry option. |
-| **List** | Scrollable card list. Click any word to jump to it in Cards mode. |
+| **Browse** | Full card list with example sentences, tier badges, context tags. |
+| **Flip** | Flip cards (meaning front → Japanese back). Toggle each card individually. |
+| **Match** | 10-pair matching game. Japanese column vs English column. Batches through all filtered cards. Idle → selected → matched (green) / wrong (red flash). Auto-advance mode. |
+| **Test** | Show meaning → reveal Japanese → thumbs up/down self-assessment. L0–L5 per card, persisted in localStorage. **SRS scheduling**: each mark sets `nextReviewDate` based on level interval. |
+
+### Test mode SRS (Spaced Repetition)
+
+| Level | Interval | Meaning |
+|---|---|---|
+| L0 | 1 day | Just started / still learning |
+| L1 | 3 days | Seen once |
+| L2 | 7 days | Getting there |
+| L3 | 14 days | Known |
+| L4 | 30 days | Strong |
+| L5 | 90 days | Mastered |
+
+- `CardProgress.nextReviewDate` stored in `localStorage["officeProgress"]`
+- **"Due Today" filter** in controls row — shows only cards where `nextReviewDate ≤ today`
+- **Amber badge** on card front when due
+- **"next: YYYY-MM-DD" / "due now"** shown on card back
+- **Stats header**: Known / Needs Practice / Not Reviewed / Due count
+- Mutual exclusion: "Due Today" and "Focus needs practice" switches auto-disable each other
 
 ### Filters
 
@@ -179,6 +201,8 @@ against required vocabulary terms from `office_vocabulary.json`.
 | PR Review (コードレビュー) | 5 | レビュー依頼 → コメント → 修正依頼 → 承認 → 本番デプロイ |
 | Keigo Escalation (敬語エスカレーション) | 5 | カジュアル返答 → 丁寧な返答 → 依頼の敬語 → 謝罪の敬語 → フォーマルな書き出し |
 | 1-on-1 Meeting (1on1) | 5 | 開始 → 順調 → 遅延報告 → 課題の共有 → フィードバック |
+| Design Review (デザインレビュー) | 5 | レビュー依頼 → 懸念の指摘 → 修正依頼 → 承認 → 仕様共有 |
+| Email Lifecycle (メールの書き方) | 5 | 書き出し → 丁寧な依頼 → 情報共有 → フォローアップ → 結び |
 
 ### Validation logic
 - Japanese character guard: `/[ぁ-んァ-ン一-龯]/`
@@ -218,6 +242,26 @@ against required vocabulary terms from `office_vocabulary.json`.
 
 ---
 
+## Coverage Analyzer (`scripts/coverage-analyzer.js`)
+
+Node.js script that cross-references `office_vocabulary.json`, `office_scenarios.json`,
+and `office_drills.json` to show which vocab entries are exercised and which aren't.
+
+**Usage:**
+```bash
+node scripts/coverage-analyzer.js                  # full report
+node scripts/coverage-analyzer.js --uncovered      # only uncovered entries
+node scripts/coverage-analyzer.js --category verbs # filter by category
+```
+
+**Baseline (200 entries, 7 drill packs, 7 scenario packs):**
+- Covered: 79/200 (40%)
+- Best coverage: incident 83%, keigo 73%
+- Worst coverage: documents 14%, roles 13%
+- High-priority uncovered (active, tier S/A): 39 entries (mostly parts 5–6 not yet linked)
+
+---
+
 ## Architecture Decisions
 
 ### Dedicated `OfficeCard` type (schema v2)
@@ -240,7 +284,7 @@ Office vocabulary uses its own typed interface instead of the generic
 
 ## Vocabulary quality status
 
-All 4 ChatGPT review passes completed (2026-02-18 / 2026-02-19):
+5 ChatGPT review passes completed (2026-02-18 / 2026-02-19); Part 6 pending:
 
 | Pass | Fixes applied |
 |---|---|
@@ -248,13 +292,13 @@ All 4 ChatGPT review passes completed (2026-02-18 / 2026-02-19):
 | Part 2 (038–074) | office-043/044 partOfSpeech, office-053 category keigo→communication, 40 romaji macrons normalized |
 | Part 3 (075–111) | office-093 partOfSpeech, office-110 example kana (げつじ not つきじ) |
 | Part 4 (112–148) | office-131 DM kana/romaji (ディーエム / dii emu) |
+| Part 5 (149–170) | office-160 meaning order, office-170 example alignment |
+| **Part 6 (171–200)** | **⚠️ Pending review** |
 
-Active/passive audit: 170 entries (after expansion), **146 active / 24 passive** (86% active).
+Active/passive audit: 200 entries, **170 active / 30 passive** (85% active).
 - office-038 (週次): active → passive
 - office-060 (先輩): active → passive
-- Entries 149–170: all active=true (production-level tech/comm terms)
-
-**All 5 parts reviewed.** See review log below for all fixes applied.
+- Entries 171–200: see part6 for individual active values
 
 ---
 
@@ -367,6 +411,7 @@ Give 3–5 prioritised recommendations. Be specific about what to build next and
 
 - [ ] Audio pronunciation (when audio files available)
 - [x] Progress persistence (localStorage) — L0–L5 per card via Test mode
+- [x] Spaced repetition scheduling (SRS) — nextReviewDate computed per mark; Due Today filter + amber badge
 - [x] Search / filter by keyword (kanji / kana / romaji / meaning)
 - [x] Production drills (`/office/drills`) — incident lifecycle pack live
 - [x] `anyOf` validation in drills — synonym-accepting stages live
@@ -374,16 +419,21 @@ Give 3–5 prioritised recommendations. Be specific about what to build next and
 - [x] PR/code review drill pack — 5 stages (レビュー依頼→コメント→修正依頼→承認→本番デプロイ)
 - [x] Keigo escalation drill pack — 5 stages (カジュアル→丁寧→依頼→謝罪→フォーマル書き出し)
 - [x] 1-on-1 lifecycle drill pack — 5 stages (開始→順調→遅延→課題→フィードバック)
-- [x] Link scenarios.json to vocab IDs (all 32 frames linked)
+- [x] Design review drill pack — 5 stages (レビュー依頼→懸念指摘→修正依頼→承認→仕様共有)
+- [x] Email lifecycle drill pack — 5 stages (書き出し→丁寧な依頼→情報共有→フォローアップ→結び)
+- [x] Link scenarios.json to vocab IDs (all 46 frames linked)
 - [x] Register filter in scenarios (All / Neutral / Casual / Formal)
-- [x] Expand vocabulary: 148 → 170 (22 new entries: tech/verbs/communication/status)
-- [x] ChatGPT review Part 5 (149–170) — 2 fixes applied
-- [x] ChatGPT review all 5 drill packs — 1 fix applied (1on1-s5)
-- [x] ChatGPT review all scenarios — 2 fixes applied (std-003, inc-005)
-- [ ] Spaced repetition scheduling based on test results
+- [x] Expand vocabulary: 170 → 200 (30 new entries: tech/design, email, project, status)
+- [x] Design Review + Project Kick-off scenario packs (14 new frames)
+- [x] Coverage analyzer script (`scripts/coverage-analyzer.js`) — 40% coverage baseline (79/200)
+- [x] ChatGPT review all parts (1–5) — 11 total fixes
+- [x] ChatGPT review all 5 original drill packs + all scenarios
+- [ ] **ChatGPT review Part 6 (171–200)** — pending; 30 new entries unreviewed
+- [ ] **ChatGPT review new drill packs** (design-review, email-lifecycle) — pending
+- [ ] **Link new vocab (171–200) to scenarios/drills** — 39 high-priority uncovered active S/A entries
 - [ ] More drill packs
-  - Next: Design review / project kick-off lifecycle
-  - After: Email writing lifecycle (request → follow-up → close)
-- [ ] More scenario packs (PR review, design review, project kick-off)
-- [ ] Expand vocabulary: 170 → ~220 (next phase)
-  - Priority: keigo email closings, project lifecycle, design review terms
+  - Next: Performance review / appraisal lifecycle
+  - After: Client meeting lifecycle
+- [ ] More scenario packs (performance review, client-facing)
+- [ ] Expand vocabulary: 200 → ~250 (next phase)
+  - Priority: client-facing terms, performance review vocab, appraisal language
