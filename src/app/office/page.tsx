@@ -15,7 +15,7 @@ import {
   Building2, Search, MessageSquare, BookOpen,
   Eye, RefreshCw, Target, Shuffle, Star,
   GraduationCap, ThumbsUp, ThumbsDown, RotateCcw,
-  CheckCircle2, ChevronRight, List, X, EyeOff, Zap
+  CheckCircle2, ChevronRight, List, X, EyeOff, Zap, Calendar
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import officeData from "@/../public/seed-data/office_vocabulary.json"
@@ -30,6 +30,7 @@ interface CardProgress {
   knownCount: number
   unknownCount: number
   level: number  // 0–5
+  nextReviewDate?: string  // ISO date (YYYY-MM-DD) — when next due for review
 }
 
 // ─── Constants ────────────────────────────────────────────────────────────────
@@ -64,6 +65,9 @@ const CONTEXT_TAGS = [
 const TIER_LABELS: Record<string, string> = { S: "Daily", A: "Weekly", B: "Monthly", C: "Rare" }
 const MATCH_BATCH_SIZE = 10
 
+// SRS intervals in days per level (SM-2 inspired)
+const SRS_INTERVALS: Record<number, number> = { 0: 1, 1: 3, 2: 7, 3: 14, 4: 30, 5: 90 }
+
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
 function getCategoryLabel(card: OfficeCard): string {
@@ -91,6 +95,7 @@ export default function OfficePage() {
   const [shuffleMode, setShuffleMode] = useState(false)
   const [showOnlyFavorites, setShowOnlyFavorites] = useState(false)
   const [showOnlyUnknown, setShowOnlyUnknown] = useState(false)
+  const [showDueOnly, setShowDueOnly] = useState(false)
   const [favoriteCards, setFavoriteCards] = useState<Set<string>>(new Set())
 
   // Flip card state
@@ -164,11 +169,27 @@ export default function OfficePage() {
         return !p || p.level < 3
       })
     }
+    if (showDueOnly && testMode) {
+      const today = new Date().toISOString().split('T')[0]
+      cards = cards.filter(c => {
+        const p = cardProgress.get(c.id)
+        return p?.nextReviewDate && p.nextReviewDate <= today
+      })
+    }
     if (shuffleMode) {
       cards = [...cards].sort(() => Math.random() - 0.5)
     }
     return cards
-  }, [allCards, selectedCategory, selectedContext, tierFilter, activeFilter, searchQuery, showOnlyFavorites, favoriteCards, showOnlyUnknown, testMode, cardProgress, shuffleMode])
+  }, [allCards, selectedCategory, selectedContext, tierFilter, activeFilter, searchQuery, showOnlyFavorites, favoriteCards, showOnlyUnknown, showDueOnly, testMode, cardProgress, shuffleMode])
+
+  // Due-today count across ALL filtered cards (ignores showDueOnly so the badge always shows)
+  const dueToday = useMemo(() => {
+    const today = new Date().toISOString().split('T')[0]
+    return allCards.filter(c => {
+      const p = cardProgress.get(c.id)
+      return p?.nextReviewDate && p.nextReviewDate <= today
+    }).length
+  }, [allCards, cardProgress])
 
   // Reset flip cards when filters change
   useEffect(() => {
@@ -276,14 +297,18 @@ export default function OfficePage() {
   // ── Card progress ─────────────────────────────────────────────────────────
 
   function markCard(cardId: string, known: boolean) {
-    const now = new Date()
     const current = cardProgress.get(cardId) || { cardId, knownCount: 0, unknownCount: 0, level: 0 }
     const newLevel = known ? Math.min(5, current.level + 1) : Math.max(0, current.level - 1)
+    // Compute next review date based on SRS interval for the new level
+    const nextDate = new Date()
+    nextDate.setDate(nextDate.getDate() + SRS_INTERVALS[newLevel])
+    const nextReviewDate = nextDate.toISOString().split('T')[0]
     const updated: CardProgress = {
       cardId,
       knownCount: current.knownCount + (known ? 1 : 0),
       unknownCount: current.unknownCount + (known ? 0 : 1),
       level: newLevel,
+      nextReviewDate,
     }
     const newProgress = new Map(cardProgress)
     newProgress.set(cardId, updated)
@@ -542,8 +567,23 @@ export default function OfficePage() {
 
               {testMode && (
                 <label className="inline-flex items-center gap-2 cursor-pointer text-sm">
-                  <Switch checked={showOnlyUnknown} onCheckedChange={setShowOnlyUnknown} />
+                  <Switch checked={showOnlyUnknown} onCheckedChange={v => { setShowOnlyUnknown(v); if (v) setShowDueOnly(false) }} />
                   <span className="text-muted-foreground">Focus needs practice</span>
+                </label>
+              )}
+
+              {testMode && (
+                <label className="inline-flex items-center gap-2 cursor-pointer text-sm">
+                  <Switch checked={showDueOnly} onCheckedChange={v => { setShowDueOnly(v); if (v) setShowOnlyUnknown(false) }} />
+                  <span className="flex items-center gap-1.5 text-muted-foreground">
+                    <Calendar className="h-3.5 w-3.5" />
+                    Due Today
+                    {dueToday > 0 && (
+                      <span className="inline-flex items-center justify-center text-[10px] font-bold bg-amber-500 text-white rounded-full h-4 min-w-[16px] px-1">
+                        {dueToday}
+                      </span>
+                    )}
+                  </span>
                 </label>
               )}
 
@@ -851,6 +891,12 @@ export default function OfficePage() {
                           <div className="w-2.5 h-2.5 rounded-full bg-gray-400 shrink-0" />
                           <span className="text-xs sm:text-sm">Not Reviewed: {filteredCards.length - cardProgress.size}</span>
                         </div>
+                        {dueToday > 0 && (
+                          <div className="flex items-center gap-1.5">
+                            <Calendar className="h-3 w-3 text-amber-500 shrink-0" />
+                            <span className="text-xs sm:text-sm text-amber-600 dark:text-amber-400 font-medium">Due: {dueToday}</span>
+                          </div>
+                        )}
                       </div>
                       <div className="flex gap-2 shrink-0">
                         <Button variant="outline" size="sm" onClick={() => setFlippedCards(new Set())} disabled={flippedCards.size === 0} className="text-xs sm:text-sm h-8 sm:h-9">
@@ -901,10 +947,15 @@ export default function OfficePage() {
                               style={{ backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden", minHeight: "150px" }}
                             >
                               {progress && (
-                                <div className="absolute top-2 left-2 z-10">
+                                <div className="absolute top-2 left-2 z-10 flex gap-1">
                                   <Badge variant={progress.level >= 3 ? "default" : "destructive"} className="text-[10px] px-1.5 py-0">
                                     L{progress.level}
                                   </Badge>
+                                  {progress.nextReviewDate && progress.nextReviewDate <= new Date().toISOString().split('T')[0] && (
+                                    <Badge className="text-[10px] px-1.5 py-0 bg-amber-500 hover:bg-amber-500 text-white border-0">
+                                      due
+                                    </Badge>
+                                  )}
                                 </div>
                               )}
                               <div className="absolute top-2 right-2 z-10">
@@ -940,6 +991,18 @@ export default function OfficePage() {
                                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground font-medium">⚪ Passive</span>
                                   )}
                                 </div>
+                                {/* SRS next review date */}
+                                {progress?.nextReviewDate && (
+                                  <div className="flex items-center gap-1 text-[10px] text-muted-foreground">
+                                    <Calendar className="h-3 w-3" />
+                                    <span>
+                                      {progress.nextReviewDate <= new Date().toISOString().split('T')[0]
+                                        ? <span className="text-amber-500 font-medium">due now</span>
+                                        : <>next: {progress.nextReviewDate}</>
+                                      }
+                                    </span>
+                                  </div>
+                                )}
                                 {/* Know/Don't know buttons */}
                                 <div className="flex gap-3">
                                   <button
