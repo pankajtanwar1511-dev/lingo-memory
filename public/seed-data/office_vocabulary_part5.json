@@ -280,8 +280,8 @@
       "kana": "ごふめいなてんがあれば",
       "romaji": "go fumei na ten ga areba",
       "meaning": [
-        "if you have any questions",
-        "if anything is unclear"
+        "if anything is unclear",
+        "if you have any questions"
       ],
       "partOfSpeech": [
         "expression"
@@ -542,9 +542,9 @@
       ],
       "category": "status",
       "example": {
-        "japanese": "ステータスを更新しました。",
-        "kana": "ステータスをこうしんしました。",
-        "english": "I've updated the status."
+        "japanese": "ステータス更新を行いました。",
+        "kana": "ステータスこうしんをおこないました。",
+        "english": "I've completed the status update."
       }
     }
   ]
