@@ -1,6 +1,6 @@
 # Office Japanese App — Build Progress
 
-> Last updated: 2026-02-19 · Schema v2 · Drills v1 · 5 packs · vocabIds linking · register filter · 170 vocab
+> Last updated: 2026-02-19 · Schema v2 · Drills v1 · 5 packs · vocabIds linking · register filter · 170 vocab · all data reviewed
 
 ---
 
@@ -254,7 +254,7 @@ Active/passive audit: 170 entries (after expansion), **146 active / 24 passive**
 - office-060 (先輩): active → passive
 - Entries 149–170: all active=true (production-level tech/comm terms)
 
-**Part 5 (149–170) pending ChatGPT review** — use `public/seed-data/office_vocabulary_part5.json`.
+**All 5 parts reviewed.** See review log below for all fixes applied.
 
 ---
 
@@ -355,6 +355,9 @@ Give 3–5 prioritised recommendations. Be specific about what to build next and
 | 2026-02-18 | Vocab batch | Part 2 (038–074) | 4 fixes: partOfSpeech ×2, category ×1, romaji ×40 |
 | 2026-02-19 | Vocab batch | Part 3 (075–111) | 2 fixes: partOfSpeech ×1, example kana ×1 |
 | 2026-02-19 | Vocab batch | Part 4 (112–148) | 1 fix: DM kana + romaji |
+| 2026-02-19 | Vocab batch | Part 5 (149–170) | 2 fixes: office-160 meaning order, office-170 example alignment |
+| 2026-02-19 | Drill packs | All 5 packs | 1 fix: 1on1-s5 model answer (unnatural compression → two-sentence) |
+| 2026-02-19 | Scenarios | All 5 packs | 2 fixes: std-003 を→に particle, inc-005 added が particle |
 | 2026-02-18 | Strategic | Full app | Recommended: depth over breadth → linked drills |
 | 2026-02-19 | Strategic | Full app | Validated two-layer linking approach + drill schema |
 
@@ -374,7 +377,9 @@ Give 3–5 prioritised recommendations. Be specific about what to build next and
 - [x] Link scenarios.json to vocab IDs (all 32 frames linked)
 - [x] Register filter in scenarios (All / Neutral / Casual / Formal)
 - [x] Expand vocabulary: 148 → 170 (22 new entries: tech/verbs/communication/status)
-- [ ] ChatGPT review Part 5 (149–170) — use `office_vocabulary_part5.json`
+- [x] ChatGPT review Part 5 (149–170) — 2 fixes applied
+- [x] ChatGPT review all 5 drill packs — 1 fix applied (1on1-s5)
+- [x] ChatGPT review all scenarios — 2 fixes applied (std-003, inc-005)
 - [ ] Spaced repetition scheduling based on test results
 - [ ] More drill packs
   - Next: Design review / project kick-off lifecycle
