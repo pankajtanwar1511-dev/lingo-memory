@@ -496,6 +496,204 @@
           }
         }
       ]
+    },
+    {
+      "id": "design-review-lifecycle",
+      "title": "Design Review",
+      "titleJa": "デザインレビュー",
+      "cluster": "tech",
+      "description": "Practice the design review lifecycle: propose a design, flag concerns, request revisions, approve, and share the final spec.",
+      "stages": [
+        {
+          "id": "design-s1",
+          "stage": 1,
+          "title": "Request Review",
+          "titleJa": "レビュー依頼",
+          "prompt": "You've finished a design proposal. Tell the team you've created it and ask for a review.",
+          "hint": "Use 作成する (さくせいする) and レビューする (レビューをおねがいする)",
+          "targets": {
+            "required": ["office-073", "office-062"],
+            "optional": ["office-023"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "デザイン案を作成しました。レビューをお願いできますか？",
+            "kana": "デザインあんをさくせいしました。レビューをおねがいできますか？",
+            "english": "I've created a design proposal. Could you please review it?"
+          }
+        },
+        {
+          "id": "design-s2",
+          "stage": 2,
+          "title": "Flag Concern",
+          "titleJa": "課題の指摘",
+          "prompt": "During the design review, you spot a potential issue with the spec. Flag it and ask for confirmation.",
+          "hint": "Use 課題 (かだい) and 確認する (かくにんする)",
+          "targets": {
+            "required": ["office-005", "office-001"],
+            "optional": ["office-090"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "こちらの仕様に課題があります。確認していただけますか？",
+            "kana": "こちらのしようにかだいがあります。かくにんしていただけますか？",
+            "english": "There is an issue with this spec. Could you check it?"
+          }
+        },
+        {
+          "id": "design-s3",
+          "stage": 3,
+          "title": "Request Revision",
+          "titleJa": "修正依頼",
+          "prompt": "The review found problems with the design. Ask for revisions before the team proceeds.",
+          "hint": "Use 修正する (しゅうせいする) and either 仕様 (しよう) or 提案 (ていあん) to name what needs fixing",
+          "targets": {
+            "required": ["office-017"],
+            "optional": [],
+            "anyOf": [["office-090", "office-023"]]
+          },
+          "modelAnswer": {
+            "japanese": "仕様に問題があります。修正してから進めてください。",
+            "kana": "しようにもんだいがあります。しゅうせいしてからすすめてください。",
+            "english": "There is a problem with the spec. Please revise before proceeding."
+          }
+        },
+        {
+          "id": "design-s4",
+          "stage": 4,
+          "title": "Approve",
+          "titleJa": "承認・確定",
+          "prompt": "The revisions are done and the design looks good. Approve it and confirm the spec is now final.",
+          "hint": "Use 承認する (しょうにんする) and 確定する (かくていする)",
+          "targets": {
+            "required": ["office-018", "office-066"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "デザインを承認しました。仕様を確定しました。",
+            "kana": "デザインをしょうにんしました。しようをかくていしました。",
+            "english": "I've approved the design. The spec is now finalized."
+          }
+        },
+        {
+          "id": "design-s5",
+          "stage": 5,
+          "title": "Share Spec",
+          "titleJa": "仕様共有",
+          "prompt": "Design is approved. Share the final specification document with the team for reference.",
+          "hint": "Use 共有する (きょうゆうする) and either 仕様 (しよう) or ドキュメント",
+          "targets": {
+            "required": ["office-011"],
+            "optional": ["office-102"],
+            "anyOf": [["office-090", "office-164"]]
+          },
+          "modelAnswer": {
+            "japanese": "最終仕様を共有します。ドキュメントをご確認ください。",
+            "kana": "さいしゅうしようをきょうゆうします。ドキュメントをごかくにんください。",
+            "english": "I'm sharing the final spec. Please check the document."
+          }
+        }
+      ]
+    },
+    {
+      "id": "email-lifecycle",
+      "title": "Business Email",
+      "titleJa": "ビジネスメール",
+      "cluster": "keigo",
+      "description": "Practice the full business email lifecycle: open formally, make a request, share information, send a follow-up, and close with a sign-off.",
+      "stages": [
+        {
+          "id": "email-s1",
+          "stage": 1,
+          "title": "Formal Open",
+          "titleJa": "書き出し",
+          "prompt": "Start a formal business email to someone outside your team. Use the standard Japanese business opener.",
+          "hint": "Use お世話になっております (おせわになっております) — the universal formal email opener",
+          "targets": {
+            "required": ["office-051"],
+            "optional": ["office-049"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "お世話になっております。〇〇の件でご連絡いたします。",
+            "kana": "おせわになっております。〇〇のけんでごれんらくいたします。",
+            "english": "Thank you for your continued support. I am contacting you regarding 〇〇."
+          }
+        },
+        {
+          "id": "email-s2",
+          "stage": 2,
+          "title": "Polite Request",
+          "titleJa": "依頼",
+          "prompt": "Ask someone to review an attached document. Acknowledge you're asking for their time before making the request.",
+          "hint": "Use お手数をおかけします (おてすうをおかけします) and ご確認ください (ごかくにんください)",
+          "targets": {
+            "required": ["office-103", "office-102"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "お手数をおかけしますが、添付のドキュメントをご確認ください。",
+            "kana": "おてすうをおかけしますが、てんぷのドキュメントをごかくにんください。",
+            "english": "Sorry to trouble you, but please check the attached document."
+          }
+        },
+        {
+          "id": "email-s3",
+          "stage": 3,
+          "title": "Share Information",
+          "titleJa": "情報共有",
+          "prompt": "Share a summary of information using the formal phrase for 'as follows', then note you're sharing it for reference.",
+          "hint": "Use 以下の通り (いかのとおり) and 共有する (きょうゆうする)",
+          "targets": {
+            "required": ["office-158", "office-011"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "詳細は以下の通りです。ご参考までに共有します。",
+            "kana": "しょうさいはいかのとおりです。ごさんこうまでにきょうゆうします。",
+            "english": "The details are as follows. Sharing for your reference."
+          }
+        },
+        {
+          "id": "email-s4",
+          "stage": 4,
+          "title": "Follow Up",
+          "titleJa": "フォローアップ",
+          "prompt": "You haven't received a reply. Send a polite follow-up message asking them to check your previous email.",
+          "hint": "Use フォローアップ and 確認する (かくにんする)",
+          "targets": {
+            "required": ["office-163", "office-001"],
+            "optional": ["office-049"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "先日のメールについてフォローアップいたします。ご確認をお願いします。",
+            "kana": "せんじつのメールについてフォローアップいたします。ごかくにんをおねがいします。",
+            "english": "I'm following up on my previous email. Please check when you have a moment."
+          }
+        },
+        {
+          "id": "email-s5",
+          "stage": 5,
+          "title": "Close Email",
+          "titleJa": "結び",
+          "prompt": "Close a formal email by inviting questions if anything is unclear, then sign off politely.",
+          "hint": "Use よろしくお願いいたします (よろしくおねがいいたします) and either ご不明な点があれば or ご連絡いたします",
+          "targets": {
+            "required": ["office-010"],
+            "optional": [],
+            "anyOf": [["office-160", "office-161"]]
+          },
+          "modelAnswer": {
+            "japanese": "ご不明な点があればお知らせください。よろしくお願いいたします。",
+            "kana": "ごふめいなてんがあればおしらせください。よろしくおねがいいたします。",
+            "english": "Please let me know if anything is unclear. Thank you."
+          }
+        }
+      ]
     }
   ]
 }
