@@ -100,6 +100,105 @@
           }
         }
       ]
+    },
+    {
+      "id": "standup-lifecycle",
+      "title": "Daily Standup",
+      "titleJa": "朝会報告",
+      "cluster": "standup",
+      "description": "Practice the five standup patterns every engineer needs: start a task, give a progress update, report completion, report a delay, and escalate a blocker.",
+      "stages": [
+        {
+          "id": "standup-s1",
+          "stage": 1,
+          "title": "Start",
+          "titleJa": "着手",
+          "prompt": "It's standup time. Tell the team which task you're starting today.",
+          "hint": "Use the word for 'task' (タスク) and 'today' in formal speech (ほんじつ) or 'plan' (よてい)",
+          "targets": {
+            "required": ["office-028"],
+            "optional": ["office-032"],
+            "anyOf": [["office-108", "office-036"]]
+          },
+          "modelAnswer": {
+            "japanese": "本日はAPIのタスクに取り組みます。",
+            "kana": "ほんじつはAPIのタスクにとりくみます。",
+            "english": "Today I'll be working on the API task."
+          }
+        },
+        {
+          "id": "standup-s2",
+          "stage": 2,
+          "title": "In Progress",
+          "titleJa": "進行中",
+          "prompt": "You're halfway through implementing a feature. Share a progress update with the team.",
+          "hint": "Use 進捗 (しんちょく) for progress and 対応中 (たいおうちゅう) to say you're currently working on it",
+          "targets": {
+            "required": ["office-003", "office-006"],
+            "optional": ["office-032"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "ログイン機能の実装の進捗を共有します。現在対応中です。",
+            "kana": "ログインきのうのじっそうのしんちょくをきょうゆうします。げんざいたいおうちゅうです。",
+            "english": "I'll share the progress on the login feature implementation. Currently working on it."
+          }
+        },
+        {
+          "id": "standup-s3",
+          "stage": 3,
+          "title": "Complete",
+          "titleJa": "完了報告",
+          "prompt": "Your feature is finished and the PR has been merged. Report the completed task to the team.",
+          "hint": "Use 完了 (かんりょう) and either マージする or デプロイする",
+          "targets": {
+            "required": ["office-045"],
+            "optional": ["office-139"],
+            "anyOf": [["office-069", "office-068"]]
+          },
+          "modelAnswer": {
+            "japanese": "機能実装が完了しました。プルリクエストをマージしました。",
+            "kana": "きのうじっそうがかんりょうしました。プルリクエストをマージしました。",
+            "english": "Feature implementation is complete. I've merged the pull request."
+          }
+        },
+        {
+          "id": "standup-s4",
+          "stage": 4,
+          "title": "Delay",
+          "titleJa": "遅延報告",
+          "prompt": "An unexpected defect is pushing your deadline back. Report the delay to the team.",
+          "hint": "Use 遅延 (ちえん) for delay and 締め切り (しめきり) for deadline",
+          "targets": {
+            "required": ["office-047", "office-004"],
+            "optional": [],
+            "anyOf": [["office-005", "office-042"]]
+          },
+          "modelAnswer": {
+            "japanese": "不具合の対応で遅延しています。締め切りを明日に変更します。",
+            "kana": "ふぐあいのたいおうでちえんしています。しめきりをあしたにへんこうします。",
+            "english": "We are delayed due to a defect. I'll update the deadline to tomorrow."
+          }
+        },
+        {
+          "id": "standup-s5",
+          "stage": 5,
+          "title": "Blocker",
+          "titleJa": "ブロッカー",
+          "prompt": "You're blocked and can't move forward alone. Report the blocker and ask for help.",
+          "hint": "Use ブロッカー and 相談する (そうだんする) to request consultation",
+          "targets": {
+            "required": ["office-088", "office-016"],
+            "optional": ["office-005"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "ブロッカーが発生しています。後でご相談してもよいですか？",
+            "kana": "ブロッカーがはっせいしています。あとでごそうだんしてもよいですか？",
+            "english": "There is a blocker. May I consult with you later?"
+          }
+        }
+      ]
     }
   ]
 }

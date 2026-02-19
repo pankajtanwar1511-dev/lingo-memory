@@ -56,10 +56,16 @@ interface TermResult {
   meaning: string
 }
 
+interface AnyOfGroupResult {
+  matched: boolean
+  options: { id: string; kanji: string | undefined; kana: string; meaning: string }[]
+}
+
 interface ValidationResult {
   pass: boolean
   hasJapanese: boolean
   required: TermResult[]
+  anyOf: AnyOfGroupResult[]
 }
 
 interface StageRecord {
@@ -89,7 +95,21 @@ function validateInput(
       input.includes(card.kana)
     return { id, matched, kanji: card.kanji ?? undefined, kana: card.kana, meaning: card.meaning[0] }
   })
-  return { pass: hasJapanese && required.every(r => r.matched), hasJapanese, required }
+  // anyOf: each group passes if at least one term from the group is present
+  const anyOf: AnyOfGroupResult[] = targets.anyOf.map(group => {
+    const options = group.map(id => {
+      const card = vocabMap.get(id)
+      return { id, kanji: card?.kanji ?? undefined, kana: card?.kana ?? "?", meaning: card?.meaning[0] ?? id }
+    })
+    const matched = group.some(id => {
+      const card = vocabMap.get(id)
+      if (!card) return false
+      return (card.kanji ? input.includes(card.kanji) : false) || input.includes(card.kana)
+    })
+    return { matched, options }
+  })
+  const pass = hasJapanese && required.every(r => r.matched) && anyOf.every(g => g.matched)
+  return { pass, hasJapanese, required, anyOf }
 }
 
 // ─── Subcomponents ────────────────────────────────────────────────────────────
@@ -445,26 +465,45 @@ export default function DrillsPage() {
                       <XCircle className="h-4 w-4 shrink-0" />
                       {!validation.hasJapanese
                         ? "Please write in Japanese (kana or kanji)"
-                        : `Missing required term${validation.required.filter(r => !r.matched).length > 1 ? "s" : ""}`}
+                        : validation.required.some(r => !r.matched)
+                          ? `Missing required term${validation.required.filter(r => !r.matched).length > 1 ? "s" : ""}`
+                          : `Missing one of the synonym choices below`}
                     </div>
                     {validation.hasJapanese && (
-                      <div className="flex flex-wrap gap-1.5">
-                        {validation.required.map(term => (
-                          <span
-                            key={term.id}
-                            className={cn(
-                              "inline-flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium border",
-                              term.matched
-                                ? "bg-emerald-50 dark:bg-emerald-950/30 border-emerald-300 dark:border-emerald-700 text-emerald-700 dark:text-emerald-300"
-                                : "bg-red-50 dark:bg-red-950/30 border-red-300 dark:border-red-700 text-red-700 dark:text-red-300"
-                            )}
-                          >
-                            {term.matched
-                              ? <CheckCircle2 className="h-3 w-3" />
-                              : <XCircle className="h-3 w-3" />}
-                            <span className="font-japanese">{term.kanji ?? term.kana}</span>
-                            <span className="text-[10px] opacity-70">{term.meaning}</span>
-                          </span>
+                      <div className="space-y-1.5">
+                        <div className="flex flex-wrap gap-1.5">
+                          {validation.required.map(term => (
+                            <span
+                              key={term.id}
+                              className={cn(
+                                "inline-flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium border",
+                                term.matched
+                                  ? "bg-emerald-50 dark:bg-emerald-950/30 border-emerald-300 dark:border-emerald-700 text-emerald-700 dark:text-emerald-300"
+                                  : "bg-red-50 dark:bg-red-950/30 border-red-300 dark:border-red-700 text-red-700 dark:text-red-300"
+                              )}
+                            >
+                              {term.matched
+                                ? <CheckCircle2 className="h-3 w-3" />
+                                : <XCircle className="h-3 w-3" />}
+                              <span className="font-japanese">{term.kanji ?? term.kana}</span>
+                              <span className="text-[10px] opacity-70">{term.meaning}</span>
+                            </span>
+                          ))}
+                        </div>
+                        {validation.anyOf.filter(g => !g.matched).map((group, i) => (
+                          <div key={i} className="flex flex-wrap items-center gap-1.5">
+                            <span className="text-xs text-red-600 dark:text-red-400 font-medium shrink-0">Use one of:</span>
+                            {group.options.map(opt => (
+                              <span
+                                key={opt.id}
+                                className="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium border bg-red-50 dark:bg-red-950/30 border-red-300 dark:border-red-700 text-red-700 dark:text-red-300"
+                              >
+                                <XCircle className="h-3 w-3" />
+                                <span className="font-japanese">{opt.kanji ?? opt.kana}</span>
+                                <span className="text-[10px] opacity-70">{opt.meaning}</span>
+                              </span>
+                            ))}
+                          </div>
                         ))}
                       </div>
                     )}
@@ -544,6 +583,23 @@ export default function DrillsPage() {
                       <span className="text-[10px] opacity-70">{term.meaning}</span>
                     </span>
                   ))}
+                  {validation.anyOf.map((group, i) => {
+                    const matched = group.options.find(opt => {
+                      const card = vocabMap.get(opt.id)
+                      if (!card) return false
+                      return (card.kanji ? input.includes(card.kanji) : false) || input.includes(card.kana)
+                    })
+                    return matched ? (
+                      <span
+                        key={i}
+                        className="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium border bg-emerald-50 dark:bg-emerald-950/30 border-emerald-300 dark:border-emerald-700 text-emerald-700 dark:text-emerald-300"
+                      >
+                        <CheckCircle2 className="h-3 w-3" />
+                        <span className="font-japanese">{matched.kanji ?? matched.kana}</span>
+                        <span className="text-[10px] opacity-70">{matched.meaning}</span>
+                      </span>
+                    ) : null
+                  })}
                 </div>
 
                 {/* Model answer */}
@@ -615,6 +671,22 @@ export default function DrillsPage() {
                         </div>
                       )
                     })}
+                    {currentStage.targets.anyOf.map((group, i) => (
+                      <div key={i} className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs border bg-muted/60">
+                        <span className="text-muted-foreground text-[10px] font-medium shrink-0">or:</span>
+                        {group.map((id, j) => {
+                          const card = vocabMap.get(id)
+                          if (!card) return null
+                          return (
+                            <span key={id} className="inline-flex items-center gap-1">
+                              {j > 0 && <span className="text-muted-foreground text-[10px]">/</span>}
+                              <span className="font-japanese font-bold text-sm">{card.kanji ?? card.kana}</span>
+                              <span className="text-muted-foreground">({card.meaning[0]})</span>
+                            </span>
+                          )
+                        })}
+                      </div>
+                    ))}
                   </div>
                 </div>
 

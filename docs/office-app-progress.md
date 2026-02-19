@@ -1,6 +1,6 @@
 # Office Japanese App — Build Progress
 
-> Last updated: 2026-02-19 · Schema v2 · Drills v1
+> Last updated: 2026-02-19 · Schema v2 · Drills v1 · anyOf validation live
 
 ---
 
@@ -19,10 +19,10 @@ typed interface (separate from `VocabularyCard`).
 |------|--------|-------|
 | `public/seed-data/office_vocabulary.json` | ✅ Done | 148 vocab entries, 13 categories, schema v2 |
 | `public/seed-data/office_scenarios.json` | ✅ Done | 5 situation packs, 32 sentence frames |
-| `public/seed-data/office_drills.json` | ✅ Done | 1 pack (incident), 5 stages, schema v1 |
+| `public/seed-data/office_drills.json` | ✅ Done | 2 packs (incident + standup), 10 stages, schema v1 |
 | `src/app/office/page.tsx` | ✅ Done | 4 modes: Browse / Flip / Match / Test + Drills button |
 | `src/app/office/scenarios/page.tsx` | ✅ Done | Browse + Drill mode, 5 situations |
-| `src/app/office/drills/page.tsx` | ✅ Done | Production drill UI, stem validation, completion screen |
+| `src/app/office/drills/page.tsx` | ✅ Done | Production drill UI, stem + anyOf validation, completion screen |
 | `src/types/vocabulary.ts` | ✅ Done | OfficeCard, OfficeTier, OfficeContext, OfficeCategory, OfficeExample |
 | `docs/japanese-office-vocabulary.md` | ✅ Done | 100+ word reference doc |
 | `docs/japanese-office-practice.md` | ✅ Done | Practice drills, 30-day plan |
@@ -157,17 +157,23 @@ against required vocabulary terms from `office_vocabulary.json`.
 
 - `targets.required` — vocab IDs that must appear in the user's answer
 - `targets.optional` — extra credit; not validated
-- `targets.anyOf` — reserved for future use (any-one-of groups)
+- `targets.anyOf` — array of synonym groups; each group requires at least one match (✅ live)
 
 ### Current packs
 
 | Pack | Stages | Vocab targets |
 |---|---|---|
 | Incident Response (障害対応) | 5 | 発生 → 影響範囲 → 暫定対応 → 根本原因 → 再発防止 |
+| Daily Standup (朝会報告) | 5 | 着手 → 進行中 → 完了報告 → 遅延報告 → ブロッカー |
 
 ### Validation logic
 - Japanese character guard: `/[ぁ-んァ-ン一-龯]/`
-- Stem match: `input.includes(card.kanji) || input.includes(card.kana)`
+- `required` — all listed vocab IDs must appear (kanji or kana stem match)
+- `anyOf` — each group requires at least one term from the group (synonym choice)
+  - Example: `[["office-069", "office-068"]]` → マージする **or** デプロイする
+  - Failed anyOf shows "Use one of: X / Y" in red feedback badges
+  - Passed anyOf shows the matched term as a green badge
+  - Revealed anyOf shows all options in the study block with "or:" prefix
 - MAX_ATTEMPTS = 2 before forced reveal
 
 ### UI flow
@@ -343,13 +349,15 @@ Give 3–5 prioritised recommendations. Be specific about what to build next and
 - [x] Progress persistence (localStorage) — L0–L5 per card via Test mode
 - [x] Search / filter by keyword (kanji / kana / romaji / meaning)
 - [x] Production drills (`/office/drills`) — incident lifecycle pack live
-- [ ] More drill packs (PR review, standup, 1-on-1)
-  - Next natural pack: Standup lifecycle (着手→完了→遅延→ブロッカー)
-  - After: PR/code review, keigo escalation
-- [ ] `anyOf` validation in drills (for synonym-accepting stages)
+- [x] `anyOf` validation in drills — synonym-accepting stages live (standup-s3, standup-s4)
+- [x] Standup lifecycle drill pack — 5 stages (着手→進行中→完了→遅延→ブロッカー)
+- [ ] More drill packs
+  - Next: PR/code review (レビュー依頼→コメント→修正→承認→マージ)
+  - After: Keigo escalation (casual→polite→formal→apology→thank you)
 - [ ] Spaced repetition scheduling based on test results
 - [ ] Expand vocabulary: 148 → ~250 (next phase)
-  - Priority: add ~30 more active tier-S verbs for standup + PR contexts
-  - After drills are validated with current 148
+  - Priority: add ~30 more active tier-S verbs for PR/code review contexts
+  - Gate: after PR drill pack is built (validates which words get tested)
 - [ ] More scenario packs (PR review, design review, project kick-off)
 - [ ] Link scenarios.json to vocab IDs (like drills already do)
+- [ ] Register filter in scenarios (show formal / casual-neutral / neutral only)
