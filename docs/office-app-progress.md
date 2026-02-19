@@ -1,6 +1,6 @@
 # Office Japanese App — Build Progress
 
-> Last updated: 2026-02-19 · Schema v2 · Drills v1 · 7 packs · vocabIds linking · register filter · 200 vocab · SRS in Test mode · coverage analyzer
+> Last updated: 2026-02-20 · Schema v2 · Drills v1 · 7 packs · 200/580 vocab · SRS v1 (basic) · coverage 40% → target 60%
 
 ---
 
@@ -255,10 +255,196 @@ node scripts/coverage-analyzer.js --category verbs # filter by category
 ```
 
 **Baseline (200 entries, 7 drill packs, 7 scenario packs):**
-- Covered: 79/200 (40%)
+- Covered: 79/200 (40%) · Both: 34 · Scenarios only: 23 · Drills only: 22
 - Best coverage: incident 83%, keigo 73%
-- Worst coverage: documents 14%, roles 13%
-- High-priority uncovered (active, tier S/A): 39 entries (mostly parts 5–6 not yet linked)
+- Worst coverage: communication 19%, documents 14%, roles 13%, meetings 21%
+- High-priority uncovered (active, tier S/A): **87 entries** across all categories
+
+---
+
+## Reference Doc Gap Analysis
+
+`docs/japanese-office-vocabulary.md` defines **~580 words across 21 categories** as the full target.
+The current app has **200 entries across 12 categories** — roughly 1/3 of the stated goal.
+
+### Categories completely absent from the app
+
+These categories exist in the reference doc but have **zero entries** in `office_vocabulary.json`:
+
+| Ref Category | Words | Priority | Why it matters |
+|---|---|---|---|
+| Departments & Divisions | 20 | B | Engineers need to name チーム, 開発部, 総務部 |
+| Workplace Facilities & Spaces | 20 | B/C | 会議室予約, オフィス layout — mostly passive |
+| Office Supplies & Equipment | 24 | B/C | 名刺, 印鑑, ホワイトボード — cultural essentials |
+| Finance, Budget & Accounting | 25 | B | 請求書, 精算する, 振り込む — needed for expenses |
+| Business Etiquette & Culture | 20 | A | 名刺交換, 敬語 etiquette, 報連相 |
+| Keigo — Verb Substitutions | 20 | A | いただく, おっしゃる, ご覧になる — fully missing |
+| Customers & Client Relations | 20 | B | 顧客, お客様, 取引先 — needed for client-facing |
+| Presentations & Data | 13 | A | グラフ, スライド, 説明する patterns |
+| High-Frequency Workplace Phrases | 40 | **S** | ★ Most important missing layer |
+
+### Categories present but undercovered vs the reference
+
+| Category in App | App Count | Ref Target | Gap | Coverage % |
+|---|---|---|---|---|
+| `roles` | 8 | 24 | −16 | 33% of ref |
+| `documents` | 8 | 24 | −16 | 33% of ref |
+| `meetings` | 17 | 29 | −12 | 59% of ref |
+| `hr` | 9 | 30 | −21 | 30% of ref |
+| `verbs` | 35 | 48 | −13 | 73% of ref |
+| `tech` | 22 | 25 | −3 | 88% of ref ✅ |
+| `incident` | 12 | 25 | −13 | 48% of ref |
+| `keigo` | 14 | 40 (both keigo cats) | −26 | 35% of ref |
+
+### Expansion roadmap (using reference doc as source)
+
+**Phase A — High-Frequency Phrases (priority S):** Add the 40-word "High-Freq Workplace Phrases"
+section from the reference doc. These are the most used phrases and directly improve SRS value.
+
+**Phase B — Fill undercovered categories:**
+1. Meetings: add 12 missing entries (アジェンダ, 発言する, まとめる, etc.)
+2. HR: add 21 missing entries (評価, 残業する, 研修, etc.)
+3. Keigo verb substitutions: add いただく, おっしゃる, ご覧になる, 拝見する etc. (20 entries)
+
+**Phase C — New categories (B-priority):**
+4. Documents: add 16 missing document types (書類, 報告書, 契約書, etc.)
+5. Finance: add core 15 entries (請求書, 精算する, 振り込む, 経費, 予算)
+6. Client relations: add 10 core entries (お客様, 取引先, 商談, etc.)
+
+> **Rule going forward:** New entries must come from `japanese-office-vocabulary.md` first.
+> Only add entries not in the reference doc if they are clearly missing (e.g. new tech terms).
+
+---
+
+## Coverage Roadmap (40% → 60%+)
+
+**Current state:** 79/200 covered (40%). Need 41 more entries covered to hit 60%.
+
+**Strategy: build drills/scenarios that target the biggest uncovered clusters, not more vocab.**
+
+### High-priority uncovered entries by category (active, S/A tier only)
+
+| Category | Uncovered S/A entries | Quick-win drill pack |
+|---|---|---|
+| `meetings` | 会議, ミーティング, 打ち合わせ, 議事録, 進捗確認, 報告, アジェンダ, 確認事項, 決定事項, オンライン会議, 議題 | Meeting lifecycle |
+| `tech` | エラー, テスト, ブランチ, コミット, ログ, リファクタリング, 差分, 本番リリース, モックアップ, ロードマップ | Tech workflow drill |
+| `communication` | 連絡する, 返信する, チャット, メンション, 添付, 件名, 周知, DM | Slack/messaging drill |
+| `status` | 検討中, 確認待ち, 着手済み, ステータス更新, 未対応, 保留, 対応済み, 確認済み | Status update scenarios |
+| `verbs` | 依頼する, 検討する, 準備する, まとめる, 把握する, 着手する, 見直す, 切り戻す | Standup + meeting verbs |
+| `keigo` | ご検討ください, お伝えします, 取り急ぎ, ご返信お待ちしております | Keigo phrases drill |
+
+### Drill packs needed to reach 60% coverage
+
+| New Pack | Target vocab IDs | Estimated new entries covered |
+|---|---|---|
+| Meeting lifecycle (会議の流れ) | office-019, 020, 021, 022, 025, 026, 076, 077, 078, 082 | ~10 |
+| Slack/Comms drill (チャットコミュニケーション) | office-002, 014, 049, 050, 125, 127, 129, 130, 131 | ~9 |
+| Tech workflow drill (開発フロー) | office-137, 143, 144, 150, 151, 152, 162, 167, 168 | ~9 |
+| Status update scenarios | office-097, 098, 100, 101, 154, 155, 170, 196, 197, 198 | ~10 |
+
+Adding these 4 packs: ~38 new entries → 79+38 = **117/200 = 58%** (just under 60%)
+Plus linking existing unlinked entries: **~60%+ reachable without adding any new vocab**.
+
+---
+
+## Pattern Practice Plan (from `japanese-office-practice.md`)
+
+The practice guide defines **7 communication patterns** (A–G) that are more pedagogically
+structured than what was built from scratch. These should be wired into the app.
+
+### Patterns defined in the guide
+
+| Pattern | Description | Frames | Key vocab |
+|---|---|---|---|
+| A — Acknowledgment | Responding when someone sends info | 6 | 了解です, 承知しました, 確認しました, 拝見しました |
+| B — Sharing Information | Passing something along | 5 | 共有します, ご報告です, ご参考までに |
+| C — Making a Request | Getting someone to do something | 6 | お願いします, ご確認いただけますでしょうか, ご対応よろしく |
+| D — Reporting Progress | Updating on status | 5 | 完了しました, 対応中です, 予定通り進んでいます |
+| E — Flagging Problems | Delay / blocker / stuck | 6 | 遅延が発生, 手間取っています, 相談があります |
+| F — Asking for Clarification | Need more info | 5 | 確認させてください, ご認識のすり合わせ |
+| G — Delegating / Routing | Passing to someone else | 4 | 担当の〜さんに, そちらを優先で |
+
+**Total: 37 sentence frames** directly covering real workplace writing.
+
+### Implementation plan
+
+**Option 1 (quickest): Add as scenario pack**
+Add a new `office_scenarios.json` situation pack `"pattern-practice"` using the 37 frames
+from the guide. Each frame maps directly to a pattern and links existing vocab IDs.
+
+**Option 2 (better UX): New "Pattern Drills" page**
+A new `/office/patterns` page — similar to drills but focused on sentence patterns:
+- Select a pattern (A–G)
+- See the English prompt
+- Type the Japanese response
+- Validation: check for key phrase (not just vocab ID stem matching)
+
+**Recommended approach:** Start with Option 1 (add to scenarios) — zero new code, immediate
+coverage gain. Upgrade to Option 2 when pattern drills become the primary study mode.
+
+---
+
+## SRS Upgrade Plan
+
+### Current implementation (v1 — basic level scheduler)
+
+```typescript
+// Fixed intervals per level — no personalisation
+const SRS_INTERVALS = { 0: 1, 1: 3, 2: 7, 3: 14, 4: 30, 5: 90 }
+// Binary input: thumbs up (+1 level) or thumbs down (-1 level)
+```
+
+**Problems:**
+- Binary rating (known/unknown) loses information — "barely recalled" and "instant recall" both score +1
+- No easiness factor — a hard card and an easy card get the same interval at the same level
+- No stability decay — if you skip reviews for a week, nothing changes
+
+### Target implementation (v2 — SM-2 inspired)
+
+**What to change in `CardProgress`:**
+```typescript
+interface CardProgress {
+  cardId: string
+  knownCount: number
+  unknownCount: number
+  level: number
+  nextReviewDate?: string
+  // NEW:
+  easinessFactor?: number   // default 2.5, min 1.3 — personalises interval growth
+  interval?: number         // current interval in days (replaces fixed SRS_INTERVALS lookup)
+  repetitions?: number      // consecutive correct answers
+}
+```
+
+**What to change in the UI:**
+Replace 2-button (👍 / 👎) with **4-button rating**:
+
+| Button | Label | Meaning | Effect |
+|---|---|---|---|
+| 🔴 | Again | Forgot / blank | Reset: interval=1, repetitions=0 |
+| 🟡 | Hard | Recalled with effort | EF−0.15, interval×0.8 |
+| 🟢 | Good | Recalled correctly | EF unchanged, interval×EF |
+| ⚡ | Easy | Instant recall | EF+0.1, interval×EF×1.3 |
+
+**SM-2 interval formula:**
+```
+rep=0 → 1 day
+rep=1 → 6 days
+rep>1 → prev_interval × EF
+EF' = EF + (0.1 - (5-q) × (0.08 + (5-q) × 0.02))   // q: Again=1, Hard=3, Good=4, Easy=5
+EF_min = 1.3
+```
+
+**Alternative: Use existing `src/lib/fsrs.ts`**
+The app already has a full FSRS implementation. It's wired to a `databaseService`
+but the algorithm itself (`calculateNextCard`, `Rating`) could be used standalone
+with localStorage as the store — just skip the database call.
+
+**Migration:** `CardProgress` schema is backwards-compatible. Old entries without
+`easinessFactor`/`interval` default to SM-2 starting values on first use.
+
+**Priority:** v2 SRS is a feature improvement, not a blocker. Build it after coverage
+hits 60% — otherwise optimising review scheduling for uncovered cards has no effect.
 
 ---
 
@@ -409,31 +595,44 @@ Give 3–5 prioritised recommendations. Be specific about what to build next and
 
 ## Pending / Future
 
-- [ ] Audio pronunciation (when audio files available)
+### Done ✅
 - [x] Progress persistence (localStorage) — L0–L5 per card via Test mode
-- [x] Spaced repetition scheduling (SRS) — nextReviewDate computed per mark; Due Today filter + amber badge
+- [x] SRS v1 — nextReviewDate per mark; Due Today filter + amber badge
 - [x] Search / filter by keyword (kanji / kana / romaji / meaning)
-- [x] Production drills (`/office/drills`) — incident lifecycle pack live
-- [x] `anyOf` validation in drills — synonym-accepting stages live
-- [x] Standup lifecycle drill pack — 5 stages (着手→進行中→完了→遅延→ブロッカー)
-- [x] PR/code review drill pack — 5 stages (レビュー依頼→コメント→修正依頼→承認→本番デプロイ)
-- [x] Keigo escalation drill pack — 5 stages (カジュアル→丁寧→依頼→謝罪→フォーマル書き出し)
-- [x] 1-on-1 lifecycle drill pack — 5 stages (開始→順調→遅延→課題→フィードバック)
-- [x] Design review drill pack — 5 stages (レビュー依頼→懸念指摘→修正依頼→承認→仕様共有)
-- [x] Email lifecycle drill pack — 5 stages (書き出し→丁寧な依頼→情報共有→フォローアップ→結び)
-- [x] Link scenarios.json to vocab IDs (all 46 frames linked)
+- [x] Production drills with anyOf validation
+- [x] 7 drill packs (incident, standup, PR, keigo, 1-on-1, design-review, email)
+- [x] 7 scenario packs (standup, message, incident, 1-on-1, hr, design-review, kickoff)
+- [x] vocabIds linking across all 46 scenario frames
 - [x] Register filter in scenarios (All / Neutral / Casual / Formal)
-- [x] Expand vocabulary: 170 → 200 (30 new entries: tech/design, email, project, status)
-- [x] Design Review + Project Kick-off scenario packs (14 new frames)
-- [x] Coverage analyzer script (`scripts/coverage-analyzer.js`) — 40% coverage baseline (79/200)
-- [x] ChatGPT review all parts (1–5) — 11 total fixes
-- [x] ChatGPT review all 5 original drill packs + all scenarios
-- [ ] **ChatGPT review Part 6 (171–200)** — pending; 30 new entries unreviewed
-- [ ] **ChatGPT review new drill packs** (design-review, email-lifecycle) — pending
-- [ ] **Link new vocab (171–200) to scenarios/drills** — 39 high-priority uncovered active S/A entries
-- [ ] More drill packs
-  - Next: Performance review / appraisal lifecycle
-  - After: Client meeting lifecycle
-- [ ] More scenario packs (performance review, client-facing)
-- [ ] Expand vocabulary: 200 → ~250 (next phase)
-  - Priority: client-facing terms, performance review vocab, appraisal language
+- [x] Vocabulary 148 → 200
+- [x] Coverage analyzer script
+- [x] ChatGPT review parts 1–5 + all original drill packs + original scenarios
+
+### Priority 1 — Quality (do before expanding further)
+- [ ] **ChatGPT review Part 6 (171–200)** — 30 entries unreviewed
+- [ ] **ChatGPT review design-review + email-lifecycle drill packs** — 2 packs unreviewed
+- [ ] **Native speaker review** — at least 1 pass on drill model answers; AI reviewing AI is a ceiling
+
+### Priority 2 — Coverage (40% → 60%)
+- [ ] Meeting lifecycle drill pack — targets office-019/020/021/022/025/026/076/077/078/082 (~10 entries)
+- [ ] Slack/Comms drill pack — targets office-002/014/049/050/125/127/129/130/131 (~9 entries)
+- [ ] Tech workflow drill pack — targets office-137/143/144/150/151/152/162/167/168 (~9 entries)
+- [ ] Status update scenario pack — targets office-097/098/100/101/154/155/170/196/197/198 (~10 entries)
+- [ ] Pattern Practice: add patterns A–G from `japanese-office-practice.md` as scenario pack (~37 frames)
+
+### Priority 3 — Vocab expansion (from reference doc only)
+> All new entries must come from `docs/japanese-office-vocabulary.md` — no AI-invented entries
+- [ ] **Phase A**: High-Frequency Workplace Phrases (40 entries, tier S) — highest ROI
+- [ ] **Phase B**: Meetings gap (12 entries), HR gap (21 entries), Keigo verb substitutions (20 entries)
+- [ ] **Phase C**: Documents gap (16), Finance basics (15), Client relations (10)
+
+### Priority 4 — SRS v2 (after coverage hits 60%)
+- [ ] 4-button rating: Again / Hard / Good / Easy (replaces thumbs up/down)
+- [ ] SM-2 easiness factor per card (personalised intervals)
+- [ ] Evaluate using existing `src/lib/fsrs.ts` algorithm with localStorage store
+
+### Backlog
+- [ ] Audio pronunciation (when audio files available)
+- [ ] More drill packs: performance review / appraisal lifecycle
+- [ ] More scenario packs: client-facing, performance review
+- [ ] Pattern Practice page (`/office/patterns`) — Option 2 upgrade from scenario pack
