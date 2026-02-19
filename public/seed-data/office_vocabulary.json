@@ -4274,6 +4274,516 @@
         "kana": "ステータスこうしんをおこないました。",
         "english": "I've completed the status update."
       }
+    },
+    {
+      "id": "office-171",
+      "kanji": "キックオフ",
+      "kana": "キックオフ",
+      "romaji": "kikku ofu",
+      "meaning": ["kick-off", "kick-off meeting"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting"],
+      "category": "meetings",
+      "example": {
+        "japanese": "キックオフミーティングを来週実施します。",
+        "kana": "キックオフミーティングをらいしゅうじっしします。",
+        "english": "We will hold the kick-off meeting next week."
+      }
+    },
+    {
+      "id": "office-172",
+      "kanji": "モックアップ",
+      "kana": "モックアップ",
+      "romaji": "mokku aappu",
+      "meaning": ["mockup", "visual mockup"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "standup"],
+      "category": "tech",
+      "example": {
+        "japanese": "モックアップを作成しました。",
+        "kana": "モックアップをさくせいしました。",
+        "english": "I've created a mockup."
+      }
+    },
+    {
+      "id": "office-173",
+      "kanji": "ワイヤーフレーム",
+      "kana": "ワイヤーフレーム",
+      "romaji": "waiyaa fureemu",
+      "meaning": ["wireframe"],
+      "partOfSpeech": ["noun"],
+      "active": false,
+      "tier": "B",
+      "contexts": ["meeting"],
+      "category": "tech",
+      "example": {
+        "japanese": "ワイヤーフレームを共有します。",
+        "kana": "ワイヤーフレームをきょうゆうします。",
+        "english": "I'll share the wireframe."
+      }
+    },
+    {
+      "id": "office-174",
+      "kanji": "プロトタイプ",
+      "kana": "プロトタイプ",
+      "romaji": "puroto taipu",
+      "meaning": ["prototype"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "standup"],
+      "category": "tech",
+      "example": {
+        "japanese": "プロトタイプのレビューをお願いします。",
+        "kana": "プロトタイプのレビューをおねがいします。",
+        "english": "Please review the prototype."
+      }
+    },
+    {
+      "id": "office-175",
+      "kanji": "仕様変更",
+      "kana": "しようへんこう",
+      "romaji": "shiyoo henkoo",
+      "meaning": ["spec change", "specification change"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "standup"],
+      "category": "tech",
+      "example": {
+        "japanese": "仕様変更が発生しました。",
+        "kana": "しようへんこうがはっせいしました。",
+        "english": "A spec change has occurred."
+      }
+    },
+    {
+      "id": "office-176",
+      "kanji": "添付",
+      "kana": "てんぷ",
+      "romaji": "tenpu",
+      "meaning": ["attachment", "attached file"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "S",
+      "contexts": ["email"],
+      "category": "communication",
+      "example": {
+        "japanese": "添付のファイルをご確認ください。",
+        "kana": "てんぷのファイルをごかくにんください。",
+        "english": "Please check the attached file."
+      }
+    },
+    {
+      "id": "office-177",
+      "kanji": "合意する",
+      "kana": "ごういする",
+      "romaji": "gooi suru",
+      "meaning": ["to agree", "to reach consensus"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "standup"],
+      "category": "verbs",
+      "example": {
+        "japanese": "仕様について合意しました。",
+        "kana": "しようについてごういしました。",
+        "english": "We have reached agreement on the spec."
+      }
+    },
+    {
+      "id": "office-178",
+      "kanji": "ロードマップ",
+      "kana": "ロードマップ",
+      "romaji": "roosudo mappu",
+      "meaning": ["roadmap", "product roadmap"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "standup"],
+      "category": "project",
+      "example": {
+        "japanese": "ロードマップを更新しました。",
+        "kana": "ロードマップをこうしんしました。",
+        "english": "I've updated the roadmap."
+      }
+    },
+    {
+      "id": "office-179",
+      "kanji": "レビュー",
+      "kana": "レビュー",
+      "romaji": "rebyuu",
+      "meaning": ["review", "code review", "design review"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "S",
+      "contexts": ["standup", "meeting"],
+      "category": "tech",
+      "example": {
+        "japanese": "レビューのコメントを確認しました。",
+        "kana": "レビューのコメントをかくにんしました。",
+        "english": "I've checked the review comments."
+      }
+    },
+    {
+      "id": "office-180",
+      "kanji": "整理する",
+      "kana": "せいりする",
+      "romaji": "seiri suru",
+      "meaning": ["to organize", "to sort out", "to consolidate"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["standup", "meeting", "email"],
+      "category": "verbs",
+      "example": {
+        "japanese": "要件を整理しました。",
+        "kana": "ようけんをせいりしました。",
+        "english": "I've organized the requirements."
+      }
+    },
+    {
+      "id": "office-181",
+      "kanji": "先日",
+      "kana": "せんじつ",
+      "romaji": "senjitsu",
+      "meaning": ["the other day", "recently", "a few days ago"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email", "meeting"],
+      "category": "time",
+      "example": {
+        "japanese": "先日お送りしたメールの件です。",
+        "kana": "せんじつおおくりしたメールのけんです。",
+        "english": "This is regarding the email I sent the other day."
+      }
+    },
+    {
+      "id": "office-182",
+      "kanji": "ご返信お待ちしております",
+      "kana": "ごへんしんおまちしております",
+      "romaji": "go henshin omachi shite orimasu",
+      "meaning": ["awaiting your reply", "looking forward to your response"],
+      "partOfSpeech": ["expression"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email"],
+      "category": "keigo",
+      "example": {
+        "japanese": "ご返信お待ちしております。",
+        "kana": "ごへんしんおまちしております。",
+        "english": "I look forward to your reply."
+      }
+    },
+    {
+      "id": "office-183",
+      "kanji": "取り急ぎ",
+      "kana": "とりいそぎ",
+      "romaji": "tori isogi",
+      "meaning": ["briefly", "in haste", "for now"],
+      "partOfSpeech": ["expression"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email"],
+      "category": "keigo",
+      "example": {
+        "japanese": "取り急ぎご連絡まで。",
+        "kana": "とりいそぎごれんらくまで。",
+        "english": "Just a quick note for now."
+      }
+    },
+    {
+      "id": "office-184",
+      "kanji": "件名",
+      "kana": "けんめい",
+      "romaji": "kenmei",
+      "meaning": ["subject line", "subject"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email"],
+      "category": "communication",
+      "example": {
+        "japanese": "件名：〇〇のご確認について",
+        "kana": "けんめい：〇〇のごかくにんについて",
+        "english": "Subject: Regarding confirmation of 〇〇"
+      }
+    },
+    {
+      "id": "office-185",
+      "kanji": "方針",
+      "kana": "ほうしん",
+      "romaji": "hooshin",
+      "meaning": ["policy", "direction", "approach"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "standup"],
+      "category": "project",
+      "example": {
+        "japanese": "方針を決定しました。",
+        "kana": "ほうしんをけっていしました。",
+        "english": "We have decided on the approach."
+      }
+    },
+    {
+      "id": "office-186",
+      "kanji": "周知する",
+      "kana": "しゅうちする",
+      "romaji": "shuuchi suru",
+      "meaning": ["to inform everyone", "to circulate", "to make known"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email", "standup"],
+      "category": "communication",
+      "example": {
+        "japanese": "変更点を周知しました。",
+        "kana": "へんこうてんをしゅうちしました。",
+        "english": "I've informed everyone of the changes."
+      }
+    },
+    {
+      "id": "office-187",
+      "kanji": "告知する",
+      "kana": "こうちする",
+      "romaji": "koochi suru",
+      "meaning": ["to announce", "to notify"],
+      "partOfSpeech": ["verb"],
+      "active": false,
+      "tier": "B",
+      "contexts": ["email"],
+      "category": "communication",
+      "example": {
+        "japanese": "リリース日を告知しました。",
+        "kana": "リリースびをこうちしました。",
+        "english": "We announced the release date."
+      }
+    },
+    {
+      "id": "office-188",
+      "kanji": "合意形成",
+      "kana": "ごういけいせい",
+      "romaji": "gooi keisei",
+      "meaning": ["consensus building", "reaching agreement"],
+      "partOfSpeech": ["noun"],
+      "active": false,
+      "tier": "B",
+      "contexts": ["meeting"],
+      "category": "meetings",
+      "example": {
+        "japanese": "合意形成に時間がかかりました。",
+        "kana": "ごういけいせいにじかんがかかりました。",
+        "english": "Consensus building took some time."
+      }
+    },
+    {
+      "id": "office-189",
+      "kanji": "ゴール",
+      "kana": "ゴール",
+      "romaji": "gooru",
+      "meaning": ["goal", "objective"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "standup"],
+      "category": "project",
+      "example": {
+        "japanese": "今スプリントのゴールを確認します。",
+        "kana": "いまスプリントのゴールをかくにんします。",
+        "english": "I'll confirm this sprint's goal."
+      }
+    },
+    {
+      "id": "office-190",
+      "kanji": "ステークホルダー",
+      "kana": "ステークホルダー",
+      "romaji": "suteeku hoorudaa",
+      "meaning": ["stakeholder"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting"],
+      "category": "project",
+      "example": {
+        "japanese": "ステークホルダーに報告します。",
+        "kana": "ステークホルダーにほうこくします。",
+        "english": "I'll report to the stakeholders."
+      }
+    },
+    {
+      "id": "office-191",
+      "kanji": "リリース計画",
+      "kana": "リリースけいかく",
+      "romaji": "riirisu keikaku",
+      "meaning": ["release plan", "release schedule"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "standup"],
+      "category": "project",
+      "example": {
+        "japanese": "リリース計画を共有します。",
+        "kana": "リリースけいかくをきょうゆうします。",
+        "english": "I'll share the release plan."
+      }
+    },
+    {
+      "id": "office-192",
+      "kanji": "課題管理",
+      "kana": "かだいかんり",
+      "romaji": "kadai kanri",
+      "meaning": ["issue management", "issue tracking"],
+      "partOfSpeech": ["noun"],
+      "active": false,
+      "tier": "B",
+      "contexts": ["meeting", "standup"],
+      "category": "project",
+      "example": {
+        "japanese": "課題管理ツールを更新しました。",
+        "kana": "かだいかんりツールをこうしんしました。",
+        "english": "I've updated the issue tracking tool."
+      }
+    },
+    {
+      "id": "office-193",
+      "kanji": "受け入れテスト",
+      "kana": "うけいれテスト",
+      "romaji": "ukeire tesuto",
+      "meaning": ["acceptance testing", "UAT"],
+      "partOfSpeech": ["noun"],
+      "active": false,
+      "tier": "B",
+      "contexts": ["standup"],
+      "category": "tech",
+      "example": {
+        "japanese": "受け入れテストを実施します。",
+        "kana": "うけいれテストをじっしします。",
+        "english": "We will conduct acceptance testing."
+      }
+    },
+    {
+      "id": "office-194",
+      "kanji": "議論する",
+      "kana": "ぎろんする",
+      "romaji": "giron suru",
+      "meaning": ["to discuss", "to debate", "to deliberate"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting"],
+      "category": "verbs",
+      "example": {
+        "japanese": "設計について議論しました。",
+        "kana": "せっけいについてぎろんしました。",
+        "english": "We discussed the design."
+      }
+    },
+    {
+      "id": "office-195",
+      "kanji": "決定する",
+      "kana": "けっていする",
+      "romaji": "kettei suru",
+      "meaning": ["to decide", "to finalize", "to determine"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "standup"],
+      "category": "verbs",
+      "example": {
+        "japanese": "仕様を決定しました。",
+        "kana": "しようをけっていしました。",
+        "english": "We have decided on the spec."
+      }
+    },
+    {
+      "id": "office-196",
+      "kanji": "検討中",
+      "kana": "けんとうちゅう",
+      "romaji": "kentoo chuu",
+      "meaning": ["under consideration", "being reviewed"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["standup", "meeting"],
+      "category": "status",
+      "example": {
+        "japanese": "現在、検討中です。",
+        "kana": "げんざい、けんとうちゅうです。",
+        "english": "Currently under consideration."
+      }
+    },
+    {
+      "id": "office-197",
+      "kanji": "確認待ち",
+      "kana": "かくにんまち",
+      "romaji": "kakunin machi",
+      "meaning": ["waiting for confirmation", "pending review"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["standup"],
+      "category": "status",
+      "example": {
+        "japanese": "このタスクは確認待ちです。",
+        "kana": "このタスクはかくにんまちです。",
+        "english": "This task is waiting for confirmation."
+      }
+    },
+    {
+      "id": "office-198",
+      "kanji": "着手済み",
+      "kana": "ちゃくしゅずみ",
+      "romaji": "chakushu zumi",
+      "meaning": ["already started", "work in progress"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["standup"],
+      "category": "status",
+      "example": {
+        "japanese": "このタスクは着手済みです。",
+        "kana": "このタスクはちゃくしゅずみです。",
+        "english": "This task has already been started."
+      }
+    },
+    {
+      "id": "office-199",
+      "kanji": "持ち帰る",
+      "kana": "もちかえる",
+      "romaji": "mochikaeru",
+      "meaning": ["to defer", "to take back for consideration", "to review offline"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["meeting"],
+      "category": "verbs",
+      "example": {
+        "japanese": "この件は持ち帰って確認します。",
+        "kana": "このけんはもちかえってかくにんします。",
+        "english": "I'll take this back and check offline."
+      }
+    },
+    {
+      "id": "office-200",
+      "kanji": "方向性",
+      "kana": "ほうこうせい",
+      "romaji": "hookoosee",
+      "meaning": ["direction", "approach", "overall direction"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "standup"],
+      "category": "project",
+      "example": {
+        "japanese": "プロジェクトの方向性を確認しました。",
+        "kana": "プロジェクトのほうこうせいをかくにんしました。",
+        "english": "We've confirmed the project direction."
+      }
     }
   ]
 }
