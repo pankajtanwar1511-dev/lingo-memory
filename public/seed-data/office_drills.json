@@ -199,6 +199,105 @@
           }
         }
       ]
+    },
+    {
+      "id": "pr-review-lifecycle",
+      "title": "PR Review",
+      "titleJa": "コードレビュー",
+      "cluster": "tech",
+      "description": "Practice the full pull request lifecycle: request a review, leave a comment, request changes, approve, then report deployment to production.",
+      "stages": [
+        {
+          "id": "pr-s1",
+          "stage": 1,
+          "title": "Request Review",
+          "titleJa": "レビュー依頼",
+          "prompt": "You've finished your implementation. Ask a teammate to review your pull request.",
+          "hint": "Use プルリクエスト and レビューする (to review)",
+          "targets": {
+            "required": ["office-139", "office-062"],
+            "optional": ["office-140"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "プルリクエストを作成しました。コードレビューをお願いできますか？",
+            "kana": "プルリクエストをさくせいしました。コードレビューをおねがいできますか？",
+            "english": "I've created a pull request. Could you please do a code review?"
+          }
+        },
+        {
+          "id": "pr-s2",
+          "stage": 2,
+          "title": "Comment",
+          "titleJa": "コメント",
+          "prompt": "You're reviewing a PR and spotted a potential bug. Leave a comment asking the author to check it.",
+          "hint": "Use バグ and 確認する (かくにんする)",
+          "targets": {
+            "required": ["office-137", "office-001"],
+            "optional": ["office-005"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "こちらにバグがある可能性があります。確認していただけますか？",
+            "kana": "こちらにバグがあるかのうせいがあります。かくにんしていただけますか？",
+            "english": "There may be a bug here. Could you check it?"
+          }
+        },
+        {
+          "id": "pr-s3",
+          "stage": 3,
+          "title": "Request Changes",
+          "titleJa": "修正依頼",
+          "prompt": "The review found problems. Ask the author to fix them before the PR can be merged.",
+          "hint": "Use 修正する (しゅうせいする) and either 課題 or 不具合 to name the problem",
+          "targets": {
+            "required": ["office-017"],
+            "optional": ["office-069"],
+            "anyOf": [["office-005", "office-042"]]
+          },
+          "modelAnswer": {
+            "japanese": "不具合があります。修正してからマージをお願いします。",
+            "kana": "ふぐあいがあります。しゅうせいしてからマージをおねがいします。",
+            "english": "There is a defect. Please revise before merging."
+          }
+        },
+        {
+          "id": "pr-s4",
+          "stage": 4,
+          "title": "Approve",
+          "titleJa": "承認",
+          "prompt": "The changes look good. Approve the PR and tell the author it's ready to merge.",
+          "hint": "Use 承認する (しょうにんする) and マージする",
+          "targets": {
+            "required": ["office-018", "office-069"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "承認しました。マージしていただいて大丈夫です。",
+            "kana": "しょうにんしました。マージしていただいてだいじょうぶです。",
+            "english": "I've approved it. It's okay to merge."
+          }
+        },
+        {
+          "id": "pr-s5",
+          "stage": 5,
+          "title": "Deploy",
+          "titleJa": "本番デプロイ",
+          "prompt": "The PR is merged. Report to the team that the change is now live in production.",
+          "hint": "Use 本番環境 (ほんばんかんきょう) and either デプロイする or デプロイ",
+          "targets": {
+            "required": ["office-141"],
+            "optional": [],
+            "anyOf": [["office-068", "office-138"]]
+          },
+          "modelAnswer": {
+            "japanese": "本番環境にデプロイしました。確認をお願いします。",
+            "kana": "ほんばんかんきょうにデプロイしました。かくにんをおねがいします。",
+            "english": "Deployed to production. Please check."
+          }
+        }
+      ]
     }
   ]
 }

@@ -19,7 +19,7 @@ typed interface (separate from `VocabularyCard`).
 |------|--------|-------|
 | `public/seed-data/office_vocabulary.json` | ✅ Done | 148 vocab entries, 13 categories, schema v2 |
 | `public/seed-data/office_scenarios.json` | ✅ Done | 5 situation packs, 32 sentence frames |
-| `public/seed-data/office_drills.json` | ✅ Done | 2 packs (incident + standup), 10 stages, schema v1 |
+| `public/seed-data/office_drills.json` | ✅ Done | 3 packs (incident + standup + PR review), 15 stages, schema v1 |
 | `src/app/office/page.tsx` | ✅ Done | 4 modes: Browse / Flip / Match / Test + Drills button |
 | `src/app/office/scenarios/page.tsx` | ✅ Done | Browse + Drill mode, 5 situations |
 | `src/app/office/drills/page.tsx` | ✅ Done | Production drill UI, stem + anyOf validation, completion screen |
@@ -165,6 +165,7 @@ against required vocabulary terms from `office_vocabulary.json`.
 |---|---|---|
 | Incident Response (障害対応) | 5 | 発生 → 影響範囲 → 暫定対応 → 根本原因 → 再発防止 |
 | Daily Standup (朝会報告) | 5 | 着手 → 進行中 → 完了報告 → 遅延報告 → ブロッカー |
+| PR Review (コードレビュー) | 5 | レビュー依頼 → コメント → 修正依頼 → 承認 → 本番デプロイ |
 
 ### Validation logic
 - Japanese character guard: `/[ぁ-んァ-ン一-龯]/`
@@ -351,9 +352,10 @@ Give 3–5 prioritised recommendations. Be specific about what to build next and
 - [x] Production drills (`/office/drills`) — incident lifecycle pack live
 - [x] `anyOf` validation in drills — synonym-accepting stages live (standup-s3, standup-s4)
 - [x] Standup lifecycle drill pack — 5 stages (着手→進行中→完了→遅延→ブロッカー)
+- [x] PR/code review drill pack — 5 stages (レビュー依頼→コメント→修正依頼→承認→本番デプロイ)
 - [ ] More drill packs
-  - Next: PR/code review (レビュー依頼→コメント→修正→承認→マージ)
-  - After: Keigo escalation (casual→polite→formal→apology→thank you)
+  - Next: Keigo escalation (casual→polite→formal→apology→thank you)
+  - After: 1-on-1 (goal setting, behind schedule, feedback)
 - [ ] Spaced repetition scheduling based on test results
 - [ ] Expand vocabulary: 148 → ~250 (next phase)
   - Priority: add ~30 more active tier-S verbs for PR/code review contexts
