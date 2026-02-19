@@ -14,7 +14,8 @@
           "japanese": "本日の進捗を共有します。",
           "kana": "ほんじつのしんちょくをきょうゆうします。",
           "english": "I'll share today's progress.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-108", "office-003", "office-011"]
         },
         {
           "id": "std-002",
@@ -22,7 +23,8 @@
           "japanese": "〇〇は完了しました。",
           "kana": "〇〇はかんりょうしました。",
           "english": "〇〇 is complete.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-045"]
         },
         {
           "id": "std-003",
@@ -30,7 +32,8 @@
           "japanese": "現在、〇〇を対応中です。",
           "kana": "げんざい、〇〇をたいおうちゅうです。",
           "english": "Currently handling 〇〇.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-006"]
         },
         {
           "id": "std-004",
@@ -38,7 +41,8 @@
           "japanese": "〇〇が少し遅れています。",
           "kana": "〇〇がすこしおくれています。",
           "english": "〇〇 is running a bit behind.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-047"]
         },
         {
           "id": "std-005",
@@ -46,7 +50,8 @@
           "japanese": "〇〇について相談があります。",
           "kana": "〇〇についてそうだんがあります。",
           "english": "I have something to discuss about 〇〇.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-016"]
         },
         {
           "id": "std-006",
@@ -54,7 +59,8 @@
           "japanese": "本日は〇〇を予定しています。",
           "kana": "ほんじつは〇〇をよていしています。",
           "english": "Today I plan to work on 〇〇.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-108", "office-036"]
         },
         {
           "id": "std-007",
@@ -62,7 +68,8 @@
           "japanese": "以上です。よろしくお願いします。",
           "kana": "いじょうです。よろしくおねがいします。",
           "english": "That's all. Thank you.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-010"]
         }
       ]
     },
@@ -79,7 +86,8 @@
           "japanese": "お疲れ様です。〇〇です。",
           "kana": "おつかれさまです。〇〇です。",
           "english": "Hi, this is 〇〇. [universal opener]",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-009"]
         },
         {
           "id": "msg-002",
@@ -87,7 +95,8 @@
           "japanese": "了解です。",
           "kana": "りょうかいです。",
           "english": "Got it. / Understood.",
-          "register": "casual-neutral"
+          "register": "casual-neutral",
+          "vocabIds": ["office-053"]
         },
         {
           "id": "msg-003",
@@ -95,7 +104,8 @@
           "japanese": "承知いたしました。",
           "kana": "しょうちいたしました。",
           "english": "Understood. I'll take care of it.",
-          "register": "formal"
+          "register": "formal",
+          "vocabIds": ["office-052"]
         },
         {
           "id": "msg-004",
@@ -103,7 +113,8 @@
           "japanese": "お手数ですが、〇〇をお願いします。",
           "kana": "おてすうですが、〇〇をおねがいします。",
           "english": "Sorry to trouble you, but please 〇〇.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-103", "office-010"]
         },
         {
           "id": "msg-005",
@@ -111,7 +122,8 @@
           "japanese": "ご参考までに共有します。",
           "kana": "ごさんこうまでにきょうゆうします。",
           "english": "Sharing for your reference.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-011"]
         },
         {
           "id": "msg-006",
@@ -119,7 +131,8 @@
           "japanese": "〇〇が完了しましたのでご報告します。",
           "kana": "〇〇がかんりょうしましたのでごほうこくします。",
           "english": "Reporting that 〇〇 is now complete.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-045", "office-015"]
         },
         {
           "id": "msg-007",
@@ -127,7 +140,8 @@
           "japanese": "よろしくお願いいたします。",
           "kana": "よろしくおねがいいたします。",
           "english": "Thank you / Best regards.",
-          "register": "formal"
+          "register": "formal",
+          "vocabIds": ["office-010"]
         }
       ]
     },
@@ -144,7 +158,8 @@
           "japanese": "【障害発生】〇〇においてシステム障害が発生しました。",
           "kana": "【しょうがいはっせい】〇〇においてシステムしょうがいがはっせいしました。",
           "english": "[INCIDENT] A system failure has occurred in 〇〇.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-008", "office-039"]
         },
         {
           "id": "inc-002",
@@ -152,7 +167,8 @@
           "japanese": "現在、影響範囲を確認中です。",
           "kana": "げんざい、えいきょうはんいをかくにんちゅうです。",
           "english": "Currently confirming the scope of impact.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-043", "office-001"]
         },
         {
           "id": "inc-003",
@@ -160,7 +176,8 @@
           "japanese": "現在、原因を調査しています。続報をお待ちください。",
           "kana": "げんざい、げんいんをちょうさしています。ぞくほうをおまちください。",
           "english": "Currently investigating the cause. Please wait for updates.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-040", "office-048"]
         },
         {
           "id": "inc-004",
@@ -168,7 +185,8 @@
           "japanese": "暫定対応として、〇〇を実施しました。",
           "kana": "ざんていたいおうとして、〇〇をじっしました。",
           "english": "As a temporary fix, we have implemented 〇〇.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-093", "office-064"]
         },
         {
           "id": "inc-005",
@@ -176,7 +194,8 @@
           "japanese": "復旧完了しました。ご迷惑をおかけして申し訳ございませんでした。",
           "kana": "ふっきゅうかんりょうしました。ごめいわくをおかけしてもうしわけございませんでした。",
           "english": "Restoration is complete. We sincerely apologize for the inconvenience.",
-          "register": "formal"
+          "register": "formal",
+          "vocabIds": ["office-041", "office-045", "office-054"]
         },
         {
           "id": "inc-006",
@@ -184,7 +203,8 @@
           "japanese": "再発防止策については、別途ご報告します。",
           "kana": "さいはつぼうしさくについては、べっとごほうこくします。",
           "english": "We will report separately on measures to prevent recurrence.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-044", "office-015"]
         },
         {
           "id": "inc-007",
@@ -192,7 +212,8 @@
           "japanese": "対応が難しい状況のため、エスカレーションさせていただきます。",
           "kana": "たいおうがむずかしいじょうきょうのため、エスカレーションさせていただきます。",
           "english": "Escalating as the situation is difficult to handle alone.",
-          "register": "formal"
+          "register": "formal",
+          "vocabIds": ["office-012", "office-046"]
         }
       ]
     },
@@ -209,7 +230,8 @@
           "japanese": "よろしくお願いします。最近の進捗を報告させてください。",
           "kana": "よろしくおねがいします。さいきんのしんちょくをほうこくさせてください。",
           "english": "Thank you. Let me report on my recent progress.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-003", "office-015"]
         },
         {
           "id": "1on1-002",
@@ -217,7 +239,8 @@
           "japanese": "〇〇は予定通り進んでいます。",
           "kana": "〇〇はよていどおりすすんでいます。",
           "english": "〇〇 is progressing as scheduled.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-036"]
         },
         {
           "id": "1on1-003",
@@ -225,7 +248,8 @@
           "japanese": "〇〇は少し遅れていますが、〇〇日までには完了できます。",
           "kana": "〇〇はすこしおくれていますが、〇〇にちまでにはかんりょうできます。",
           "english": "〇〇 is a bit behind, but I can complete it by 〇〇.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-047", "office-045"]
         },
         {
           "id": "1on1-004",
@@ -233,7 +257,8 @@
           "japanese": "〇〇で詰まっていまして、ご意見をいただけますか？",
           "kana": "〇〇でつまっていまして、ごいけんをいただけますか？",
           "english": "I'm stuck on 〇〇. Could I get your input?",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-016", "office-005"]
         },
         {
           "id": "1on1-005",
@@ -241,7 +266,8 @@
           "japanese": "今後は〇〇に取り組みたいと思っています。",
           "kana": "こんごは〇〇にとりくみたいとおもっています。",
           "english": "Going forward, I'd like to work on 〇〇.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-029"]
         },
         {
           "id": "1on1-006",
@@ -249,7 +275,8 @@
           "japanese": "承知しました。ご指摘ありがとうございます。",
           "kana": "しょうちしました。ごしてきありがとうございます。",
           "english": "Understood. Thank you for the feedback.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-052", "office-024"]
         }
       ]
     },
@@ -266,7 +293,8 @@
           "japanese": "〇月〇日に有給休暇を取得したいと思います。ご確認よろしくお願いいたします。",
           "kana": "〇がつ〇にちにゆうきゅうきゅうかをしゅとくしたいとおもいます。ごかくにんよろしくおねがいいたします。",
           "english": "I'd like to take paid leave on 〇/〇. Please confirm.",
-          "register": "formal"
+          "register": "formal",
+          "vocabIds": ["office-055", "office-102", "office-010"]
         },
         {
           "id": "hr-002",
@@ -274,7 +302,8 @@
           "japanese": "本日、体調不良のため欠勤させていただきます。",
           "kana": "ほんじつ、たいちょうふりょうのためけっきんさせていただきます。",
           "english": "I'll be absent today due to illness.",
-          "register": "formal"
+          "register": "formal",
+          "vocabIds": ["office-108", "office-057"]
         },
         {
           "id": "hr-003",
@@ -282,7 +311,8 @@
           "japanese": "本日は在宅にて業務いたします。何かあればメッセージでご連絡ください。",
           "kana": "ほんじつはざいたくにてぎょうむいたします。なにかあればメッセージでごれんらくください。",
           "english": "I'll be working from home today. Please message me if needed.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-056", "office-105"]
         },
         {
           "id": "hr-004",
@@ -290,7 +320,8 @@
           "japanese": "遅刻のご連絡です。〇時頃に出社予定です。",
           "kana": "ちこくのごれんらくです。〇じごろにしゅっしゃよていです。",
           "english": "Notifying you of a late arrival. Plan to arrive around 〇.",
-          "register": "neutral"
+          "register": "neutral",
+          "vocabIds": ["office-114", "office-036", "office-105"]
         },
         {
           "id": "hr-005",
@@ -298,7 +329,8 @@
           "japanese": "ご迷惑をおかけして申し訳ございませんでした。",
           "kana": "ごめいわくをおかけしてもうしわけございませんでした。",
           "english": "I sincerely apologize for the inconvenience.",
-          "register": "formal"
+          "register": "formal",
+          "vocabIds": ["office-054"]
         }
       ]
     }

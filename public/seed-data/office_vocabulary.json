@@ -3727,6 +3727,553 @@
         "kana": "ダウンタイムをさいしょうげんにおさえます。",
         "english": "I'll minimize the downtime."
       }
+    },
+    {
+      "id": "office-149",
+      "kanji": "着手する",
+      "kana": "ちゃくしゅする",
+      "romaji": "chakushu suru",
+      "meaning": [
+        "to start working on",
+        "to begin a task"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "タスクに着手します。",
+        "kana": "タスクにちゃくしゅします。",
+        "english": "I'll start working on the task."
+      }
+    },
+    {
+      "id": "office-150",
+      "kanji": "テスト",
+      "kana": "テスト",
+      "romaji": "tesuto",
+      "meaning": [
+        "test",
+        "testing"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "テストを実施します。",
+        "kana": "テストをじっしします。",
+        "english": "I'll run the tests."
+      }
+    },
+    {
+      "id": "office-151",
+      "kanji": "ブランチ",
+      "kana": "ブランチ",
+      "romaji": "buranchi",
+      "meaning": [
+        "branch",
+        "git branch"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "新しいブランチを作成しました。",
+        "kana": "あたらしいブランチをさくせいしました。",
+        "english": "I created a new branch."
+      }
+    },
+    {
+      "id": "office-152",
+      "kanji": "コミット",
+      "kana": "コミット",
+      "romaji": "komitto",
+      "meaning": [
+        "commit",
+        "git commit"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "変更をコミットしました。",
+        "kana": "へんこうをコミットしました。",
+        "english": "I committed the changes."
+      }
+    },
+    {
+      "id": "office-153",
+      "kanji": "差し戻す",
+      "kana": "さしもどす",
+      "romaji": "sashimodosu",
+      "meaning": [
+        "to send back",
+        "to request changes",
+        "to reject for revision"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "PRを差し戻しました。",
+        "kana": "PRをさしもどしました。",
+        "english": "I sent the PR back for changes."
+      }
+    },
+    {
+      "id": "office-154",
+      "kanji": "テスト中",
+      "kana": "テストちゅう",
+      "romaji": "tesuto chuu",
+      "meaning": [
+        "under testing",
+        "being tested"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup"
+      ],
+      "category": "status",
+      "example": {
+        "japanese": "現在、テスト中です。",
+        "kana": "げんざい、テストちゅうです。",
+        "english": "Currently under testing."
+      }
+    },
+    {
+      "id": "office-155",
+      "kanji": "リリース待ち",
+      "kana": "リリースまち",
+      "romaji": "riirisu machi",
+      "meaning": [
+        "awaiting release",
+        "pending release"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup"
+      ],
+      "category": "status",
+      "example": {
+        "japanese": "この機能はリリース待ちです。",
+        "kana": "このきのうはリリースまちです。",
+        "english": "This feature is awaiting release."
+      }
+    },
+    {
+      "id": "office-156",
+      "kanji": "見直す",
+      "kana": "みなおす",
+      "romaji": "minaosu",
+      "meaning": [
+        "to review",
+        "to reconsider",
+        "to revise"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "実装を見直します。",
+        "kana": "じっそうをみなおします。",
+        "english": "I'll review the implementation."
+      }
+    },
+    {
+      "id": "office-157",
+      "kanji": "切り戻す",
+      "kana": "きりもどす",
+      "romaji": "kirimodosu",
+      "meaning": [
+        "to roll back",
+        "to revert"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "incident",
+        "standup"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "デプロイを切り戻します。",
+        "kana": "デプロイをきりもどします。",
+        "english": "I'll roll back the deployment."
+      }
+    },
+    {
+      "id": "office-158",
+      "kanji": "以下の通り",
+      "kana": "いかのとおり",
+      "romaji": "ika no toori",
+      "meaning": [
+        "as follows",
+        "as below"
+      ],
+      "partOfSpeech": [
+        "expression"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email",
+        "meeting"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "詳細は以下の通りです。",
+        "kana": "しょうさいはいかのとおりです。",
+        "english": "The details are as follows."
+      }
+    },
+    {
+      "id": "office-159",
+      "kanji": "念のため",
+      "kana": "ねんのため",
+      "romaji": "nen no tame",
+      "meaning": [
+        "just in case",
+        "to be sure",
+        "for safety"
+      ],
+      "partOfSpeech": [
+        "expression"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email",
+        "standup"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "念のため確認します。",
+        "kana": "ねんのためかくにんします。",
+        "english": "I'll double-check just in case."
+      }
+    },
+    {
+      "id": "office-160",
+      "kanji": "ご不明な点があれば",
+      "kana": "ごふめいなてんがあれば",
+      "romaji": "go fumei na ten ga areba",
+      "meaning": [
+        "if you have any questions",
+        "if anything is unclear"
+      ],
+      "partOfSpeech": [
+        "expression"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "ご不明な点があればお知らせください。",
+        "kana": "ごふめいなてんがあればおしらせください。",
+        "english": "Please let me know if you have any questions."
+      }
+    },
+    {
+      "id": "office-161",
+      "kanji": "ご連絡いたします",
+      "kana": "ごれんらくいたします",
+      "romaji": "go renraku itashimasu",
+      "meaning": [
+        "I will contact you",
+        "I will get back to you"
+      ],
+      "partOfSpeech": [
+        "expression"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "確認でき次第ご連絡いたします。",
+        "kana": "かくにんできしだいごれんらくいたします。",
+        "english": "I will contact you as soon as I can confirm."
+      }
+    },
+    {
+      "id": "office-162",
+      "kanji": "リファクタリング",
+      "kana": "リファクタリング",
+      "romaji": "rifakutaringu",
+      "meaning": [
+        "refactoring",
+        "code refactoring"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "コードのリファクタリングを進めています。",
+        "kana": "コードのリファクタリングをすすめています。",
+        "english": "I'm making progress on the code refactoring."
+      }
+    },
+    {
+      "id": "office-163",
+      "kanji": "フォローアップ",
+      "kana": "フォローアップ",
+      "romaji": "fooroo aappu",
+      "meaning": [
+        "follow-up"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email",
+        "standup",
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "後ほどフォローアップします。",
+        "kana": "のちほどフォローアップします。",
+        "english": "I'll follow up later."
+      }
+    },
+    {
+      "id": "office-164",
+      "kanji": "ドキュメント",
+      "kana": "ドキュメント",
+      "romaji": "dokyumento",
+      "meaning": [
+        "document",
+        "documentation"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email",
+        "meeting"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "ドキュメントを更新しました。",
+        "kana": "ドキュメントをこうしんしました。",
+        "english": "I've updated the documentation."
+      }
+    },
+    {
+      "id": "office-165",
+      "kanji": "進める",
+      "kana": "すすめる",
+      "romaji": "susumeru",
+      "meaning": [
+        "to proceed with",
+        "to advance",
+        "to move forward"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "実装を進めます。",
+        "kana": "じっそうをすすめます。",
+        "english": "I'll proceed with the implementation."
+      }
+    },
+    {
+      "id": "office-166",
+      "kanji": "タイムライン",
+      "kana": "タイムライン",
+      "romaji": "taimu rain",
+      "meaning": [
+        "timeline",
+        "schedule timeline"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting",
+        "standup"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "タイムラインを共有します。",
+        "kana": "タイムラインをきょうゆうします。",
+        "english": "I'll share the timeline."
+      }
+    },
+    {
+      "id": "office-167",
+      "kanji": "本番リリース",
+      "kana": "ほんばんリリース",
+      "romaji": "honban riirisu",
+      "meaning": [
+        "production release",
+        "go-live"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "incident"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "本番リリースは来週の予定です。",
+        "kana": "ほんばんリリースはらいしゅうのよていです。",
+        "english": "The production release is scheduled for next week."
+      }
+    },
+    {
+      "id": "office-168",
+      "kanji": "差分",
+      "kana": "さぶん",
+      "romaji": "sabun",
+      "meaning": [
+        "diff",
+        "difference",
+        "code diff"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup"
+      ],
+      "category": "tech",
+      "example": {
+        "japanese": "差分を確認してください。",
+        "kana": "さぶんをかくにんしてください。",
+        "english": "Please check the diff."
+      }
+    },
+    {
+      "id": "office-169",
+      "kanji": "スプリント",
+      "kana": "スプリント",
+      "romaji": "supurinto",
+      "meaning": [
+        "sprint",
+        "agile sprint"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "今スプリントで完了する予定です。",
+        "kana": "いまスプリントでかんりょうするよていです。",
+        "english": "I plan to complete it in this sprint."
+      }
+    },
+    {
+      "id": "office-170",
+      "kanji": "ステータス更新",
+      "kana": "ステータスこうしん",
+      "romaji": "suteetasu kooshin",
+      "meaning": [
+        "status update"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "standup",
+        "meeting"
+      ],
+      "category": "status",
+      "example": {
+        "japanese": "ステータスを更新しました。",
+        "kana": "ステータスをこうしんしました。",
+        "english": "I've updated the status."
+      }
     }
   ]
 }

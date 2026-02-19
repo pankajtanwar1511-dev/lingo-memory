@@ -298,6 +298,204 @@
           }
         }
       ]
+    },
+    {
+      "id": "keigo-escalation",
+      "title": "Keigo Escalation",
+      "titleJa": "敬語の使い分け",
+      "cluster": "keigo",
+      "description": "Practice the formality ladder: casual ack → formal ack → polite request → apology → formal opening. Each stage is a higher register than the last.",
+      "stages": [
+        {
+          "id": "keigo-s1",
+          "stage": 1,
+          "title": "Casual Ack",
+          "titleJa": "カジュアル返答",
+          "prompt": "A teammate messages you in Slack about a task. Acknowledge casually that you've understood.",
+          "hint": "Use 了解です (りょうかいです) — casual acknowledgment used with peers",
+          "targets": {
+            "required": ["office-053"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "了解です。確認します。",
+            "kana": "りょうかいです。かくにんします。",
+            "english": "Got it. I'll check."
+          }
+        },
+        {
+          "id": "keigo-s2",
+          "stage": 2,
+          "title": "Formal Ack",
+          "titleJa": "丁寧な返答",
+          "prompt": "Your manager has given you an instruction. Acknowledge formally to show you've understood and will act.",
+          "hint": "Use 承知いたしました (しょうちいたしました) — formal acknowledgment for superiors",
+          "targets": {
+            "required": ["office-052"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "承知いたしました。すぐに対応いたします。",
+            "kana": "しょうちいたしました。すぐにたいおういたします。",
+            "english": "Understood. I'll handle it right away."
+          }
+        },
+        {
+          "id": "keigo-s3",
+          "stage": 3,
+          "title": "Polite Request",
+          "titleJa": "依頼の敬語",
+          "prompt": "You need a senior colleague to check something. Make a polite request, acknowledging that you're asking for their time.",
+          "hint": "Use お手数をおかけします (おてすうをおかけします) before the request and ご確認ください (ごかくにんください) as the ask",
+          "targets": {
+            "required": ["office-103", "office-102"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "お手数をおかけしますが、こちらのドキュメントをご確認ください。",
+            "kana": "おてすうをおかけしますが、こちらのドキュメントをごかくにんください。",
+            "english": "Sorry for the trouble, but please check this document."
+          }
+        },
+        {
+          "id": "keigo-s4",
+          "stage": 4,
+          "title": "Formal Apology",
+          "titleJa": "謝罪の敬語",
+          "prompt": "A bug you introduced caused a production issue. Send a formal apology to the team.",
+          "hint": "Use 申し訳ございません (もうしわけございません) — the formal apology form",
+          "targets": {
+            "required": ["office-054"],
+            "optional": ["office-044"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "ご迷惑をおかけして、申し訳ございません。早急に対応いたします。",
+            "kana": "ごめいわくをおかけして、もうしわけございません。さっきゅうにたいおういたします。",
+            "english": "I sincerely apologize for the inconvenience. I will address it immediately."
+          }
+        },
+        {
+          "id": "keigo-s5",
+          "stage": 5,
+          "title": "Formal Opening",
+          "titleJa": "フォーマルな書き出し",
+          "prompt": "You're writing a formal email to someone outside your immediate team. Open with the standard business greeting and close with a sign-off.",
+          "hint": "Use お世話になっております (おせわになっております) to open, and either よろしくお願いいたします or ご対応よろしくお願いします to close",
+          "targets": {
+            "required": ["office-051"],
+            "optional": [],
+            "anyOf": [["office-010", "office-104"]]
+          },
+          "modelAnswer": {
+            "japanese": "お世話になっております。ご確認のほど、よろしくお願いいたします。",
+            "kana": "おせわになっております。ごかくにんのほど、よろしくおねがいいたします。",
+            "english": "Thank you for your continued support. I would appreciate your confirmation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "1on1-lifecycle",
+      "title": "1-on-1 Meeting",
+      "titleJa": "1on1ミーティング",
+      "cluster": "1on1",
+      "description": "Practice the five essential 1-on-1 patterns: open with progress, report on track, flag a delay, raise a concern, and ask for feedback.",
+      "stages": [
+        {
+          "id": "1on1-s1",
+          "stage": 1,
+          "title": "Open",
+          "titleJa": "開始",
+          "prompt": "Start your 1-on-1. Tell your manager you'd like to report on recent progress.",
+          "hint": "Use 進捗 (しんちょく) and 報告する (ほうこくする)",
+          "targets": {
+            "required": ["office-003", "office-015"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "よろしくお願いします。最近の進捗を報告させてください。",
+            "kana": "よろしくおねがいします。さいきんのしんちょくをほうこくさせてください。",
+            "english": "Thank you. Let me report on my recent progress."
+          }
+        },
+        {
+          "id": "1on1-s2",
+          "stage": 2,
+          "title": "On Track",
+          "titleJa": "順調",
+          "prompt": "Your main task is going well. Tell your manager it's on schedule and nearing completion.",
+          "hint": "Use 予定 (よてい) for 'as planned' and 完了 (かんりょう) for completion",
+          "targets": {
+            "required": ["office-036", "office-045"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "機能実装は予定通り進んでいます。今週中に完了できます。",
+            "kana": "きのうじっそうはよていどおりすすんでいます。こんしゅうちゅうにかんりょうできます。",
+            "english": "The feature implementation is progressing as planned. I can complete it by end of this week."
+          }
+        },
+        {
+          "id": "1on1-s3",
+          "stage": 3,
+          "title": "Behind",
+          "titleJa": "遅延報告",
+          "prompt": "One of your tasks is delayed. Report the delay to your manager and mention you'd like to discuss it.",
+          "hint": "Use 遅延 (ちえん) and 相談する (そうだんする) to ask to discuss",
+          "targets": {
+            "required": ["office-047", "office-016"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "〇〇のタスクが遅延しています。対策についてご相談したいです。",
+            "kana": "〇〇のタスクがちえんしています。たいさくについてごそうだんしたいです。",
+            "english": "The 〇〇 task is delayed. I'd like to consult with you about countermeasures."
+          }
+        },
+        {
+          "id": "1on1-s4",
+          "stage": 4,
+          "title": "Concern",
+          "titleJa": "課題の共有",
+          "prompt": "You've hit a technical blocker and want your manager's advice. Raise the issue and ask for input.",
+          "hint": "Use 課題 (かだい) for the issue and ご意見 or 相談する to ask for advice",
+          "targets": {
+            "required": ["office-005", "office-016"],
+            "optional": ["office-088"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "技術的な課題があります。ご意見をいただけますでしょうか？",
+            "kana": "ぎじゅつてきなかだいがあります。ごいけんをいただけますでしょうか？",
+            "english": "There is a technical issue. Could I get your input?"
+          }
+        },
+        {
+          "id": "1on1-s5",
+          "stage": 5,
+          "title": "Feedback",
+          "titleJa": "フィードバック",
+          "prompt": "Your manager has shared feedback. Acknowledge it formally and ask if there's anything you should prioritize.",
+          "hint": "Use フィードバック and either よろしくお願いします or 優先 (ゆうせん)",
+          "targets": {
+            "required": ["office-024"],
+            "optional": [],
+            "anyOf": [["office-010", "office-099"]]
+          },
+          "modelAnswer": {
+            "japanese": "フィードバックありがとうございます。優先順位を見直してよろしくお願いします。",
+            "kana": "フィードバックありがとうございます。ゆうせんじゅんいをみなおしてよろしくおねがいします。",
+            "english": "Thank you for the feedback. I'll review the priorities. Thank you."
+          }
+        }
+      ]
     }
   ]
 }

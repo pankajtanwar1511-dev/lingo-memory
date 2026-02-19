@@ -14,8 +14,12 @@ import {
   CheckCircle2, Play, BookOpen
 } from "lucide-react"
 import scenariosData from "@/../public/seed-data/office_scenarios.json"
+import vocabData from "@/../public/seed-data/office_vocabulary.json"
+import type { OfficeCard } from "@/types/vocabulary"
 
 // ─── Types ────────────────────────────────────────────────────────────────────
+
+type Register = "neutral" | "casual-neutral" | "formal"
 
 interface Frame {
   id: string
@@ -23,7 +27,8 @@ interface Frame {
   japanese: string
   kana: string
   english: string
-  register: "neutral" | "casual-neutral" | "formal"
+  register: Register
+  vocabIds?: string[]
 }
 
 interface Situation {
@@ -36,6 +41,7 @@ interface Situation {
 }
 
 type DrillMode = "browse" | "drill"
+type RegisterFilter = "all" | Register
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
@@ -63,18 +69,36 @@ const REGISTER_LABEL: Record<string, string> = {
 
 interface DrillProps {
   situation: Situation
+  frames: Frame[]
+  vocabMap: Map<string, OfficeCard>
   onExit: () => void
 }
 
-function SituationDrill({ situation, onExit }: DrillProps) {
+function SituationDrill({ situation, frames, vocabMap, onExit }: DrillProps) {
   const [frameIdx, setFrameIdx] = useState(0)
   const [revealed, setRevealed] = useState(false)
   const [revealedFrames, setRevealedFrames] = useState<Set<number>>(new Set())
   const [done, setDone] = useState(false)
 
   const colors = COLOR_MAP[situation.color] ?? COLOR_MAP.violet
-  const frame = situation.frames[frameIdx]
-  const total = situation.frames.length
+  const frame = frames[frameIdx]
+  const total = frames.length
+
+  // Collect unique vocab IDs across all frames for study block
+  const studyCards = useMemo(() => {
+    const seen = new Set<string>()
+    const cards: OfficeCard[] = []
+    frames.forEach(f => {
+      f.vocabIds?.forEach(id => {
+        if (!seen.has(id)) {
+          seen.add(id)
+          const card = vocabMap.get(id)
+          if (card) cards.push(card)
+        }
+      })
+    })
+    return cards
+  }, [frames, vocabMap])
 
   function handleReveal() {
     setRevealed(true)
@@ -104,15 +128,39 @@ function SituationDrill({ situation, onExit }: DrillProps) {
 
   if (done) {
     return (
-      <div className="flex flex-col items-center gap-6 py-12 text-center">
-        <CheckCircle2 className="h-16 w-16 text-emerald-500" />
-        <div>
-          <p className="text-xl font-bold">{situation.title} complete!</p>
-          <p className="text-muted-foreground mt-1">
-            You drilled all {total} sentence frames
-          </p>
+      <div className="space-y-5 py-4">
+        <div className="flex flex-col items-center gap-4 text-center">
+          <CheckCircle2 className="h-12 w-12 text-emerald-500" />
+          <div>
+            <p className="text-xl font-bold">{situation.title} complete!</p>
+            <p className="text-muted-foreground mt-1 text-sm">
+              {total} sentence frames · {revealedFrames.size} revealed
+            </p>
+          </div>
         </div>
-        <div className="flex gap-3">
+
+        {/* Vocab study block */}
+        {studyCards.length > 0 && (
+          <div className="rounded-xl border bg-muted/30 p-4 space-y-2">
+            <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
+              Vocabulary in these frames
+            </p>
+            <div className="flex flex-wrap gap-1.5">
+              {studyCards.map(card => (
+                <div
+                  key={card.id}
+                  className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs border bg-background"
+                >
+                  <span className="font-japanese font-bold text-sm">{card.kanji ?? card.kana}</span>
+                  {card.kanji && <span className="font-japanese text-muted-foreground text-[11px]">{card.kana}</span>}
+                  <span className="text-muted-foreground">— {card.meaning[0]}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div className="flex gap-3 justify-center">
           <Button variant="outline" onClick={handleRestart}>
             <RotateCcw className="h-4 w-4 mr-1" /> Drill again
           </Button>
@@ -228,10 +276,11 @@ function SituationDrill({ situation, onExit }: DrillProps) {
 
 interface BrowseProps {
   situation: Situation
+  frames: Frame[]
   onStartDrill: () => void
 }
 
-function SituationBrowse({ situation, onStartDrill }: BrowseProps) {
+function SituationBrowse({ situation, frames, onStartDrill }: BrowseProps) {
   const colors = COLOR_MAP[situation.color] ?? COLOR_MAP.violet
 
   return (
@@ -240,9 +289,9 @@ function SituationBrowse({ situation, onStartDrill }: BrowseProps) {
       <div className={cn("rounded-xl border p-4 flex items-center justify-between", colors.bg, colors.border)}>
         <div>
           <p className={cn("font-semibold", colors.text)}>{situation.title}</p>
-          <p className="text-sm text-muted-foreground mt-0.5">{situation.frames.length} sentence frames</p>
+          <p className="text-sm text-muted-foreground mt-0.5">{frames.length} sentence frames</p>
         </div>
-        <Button onClick={onStartDrill} size="sm">
+        <Button onClick={onStartDrill} size="sm" disabled={frames.length === 0}>
           <Play className="h-3.5 w-3.5 mr-1.5" />
           Drill
         </Button>
@@ -250,7 +299,7 @@ function SituationBrowse({ situation, onStartDrill }: BrowseProps) {
 
       {/* Frame list */}
       <div className="space-y-2">
-        {situation.frames.map((frame, i) => (
+        {frames.map((frame, i) => (
           <Card key={frame.id} className="overflow-hidden">
             <CardContent className="py-0 px-0">
               {/* Context header */}
@@ -284,6 +333,13 @@ function SituationBrowse({ situation, onStartDrill }: BrowseProps) {
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
+const REGISTER_FILTERS: { value: RegisterFilter; label: string }[] = [
+  { value: "all",           label: "All" },
+  { value: "neutral",       label: "Neutral" },
+  { value: "casual-neutral",label: "Casual" },
+  { value: "formal",        label: "Formal" },
+]
+
 export default function ScenariosPage() {
   const router = useRouter()
 
@@ -292,10 +348,24 @@ export default function ScenariosPage() {
     []
   )
 
+  const vocabMap = useMemo(() => {
+    const m = new Map<string, OfficeCard>()
+    ;(vocabData.entries as OfficeCard[]).forEach(e => m.set(e.id, e))
+    return m
+  }, [])
+
   const [activeSitId, setActiveSitId] = useState(situations[0]?.id ?? "")
   const [drillMode, setDrillMode] = useState<DrillMode>("browse")
+  const [registerFilter, setRegisterFilter] = useState<RegisterFilter>("all")
 
   const activeSituation = situations.find(s => s.id === activeSitId) ?? situations[0]
+
+  // Frames filtered by register
+  const filteredFrames = useMemo(() => {
+    if (!activeSituation) return []
+    if (registerFilter === "all") return activeSituation.frames
+    return activeSituation.frames.filter(f => f.register === registerFilter)
+  }, [activeSituation, registerFilter])
 
   function handleSelectSituation(id: string) {
     setActiveSitId(id)
@@ -362,18 +432,50 @@ export default function ScenariosPage() {
           })}
         </div>
 
+        {/* ── Register filter ── */}
+        <div className="flex items-center gap-2">
+          <span className="text-xs text-muted-foreground font-medium shrink-0">Register:</span>
+          <div className="flex gap-1.5 flex-wrap">
+            {REGISTER_FILTERS.map(f => (
+              <button
+                key={f.value}
+                onClick={() => setRegisterFilter(f.value)}
+                className={cn(
+                  "px-2.5 py-1 rounded-lg text-xs font-medium border transition-all",
+                  registerFilter === f.value
+                    ? "bg-foreground text-background border-foreground"
+                    : "bg-background border-border text-muted-foreground hover:border-gray-400"
+                )}
+              >
+                {f.label}
+                {f.value !== "all" && activeSituation && (
+                  <span className="ml-1 opacity-60">
+                    {activeSituation.frames.filter(fr => fr.register === f.value).length}
+                  </span>
+                )}
+              </button>
+            ))}
+          </div>
+          {filteredFrames.length === 0 && registerFilter !== "all" && (
+            <span className="text-xs text-muted-foreground italic">No {registerFilter} frames in this situation</span>
+          )}
+        </div>
+
         {/* ── Situation detail ── */}
         {activeSituation && (
           <div>
             {drillMode === "browse" ? (
               <SituationBrowse
                 situation={activeSituation}
+                frames={filteredFrames}
                 onStartDrill={() => setDrillMode("drill")}
               />
             ) : (
               <SituationDrill
-                key={activeSitId}
+                key={`${activeSitId}-${registerFilter}`}
                 situation={activeSituation}
+                frames={filteredFrames.length > 0 ? filteredFrames : activeSituation.frames}
+                vocabMap={vocabMap}
                 onExit={() => setDrillMode("browse")}
               />
             )}
