@@ -333,6 +333,150 @@
           "vocabIds": ["office-054"]
         }
       ]
+    },
+    {
+      "id": "design-review",
+      "title": "Design Review",
+      "titleJa": "デザインレビュー",
+      "description": "Design proposals, spec concerns, revisions, approvals, and sharing",
+      "color": "indigo",
+      "frames": [
+        {
+          "id": "drv-001",
+          "contextEn": "Requesting a design review",
+          "japanese": "デザイン案を作成しました。レビューをお願いできますか？",
+          "kana": "デザインあんをさくせいしました。レビューをおねがいできますか？",
+          "english": "I've created a design proposal. Could you please review it?",
+          "register": "neutral",
+          "vocabIds": ["office-073", "office-062"]
+        },
+        {
+          "id": "drv-002",
+          "contextEn": "Explaining design rationale",
+          "japanese": "この仕様にした理由をご説明します。",
+          "kana": "このしようにしたりゆうをごせつめいします。",
+          "english": "I'll explain the reasoning behind this spec.",
+          "register": "neutral",
+          "vocabIds": ["office-090", "office-013"]
+        },
+        {
+          "id": "drv-003",
+          "contextEn": "Pointing out a spec concern",
+          "japanese": "こちらの仕様に課題があります。確認していただけますか？",
+          "kana": "こちらのしようにかだいがあります。かくにんしていただけますか？",
+          "english": "There is an issue with this spec. Could you check it?",
+          "register": "neutral",
+          "vocabIds": ["office-090", "office-005", "office-001"]
+        },
+        {
+          "id": "drv-004",
+          "contextEn": "Requesting revision",
+          "japanese": "仕様に問題があります。修正してからご共有ください。",
+          "kana": "しようにもんだいがあります。しゅうせいしてからごきょうゆうください。",
+          "english": "There is a problem with the spec. Please revise and reshare.",
+          "register": "neutral",
+          "vocabIds": ["office-090", "office-017", "office-011"]
+        },
+        {
+          "id": "drv-005",
+          "contextEn": "Approving the design",
+          "japanese": "デザインを承認しました。仕様を確定します。",
+          "kana": "デザインをしょうにんしました。しようをかくていします。",
+          "english": "I've approved the design. I'll finalize the spec.",
+          "register": "neutral",
+          "vocabIds": ["office-018", "office-066", "office-090"]
+        },
+        {
+          "id": "drv-006",
+          "contextEn": "Sharing final spec document",
+          "japanese": "最終仕様を共有します。ドキュメントをご確認ください。",
+          "kana": "さいしゅうしようをきょうゆうします。ドキュメントをごかくにんください。",
+          "english": "I'm sharing the final spec. Please check the document.",
+          "register": "neutral",
+          "vocabIds": ["office-011", "office-090", "office-164", "office-102"]
+        },
+        {
+          "id": "drv-007",
+          "contextEn": "Spec change after approval",
+          "japanese": "仕様変更が発生しました。再度ご確認をお願いします。",
+          "kana": "しようへんこうがはっせいしました。さいどごかくにんをおねがいします。",
+          "english": "A spec change has occurred. Please review again.",
+          "register": "neutral",
+          "vocabIds": ["office-090", "office-065", "office-001"]
+        }
+      ]
+    },
+    {
+      "id": "kickoff",
+      "title": "Project Kick-off",
+      "titleJa": "プロジェクト開始",
+      "description": "New project announcements, timelines, assignments, and sprint goals",
+      "color": "teal",
+      "frames": [
+        {
+          "id": "kof-001",
+          "contextEn": "Announcing a new project",
+          "japanese": "新しいプロジェクトが開始します。キックオフミーティングを実施します。",
+          "kana": "あたらしいプロジェクトがかいしします。キックオフミーティングをじっしします。",
+          "english": "A new project is starting. We will hold a kick-off meeting.",
+          "register": "neutral",
+          "vocabIds": ["office-027", "office-064"]
+        },
+        {
+          "id": "kof-002",
+          "contextEn": "Sharing the project timeline",
+          "japanese": "プロジェクトのタイムラインを共有します。",
+          "kana": "プロジェクトのタイムラインをきょうゆうします。",
+          "english": "I'll share the project timeline.",
+          "register": "neutral",
+          "vocabIds": ["office-027", "office-166", "office-011"]
+        },
+        {
+          "id": "kof-003",
+          "contextEn": "Defining requirements",
+          "japanese": "要件を整理しました。以下の通りです。",
+          "kana": "ようけんをせいりしました。いかのとおりです。",
+          "english": "I've organized the requirements. They are as follows.",
+          "register": "neutral",
+          "vocabIds": ["office-086", "office-158"]
+        },
+        {
+          "id": "kof-004",
+          "contextEn": "Assigning responsibilities",
+          "japanese": "タスクを担当者に割り当てます。",
+          "kana": "タスクをたんとうしゃにわりあてます。",
+          "english": "I'll assign tasks to the responsible parties.",
+          "register": "neutral",
+          "vocabIds": ["office-028", "office-059", "office-070"]
+        },
+        {
+          "id": "kof-005",
+          "contextEn": "Setting milestones",
+          "japanese": "マイルストーンを設定しました。スケジュールをご確認ください。",
+          "kana": "マイルストーンをせっていしました。スケジュールをごかくにんください。",
+          "english": "I've set the milestones. Please check the schedule.",
+          "register": "neutral",
+          "vocabIds": ["office-084", "office-035", "office-102"]
+        },
+        {
+          "id": "kof-006",
+          "contextEn": "Stating sprint goal",
+          "japanese": "今スプリントの目標は〇〇です。優先順位をご確認ください。",
+          "kana": "いまスプリントのもくひょうは〇〇です。ゆうせんじゅんいをごかくにんください。",
+          "english": "The goal for this sprint is 〇〇. Please confirm the priorities.",
+          "register": "neutral",
+          "vocabIds": ["office-169", "office-029", "office-001"]
+        },
+        {
+          "id": "kof-007",
+          "contextEn": "Closing kick-off meeting",
+          "japanese": "以上でキックオフを終わります。アクションアイテムを進めましょう。",
+          "kana": "いじょうでキックオフをおわります。アクションアイテムをすすめましょう。",
+          "english": "That concludes the kick-off. Let's move forward with the action items.",
+          "register": "neutral",
+          "vocabIds": ["office-079", "office-165"]
+        }
+      ]
     }
   ]
 }
