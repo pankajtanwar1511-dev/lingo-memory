@@ -433,21 +433,21 @@
       "romaji": "tenpu",
       "meaning": [
         "attachment",
-        "file attachment"
+        "attached file"
       ],
       "partOfSpeech": [
         "noun"
       ],
       "active": true,
-      "tier": "A",
+      "tier": "S",
       "contexts": [
         "email"
       ],
       "category": "communication",
       "example": {
-        "japanese": "資料を添付しました。",
-        "kana": "しりょうをてんぷしました。",
-        "english": "I've attached the materials."
+        "japanese": "添付のファイルをご確認ください。",
+        "kana": "てんぷのファイルをごかくにんください。",
+        "english": "Please check the attached file."
       }
     },
     {

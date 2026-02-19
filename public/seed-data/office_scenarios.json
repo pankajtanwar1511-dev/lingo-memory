@@ -477,6 +477,420 @@
           "vocabIds": ["office-079", "office-165"]
         }
       ]
+    },
+    {
+      "id": "status-update",
+      "title": "Status Updates",
+      "titleJa": "ステータス共有",
+      "description": "Task and project status reporting — started, in progress, testing, on hold, awaiting release",
+      "color": "orange",
+      "frames": [
+        {
+          "id": "stu-001",
+          "contextEn": "Kicking off a status update",
+          "japanese": "プロジェクトのステータス更新を共有します。",
+          "kana": "プロジェクトのステータスこうしんをきょうゆうします。",
+          "english": "I'll share a project status update.",
+          "register": "neutral",
+          "vocabIds": ["office-170", "office-011"]
+        },
+        {
+          "id": "stu-002",
+          "contextEn": "Reporting a task has already been started",
+          "japanese": "〇〇のタスクは着手済みです。",
+          "kana": "〇〇のタスクはちゃくしゅずみです。",
+          "english": "I have already started on the 〇〇 task.",
+          "register": "neutral",
+          "vocabIds": ["office-198"]
+        },
+        {
+          "id": "stu-003",
+          "contextEn": "Current status is under testing",
+          "japanese": "〇〇は現在テスト中です。",
+          "kana": "〇〇はげんざいテストちゅうです。",
+          "english": "〇〇 is currently under testing.",
+          "register": "neutral",
+          "vocabIds": ["office-154"]
+        },
+        {
+          "id": "stu-004",
+          "contextEn": "Implementation done, waiting for the release window",
+          "japanese": "〇〇の実装は完了しました。現在リリース待ちの状態です。",
+          "kana": "〇〇のじっそうはかんりょうしました。げんざいリリースまちのじょうたいです。",
+          "english": "〇〇 implementation is complete. Currently awaiting release.",
+          "register": "neutral",
+          "vocabIds": ["office-045", "office-155"]
+        },
+        {
+          "id": "stu-005",
+          "contextEn": "Reporting handled and confirmed items",
+          "japanese": "チケットは対応済みです。確認済みの項目は以下の通りです。",
+          "kana": "チケットはたいおうずみです。かくにんずみのこうもくはいかのとおりです。",
+          "english": "The ticket is already handled. The confirmed items are as follows.",
+          "register": "neutral",
+          "vocabIds": ["office-100", "office-101", "office-158"]
+        },
+        {
+          "id": "stu-006",
+          "contextEn": "Items not yet handled and waiting for a response",
+          "japanese": "〇〇はまだ未対応です。現在確認待ちの状態です。",
+          "kana": "〇〇はまだみたいおうです。げんざいかくにんまちのじょうたいです。",
+          "english": "〇〇 is not yet handled. Currently waiting for confirmation.",
+          "register": "neutral",
+          "vocabIds": ["office-097", "office-197"]
+        },
+        {
+          "id": "stu-007",
+          "contextEn": "Task is on hold while spec is under consideration",
+          "japanese": "〇〇は現在保留中です。仕様については検討中です。",
+          "kana": "〇〇はげんざいほりゅうちゅうです。しようについてはけんとうちゅうです。",
+          "english": "〇〇 is currently on hold. The spec is under consideration.",
+          "register": "neutral",
+          "vocabIds": ["office-098", "office-196"]
+        }
+      ]
+    },
+    {
+      "id": "communication-patterns",
+      "title": "Communication Patterns",
+      "titleJa": "表現パターン集",
+      "description": "37 sentence frames from the office practice guide — grouped by pattern type: acknowledgment, sharing, requests, progress, problems, clarification, and delegation",
+      "color": "cyan",
+      "frames": [
+        {
+          "id": "pat-a1",
+          "contextEn": "Pattern A: Acknowledge casually",
+          "japanese": "了解です。",
+          "kana": "りょうかいです。",
+          "english": "Got it. / Understood.",
+          "register": "casual-neutral",
+          "vocabIds": ["office-053"]
+        },
+        {
+          "id": "pat-a2",
+          "contextEn": "Pattern A: Acknowledge formally",
+          "japanese": "承知いたしました。",
+          "kana": "しょうちいたしました。",
+          "english": "Understood. I'll take care of it.",
+          "register": "formal",
+          "vocabIds": ["office-052"]
+        },
+        {
+          "id": "pat-a3",
+          "contextEn": "Pattern A: Thank them for the update",
+          "japanese": "ご連絡ありがとうございます。",
+          "kana": "ごれんらくありがとうございます。",
+          "english": "Thank you for the update.",
+          "register": "neutral",
+          "vocabIds": ["office-002"]
+        },
+        {
+          "id": "pat-a4",
+          "contextEn": "Pattern A: Thank them for checking",
+          "japanese": "ご確認ありがとうございます。",
+          "kana": "ごかくにんありがとうございます。",
+          "english": "Thank you for checking.",
+          "register": "neutral",
+          "vocabIds": ["office-001"]
+        },
+        {
+          "id": "pat-a5",
+          "contextEn": "Pattern A: Simple confirmation",
+          "japanese": "確認しました。",
+          "kana": "かくにんしました。",
+          "english": "Confirmed. / Checked.",
+          "register": "casual-neutral",
+          "vocabIds": ["office-001"]
+        },
+        {
+          "id": "pat-a6",
+          "contextEn": "Pattern A: Acknowledge formally (read)",
+          "japanese": "拝見しました。",
+          "kana": "はいけんしました。",
+          "english": "I've read it. (humble form)",
+          "register": "formal",
+          "vocabIds": []
+        },
+        {
+          "id": "pat-b1",
+          "contextEn": "Pattern B: Simple share",
+          "japanese": "ご共有します。",
+          "kana": "ごきょうゆうします。",
+          "english": "Sharing with you.",
+          "register": "neutral",
+          "vocabIds": ["office-011"]
+        },
+        {
+          "id": "pat-b2",
+          "contextEn": "Pattern B: Share for reference",
+          "japanese": "ご参考までに共有します。",
+          "kana": "ごさんこうまでにきょうゆうします。",
+          "english": "Sharing for your reference.",
+          "register": "neutral",
+          "vocabIds": ["office-011"]
+        },
+        {
+          "id": "pat-b3",
+          "contextEn": "Pattern B: Report completion",
+          "japanese": "ご報告です。〜が完了しました。",
+          "kana": "ごほうこくです。〜がかんりょうしました。",
+          "english": "Reporting: ~ is complete.",
+          "register": "neutral",
+          "vocabIds": ["office-015", "office-045"]
+        },
+        {
+          "id": "pat-b4",
+          "contextEn": "Pattern B: Notify about something",
+          "japanese": "〜についてお知らせします。",
+          "kana": "〜についておしらせします。",
+          "english": "Informing you about ~.",
+          "register": "neutral",
+          "vocabIds": ["office-002"]
+        },
+        {
+          "id": "pat-b5",
+          "contextEn": "Pattern B: Sending something",
+          "japanese": "〜をお送りします。",
+          "kana": "〜をおおくりします。",
+          "english": "Sending ~ to you.",
+          "register": "neutral",
+          "vocabIds": []
+        },
+        {
+          "id": "pat-c1",
+          "contextEn": "Pattern C: Simple request",
+          "japanese": "〜をお願いします。",
+          "kana": "〜をおねがいします。",
+          "english": "Please do ~.",
+          "register": "casual-neutral",
+          "vocabIds": ["office-010"]
+        },
+        {
+          "id": "pat-c2",
+          "contextEn": "Pattern C: Polite request",
+          "japanese": "〜をお願いいたします。",
+          "kana": "〜をおねがいいたします。",
+          "english": "Please do ~. (polite)",
+          "register": "formal",
+          "vocabIds": ["office-010"]
+        },
+        {
+          "id": "pat-c3",
+          "contextEn": "Pattern C: Request with apology opener",
+          "japanese": "お手数ですが、〜をお願いします。",
+          "kana": "おてすうですが、〜をおねがいします。",
+          "english": "Sorry to trouble you, but please ~.",
+          "register": "neutral",
+          "vocabIds": ["office-103", "office-010"]
+        },
+        {
+          "id": "pat-c4",
+          "contextEn": "Pattern C: Formal confirmation request",
+          "japanese": "ご確認いただけますでしょうか？",
+          "kana": "ごかくにんいただけますでしょうか？",
+          "english": "Could you please check this?",
+          "register": "formal",
+          "vocabIds": ["office-102"]
+        },
+        {
+          "id": "pat-c5",
+          "contextEn": "Pattern C: Please confirm this",
+          "japanese": "〜についてご確認よろしくお願いします。",
+          "kana": "〜についてごかくにんよろしくおねがいします。",
+          "english": "Please confirm ~ for me.",
+          "register": "neutral",
+          "vocabIds": ["office-001", "office-010"]
+        },
+        {
+          "id": "pat-c6",
+          "contextEn": "Pattern C: Please handle this",
+          "japanese": "ご対応よろしくお願いします。",
+          "kana": "ごたいおうよろしくおねがいします。",
+          "english": "Please take care of this.",
+          "register": "neutral",
+          "vocabIds": ["office-104"]
+        },
+        {
+          "id": "pat-d1",
+          "contextEn": "Pattern D: Report completion",
+          "japanese": "〜は完了しました。",
+          "kana": "〜はかんりょうしました。",
+          "english": "~ is done / complete.",
+          "register": "neutral",
+          "vocabIds": ["office-045"]
+        },
+        {
+          "id": "pat-d2",
+          "contextEn": "Pattern D: Currently handling",
+          "japanese": "現在、〜に対応中です。",
+          "kana": "げんざい、〜にたいおうちゅうです。",
+          "english": "Currently handling ~.",
+          "register": "neutral",
+          "vocabIds": ["office-006"]
+        },
+        {
+          "id": "pat-d3",
+          "contextEn": "Pattern D: In progress",
+          "japanese": "〜は進行中です。",
+          "kana": "〜はしんこうちゅうです。",
+          "english": "~ is in progress.",
+          "register": "neutral",
+          "vocabIds": []
+        },
+        {
+          "id": "pat-d4",
+          "contextEn": "Pattern D: On schedule",
+          "japanese": "〜は予定通り進んでいます。",
+          "kana": "〜はよていどおりすすんでいます。",
+          "english": "~ is proceeding as scheduled.",
+          "register": "neutral",
+          "vocabIds": ["office-036"]
+        },
+        {
+          "id": "pat-d5",
+          "contextEn": "Pattern D: Currently confirming",
+          "japanese": "〜について確認中です。",
+          "kana": "〜についてかくにんちゅうです。",
+          "english": "Currently confirming ~.",
+          "register": "neutral",
+          "vocabIds": ["office-001"]
+        },
+        {
+          "id": "pat-e1",
+          "contextEn": "Pattern E: Reporting a delay",
+          "japanese": "〜で遅延が発生しています。",
+          "kana": "〜でちえんがはっせいしています。",
+          "english": "A delay is occurring with ~.",
+          "register": "neutral",
+          "vocabIds": ["office-047", "office-039"]
+        },
+        {
+          "id": "pat-e2",
+          "contextEn": "Pattern E: Running behind",
+          "japanese": "〜が少し遅れています。",
+          "kana": "〜がすこしおくれています。",
+          "english": "~ is a bit behind.",
+          "register": "neutral",
+          "vocabIds": ["office-047"]
+        },
+        {
+          "id": "pat-e3",
+          "contextEn": "Pattern E: Taking longer than expected",
+          "japanese": "〜で少し手間取っています。",
+          "kana": "〜ですこしてまどっています。",
+          "english": "Taking a bit longer than expected on ~.",
+          "register": "neutral",
+          "vocabIds": []
+        },
+        {
+          "id": "pat-e4",
+          "contextEn": "Pattern E: Want to discuss something",
+          "japanese": "〜について相談があります。",
+          "kana": "〜についてそうだんがあります。",
+          "english": "I have something to discuss about ~.",
+          "register": "neutral",
+          "vocabIds": ["office-016"]
+        },
+        {
+          "id": "pat-e5",
+          "contextEn": "Pattern E: Need to confirm",
+          "japanese": "〜について確認が必要です。",
+          "kana": "〜についてかくにんがひつようです。",
+          "english": "Need to confirm ~.",
+          "register": "neutral",
+          "vocabIds": ["office-001"]
+        },
+        {
+          "id": "pat-e6",
+          "contextEn": "Pattern E: Check before replying",
+          "japanese": "少し確認してからご連絡します。",
+          "kana": "すこしかくにんしてからごれんらくします。",
+          "english": "Let me check first and get back to you.",
+          "register": "neutral",
+          "vocabIds": ["office-001", "office-002"]
+        },
+        {
+          "id": "pat-f1",
+          "contextEn": "Pattern F: Let me confirm",
+          "japanese": "〜について確認させてください。",
+          "kana": "〜についてかくにんさせてください。",
+          "english": "Let me confirm ~.",
+          "register": "neutral",
+          "vocabIds": ["office-001"]
+        },
+        {
+          "id": "pat-f2",
+          "contextEn": "Pattern F: How should I handle this?",
+          "japanese": "〜はどのように対応すればよいですか？",
+          "kana": "〜はどのようにたいおうすればよいですか？",
+          "english": "How should I handle ~?",
+          "register": "neutral",
+          "vocabIds": []
+        },
+        {
+          "id": "pat-f3",
+          "contextEn": "Pattern F: Let me check priorities",
+          "japanese": "優先順位を確認させてください。",
+          "kana": "ゆうせんじゅんいをかくにんさせてください。",
+          "english": "Let me check on the priority.",
+          "register": "neutral",
+          "vocabIds": ["office-029", "office-001"]
+        },
+        {
+          "id": "pat-f4",
+          "contextEn": "Pattern F: Could I get your advice?",
+          "japanese": "〜についてアドバイスをいただけますか？",
+          "kana": "〜についてアドバイスをいただけますか？",
+          "english": "Could I get your advice on ~?",
+          "register": "neutral",
+          "vocabIds": ["office-016"]
+        },
+        {
+          "id": "pat-f5",
+          "contextEn": "Pattern F: Align understanding",
+          "japanese": "ご認識のすり合わせをさせてください。",
+          "kana": "ごにんしきのすりあわせをさせてください。",
+          "english": "Let me align our understanding on this.",
+          "register": "formal",
+          "vocabIds": []
+        },
+        {
+          "id": "pat-g1",
+          "contextEn": "Pattern G: I'll check with them",
+          "japanese": "〜さんに確認してみます。",
+          "kana": "〜さんにかくにんしてみます。",
+          "english": "I'll check with ~.",
+          "register": "neutral",
+          "vocabIds": ["office-001"]
+        },
+        {
+          "id": "pat-g2",
+          "contextEn": "Pattern G: Please contact the person in charge",
+          "japanese": "〜担当の〜さんにご連絡ください。",
+          "kana": "〜たんとうの〜さんにごれんらくください。",
+          "english": "Please contact ~ who is in charge of ~.",
+          "register": "neutral",
+          "vocabIds": ["office-059", "office-002"]
+        },
+        {
+          "id": "pat-g3",
+          "contextEn": "Pattern G: Please prioritize that",
+          "japanese": "そちらを優先でお願いします。",
+          "kana": "そちらをゆうせんでおねがいします。",
+          "english": "Please prioritize that one.",
+          "register": "neutral",
+          "vocabIds": ["office-029", "office-010"]
+        },
+        {
+          "id": "pat-g4",
+          "contextEn": "Pattern G: Confirm with the right person",
+          "japanese": "〜については〜さんにご確認ください。",
+          "kana": "〜については〜さんにごかくにんください。",
+          "english": "Please confirm ~ with ~.",
+          "register": "neutral",
+          "vocabIds": ["office-001"]
+        }
+      ]
     }
   ]
 }

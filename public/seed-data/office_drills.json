@@ -694,6 +694,303 @@
           }
         }
       ]
+    },
+    {
+      "id": "meeting-lifecycle",
+      "title": "Meeting Lifecycle",
+      "titleJa": "会議の流れ",
+      "cluster": "meetings",
+      "description": "Practice the full meeting workflow: schedule a meeting, share the agenda, open with confirmation items, record decisions and action items, then distribute the minutes.",
+      "stages": [
+        {
+          "id": "meeting-s1",
+          "stage": 1,
+          "title": "Schedule",
+          "titleJa": "会議を設定",
+          "prompt": "A project review is needed. Propose a meeting to the team and ask them to participate.",
+          "hint": "Use ミーティング and either 会議 (かいぎ) for a formal meeting or オンライン会議 for a remote call",
+          "targets": {
+            "required": ["office-020"],
+            "optional": [],
+            "anyOf": [["office-019", "office-081"]]
+          },
+          "modelAnswer": {
+            "japanese": "進捗確認のミーティングを設定したいです。〇〇に会議をお願いできますか？",
+            "kana": "しんちょくかくにんのミーティングをせっていしたいです。〇〇にかいぎをおねがいできますか？",
+            "english": "I'd like to schedule a progress check meeting. Could we hold a meeting at 〇〇?"
+          }
+        },
+        {
+          "id": "meeting-s2",
+          "stage": 2,
+          "title": "Agenda",
+          "titleJa": "アジェンダ共有",
+          "prompt": "The meeting is tomorrow. Share the agenda in advance so participants can prepare.",
+          "hint": "Use アジェンダ and either 議題 (ぎだい) for agenda items or 確認事項 (かくにんじこう) for things to confirm",
+          "targets": {
+            "required": ["office-076"],
+            "optional": [],
+            "anyOf": [["office-082", "office-077"]]
+          },
+          "modelAnswer": {
+            "japanese": "明日の会議のアジェンダを共有します。議題は〇〇と〇〇です。",
+            "kana": "あしたのかいぎのアジェンダをきょうゆうします。ぎだいは〇〇と〇〇です。",
+            "english": "I'll share tomorrow's meeting agenda. The agenda items are 〇〇 and 〇〇."
+          }
+        },
+        {
+          "id": "meeting-s3",
+          "stage": 3,
+          "title": "Open",
+          "titleJa": "打ち合わせ開始",
+          "prompt": "The meeting has started. Open it formally and announce that you'll go through the items to confirm.",
+          "hint": "Use 打ち合わせ (うちあわせ) and 確認事項 (かくにんじこう)",
+          "targets": {
+            "required": ["office-021", "office-077"],
+            "optional": ["office-076"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "本日の打ち合わせを始めます。まず確認事項から進めましょう。",
+            "kana": "ほんじつのうちあわせをはじめます。まずかくにんじこうからすすめましょう。",
+            "english": "Let's start today's briefing. First, let's go through the items to confirm."
+          }
+        },
+        {
+          "id": "meeting-s4",
+          "stage": 4,
+          "title": "Decisions",
+          "titleJa": "決定事項まとめ",
+          "prompt": "The discussion is wrapping up. Summarize the decisions made and list the action items for each person.",
+          "hint": "Use 決定事項 (けっていじこう) and アクションアイテム",
+          "targets": {
+            "required": ["office-078", "office-079"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "本日の決定事項をまとめます。アクションアイテムは以下の通りです。",
+            "kana": "ほんじつのけっていじこうをまとめます。アクションアイテムはいかのとおりです。",
+            "english": "I'll summarize today's decisions. The action items are as follows."
+          }
+        },
+        {
+          "id": "meeting-s5",
+          "stage": 5,
+          "title": "Minutes",
+          "titleJa": "議事録共有",
+          "prompt": "The meeting is over. Share the minutes with a summary of the progress check results.",
+          "hint": "Use 議事録 (ぎじろく) and either 進捗確認 (しんちょくかくにん) or 報告 (ほうこく)",
+          "targets": {
+            "required": ["office-022"],
+            "optional": [],
+            "anyOf": [["office-025", "office-026"]]
+          },
+          "modelAnswer": {
+            "japanese": "議事録を共有します。本日の進捗確認の結果は以下の通りです。",
+            "kana": "ぎじろくをきょうゆうします。ほんじつのしんちょくかくにんのけっかはいかのとおりです。",
+            "english": "I'm sharing the meeting minutes. Here are the results of today's progress check."
+          }
+        }
+      ]
+    },
+    {
+      "id": "slack-comms-lifecycle",
+      "title": "Slack & Email",
+      "titleJa": "連絡ツールの使い方",
+      "cluster": "communication",
+      "description": "Practice the async communication patterns engineers use every day: DM a teammate, mention someone in a channel, reply to a message, send an email with an attachment, and open an email with a clear subject line.",
+      "stages": [
+        {
+          "id": "slack-s1",
+          "stage": 1,
+          "title": "Direct Message",
+          "titleJa": "DMを送る",
+          "prompt": "You need a quick answer from a teammate. Send them a direct message asking them to check something.",
+          "hint": "Use DM (ディーエム) and チャット",
+          "targets": {
+            "required": ["office-131", "office-125"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "DMでご連絡します。チャットを確認していただけますか？",
+            "kana": "DMでごれんらくします。チャットをかくにんしていただけますか？",
+            "english": "I'll message you via DM. Could you check the chat?"
+          }
+        },
+        {
+          "id": "slack-s2",
+          "stage": 2,
+          "title": "Mention",
+          "titleJa": "メンションする",
+          "prompt": "You're posting in a team channel and need a specific person to respond. Mention them and ask them to check.",
+          "hint": "Use メンション and either チャット or 連絡する",
+          "targets": {
+            "required": ["office-127"],
+            "optional": [],
+            "anyOf": [["office-125", "office-002"]]
+          },
+          "modelAnswer": {
+            "japanese": "チャットでメンションしました。ご確認ください。",
+            "kana": "チャットでメンションしました。ごかくにんください。",
+            "english": "I've mentioned you in the chat. Please check."
+          }
+        },
+        {
+          "id": "slack-s3",
+          "stage": 3,
+          "title": "Reply",
+          "titleJa": "返信する",
+          "prompt": "You've received a message. Acknowledge it and say you'll reply after checking.",
+          "hint": "Use 返信する (へんしんする) and either 返信 or メール",
+          "targets": {
+            "required": ["office-014"],
+            "optional": [],
+            "anyOf": [["office-050", "office-049"]]
+          },
+          "modelAnswer": {
+            "japanese": "ご連絡ありがとうございます。確認の上、返信いたします。",
+            "kana": "ごれんらくありがとうございます。かくにんのうえ、へんしんいたします。",
+            "english": "Thank you for your message. I'll check and reply."
+          }
+        },
+        {
+          "id": "slack-s4",
+          "stage": 4,
+          "title": "Attachment",
+          "titleJa": "添付ファイルを送る",
+          "prompt": "You're sending a document by email. Tell the recipient you've attached it and ask them to check.",
+          "hint": "Use 添付 (てんぷ) and メール",
+          "targets": {
+            "required": ["office-129", "office-049"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "メールで資料を添付しました。ご確認ください。",
+            "kana": "メールでしりょうをてんぷしました。ごかくにんください。",
+            "english": "I've attached the document to the email. Please check."
+          }
+        },
+        {
+          "id": "slack-s5",
+          "stage": 5,
+          "title": "Contact",
+          "titleJa": "件名を付けて連絡",
+          "prompt": "You're writing a formal email about a project matter. State the subject line and announce your purpose.",
+          "hint": "Use 件名 (けんめい) and 連絡する (れんらくする)",
+          "targets": {
+            "required": ["office-130", "office-002"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "件名：〇〇について。プロジェクトの件でご連絡します。",
+            "kana": "けんめい：〇〇について。プロジェクトのけんでごれんらくします。",
+            "english": "Subject: Re: 〇〇. I am contacting you regarding the project."
+          }
+        }
+      ]
+    },
+    {
+      "id": "tech-workflow-lifecycle",
+      "title": "Tech Workflow",
+      "titleJa": "開発の流れ",
+      "cluster": "tech",
+      "description": "Practice the daily development workflow: find a bug, check logs, branch and commit, run tests with a diff, then ship to production and plan the next refactor.",
+      "stages": [
+        {
+          "id": "tech-s1",
+          "stage": 1,
+          "title": "Bug Found",
+          "titleJa": "バグ発見",
+          "prompt": "You've found a bug during testing. Report it to the team.",
+          "hint": "Use バグ and エラー (エラー — error message / unexpected state)",
+          "targets": {
+            "required": ["office-137", "office-144"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "テスト中にバグを発見しました。エラーが発生しています。",
+            "kana": "テストちゅうにバグをはっけんしました。エラーがはっせいしています。",
+            "english": "Found a bug during testing. An error is occurring."
+          }
+        },
+        {
+          "id": "tech-s2",
+          "stage": 2,
+          "title": "Check Logs",
+          "titleJa": "ログ確認",
+          "prompt": "Something is failing in production. Tell the team you're investigating by checking the logs.",
+          "hint": "Use ログ and 確認する (かくにんする)",
+          "targets": {
+            "required": ["office-143"],
+            "optional": ["office-039"],
+            "anyOf": [["office-001", "office-137"]]
+          },
+          "modelAnswer": {
+            "japanese": "ログを確認しています。原因を調査中です。",
+            "kana": "ログをかくにんしています。げんいんをちょうさちゅうです。",
+            "english": "I'm checking the logs. I'm investigating the cause."
+          }
+        },
+        {
+          "id": "tech-s3",
+          "stage": 3,
+          "title": "Branch & Commit",
+          "titleJa": "ブランチとコミット",
+          "prompt": "You're starting to work on a fix. Tell the team you've created a new branch and will commit the changes.",
+          "hint": "Use ブランチ and コミット",
+          "targets": {
+            "required": ["office-151", "office-152"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "新しいブランチを作成しました。変更をコミットします。",
+            "kana": "あたらしいブランチをさくせいしました。へんこうをコミットします。",
+            "english": "I've created a new branch. I'll commit the changes."
+          }
+        },
+        {
+          "id": "tech-s4",
+          "stage": 4,
+          "title": "Test & Diff",
+          "titleJa": "テストと差分確認",
+          "prompt": "Before raising a PR, announce that you've run the tests and are reviewing the diff.",
+          "hint": "Use テスト and 差分 (さぶん)",
+          "targets": {
+            "required": ["office-150", "office-168"],
+            "optional": ["office-139"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "テストを実行しました。差分を確認してからプルリクエストを作成します。",
+            "kana": "テストをじっこうしました。さぶんをかくにんしてからプルリクエストをさくせいします。",
+            "english": "I've run the tests. I'll review the diff before creating a pull request."
+          }
+        },
+        {
+          "id": "tech-s5",
+          "stage": 5,
+          "title": "Release & Refactor",
+          "titleJa": "リリースとリファクタリング",
+          "prompt": "The feature is live. Announce the production release and mention that refactoring is planned next.",
+          "hint": "Use 本番リリース (ほんばんリリース) and リファクタリング",
+          "targets": {
+            "required": ["office-167"],
+            "optional": [],
+            "anyOf": [["office-162", "office-152"]]
+          },
+          "modelAnswer": {
+            "japanese": "本番リリースが完了しました。次はリファクタリングを予定しています。",
+            "kana": "ほんばんリリースがかんりょうしました。つぎはリファクタリングをよていしています。",
+            "english": "The production release is complete. We're planning refactoring next."
+          }
+        }
+      ]
     }
   ]
 }

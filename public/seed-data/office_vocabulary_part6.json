@@ -122,30 +122,6 @@
       }
     },
     {
-      "id": "office-176",
-      "kanji": "添付",
-      "kana": "てんぷ",
-      "romaji": "tenpu",
-      "meaning": [
-        "attachment",
-        "attached file"
-      ],
-      "partOfSpeech": [
-        "noun"
-      ],
-      "active": true,
-      "tier": "S",
-      "contexts": [
-        "email"
-      ],
-      "category": "communication",
-      "example": {
-        "japanese": "添付のファイルをご確認ください。",
-        "kana": "てんぷのファイルをごかくにんください。",
-        "english": "Please check the attached file."
-      }
-    },
-    {
       "id": "office-177",
       "kanji": "合意する",
       "kana": "ごういする",
