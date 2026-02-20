@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "description": "Office & workplace Japanese vocabulary — 240 entries",
+  "description": "Office & workplace Japanese vocabulary — 241 entries",
   "schema": "office-v2",
   "entries": [
     {
@@ -4397,6 +4397,34 @@
       }
     },
     {
+      "id": "office-176",
+      "kanji": "調整",
+      "kana": "ちょうせい",
+      "romaji": "chousei",
+      "meaning": [
+        "adjustment",
+        "coordination",
+        "arrangement"
+      ],
+      "partOfSpeech": [
+        "noun",
+        "suru-verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting",
+        "email",
+        "standup"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "スケジュールの調整をお願いします。",
+        "kana": "スケジュールのちょうせいをおねがいします。",
+        "english": "Please coordinate the schedule."
+      }
+    },
+    {
       "id": "office-177",
       "kanji": "合意する",
       "kana": "ごういする",
@@ -4425,7 +4453,7 @@
       "id": "office-178",
       "kanji": "ロードマップ",
       "kana": "ロードマップ",
-      "romaji": "roosudo mappu",
+      "romaji": "roodo mappu",
       "meaning": [
         "roadmap",
         "product roadmap"
@@ -4926,8 +4954,7 @@
       "kana": "ちゃくしゅずみ",
       "romaji": "chakushu zumi",
       "meaning": [
-        "already started",
-        "work in progress"
+        "already started"
       ],
       "partOfSpeech": [
         "noun"
@@ -4973,7 +5000,7 @@
       "id": "office-200",
       "kanji": "方向性",
       "kana": "ほうこうせい",
-      "romaji": "hookoosee",
+      "romaji": "houkousei",
       "meaning": [
         "direction",
         "approach",
