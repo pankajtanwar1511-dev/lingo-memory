@@ -354,6 +354,63 @@ Active/passive distribution: **211 active / 29 passive** (88% active) — all Ph
 
 ---
 
+## Development Workflow for Office Dataset Changes
+
+**CRITICAL RULE:** Never directly edit `office_vocabulary.json` or other main dataset files. Always follow this workflow:
+
+### 1. Create a separate "part" file
+
+When adding or modifying office vocabulary entries:
+
+- Create a new part file: `public/seed-data/office_vocabulary_partN.json`
+- Use the next available part number (e.g., Part 8, Part 9, etc.)
+- Include ONLY the new/modified entries in this file
+- Example: `office_vocabulary_part8.json` for entries office-242-270
+
+### 2. Review via ChatGPT
+
+- Copy the part file contents to ChatGPT
+- Use the appropriate review prompt from the "ChatGPT Review Protocol" section below
+- Get a quality score (1-10) and list of fixes
+- Apply all fixes to the part file
+- Document the review in the "Review log" section below
+
+### 3. Merge into main dataset
+
+- After ChatGPT review is complete and fixes applied:
+  - Merge the part file entries into `office_vocabulary.json`
+  - Update entry counts in the header of this doc
+  - Update the "Vocabulary Dataset" section with new category counts
+  - Commit with detailed message documenting the merge
+- Delete the part file (or keep for reference)
+- Update the "Vocabulary Quality Status" table to mark as reviewed
+
+### Why this workflow?
+
+- **Quality gate:** Prevents unreviewed data from entering the app
+- **Review clarity:** ChatGPT can focus on a small batch (better accuracy)
+- **Git history:** Clean commits showing what was added/changed
+- **Rollback safety:** Easy to revert a merge if issues found later
+
+### Example: Adding 15 new keigo phrases
+
+```bash
+# 1. Create part file
+# Edit: public/seed-data/office_vocabulary_part8.json (entries office-242-256)
+
+# 2. Review via ChatGPT
+# [paste to ChatGPT, get fixes, apply]
+
+# 3. Merge
+# Copy entries from part8 → office_vocabulary.json
+# Update this doc (counts, categories, quality status)
+git add public/seed-data/office_vocabulary.json docs/office-app-progress.md
+git commit -m "vocab: add 15 keigo phrases (office-242-256) — part 8 review complete"
+git push
+```
+
+---
+
 ## ChatGPT Review Protocol
 
 ### Phase 1 — Vocabulary batch review
