@@ -17,8 +17,12 @@
           "prompt": "A production system just went down. Report the outage to the team.",
           "hint": "Use the word for 'occurrence' / 'something has happened' (はっせい)",
           "targets": {
-            "required": ["office-039"],
-            "optional": ["office-008"],
+            "required": [
+              "office-039"
+            ],
+            "optional": [
+              "office-008"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -35,8 +39,12 @@
           "prompt": "You've confirmed the outage is real. Report the scope of impact to stakeholders.",
           "hint": "Use the word for 'scope of impact' (えいきょうはんい)",
           "targets": {
-            "required": ["office-043"],
-            "optional": ["office-095"],
+            "required": [
+              "office-043"
+            ],
+            "optional": [
+              "office-095"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -53,8 +61,12 @@
           "prompt": "You've applied a temporary fix to restore service. Report it.",
           "hint": "Use the word for 'temporary fix' / 'workaround' (ざんていたいおう)",
           "targets": {
-            "required": ["office-093"],
-            "optional": ["office-041"],
+            "required": [
+              "office-093"
+            ],
+            "optional": [
+              "office-041"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -71,8 +83,12 @@
           "prompt": "Investigation is complete. Explain the root cause of the incident.",
           "hint": "Use the word for 'root cause' (こんぽんげんいん)",
           "targets": {
-            "required": ["office-094"],
-            "optional": ["office-040"],
+            "required": [
+              "office-094"
+            ],
+            "optional": [
+              "office-040"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -89,8 +105,12 @@
           "prompt": "Write your closing message with the plan to prevent recurrence.",
           "hint": "Use the word for 'recurrence prevention' (さいはつぼうし)",
           "targets": {
-            "required": ["office-044"],
-            "optional": ["office-034"],
+            "required": [
+              "office-044"
+            ],
+            "optional": [
+              "office-034"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -116,9 +136,18 @@
           "prompt": "It's standup time. Tell the team which task you're starting today.",
           "hint": "Use the word for 'task' (タスク) and 'today' in formal speech (ほんじつ) or 'plan' (よてい)",
           "targets": {
-            "required": ["office-028"],
-            "optional": ["office-032"],
-            "anyOf": [["office-108", "office-036"]]
+            "required": [
+              "office-028"
+            ],
+            "optional": [
+              "office-032"
+            ],
+            "anyOf": [
+              [
+                "office-108",
+                "office-036"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "本日はAPIのタスクに取り組みます。",
@@ -134,8 +163,13 @@
           "prompt": "You're halfway through implementing a feature. Share a progress update with the team.",
           "hint": "Use 進捗 (しんちょく) for progress and 対応中 (たいおうちゅう) to say you're currently working on it",
           "targets": {
-            "required": ["office-003", "office-006"],
-            "optional": ["office-032"],
+            "required": [
+              "office-003",
+              "office-006"
+            ],
+            "optional": [
+              "office-032"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -152,9 +186,18 @@
           "prompt": "Your feature is finished and the PR has been merged. Report the completed task to the team.",
           "hint": "Use 完了 (かんりょう) and either マージする or デプロイする",
           "targets": {
-            "required": ["office-045"],
-            "optional": ["office-139"],
-            "anyOf": [["office-069", "office-068"]]
+            "required": [
+              "office-045"
+            ],
+            "optional": [
+              "office-139"
+            ],
+            "anyOf": [
+              [
+                "office-069",
+                "office-068"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "機能実装が完了しました。プルリクエストをマージしました。",
@@ -170,9 +213,17 @@
           "prompt": "An unexpected defect is pushing your deadline back. Report the delay to the team.",
           "hint": "Use 遅延 (ちえん) for delay and 締め切り (しめきり) for deadline",
           "targets": {
-            "required": ["office-047", "office-004"],
+            "required": [
+              "office-047",
+              "office-004"
+            ],
             "optional": [],
-            "anyOf": [["office-005", "office-042"]]
+            "anyOf": [
+              [
+                "office-005",
+                "office-042"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "不具合の対応で遅延しています。締め切りを明日に変更します。",
@@ -188,8 +239,13 @@
           "prompt": "You're blocked and can't move forward alone. Report the blocker and ask for help.",
           "hint": "Use ブロッカー and 相談する (そうだんする) to request consultation",
           "targets": {
-            "required": ["office-088", "office-016"],
-            "optional": ["office-005"],
+            "required": [
+              "office-088",
+              "office-016"
+            ],
+            "optional": [
+              "office-005"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -215,8 +271,13 @@
           "prompt": "You've finished your implementation. Ask a teammate to review your pull request.",
           "hint": "Use プルリクエスト and レビューする (to review)",
           "targets": {
-            "required": ["office-139", "office-062"],
-            "optional": ["office-140"],
+            "required": [
+              "office-139",
+              "office-062"
+            ],
+            "optional": [
+              "office-140"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -233,8 +294,13 @@
           "prompt": "You're reviewing a PR and spotted a potential bug. Leave a comment asking the author to check it.",
           "hint": "Use バグ and 確認する (かくにんする)",
           "targets": {
-            "required": ["office-137", "office-001"],
-            "optional": ["office-005"],
+            "required": [
+              "office-137",
+              "office-001"
+            ],
+            "optional": [
+              "office-005"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -251,9 +317,18 @@
           "prompt": "The review found problems. Ask the author to fix them before the PR can be merged.",
           "hint": "Use 修正する (しゅうせいする) and either 課題 or 不具合 to name the problem",
           "targets": {
-            "required": ["office-017"],
-            "optional": ["office-069"],
-            "anyOf": [["office-005", "office-042"]]
+            "required": [
+              "office-017"
+            ],
+            "optional": [
+              "office-069"
+            ],
+            "anyOf": [
+              [
+                "office-005",
+                "office-042"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "不具合があります。修正してからマージをお願いします。",
@@ -269,7 +344,10 @@
           "prompt": "The changes look good. Approve the PR and tell the author it's ready to merge.",
           "hint": "Use 承認する (しょうにんする) and マージする",
           "targets": {
-            "required": ["office-018", "office-069"],
+            "required": [
+              "office-018",
+              "office-069"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -287,9 +365,16 @@
           "prompt": "The PR is merged. Report to the team that the change is now live in production.",
           "hint": "Use 本番環境 (ほんばんかんきょう) and either デプロイする or デプロイ",
           "targets": {
-            "required": ["office-141"],
+            "required": [
+              "office-141"
+            ],
             "optional": [],
-            "anyOf": [["office-068", "office-138"]]
+            "anyOf": [
+              [
+                "office-068",
+                "office-138"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "本番環境にデプロイしました。確認をお願いします。",
@@ -314,7 +399,9 @@
           "prompt": "A teammate messages you in Slack about a task. Acknowledge casually that you've understood.",
           "hint": "Use 了解です (りょうかいです) — casual acknowledgment used with peers",
           "targets": {
-            "required": ["office-053"],
+            "required": [
+              "office-053"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -332,7 +419,9 @@
           "prompt": "Your manager has given you an instruction. Acknowledge formally to show you've understood and will act.",
           "hint": "Use 承知いたしました (しょうちいたしました) — formal acknowledgment for superiors",
           "targets": {
-            "required": ["office-052"],
+            "required": [
+              "office-052"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -350,7 +439,10 @@
           "prompt": "You need a senior colleague to check something. Make a polite request, acknowledging that you're asking for their time.",
           "hint": "Use お手数をおかけします (おてすうをおかけします) before the request and ご確認ください (ごかくにんください) as the ask",
           "targets": {
-            "required": ["office-103", "office-102"],
+            "required": [
+              "office-103",
+              "office-102"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -368,8 +460,12 @@
           "prompt": "A bug you introduced caused a production issue. Send a formal apology to the team.",
           "hint": "Use 申し訳ございません (もうしわけございません) — the formal apology form",
           "targets": {
-            "required": ["office-054"],
-            "optional": ["office-044"],
+            "required": [
+              "office-054"
+            ],
+            "optional": [
+              "office-044"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -386,9 +482,16 @@
           "prompt": "You're writing a formal email to someone outside your immediate team. Open with the standard business greeting and close with a sign-off.",
           "hint": "Use お世話になっております (おせわになっております) to open, and either よろしくお願いいたします or ご対応よろしくお願いします to close",
           "targets": {
-            "required": ["office-051"],
+            "required": [
+              "office-051"
+            ],
             "optional": [],
-            "anyOf": [["office-010", "office-104"]]
+            "anyOf": [
+              [
+                "office-010",
+                "office-104"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "お世話になっております。ご確認のほど、よろしくお願いいたします。",
@@ -413,7 +516,10 @@
           "prompt": "Start your 1-on-1. Tell your manager you'd like to report on recent progress.",
           "hint": "Use 進捗 (しんちょく) and 報告する (ほうこくする)",
           "targets": {
-            "required": ["office-003", "office-015"],
+            "required": [
+              "office-003",
+              "office-015"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -431,7 +537,10 @@
           "prompt": "Your main task is going well. Tell your manager it's on schedule and nearing completion.",
           "hint": "Use 予定 (よてい) for 'as planned' and 完了 (かんりょう) for completion",
           "targets": {
-            "required": ["office-036", "office-045"],
+            "required": [
+              "office-036",
+              "office-045"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -449,7 +558,10 @@
           "prompt": "One of your tasks is delayed. Report the delay to your manager and mention you'd like to discuss it.",
           "hint": "Use 遅延 (ちえん) and 相談する (そうだんする) to ask to discuss",
           "targets": {
-            "required": ["office-047", "office-016"],
+            "required": [
+              "office-047",
+              "office-016"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -467,8 +579,13 @@
           "prompt": "You've hit a technical blocker and want your manager's advice. Raise the issue and ask for input.",
           "hint": "Use 課題 (かだい) for the issue and ご意見 or 相談する to ask for advice",
           "targets": {
-            "required": ["office-005", "office-016"],
-            "optional": ["office-088"],
+            "required": [
+              "office-005",
+              "office-016"
+            ],
+            "optional": [
+              "office-088"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -485,9 +602,16 @@
           "prompt": "Your manager has shared feedback. Acknowledge it formally and ask if there's anything you should prioritize.",
           "hint": "Use フィードバック and either よろしくお願いします or 優先 (ゆうせん)",
           "targets": {
-            "required": ["office-024"],
+            "required": [
+              "office-024"
+            ],
             "optional": [],
-            "anyOf": [["office-010", "office-099"]]
+            "anyOf": [
+              [
+                "office-010",
+                "office-099"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "フィードバックありがとうございます。優先順位を見直します。今後ともよろしくお願いいたします。",
@@ -512,8 +636,13 @@
           "prompt": "You've finished a design proposal. Tell the team you've created it and ask for a review.",
           "hint": "Use 作成する (さくせいする) and レビューする (レビューをおねがいする)",
           "targets": {
-            "required": ["office-073", "office-062"],
-            "optional": ["office-023"],
+            "required": [
+              "office-073",
+              "office-062"
+            ],
+            "optional": [
+              "office-023"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -530,8 +659,13 @@
           "prompt": "During the design review, you spot a potential issue with the spec. Flag it and ask for confirmation.",
           "hint": "Use 課題 (かだい) and 確認する (かくにんする)",
           "targets": {
-            "required": ["office-005", "office-001"],
-            "optional": ["office-090"],
+            "required": [
+              "office-005",
+              "office-001"
+            ],
+            "optional": [
+              "office-090"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -548,9 +682,16 @@
           "prompt": "The review found problems with the design. Ask for revisions before the team proceeds.",
           "hint": "Use 修正する (しゅうせいする) and either 仕様 (しよう) or 提案 (ていあん) to name what needs fixing",
           "targets": {
-            "required": ["office-017"],
+            "required": [
+              "office-017"
+            ],
             "optional": [],
-            "anyOf": [["office-090", "office-023"]]
+            "anyOf": [
+              [
+                "office-090",
+                "office-023"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "仕様に問題があります。修正してから進めてください。",
@@ -566,7 +707,10 @@
           "prompt": "The revisions are done and the design looks good. Approve it and confirm the spec is now final.",
           "hint": "Use 承認する (しょうにんする) and 確定する (かくていする)",
           "targets": {
-            "required": ["office-018", "office-066"],
+            "required": [
+              "office-018",
+              "office-066"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -584,9 +728,18 @@
           "prompt": "Design is approved. Share the final specification document with the team for reference.",
           "hint": "Use 共有する (きょうゆうする) and either 仕様 (しよう) or ドキュメント",
           "targets": {
-            "required": ["office-011"],
-            "optional": ["office-102"],
-            "anyOf": [["office-090", "office-164"]]
+            "required": [
+              "office-011"
+            ],
+            "optional": [
+              "office-102"
+            ],
+            "anyOf": [
+              [
+                "office-090",
+                "office-164"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "最終仕様を共有します。ドキュメントをご確認ください。",
@@ -611,8 +764,12 @@
           "prompt": "Start a formal business email to someone outside your team. Use the standard Japanese business opener.",
           "hint": "Use お世話になっております (おせわになっております) — the universal formal email opener",
           "targets": {
-            "required": ["office-051"],
-            "optional": ["office-049"],
+            "required": [
+              "office-051"
+            ],
+            "optional": [
+              "office-049"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -629,7 +786,10 @@
           "prompt": "Ask someone to review an attached document. Acknowledge you're asking for their time before making the request.",
           "hint": "Use お手数をおかけします (おてすうをおかけします) and ご確認ください (ごかくにんください)",
           "targets": {
-            "required": ["office-103", "office-102"],
+            "required": [
+              "office-103",
+              "office-102"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -647,7 +807,10 @@
           "prompt": "Share a summary of information using the formal phrase for 'as follows', then note you're sharing it for reference.",
           "hint": "Use 以下の通り (いかのとおり) and 共有する (きょうゆうする)",
           "targets": {
-            "required": ["office-158", "office-011"],
+            "required": [
+              "office-158",
+              "office-011"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -665,8 +828,13 @@
           "prompt": "You haven't received a reply. Send a polite follow-up message asking them to check your previous email.",
           "hint": "Use フォローアップ and 確認する (かくにんする)",
           "targets": {
-            "required": ["office-163", "office-001"],
-            "optional": ["office-049"],
+            "required": [
+              "office-163",
+              "office-001"
+            ],
+            "optional": [
+              "office-049"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -683,9 +851,16 @@
           "prompt": "Close a formal email by inviting questions if anything is unclear, then sign off politely.",
           "hint": "Use よろしくお願いいたします (よろしくおねがいいたします) and either ご不明な点があれば or ご連絡いたします",
           "targets": {
-            "required": ["office-010"],
+            "required": [
+              "office-010"
+            ],
             "optional": [],
-            "anyOf": [["office-160", "office-161"]]
+            "anyOf": [
+              [
+                "office-160",
+                "office-161"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "ご不明な点があればお知らせください。よろしくお願いいたします。",
@@ -710,9 +885,16 @@
           "prompt": "A project review is needed. Propose a meeting to the team and ask them to participate.",
           "hint": "Use ミーティング and either 会議 (かいぎ) for a formal meeting or オンライン会議 for a remote call",
           "targets": {
-            "required": ["office-020"],
+            "required": [
+              "office-020"
+            ],
             "optional": [],
-            "anyOf": [["office-019", "office-081"]]
+            "anyOf": [
+              [
+                "office-019",
+                "office-081"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "進捗確認のミーティングを設定したいです。〇〇に会議をお願いできますか？",
@@ -728,9 +910,16 @@
           "prompt": "The meeting is tomorrow. Share the agenda in advance so participants can prepare.",
           "hint": "Use アジェンダ and either 議題 (ぎだい) for agenda items or 確認事項 (かくにんじこう) for things to confirm",
           "targets": {
-            "required": ["office-076"],
+            "required": [
+              "office-076"
+            ],
             "optional": [],
-            "anyOf": [["office-082", "office-077"]]
+            "anyOf": [
+              [
+                "office-082",
+                "office-077"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "明日の会議のアジェンダを共有します。議題は〇〇と〇〇です。",
@@ -746,8 +935,13 @@
           "prompt": "The meeting has started. Open it formally and announce that you'll go through the items to confirm.",
           "hint": "Use 打ち合わせ (うちあわせ) and 確認事項 (かくにんじこう)",
           "targets": {
-            "required": ["office-021", "office-077"],
-            "optional": ["office-076"],
+            "required": [
+              "office-021",
+              "office-077"
+            ],
+            "optional": [
+              "office-076"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -764,7 +958,10 @@
           "prompt": "The discussion is wrapping up. Summarize the decisions made and list the action items for each person.",
           "hint": "Use 決定事項 (けっていじこう) and アクションアイテム",
           "targets": {
-            "required": ["office-078", "office-079"],
+            "required": [
+              "office-078",
+              "office-079"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -782,9 +979,16 @@
           "prompt": "The meeting is over. Share the minutes with a summary of the progress check results.",
           "hint": "Use 議事録 (ぎじろく) and either 進捗確認 (しんちょくかくにん) or 報告 (ほうこく)",
           "targets": {
-            "required": ["office-022"],
+            "required": [
+              "office-022"
+            ],
             "optional": [],
-            "anyOf": [["office-025", "office-026"]]
+            "anyOf": [
+              [
+                "office-025",
+                "office-026"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "議事録を共有します。本日の進捗確認の結果は以下の通りです。",
@@ -809,7 +1013,10 @@
           "prompt": "You need a quick answer from a teammate. Send them a direct message asking them to check something.",
           "hint": "Use DM (ディーエム) and チャット",
           "targets": {
-            "required": ["office-131", "office-125"],
+            "required": [
+              "office-131",
+              "office-125"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -827,9 +1034,16 @@
           "prompt": "You're posting in a team channel and need a specific person to respond. Mention them and ask them to check.",
           "hint": "Use メンション and either チャット or 連絡する",
           "targets": {
-            "required": ["office-127"],
+            "required": [
+              "office-127"
+            ],
             "optional": [],
-            "anyOf": [["office-125", "office-002"]]
+            "anyOf": [
+              [
+                "office-125",
+                "office-002"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "チャットでメンションしました。ご確認ください。",
@@ -845,9 +1059,16 @@
           "prompt": "You've received a message. Acknowledge it and say you'll reply after checking.",
           "hint": "Use 返信する (へんしんする) and either 返信 or メール",
           "targets": {
-            "required": ["office-014"],
+            "required": [
+              "office-014"
+            ],
             "optional": [],
-            "anyOf": [["office-050", "office-049"]]
+            "anyOf": [
+              [
+                "office-050",
+                "office-049"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "ご連絡ありがとうございます。確認の上、返信いたします。",
@@ -863,7 +1084,10 @@
           "prompt": "You're sending a document by email. Tell the recipient you've attached it and ask them to check.",
           "hint": "Use 添付 (てんぷ) and メール",
           "targets": {
-            "required": ["office-129", "office-049"],
+            "required": [
+              "office-129",
+              "office-049"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -881,7 +1105,10 @@
           "prompt": "You're writing a formal email about a project matter. Write the subject line and opening sentence.",
           "hint": "Use 件名 (けんめい) and 連絡する (れんらくする)",
           "targets": {
-            "required": ["office-130", "office-002"],
+            "required": [
+              "office-130",
+              "office-002"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -908,7 +1135,10 @@
           "prompt": "You've found a bug during testing. Report it to the team.",
           "hint": "Use バグ and エラー (エラー — error message / unexpected state)",
           "targets": {
-            "required": ["office-137", "office-144"],
+            "required": [
+              "office-137",
+              "office-144"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -926,9 +1156,18 @@
           "prompt": "Something is failing in production. Tell the team you're investigating by checking the logs.",
           "hint": "Use ログ and 確認する (かくにんする)",
           "targets": {
-            "required": ["office-143"],
-            "optional": ["office-039"],
-            "anyOf": [["office-001", "office-137"]]
+            "required": [
+              "office-143"
+            ],
+            "optional": [
+              "office-039"
+            ],
+            "anyOf": [
+              [
+                "office-001",
+                "office-137"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "ログを確認しています。原因を調査中です。",
@@ -944,7 +1183,10 @@
           "prompt": "You're starting to work on a fix. Tell the team you've created a new branch and will commit the changes.",
           "hint": "Use ブランチ and コミット",
           "targets": {
-            "required": ["office-151", "office-152"],
+            "required": [
+              "office-151",
+              "office-152"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -962,8 +1204,13 @@
           "prompt": "Before raising a PR, announce that you've run the tests and are reviewing the diff.",
           "hint": "Use テスト and 差分 (さぶん)",
           "targets": {
-            "required": ["office-150", "office-168"],
-            "optional": ["office-139"],
+            "required": [
+              "office-150",
+              "office-168"
+            ],
+            "optional": [
+              "office-139"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -980,9 +1227,16 @@
           "prompt": "The feature is live. Announce the production release and mention that refactoring is planned next.",
           "hint": "Use 本番リリース (ほんばんリリース) and リファクタリング",
           "targets": {
-            "required": ["office-167"],
+            "required": [
+              "office-167"
+            ],
             "optional": [],
-            "anyOf": [["office-162", "office-152"]]
+            "anyOf": [
+              [
+                "office-162",
+                "office-152"
+              ]
+            ]
           },
           "modelAnswer": {
             "japanese": "本番リリースが完了しました。次はリファクタリングを予定しています。",
@@ -1007,7 +1261,11 @@
           "prompt": "You've prepared a feature proposal. Submit it to your manager, request a review, and ask them to consider it.",
           "hint": "Use 提出する (ていしゅつする), 依頼する (いらいする), and 検討する (けんとうする)",
           "targets": {
-            "required": ["office-075", "office-061", "office-063"],
+            "required": [
+              "office-075",
+              "office-061",
+              "office-063"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -1025,7 +1283,11 @@
           "prompt": "Sprint kickoff. Tell the team you're starting the task today, that you've got a handle on the scope, and that you'll advance the work.",
           "hint": "Use 着手する (ちゃくしゅする), 把握する (はあくする), and 進める (すすめる)",
           "targets": {
-            "required": ["office-149", "office-067", "office-165"],
+            "required": [
+              "office-149",
+              "office-067",
+              "office-165"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -1043,7 +1305,11 @@
           "prompt": "The architecture discussion is over. Report that the team discussed it, reached agreement, and decided on the approach.",
           "hint": "Use 議論する (ぎろんする), 合意する (ごういする), and 決定する (けっていする)",
           "targets": {
-            "required": ["office-194", "office-177", "office-195"],
+            "required": [
+              "office-194",
+              "office-177",
+              "office-195"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -1061,8 +1327,14 @@
           "prompt": "Sprint retro prep. Tell the team you've organized the issues, will compile the results, and are preparing the materials.",
           "hint": "Use 整理する (せいりする), まとめる, and 準備する (じゅんびする)",
           "targets": {
-            "required": ["office-180", "office-072", "office-071"],
-            "optional": ["office-074"],
+            "required": [
+              "office-180",
+              "office-072",
+              "office-071"
+            ],
+            "optional": [
+              "office-074"
+            ],
             "anyOf": []
           },
           "modelAnswer": {
@@ -1079,7 +1351,11 @@
           "prompt": "After a bad release: tell the team you'll review the procedure, you've sent the PR back for fixes, and you're rolling back production.",
           "hint": "Use 見直す (みなおす), 差し戻す (さしもどす), and 切り戻す (きりもどす)",
           "targets": {
-            "required": ["office-156", "office-153", "office-157"],
+            "required": [
+              "office-156",
+              "office-153",
+              "office-157"
+            ],
             "optional": [],
             "anyOf": []
           },
@@ -1088,6 +1364,517 @@
             "kana": "リリースてじゅんをみなおします。プルリクエストをさしもどしました。ほんばんかんきょうをきりもどします。",
             "english": "I'll review the release procedure. I've sent the PR back for fixes. I'll rollback the production environment."
           }
+        }
+      ]
+    },
+    {
+      "id": "keigo-production",
+      "title": "Keigo Production",
+      "titleJa": "敬語の産出練習",
+      "description": "Practice producing humble and honorific verb forms in workplace contexts",
+      "cluster": "keigo",
+      "stages": [
+        {
+          "id": "keigo-prod-s1",
+          "prompt": "You're telling your manager you'll do the task. Use the humble form of 'to do' (humble form of する).",
+          "targets": {
+            "required": [
+              "office-212"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "いたします。",
+            "kana": "いたします。",
+            "english": "I will do it."
+          },
+          "hint": "いたす (humble form of する)"
+        },
+        {
+          "id": "keigo-prod-s2",
+          "prompt": "You're introducing yourself to a client. Use the humble form of 'to say/be called' (humble form of 言う).",
+          "targets": {
+            "required": [
+              "office-213"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "田中と申します。",
+            "kana": "たなかともうします。",
+            "english": "I am called Tanaka. / My name is Tanaka."
+          },
+          "hint": "申す (humble form of 言う)"
+        },
+        {
+          "id": "keigo-prod-s3",
+          "prompt": "You're telling a client you'll visit their office tomorrow. Use the humble form of 'to go' (humble form of 行く).",
+          "targets": {
+            "required": [
+              "office-214"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "明日そちらに参ります。",
+            "kana": "あしたそちらにまいります。",
+            "english": "I will go there tomorrow."
+          },
+          "hint": "参る (humble form of 行く)"
+        },
+        {
+          "id": "keigo-prod-s4",
+          "prompt": "You're reporting to your manager that you looked at the document. Use the humble form of 'to look at/read' (humble form of 見る).",
+          "targets": {
+            "required": [
+              "office-217"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "ドキュメントを拝見しました。",
+            "kana": "ドキュメントをはいけんしました。",
+            "english": "I looked at the document."
+          },
+          "hint": "拝見する (humble form of 見る)"
+        },
+        {
+          "id": "keigo-prod-s5",
+          "prompt": "You're asking your manager if you can ask them about the schedule. Use the humble form of 'to ask/visit/hear' (multi-purpose humble verb).",
+          "targets": {
+            "required": [
+              "office-219"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "スケジュールについて伺ってもよろしいでしょうか。",
+            "kana": "スケジュールについてうかがってもよろしいでしょうか。",
+            "english": "May I ask you about the schedule?"
+          },
+          "hint": "伺う (humble form of 聞く/訪問する)"
+        }
+      ]
+    },
+    {
+      "id": "keigo-production-2",
+      "title": "Keigo Production 2",
+      "titleJa": "敬語の産出練習2",
+      "description": "Practice honorific verbs and complex keigo patterns",
+      "cluster": "keigo",
+      "stages": [
+        {
+          "id": "keigo-prod2-s1",
+          "prompt": "You're telling a colleague that the manager is in the office. Use the honorific form of 'to be' (honorific form of いる).",
+          "targets": {
+            "required": [
+              "office-221"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "部長はオフィスにいらっしゃいます。",
+            "kana": "ぶちょうはオフィスにいらっしゃいます。",
+            "english": "The department head is in the office."
+          },
+          "hint": "いらっしゃる (honorific form of いる/行く/来る)"
+        },
+        {
+          "id": "keigo-prod2-s2",
+          "prompt": "You're reporting what the client said in the meeting. Use the honorific form of 'to say' (honorific form of 言う).",
+          "targets": {
+            "required": [
+              "office-222"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "お客様は了解しましたとおっしゃいました。",
+            "kana": "おきゃくさまはりょうかいしましたとおっしゃいました。",
+            "english": "The client said they understood."
+          },
+          "hint": "おっしゃる (honorific form of 言う)"
+        },
+        {
+          "id": "keigo-prod2-s3",
+          "prompt": "You're asking if the manager will do the review. Use the honorific form of 'to do' (honorific form of する).",
+          "targets": {
+            "required": [
+              "office-223"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "部長がレビューをなさいますか。",
+            "kana": "ぶちょうがレビューをなさいますか。",
+            "english": "Will the department head do the review?"
+          },
+          "hint": "なさる (honorific form of する)"
+        },
+        {
+          "id": "keigo-prod2-s4",
+          "prompt": "You're thanking the manager for giving you advice. Use the honorific form of 'to give' (honorific form of くれる).",
+          "targets": {
+            "required": [
+              "office-224"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "アドバイスをくださってありがとうございます。",
+            "kana": "アドバイスをくださってありがとうございます。",
+            "english": "Thank you for giving me advice."
+          },
+          "hint": "くださる (honorific form of くれる)"
+        },
+        {
+          "id": "keigo-prod2-s5",
+          "prompt": "You're asking the client to please look at the document (complex keigo pattern combining honorific + humble).",
+          "targets": {
+            "required": [
+              "office-225"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "資料をご覧いただけますでしょうか。",
+            "kana": "しりょうをごらんいただけますでしょうか。",
+            "english": "Could you please look at the materials?"
+          },
+          "hint": "ご覧いただく (honorific お/ご + verb stem + いただく)"
+        }
+      ]
+    },
+    {
+      "id": "communication-culture",
+      "title": "Communication & Culture",
+      "titleJa": "コミュニケーションと文化",
+      "description": "Practice essential workplace culture concepts and natural communication patterns",
+      "cluster": "communication",
+      "stages": [
+        {
+          "id": "comm-culture-s1",
+          "prompt": "You're explaining that your team practices the fundamental Japanese business communication principle. Use the term for report-contact-consult.",
+          "targets": {
+            "required": [
+              "office-226"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "報連相を徹底しています。",
+            "kana": "ほうれんそうをてっていしています。",
+            "english": "We thoroughly practice hourensou (report, contact, consult)."
+          },
+          "hint": "報連相 (ほうれんそう) — report, contact, consult"
+        },
+        {
+          "id": "comm-culture-s2",
+          "prompt": "You're arriving at the office and greeting your colleagues in Japanese. What do you say?",
+          "targets": {
+            "required": [
+              "office-227"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "おはようございます。今日も挨拶から始めましょう。",
+            "kana": "おはようございます。きょうもあいさつからはじめましょう。",
+            "english": "Good morning. Let's start today with greetings."
+          },
+          "hint": "挨拶 (あいさつ) — greetings"
+        },
+        {
+          "id": "comm-culture-s3",
+          "prompt": "You're meeting a client for the first time and need to exchange business cards. What is this ritual called?",
+          "targets": {
+            "required": [
+              "office-229"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "まずは名刺交換をさせていただきます。",
+            "kana": "まずはめいしこうかんをさせていただきます。",
+            "english": "First, let me exchange business cards with you."
+          },
+          "hint": "名刺交換 (めいしこうかん) — business card exchange"
+        },
+        {
+          "id": "comm-culture-s4",
+          "prompt": "You're softly suggesting a possibility on Slack without being too direct. Use a natural softening word meaning 'could it be that...'",
+          "targets": {
+            "required": [
+              "office-228"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "もしかして、こちらの理解で合っていますか。",
+            "kana": "もしかして、こちらのりかいであっていますか。",
+            "english": "Could it be that this understanding is correct?"
+          },
+          "hint": "もしかして — could it be that / by any chance"
+        },
+        {
+          "id": "comm-culture-s5",
+          "prompt": "You're explaining an important cultural concept: reading the atmosphere and understanding unspoken context. What is this called?",
+          "targets": {
+            "required": [
+              "office-231"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "日本では空気を読むことが大切です。",
+            "kana": "にほんではくうきをよむことがたいせつです。",
+            "english": "In Japan, reading the atmosphere is important."
+          },
+          "hint": "空気を読む (くうきをよむ) — to read the room/atmosphere"
+        }
+      ]
+    },
+    {
+      "id": "communication-coordination",
+      "title": "Daily Coordination",
+      "titleJa": "日常の調整",
+      "description": "Practice coordination vocabulary and acknowledgment phrases",
+      "cluster": "communication",
+      "stages": [
+        {
+          "id": "comm-coord-s1",
+          "prompt": "You're asking team members to contact you individually (not in a group). Use the word for 'individual/separately'.",
+          "targets": {
+            "required": [
+              "office-201"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "個別にご連絡ください。",
+            "kana": "こべつにごれんらくください。",
+            "english": "Please contact me individually."
+          },
+          "hint": "個別 (こべつ) — individual, separately"
+        },
+        {
+          "id": "comm-coord-s2",
+          "prompt": "You're asking each team member to check their own assigned section. Use the word meaning 'each person/respectively'.",
+          "targets": {
+            "required": [
+              "office-207"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "各自、担当の箇所を確認してください。",
+            "kana": "かくじ、たんとうのかしょをかくにんしてください。",
+            "english": "Each person, please check your assigned section."
+          },
+          "hint": "各自 (かくじ) — each person, everyone"
+        },
+        {
+          "id": "comm-coord-s3",
+          "prompt": "You're telling a client you need to coordinate internally before giving an answer. Use the term for 'internal adjustment/coordination'.",
+          "targets": {
+            "required": [
+              "office-209"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "社内調整のうえ、後日ご連絡します。",
+            "kana": "しゃないちょうせいのうえ、ごじつごれんらくします。",
+            "english": "I will contact you later after internal coordination."
+          },
+          "hint": "社内調整 (しゃないちょうせい) — internal coordination"
+        },
+        {
+          "id": "comm-coord-s4",
+          "prompt": "Someone just confirmed your request. Reply with a natural Japanese acknowledgment phrase thanking them for confirming.",
+          "targets": {
+            "required": [
+              "office-210"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "ご確認ありがとうございます。",
+            "kana": "ごかくにんありがとうございます。",
+            "english": "Thank you for confirming."
+          },
+          "hint": "ご確認ありがとうございます — thank you for confirming"
+        },
+        {
+          "id": "comm-coord-s5",
+          "prompt": "Someone just contacted you. Reply with a natural acknowledgment phrase thanking them for contacting you.",
+          "targets": {
+            "required": [
+              "office-211"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "ご連絡ありがとうございます。承知しました。",
+            "kana": "ごれんらくありがとうございます。しょうちしました。",
+            "english": "Thank you for contacting me. Understood."
+          },
+          "hint": "ご連絡ありがとうございます — thank you for contacting"
+        }
+      ]
+    },
+    {
+      "id": "presentation-data",
+      "title": "Presentations & Data",
+      "titleJa": "プレゼンとデータ分析",
+      "description": "Practice presentation vocabulary and data analysis terms",
+      "cluster": "documents",
+      "stages": [
+        {
+          "id": "pres-data-s1",
+          "prompt": "You're preparing a presentation. Tell your team you'll share the slides.",
+          "targets": {
+            "required": [
+              "office-233"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "スライドを共有します。",
+            "kana": "スライドをきょうゆうします。",
+            "english": "I will share the slides."
+          },
+          "hint": "スライド — slides"
+        },
+        {
+          "id": "pres-data-s2",
+          "prompt": "You're presenting data. Tell your audience you've included reference materials.",
+          "targets": {
+            "required": [
+              "office-236"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "参考資料も添付しています。",
+            "kana": "さんこうしりょうもてんぷしています。",
+            "english": "I've also attached reference materials."
+          },
+          "hint": "参考資料 (さんこうしりょう) — reference materials"
+        },
+        {
+          "id": "pres-data-s3",
+          "prompt": "You're showing data visualization. Explain that this is a graph showing the trend.",
+          "targets": {
+            "required": [
+              "office-234",
+              "office-237"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "こちらのグラフは傾向を示しています。",
+            "kana": "こちらのグラフはけいこうをしめしています。",
+            "english": "This graph shows the trend."
+          },
+          "hint": "グラフ — graph, 傾向 (けいこう) — trend"
+        },
+        {
+          "id": "pres-data-s4",
+          "prompt": "You're presenting a data table. Tell the audience to please refer to the table.",
+          "targets": {
+            "required": [
+              "office-235"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "表をご参照ください。",
+            "kana": "ひょうをごさんしょうください。",
+            "english": "Please refer to the table."
+          },
+          "hint": "表 (ひょう) — table"
+        },
+        {
+          "id": "pres-data-s5",
+          "prompt": "You're analyzing two datasets. Explain that you're comparing the results.",
+          "targets": {
+            "required": [
+              "office-238"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "2つのデータセットの結果を比較します。",
+            "kana": "ふたつのデータセットのけっかをひかくします。",
+            "english": "I will compare the results of the two datasets."
+          },
+          "hint": "比較する (ひかくする) — to compare"
+        }
+      ]
+    },
+    {
+      "id": "urgent-business-vocab",
+      "title": "Urgent Business Vocabulary",
+      "titleJa": "急ぎのビジネス用語",
+      "description": "Practice urgent requests and business context vocabulary",
+      "cluster": "communication",
+      "stages": [
+        {
+          "id": "urgent-biz-s1",
+          "prompt": "You need something urgently. Ask your colleague to please handle this urgently.",
+          "targets": {
+            "required": [
+              "office-239"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "至急対応をお願いします。",
+            "kana": "しきゅうたいおうをおねがいします。",
+            "english": "Please handle this urgently."
+          },
+          "hint": "至急 (しきゅう) — urgent, urgently"
+        },
+        {
+          "id": "urgent-biz-s2",
+          "prompt": "You're explaining why you're developing a feature. Say it's based on actual demand.",
+          "targets": {
+            "required": [
+              "office-240"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "実際の需要に基づいて開発しています。",
+            "kana": "じっさいのじゅようにもとづいてかいはつしています。",
+            "english": "We're developing based on actual demand."
+          },
+          "hint": "需要 (じゅよう) — demand, need"
+        },
+        {
+          "id": "urgent-biz-s3",
+          "prompt": "You're organizing a training session. Tell your team who can attend the training.",
+          "targets": {
+            "required": [
+              "office-241"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "講習に参加できる方はご参加ください。",
+            "kana": "こうしゅうにさんかできるかたはごさんかください。",
+            "english": "Those who can attend the training, please join."
+          },
+          "hint": "講習 (こうしゅう) — training session"
+        },
+        {
+          "id": "urgent-biz-s4",
+          "prompt": "You're presenting urgently needed data comparing demand trends. Use at least 3 presentation terms.",
+          "targets": {
+            "required": [
+              "office-234",
+              "office-237",
+              "office-240"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "至急、需要の傾向を示すグラフを共有します。",
+            "kana": "しきゅう、じゅようのけいこうをしめすグラフをきょうゆうします。",
+            "english": "Urgently, I will share a graph showing demand trends."
+          },
+          "hint": "至急 + 需要 + 傾向 + グラフ"
+        },
+        {
+          "id": "urgent-biz-s5",
+          "prompt": "You're hosting a training session on data analysis. Explain you'll compare tables and graphs showing trends.",
+          "targets": {
+            "required": [
+              "office-235",
+              "office-234",
+              "office-237",
+              "office-238",
+              "office-241"
+            ]
+          },
+          "modelAnswer": {
+            "japanese": "講習では、傾向を示す表とグラフを比較します。",
+            "kana": "こうしゅうでは、けいこうをしめすひょうとグラフをひかくします。",
+            "english": "In the training session, we will compare tables and graphs showing trends."
+          },
+          "hint": "講習 + 表 + グラフ + 傾向 + 比較する"
         }
       ]
     }
