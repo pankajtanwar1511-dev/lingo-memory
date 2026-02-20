@@ -339,10 +339,10 @@ No database calls. This is intentional — office section is self-contained.
 | Vocab Part 3 (075–111) | 37 entries | ✅ Reviewed | partOfSpeech ×1, example kana ×1 |
 | Vocab Part 4 (112–148) | 37 entries | ✅ Reviewed | DM kana + romaji |
 | Vocab Part 5 (149–170) | 22 entries | ✅ Reviewed | meaning order ×1, example alignment ×1 |
-| Vocab Part 6 (171–199) | 29 entries | ⚠️ Pending | — |
-| **Vocab Phase A (201–211)** | **11 entries** | ⚠️ Pending | — |
-| **Vocab Phase B (212–225)** | **14 entries** | ⚠️ Pending | — |
-| **Vocab Phase C (226–241)** | **16 entries** | ⚠️ Pending | — |
+| Vocab Part 6 (171–199) | 29 entries | ✅ Reviewed | office-176 added (調整), romaji ×2 (office-178, office-200), meaning fix (office-198) |
+| **Vocab Part 7 (201–211)** — Phase A | **11 entries** | ✅ Reviewed | romaji fix (office-209) |
+| **Vocab Part 7 (212–225)** — Phase B | **14 entries** | ✅ Reviewed | romaji fix (office-209) |
+| **Vocab Part 7 (226–241)** — Phase C | **16 entries** | ✅ Reviewed | romaji fix (office-209) |
 | Drills: original 5 packs | incident/standup/PR/keigo/1on1 | ✅ Reviewed | 1on1-s5 model answer fix |
 | Drills: design-review + email | 2 packs | ⚠️ Pending | — |
 | Drills: meeting + slack + tech | 3 new packs | ⚠️ Pending | — |
@@ -472,6 +472,8 @@ Give 3–5 prioritised recommendations. Be specific about what to build next and
 | 2026-02-19 | Vocab batch | Part 3 (075–111) | 2 fixes |
 | 2026-02-19 | Vocab batch | Part 4 (112–148) | 1 fix |
 | 2026-02-19 | Vocab batch | Part 5 (149–170) | 2 fixes |
+| 2026-02-20 | Vocab batch | Part 6 (171–199) | 9.3/10 — office-176 added, romaji ×2, meaning ×1 |
+| 2026-02-20 | Vocab batch | Part 7 (201–241) | 9.7/10 — romaji ×1 (office-209) |
 | 2026-02-19 | Drill packs | Original 5 packs | 1 fix |
 | 2026-02-19 | Scenarios | Original 5 packs | 2 fixes |
 | 2026-02-18 | Strategic | Full app | Recommended: depth over breadth → linked drills |
@@ -496,9 +498,9 @@ Give 3–5 prioritised recommendations. Be specific about what to build next and
 - [x] Coverage analyzer script
 
 ### Priority 1 — Quality (do before next expansion)
-- [ ] **ChatGPT review Vocab Part 6 (171–199)** — 29 unreviewed entries
 - [ ] **ChatGPT review new drill packs** — meeting-lifecycle, slack-comms, tech-workflow, verb-production (4 packs unreviewed)
 - [ ] **ChatGPT review design-review + email-lifecycle** — 2 older packs still pending
+- [ ] **ChatGPT review scenarios** — status-update (7 frames unreviewed)
 - [ ] **Native speaker review** — minimum: drill model answers (1 pass). AI reviewing AI is a quality ceiling.
 
 ### Priority 2 — Vocab expansion (from reference doc only)
