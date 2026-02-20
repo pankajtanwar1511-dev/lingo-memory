@@ -609,7 +609,7 @@
           "kana": "はいけんしました。",
           "english": "I've read it. (humble form)",
           "register": "formal",
-          "vocabIds": []
+          "vocabIds": ["office-217"]
         },
         {
           "id": "pat-b1",
@@ -780,7 +780,7 @@
           "kana": "〜ですこしてまどっています。",
           "english": "Taking a bit longer than expected on ~.",
           "register": "neutral",
-          "vocabIds": []
+          "vocabIds": ["office-208"]
         },
         {
           "id": "pat-e4",
