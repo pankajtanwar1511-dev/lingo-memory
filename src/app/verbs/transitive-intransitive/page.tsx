@@ -733,7 +733,7 @@ export default function TransitiveIntransitivePage() {
   const [showKana, setShowKana] = useState(false)
 
   useEffect(() => {
-    fetch("/seed-data/N5_verbs_dataset_merged.json")
+    fetch("/seed-data/N5_verbs_dataset.json")
       .then(r => r.json())
       .then(data => { setVerbs(data.verbs || []); setIsLoading(false) })
       .catch(() => setIsLoading(false))

@@ -287,14 +287,14 @@ export default function FormTutorialsPage() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    Promise.all([
-      fetch("/seed-data/N5_verbs_dataset.json").then(r => r.json()),
-      fetch("/seed-data/N5_verbs_dataset_merged.json").then(r => r.json()).catch(() => ({ verbs: [] })),
-    ]).then(([dictData, teData]) => {
-      setDictVerbs(dictData.verbs || [])
-      setTeVerbs((teData.verbs || []).length > 0 ? teData.verbs : dictData.verbs)
-      setIsLoading(false)
-    }).catch(() => setIsLoading(false))
+    fetch("/seed-data/N5_verbs_dataset.json")
+      .then(r => r.json())
+      .then(data => {
+        setDictVerbs(data.verbs || [])
+        setTeVerbs(data.verbs || [])
+        setIsLoading(false)
+      })
+      .catch(() => setIsLoading(false))
   }, [])
 
   const categorizeDictVerb = (verb: DictVerb): string => {

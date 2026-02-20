@@ -24,7 +24,7 @@ export default function VerbFormMasterPage() {
   const loadQuestions = async (count: number) => {
     try {
       // Load verb dataset
-      const response = await fetch('/seed-data/N5_verbs_dataset_merged.json')
+      const response = await fetch('/seed-data/N5_verbs_dataset.json')
       const data = await response.json()
       const verbs: VerbData[] = data.verbs
 

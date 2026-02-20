@@ -1,7 +1,7 @@
 /**
  * Predefined Verb Lists for N5 Learning
  *
- * All IDs and comments verified against N5_verbs_dataset_merged.json.
+ * All IDs and comments verified against N5_verbs_dataset.json.
  *
  * Difficulty is a 4-tier curriculum (not 3), designed for staged cognitive load:
  *

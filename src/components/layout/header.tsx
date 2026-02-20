@@ -6,7 +6,7 @@ import { useTheme } from "next-themes"
 import {
   Moon, Sun, BookOpen, Trophy, Settings, Menu, X, Zap, Library,
   BarChart3, GraduationCap, Wrench, Database, Languages, BookMarked,
-  FlaskConical, BookOpenCheck, Target, LayoutDashboard
+  FlaskConical, BookOpenCheck, Target, LayoutDashboard, Building2
 } from "lucide-react"
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
@@ -56,6 +56,14 @@ export function Header() {
           badge: "846 Q!",
           badgeVariant: "success" as const,
           description: "141 verbs + quiz master"
+        },
+        {
+          name: "Office Japanese",
+          href: "/office",
+          icon: Building2,
+          badge: "241",
+          badgeVariant: "default" as const,
+          description: "Office vocab, drills & scenarios"
         },
         {
           name: "Dlingo",

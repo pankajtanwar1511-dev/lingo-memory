@@ -310,7 +310,7 @@ export default function DictionaryFormGuidePage() {
   useEffect(() => {
     async function loadVerbs() {
       try {
-        const response = await fetch('/seed-data/N5_verbs_dataset_merged.json')
+        const response = await fetch('/seed-data/N5_verbs_dataset.json')
         const data = await response.json()
         setVerbsData(data.verbs.slice(0, 12)) // Get first 12 verbs for examples
         setIsLoading(false)

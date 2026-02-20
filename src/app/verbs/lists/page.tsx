@@ -61,7 +61,7 @@ export default function VerbListsPage() {
 
   const loadVerbs = async () => {
     try {
-      const response = await fetch('/seed-data/N5_verbs_dataset_merged.json')
+      const response = await fetch('/seed-data/N5_verbs_dataset.json')
       const data = await response.json()
       const verbs: N5Verb[] = data.verbs.map((v: any) => ({
         id: v.id,
