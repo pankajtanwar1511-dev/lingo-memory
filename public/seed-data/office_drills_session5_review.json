@@ -23,8 +23,8 @@
             "required": ["office-212"]
           },
           "modelAnswer": {
-            "japanese": "私がいたします。",
-            "kana": "わたしがいたします。",
+            "japanese": "いたします。",
+            "kana": "いたします。",
             "english": "I will do it."
           },
           "hint": "いたす (humble form of する)"
@@ -166,7 +166,7 @@
       "stages": [
         {
           "id": "comm-culture-s1",
-          "prompt": "You're explaining the fundamental Japanese business communication principle (report, contact, consult). What is this concept called?",
+          "prompt": "You're explaining that your team practices the fundamental Japanese business communication principle. Use the term for report-contact-consult.",
           "targets": {
             "required": ["office-226"]
           },
@@ -271,8 +271,8 @@
             "required": ["office-209"]
           },
           "modelAnswer": {
-            "japanese": "社内調整してから後日ご連絡します。",
-            "kana": "しゃないちょうせいしてからごじつごれんらくします。",
+            "japanese": "社内調整のうえ、後日ご連絡します。",
+            "kana": "しゃないちょうせいのうえ、ごじつごれんらくします。",
             "english": "I will contact you later after internal coordination."
           },
           "hint": "社内調整 (しゃないちょうせい) — internal coordination"
@@ -406,8 +406,8 @@
             "required": ["office-240"]
           },
           "modelAnswer": {
-            "japanese": "実際の需要から開発しています。",
-            "kana": "じっさいのじゅようからかいはつしています。",
+            "japanese": "実際の需要に基づいて開発しています。",
+            "kana": "じっさいのじゅようにもとづいてかいはつしています。",
             "english": "We're developing based on actual demand."
           },
           "hint": "需要 (じゅよう) — demand, need"
@@ -419,9 +419,9 @@
             "required": ["office-241"]
           },
           "modelAnswer": {
-            "japanese": "講習できる人が参加してください。",
-            "kana": "こうしゅうできるひとがさんかしてください。",
-            "english": "Please attend if you can take the training."
+            "japanese": "講習に参加できる方はご参加ください。",
+            "kana": "こうしゅうにさんかできるかたはごさんかください。",
+            "english": "Those who can attend the training, please join."
           },
           "hint": "講習 (こうしゅう) — training session"
         },

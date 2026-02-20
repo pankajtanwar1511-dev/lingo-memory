@@ -10,7 +10,7 @@
       "stages": [
         {
           "id": "comm-culture-s1",
-          "prompt": "You're explaining the fundamental Japanese business communication principle (report, contact, consult). What is this concept called?",
+          "prompt": "You're explaining that your team practices the fundamental Japanese business communication principle. Use the term for report-contact-consult.",
           "targets": {
             "required": ["office-226"]
           },
@@ -115,8 +115,8 @@
             "required": ["office-209"]
           },
           "modelAnswer": {
-            "japanese": "社内調整してから後日ご連絡します。",
-            "kana": "しゃないちょうせいしてからごじつごれんらくします。",
+            "japanese": "社内調整のうえ、後日ご連絡します。",
+            "kana": "しゃないちょうせいのうえ、ごじつごれんらくします。",
             "english": "I will contact you later after internal coordination."
           },
           "hint": "社内調整 (しゃないちょうせい) — internal coordination"

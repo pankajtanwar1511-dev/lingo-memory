@@ -102,8 +102,8 @@
             "required": ["office-240"]
           },
           "modelAnswer": {
-            "japanese": "実際の需要から開発しています。",
-            "kana": "じっさいのじゅようからかいはつしています。",
+            "japanese": "実際の需要に基づいて開発しています。",
+            "kana": "じっさいのじゅようにもとづいてかいはつしています。",
             "english": "We're developing based on actual demand."
           },
           "hint": "需要 (じゅよう) — demand, need"
@@ -115,9 +115,9 @@
             "required": ["office-241"]
           },
           "modelAnswer": {
-            "japanese": "講習できる人が参加してください。",
-            "kana": "こうしゅうできるひとがさんかしてください。",
-            "english": "Please attend if you can take the training."
+            "japanese": "講習に参加できる方はご参加ください。",
+            "kana": "こうしゅうにさんかできるかたはごさんかください。",
+            "english": "Those who can attend the training, please join."
           },
           "hint": "講習 (こうしゅう) — training session"
         },

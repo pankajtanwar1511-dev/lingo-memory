@@ -15,8 +15,8 @@
             "required": ["office-212"]
           },
           "modelAnswer": {
-            "japanese": "私がいたします。",
-            "kana": "わたしがいたします。",
+            "japanese": "いたします。",
+            "kana": "いたします。",
             "english": "I will do it."
           },
           "hint": "いたす (humble form of する)"
