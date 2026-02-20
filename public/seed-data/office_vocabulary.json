@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "description": "Office & workplace Japanese vocabulary — 224 entries",
+  "description": "Office & workplace Japanese vocabulary — 240 entries",
   "schema": "office-v2",
   "entries": [
     {
@@ -5418,6 +5418,278 @@
         "japanese": "資料をご覧いただけますか。",
         "kana": "しりょうをごらんいただけますか。",
         "english": "Could you please take a look at the materials?"
+      }
+    },
+    {
+      "id": "office-226",
+      "kanji": "報連相",
+      "kana": "ほうれんそう",
+      "romaji": "hourensou",
+      "meaning": ["report-contact-consult", "three pillars of business communication", "reporting, contacting, consulting"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "S",
+      "contexts": ["meeting", "1on1", "standup"],
+      "category": "communication",
+      "example": {
+        "japanese": "報連相を徹底してください。",
+        "kana": "ほうれんそうをてっていしてください。",
+        "english": "Please practice thorough reporting, contacting, and consulting."
+      }
+    },
+    {
+      "id": "office-227",
+      "kanji": "挨拶",
+      "kana": "あいさつ",
+      "romaji": "aisatsu",
+      "meaning": ["greeting", "salutation", "introduction"],
+      "partOfSpeech": ["noun", "suru-verb"],
+      "active": true,
+      "tier": "S",
+      "contexts": ["meeting", "email"],
+      "category": "communication",
+      "example": {
+        "japanese": "朝の挨拶を忘れずに。",
+        "kana": "あさのあいさつをわすれずに。",
+        "english": "Don't forget the morning greeting."
+      }
+    },
+    {
+      "id": "office-228",
+      "kanji": "もしかして",
+      "kana": "もしかして",
+      "romaji": "moshikashite",
+      "meaning": ["perhaps", "by any chance", "possibly"],
+      "partOfSpeech": ["adverb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["chat", "email", "standup"],
+      "category": "communication",
+      "example": {
+        "japanese": "もしかして、これはバグですか。",
+        "kana": "もしかして、これはバグですか。",
+        "english": "Could this possibly be a bug?"
+      }
+    },
+    {
+      "id": "office-229",
+      "kanji": "至急",
+      "kana": "しきゅう",
+      "romaji": "shikyuu",
+      "meaning": ["urgent", "urgently", "immediately"],
+      "partOfSpeech": ["noun", "adverb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email", "chat"],
+      "category": "status",
+      "example": {
+        "japanese": "至急対応をお願いします。",
+        "kana": "しきゅうたいおうをおねがいします。",
+        "english": "Please handle this urgently."
+      }
+    },
+    {
+      "id": "office-230",
+      "kanji": "スライド",
+      "kana": "スライド",
+      "romaji": "suraido",
+      "meaning": ["slide", "presentation slide"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "presentation"],
+      "category": "documents",
+      "example": {
+        "japanese": "次のスライドをご覧ください。",
+        "kana": "つぎのスライドをごらんください。",
+        "english": "Please look at the next slide."
+      }
+    },
+    {
+      "id": "office-231",
+      "kanji": "グラフ",
+      "kana": "グラフ",
+      "romaji": "gurafu",
+      "meaning": ["graph", "chart", "diagram"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "presentation"],
+      "category": "documents",
+      "example": {
+        "japanese": "このグラフを見てください。",
+        "kana": "このグラフをみてください。",
+        "english": "Please look at this graph."
+      }
+    },
+    {
+      "id": "office-232",
+      "kanji": "表",
+      "kana": "ひょう",
+      "romaji": "hyou",
+      "meaning": ["table", "chart", "list"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "document"],
+      "category": "documents",
+      "example": {
+        "japanese": "表にまとめました。",
+        "kana": "ひょうにまとめました。",
+        "english": "I've compiled it into a table."
+      }
+    },
+    {
+      "id": "office-233",
+      "kanji": "名刺交換",
+      "kana": "めいしこうかん",
+      "romaji": "meishi koukan",
+      "meaning": ["business card exchange", "exchanging business cards"],
+      "partOfSpeech": ["noun", "suru-verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "client"],
+      "category": "communication",
+      "example": {
+        "japanese": "まず名刺交換をしましょう。",
+        "kana": "まずめいしこうかんをしましょう。",
+        "english": "Let's exchange business cards first."
+      }
+    },
+    {
+      "id": "office-234",
+      "kanji": "根拠",
+      "kana": "こんきょ",
+      "romaji": "konkyo",
+      "meaning": ["basis", "grounds", "evidence", "rationale"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "presentation"],
+      "category": "communication",
+      "example": {
+        "japanese": "その根拠を教えてください。",
+        "kana": "そのこんきょをおしえてください。",
+        "english": "Please explain the basis for that."
+      }
+    },
+    {
+      "id": "office-235",
+      "kanji": "傾向",
+      "kana": "けいこう",
+      "romaji": "keikou",
+      "meaning": ["trend", "tendency", "inclination"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "standup"],
+      "category": "status",
+      "example": {
+        "japanese": "最近の傾向を分析しました。",
+        "kana": "さいきんのけいこうをぶんせきしました。",
+        "english": "I analyzed recent trends."
+      }
+    },
+    {
+      "id": "office-236",
+      "kanji": "比較する",
+      "kana": "ひかくする",
+      "romaji": "hikaku suru",
+      "meaning": ["to compare", "to contrast"],
+      "partOfSpeech": ["suru-verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "review"],
+      "category": "verbs",
+      "example": {
+        "japanese": "前回と比較してください。",
+        "kana": "ぜんかいとひかくしてください。",
+        "english": "Please compare it with last time."
+      }
+    },
+    {
+      "id": "office-237",
+      "kanji": "参考資料",
+      "kana": "さんこうしりょう",
+      "romaji": "sankou shiryou",
+      "meaning": ["reference materials", "supporting documents"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "email"],
+      "category": "documents",
+      "example": {
+        "japanese": "参考資料を添付します。",
+        "kana": "さんこうしりょうをてんぷします。",
+        "english": "I'll attach reference materials."
+      }
+    },
+    {
+      "id": "office-238",
+      "kanji": "飲み会",
+      "kana": "のみかい",
+      "romaji": "nomikai",
+      "meaning": ["drinking party", "work drinking gathering"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["chat", "announcement"],
+      "category": "hr",
+      "example": {
+        "japanese": "金曜日に飲み会があります。",
+        "kana": "きんようびにのみかいがあります。",
+        "english": "There's a drinking party on Friday."
+      }
+    },
+    {
+      "id": "office-239",
+      "kanji": "空気を読む",
+      "kana": "くうきをよむ",
+      "romaji": "kuuki wo yomu",
+      "meaning": ["to read the atmosphere", "to read the room", "to pick up on social cues"],
+      "partOfSpeech": ["phrase", "verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "1on1"],
+      "category": "communication",
+      "example": {
+        "japanese": "空気を読んで発言してください。",
+        "kana": "くうきをよんではつげんしてください。",
+        "english": "Please read the room before speaking."
+      }
+    },
+    {
+      "id": "office-240",
+      "kanji": "需要",
+      "kana": "じゅよう",
+      "romaji": "juyou",
+      "meaning": ["demand", "need", "requirements"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["meeting", "planning"],
+      "category": "project",
+      "example": {
+        "japanese": "実際の需要を確認しましょう。",
+        "kana": "じっさいのじゅようをかくにんしましょう。",
+        "english": "Let's verify the actual demand."
+      }
+    },
+    {
+      "id": "office-241",
+      "kanji": "講習",
+      "kana": "こうしゅう",
+      "romaji": "koushuu",
+      "meaning": ["training session", "workshop", "lecture course"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["announcement", "hr"],
+      "category": "hr",
+      "example": {
+        "japanese": "来週、講習に参加します。",
+        "kana": "らいしゅう、こうしゅうにさんかします。",
+        "english": "I'll attend a training session next week."
       }
     }
   ]
