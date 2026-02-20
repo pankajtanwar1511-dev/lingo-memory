@@ -1,0 +1,457 @@
+{
+  "schema": "office-drills-v1",
+  "review_info": {
+    "session": "Session 5",
+    "date": "2026-02-20",
+    "total_packs": 6,
+    "total_stages": 30,
+    "source_files": ["office_drills_part12.json", "office_drills_part13.json", "office_drills_part14.json"],
+    "purpose": "ChatGPT review before merging into office_drills.json"
+  },
+  "packs": [
+    {
+      "id": "keigo-production",
+      "title": "Keigo Production",
+      "titleJa": "敬語の産出練習",
+      "description": "Practice producing humble and honorific verb forms in workplace contexts",
+      "cluster": "keigo",
+      "stages": [
+        {
+          "id": "keigo-prod-s1",
+          "prompt": "You're telling your manager you'll do the task. Use the humble form of 'to do' (humble form of する).",
+          "targets": {
+            "required": ["office-212"]
+          },
+          "modelAnswer": {
+            "japanese": "私がいたします。",
+            "kana": "わたしがいたします。",
+            "english": "I will do it."
+          },
+          "hint": "いたす (humble form of する)"
+        },
+        {
+          "id": "keigo-prod-s2",
+          "prompt": "You're introducing yourself to a client. Use the humble form of 'to say/be called' (humble form of 言う).",
+          "targets": {
+            "required": ["office-213"]
+          },
+          "modelAnswer": {
+            "japanese": "田中と申します。",
+            "kana": "たなかともうします。",
+            "english": "I am called Tanaka. / My name is Tanaka."
+          },
+          "hint": "申す (humble form of 言う)"
+        },
+        {
+          "id": "keigo-prod-s3",
+          "prompt": "You're telling a client you'll visit their office tomorrow. Use the humble form of 'to go' (humble form of 行く).",
+          "targets": {
+            "required": ["office-214"]
+          },
+          "modelAnswer": {
+            "japanese": "明日そちらに参ります。",
+            "kana": "あしたそちらにまいります。",
+            "english": "I will go there tomorrow."
+          },
+          "hint": "参る (humble form of 行く)"
+        },
+        {
+          "id": "keigo-prod-s4",
+          "prompt": "You're reporting to your manager that you looked at the document. Use the humble form of 'to look at/read' (humble form of 見る).",
+          "targets": {
+            "required": ["office-217"]
+          },
+          "modelAnswer": {
+            "japanese": "ドキュメントを拝見しました。",
+            "kana": "ドキュメントをはいけんしました。",
+            "english": "I looked at the document."
+          },
+          "hint": "拝見する (humble form of 見る)"
+        },
+        {
+          "id": "keigo-prod-s5",
+          "prompt": "You're asking your manager if you can ask them about the schedule. Use the humble form of 'to ask/visit/hear' (multi-purpose humble verb).",
+          "targets": {
+            "required": ["office-219"]
+          },
+          "modelAnswer": {
+            "japanese": "スケジュールについて伺ってもよろしいでしょうか。",
+            "kana": "スケジュールについてうかがってもよろしいでしょうか。",
+            "english": "May I ask you about the schedule?"
+          },
+          "hint": "伺う (humble form of 聞く/訪問する)"
+        }
+      ]
+    },
+    {
+      "id": "keigo-production-2",
+      "title": "Keigo Production 2",
+      "titleJa": "敬語の産出練習2",
+      "description": "Practice honorific verbs and complex keigo patterns",
+      "cluster": "keigo",
+      "stages": [
+        {
+          "id": "keigo-prod2-s1",
+          "prompt": "You're telling a colleague that the manager is in the office. Use the honorific form of 'to be' (honorific form of いる).",
+          "targets": {
+            "required": ["office-221"]
+          },
+          "modelAnswer": {
+            "japanese": "部長はオフィスにいらっしゃいます。",
+            "kana": "ぶちょうはオフィスにいらっしゃいます。",
+            "english": "The department head is in the office."
+          },
+          "hint": "いらっしゃる (honorific form of いる/行く/来る)"
+        },
+        {
+          "id": "keigo-prod2-s2",
+          "prompt": "You're reporting what the client said in the meeting. Use the honorific form of 'to say' (honorific form of 言う).",
+          "targets": {
+            "required": ["office-222"]
+          },
+          "modelAnswer": {
+            "japanese": "お客様は了解しましたとおっしゃいました。",
+            "kana": "おきゃくさまはりょうかいしましたとおっしゃいました。",
+            "english": "The client said they understood."
+          },
+          "hint": "おっしゃる (honorific form of 言う)"
+        },
+        {
+          "id": "keigo-prod2-s3",
+          "prompt": "You're asking if the manager will do the review. Use the honorific form of 'to do' (honorific form of する).",
+          "targets": {
+            "required": ["office-223"]
+          },
+          "modelAnswer": {
+            "japanese": "部長がレビューをなさいますか。",
+            "kana": "ぶちょうがレビューをなさいますか。",
+            "english": "Will the department head do the review?"
+          },
+          "hint": "なさる (honorific form of する)"
+        },
+        {
+          "id": "keigo-prod2-s4",
+          "prompt": "You're thanking the manager for giving you advice. Use the honorific form of 'to give' (honorific form of くれる).",
+          "targets": {
+            "required": ["office-224"]
+          },
+          "modelAnswer": {
+            "japanese": "アドバイスをくださってありがとうございます。",
+            "kana": "アドバイスをくださってありがとうございます。",
+            "english": "Thank you for giving me advice."
+          },
+          "hint": "くださる (honorific form of くれる)"
+        },
+        {
+          "id": "keigo-prod2-s5",
+          "prompt": "You're asking the client to please look at the document (complex keigo pattern combining honorific + humble).",
+          "targets": {
+            "required": ["office-225"]
+          },
+          "modelAnswer": {
+            "japanese": "資料をご覧いただけますでしょうか。",
+            "kana": "しりょうをごらんいただけますでしょうか。",
+            "english": "Could you please look at the materials?"
+          },
+          "hint": "ご覧いただく (honorific お/ご + verb stem + いただく)"
+        }
+      ]
+    },
+    {
+      "id": "communication-culture",
+      "title": "Communication & Culture",
+      "titleJa": "コミュニケーションと文化",
+      "description": "Practice essential workplace culture concepts and natural communication patterns",
+      "cluster": "communication",
+      "stages": [
+        {
+          "id": "comm-culture-s1",
+          "prompt": "You're explaining the fundamental Japanese business communication principle (report, contact, consult). What is this concept called?",
+          "targets": {
+            "required": ["office-226"]
+          },
+          "modelAnswer": {
+            "japanese": "報連相を徹底しています。",
+            "kana": "ほうれんそうをてっていしています。",
+            "english": "We thoroughly practice hourensou (report, contact, consult)."
+          },
+          "hint": "報連相 (ほうれんそう) — report, contact, consult"
+        },
+        {
+          "id": "comm-culture-s2",
+          "prompt": "You're arriving at the office and greeting your colleagues in Japanese. What do you say?",
+          "targets": {
+            "required": ["office-227"]
+          },
+          "modelAnswer": {
+            "japanese": "おはようございます。今日も挨拶から始めましょう。",
+            "kana": "おはようございます。きょうもあいさつからはじめましょう。",
+            "english": "Good morning. Let's start today with greetings."
+          },
+          "hint": "挨拶 (あいさつ) — greetings"
+        },
+        {
+          "id": "comm-culture-s3",
+          "prompt": "You're meeting a client for the first time and need to exchange business cards. What is this ritual called?",
+          "targets": {
+            "required": ["office-229"]
+          },
+          "modelAnswer": {
+            "japanese": "まずは名刺交換をさせていただきます。",
+            "kana": "まずはめいしこうかんをさせていただきます。",
+            "english": "First, let me exchange business cards with you."
+          },
+          "hint": "名刺交換 (めいしこうかん) — business card exchange"
+        },
+        {
+          "id": "comm-culture-s4",
+          "prompt": "You're softly suggesting a possibility on Slack without being too direct. Use a natural softening word meaning 'could it be that...'",
+          "targets": {
+            "required": ["office-228"]
+          },
+          "modelAnswer": {
+            "japanese": "もしかして、こちらの理解で合っていますか。",
+            "kana": "もしかして、こちらのりかいであっていますか。",
+            "english": "Could it be that this understanding is correct?"
+          },
+          "hint": "もしかして — could it be that / by any chance"
+        },
+        {
+          "id": "comm-culture-s5",
+          "prompt": "You're explaining an important cultural concept: reading the atmosphere and understanding unspoken context. What is this called?",
+          "targets": {
+            "required": ["office-231"]
+          },
+          "modelAnswer": {
+            "japanese": "日本では空気を読むことが大切です。",
+            "kana": "にほんではくうきをよむことがたいせつです。",
+            "english": "In Japan, reading the atmosphere is important."
+          },
+          "hint": "空気を読む (くうきをよむ) — to read the room/atmosphere"
+        }
+      ]
+    },
+    {
+      "id": "communication-coordination",
+      "title": "Daily Coordination",
+      "titleJa": "日常の調整",
+      "description": "Practice coordination vocabulary and acknowledgment phrases",
+      "cluster": "communication",
+      "stages": [
+        {
+          "id": "comm-coord-s1",
+          "prompt": "You're asking team members to contact you individually (not in a group). Use the word for 'individual/separately'.",
+          "targets": {
+            "required": ["office-201"]
+          },
+          "modelAnswer": {
+            "japanese": "個別にご連絡ください。",
+            "kana": "こべつにごれんらくください。",
+            "english": "Please contact me individually."
+          },
+          "hint": "個別 (こべつ) — individual, separately"
+        },
+        {
+          "id": "comm-coord-s2",
+          "prompt": "You're asking each team member to check their own assigned section. Use the word meaning 'each person/respectively'.",
+          "targets": {
+            "required": ["office-207"]
+          },
+          "modelAnswer": {
+            "japanese": "各自、担当の箇所を確認してください。",
+            "kana": "かくじ、たんとうのかしょをかくにんしてください。",
+            "english": "Each person, please check your assigned section."
+          },
+          "hint": "各自 (かくじ) — each person, everyone"
+        },
+        {
+          "id": "comm-coord-s3",
+          "prompt": "You're telling a client you need to coordinate internally before giving an answer. Use the term for 'internal adjustment/coordination'.",
+          "targets": {
+            "required": ["office-209"]
+          },
+          "modelAnswer": {
+            "japanese": "社内調整してから後日ご連絡します。",
+            "kana": "しゃないちょうせいしてからごじつごれんらくします。",
+            "english": "I will contact you later after internal coordination."
+          },
+          "hint": "社内調整 (しゃないちょうせい) — internal coordination"
+        },
+        {
+          "id": "comm-coord-s4",
+          "prompt": "Someone just confirmed your request. Reply with a natural Japanese acknowledgment phrase thanking them for confirming.",
+          "targets": {
+            "required": ["office-210"]
+          },
+          "modelAnswer": {
+            "japanese": "ご確認ありがとうございます。",
+            "kana": "ごかくにんありがとうございます。",
+            "english": "Thank you for confirming."
+          },
+          "hint": "ご確認ありがとうございます — thank you for confirming"
+        },
+        {
+          "id": "comm-coord-s5",
+          "prompt": "Someone just contacted you. Reply with a natural acknowledgment phrase thanking them for contacting you.",
+          "targets": {
+            "required": ["office-211"]
+          },
+          "modelAnswer": {
+            "japanese": "ご連絡ありがとうございます。承知しました。",
+            "kana": "ごれんらくありがとうございます。しょうちしました。",
+            "english": "Thank you for contacting me. Understood."
+          },
+          "hint": "ご連絡ありがとうございます — thank you for contacting"
+        }
+      ]
+    },
+    {
+      "id": "presentation-data",
+      "title": "Presentations & Data",
+      "titleJa": "プレゼンとデータ分析",
+      "description": "Practice presentation vocabulary and data analysis terms",
+      "cluster": "documents",
+      "stages": [
+        {
+          "id": "pres-data-s1",
+          "prompt": "You're preparing a presentation. Tell your team you'll share the slides.",
+          "targets": {
+            "required": ["office-233"]
+          },
+          "modelAnswer": {
+            "japanese": "スライドを共有します。",
+            "kana": "スライドをきょうゆうします。",
+            "english": "I will share the slides."
+          },
+          "hint": "スライド — slides"
+        },
+        {
+          "id": "pres-data-s2",
+          "prompt": "You're presenting data. Tell your audience you've included reference materials.",
+          "targets": {
+            "required": ["office-236"]
+          },
+          "modelAnswer": {
+            "japanese": "参考資料も添付しています。",
+            "kana": "さんこうしりょうもてんぷしています。",
+            "english": "I've also attached reference materials."
+          },
+          "hint": "参考資料 (さんこうしりょう) — reference materials"
+        },
+        {
+          "id": "pres-data-s3",
+          "prompt": "You're showing data visualization. Explain that this is a graph showing the trend.",
+          "targets": {
+            "required": ["office-234", "office-237"]
+          },
+          "modelAnswer": {
+            "japanese": "こちらのグラフは傾向を示しています。",
+            "kana": "こちらのグラフはけいこうをしめしています。",
+            "english": "This graph shows the trend."
+          },
+          "hint": "グラフ — graph, 傾向 (けいこう) — trend"
+        },
+        {
+          "id": "pres-data-s4",
+          "prompt": "You're presenting a data table. Tell the audience to please refer to the table.",
+          "targets": {
+            "required": ["office-235"]
+          },
+          "modelAnswer": {
+            "japanese": "表をご参照ください。",
+            "kana": "ひょうをごさんしょうください。",
+            "english": "Please refer to the table."
+          },
+          "hint": "表 (ひょう) — table"
+        },
+        {
+          "id": "pres-data-s5",
+          "prompt": "You're analyzing two datasets. Explain that you're comparing the results.",
+          "targets": {
+            "required": ["office-238"]
+          },
+          "modelAnswer": {
+            "japanese": "2つのデータセットの結果を比較します。",
+            "kana": "ふたつのデータセットのけっかをひかくします。",
+            "english": "I will compare the results of the two datasets."
+          },
+          "hint": "比較する (ひかくする) — to compare"
+        }
+      ]
+    },
+    {
+      "id": "urgent-business-vocab",
+      "title": "Urgent Business Vocabulary",
+      "titleJa": "急ぎのビジネス用語",
+      "description": "Practice urgent requests and business context vocabulary",
+      "cluster": "communication",
+      "stages": [
+        {
+          "id": "urgent-biz-s1",
+          "prompt": "You need something urgently. Ask your colleague to please handle this urgently.",
+          "targets": {
+            "required": ["office-239"]
+          },
+          "modelAnswer": {
+            "japanese": "至急対応をお願いします。",
+            "kana": "しきゅうたいおうをおねがいします。",
+            "english": "Please handle this urgently."
+          },
+          "hint": "至急 (しきゅう) — urgent, urgently"
+        },
+        {
+          "id": "urgent-biz-s2",
+          "prompt": "You're explaining why you're developing a feature. Say it's based on actual demand.",
+          "targets": {
+            "required": ["office-240"]
+          },
+          "modelAnswer": {
+            "japanese": "実際の需要から開発しています。",
+            "kana": "じっさいのじゅようからかいはつしています。",
+            "english": "We're developing based on actual demand."
+          },
+          "hint": "需要 (じゅよう) — demand, need"
+        },
+        {
+          "id": "urgent-biz-s3",
+          "prompt": "You're organizing a training session. Tell your team who can attend the training.",
+          "targets": {
+            "required": ["office-241"]
+          },
+          "modelAnswer": {
+            "japanese": "講習できる人が参加してください。",
+            "kana": "こうしゅうできるひとがさんかしてください。",
+            "english": "Please attend if you can take the training."
+          },
+          "hint": "講習 (こうしゅう) — training session"
+        },
+        {
+          "id": "urgent-biz-s4",
+          "prompt": "You're presenting urgently needed data comparing demand trends. Use at least 3 presentation terms.",
+          "targets": {
+            "required": ["office-234", "office-237", "office-240"]
+          },
+          "modelAnswer": {
+            "japanese": "至急、需要の傾向を示すグラフを共有します。",
+            "kana": "しきゅう、じゅようのけいこうをしめすグラフをきょうゆうします。",
+            "english": "Urgently, I will share a graph showing demand trends."
+          },
+          "hint": "至急 + 需要 + 傾向 + グラフ"
+        },
+        {
+          "id": "urgent-biz-s5",
+          "prompt": "You're hosting a training session on data analysis. Explain you'll compare tables and graphs showing trends.",
+          "targets": {
+            "required": ["office-235", "office-234", "office-237", "office-238", "office-241"]
+          },
+          "modelAnswer": {
+            "japanese": "講習では、傾向を示す表とグラフを比較します。",
+            "kana": "こうしゅうでは、けいこうをしめすひょうとグラフをひかくします。",
+            "english": "In the training session, we will compare tables and graphs showing trends."
+          },
+          "hint": "講習 + 表 + グラフ + 傾向 + 比較する"
+        }
+      ]
+    }
+  ]
+}
