@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "description": "Office & workplace Japanese vocabulary — 148 entries",
+  "description": "Office & workplace Japanese vocabulary — 224 entries",
   "schema": "office-v2",
   "entries": [
     {
@@ -4993,6 +4993,431 @@
         "japanese": "プロジェクトの方向性を確認しました。",
         "kana": "プロジェクトのほうこうせいをかくにんしました。",
         "english": "We've confirmed the project direction."
+      }
+    },
+    {
+      "id": "office-201",
+      "kanji": "個別",
+      "kana": "こべつ",
+      "romaji": "kobetsu",
+      "meaning": ["individual", "separate", "one-on-one"],
+      "partOfSpeech": ["noun", "adjectival noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "email"],
+      "category": "communication",
+      "example": {
+        "japanese": "個別に連絡します。",
+        "kana": "こべつにれんらくします。",
+        "english": "I will contact you individually."
+      }
+    },
+    {
+      "id": "office-202",
+      "kanji": "保存",
+      "kana": "ほぞん",
+      "romaji": "hozon",
+      "meaning": ["save", "preserve", "store"],
+      "partOfSpeech": ["noun", "suru-verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["document", "tool"],
+      "category": "tech",
+      "example": {
+        "japanese": "ファイルを保存してください。",
+        "kana": "ファイルをほぞんしてください。",
+        "english": "Please save the file."
+      }
+    },
+    {
+      "id": "office-203",
+      "kanji": "勤怠",
+      "kana": "きんたい",
+      "romaji": "kintai",
+      "meaning": ["attendance", "time and attendance", "work record"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["hr", "admin"],
+      "category": "hr",
+      "example": {
+        "japanese": "勤怠を申請してください。",
+        "kana": "きんたいをしんせいしてください。",
+        "english": "Please submit your attendance record."
+      }
+    },
+    {
+      "id": "office-204",
+      "kanji": "連携",
+      "kana": "れんけい",
+      "romaji": "renkei",
+      "meaning": ["coordination", "collaboration", "integration", "linkage"],
+      "partOfSpeech": ["noun", "suru-verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["project", "meeting"],
+      "category": "project",
+      "example": {
+        "japanese": "他チームと連携して進めます。",
+        "kana": "ほかチームとれんけいしてすすめます。",
+        "english": "We'll proceed in coordination with other teams."
+      }
+    },
+    {
+      "id": "office-205",
+      "kanji": "箇所",
+      "kana": "かしょ",
+      "romaji": "kasho",
+      "meaning": ["part", "place", "spot", "section", "location"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["review", "document", "bug"],
+      "category": "tech",
+      "example": {
+        "japanese": "この箇所を修正してください。",
+        "kana": "このかしょをしゅうせいしてください。",
+        "english": "Please fix this part."
+      }
+    },
+    {
+      "id": "office-206",
+      "kanji": "そのまま",
+      "kana": "そのまま",
+      "romaji": "sonomama",
+      "meaning": ["as-is", "unchanged", "just like that", "leave it as it is"],
+      "partOfSpeech": ["adverb", "adjectival noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["review", "standup"],
+      "category": "communication",
+      "example": {
+        "japanese": "そのままにしておいてください。",
+        "kana": "そのままにしておいてください。",
+        "english": "Please leave it as it is."
+      }
+    },
+    {
+      "id": "office-207",
+      "kanji": "各自",
+      "kana": "かくじ",
+      "romaji": "kakuji",
+      "meaning": ["each person", "respectively", "individually", "everyone"],
+      "partOfSpeech": ["pronoun", "adverb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "announcement"],
+      "category": "communication",
+      "example": {
+        "japanese": "各自で確認してください。",
+        "kana": "かくじでかくにんしてください。",
+        "english": "Please check on your own."
+      }
+    },
+    {
+      "id": "office-208",
+      "kanji": "手間取る",
+      "kana": "てまどる",
+      "romaji": "temadoru",
+      "meaning": ["to take time", "to be delayed", "to struggle with"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["standup", "status"],
+      "category": "communication",
+      "example": {
+        "japanese": "調査に手間取っています。",
+        "kana": "ちょうさにてまどっています。",
+        "english": "The investigation is taking some time."
+      }
+    },
+    {
+      "id": "office-209",
+      "kanji": "社内調整",
+      "kana": "しゃないちょうせい",
+      "romaji": "shanai choosei",
+      "meaning": ["internal coordination", "internal adjustment", "aligning internally"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["meeting", "project"],
+      "category": "meetings",
+      "example": {
+        "japanese": "社内調整が必要です。",
+        "kana": "しゃないちょうせいがひつようです。",
+        "english": "Internal coordination is needed."
+      }
+    },
+    {
+      "id": "office-210",
+      "kanji": "ご確認ありがとうございます",
+      "kana": "ごかくにんありがとうございます",
+      "romaji": "go-kakunin arigatou gozaimasu",
+      "meaning": ["thank you for confirming", "thank you for checking"],
+      "partOfSpeech": ["phrase"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email", "chat"],
+      "category": "keigo",
+      "example": {
+        "japanese": "ご確認ありがとうございます。修正いたします。",
+        "kana": "ごかくにんありがとうございます。しゅうせいいたします。",
+        "english": "Thank you for confirming. I will make the corrections."
+      }
+    },
+    {
+      "id": "office-211",
+      "kanji": "ご連絡ありがとうございます",
+      "kana": "ごれんらくありがとうございます",
+      "romaji": "go-renraku arigatou gozaimasu",
+      "meaning": ["thank you for contacting us", "thank you for getting in touch"],
+      "partOfSpeech": ["phrase"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email", "chat"],
+      "category": "keigo",
+      "example": {
+        "japanese": "ご連絡ありがとうございます。確認して折り返します。",
+        "kana": "ごれんらくありがとうございます。かくにんしておりかえします。",
+        "english": "Thank you for contacting us. I'll check and get back to you."
+      }
+    },
+    {
+      "id": "office-212",
+      "kanji": "いたす",
+      "kana": "いたす",
+      "romaji": "itasu",
+      "meaning": ["to do (humble)", "humble form of する"],
+      "partOfSpeech": ["verb", "keigo-verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email", "keigo"],
+      "category": "keigo",
+      "example": {
+        "japanese": "確認いたします。",
+        "kana": "かくにんいたします。",
+        "english": "I will confirm (humble)."
+      }
+    },
+    {
+      "id": "office-213",
+      "kanji": "申す",
+      "kana": "もうす",
+      "romaji": "mousu",
+      "meaning": ["to say (humble)", "to be called (humble)", "humble form of 言う"],
+      "partOfSpeech": ["verb", "keigo-verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email", "keigo", "phone"],
+      "category": "keigo",
+      "example": {
+        "japanese": "田中と申します。",
+        "kana": "たなかともうします。",
+        "english": "My name is Tanaka (humble self-introduction)."
+      }
+    },
+    {
+      "id": "office-214",
+      "kanji": "参る",
+      "kana": "まいる",
+      "romaji": "mairu",
+      "meaning": ["to go (humble)", "to come (humble)", "humble form of 行く・来る"],
+      "partOfSpeech": ["verb", "keigo-verb"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["email", "keigo"],
+      "category": "keigo",
+      "example": {
+        "japanese": "明日参ります。",
+        "kana": "あしたまいります。",
+        "english": "I will come tomorrow (humble)."
+      }
+    },
+    {
+      "id": "office-215",
+      "kanji": "おる",
+      "kana": "おる",
+      "romaji": "oru",
+      "meaning": ["to be (humble)", "humble form of いる"],
+      "partOfSpeech": ["verb", "keigo-verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email", "keigo"],
+      "category": "keigo",
+      "example": {
+        "japanese": "席におります。",
+        "kana": "せきにおります。",
+        "english": "I am at my desk (humble)."
+      }
+    },
+    {
+      "id": "office-216",
+      "kanji": "存じる",
+      "kana": "ぞんじる",
+      "romaji": "zonjiru",
+      "meaning": ["to know (humble)", "to think (humble)", "humble form of 知る・思う"],
+      "partOfSpeech": ["verb", "keigo-verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email", "keigo"],
+      "category": "keigo",
+      "example": {
+        "japanese": "存じております。",
+        "kana": "ぞんじております。",
+        "english": "I am aware of it (humble)."
+      }
+    },
+    {
+      "id": "office-217",
+      "kanji": "拝見する",
+      "kana": "はいけんする",
+      "romaji": "haiken suru",
+      "meaning": ["to look at (humble)", "to read (humble)", "humble form of 見る"],
+      "partOfSpeech": ["suru-verb", "keigo-verb"],
+      "active": true,
+      "tier": "S",
+      "contexts": ["email", "document", "keigo"],
+      "category": "keigo",
+      "example": {
+        "japanese": "資料を拝見しました。",
+        "kana": "しりょうをはいけんしました。",
+        "english": "I have looked at the materials (humble)."
+      }
+    },
+    {
+      "id": "office-218",
+      "kanji": "いただく",
+      "kana": "いただく",
+      "romaji": "itadaku",
+      "meaning": ["to receive (humble)", "to get someone to do (humble)", "humble form of もらう"],
+      "partOfSpeech": ["verb", "keigo-verb"],
+      "active": true,
+      "tier": "S",
+      "contexts": ["email", "meeting", "keigo"],
+      "category": "keigo",
+      "example": {
+        "japanese": "確認していただけますか。",
+        "kana": "かくにんしていただけますか。",
+        "english": "Could you confirm for me (humble request)?"
+      }
+    },
+    {
+      "id": "office-219",
+      "kanji": "伺う",
+      "kana": "うかがう",
+      "romaji": "ukagau",
+      "meaning": ["to visit (humble)", "to ask (humble)", "to hear (humble)", "humble form of 行く・聞く"],
+      "partOfSpeech": ["verb", "keigo-verb"],
+      "active": true,
+      "tier": "S",
+      "contexts": ["email", "meeting", "keigo"],
+      "category": "keigo",
+      "example": {
+        "japanese": "明日、伺ってもよろしいでしょうか。",
+        "kana": "あした、うかがってもよろしいでしょうか。",
+        "english": "Would it be alright if I visited tomorrow (humble)?"
+      }
+    },
+    {
+      "id": "office-220",
+      "kanji": "承る",
+      "kana": "うけたまわる",
+      "romaji": "uketamawaru",
+      "meaning": ["to receive (humble)", "to accept (humble)", "to hear (humble)", "formal reception"],
+      "partOfSpeech": ["verb", "keigo-verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["phone", "email", "keigo"],
+      "category": "keigo",
+      "example": {
+        "japanese": "ご依頼を承りました。",
+        "kana": "ごいらいをうけたまわりました。",
+        "english": "I have received your request (humble)."
+      }
+    },
+    {
+      "id": "office-221",
+      "kanji": "いらっしゃる",
+      "kana": "いらっしゃる",
+      "romaji": "irassharu",
+      "meaning": ["to be (honorific)", "to go (honorific)", "to come (honorific)", "honorific form of いる・行く・来る"],
+      "partOfSpeech": ["verb", "keigo-verb"],
+      "active": true,
+      "tier": "S",
+      "contexts": ["phone", "meeting", "keigo"],
+      "category": "keigo",
+      "example": {
+        "japanese": "部長はいらっしゃいますか。",
+        "kana": "ぶちょうはいらっしゃいますか。",
+        "english": "Is the manager in (honorific)?"
+      }
+    },
+    {
+      "id": "office-222",
+      "kanji": "おっしゃる",
+      "kana": "おっしゃる",
+      "romaji": "ossharu",
+      "meaning": ["to say (honorific)", "honorific form of 言う"],
+      "partOfSpeech": ["verb", "keigo-verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "email", "keigo"],
+      "category": "keigo",
+      "example": {
+        "japanese": "おっしゃる通りです。",
+        "kana": "おっしゃるとおりです。",
+        "english": "That is exactly as you say (honorific)."
+      }
+    },
+    {
+      "id": "office-223",
+      "kanji": "なさる",
+      "kana": "なさる",
+      "romaji": "nasaru",
+      "meaning": ["to do (honorific)", "honorific form of する"],
+      "partOfSpeech": ["verb", "keigo-verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "keigo"],
+      "category": "keigo",
+      "example": {
+        "japanese": "どうなさいますか。",
+        "kana": "どうなさいますか。",
+        "english": "What would you like to do (honorific)?"
+      }
+    },
+    {
+      "id": "office-224",
+      "kanji": "くださる",
+      "kana": "くださる",
+      "romaji": "kudasaru",
+      "meaning": ["to give (honorific)", "to do for me (honorific)", "honorific form of くれる"],
+      "partOfSpeech": ["verb", "keigo-verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email", "meeting", "keigo"],
+      "category": "keigo",
+      "example": {
+        "japanese": "ご確認くださいますようお願いいたします。",
+        "kana": "ごかくにんくださいますようおねがいいたします。",
+        "english": "I humbly ask that you confirm (formal request)."
+      }
+    },
+    {
+      "id": "office-225",
+      "kanji": "ご覧いただく",
+      "kana": "ごらんいただく",
+      "romaji": "go-ran itadaku",
+      "meaning": ["to have someone look (honorific-humble)", "please take a look", "combination of 覧 + いただく"],
+      "partOfSpeech": ["phrase", "keigo-verb"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["email", "presentation", "keigo"],
+      "category": "keigo",
+      "example": {
+        "japanese": "資料をご覧いただけますか。",
+        "kana": "しりょうをごらんいただけますか。",
+        "english": "Could you please take a look at the materials?"
       }
     }
   ]

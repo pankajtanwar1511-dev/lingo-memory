@@ -1,6 +1,6 @@
 # Office Japanese App — Build Progress
 
-> Last updated: 2026-02-20 · Schema v2 · Drills v1 · 11 packs · 199/580 vocab · SRS v2 (FSRS) · coverage **66%**
+> Last updated: 2026-02-20 · Schema v2 · Drills v1 · 11 packs · 224/580 vocab · SRS v2 (FSRS) · coverage **58%** (131/224)
 
 ---
 
@@ -17,7 +17,7 @@ typed interface (separate from `VocabularyCard`).
 
 | File | Status | Notes |
 |------|--------|-------|
-| `public/seed-data/office_vocabulary.json` | ✅ Done | 199 vocab entries (200 − 1 de-dup), 12 categories, schema v2 |
+| `public/seed-data/office_vocabulary.json` | ✅ Done | 224 vocab entries (200 − 1 de-dup + 25 Phase A/B), 12 categories, schema v2 |
 | `public/seed-data/office_vocabulary_part6.json` | ✅ Done | Entries 171–199 (29 entries after de-dup) |
 | `public/seed-data/office_scenarios.json` | ✅ Done | 9 situation packs, 90 sentence frames, vocabIds linked |
 | `public/seed-data/office_drills.json` | ✅ Done | 11 packs, 55 stages, schema v1 |
@@ -34,23 +34,29 @@ typed interface (separate from `VocabularyCard`).
 ## Vocabulary Dataset (`office_vocabulary.json`)
 
 **Version:** 2.0 (schema: `office-v2`)
-**199 entries** across 12 categories, each with one example sentence.
-*(200 → 199 after de-duplication: office-176 添付 merged into office-129, tier upgraded to S)*
+**224 entries** across 12 categories, each with one example sentence.
+*(200 → 199 after de-duplication: office-176 添付 merged into office-129 · +25 Phase A/B: office-201–225)*
 
 | Category | Count | Examples |
 |---|---|---|
 | `verbs` | 35 | 確認する、報告する、着手する、進める、差し戻す、切り戻す、議論する、決定する |
-| `project` | 25 | 優先度、スケジュール、マイルストーン、タイムライン、スプリント、ロードマップ、ゴール |
-| `tech` | 22 | バグ、デプロイ、ブランチ、コミット、差分、リファクタリング、本番リリース、仕様変更 |
-| `meetings` | 19 | 会議、ミーティング、打ち合わせ、議事録、アジェンダ、確認事項、決定事項、フォローアップ |
-| `communication` | 15 | チャット、DM、メンション、返信する、添付、件名、周知する、取り急ぎ |
+| `keigo` | 31 | お疲れ様です、承知しました、ご確認ありがとうございます、**いたす、申す、拝見する、いただく、伺う、いらっしゃる** |
+| `project` | 28 | 優先度、スケジュール、マイルストーン、タイムライン、スプリント、ロードマップ、**連携** |
+| `tech` | 26 | バグ、デプロイ、ブランチ、コミット、差分、リファクタリング、**保存、箇所** |
 | `status` | 16 | 完了、対応中、遅延、保留、テスト中、リリース待ち、検討中、確認待ち、着手済み |
-| `keigo` | 15 | お疲れ様です、承知しました、ご不明な点があれば、ご連絡いたします |
+| `meetings` | 20 | 会議、ミーティング、打ち合わせ、議事録、アジェンダ、確認事項、決定事項、**社内調整** |
+| `communication` | 19 | チャット、DM、メンション、返信する、添付、件名、周知する、**個別、各自、そのまま** |
 | `incident` | 12 | 障害、影響範囲、暫定対応、復旧、再発防止 |
 | `time` | 12 | 期限、締め切り、本日、来週、至急、先日 |
-| `hr` | 9 | 有給、在宅勤務、欠勤、育児休暇、フレックス |
+| `hr` | 10 | 有給、在宅勤務、欠勤、育児休暇、フレックス、**勤怠** |
 | `roles` | 8 | エンジニア、マネージャー、チームリーダー、プロダクトオーナー |
 | `documents` | 7 | 仕様書、設計書、議事録、報告書、ドキュメント |
+
+**Phase A additions (office-201–211)** — High-frequency workplace phrases:
+`個別` `保存` `勤怠` `連携` `箇所` `そのまま` `各自` `手間取る` `社内調整` `ご確認ありがとうございます` `ご連絡ありがとうございます`
+
+**Phase B additions (office-212–225)** — Keigo verb substitutions:
+`いたす` `申す` `参る` `おる` `存じる` `拝見する` `いただく` `伺う` `承る` `いらっしゃる` `おっしゃる` `なさる` `くださる` `ご覧いただく`
 
 ### Schema v2 fields (typed — no tag strings)
 
@@ -195,33 +201,35 @@ against required vocabulary terms from `office_vocabulary.json`.
 node scripts/coverage-analyzer.js
 ```
 
-**Baseline → Session 2 → Session 3:**
+**Baseline → Session 2 → Session 3 → Session 4:**
 
-| | Session start (S2) | Session end (S2) | Session end (S3) |
-|---|---|---|---|
-| Total entries | 200 | 199 (−1 de-dup) | 199 |
-| Covered | 79/200 (40%) | 116/199 (58%) | 131/199 (66%) |
-| Drill packs | 7 | 10 | 11 |
-| Drill stages | — | 50 | 55 |
-| Scenario packs | 7 | 9 | 9 |
-| Scenario frames | 46 | 90 | 90 |
+| | Session start (S2) | Session end (S2) | Session end (S3) | Session end (S4) |
+|---|---|---|---|---|
+| Total entries | 200 | 199 (−1 de-dup) | 199 | **224** (+25 Phase A/B) |
+| Covered | 79/200 (40%) | 116/199 (58%) | 131/199 (66%) | **131/224 (58%)** |
+| Drill packs | 7 | 10 | 11 | 11 |
+| Drill stages | — | 50 | 55 | 55 |
+| Scenario packs | 7 | 9 | 9 | 9 |
+| Scenario frames | 46 | 90 | 90 | 90 |
 
-**Coverage by category (current):**
+> **Note on coverage drop S3→S4:** Added 25 new vocab entries (all uncovered) while covered count stayed at 131. % went 66%→58%. This is expected — vocab expanded first, drills for new entries come next.
+
+**Coverage by category (current — after Phase A/B):**
 
 | Category | Coverage | Notes |
 |---|---|---|
-| `status` | 100% | ✅ Complete |
-| `verbs` | 97% | ✅ Near-complete (was 54%) |
-| `incident` | 83% | ✅ Strong |
-| `meetings` | 79% | ✅ Strong |
-| `keigo` | 73% | ✅ Strong |
-| `communication` | 60% | ✅ Decent |
-| `tech` | 54% | ✅ Decent |
-| `project` | 48% | ⚠️ Moderate gap |
-| `hr` | 44% | Low priority — passive vocab |
-| `time` | 33% | Low priority — passive vocab |
-| `documents` | 14% | Not a priority — see note below |
-| `roles` | 13% | Not a priority — see note below |
+| `status` | 100% (16/16) | ✅ Complete |
+| `verbs` | 97% (34/35) | ✅ Near-complete |
+| `incident` | 83% (10/12) | ✅ Strong |
+| `meetings` | 75% (15/20) | ✅ Strong |
+| `tech` | 50% (13/26) | ✅ Decent |
+| `communication` | 47% (9/19) | ⚠️ Gap from Phase A entries |
+| `project` | 46% (13/28) | ⚠️ Moderate gap |
+| `keigo` | 35% (11/31) | ⚠️ Gap — 16 new verbs uncovered (Phase B) |
+| `hr` | 40% (4/10) | Low priority — passive vocab |
+| `time` | 33% (4/12) | Low priority — passive vocab |
+| `documents` | 14% (1/7) | Not a priority — see note below |
+| `roles` | 13% (1/8) | Not a priority — see note below |
 
 > **Note on documents and roles:** These categories have low coverage but also low daily production value for a software engineer. Chasing them to inflate the overall % would mean building contrived drills for vocabulary learners mostly need to recognize, not produce. Leave them until there's a real use case.
 
@@ -327,6 +335,8 @@ No database calls. This is intentional — office section is self-contained.
 | Vocab Part 4 (112–148) | 37 entries | ✅ Reviewed | DM kana + romaji |
 | Vocab Part 5 (149–170) | 22 entries | ✅ Reviewed | meaning order ×1, example alignment ×1 |
 | Vocab Part 6 (171–199) | 29 entries | ⚠️ Pending | — |
+| **Vocab Phase A (201–211)** | **11 entries** | ⚠️ Pending | — |
+| **Vocab Phase B (212–225)** | **14 entries** | ⚠️ Pending | — |
 | Drills: original 5 packs | incident/standup/PR/keigo/1on1 | ✅ Reviewed | 1on1-s5 model answer fix |
 | Drills: design-review + email | 2 packs | ⚠️ Pending | — |
 | Drills: meeting + slack + tech | 3 new packs | ⚠️ Pending | — |
@@ -334,7 +344,7 @@ No database calls. This is intentional — office section is self-contained.
 | Scenarios: status-update | 7 frames | ⚠️ Pending | — |
 | Scenarios: communication-patterns | 37 frames | ✅ Low risk | Sourced directly from reference doc |
 
-Active/passive distribution: **175 active / 24 passive** (88% active).
+Active/passive distribution: **195 active / 29 passive** (87% active) — all Phase A/B entries are active=true.
 
 ---
 
@@ -415,7 +425,9 @@ Give 3–5 prioritised recommendations. Be specific about what to build next and
 - [x] 11 drill packs (incident, standup, PR, keigo, 1-on-1, design-review, email, meeting, slack/comms, tech-workflow, **verb-production**)
 - [x] 9 scenario packs (standup, message, incident, 1-on-1, hr, design-review, kickoff, status-update, communication-patterns)
 - [x] Pattern Practice A–G (37 frames from `japanese-office-practice.md`) wired as scenario pack
-- [x] Coverage 40% → 58% → **66%** (verbs 97%, status 100%, meetings 79%)
+- [x] Coverage 40% → 58% → 66% (S3) — verbs 97%, status 100%
+- [x] **Phase A vocab: 11 entries (office-201–211)** — high-freq phrases (個別, 保存, 勤怠, 連携, 箇所, etc.)
+- [x] **Phase B vocab: 14 entries (office-212–225)** — keigo verb substitutions (いただく, 拝見する, 伺う, いらっしゃる, etc.)
 - [x] De-duplication: office-129 / office-176 添付 merged
 - [x] Coverage analyzer script
 
@@ -426,11 +438,12 @@ Give 3–5 prioritised recommendations. Be specific about what to build next and
 - [ ] **Native speaker review** — minimum: drill model answers (1 pass). AI reviewing AI is a quality ceiling.
 
 ### Priority 2 — Vocab expansion (from reference doc only)
-> Verbs are now at 97%. The biggest remaining gap is `project` (48%) and `tech` (54%). Only expand from `docs/japanese-office-vocabulary.md`.
+> Verbs are now at 97%. The biggest remaining gap is `project` (46%) and `keigo` (35% — 16 new verbs need drills). Only expand from `docs/japanese-office-vocabulary.md`.
 
-- [ ] **Phase A**: High-Frequency Workplace Phrases (40 entries, tier S) — highest ROI
-- [ ] **Phase B**: Keigo verb substitutions (20), project gap (remaining S/A tier entries)
+- [x] **Phase A** ✅: 11 high-freq workplace phrases (office-201–211)
+- [x] **Phase B** ✅: 14 keigo verb substitutions (office-212–225)
 - [ ] **Phase C**: Client relations (10), Finance basics (15)
+- [ ] **Drill packs for Phase A/B** — Keigo Verb Production pack (いただく/拝見する/伺う/いらっしゃる); Communication gap pack (個別/各自/連携/箇所)
 
 ### Backlog
 - [ ] Audio pronunciation (when audio files available)
