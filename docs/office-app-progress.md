@@ -1,6 +1,6 @@
 # Office Japanese App — Build Progress
 
-> Last updated: 2026-02-20 · Schema v2 · Drills v1 · 10 packs · 199/580 vocab · SRS v1 · coverage **58%** (goal: 60%)
+> Last updated: 2026-02-20 · Schema v2 · Drills v1 · 11 packs · 199/580 vocab · SRS v2 (FSRS) · coverage **66%**
 
 ---
 
@@ -20,8 +20,8 @@ typed interface (separate from `VocabularyCard`).
 | `public/seed-data/office_vocabulary.json` | ✅ Done | 199 vocab entries (200 − 1 de-dup), 12 categories, schema v2 |
 | `public/seed-data/office_vocabulary_part6.json` | ✅ Done | Entries 171–199 (29 entries after de-dup) |
 | `public/seed-data/office_scenarios.json` | ✅ Done | 9 situation packs, 90 sentence frames, vocabIds linked |
-| `public/seed-data/office_drills.json` | ✅ Done | 10 packs, 50 stages, schema v1 |
-| `src/app/office/page.tsx` | ✅ Done | 4 modes: Browse / Flip / Match / Test + SRS scheduling |
+| `public/seed-data/office_drills.json` | ✅ Done | 11 packs, 55 stages, schema v1 |
+| `src/app/office/page.tsx` | ✅ Done | 4 modes: Browse / Flip / Match / Test + SRS v2 (FSRS) |
 | `src/app/office/scenarios/page.tsx` | ✅ Done | Browse + Drill mode, register filter, vocab study block on completion |
 | `src/app/office/drills/page.tsx` | ✅ Done | Production drill UI, stem + anyOf validation, completion screen |
 | `src/types/vocabulary.ts` | ✅ Done | OfficeCard, OfficeTier, OfficeContext, OfficeCategory, OfficeExample |
@@ -120,24 +120,43 @@ Toggle buttons above the frame list: **All / Neutral / Casual / Formal**.
 | **Browse** | Full card list with example sentences, tier badges, context tags. |
 | **Flip** | Flip cards (meaning front → Japanese back). Toggle each card individually. |
 | **Match** | 10-pair matching game. Japanese column vs English column. Batches through all filtered cards. |
-| **Test** | Show meaning → reveal Japanese → thumbs up/down self-assessment. L0–L5 per card, persisted in localStorage. **SRS scheduling**: each mark sets `nextReviewDate` based on level interval. |
+| **Test** | Show meaning → reveal Japanese → **4-button FSRS rating** (Again / Hard / Good / Easy). Each button shows predicted next interval. L0–L5 per card (derived from reps), persisted in localStorage. Due Today filter + amber badge. |
 
-### Test mode SRS (Spaced Repetition — v1)
+### Test mode SRS (Spaced Repetition — v2, FSRS)
 
-| Level | Interval | Meaning |
+Replaced binary thumbs up/down + fixed level intervals with **full FSRS** (Free Spaced Repetition Scheduler) using the existing `src/lib/fsrs.ts` algorithm.
+
+### 4-button rating (replaces thumbs up/down)
+
+| Button | Label | Effect |
 |---|---|---|
-| L0 | 1 day | Just started / still learning |
-| L1 | 3 days | Seen once |
-| L2 | 7 days | Getting there |
-| L3 | 14 days | Known |
-| L4 | 30 days | Strong |
-| L5 | 90 days | Mastered |
+| 🔴 | Again | Lapses card, resets to learning state |
+| 🟡 | Hard | Reduces stability, shorter interval |
+| 🟢 | Good | Standard FSRS progression |
+| ⚡ | Easy | Boosts stability, longer interval |
 
-- `CardProgress.nextReviewDate` stored in `localStorage["officeProgress"]`
-- **"Due Today" filter** in controls row — shows only cards where `nextReviewDate ≤ today`
-- **Amber badge** on card front when due
-- **"next: YYYY-MM-DD" / "due now"** shown on card back
-- **Stats header**: Known / Needs Practice / Not Reviewed / Due count
+Each button shows the **predicted next interval** inline (e.g. "1 min", "3 days", "2 weeks") computed from the current card state via `fsrs.repeat()`.
+
+### Storage
+
+`CardProgress` extended with optional `fsrs?: FSRSCardData` field:
+```typescript
+interface FSRSCardData {
+  due: string          // ISO string (Date serialized for localStorage)
+  stability: number
+  difficulty: number
+  elapsedDays: number
+  scheduledDays: number
+  reps: number
+  lapses: number
+  state: number        // CardState: 0=New, 1=Learning, 2=Review, 3=Relearning
+  lastReview?: string
+}
+```
+
+- **Backwards compatible**: old entries without `fsrs` field start as fresh FSRS New cards on first review
+- `level` (0–5) kept in `CardProgress` and derived from `reps` so existing filters/stats continue to work
+- `nextReviewDate` still stored as ISO date for the Due Today filter
 
 ---
 
@@ -146,7 +165,7 @@ Toggle buttons above the frame list: **All / Neutral / Casual / Formal**.
 Production writing drills — user types complete Japanese sentences, validated
 against required vocabulary terms from `office_vocabulary.json`.
 
-### Current packs (10 packs / 50 stages)
+### Current packs (11 packs / 55 stages)
 
 | Pack | Cluster | Key targets |
 |---|---|---|
@@ -157,9 +176,10 @@ against required vocabulary terms from `office_vocabulary.json`.
 | 1-on-1 Meeting (1on1) | 1on1 | 開始 → 順調 → 遅延報告 → 課題の共有 → フィードバック |
 | Design Review (デザインレビュー) | tech | レビュー依頼 → 懸念の指摘 → 修正依頼 → 承認 → 仕様共有 |
 | Business Email (ビジネスメール) | keigo | 書き出し → 依頼 → 情報共有 → フォローアップ → 結び |
-| **Meeting Lifecycle (会議の流れ)** | meetings | 会議を設定 → アジェンダ共有 → 打ち合わせ開始 → 決定事項まとめ → 議事録共有 |
-| **Slack & Email (連絡ツールの使い方)** | communication | DM → メンション → 返信 → 添付 → 件名を付けて連絡 |
-| **Tech Workflow (開発の流れ)** | tech | バグ発見 → ログ確認 → ブランチ/コミット → テスト/差分 → リリース/リファクタリング |
+| Meeting Lifecycle (会議の流れ) | meetings | 会議を設定 → アジェンダ共有 → 打ち合わせ開始 → 決定事項まとめ → 議事録共有 |
+| Slack & Email (連絡ツールの使い方) | communication | DM → メンション → 返信 → 添付 → 件名を付けて連絡 |
+| Tech Workflow (開発の流れ) | tech | バグ発見 → ログ確認 → ブランチ/コミット → テスト/差分 → リリース/リファクタリング |
+| **Verb Production (動詞の産出練習)** | verbs | 依頼/提出/検討 → 着手/把握/進める → 議論/合意/決定 → 整理/まとめ/準備 → 見直し/差し戻し/切り戻し |
 
 ### Validation logic
 - Japanese character guard: `/[ぁ-んァ-ン一-龯]/`
@@ -175,28 +195,29 @@ against required vocabulary terms from `office_vocabulary.json`.
 node scripts/coverage-analyzer.js
 ```
 
-**Baseline → Current:**
+**Baseline → Session 2 → Session 3:**
 
-| | Before (session start) | After (session end) |
-|---|---|---|
-| Total entries | 200 | 199 (−1 de-dup) |
-| Covered | 79/200 (40%) | 116/199 (58%) |
-| Drill packs | 7 | 10 |
-| Scenario packs | 7 | 9 |
-| Scenario frames | 46 | 90 |
+| | Session start (S2) | Session end (S2) | Session end (S3) |
+|---|---|---|---|
+| Total entries | 200 | 199 (−1 de-dup) | 199 |
+| Covered | 79/200 (40%) | 116/199 (58%) | 131/199 (66%) |
+| Drill packs | 7 | 10 | 11 |
+| Drill stages | — | 50 | 55 |
+| Scenario packs | 7 | 9 | 9 |
+| Scenario frames | 46 | 90 | 90 |
 
 **Coverage by category (current):**
 
 | Category | Coverage | Notes |
 |---|---|---|
-| `incident` | 83% | ✅ Strong |
-| `keigo` | 73% | ✅ Strong |
-| `meetings` | 79% | ✅ Strong (was 21%) |
 | `status` | 100% | ✅ Complete |
-| `verbs` | 54% | ⚠️ **Highest-value gap — build next** |
-| `tech` | 54% | ✅ Decent (was 21%) |
+| `verbs` | 97% | ✅ Near-complete (was 54%) |
+| `incident` | 83% | ✅ Strong |
+| `meetings` | 79% | ✅ Strong |
+| `keigo` | 73% | ✅ Strong |
+| `communication` | 60% | ✅ Decent |
+| `tech` | 54% | ✅ Decent |
 | `project` | 48% | ⚠️ Moderate gap |
-| `communication` | 60% | ✅ Decent (was 19%) |
 | `hr` | 44% | Low priority — passive vocab |
 | `time` | 33% | Low priority — passive vocab |
 | `documents` | 14% | Not a priority — see note below |
@@ -242,59 +263,18 @@ reference practice guide.
 
 ---
 
-## SRS Upgrade Plan (v2 — next major feature)
+## SRS Implementation (v2 — FSRS) ✅ Done
 
-### Current implementation (v1 — basic level scheduler)
+Replaced the v1 level-based scheduler with the full **FSRS** algorithm using the existing `src/lib/fsrs.ts` (already in the codebase).
 
-```typescript
-// Fixed intervals per level — no personalisation
-const SRS_INTERVALS = { 0: 1, 1: 3, 2: 7, 3: 14, 4: 30, 5: 90 }
-// Binary input: thumbs up (+1 level) or thumbs down (-1 level)
-```
+See the **Test mode SRS** section above for implementation details.
 
-**Problems:**
-- Binary rating loses information — "barely recalled" and "instant recall" both score +1
-- No easiness factor — a hard card and easy card get the same interval at the same level
-- No stability decay — skipping reviews changes nothing
-
-### Target implementation (v2 — SM-2 inspired)
-
-Replace 2-button (👍 / 👎) with **4-button rating**:
-
-| Button | Label | Meaning | Effect |
-|---|---|---|---|
-| 🔴 | Again | Forgot / blank | Reset: interval=1, repetitions=0 |
-| 🟡 | Hard | Recalled with effort | EF−0.15, interval×0.8 |
-| 🟢 | Good | Recalled correctly | EF unchanged, interval×EF |
-| ⚡ | Easy | Instant recall | EF+0.1, interval×EF×1.3 |
-
-**`CardProgress` changes:**
-```typescript
-interface CardProgress {
-  cardId: string
-  knownCount: number
-  unknownCount: number
-  level: number
-  nextReviewDate?: string
-  // NEW:
-  easinessFactor?: number   // default 2.5, min 1.3
-  interval?: number         // days (replaces fixed SRS_INTERVALS lookup)
-  repetitions?: number      // consecutive correct answers
-}
-```
-
-**SM-2 interval formula:**
-```
-rep=0 → 1 day
-rep=1 → 6 days
-rep>1 → prev_interval × EF
-EF' = EF + (0.1 - (5-q) × (0.08 + (5-q) × 0.02))
-EF_min = 1.3
-```
-
-**Alternative:** Use existing `src/lib/fsrs.ts` — already in the codebase, wired to DB but the algorithm is standalone-capable with localStorage as the store.
-
-**Migration:** `CardProgress` is backwards-compatible. Old entries without new fields default to SM-2 starting values on first use.
+**What changed vs v1:**
+- Fixed-interval level lookup → FSRS stability/difficulty model per card
+- Binary thumbs up/down → 4-button rating (Again / Hard / Good / Easy)
+- Buttons show predicted next interval inline
+- Per-card easiness factor and stability tracked automatically by FSRS
+- Backwards-compatible: old progress entries without `fsrs` field start fresh on first review
 
 ---
 
@@ -430,38 +410,26 @@ Give 3–5 prioritised recommendations. Be specific about what to build next and
 
 ### Done ✅
 - [x] SRS v1 — nextReviewDate per mark; Due Today filter + amber badge
+- [x] **SRS v2 — FSRS algorithm, 4-button rating (Again/Hard/Good/Easy), interval preview on buttons**
 - [x] Production drills with anyOf validation
-- [x] 10 drill packs (incident, standup, PR, keigo, 1-on-1, design-review, email, meeting, slack/comms, tech-workflow)
+- [x] 11 drill packs (incident, standup, PR, keigo, 1-on-1, design-review, email, meeting, slack/comms, tech-workflow, **verb-production**)
 - [x] 9 scenario packs (standup, message, incident, 1-on-1, hr, design-review, kickoff, status-update, communication-patterns)
 - [x] Pattern Practice A–G (37 frames from `japanese-office-practice.md`) wired as scenario pack
-- [x] Coverage 40% → 58% (status 100%, meetings 79%, communication 60%)
+- [x] Coverage 40% → 58% → **66%** (verbs 97%, status 100%, meetings 79%)
 - [x] De-duplication: office-129 / office-176 添付 merged
 - [x] Coverage analyzer script
 
 ### Priority 1 — Quality (do before next expansion)
 - [ ] **ChatGPT review Vocab Part 6 (171–199)** — 29 unreviewed entries
-- [ ] **ChatGPT review new drill packs** — meeting-lifecycle, slack-comms, tech-workflow (3 packs unreviewed)
+- [ ] **ChatGPT review new drill packs** — meeting-lifecycle, slack-comms, tech-workflow, verb-production (4 packs unreviewed)
 - [ ] **ChatGPT review design-review + email-lifecycle** — 2 older packs still pending
 - [ ] **Native speaker review** — minimum: drill model answers (1 pass). AI reviewing AI is a quality ceiling.
 
-### Priority 2 — One more targeted drill pack (highest ROI)
-> Do NOT chase documents/roles to inflate coverage %. Those categories are passive-recognition vocabulary for a software engineer. Build something that actually moves production skill.
-
-- [ ] **Verb Production drill pack** — verbs are at 54% (19/35). Verbs are what make sentences. One pack targeting the 16 uncovered active S/A verbs (依頼する, 検討する, まとめる, 把握する, 切り戻す, 見直す, 整理する, 合意する, 議論する, 決定する, 進める, 提出する, 参加する, 担当する, 管理する, 承認する) would be higher-value than three more scenario packs.
-
-### Priority 3 — SRS v2 (highest impact on learning quality)
-> This has been deferred since v1 shipped. Every card in the system is under-scheduled. Build this before adding more vocabulary.
-
-- [ ] 4-button rating: Again / Hard / Good / Easy (replaces thumbs up/down)
-- [ ] SM-2 easiness factor per card (personalised intervals)
-- [ ] Evaluate using existing `src/lib/fsrs.ts` algorithm with localStorage store
-- [ ] Backwards-compatible migration (old `CardProgress` entries default to SM-2 starting values)
-
-### Priority 4 — Vocab expansion (from reference doc only)
-> Only after SRS v2. More vocab with bad scheduling = worse retention, not better.
+### Priority 2 — Vocab expansion (from reference doc only)
+> Verbs are now at 97%. The biggest remaining gap is `project` (48%) and `tech` (54%). Only expand from `docs/japanese-office-vocabulary.md`.
 
 - [ ] **Phase A**: High-Frequency Workplace Phrases (40 entries, tier S) — highest ROI
-- [ ] **Phase B**: Keigo verb substitutions (20), Meetings gap (remaining), HR gap
+- [ ] **Phase B**: Keigo verb substitutions (20), project gap (remaining S/A tier entries)
 - [ ] **Phase C**: Client relations (10), Finance basics (15)
 
 ### Backlog

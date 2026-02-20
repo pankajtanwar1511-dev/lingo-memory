@@ -991,6 +991,105 @@
           }
         }
       ]
+    },
+    {
+      "id": "verb-production",
+      "title": "Verb Production",
+      "titleJa": "動詞の産出練習",
+      "cluster": "verbs",
+      "description": "Drill the 15 highest-value uncovered action verbs across five real scenarios: propose → start → decide → organize → correct. Each stage targets 3 verbs in a single coherent workplace message.",
+      "stages": [
+        {
+          "id": "verb-s1",
+          "stage": 1,
+          "title": "Request & Submit",
+          "titleJa": "依頼と提出",
+          "prompt": "You've prepared a feature proposal. Submit it to your manager, request a review, and ask them to consider it.",
+          "hint": "Use 提出する (ていしゅつする), 依頼する (いらいする), and 検討する (けんとうする)",
+          "targets": {
+            "required": ["office-075", "office-061", "office-063"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "提案書を提出します。レビューをご依頼します。ご検討をお願いします。",
+            "kana": "ていあんしょをていしゅつします。レビューをごいらいします。ごけんとうをおねがいします。",
+            "english": "I'll submit the proposal. I'm requesting a review. Please consider it."
+          }
+        },
+        {
+          "id": "verb-s2",
+          "stage": 2,
+          "title": "Start & Advance",
+          "titleJa": "着手と推進",
+          "prompt": "Sprint kickoff. Tell the team you're starting the task today, that you've got a handle on the scope, and that you'll advance the work.",
+          "hint": "Use 着手する (ちゃくしゅする), 把握する (はあくする), and 進める (すすめる)",
+          "targets": {
+            "required": ["office-149", "office-067", "office-165"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "本日タスクに着手します。スコープを把握した上で、作業を進めます。",
+            "kana": "ほんじつタスクにちゃくしゅします。スコープをはあくしたうえで、さぎょうをすすめます。",
+            "english": "I'll start the task today. I've got a handle on the scope and will advance the work."
+          }
+        },
+        {
+          "id": "verb-s3",
+          "stage": 3,
+          "title": "Discuss & Decide",
+          "titleJa": "議論と決定",
+          "prompt": "The architecture discussion is over. Report that the team discussed it, reached agreement, and decided on the approach.",
+          "hint": "Use 議論する (ぎろんする), 合意する (ごういする), and 決定する (けっていする)",
+          "targets": {
+            "required": ["office-194", "office-177", "office-195"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "設計についてチームで議論しました。全員で合意し、方針を決定しました。",
+            "kana": "せっけいについてチームでぎろんしました。ぜんいんでごういし、ほうしんをけっていしました。",
+            "english": "We discussed the design as a team. Everyone agreed and decided on the approach."
+          }
+        },
+        {
+          "id": "verb-s4",
+          "stage": 4,
+          "title": "Organize & Prepare",
+          "titleJa": "整理と準備",
+          "prompt": "Sprint retro prep. Tell the team you've organized the issues, will compile the results, and are preparing the materials.",
+          "hint": "Use 整理する (せいりする), まとめる, and 準備する (じゅんびする)",
+          "targets": {
+            "required": ["office-180", "office-072", "office-071"],
+            "optional": ["office-074"],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "今スプリントの課題を整理しました。結果をまとめて、次回の準備をします。",
+            "kana": "いまスプリントのかだいをせいりしました。けっかをまとめて、じかいのじゅんびをします。",
+            "english": "I've organized the issues from this sprint. I'll compile the results and prepare for next time."
+          }
+        },
+        {
+          "id": "verb-s5",
+          "stage": 5,
+          "title": "Review & Correct",
+          "titleJa": "見直しと差し戻し",
+          "prompt": "After a bad release: tell the team you'll review the procedure, you've sent the PR back for fixes, and you're rolling back production.",
+          "hint": "Use 見直す (みなおす), 差し戻す (さしもどす), and 切り戻す (きりもどす)",
+          "targets": {
+            "required": ["office-156", "office-153", "office-157"],
+            "optional": [],
+            "anyOf": []
+          },
+          "modelAnswer": {
+            "japanese": "リリース手順を見直します。プルリクエストを差し戻しました。本番環境を切り戻します。",
+            "kana": "リリースてじゅんをみなおします。プルリクエストをさしもどしました。ほんばんかんきょうをきりもどします。",
+            "english": "I'll review the release procedure. I've sent the PR back for fixes. I'll rollback the production environment."
+          }
+        }
+      ]
     }
   ]
 }

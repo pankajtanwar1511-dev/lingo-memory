@@ -14,23 +14,63 @@ import type { OfficeCard, OfficeTier, OfficeContext } from "@/types/vocabulary"
 import {
   Building2, Search, MessageSquare, BookOpen,
   Eye, RefreshCw, Target, Shuffle, Star,
-  GraduationCap, ThumbsUp, ThumbsDown, RotateCcw,
+  GraduationCap, RotateCcw,
   CheckCircle2, ChevronRight, List, X, EyeOff, Zap, Calendar
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import officeData from "@/../public/seed-data/office_vocabulary.json"
+import { fsrs as fsrsScheduler, FSRS, type FSRSCard, Rating, CardState } from "@/lib/fsrs"
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 type FreqTier = "S" | "A" | "B" | "C" | "all"
 type ActiveFilter = "all" | "active" | "passive"
 
+// Serialisable version of FSRSCard (stores Dates as ISO strings for localStorage)
+interface FSRSCardData {
+  due: string
+  stability: number
+  difficulty: number
+  elapsedDays: number
+  scheduledDays: number
+  reps: number
+  lapses: number
+  state: number  // CardState enum value
+  lastReview?: string
+}
+
 interface CardProgress {
   cardId: string
   knownCount: number
   unknownCount: number
-  level: number  // 0–5
+  level: number        // 0–5 (mirrors reps, kept for display/filter compat)
   nextReviewDate?: string  // ISO date (YYYY-MM-DD) — when next due for review
+  fsrs?: FSRSCardData  // v2: full FSRS card state (absent = not yet reviewed with v2)
+}
+
+// ─── FSRS helpers ──────────────────────────────────────────────────────────────
+
+function fsrsDataToCard(data: FSRSCardData): FSRSCard {
+  return {
+    ...data,
+    due: new Date(data.due),
+    lastReview: data.lastReview ? new Date(data.lastReview) : undefined,
+    state: data.state as CardState,
+  }
+}
+
+function cardToFsrsData(card: FSRSCard): FSRSCardData {
+  return {
+    stability: card.stability,
+    difficulty: card.difficulty,
+    elapsedDays: card.elapsedDays,
+    scheduledDays: card.scheduledDays,
+    reps: card.reps,
+    lapses: card.lapses,
+    state: card.state as number,
+    due: card.due.toISOString(),
+    lastReview: card.lastReview?.toISOString(),
+  }
 }
 
 // ─── Constants ────────────────────────────────────────────────────────────────
@@ -65,8 +105,13 @@ const CONTEXT_TAGS = [
 const TIER_LABELS: Record<string, string> = { S: "Daily", A: "Weekly", B: "Monthly", C: "Rare" }
 const MATCH_BATCH_SIZE = 10
 
-// SRS intervals in days per level (SM-2 inspired)
-const SRS_INTERVALS: Record<number, number> = { 0: 1, 1: 3, 2: 7, 3: 14, 4: 30, 5: 90 }
+// SRS v2 button config
+const SRS_BUTTONS = [
+  { rating: Rating.Again, label: "Again", cls: "bg-red-100 text-red-700 hover:bg-red-200 dark:bg-red-950/50 dark:text-red-400" },
+  { rating: Rating.Hard,  label: "Hard",  cls: "bg-amber-100 text-amber-700 hover:bg-amber-200 dark:bg-amber-950/50 dark:text-amber-400" },
+  { rating: Rating.Good,  label: "Good",  cls: "bg-emerald-100 text-emerald-700 hover:bg-emerald-200 dark:bg-emerald-950/50 dark:text-emerald-400" },
+  { rating: Rating.Easy,  label: "Easy",  cls: "bg-sky-100 text-sky-700 hover:bg-sky-200 dark:bg-sky-950/50 dark:text-sky-400" },
+] as const
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -296,19 +341,23 @@ export default function OfficePage() {
 
   // ── Card progress ─────────────────────────────────────────────────────────
 
-  function markCard(cardId: string, known: boolean) {
+  function markCard(cardId: string, rating: Rating) {
+    const now = new Date()
     const current = cardProgress.get(cardId) || { cardId, knownCount: 0, unknownCount: 0, level: 0 }
-    const newLevel = known ? Math.min(5, current.level + 1) : Math.max(0, current.level - 1)
-    // Compute next review date based on SRS interval for the new level
-    const nextDate = new Date()
-    nextDate.setDate(nextDate.getDate() + SRS_INTERVALS[newLevel])
-    const nextReviewDate = nextDate.toISOString().split('T')[0]
+    // Get existing FSRS card or init a fresh one
+    const card = current.fsrs ? fsrsDataToCard(current.fsrs) : fsrsScheduler.initCard()
+    // Apply the rating
+    const updatedCard = fsrsScheduler.reviewCard(card, rating, now)
+    // Derive level (0–5) from reps so existing filters/stats still work
+    const newLevel = Math.min(5, updatedCard.reps)
+    const nextReviewDate = updatedCard.due.toISOString().split('T')[0]
     const updated: CardProgress = {
       cardId,
-      knownCount: current.knownCount + (known ? 1 : 0),
-      unknownCount: current.unknownCount + (known ? 0 : 1),
+      knownCount: current.knownCount + (rating >= Rating.Good ? 1 : 0),
+      unknownCount: current.unknownCount + (rating === Rating.Again ? 1 : 0),
       level: newLevel,
       nextReviewDate,
+      fsrs: cardToFsrsData(updatedCard),
     }
     const newProgress = new Map(cardProgress)
     newProgress.set(cardId, updated)
@@ -1003,23 +1052,27 @@ export default function OfficePage() {
                                     </span>
                                   </div>
                                 )}
-                                {/* Know/Don't know buttons */}
-                                <div className="flex gap-3">
-                                  <button
-                                    onClick={e => { e.stopPropagation(); markCard(card.id, false) }}
-                                    className="flex items-center justify-center w-10 h-10 rounded-full bg-red-100 dark:bg-red-950/50 hover:bg-red-200 text-red-600 dark:text-red-400 transition-all hover:scale-110"
-                                    title="Still learning"
-                                  >
-                                    <ThumbsDown className="h-4 w-4" />
-                                  </button>
-                                  <button
-                                    onClick={e => { e.stopPropagation(); markCard(card.id, true) }}
-                                    className="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-950/50 hover:bg-emerald-200 text-emerald-600 dark:text-emerald-400 transition-all hover:scale-110"
-                                    title="I knew it"
-                                  >
-                                    <ThumbsUp className="h-4 w-4" />
-                                  </button>
-                                </div>
+                                {/* SRS v2 — 4-button rating with interval preview */}
+                                {(() => {
+                                  const fsrsCard = progress?.fsrs ? fsrsDataToCard(progress.fsrs) : fsrsScheduler.initCard()
+                                  const schedules = fsrsScheduler.repeat(fsrsCard, new Date())
+                                  return (
+                                    <div className="flex gap-1 mt-1">
+                                      {SRS_BUTTONS.map(({ rating, label, cls }) => (
+                                        <button
+                                          key={rating}
+                                          onClick={e => { e.stopPropagation(); markCard(card.id, rating) }}
+                                          className={cn("flex flex-col items-center rounded px-1.5 py-1 text-center transition-all hover:scale-105", cls)}
+                                        >
+                                          <span className="text-[11px] font-bold leading-none">{label}</span>
+                                          <span className="text-[9px] opacity-70 leading-none mt-0.5">
+                                            {FSRS.formatInterval(schedules[rating].scheduledDays)}
+                                          </span>
+                                        </button>
+                                      ))}
+                                    </div>
+                                  )
+                                })()}
                               </CardContent>
                             </Card>
                           </div>
