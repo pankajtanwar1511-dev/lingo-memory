@@ -1,0 +1,685 @@
+{
+  "schema": "office-v2",
+  "entries": [
+    {
+      "id": "office-242",
+      "kanji": "連絡する",
+      "kana": "れんらくする",
+      "romaji": "renraku suru",
+      "meaning": ["to contact", "to inform"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "S",
+      "contexts": ["email", "slack", "standup"],
+      "category": "verbs",
+      "example": {
+        "japanese": "完了したらご連絡します。",
+        "kana": "かんりょうしたらごれんらくします。",
+        "english": "I will contact you when it's done."
+      }
+    },
+    {
+      "id": "office-243",
+      "kanji": "参加する",
+      "kana": "さんかする",
+      "romaji": "sanka suru",
+      "meaning": ["to participate", "to attend"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "standup"],
+      "category": "verbs",
+      "example": {
+        "japanese": "次の会議に参加します。",
+        "kana": "つぎのかいぎにさんかします。",
+        "english": "I will attend the next meeting."
+      }
+    },
+    {
+      "id": "office-244",
+      "kanji": "出席する",
+      "kana": "しゅっせきする",
+      "romaji": "shusseki suru",
+      "meaning": ["to attend (formal)"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting"],
+      "category": "verbs",
+      "example": {
+        "japanese": "取締役会に出席します。",
+        "kana": "とりしまりやくかいにしゅっせきします。",
+        "english": "I will attend the board meeting."
+      }
+    },
+    {
+      "id": "office-245",
+      "kanji": "欠席する",
+      "kana": "けっせきする",
+      "romaji": "kesseki suru",
+      "meaning": ["to be absent"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["meeting", "hr"],
+      "category": "verbs",
+      "example": {
+        "japanese": "体調不良で会議を欠席します。",
+        "kana": "たいちょうふりょうでかいぎをけっせきします。",
+        "english": "I will be absent from the meeting due to illness."
+      }
+    },
+    {
+      "id": "office-246",
+      "kanji": "発表する",
+      "kana": "はっぴょうする",
+      "romaji": "happyou suru",
+      "meaning": ["to present", "to announce"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["meeting"],
+      "category": "verbs",
+      "example": {
+        "japanese": "来週の会議で発表します。",
+        "kana": "らいしゅうのかいぎではっぴょうします。",
+        "english": "I will present at next week's meeting."
+      }
+    },
+    {
+      "id": "office-247",
+      "kanji": "説明する",
+      "kana": "せつめいする",
+      "romaji": "setsumei suru",
+      "meaning": ["to explain"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "S",
+      "contexts": ["standup", "meeting", "email"],
+      "category": "verbs",
+      "example": {
+        "japanese": "仕様について説明します。",
+        "kana": "しようについてせつめいします。",
+        "english": "I will explain the specifications."
+      }
+    },
+    {
+      "id": "office-248",
+      "kanji": "更新する",
+      "kana": "こうしんする",
+      "romaji": "koushin suru",
+      "meaning": ["to renew", "to update"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["slack", "email"],
+      "category": "verbs",
+      "example": {
+        "japanese": "ドキュメントを更新しました。",
+        "kana": "ドキュメントをこうしんしました。",
+        "english": "I updated the document."
+      }
+    },
+    {
+      "id": "office-249",
+      "kanji": "支払う",
+      "kana": "しはらう",
+      "romaji": "shiharau",
+      "meaning": ["to pay"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["hr"],
+      "category": "verbs",
+      "example": {
+        "japanese": "経費を支払います。",
+        "kana": "けいひをしはらいます。",
+        "english": "I will pay the expenses."
+      }
+    },
+    {
+      "id": "office-250",
+      "kanji": "振り込む",
+      "kana": "ふりこむ",
+      "romaji": "furikomu",
+      "meaning": ["to wire", "to transfer money"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["hr"],
+      "category": "verbs",
+      "example": {
+        "japanese": "給料が口座に振り込まれます。",
+        "kana": "きゅうりょうがこうざにふりこまれます。",
+        "english": "The salary will be transferred to the account."
+      }
+    },
+    {
+      "id": "office-251",
+      "kanji": "修正する",
+      "kana": "しゅうせいする",
+      "romaji": "shuusei suru",
+      "meaning": ["to revise", "to correct"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["slack", "email"],
+      "category": "verbs",
+      "example": {
+        "japanese": "コードを修正しました。",
+        "kana": "コードをしゅうせいしました。",
+        "english": "I corrected the code."
+      }
+    },
+    {
+      "id": "office-252",
+      "kanji": "議題",
+      "kana": "ぎだい",
+      "romaji": "gidai",
+      "meaning": ["agenda item", "topic"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting"],
+      "category": "meetings",
+      "example": {
+        "japanese": "今日の議題を共有します。",
+        "kana": "きょうのぎだいをきょうゆうします。",
+        "english": "I will share today's agenda."
+      }
+    },
+    {
+      "id": "office-253",
+      "kanji": "プレゼンテーション",
+      "kana": "プレゼンテーション",
+      "romaji": "purezenteshon",
+      "meaning": ["presentation"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["meeting"],
+      "category": "meetings",
+      "example": {
+        "japanese": "プレゼンテーションの準備をします。",
+        "kana": "プレゼンテーションのじゅんびをします。",
+        "english": "I will prepare the presentation."
+      }
+    },
+    {
+      "id": "office-254",
+      "kanji": "質疑応答",
+      "kana": "しつぎおうとう",
+      "romaji": "shitsugi outou",
+      "meaning": ["Q&A session", "question and answer"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["meeting"],
+      "category": "meetings",
+      "example": {
+        "japanese": "質疑応答の時間を設けます。",
+        "kana": "しつぎおうとうのじかんをもうけます。",
+        "english": "We will have a Q&A session."
+      }
+    },
+    {
+      "id": "office-255",
+      "kanji": "提案",
+      "kana": "ていあん",
+      "romaji": "teian",
+      "meaning": ["proposal", "suggestion"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting"],
+      "category": "meetings",
+      "example": {
+        "japanese": "新しい提案を共有します。",
+        "kana": "あたらしいていあんをきょうゆうします。",
+        "english": "I will share a new proposal."
+      }
+    },
+    {
+      "id": "office-256",
+      "kanji": "定例会議",
+      "kana": "ていれいかいぎ",
+      "romaji": "teirei kaigi",
+      "meaning": ["recurring meeting", "standing meeting"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting"],
+      "category": "meetings",
+      "example": {
+        "japanese": "定例会議は毎週月曜日です。",
+        "kana": "ていれいかいぎはまいしゅうげつようびです。",
+        "english": "The recurring meeting is every Monday."
+      }
+    },
+    {
+      "id": "office-257",
+      "kanji": "臨時会議",
+      "kana": "りんじかいぎ",
+      "romaji": "rinji kaigi",
+      "meaning": ["emergency meeting", "ad-hoc meeting"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["meeting", "incident"],
+      "category": "meetings",
+      "example": {
+        "japanese": "障害対応のため臨時会議を開きます。",
+        "kana": "しょうがいたいおうのためりんじかいぎをひらきます。",
+        "english": "We will hold an emergency meeting for incident response."
+      }
+    },
+    {
+      "id": "office-258",
+      "kanji": "司会",
+      "kana": "しかい",
+      "romaji": "shikai",
+      "meaning": ["facilitator", "chair"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["meeting"],
+      "category": "meetings",
+      "example": {
+        "japanese": "今日の司会を担当します。",
+        "kana": "きょうのしかいをたんとうします。",
+        "english": "I will facilitate today's meeting."
+      }
+    },
+    {
+      "id": "office-259",
+      "kanji": "発言する",
+      "kana": "はつげんする",
+      "romaji": "hatsugen suru",
+      "meaning": ["to speak up", "to make a comment"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting"],
+      "category": "meetings",
+      "example": {
+        "japanese": "会議で発言してもよろしいですか。",
+        "kana": "かいぎではつげんしてもよろしいですか。",
+        "english": "May I speak up in the meeting?"
+      }
+    },
+    {
+      "id": "office-260",
+      "kanji": "締め切り",
+      "kana": "しめきり",
+      "romaji": "shimekiri",
+      "meaning": ["deadline"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "S",
+      "contexts": ["standup", "email", "slack"],
+      "category": "time",
+      "example": {
+        "japanese": "締め切りは来週金曜日です。",
+        "kana": "しめきりはらいしゅうきんようびです。",
+        "english": "The deadline is next Friday."
+      }
+    },
+    {
+      "id": "office-261",
+      "kanji": "納期",
+      "kana": "のうき",
+      "romaji": "nouki",
+      "meaning": ["delivery deadline"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email"],
+      "category": "time",
+      "example": {
+        "japanese": "納期は月末です。",
+        "kana": "のうきはげつまつです。",
+        "english": "The delivery deadline is at the end of the month."
+      }
+    },
+    {
+      "id": "office-262",
+      "kanji": "日程",
+      "kana": "にってい",
+      "romaji": "nittei",
+      "meaning": ["itinerary", "schedule"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "email"],
+      "category": "time",
+      "example": {
+        "japanese": "日程を調整します。",
+        "kana": "にっていをちょうせいします。",
+        "english": "I will adjust the schedule."
+      }
+    },
+    {
+      "id": "office-263",
+      "kanji": "アポイントメント",
+      "kana": "アポイントメント",
+      "romaji": "apointo mento",
+      "meaning": ["appointment"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email"],
+      "category": "time",
+      "example": {
+        "japanese": "アポイントメントを取りたいです。",
+        "kana": "アポイントメントをとりたいです。",
+        "english": "I would like to make an appointment."
+      }
+    },
+    {
+      "id": "office-264",
+      "kanji": "延期する",
+      "kana": "えんきする",
+      "romaji": "enki suru",
+      "meaning": ["to postpone"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["email", "slack"],
+      "category": "time",
+      "example": {
+        "japanese": "会議を延期します。",
+        "kana": "かいぎをえんきします。",
+        "english": "We will postpone the meeting."
+      }
+    },
+    {
+      "id": "office-265",
+      "kanji": "前倒しにする",
+      "kana": "まえだおしにする",
+      "romaji": "maedaoshi ni suru",
+      "meaning": ["to bring forward", "to move up"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["email", "slack"],
+      "category": "time",
+      "example": {
+        "japanese": "リリースを前倒しにします。",
+        "kana": "リリースをまえだおしにします。",
+        "english": "We will bring forward the release."
+      }
+    },
+    {
+      "id": "office-266",
+      "kanji": "リスケする",
+      "kana": "リスケする",
+      "romaji": "risuke suru",
+      "meaning": ["to reschedule"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["slack", "email"],
+      "category": "time",
+      "example": {
+        "japanese": "今日の1on1をリスケしたいです。",
+        "kana": "きょうのワンオンワンをリスケしたいです。",
+        "english": "I would like to reschedule today's 1-on-1."
+      }
+    },
+    {
+      "id": "office-267",
+      "kanji": "休日出勤",
+      "kana": "きゅうじつしゅっきん",
+      "romaji": "kyuujitsu shukkin",
+      "meaning": ["working on a holiday"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "C",
+      "contexts": ["hr"],
+      "category": "time",
+      "example": {
+        "japanese": "土曜日は休日出勤です。",
+        "kana": "どようびはきゅうじつしゅっきんです。",
+        "english": "I'm working on Saturday (a holiday)."
+      }
+    },
+    {
+      "id": "office-268",
+      "kanji": "早退",
+      "kana": "そうたい",
+      "romaji": "soutai",
+      "meaning": ["leaving early"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["hr", "slack"],
+      "category": "time",
+      "example": {
+        "japanese": "今日は早退させていただきます。",
+        "kana": "きょうはそうたいさせていただきます。",
+        "english": "I will leave early today."
+      }
+    },
+    {
+      "id": "office-269",
+      "kanji": "定時",
+      "kana": "ていじ",
+      "romaji": "teiji",
+      "meaning": ["regular working hours", "on time"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["hr", "slack"],
+      "category": "time",
+      "example": {
+        "japanese": "今日は定時に上がります。",
+        "kana": "きょうはていじにあがります。",
+        "english": "I will leave on time today."
+      }
+    },
+    {
+      "id": "office-270",
+      "kanji": "給与明細",
+      "kana": "きゅうよめいさい",
+      "romaji": "kyuuyo meisai",
+      "meaning": ["payslip", "salary statement"],
+      "partOfSpeech": ["noun"],
+      "active": false,
+      "tier": "A",
+      "contexts": ["hr"],
+      "category": "hr",
+      "example": {
+        "japanese": "給与明細を確認してください。",
+        "kana": "きゅうよめいさいをかくにんしてください。",
+        "english": "Please check your payslip."
+      }
+    },
+    {
+      "id": "office-271",
+      "kanji": "支給",
+      "kana": "しきゅう",
+      "romaji": "shikyuu",
+      "meaning": ["payment", "allowance"],
+      "partOfSpeech": ["noun"],
+      "active": false,
+      "tier": "A",
+      "contexts": ["hr"],
+      "category": "hr",
+      "example": {
+        "japanese": "2月支給（1月分）です。",
+        "kana": "にがつしきゅう（いちがつぶん）です。",
+        "english": "Payment in February (for January)."
+      }
+    },
+    {
+      "id": "office-272",
+      "kanji": "締め",
+      "kana": "しめ",
+      "romaji": "shime",
+      "meaning": ["cutoff", "closing"],
+      "partOfSpeech": ["noun"],
+      "active": false,
+      "tier": "A",
+      "contexts": ["hr"],
+      "category": "hr",
+      "example": {
+        "japanese": "給与計算の締めは15日です。",
+        "kana": "きゅうよけいさんのしめは15にちです。",
+        "english": "The payroll cutoff is the 15th."
+      }
+    },
+    {
+      "id": "office-273",
+      "kanji": "管理部門",
+      "kana": "かんりぶもん",
+      "romaji": "kanri bumon",
+      "meaning": ["administrative department"],
+      "partOfSpeech": ["noun"],
+      "active": false,
+      "tier": "A",
+      "contexts": ["hr"],
+      "category": "communication",
+      "example": {
+        "japanese": "管理部門にお問い合わせください。",
+        "kana": "かんりぶもんにおといあわせください。",
+        "english": "Please contact the administrative department."
+      }
+    },
+    {
+      "id": "office-274",
+      "kanji": "有休",
+      "kana": "ゆうきゅう",
+      "romaji": "yuukyuu",
+      "meaning": ["paid leave"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["hr", "slack"],
+      "category": "hr",
+      "example": {
+        "japanese": "明日、有休を取ります。",
+        "kana": "あした、ゆうきゅうをとります。",
+        "english": "I will take paid leave tomorrow."
+      }
+    },
+    {
+      "id": "office-275",
+      "kanji": "在宅",
+      "kana": "ざいたく",
+      "romaji": "zaitaku",
+      "meaning": ["work from home"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["hr", "slack"],
+      "category": "hr",
+      "example": {
+        "japanese": "明日は在宅勤務です。",
+        "kana": "あしたはざいたくきんむです。",
+        "english": "I will work from home tomorrow."
+      }
+    },
+    {
+      "id": "office-276",
+      "kanji": "不備",
+      "kana": "ふび",
+      "romaji": "fubi",
+      "meaning": ["deficiency", "error", "omission"],
+      "partOfSpeech": ["noun"],
+      "active": false,
+      "tier": "B",
+      "contexts": ["email"],
+      "category": "communication",
+      "example": {
+        "japanese": "内容に不備がある場合はご連絡ください。",
+        "kana": "ないようにふびがあるばあいはごれんらくください。",
+        "english": "Please contact us if there are any errors in the content."
+      }
+    },
+    {
+      "id": "office-277",
+      "kanji": "現状",
+      "kana": "げんじょう",
+      "romaji": "genjou",
+      "meaning": ["current situation", "status quo"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["standup", "slack"],
+      "category": "status",
+      "example": {
+        "japanese": "現状、未実装となっています。",
+        "kana": "げんじょう、みじっそうとなっています。",
+        "english": "Currently, it is not implemented."
+      }
+    },
+    {
+      "id": "office-278",
+      "kanji": "各々",
+      "kana": "おのおの",
+      "romaji": "onoono",
+      "meaning": ["each", "respectively"],
+      "partOfSpeech": ["pronoun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["email"],
+      "category": "communication",
+      "example": {
+        "japanese": "各々、担当箇所を確認してください。",
+        "kana": "おのおの、たんとうかしょをかくにんしてください。",
+        "english": "Each person, please check your assigned section."
+      }
+    },
+    {
+      "id": "office-279",
+      "kanji": "案件",
+      "kana": "あんけん",
+      "romaji": "anken",
+      "meaning": ["matter", "case", "project"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["slack", "meeting"],
+      "category": "project",
+      "example": {
+        "japanese": "急ぎの案件があります。",
+        "kana": "いそぎのあんけんがあります。",
+        "english": "There is an urgent matter."
+      }
+    },
+    {
+      "id": "office-280",
+      "kanji": "整理する",
+      "kana": "せいりする",
+      "romaji": "seiri suru",
+      "meaning": ["to organize", "to sort out"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["slack", "standup"],
+      "category": "verbs",
+      "example": {
+        "japanese": "タスクを整理します。",
+        "kana": "タスクをせいりします。",
+        "english": "I will organize the tasks."
+      }
+    },
+    {
+      "id": "office-281",
+      "kanji": "手配",
+      "kana": "てはい",
+      "romaji": "tehai",
+      "meaning": ["arrangement", "coordination"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["email"],
+      "category": "communication",
+      "example": {
+        "japanese": "会議室の手配をお願いします。",
+        "kana": "かいぎしつのてはいをおねがいします。",
+        "english": "Please arrange the meeting room."
+      }
+    }
+  ]
+}

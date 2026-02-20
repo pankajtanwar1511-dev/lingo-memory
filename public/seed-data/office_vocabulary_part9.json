@@ -1,0 +1,685 @@
+{
+  "schema": "office-v2",
+  "entries": [
+    {
+      "id": "office-282",
+      "kanji": "お客様",
+      "kana": "おきゃくさま",
+      "romaji": "okyaku sama",
+      "meaning": ["customer", "client"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["client", "email"],
+      "category": "communication",
+      "example": {
+        "japanese": "お客様からお問い合わせがあります。",
+        "kana": "おきゃくさまからおといあわせがあります。",
+        "english": "There is an inquiry from the client."
+      }
+    },
+    {
+      "id": "office-283",
+      "kanji": "顧客",
+      "kana": "こきゃく",
+      "romaji": "kokyaku",
+      "meaning": ["customer", "client"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["client", "meeting"],
+      "category": "communication",
+      "example": {
+        "japanese": "顧客満足度を向上させます。",
+        "kana": "こきゃくまんぞくどをこうじょうさせます。",
+        "english": "We will improve customer satisfaction."
+      }
+    },
+    {
+      "id": "office-284",
+      "kanji": "取引先",
+      "kana": "とりひきさき",
+      "romaji": "torihiki saki",
+      "meaning": ["business partner", "client company"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["client", "email"],
+      "category": "communication",
+      "example": {
+        "japanese": "取引先との会議があります。",
+        "kana": "とりひきさきとのかいぎがあります。",
+        "english": "There is a meeting with our business partner."
+      }
+    },
+    {
+      "id": "office-285",
+      "kanji": "クレーム",
+      "kana": "クレーム",
+      "romaji": "kuriimu",
+      "meaning": ["complaint"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["client", "incident"],
+      "category": "communication",
+      "example": {
+        "japanese": "クレーム対応をします。",
+        "kana": "クレームたいおうをします。",
+        "english": "I will handle the complaint."
+      }
+    },
+    {
+      "id": "office-286",
+      "kanji": "フォローアップ",
+      "kana": "フォローアップ",
+      "romaji": "fooroo appu",
+      "meaning": ["follow-up"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["client", "slack"],
+      "category": "communication",
+      "example": {
+        "japanese": "来週フォローアップします。",
+        "kana": "らいしゅうフォローアップします。",
+        "english": "I will follow up next week."
+      }
+    },
+    {
+      "id": "office-287",
+      "kanji": "顧客対応",
+      "kana": "こきゃくたいおう",
+      "romaji": "kokyaku taiou",
+      "meaning": ["customer service", "client handling"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["client"],
+      "category": "communication",
+      "example": {
+        "japanese": "顧客対応を優先します。",
+        "kana": "こきゃくたいおうをゆうせんします。",
+        "english": "I will prioritize customer service."
+      }
+    },
+    {
+      "id": "office-288",
+      "kanji": "アポ",
+      "kana": "アポ",
+      "romaji": "apo",
+      "meaning": ["appointment"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["client", "slack"],
+      "category": "communication",
+      "example": {
+        "japanese": "クライアントとアポを取りました。",
+        "kana": "クライアントとアポをとりました。",
+        "english": "I made an appointment with the client."
+      }
+    },
+    {
+      "id": "office-289",
+      "kanji": "商談",
+      "kana": "しょうだん",
+      "romaji": "shoudan",
+      "meaning": ["business negotiation", "sales meeting"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["client"],
+      "category": "communication",
+      "example": {
+        "japanese": "商談がうまく進んでいます。",
+        "kana": "しょうだんがうまくすすんでいます。",
+        "english": "The business negotiation is going well."
+      }
+    },
+    {
+      "id": "office-290",
+      "kanji": "見積もり",
+      "kana": "みつもり",
+      "romaji": "mitsumori",
+      "meaning": ["estimate", "quotation"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["client", "email"],
+      "category": "communication",
+      "example": {
+        "japanese": "見積もりを送ります。",
+        "kana": "みつもりをおくります。",
+        "english": "I will send the estimate."
+      }
+    },
+    {
+      "id": "office-291",
+      "kanji": "納品物",
+      "kana": "のうひんぶつ",
+      "romaji": "nouhin butsu",
+      "meaning": ["deliverable"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["client"],
+      "category": "project",
+      "example": {
+        "japanese": "納品物を確認してください。",
+        "kana": "のうひんぶつをかくにんしてください。",
+        "english": "Please check the deliverables."
+      }
+    },
+    {
+      "id": "office-292",
+      "kanji": "契約",
+      "kana": "けいやく",
+      "romaji": "keiyaku",
+      "meaning": ["contract"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["client"],
+      "category": "communication",
+      "example": {
+        "japanese": "契約を締結しました。",
+        "kana": "けいやくをていけつしました。",
+        "english": "We concluded the contract."
+      }
+    },
+    {
+      "id": "office-293",
+      "kanji": "提案する",
+      "kana": "ていあんする",
+      "romaji": "teian suru",
+      "meaning": ["to propose", "to suggest"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["client", "meeting"],
+      "category": "verbs",
+      "example": {
+        "japanese": "新しいソリューションを提案します。",
+        "kana": "あたらしいソリューションをていあんします。",
+        "english": "I will propose a new solution."
+      }
+    },
+    {
+      "id": "office-294",
+      "kanji": "納品",
+      "kana": "のうひん",
+      "romaji": "nouhin",
+      "meaning": ["delivery"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["client"],
+      "category": "project",
+      "example": {
+        "japanese": "来週納品予定です。",
+        "kana": "らいしゅうのうひんよていです。",
+        "english": "Delivery is scheduled for next week."
+      }
+    },
+    {
+      "id": "office-295",
+      "kanji": "受注",
+      "kana": "じゅちゅう",
+      "romaji": "juchuu",
+      "meaning": ["order received", "order acceptance"],
+      "partOfSpeech": ["noun"],
+      "active": false,
+      "tier": "B",
+      "contexts": ["client"],
+      "category": "communication",
+      "example": {
+        "japanese": "新規受注がありました。",
+        "kana": "しんきじゅちゅうがありました。",
+        "english": "We received a new order."
+      }
+    },
+    {
+      "id": "office-296",
+      "kanji": "先方",
+      "kana": "せんぽう",
+      "romaji": "senpou",
+      "meaning": ["the other party", "they"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["client", "email"],
+      "category": "communication",
+      "example": {
+        "japanese": "先方の都合を確認します。",
+        "kana": "せんぽうのつごうをかくにんします。",
+        "english": "I will check the other party's availability."
+      }
+    },
+    {
+      "id": "office-297",
+      "kanji": "請求書",
+      "kana": "せいきゅうしょ",
+      "romaji": "seikyuusho",
+      "meaning": ["invoice"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email"],
+      "category": "hr",
+      "example": {
+        "japanese": "請求書を送付します。",
+        "kana": "せいきゅうしょをそうふします。",
+        "english": "I will send the invoice."
+      }
+    },
+    {
+      "id": "office-298",
+      "kanji": "精算する",
+      "kana": "せいさんする",
+      "romaji": "seisan suru",
+      "meaning": ["to settle", "to reimburse"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["hr"],
+      "category": "verbs",
+      "example": {
+        "japanese": "経費を精算します。",
+        "kana": "けいひをせいさんします。",
+        "english": "I will reimburse the expenses."
+      }
+    },
+    {
+      "id": "office-299",
+      "kanji": "経費",
+      "kana": "けいひ",
+      "romaji": "keihi",
+      "meaning": ["expenses"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["hr", "email"],
+      "category": "hr",
+      "example": {
+        "japanese": "経費の申請をします。",
+        "kana": "けいひのしんせいをします。",
+        "english": "I will submit an expense claim."
+      }
+    },
+    {
+      "id": "office-300",
+      "kanji": "予算",
+      "kana": "よさん",
+      "romaji": "yosan",
+      "meaning": ["budget"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting"],
+      "category": "project",
+      "example": {
+        "japanese": "プロジェクトの予算を確認します。",
+        "kana": "プロジェクトのよさんをかくにんします。",
+        "english": "I will check the project budget."
+      }
+    },
+    {
+      "id": "office-301",
+      "kanji": "領収書",
+      "kana": "りょうしゅうしょ",
+      "romaji": "ryoushuusho",
+      "meaning": ["receipt"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["hr"],
+      "category": "hr",
+      "example": {
+        "japanese": "領収書を添付してください。",
+        "kana": "りょうしゅうしょをてんぷしてください。",
+        "english": "Please attach the receipt."
+      }
+    },
+    {
+      "id": "office-302",
+      "kanji": "承認",
+      "kana": "しょうにん",
+      "romaji": "shounin",
+      "meaning": ["approval"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "email"],
+      "category": "meetings",
+      "example": {
+        "japanese": "上司の承認を待っています。",
+        "kana": "じょうしのしょうにんをまっています。",
+        "english": "I'm waiting for my boss's approval."
+      }
+    },
+    {
+      "id": "office-303",
+      "kanji": "申請する",
+      "kana": "しんせいする",
+      "romaji": "shinsei suru",
+      "meaning": ["to apply", "to submit a request"],
+      "partOfSpeech": ["verb"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["hr", "email"],
+      "category": "verbs",
+      "example": {
+        "japanese": "有給休暇を申請します。",
+        "kana": "ゆうきゅうきゅうかをしんせいします。",
+        "english": "I will apply for paid leave."
+      }
+    },
+    {
+      "id": "office-304",
+      "kanji": "売上",
+      "kana": "うりあげ",
+      "romaji": "uriage",
+      "meaning": ["sales", "revenue"],
+      "partOfSpeech": ["noun"],
+      "active": false,
+      "tier": "B",
+      "contexts": ["meeting"],
+      "category": "project",
+      "example": {
+        "japanese": "今月の売上を報告します。",
+        "kana": "こんげつのうりあげをほうこくします。",
+        "english": "I will report this month's sales."
+      }
+    },
+    {
+      "id": "office-305",
+      "kanji": "利益",
+      "kana": "りえき",
+      "romaji": "rieki",
+      "meaning": ["profit"],
+      "partOfSpeech": ["noun"],
+      "active": false,
+      "tier": "B",
+      "contexts": ["meeting"],
+      "category": "project",
+      "example": {
+        "japanese": "利益率を向上させます。",
+        "kana": "りえきりつをこうじょうさせます。",
+        "english": "We will improve the profit margin."
+      }
+    },
+    {
+      "id": "office-306",
+      "kanji": "コスト",
+      "kana": "コスト",
+      "romaji": "kosuto",
+      "meaning": ["cost"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting"],
+      "category": "project",
+      "example": {
+        "japanese": "コストを削減します。",
+        "kana": "コストをさくげんします。",
+        "english": "We will reduce costs."
+      }
+    },
+    {
+      "id": "office-307",
+      "kanji": "月次",
+      "kana": "げつじ",
+      "romaji": "getsuji",
+      "meaning": ["monthly"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting"],
+      "category": "time",
+      "example": {
+        "japanese": "月次報告を提出します。",
+        "kana": "げつじほうこくをていしゅつします。",
+        "english": "I will submit the monthly report."
+      }
+    },
+    {
+      "id": "office-308",
+      "kanji": "四半期",
+      "kana": "しはんき",
+      "romaji": "shihanki",
+      "meaning": ["quarter", "quarterly"],
+      "partOfSpeech": ["noun"],
+      "active": false,
+      "tier": "B",
+      "contexts": ["meeting"],
+      "category": "time",
+      "example": {
+        "japanese": "第1四半期の結果を発表します。",
+        "kana": "だいいちしはんきのけっかをはっぴょうします。",
+        "english": "We will announce the first quarter results."
+      }
+    },
+    {
+      "id": "office-309",
+      "kanji": "見積もり書",
+      "kana": "みつもりしょ",
+      "romaji": "mitsumorisho",
+      "meaning": ["quotation document"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["client", "email"],
+      "category": "documents",
+      "example": {
+        "japanese": "見積もり書を作成します。",
+        "kana": "みつもりしょをさくせいします。",
+        "english": "I will create a quotation document."
+      }
+    },
+    {
+      "id": "office-310",
+      "kanji": "支払い",
+      "kana": "しはらい",
+      "romaji": "shiharai",
+      "meaning": ["payment"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["hr", "email"],
+      "category": "hr",
+      "example": {
+        "japanese": "支払いは月末です。",
+        "kana": "しはらいはげつまつです。",
+        "english": "Payment is at the end of the month."
+      }
+    },
+    {
+      "id": "office-311",
+      "kanji": "精算",
+      "kana": "せいさん",
+      "romaji": "seisan",
+      "meaning": ["settlement", "reimbursement"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["hr"],
+      "category": "hr",
+      "example": {
+        "japanese": "精算処理を完了しました。",
+        "kana": "せいさんしょりをかんりょうしました。",
+        "english": "I completed the reimbursement process."
+      }
+    },
+    {
+      "id": "office-312",
+      "kanji": "部長",
+      "kana": "ぶちょう",
+      "romaji": "buchou",
+      "meaning": ["department head", "general manager"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "email"],
+      "category": "roles",
+      "example": {
+        "japanese": "部長に報告します。",
+        "kana": "ぶちょうにほうこくします。",
+        "english": "I will report to the department head."
+      }
+    },
+    {
+      "id": "office-313",
+      "kanji": "課長",
+      "kana": "かちょう",
+      "romaji": "kachou",
+      "meaning": ["section chief", "manager"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "email"],
+      "category": "roles",
+      "example": {
+        "japanese": "課長の承認が必要です。",
+        "kana": "かちょうのしょうにんがひつようです。",
+        "english": "I need the manager's approval."
+      }
+    },
+    {
+      "id": "office-314",
+      "kanji": "新入社員",
+      "kana": "しんにゅうしゃいん",
+      "romaji": "shinnyuu shain",
+      "meaning": ["new employee", "new hire"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["meeting"],
+      "category": "roles",
+      "example": {
+        "japanese": "新入社員の研修を行います。",
+        "kana": "しんにゅうしゃいんのけんしゅうをおこないます。",
+        "english": "We will conduct training for new employees."
+      }
+    },
+    {
+      "id": "office-315",
+      "kanji": "先輩",
+      "kana": "せんぱい",
+      "romaji": "senpai",
+      "meaning": ["senior colleague"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["slack"],
+      "category": "roles",
+      "example": {
+        "japanese": "先輩にアドバイスをもらいました。",
+        "kana": "せんぱいにアドバイスをもらいました。",
+        "english": "I received advice from my senior colleague."
+      }
+    },
+    {
+      "id": "office-316",
+      "kanji": "後輩",
+      "kana": "こうはい",
+      "romaji": "kouhai",
+      "meaning": ["junior colleague"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["slack"],
+      "category": "roles",
+      "example": {
+        "japanese": "後輩に仕事を教えます。",
+        "kana": "こうはいにしごとをおしえます。",
+        "english": "I will teach my junior colleague the work."
+      }
+    },
+    {
+      "id": "office-317",
+      "kanji": "同僚",
+      "kana": "どうりょう",
+      "romaji": "douryou",
+      "meaning": ["colleague", "coworker"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["slack", "meeting"],
+      "category": "roles",
+      "example": {
+        "japanese": "同僚と協力して進めます。",
+        "kana": "どうりょうときょうりょくしてすすめます。",
+        "english": "I will proceed in cooperation with my colleagues."
+      }
+    },
+    {
+      "id": "office-318",
+      "kanji": "上司",
+      "kana": "じょうし",
+      "romaji": "joushi",
+      "meaning": ["superior", "boss"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["meeting", "1on1"],
+      "category": "roles",
+      "example": {
+        "japanese": "上司に相談します。",
+        "kana": "じょうしにそうだんします。",
+        "english": "I will consult with my boss."
+      }
+    },
+    {
+      "id": "office-319",
+      "kanji": "担当者",
+      "kana": "たんとうしゃ",
+      "romaji": "tantousha",
+      "meaning": ["person in charge"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "A",
+      "contexts": ["email", "slack"],
+      "category": "roles",
+      "example": {
+        "japanese": "担当者に確認します。",
+        "kana": "たんとうしゃにかくにんします。",
+        "english": "I will check with the person in charge."
+      }
+    },
+    {
+      "id": "office-320",
+      "kanji": "責任者",
+      "kana": "せきにんしゃ",
+      "romaji": "sekininsha",
+      "meaning": ["person responsible", "supervisor"],
+      "partOfSpeech": ["noun"],
+      "active": true,
+      "tier": "B",
+      "contexts": ["meeting"],
+      "category": "roles",
+      "example": {
+        "japanese": "プロジェクトの責任者です。",
+        "kana": "プロジェクトのせきにんしゃです。",
+        "english": "I am the project supervisor."
+      }
+    },
+    {
+      "id": "office-321",
+      "kanji": "社長",
+      "kana": "しゃちょう",
+      "romaji": "shachou",
+      "meaning": ["company president", "CEO"],
+      "partOfSpeech": ["noun"],
+      "active": false,
+      "tier": "B",
+      "contexts": ["meeting"],
+      "category": "roles",
+      "example": {
+        "japanese": "社長が方針を発表しました。",
+        "kana": "しゃちょうがほうしんをはっぴょうしました。",
+        "english": "The CEO announced the policy."
+      }
+    }
+  ]
+}

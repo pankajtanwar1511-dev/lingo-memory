@@ -517,3 +517,98 @@ Give 3–5 prioritised recommendations. Be specific about what to build next and
 - [ ] Pattern Practice page (`/office/patterns`) — dedicated page for pattern drills with phrase-level validation (Option 2 upgrade from current scenario pack)
 - [ ] Performance review / appraisal lifecycle drill pack
 - [ ] Client-facing scenario pack
+
+---
+
+## Session 5 — Major Expansion (2026-02-20)
+
+### Phase D Drill Packs (3 new packs, 10 stages) ⚠️ Pending Review
+
+Created 3 drill packs targeting uncovered Phase A/B/C vocabulary:
+
+**Pack 12: Keigo Production (敬語の産出練習) — 2 packs / 10 stages**
+- **File**: `office_drills_part12.json`
+- **Target**: 14 Phase B keigo verbs (office-212–225)
+- **Structure**:
+  - Pack 1: Humble verbs (いたす, 申す, 参る, 拝見する, 伺う) — 5 stages
+  - Pack 2: Honorific verbs (いらっしゃる, おっしゃる, なさる, くださる) + hybrid (ご覧いただく) — 5 stages
+- **Coverage boost**: Targets 14 uncovered keigo verbs from Phase B
+
+**Pack 13: Communication & Culture (コミュニケーションと文化) — 2 packs / 10 stages**
+- **File**: `office_drills_part13.json`
+- **Target**: 12 Phase A/C communication entries
+- **Structure**:
+  - Pack 1: Workplace culture + soft communication (報連相, 挨拶, 名刺交換, もしかして, 空気を読む, 根拠) — 5 stages
+  - Pack 2: Daily coordination + acknowledgment phrases (個別, 各自, 社内調整, ご確認ありがとうございます, ご連絡ありがとうございます) — 5 stages
+- **Coverage boost**: Targets 12 communication/culture entries from Phase A/C
+
+**Pack 14: Presentations & Data (プレゼンとデータ分析) — 2 packs / 10 stages**
+- **File**: `office_drills_part14.json`
+- **Target**: 9 Phase C presentation + status entries
+- **Structure**:
+  - Pack 1: Presentation vocabulary (スライド, 参考資料, グラフ, 表, 傾向, 比較する) — 5 stages
+  - Pack 2: Urgent business vocab (至急, 需要, 講習) — 5 stages
+- **Coverage boost**: Targets 9 presentation/status entries from Phase C
+
+**Total drill expansion**: 3 parts (6 packs) / 30 stages targeting 35 uncovered entries
+
+### Phase D-F Vocabulary Expansion (120 new entries: office-242–361) ⚠️ Pending Review
+
+Expanded vocabulary from 241 → 361 entries (50% growth) based on reference doc analysis.
+
+**Part 8: High-Frequency Operations (office-242–281, 40 entries)**
+- **File**: `office_vocabulary_part8.json`
+- **Composition**:
+  - Business Verbs (10): 連絡する, 参加する, 出席する, 欠席する, 発表する, 説明する, 更新する, 支払う, 振り込む, 修正する
+  - Meetings (8): 議題, プレゼンテーション, 質疑応答, 提案, 定例会議, 臨時会議, 司会, 発言する
+  - Time & Scheduling (10): 締め切り (S-tier), 納期, 日程, アポイントメント, 延期する, 前倒しにする, リスケする, 休日出勤, 早退, 定時
+  - High-Freq Phrases (12): 給与明細, 支給, 締め, 管理部門, 有休, 在宅, 不備, 現状, 各々, 案件, 整理する, 手配
+- **Tier distribution**: S-tier: 3 | A-tier: 25 | B-tier: 12
+- **Active/passive**: 34 active / 6 passive
+
+**Part 9: Client Relations & Finance (office-282–321, 40 entries)**
+- **File**: `office_vocabulary_part9.json`
+- **Composition**:
+  - Client Relations (15): お客様, 顧客, 取引先, クレーム, フォローアップ, 顧客対応, アポ, 商談, 見積もり, 納品物, 契約, 提案する, 納品, 受注, 先方
+  - Finance & Accounting (15): 請求書, 精算する, 経費, 予算, 領収書, 承認, 申請する, 売上, 利益, コスト, 月次, 四半期, 見積もり書, 支払い, 精算
+  - Roles & Titles (10): 部長, 課長, 新入社員, 先輩, 後輩, 同僚, 上司, 担当者, 責任者, 社長
+- **Tier distribution**: A-tier: 30 | B-tier: 10
+- **Active/passive**: 34 active / 6 passive
+
+**Part 10: Incident Response & Infrastructure (office-322–361, 40 entries)**
+- **File**: `office_vocabulary_part10.json`
+- **Composition**:
+  - Incident / Escalation (12): インシデント, 不具合, 事象, 発生 (S-tier), 原因 (S-tier), 根本原因, 影響なし, 再現, 再現性, 調査中 (S-tier), 恒久対応, 検知
+  - Departments (10): 総務部, 人事部, 経理部, 営業部, 企画部, 開発部, 法務部, 広報部, マーケティング部, 購買部
+  - Documents (8): 仕様書, 設計書, 契約書, 報告書, 申請書, 書類, 印鑑, 提出先
+  - General Vocabulary (10): コミュニケーション, チームワーク, 進める (S-tier), 対処する, 主体性, 責任感, 専門知識, 急ぎの案件, 期待に応える, 締め切りを守る
+- **Tier distribution**: S-tier: 4 | A-tier: 22 | B-tier: 12 | C-tier: 2
+- **Active/passive**: 26 active / 14 passive
+
+**Total vocab expansion**: 120 entries (241 → 361, +50%)
+**Overall tier distribution across 120 entries**: S-tier: 7 (6%) | A-tier: 77 (64%) | B-tier: 34 (28%) | C-tier: 2 (2%)
+**Overall active/passive**: 94 active (78%) / 26 passive (22%)
+
+### Session 5 Summary
+
+**Files created (7 total)**:
+- `office_drills_part12.json` (2 packs, 10 stages)
+- `office_drills_part13.json` (2 packs, 10 stages)
+- `office_drills_part14.json` (2 packs, 10 stages)
+- `office_vocabulary_part8.json` (40 entries)
+- `office_vocabulary_part9.json` (40 entries)
+- `office_vocabulary_part10.json` (40 entries)
+- Updated: `docs/office-app-progress.md` (this file)
+
+**Key metrics after Session 5** (pending review & merge):
+- Vocabulary: 241 → 361 (+120 entries, +50% growth)
+- Drill packs: 11 → 14 (+3 packs)
+- Drill stages: 55 → 85 (+30 stages)
+- Categories expanded: 12 → 15 (added roles, documents subcategories from infrastructure)
+
+**Next steps**:
+1. ⚠️ ChatGPT review all Part 8/9/10 vocabulary (120 entries)
+2. ⚠️ ChatGPT review all Part 12/13/14 drill packs (30 stages)
+3. ✅ After reviews complete → merge into main datasets
+4. ✅ Run coverage analyzer to measure new coverage metrics
+5. ✅ Update header stats in this doc

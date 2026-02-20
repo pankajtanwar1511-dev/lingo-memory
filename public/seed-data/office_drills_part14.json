@@ -1,0 +1,153 @@
+{
+  "schema": "office-drills-v1",
+  "packs": [
+    {
+      "id": "presentation-data",
+      "title": "Presentations & Data",
+      "titleJa": "プレゼンとデータ分析",
+      "description": "Practice presentation vocabulary and data analysis terms",
+      "cluster": "documents",
+      "stages": [
+        {
+          "id": "pres-data-s1",
+          "prompt": "You're preparing a presentation. Tell your team you'll share the slides.",
+          "targets": {
+            "required": ["office-233"]
+          },
+          "modelAnswer": {
+            "japanese": "スライドを共有します。",
+            "kana": "スライドをきょうゆうします。",
+            "english": "I will share the slides."
+          },
+          "hint": "スライド — slides"
+        },
+        {
+          "id": "pres-data-s2",
+          "prompt": "You're presenting data. Tell your audience you've included reference materials.",
+          "targets": {
+            "required": ["office-236"]
+          },
+          "modelAnswer": {
+            "japanese": "参考資料も添付しています。",
+            "kana": "さんこうしりょうもてんぷしています。",
+            "english": "I've also attached reference materials."
+          },
+          "hint": "参考資料 (さんこうしりょう) — reference materials"
+        },
+        {
+          "id": "pres-data-s3",
+          "prompt": "You're showing data visualization. Explain that this is a graph showing the trend.",
+          "targets": {
+            "required": ["office-234", "office-237"]
+          },
+          "modelAnswer": {
+            "japanese": "こちらのグラフは傾向を示しています。",
+            "kana": "こちらのグラフはけいこうをしめしています。",
+            "english": "This graph shows the trend."
+          },
+          "hint": "グラフ — graph, 傾向 (けいこう) — trend"
+        },
+        {
+          "id": "pres-data-s4",
+          "prompt": "You're presenting a data table. Tell the audience to please refer to the table.",
+          "targets": {
+            "required": ["office-235"]
+          },
+          "modelAnswer": {
+            "japanese": "表をご参照ください。",
+            "kana": "ひょうをごさんしょうください。",
+            "english": "Please refer to the table."
+          },
+          "hint": "表 (ひょう) — table"
+        },
+        {
+          "id": "pres-data-s5",
+          "prompt": "You're analyzing two datasets. Explain that you're comparing the results.",
+          "targets": {
+            "required": ["office-238"]
+          },
+          "modelAnswer": {
+            "japanese": "2つのデータセットの結果を比較します。",
+            "kana": "ふたつのデータセットのけっかをひかくします。",
+            "english": "I will compare the results of the two datasets."
+          },
+          "hint": "比較する (ひかくする) — to compare"
+        }
+      ]
+    },
+    {
+      "id": "urgent-business-vocab",
+      "title": "Urgent Business Vocabulary",
+      "titleJa": "急ぎのビジネス用語",
+      "description": "Practice urgent requests and business context vocabulary",
+      "cluster": "communication",
+      "stages": [
+        {
+          "id": "urgent-biz-s1",
+          "prompt": "You need something urgently. Ask your colleague to please handle this urgently.",
+          "targets": {
+            "required": ["office-239"]
+          },
+          "modelAnswer": {
+            "japanese": "至急対応をお願いします。",
+            "kana": "しきゅうたいおうをおねがいします。",
+            "english": "Please handle this urgently."
+          },
+          "hint": "至急 (しきゅう) — urgent, urgently"
+        },
+        {
+          "id": "urgent-biz-s2",
+          "prompt": "You're explaining why you're developing a feature. Say it's based on actual demand.",
+          "targets": {
+            "required": ["office-240"]
+          },
+          "modelAnswer": {
+            "japanese": "実際の需要から開発しています。",
+            "kana": "じっさいのじゅようからかいはつしています。",
+            "english": "We're developing based on actual demand."
+          },
+          "hint": "需要 (じゅよう) — demand, need"
+        },
+        {
+          "id": "urgent-biz-s3",
+          "prompt": "You're organizing a training session. Tell your team who can attend the training.",
+          "targets": {
+            "required": ["office-241"]
+          },
+          "modelAnswer": {
+            "japanese": "講習できる人が参加してください。",
+            "kana": "こうしゅうできるひとがさんかしてください。",
+            "english": "Please attend if you can take the training."
+          },
+          "hint": "講習 (こうしゅう) — training session"
+        },
+        {
+          "id": "urgent-biz-s4",
+          "prompt": "You're presenting urgently needed data comparing demand trends. Use at least 3 presentation terms.",
+          "targets": {
+            "required": ["office-234", "office-237", "office-240"]
+          },
+          "modelAnswer": {
+            "japanese": "至急、需要の傾向を示すグラフを共有します。",
+            "kana": "しきゅう、じゅようのけいこうをしめすグラフをきょうゆうします。",
+            "english": "Urgently, I will share a graph showing demand trends."
+          },
+          "hint": "至急 + 需要 + 傾向 + グラフ"
+        },
+        {
+          "id": "urgent-biz-s5",
+          "prompt": "You're hosting a training session on data analysis. Explain you'll compare tables and graphs showing trends.",
+          "targets": {
+            "required": ["office-235", "office-234", "office-237", "office-238", "office-241"]
+          },
+          "modelAnswer": {
+            "japanese": "講習では、傾向を示す表とグラフを比較します。",
+            "kana": "こうしゅうでは、けいこうをしめすひょうとグラフをひかくします。",
+            "english": "In the training session, we will compare tables and graphs showing trends."
+          },
+          "hint": "講習 + 表 + グラフ + 傾向 + 比較する"
+        }
+      ]
+    }
+  ]
+}
