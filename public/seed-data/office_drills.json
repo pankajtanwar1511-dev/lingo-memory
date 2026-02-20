@@ -876,9 +876,9 @@
         {
           "id": "slack-s5",
           "stage": 5,
-          "title": "Contact",
-          "titleJa": "件名を付けて連絡",
-          "prompt": "You're writing a formal email about a project matter. State the subject line and announce your purpose.",
+          "title": "Email Subject",
+          "titleJa": "件名を付けてメール",
+          "prompt": "You're writing a formal email about a project matter. Write the subject line and opening sentence.",
           "hint": "Use 件名 (けんめい) and 連絡する (れんらくする)",
           "targets": {
             "required": ["office-130", "office-002"],
@@ -1066,9 +1066,9 @@
             "anyOf": []
           },
           "modelAnswer": {
-            "japanese": "今スプリントの課題を整理しました。結果をまとめて、次回の準備をします。",
-            "kana": "いまスプリントのかだいをせいりしました。けっかをまとめて、じかいのじゅんびをします。",
-            "english": "I've organized the issues from this sprint. I'll compile the results and prepare for next time."
+            "japanese": "今スプリントの課題を整理しました。結果をまとめて、資料を作成します。次回の準備をします。",
+            "kana": "いまスプリントのかだいをせいりしました。けっかをまとめて、しりょうをさくせいします。じかいのじゅんびをします。",
+            "english": "I've organized the issues from this sprint. I'll compile the results, create the materials, and prepare for next time."
           }
         },
         {
