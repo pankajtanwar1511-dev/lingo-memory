@@ -1,10 +1,10 @@
 {
   "schema": "normalized-v2",
   "metadata": {
-    "version": "1.0.0",
+    "version": "2.0.0",
     "jlpt": "N5",
     "totalEntries": 140,
-    "description": "Complete JLPT N5 verb dataset",
+    "description": "Complete JLPT N5 verb dataset with enhanced glosses and usage patterns",
     "license": "CC BY-SA 4.0"
   },
   "verbs": [
@@ -30,8 +30,7 @@
       "meaning": {
         "primary": "to meet",
         "gloss": [
-          "meet",
-          "see someone"
+          "meet"
         ]
       },
       "forms": {
@@ -110,7 +109,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ともだちに あいます",
+          "en": "meet a friend"
+        },
+        {
+          "jp": "えきで あいます",
+          "en": "meet at the station"
+        },
+        {
+          "jp": "ひさしぶりに あいます",
+          "en": "meet after a long time"
+        },
+        {
+          "jp": "ぐうぜん あいます",
+          "en": "meet by chance"
+        },
+        {
+          "jp": "かのじょに あいたいです",
+          "en": "want to meet her"
+        }
+      ]
     },
     {
       "id": "n5_v_0002",
@@ -134,8 +155,8 @@
       "meaning": {
         "primary": "to enjoy oneself, play",
         "gloss": [
-          "play",
-          "enjoy oneself"
+          "enjoy oneself",
+          "play"
         ]
       },
       "forms": {
@@ -214,7 +235,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ともだちと あそびます",
+          "en": "play with friends"
+        },
+        {
+          "jp": "こうえんで あそびます",
+          "en": "play in the park"
+        },
+        {
+          "jp": "こどもと あそびます",
+          "en": "play with children"
+        },
+        {
+          "jp": "ゲームで あそびます",
+          "en": "play games"
+        },
+        {
+          "jp": "そとで あそびます",
+          "en": "play outside"
+        }
+      ]
     },
     {
       "id": "n5_v_0003",
@@ -238,8 +281,7 @@
       "meaning": {
         "primary": "to wash",
         "gloss": [
-          "wash",
-          "rinse"
+          "wash"
         ]
       },
       "forms": {
@@ -318,7 +360,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "てを あらいます",
+          "en": "wash hands"
+        },
+        {
+          "jp": "かおを あらいます",
+          "en": "wash face"
+        },
+        {
+          "jp": "さらを あらいます",
+          "en": "wash dishes"
+        },
+        {
+          "jp": "くるまを あらいます",
+          "en": "wash the car"
+        },
+        {
+          "jp": "ふくを あらいます",
+          "en": "wash clothes"
+        }
+      ]
     },
     {
       "id": "n5_v_0004",
@@ -342,8 +406,7 @@
       "meaning": {
         "primary": "to exist; be; have",
         "gloss": [
-          "exist (inanimate)",
-          "be located"
+          "exist; be; have"
         ]
       },
       "forms": {
@@ -430,7 +493,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "つくえの うえに ほんが あります",
+          "en": "there is a book on the desk"
+        },
+        {
+          "jp": "えきの ちかくに あります",
+          "en": "it exists near the station"
+        },
+        {
+          "jp": "おかねが ありません",
+          "en": "don't have money"
+        },
+        {
+          "jp": "じかんが ありますか",
+          "en": "do you have time?"
+        },
+        {
+          "jp": "もんだいが あります",
+          "en": "there is a problem"
+        }
+      ]
     },
     {
       "id": "n5_v_0007",
@@ -533,7 +618,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "えきまで あるきます",
+          "en": "walk to the station"
+        },
+        {
+          "jp": "こうえんで あるきます",
+          "en": "walk in the park"
+        },
+        {
+          "jp": "ゆっくり あるきます",
+          "en": "walk slowly"
+        },
+        {
+          "jp": "まいにち あるきます",
+          "en": "walk every day"
+        },
+        {
+          "jp": "30ぷん あるきます",
+          "en": "walk for 30 minutes"
+        }
+      ]
     },
     {
       "id": "n5_v_0008",
@@ -637,7 +744,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "なにか いいます",
+          "en": "say something"
+        },
+        {
+          "jp": "「はい」と いいます",
+          "en": "say \"yes\""
+        },
+        {
+          "jp": "ともだちに いいます",
+          "en": "say to a friend"
+        },
+        {
+          "jp": "ほんとうの ことを いいます",
+          "en": "tell the truth"
+        },
+        {
+          "jp": "もう いちど いいます",
+          "en": "say it again"
+        }
+      ]
     },
     {
       "id": "n5_v_0009",
@@ -661,8 +790,7 @@
       "meaning": {
         "primary": "to go",
         "gloss": [
-          "go",
-          "head to"
+          "go"
         ]
       },
       "forms": {
@@ -741,7 +869,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "がっこうに いきます",
+          "en": "go to school"
+        },
+        {
+          "jp": "にほんへ いきます",
+          "en": "go to Japan"
+        },
+        {
+          "jp": "かいものに いきます",
+          "en": "go shopping"
+        },
+        {
+          "jp": "とうきょうに いきます",
+          "en": "go to Tokyo"
+        },
+        {
+          "jp": "えいがを みに いきます",
+          "en": "go to see a movie"
+        }
+      ]
     },
     {
       "id": "n5_v_0010",
@@ -763,8 +913,7 @@
       "meaning": {
         "primary": "to hurry",
         "gloss": [
-          "hurry",
-          "rush"
+          "hurry"
         ]
       },
       "forms": {
@@ -843,7 +992,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "いそいで いきます",
+          "en": "go in a hurry"
+        },
+        {
+          "jp": "いそいで ください",
+          "en": "please hurry"
+        },
+        {
+          "jp": "いそぐ ひつようが あります",
+          "en": "need to hurry"
+        },
+        {
+          "jp": "いそいで たべます",
+          "en": "eat in a hurry"
+        },
+        {
+          "jp": "いそいで じゅんびします",
+          "en": "prepare quickly"
+        }
+      ]
     },
     {
       "id": "n5_v_0011",
@@ -868,7 +1039,7 @@
         "primary": "to need, require",
         "gloss": [
           "need",
-          "be necessary"
+          "require"
         ]
       },
       "forms": {
@@ -929,7 +1100,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "おかねが いります",
+          "en": "need money"
+        },
+        {
+          "jp": "じかんが いります",
+          "en": "need time"
+        },
+        {
+          "jp": "ビザが いります",
+          "en": "need a visa"
+        },
+        {
+          "jp": "なにか いりますか",
+          "en": "do you need anything?"
+        },
+        {
+          "jp": "パスポートが いります",
+          "en": "need a passport"
+        }
+      ]
     },
     {
       "id": "n5_v_0012",
@@ -952,7 +1145,7 @@
         "primary": "to move, work",
         "gloss": [
           "move",
-          "operate"
+          "work"
         ]
       },
       "forms": {
@@ -1031,7 +1224,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "くるまが うごきます",
+          "en": "the car moves"
+        },
+        {
+          "jp": "うごかないで ください",
+          "en": "please don't move"
+        },
+        {
+          "jp": "きかいが うごきます",
+          "en": "the machine works"
+        },
+        {
+          "jp": "ゆっくり うごきます",
+          "en": "move slowly"
+        },
+        {
+          "jp": "からだを うごかします",
+          "en": "move the body (exercise)"
+        }
+      ]
     },
     {
       "id": "n5_v_0013",
@@ -1055,8 +1270,7 @@
       "meaning": {
         "primary": "to sing",
         "gloss": [
-          "sing",
-          "recite (a poem)"
+          "sing"
         ]
       },
       "forms": {
@@ -1135,7 +1349,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "うたを うたいます",
+          "en": "sing a song"
+        },
+        {
+          "jp": "カラオケで うたいます",
+          "en": "sing at karaoke"
+        },
+        {
+          "jp": "にほんの うたを うたいます",
+          "en": "sing a Japanese song"
+        },
+        {
+          "jp": "じょうずに うたいます",
+          "en": "sing well"
+        },
+        {
+          "jp": "みんなで うたいます",
+          "en": "sing together"
+        }
+      ]
     },
     {
       "id": "n5_v_0014",
@@ -1159,8 +1395,7 @@
       "meaning": {
         "primary": "to sell",
         "gloss": [
-          "sell",
-          "betray"
+          "sell"
         ]
       },
       "forms": {
@@ -1239,7 +1474,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "くるまを うります",
+          "en": "sell a car"
+        },
+        {
+          "jp": "やさいを うります",
+          "en": "sell vegetables"
+        },
+        {
+          "jp": "みせで うります",
+          "en": "sell at a store"
+        },
+        {
+          "jp": "たかく うります",
+          "en": "sell at a high price"
+        },
+        {
+          "jp": "ほんを うります",
+          "en": "sell books"
+        }
+      ]
     },
     {
       "id": "n5_v_0015",
@@ -1264,8 +1521,7 @@
       "meaning": {
         "primary": "to put",
         "gloss": [
-          "put",
-          "place"
+          "put"
         ]
       },
       "forms": {
@@ -1344,7 +1600,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "つくえの うえに おきます",
+          "en": "put on the desk"
+        },
+        {
+          "jp": "かばんを おきます",
+          "en": "put down the bag"
+        },
+        {
+          "jp": "ほんを おきます",
+          "en": "place a book"
+        },
+        {
+          "jp": "そこに おいて ください",
+          "en": "please put it there"
+        },
+        {
+          "jp": "さいふを おきます",
+          "en": "put down the wallet"
+        }
+      ]
     },
     {
       "id": "n5_v_0016",
@@ -1369,8 +1647,7 @@
       "meaning": {
         "primary": "to send; escort",
         "gloss": [
-          "send",
-          "see someone off"
+          "send; escort"
         ]
       },
       "forms": {
@@ -1449,7 +1726,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "てがみを おくります",
+          "en": "send a letter"
+        },
+        {
+          "jp": "メールを おくります",
+          "en": "send an email"
+        },
+        {
+          "jp": "プレゼントを おくります",
+          "en": "send a present"
+        },
+        {
+          "jp": "ともだちに おくります",
+          "en": "send to a friend"
+        },
+        {
+          "jp": "にもつを おくります",
+          "en": "send a package"
+        }
+      ]
     },
     {
       "id": "n5_v_0018",
@@ -1553,7 +1852,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ボタンを おします",
+          "en": "push a button"
+        },
+        {
+          "jp": "ドアを おします",
+          "en": "push a door"
+        },
+        {
+          "jp": "ベルを おします",
+          "en": "press a bell"
+        },
+        {
+          "jp": "エレベーターの ボタンを おします",
+          "en": "push the elevator button"
+        },
+        {
+          "jp": "つよく おします",
+          "en": "push hard"
+        }
+      ]
     },
     {
       "id": "n5_v_0019",
@@ -1578,7 +1899,7 @@
         "primary": "to remember, recollect",
         "gloss": [
           "remember",
-          "recall"
+          "recollect"
         ]
       },
       "forms": {
@@ -1657,7 +1978,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "なまえを おもいだします",
+          "en": "remember the name"
+        },
+        {
+          "jp": "むかしの ことを おもいだします",
+          "en": "remember old times"
+        },
+        {
+          "jp": "きゅうに おもいだしました",
+          "en": "suddenly remembered"
+        },
+        {
+          "jp": "ゆめを おもいだします",
+          "en": "remember a dream"
+        },
+        {
+          "jp": "ともだちを おもいだします",
+          "en": "think of a friend"
+        }
+      ]
     },
     {
       "id": "n5_v_0020",
@@ -1682,9 +2025,7 @@
       "meaning": {
         "primary": "to think",
         "gloss": [
-          "think",
-          "consider",
-          "believe"
+          "think"
         ]
       },
       "forms": {
@@ -1763,7 +2104,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "そう おもいます",
+          "en": "think so"
+        },
+        {
+          "jp": "いいと おもいます",
+          "en": "think it's good"
+        },
+        {
+          "jp": "むずかしいと おもいます",
+          "en": "think it's difficult"
+        },
+        {
+          "jp": "いきたいと おもいます",
+          "en": "think I want to go"
+        },
+        {
+          "jp": "ほんとうだと おもいます",
+          "en": "think it's true"
+        }
+      ]
     },
     {
       "id": "n5_v_0021",
@@ -1866,7 +2229,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "プールで およぎます",
+          "en": "swim in the pool"
+        },
+        {
+          "jp": "うみで およぎます",
+          "en": "swim in the ocean"
+        },
+        {
+          "jp": "じょうずに およぎます",
+          "en": "swim well"
+        },
+        {
+          "jp": "まいにち およぎます",
+          "en": "swim every day"
+        },
+        {
+          "jp": "はやく およぎます",
+          "en": "swim fast"
+        }
+      ]
     },
     {
       "id": "n5_v_0022",
@@ -1890,9 +2275,7 @@
       "meaning": {
         "primary": "to withdraw",
         "gloss": [
-          "withdraw (money)",
-          "lower",
-          "take down"
+          "withdraw"
         ]
       },
       "forms": {
@@ -1971,7 +2354,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "おかねを おろします",
+          "en": "withdraw money"
+        },
+        {
+          "jp": "ぎんこうで おかねを おろします",
+          "en": "withdraw money at the bank"
+        },
+        {
+          "jp": "ATMで おろします",
+          "en": "withdraw at an ATM"
+        },
+        {
+          "jp": "にもつを おろします",
+          "en": "put down luggage"
+        },
+        {
+          "jp": "3まんえん おろしました",
+          "en": "withdrew 30,000 yen"
+        }
+      ]
     },
     {
       "id": "n5_v_0023",
@@ -1996,9 +2401,7 @@
       "meaning": {
         "primary": "to finish",
         "gloss": [
-          "finish",
-          "end",
-          "be over"
+          "finish"
         ]
       },
       "forms": {
@@ -2077,7 +2480,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "しごとが おわります",
+          "en": "work finishes"
+        },
+        {
+          "jp": "じゅぎょうが おわります",
+          "en": "class ends"
+        },
+        {
+          "jp": "かいぎが おわりました",
+          "en": "the meeting ended"
+        },
+        {
+          "jp": "なんじに おわりますか",
+          "en": "what time does it end?"
+        },
+        {
+          "jp": "もう おわりました",
+          "en": "already finished"
+        }
+      ]
     },
     {
       "id": "n5_v_0024",
@@ -2100,8 +2525,7 @@
       "meaning": {
         "primary": "to buy",
         "gloss": [
-          "buy",
-          "purchase"
+          "buy"
         ]
       },
       "forms": {
@@ -2180,7 +2604,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ほんを かいます",
+          "en": "buy a book"
+        },
+        {
+          "jp": "みせで かいます",
+          "en": "buy at a store"
+        },
+        {
+          "jp": "あたらしい くるまを かいます",
+          "en": "buy a new car"
+        },
+        {
+          "jp": "パンを かいます",
+          "en": "buy bread"
+        },
+        {
+          "jp": "プレゼントを かいます",
+          "en": "buy a present"
+        }
+      ]
     },
     {
       "id": "n5_v_0025",
@@ -2203,9 +2649,8 @@
       "meaning": {
         "primary": "to give back, return",
         "gloss": [
-          "return",
           "give back",
-          "pay back"
+          "return"
         ]
       },
       "forms": {
@@ -2284,7 +2729,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ほんを かえします",
+          "en": "return a book"
+        },
+        {
+          "jp": "おかねを かえします",
+          "en": "pay back money"
+        },
+        {
+          "jp": "としょかんに かえします",
+          "en": "return to the library"
+        },
+        {
+          "jp": "あした かえします",
+          "en": "will return tomorrow"
+        },
+        {
+          "jp": "ともだちに かえします",
+          "en": "return to a friend"
+        }
+      ]
     },
     {
       "id": "n5_v_0026",
@@ -2308,8 +2775,7 @@
         "primary": "to go home, return",
         "gloss": [
           "go home",
-          "return home",
-          "come back"
+          "return"
         ]
       },
       "forms": {
@@ -2388,7 +2854,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "いえに かえります",
+          "en": "go home"
+        },
+        {
+          "jp": "くにに かえります",
+          "en": "return to one's country"
+        },
+        {
+          "jp": "なんじに かえりますか",
+          "en": "what time will you go home?"
+        },
+        {
+          "jp": "はやく かえります",
+          "en": "go home early"
+        },
+        {
+          "jp": "いっしょに かえりましょう",
+          "en": "let's go home together"
+        }
+      ]
     },
     {
       "id": "n5_v_0027",
@@ -2413,9 +2901,8 @@
       "meaning": {
         "primary": "to take, cost (time or money)",
         "gloss": [
-          "take (time)",
-          "cost (money)",
-          "require"
+          "take",
+          "cost (time or money)"
         ]
       },
       "forms": {
@@ -2494,7 +2981,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "じかんが かかります",
+          "en": "it takes time"
+        },
+        {
+          "jp": "おかねが かかります",
+          "en": "it costs money"
+        },
+        {
+          "jp": "3じかん かかります",
+          "en": "it takes 3 hours"
+        },
+        {
+          "jp": "どのくらい かかりますか",
+          "en": "how long does it take?"
+        },
+        {
+          "jp": "たくさん かかりました",
+          "en": "it took a lot"
+        }
+      ]
     },
     {
       "id": "n5_v_0028",
@@ -2519,7 +3028,7 @@
         "gloss": [
           "write",
           "draw",
-          "compose"
+          "paint"
         ]
       },
       "forms": {
@@ -2598,7 +3107,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "てがみを かきます",
+          "en": "write a letter"
+        },
+        {
+          "jp": "なまえを かきます",
+          "en": "write one's name"
+        },
+        {
+          "jp": "レポートを かきます",
+          "en": "write a report"
+        },
+        {
+          "jp": "ペンで かきます",
+          "en": "write with a pen"
+        },
+        {
+          "jp": "にっきを かきます",
+          "en": "write a diary"
+        }
+      ]
     },
     {
       "id": "n5_v_0029",
@@ -2623,9 +3154,7 @@
       "meaning": {
         "primary": "to lend",
         "gloss": [
-          "lend",
-          "loan",
-          "rent out"
+          "lend"
         ]
       },
       "forms": {
@@ -2704,7 +3233,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "おかねを かします",
+          "en": "lend money"
+        },
+        {
+          "jp": "ほんを かします",
+          "en": "lend a book"
+        },
+        {
+          "jp": "ともだちに かします",
+          "en": "lend to a friend"
+        },
+        {
+          "jp": "ペンを かして ください",
+          "en": "please lend me a pen"
+        },
+        {
+          "jp": "かさを かします",
+          "en": "lend an umbrella"
+        }
+      ]
     },
     {
       "id": "n5_v_0030",
@@ -2727,8 +3278,7 @@
       "meaning": {
         "primary": "to win",
         "gloss": [
-          "win",
-          "gain victory"
+          "win"
         ]
       },
       "forms": {
@@ -2807,7 +3357,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "しあいに かちます",
+          "en": "win the game"
+        },
+        {
+          "jp": "あいてに かちます",
+          "en": "win against the opponent"
+        },
+        {
+          "jp": "ゲームに かちます",
+          "en": "win the game"
+        },
+        {
+          "jp": "きょうそうに かちます",
+          "en": "win the competition"
+        },
+        {
+          "jp": "かんたんに かちました",
+          "en": "won easily"
+        }
+      ]
     },
     {
       "id": "n5_v_0031",
@@ -2830,9 +3402,8 @@
       "meaning": {
         "primary": "to put on (a hat, etc.)",
         "gloss": [
-          "put on (head)",
-          "wear",
-          "be covered with"
+          "put on (a hat",
+          "etc.)"
         ]
       },
       "forms": {
@@ -2911,7 +3482,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ぼうしを かぶります",
+          "en": "wear a hat"
+        },
+        {
+          "jp": "キャップを かぶります",
+          "en": "wear a cap"
+        },
+        {
+          "jp": "ヘルメットを かぶります",
+          "en": "wear a helmet"
+        },
+        {
+          "jp": "まいにち ぼうしを かぶります",
+          "en": "wear a hat every day"
+        },
+        {
+          "jp": "あたまに かぶります",
+          "en": "wear on the head"
+        }
+      ]
     },
     {
       "id": "n5_v_0032",
@@ -2932,9 +3525,7 @@
       "meaning": {
         "primary": "to do one's best",
         "gloss": [
-          "do one's best",
-          "persevere",
-          "work hard"
+          "do one's best"
         ]
       },
       "forms": {
@@ -3013,7 +3604,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "しごとを がんばります",
+          "en": "do one's best at work"
+        },
+        {
+          "jp": "べんきょうを がんばります",
+          "en": "try hard at studying"
+        },
+        {
+          "jp": "まいにち がんばります",
+          "en": "try hard every day"
+        },
+        {
+          "jp": "これから がんばります",
+          "en": "will do my best from now"
+        },
+        {
+          "jp": "いっしょに がんばりましょう",
+          "en": "let's do our best together"
+        }
+      ]
     },
     {
       "id": "n5_v_0033",
@@ -3038,9 +3651,8 @@
       "meaning": {
         "primary": "to hear, listen",
         "gloss": [
-          "listen",
           "hear",
-          "ask"
+          "listen"
         ]
       },
       "forms": {
@@ -3119,7 +3731,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "おんがくを ききます",
+          "en": "listen to music"
+        },
+        {
+          "jp": "せんせいに ききます",
+          "en": "ask the teacher"
+        },
+        {
+          "jp": "はなしを ききます",
+          "en": "listen to a story"
+        },
+        {
+          "jp": "ラジオを ききます",
+          "en": "listen to the radio"
+        },
+        {
+          "jp": "しつもんを ききます",
+          "en": "listen to a question"
+        }
+      ]
     },
     {
       "id": "n5_v_0034",
@@ -3144,9 +3778,8 @@
       "meaning": {
         "primary": "to listen; hear",
         "gloss": [
-          "listen",
           "hear",
-          "ask"
+          "listen"
         ]
       },
       "forms": {
@@ -3225,7 +3858,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "おんがくを ききます",
+          "en": "listen to music"
+        },
+        {
+          "jp": "せんせいに ききます",
+          "en": "ask the teacher"
+        },
+        {
+          "jp": "はなしを ききます",
+          "en": "listen to a story"
+        },
+        {
+          "jp": "ラジオを ききます",
+          "en": "listen to the radio"
+        },
+        {
+          "jp": "しつもんを ききます",
+          "en": "listen to a question"
+        }
+      ]
     },
     {
       "id": "n5_v_0035",
@@ -3249,8 +3904,7 @@
         "primary": "to cut, slice",
         "gloss": [
           "cut",
-          "slice",
-          "sever"
+          "slice"
         ]
       },
       "forms": {
@@ -3329,7 +3983,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "かみを きります",
+          "en": "cut paper"
+        },
+        {
+          "jp": "やさいを きります",
+          "en": "cut vegetables"
+        },
+        {
+          "jp": "はさみで きります",
+          "en": "cut with scissors"
+        },
+        {
+          "jp": "ケーキを きります",
+          "en": "cut cake"
+        },
+        {
+          "jp": "かみを きります",
+          "en": "cut hair"
+        }
+      ]
     },
     {
       "id": "n5_v_0036",
@@ -3353,8 +4029,7 @@
         "primary": "to turn off",
         "gloss": [
           "turn off",
-          "erase",
-          "switch off"
+          "erase"
         ]
       },
       "forms": {
@@ -3433,7 +4108,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "でんきを けす",
+          "en": "turn off the light"
+        },
+        {
+          "jp": "エアコンを けす",
+          "en": "turn off the air conditioner"
+        },
+        {
+          "jp": "テレビを けす",
+          "en": "turn off the TV"
+        },
+        {
+          "jp": "ひを けす",
+          "en": "put out the fire"
+        },
+        {
+          "jp": "パソコンを けす",
+          "en": "turn off the computer"
+        }
+      ]
     },
     {
       "id": "n5_v_0037",
@@ -3456,9 +4153,7 @@
       "meaning": {
         "primary": "to touch",
         "gloss": [
-          "touch",
-          "feel",
-          "handle"
+          "touch"
         ]
       },
       "forms": {
@@ -3537,7 +4232,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "てで さわる",
+          "en": "touch with one's hand"
+        },
+        {
+          "jp": "さくひんに さわる",
+          "en": "touch the artwork"
+        },
+        {
+          "jp": "ペットに さわる",
+          "en": "touch a pet"
+        },
+        {
+          "jp": "かべに さわる",
+          "en": "touch the wall"
+        },
+        {
+          "jp": "さわらないで",
+          "en": "don't touch"
+        }
+      ]
     },
     {
       "id": "n5_v_0038",
@@ -3560,8 +4277,6 @@
       "meaning": {
         "primary": "to get to know",
         "gloss": [
-          "learn",
-          "find out",
           "get to know"
         ]
       },
@@ -3641,7 +4356,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "こたえを しる",
+          "en": "know the answer"
+        },
+        {
+          "jp": "にほんの ことを しる",
+          "en": "know about Japan"
+        },
+        {
+          "jp": "かれを しる",
+          "en": "know him"
+        },
+        {
+          "jp": "よく しる",
+          "en": "know well"
+        },
+        {
+          "jp": "しっている",
+          "en": "know (state of knowing)"
+        }
+      ]
     },
     {
       "id": "n5_v_0039",
@@ -3664,9 +4401,9 @@
       "meaning": {
         "primary": "to breathe in; inhale",
         "gloss": [
-          "breathe in",
+          "smoke",
           "inhale",
-          "absorb"
+          "breathe in"
         ]
       },
       "forms": {
@@ -3745,7 +4482,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "たばこを すう",
+          "en": "smoke cigarettes"
+        },
+        {
+          "jp": "くうきを すう",
+          "en": "breathe in air"
+        },
+        {
+          "jp": "ふかく すう",
+          "en": "inhale deeply"
+        },
+        {
+          "jp": "いきを すう",
+          "en": "inhale/breathe in"
+        },
+        {
+          "jp": "きんえんで すえない",
+          "en": "can't smoke (in a no-smoking area)"
+        }
+      ]
     },
     {
       "id": "n5_v_0040",
@@ -3768,9 +4527,7 @@
       "meaning": {
         "primary": "to live; reside",
         "gloss": [
-          "live",
-          "reside",
-          "dwell"
+          "live; reside"
         ]
       },
       "forms": {
@@ -3849,7 +4606,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "とうきょうに すむ",
+          "en": "live in Tokyo"
+        },
+        {
+          "jp": "アパートに すむ",
+          "en": "live in an apartment"
+        },
+        {
+          "jp": "にほんに すむ",
+          "en": "live in Japan"
+        },
+        {
+          "jp": "ひとりで すむ",
+          "en": "live alone"
+        },
+        {
+          "jp": "ここに すむ",
+          "en": "live here"
+        }
+      ]
     },
     {
       "id": "n5_v_0041",
@@ -3872,9 +4651,7 @@
       "meaning": {
         "primary": "to sit down",
         "gloss": [
-          "sit down",
-          "be seated",
-          "take a seat"
+          "sit down"
         ]
       },
       "forms": {
@@ -3953,7 +4730,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "いすに すわる",
+          "en": "sit on a chair"
+        },
+        {
+          "jp": "ここに すわる",
+          "en": "sit here"
+        },
+        {
+          "jp": "ゆかに すわる",
+          "en": "sit on the floor"
+        },
+        {
+          "jp": "となりに すわる",
+          "en": "sit next to"
+        },
+        {
+          "jp": "すわって ください",
+          "en": "please sit down"
+        }
+      ]
     },
     {
       "id": "n5_v_0042",
@@ -3977,8 +4776,9 @@
         "primary": "to take out, hand in, send",
         "gloss": [
           "take out",
-          "submit",
-          "put out"
+          "hand in",
+          "send",
+          "make (a sound)"
         ]
       },
       "forms": {
@@ -4057,7 +4857,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ゴミを だす",
+          "en": "take out the garbage"
+        },
+        {
+          "jp": "しゅくだいを だす",
+          "en": "submit homework"
+        },
+        {
+          "jp": "てがみを だす",
+          "en": "mail a letter"
+        },
+        {
+          "jp": "おかねを だす",
+          "en": "pay/take out money"
+        },
+        {
+          "jp": "こたえを だす",
+          "en": "come up with an answer"
+        }
+      ]
     },
     {
       "id": "n5_v_0043",
@@ -4078,9 +4900,7 @@
       "meaning": {
         "primary": "to stand up",
         "gloss": [
-          "stand up",
-          "rise",
-          "get to one's feet"
+          "stand up"
         ]
       },
       "forms": {
@@ -4159,7 +4979,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ここに たつ",
+          "en": "stand here"
+        },
+        {
+          "jp": "でんしゃで たつ",
+          "en": "stand on the train"
+        },
+        {
+          "jp": "たって ください",
+          "en": "please stand"
+        },
+        {
+          "jp": "まっすぐ たつ",
+          "en": "stand straight"
+        },
+        {
+          "jp": "ずっと たつ",
+          "en": "keep standing"
+        }
+      ]
     },
     {
       "id": "n5_v_0044",
@@ -4182,9 +5024,7 @@
       "meaning": {
         "primary": "to use",
         "gloss": [
-          "use",
-          "make use of",
-          "employ"
+          "use"
         ]
       },
       "forms": {
@@ -4263,7 +5103,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "パソコンを つかう",
+          "en": "use a computer"
+        },
+        {
+          "jp": "にほんごを つかう",
+          "en": "use Japanese"
+        },
+        {
+          "jp": "おかねを つかう",
+          "en": "spend/use money"
+        },
+        {
+          "jp": "じしょを つかう",
+          "en": "use a dictionary"
+        },
+        {
+          "jp": "よく つかう",
+          "en": "use often"
+        }
+      ]
     },
     {
       "id": "n5_v_0045",
@@ -4286,9 +5148,7 @@
       "meaning": {
         "primary": "to arrive",
         "gloss": [
-          "arrive",
-          "reach",
-          "get to"
+          "arrive"
         ]
       },
       "forms": {
@@ -4367,7 +5227,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "えきに つく",
+          "en": "arrive at the station"
+        },
+        {
+          "jp": "いえに つく",
+          "en": "arrive home"
+        },
+        {
+          "jp": "とうきょうに つく",
+          "en": "arrive in Tokyo"
+        },
+        {
+          "jp": "やっと つく",
+          "en": "finally arrive"
+        },
+        {
+          "jp": "くじに つく",
+          "en": "arrive at 9 o'clock"
+        }
+      ]
     },
     {
       "id": "n5_v_0046",
@@ -4391,8 +5273,7 @@
         "primary": "to make",
         "gloss": [
           "make",
-          "produce",
-          "prepare"
+          "build"
         ]
       },
       "forms": {
@@ -4471,7 +5352,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "りょうりを つくる",
+          "en": "make food/cook"
+        },
+        {
+          "jp": "ケーキを つくる",
+          "en": "make a cake"
+        },
+        {
+          "jp": "いえを つくる",
+          "en": "build a house"
+        },
+        {
+          "jp": "ともだちを つくる",
+          "en": "make friends"
+        },
+        {
+          "jp": "けいかくを つくる",
+          "en": "make a plan"
+        }
+      ]
     },
     {
       "id": "n5_v_0047",
@@ -4495,9 +5398,7 @@
       "meaning": {
         "primary": "to take (someone)",
         "gloss": [
-          "take (someone to a place)",
-          "take (someone) along",
-          "lead away"
+          "take (someone)"
         ]
       },
       "forms": {
@@ -4576,7 +5477,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "こどもを がっこうに つれて いく",
+          "en": "take a child to school"
+        },
+        {
+          "jp": "ともだちを えいがに つれて いく",
+          "en": "take a friend to a movie"
+        },
+        {
+          "jp": "いぬを さんぽに つれて いく",
+          "en": "take a dog for a walk"
+        },
+        {
+          "jp": "びょういんに つれて いく",
+          "en": "take (someone) to the hospital"
+        },
+        {
+          "jp": "うみに つれて いく",
+          "en": "take (someone) to the beach"
+        }
+      ]
     },
     {
       "id": "n5_v_0048",
@@ -4599,9 +5522,7 @@
       "meaning": {
         "primary": "to help",
         "gloss": [
-          "help",
-          "assist",
-          "aid"
+          "help"
         ]
       },
       "forms": {
@@ -4680,7 +5601,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ははを てつだう",
+          "en": "help one's mother"
+        },
+        {
+          "jp": "りょうりを てつだう",
+          "en": "help with cooking"
+        },
+        {
+          "jp": "しごとを てつだう",
+          "en": "help with work"
+        },
+        {
+          "jp": "しゅくだいを てつだう",
+          "en": "help with homework"
+        },
+        {
+          "jp": "そうじを てつだう",
+          "en": "help with cleaning"
+        }
+      ]
     },
     {
       "id": "n5_v_0049",
@@ -4703,9 +5646,7 @@
       "meaning": {
         "primary": "to stay",
         "gloss": [
-          "stay (at a hotel/inn)",
-          "lodge",
-          "put up (at)"
+          "stay"
         ]
       },
       "forms": {
@@ -4784,7 +5725,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ホテルに とまる",
+          "en": "stay at a hotel"
+        },
+        {
+          "jp": "ともだちの いえに とまる",
+          "en": "stay at a friend's house"
+        },
+        {
+          "jp": "りょかんに とまる",
+          "en": "stay at a ryokan"
+        },
+        {
+          "jp": "ひとばん とまる",
+          "en": "stay one night"
+        },
+        {
+          "jp": "きょうとに とまる",
+          "en": "stay in Kyoto"
+        }
+      ]
     },
     {
       "id": "n5_v_0050",
@@ -4807,9 +5770,7 @@
       "meaning": {
         "primary": "to take",
         "gloss": [
-          "take",
-          "pick up",
-          "grab"
+          "take"
         ]
       },
       "forms": {
@@ -4888,7 +5849,41 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "しゃしんを とる",
+          "en": "take a photo"
+        },
+        {
+          "jp": "やすみを とる",
+          "en": "take a break/holiday"
+        },
+        {
+          "jp": "めもを とる",
+          "en": "take notes"
+        },
+        {
+          "jp": "れいぞうこから ぎゅうにゅうを とる",
+          "en": "take milk from the fridge"
+        },
+        {
+          "jp": "たなから ほんを とる",
+          "en": "take a book from the shelf"
+        },
+        {
+          "jp": "ははに しおを とる",
+          "en": "get salt for mother"
+        },
+        {
+          "jp": "ひゃくてんを とる",
+          "en": "score 100 points"
+        },
+        {
+          "jp": "よい せいせきを とる",
+          "en": "get good grades"
+        }
+      ]
     },
     {
       "id": "n5_v_0051",
@@ -4911,9 +5906,7 @@
       "meaning": {
         "primary": "to take (a photo)",
         "gloss": [
-          "take (a photo)",
-          "film",
-          "record"
+          "take (a photo)"
         ]
       },
       "forms": {
@@ -4992,7 +5985,41 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "しゃしんを とる",
+          "en": "take a photo"
+        },
+        {
+          "jp": "びでおを とる",
+          "en": "take a video"
+        },
+        {
+          "jp": "きねんしゃしんを とる",
+          "en": "take a commemorative photo"
+        },
+        {
+          "jp": "きょうとで しゃしんを とる",
+          "en": "take photos in Kyoto"
+        },
+        {
+          "jp": "こうえんで とる",
+          "en": "take photos at the park"
+        },
+        {
+          "jp": "ともだちと いっしょに とる",
+          "en": "take photos with friends"
+        },
+        {
+          "jp": "すまほで とる",
+          "en": "take photos with a smartphone"
+        },
+        {
+          "jp": "かめらで とる",
+          "en": "take photos with a camera"
+        }
+      ]
     },
     {
       "id": "n5_v_0052",
@@ -5014,8 +6041,7 @@
       "meaning": {
         "primary": "to grow old",
         "gloss": [
-          "grow old",
-          "age"
+          "grow old"
         ]
       },
       "forms": {
@@ -5094,7 +6120,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "だんだん としを とる",
+          "en": "gradually grow old"
+        },
+        {
+          "jp": "としを とっている",
+          "en": "be old/aged"
+        },
+        {
+          "jp": "としを とると",
+          "en": "when one gets old"
+        },
+        {
+          "jp": "まだ としを とらない",
+          "en": "not old yet"
+        },
+        {
+          "jp": "としを とった",
+          "en": "got old/aged"
+        }
+      ]
     },
     {
       "id": "n5_v_0053",
@@ -5117,9 +6165,7 @@
       "meaning": {
         "primary": "to repair",
         "gloss": [
-          "fix",
-          "repair",
-          "correct"
+          "repair"
         ]
       },
       "forms": {
@@ -5198,7 +6244,41 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "くるまを なおす",
+          "en": "repair a car"
+        },
+        {
+          "jp": "ぱそこんを なおす",
+          "en": "fix a computer"
+        },
+        {
+          "jp": "とけいを なおす",
+          "en": "repair a watch"
+        },
+        {
+          "jp": "まちがいを なおす",
+          "en": "correct a mistake"
+        },
+        {
+          "jp": "こたえを なおす",
+          "en": "correct an answer"
+        },
+        {
+          "jp": "みせに なおして もらう",
+          "en": "have the shop repair it"
+        },
+        {
+          "jp": "せんもんかに なおして もらう",
+          "en": "have an expert fix it"
+        },
+        {
+          "jp": "しゅうりてんで なおす",
+          "en": "repair at a repair shop"
+        }
+      ]
     },
     {
       "id": "n5_v_0054",
@@ -5221,9 +6301,7 @@
       "meaning": {
         "primary": "to lose",
         "gloss": [
-          "lose",
-          "misplace",
-          "get rid of"
+          "lose"
         ]
       },
       "forms": {
@@ -5302,7 +6380,45 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "さいふを なくす",
+          "en": "lose a wallet"
+        },
+        {
+          "jp": "かぎを なくす",
+          "en": "lose keys"
+        },
+        {
+          "jp": "けいたいを なくす",
+          "en": "lose a mobile phone"
+        },
+        {
+          "jp": "えきで なくす",
+          "en": "lose at the station"
+        },
+        {
+          "jp": "がっこうで なくす",
+          "en": "lose at school"
+        },
+        {
+          "jp": "ぱすぽーとを なくして しまう",
+          "en": "end up losing passport"
+        },
+        {
+          "jp": "たいせつな ものを なくして しまう",
+          "en": "end up losing something important"
+        },
+        {
+          "jp": "じしんを なくす",
+          "en": "lose confidence"
+        },
+        {
+          "jp": "やるきを なくす",
+          "en": "lose motivation"
+        }
+      ]
     },
     {
       "id": "n5_v_0055",
@@ -5325,9 +6441,7 @@
       "meaning": {
         "primary": "to learn",
         "gloss": [
-          "learn",
-          "take lessons in",
-          "be taught"
+          "learn"
         ]
       },
       "forms": {
@@ -5406,7 +6520,45 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "にほんごを ならう",
+          "en": "learn Japanese"
+        },
+        {
+          "jp": "ぴあのを ならう",
+          "en": "learn piano"
+        },
+        {
+          "jp": "さどうを ならう",
+          "en": "learn tea ceremony"
+        },
+        {
+          "jp": "せんせいに ならう",
+          "en": "learn from a teacher"
+        },
+        {
+          "jp": "ははに ならう",
+          "en": "learn from mother"
+        },
+        {
+          "jp": "がっこうで ならう",
+          "en": "learn at school"
+        },
+        {
+          "jp": "きょうしつで ならう",
+          "en": "learn at a classroom"
+        },
+        {
+          "jp": "ともだちから えいごを ならう",
+          "en": "learn English from a friend"
+        },
+        {
+          "jp": "そぼから りょうりを ならう",
+          "en": "learn cooking from grandmother"
+        }
+      ]
     },
     {
       "id": "n5_v_0056",
@@ -5429,9 +6581,7 @@
       "meaning": {
         "primary": "to become",
         "gloss": [
-          "become",
-          "get",
-          "turn into"
+          "become"
         ]
       },
       "forms": {
@@ -5510,7 +6660,65 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "いしゃに なる",
+          "en": "become a doctor"
+        },
+        {
+          "jp": "おとなに なる",
+          "en": "become an adult"
+        },
+        {
+          "jp": "せんせいに なる",
+          "en": "become a teacher"
+        },
+        {
+          "jp": "あつく なる",
+          "en": "become hot"
+        },
+        {
+          "jp": "さむく なる",
+          "en": "become cold"
+        },
+        {
+          "jp": "じょうずに なる",
+          "en": "become skillful"
+        },
+        {
+          "jp": "げんきに なる",
+          "en": "become healthy/energetic"
+        },
+        {
+          "jp": "ゆうめいに なる",
+          "en": "become famous"
+        },
+        {
+          "jp": "べんりに なる",
+          "en": "become convenient"
+        },
+        {
+          "jp": "さんじに なる",
+          "en": "become 3 o'clock"
+        },
+        {
+          "jp": "はるに なる",
+          "en": "become spring"
+        },
+        {
+          "jp": "よるに なる",
+          "en": "become night"
+        },
+        {
+          "jp": "いく ことに なる",
+          "en": "it has been decided to go"
+        },
+        {
+          "jp": "ひっこす ことに なる",
+          "en": "it has been decided to move"
+        }
+      ]
     },
     {
       "id": "n5_v_0057",
@@ -5533,9 +6741,7 @@
       "meaning": {
         "primary": "to take off",
         "gloss": [
-          "take off",
-          "undress",
-          "remove (clothing)"
+          "take off"
         ]
       },
       "forms": {
@@ -5614,7 +6820,45 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "くつを ぬぐ",
+          "en": "take off shoes"
+        },
+        {
+          "jp": "こーとを ぬぐ",
+          "en": "take off a coat"
+        },
+        {
+          "jp": "しゃつを ぬぐ",
+          "en": "take off a shirt"
+        },
+        {
+          "jp": "げんかんで ぬぐ",
+          "en": "take off at the entrance"
+        },
+        {
+          "jp": "へやで ぬぐ",
+          "en": "take off in the room"
+        },
+        {
+          "jp": "くつを ぬいで はいる",
+          "en": "take off shoes and enter"
+        },
+        {
+          "jp": "ふくを ぬいで ねる",
+          "en": "take off clothes and sleep"
+        },
+        {
+          "jp": "ふくを ぜんぶ ぬぐ",
+          "en": "take off all clothes"
+        },
+        {
+          "jp": "くつしたも ぬぐ",
+          "en": "also take off socks"
+        }
+      ]
     },
     {
       "id": "n5_v_0058",
@@ -5637,9 +6881,7 @@
       "meaning": {
         "primary": "to climb",
         "gloss": [
-          "climb",
-          "ascend",
-          "go up"
+          "climb"
         ]
       },
       "forms": {
@@ -5718,7 +6960,45 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "やまを のぼる",
+          "en": "climb a mountain"
+        },
+        {
+          "jp": "ふじさんを のぼる",
+          "en": "climb Mt. Fuji"
+        },
+        {
+          "jp": "かいだんを のぼる",
+          "en": "climb stairs"
+        },
+        {
+          "jp": "ちょうじょうに のぼる",
+          "en": "climb to the summit"
+        },
+        {
+          "jp": "とうに のぼる",
+          "en": "climb the tower"
+        },
+        {
+          "jp": "ともだちと のぼる",
+          "en": "climb with friends"
+        },
+        {
+          "jp": "ぐるーぷで のぼる",
+          "en": "climb in a group"
+        },
+        {
+          "jp": "ゆっくり のぼる",
+          "en": "climb slowly"
+        },
+        {
+          "jp": "いそいで のぼる",
+          "en": "climb in a hurry"
+        }
+      ]
     },
     {
       "id": "n5_v_0059",
@@ -5741,9 +7021,7 @@
       "meaning": {
         "primary": "to drink",
         "gloss": [
-          "drink",
-          "swallow",
-          "take (medicine)"
+          "drink"
         ]
       },
       "forms": {
@@ -5822,7 +7100,53 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "みずを のむ",
+          "en": "drink water"
+        },
+        {
+          "jp": "こーひーを のむ",
+          "en": "drink coffee"
+        },
+        {
+          "jp": "おちゃを のむ",
+          "en": "drink tea"
+        },
+        {
+          "jp": "かふぇで のむ",
+          "en": "drink at a cafe"
+        },
+        {
+          "jp": "いえで のむ",
+          "en": "drink at home"
+        },
+        {
+          "jp": "ともだちと のむ",
+          "en": "drink with friends"
+        },
+        {
+          "jp": "どうりょうと のむ",
+          "en": "drink with colleagues"
+        },
+        {
+          "jp": "くすりを のむ",
+          "en": "take medicine"
+        },
+        {
+          "jp": "びたみんを のむ",
+          "en": "take vitamins"
+        },
+        {
+          "jp": "のみながら はなす",
+          "en": "talk while drinking"
+        },
+        {
+          "jp": "のみながら たべる",
+          "en": "eat while drinking"
+        }
+      ]
     },
     {
       "id": "n5_v_0062",
@@ -5845,9 +7169,7 @@
       "meaning": {
         "primary": "to ride",
         "gloss": [
-          "ride",
-          "get on",
-          "board"
+          "ride"
         ]
       },
       "forms": {
@@ -5926,7 +7248,49 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "でんしゃに のる",
+          "en": "ride a train"
+        },
+        {
+          "jp": "ばすに のる",
+          "en": "ride a bus"
+        },
+        {
+          "jp": "ひこうきに のる",
+          "en": "board a plane"
+        },
+        {
+          "jp": "じてんしゃに のる",
+          "en": "ride a bicycle"
+        },
+        {
+          "jp": "えきで のる",
+          "en": "board at the station"
+        },
+        {
+          "jp": "くうこうで のる",
+          "en": "board at the airport"
+        },
+        {
+          "jp": "でんしゃに のって いく",
+          "en": "go by train"
+        },
+        {
+          "jp": "ばすに のって かえる",
+          "en": "go home by bus"
+        },
+        {
+          "jp": "いちじかん のる",
+          "en": "ride for 1 hour"
+        },
+        {
+          "jp": "ながく のる",
+          "en": "ride for a long time"
+        }
+      ]
     },
     {
       "id": "n5_v_0063",
@@ -5949,9 +7313,7 @@
       "meaning": {
         "primary": "to enter",
         "gloss": [
-          "enter",
-          "go into",
-          "join"
+          "enter"
         ]
       },
       "forms": {
@@ -6030,7 +7392,53 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "へやに はいる",
+          "en": "enter a room"
+        },
+        {
+          "jp": "がっこうに はいる",
+          "en": "enter school"
+        },
+        {
+          "jp": "かいしゃに はいる",
+          "en": "enter a company/join a company"
+        },
+        {
+          "jp": "はこに はいる",
+          "en": "fit in a box"
+        },
+        {
+          "jp": "ばっぐに はいる",
+          "en": "fit in a bag"
+        },
+        {
+          "jp": "まいにち おふろに はいる",
+          "en": "take a bath every day"
+        },
+        {
+          "jp": "よる おふろに はいる",
+          "en": "take a bath at night"
+        },
+        {
+          "jp": "くらぶに はいる",
+          "en": "join a club"
+        },
+        {
+          "jp": "さーくるに はいる",
+          "en": "join a circle"
+        },
+        {
+          "jp": "かどを はいる",
+          "en": "turn at the corner"
+        },
+        {
+          "jp": "みぎを はいる",
+          "en": "turn right"
+        }
+      ]
     },
     {
       "id": "n5_v_0066",
@@ -6053,9 +7461,8 @@
       "meaning": {
         "primary": "to put on",
         "gloss": [
-          "put on (shoes)",
-          "wear",
-          "slip on"
+          "put on",
+          "wear (below waist)"
         ]
       },
       "forms": {
@@ -6134,7 +7541,49 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "くつを はく",
+          "en": "put on shoes"
+        },
+        {
+          "jp": "すにーかーを はく",
+          "en": "put on sneakers"
+        },
+        {
+          "jp": "さんだるを はく",
+          "en": "put on sandals"
+        },
+        {
+          "jp": "ずぼんを はく",
+          "en": "put on pants"
+        },
+        {
+          "jp": "じーんずを はく",
+          "en": "put on jeans"
+        },
+        {
+          "jp": "すかーとを はく",
+          "en": "put on a skirt"
+        },
+        {
+          "jp": "げんかんで はく",
+          "en": "put on at the entrance"
+        },
+        {
+          "jp": "そとで はく",
+          "en": "wear outside"
+        },
+        {
+          "jp": "はいて でかける",
+          "en": "put on and go out"
+        },
+        {
+          "jp": "はいて あるく",
+          "en": "put on and walk"
+        }
+      ]
     },
     {
       "id": "n5_v_0067",
@@ -6157,9 +7606,7 @@
       "meaning": {
         "primary": "to work",
         "gloss": [
-          "work",
-          "labor",
-          "be employed"
+          "work"
         ]
       },
       "forms": {
@@ -6238,7 +7685,53 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "かいしゃで はたらく",
+          "en": "work at a company"
+        },
+        {
+          "jp": "びょういんで はたらく",
+          "en": "work at a hospital"
+        },
+        {
+          "jp": "れすとらんで はたらく",
+          "en": "work at a restaurant"
+        },
+        {
+          "jp": "いしゃとして はたらく",
+          "en": "work as a doctor"
+        },
+        {
+          "jp": "せんせいとして はたらく",
+          "en": "work as a teacher"
+        },
+        {
+          "jp": "はちじかん はたらく",
+          "en": "work for 8 hours"
+        },
+        {
+          "jp": "まいにち はたらく",
+          "en": "work every day"
+        },
+        {
+          "jp": "いっしょうけんめい はたらく",
+          "en": "work hard"
+        },
+        {
+          "jp": "ゆっくり はたらく",
+          "en": "work slowly"
+        },
+        {
+          "jp": "ろくじまで はたらく",
+          "en": "work until 6 o'clock"
+        },
+        {
+          "jp": "よるまで はたらく",
+          "en": "work until night"
+        }
+      ]
     },
     {
       "id": "n5_v_0068",
@@ -6264,9 +7757,7 @@
         "primary": "to speak",
         "gloss": [
           "speak",
-          "talk",
-          "tell",
-          "converse"
+          "talk"
         ]
       },
       "forms": {
@@ -6345,7 +7836,49 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "にほんごを はなす",
+          "en": "speak Japanese"
+        },
+        {
+          "jp": "えいごを はなす",
+          "en": "speak English"
+        },
+        {
+          "jp": "ともだちと はなす",
+          "en": "talk with friends"
+        },
+        {
+          "jp": "せんせいと はなす",
+          "en": "talk with a teacher"
+        },
+        {
+          "jp": "りょこうに ついて はなす",
+          "en": "talk about travel"
+        },
+        {
+          "jp": "しごとに ついて はなす",
+          "en": "talk about work"
+        },
+        {
+          "jp": "ははに はなす",
+          "en": "speak to mother"
+        },
+        {
+          "jp": "じょうしに はなす",
+          "en": "speak to one's boss"
+        },
+        {
+          "jp": "でんわで はなす",
+          "en": "speak on the phone"
+        },
+        {
+          "jp": "きょうしつで はなす",
+          "en": "speak in the classroom"
+        }
+      ]
     },
     {
       "id": "n5_v_0069",
@@ -6368,9 +7901,7 @@
       "meaning": {
         "primary": "to pay",
         "gloss": [
-          "pay (money, bill)",
-          "brush off",
-          "clear away"
+          "pay"
         ]
       },
       "forms": {
@@ -6449,7 +7980,53 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "おかねを はらう",
+          "en": "pay money"
+        },
+        {
+          "jp": "せんえんを はらう",
+          "en": "pay 1000 yen"
+        },
+        {
+          "jp": "しょくじを はらう",
+          "en": "pay for a meal"
+        },
+        {
+          "jp": "やちんを はらう",
+          "en": "pay rent"
+        },
+        {
+          "jp": "じゅぎょうりょうを はらう",
+          "en": "pay tuition"
+        },
+        {
+          "jp": "れじで はらう",
+          "en": "pay at the register"
+        },
+        {
+          "jp": "みせで はらう",
+          "en": "pay at the store"
+        },
+        {
+          "jp": "かーどで はらう",
+          "en": "pay by card"
+        },
+        {
+          "jp": "げんきんで はらう",
+          "en": "pay in cash"
+        },
+        {
+          "jp": "てんいんに はらう",
+          "en": "pay the clerk"
+        },
+        {
+          "jp": "ともだちに はらう",
+          "en": "pay a friend"
+        }
+      ]
     },
     {
       "id": "n5_v_0070",
@@ -6472,9 +8049,7 @@
       "meaning": {
         "primary": "to play (instrument)",
         "gloss": [
-          "play (stringed or keyboard instrument)",
-          "strum",
-          "perform"
+          "play (instrument)"
         ]
       },
       "forms": {
@@ -6553,7 +8128,45 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ぴあのを ひく",
+          "en": "play piano"
+        },
+        {
+          "jp": "ぎたーを ひく",
+          "en": "play guitar"
+        },
+        {
+          "jp": "ばいおりんを ひく",
+          "en": "play violin"
+        },
+        {
+          "jp": "きょくを ひく",
+          "en": "play a song"
+        },
+        {
+          "jp": "べーとーべんを ひく",
+          "en": "play Beethoven"
+        },
+        {
+          "jp": "いえで ひく",
+          "en": "play at home"
+        },
+        {
+          "jp": "こんさーとで ひく",
+          "en": "play at a concert"
+        },
+        {
+          "jp": "じょうずに ひく",
+          "en": "play well"
+        },
+        {
+          "jp": "ゆっくり ひく",
+          "en": "play slowly"
+        }
+      ]
     },
     {
       "id": "n5_v_0071",
@@ -6576,11 +8189,7 @@
       "meaning": {
         "primary": "to pull",
         "gloss": [
-          "pull",
-          "draw",
-          "tug",
-          "catch (a cold)",
-          "look up (in a dictionary)"
+          "pull"
         ]
       },
       "forms": {
@@ -6659,7 +8268,53 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "どあを ひく",
+          "en": "pull a door"
+        },
+        {
+          "jp": "つなを ひく",
+          "en": "pull a rope"
+        },
+        {
+          "jp": "にもつを ひく",
+          "en": "pull luggage"
+        },
+        {
+          "jp": "うしろに ひく",
+          "en": "pull backward"
+        },
+        {
+          "jp": "てまえに ひく",
+          "en": "pull toward oneself"
+        },
+        {
+          "jp": "あかい せんを ひく",
+          "en": "draw a red line"
+        },
+        {
+          "jp": "まっすぐ せんを ひく",
+          "en": "draw a straight line"
+        },
+        {
+          "jp": "かぜを ひく",
+          "en": "catch a cold"
+        },
+        {
+          "jp": "ひどい かぜを ひく",
+          "en": "catch a bad cold"
+        },
+        {
+          "jp": "じしょを ひく",
+          "en": "look up in a dictionary"
+        },
+        {
+          "jp": "ことばを ひく",
+          "en": "look up a word"
+        }
+      ]
     },
     {
       "id": "n5_v_0072",
@@ -6682,9 +8337,7 @@
       "meaning": {
         "primary": "to fall (rain/snow)",
         "gloss": [
-          "fall (of rain, snow, ash, etc.)",
-          "come down",
-          "precipitate"
+          "fall (rain/snow)"
         ]
       },
       "forms": {
@@ -6763,7 +8416,53 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "あめが ふる",
+          "en": "rain falls"
+        },
+        {
+          "jp": "ゆきが ふる",
+          "en": "snow falls"
+        },
+        {
+          "jp": "たくさん ふる",
+          "en": "fall a lot"
+        },
+        {
+          "jp": "すこし ふる",
+          "en": "fall a little"
+        },
+        {
+          "jp": "はげしく ふる",
+          "en": "fall heavily"
+        },
+        {
+          "jp": "とうきょうで ふる",
+          "en": "fall in Tokyo"
+        },
+        {
+          "jp": "ここで ふる",
+          "en": "fall here"
+        },
+        {
+          "jp": "あした ふる",
+          "en": "fall tomorrow"
+        },
+        {
+          "jp": "よる ふる",
+          "en": "fall at night"
+        },
+        {
+          "jp": "あめが ふりはじめる",
+          "en": "rain starts falling"
+        },
+        {
+          "jp": "ゆきが ふりはじめる",
+          "en": "snow starts falling"
+        }
+      ]
     },
     {
       "id": "n5_v_0073",
@@ -6786,10 +8485,7 @@
       "meaning": {
         "primary": "to turn",
         "gloss": [
-          "turn",
-          "bend",
-          "curve",
-          "go around a corner"
+          "turn"
         ]
       },
       "forms": {
@@ -6868,7 +8564,49 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "みぎに まがる",
+          "en": "turn right"
+        },
+        {
+          "jp": "ひだりに まがる",
+          "en": "turn left"
+        },
+        {
+          "jp": "まっすぐ まがる",
+          "en": "go straight (not turn)"
+        },
+        {
+          "jp": "かどを まがる",
+          "en": "turn at the corner"
+        },
+        {
+          "jp": "こうさてんを まがる",
+          "en": "turn at the intersection"
+        },
+        {
+          "jp": "しんごうを まがる",
+          "en": "turn at the traffic light"
+        },
+        {
+          "jp": "みちが まがる",
+          "en": "the road bends"
+        },
+        {
+          "jp": "せんが まがる",
+          "en": "the line curves"
+        },
+        {
+          "jp": "つぎの かどで まがる",
+          "en": "turn at the next corner"
+        },
+        {
+          "jp": "ここで まがる",
+          "en": "turn here"
+        }
+      ]
     },
     {
       "id": "n5_v_0074",
@@ -6891,9 +8629,7 @@
       "meaning": {
         "primary": "to wait",
         "gloss": [
-          "wait",
-          "await",
-          "look forward to"
+          "wait"
         ]
       },
       "forms": {
@@ -6972,7 +8708,53 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ともだちを まつ",
+          "en": "wait for a friend"
+        },
+        {
+          "jp": "せんせいを まつ",
+          "en": "wait for a teacher"
+        },
+        {
+          "jp": "えきで まつ",
+          "en": "wait at the station"
+        },
+        {
+          "jp": "ここで まつ",
+          "en": "wait here"
+        },
+        {
+          "jp": "そとで まつ",
+          "en": "wait outside"
+        },
+        {
+          "jp": "さんじゅっぷん まつ",
+          "en": "wait for 30 minutes"
+        },
+        {
+          "jp": "ながく まつ",
+          "en": "wait for a long time"
+        },
+        {
+          "jp": "ごじまで まつ",
+          "en": "wait until 5 o'clock"
+        },
+        {
+          "jp": "あしたまで まつ",
+          "en": "wait until tomorrow"
+        },
+        {
+          "jp": "ともだちを まって いる",
+          "en": "be waiting for a friend"
+        },
+        {
+          "jp": "ずっと まって いる",
+          "en": "be waiting for a long time"
+        }
+      ]
     },
     {
       "id": "n5_v_0075",
@@ -6995,11 +8777,7 @@
       "meaning": {
         "primary": "to turn",
         "gloss": [
-          "turn",
-          "rotate",
-          "spin",
-          "pass around",
-          "circulate"
+          "turn"
         ]
       },
       "forms": {
@@ -7078,7 +8856,45 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "はんどるを まわす",
+          "en": "turn a handle"
+        },
+        {
+          "jp": "どあのぶを まわす",
+          "en": "turn a doorknob"
+        },
+        {
+          "jp": "かぎを まわす",
+          "en": "turn a key"
+        },
+        {
+          "jp": "みぎに まわす",
+          "en": "turn to the right"
+        },
+        {
+          "jp": "ひだりに まわす",
+          "en": "turn to the left"
+        },
+        {
+          "jp": "しょるいを まわす",
+          "en": "pass around documents"
+        },
+        {
+          "jp": "ぷりんとを まわす",
+          "en": "pass around handouts"
+        },
+        {
+          "jp": "おかねを まわす",
+          "en": "circulate money"
+        },
+        {
+          "jp": "よさんを まわす",
+          "en": "allocate budget"
+        }
+      ]
     },
     {
       "id": "n5_v_0076",
@@ -7102,8 +8918,6 @@
         "primary": "to hold",
         "gloss": [
           "hold",
-          "carry",
-          "possess",
           "have",
           "own"
         ]
@@ -7184,7 +8998,49 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ばっぐを もつ",
+          "en": "hold a bag"
+        },
+        {
+          "jp": "にもつを もつ",
+          "en": "hold luggage"
+        },
+        {
+          "jp": "ぺんを もつ",
+          "en": "hold a pen"
+        },
+        {
+          "jp": "みぎてに もつ",
+          "en": "hold in the right hand"
+        },
+        {
+          "jp": "てに もつ",
+          "en": "hold in the hand"
+        },
+        {
+          "jp": "じしんを もつ",
+          "en": "have confidence"
+        },
+        {
+          "jp": "きょうみを もつ",
+          "en": "have interest"
+        },
+        {
+          "jp": "いけんを もつ",
+          "en": "have an opinion"
+        },
+        {
+          "jp": "ぺんを もって いる",
+          "en": "be holding a pen"
+        },
+        {
+          "jp": "おかねを もって いる",
+          "en": "have money"
+        }
+      ]
     },
     {
       "id": "n5_v_0077",
@@ -7208,9 +9064,7 @@
       "meaning": {
         "primary": "to take (something)",
         "gloss": [
-          "take (something) along",
-          "bring with one",
-          "carry to"
+          "take (something)"
         ]
       },
       "forms": {
@@ -7289,7 +9143,45 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "おべんとうを もって いく",
+          "en": "take a lunch box"
+        },
+        {
+          "jp": "ほんを もって いく",
+          "en": "take a book"
+        },
+        {
+          "jp": "かさを もって いく",
+          "en": "take an umbrella"
+        },
+        {
+          "jp": "がっこうに もって いく",
+          "en": "take to school"
+        },
+        {
+          "jp": "かいしゃに もって いく",
+          "en": "take to the company"
+        },
+        {
+          "jp": "ともだちに もって いく",
+          "en": "take to a friend"
+        },
+        {
+          "jp": "せんせいに もって いく",
+          "en": "take to a teacher"
+        },
+        {
+          "jp": "これを もって いっても いいですか",
+          "en": "may I take this?"
+        },
+        {
+          "jp": "いえに もって いっても いいですか",
+          "en": "may I take it home?"
+        }
+      ]
     },
     {
       "id": "n5_v_0078",
@@ -7313,10 +9205,7 @@
       "meaning": {
         "primary": "to receive",
         "gloss": [
-          "receive",
-          "get",
-          "accept",
-          "be given"
+          "receive"
         ]
       },
       "forms": {
@@ -7395,7 +9284,49 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ぷれぜんとを もらう",
+          "en": "receive a present"
+        },
+        {
+          "jp": "おかねを もらう",
+          "en": "receive money"
+        },
+        {
+          "jp": "てがみを もらう",
+          "en": "receive a letter"
+        },
+        {
+          "jp": "ともだちから もらう",
+          "en": "receive from a friend"
+        },
+        {
+          "jp": "せんせいから もらう",
+          "en": "receive from a teacher"
+        },
+        {
+          "jp": "ははから もらう",
+          "en": "receive from mother"
+        },
+        {
+          "jp": "ともだちに ぷれぜんとを もらう",
+          "en": "receive a present from a friend"
+        },
+        {
+          "jp": "ちちに とけいを もらう",
+          "en": "receive a watch from father"
+        },
+        {
+          "jp": "おしえて もらう",
+          "en": "have someone teach"
+        },
+        {
+          "jp": "てつだって もらう",
+          "en": "have someone help"
+        }
+      ]
     },
     {
       "id": "n5_v_0079",
@@ -7418,9 +9349,7 @@
       "meaning": {
         "primary": "to be useful",
         "gloss": [
-          "be useful",
-          "be helpful",
-          "serve a purpose"
+          "be useful"
         ]
       },
       "forms": {
@@ -7499,7 +9428,41 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "この ほんが やくに たつ",
+          "en": "this book is useful"
+        },
+        {
+          "jp": "じしょが やくに たつ",
+          "en": "the dictionary is useful"
+        },
+        {
+          "jp": "べんきょうに やくに たつ",
+          "en": "be useful for studying"
+        },
+        {
+          "jp": "しごとに やくに たつ",
+          "en": "be useful for work"
+        },
+        {
+          "jp": "ひとの やくに たつ",
+          "en": "be useful to people"
+        },
+        {
+          "jp": "しゃかいの やくに たつ",
+          "en": "be useful to society"
+        },
+        {
+          "jp": "とても やくに たつ じょうほう",
+          "en": "very useful information"
+        },
+        {
+          "jp": "ほんとうに やくに たつ",
+          "en": "be really useful"
+        }
+      ]
     },
     {
       "id": "n5_v_0080",
@@ -7522,10 +9485,7 @@
       "meaning": {
         "primary": "to rest",
         "gloss": [
-          "rest",
-          "take a break",
-          "take a day off",
-          "be absent (from)"
+          "rest"
         ]
       },
       "forms": {
@@ -7604,7 +9564,57 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "いえで やすむ",
+          "en": "rest at home"
+        },
+        {
+          "jp": "へやで やすむ",
+          "en": "rest in the room"
+        },
+        {
+          "jp": "こうえんで やすむ",
+          "en": "rest at the park"
+        },
+        {
+          "jp": "すこし やすむ",
+          "en": "rest a little"
+        },
+        {
+          "jp": "いちじかん やすむ",
+          "en": "rest for 1 hour"
+        },
+        {
+          "jp": "がっこうを やすむ",
+          "en": "be absent from school"
+        },
+        {
+          "jp": "かいしゃを やすむ",
+          "en": "take time off work"
+        },
+        {
+          "jp": "しごとを やすむ",
+          "en": "take time off work"
+        },
+        {
+          "jp": "いま やすんで いる",
+          "en": "be resting now"
+        },
+        {
+          "jp": "べっどで やすんで いる",
+          "en": "be resting in bed"
+        },
+        {
+          "jp": "やすみなく はたらく",
+          "en": "work without rest"
+        },
+        {
+          "jp": "やすみなく べんきょうする",
+          "en": "study without rest"
+        }
+      ]
     },
     {
       "id": "n5_v_0082",
@@ -7627,10 +9637,7 @@
       "meaning": {
         "primary": "to call",
         "gloss": [
-          "call (out to)",
-          "summon",
-          "invite",
-          "name"
+          "call"
         ]
       },
       "forms": {
@@ -7709,7 +9716,53 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ともだちを よぶ",
+          "en": "call a friend"
+        },
+        {
+          "jp": "せんせいを よぶ",
+          "en": "call a teacher"
+        },
+        {
+          "jp": "いしゃを よぶ",
+          "en": "call a doctor"
+        },
+        {
+          "jp": "なまえを よぶ",
+          "en": "call by name"
+        },
+        {
+          "jp": "たなかさんと よぶ",
+          "en": "call someone Tanaka-san"
+        },
+        {
+          "jp": "へやに よぶ",
+          "en": "call to the room"
+        },
+        {
+          "jp": "こっちに よぶ",
+          "en": "call over here"
+        },
+        {
+          "jp": "でんわで よぶ",
+          "en": "call by phone"
+        },
+        {
+          "jp": "なまえで よぶ",
+          "en": "call by name"
+        },
+        {
+          "jp": "たくしーを よんで もらう",
+          "en": "have someone call a taxi"
+        },
+        {
+          "jp": "たすけを よんで もらう",
+          "en": "have someone call for help"
+        }
+      ]
     },
     {
       "id": "n5_v_0083",
@@ -7732,10 +9785,7 @@
       "meaning": {
         "primary": "to read",
         "gloss": [
-          "read",
-          "recite",
-          "predict",
-          "guess"
+          "read"
         ]
       },
       "forms": {
@@ -7814,7 +9864,65 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ほんを よむ",
+          "en": "read a book"
+        },
+        {
+          "jp": "しんぶんを よむ",
+          "en": "read a newspaper"
+        },
+        {
+          "jp": "まんがを よむ",
+          "en": "read manga"
+        },
+        {
+          "jp": "てがみを よむ",
+          "en": "read a letter"
+        },
+        {
+          "jp": "としょかんで よむ",
+          "en": "read at the library"
+        },
+        {
+          "jp": "いえで よむ",
+          "en": "read at home"
+        },
+        {
+          "jp": "でんしゃで よむ",
+          "en": "read on the train"
+        },
+        {
+          "jp": "こえに だして よむ",
+          "en": "read aloud"
+        },
+        {
+          "jp": "ゆっくり よむ",
+          "en": "read slowly"
+        },
+        {
+          "jp": "はやく よむ",
+          "en": "read fast"
+        },
+        {
+          "jp": "まいにち よむ",
+          "en": "read every day"
+        },
+        {
+          "jp": "いちじかん よむ",
+          "en": "read for 1 hour"
+        },
+        {
+          "jp": "ほんを よんで いる",
+          "en": "be reading a book"
+        },
+        {
+          "jp": "いま よんで いる",
+          "en": "be reading now"
+        }
+      ]
     },
     {
       "id": "n5_v_0084",
@@ -7837,11 +9945,7 @@
       "meaning": {
         "primary": "to understand",
         "gloss": [
-          "understand",
-          "comprehend",
-          "grasp",
-          "see",
-          "get"
+          "understand"
         ]
       },
       "forms": {
@@ -7920,7 +10024,53 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "にほんごが わかる",
+          "en": "understand Japanese"
+        },
+        {
+          "jp": "いみが わかる",
+          "en": "understand the meaning"
+        },
+        {
+          "jp": "りゆうが わかる",
+          "en": "understand the reason"
+        },
+        {
+          "jp": "こたえが わかる",
+          "en": "know the answer"
+        },
+        {
+          "jp": "もんだいが わかる",
+          "en": "understand the problem"
+        },
+        {
+          "jp": "よく わかる",
+          "en": "understand well"
+        },
+        {
+          "jp": "よく わかりました",
+          "en": "I understood well"
+        },
+        {
+          "jp": "わかりやすい せつめい",
+          "en": "easy-to-understand explanation"
+        },
+        {
+          "jp": "わかりやすい ほん",
+          "en": "easy-to-understand book"
+        },
+        {
+          "jp": "わからない",
+          "en": "don't understand"
+        },
+        {
+          "jp": "ぜんぜん わからない",
+          "en": "don't understand at all"
+        }
+      ]
     },
     {
       "id": "n5_v_0085",
@@ -7943,9 +10093,7 @@
       "meaning": {
         "primary": "to cross",
         "gloss": [
-          "cross (over)",
-          "go across",
-          "traverse"
+          "cross"
         ]
       },
       "forms": {
@@ -8024,7 +10172,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "みちを わたります",
+          "en": "cross the road"
+        },
+        {
+          "jp": "はしを わたりました",
+          "en": "crossed the bridge"
+        },
+        {
+          "jp": "おうだんほどうを わたって ください",
+          "en": "Please cross at the crosswalk"
+        },
+        {
+          "jp": "かわを わたるのは あぶないです",
+          "en": "It's dangerous to cross the river"
+        },
+        {
+          "jp": "あおしんごうで みちを わたります",
+          "en": "Cross the road at the green light"
+        }
+      ]
     },
     {
       "id": "n5_v_0086",
@@ -8047,9 +10217,7 @@
       "meaning": {
         "primary": "to open",
         "gloss": [
-          "open (a door, window, etc.)",
-          "unwrap",
-          "unlock"
+          "open"
         ]
       },
       "forms": {
@@ -8128,7 +10296,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "まどを あけます",
+          "en": "open the window"
+        },
+        {
+          "jp": "ドアを あけます",
+          "en": "open the door"
+        },
+        {
+          "jp": "はこを あけます",
+          "en": "open the box"
+        },
+        {
+          "jp": "かんを あけます",
+          "en": "open a can"
+        },
+        {
+          "jp": "プレゼントを あけます",
+          "en": "open a present"
+        }
+      ]
     },
     {
       "id": "n5_v_0087",
@@ -8152,10 +10342,7 @@
       "meaning": {
         "primary": "to give",
         "gloss": [
-          "give",
-          "raise",
-          "lift up",
-          "elevate"
+          "give"
         ]
       },
       "forms": {
@@ -8234,7 +10421,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "プレゼントを あげます",
+          "en": "give a present"
+        },
+        {
+          "jp": "ともだちに ほんを あげます",
+          "en": "give a book to a friend"
+        },
+        {
+          "jp": "はなを あげます",
+          "en": "give flowers"
+        },
+        {
+          "jp": "ははに てがみを あげます",
+          "en": "give a letter to mother"
+        },
+        {
+          "jp": "おとうとに おかねを あげます",
+          "en": "give money to younger brother"
+        }
+      ]
     },
     {
       "id": "n5_v_0088",
@@ -8257,10 +10466,7 @@
       "meaning": {
         "primary": "to collect",
         "gloss": [
-          "collect",
-          "gather",
-          "assemble",
-          "accumulate"
+          "collect"
         ]
       },
       "forms": {
@@ -8339,7 +10545,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "きってを あつめます",
+          "en": "collect stamps"
+        },
+        {
+          "jp": "コインを あつめます",
+          "en": "collect coins"
+        },
+        {
+          "jp": "じょうほうを あつめます",
+          "en": "gather information"
+        },
+        {
+          "jp": "おかねを あつめます",
+          "en": "collect money"
+        },
+        {
+          "jp": "しりょうを あつめます",
+          "en": "gather materials"
+        }
+      ]
     },
     {
       "id": "n5_v_0089",
@@ -8363,8 +10591,7 @@
         "primary": "to bathe",
         "gloss": [
           "bathe",
-          "take (a shower)",
-          "bask in (the sun)"
+          "take (a shower)"
         ]
       },
       "forms": {
@@ -8443,7 +10670,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "シャワーを あびます",
+          "en": "take a shower"
+        },
+        {
+          "jp": "あさ シャワーを あびます",
+          "en": "take a shower in the morning"
+        },
+        {
+          "jp": "にっこうを あびます",
+          "en": "bask in the sunlight"
+        },
+        {
+          "jp": "みずを あびます",
+          "en": "pour water over oneself"
+        },
+        {
+          "jp": "まいにち シャワーを あびます",
+          "en": "take a shower every day"
+        }
+      ]
     },
     {
       "id": "n5_v_0090",
@@ -8466,9 +10715,7 @@
       "meaning": {
         "primary": "to exist (animate)",
         "gloss": [
-          "exist (animate)",
-          "be (living things)",
-          "stay"
+          "exist (animate)"
         ]
       },
       "forms": {
@@ -8539,7 +10786,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "へやに ひとが います",
+          "en": "there is a person in the room"
+        },
+        {
+          "jp": "いぬが います",
+          "en": "there is a dog"
+        },
+        {
+          "jp": "ともだちが いますか",
+          "en": "do you have friends?"
+        },
+        {
+          "jp": "いえに だれも いません",
+          "en": "nobody is at home"
+        },
+        {
+          "jp": "そこに いて ください",
+          "en": "please stay there"
+        }
+      ]
     },
     {
       "id": "n5_v_0093",
@@ -8564,9 +10833,7 @@
         "primary": "to put in",
         "gloss": [
           "put in",
-          "insert",
-          "let in",
-          "include"
+          "add"
         ]
       },
       "forms": {
@@ -8645,7 +10912,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "コーヒーに さとうを いれます",
+          "en": "put sugar in coffee"
+        },
+        {
+          "jp": "かばんに ほんを いれます",
+          "en": "put a book in the bag"
+        },
+        {
+          "jp": "おちゃを いれます",
+          "en": "make tea (put tea in)"
+        },
+        {
+          "jp": "ポケットに いれます",
+          "en": "put in pocket"
+        },
+        {
+          "jp": "れいぞうこに いれます",
+          "en": "put in the refrigerator"
+        }
+      ]
     },
     {
       "id": "n5_v_0094",
@@ -8668,8 +10957,7 @@
       "meaning": {
         "primary": "to be born",
         "gloss": [
-          "be born",
-          "come into existence"
+          "be born"
         ]
       },
       "forms": {
@@ -8740,7 +11028,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "にほんで うまれました",
+          "en": "was born in Japan"
+        },
+        {
+          "jp": "1990ねんに うまれました",
+          "en": "was born in 1990"
+        },
+        {
+          "jp": "とうきょうで うまれました",
+          "en": "was born in Tokyo"
+        },
+        {
+          "jp": "あかちゃんが うまれました",
+          "en": "a baby was born"
+        },
+        {
+          "jp": "どこで うまれましたか",
+          "en": "where were you born?"
+        }
+      ]
     },
     {
       "id": "n5_v_0095",
@@ -8763,10 +11073,7 @@
       "meaning": {
         "primary": "to get up",
         "gloss": [
-          "get up",
-          "wake up",
-          "occur",
-          "happen"
+          "get up"
         ]
       },
       "forms": {
@@ -8845,7 +11152,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "あさ おきます",
+          "en": "get up in the morning"
+        },
+        {
+          "jp": "6じに おきます",
+          "en": "get up at 6 o'clock"
+        },
+        {
+          "jp": "はやく おきます",
+          "en": "get up early"
+        },
+        {
+          "jp": "おそく おきます",
+          "en": "get up late"
+        },
+        {
+          "jp": "まいにち 7じに おきます",
+          "en": "get up at 7 every day"
+        }
+      ]
     },
     {
       "id": "n5_v_0096",
@@ -8869,11 +11198,7 @@
       "meaning": {
         "primary": "to teach; to tell",
         "gloss": [
-          "teach",
-          "instruct",
-          "tell",
-          "inform",
-          "let know"
+          "teach; to tell"
         ]
       },
       "forms": {
@@ -8952,7 +11277,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "にほんごを おしえます",
+          "en": "teach Japanese"
+        },
+        {
+          "jp": "がくせいに おしえます",
+          "en": "teach students"
+        },
+        {
+          "jp": "みちを おしえます",
+          "en": "tell the way"
+        },
+        {
+          "jp": "ともだちに おしえます",
+          "en": "tell a friend"
+        },
+        {
+          "jp": "えいごを おしえます",
+          "en": "teach English"
+        }
+      ]
     },
     {
       "id": "n5_v_0098",
@@ -8975,10 +11322,8 @@
       "meaning": {
         "primary": "to memorize",
         "gloss": [
-          "memorize",
-          "commit to memory",
-          "learn",
-          "remember"
+          "remember",
+          "memorize"
         ]
       },
       "forms": {
@@ -9057,7 +11402,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "たんごを おぼえます",
+          "en": "memorize vocabulary"
+        },
+        {
+          "jp": "かんじを おぼえます",
+          "en": "memorize kanji"
+        },
+        {
+          "jp": "なまえを おぼえます",
+          "en": "remember a name"
+        },
+        {
+          "jp": "でんわばんごうを おぼえます",
+          "en": "memorize a phone number"
+        },
+        {
+          "jp": "ぜんぶ おぼえます",
+          "en": "memorize everything"
+        }
+      ]
     },
     {
       "id": "n5_v_0099",
@@ -9080,10 +11447,7 @@
       "meaning": {
         "primary": "to get off",
         "gloss": [
-          "get off",
-          "alight (from bus, train)",
-          "disembark",
-          "descend"
+          "get off"
         ]
       },
       "forms": {
@@ -9162,7 +11526,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "バスを おります",
+          "en": "get off the bus"
+        },
+        {
+          "jp": "でんしゃを おります",
+          "en": "get off the train"
+        },
+        {
+          "jp": "つぎの えきで おります",
+          "en": "get off at the next station"
+        },
+        {
+          "jp": "タクシーを おります",
+          "en": "get out of the taxi"
+        },
+        {
+          "jp": "ここで おります",
+          "en": "get off here"
+        }
+      ]
     },
     {
       "id": "n5_v_0100",
@@ -9185,10 +11571,7 @@
       "meaning": {
         "primary": "to change",
         "gloss": [
-          "change",
-          "alter",
-          "transform",
-          "convert"
+          "change"
         ]
       },
       "forms": {
@@ -9267,7 +11650,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "よていを かえます",
+          "en": "change the plan"
+        },
+        {
+          "jp": "ふくを かえます",
+          "en": "change clothes"
+        },
+        {
+          "jp": "かんがえを かえます",
+          "en": "change one's mind"
+        },
+        {
+          "jp": "じかんを かえます",
+          "en": "change the time"
+        },
+        {
+          "jp": "デザインを かえます",
+          "en": "change the design"
+        }
+      ]
     },
     {
       "id": "n5_v_0101",
@@ -9290,10 +11695,11 @@
       "meaning": {
         "primary": "to put on",
         "gloss": [
-          "put on (glasses)",
           "hang",
-          "make (phone call)",
-          "pour over"
+          "put on",
+          "wear (glasses)",
+          "make (a call)",
+          "sprinkle"
         ]
       },
       "forms": {
@@ -9372,7 +11778,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "めがねを かけます",
+          "en": "put on glasses"
+        },
+        {
+          "jp": "でんわを かけます",
+          "en": "make a phone call"
+        },
+        {
+          "jp": "かぎを かけます",
+          "en": "lock (put a lock on)"
+        },
+        {
+          "jp": "とけいを かけます",
+          "en": "hang a clock"
+        },
+        {
+          "jp": "ともだちに でんわを かけます",
+          "en": "call a friend"
+        }
+      ]
     },
     {
       "id": "n5_v_0103",
@@ -9396,9 +11824,7 @@
       "meaning": {
         "primary": "to borrow",
         "gloss": [
-          "borrow",
-          "rent",
-          "hire"
+          "borrow"
         ]
       },
       "forms": {
@@ -9477,7 +11903,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ほんを かります",
+          "en": "borrow a book"
+        },
+        {
+          "jp": "おかねを かります",
+          "en": "borrow money"
+        },
+        {
+          "jp": "ともだちから かります",
+          "en": "borrow from a friend"
+        },
+        {
+          "jp": "としょかんで かります",
+          "en": "borrow from the library"
+        },
+        {
+          "jp": "CDを かります",
+          "en": "borrow a CD"
+        }
+      ]
     },
     {
       "id": "n5_v_0104",
@@ -9500,10 +11948,7 @@
       "meaning": {
         "primary": "to think",
         "gloss": [
-          "think (about)",
-          "consider",
-          "ponder",
-          "reflect"
+          "think"
         ]
       },
       "forms": {
@@ -9582,7 +12027,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "よく かんがえます",
+          "en": "think carefully"
+        },
+        {
+          "jp": "しょうらいを かんがえます",
+          "en": "think about the future"
+        },
+        {
+          "jp": "こたえを かんがえます",
+          "en": "think about the answer"
+        },
+        {
+          "jp": "ちょっと かんがえます",
+          "en": "think for a moment"
+        },
+        {
+          "jp": "もんだいを かんがえます",
+          "en": "think about the problem"
+        }
+      ]
     },
     {
       "id": "n5_v_0105",
@@ -9605,9 +12072,7 @@
       "meaning": {
         "primary": "to wear",
         "gloss": [
-          "wear (upper body)",
-          "put on (shirt, coat)",
-          "dress in"
+          "wear"
         ]
       },
       "forms": {
@@ -9686,7 +12151,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ふくを きる",
+          "en": "wear clothes"
+        },
+        {
+          "jp": "ティーシャツを きる",
+          "en": "wear a T-shirt"
+        },
+        {
+          "jp": "せいふくを きる",
+          "en": "wear a uniform"
+        },
+        {
+          "jp": "スーツを きる",
+          "en": "wear a suit"
+        },
+        {
+          "jp": "あたらしい ふくを きる",
+          "en": "wear new clothes"
+        }
+      ]
     },
     {
       "id": "n5_v_0106",
@@ -9709,10 +12196,7 @@
       "meaning": {
         "primary": "to be careful",
         "gloss": [
-          "be careful",
-          "pay attention",
-          "take care",
-          "watch out"
+          "be careful"
         ]
       },
       "forms": {
@@ -9791,7 +12275,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "くるまに きを つける",
+          "en": "be careful of cars"
+        },
+        {
+          "jp": "けんこうに きを つける",
+          "en": "take care of one's health"
+        },
+        {
+          "jp": "かぜに きを つける",
+          "en": "be careful not to catch a cold"
+        },
+        {
+          "jp": "じかんに きを つける",
+          "en": "be careful about time"
+        },
+        {
+          "jp": "ことばに きを つける",
+          "en": "be careful with one's words"
+        }
+      ]
     },
     {
       "id": "n5_v_0107",
@@ -9814,9 +12320,7 @@
       "meaning": {
         "primary": "to give (to me/us)",
         "gloss": [
-          "give (to me/us)",
-          "let (one) have",
-          "do (for me)"
+          "give (to me/us)"
         ]
       },
       "forms": {
@@ -9887,7 +12391,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ともだちが プレゼントを くれる",
+          "en": "a friend gives me a present"
+        },
+        {
+          "jp": "ははが ほんを くれる",
+          "en": "my mother gives me a book"
+        },
+        {
+          "jp": "せんせいが じかんを くれる",
+          "en": "the teacher gives me time"
+        },
+        {
+          "jp": "かれが アドバイスを くれる",
+          "en": "he gives me advice"
+        },
+        {
+          "jp": "あにが おかねを くれる",
+          "en": "my older brother gives me money"
+        }
+      ]
     },
     {
       "id": "n5_v_0108",
@@ -9910,9 +12436,7 @@
       "meaning": {
         "primary": "to close",
         "gloss": [
-          "close",
-          "shut",
-          "lock"
+          "close"
         ]
       },
       "forms": {
@@ -9991,7 +12515,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ドアを しめる",
+          "en": "close the door"
+        },
+        {
+          "jp": "まどを しめる",
+          "en": "close the window"
+        },
+        {
+          "jp": "カーテンを しめる",
+          "en": "close the curtains"
+        },
+        {
+          "jp": "おみせを しめる",
+          "en": "close the shop"
+        },
+        {
+          "jp": "しっかり しめる",
+          "en": "close firmly"
+        }
+      ]
     },
     {
       "id": "n5_v_0109",
@@ -10014,10 +12560,7 @@
       "meaning": {
         "primary": "to investigate",
         "gloss": [
-          "investigate",
-          "look up",
-          "examine",
-          "check"
+          "investigate"
         ]
       },
       "forms": {
@@ -10096,7 +12639,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "インターネットで しらべる",
+          "en": "investigate on the internet"
+        },
+        {
+          "jp": "じしょで しらべる",
+          "en": "look up in a dictionary"
+        },
+        {
+          "jp": "いみを しらべる",
+          "en": "look up the meaning"
+        },
+        {
+          "jp": "よく しらべる",
+          "en": "investigate thoroughly"
+        },
+        {
+          "jp": "としょかんで しらべる",
+          "en": "research at the library"
+        }
+      ]
     },
     {
       "id": "n5_v_0110",
@@ -10119,9 +12684,7 @@
       "meaning": {
         "primary": "to throw away",
         "gloss": [
-          "throw away",
-          "discard",
-          "dump"
+          "throw away"
         ]
       },
       "forms": {
@@ -10200,7 +12763,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ゴミを すてる",
+          "en": "throw away garbage"
+        },
+        {
+          "jp": "ふるい ふくを すてる",
+          "en": "throw away old clothes"
+        },
+        {
+          "jp": "ここに すてる",
+          "en": "throw away here"
+        },
+        {
+          "jp": "すてないで",
+          "en": "don't throw away"
+        },
+        {
+          "jp": "ペットボトルを すてる",
+          "en": "throw away a plastic bottle"
+        }
+      ]
     },
     {
       "id": "n5_v_0111",
@@ -10223,8 +12808,7 @@
       "meaning": {
         "primary": "to eat",
         "gloss": [
-          "eat",
-          "have (a meal)"
+          "eat"
         ]
       },
       "forms": {
@@ -10303,7 +12887,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ごはんを たべる",
+          "en": "eat rice/a meal"
+        },
+        {
+          "jp": "レストランで たべる",
+          "en": "eat at a restaurant"
+        },
+        {
+          "jp": "あさごはんを たべる",
+          "en": "eat breakfast"
+        },
+        {
+          "jp": "たくさん たべる",
+          "en": "eat a lot"
+        },
+        {
+          "jp": "ともだちと たべる",
+          "en": "eat with friends"
+        }
+      ]
     },
     {
       "id": "n5_v_0112",
@@ -10326,9 +12932,7 @@
       "meaning": {
         "primary": "to be enough",
         "gloss": [
-          "be enough",
-          "be sufficient",
-          "suffice"
+          "be enough"
         ]
       },
       "forms": {
@@ -10399,7 +13003,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "おかねが たりる",
+          "en": "have enough money"
+        },
+        {
+          "jp": "じかんが たりる",
+          "en": "have enough time"
+        },
+        {
+          "jp": "たべものが たりる",
+          "en": "have enough food"
+        },
+        {
+          "jp": "じゅうぶん たりる",
+          "en": "be more than enough"
+        },
+        {
+          "jp": "たりない",
+          "en": "not enough"
+        }
+      ]
     },
     {
       "id": "n5_v_0113",
@@ -10422,9 +13048,7 @@
       "meaning": {
         "primary": "to get tired",
         "gloss": [
-          "get tired",
-          "become fatigued",
-          "tire"
+          "get tired"
         ]
       },
       "forms": {
@@ -10495,7 +13119,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "しごとで つかれる",
+          "en": "get tired from work"
+        },
+        {
+          "jp": "とても つかれる",
+          "en": "get very tired"
+        },
+        {
+          "jp": "あるいて つかれる",
+          "en": "get tired from walking"
+        },
+        {
+          "jp": "つかれた",
+          "en": "I'm tired"
+        },
+        {
+          "jp": "つかれている",
+          "en": "be tired (state)"
+        }
+      ]
     },
     {
       "id": "n5_v_0114",
@@ -10518,9 +13164,7 @@
       "meaning": {
         "primary": "to turn on",
         "gloss": [
-          "turn on",
-          "switch on",
-          "light"
+          "turn on"
         ]
       },
       "forms": {
@@ -10599,7 +13243,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "でんきを つける",
+          "en": "turn on the light"
+        },
+        {
+          "jp": "エアコンを つける",
+          "en": "turn on the air conditioner"
+        },
+        {
+          "jp": "テレビを つける",
+          "en": "turn on the TV"
+        },
+        {
+          "jp": "おんがくを つける",
+          "en": "turn on music"
+        },
+        {
+          "jp": "スイッチを つける",
+          "en": "turn on a switch"
+        }
+      ]
     },
     {
       "id": "n5_v_0115",
@@ -10622,9 +13288,7 @@
       "meaning": {
         "primary": "to go out",
         "gloss": [
-          "go out",
-          "leave",
-          "depart"
+          "go out"
         ]
       },
       "forms": {
@@ -10703,7 +13367,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "そとに でかける",
+          "en": "go outside"
+        },
+        {
+          "jp": "かいものに でかける",
+          "en": "go out shopping"
+        },
+        {
+          "jp": "あさ はやく でかける",
+          "en": "go out early in the morning"
+        },
+        {
+          "jp": "ともだちと でかける",
+          "en": "go out with friends"
+        },
+        {
+          "jp": "よく でかける",
+          "en": "go out often"
+        }
+      ]
     },
     {
       "id": "n5_v_0116",
@@ -10726,8 +13412,7 @@
       "meaning": {
         "primary": "to be able to",
         "gloss": [
-          "be able to",
-          "can"
+          "be able to"
         ]
       },
       "forms": {
@@ -10798,7 +13483,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "にほんごが できる",
+          "en": "be able to speak Japanese"
+        },
+        {
+          "jp": "りょうりが できる",
+          "en": "be able to cook"
+        },
+        {
+          "jp": "うんてんが できる",
+          "en": "be able to drive"
+        },
+        {
+          "jp": "できない",
+          "en": "cannot do"
+        },
+        {
+          "jp": "よく できる",
+          "en": "be able to do well"
+        }
+      ]
     },
     {
       "id": "n5_v_0117",
@@ -10821,10 +13528,7 @@
       "meaning": {
         "primary": "to leave",
         "gloss": [
-          "leave",
-          "go out",
-          "exit",
-          "graduate"
+          "leave"
         ]
       },
       "forms": {
@@ -10903,7 +13607,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "いえを でる",
+          "en": "leave home"
+        },
+        {
+          "jp": "かいしゃを でる",
+          "en": "leave the company"
+        },
+        {
+          "jp": "でんしゃを でる",
+          "en": "get off the train"
+        },
+        {
+          "jp": "しちじに でる",
+          "en": "leave at 7 o'clock"
+        },
+        {
+          "jp": "はやく でる",
+          "en": "leave early"
+        }
+      ]
     },
     {
       "id": "n5_v_0120",
@@ -10926,9 +13652,7 @@
       "meaning": {
         "primary": "to stop",
         "gloss": [
-          "stop",
-          "turn off",
-          "park"
+          "stop"
         ]
       },
       "forms": {
@@ -11007,7 +13731,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "くるまを とめる",
+          "en": "stop/park a car"
+        },
+        {
+          "jp": "とけいを とめる",
+          "en": "stop a clock"
+        },
+        {
+          "jp": "ビデオを とめる",
+          "en": "stop a video"
+        },
+        {
+          "jp": "ちを とめる",
+          "en": "stop bleeding"
+        },
+        {
+          "jp": "ここに とめる",
+          "en": "stop/park here"
+        }
+      ]
     },
     {
       "id": "n5_v_0121",
@@ -11030,9 +13776,7 @@
       "meaning": {
         "primary": "to sleep",
         "gloss": [
-          "sleep",
-          "go to bed",
-          "lie down"
+          "sleep"
         ]
       },
       "forms": {
@@ -11111,7 +13855,53 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "じゅうじに ねる",
+          "en": "sleep at 10 o'clock"
+        },
+        {
+          "jp": "はやく ねる",
+          "en": "sleep early"
+        },
+        {
+          "jp": "おそく ねる",
+          "en": "sleep late"
+        },
+        {
+          "jp": "べっどで ねる",
+          "en": "sleep in bed"
+        },
+        {
+          "jp": "へやで ねる",
+          "en": "sleep in the room"
+        },
+        {
+          "jp": "ほてるで ねる",
+          "en": "sleep at a hotel"
+        },
+        {
+          "jp": "はちじかん ねる",
+          "en": "sleep for 8 hours"
+        },
+        {
+          "jp": "よく ねる",
+          "en": "sleep well"
+        },
+        {
+          "jp": "ぐっすり ねる",
+          "en": "sleep soundly"
+        },
+        {
+          "jp": "ねて げんきに なる",
+          "en": "sleep and feel better"
+        },
+        {
+          "jp": "ねて わすれる",
+          "en": "sleep and forget"
+        }
+      ]
     },
     {
       "id": "n5_v_0122",
@@ -11134,8 +13924,7 @@
       "meaning": {
         "primary": "to transfer",
         "gloss": [
-          "transfer (trains)",
-          "change (bus, train)"
+          "transfer"
         ]
       },
       "forms": {
@@ -11214,7 +14003,37 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "でんしゃに のりかえる",
+          "en": "transfer to a train"
+        },
+        {
+          "jp": "ばすに のりかえる",
+          "en": "transfer to a bus"
+        },
+        {
+          "jp": "しぶやで のりかえる",
+          "en": "transfer at Shibuya"
+        },
+        {
+          "jp": "とうきょうえきで のりかえる",
+          "en": "transfer at Tokyo Station"
+        },
+        {
+          "jp": "やまのてせんから ちゅうおうせんに のりかえる",
+          "en": "transfer from Yamanote Line to Chuo Line"
+        },
+        {
+          "jp": "にかい のりかえる",
+          "en": "transfer twice"
+        },
+        {
+          "jp": "いっかいだけ のりかえる",
+          "en": "transfer only once"
+        }
+      ]
     },
     {
       "id": "n5_v_0123",
@@ -11237,9 +14056,7 @@
       "meaning": {
         "primary": "to start",
         "gloss": [
-          "start",
-          "begin",
-          "commence"
+          "start"
         ]
       },
       "forms": {
@@ -11318,7 +14135,49 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "べんきょうを はじめる",
+          "en": "start studying"
+        },
+        {
+          "jp": "しごとを はじめる",
+          "en": "start work"
+        },
+        {
+          "jp": "あたらしい せいかつを はじめる",
+          "en": "start a new life"
+        },
+        {
+          "jp": "たべはじめる",
+          "en": "start eating"
+        },
+        {
+          "jp": "はなしはじめる",
+          "en": "start talking"
+        },
+        {
+          "jp": "あるきはじめる",
+          "en": "start walking"
+        },
+        {
+          "jp": "きょう はじめる",
+          "en": "start today"
+        },
+        {
+          "jp": "らいしゅう はじめる",
+          "en": "start next week"
+        },
+        {
+          "jp": "がっこうで はじめる",
+          "en": "start at school"
+        },
+        {
+          "jp": "いえで はじめる",
+          "en": "start at home"
+        }
+      ]
     },
     {
       "id": "n5_v_0124",
@@ -11341,9 +14200,7 @@
       "meaning": {
         "primary": "to lose",
         "gloss": [
-          "lose",
-          "be defeated",
-          "be beaten"
+          "lose"
         ]
       },
       "forms": {
@@ -11422,7 +14279,45 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "しあいに まける",
+          "en": "lose a match"
+        },
+        {
+          "jp": "げーむに まける",
+          "en": "lose a game"
+        },
+        {
+          "jp": "てすとに まける",
+          "en": "do poorly on a test"
+        },
+        {
+          "jp": "あいてに まける",
+          "en": "lose to an opponent"
+        },
+        {
+          "jp": "ちーむに まける",
+          "en": "lose to a team"
+        },
+        {
+          "jp": "さんたいにで まける",
+          "en": "lose 3 to 2"
+        },
+        {
+          "jp": "たいさで まける",
+          "en": "lose by a large margin"
+        },
+        {
+          "jp": "しあいに まけて しまう",
+          "en": "end up losing the match"
+        },
+        {
+          "jp": "またも まけて しまう",
+          "en": "lose again"
+        }
+      ]
     },
     {
       "id": "n5_v_0125",
@@ -11446,9 +14341,7 @@
       "meaning": {
         "primary": "to show",
         "gloss": [
-          "show",
-          "display",
-          "let someone see"
+          "show"
         ]
       },
       "forms": {
@@ -11527,7 +14420,45 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "しゃしんを みせる",
+          "en": "show a photo"
+        },
+        {
+          "jp": "ほんを みせる",
+          "en": "show a book"
+        },
+        {
+          "jp": "ちけっとを みせる",
+          "en": "show a ticket"
+        },
+        {
+          "jp": "ともだちに みせる",
+          "en": "show to a friend"
+        },
+        {
+          "jp": "せんせいに みせる",
+          "en": "show to a teacher"
+        },
+        {
+          "jp": "ははに しゃしんを みせる",
+          "en": "show a photo to mother"
+        },
+        {
+          "jp": "くらすに はっぴょうを みせる",
+          "en": "show a presentation to class"
+        },
+        {
+          "jp": "ぱすぽーとを みせて ください",
+          "en": "please show me your passport"
+        },
+        {
+          "jp": "めにゅーを みせて ください",
+          "en": "please show me the menu"
+        }
+      ]
     },
     {
       "id": "n5_v_0126",
@@ -11551,7 +14482,6 @@
         "primary": "to see",
         "gloss": [
           "see",
-          "look at",
           "watch"
         ]
       },
@@ -11631,7 +14561,53 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "てれびを みる",
+          "en": "watch TV"
+        },
+        {
+          "jp": "えいがを みる",
+          "en": "watch a movie"
+        },
+        {
+          "jp": "けしきを みる",
+          "en": "see scenery"
+        },
+        {
+          "jp": "えいがかんで みる",
+          "en": "watch at the movie theater"
+        },
+        {
+          "jp": "いえで みる",
+          "en": "watch at home"
+        },
+        {
+          "jp": "ともだちと みる",
+          "en": "watch with friends"
+        },
+        {
+          "jp": "かぞくと みる",
+          "en": "watch with family"
+        },
+        {
+          "jp": "ちょっと みて みる",
+          "en": "try taking a look"
+        },
+        {
+          "jp": "いちど みて みる",
+          "en": "try watching once"
+        },
+        {
+          "jp": "ゆめを みる",
+          "en": "have a dream"
+        },
+        {
+          "jp": "とけいを みる",
+          "en": "check the time"
+        }
+      ]
     },
     {
       "id": "n5_v_0127",
@@ -11654,10 +14630,7 @@
       "meaning": {
         "primary": "to welcome",
         "gloss": [
-          "welcome",
-          "go to meet",
-          "receive",
-          "greet"
+          "welcome"
         ]
       },
       "forms": {
@@ -11736,7 +14709,45 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ともだちを むかえる",
+          "en": "pick up a friend"
+        },
+        {
+          "jp": "おきゃくさんを むかえる",
+          "en": "welcome guests"
+        },
+        {
+          "jp": "かぞくを むかえる",
+          "en": "welcome family"
+        },
+        {
+          "jp": "えきに むかえる",
+          "en": "pick up at the station"
+        },
+        {
+          "jp": "くうこうに むかえる",
+          "en": "pick up at the airport"
+        },
+        {
+          "jp": "たんじょうびを むかえる",
+          "en": "reach one's birthday"
+        },
+        {
+          "jp": "しんねんを むかえる",
+          "en": "welcome the new year"
+        },
+        {
+          "jp": "ともだちを むかえに いく",
+          "en": "go pick up a friend"
+        },
+        {
+          "jp": "えきに むかえに いく",
+          "en": "go pick up at the station"
+        }
+      ]
     },
     {
       "id": "n5_v_0128",
@@ -11760,7 +14771,7 @@
         "primary": "to quit",
         "gloss": [
           "quit",
-          "resign"
+          "stop"
         ]
       },
       "forms": {
@@ -11839,7 +14850,45 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "かいしゃを やめる",
+          "en": "quit a company"
+        },
+        {
+          "jp": "しごとを やめる",
+          "en": "quit work"
+        },
+        {
+          "jp": "あるばいとを やめる",
+          "en": "quit part-time job"
+        },
+        {
+          "jp": "がっこうを やめる",
+          "en": "quit school"
+        },
+        {
+          "jp": "くらぶを やめる",
+          "en": "quit a club"
+        },
+        {
+          "jp": "たばこを やめる",
+          "en": "quit smoking"
+        },
+        {
+          "jp": "おさけを やめる",
+          "en": "quit drinking"
+        },
+        {
+          "jp": "らいげつ やめる",
+          "en": "quit next month"
+        },
+        {
+          "jp": "ことし やめる",
+          "en": "quit this year"
+        }
+      ]
     },
     {
       "id": "n5_v_0129",
@@ -11941,7 +14990,41 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "やくそくを わすれました",
+          "en": "I forgot the promise"
+        },
+        {
+          "jp": "さいふを わすれました",
+          "en": "I forgot my wallet"
+        },
+        {
+          "jp": "でんしゃに かさを わすれました",
+          "en": "I left my umbrella on the train"
+        },
+        {
+          "jp": "れすとらんに けいたいを わすれました",
+          "en": "I left my phone at the restaurant"
+        },
+        {
+          "jp": "どあを しめることを わすれました",
+          "en": "I forgot to close the door"
+        },
+        {
+          "jp": "しゅくだいを することを わすれました",
+          "en": "I forgot to do homework"
+        },
+        {
+          "jp": "あしたの かいぎを わすれないで ください",
+          "en": "Please don't forget tomorrow's meeting"
+        },
+        {
+          "jp": "なまえを すっかり わすれました",
+          "en": "I completely forgot the name"
+        }
+      ]
     },
     {
       "id": "n5_v_0130",
@@ -11964,9 +15047,7 @@
       "meaning": {
         "primary": "to come",
         "gloss": [
-          "come",
-          "approach",
-          "arrive"
+          "come"
         ]
       },
       "forms": {
@@ -12045,7 +15126,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "がっこうに くる",
+          "en": "come to school"
+        },
+        {
+          "jp": "にほんに くる",
+          "en": "come to Japan"
+        },
+        {
+          "jp": "ここに くる",
+          "en": "come here"
+        },
+        {
+          "jp": "パーティーに くる",
+          "en": "come to a party"
+        },
+        {
+          "jp": "いえに くる",
+          "en": "come to (my/someone's) house"
+        }
+      ]
     },
     {
       "id": "n5_v_0131",
@@ -12068,10 +15171,7 @@
       "meaning": {
         "primary": "to do",
         "gloss": [
-          "do",
-          "carry out",
-          "perform",
-          "make"
+          "do"
         ]
       },
       "forms": {
@@ -12150,7 +15250,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "べんきょうする",
+          "en": "study"
+        },
+        {
+          "jp": "りょうりする",
+          "en": "cook"
+        },
+        {
+          "jp": "しごとを する",
+          "en": "do work"
+        },
+        {
+          "jp": "なにを する",
+          "en": "do what"
+        },
+        {
+          "jp": "スポーツを する",
+          "en": "play sports"
+        }
+      ]
     },
     {
       "id": "n5_v_0132",
@@ -12174,9 +15296,7 @@
       "meaning": {
         "primary": "to guide",
         "gloss": [
-          "guide",
-          "show around",
-          "lead"
+          "guide"
         ]
       },
       "forms": {
@@ -12255,7 +15375,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "まちを あんないします",
+          "en": "guide through the town"
+        },
+        {
+          "jp": "おきゃくさんを あんないします",
+          "en": "guide the guest"
+        },
+        {
+          "jp": "かいじょうを あんないします",
+          "en": "guide to the venue"
+        },
+        {
+          "jp": "ホテルまで あんないします",
+          "en": "guide to the hotel"
+        },
+        {
+          "jp": "かんこうちを あんないします",
+          "en": "guide to tourist spots"
+        }
+      ]
     },
     {
       "id": "n5_v_0133",
@@ -12278,8 +15420,7 @@
       "meaning": {
         "primary": "to drive",
         "gloss": [
-          "drive",
-          "operate (vehicle)"
+          "drive"
         ]
       },
       "forms": {
@@ -12358,7 +15499,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "くるまを うんてんします",
+          "en": "drive a car"
+        },
+        {
+          "jp": "タクシーを うんてんします",
+          "en": "drive a taxi"
+        },
+        {
+          "jp": "まいにち うんてんします",
+          "en": "drive every day"
+        },
+        {
+          "jp": "じょうずに うんてんします",
+          "en": "drive well"
+        },
+        {
+          "jp": "バスを うんてんします",
+          "en": "drive a bus"
+        }
+      ]
     },
     {
       "id": "n5_v_0134",
@@ -12379,8 +15542,7 @@
       "meaning": {
         "primary": "to go shopping",
         "gloss": [
-          "go shopping",
-          "do shopping"
+          "go shopping"
         ]
       },
       "forms": {
@@ -12459,7 +15621,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "スーパーで かいものします",
+          "en": "shop at the supermarket"
+        },
+        {
+          "jp": "いっしょに かいものしましょう",
+          "en": "let's go shopping together"
+        },
+        {
+          "jp": "まいしゅう かいものします",
+          "en": "shop every week"
+        },
+        {
+          "jp": "デパートで かいものします",
+          "en": "shop at the department store"
+        },
+        {
+          "jp": "かいものに いきます",
+          "en": "go shopping"
+        }
+      ]
     },
     {
       "id": "n5_v_0135",
@@ -12482,8 +15666,7 @@
       "meaning": {
         "primary": "to marry",
         "gloss": [
-          "marry",
-          "get married"
+          "marry"
         ]
       },
       "forms": {
@@ -12562,7 +15745,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "かれと けっこんする",
+          "en": "marry him"
+        },
+        {
+          "jp": "らいねん けっこんする",
+          "en": "get married next year"
+        },
+        {
+          "jp": "ともだちが けっこんする",
+          "en": "my friend is getting married"
+        },
+        {
+          "jp": "けっこんして さんねんです",
+          "en": "have been married for 3 years"
+        },
+        {
+          "jp": "わかい ときに けっこんする",
+          "en": "get married when young"
+        }
+      ]
     },
     {
       "id": "n5_v_0136",
@@ -12586,8 +15791,7 @@
         "primary": "to tour",
         "gloss": [
           "tour",
-          "visit (to observe)",
-          "inspect"
+          "visit (for observation)"
         ]
       },
       "forms": {
@@ -12666,7 +15870,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "こうじょうを けんがくする",
+          "en": "tour a factory"
+        },
+        {
+          "jp": "だいがくを けんがくする",
+          "en": "tour a university"
+        },
+        {
+          "jp": "はくぶつかんを けんがくする",
+          "en": "tour a museum"
+        },
+        {
+          "jp": "じゅぎょうを けんがくする",
+          "en": "observe a class"
+        },
+        {
+          "jp": "かいしゃを けんがくする",
+          "en": "tour a company"
+        }
+      ]
     },
     {
       "id": "n5_v_0137",
@@ -12689,9 +15915,7 @@
       "meaning": {
         "primary": "to research",
         "gloss": [
-          "research",
-          "study (academically)",
-          "investigate"
+          "research"
         ]
       },
       "forms": {
@@ -12770,7 +15994,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "れきしを けんきゅうする",
+          "en": "research history"
+        },
+        {
+          "jp": "にほんごを けんきゅうする",
+          "en": "research Japanese language"
+        },
+        {
+          "jp": "だいがくで けんきゅうする",
+          "en": "do research at university"
+        },
+        {
+          "jp": "テーマを けんきゅうする",
+          "en": "research a theme"
+        },
+        {
+          "jp": "まいにち けんきゅうする",
+          "en": "do research every day"
+        }
+      ]
     },
     {
       "id": "n5_v_0138",
@@ -12793,9 +16039,7 @@
       "meaning": {
         "primary": "to copy",
         "gloss": [
-          "copy",
-          "photocopy",
-          "duplicate"
+          "copy"
         ]
       },
       "forms": {
@@ -12874,7 +16118,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "しょるいを こぴーしました",
+          "en": "I copied the documents"
+        },
+        {
+          "jp": "この しりょうを こぴーして ください",
+          "en": "Please copy these materials"
+        },
+        {
+          "jp": "じゅうまい こぴーしました",
+          "en": "I made 10 copies"
+        },
+        {
+          "jp": "からーで こぴーして ください",
+          "en": "Please make color copies"
+        },
+        {
+          "jp": "りょうめんで こぴーしました",
+          "en": "I made double-sided copies"
+        }
+      ]
     },
     {
       "id": "n5_v_0139",
@@ -12895,8 +16161,7 @@
       "meaning": {
         "primary": "to take a walk",
         "gloss": [
-          "take a walk",
-          "stroll"
+          "take a walk"
         ]
       },
       "forms": {
@@ -12975,7 +16240,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "こうえんで さんぽする",
+          "en": "take a walk in the park"
+        },
+        {
+          "jp": "あさ さんぽする",
+          "en": "take a walk in the morning"
+        },
+        {
+          "jp": "いぬと さんぽする",
+          "en": "take a walk with a dog"
+        },
+        {
+          "jp": "まいにち さんぽする",
+          "en": "take a walk every day"
+        },
+        {
+          "jp": "うみべを さんぽする",
+          "en": "take a walk along the beach"
+        }
+      ]
     },
     {
       "id": "n5_v_0140",
@@ -13075,7 +16362,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "きょうは ざんぎょうする",
+          "en": "work overtime today"
+        },
+        {
+          "jp": "まいにち ざんぎょうする",
+          "en": "work overtime every day"
+        },
+        {
+          "jp": "にじかん ざんぎょうする",
+          "en": "work overtime for 2 hours"
+        },
+        {
+          "jp": "よる おそくまで ざんぎょうする",
+          "en": "work overtime until late at night"
+        },
+        {
+          "jp": "かいしゃで ざんぎょうする",
+          "en": "work overtime at the company"
+        }
+      ]
     },
     {
       "id": "n5_v_0141",
@@ -13098,9 +16407,7 @@
       "meaning": {
         "primary": "to repair",
         "gloss": [
-          "repair",
-          "fix",
-          "mend"
+          "repair"
         ]
       },
       "forms": {
@@ -13179,7 +16486,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "くるまを しゅうりする",
+          "en": "repair a car"
+        },
+        {
+          "jp": "パソコンを しゅうりする",
+          "en": "repair a computer"
+        },
+        {
+          "jp": "じてんしゃを しゅうりする",
+          "en": "repair a bicycle"
+        },
+        {
+          "jp": "とけいを しゅうりする",
+          "en": "repair a watch"
+        },
+        {
+          "jp": "しゅうりに だす",
+          "en": "send out for repair"
+        }
+      ]
     },
     {
       "id": "n5_v_0142",
@@ -13202,8 +16531,7 @@
       "meaning": {
         "primary": "to go on a business trip",
         "gloss": [
-          "go on a business trip",
-          "travel for work"
+          "go on a business trip"
         ]
       },
       "forms": {
@@ -13282,7 +16610,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "とうきょうに しゅっちょうする",
+          "en": "go on a business trip to Tokyo"
+        },
+        {
+          "jp": "らいしゅう しゅっちょうする",
+          "en": "go on a business trip next week"
+        },
+        {
+          "jp": "かいがいに しゅっちょうする",
+          "en": "go on a business trip abroad"
+        },
+        {
+          "jp": "よく しゅっちょうする",
+          "en": "go on business trips often"
+        },
+        {
+          "jp": "いっしゅうかん しゅっちょうする",
+          "en": "go on a business trip for 1 week"
+        }
+      ]
     },
     {
       "id": "n5_v_0143",
@@ -13306,8 +16656,7 @@
       "meaning": {
         "primary": "to introduce",
         "gloss": [
-          "introduce",
-          "present"
+          "introduce"
         ]
       },
       "forms": {
@@ -13386,7 +16735,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ともだちを しょうかいする",
+          "en": "introduce a friend"
+        },
+        {
+          "jp": "じこしょうかいする",
+          "en": "introduce oneself"
+        },
+        {
+          "jp": "かれに かのじょを しょうかいする",
+          "en": "introduce her to him"
+        },
+        {
+          "jp": "かいしゃを しょうかいする",
+          "en": "introduce/recommend a company"
+        },
+        {
+          "jp": "ほんを しょうかいする",
+          "en": "introduce/recommend a book"
+        }
+      ]
     },
     {
       "id": "n5_v_0144",
@@ -13407,9 +16778,7 @@
       "meaning": {
         "primary": "to have a meal",
         "gloss": [
-          "have a meal",
-          "dine",
-          "eat"
+          "have a meal"
         ]
       },
       "forms": {
@@ -13488,7 +16857,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "レストランで しょくじする",
+          "en": "have a meal at a restaurant"
+        },
+        {
+          "jp": "いっしょに しょくじする",
+          "en": "have a meal together"
+        },
+        {
+          "jp": "あさ しょくじする",
+          "en": "have a meal in the morning"
+        },
+        {
+          "jp": "かぞくと しょくじする",
+          "en": "have a meal with family"
+        },
+        {
+          "jp": "そとで しょくじする",
+          "en": "have a meal outside/out"
+        }
+      ]
     },
     {
       "id": "n5_v_0145",
@@ -13511,9 +16902,7 @@
       "meaning": {
         "primary": "to worry",
         "gloss": [
-          "worry",
-          "be anxious",
-          "be concerned"
+          "worry"
         ]
       },
       "forms": {
@@ -13592,7 +16981,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "かぞくを しんぱいする",
+          "en": "worry about family"
+        },
+        {
+          "jp": "しけんを しんぱいする",
+          "en": "worry about the exam"
+        },
+        {
+          "jp": "けんこうを しんぱいする",
+          "en": "worry about health"
+        },
+        {
+          "jp": "とても しんぱいする",
+          "en": "worry very much"
+        },
+        {
+          "jp": "しんぱいしないで",
+          "en": "don't worry"
+        }
+      ]
     },
     {
       "id": "n5_v_0146",
@@ -13615,9 +17026,7 @@
       "meaning": {
         "primary": "to explain",
         "gloss": [
-          "explain",
-          "describe",
-          "account for"
+          "explain"
         ]
       },
       "forms": {
@@ -13696,7 +17105,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ルールを せつめいする",
+          "en": "explain the rules"
+        },
+        {
+          "jp": "くわしく せつめいする",
+          "en": "explain in detail"
+        },
+        {
+          "jp": "せんせいが せつめいする",
+          "en": "the teacher explains"
+        },
+        {
+          "jp": "かんたんに せつめいする",
+          "en": "explain simply"
+        },
+        {
+          "jp": "かれに せつめいする",
+          "en": "explain to him"
+        }
+      ]
     },
     {
       "id": "n5_v_0147",
@@ -13719,8 +17150,7 @@
       "meaning": {
         "primary": "to do laundry",
         "gloss": [
-          "do laundry",
-          "wash (clothes)"
+          "do laundry"
         ]
       },
       "forms": {
@@ -13799,7 +17229,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "まいにち せんたくする",
+          "en": "do laundry every day"
+        },
+        {
+          "jp": "ふくを せんたくする",
+          "en": "wash clothes"
+        },
+        {
+          "jp": "せんたくきで せんたくする",
+          "en": "do laundry in a washing machine"
+        },
+        {
+          "jp": "しゅうまつに せんたくする",
+          "en": "do laundry on weekends"
+        },
+        {
+          "jp": "せんたくして ほす",
+          "en": "do laundry and hang it to dry"
+        }
+      ]
     },
     {
       "id": "n5_v_0148",
@@ -13822,9 +17274,7 @@
       "meaning": {
         "primary": "to clean",
         "gloss": [
-          "clean",
-          "tidy up",
-          "sweep"
+          "clean"
         ]
       },
       "forms": {
@@ -13903,7 +17353,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "へやを そうじする",
+          "en": "clean the room"
+        },
+        {
+          "jp": "まいしゅう そうじする",
+          "en": "clean every week"
+        },
+        {
+          "jp": "いえを そうじする",
+          "en": "clean the house"
+        },
+        {
+          "jp": "きれいに そうじする",
+          "en": "clean thoroughly"
+        },
+        {
+          "jp": "トイレを そうじする",
+          "en": "clean the toilet"
+        }
+      ]
     },
     {
       "id": "n5_v_0149",
@@ -13926,9 +17398,7 @@
       "meaning": {
         "primary": "to call",
         "gloss": [
-          "call",
-          "telephone",
-          "phone"
+          "call"
         ]
       },
       "forms": {
@@ -14007,7 +17477,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ともだちに でんわする",
+          "en": "call a friend"
+        },
+        {
+          "jp": "かいしゃに でんわする",
+          "en": "call the company"
+        },
+        {
+          "jp": "ははに でんわする",
+          "en": "call one's mother"
+        },
+        {
+          "jp": "あとで でんわする",
+          "en": "call later"
+        },
+        {
+          "jp": "けいたいで でんわする",
+          "en": "call on a mobile phone"
+        }
+      ]
     },
     {
       "id": "n5_v_0150",
@@ -14030,8 +17522,7 @@
       "meaning": {
         "primary": "to study",
         "gloss": [
-          "study",
-          "learn"
+          "study"
         ]
       },
       "forms": {
@@ -14110,7 +17601,57 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "にほんごを べんきょうする",
+          "en": "study Japanese"
+        },
+        {
+          "jp": "すうがくを べんきょうする",
+          "en": "study mathematics"
+        },
+        {
+          "jp": "れきしを べんきょうする",
+          "en": "study history"
+        },
+        {
+          "jp": "としょかんで べんきょうする",
+          "en": "study at the library"
+        },
+        {
+          "jp": "いえで べんきょうする",
+          "en": "study at home"
+        },
+        {
+          "jp": "がっこうで べんきょうする",
+          "en": "study at school"
+        },
+        {
+          "jp": "さんじかん べんきょうする",
+          "en": "study for 3 hours"
+        },
+        {
+          "jp": "まいにち べんきょうする",
+          "en": "study every day"
+        },
+        {
+          "jp": "ともだちと べんきょうする",
+          "en": "study with friends"
+        },
+        {
+          "jp": "いっしょに べんきょうする",
+          "en": "study together"
+        },
+        {
+          "jp": "いっしょうけんめい べんきょうする",
+          "en": "study hard"
+        },
+        {
+          "jp": "よく べんきょうする",
+          "en": "study well"
+        }
+      ]
     },
     {
       "id": "n5_v_0151",
@@ -14133,9 +17674,7 @@
       "meaning": {
         "primary": "to reserve",
         "gloss": [
-          "reserve",
-          "book",
-          "make a reservation"
+          "reserve"
         ]
       },
       "forms": {
@@ -14214,7 +17753,53 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ほてるを よやくする",
+          "en": "reserve a hotel"
+        },
+        {
+          "jp": "れすとらんを よやくする",
+          "en": "reserve a restaurant"
+        },
+        {
+          "jp": "せきを よやくする",
+          "en": "reserve a seat"
+        },
+        {
+          "jp": "ちけっとを よやくする",
+          "en": "reserve a ticket"
+        },
+        {
+          "jp": "しちじに よやくする",
+          "en": "make a reservation for 7 o'clock"
+        },
+        {
+          "jp": "あした よやくする",
+          "en": "make a reservation for tomorrow"
+        },
+        {
+          "jp": "でんわで よやくする",
+          "en": "reserve by phone"
+        },
+        {
+          "jp": "おんらいんで よやくする",
+          "en": "reserve online"
+        },
+        {
+          "jp": "いんたーねっとで よやくする",
+          "en": "reserve on the internet"
+        },
+        {
+          "jp": "よにんで よやくする",
+          "en": "make a reservation for 4 people"
+        },
+        {
+          "jp": "ふたりで よやくする",
+          "en": "make a reservation for 2 people"
+        }
+      ]
     },
     {
       "id": "n5_v_0152",
@@ -14316,7 +17901,53 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "あめりかに りゅうがくする",
+          "en": "study abroad in America"
+        },
+        {
+          "jp": "にほんに りゅうがくする",
+          "en": "study abroad in Japan"
+        },
+        {
+          "jp": "かなだに りゅうがくする",
+          "en": "study abroad in Canada"
+        },
+        {
+          "jp": "いちねん りゅうがくする",
+          "en": "study abroad for 1 year"
+        },
+        {
+          "jp": "はんとし りゅうがくする",
+          "en": "study abroad for half a year"
+        },
+        {
+          "jp": "だいがくで りゅうがくする",
+          "en": "study abroad at a university"
+        },
+        {
+          "jp": "ごがくがっこうで りゅうがくする",
+          "en": "study abroad at a language school"
+        },
+        {
+          "jp": "えいごを りゅうがくする",
+          "en": "study abroad for English"
+        },
+        {
+          "jp": "いがくを りゅうがくする",
+          "en": "study abroad for medicine"
+        },
+        {
+          "jp": "らいねん りゅうがくする",
+          "en": "study abroad next year"
+        },
+        {
+          "jp": "だいがくせいの ときに りゅうがくする",
+          "en": "study abroad during university"
+        }
+      ]
     },
     {
       "id": "n5_v_0153",
@@ -14340,8 +17971,7 @@
       "meaning": {
         "primary": "to bring (someone)",
         "gloss": [
-          "bring (someone)",
-          "bring along (a person)"
+          "bring (someone)"
         ]
       },
       "forms": {
@@ -14420,7 +18050,29 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "ともだちを つれて くる",
+          "en": "bring a friend"
+        },
+        {
+          "jp": "こどもを つれて くる",
+          "en": "bring a child"
+        },
+        {
+          "jp": "かれしを つれて くる",
+          "en": "bring one's boyfriend"
+        },
+        {
+          "jp": "ペットを つれて くる",
+          "en": "bring a pet"
+        },
+        {
+          "jp": "パーティーに つれて くる",
+          "en": "bring (someone) to a party"
+        }
+      ]
     },
     {
       "id": "n5_v_0154",
@@ -14444,8 +18096,7 @@
       "meaning": {
         "primary": "to bring (something)",
         "gloss": [
-          "bring (something)",
-          "bring along (an object)"
+          "bring (something)"
         ]
       },
       "forms": {
@@ -14524,7 +18175,45 @@
       },
       "meta": {
         "license": "CC BY-SA 4.0"
-      }
+      },
+      "usagePatterns": [
+        {
+          "jp": "おべんとうを もって くる",
+          "en": "bring a lunch box"
+        },
+        {
+          "jp": "きょうかしょを もって くる",
+          "en": "bring a textbook"
+        },
+        {
+          "jp": "ぷれぜんとを もって くる",
+          "en": "bring a present"
+        },
+        {
+          "jp": "がっこうに もって くる",
+          "en": "bring to school"
+        },
+        {
+          "jp": "ここに もって くる",
+          "en": "bring here"
+        },
+        {
+          "jp": "ともだちに もって くる",
+          "en": "bring to a friend"
+        },
+        {
+          "jp": "わたしに もって くる",
+          "en": "bring to me"
+        },
+        {
+          "jp": "あした もって きて ください",
+          "en": "please bring tomorrow"
+        },
+        {
+          "jp": "ほんを もって きて ください",
+          "en": "please bring the book"
+        }
+      ]
     }
   ]
 }

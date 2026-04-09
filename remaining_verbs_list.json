@@ -1,0 +1,1055 @@
+{
+  "total": 131,
+  "with_usage_patterns": 131,
+  "without_usage_patterns": 0,
+  "verbs": [
+    {
+      "kanji": "伺う",
+      "kana": "うかがう",
+      "masu_form": "伺います",
+      "masu_kana": "うかがいます",
+      "english": "to visit (humble)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "遅れる",
+      "kana": "おくれる",
+      "masu_form": "遅れます",
+      "masu_kana": "おくれます",
+      "english": "to be late",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "踊る",
+      "kana": "おどる",
+      "masu_form": "踊ります",
+      "masu_kana": "おどります",
+      "english": "to dance",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "決める",
+      "kana": "きめる",
+      "masu_form": "決めます",
+      "masu_kana": "きめます",
+      "english": "to decide",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "休憩する",
+      "kana": "きゅうけいする",
+      "masu_form": "休憩します",
+      "masu_kana": "きゅうけいします",
+      "english": "to take a break",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "化粧する",
+      "kana": "けしょうする",
+      "masu_form": "化粧します",
+      "masu_kana": "けしょうします",
+      "english": "to put on makeup",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "けんかする",
+      "kana": "けんかする",
+      "masu_form": "けんかします",
+      "masu_kana": "けんかします",
+      "english": "to fight, argue",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "答える",
+      "kana": "こたえる",
+      "masu_form": "答えます",
+      "masu_kana": "こたえます",
+      "english": "to answer",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "咲く",
+      "kana": "さく",
+      "masu_form": "咲きます",
+      "masu_kana": "さきます",
+      "english": "to bloom, blossom",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "仕事する",
+      "kana": "しごとする",
+      "masu_form": "仕事します",
+      "masu_kana": "しごとします",
+      "english": "to work",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "死ぬ",
+      "kana": "しぬ",
+      "masu_form": "死にます",
+      "masu_kana": "しにます",
+      "english": "to die",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "助かる",
+      "kana": "たすかる",
+      "masu_form": "助かります",
+      "masu_kana": "たすかります",
+      "english": "to be helpful, be saved",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "違う",
+      "kana": "ちがう",
+      "masu_form": "違います",
+      "masu_kana": "ちがいます",
+      "english": "to be different",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "ドライブする",
+      "kana": "どらいぶする",
+      "masu_form": "ドライブします",
+      "masu_kana": "どらいぶします",
+      "english": "to drive (for pleasure)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "泣く",
+      "kana": "なく",
+      "masu_form": "泣きます",
+      "masu_kana": "なきます",
+      "english": "to cry",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "並べる",
+      "kana": "ならべる",
+      "masu_form": "並べます",
+      "masu_kana": "ならべます",
+      "english": "to arrange, align",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "走る",
+      "kana": "はしる",
+      "masu_form": "走ります",
+      "masu_kana": "はしります",
+      "english": "to run",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "始まる",
+      "kana": "はじまる",
+      "masu_form": "始まります",
+      "masu_kana": "はじまります",
+      "english": "to begin",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "発表する",
+      "kana": "はっぴょうする",
+      "masu_form": "発表します",
+      "masu_kana": "はっぴょうします",
+      "english": "to announce, present",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "干す",
+      "kana": "ほす",
+      "masu_form": "干します",
+      "masu_kana": "ほします",
+      "english": "to dry",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "守る",
+      "kana": "まもる",
+      "masu_form": "守ります",
+      "masu_kana": "まもります",
+      "english": "to protect, observe (rules)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "戻る",
+      "kana": "もどる",
+      "masu_form": "戻ります",
+      "masu_kana": "もどります",
+      "english": "to return",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "茹でる",
+      "kana": "ゆでる",
+      "masu_form": "茹でます",
+      "masu_kana": "ゆでます",
+      "english": "to boil (food)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "料理する",
+      "kana": "りょうりする",
+      "masu_form": "料理します",
+      "masu_kana": "りょうりします",
+      "english": "to cook",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "旅行する",
+      "kana": "りょこうする",
+      "masu_form": "旅行します",
+      "masu_kana": "りょこうします",
+      "english": "to travel",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "沸く",
+      "kana": "わく",
+      "masu_form": "沸きます",
+      "masu_kana": "わきます",
+      "english": "to boil (water)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "笑う",
+      "kana": "わらう",
+      "masu_form": "笑います",
+      "masu_kana": "わらいます",
+      "english": "to laugh, smile",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "空く",
+      "kana": "すく",
+      "masu_form": "空きます",
+      "masu_kana": "すきます",
+      "english": "to be empty, hungry",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "飼う",
+      "kana": "かう",
+      "masu_form": "飼います",
+      "masu_kana": "かいます",
+      "english": "to keep, raise (a pet)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "気にする",
+      "kana": "きにする",
+      "masu_form": "気にします",
+      "masu_kana": "きにします",
+      "english": "to care about, worry",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "準備する",
+      "kana": "じゅんびする",
+      "masu_form": "準備します",
+      "masu_kana": "じゅんびします",
+      "english": "to prepare",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "喜ぶ",
+      "kana": "よろこぶ",
+      "masu_form": "喜びます",
+      "masu_kana": "よろこびます",
+      "english": "to be pleased, delighted",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "止まる",
+      "kana": "とまる",
+      "masu_form": "止まります",
+      "masu_kana": "とまります",
+      "english": "to stop (intransitive)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "停める",
+      "kana": "とめる",
+      "masu_form": "停めます",
+      "masu_kana": "とめます",
+      "english": "to park (vehicle)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "無理する",
+      "kana": "むりする",
+      "masu_form": "無理します",
+      "masu_kana": "むりします",
+      "english": "to overwork, overdo it",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "分ける",
+      "kana": "わける",
+      "masu_form": "分けます",
+      "masu_kana": "わけます",
+      "english": "to separate, divide",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "渡す",
+      "kana": "わたす",
+      "masu_form": "渡します",
+      "masu_kana": "わたします",
+      "english": "to hand out, give, pass",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "練習する",
+      "kana": "れんしゅうする",
+      "masu_form": "練習します",
+      "masu_kana": "れんしゅうします",
+      "english": "to practice",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "溢れる",
+      "kana": "あふれる",
+      "masu_form": "溢れます",
+      "masu_kana": "あふれます",
+      "english": "to overflow",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "謝る",
+      "kana": "あやまる",
+      "masu_form": "謝ります",
+      "masu_kana": "あやまります",
+      "english": "to apologize",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "温める",
+      "kana": "あたためる",
+      "masu_form": "温めます",
+      "masu_kana": "あたためます",
+      "english": "to warm up (food)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "痛む",
+      "kana": "いたむ",
+      "masu_form": "痛みます",
+      "masu_kana": "いたみます",
+      "english": "to hurt, ache",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "炒める",
+      "kana": "いためる",
+      "masu_form": "炒めます",
+      "masu_kana": "いためます",
+      "english": "to stir-fry",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "打つ",
+      "kana": "うつ",
+      "masu_form": "打ちます",
+      "masu_kana": "うちます",
+      "english": "to hit, strike",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "落とす",
+      "kana": "おとす",
+      "masu_form": "落とします",
+      "masu_kana": "おとします",
+      "english": "to drop",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "掛ける",
+      "kana": "かける",
+      "masu_form": "掛けます",
+      "masu_kana": "かけます",
+      "english": "to hang (clothes)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "片付ける",
+      "kana": "かたづける",
+      "masu_form": "片付けます",
+      "masu_kana": "かたづけます",
+      "english": "to tidy up, clean up",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "乾く",
+      "kana": "かわく",
+      "masu_form": "乾きます",
+      "masu_kana": "かわきます",
+      "english": "to dry (intransitive)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "蹴る",
+      "kana": "ける",
+      "masu_form": "蹴ります",
+      "masu_kana": "けります",
+      "english": "to kick",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "転ぶ",
+      "kana": "ころぶ",
+      "masu_form": "転びます",
+      "masu_kana": "ころびます",
+      "english": "to fall down, trip",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "相談する",
+      "kana": "そうだんする",
+      "masu_form": "相談します",
+      "masu_kana": "そうだんします",
+      "english": "to consult",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "探す",
+      "kana": "さがす",
+      "masu_form": "探します",
+      "masu_kana": "さがします",
+      "english": "to search, look for",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "質問する",
+      "kana": "しつもんする",
+      "masu_form": "質問します",
+      "masu_kana": "しつもんします",
+      "english": "to ask a question",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "叱る",
+      "kana": "しかる",
+      "masu_form": "叱ります",
+      "masu_kana": "しかります",
+      "english": "to scold",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "咳をする",
+      "kana": "せきをする",
+      "masu_form": "咳をします",
+      "masu_kana": "せきをします",
+      "english": "to cough",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "滑る",
+      "kana": "すべる",
+      "masu_form": "滑ります",
+      "masu_kana": "すべります",
+      "english": "to slip, slide",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "畳む",
+      "kana": "たたむ",
+      "masu_form": "畳みます",
+      "masu_kana": "たたみます",
+      "english": "to fold",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "頼む",
+      "kana": "たのむ",
+      "masu_form": "頼みます",
+      "masu_kana": "たのみます",
+      "english": "to ask, request",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "尋ねる",
+      "kana": "たずねる",
+      "masu_form": "尋ねます",
+      "masu_kana": "たずねます",
+      "english": "to ask, inquire",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "訪ねる",
+      "kana": "たずねる",
+      "masu_form": "訪ねます",
+      "masu_kana": "たずねます",
+      "english": "to visit (person)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "伝える",
+      "kana": "つたえる",
+      "masu_form": "伝えます",
+      "masu_kana": "つたえます",
+      "english": "to convey, tell",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "提出する",
+      "kana": "ていしゅつする",
+      "masu_form": "提出します",
+      "masu_kana": "ていしゅつします",
+      "english": "to submit",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "跳ぶ",
+      "kana": "とぶ",
+      "masu_form": "跳びます",
+      "masu_kana": "とびます",
+      "english": "to jump",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "捕る",
+      "kana": "とる",
+      "masu_form": "捕ります",
+      "masu_kana": "とります",
+      "english": "to catch",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "治る",
+      "kana": "なおる",
+      "masu_form": "治ります",
+      "masu_kana": "なおります",
+      "english": "to heal, get better",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "投げる",
+      "kana": "なげる",
+      "masu_form": "投げます",
+      "masu_kana": "なげます",
+      "english": "to throw",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "伸ばす",
+      "kana": "のばす",
+      "masu_form": "伸ばします",
+      "masu_kana": "のばします",
+      "english": "to stretch, extend",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "貼る",
+      "kana": "はる",
+      "masu_form": "貼ります",
+      "masu_kana": "はります",
+      "english": "to stick, paste",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "掃く",
+      "kana": "はく",
+      "masu_form": "掃きます",
+      "masu_kana": "はきます",
+      "english": "to sweep",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "吐く",
+      "kana": "はく",
+      "masu_form": "吐きます",
+      "masu_kana": "はきます",
+      "english": "to vomit",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "腫れる",
+      "kana": "はれる",
+      "masu_form": "腫れます",
+      "masu_kana": "はれます",
+      "english": "to swell",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "冷やす",
+      "kana": "ひやす",
+      "masu_form": "冷やします",
+      "masu_kana": "ひやします",
+      "english": "to cool, chill",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "拾う",
+      "kana": "ひろう",
+      "masu_form": "拾います",
+      "masu_kana": "ひろいます",
+      "english": "to pick up",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "褒める",
+      "kana": "ほめる",
+      "masu_form": "褒めます",
+      "masu_kana": "ほめます",
+      "english": "to praise",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "ぶつかる",
+      "kana": "ぶつかる",
+      "masu_form": "ぶつかります",
+      "masu_kana": "ぶつかります",
+      "english": "to bump into, collide",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "拭く",
+      "kana": "ふく",
+      "masu_form": "拭きます",
+      "masu_kana": "ふきます",
+      "english": "to wipe",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "復習する",
+      "kana": "ふくしゅうする",
+      "masu_form": "復習します",
+      "masu_kana": "ふくしゅうします",
+      "english": "to review (lessons)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "曲げる",
+      "kana": "まげる",
+      "masu_form": "曲げます",
+      "masu_kana": "まげます",
+      "english": "to bend",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "混ぜる",
+      "kana": "まぜる",
+      "masu_form": "混ぜます",
+      "masu_kana": "まぜます",
+      "english": "to mix",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "見つける",
+      "kana": "みつける",
+      "masu_form": "見つけます",
+      "masu_kana": "みつけます",
+      "english": "to find",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "磨く",
+      "kana": "みがく",
+      "masu_form": "磨きます",
+      "masu_kana": "みがきます",
+      "english": "to polish, brush (teeth)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "濡れる",
+      "kana": "ぬれる",
+      "masu_form": "濡れます",
+      "masu_kana": "ぬれます",
+      "english": "to get wet",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "焼く",
+      "kana": "やく",
+      "masu_form": "焼きます",
+      "masu_kana": "やきます",
+      "english": "to grill, bake, fry",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "予習する",
+      "kana": "よしゅうする",
+      "masu_form": "予習します",
+      "masu_kana": "よしゅうします",
+      "english": "to prepare (lessons)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "汚れる",
+      "kana": "よごれる",
+      "masu_form": "汚れます",
+      "masu_kana": "よごれます",
+      "english": "to get dirty",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "断る",
+      "kana": "ことわる",
+      "masu_form": "断ります",
+      "masu_kana": "ことわります",
+      "english": "to refuse, decline",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "配る",
+      "kana": "くばる",
+      "masu_form": "配ります",
+      "masu_kana": "くばります",
+      "english": "to distribute, hand out",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "連絡する",
+      "kana": "れんらくする",
+      "masu_form": "連絡します",
+      "masu_kana": "れんらくします",
+      "english": "to contact",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "溢れる",
+      "kana": "あふれる",
+      "masu_form": "溢れます",
+      "masu_kana": "あふれます",
+      "english": "to overflow",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "浮かぶ",
+      "kana": "うかぶ",
+      "masu_form": "浮かびます",
+      "masu_kana": "うかびます",
+      "english": "to float",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "折れる",
+      "kana": "おれる",
+      "masu_form": "折れます",
+      "masu_kana": "おれます",
+      "english": "to break, snap",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "溺れる",
+      "kana": "おぼれる",
+      "masu_form": "溺れます",
+      "masu_kana": "おぼれます",
+      "english": "to drown",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "噛む",
+      "kana": "かむ",
+      "masu_form": "噛みます",
+      "masu_kana": "かみます",
+      "english": "to chew, bite",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "凍る",
+      "kana": "こおる",
+      "masu_form": "凍ります",
+      "masu_kana": "こおります",
+      "english": "to freeze",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "擦る",
+      "kana": "こする",
+      "masu_form": "擦ります",
+      "masu_kana": "こすります",
+      "english": "to rub, scrape",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "漉す",
+      "kana": "こす",
+      "masu_form": "漉します",
+      "masu_kana": "こします",
+      "english": "to strain, filter",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "壊れる",
+      "kana": "こわれる",
+      "masu_form": "壊れます",
+      "masu_kana": "こわれます",
+      "english": "to break (intransitive)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "裂ける",
+      "kana": "さける",
+      "masu_form": "裂けます",
+      "masu_kana": "さけます",
+      "english": "to tear, split",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "絞る",
+      "kana": "しぼる",
+      "masu_form": "絞ります",
+      "masu_kana": "しぼります",
+      "english": "to squeeze, wring",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "沈む",
+      "kana": "しずむ",
+      "masu_form": "沈みます",
+      "masu_kana": "しずみます",
+      "english": "to sink",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "染める",
+      "kana": "そめる",
+      "masu_form": "染めます",
+      "masu_kana": "そめます",
+      "english": "to dye (hair)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "剃る",
+      "kana": "そる",
+      "masu_form": "剃ります",
+      "masu_kana": "そります",
+      "english": "to shave",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "すすぐ",
+      "kana": "すすぐ",
+      "masu_form": "すすぎます",
+      "masu_kana": "すすぎます",
+      "english": "to rinse",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "叩く",
+      "kana": "たたく",
+      "masu_form": "叩きます",
+      "masu_kana": "たたきます",
+      "english": "to beat, pat, knock",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "倒れる",
+      "kana": "たおれる",
+      "masu_form": "倒れます",
+      "masu_kana": "たおれます",
+      "english": "to fall over, collapse",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "垂らす",
+      "kana": "たらす",
+      "masu_form": "垂らします",
+      "masu_kana": "たらします",
+      "english": "to drip, drop (eye drops)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "詰まる",
+      "kana": "つまる",
+      "masu_form": "詰まります",
+      "masu_kana": "つまります",
+      "english": "to get stuck, choke",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "飛ぶ",
+      "kana": "とぶ",
+      "masu_form": "飛びます",
+      "masu_kana": "とびます",
+      "english": "to fly",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "溶ける",
+      "kana": "とける",
+      "masu_form": "溶けます",
+      "masu_kana": "とけます",
+      "english": "to melt, dissolve",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "梳かす",
+      "kana": "とかす",
+      "masu_form": "梳かします",
+      "masu_kana": "とかします",
+      "english": "to comb (hair)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "流れる",
+      "kana": "ながれる",
+      "masu_form": "流れます",
+      "masu_kana": "ながれます",
+      "english": "to flow",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "並ぶ",
+      "kana": "ならぶ",
+      "masu_form": "並びます",
+      "masu_kana": "ならびます",
+      "english": "to line up, stand in line",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "煮る",
+      "kana": "にる",
+      "masu_form": "煮ます",
+      "masu_kana": "にます",
+      "english": "to boil, simmer",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "縫う",
+      "kana": "ぬう",
+      "masu_form": "縫います",
+      "masu_kana": "ぬいます",
+      "english": "to sew, stitch",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "塗る",
+      "kana": "ぬる",
+      "masu_form": "塗ります",
+      "masu_kana": "ぬります",
+      "english": "to apply (medicine, cream)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "飲み込む",
+      "kana": "のみこむ",
+      "masu_form": "飲み込みます",
+      "masu_kana": "のみこみます",
+      "english": "to swallow",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "吐き出す",
+      "kana": "はきだす",
+      "masu_form": "吐き出します",
+      "masu_kana": "はきだします",
+      "english": "to spit out",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "剥く",
+      "kana": "むく",
+      "masu_form": "剥きます",
+      "masu_kana": "むきます",
+      "english": "to peel",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "結ぶ",
+      "kana": "むすぶ",
+      "masu_form": "結びます",
+      "masu_kana": "むすびます",
+      "english": "to tie (hair, shoelaces)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "蒸す",
+      "kana": "むす",
+      "masu_form": "蒸します",
+      "masu_kana": "むします",
+      "english": "to steam",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "揉む",
+      "kana": "もむ",
+      "masu_form": "揉みます",
+      "masu_kana": "もみます",
+      "english": "to massage, rub",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "破れる",
+      "kana": "やぶれる",
+      "masu_form": "破れます",
+      "masu_kana": "やぶれます",
+      "english": "to tear, rip",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "揺れる",
+      "kana": "ゆれる",
+      "masu_form": "揺れます",
+      "masu_kana": "ゆれます",
+      "english": "to shake, sway",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "響く",
+      "kana": "ひびく",
+      "masu_form": "響きます",
+      "masu_kana": "ひびきます",
+      "english": "to resound, echo",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "光る",
+      "kana": "ひかる",
+      "masu_form": "光ります",
+      "masu_kana": "ひかります",
+      "english": "to shine, glow",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "引っ掻く",
+      "kana": "ひっかく",
+      "masu_form": "引っ掻きます",
+      "masu_kana": "ひっかきます",
+      "english": "to scratch",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "挽く",
+      "kana": "ひく",
+      "masu_form": "挽きます",
+      "masu_kana": "ひきます",
+      "english": "to grind",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "包帯を巻く",
+      "kana": "ほうたいをまく",
+      "masu_form": "包帯を巻きます",
+      "masu_kana": "ほうたいをまきます",
+      "english": "to bandage",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "燃える",
+      "kana": "もえる",
+      "masu_form": "燃えます",
+      "masu_kana": "もえます",
+      "english": "to burn",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "消える",
+      "kana": "きえる",
+      "masu_form": "消えます",
+      "masu_kana": "きえます",
+      "english": "to disappear, go out (light)",
+      "has_usage_patterns": true
+    },
+    {
+      "kanji": "擦る",
+      "kana": "する",
+      "masu_form": "擦ります",
+      "masu_kana": "すります",
+      "english": "to grate",
+      "has_usage_patterns": true
+    }
+  ]
+}

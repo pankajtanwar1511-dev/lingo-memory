@@ -49,6 +49,7 @@ interface N5Verb {
     masu: VerbExample[]
     te: VerbExample[]
   }
+  usagePatterns?: Array<{ jp: string; en: string }>
   audio?: { file: string; status: string }
   meta?: { license: string }
 }
@@ -117,8 +118,10 @@ export default function VerbsPage() {
   const [showOnlyUnknown, setShowOnlyUnknown] = useState(false)
   const [expandedMeanings, setExpandedMeanings] = useState<Set<string>>(new Set())
   const [expandedExamples, setExpandedExamples] = useState<Set<string>>(new Set())
+  const [expandedUsagePatterns, setExpandedUsagePatterns] = useState<Set<string>>(new Set())
   const [selectedExampleForm, setSelectedExampleForm] = useState<'masu' | 'dict' | 'te'>('masu')
   const [examplesPopup, setExamplesPopup] = useState<{ verbId: string; verb: N5Verb; position: { x: number; y: number }; showKana: boolean; formType?: 'masu' | 'dict' | 'te' } | null>(null)
+  const [usagePatternsPopup, setUsagePatternsPopup] = useState<{ verbId: string; verb: N5Verb; position: { x: number; y: number } } | null>(null)
 
   // Particle quiz mode
   const [particleQuizMode, setParticleQuizMode] = useState(false)
@@ -462,9 +465,67 @@ export default function VerbsPage() {
     })
   }
 
+  const toggleUsagePatternsPopup = (verb: N5Verb, e: React.MouseEvent) => {
+    e.stopPropagation()
+
+    // If clicking the same verb, close the popup
+    if (usagePatternsPopup?.verbId === verb.id) {
+      setUsagePatternsPopup(null)
+      return
+    }
+
+    // Get button position for popup placement
+    const button = e.currentTarget as HTMLElement
+    const rect = button.getBoundingClientRect()
+
+    // Calculate popup dimensions (approximate)
+    const popupWidth = 420
+    const popupHeight = 400
+
+    // Calculate position - try to show to the right, but if not enough space, show to the left
+    let x = rect.right + 10
+    let y = rect.top
+
+    // Check if popup would go off screen to the right
+    if (x + popupWidth > window.innerWidth) {
+      // Show to the left of the button instead
+      x = rect.left - popupWidth - 10
+    }
+
+    // Check if popup would go off screen at the bottom
+    if (y + popupHeight > window.innerHeight) {
+      // Adjust to show from bottom
+      y = Math.max(10, window.innerHeight - popupHeight - 10)
+    }
+
+    // Make sure it's not off screen at the top
+    if (y < 10) {
+      y = 10
+    }
+
+    setUsagePatternsPopup({
+      verbId: verb.id,
+      verb: verb,
+      position: { x, y }
+    })
+  }
+
   const toggleExamplesExpansion = (verbId: string, e: React.MouseEvent) => {
     e.stopPropagation()
     setExpandedExamples(prev => {
+      const newSet = new Set(prev)
+      if (newSet.has(verbId)) {
+        newSet.delete(verbId)
+      } else {
+        newSet.add(verbId)
+      }
+      return newSet
+    })
+  }
+
+  const toggleUsagePatternsExpansion = (verbId: string, e: React.MouseEvent) => {
+    e.stopPropagation()
+    setExpandedUsagePatterns(prev => {
       const newSet = new Set(prev)
       if (newSet.has(verbId)) {
         newSet.delete(verbId)
@@ -1926,6 +1987,20 @@ export default function VerbsPage() {
                                     )}
                                   </button>
                                 )}
+                                {/* Usage Patterns Toggle */}
+                                {verb.usagePatterns && verb.usagePatterns.length > 0 && (
+                                  <button
+                                    onClick={(e) => toggleUsagePatternsPopup(verb, e)}
+                                    className="p-1.5 rounded-full hover:bg-accent transition-colors"
+                                    title={usagePatternsPopup?.verbId === verb.id ? "Hide usage patterns" : "Show usage patterns"}
+                                  >
+                                    {usagePatternsPopup?.verbId === verb.id ? (
+                                      <Sparkles className="h-4 w-4 text-blue-500" />
+                                    ) : (
+                                      <Sparkles className="h-4 w-4 text-muted-foreground" />
+                                    )}
+                                  </button>
+                                )}
                                 {/* Meanings Toggle */}
                                 {frontSide === 'english' && verb.meaning.gloss.length > 2 && (
                                   <button
@@ -1987,6 +2062,20 @@ export default function VerbsPage() {
                                       <BookText className="h-4 w-4 text-primary" />
                                     ) : (
                                       <BookText className="h-4 w-4 text-muted-foreground" />
+                                    )}
+                                  </button>
+                                )}
+                                {/* Usage Patterns Toggle */}
+                                {verb.usagePatterns && verb.usagePatterns.length > 0 && (
+                                  <button
+                                    onClick={(e) => toggleUsagePatternsPopup(verb, e)}
+                                    className="p-1.5 rounded-full hover:bg-accent transition-colors"
+                                    title={usagePatternsPopup?.verbId === verb.id ? "Hide usage patterns" : "Show usage patterns"}
+                                  >
+                                    {usagePatternsPopup?.verbId === verb.id ? (
+                                      <Sparkles className="h-4 w-4 text-blue-500" />
+                                    ) : (
+                                      <Sparkles className="h-4 w-4 text-muted-foreground" />
                                     )}
                                   </button>
                                 )}
@@ -2110,6 +2199,20 @@ export default function VerbsPage() {
                                 )}
                               </button>
                             )}
+                            {/* Usage Patterns Toggle */}
+                            {verb.usagePatterns && verb.usagePatterns.length > 0 && (
+                              <button
+                                onClick={(e) => toggleUsagePatternsPopup(verb, e)}
+                                className="p-1.5 rounded-full hover:bg-accent transition-colors"
+                                title={usagePatternsPopup?.verbId === verb.id ? "Hide usage patterns" : "Show usage patterns"}
+                              >
+                                {usagePatternsPopup?.verbId === verb.id ? (
+                                  <Sparkles className="h-4 w-4 text-blue-500" />
+                                ) : (
+                                  <Sparkles className="h-4 w-4 text-muted-foreground" />
+                                )}
+                              </button>
+                            )}
                             {/* Meanings Toggle */}
                             {frontSide === 'english' && verb.meaning.gloss.length > 2 && (
                               <button
@@ -2171,6 +2274,20 @@ export default function VerbsPage() {
                                   <BookText className="h-4 w-4 text-primary" />
                                 ) : (
                                   <BookText className="h-4 w-4 text-muted-foreground" />
+                                )}
+                              </button>
+                            )}
+                            {/* Usage Patterns Toggle */}
+                            {verb.usagePatterns && verb.usagePatterns.length > 0 && (
+                              <button
+                                onClick={(e) => toggleUsagePatternsPopup(verb, e)}
+                                className="p-1.5 rounded-full hover:bg-accent transition-colors"
+                                title={usagePatternsPopup?.verbId === verb.id ? "Hide usage patterns" : "Show usage patterns"}
+                              >
+                                {usagePatternsPopup?.verbId === verb.id ? (
+                                  <Sparkles className="h-4 w-4 text-blue-500" />
+                                ) : (
+                                  <Sparkles className="h-4 w-4 text-muted-foreground" />
                                 )}
                               </button>
                             )}
@@ -2304,80 +2421,79 @@ export default function VerbsPage() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: Math.min(index * 0.05, 1) }}
                   >
-                    <Card className="overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-200 cursor-pointer h-full border-0 shadow-md">
-                      {/* Glossy header with gradient */}
+                    <Card className="overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 cursor-pointer h-full border shadow-sm">
+                      {/* Header */}
                       <div className={cn(
-                        "px-5 pt-4 pb-3",
+                        "px-4 py-3 border-b",
                         verb.morphology.class === 'godan'
-                          ? "bg-gradient-to-br from-blue-500/10 via-indigo-500/5 to-background"
+                          ? "bg-gradient-to-r from-blue-500/5 to-background"
                           : verb.morphology.class === 'ichidan'
-                          ? "bg-gradient-to-br from-emerald-500/10 via-teal-500/5 to-background"
-                          : "bg-gradient-to-br from-orange-500/10 via-rose-500/5 to-background"
+                          ? "bg-gradient-to-r from-emerald-500/5 to-background"
+                          : "bg-gradient-to-r from-orange-500/5 to-background"
                       )}>
-                        <div className="flex items-start justify-between">
-                          <div className="space-y-1 flex-1">
-                            <div className="flex items-center gap-2">
-                              <CardTitle className="text-xl sm:text-2xl font-bold tracking-wide">{verb.lemma.kanji}</CardTitle>
-                            </div>
-                            <div className="flex items-center gap-2">
-                              <span className="text-base sm:text-lg text-muted-foreground">{verb.lemma.kana}</span>
-                              <Badge variant={
-                                verb.morphology.class === 'godan' ? 'default' :
-                                verb.morphology.class === 'ichidan' ? 'secondary' : 'outline'
-                              } className="text-xs">
-                                {verbGroupLabel(verb.morphology.class)}
-                              </Badge>
-                            </div>
+                        <div className="flex items-center justify-between gap-3">
+                          <div className="flex items-baseline gap-2 flex-1 min-w-0">
+                            <CardTitle className="text-lg sm:text-xl font-bold tracking-wide truncate">{verb.lemma.kanji}</CardTitle>
+                            <span className="text-sm sm:text-base text-muted-foreground whitespace-nowrap">{verb.lemma.kana}</span>
                           </div>
+                          <Badge variant={
+                            verb.morphology.class === 'godan' ? 'default' :
+                            verb.morphology.class === 'ichidan' ? 'secondary' : 'outline'
+                          } className="text-xs shrink-0">
+                            {verbGroupLabel(verb.morphology.class)}
+                          </Badge>
                         </div>
                       </div>
-                      <CardContent className="space-y-3 pt-3">
-                        <div>
-                          <p className="text-sm font-semibold text-muted-foreground mb-1">Primary Meaning:</p>
-                          <p className="font-medium">{verb.meaning.primary}</p>
+
+                      <CardContent className="p-0 space-y-0">
+                        {/* Meaning block */}
+                        <div className="px-4 py-3 bg-muted/30">
+                          <p className="font-medium text-base">{verb.meaning.primary}</p>
                         </div>
 
-                        <div>
-                          <p className="text-sm font-semibold text-muted-foreground mb-1">Masu Form:</p>
-                          <div className="flex items-baseline gap-2">
-                            <span className="text-lg font-bold">{verb.forms.masu.kanji}</span>
-                            <span className="text-sm text-muted-foreground">({verb.forms.masu.kana})</span>
+                        {/* Forms block - horizontal grid */}
+                        <div className="grid grid-cols-2 gap-0 bg-muted/50">
+                          <div className="px-4 py-3 border-r border-border/50">
+                            <div className="flex items-baseline gap-1.5">
+                              <span className="font-semibold text-base">{verb.forms.masu.kanji}</span>
+                              <span className="text-xs text-muted-foreground">({verb.forms.masu.kana})</span>
+                            </div>
+                          </div>
+                          <div className="px-4 py-3">
+                            <div className="flex items-baseline gap-1.5">
+                              <span className="font-semibold text-base">{verb.forms.te.kanji}</span>
+                              <span className="text-xs text-muted-foreground">({verb.forms.te.kana})</span>
+                            </div>
                           </div>
                         </div>
 
-                        <div>
-                          <p className="text-sm font-semibold text-muted-foreground mb-1">Te-form:</p>
-                          <div className="flex items-baseline gap-2">
-                            <span className="text-lg font-bold">{verb.forms.te.kanji}</span>
-                            <span className="text-sm text-muted-foreground">({verb.forms.te.kana})</span>
+                        {/* Additional info block */}
+                        <div className="px-4 py-2.5 bg-muted/20 flex items-center justify-between gap-2 flex-wrap">
+                          <div className="flex items-center gap-2">
+                            {renderValencyBadge(verb, false)}
+                            {verb.valency.requiredParticles.length > 1 && (
+                              <span className="text-xs text-muted-foreground">
+                                {verb.valency.requiredParticles.slice(1).join('/')}
+                              </span>
+                            )}
                           </div>
-                        </div>
-
-                        {verb.meaning.gloss.length > 1 && (
-                          <details className="text-sm">
-                            <summary className="cursor-pointer text-muted-foreground hover:text-foreground">
-                              +{verb.meaning.gloss.length - 1} more meanings
-                            </summary>
-                            <ul className="mt-2 space-y-1 pl-4 list-disc text-muted-foreground">
-                              {verb.meaning.gloss.slice(1, 4).map((m, i) => (
-                                <li key={i}>{m}</li>
-                              ))}
-                            </ul>
-                          </details>
-                        )}
-
-                        <div className="flex items-center gap-2 pt-2">
-                          {renderValencyBadge(verb, false)}
-                          {verb.valency.requiredParticles.length > 1 && (
-                            <span className="text-xs text-muted-foreground">
-                              also: {verb.valency.requiredParticles.slice(1).join('/')}
-                            </span>
+                          {verb.meaning.gloss.length > 1 && (
+                            <details className="text-xs">
+                              <summary className="cursor-pointer text-muted-foreground hover:text-foreground">
+                                +{verb.meaning.gloss.length - 1} more
+                              </summary>
+                              <ul className="mt-1 space-y-0.5 pl-3 list-disc text-muted-foreground absolute bg-popover border rounded-md shadow-lg p-2 z-10 min-w-[200px]">
+                                {verb.meaning.gloss.slice(1, 4).map((m, i) => (
+                                  <li key={i}>{m}</li>
+                                ))}
+                              </ul>
+                            </details>
                           )}
                         </div>
 
                         {/* Examples Section */}
                         {verb.examples && verb.examples.masu.length > 0 && (
-                          <div className="pt-3 border-t mt-3">
+                          <div className="px-4 py-3 bg-background border-t">
                             <div className="flex items-center justify-between mb-2">
                               <div className="flex items-center gap-2">
                                 <BookText className="h-4 w-4 text-primary" />
@@ -2425,6 +2541,60 @@ export default function VerbsPage() {
                                             {example.highlight}
                                           </Badge>
                                         )}
+                                      </div>
+                                    </div>
+                                  </div>
+                                ))}
+                              </motion.div>
+                            )}
+                          </div>
+                        )}
+
+                        {/* Usage Patterns Section */}
+                        {verb.usagePatterns && verb.usagePatterns.length > 0 && (
+                          <div className="px-4 py-3 bg-background border-t">
+                            <div className="flex items-center justify-between mb-2">
+                              <div className="flex items-center gap-2">
+                                <Sparkles className="h-4 w-4 text-blue-500" />
+                                <p className="text-sm font-semibold text-blue-600 dark:text-blue-400">Common Usage Patterns ({verb.usagePatterns.length})</p>
+                              </div>
+                              <button
+                                onClick={(e) => toggleUsagePatternsExpansion(verb.id, e)}
+                                className="p-1.5 rounded-full hover:bg-accent transition-colors"
+                                title={expandedUsagePatterns.has(verb.id) ? "Hide patterns" : "Show patterns"}
+                              >
+                                {expandedUsagePatterns.has(verb.id) ? (
+                                  <EyeOff className="h-4 w-4 text-muted-foreground" />
+                                ) : (
+                                  <Eye className="h-4 w-4 text-muted-foreground" />
+                                )}
+                              </button>
+                            </div>
+
+                            {expandedUsagePatterns.has(verb.id) && (
+                              <motion.div
+                                initial={{ opacity: 0, height: 0 }}
+                                animate={{ opacity: 1, height: "auto" }}
+                                exit={{ opacity: 0, height: 0 }}
+                                transition={{ duration: 0.2 }}
+                                className="space-y-2"
+                              >
+                                {verb.usagePatterns.map((pattern, idx) => (
+                                  <div
+                                    key={idx}
+                                    className="p-2.5 rounded-lg bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800/30 space-y-1"
+                                  >
+                                    <div className="flex items-start gap-2">
+                                      <Badge variant="outline" className="text-xs shrink-0 mt-0.5 bg-blue-100 dark:bg-blue-900/30 border-blue-300 dark:border-blue-700">
+                                        {idx + 1}
+                                      </Badge>
+                                      <div className="space-y-0.5 flex-1">
+                                        <p className="text-sm font-medium leading-relaxed text-foreground">
+                                          {pattern.jp}
+                                        </p>
+                                        <p className="text-xs text-muted-foreground leading-relaxed">
+                                          {pattern.en}
+                                        </p>
                                       </div>
                                     </div>
                                   </div>
@@ -2583,6 +2753,72 @@ export default function VerbsPage() {
               </>
             )
           })()}
+        </AnimatePresence>
+
+        {/* Usage Patterns Popup */}
+        <AnimatePresence>
+          {usagePatternsPopup && usagePatternsPopup.verb.usagePatterns && usagePatternsPopup.verb.usagePatterns.length > 0 && (
+            <>
+              {/* Backdrop to close popup when clicking outside */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="fixed inset-0 bg-black/20 z-40"
+                onClick={() => setUsagePatternsPopup(null)}
+              />
+
+              {/* Popup Card */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.2 }}
+                className="fixed z-50 w-[95vw] sm:w-[420px] max-w-[420px]"
+                style={{
+                  left: typeof window !== 'undefined' && window.innerWidth < 640 ? '2.5vw' : `${usagePatternsPopup.position.x}px`,
+                  top: `${usagePatternsPopup.position.y}px`
+                }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <Card className="shadow-2xl border-2 border-blue-500 bg-background">
+                  <CardHeader className="pb-2 pt-3">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="flex items-center gap-2">
+                        <Sparkles className="h-4 w-4 text-blue-500" />
+                        <CardTitle className="text-base text-blue-600 dark:text-blue-400">
+                          {usagePatternsPopup.verb.lemma.kanji} — Common Usage Patterns
+                        </CardTitle>
+                      </div>
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        onClick={() => setUsagePatternsPopup(null)}
+                        className="h-6 w-6 p-0"
+                      >
+                        <EyeOff className="h-3 w-3" />
+                      </Button>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-2 max-h-[400px] overflow-y-auto pb-3">
+                    {usagePatternsPopup.verb.usagePatterns.map((pattern, idx) => (
+                      <div
+                        key={idx}
+                        className="p-2.5 rounded-lg bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800/30 space-y-1"
+                      >
+                        <p className="text-sm font-medium text-foreground">
+                          {pattern.jp}
+                        </p>
+                        <p className="text-xs text-muted-foreground">
+                          {pattern.en}
+                        </p>
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </>
+          )}
         </AnimatePresence>
       </main>
     </div>

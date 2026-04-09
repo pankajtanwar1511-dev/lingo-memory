@@ -16,17 +16,17 @@
 | 上げる | あげる | 上げます | あげます | to give |
 | 遊ぶ | あそぶ | 遊びます | あそびます | to enjoy oneself, play |
 | 集める | あつめる | 集めます | あつめます | to collect |
-| 浴びる | あびる | 浴びます | あびます | to bathe |
+| 浴びる | あびる | 浴びます | あびます | to bathe, take (a shower) |
 | 洗う | あらう | 洗います | あらいます | to wash |
 | ある | ある | あります | あります | to exist; be; have |
 | 歩く | あるく | 歩きます | あるきます | to walk |
 | 案内する | あんないする | 案内します | あんないします | to guide |
-| 言う | いう | 言います | いいます | to say |
+| 言う | いう | 言います | いいます | to say, tell |
 | 行く | いく | 行きます | いきます | to go |
 | 急ぐ | いそぐ | 急ぎます | いそぎます | to hurry |
 | 要る | いる | 要ります | いります | to need, require |
 | いる | いる | います | います | to exist (animate) |
-| 入れる | いれる | 入れます | いれます | to put in |
+| 入れる | いれる | 入れます | いれます | to put in, add |
 | 伺う | うかがう | 伺います | うかがいます | to visit (humble) |
 | 動く | うごく | 動きます | うごきます | to move, work |
 | 歌う | うたう | 歌います | うたいます | to sing |
@@ -40,7 +40,7 @@
 | 教える | おしえる | 教えます | おしえます | to teach; to tell |
 | 押す | おす | 押します | おします | to push, press |
 | 踊る | おどる | 踊ります | おどります | to dance |
-| 覚える | おぼえる | 覚えます | おぼえます | to memorize |
+| 覚える | おぼえる | 覚えます | おぼえます | to remember, memorize |
 | 思い出す | おもいだす | 思い出します | おもいだします | to remember, recollect |
 | 思う | おもう | 思います | おもいます | to think |
 | 泳ぐ | およぐ | 泳ぎます | およぎます | to swim |
@@ -54,7 +54,7 @@
 | 変える | かえる | 変えます | かえます | to change |
 | 掛かる | かかる | 掛かります | かかります | to take, cost (time or money) |
 | 書く | かく | 書きます | かきます | to write, draw, paint |
-| かける | かける | かけます | かけます | to put on |
+| かける | かける | かけます | かけます | to hang, put on, wear (glasses), make (a call), sprinkle |
 | 貸す | かす | 貸します | かします | to lend |
 | 勝つ | かつ | 勝ちます | かちます | to win |
 | 被る | かぶる | 被ります | かぶります | to put on (a hat, etc.) |
@@ -70,13 +70,13 @@
 | 来る | くる | 来ます | きます | to come |
 | くれる | くれる | くれます | くれます | to give (to me/us) |
 | 化粧する | けしょうする | 化粧します | けしょうします | to put on makeup |
-| 消す | けす | 消します | けします | to turn off |
+| 消す | けす | 消します | けします | to turn off, erase |
 | 結婚する | けっこんする | 結婚します | けっこんします | to marry |
-| けんかする | けんかする | けんかします | けんかします | to fight |
-| 見学する | けんがくする | 見学します | けんがくします | to tour |
+| けんかする | けんかする | けんかします | けんかします | to fight, argue |
+| 見学する | けんがくする | 見学します | けんがくします | to tour, visit (for observation) |
 | 研究する | けんきゅうする | 研究します | けんきゅうします | to research |
 | 答える | こたえる | 答えます | こたえます | to answer |
-| 咲く | さく | 咲きます | さきます | to bloom |
+| 咲く | さく | 咲きます | さきます | to bloom, blossom |
 | 触る | さわる | 触ります | さわります | to touch |
 | 散歩する | さんぽする | 散歩します | さんぽします | to take a walk |
 | 残業する | ざんぎょうする | 残業します | ざんぎょうします | to work overtime |
@@ -90,7 +90,7 @@
 | 調べる | しらべる | 調べます | しらべます | to investigate |
 | 知る | しる | 知ります | しります | to get to know |
 | 心配する | しんぱいする | 心配します | しんぱいします | to worry |
-| 吸う | すう | 吸います | すいます | to breathe in; inhale |
+| 吸う | すう | 吸います | すいます | to smoke, inhale, breathe in |
 | 捨てる | すてる | 捨てます | すてます | to throw away |
 | 住む | すむ | 住みます | すみます | to live; reside |
 | する | する | します | します | to do |
@@ -98,16 +98,16 @@
 | 説明する | せつめいする | 説明します | せつめいします | to explain |
 | 洗濯する | せんたくする | 洗濯します | せんたくします | to do laundry |
 | 掃除する | そうじする | 掃除します | そうじします | to clean |
-| 助かる | たすかる | 助かります | たすかります | to be saved |
+| 助かる | たすかる | 助かります | たすかります | to be helpful, be saved |
 | 立つ | たつ | 立ちます | たちます | to stand up |
 | 食べる | たべる | 食べます | たべます | to eat |
 | 足りる | たりる | 足ります | たります | to be enough |
-| 出す | だす | 出します | だします | to take out, hand in, send |
+| 出す | だす | 出します | だします | to take out, hand in, send, make (a sound) |
 | 違う | ちがう | 違います | ちがいます | to be different |
 | 使う | つかう | 使います | つかいます | to use |
 | 疲れる | つかれる | 疲れます | つかれます | to get tired |
 | 着く | つく | 着きます | つきます | to arrive |
-| 作る | つくる | 作ります | つくります | to make |
+| 作る | つくる | 作ります | つくります | to make, build |
 | つける | つける | つけます | つけます | to turn on |
 | 連れて行く | つれていく | 連れて行きます | つれていきます | to take (someone) |
 | 連れて来る | つれてくる | 連れて来ます | つれてきます | to bring (someone) |
@@ -126,7 +126,7 @@
 | 泣く | なく | 泣きます | なきます | to cry |
 | 無くす | なくす | 無くします | なくします | to lose |
 | 習う | ならう | 習います | ならいます | to learn |
-| 並べる | ならべる | 並べます | ならべます | to arrange |
+| 並べる | ならべる | 並べます | ならべます | to arrange, align |
 | なる | なる | なります | なります | to become |
 | 脱ぐ | ぬぐ | 脱ぎます | ぬぎます | to take off |
 | 寝る | ねる | 寝ます | ねます | to sleep |
@@ -135,13 +135,13 @@
 | 乗り換える | のりかえる | 乗り換えます | のりかえます | to transfer |
 | 乗る | のる | 乗ります | のります | to ride |
 | 入る | はいる | 入ります | はいります | to enter |
-| 履く | はく | 履きます | はきます | to put on |
+| 履く | はく | 履きます | はきます | to put on, wear (below waist) |
 | 走る | はしる | 走ります | はしります | to run |
 | 始まる | はじまる | 始まります | はじまります | to begin |
 | 始める | はじめる | 始めます | はじめます | to start |
 | 働く | はたらく | 働きます | はたらきます | to work |
-| 発表する | はっぴょうする | 発表します | はっぴょうします | to announce |
-| 話す | はなす | 話します | はなします | to speak |
+| 発表する | はっぴょうする | 発表します | はっぴょうします | to announce, present |
+| 話す | はなす | 話します | はなします | to speak, talk |
 | 払う | はらう | 払います | はらいます | to pay |
 | 弾く | ひく | 弾きます | ひきます | to play (instrument) |
 | 引く | ひく | 引きます | ひきます | to pull |
@@ -151,19 +151,19 @@
 | 曲がる | まがる | 曲がります | まがります | to turn |
 | 負ける | まける | 負けます | まけます | to lose |
 | 待つ | まつ | 待ちます | まちます | to wait |
-| 守る | まもる | 守ります | まもります | to protect |
+| 守る | まもる | 守ります | まもります | to protect, observe (rules) |
 | 回す | まわす | 回します | まわします | to turn |
 | 見せる | みせる | 見せます | みせます | to show |
-| 見る | みる | 見ます | みます | to see |
+| 見る | みる | 見ます | みます | to see, watch |
 | 迎える | むかえる | 迎えます | むかえます | to welcome |
 | 持って行く | もっていく | 持って行きます | もっていきます | to take (something) |
 | 持って来る | もってくる | 持って来ます | もってきます | to bring (something) |
-| 持つ | もつ | 持ちます | もちます | to hold |
+| 持つ | もつ | 持ちます | もちます | to hold, have, own |
 | 戻る | もどる | 戻ります | もどります | to return |
 | もらう | もらう | もらいます | もらいます | to receive |
 | 役に立つ | やくにたつ | 役に立ちます | やくにたちます | to be useful |
 | 休む | やすむ | 休みます | やすみます | to rest |
-| 辞める | やめる | 辞めます | やめます | to quit |
+| 辞める | やめる | 辞めます | やめます | to quit, stop |
 | 茹でる | ゆでる | 茹でます | ゆでます | to boil (food) |
 | 呼ぶ | よぶ | 呼びます | よびます | to call |
 | 読む | よむ | 読みます | よみます | to read |
@@ -175,7 +175,7 @@
 | 沸く | わく | 沸きます | わきます | to boil (water) |
 | 忘れる | わすれる | 忘れます | わすれます | to forget |
 | 渡る | わたる | 渡ります | わたります | to cross |
-| 笑う | わらう | 笑います | わらいます | to laugh |
+| 笑う | わらう | 笑います | わらいます | to laugh, smile |
 | コピーする | コピーする | コピーします | コピーします | to copy |
 
 ---
