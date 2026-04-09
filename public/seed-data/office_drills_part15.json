@@ -1,0 +1,153 @@
+{
+  "schema": "office-drills-v1",
+  "packs": [
+    {
+      "id": "client-relations",
+      "title": "Client Relations Lifecycle",
+      "titleJa": "顧客対応の流れ",
+      "description": "Practice client-facing vocabulary from initial contact to delivery",
+      "cluster": "clients",
+      "stages": [
+        {
+          "id": "client-s1",
+          "prompt": "You're reaching out to a new potential client. Tell them you'd like to arrange a business meeting.",
+          "targets": {
+            "required": ["office-290"]
+          },
+          "modelAnswer": {
+            "japanese": "商談の機会をいただけますでしょうか。",
+            "kana": "しょうだんのきかいをいただけますでしょうか。",
+            "english": "Could we have an opportunity for a business discussion?"
+          },
+          "hint": "商談 (しょうだん) — business negotiation/meeting"
+        },
+        {
+          "id": "client-s2",
+          "prompt": "After the meeting, you need to send an estimate. Tell your client you'll send a quotation.",
+          "targets": {
+            "required": ["office-291"]
+          },
+          "modelAnswer": {
+            "japanese": "見積もりをお送りします。",
+            "kana": "みつもりをおおくりします。",
+            "english": "I will send you a quotation."
+          },
+          "hint": "見積もり (みつもり) — quotation/estimate"
+        },
+        {
+          "id": "client-s3",
+          "prompt": "The client accepted your proposal. Tell them you'll prepare the contract.",
+          "targets": {
+            "required": ["office-293"]
+          },
+          "modelAnswer": {
+            "japanese": "契約書を準備いたします。",
+            "kana": "けいやくしょをじゅんびいたします。",
+            "english": "I will prepare the contract."
+          },
+          "hint": "契約 (けいやく) — contract"
+        },
+        {
+          "id": "client-s4",
+          "prompt": "The product is ready. Tell the client you'll deliver the product.",
+          "targets": {
+            "required": ["office-295"]
+          },
+          "modelAnswer": {
+            "japanese": "納品いたします。",
+            "kana": "のうひんいたします。",
+            "english": "We will deliver the product."
+          },
+          "hint": "納品 (のうひん) — delivery of goods"
+        },
+        {
+          "id": "client-s5",
+          "prompt": "After delivery, you need to follow up. Tell the client you'll do a follow-up.",
+          "targets": {
+            "required": ["office-286"]
+          },
+          "modelAnswer": {
+            "japanese": "後日フォローアップさせていただきます。",
+            "kana": "ごじつフォローアップさせていただきます。",
+            "english": "I will do a follow-up at a later date."
+          },
+          "hint": "フォローアップ — follow-up"
+        }
+      ]
+    },
+    {
+      "id": "finance-workflow",
+      "title": "Finance & Expenses",
+      "titleJa": "経費精算",
+      "description": "Practice expense reporting and reimbursement workflow",
+      "cluster": "finance",
+      "stages": [
+        {
+          "id": "finance-s1",
+          "prompt": "You had a business lunch and need to claim it. Tell your manager it's a business expense.",
+          "targets": {
+            "required": ["office-299"]
+          },
+          "modelAnswer": {
+            "japanese": "経費として申請します。",
+            "kana": "けいひとしてしんせいします。",
+            "english": "I will claim it as a business expense."
+          },
+          "hint": "経費 (けいひ) — business expense"
+        },
+        {
+          "id": "finance-s2",
+          "prompt": "You need proof for the expense. Ask if they can provide a receipt.",
+          "targets": {
+            "required": ["office-301"]
+          },
+          "modelAnswer": {
+            "japanese": "領収書をいただけますか。",
+            "kana": "りょうしゅうしょをいただけますか。",
+            "english": "Could I get a receipt?"
+          },
+          "hint": "領収書 (りょうしゅうしょ) — official receipt"
+        },
+        {
+          "id": "finance-s3",
+          "prompt": "You're submitting your expenses. Tell your manager you'll submit an application form.",
+          "targets": {
+            "required": ["office-303"]
+          },
+          "modelAnswer": {
+            "japanese": "申請書を提出します。",
+            "kana": "しんせいしょをていしゅつします。",
+            "english": "I will submit the application form."
+          },
+          "hint": "申請 (しんせい) — application/request"
+        },
+        {
+          "id": "finance-s4",
+          "prompt": "Your expenses need manager approval. Ask your manager to approve them.",
+          "targets": {
+            "required": ["office-302"]
+          },
+          "modelAnswer": {
+            "japanese": "ご承認をお願いします。",
+            "kana": "ごしょうにんをおねがいします。",
+            "english": "Please approve this."
+          },
+          "hint": "承認 (しょうにん) — approval"
+        },
+        {
+          "id": "finance-s5",
+          "prompt": "After approval, the accounting department will process it. Tell them to settle the expenses.",
+          "targets": {
+            "required": ["office-298"]
+          },
+          "modelAnswer": {
+            "japanese": "経費を精算してください。",
+            "kana": "けいひをせいさんしてください。",
+            "english": "Please settle the expenses."
+          },
+          "hint": "精算 (せいさん) — settlement/reimbursement"
+        }
+      ]
+    }
+  ]
+}

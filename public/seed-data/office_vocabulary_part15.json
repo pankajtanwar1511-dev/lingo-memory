@@ -1,0 +1,892 @@
+{
+  "schema": "office-v2",
+  "entries": [
+    {
+      "id": "office-542",
+      "kanji": "キャリアパス",
+      "kana": "キャリアパス",
+      "romaji": "kyariapasu",
+      "meaning": [
+        "career path"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "1on1"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "キャリアパスについて説明します。",
+        "kana": "キャリアパスについてせつめいします。",
+        "english": "I will explain the career path."
+      }
+    },
+    {
+      "id": "office-543",
+      "kanji": "育児休暇",
+      "kana": "いくじきゅうか",
+      "romaji": "ikujikyuuka",
+      "meaning": [
+        "parental leave",
+        "childcare leave"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "育児休暇について説明します。",
+        "kana": "いくじきゅうかについてせつめいします。",
+        "english": "I will explain parental leave."
+      }
+    },
+    {
+      "id": "office-544",
+      "kanji": "産休",
+      "kana": "さんきゅう",
+      "romaji": "sankyuu",
+      "meaning": [
+        "maternity leave"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "産休について説明します。",
+        "kana": "さんきゅうについてせつめいします。",
+        "english": "I will explain maternity leave."
+      }
+    },
+    {
+      "id": "office-545",
+      "kanji": "福利厚生",
+      "kana": "ふくりこうせい",
+      "romaji": "fukurikousei",
+      "meaning": [
+        "employee benefits",
+        "welfare"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "福利厚生について説明します。",
+        "kana": "ふくりこうせいについてせつめいします。",
+        "english": "I will explain employee benefits."
+      }
+    },
+    {
+      "id": "office-546",
+      "kanji": "雇用契約",
+      "kana": "こようけいやく",
+      "romaji": "koyoukeiyaku",
+      "meaning": [
+        "employment contract"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "雇用契約について説明します。",
+        "kana": "こようけいやくについてせつめいします。",
+        "english": "I will explain the employment contract."
+      }
+    },
+    {
+      "id": "office-547",
+      "kanji": "労働基準法",
+      "kana": "ろうどうきじゅんほう",
+      "romaji": "roudoukijunhou",
+      "meaning": [
+        "Labor Standards Act"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "労働基準法について説明します。",
+        "kana": "ろうどうきじゅんほうについてせつめいします。",
+        "english": "I will explain the Labor Standards Act."
+      }
+    },
+    {
+      "id": "office-548",
+      "kanji": "ハラスメント",
+      "kana": "ハラスメント",
+      "romaji": "harasumento",
+      "meaning": [
+        "harassment"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "ハラスメントについて説明します。",
+        "kana": "ハラスメントについてせつめいします。",
+        "english": "I will explain harassment."
+      }
+    },
+    {
+      "id": "office-549",
+      "kanji": "パワーハラスメント",
+      "kana": "パワーハラスメント",
+      "romaji": "pawaaharasumento",
+      "meaning": [
+        "power harassment",
+        "bullying"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "パワーハラスメントについて説明します。",
+        "kana": "パワーハラスメントについてせつめいします。",
+        "english": "I will explain power harassment."
+      }
+    },
+    {
+      "id": "office-550",
+      "kanji": "有給休暇",
+      "kana": "ゆうきゅうきゅうか",
+      "romaji": "yuukyuukyuuka",
+      "meaning": [
+        "paid leave"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "有給休暇について説明します。",
+        "kana": "ゆうきゅうきゅうかについてせつめいします。",
+        "english": "I will explain paid leave."
+      }
+    },
+    {
+      "id": "office-551",
+      "kanji": "社会保障",
+      "kana": "しゃかいほしょう",
+      "romaji": "shakaihoshou",
+      "meaning": [
+        "social security"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "社会保障について説明します。",
+        "kana": "しゃかいほしょうについてせつめいします。",
+        "english": "I will explain social security."
+      }
+    },
+    {
+      "id": "office-552",
+      "kanji": "お辞儀",
+      "kana": "おじぎ",
+      "romaji": "ojigi",
+      "meaning": [
+        "bowing"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "culture",
+      "example": {
+        "japanese": "お辞儀について説明します。",
+        "kana": "おじぎについてせつめいします。",
+        "english": "I will explain bowing."
+      }
+    },
+    {
+      "id": "office-553",
+      "kanji": "根回し",
+      "kana": "ねまわし",
+      "romaji": "nemawashi",
+      "meaning": [
+        "prior consultation",
+        "groundwork"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "culture",
+      "example": {
+        "japanese": "根回しについて説明します。",
+        "kana": "ねまわしについてせつめいします。",
+        "english": "I will explain prior consultation."
+      }
+    },
+    {
+      "id": "office-554",
+      "kanji": "稟議",
+      "kana": "りんぎ",
+      "romaji": "ringi",
+      "meaning": [
+        "circular approval process"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "culture",
+      "example": {
+        "japanese": "稟議について説明します。",
+        "kana": "りんぎについてせつめいします。",
+        "english": "I will explain the circular approval process."
+      }
+    },
+    {
+      "id": "office-555",
+      "kanji": "歓迎会",
+      "kana": "かんげいかい",
+      "romaji": "kangeikai",
+      "meaning": [
+        "welcome party"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "culture",
+      "example": {
+        "japanese": "歓迎会について説明します。",
+        "kana": "かんげいかいについてせつめいします。",
+        "english": "I will explain the welcome party."
+      }
+    },
+    {
+      "id": "office-556",
+      "kanji": "送別会",
+      "kana": "そうべつかい",
+      "romaji": "soubetsukai",
+      "meaning": [
+        "farewell party"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "culture",
+      "example": {
+        "japanese": "送別会について説明します。",
+        "kana": "そうべつかいについてせつめいします。",
+        "english": "I will explain the farewell party."
+      }
+    },
+    {
+      "id": "office-557",
+      "kanji": "忘年会",
+      "kana": "ぼうねんかい",
+      "romaji": "bounenkai",
+      "meaning": [
+        "year-end party"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "culture",
+      "example": {
+        "japanese": "忘年会について説明します。",
+        "kana": "ぼうねんかいについてせつめいします。",
+        "english": "I will explain the year-end party."
+      }
+    },
+    {
+      "id": "office-558",
+      "kanji": "新年会",
+      "kana": "しんねんかい",
+      "romaji": "shinnenkai",
+      "meaning": [
+        "new year party"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "culture",
+      "example": {
+        "japanese": "新年会について説明します。",
+        "kana": "しんねんかいについてせつめいします。",
+        "english": "I will explain the new year party."
+      }
+    },
+    {
+      "id": "office-559",
+      "kanji": "社員旅行",
+      "kana": "しゃいんりょこう",
+      "romaji": "shainryokou",
+      "meaning": [
+        "company trip"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "culture",
+      "example": {
+        "japanese": "社員旅行について説明します。",
+        "kana": "しゃいんりょこうについてせつめいします。",
+        "english": "I will explain the company trip."
+      }
+    },
+    {
+      "id": "office-560",
+      "kanji": "社風",
+      "kana": "しゃふう",
+      "romaji": "shafuu",
+      "meaning": [
+        "company culture"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "culture",
+      "example": {
+        "japanese": "社風について説明します。",
+        "kana": "しゃふうについてせつめいします。",
+        "english": "I will explain company culture."
+      }
+    },
+    {
+      "id": "office-561",
+      "kanji": "縦社会",
+      "kana": "たてしゃかい",
+      "romaji": "tateshakai",
+      "meaning": [
+        "hierarchical society"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "culture",
+      "example": {
+        "japanese": "縦社会について説明します。",
+        "kana": "たてしゃかいについてせつめいします。",
+        "english": "I will explain hierarchical society."
+      }
+    },
+    {
+      "id": "office-562",
+      "kanji": "気を使う",
+      "kana": "きをつかう",
+      "romaji": "ki wo tsukau",
+      "meaning": [
+        "to be considerate",
+        "read the room"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "culture",
+      "example": {
+        "japanese": "相手に気を使います。",
+        "kana": "あいてにきをつかいます。",
+        "english": "I'm considerate of others."
+      }
+    },
+    {
+      "id": "office-563",
+      "kanji": "ドレスコード",
+      "kana": "ドレスコード",
+      "romaji": "doresukoodo",
+      "meaning": [
+        "dress code"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "culture",
+      "example": {
+        "japanese": "ドレスコードについて説明します。",
+        "kana": "ドレスコードについてせつめいします。",
+        "english": "I will explain the dress code."
+      }
+    },
+    {
+      "id": "office-564",
+      "kanji": "礼儀",
+      "kana": "れいぎ",
+      "romaji": "reigi",
+      "meaning": [
+        "etiquette",
+        "manners"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "culture",
+      "example": {
+        "japanese": "礼儀について説明します。",
+        "kana": "れいぎについてせつめいします。",
+        "english": "I will explain etiquette."
+      }
+    },
+    {
+      "id": "office-565",
+      "kanji": "謙遜",
+      "kana": "けんそん",
+      "romaji": "kenson",
+      "meaning": [
+        "modesty",
+        "humility"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "culture",
+      "example": {
+        "japanese": "謙遜について説明します。",
+        "kana": "けんそんについてせつめいします。",
+        "english": "I will explain modesty."
+      }
+    },
+    {
+      "id": "office-566",
+      "kanji": "表彰",
+      "kana": "ひょうしょう",
+      "romaji": "hyoushou",
+      "meaning": [
+        "commendation",
+        "award"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "culture",
+      "example": {
+        "japanese": "表彰について説明します。",
+        "kana": "ひょうしょうについてせつめいします。",
+        "english": "I will explain commendation."
+      }
+    },
+    {
+      "id": "office-568",
+      "kanji": "頂戴する",
+      "kana": "ちょうだいする",
+      "romaji": "choudai suru",
+      "meaning": [
+        "to receive"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "資料を頂戴する予定です。",
+        "kana": "しりょうをちょうだいするよていです。",
+        "english": "I plan to receive the materials."
+      }
+    },
+    {
+      "id": "office-569",
+      "kanji": "ご覧になる",
+      "kana": "ごらんになる",
+      "romaji": "goran ni naru",
+      "meaning": [
+        "to look",
+        "see"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "資料をご覧になってください。",
+        "kana": "しりょうをごらんになってください。",
+        "english": "Please take a look at the materials."
+      }
+    },
+    {
+      "id": "office-570",
+      "kanji": "召し上がる",
+      "kana": "めしあがる",
+      "romaji": "meshiagaru",
+      "meaning": [
+        "to eat",
+        "drink"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "どうぞ召し上がってください。",
+        "kana": "どうぞめしあがってください。",
+        "english": "Please help yourself."
+      }
+    },
+    {
+      "id": "office-571",
+      "kanji": "おいでになる",
+      "kana": "おいでになる",
+      "romaji": "oide ni naru",
+      "meaning": [
+        "to be",
+        "go",
+        "come"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "部長はいつおいでになりますか。",
+        "kana": "ぶちょうはいつおいでになりますか。",
+        "english": "When will the director arrive?"
+      }
+    },
+    {
+      "id": "office-572",
+      "kanji": "存じ上げる",
+      "kana": "ぞんじあげる",
+      "romaji": "zonjiageru",
+      "meaning": [
+        "to know someone"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "田中様は存じ上げております。",
+        "kana": "たなかさまはぞんじあげております。",
+        "english": "I know Mr. Tanaka."
+      }
+    },
+    {
+      "id": "office-573",
+      "kanji": "お目にかかる",
+      "kana": "おめにかかる",
+      "romaji": "ome ni kakaru",
+      "meaning": [
+        "to meet a superior"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "keigo",
+      "example": {
+        "japanese": "またお目にかかれることを楽しみにしております。",
+        "kana": "またおめにかかれることをたのしみにしております。",
+        "english": "I look forward to meeting you again."
+      }
+    },
+    {
+      "id": "office-574",
+      "kanji": "リスク",
+      "kana": "リスク",
+      "romaji": "risuku",
+      "meaning": [
+        "risk"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "リスクについて説明します。",
+        "kana": "リスクについてせつめいします。",
+        "english": "I will explain the risk."
+      }
+    },
+    {
+      "id": "office-575",
+      "kanji": "改善策",
+      "kana": "かいぜんさく",
+      "romaji": "kaizensaku",
+      "meaning": [
+        "improvement measure"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "改善策について説明します。",
+        "kana": "かいぜんさくについてせつめいします。",
+        "english": "I will explain the improvement measure."
+      }
+    },
+    {
+      "id": "office-576",
+      "kanji": "スコープ",
+      "kana": "スコープ",
+      "romaji": "sukoopu",
+      "meaning": [
+        "scope"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "スコープについて説明します。",
+        "kana": "スコープについてせつめいします。",
+        "english": "I will explain the scope."
+      }
+    },
+    {
+      "id": "office-577",
+      "kanji": "要件定義",
+      "kana": "ようけんていぎ",
+      "romaji": "youkenteigi",
+      "meaning": [
+        "requirements definition"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "engineering"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "要件定義について説明します。",
+        "kana": "ようけんていぎについてせつめいします。",
+        "english": "I will explain the requirements definition."
+      }
+    },
+    {
+      "id": "office-578",
+      "kanji": "設計",
+      "kana": "せっけい",
+      "romaji": "sekkei",
+      "meaning": [
+        "design"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "engineering"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "設計について説明します。",
+        "kana": "せっけいについてせつめいします。",
+        "english": "I will explain the design."
+      }
+    },
+    {
+      "id": "office-579",
+      "kanji": "PDCAサイクル",
+      "kana": "ピーディーシーエーサイクル",
+      "romaji": "piidiishiieesaikuru",
+      "meaning": [
+        "PDCA cycle (Plan-Do-Check-Act)"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "PDCAサイクルについて説明します。",
+        "kana": "ピーディーシーエーサイクルについてせつめいします。",
+        "english": "I will explain the PDCA cycle (Plan-Do-Check-Act)."
+      }
+    },
+    {
+      "id": "office-580",
+      "kanji": "改善",
+      "kana": "かいぜん",
+      "romaji": "kaizen",
+      "meaning": [
+        "improvement",
+        "kaizen"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "project",
+      "example": {
+        "japanese": "改善について説明します。",
+        "kana": "かいぜんについてせつめいします。",
+        "english": "I will explain improvement."
+      }
+    }
+  ]
+}

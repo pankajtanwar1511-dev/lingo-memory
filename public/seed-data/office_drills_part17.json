@@ -1,0 +1,153 @@
+{
+  "schema": "office-drills-v1",
+  "packs": [
+    {
+      "id": "advanced-meetings",
+      "title": "Advanced Meeting Management",
+      "titleJa": "会議運営（上級）",
+      "description": "Practice advanced meeting vocabulary for presentations and Q&A",
+      "cluster": "meetings",
+      "stages": [
+        {
+          "id": "advanced-meet-s1",
+          "prompt": "You're chairing a meeting. Tell everyone you'll start with the agenda items.",
+          "targets": {
+            "required": ["office-264"]
+          },
+          "modelAnswer": {
+            "japanese": "議題から始めます。",
+            "kana": "ぎだいからはじめます。",
+            "english": "Let's start with the agenda items."
+          },
+          "hint": "議題 (ぎだい) — agenda item"
+        },
+        {
+          "id": "advanced-meet-s2",
+          "prompt": "You're giving a presentation to executives. Tell them you'll give a presentation.",
+          "targets": {
+            "required": ["office-265"]
+          },
+          "modelAnswer": {
+            "japanese": "プレゼンテーションを行います。",
+            "kana": "プレゼンテーションをおこないます。",
+            "english": "I will give a presentation."
+          },
+          "hint": "プレゼンテーション — presentation"
+        },
+        {
+          "id": "advanced-meet-s3",
+          "prompt": "After your presentation, you'll take questions. Tell the audience there will be a Q&A session.",
+          "targets": {
+            "required": ["office-266"]
+          },
+          "modelAnswer": {
+            "japanese": "質疑応答の時間を設けます。",
+            "kana": "しつぎおうとうのじかんをもうけます。",
+            "english": "We will have a Q&A session."
+          },
+          "hint": "質疑応答 (しつぎおうとう) — Q&A session"
+        },
+        {
+          "id": "advanced-meet-s4",
+          "prompt": "You have a suggestion for the project. Tell the team you have a proposal.",
+          "targets": {
+            "required": ["office-267"]
+          },
+          "modelAnswer": {
+            "japanese": "提案があります。",
+            "kana": "ていあんがあります。",
+            "english": "I have a proposal."
+          },
+          "hint": "提案 (ていあん) — proposal"
+        },
+        {
+          "id": "advanced-meet-s5",
+          "prompt": "This is a weekly recurring meeting. Tell the new member this is a standing meeting.",
+          "targets": {
+            "required": ["office-269"]
+          },
+          "modelAnswer": {
+            "japanese": "これは定例会議です。",
+            "kana": "これはていれいかいぎです。",
+            "english": "This is a recurring meeting."
+          },
+          "hint": "定例会議 (ていれいかいぎ) — standing/recurring meeting"
+        }
+      ]
+    },
+    {
+      "id": "scheduling-coordination",
+      "title": "Scheduling & Coordination",
+      "titleJa": "スケジュール調整",
+      "description": "Practice scheduling, rescheduling, and timeline management",
+      "cluster": "time",
+      "stages": [
+        {
+          "id": "schedule-s1",
+          "prompt": "You need to set up a meeting with a client. Tell them you'll arrange an appointment.",
+          "targets": {
+            "required": ["office-250"]
+          },
+          "modelAnswer": {
+            "japanese": "アポイントメントを調整します。",
+            "kana": "アポイントメントをちょうせいします。",
+            "english": "I'll arrange an appointment."
+          },
+          "hint": "アポイントメント — appointment"
+        },
+        {
+          "id": "schedule-s2",
+          "prompt": "Something came up and you can't make the meeting. Tell them you need to postpone it.",
+          "targets": {
+            "required": ["office-251"]
+          },
+          "modelAnswer": {
+            "japanese": "延期させていただけますでしょうか。",
+            "kana": "えんきさせていただけますでしょうか。",
+            "english": "Could we postpone it?"
+          },
+          "hint": "延期 (えんき) — postponement"
+        },
+        {
+          "id": "schedule-s3",
+          "prompt": "The deadline is too tight. Ask if you can move the deadline forward (to an earlier date).",
+          "targets": {
+            "required": ["office-252"]
+          },
+          "modelAnswer": {
+            "japanese": "前倒しにできますか。",
+            "kana": "まえだおしにできますか。",
+            "english": "Can we move it up (to an earlier date)?"
+          },
+          "hint": "前倒し (まえだおし) — moving up schedule"
+        },
+        {
+          "id": "schedule-s4",
+          "prompt": "The client requested a schedule change. Tell your team you need to reschedule.",
+          "targets": {
+            "required": ["office-253"]
+          },
+          "modelAnswer": {
+            "japanese": "リスケする必要があります。",
+            "kana": "リスケするひつようがあります。",
+            "english": "We need to reschedule."
+          },
+          "hint": "リスケ — reschedule"
+        },
+        {
+          "id": "schedule-s5",
+          "prompt": "You're leaving work on time today (not working late). Tell your team you're leaving at regular hours.",
+          "targets": {
+            "required": ["office-259"]
+          },
+          "modelAnswer": {
+            "japanese": "今日は定時に帰ります。",
+            "kana": "きょうはていじにかえります。",
+            "english": "I'll leave at regular hours today."
+          },
+          "hint": "定時 (ていじ) — regular working hours"
+        }
+      ]
+    }
+  ]
+}

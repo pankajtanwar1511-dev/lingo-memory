@@ -1,0 +1,1062 @@
+{
+  "schema": "office-v2",
+  "entries": [
+    {
+      "id": "office-407",
+      "kanji": "プリンター",
+      "kana": "プリンター",
+      "romaji": "purintaa",
+      "meaning": [
+        "printer"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "プリンターが必要です。",
+        "kana": "プリンターがひつようです。",
+        "english": "A printer is needed."
+      }
+    },
+    {
+      "id": "office-408",
+      "kanji": "FAX",
+      "kana": "ファックス",
+      "romaji": "fakkusu",
+      "meaning": [
+        "fax machine"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "FAXが必要です。",
+        "kana": "ファックスがひつようです。",
+        "english": "A fax machine is needed."
+      }
+    },
+    {
+      "id": "office-409",
+      "kanji": "シュレッダー",
+      "kana": "シュレッダー",
+      "romaji": "shureddaa",
+      "meaning": [
+        "paper shredder"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "シュレッダーが必要です。",
+        "kana": "シュレッダーがひつようです。",
+        "english": "A paper shredder is needed."
+      }
+    },
+    {
+      "id": "office-410",
+      "kanji": "ホワイトボード",
+      "kana": "ホワイトボード",
+      "romaji": "howaitoboodo",
+      "meaning": [
+        "whiteboard"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "ホワイトボードが必要です。",
+        "kana": "ホワイトボードがひつようです。",
+        "english": "A whiteboard is needed."
+      }
+    },
+    {
+      "id": "office-411",
+      "kanji": "プロジェクター",
+      "kana": "プロジェクター",
+      "romaji": "purojekutaa",
+      "meaning": [
+        "projector"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "プロジェクターが必要です。",
+        "kana": "プロジェクターがひつようです。",
+        "english": "A projector is needed."
+      }
+    },
+    {
+      "id": "office-412",
+      "kanji": "名刺入れ",
+      "kana": "めいしいれ",
+      "romaji": "meishiire",
+      "meaning": [
+        "business card holder"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "名刺入れが必要です。",
+        "kana": "めいしいれがひつようです。",
+        "english": "A business card holder is needed."
+      }
+    },
+    {
+      "id": "office-413",
+      "kanji": "朱肉",
+      "kana": "しゅにく",
+      "romaji": "shuniku",
+      "meaning": [
+        "red ink pad (for seals)"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "朱肉が必要です。",
+        "kana": "しゅにくがひつようです。",
+        "english": "A red ink pad (for seals) is needed."
+      }
+    },
+    {
+      "id": "office-414",
+      "kanji": "ファイル",
+      "kana": "ファイル",
+      "romaji": "fairu",
+      "meaning": [
+        "file",
+        "folder"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "ファイルが必要です。",
+        "kana": "ファイルがひつようです。",
+        "english": "A file is needed."
+      }
+    },
+    {
+      "id": "office-415",
+      "kanji": "バインダー",
+      "kana": "バインダー",
+      "romaji": "baindaa",
+      "meaning": [
+        "binder"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "バインダーが必要です。",
+        "kana": "バインダーがひつようです。",
+        "english": "A binder is needed."
+      }
+    },
+    {
+      "id": "office-416",
+      "kanji": "ホチキス",
+      "kana": "ホチキス",
+      "romaji": "hochikisu",
+      "meaning": [
+        "stapler"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "ホチキスが必要です。",
+        "kana": "ホチキスがひつようです。",
+        "english": "A stapler is needed."
+      }
+    },
+    {
+      "id": "office-417",
+      "kanji": "付箋",
+      "kana": "ふせん",
+      "romaji": "fusen",
+      "meaning": [
+        "sticky note",
+        "Post-it"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "付箋が必要です。",
+        "kana": "ふせんがひつようです。",
+        "english": "A sticky note is needed."
+      }
+    },
+    {
+      "id": "office-418",
+      "kanji": "封筒",
+      "kana": "ふうとう",
+      "romaji": "fuutou",
+      "meaning": [
+        "envelope"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "封筒が必要です。",
+        "kana": "ふうとうがひつようです。",
+        "english": "An envelope is needed."
+      }
+    },
+    {
+      "id": "office-419",
+      "kanji": "便箋",
+      "kana": "びんせん",
+      "romaji": "binsen",
+      "meaning": [
+        "writing paper",
+        "letter paper"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "便箋が必要です。",
+        "kana": "びんせんがひつようです。",
+        "english": "Writing paper is needed."
+      }
+    },
+    {
+      "id": "office-420",
+      "kanji": "切手",
+      "kana": "きって",
+      "romaji": "kitte",
+      "meaning": [
+        "postage stamp"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "切手が必要です。",
+        "kana": "きってがひつようです。",
+        "english": "A postage stamp is needed."
+      }
+    },
+    {
+      "id": "office-421",
+      "kanji": "ボールペン",
+      "kana": "ボールペン",
+      "romaji": "boorupen",
+      "meaning": [
+        "ballpoint pen"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "ボールペンが必要です。",
+        "kana": "ボールペンがひつようです。",
+        "english": "A ballpoint pen is needed."
+      }
+    },
+    {
+      "id": "office-422",
+      "kanji": "電卓",
+      "kana": "でんたく",
+      "romaji": "dentaku",
+      "meaning": [
+        "calculator"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "電卓が必要です。",
+        "kana": "でんたくがひつようです。",
+        "english": "A calculator is needed."
+      }
+    },
+    {
+      "id": "office-423",
+      "kanji": "タイムカード",
+      "kana": "タイムカード",
+      "romaji": "taimukaado",
+      "meaning": [
+        "time card",
+        "attendance card"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "タイムカードが必要です。",
+        "kana": "タイムカードがひつようです。",
+        "english": "A time card is needed."
+      }
+    },
+    {
+      "id": "office-424",
+      "kanji": "内線電話",
+      "kana": "ないせんでんわ",
+      "romaji": "naisendenwa",
+      "meaning": [
+        "intercom",
+        "internal phone"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "内線電話が必要です。",
+        "kana": "ないせんでんわがひつようです。",
+        "english": "An intercom is needed."
+      }
+    },
+    {
+      "id": "office-425",
+      "kanji": "ヘッドセット",
+      "kana": "ヘッドセット",
+      "romaji": "heddosetto",
+      "meaning": [
+        "headset"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "ヘッドセットが必要です。",
+        "kana": "ヘッドセットがひつようです。",
+        "english": "A headset is needed."
+      }
+    },
+    {
+      "id": "office-426",
+      "kanji": "名刺",
+      "kana": "めいし",
+      "romaji": "meishi",
+      "meaning": [
+        "business card"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "名刺が必要です。",
+        "kana": "めいしがひつようです。",
+        "english": "A business card is needed."
+      }
+    },
+    {
+      "id": "office-427",
+      "kanji": "ノートパソコン",
+      "kana": "ノートパソコン",
+      "romaji": "nootopasokon",
+      "meaning": [
+        "laptop computer"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "ノートパソコンが必要です。",
+        "kana": "ノートパソコンがひつようです。",
+        "english": "A laptop computer is needed."
+      }
+    },
+    {
+      "id": "office-428",
+      "kanji": "修正液",
+      "kana": "しゅうせいえき",
+      "romaji": "shuuseieki",
+      "meaning": [
+        "correction fluid",
+        "white-out"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "修正液が必要です。",
+        "kana": "しゅうせいえきがひつようです。",
+        "english": "Correction fluid is needed."
+      }
+    },
+    {
+      "id": "office-429",
+      "kanji": "提案書",
+      "kana": "ていあんしょ",
+      "romaji": "teiansho",
+      "meaning": [
+        "proposal document"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "client"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "提案書が必要です。",
+        "kana": "ていあんしょがひつようです。",
+        "english": "A proposal document is needed."
+      }
+    },
+    {
+      "id": "office-430",
+      "kanji": "企画書",
+      "kana": "きかくしょ",
+      "romaji": "kikakusho",
+      "meaning": [
+        "project plan document"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "企画書が必要です。",
+        "kana": "きかくしょがひつようです。",
+        "english": "A project plan document is needed."
+      }
+    },
+    {
+      "id": "office-431",
+      "kanji": "見積書",
+      "kana": "みつもりしょ",
+      "romaji": "mitsumorisho",
+      "meaning": [
+        "quotation",
+        "estimate"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "client"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "見積書が必要です。",
+        "kana": "みつもりしょがひつようです。",
+        "english": "A quotation is needed."
+      }
+    },
+    {
+      "id": "office-432",
+      "kanji": "納品書",
+      "kana": "のうひんしょ",
+      "romaji": "nouhinsho",
+      "meaning": [
+        "delivery note"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "client"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "納品書が必要です。",
+        "kana": "のうひんしょがひつようです。",
+        "english": "A delivery note is needed."
+      }
+    },
+    {
+      "id": "office-433",
+      "kanji": "覚書",
+      "kana": "おぼえがき",
+      "romaji": "oboegaki",
+      "meaning": [
+        "memorandum",
+        "MOU"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "覚書が必要です。",
+        "kana": "おぼえがきがひつようです。",
+        "english": "A memorandum is needed."
+      }
+    },
+    {
+      "id": "office-434",
+      "kanji": "マニュアル",
+      "kana": "マニュアル",
+      "romaji": "manyuaru",
+      "meaning": [
+        "manual",
+        "guide"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "engineering"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "マニュアルが必要です。",
+        "kana": "マニュアルがひつようです。",
+        "english": "A manual is needed."
+      }
+    },
+    {
+      "id": "office-435",
+      "kanji": "就業規則",
+      "kana": "しゅうぎょうきそく",
+      "romaji": "shuugyoukisoku",
+      "meaning": [
+        "work regulations",
+        "employee handbook"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "就業規則が必要です。",
+        "kana": "しゅうぎょうきそくがひつようです。",
+        "english": "Work regulations are needed."
+      }
+    },
+    {
+      "id": "office-436",
+      "kanji": "届出書",
+      "kana": "とどけでしょ",
+      "romaji": "todokedesho",
+      "meaning": [
+        "notification form"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "届出書が必要です。",
+        "kana": "とどけでしょがひつようです。",
+        "english": "A notification form is needed."
+      }
+    },
+    {
+      "id": "office-437",
+      "kanji": "稟議書",
+      "kana": "りんぎしょ",
+      "romaji": "ringisho",
+      "meaning": [
+        "circular approval document"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "稟議書が必要です。",
+        "kana": "りんぎしょがひつようです。",
+        "english": "A circular approval document is needed."
+      }
+    },
+    {
+      "id": "office-438",
+      "kanji": "辞令",
+      "kana": "じれい",
+      "romaji": "jirei",
+      "meaning": [
+        "official appointment",
+        "transfer letter"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "辞令が必要です。",
+        "kana": "じれいがひつようです。",
+        "english": "An official appointment is needed."
+      }
+    },
+    {
+      "id": "office-439",
+      "kanji": "発注書",
+      "kana": "はっちゅうしょ",
+      "romaji": "hatchuusho",
+      "meaning": [
+        "purchase order"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "発注書が必要です。",
+        "kana": "はっちゅうしょがひつようです。",
+        "english": "A purchase order is needed."
+      }
+    },
+    {
+      "id": "office-440",
+      "kanji": "レポート",
+      "kana": "レポート",
+      "romaji": "repooto",
+      "meaning": [
+        "report (general)"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "レポートが必要です。",
+        "kana": "レポートがひつようです。",
+        "english": "A report (general) is needed."
+      }
+    },
+    {
+      "id": "office-441",
+      "kanji": "メモ",
+      "kana": "メモ",
+      "romaji": "memo",
+      "meaning": [
+        "memo",
+        "note"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "slack",
+        "meeting"
+      ],
+      "category": "documents",
+      "example": {
+        "japanese": "メモが必要です。",
+        "kana": "メモがひつようです。",
+        "english": "A memo is needed."
+      }
+    },
+    {
+      "id": "office-442",
+      "kanji": "管理する",
+      "kana": "かんりする",
+      "romaji": "kanrisuru",
+      "meaning": [
+        "to manage",
+        "administer"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "engineering",
+        "hr"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "管理する予定です。",
+        "kana": "かんりするよていです。",
+        "english": "I plan to manage."
+      }
+    },
+    {
+      "id": "office-443",
+      "kanji": "担当する",
+      "kana": "たんとうする",
+      "romaji": "tantousuru",
+      "meaning": [
+        "to be in charge of"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "担当する予定です。",
+        "kana": "たんとうするよていです。",
+        "english": "I plan to be in charge of."
+      }
+    },
+    {
+      "id": "office-444",
+      "kanji": "契約する",
+      "kana": "けいやくする",
+      "romaji": "keiyakusuru",
+      "meaning": [
+        "to sign a contract"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "C",
+      "contexts": [
+        "client"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "契約する予定です。",
+        "kana": "けいやくするよていです。",
+        "english": "I plan to sign a contract."
+      }
+    },
+    {
+      "id": "office-445",
+      "kanji": "請求する",
+      "kana": "せいきゅうする",
+      "romaji": "seikyuusuru",
+      "meaning": [
+        "to invoice",
+        "charge"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "請求する予定です。",
+        "kana": "せいきゅうするよていです。",
+        "english": "I plan to invoice."
+      }
+    },
+    {
+      "id": "office-446",
+      "kanji": "残業する",
+      "kana": "ざんぎょうする",
+      "romaji": "zangyousuru",
+      "meaning": [
+        "to work overtime"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "残業する予定です。",
+        "kana": "ざんぎょうするよていです。",
+        "english": "I plan to work overtime."
+      }
+    },
+    {
+      "id": "office-447",
+      "kanji": "出張する",
+      "kana": "しゅっちょうする",
+      "romaji": "shucchousuru",
+      "meaning": [
+        "to go on a business trip"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "出張する予定です。",
+        "kana": "しゅっちょうするよていです。",
+        "english": "I plan to go on a business trip."
+      }
+    },
+    {
+      "id": "office-448",
+      "kanji": "研修する",
+      "kana": "けんしゅうする",
+      "romaji": "kenshuusuru",
+      "meaning": [
+        "to attend training"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "研修する予定です。",
+        "kana": "けんしゅうするよていです。",
+        "english": "I plan to attend training."
+      }
+    },
+    {
+      "id": "office-449",
+      "kanji": "採用する",
+      "kana": "さいようする",
+      "romaji": "saiyousuru",
+      "meaning": [
+        "to hire",
+        "recruit"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "採用する予定です。",
+        "kana": "さいようするよていです。",
+        "english": "I plan to hire."
+      }
+    },
+    {
+      "id": "office-450",
+      "kanji": "退職する",
+      "kana": "たいしょくする",
+      "romaji": "taishokusuru",
+      "meaning": [
+        "to resign",
+        "retire"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "退職する予定です。",
+        "kana": "たいしょくするよていです。",
+        "english": "I plan to resign."
+      }
+    },
+    {
+      "id": "office-451",
+      "kanji": "転勤する",
+      "kana": "てんきんする",
+      "romaji": "tenkinsuru",
+      "meaning": [
+        "to be transferred"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "転勤する予定です。",
+        "kana": "てんきんするよていです。",
+        "english": "I plan to be transferred."
+      }
+    }
+  ]
+}

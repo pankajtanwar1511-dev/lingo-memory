@@ -1,0 +1,1058 @@
+{
+  "schema": "office-v2",
+  "entries": [
+    {
+      "id": "office-362",
+      "kanji": "副社長",
+      "kana": "ふくしゃちょう",
+      "romaji": "fukushachou",
+      "meaning": [
+        "vice president"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "副社長に確認します。",
+        "kana": "ふくしゃちょうにかくにんします。",
+        "english": "I will check with vice president."
+      }
+    },
+    {
+      "id": "office-363",
+      "kanji": "専務取締役",
+      "kana": "せんむとりしまりやく",
+      "romaji": "senmutorishimariyaku",
+      "meaning": [
+        "managing director"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "専務取締役に確認します。",
+        "kana": "せんむとりしまりやくにかくにんします。",
+        "english": "I will check with managing director."
+      }
+    },
+    {
+      "id": "office-364",
+      "kanji": "常務取締役",
+      "kana": "じょうむとりしまりやく",
+      "romaji": "joumutorishimariyaku",
+      "meaning": [
+        "executive director"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "常務取締役に確認します。",
+        "kana": "じょうむとりしまりやくにかくにんします。",
+        "english": "I will check with executive director."
+      }
+    },
+    {
+      "id": "office-365",
+      "kanji": "係長",
+      "kana": "かかりちょう",
+      "romaji": "kakarichou",
+      "meaning": [
+        "team leader",
+        "subsection chief"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "係長に確認します。",
+        "kana": "かかりちょうにかくにんします。",
+        "english": "I will check with team leader."
+      }
+    },
+    {
+      "id": "office-366",
+      "kanji": "主任",
+      "kana": "しゅにん",
+      "romaji": "shunin",
+      "meaning": [
+        "senior staff",
+        "team lead"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "主任に確認します。",
+        "kana": "しゅにんにかくにんします。",
+        "english": "I will check with senior staff."
+      }
+    },
+    {
+      "id": "office-367",
+      "kanji": "一般社員",
+      "kana": "いっぱんしゃいん",
+      "romaji": "ippanshain",
+      "meaning": [
+        "regular employee"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "一般社員に確認します。",
+        "kana": "いっぱんしゃいんにかくにんします。",
+        "english": "I will check with regular employee."
+      }
+    },
+    {
+      "id": "office-368",
+      "kanji": "部下",
+      "kana": "ぶか",
+      "romaji": "buka",
+      "meaning": [
+        "subordinate",
+        "direct report"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "部下に確認します。",
+        "kana": "ぶかにかくにんします。",
+        "english": "I will check with subordinate."
+      }
+    },
+    {
+      "id": "office-369",
+      "kanji": "派遣社員",
+      "kana": "はけんしゃいん",
+      "romaji": "hakenshain",
+      "meaning": [
+        "temporary employee",
+        "agency worker"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "派遣社員に確認します。",
+        "kana": "はけんしゃいんにかくにんします。",
+        "english": "I will check with the temp employee."
+      }
+    },
+    {
+      "id": "office-370",
+      "kanji": "契約社員",
+      "kana": "けいやくしゃいん",
+      "romaji": "keiyakushain",
+      "meaning": [
+        "contract employee"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "契約社員に確認します。",
+        "kana": "けいやくしゃいんにかくにんします。",
+        "english": "I will check with contract employee."
+      }
+    },
+    {
+      "id": "office-371",
+      "kanji": "アルバイト",
+      "kana": "アルバイト",
+      "romaji": "arubaito",
+      "meaning": [
+        "part-time worker"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "アルバイトに確認します。",
+        "kana": "アルバイトにかくにんします。",
+        "english": "I will check with part-time worker."
+      }
+    },
+    {
+      "id": "office-372",
+      "kanji": "インターン",
+      "kana": "インターン",
+      "romaji": "intaan",
+      "meaning": [
+        "intern"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "インターンに確認します。",
+        "kana": "インターンにかくにんします。",
+        "english": "I will check with intern."
+      }
+    },
+    {
+      "id": "office-373",
+      "kanji": "受付",
+      "kana": "うけつけ",
+      "romaji": "uketsuke",
+      "meaning": [
+        "receptionist",
+        "front desk"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "受付に確認します。",
+        "kana": "うけつけにかくにんします。",
+        "english": "I will check with receptionist."
+      }
+    },
+    {
+      "id": "office-374",
+      "kanji": "顧問",
+      "kana": "こもん",
+      "romaji": "komon",
+      "meaning": [
+        "advisor",
+        "consultant"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "顧問に確認します。",
+        "kana": "こもんにかくにんします。",
+        "english": "I will check with advisor."
+      }
+    },
+    {
+      "id": "office-375",
+      "kanji": "代表取締役",
+      "kana": "だいひょうとりしまりやく",
+      "romaji": "daihyoutorishimariyaku",
+      "meaning": [
+        "representative director"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "roles",
+      "example": {
+        "japanese": "代表取締役に確認します。",
+        "kana": "だいひょうとりしまりやくにかくにんします。",
+        "english": "I will check with representative director."
+      }
+    },
+    {
+      "id": "office-376",
+      "kanji": "物流部",
+      "kana": "ぶつりゅうぶ",
+      "romaji": "butsuryuubu",
+      "meaning": [
+        "logistics department"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "departments",
+      "example": {
+        "japanese": "物流部に確認します。",
+        "kana": "ぶつりゅうぶにかくにんします。",
+        "english": "I will check with logistics department."
+      }
+    },
+    {
+      "id": "office-377",
+      "kanji": "品質管理部",
+      "kana": "ひんしつかんりぶ",
+      "romaji": "hinshitsukanribu",
+      "meaning": [
+        "quality control"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "engineering"
+      ],
+      "category": "departments",
+      "example": {
+        "japanese": "品質管理部に確認します。",
+        "kana": "ひんしつかんりぶにかくにんします。",
+        "english": "I will check with quality control."
+      }
+    },
+    {
+      "id": "office-378",
+      "kanji": "情報システム部",
+      "kana": "じょうほうシステムぶ",
+      "romaji": "jouhou sistemubu",
+      "meaning": [
+        "IT",
+        "information systems"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "departments",
+      "example": {
+        "japanese": "情報システム部に確認します。",
+        "kana": "じょうほうシステムぶにかくにんします。",
+        "english": "I will check with IT."
+      }
+    },
+    {
+      "id": "office-379",
+      "kanji": "製造部",
+      "kana": "せいぞうぶ",
+      "romaji": "seizoubu",
+      "meaning": [
+        "manufacturing"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "departments",
+      "example": {
+        "japanese": "製造部に確認します。",
+        "kana": "せいぞうぶにかくにんします。",
+        "english": "I will check with manufacturing."
+      }
+    },
+    {
+      "id": "office-380",
+      "kanji": "研究開発部",
+      "kana": "けんきゅうかいはつぶ",
+      "romaji": "kenkyuukaihatsubu",
+      "meaning": [
+        "R&D department"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "engineering"
+      ],
+      "category": "departments",
+      "example": {
+        "japanese": "研究開発部に確認します。",
+        "kana": "けんきゅうかいはつぶにかくにんします。",
+        "english": "I will check with the R&D department."
+      }
+    },
+    {
+      "id": "office-381",
+      "kanji": "海外事業部",
+      "kana": "かいがいじぎょうぶ",
+      "romaji": "kaigaijigyoubu",
+      "meaning": [
+        "overseas business"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "departments",
+      "example": {
+        "japanese": "海外事業部に確認します。",
+        "kana": "かいがいじぎょうぶにかくにんします。",
+        "english": "I will check with the overseas business department."
+      }
+    },
+    {
+      "id": "office-382",
+      "kanji": "経営企画部",
+      "kana": "けいえいきかくぶ",
+      "romaji": "keieikikakubu",
+      "meaning": [
+        "corporate planning"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "departments",
+      "example": {
+        "japanese": "経営企画部に確認します。",
+        "kana": "けいえいきかくぶにかくにんします。",
+        "english": "I will check with corporate planning."
+      }
+    },
+    {
+      "id": "office-383",
+      "kanji": "カスタマーサービス部",
+      "kana": "カスタマーサービスぶ",
+      "romaji": "kasutamaasaabisubu",
+      "meaning": [
+        "customer service"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "departments",
+      "example": {
+        "japanese": "カスタマーサービス部に確認します。",
+        "kana": "カスタマーサービスぶにかくにんします。",
+        "english": "I will check with customer service."
+      }
+    },
+    {
+      "id": "office-384",
+      "kanji": "内部監査部",
+      "kana": "ないぶかんさぶ",
+      "romaji": "naibukansabu",
+      "meaning": [
+        "internal audit"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "departments",
+      "example": {
+        "japanese": "内部監査部に確認します。",
+        "kana": "ないぶかんさぶにかくにんします。",
+        "english": "I will check with internal audit."
+      }
+    },
+    {
+      "id": "office-385",
+      "kanji": "財務部",
+      "kana": "ざいむぶ",
+      "romaji": "zaimubu",
+      "meaning": [
+        "treasury",
+        "financial management"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "departments",
+      "example": {
+        "japanese": "財務部に確認します。",
+        "kana": "ざいむぶにかくにんします。",
+        "english": "I will check with treasury."
+      }
+    },
+    {
+      "id": "office-386",
+      "kanji": "会議室",
+      "kana": "かいぎしつ",
+      "romaji": "kaigishitsu",
+      "meaning": [
+        "meeting room"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "S",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "会議室を予約しました。",
+        "kana": "かいぎしつをよやくしました。",
+        "english": "I reserved the meeting room."
+      }
+    },
+    {
+      "id": "office-387",
+      "kanji": "応接室",
+      "kana": "おうせつしつ",
+      "romaji": "ousetsushitsu",
+      "meaning": [
+        "reception room",
+        "visitor room"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "client"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "応接室を予約しました。",
+        "kana": "おうせつしつをよやくしました。",
+        "english": "I reserved the reception room."
+      }
+    },
+    {
+      "id": "office-388",
+      "kanji": "休憩室",
+      "kana": "きゅうけいしつ",
+      "romaji": "kyuukeishitsu",
+      "meaning": [
+        "break room"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "休憩室を予約しました。",
+        "kana": "きゅうけいしつをよやくしました。",
+        "english": "I reserved the break room."
+      }
+    },
+    {
+      "id": "office-389",
+      "kanji": "食堂",
+      "kana": "しょくどう",
+      "romaji": "shokudou",
+      "meaning": [
+        "cafeteria",
+        "company canteen"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "食堂で昼食を取ります。",
+        "kana": "しょくどうでちゅうしょくをとります。",
+        "english": "I'll have lunch in the cafeteria."
+      }
+    },
+    {
+      "id": "office-390",
+      "kanji": "更衣室",
+      "kana": "こういしつ",
+      "romaji": "kouishitsu",
+      "meaning": [
+        "changing room",
+        "locker room"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "更衣室を利用します。",
+        "kana": "こういしつをりようします。",
+        "english": "I'll use the changing room."
+      }
+    },
+    {
+      "id": "office-391",
+      "kanji": "倉庫",
+      "kana": "そうこ",
+      "romaji": "souko",
+      "meaning": [
+        "warehouse",
+        "storage room"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "倉庫に荷物があります。",
+        "kana": "そうこににもつがあります。",
+        "english": "There are packages in the warehouse."
+      }
+    },
+    {
+      "id": "office-392",
+      "kanji": "社長室",
+      "kana": "しゃちょうしつ",
+      "romaji": "shachoushitsu",
+      "meaning": [
+        "president's office"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "社長室に呼ばれました。",
+        "kana": "しゃちょうしつによばれました。",
+        "english": "I was called to the president's office."
+      }
+    },
+    {
+      "id": "office-393",
+      "kanji": "役員室",
+      "kana": "やくいんしつ",
+      "romaji": "yakuinshitsu",
+      "meaning": [
+        "executive office",
+        "boardroom"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "board"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "役員室を予約しました。",
+        "kana": "やくいんしつをよやくしました。",
+        "english": "I reserved the executive office."
+      }
+    },
+    {
+      "id": "office-394",
+      "kanji": "事務所",
+      "kana": "じむしょ",
+      "romaji": "jimusho",
+      "meaning": [
+        "office",
+        "business office"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "事務所に戻ります。",
+        "kana": "じむしょにもどります。",
+        "english": "I'll return to the office."
+      }
+    },
+    {
+      "id": "office-395",
+      "kanji": "フロント",
+      "kana": "フロント",
+      "romaji": "furonto",
+      "meaning": [
+        "front desk",
+        "reception"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "フロントで受付を済ませてください。",
+        "kana": "フロントでうけつけをすませてください。",
+        "english": "Please check in at the front desk."
+      }
+    },
+    {
+      "id": "office-396",
+      "kanji": "エントランス",
+      "kana": "エントランス",
+      "romaji": "entoransu",
+      "meaning": [
+        "entrance",
+        "lobby"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "エントランスでお待ちしております。",
+        "kana": "エントランスでおまちしております。",
+        "english": "I'll be waiting at the entrance."
+      }
+    },
+    {
+      "id": "office-397",
+      "kanji": "喫煙所",
+      "kana": "きつえんじょ",
+      "romaji": "kitsuenjo",
+      "meaning": [
+        "smoking area"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "喫煙所に行ってきます。",
+        "kana": "きつえんじょにいってきます。",
+        "english": "I'll go to the smoking area."
+      }
+    },
+    {
+      "id": "office-398",
+      "kanji": "コピー室",
+      "kana": "コピーしつ",
+      "romaji": "kopiishitsu",
+      "meaning": [
+        "copy room",
+        "print room"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "コピー室を予約しました。",
+        "kana": "コピーしつをよやくしました。",
+        "english": "I reserved the copy room."
+      }
+    },
+    {
+      "id": "office-399",
+      "kanji": "サーバー室",
+      "kana": "サーバーしつ",
+      "romaji": "saabaashitsu",
+      "meaning": [
+        "server room"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "engineering"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "サーバー室を予約しました。",
+        "kana": "サーバーしつをよやくしました。",
+        "english": "I reserved the server room."
+      }
+    },
+    {
+      "id": "office-400",
+      "kanji": "オープンスペース",
+      "kana": "オープンスペース",
+      "romaji": "oopunsupeesu",
+      "meaning": [
+        "open workspace"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "オープンスペースを予約しました。",
+        "kana": "オープンスペースをよやくしました。",
+        "english": "I reserved the open workspace."
+      }
+    },
+    {
+      "id": "office-401",
+      "kanji": "個室",
+      "kana": "こしつ",
+      "romaji": "koshitsu",
+      "meaning": [
+        "private room",
+        "enclosed office"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "個室を予約しました。",
+        "kana": "こしつをよやくしました。",
+        "english": "I reserved the private room."
+      }
+    },
+    {
+      "id": "office-402",
+      "kanji": "共用スペース",
+      "kana": "きょうようスペース",
+      "romaji": "kyouyousupeesu",
+      "meaning": [
+        "shared space"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "共用スペースを予約しました。",
+        "kana": "きょうようスペースをよやくしました。",
+        "english": "I reserved the shared space."
+      }
+    },
+    {
+      "id": "office-403",
+      "kanji": "駐車場",
+      "kana": "ちゅうしゃじょう",
+      "romaji": "chuushajou",
+      "meaning": [
+        "parking lot"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "駐車場を予約しました。",
+        "kana": "ちゅうしゃじょうをよやくしました。",
+        "english": "I reserved the parking lot."
+      }
+    },
+    {
+      "id": "office-404",
+      "kanji": "エレベーター",
+      "kana": "エレベーター",
+      "romaji": "erebeetaa",
+      "meaning": [
+        "elevator"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "エレベーターを使います。",
+        "kana": "エレベーターをつかいます。",
+        "english": "I'll use the elevator."
+      }
+    },
+    {
+      "id": "office-405",
+      "kanji": "テレワーク環境",
+      "kana": "テレワークかんきょう",
+      "romaji": "terewaakukankyou",
+      "meaning": [
+        "remote work setup"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "facilities",
+      "example": {
+        "japanese": "テレワーク環境が整っています。",
+        "kana": "テレワークかんきょうがととのっています。",
+        "english": "The remote work setup is ready."
+      }
+    },
+    {
+      "id": "office-406",
+      "kanji": "コピー機",
+      "kana": "コピーき",
+      "romaji": "kopii ki",
+      "meaning": [
+        "photocopier"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "supplies",
+      "example": {
+        "japanese": "コピー機が必要です。",
+        "kana": "コピーきがひつようです。",
+        "english": "A photocopier is needed."
+      }
+    }
+  ]
+}

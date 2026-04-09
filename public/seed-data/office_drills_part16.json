@@ -1,0 +1,153 @@
+{
+  "schema": "office-drills-v1",
+  "packs": [
+    {
+      "id": "facilities-booking",
+      "title": "Facilities & Resources",
+      "titleJa": "施設予約",
+      "description": "Practice booking meeting rooms and facilities",
+      "cluster": "facilities",
+      "stages": [
+        {
+          "id": "facilities-s1",
+          "prompt": "You need to book a room for your team meeting. Tell your colleague you'll reserve a meeting room.",
+          "targets": {
+            "required": ["office-382"]
+          },
+          "modelAnswer": {
+            "japanese": "会議室を予約します。",
+            "kana": "かいぎしつをよやくします。",
+            "english": "I will reserve a meeting room."
+          },
+          "hint": "会議室 (かいぎしつ) — meeting room"
+        },
+        {
+          "id": "facilities-s2",
+          "prompt": "Your team is taking a break. Tell them let's go to the break room.",
+          "targets": {
+            "required": ["office-384"]
+          },
+          "modelAnswer": {
+            "japanese": "休憩室に行きましょう。",
+            "kana": "きゅうけいしつにいきましょう。",
+            "english": "Let's go to the break room."
+          },
+          "hint": "休憩室 (きゅうけいしつ) — break room"
+        },
+        {
+          "id": "facilities-s3",
+          "prompt": "You're having lunch at the company cafeteria. Tell your colleague you'll be in the cafeteria.",
+          "targets": {
+            "required": ["office-385"]
+          },
+          "modelAnswer": {
+            "japanese": "食堂にいます。",
+            "kana": "しょくどうにいます。",
+            "english": "I'll be in the cafeteria."
+          },
+          "hint": "食堂 (しょくどう) — cafeteria"
+        },
+        {
+          "id": "facilities-s4",
+          "prompt": "A client is visiting. Tell them you'll meet them at the entrance.",
+          "targets": {
+            "required": ["office-393"]
+          },
+          "modelAnswer": {
+            "japanese": "エントランスでお待ちしております。",
+            "kana": "エントランスでおまちしております。",
+            "english": "I'll be waiting for you at the entrance."
+          },
+          "hint": "エントランス — entrance/lobby"
+        },
+        {
+          "id": "facilities-s5",
+          "prompt": "You need a private room for a sensitive discussion. Ask if there's a private room available.",
+          "targets": {
+            "required": ["office-398"]
+          },
+          "modelAnswer": {
+            "japanese": "個室は空いていますか。",
+            "kana": "こしつはあいていますか。",
+            "english": "Is a private room available?"
+          },
+          "hint": "個室 (こしつ) — private room"
+        }
+      ]
+    },
+    {
+      "id": "hr-workflows",
+      "title": "HR Workflows",
+      "titleJa": "人事手続き",
+      "description": "Practice HR-related requests and processes",
+      "cluster": "hr",
+      "stages": [
+        {
+          "id": "hr-s1",
+          "prompt": "You need to work late tonight. Tell your manager you'll be working overtime.",
+          "targets": {
+            "required": ["office-254"]
+          },
+          "modelAnswer": {
+            "japanese": "今日は残業します。",
+            "kana": "きょうはざんぎょうします。",
+            "english": "I'll be working overtime today."
+          },
+          "hint": "残業 (ざんぎょう) — overtime work"
+        },
+        {
+          "id": "hr-s2",
+          "prompt": "You need to travel to Osaka for work next week. Tell your manager you'll go on a business trip.",
+          "targets": {
+            "required": ["office-255"]
+          },
+          "modelAnswer": {
+            "japanese": "来週、大阪に出張します。",
+            "kana": "らいしゅう、おおさかにしゅっちょうします。",
+            "english": "I'll go on a business trip to Osaka next week."
+          },
+          "hint": "出張 (しゅっちょう) — business trip"
+        },
+        {
+          "id": "hr-s3",
+          "prompt": "You're attending mandatory training next month. Tell your manager you'll attend the training.",
+          "targets": {
+            "required": ["office-256"]
+          },
+          "modelAnswer": {
+            "japanese": "来月、研修に参加します。",
+            "kana": "らいげつ、けんしゅうにさんかします。",
+            "english": "I'll attend the training next month."
+          },
+          "hint": "研修 (けんしゅう) — training"
+        },
+        {
+          "id": "hr-s4",
+          "prompt": "You want to take paid leave next Friday. Request to take a day of paid leave.",
+          "targets": {
+            "required": ["office-273"]
+          },
+          "modelAnswer": {
+            "japanese": "来週の金曜日に有休を取りたいです。",
+            "kana": "らいしゅうのきんようびにゆうきゅうをとりたいです。",
+            "english": "I'd like to take paid leave next Friday."
+          },
+          "hint": "有休 (ゆうきゅう) — paid leave"
+        },
+        {
+          "id": "hr-s5",
+          "prompt": "You're working from home tomorrow. Tell your team you'll be remote.",
+          "targets": {
+            "required": ["office-275"]
+          },
+          "modelAnswer": {
+            "japanese": "明日は在宅勤務します。",
+            "kana": "あしたはざいたくきんむします。",
+            "english": "I'll be working from home tomorrow."
+          },
+          "hint": "在宅勤務 (ざいたくきんむ) — remote work"
+        }
+      ]
+    }
+  ]
+}

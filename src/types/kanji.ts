@@ -91,6 +91,11 @@ export interface KanjiCard {
   // Vocabulary links
   examples: string[];     // Array of vocab IDs (e.g., ["n5_vocab_0001"])
 
+  // kanji.md integration (Phase 6)
+  sentence_ids?: string[];      // Example sentences from kanji.md
+  lesson_ids?: string[];        // Lessons that teach this kanji
+  cultural_note_ids?: string[]; // Related cultural notes
+
   // Future fields (Phase 4+)
   audio?: {
     onReadings?: string[];
@@ -194,4 +199,91 @@ export interface KanjiStats {
   averageRetention: number;
   totalReviews: number;
   studyStreak: number;
+}
+
+/**
+ * Kanji Sentence (from kanji.md textbook)
+ */
+export interface KanjiSentence {
+  id: string;
+  japanese: string;
+  kana: string;
+  romaji: string;
+  english: string;
+  kanji_ids: string[];
+  kanji_chars: string[];
+  vocab_ids: string[];
+  lesson_ids: string[];
+  difficulty: string;
+  grammarPoints: string[];
+  tags: string[];
+  audioUrl: string | null;
+  source: {
+    type: string;
+    line: number;
+  };
+}
+
+/**
+ * Kanji Lesson (structured learning path)
+ */
+export interface KanjiLesson {
+  id: string;
+  number: number;
+  title: string;
+  description: string;
+  difficulty: string;
+  estimatedMinutes: number;
+  page: string;
+  order: number;
+  kanji_ids: string[];
+  kanji_chars: string[];
+  sentence_ids: string[];
+  vocab_ids: string[];
+  prerequisites: string[];
+  nextLesson: string | null;
+  source: string;
+}
+
+/**
+ * Cultural Note
+ */
+export interface CulturalNote {
+  id: string;
+  term: string;
+  title: string;
+  shortDescription: string;
+  fullDescription: string;
+  kanji_ids: string[];
+  kanji_chars: string[];
+  vocab_ids: string[];
+  category: string;
+  imageUrl: string | null;
+  externalLinks: string[];
+  source: {
+    type: string;
+    line: number;
+    context: string;
+  };
+}
+
+/**
+ * Supplemental Vocabulary (from kanji.md)
+ */
+export interface KanjiVocabulary {
+  id: string;
+  word: string;
+  kana: string;
+  romaji: string;
+  meaning: string[];
+  kanji_ids: string[];
+  kanji_chars: string[];
+  lesson_ids: string[];
+  partOfSpeech: string[];
+  jlptLevel: string;
+  isDuplicate: boolean;
+  source: {
+    type: string;
+    line: number;
+  };
 }

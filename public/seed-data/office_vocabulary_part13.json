@@ -1,0 +1,1056 @@
+{
+  "schema": "office-v2",
+  "entries": [
+    {
+      "id": "office-452",
+      "kanji": "昇進する",
+      "kana": "しょうしんする",
+      "romaji": "shoushin suru",
+      "meaning": [
+        "to be promoted"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "昇進する予定です。",
+        "kana": "しょうしんするよていです。",
+        "english": "I plan to be promoted."
+      }
+    },
+    {
+      "id": "office-453",
+      "kanji": "評価する",
+      "kana": "ひょうかする",
+      "romaji": "hyouka suru",
+      "meaning": [
+        "to evaluate"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "評価する予定です。",
+        "kana": "ひょうかするよていです。",
+        "english": "I plan to evaluate."
+      }
+    },
+    {
+      "id": "office-454",
+      "kanji": "印刷する",
+      "kana": "いんさつする",
+      "romaji": "insatsu suru",
+      "meaning": [
+        "to print"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "standup",
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "印刷する予定です。",
+        "kana": "いんさつするよていです。",
+        "english": "I plan to print."
+      }
+    },
+    {
+      "id": "office-455",
+      "kanji": "転送する",
+      "kana": "てんそうする",
+      "romaji": "tensou suru",
+      "meaning": [
+        "to forward (email/call)"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "転送する予定です。",
+        "kana": "てんそうするよていです。",
+        "english": "I plan to forward."
+      }
+    },
+    {
+      "id": "office-456",
+      "kanji": "予約する",
+      "kana": "よやくする",
+      "romaji": "yoyaku suru",
+      "meaning": [
+        "to reserve",
+        "book"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "予約する予定です。",
+        "kana": "よやくするよていです。",
+        "english": "I plan to reserve."
+      }
+    },
+    {
+      "id": "office-457",
+      "kanji": "添付する",
+      "kana": "てんぷする",
+      "romaji": "tenpu suru",
+      "meaning": [
+        "to attach (file)"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "添付する予定です。",
+        "kana": "てんぷするよていです。",
+        "english": "I plan to attach a file."
+      }
+    },
+    {
+      "id": "office-458",
+      "kanji": "承認を取る",
+      "kana": "しょうにんをとる",
+      "romaji": "shounin wo toru",
+      "meaning": [
+        "to get approval"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "承認を取る予定です。",
+        "kana": "しょうにんをとるよていです。",
+        "english": "I plan to get approval."
+      }
+    },
+    {
+      "id": "office-459",
+      "kanji": "引き継ぐ",
+      "kana": "ひきつぐ",
+      "romaji": "hikitsugu",
+      "meaning": [
+        "to hand over",
+        "take over duties"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "引き継ぐ予定です。",
+        "kana": "ひきつぐよていです。",
+        "english": "I plan to hand over."
+      }
+    },
+    {
+      "id": "office-460",
+      "kanji": "交渉する",
+      "kana": "こうしょうする",
+      "romaji": "koushou suru",
+      "meaning": [
+        "to negotiate"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "C",
+      "contexts": [
+        "client"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "交渉する予定です。",
+        "kana": "こうしょうするよていです。",
+        "english": "I plan to negotiate."
+      }
+    },
+    {
+      "id": "office-461",
+      "kanji": "解約する",
+      "kana": "かいやくする",
+      "romaji": "kaiyaku suru",
+      "meaning": [
+        "to cancel a contract"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "C",
+      "contexts": [
+        "client"
+      ],
+      "category": "verbs",
+      "example": {
+        "japanese": "解約する予定です。",
+        "kana": "かいやくするよていです。",
+        "english": "I plan to cancel a contract."
+      }
+    },
+    {
+      "id": "office-462",
+      "kanji": "否決",
+      "kana": "ひけつ",
+      "romaji": "hiketsu",
+      "meaning": [
+        "rejection",
+        "vote down"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "board"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "否決について説明します。",
+        "kana": "ひけつについてせつめいします。",
+        "english": "I will explain the rejection."
+      }
+    },
+    {
+      "id": "office-463",
+      "kanji": "決議",
+      "kana": "けつぎ",
+      "romaji": "ketsugi",
+      "meaning": [
+        "resolution",
+        "decision"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "board"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "決議について説明します。",
+        "kana": "けつぎについてせつめいします。",
+        "english": "I will explain the resolution."
+      }
+    },
+    {
+      "id": "office-464",
+      "kanji": "取締役会",
+      "kana": "とりしまりやくかい",
+      "romaji": "torishimariyakukai",
+      "meaning": [
+        "board of directors meeting"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "board"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "取締役会について説明します。",
+        "kana": "とりしまりやくかいについてせつめいします。",
+        "english": "I will explain the board of directors meeting."
+      }
+    },
+    {
+      "id": "office-465",
+      "kanji": "賛成する",
+      "kana": "さんせいする",
+      "romaji": "sansei suru",
+      "meaning": [
+        "to agree",
+        "vote in favor"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "賛成する予定です。",
+        "kana": "さんせいするよていです。",
+        "english": "I plan to agree."
+      }
+    },
+    {
+      "id": "office-466",
+      "kanji": "反対する",
+      "kana": "はんたいする",
+      "romaji": "hantai suru",
+      "meaning": [
+        "to disagree",
+        "oppose"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "反対する予定です。",
+        "kana": "はんたいするよていです。",
+        "english": "I plan to disagree."
+      }
+    },
+    {
+      "id": "office-467",
+      "kanji": "確認を取る",
+      "kana": "かくにんをとる",
+      "romaji": "kakunin wo toru",
+      "meaning": [
+        "to confirm with someone"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "slack",
+        "standup"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "上司に確認を取ります。",
+        "kana": "じょうしにかくにんをとります。",
+        "english": "I'll confirm with my manager."
+      }
+    },
+    {
+      "id": "office-468",
+      "kanji": "ブレインストーミング",
+      "kana": "ブレインストーミング",
+      "romaji": "bureinsutooming",
+      "meaning": [
+        "brainstorming"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "ブレインストーミングについて説明します。",
+        "kana": "ブレインストーミングについてせつめいします。",
+        "english": "I will explain brainstorming."
+      }
+    },
+    {
+      "id": "office-469",
+      "kanji": "結論",
+      "kana": "けつろん",
+      "romaji": "ketsuron",
+      "meaning": [
+        "conclusion"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "結論について説明します。",
+        "kana": "けつろんについてせつめいします。",
+        "english": "I will explain the conclusion."
+      }
+    },
+    {
+      "id": "office-470",
+      "kanji": "次回",
+      "kana": "じかい",
+      "romaji": "jikai",
+      "meaning": [
+        "next time",
+        "next meeting"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "次回について説明します。",
+        "kana": "じかいについてせつめいします。",
+        "english": "I will explain the next meeting."
+      }
+    },
+    {
+      "id": "office-471",
+      "kanji": "意見を述べる",
+      "kana": "いけんをのべる",
+      "romaji": "iken wo noberu",
+      "meaning": [
+        "to express an opinion"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "meetings",
+      "example": {
+        "japanese": "会議で意見を述べます。",
+        "kana": "かいぎでいけんをのべます。",
+        "english": "I'll express my opinion at the meeting."
+      }
+    },
+    {
+      "id": "office-472",
+      "kanji": "残業",
+      "kana": "ざんぎょう",
+      "romaji": "zangyou",
+      "meaning": [
+        "overtime work"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "残業について説明します。",
+        "kana": "ざんぎょうについてせつめいします。",
+        "english": "I will explain overtime work."
+      }
+    },
+    {
+      "id": "office-473",
+      "kanji": "時間外労働",
+      "kana": "じかんがいろうどう",
+      "romaji": "jikangairoudou",
+      "meaning": [
+        "overtime labor (legal term)"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "時間外労働について説明します。",
+        "kana": "じかんがいろうどうについてせつめいします。",
+        "english": "I will explain overtime labor (legal term)."
+      }
+    },
+    {
+      "id": "office-474",
+      "kanji": "有給休暇",
+      "kana": "ゆうきゅうきゅうか",
+      "romaji": "yuukyuukyuuka",
+      "meaning": [
+        "paid leave",
+        "paid vacation"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "hr"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "有給休暇について説明します。",
+        "kana": "ゆうきゅうきゅうかについてせつめいします。",
+        "english": "I will explain paid leave."
+      }
+    },
+    {
+      "id": "office-475",
+      "kanji": "就業時間",
+      "kana": "しゅうぎょうじかん",
+      "romaji": "shuugyoujikan",
+      "meaning": [
+        "working hours"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "就業時間について説明します。",
+        "kana": "しゅうぎょうじかんについてせつめいします。",
+        "english": "I will explain the working hours."
+      }
+    },
+    {
+      "id": "office-476",
+      "kanji": "フレックスタイム",
+      "kana": "フレックスタイム",
+      "romaji": "furekkusutaimu",
+      "meaning": [
+        "flextime"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "フレックスタイムについて説明します。",
+        "kana": "フレックスタイムについてせつめいします。",
+        "english": "I will explain flextime."
+      }
+    },
+    {
+      "id": "office-477",
+      "kanji": "朝礼",
+      "kana": "ちょうれい",
+      "romaji": "chourei",
+      "meaning": [
+        "morning assembly",
+        "briefing"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "standup"
+      ],
+      "category": "time",
+      "example": {
+        "japanese": "朝礼について説明します。",
+        "kana": "ちょうれいについてせつめいします。",
+        "english": "I will explain the morning assembly."
+      }
+    },
+    {
+      "id": "office-478",
+      "kanji": "本文",
+      "kana": "ほんぶん",
+      "romaji": "honbun",
+      "meaning": [
+        "body (of email/document)"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "本文について説明します。",
+        "kana": "ほんぶんについてせつめいします。",
+        "english": "I will explain the email body."
+      }
+    },
+    {
+      "id": "office-479",
+      "kanji": "添付ファイル",
+      "kana": "てんぷファイル",
+      "romaji": "tenpufairu",
+      "meaning": [
+        "email attachment"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "添付ファイルについて説明します。",
+        "kana": "てんぷファイルについてせつめいします。",
+        "english": "I will explain the email attachment."
+      }
+    },
+    {
+      "id": "office-480",
+      "kanji": "署名",
+      "kana": "しょめい",
+      "romaji": "shomei",
+      "meaning": [
+        "email signature"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "署名について説明します。",
+        "kana": "しょめいについてせつめいします。",
+        "english": "I will explain the email signature."
+      }
+    },
+    {
+      "id": "office-481",
+      "kanji": "CC",
+      "kana": "シーシー",
+      "romaji": "shiishii",
+      "meaning": [
+        "CC (carbon copy)"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "CCについて説明します。",
+        "kana": "シーシーについてせつめいします。",
+        "english": "I will explain CC (carbon copy)."
+      }
+    },
+    {
+      "id": "office-482",
+      "kanji": "BCC",
+      "kana": "ビーシーシー",
+      "romaji": "biishiishii",
+      "meaning": [
+        "BCC (blind carbon copy)"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "BCCについて説明します。",
+        "kana": "ビーシーシーについてせつめいします。",
+        "english": "I will explain BCC (blind carbon copy)."
+      }
+    },
+    {
+      "id": "office-483",
+      "kanji": "転送",
+      "kana": "てんそう",
+      "romaji": "tensou",
+      "meaning": [
+        "forward (email)"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "転送について説明します。",
+        "kana": "てんそうについてせつめいします。",
+        "english": "I will explain email forwarding."
+      }
+    },
+    {
+      "id": "office-484",
+      "kanji": "下書き",
+      "kana": "したがき",
+      "romaji": "shitagaki",
+      "meaning": [
+        "draft"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "下書きについて説明します。",
+        "kana": "したがきについてせつめいします。",
+        "english": "I will explain the draft."
+      }
+    },
+    {
+      "id": "office-485",
+      "kanji": "内線",
+      "kana": "ないせん",
+      "romaji": "naisen",
+      "meaning": [
+        "internal phone",
+        "extension"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "内線について説明します。",
+        "kana": "ないせんについてせつめいします。",
+        "english": "I will explain the internal phone system."
+      }
+    },
+    {
+      "id": "office-486",
+      "kanji": "外線",
+      "kana": "がいせん",
+      "romaji": "gaisen",
+      "meaning": [
+        "external phone line"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "外線について説明します。",
+        "kana": "がいせんについてせつめいします。",
+        "english": "I will explain the external phone line."
+      }
+    },
+    {
+      "id": "office-487",
+      "kanji": "直通",
+      "kana": "ちょくつう",
+      "romaji": "chokutsuu",
+      "meaning": [
+        "direct line"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "直通について説明します。",
+        "kana": "ちょくつうについてせつめいします。",
+        "english": "I will explain the direct line."
+      }
+    },
+    {
+      "id": "office-488",
+      "kanji": "留守番電話",
+      "kana": "るすばんでんわ",
+      "romaji": "rusubandenwa",
+      "meaning": [
+        "voicemail"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "留守番電話について説明します。",
+        "kana": "るすばんでんわについてせつめいします。",
+        "english": "I will explain the voicemail system."
+      }
+    },
+    {
+      "id": "office-489",
+      "kanji": "ビデオ会議",
+      "kana": "ビデオかいぎ",
+      "romaji": "bideokaigi",
+      "meaning": [
+        "video conference"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "meeting"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "ビデオ会議について説明します。",
+        "kana": "ビデオかいぎについてせつめいします。",
+        "english": "I will explain the video conference."
+      }
+    },
+    {
+      "id": "office-490",
+      "kanji": "社内報",
+      "kana": "しゃないほう",
+      "romaji": "shanaihou",
+      "meaning": [
+        "company newsletter"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "社内報について説明します。",
+        "kana": "しゃないほうについてせつめいします。",
+        "english": "I will explain the company newsletter."
+      }
+    },
+    {
+      "id": "office-491",
+      "kanji": "回覧板",
+      "kana": "かいらんばん",
+      "romaji": "kairanban",
+      "meaning": [
+        "circulation board"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "回覧板について説明します。",
+        "kana": "かいらんばんについてせつめいします。",
+        "english": "I will explain the circulation board."
+      }
+    },
+    {
+      "id": "office-492",
+      "kanji": "掲示板",
+      "kana": "けいじばん",
+      "romaji": "keijiban",
+      "meaning": [
+        "bulletin board"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "掲示板について説明します。",
+        "kana": "けいじばんについてせつめいします。",
+        "english": "I will explain the bulletin board."
+      }
+    },
+    {
+      "id": "office-493",
+      "kanji": "お知らせ",
+      "kana": "おしらせ",
+      "romaji": "oshirase",
+      "meaning": [
+        "announcement",
+        "notice"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "hr",
+        "slack"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "お知らせについて説明します。",
+        "kana": "おしらせについてせつめいします。",
+        "english": "I will explain the announcement."
+      }
+    },
+    {
+      "id": "office-494",
+      "kanji": "通知",
+      "kana": "つうち",
+      "romaji": "tsuuchi",
+      "meaning": [
+        "notification"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "slack"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "通知について説明します。",
+        "kana": "つうちについてせつめいします。",
+        "english": "I will explain the notification."
+      }
+    },
+    {
+      "id": "office-495",
+      "kanji": "問い合わせ",
+      "kana": "といあわせ",
+      "romaji": "toiawase",
+      "meaning": [
+        "inquiry"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "client",
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "問い合わせについて説明します。",
+        "kana": "といあわせについてせつめいします。",
+        "english": "I will explain the inquiry."
+      }
+    },
+    {
+      "id": "office-496",
+      "kanji": "折り返し電話",
+      "kana": "おりかえしでんわ",
+      "romaji": "orikaeshidenwa",
+      "meaning": [
+        "callback",
+        "return call"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "折り返し電話について説明します。",
+        "kana": "おりかえしでんわについてせつめいします。",
+        "english": "I will explain the callback procedure."
+      }
+    }
+  ]
+}

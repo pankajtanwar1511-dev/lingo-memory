@@ -1,0 +1,1486 @@
+{
+  "schema": "normalized-v2",
+  "metadata": {
+    "version": "1.0.0",
+    "jlpt": "N5",
+    "totalEntries": 27,
+    "description": "Additional N5 verbs identified from source analysis - to be merged with main dataset",
+    "sourceAnalysis": "docs/verb-comparison-report.md",
+    "license": "CC BY-SA 4.0"
+  },
+  "verbs": [
+    {
+      "id": "n5_v_0141",
+      "lemma": {
+        "kanji": "違う",
+        "kana": "ちがう"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [],
+        "coreStructure": "A は B と 違う"
+      },
+      "meaning": {
+        "primary": "to be different",
+        "gloss": [
+          "be different",
+          "be wrong",
+          "differ",
+          "be incorrect"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "違う",
+          "kana": "ちがう"
+        },
+        "masu": {
+          "kanji": "違います",
+          "kana": "ちがいます"
+        },
+        "te": {
+          "kanji": "違って",
+          "kana": "ちがって"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "これは違います。",
+            "kana": "これはちがいます。",
+            "en": "This is wrong.",
+            "grammarTag": "simple-statement",
+            "pattern": "これ は + Verb",
+            "highlight": "basic correction"
+          },
+          {
+            "jp": "日本と中国は違います。",
+            "kana": "にほんとちゅうごくはちがいます。",
+            "en": "Japan and China are different.",
+            "grammarTag": "comparison",
+            "pattern": "A と B は + Verb",
+            "highlight": "comparing countries"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0142",
+      "lemma": {
+        "kanji": "仕事する",
+        "kana": "しごとする"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "irregular",
+        "isIrregular": true
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [],
+        "coreStructure": "仕事する"
+      },
+      "meaning": {
+        "primary": "to work",
+        "gloss": [
+          "work",
+          "do work",
+          "perform work"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "仕事する",
+          "kana": "しごとする"
+        },
+        "masu": {
+          "kanji": "仕事します",
+          "kana": "しごとします"
+        },
+        "te": {
+          "kanji": "仕事して",
+          "kana": "しごとして"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "毎日会社で仕事します。",
+            "kana": "まいにちかいしゃでしごとします。",
+            "en": "I work at the company every day.",
+            "grammarTag": "habitual",
+            "pattern": "Time + Place で + Verb",
+            "highlight": "daily work routine"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0143",
+      "lemma": {
+        "kanji": "始まる",
+        "kana": "はじまる"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [],
+        "coreStructure": "Event が 始まる"
+      },
+      "meaning": {
+        "primary": "to begin",
+        "gloss": [
+          "begin",
+          "start",
+          "commence"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "始まる",
+          "kana": "はじまる"
+        },
+        "masu": {
+          "kanji": "始まります",
+          "kana": "はじまります"
+        },
+        "te": {
+          "kanji": "始まって",
+          "kana": "はじまって"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "会議は9時に始まります。",
+            "kana": "かいぎは9じにはじまります。",
+            "en": "The meeting starts at 9 o'clock.",
+            "grammarTag": "simple-statement",
+            "pattern": "Event は Time に + Verb",
+            "highlight": "scheduled start time"
+          },
+          {
+            "jp": "授業が始まりました。",
+            "kana": "じゅぎょうがはじまりました。",
+            "en": "The class has started.",
+            "grammarTag": "polite-past",
+            "pattern": "Event が + Verb(past)",
+            "highlight": "event started"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0144",
+      "lemma": {
+        "kanji": "戻る",
+        "kana": "もどる"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [
+          "に"
+        ],
+        "coreStructure": "Place に 戻る"
+      },
+      "meaning": {
+        "primary": "to return",
+        "gloss": [
+          "return",
+          "go back",
+          "come back"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "戻る",
+          "kana": "もどる"
+        },
+        "masu": {
+          "kanji": "戻ります",
+          "kana": "もどります"
+        },
+        "te": {
+          "kanji": "戻って",
+          "kana": "もどって"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "すぐに戻ります。",
+            "kana": "すぐにもどります。",
+            "en": "I'll be right back.",
+            "grammarTag": "simple-statement",
+            "pattern": "Adverb + Verb",
+            "highlight": "quick return"
+          },
+          {
+            "jp": "家に戻りました。",
+            "kana": "いえにもどりました。",
+            "en": "I returned home.",
+            "grammarTag": "polite-past",
+            "pattern": "Place に + Verb(past)",
+            "highlight": "completed return"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0145",
+      "lemma": {
+        "kanji": "ドライブする",
+        "kana": "どらいぶする"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "irregular",
+        "isIrregular": true
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [],
+        "coreStructure": "ドライブする"
+      },
+      "meaning": {
+        "primary": "to drive (for pleasure)",
+        "gloss": [
+          "drive",
+          "go for a drive",
+          "take a drive"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "ドライブする",
+          "kana": "どらいぶする"
+        },
+        "masu": {
+          "kanji": "ドライブします",
+          "kana": "どらいぶします"
+        },
+        "te": {
+          "kanji": "ドライブして",
+          "kana": "どらいぶして"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "週末にドライブします。",
+            "kana": "しゅうまつにどらいぶします。",
+            "en": "I go for a drive on weekends.",
+            "grammarTag": "habitual",
+            "pattern": "Time に + Verb",
+            "highlight": "weekend activity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0146",
+      "lemma": {
+        "kanji": "発表する",
+        "kana": "はっぴょうする"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "irregular",
+        "isIrregular": true
+      },
+      "valency": {
+        "type": "transitive",
+        "requiredParticles": [
+          "を"
+        ],
+        "coreStructure": "Thing を 発表する"
+      },
+      "meaning": {
+        "primary": "to announce",
+        "gloss": [
+          "announce",
+          "present",
+          "make a presentation"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "発表する",
+          "kana": "はっぴょうする"
+        },
+        "masu": {
+          "kanji": "発表します",
+          "kana": "はっぴょうします"
+        },
+        "te": {
+          "kanji": "発表して",
+          "kana": "はっぴょうして"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "明日、結果を発表します。",
+            "kana": "あした、けっかをはっぴょうします。",
+            "en": "We will announce the results tomorrow.",
+            "grammarTag": "simple-statement",
+            "pattern": "Time + Thing を + Verb",
+            "highlight": "future announcement"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0147",
+      "lemma": {
+        "kanji": "答える",
+        "kana": "こたえる"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "ichidan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [
+          "に"
+        ],
+        "coreStructure": "Question に 答える"
+      },
+      "meaning": {
+        "primary": "to answer",
+        "gloss": [
+          "answer",
+          "reply",
+          "respond"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "答える",
+          "kana": "こたえる"
+        },
+        "masu": {
+          "kanji": "答えます",
+          "kana": "こたえます"
+        },
+        "te": {
+          "kanji": "答えて",
+          "kana": "こたえて"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "質問に答えます。",
+            "kana": "しつもんにこたえます。",
+            "en": "I will answer the question.",
+            "grammarTag": "simple-statement",
+            "pattern": "Thing に + Verb",
+            "highlight": "answering questions"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0148",
+      "lemma": {
+        "kanji": "助かる",
+        "kana": "たすかる"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [],
+        "coreStructure": "助かる"
+      },
+      "meaning": {
+        "primary": "to be saved",
+        "gloss": [
+          "be saved",
+          "be helpful",
+          "be a great help"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "助かる",
+          "kana": "たすかる"
+        },
+        "masu": {
+          "kanji": "助かります",
+          "kana": "たすかります"
+        },
+        "te": {
+          "kanji": "助かって",
+          "kana": "たすかって"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "本当に助かります。",
+            "kana": "ほんとうにたすかります。",
+            "en": "That's really helpful.",
+            "grammarTag": "simple-statement",
+            "pattern": "Adverb + Verb",
+            "highlight": "expressing gratitude"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0149",
+      "lemma": {
+        "kanji": "並べる",
+        "kana": "ならべる"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "ichidan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "transitive",
+        "requiredParticles": [
+          "を"
+        ],
+        "coreStructure": "Thing を 並べる"
+      },
+      "meaning": {
+        "primary": "to arrange",
+        "gloss": [
+          "arrange",
+          "line up",
+          "align",
+          "display in order"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "並べる",
+          "kana": "ならべる"
+        },
+        "masu": {
+          "kanji": "並べます",
+          "kana": "ならべます"
+        },
+        "te": {
+          "kanji": "並べて",
+          "kana": "ならべて"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "椅子を並べます。",
+            "kana": "いすをならべます。",
+            "en": "I arrange the chairs.",
+            "grammarTag": "simple-statement",
+            "pattern": "Thing を + Verb",
+            "highlight": "arranging objects"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0150",
+      "lemma": {
+        "kanji": "化粧する",
+        "kana": "けしょうする"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "irregular",
+        "isIrregular": true
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [],
+        "coreStructure": "化粧する"
+      },
+      "meaning": {
+        "primary": "to put on makeup",
+        "gloss": [
+          "put on makeup",
+          "apply makeup",
+          "wear makeup"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "化粧する",
+          "kana": "けしょうする"
+        },
+        "masu": {
+          "kanji": "化粧します",
+          "kana": "けしょうします"
+        },
+        "te": {
+          "kanji": "化粧して",
+          "kana": "けしょうして"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "毎朝化粧します。",
+            "kana": "まいあさけしょうします。",
+            "en": "I put on makeup every morning.",
+            "grammarTag": "habitual",
+            "pattern": "Time + Verb",
+            "highlight": "daily routine"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0151",
+      "lemma": {
+        "kanji": "決める",
+        "kana": "きめる"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "ichidan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "transitive",
+        "requiredParticles": [
+          "を"
+        ],
+        "coreStructure": "Thing を 決める"
+      },
+      "meaning": {
+        "primary": "to decide",
+        "gloss": [
+          "decide",
+          "determine",
+          "make a decision"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "決める",
+          "kana": "きめる"
+        },
+        "masu": {
+          "kanji": "決めます",
+          "kana": "きめます"
+        },
+        "te": {
+          "kanji": "決めて",
+          "kana": "きめて"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "予定を決めます。",
+            "kana": "よていをきめます。",
+            "en": "I decide the schedule.",
+            "grammarTag": "simple-statement",
+            "pattern": "Thing を + Verb",
+            "highlight": "making decisions"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0152",
+      "lemma": {
+        "kanji": "笑う",
+        "kana": "わらう"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [],
+        "coreStructure": "笑う"
+      },
+      "meaning": {
+        "primary": "to laugh",
+        "gloss": [
+          "laugh",
+          "smile",
+          "grin"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "笑う",
+          "kana": "わらう"
+        },
+        "masu": {
+          "kanji": "笑います",
+          "kana": "わらいます"
+        },
+        "te": {
+          "kanji": "笑って",
+          "kana": "わらって"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "友達と笑います。",
+            "kana": "ともだちとわらいます。",
+            "en": "I laugh with my friends.",
+            "grammarTag": "simple-statement",
+            "pattern": "Person と + Verb",
+            "highlight": "laughing together"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0153",
+      "lemma": {
+        "kanji": "泣く",
+        "kana": "なく"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [],
+        "coreStructure": "泣く"
+      },
+      "meaning": {
+        "primary": "to cry",
+        "gloss": [
+          "cry",
+          "weep",
+          "shed tears"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "泣く",
+          "kana": "なく"
+        },
+        "masu": {
+          "kanji": "泣きます",
+          "kana": "なきます"
+        },
+        "te": {
+          "kanji": "泣いて",
+          "kana": "ないて"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "赤ちゃんが泣きます。",
+            "kana": "あかちゃんがなきます。",
+            "en": "The baby cries.",
+            "grammarTag": "simple-statement",
+            "pattern": "Person が + Verb",
+            "highlight": "expressing emotion"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0154",
+      "lemma": {
+        "kanji": "けんかする",
+        "kana": "けんかする"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "irregular",
+        "isIrregular": true
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [
+          "と"
+        ],
+        "coreStructure": "Person と けんかする"
+      },
+      "meaning": {
+        "primary": "to fight",
+        "gloss": [
+          "fight",
+          "argue",
+          "quarrel"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "けんかする",
+          "kana": "けんかする"
+        },
+        "masu": {
+          "kanji": "けんかします",
+          "kana": "けんかします"
+        },
+        "te": {
+          "kanji": "けんかして",
+          "kana": "けんかして"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "兄とけんかします。",
+            "kana": "あにとけんかします。",
+            "en": "I fight with my older brother.",
+            "grammarTag": "simple-statement",
+            "pattern": "Person と + Verb",
+            "highlight": "arguing with someone"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0155",
+      "lemma": {
+        "kanji": "走る",
+        "kana": "はしる"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [],
+        "coreStructure": "走る"
+      },
+      "meaning": {
+        "primary": "to run",
+        "gloss": [
+          "run",
+          "jog",
+          "sprint"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "走る",
+          "kana": "はしる"
+        },
+        "masu": {
+          "kanji": "走ります",
+          "kana": "はしります"
+        },
+        "te": {
+          "kanji": "走って",
+          "kana": "はしって"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "毎朝走ります。",
+            "kana": "まいあさはしります。",
+            "en": "I run every morning.",
+            "grammarTag": "habitual",
+            "pattern": "Time + Verb",
+            "highlight": "daily exercise"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0156",
+      "lemma": {
+        "kanji": "踊る",
+        "kana": "おどる"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [],
+        "coreStructure": "踊る"
+      },
+      "meaning": {
+        "primary": "to dance",
+        "gloss": [
+          "dance",
+          "perform a dance"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "踊る",
+          "kana": "おどる"
+        },
+        "masu": {
+          "kanji": "踊ります",
+          "kana": "おどります"
+        },
+        "te": {
+          "kanji": "踊って",
+          "kana": "おどって"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "パーティーで踊ります。",
+            "kana": "ぱーてぃーでおどります。",
+            "en": "I dance at parties.",
+            "grammarTag": "simple-statement",
+            "pattern": "Place で + Verb",
+            "highlight": "dancing activity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0157",
+      "lemma": {
+        "kanji": "休憩する",
+        "kana": "きゅうけいする"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "irregular",
+        "isIrregular": true
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [],
+        "coreStructure": "休憩する"
+      },
+      "meaning": {
+        "primary": "to take a break",
+        "gloss": [
+          "take a break",
+          "rest",
+          "have a rest"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "休憩する",
+          "kana": "きゅうけいする"
+        },
+        "masu": {
+          "kanji": "休憩します",
+          "kana": "きゅうけいします"
+        },
+        "te": {
+          "kanji": "休憩して",
+          "kana": "きゅうけいして"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "10分休憩します。",
+            "kana": "10ぷんきゅうけいします。",
+            "en": "I'll take a 10-minute break.",
+            "grammarTag": "simple-statement",
+            "pattern": "Time + Verb",
+            "highlight": "work break"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0158",
+      "lemma": {
+        "kanji": "死ぬ",
+        "kana": "しぬ"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [],
+        "coreStructure": "死ぬ"
+      },
+      "meaning": {
+        "primary": "to die",
+        "gloss": [
+          "die",
+          "pass away",
+          "perish"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "死ぬ",
+          "kana": "しぬ"
+        },
+        "masu": {
+          "kanji": "死にます",
+          "kana": "しにます"
+        },
+        "te": {
+          "kanji": "死んで",
+          "kana": "しんで"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "祖父が死にました。",
+            "kana": "そふがしにました。",
+            "en": "My grandfather passed away.",
+            "grammarTag": "polite-past",
+            "pattern": "Person が + Verb(past)",
+            "highlight": "respectful past tense"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0159",
+      "lemma": {
+        "kanji": "旅行する",
+        "kana": "りょこうする"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "irregular",
+        "isIrregular": true
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [
+          "に",
+          "へ"
+        ],
+        "coreStructure": "Place に/へ 旅行する"
+      },
+      "meaning": {
+        "primary": "to travel",
+        "gloss": [
+          "travel",
+          "go on a trip",
+          "take a trip"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "旅行する",
+          "kana": "りょこうする"
+        },
+        "masu": {
+          "kanji": "旅行します",
+          "kana": "りょこうします"
+        },
+        "te": {
+          "kanji": "旅行して",
+          "kana": "りょこうして"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "夏休みに沖縄へ旅行します。",
+            "kana": "なつやすみにおきなわへりょこうします。",
+            "en": "I will travel to Okinawa during summer vacation.",
+            "grammarTag": "simple-statement",
+            "pattern": "Time に Place へ + Verb",
+            "highlight": "vacation travel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0160",
+      "lemma": {
+        "kanji": "伺う",
+        "kana": "うかがう"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [
+          "に"
+        ],
+        "coreStructure": "Place に 伺う"
+      },
+      "meaning": {
+        "primary": "to visit (humble)",
+        "gloss": [
+          "visit (humble)",
+          "ask (humble)",
+          "inquire (humble)"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "伺う",
+          "kana": "うかがう"
+        },
+        "masu": {
+          "kanji": "伺います",
+          "kana": "うかがいます"
+        },
+        "te": {
+          "kanji": "伺って",
+          "kana": "うかがって"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "明日お宅に伺います。",
+            "kana": "あしたおたくにうかがいます。",
+            "en": "I will visit your home tomorrow.",
+            "grammarTag": "humble",
+            "pattern": "Time + Place に + Verb(humble)",
+            "highlight": "respectful visiting"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0161",
+      "lemma": {
+        "kanji": "料理する",
+        "kana": "りょうりする"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "irregular",
+        "isIrregular": true
+      },
+      "valency": {
+        "type": "transitive",
+        "requiredParticles": [
+          "を"
+        ],
+        "coreStructure": "Food を 料理する"
+      },
+      "meaning": {
+        "primary": "to cook",
+        "gloss": [
+          "cook",
+          "prepare food",
+          "make a meal"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "料理する",
+          "kana": "りょうりする"
+        },
+        "masu": {
+          "kanji": "料理します",
+          "kana": "りょうりします"
+        },
+        "te": {
+          "kanji": "料理して",
+          "kana": "りょうりして"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "毎日料理します。",
+            "kana": "まいにちりょうりします。",
+            "en": "I cook every day.",
+            "grammarTag": "habitual",
+            "pattern": "Time + Verb",
+            "highlight": "daily cooking"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0162",
+      "lemma": {
+        "kanji": "茹でる",
+        "kana": "ゆでる"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "ichidan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "transitive",
+        "requiredParticles": [
+          "を"
+        ],
+        "coreStructure": "Food を 茹でる"
+      },
+      "meaning": {
+        "primary": "to boil (food)",
+        "gloss": [
+          "boil",
+          "cook in boiling water",
+          "parboil"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "茹でる",
+          "kana": "ゆでる"
+        },
+        "masu": {
+          "kanji": "茹でます",
+          "kana": "ゆでます"
+        },
+        "te": {
+          "kanji": "茹でて",
+          "kana": "ゆでて"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "卵を茹でます。",
+            "kana": "たまごをゆでます。",
+            "en": "I boil eggs.",
+            "grammarTag": "simple-statement",
+            "pattern": "Food を + Verb",
+            "highlight": "cooking method"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0163",
+      "lemma": {
+        "kanji": "沸く",
+        "kana": "わく"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [],
+        "coreStructure": "Liquid が 沸く"
+      },
+      "meaning": {
+        "primary": "to boil (water)",
+        "gloss": [
+          "boil",
+          "come to a boil",
+          "heat up"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "沸く",
+          "kana": "わく"
+        },
+        "masu": {
+          "kanji": "沸きます",
+          "kana": "わきます"
+        },
+        "te": {
+          "kanji": "沸いて",
+          "kana": "わいて"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "お湯が沸きました。",
+            "kana": "おゆがわきました。",
+            "en": "The water has boiled.",
+            "grammarTag": "polite-past",
+            "pattern": "Liquid が + Verb(past)",
+            "highlight": "water boiling"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0164",
+      "lemma": {
+        "kanji": "遅れる",
+        "kana": "おくれる"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "ichidan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [
+          "に"
+        ],
+        "coreStructure": "Event に 遅れる"
+      },
+      "meaning": {
+        "primary": "to be late",
+        "gloss": [
+          "be late",
+          "be delayed",
+          "miss (train)"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "遅れる",
+          "kana": "おくれる"
+        },
+        "masu": {
+          "kanji": "遅れます",
+          "kana": "おくれます"
+        },
+        "te": {
+          "kanji": "遅れて",
+          "kana": "おくれて"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "会議に遅れました。",
+            "kana": "かいぎにおくれました。",
+            "en": "I was late for the meeting.",
+            "grammarTag": "polite-past",
+            "pattern": "Event に + Verb(past)",
+            "highlight": "being late"
+          },
+          {
+            "jp": "電車が遅れます。",
+            "kana": "でんしゃがおくれます。",
+            "en": "The train is delayed.",
+            "grammarTag": "simple-statement",
+            "pattern": "Thing が + Verb",
+            "highlight": "delayed transportation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0165",
+      "lemma": {
+        "kanji": "干す",
+        "kana": "ほす"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "transitive",
+        "requiredParticles": [
+          "を"
+        ],
+        "coreStructure": "Thing を 干す"
+      },
+      "meaning": {
+        "primary": "to dry",
+        "gloss": [
+          "dry",
+          "hang out to dry",
+          "air-dry"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "干す",
+          "kana": "ほす"
+        },
+        "masu": {
+          "kanji": "干します",
+          "kana": "ほします"
+        },
+        "te": {
+          "kanji": "干して",
+          "kana": "ほして"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "洗濯物を干します。",
+            "kana": "せんたくものをほします。",
+            "en": "I hang the laundry out to dry.",
+            "grammarTag": "simple-statement",
+            "pattern": "Thing を + Verb",
+            "highlight": "drying clothes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0166",
+      "lemma": {
+        "kanji": "咲く",
+        "kana": "さく"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "intransitive",
+        "requiredParticles": [],
+        "coreStructure": "Flower が 咲く"
+      },
+      "meaning": {
+        "primary": "to bloom",
+        "gloss": [
+          "bloom",
+          "blossom",
+          "flower"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "咲く",
+          "kana": "さく"
+        },
+        "masu": {
+          "kanji": "咲きます",
+          "kana": "さきます"
+        },
+        "te": {
+          "kanji": "咲いて",
+          "kana": "さいて"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "桜が咲きます。",
+            "kana": "さくらがさきます。",
+            "en": "The cherry blossoms bloom.",
+            "grammarTag": "simple-statement",
+            "pattern": "Flower が + Verb",
+            "highlight": "seasonal blooming"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n5_v_0167",
+      "lemma": {
+        "kanji": "守る",
+        "kana": "まもる"
+      },
+      "jlpt": "N5",
+      "pos": "verb",
+      "morphology": {
+        "class": "godan",
+        "isIrregular": false
+      },
+      "valency": {
+        "type": "transitive",
+        "requiredParticles": [
+          "を"
+        ],
+        "coreStructure": "Thing を 守る"
+      },
+      "meaning": {
+        "primary": "to protect",
+        "gloss": [
+          "protect",
+          "guard",
+          "obey (rules)",
+          "keep (promise)"
+        ]
+      },
+      "forms": {
+        "dictionary": {
+          "kanji": "守る",
+          "kana": "まもる"
+        },
+        "masu": {
+          "kanji": "守ります",
+          "kana": "まもります"
+        },
+        "te": {
+          "kanji": "守って",
+          "kana": "まもって"
+        }
+      },
+      "examples": {
+        "masu": [
+          {
+            "jp": "ルールを守ります。",
+            "kana": "るーるをまもります。",
+            "en": "I follow the rules.",
+            "grammarTag": "simple-statement",
+            "pattern": "Thing を + Verb",
+            "highlight": "following rules"
+          },
+          {
+            "jp": "約束を守ります。",
+            "kana": "やくそくをまもります。",
+            "en": "I keep my promise.",
+            "grammarTag": "simple-statement",
+            "pattern": "Thing を + Verb",
+            "highlight": "keeping promises"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generatedAt": "2026-03-18T13:38:57.843750",
+    "totalVocabulary": 11,
+    "source": "kanji.md textbook",
+    "description": "Supplemental vocabulary from kanji.md (may include duplicates from main N5 dataset)",
+    "note": "All vocabulary entries fixed and enriched with correct romaji, meanings, and parts of speech",
+    "enrichedAt": "2026-03-18T13:52:06.396219"
+  },
+  "vocabulary": [
+    {
+      "id": "kmd_vocab_0001",
+      "word": "大好き",
+      "kana": "だいすき",
+      "romaji": "daisuki",
+      "meaning": [
+        "like very much",
+        "love"
+      ],
+      "kanji_ids": [
+        "kanji_n5_大"
+      ],
+      "kanji_chars": [
+        "大",
+        "好"
+      ],
+      "lesson_ids": [],
+      "partOfSpeech": [
+        "na-adjective"
+      ],
+      "jlptLevel": "N5",
+      "isDuplicate": false,
+      "source": {
+        "type": "kanji.md",
+        "line": 45
+      }
+    },
+    {
+      "id": "kmd_vocab_0002",
+      "word": "大変",
+      "kana": "たいへん",
+      "romaji": "taihen",
+      "meaning": [
+        "difficult",
+        "hard",
+        "terrible"
+      ],
+      "kanji_ids": [
+        "kanji_n5_大"
+      ],
+      "kanji_chars": [
+        "大",
+        "変"
+      ],
+      "lesson_ids": [],
+      "partOfSpeech": [
+        "na-adjective",
+        "adverb"
+      ],
+      "jlptLevel": "N5",
+      "isDuplicate": false,
+      "source": {
+        "type": "kanji.md",
+        "line": 46
+      }
+    },
+    {
+      "id": "kmd_vocab_0003",
+      "word": "よっつ",
+      "kana": "よっつ",
+      "romaji": "yottsu",
+      "meaning": [
+        "four (things)"
+      ],
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "lesson_ids": [],
+      "partOfSpeech": [
+        "counter"
+      ],
+      "jlptLevel": "N5",
+      "isDuplicate": false,
+      "source": {
+        "type": "kanji.md",
+        "line": 237
+      }
+    },
+    {
+      "id": "kmd_vocab_0004",
+      "word": "いつつ",
+      "kana": "いつつ",
+      "romaji": "itsutsu",
+      "meaning": [
+        "five (things)"
+      ],
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "lesson_ids": [],
+      "partOfSpeech": [
+        "counter"
+      ],
+      "jlptLevel": "N5",
+      "isDuplicate": false,
+      "source": {
+        "type": "kanji.md",
+        "line": 250
+      }
+    },
+    {
+      "id": "kmd_vocab_0005",
+      "word": "むっつ",
+      "kana": "むっつ",
+      "romaji": "muttsu",
+      "meaning": [
+        "six (things)"
+      ],
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "lesson_ids": [],
+      "partOfSpeech": [
+        "counter"
+      ],
+      "jlptLevel": "N5",
+      "isDuplicate": false,
+      "source": {
+        "type": "kanji.md",
+        "line": 265
+      }
+    },
+    {
+      "id": "kmd_vocab_0006",
+      "word": "むいか",
+      "kana": "むいか",
+      "romaji": "muika",
+      "meaning": [
+        "six days",
+        "sixth day of the month"
+      ],
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "lesson_ids": [],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "jlptLevel": "N5",
+      "isDuplicate": false,
+      "source": {
+        "type": "kanji.md",
+        "line": 266
+      }
+    },
+    {
+      "id": "kmd_vocab_0007",
+      "word": "ななつ",
+      "kana": "ななつ",
+      "romaji": "nanatsu",
+      "meaning": [
+        "seven (things)"
+      ],
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "lesson_ids": [],
+      "partOfSpeech": [
+        "counter"
+      ],
+      "jlptLevel": "N5",
+      "isDuplicate": false,
+      "source": {
+        "type": "kanji.md",
+        "line": 311
+      }
+    },
+    {
+      "id": "kmd_vocab_0008",
+      "word": "やっつ",
+      "kana": "やっつ",
+      "romaji": "yattsu",
+      "meaning": [
+        "eight (things)"
+      ],
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "lesson_ids": [],
+      "partOfSpeech": [
+        "counter"
+      ],
+      "jlptLevel": "N5",
+      "isDuplicate": false,
+      "source": {
+        "type": "kanji.md",
+        "line": 329
+      }
+    },
+    {
+      "id": "kmd_vocab_0009",
+      "word": "ここのつ",
+      "kana": "ここのつ",
+      "romaji": "kokonotsu",
+      "meaning": [
+        "nine (things)"
+      ],
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "lesson_ids": [],
+      "partOfSpeech": [
+        "counter"
+      ],
+      "jlptLevel": "N5",
+      "isDuplicate": false,
+      "source": {
+        "type": "kanji.md",
+        "line": 348
+      }
+    },
+    {
+      "id": "kmd_vocab_0010",
+      "word": "のぼる",
+      "kana": "のぼる",
+      "romaji": "noboru",
+      "meaning": [
+        "to climb",
+        "to go up",
+        "to ascend"
+      ],
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "lesson_ids": [],
+      "partOfSpeech": [
+        "godan verb"
+      ],
+      "jlptLevel": "N5",
+      "isDuplicate": false,
+      "source": {
+        "type": "kanji.md",
+        "line": 695
+      }
+    },
+    {
+      "id": "kmd_vocab_0011",
+      "word": "くだる",
+      "kana": "くだる",
+      "romaji": "kudaru",
+      "meaning": [
+        "to go down",
+        "to descend"
+      ],
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "lesson_ids": [],
+      "partOfSpeech": [
+        "godan verb"
+      ],
+      "jlptLevel": "N5",
+      "isDuplicate": false,
+      "source": {
+        "type": "kanji.md",
+        "line": 732
+      }
+    }
+  ]
+}

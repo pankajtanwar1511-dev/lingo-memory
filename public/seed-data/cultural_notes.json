@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generatedAt": "2026-03-18T13:38:57.843926",
+    "totalNotes": 6,
+    "source": "kanji.md textbook",
+    "description": "Cultural notes and references from Japanese language learning material",
+    "enrichedAt": "2026-03-18T13:52:06.396536",
+    "note": "All cultural notes enriched with full descriptions, image URLs, and external links"
+  },
+  "notes": [
+    {
+      "id": "culture_001",
+      "term": "七五三",
+      "title": "七五三 (Shichi-Go-San)",
+      "shortDescription": "Traditional Japanese celebration for children at ages 3, 5, and 7",
+      "fullDescription": "Shichi-Go-San (七五三, literally 'Seven-Five-Three') is a traditional Japanese rite of passage and festival day celebrated on November 15th each year. The festival celebrates the growth and well-being of children aged three, five, and seven years old. Girls are celebrated at ages three and seven, while boys are celebrated at ages three and five (though customs may vary by region). Families visit shrines to pray for the children's health and future success. Children dress in traditional clothing: girls often wear kimono, while boys wear hakama (formal divided skirts). After the shrine visit, families typically have a celebratory meal together. The tradition dates back to the Heian period (794-1185) and reflects the historical importance of these ages in child development, when child mortality rates were high.",
+      "kanji_ids": [
+        "kanji_n5_七",
+        "kanji_n5_五",
+        "kanji_n5_三"
+      ],
+      "kanji_chars": [
+        "七",
+        "五",
+        "三"
+      ],
+      "vocab_ids": [],
+      "category": "festivals",
+      "imageUrl": "/images/cultural/shichi-go-san.jpg",
+      "externalLinks": [
+        "https://en.wikipedia.org/wiki/Shichi-Go-San",
+        "https://www.japan-guide.com/e/e2066.html"
+      ],
+      "source": {
+        "type": "kanji.md",
+        "line": 328,
+        "context": "七五三のとき、写真を撮りました。八"
+      }
+    },
+    {
+      "id": "culture_002",
+      "term": "封筒",
+      "title": "封筒 (Envelope)",
+      "shortDescription": "Japanese envelope addressing system",
+      "fullDescription": "Japanese envelopes (封筒, fuutou) follow a specific addressing format that differs from Western conventions. The recipient's address is written vertically on the front of the envelope, starting from the right side. The address begins with the postal code at the top, followed by the prefecture, city, district, and building/apartment information, reading top to bottom, right to left. The recipient's name appears on the left side with an honorific (様 'sama' for general use, or other appropriate honorifics). The sender's information is written on the back flap, also vertically, typically in smaller characters. For business correspondence, red lines may be printed on the envelope to indicate the direction of text flow. Understanding this format is essential for proper Japanese business and personal correspondence etiquette.",
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "vocab_ids": [],
+      "category": "postal_system",
+      "imageUrl": "/images/cultural/envelope-addressing.jpg",
+      "externalLinks": [
+        "https://www.japanese-wiki-corpus.org/literature/Japanese%20postal%20system.html"
+      ],
+      "source": {
+        "type": "kanji.md",
+        "line": 482,
+        "context": "( 封筒・はがき )"
+      }
+    },
+    {
+      "id": "culture_003",
+      "term": "はがき",
+      "title": "はがき (Postcard)",
+      "shortDescription": "Japanese postcard addressing system",
+      "fullDescription": "Japanese postcards (はがき, hagaki) are a popular and economical form of correspondence in Japan. Standard postcards (通常はがき) can be purchased at post offices and convenience stores for around 63 yen. The addressing format is similar to envelopes: the recipient's information is written vertically on the address side, with the postal code in designated boxes at the top, followed by the address and name reading top to bottom, right to left. The message is written on the reverse side, also typically in vertical format. Special postcards are used for New Year's greetings (年賀状, nengajou), which are delivered specifically on January 1st if mailed by a designated deadline. Summer greeting postcards (暑中見舞い, shochuumimai) are also customary. Many postcards feature beautiful artwork, regional designs, or commemorative themes, making them collectible items.",
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "vocab_ids": [],
+      "category": "postal_system",
+      "imageUrl": "/images/cultural/hagaki.jpg",
+      "externalLinks": [
+        "https://www.japan-guide.com/e/e2224.html",
+        "https://en.wikipedia.org/wiki/Japanese_New_Year#Nengaj%C5%8D"
+      ],
+      "source": {
+        "type": "kanji.md",
+        "line": 482,
+        "context": "( 封筒・はがき )"
+      }
+    },
+    {
+      "id": "culture_004",
+      "term": "八百屋",
+      "title": "八百屋 (Yaoya)",
+      "shortDescription": "Traditional Japanese vegetable shop",
+      "fullDescription": "Yaoya (八百屋, literally 'eight hundred shop') is a traditional Japanese vegetable and fruit store. The name '800' is used metaphorically to mean 'countless' or 'a great variety,' indicating the shop sells many types of produce. Historically, these small, family-run shops were the primary source of fresh fruits and vegetables in Japanese neighborhoods. The yaoya owner would often wake early to visit wholesale markets, selecting the freshest seasonal produce. Traditional yaoya are characterized by their open storefronts with produce displayed on tilted platforms or in wooden boxes, allowing customers to see and select items directly. While large supermarkets have become more common in modern Japan, many neighborhoods still have yaoya, valued for their fresh, seasonal, locally-sourced produce, personal customer service, and community atmosphere. The shopkeepers often provide cooking advice and recipes for seasonal ingredients.",
+      "kanji_ids": [
+        "kanji_n5_八",
+        "kanji_n5_百"
+      ],
+      "kanji_chars": [
+        "八",
+        "百"
+      ],
+      "vocab_ids": [],
+      "category": "shops",
+      "imageUrl": "/images/cultural/yaoya.jpg",
+      "externalLinks": [
+        "https://en.wikipedia.org/wiki/Greengrocer",
+        "https://www.japan-talk.com/jt/new/yaoya"
+      ],
+      "source": {
+        "type": "kanji.md",
+        "line": 639,
+        "context": "八百屋"
+      }
+    },
+    {
+      "id": "culture_005",
+      "term": "万年筆",
+      "title": "万年筆 (Mannenhitsu)",
+      "shortDescription": "Fountain pen - traditional writing instrument",
+      "fullDescription": "Mannenhitsu (万年筆, literally 'ten thousand year writing brush') is the Japanese term for fountain pen. The name reflects the pen's durability and longevity compared to traditional disposable pens. Fountain pens have a special cultural significance in Japan, where fine writing instruments are highly valued. Many Japanese fountain pen manufacturers, such as Pilot, Platinum, and Sailor, are world-renowned for their craftsmanship and innovation. Japanese fountain pens are often distinguished by their smooth nibs, excellent ink flow, and attention to detail in design. In Japanese culture, a quality fountain pen is often given as a significant gift to mark important occasions such as coming of age (成人式, seijinshiki), graduation, or entry into professional life. Using a fountain pen is associated with formality, respect, and careful attention to written communication. Many Japanese professionals and students continue to use fountain pens for important documents, journal writing, and correspondence.",
+      "kanji_ids": [
+        "kanji_n5_万",
+        "kanji_n5_年"
+      ],
+      "kanji_chars": [
+        "万",
+        "年",
+        "筆"
+      ],
+      "vocab_ids": [],
+      "category": "stationery",
+      "imageUrl": "/images/cultural/mannenhitsu.jpg",
+      "externalLinks": [
+        "https://en.wikipedia.org/wiki/Fountain_pen",
+        "https://www.jetpens.com/blog/the-best-japanese-fountain-pens/pt/335"
+      ],
+      "source": {
+        "type": "kanji.md",
+        "line": 661,
+        "context": "万年筆せんたくき"
+      }
+    },
+    {
+      "id": "culture_006",
+      "term": "富士山",
+      "title": "富士山 (Mt. Fuji)",
+      "shortDescription": "Japan's highest mountain and cultural icon",
+      "fullDescription": "Mount Fuji (富士山, Fujisan) is Japan's tallest mountain at 3,776 meters (12,389 feet) and one of the country's most iconic symbols. This perfectly conical volcano straddles the border between Yamanashi and Shizuoka prefectures, about 100 kilometers southwest of Tokyo. Mount Fuji has been a sacred site in Japanese culture for centuries, worshipped in Shinto tradition and depicted in countless artworks, most famously in Katsushika Hokusai's 'Thirty-Six Views of Mount Fuji.' It was designated a UNESCO World Heritage site in 2013 as a 'Cultural Site' rather than a natural one, recognizing its profound cultural and artistic significance. The mountain is an active volcano, though its last eruption was in 1707. Climbing Mount Fuji is a popular activity, with the official climbing season running from early July to early September. Many climbers attempt to reach the summit for sunrise (ご来光, goraikou). The mountain is visible from Tokyo on clear days and serves as a spiritual and cultural touchstone for the Japanese people.",
+      "kanji_ids": [
+        "kanji_n5_山"
+      ],
+      "kanji_chars": [
+        "富",
+        "士",
+        "山"
+      ],
+      "vocab_ids": [],
+      "category": "geography",
+      "imageUrl": "/images/cultural/mount-fuji.jpg",
+      "externalLinks": [
+        "https://en.wikipedia.org/wiki/Mount_Fuji",
+        "https://www.japan-guide.com/e/e6900.html",
+        "https://whc.unesco.org/en/list/1418"
+      ],
+      "source": {
+        "type": "kanji.md",
+        "line": 73,
+        "context": "富士山"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1052 @@
+{
+  "schema": "office-v2",
+  "entries": [
+    {
+      "id": "office-497",
+      "kanji": "取り次ぐ",
+      "kana": "とりつぐ",
+      "romaji": "toritsugu",
+      "meaning": [
+        "to connect",
+        "transfer a call"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "電話を取り次ぎます。",
+        "kana": "でんわをとりつぎます。",
+        "english": "I'll transfer the call."
+      }
+    },
+    {
+      "id": "office-498",
+      "kanji": "不在",
+      "kana": "ふざい",
+      "romaji": "fuzai",
+      "meaning": [
+        "absent",
+        "not available"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "不在について説明します。",
+        "kana": "ふざいについてせつめいします。",
+        "english": "I will explain the absence status."
+      }
+    },
+    {
+      "id": "office-499",
+      "kanji": "席を外す",
+      "kana": "せきをはずす",
+      "romaji": "seki wo hazusu",
+      "meaning": [
+        "to be away from desk"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "少し席を外します。",
+        "kana": "すこしせきをはずします。",
+        "english": "I'll be away from my desk for a moment."
+      }
+    },
+    {
+      "id": "office-500",
+      "kanji": "伝言",
+      "kana": "でんごん",
+      "romaji": "dengon",
+      "meaning": [
+        "message (to relay)"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "伝言について説明します。",
+        "kana": "でんごんについてせつめいします。",
+        "english": "I will explain the message."
+      }
+    },
+    {
+      "id": "office-501",
+      "kanji": "プレスリリース",
+      "kana": "プレスリリース",
+      "romaji": "puresu riiriisu",
+      "meaning": [
+        "press release"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "プレスリリースについて説明します。",
+        "kana": "プレスリリースについてせつめいします。",
+        "english": "I will explain the press release."
+      }
+    },
+    {
+      "id": "office-502",
+      "kanji": "回覧する",
+      "kana": "かいらんする",
+      "romaji": "kairan suru",
+      "meaning": [
+        "to circulate a document"
+      ],
+      "partOfSpeech": [
+        "verb"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "email"
+      ],
+      "category": "communication",
+      "example": {
+        "japanese": "回覧する予定です。",
+        "kana": "かいらんするよていです。",
+        "english": "I plan to circulate a document."
+      }
+    },
+    {
+      "id": "office-503",
+      "kanji": "赤字",
+      "kana": "あかじ",
+      "romaji": "akaji",
+      "meaning": [
+        "deficit",
+        "in the red"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "赤字について説明します。",
+        "kana": "あかじについてせつめいします。",
+        "english": "I will explain the deficit."
+      }
+    },
+    {
+      "id": "office-504",
+      "kanji": "黒字",
+      "kana": "くろじ",
+      "romaji": "kuroji",
+      "meaning": [
+        "surplus",
+        "in the black"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "黒字について説明します。",
+        "kana": "くろじについてせつめいします。",
+        "english": "I will explain the surplus."
+      }
+    },
+    {
+      "id": "office-505",
+      "kanji": "決算",
+      "kana": "けっさん",
+      "romaji": "kessan",
+      "meaning": [
+        "financial settlement"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "決算について説明します。",
+        "kana": "けっさんについてせつめいします。",
+        "english": "I will explain the financial settlement."
+      }
+    },
+    {
+      "id": "office-506",
+      "kanji": "会計年度",
+      "kana": "かいけいねんど",
+      "romaji": "kaikeinendo",
+      "meaning": [
+        "fiscal year"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "会計年度について説明します。",
+        "kana": "かいけいねんどについてせつめいします。",
+        "english": "I will explain the fiscal year."
+      }
+    },
+    {
+      "id": "office-507",
+      "kanji": "交通費",
+      "kana": "こうつうひ",
+      "romaji": "koutsuuhi",
+      "meaning": [
+        "transportation expenses"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "email"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "交通費について説明します。",
+        "kana": "こうつうひについてせつめいします。",
+        "english": "I will explain transportation expenses."
+      }
+    },
+    {
+      "id": "office-508",
+      "kanji": "出張費",
+      "kana": "しゅっちょうひ",
+      "romaji": "shucchouhi",
+      "meaning": [
+        "business trip expenses"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "出張費について説明します。",
+        "kana": "しゅっちょうひについてせつめいします。",
+        "english": "I will explain business trip expenses."
+      }
+    },
+    {
+      "id": "office-509",
+      "kanji": "給料",
+      "kana": "きゅうりょう",
+      "romaji": "kyuuryou",
+      "meaning": [
+        "salary",
+        "pay"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "hr"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "給料について説明します。",
+        "kana": "きゅうりょうについてせつめいします。",
+        "english": "I will explain the salary."
+      }
+    },
+    {
+      "id": "office-510",
+      "kanji": "給与",
+      "kana": "きゅうよ",
+      "romaji": "kyuuyo",
+      "meaning": [
+        "salary (formal)"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "A",
+      "contexts": [
+        "hr"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "給与について説明します。",
+        "kana": "きゅうよについてせつめいします。",
+        "english": "I will explain the salary."
+      }
+    },
+    {
+      "id": "office-511",
+      "kanji": "賞与",
+      "kana": "しょうよ",
+      "romaji": "shouyo",
+      "meaning": [
+        "bonus"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "賞与について説明します。",
+        "kana": "しょうよについてせつめいします。",
+        "english": "I will explain the bonus."
+      }
+    },
+    {
+      "id": "office-512",
+      "kanji": "昇給",
+      "kana": "しょうきゅう",
+      "romaji": "shoukyuu",
+      "meaning": [
+        "pay raise"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "昇給について説明します。",
+        "kana": "しょうきゅうについてせつめいします。",
+        "english": "I will explain the pay raise."
+      }
+    },
+    {
+      "id": "office-513",
+      "kanji": "手当",
+      "kana": "てあて",
+      "romaji": "teate",
+      "meaning": [
+        "allowance",
+        "benefit"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "手当について説明します。",
+        "kana": "てあてについてせつめいします。",
+        "english": "I will explain the allowance."
+      }
+    },
+    {
+      "id": "office-514",
+      "kanji": "残業代",
+      "kana": "ざんぎょうだい",
+      "romaji": "zangyoudai",
+      "meaning": [
+        "overtime pay"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "残業代について説明します。",
+        "kana": "ざんぎょうだいについてせつめいします。",
+        "english": "I will explain overtime pay."
+      }
+    },
+    {
+      "id": "office-515",
+      "kanji": "社会保険",
+      "kana": "しゃかいほけん",
+      "romaji": "shakaihoken",
+      "meaning": [
+        "social insurance"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "社会保険について説明します。",
+        "kana": "しゃかいほけんについてせつめいします。",
+        "english": "I will explain social insurance."
+      }
+    },
+    {
+      "id": "office-516",
+      "kanji": "健康保険",
+      "kana": "けんこうほけん",
+      "romaji": "kenkouhoken",
+      "meaning": [
+        "health insurance"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "健康保険について説明します。",
+        "kana": "けんこうほけんについてせつめいします。",
+        "english": "I will explain health insurance."
+      }
+    },
+    {
+      "id": "office-517",
+      "kanji": "所得税",
+      "kana": "しょとくぜい",
+      "romaji": "shotokuzei",
+      "meaning": [
+        "income tax"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "所得税について説明します。",
+        "kana": "しょとくぜいについてせつめいします。",
+        "english": "I will explain income tax."
+      }
+    },
+    {
+      "id": "office-518",
+      "kanji": "振込",
+      "kana": "ふりこみ",
+      "romaji": "furikomi",
+      "meaning": [
+        "bank transfer"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "振込について説明します。",
+        "kana": "ふりこみについてせつめいします。",
+        "english": "I will explain the bank transfer."
+      }
+    },
+    {
+      "id": "office-519",
+      "kanji": "口座",
+      "kana": "こうざ",
+      "romaji": "kouza",
+      "meaning": [
+        "bank account"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "口座について説明します。",
+        "kana": "こうざについてせつめいします。",
+        "english": "I will explain the bank account."
+      }
+    },
+    {
+      "id": "office-520",
+      "kanji": "発注",
+      "kana": "はっちゅう",
+      "romaji": "hatchuu",
+      "meaning": [
+        "placing an order"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "engineering"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "発注について説明します。",
+        "kana": "はっちゅうについてせつめいします。",
+        "english": "I will explain the order placement."
+      }
+    },
+    {
+      "id": "office-521",
+      "kanji": "接待費",
+      "kana": "せったいひ",
+      "romaji": "settaihi",
+      "meaning": [
+        "entertainment expenses"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "client"
+      ],
+      "category": "general",
+      "example": {
+        "japanese": "接待費について説明します。",
+        "kana": "せったいひについてせつめいします。",
+        "english": "I will explain entertainment expenses."
+      }
+    },
+    {
+      "id": "office-522",
+      "kanji": "採用",
+      "kana": "さいよう",
+      "romaji": "saiyou",
+      "meaning": [
+        "hiring",
+        "recruitment"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "採用について説明します。",
+        "kana": "さいようについてせつめいします。",
+        "english": "I will explain the hiring process."
+      }
+    },
+    {
+      "id": "office-523",
+      "kanji": "求人",
+      "kana": "きゅうじん",
+      "romaji": "kyuujin",
+      "meaning": [
+        "job opening"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "求人について説明します。",
+        "kana": "きゅうじんについてせつめいします。",
+        "english": "I will explain the job opening."
+      }
+    },
+    {
+      "id": "office-524",
+      "kanji": "応募",
+      "kana": "おうぼ",
+      "romaji": "oubo",
+      "meaning": [
+        "application",
+        "applying"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "応募について説明します。",
+        "kana": "おうぼについてせつめいします。",
+        "english": "I will explain the application."
+      }
+    },
+    {
+      "id": "office-525",
+      "kanji": "面接",
+      "kana": "めんせつ",
+      "romaji": "mensetsu",
+      "meaning": [
+        "interview"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "面接について説明します。",
+        "kana": "めんせつについてせつめいします。",
+        "english": "I will explain the interview."
+      }
+    },
+    {
+      "id": "office-526",
+      "kanji": "内定",
+      "kana": "ないてい",
+      "romaji": "naitei",
+      "meaning": [
+        "informal job offer"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "内定について説明します。",
+        "kana": "ないていについてせつめいします。",
+        "english": "I will explain the informal job offer."
+      }
+    },
+    {
+      "id": "office-527",
+      "kanji": "入社",
+      "kana": "にゅうしゃ",
+      "romaji": "nyuusha",
+      "meaning": [
+        "joining a company"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "入社について説明します。",
+        "kana": "にゅうしゃについてせつめいします。",
+        "english": "I will explain joining the company."
+      }
+    },
+    {
+      "id": "office-528",
+      "kanji": "試用期間",
+      "kana": "しようきかん",
+      "romaji": "shiyoukikan",
+      "meaning": [
+        "probationary period"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "試用期間について説明します。",
+        "kana": "しようきかんについてせつめいします。",
+        "english": "I will explain the probationary period."
+      }
+    },
+    {
+      "id": "office-529",
+      "kanji": "正社員",
+      "kana": "せいしゃいん",
+      "romaji": "seishain",
+      "meaning": [
+        "full-time permanent employee"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "正社員について説明します。",
+        "kana": "せいしゃいんについてせつめいします。",
+        "english": "I will explain full-time permanent employment."
+      }
+    },
+    {
+      "id": "office-530",
+      "kanji": "退職",
+      "kana": "たいしょく",
+      "romaji": "taishoku",
+      "meaning": [
+        "resignation",
+        "retirement"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "email"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "退職について説明します。",
+        "kana": "たいしょくについてせつめいします。",
+        "english": "I will explain the resignation."
+      }
+    },
+    {
+      "id": "office-531",
+      "kanji": "辞表",
+      "kana": "じひょう",
+      "romaji": "jihyou",
+      "meaning": [
+        "resignation letter"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "辞表について説明します。",
+        "kana": "じひょうについてせつめいします。",
+        "english": "I will explain the resignation letter."
+      }
+    },
+    {
+      "id": "office-532",
+      "kanji": "解雇",
+      "kana": "かいこ",
+      "romaji": "kaiko",
+      "meaning": [
+        "dismissal",
+        "firing"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "解雇について説明します。",
+        "kana": "かいこについてせつめいします。",
+        "english": "I will explain the dismissal."
+      }
+    },
+    {
+      "id": "office-533",
+      "kanji": "リストラ",
+      "kana": "リストラ",
+      "romaji": "risutora",
+      "meaning": [
+        "restructuring",
+        "layoffs"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "リストラについて説明します。",
+        "kana": "リストラについてせつめいします。",
+        "english": "I will explain the restructuring."
+      }
+    },
+    {
+      "id": "office-534",
+      "kanji": "異動",
+      "kana": "いどう",
+      "romaji": "idou",
+      "meaning": [
+        "transfer within company"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "異動について説明します。",
+        "kana": "いどうについてせつめいします。",
+        "english": "I will explain the internal transfer."
+      }
+    },
+    {
+      "id": "office-535",
+      "kanji": "転勤",
+      "kana": "てんきん",
+      "romaji": "tenkin",
+      "meaning": [
+        "relocation transfer"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "転勤について説明します。",
+        "kana": "てんきんについてせつめいします。",
+        "english": "I will explain the job relocation."
+      }
+    },
+    {
+      "id": "office-536",
+      "kanji": "昇進",
+      "kana": "しょうしん",
+      "romaji": "shoushin",
+      "meaning": [
+        "promotion"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "昇進について説明します。",
+        "kana": "しょうしんについてせつめいします。",
+        "english": "I will explain the promotion."
+      }
+    },
+    {
+      "id": "office-537",
+      "kanji": "降格",
+      "kana": "こうかく",
+      "romaji": "koukaku",
+      "meaning": [
+        "demotion"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "C",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "降格について説明します。",
+        "kana": "こうかくについてせつめいします。",
+        "english": "I will explain the demotion."
+      }
+    },
+    {
+      "id": "office-538",
+      "kanji": "人事考課",
+      "kana": "じんじこうか",
+      "romaji": "jinjikouka",
+      "meaning": [
+        "personnel evaluation"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "人事考課について説明します。",
+        "kana": "じんじこうかについてせつめいします。",
+        "english": "I will explain the personnel evaluation."
+      }
+    },
+    {
+      "id": "office-539",
+      "kanji": "目標管理",
+      "kana": "もくひょうかんり",
+      "romaji": "mokuhyoukanri",
+      "meaning": [
+        "management by objectives (MBO)"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "B",
+      "contexts": [
+        "1on1"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "目標管理について説明します。",
+        "kana": "もくひょうかんりについてせつめいします。",
+        "english": "I will explain management by objectives (MBO)."
+      }
+    },
+    {
+      "id": "office-540",
+      "kanji": "研修",
+      "kana": "けんしゅう",
+      "romaji": "kenshuu",
+      "meaning": [
+        "training",
+        "orientation"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": true,
+      "tier": "A",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "研修について説明します。",
+        "kana": "けんしゅうについてせつめいします。",
+        "english": "I will explain the training."
+      }
+    },
+    {
+      "id": "office-541",
+      "kanji": "OJT",
+      "kana": "オージェーティー",
+      "romaji": "oojeetii",
+      "meaning": [
+        "on-the-job training"
+      ],
+      "partOfSpeech": [
+        "noun"
+      ],
+      "active": false,
+      "tier": "B",
+      "contexts": [
+        "hr"
+      ],
+      "category": "hr",
+      "example": {
+        "japanese": "OJTについて説明します。",
+        "kana": "オージェーティーについてせつめいします。",
+        "english": "I will explain on-the-job training."
+      }
+    }
+  ]
+}

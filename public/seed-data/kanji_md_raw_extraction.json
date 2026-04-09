@@ -1,0 +1,3255 @@
+{
+  "metadata": {
+    "source": "kanji.md",
+    "source_path": "/home/pankaj/Downloads/kanji.md/kanji.md",
+    "extracted_at": "2026-03-18T13:37:50.951868",
+    "total_lines": 938,
+    "extractor_version": "1.0.0"
+  },
+  "statistics": {
+    "lessons": 8,
+    "kanji": 18,
+    "vocabulary": 11,
+    "sentences": 140,
+    "cultural_notes": 6
+  },
+  "lessons": [
+    {
+      "id": "lesson_003",
+      "lesson_number": 3,
+      "title": "Moji ３",
+      "page": "P198",
+      "kanji_chars": [],
+      "line_start": 1,
+      "source": "kanji.md"
+    },
+    {
+      "id": "lesson_004",
+      "lesson_number": 4,
+      "title": "Moji 4",
+      "page": "P２００",
+      "kanji_chars": [],
+      "line_start": 66,
+      "source": "kanji.md"
+    },
+    {
+      "id": "lesson_005",
+      "lesson_number": 5,
+      "title": "Moji 5",
+      "page": "P201",
+      "kanji_chars": [
+        "一"
+      ],
+      "line_start": 165,
+      "source": "kanji.md"
+    },
+    {
+      "id": "lesson_005",
+      "lesson_number": 5,
+      "title": "Moji 5",
+      "page": "P201",
+      "kanji_chars": [],
+      "line_start": 232,
+      "source": "kanji.md"
+    },
+    {
+      "id": "lesson_005",
+      "lesson_number": 5,
+      "title": "Moji 5",
+      "page": "P２０2",
+      "kanji_chars": [
+        "七",
+        "九",
+        "十"
+      ],
+      "line_start": 309,
+      "source": "kanji.md"
+    },
+    {
+      "id": "lesson_005",
+      "lesson_number": 5,
+      "title": "Moji 5",
+      "page": "P202",
+      "kanji_chars": [
+        "十",
+        "三",
+        "九",
+        "四",
+        "八",
+        "一",
+        "五",
+        "七"
+      ],
+      "line_start": 407,
+      "source": "kanji.md"
+    },
+    {
+      "id": "lesson_006",
+      "lesson_number": 6,
+      "title": "Moji 6",
+      "page": "P２０4",
+      "kanji_chars": [],
+      "line_start": 629,
+      "source": "kanji.md"
+    },
+    {
+      "id": "lesson_007",
+      "lesson_number": 7,
+      "title": "Moji 7",
+      "page": "P206",
+      "kanji_chars": [],
+      "line_start": 688,
+      "source": "kanji.md"
+    }
+  ],
+  "kanji": [
+    {
+      "kanji": "一",
+      "kun": "ふた(つ）",
+      "on": "二",
+      "meaning": "two",
+      "examples_in_doc": [],
+      "line": 175,
+      "context_lines": [
+        "イッ‐いち",
+        "いちじ",
+        "いちがつ",
+        "一一時一月",
+        "oneone o’clockJanuaryおとな",
+        "ひと り",
+        "大人が 一人います。",
+        "ひと",
+        "りんごが 一つ あります。ニ",
+        "くん：ふた(つ）",
+        "おん： 二",
+        "meaning： two",
+        "に",
+        "二に じに さい",
+        "二人二時二歳",
+        "two peopletwo o’clock.two year old",
+        "ふた りに がつふつ か",
+        "二月二日",
+        "Februarythe secondおとな",
+        "ふたり",
+        "こ",
+        "ふたり",
+        "大人が二人と 子どもが二人います。三",
+        "くん：みっ(つ）み",
+        "おん： サン",
+        "meaning： three",
+        "さん",
+        "三さんにんさん じさん さい",
+        "三人三時三歳"
+      ]
+    },
+    {
+      "kanji": "七",
+      "kun": "やっ(つ)",
+      "on": "ハチ/ハッ‐",
+      "meaning": "eight",
+      "examples_in_doc": [],
+      "line": 315,
+      "context_lines": [
+        "ななしち/ななにん",
+        "七人",
+        "seven people",
+        "しち じななさい",
+        "seven o’clockseven year old",
+        "七時",
+        "七歳しちがつなの か",
+        "Julythe 7th",
+        "七月",
+        "七日しちごさん",
+        "しゃしん",
+        "と",
+        "七五三のとき、写真を撮りました。八",
+        "くん：やっ(つ)",
+        "おん：ハチ/ハッ‐",
+        "meaning： eight",
+        "はち",
+        "八はちにんはち じ",
+        "eight peopleeight o’clock",
+        "八人",
+        "八時",
+        "はっさい",
+        "八歳",
+        "eight",
+        "year oldはちがつよう か",
+        "Augustthe 8th",
+        "八月",
+        "八日はっ さい",
+        "むすこ"
+      ]
+    },
+    {
+      "kanji": "九",
+      "kun": "とお",
+      "on": "ジュウ",
+      "meaning": "ten",
+      "examples_in_doc": [],
+      "line": 352,
+      "context_lines": [
+        "クきゅうさい",
+        "九人く じ九時九歳",
+        "nine peoplenine o’clocknine year old",
+        "きゅう にんく がつここのか",
+        "septemberthe 9th",
+        "九月",
+        "九日にじゅうきゅう",
+        "か",
+        "ジョンさんは二十九センチのくつを買いました。十",
+        "くん：とお",
+        "おん：ジュウ",
+        "meaning： ten",
+        "とお",
+        "十",
+        "ジュッ",
+        "ジッじゅうえんじゅう じじゅっさい",
+        "ten yenten o’clockten year old",
+        "十円",
+        "十時",
+        "十歳じゅうがつとお か",
+        "Octorberthe 10th",
+        "十月",
+        "十日あした",
+        "じゅうじ",
+        "明日は十時におきます。なな／しち にん",
+        "七人しち",
+        "じ",
+        "七時なな",
+        "さい"
+      ]
+    },
+    {
+      "kanji": "十",
+      "kun": null,
+      "on": null,
+      "meaning": null,
+      "examples_in_doc": [],
+      "line": 366,
+      "context_lines": [
+        "ジュッ",
+        "ジッじゅうえんじゅう じじゅっさい",
+        "ten yenten o’clockten year old",
+        "十円",
+        "十時",
+        "十歳じゅうがつとお か",
+        "Octorberthe 10th",
+        "十月",
+        "十日あした",
+        "じゅうじ",
+        "明日は十時におきます。なな／しち にん",
+        "七人しち",
+        "じ",
+        "七時なな",
+        "さい",
+        "七歳しち がつ",
+        "なの",
+        "か",
+        "七月七日はち",
+        "にん",
+        "八人はち",
+        "じ",
+        "八時はっ",
+        "さい",
+        "八歳はち がつ",
+        "よう",
+        "か",
+        "八月八日きゅう／く にん",
+        "九人く"
+      ]
+    },
+    {
+      "kanji": "十",
+      "kun": null,
+      "on": null,
+      "meaning": null,
+      "examples_in_doc": [],
+      "line": 423,
+      "context_lines": [
+        "3",
+        "②",
+        "1 9 6 8",
+        "一 四 三",
+        "十",
+        "7 5",
+        "③",
+        "三",
+        "九",
+        "6",
+        "四",
+        "八",
+        "6",
+        "一",
+        "2",
+        "2 9",
+        "五",
+        "8 10",
+        "七",
+        "4かんじ",
+        "よ",
+        "かた",
+        "P202",
+        "かくにん",
+        "4.漢字の読み方を確認しましょう。",
+        "はっ",
+        "よっ",
+        "さん",
+        "ふた"
+      ]
+    },
+    {
+      "kanji": "十",
+      "kun": null,
+      "on": null,
+      "meaning": null,
+      "examples_in_doc": [],
+      "line": 428,
+      "context_lines": [
+        "7 5",
+        "③",
+        "三",
+        "九",
+        "6",
+        "四",
+        "八",
+        "6",
+        "一",
+        "2",
+        "2 9",
+        "五",
+        "8 10",
+        "七",
+        "4かんじ",
+        "よ",
+        "かた",
+        "P202",
+        "かくにん",
+        "4.漢字の読み方を確認しましょう。",
+        "はっ",
+        "よっ",
+        "さん",
+        "ふた",
+        "ふたり",
+        "なな",
+        "ろく",
+        "ひとり",
+        "ろっ"
+      ]
+    },
+    {
+      "kanji": "三",
+      "kun": null,
+      "on": null,
+      "meaning": null,
+      "examples_in_doc": [],
+      "line": 431,
+      "context_lines": [
+        "九",
+        "6",
+        "四",
+        "八",
+        "6",
+        "一",
+        "2",
+        "2 9",
+        "五",
+        "8 10",
+        "七",
+        "4かんじ",
+        "よ",
+        "かた",
+        "P202",
+        "かくにん",
+        "4.漢字の読み方を確認しましょう。",
+        "はっ",
+        "よっ",
+        "さん",
+        "ふた",
+        "ふたり",
+        "なな",
+        "ろく",
+        "ひとり",
+        "ろっ",
+        "にじゅうきゅうおがわ",
+        "ろくがつむいか",
+        "小川さんの たんじょうびは 六がつ六かです。"
+      ]
+    },
+    {
+      "kanji": "九",
+      "kun": null,
+      "on": null,
+      "meaning": null,
+      "examples_in_doc": [],
+      "line": 432,
+      "context_lines": [
+        "6",
+        "四",
+        "八",
+        "6",
+        "一",
+        "2",
+        "2 9",
+        "五",
+        "8 10",
+        "七",
+        "4かんじ",
+        "よ",
+        "かた",
+        "P202",
+        "かくにん",
+        "4.漢字の読み方を確認しましょう。",
+        "はっ",
+        "よっ",
+        "さん",
+        "ふた",
+        "ふたり",
+        "なな",
+        "ろく",
+        "ひとり",
+        "ろっ",
+        "にじゅうきゅうおがわ",
+        "ろくがつむいか",
+        "小川さんの たんじょうびは 六がつ六かです。",
+        "⑥"
+      ]
+    },
+    {
+      "kanji": "四",
+      "kun": null,
+      "on": null,
+      "meaning": null,
+      "examples_in_doc": [],
+      "line": 434,
+      "context_lines": [
+        "八",
+        "6",
+        "一",
+        "2",
+        "2 9",
+        "五",
+        "8 10",
+        "七",
+        "4かんじ",
+        "よ",
+        "かた",
+        "P202",
+        "かくにん",
+        "4.漢字の読み方を確認しましょう。",
+        "はっ",
+        "よっ",
+        "さん",
+        "ふた",
+        "ふたり",
+        "なな",
+        "ろく",
+        "ひとり",
+        "ろっ",
+        "にじゅうきゅうおがわ",
+        "ろくがつむいか",
+        "小川さんの たんじょうびは 六がつ六かです。",
+        "⑥",
+        "たなか",
+        "ごじ"
+      ]
+    },
+    {
+      "kanji": "八",
+      "kun": null,
+      "on": null,
+      "meaning": null,
+      "examples_in_doc": [],
+      "line": 435,
+      "context_lines": [
+        "6",
+        "一",
+        "2",
+        "2 9",
+        "五",
+        "8 10",
+        "七",
+        "4かんじ",
+        "よ",
+        "かた",
+        "P202",
+        "かくにん",
+        "4.漢字の読み方を確認しましょう。",
+        "はっ",
+        "よっ",
+        "さん",
+        "ふた",
+        "ふたり",
+        "なな",
+        "ろく",
+        "ひとり",
+        "ろっ",
+        "にじゅうきゅうおがわ",
+        "ろくがつむいか",
+        "小川さんの たんじょうびは 六がつ六かです。",
+        "⑥",
+        "たなか",
+        "ごじ",
+        "田中さんと 五じまで あそびました。"
+      ]
+    },
+    {
+      "kanji": "一",
+      "kun": null,
+      "on": null,
+      "meaning": null,
+      "examples_in_doc": [],
+      "line": 437,
+      "context_lines": [
+        "2",
+        "2 9",
+        "五",
+        "8 10",
+        "七",
+        "4かんじ",
+        "よ",
+        "かた",
+        "P202",
+        "かくにん",
+        "4.漢字の読み方を確認しましょう。",
+        "はっ",
+        "よっ",
+        "さん",
+        "ふた",
+        "ふたり",
+        "なな",
+        "ろく",
+        "ひとり",
+        "ろっ",
+        "にじゅうきゅうおがわ",
+        "ろくがつむいか",
+        "小川さんの たんじょうびは 六がつ六かです。",
+        "⑥",
+        "たなか",
+        "ごじ",
+        "田中さんと 五じまで あそびました。",
+        "⑦",
+        "しょうがくこうろくねんせい"
+      ]
+    },
+    {
+      "kanji": "五",
+      "kun": null,
+      "on": null,
+      "meaning": null,
+      "examples_in_doc": [],
+      "line": 440,
+      "context_lines": [
+        "8 10",
+        "七",
+        "4かんじ",
+        "よ",
+        "かた",
+        "P202",
+        "かくにん",
+        "4.漢字の読み方を確認しましょう。",
+        "はっ",
+        "よっ",
+        "さん",
+        "ふた",
+        "ふたり",
+        "なな",
+        "ろく",
+        "ひとり",
+        "ろっ",
+        "にじゅうきゅうおがわ",
+        "ろくがつむいか",
+        "小川さんの たんじょうびは 六がつ六かです。",
+        "⑥",
+        "たなか",
+        "ごじ",
+        "田中さんと 五じまで あそびました。",
+        "⑦",
+        "しょうがくこうろくねんせい",
+        "わたしは小学校の六年生です。",
+        "⑧",
+        "しゃしん と"
+      ]
+    },
+    {
+      "kanji": "七",
+      "kun": null,
+      "on": null,
+      "meaning": null,
+      "examples_in_doc": [],
+      "line": 442,
+      "context_lines": [
+        "4かんじ",
+        "よ",
+        "かた",
+        "P202",
+        "かくにん",
+        "4.漢字の読み方を確認しましょう。",
+        "はっ",
+        "よっ",
+        "さん",
+        "ふた",
+        "ふたり",
+        "なな",
+        "ろく",
+        "ひとり",
+        "ろっ",
+        "にじゅうきゅうおがわ",
+        "ろくがつむいか",
+        "小川さんの たんじょうびは 六がつ六かです。",
+        "⑥",
+        "たなか",
+        "ごじ",
+        "田中さんと 五じまで あそびました。",
+        "⑦",
+        "しょうがくこうろくねんせい",
+        "わたしは小学校の六年生です。",
+        "⑧",
+        "しゃしん と",
+        "あした じゅうじ お",
+        "明日は 十時に起きます。"
+      ]
+    },
+    {
+      "kanji": "様",
+      "kun": null,
+      "on": null,
+      "meaning": null,
+      "examples_in_doc": [],
+      "line": 584,
+      "context_lines": [
+        "東京都新宿区信濃町 34",
+        "トーシン信濃町駅前ビル４階",
+        "⑥6",
+        "1 6 0",
+        "0 0 1",
+        "□□□-□□□□",
+        "ひうら さとみ",
+        "様",
+        "トーシン しなのまちえきまえビル４かい",
+        "とうきょうと しんじゅく しなのまち 34",
+        "いわさき もとの",
+        "り",
+        "とうきょうと しんじゅくく しなのまち 35",
+        "れんがかん２かい",
+        "16 0 0 0 16",
+        "□□□-□□□□",
+        "⑥はがき",
+        "□□□-□□□□",
+        "様",
+        "東京都新宿区信濃町 34",
+        "トーシン信濃町駅前ビル４階",
+        "ひうら さとみ",
+        "東京都新宿区信濃町 35",
+        "煉瓦館２階",
+        "いわさき もとのりはがき",
+        "□□□-□□□□",
+        "とうきょうと しんじゅく しなのまち 34",
+        "様",
+        "トーシン しなのまちえきまえビル４かい"
+      ]
+    },
+    {
+      "kanji": "様",
+      "kun": null,
+      "on": null,
+      "meaning": null,
+      "examples_in_doc": [],
+      "line": 592,
+      "context_lines": [
+        "トーシン しなのまちえきまえビル４かい",
+        "とうきょうと しんじゅく しなのまち 34",
+        "いわさき もとの",
+        "り",
+        "とうきょうと しんじゅくく しなのまち 35",
+        "れんがかん２かい",
+        "16 0 0 0 16",
+        "□□□-□□□□",
+        "⑥はがき",
+        "□□□-□□□□",
+        "様",
+        "東京都新宿区信濃町 34",
+        "トーシン信濃町駅前ビル４階",
+        "ひうら さとみ",
+        "東京都新宿区信濃町 35",
+        "煉瓦館２階",
+        "いわさき もとのりはがき",
+        "□□□-□□□□",
+        "とうきょうと しんじゅく しなのまち 34",
+        "様",
+        "トーシン しなのまちえきまえビル４かい",
+        "ひうら さとみ",
+        "とうきょうと しんじゅくく しなのまち 35",
+        "れんがかん２かい",
+        "いわさき もとのりふうとう",
+        "Recipient's",
+        "address",
+        "Sender address",
+        "If you can write your own address, write your"
+      ]
+    },
+    {
+      "kanji": "様",
+      "kun": "ー",
+      "on": "ひゃく／びゃく／ぴゃく",
+      "meaning": null,
+      "examples_in_doc": [],
+      "line": 603,
+      "context_lines": [
+        "東京都新宿区信濃町 34",
+        "トーシン信濃町駅前ビル４階",
+        "ひうら さとみ",
+        "東京都新宿区信濃町 35",
+        "煉瓦館２階",
+        "いわさき もとのりはがき",
+        "□□□-□□□□",
+        "とうきょうと しんじゅく しなのまち 34",
+        "様",
+        "トーシン しなのまちえきまえビル４かい",
+        "ひうら さとみ",
+        "とうきょうと しんじゅくく しなのまち 35",
+        "れんがかん２かい",
+        "いわさき もとのりふうとう",
+        "Recipient's",
+        "address",
+        "Sender address",
+        "If you can write your own address, write your",
+        "address.",
+        "□□□-□□□□",
+        "⑥",
+        "□□□-□□□□はがき",
+        "□□□-□□□□",
+        "□□□-□□□□かん じ",
+        "漢字",
+        "★もじ6",
+        "(P２０4)百",
+        "くん：ー",
+        "おん：ひゃく／びゃく／ぴゃく"
+      ]
+    },
+    {
+      "kanji": "様",
+      "kun": "ー",
+      "on": "ひゃく／びゃく／ぴゃく",
+      "meaning": "hundred",
+      "examples_in_doc": [],
+      "line": 612,
+      "context_lines": [
+        "トーシン しなのまちえきまえビル４かい",
+        "ひうら さとみ",
+        "とうきょうと しんじゅくく しなのまち 35",
+        "れんがかん２かい",
+        "いわさき もとのりふうとう",
+        "Recipient's",
+        "address",
+        "Sender address",
+        "If you can write your own address, write your",
+        "address.",
+        "□□□-□□□□",
+        "⑥",
+        "□□□-□□□□はがき",
+        "□□□-□□□□",
+        "□□□-□□□□かん じ",
+        "漢字",
+        "★もじ6",
+        "(P２０4)百",
+        "くん：ー",
+        "おん：ひゃく／びゃく／ぴゃく",
+        "meaning： hundred",
+        "ひゃく えん",
+        "百円ひゃくてんご ひゃくえん",
+        "a score of 100five hundred yen",
+        "百点",
+        "五百円や お や",
+        "八百屋",
+        "grocery store",
+        "ひゃくえん"
+      ]
+    },
+    {
+      "kanji": "土",
+      "kun": "みず",
+      "on": "スイ",
+      "meaning": "water",
+      "examples_in_doc": [],
+      "line": 855,
+      "context_lines": [
+        "P208-209つぎ え",
+        "かんじ",
+        "え",
+        "ようび",
+        "せん むす",
+        "P20",
+        "8",
+        "1. 次の絵からどんな漢字ができましたか。絵と曜日を線で結びましょう。水",
+        "くん：みず",
+        "おん：スイ",
+        "meaning ： water",
+        "みず",
+        "水すいようびすいどう",
+        "すい",
+        "Wednesdaytap water",
+        "水曜日",
+        "水道水つめ",
+        "みず",
+        "の",
+        "冷たい水を飲みたいです。木",
+        "くん：き",
+        "おん：モク ボク",
+        "meaning ： tree",
+        "き",
+        "木もくようび",
+        "木曜日",
+        "Thursdayもくせい",
+        "木星",
+        "Jupiterこ"
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "kmd_vocab_0001",
+      "word": "大好き",
+      "kana": "な",
+      "romaji": null,
+      "meaning": null,
+      "source": "kanji.md",
+      "line": 45,
+      "is_duplicate": false
+    },
+    {
+      "id": "kmd_vocab_0002",
+      "word": "大変",
+      "kana": "な",
+      "romaji": null,
+      "meaning": null,
+      "source": "kanji.md",
+      "line": 46,
+      "is_duplicate": false
+    },
+    {
+      "id": "kmd_vocab_0003",
+      "word": "よっ",
+      "kana": "つ",
+      "romaji": null,
+      "meaning": "meaning：four",
+      "source": "kanji.md",
+      "line": 237,
+      "is_duplicate": false
+    },
+    {
+      "id": "kmd_vocab_0004",
+      "word": "いつ",
+      "kana": "つ",
+      "romaji": null,
+      "meaning": "meaning： five",
+      "source": "kanji.md",
+      "line": 250,
+      "is_duplicate": false
+    },
+    {
+      "id": "kmd_vocab_0005",
+      "word": "むっ",
+      "kana": "つ",
+      "romaji": null,
+      "meaning": "meaning： six",
+      "source": "kanji.md",
+      "line": 265,
+      "is_duplicate": false
+    },
+    {
+      "id": "kmd_vocab_0006",
+      "word": "むい",
+      "kana": "か",
+      "romaji": null,
+      "meaning": "meaning： six",
+      "source": "kanji.md",
+      "line": 266,
+      "is_duplicate": false
+    },
+    {
+      "id": "kmd_vocab_0007",
+      "word": "なな",
+      "kana": "つ",
+      "romaji": null,
+      "meaning": "meaning： seven",
+      "source": "kanji.md",
+      "line": 311,
+      "is_duplicate": false
+    },
+    {
+      "id": "kmd_vocab_0008",
+      "word": "やっ",
+      "kana": "つ",
+      "romaji": null,
+      "meaning": "meaning： eight",
+      "source": "kanji.md",
+      "line": 329,
+      "is_duplicate": false
+    },
+    {
+      "id": "kmd_vocab_0009",
+      "word": "ここの",
+      "kana": "つ",
+      "romaji": null,
+      "meaning": "meaning： nine",
+      "source": "kanji.md",
+      "line": 348,
+      "is_duplicate": false
+    },
+    {
+      "id": "kmd_vocab_0010",
+      "word": "のぼ",
+      "kana": "る",
+      "romaji": null,
+      "meaning": "meaning： up",
+      "source": "kanji.md",
+      "line": 695,
+      "is_duplicate": false
+    },
+    {
+      "id": "kmd_vocab_0011",
+      "word": "くだ",
+      "kana": "る",
+      "romaji": null,
+      "meaning": "meaning： down",
+      "source": "kanji.md",
+      "line": 732,
+      "is_duplicate": false
+    }
+  ],
+  "sentences": [
+    {
+      "id": "sent_0001",
+      "japanese": "この家は大きいです。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "大",
+        "家"
+      ],
+      "context_kanji": [],
+      "line": 20,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0002",
+      "japanese": "この家は大きいです",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "大",
+        "家"
+      ],
+      "context_kanji": [],
+      "line": 20,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0003",
+      "japanese": "この家は小さいです。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "家",
+        "小"
+      ],
+      "context_kanji": [],
+      "line": 32,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0004",
+      "japanese": "この家は小さいです",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "家",
+        "小"
+      ],
+      "context_kanji": [],
+      "line": 32,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0005",
+      "japanese": "ホセさんはメキシコ人です。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "人"
+      ],
+      "context_kanji": [],
+      "line": 43,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0006",
+      "japanese": "ホセさんはメキシコ人です",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "人"
+      ],
+      "context_kanji": [],
+      "line": 43,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0007",
+      "japanese": "お名前は？",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "前",
+        "名"
+      ],
+      "context_kanji": [],
+      "line": 86,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0008",
+      "japanese": "かにをとりました。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 104,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0009",
+      "japanese": "かにをとりました",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 104,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0010",
+      "japanese": "田んぼがあります。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "田"
+      ],
+      "context_kanji": [],
+      "line": 119,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0011",
+      "japanese": "田んぼがあります",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "田"
+      ],
+      "context_kanji": [],
+      "line": 119,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0012",
+      "japanese": "一人います。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "人",
+        "一"
+      ],
+      "context_kanji": [
+        "一"
+      ],
+      "line": 182,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0013",
+      "japanese": "一人います",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "人",
+        "一"
+      ],
+      "context_kanji": [
+        "一"
+      ],
+      "line": 182,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0014",
+      "japanese": "あります。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [
+        "一"
+      ],
+      "line": 184,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0015",
+      "japanese": "子どもが二人います。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "二",
+        "人",
+        "子"
+      ],
+      "context_kanji": [],
+      "line": 198,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0016",
+      "japanese": "子どもが二人います",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "二",
+        "人",
+        "子"
+      ],
+      "context_kanji": [],
+      "line": 198,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0017",
+      "japanese": "いぬが三匹とねこが二匹います。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "匹",
+        "二",
+        "三"
+      ],
+      "context_kanji": [],
+      "line": 210,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0018",
+      "japanese": "いぬが三匹とねこが二匹います",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "匹",
+        "二",
+        "三"
+      ],
+      "context_kanji": [],
+      "line": 210,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0019",
+      "japanese": "一人います。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "人",
+        "一"
+      ],
+      "context_kanji": [],
+      "line": 222,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0020",
+      "japanese": "一人います",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "人",
+        "一"
+      ],
+      "context_kanji": [],
+      "line": 222,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0021",
+      "japanese": "あります。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 224,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0022",
+      "japanese": "一人います。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "人",
+        "一"
+      ],
+      "context_kanji": [],
+      "line": 229,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0023",
+      "japanese": "一人います",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "人",
+        "一"
+      ],
+      "context_kanji": [],
+      "line": 229,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0024",
+      "japanese": "二匹います。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "匹",
+        "二"
+      ],
+      "context_kanji": [],
+      "line": 232,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0025",
+      "japanese": "二匹います",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "匹",
+        "二"
+      ],
+      "context_kanji": [],
+      "line": 232,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0026",
+      "japanese": "サンドイッチを四つください。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "四"
+      ],
+      "context_kanji": [],
+      "line": 249,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0027",
+      "japanese": "わたしのたんじょうびは五月です。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "五",
+        "月"
+      ],
+      "context_kanji": [],
+      "line": 264,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0028",
+      "japanese": "わたしのたんじょうびは五月です",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "五",
+        "月"
+      ],
+      "context_kanji": [],
+      "line": 264,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0029",
+      "japanese": "わたしは小学校の六年生です。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "生",
+        "年",
+        "小",
+        "校",
+        "学",
+        "六"
+      ],
+      "context_kanji": [],
+      "line": 278,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0030",
+      "japanese": "わたしは小学校の六年生です",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "生",
+        "年",
+        "小",
+        "校",
+        "学",
+        "六"
+      ],
+      "context_kanji": [],
+      "line": 278,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0031",
+      "japanese": "四がつ四かです。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "四"
+      ],
+      "context_kanji": [],
+      "line": 294,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0032",
+      "japanese": "四がつ四かです",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "四"
+      ],
+      "context_kanji": [],
+      "line": 294,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0033",
+      "japanese": "六がつ六かです。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "六"
+      ],
+      "context_kanji": [],
+      "line": 298,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0034",
+      "japanese": "六がつ六かです",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "六"
+      ],
+      "context_kanji": [],
+      "line": 298,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0035",
+      "japanese": "あそびました。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 301,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0036",
+      "japanese": "あそびました",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 301,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0037",
+      "japanese": "サンドイッチを四つください。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "四"
+      ],
+      "context_kanji": [],
+      "line": 302,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0038",
+      "japanese": "わたしのたんじょうびは五月です。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "五",
+        "月"
+      ],
+      "context_kanji": [],
+      "line": 304,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0039",
+      "japanese": "わたしのたんじょうびは五月です",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "五",
+        "月"
+      ],
+      "context_kanji": [],
+      "line": 304,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0040",
+      "japanese": "わたしは小学校の六年生です。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "生",
+        "年",
+        "小",
+        "校",
+        "学",
+        "六"
+      ],
+      "context_kanji": [],
+      "line": 307,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0041",
+      "japanese": "わたしは小学校の六年生です",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "生",
+        "年",
+        "小",
+        "校",
+        "学",
+        "六"
+      ],
+      "context_kanji": [],
+      "line": 307,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0042",
+      "japanese": "写真を撮りました。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "撮",
+        "真",
+        "写"
+      ],
+      "context_kanji": [
+        "七"
+      ],
+      "line": 328,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0043",
+      "japanese": "写真を撮りました",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "撮",
+        "真",
+        "写"
+      ],
+      "context_kanji": [
+        "七"
+      ],
+      "line": 328,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0044",
+      "japanese": "八歳の息子と七歳の娘がいます。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "八",
+        "子",
+        "歳",
+        "息",
+        "七",
+        "娘"
+      ],
+      "context_kanji": [],
+      "line": 347,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0045",
+      "japanese": "八歳の息子と七歳の娘がいます",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "八",
+        "子",
+        "歳",
+        "息",
+        "七",
+        "娘"
+      ],
+      "context_kanji": [],
+      "line": 347,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0046",
+      "japanese": "ジョンさんは二十九センチのくつを買いました。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "九",
+        "十",
+        "二",
+        "買"
+      ],
+      "context_kanji": [
+        "九"
+      ],
+      "line": 361,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0047",
+      "japanese": "ジョンさんは二十九センチのくつを買いました",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "九",
+        "十",
+        "二",
+        "買"
+      ],
+      "context_kanji": [
+        "九"
+      ],
+      "line": 361,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0048",
+      "japanese": "明日は十時におきます。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "明",
+        "十",
+        "時",
+        "日"
+      ],
+      "context_kanji": [
+        "十"
+      ],
+      "line": 377,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0049",
+      "japanese": "明日は十時におきます",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "明",
+        "十",
+        "時",
+        "日"
+      ],
+      "context_kanji": [
+        "十"
+      ],
+      "line": 377,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0050",
+      "japanese": "算用数字または漢数字を入れましょう。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "算",
+        "数",
+        "漢",
+        "入",
+        "用",
+        "字"
+      ],
+      "context_kanji": [
+        "十"
+      ],
+      "line": 420,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0051",
+      "japanese": "漢字の読み方を確認しましょう。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "方",
+        "認",
+        "確",
+        "漢",
+        "読",
+        "字"
+      ],
+      "context_kanji": [
+        "五",
+        "八",
+        "四",
+        "七",
+        "一"
+      ],
+      "line": 448,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0052",
+      "japanese": "六がつ六かです。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "六"
+      ],
+      "context_kanji": [],
+      "line": 460,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0053",
+      "japanese": "六がつ六かです",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "六"
+      ],
+      "context_kanji": [],
+      "line": 460,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0054",
+      "japanese": "あそびました。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 464,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0055",
+      "japanese": "あそびました",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 464,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0056",
+      "japanese": "わたしは小学校の六年生です。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "生",
+        "年",
+        "小",
+        "校",
+        "学",
+        "六"
+      ],
+      "context_kanji": [],
+      "line": 467,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0057",
+      "japanese": "わたしは小学校の六年生です",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "生",
+        "年",
+        "小",
+        "校",
+        "学",
+        "六"
+      ],
+      "context_kanji": [],
+      "line": 467,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0058",
+      "japanese": "十時に起きます。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "起",
+        "十",
+        "時"
+      ],
+      "context_kanji": [],
+      "line": 471,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0059",
+      "japanese": "十時に起きます",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "起",
+        "十",
+        "時"
+      ],
+      "context_kanji": [],
+      "line": 471,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0060",
+      "japanese": "写真を撮りました。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "撮",
+        "真",
+        "写"
+      ],
+      "context_kanji": [],
+      "line": 474,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0061",
+      "japanese": "写真を撮りました",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "撮",
+        "真",
+        "写"
+      ],
+      "context_kanji": [],
+      "line": 474,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0062",
+      "japanese": "へやのばんごうもかきます。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 491,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0063",
+      "japanese": "へやのばんごうもかきます",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 491,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0064",
+      "japanese": "おおきいじでかきます",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 493,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0065",
+      "japanese": "小ちいじでかきます。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "小"
+      ],
+      "context_kanji": [],
+      "line": 500,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0066",
+      "japanese": "小ちいじでかきます",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "小"
+      ],
+      "context_kanji": [],
+      "line": 500,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0067",
+      "japanese": "かきます。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 510,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0068",
+      "japanese": "かきます。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 515,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0069",
+      "japanese": "の順番にかきましょう。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "番",
+        "順"
+      ],
+      "context_kanji": [],
+      "line": 526,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0070",
+      "japanese": "はがきのあてなをかきましょう。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 527,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0071",
+      "japanese": "きってをはらなくていいです。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 548,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0072",
+      "japanese": "きってをはらなくていいです",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 548,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0073",
+      "japanese": "の順番にかきましょう。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "番",
+        "順"
+      ],
+      "context_kanji": [],
+      "line": 550,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0074",
+      "japanese": "はがきのあてなをかきましょう。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 551,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0075",
+      "japanese": "りんごは一つ百円です。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "円",
+        "百",
+        "一"
+      ],
+      "context_kanji": [],
+      "line": 644,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0076",
+      "japanese": "りんごは一つ百円です",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "円",
+        "百",
+        "一"
+      ],
+      "context_kanji": [],
+      "line": 644,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0077",
+      "japanese": "沖縄から東京まで千五百八十キロです。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "五",
+        "八",
+        "京",
+        "千",
+        "縄",
+        "百",
+        "東",
+        "沖",
+        "十"
+      ],
+      "context_kanji": [],
+      "line": 652,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0078",
+      "japanese": "沖縄から東京まで千五百八十キロです",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "五",
+        "八",
+        "京",
+        "千",
+        "縄",
+        "百",
+        "東",
+        "沖",
+        "十"
+      ],
+      "context_kanji": [],
+      "line": 652,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0079",
+      "japanese": "このくつは八千円でした。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "八",
+        "千",
+        "円"
+      ],
+      "context_kanji": [],
+      "line": 653,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0080",
+      "japanese": "このくつは八千円でした",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "八",
+        "千",
+        "円"
+      ],
+      "context_kanji": [],
+      "line": 653,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0081",
+      "japanese": "この洗濯機は五万三千円でした。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "五",
+        "千",
+        "万",
+        "機",
+        "円",
+        "濯",
+        "洗",
+        "三"
+      ],
+      "context_kanji": [],
+      "line": 664,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0082",
+      "japanese": "この洗濯機は五万三千円でした",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "五",
+        "千",
+        "万",
+        "機",
+        "円",
+        "濯",
+        "洗",
+        "三"
+      ],
+      "context_kanji": [],
+      "line": 664,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0083",
+      "japanese": "百円ショップへ行きました。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "円",
+        "百",
+        "行"
+      ],
+      "context_kanji": [],
+      "line": 676,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0084",
+      "japanese": "百円ショップへ行きました",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "円",
+        "百",
+        "行"
+      ],
+      "context_kanji": [],
+      "line": 676,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0085",
+      "japanese": "おつりは百二十一円です。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "二",
+        "百",
+        "円",
+        "十",
+        "一"
+      ],
+      "context_kanji": [],
+      "line": 677,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0086",
+      "japanese": "おつりは百二十一円です",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "二",
+        "百",
+        "円",
+        "十",
+        "一"
+      ],
+      "context_kanji": [],
+      "line": 677,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0087",
+      "japanese": "テーブルの上に本があります。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "上",
+        "本"
+      ],
+      "context_kanji": [],
+      "line": 704,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0088",
+      "japanese": "テーブルの上に本があります",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "上",
+        "本"
+      ],
+      "context_kanji": [],
+      "line": 704,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0089",
+      "japanese": "去年より売上が上がりました。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "上",
+        "去",
+        "売",
+        "年"
+      ],
+      "context_kanji": [],
+      "line": 710,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0090",
+      "japanese": "去年より売上が上がりました",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "上",
+        "去",
+        "売",
+        "年"
+      ],
+      "context_kanji": [],
+      "line": 710,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0091",
+      "japanese": "子どもは部屋の中で遊んでいます。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "中",
+        "屋",
+        "部",
+        "子",
+        "遊"
+      ],
+      "context_kanji": [],
+      "line": 731,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0092",
+      "japanese": "子どもは部屋の中で遊んでいます",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "中",
+        "屋",
+        "部",
+        "子",
+        "遊"
+      ],
+      "context_kanji": [],
+      "line": 731,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0093",
+      "japanese": "去年より売上が下がりました。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "売",
+        "年",
+        "上",
+        "下",
+        "去"
+      ],
+      "context_kanji": [],
+      "line": 744,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0094",
+      "japanese": "去年より売上が下がりました",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "売",
+        "年",
+        "上",
+        "下",
+        "去"
+      ],
+      "context_kanji": [],
+      "line": 744,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0095",
+      "japanese": "今朝は昨日より気温が下がりました。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "温",
+        "朝",
+        "今",
+        "下",
+        "気",
+        "昨",
+        "日"
+      ],
+      "context_kanji": [],
+      "line": 748,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0096",
+      "japanese": "今朝は昨日より気温が下がりました",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "温",
+        "朝",
+        "今",
+        "下",
+        "気",
+        "昨",
+        "日"
+      ],
+      "context_kanji": [],
+      "line": 748,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0097",
+      "japanese": "テーブルの上に本があります。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "上",
+        "本"
+      ],
+      "context_kanji": [],
+      "line": 750,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0098",
+      "japanese": "テーブルの上に本があります",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "上",
+        "本"
+      ],
+      "context_kanji": [],
+      "line": 750,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0099",
+      "japanese": "去年より売上が上がりました。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "上",
+        "去",
+        "売",
+        "年"
+      ],
+      "context_kanji": [],
+      "line": 754,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0100",
+      "japanese": "去年より売上が上がりました",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "上",
+        "去",
+        "売",
+        "年"
+      ],
+      "context_kanji": [],
+      "line": 754,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0101",
+      "japanese": "子どもは部屋の中で遊んでいます。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "中",
+        "屋",
+        "部",
+        "子",
+        "遊"
+      ],
+      "context_kanji": [],
+      "line": 756,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0102",
+      "japanese": "子どもは部屋の中で遊んでいます",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "中",
+        "屋",
+        "部",
+        "子",
+        "遊"
+      ],
+      "context_kanji": [],
+      "line": 756,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0103",
+      "japanese": "去年より売上が下がりました。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "売",
+        "年",
+        "上",
+        "下",
+        "去"
+      ],
+      "context_kanji": [],
+      "line": 757,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0104",
+      "japanese": "去年より売上が下がりました",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "売",
+        "年",
+        "上",
+        "下",
+        "去"
+      ],
+      "context_kanji": [],
+      "line": 757,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0105",
+      "japanese": "今朝は昨日より気温が下がりました。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "温",
+        "朝",
+        "今",
+        "下",
+        "気",
+        "昨",
+        "日"
+      ],
+      "context_kanji": [],
+      "line": 762,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0106",
+      "japanese": "今朝は昨日より気温が下がりました",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "温",
+        "朝",
+        "今",
+        "下",
+        "気",
+        "昨",
+        "日"
+      ],
+      "context_kanji": [],
+      "line": 762,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0107",
+      "japanese": "次の絵からどんな漢字ができましたか。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "次",
+        "漢",
+        "絵",
+        "字"
+      ],
+      "context_kanji": [],
+      "line": 781,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0108",
+      "japanese": "絵と曜日を線で結びましょう。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "曜",
+        "結",
+        "線",
+        "絵",
+        "日"
+      ],
+      "context_kanji": [],
+      "line": 781,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0109",
+      "japanese": "次の絵からどんな漢字ができました",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "次",
+        "漢",
+        "絵",
+        "字"
+      ],
+      "context_kanji": [],
+      "line": 781,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0110",
+      "japanese": "ゴミの日は火曜日と木曜日です。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "木",
+        "火",
+        "曜",
+        "日"
+      ],
+      "context_kanji": [],
+      "line": 793,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0111",
+      "japanese": "ゴミの日は火曜日と木曜日です",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "木",
+        "火",
+        "曜",
+        "日"
+      ],
+      "context_kanji": [],
+      "line": 793,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0112",
+      "japanese": "映画を見に行きません",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "映",
+        "行",
+        "画",
+        "見"
+      ],
+      "context_kanji": [],
+      "line": 800,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0113",
+      "japanese": "テストがあります。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 811,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0114",
+      "japanese": "テストがあります",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 811,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0115",
+      "japanese": "ガスの火を止めてください。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "火",
+        "止"
+      ],
+      "context_kanji": [],
+      "line": 825,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0116",
+      "japanese": "木曜日です。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "木",
+        "曜",
+        "日"
+      ],
+      "context_kanji": [],
+      "line": 842,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0117",
+      "japanese": "木曜日です",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "木",
+        "曜",
+        "日"
+      ],
+      "context_kanji": [],
+      "line": 842,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0118",
+      "japanese": "見に行きませんか。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "行",
+        "見"
+      ],
+      "context_kanji": [],
+      "line": 846,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0119",
+      "japanese": "見に行きません",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "行",
+        "見"
+      ],
+      "context_kanji": [],
+      "line": 846,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0120",
+      "japanese": "あります。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [],
+      "context_kanji": [],
+      "line": 848,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0121",
+      "japanese": "止めてください。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "止"
+      ],
+      "context_kanji": [
+        "土"
+      ],
+      "line": 851,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0122",
+      "japanese": "次の絵からどんな漢字ができましたか。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "次",
+        "漢",
+        "絵",
+        "字"
+      ],
+      "context_kanji": [
+        "土"
+      ],
+      "line": 863,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0123",
+      "japanese": "絵と曜日を線で結びましょう。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "曜",
+        "結",
+        "線",
+        "絵",
+        "日"
+      ],
+      "context_kanji": [
+        "土"
+      ],
+      "line": 863,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0124",
+      "japanese": "次の絵からどんな漢字ができました",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "次",
+        "漢",
+        "絵",
+        "字"
+      ],
+      "context_kanji": [
+        "土"
+      ],
+      "line": 863,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0125",
+      "japanese": "冷たい水を飲みたいです。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "飲",
+        "水",
+        "冷"
+      ],
+      "context_kanji": [],
+      "line": 875,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0126",
+      "japanese": "冷たい水を飲みたいです",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "飲",
+        "水",
+        "冷"
+      ],
+      "context_kanji": [],
+      "line": 875,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0127",
+      "japanese": "子どもたちは大きい木の下で遊んでいます。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "大",
+        "木",
+        "子",
+        "下",
+        "遊"
+      ],
+      "context_kanji": [],
+      "line": 889,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0128",
+      "japanese": "子どもたちは大きい木の下で遊んでいます",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "大",
+        "木",
+        "子",
+        "下",
+        "遊"
+      ],
+      "context_kanji": [],
+      "line": 889,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0129",
+      "japanese": "彼女は金のピアスをしています。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "女",
+        "彼",
+        "金"
+      ],
+      "context_kanji": [],
+      "line": 903,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0130",
+      "japanese": "彼女は金のピアスをしています",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "女",
+        "彼",
+        "金"
+      ],
+      "context_kanji": [],
+      "line": 903,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0131",
+      "japanese": "土の中に虫がいます。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "土",
+        "中",
+        "虫"
+      ],
+      "context_kanji": [],
+      "line": 917,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0132",
+      "japanese": "土の中に虫がいます",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "土",
+        "中",
+        "虫"
+      ],
+      "context_kanji": [],
+      "line": 917,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0133",
+      "japanese": "冷たい水を飲みたいです。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "飲",
+        "水",
+        "冷"
+      ],
+      "context_kanji": [],
+      "line": 927,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0134",
+      "japanese": "冷たい水を飲みたいです",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "飲",
+        "水",
+        "冷"
+      ],
+      "context_kanji": [],
+      "line": 927,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0135",
+      "japanese": "子どもたちは大きい木の下で遊んでいます。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "大",
+        "木",
+        "子",
+        "下",
+        "遊"
+      ],
+      "context_kanji": [],
+      "line": 932,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0136",
+      "japanese": "子どもたちは大きい木の下で遊んでいます",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "大",
+        "木",
+        "子",
+        "下",
+        "遊"
+      ],
+      "context_kanji": [],
+      "line": 932,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0137",
+      "japanese": "彼女は金のピアスをしています。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "女",
+        "彼",
+        "金"
+      ],
+      "context_kanji": [],
+      "line": 934,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0138",
+      "japanese": "彼女は金のピアスをしています",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "女",
+        "彼",
+        "金"
+      ],
+      "context_kanji": [],
+      "line": 934,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0139",
+      "japanese": "虫がいます。",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "虫"
+      ],
+      "context_kanji": [],
+      "line": 937,
+      "source": "kanji.md"
+    },
+    {
+      "id": "sent_0140",
+      "japanese": "虫がいます",
+      "kana": null,
+      "romaji": null,
+      "english": null,
+      "kanji_ids": [],
+      "kanji_chars": [
+        "虫"
+      ],
+      "context_kanji": [],
+      "line": 937,
+      "source": "kanji.md"
+    }
+  ],
+  "cultural_notes": [
+    {
+      "id": "culture_001",
+      "term": "七五三",
+      "title": "七五三 (Shichi-Go-San)",
+      "description": "Traditional Japanese celebration for children at ages 3, 5, and 7",
+      "kanji_chars": [
+        "七",
+        "五",
+        "三"
+      ],
+      "category": "festivals",
+      "line": 328,
+      "context": "七五三のとき、写真を撮りました。八",
+      "source": "kanji.md"
+    },
+    {
+      "id": "culture_002",
+      "term": "封筒",
+      "title": "封筒 (Envelope)",
+      "description": "Japanese envelope addressing system",
+      "kanji_chars": [],
+      "category": "postal_system",
+      "line": 482,
+      "context": "( 封筒・はがき )",
+      "source": "kanji.md"
+    },
+    {
+      "id": "culture_003",
+      "term": "はがき",
+      "title": "はがき (Postcard)",
+      "description": "Japanese postcard addressing system",
+      "kanji_chars": [],
+      "category": "postal_system",
+      "line": 482,
+      "context": "( 封筒・はがき )",
+      "source": "kanji.md"
+    },
+    {
+      "id": "culture_004",
+      "term": "八百屋",
+      "title": "八百屋 (Yaoya)",
+      "description": "Traditional Japanese vegetable shop",
+      "kanji_chars": [
+        "八",
+        "百"
+      ],
+      "category": "shops",
+      "line": 639,
+      "context": "八百屋",
+      "source": "kanji.md"
+    },
+    {
+      "id": "culture_005",
+      "term": "万年筆",
+      "title": "万年筆 (Mannenhitsu)",
+      "description": "Fountain pen - traditional writing instrument",
+      "kanji_chars": [
+        "万",
+        "年",
+        "筆"
+      ],
+      "category": "stationery",
+      "line": 661,
+      "context": "万年筆せんたくき",
+      "source": "kanji.md"
+    },
+    {
+      "id": "culture_006",
+      "term": "富士山",
+      "title": "富士山 (Mt. Fuji)",
+      "description": "Japan's highest mountain and cultural icon",
+      "kanji_chars": [
+        "富",
+        "士",
+        "山"
+      ],
+      "category": "geography",
+      "line": 73,
+      "context": "富士山",
+      "source": "kanji.md"
+    }
+  ]
+}

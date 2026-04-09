@@ -10,6 +10,13 @@
       "kanjidic2": "KANJIDIC2 2024-12 (Rev 1.6)",
       "kanjivg": "KanjiVG 20240101",
       "vocabulary": "LingoMemory N5 Vocab Dataset v1.0.0"
+    },
+    "lastUpdated": "2026-03-18T13:39:51.158711",
+    "linkedData": {
+      "sentences": true,
+      "lessons": true,
+      "culturalNotes": true,
+      "linkedAt": "2026-03-18T13:39:51.158724"
     }
   },
   "kanji": [
@@ -61,7 +68,23 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033885Z",
         "lastUpdated": "2025-10-30T08:25:04.033895Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0012",
+        "sent_0013",
+        "sent_0019",
+        "sent_0020",
+        "sent_0022",
+        "sent_0023",
+        "sent_0075",
+        "sent_0076",
+        "sent_0085",
+        "sent_0086"
+      ],
+      "lesson_ids": [
+        "lesson_005"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_九",
@@ -104,7 +127,15 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033897Z",
         "lastUpdated": "2025-10-30T08:25:04.033897Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0046",
+        "sent_0047"
+      ],
+      "lesson_ids": [
+        "lesson_005"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_七",
@@ -147,7 +178,17 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033899Z",
         "lastUpdated": "2025-10-30T08:25:04.033900Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0044",
+        "sent_0045"
+      ],
+      "lesson_ids": [
+        "lesson_005"
+      ],
+      "cultural_note_ids": [
+        "culture_001"
+      ]
     },
     {
       "id": "kanji_n5_十",
@@ -193,7 +234,23 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033901Z",
         "lastUpdated": "2025-10-30T08:25:04.033902Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0046",
+        "sent_0047",
+        "sent_0048",
+        "sent_0049",
+        "sent_0058",
+        "sent_0059",
+        "sent_0077",
+        "sent_0078",
+        "sent_0085",
+        "sent_0086"
+      ],
+      "lesson_ids": [
+        "lesson_005"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_人",
@@ -239,7 +296,23 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033903Z",
         "lastUpdated": "2025-10-30T08:25:04.033903Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0005",
+        "sent_0006",
+        "sent_0012",
+        "sent_0013",
+        "sent_0015",
+        "sent_0016",
+        "sent_0019",
+        "sent_0020",
+        "sent_0022",
+        "sent_0023"
+      ],
+      "lesson_ids": [
+        "lesson_003"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_二",
@@ -287,7 +360,23 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033904Z",
         "lastUpdated": "2025-10-30T08:25:04.033905Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0015",
+        "sent_0016",
+        "sent_0017",
+        "sent_0018",
+        "sent_0024",
+        "sent_0025",
+        "sent_0046",
+        "sent_0047",
+        "sent_0085",
+        "sent_0086"
+      ],
+      "lesson_ids": [
+        "lesson_005"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_入",
@@ -335,7 +424,12 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033907Z",
         "lastUpdated": "2025-10-30T08:25:04.033907Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0050"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_八",
@@ -382,7 +476,21 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033908Z",
         "lastUpdated": "2025-10-30T08:25:04.033909Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0044",
+        "sent_0045",
+        "sent_0077",
+        "sent_0078",
+        "sent_0079",
+        "sent_0080"
+      ],
+      "lesson_ids": [
+        "lesson_005"
+      ],
+      "cultural_note_ids": [
+        "culture_004"
+      ]
     },
     {
       "id": "kanji_n5_下",
@@ -442,7 +550,25 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033910Z",
         "lastUpdated": "2025-10-30T08:25:04.033910Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0093",
+        "sent_0094",
+        "sent_0095",
+        "sent_0096",
+        "sent_0103",
+        "sent_0104",
+        "sent_0105",
+        "sent_0106",
+        "sent_0127",
+        "sent_0128",
+        "sent_0135",
+        "sent_0136"
+      ],
+      "lesson_ids": [
+        "lesson_007"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_三",
@@ -486,7 +612,19 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033911Z",
         "lastUpdated": "2025-10-30T08:25:04.033912Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0017",
+        "sent_0018",
+        "sent_0081",
+        "sent_0082"
+      ],
+      "lesson_ids": [
+        "lesson_005"
+      ],
+      "cultural_note_ids": [
+        "culture_001"
+      ]
     },
     {
       "id": "kanji_n5_山",
@@ -526,7 +664,14 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033913Z",
         "lastUpdated": "2025-10-30T08:25:04.033913Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [
+        "lesson_004"
+      ],
+      "cultural_note_ids": [
+        "culture_006"
+      ]
     },
     {
       "id": "kanji_n5_子",
@@ -576,7 +721,23 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033915Z",
         "lastUpdated": "2025-10-30T08:25:04.033916Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0015",
+        "sent_0016",
+        "sent_0044",
+        "sent_0045",
+        "sent_0091",
+        "sent_0092",
+        "sent_0101",
+        "sent_0102",
+        "sent_0127",
+        "sent_0128",
+        "sent_0135",
+        "sent_0136"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_女",
@@ -620,7 +781,15 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033917Z",
         "lastUpdated": "2025-10-30T08:25:04.033917Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0129",
+        "sent_0130",
+        "sent_0137",
+        "sent_0138"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_小",
@@ -664,7 +833,23 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033918Z",
         "lastUpdated": "2025-10-30T08:25:04.033919Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0003",
+        "sent_0004",
+        "sent_0029",
+        "sent_0030",
+        "sent_0040",
+        "sent_0041",
+        "sent_0056",
+        "sent_0057",
+        "sent_0065",
+        "sent_0066"
+      ],
+      "lesson_ids": [
+        "lesson_003"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_上",
@@ -723,7 +908,25 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033920Z",
         "lastUpdated": "2025-10-30T08:25:04.033920Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0087",
+        "sent_0088",
+        "sent_0089",
+        "sent_0090",
+        "sent_0093",
+        "sent_0094",
+        "sent_0097",
+        "sent_0098",
+        "sent_0099",
+        "sent_0100",
+        "sent_0103",
+        "sent_0104"
+      ],
+      "lesson_ids": [
+        "lesson_007"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_千",
@@ -762,7 +965,19 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033922Z",
         "lastUpdated": "2025-10-30T08:25:04.033922Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0077",
+        "sent_0078",
+        "sent_0079",
+        "sent_0080",
+        "sent_0081",
+        "sent_0082"
+      ],
+      "lesson_ids": [
+        "lesson_006"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_川",
@@ -803,7 +1018,12 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033923Z",
         "lastUpdated": "2025-10-30T08:25:04.033924Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [
+        "lesson_004"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_大",
@@ -854,7 +1074,19 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033926Z",
         "lastUpdated": "2025-10-30T08:25:04.033926Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0001",
+        "sent_0002",
+        "sent_0127",
+        "sent_0128",
+        "sent_0135",
+        "sent_0136"
+      ],
+      "lesson_ids": [
+        "lesson_003"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_土",
@@ -897,7 +1129,15 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033928Z",
         "lastUpdated": "2025-10-30T08:25:04.033928Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0131",
+        "sent_0132"
+      ],
+      "lesson_ids": [
+        "lesson_008"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_万",
@@ -939,7 +1179,17 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033929Z",
         "lastUpdated": "2025-10-30T08:25:04.033930Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0081",
+        "sent_0082"
+      ],
+      "lesson_ids": [
+        "lesson_006"
+      ],
+      "cultural_note_ids": [
+        "culture_005"
+      ]
     },
     {
       "id": "kanji_n5_円",
@@ -984,7 +1234,23 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033931Z",
         "lastUpdated": "2025-10-30T08:25:04.033931Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0075",
+        "sent_0076",
+        "sent_0079",
+        "sent_0080",
+        "sent_0081",
+        "sent_0082",
+        "sent_0083",
+        "sent_0084",
+        "sent_0085",
+        "sent_0086"
+      ],
+      "lesson_ids": [
+        "lesson_006"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_火",
@@ -1025,7 +1291,16 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033932Z",
         "lastUpdated": "2025-10-30T08:25:04.033933Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0110",
+        "sent_0111",
+        "sent_0115"
+      ],
+      "lesson_ids": [
+        "lesson_008"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_月",
@@ -1071,7 +1346,17 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033934Z",
         "lastUpdated": "2025-10-30T08:25:04.033934Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0027",
+        "sent_0028",
+        "sent_0038",
+        "sent_0039"
+      ],
+      "lesson_ids": [
+        "lesson_008"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_五",
@@ -1113,7 +1398,23 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033936Z",
         "lastUpdated": "2025-10-30T08:25:04.033937Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0027",
+        "sent_0028",
+        "sent_0038",
+        "sent_0039",
+        "sent_0077",
+        "sent_0078",
+        "sent_0081",
+        "sent_0082"
+      ],
+      "lesson_ids": [
+        "lesson_005"
+      ],
+      "cultural_note_ids": [
+        "culture_001"
+      ]
     },
     {
       "id": "kanji_n5_午",
@@ -1156,7 +1457,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033938Z",
         "lastUpdated": "2025-10-30T08:25:04.033938Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_今",
@@ -1202,7 +1506,15 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033939Z",
         "lastUpdated": "2025-10-30T08:25:04.033940Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0095",
+        "sent_0096",
+        "sent_0105",
+        "sent_0106"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_手",
@@ -1250,7 +1562,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033941Z",
         "lastUpdated": "2025-10-30T08:25:04.033941Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_水",
@@ -1291,7 +1606,17 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033942Z",
         "lastUpdated": "2025-10-30T08:25:04.033943Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0125",
+        "sent_0126",
+        "sent_0133",
+        "sent_0134"
+      ],
+      "lesson_ids": [
+        "lesson_008"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_中",
@@ -1336,7 +1661,19 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033944Z",
         "lastUpdated": "2025-10-30T08:25:04.033945Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0091",
+        "sent_0092",
+        "sent_0101",
+        "sent_0102",
+        "sent_0131",
+        "sent_0132"
+      ],
+      "lesson_ids": [
+        "lesson_007"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_天",
@@ -1379,7 +1716,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033947Z",
         "lastUpdated": "2025-10-30T08:25:04.033947Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_日",
@@ -1448,7 +1788,25 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033948Z",
         "lastUpdated": "2025-10-30T08:25:04.033949Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0048",
+        "sent_0049",
+        "sent_0095",
+        "sent_0096",
+        "sent_0105",
+        "sent_0106",
+        "sent_0108",
+        "sent_0110",
+        "sent_0111",
+        "sent_0116",
+        "sent_0117",
+        "sent_0123"
+      ],
+      "lesson_ids": [
+        "lesson_008"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_父",
@@ -1489,7 +1847,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033950Z",
         "lastUpdated": "2025-10-30T08:25:04.033950Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_分",
@@ -1548,7 +1909,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033951Z",
         "lastUpdated": "2025-10-30T08:25:04.033952Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_木",
@@ -1591,7 +1955,21 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033953Z",
         "lastUpdated": "2025-10-30T08:25:04.033953Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0110",
+        "sent_0111",
+        "sent_0116",
+        "sent_0117",
+        "sent_0127",
+        "sent_0128",
+        "sent_0135",
+        "sent_0136"
+      ],
+      "lesson_ids": [
+        "lesson_008"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_友",
@@ -1630,7 +2008,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033955Z",
         "lastUpdated": "2025-10-30T08:25:04.033955Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_六",
@@ -1675,7 +2056,23 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033956Z",
         "lastUpdated": "2025-10-30T08:25:04.033957Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0029",
+        "sent_0030",
+        "sent_0033",
+        "sent_0034",
+        "sent_0040",
+        "sent_0041",
+        "sent_0052",
+        "sent_0053",
+        "sent_0056",
+        "sent_0057"
+      ],
+      "lesson_ids": [
+        "lesson_005"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_右",
@@ -1715,7 +2112,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033958Z",
         "lastUpdated": "2025-10-30T08:25:04.033958Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_外",
@@ -1761,7 +2161,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033960Z",
         "lastUpdated": "2025-10-30T08:25:04.033960Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_左",
@@ -1801,7 +2204,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033961Z",
         "lastUpdated": "2025-10-30T08:25:04.033962Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_四",
@@ -1845,7 +2251,17 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033963Z",
         "lastUpdated": "2025-10-30T08:25:04.033963Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0026",
+        "sent_0031",
+        "sent_0032",
+        "sent_0037"
+      ],
+      "lesson_ids": [
+        "lesson_005"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_出",
@@ -1898,7 +2314,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033965Z",
         "lastUpdated": "2025-10-30T08:25:04.033966Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_生",
@@ -1962,7 +2381,17 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033968Z",
         "lastUpdated": "2025-10-30T08:25:04.033968Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0029",
+        "sent_0030",
+        "sent_0040",
+        "sent_0041",
+        "sent_0056",
+        "sent_0057"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_白",
@@ -2005,7 +2434,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033969Z",
         "lastUpdated": "2025-10-30T08:25:04.033970Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_半",
@@ -2049,7 +2481,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033971Z",
         "lastUpdated": "2025-10-30T08:25:04.033972Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_母",
@@ -2091,7 +2526,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033973Z",
         "lastUpdated": "2025-10-30T08:25:04.033973Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_北",
@@ -2130,7 +2568,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033974Z",
         "lastUpdated": "2025-10-30T08:25:04.033975Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_本",
@@ -2176,7 +2617,15 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033977Z",
         "lastUpdated": "2025-10-30T08:25:04.033978Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0087",
+        "sent_0088",
+        "sent_0097",
+        "sent_0098"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_立",
@@ -2229,7 +2678,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033979Z",
         "lastUpdated": "2025-10-30T08:25:04.033979Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_会",
@@ -2277,7 +2729,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033980Z",
         "lastUpdated": "2025-10-30T08:25:04.033981Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_気",
@@ -2325,7 +2780,15 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033991Z",
         "lastUpdated": "2025-10-30T08:25:04.033992Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0095",
+        "sent_0096",
+        "sent_0105",
+        "sent_0106"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_休",
@@ -2371,7 +2834,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033993Z",
         "lastUpdated": "2025-10-30T08:25:04.033993Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_行",
@@ -2429,7 +2895,16 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033994Z",
         "lastUpdated": "2025-10-30T08:25:04.033995Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0083",
+        "sent_0084",
+        "sent_0112",
+        "sent_0118",
+        "sent_0119"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_先",
@@ -2476,7 +2951,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033997Z",
         "lastUpdated": "2025-10-30T08:25:04.033997Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_年",
@@ -2523,7 +3001,27 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.033999Z",
         "lastUpdated": "2025-10-30T08:25:04.033999Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0029",
+        "sent_0030",
+        "sent_0040",
+        "sent_0041",
+        "sent_0056",
+        "sent_0057",
+        "sent_0089",
+        "sent_0090",
+        "sent_0093",
+        "sent_0094",
+        "sent_0099",
+        "sent_0100",
+        "sent_0103",
+        "sent_0104"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": [
+        "culture_005"
+      ]
     },
     {
       "id": "kanji_n5_百",
@@ -2564,7 +3062,23 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034000Z",
         "lastUpdated": "2025-10-30T08:25:04.034001Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0075",
+        "sent_0076",
+        "sent_0077",
+        "sent_0078",
+        "sent_0083",
+        "sent_0084",
+        "sent_0085",
+        "sent_0086"
+      ],
+      "lesson_ids": [
+        "lesson_006"
+      ],
+      "cultural_note_ids": [
+        "culture_004"
+      ]
     },
     {
       "id": "kanji_n5_毎",
@@ -2609,7 +3123,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034002Z",
         "lastUpdated": "2025-10-30T08:25:04.034002Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_名",
@@ -2654,7 +3171,12 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034003Z",
         "lastUpdated": "2025-10-30T08:25:04.034004Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0007"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_何",
@@ -2696,7 +3218,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034005Z",
         "lastUpdated": "2025-10-30T08:25:04.034006Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_見",
@@ -2744,7 +3269,14 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034007Z",
         "lastUpdated": "2025-10-30T08:25:04.034007Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0112",
+        "sent_0118",
+        "sent_0119"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_私",
@@ -2786,7 +3318,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034009Z",
         "lastUpdated": "2025-10-30T08:25:04.034009Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_社",
@@ -2829,7 +3364,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034010Z",
         "lastUpdated": "2025-10-30T08:25:04.034011Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_車",
@@ -2871,7 +3409,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034012Z",
         "lastUpdated": "2025-10-30T08:25:04.034012Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_男",
@@ -2913,7 +3454,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034013Z",
         "lastUpdated": "2025-10-30T08:25:04.034013Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_来",
@@ -2967,7 +3511,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034015Z",
         "lastUpdated": "2025-10-30T08:25:04.034016Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_雨",
@@ -3008,7 +3555,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034017Z",
         "lastUpdated": "2025-10-30T08:25:04.034017Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_英",
@@ -3051,7 +3601,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034018Z",
         "lastUpdated": "2025-10-30T08:25:04.034019Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_学",
@@ -3095,7 +3648,17 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034020Z",
         "lastUpdated": "2025-10-30T08:25:04.034021Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0029",
+        "sent_0030",
+        "sent_0040",
+        "sent_0041",
+        "sent_0056",
+        "sent_0057"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_金",
@@ -3139,7 +3702,17 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034022Z",
         "lastUpdated": "2025-10-30T08:25:04.034022Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0129",
+        "sent_0130",
+        "sent_0137",
+        "sent_0138"
+      ],
+      "lesson_ids": [
+        "lesson_008"
+      ],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_国",
@@ -3180,7 +3753,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034023Z",
         "lastUpdated": "2025-10-30T08:25:04.034024Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_店",
@@ -3222,7 +3798,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034026Z",
         "lastUpdated": "2025-10-30T08:25:04.034027Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_東",
@@ -3261,7 +3840,13 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034028Z",
         "lastUpdated": "2025-10-30T08:25:04.034028Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0077",
+        "sent_0078"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_門",
@@ -3302,7 +3887,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034029Z",
         "lastUpdated": "2025-10-30T08:25:04.034030Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_後",
@@ -3350,7 +3938,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034031Z",
         "lastUpdated": "2025-10-30T08:25:04.034031Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_食",
@@ -3396,7 +3987,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034032Z",
         "lastUpdated": "2025-10-30T08:25:04.034033Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_前",
@@ -3439,7 +4033,12 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034034Z",
         "lastUpdated": "2025-10-30T08:25:04.034034Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0007"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_校",
@@ -3481,7 +4080,17 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034036Z",
         "lastUpdated": "2025-10-30T08:25:04.034036Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0029",
+        "sent_0030",
+        "sent_0040",
+        "sent_0041",
+        "sent_0056",
+        "sent_0057"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_高",
@@ -3526,7 +4135,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034037Z",
         "lastUpdated": "2025-10-30T08:25:04.034038Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_時",
@@ -3569,7 +4181,15 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034039Z",
         "lastUpdated": "2025-10-30T08:25:04.034040Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0048",
+        "sent_0049",
+        "sent_0058",
+        "sent_0059"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_書",
@@ -3613,7 +4233,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034041Z",
         "lastUpdated": "2025-10-30T08:25:04.034041Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_週",
@@ -3653,7 +4276,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034043Z",
         "lastUpdated": "2025-10-30T08:25:04.034043Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_飲",
@@ -3697,7 +4323,15 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034046Z",
         "lastUpdated": "2025-10-30T08:25:04.034046Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0125",
+        "sent_0126",
+        "sent_0133",
+        "sent_0134"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_買",
@@ -3737,7 +4371,13 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034048Z",
         "lastUpdated": "2025-10-30T08:25:04.034048Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0046",
+        "sent_0047"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_電",
@@ -3776,7 +4416,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034049Z",
         "lastUpdated": "2025-10-30T08:25:04.034050Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_話",
@@ -3819,7 +4462,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034051Z",
         "lastUpdated": "2025-10-30T08:25:04.034051Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_駅",
@@ -3856,7 +4502,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034052Z",
         "lastUpdated": "2025-10-30T08:25:04.034052Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_語",
@@ -3898,7 +4547,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034054Z",
         "lastUpdated": "2025-10-30T08:25:04.034054Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_読",
@@ -3940,7 +4592,12 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034056Z",
         "lastUpdated": "2025-10-30T08:25:04.034056Z"
-      }
+      },
+      "sentence_ids": [
+        "sent_0051"
+      ],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     },
     {
       "id": "kanji_n5_聞",
@@ -3984,7 +4641,10 @@
         "verified": true,
         "addedDate": "2025-10-30T08:25:04.034057Z",
         "lastUpdated": "2025-10-30T08:25:04.034058Z"
-      }
+      },
+      "sentence_ids": [],
+      "lesson_ids": [],
+      "cultural_note_ids": []
     }
   ]
 }
