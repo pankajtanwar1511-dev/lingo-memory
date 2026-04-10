@@ -53,9 +53,17 @@ export function Header() {
           name: "Verbs",
           href: "/verbs",
           icon: FlaskConical,
-          badge: "846 Q!",
+          badge: "166",
           badgeVariant: "success" as const,
-          description: "141 verbs + quiz master"
+          description: "166 verbs + quiz master"
+        },
+        {
+          name: "Extended Verbs",
+          href: "/verbs-extended",
+          icon: FlaskConical,
+          badge: "104",
+          badgeVariant: "default" as const,
+          description: "104 additional verbs"
         },
         {
           name: "Office Japanese",
