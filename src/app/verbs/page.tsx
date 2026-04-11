@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { useSearchParams, useRouter } from "next/navigation"
 import { Header } from "@/components/layout/header"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -97,6 +97,8 @@ export default function VerbsPage() {
   const [frontSide, setFrontSide] = useState<FlipSide>("english")
   const [backSide, setBackSide] = useState<FlipSide>("kanji")
   const [failedImages, setFailedImages] = useState<Set<string>>(new Set())
+  const [cardDimensions, setCardDimensions] = useState<{width: number, height: number} | null>(null)
+  const cardRef = useRef<HTMLDivElement>(null)
 
   // List filtering
   const [activeList, setActiveList] = useState<VerbList | null>(null)
@@ -338,6 +340,29 @@ export default function VerbsPage() {
       setShuffledRightVerbs([...batchVerbs].sort(() => Math.random() - 0.5))
     }
   }, [currentBatch, matchingMode, filteredVerbs])
+
+  // Measure card dimensions for image mode flip cards
+  useEffect(() => {
+    const imageMode = frontSide === "image" || backSide === "image"
+
+    if (!imageMode || !cardRef.current) {
+      setCardDimensions(null)
+      return
+    }
+
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        const { width, height } = entry.contentRect
+        setCardDimensions({ width, height })
+      }
+    })
+
+    observer.observe(cardRef.current)
+
+    return () => {
+      observer.disconnect()
+    }
+  }, [frontSide, backSide, filteredVerbs])
 
   const verbGroups = [
     { id: "all",       label: "All Verbs",       shortLabel: "All",      count: verbsData?.metadata.totalEntries || 0,                                          color: "bg-gradient-to-r from-purple-500 to-pink-500" },
@@ -1925,7 +1950,7 @@ export default function VerbsPage() {
                 {/* Grid of Cards */}
                 <div className={
                   frontSide === "image" || backSide === "image"
-                    ? "grid gap-4"
+                    ? "grid gap-6"
                     : "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3"
                 }
                 style={
@@ -1941,6 +1966,7 @@ export default function VerbsPage() {
                     return (
                       <motion.div
                         key={verb.id}
+                        ref={index === 0 && (frontSide === "image" || backSide === "image") ? cardRef : null}
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{
                           opacity: 1,
@@ -1977,7 +2003,11 @@ export default function VerbsPage() {
                               style={{
                                 backfaceVisibility: "hidden",
                                 WebkitBackfaceVisibility: "hidden",
-                                height: (frontSide === "image" || backSide === "image") ? "100%" : "180px"
+                                ...(frontSide === "image" || backSide === "image")
+                                  ? cardDimensions
+                                    ? { width: `${cardDimensions.width}px`, height: `${cardDimensions.height}px` }
+                                    : { height: "100%" }
+                                  : { height: "180px" }
                               }}
                             >
                               {/* Level Badge - top left inside card */}
@@ -2082,7 +2112,11 @@ export default function VerbsPage() {
                                 backfaceVisibility: "hidden",
                                 WebkitBackfaceVisibility: "hidden",
                                 transform: "rotateY(180deg)",
-                                height: (frontSide === "image" || backSide === "image") ? "100%" : "180px"
+                                ...(frontSide === "image" || backSide === "image")
+                                  ? cardDimensions
+                                    ? { width: `${cardDimensions.width}px`, height: `${cardDimensions.height}px` }
+                                    : { height: "100%" }
+                                  : { height: "180px" }
                               }}
                             >
                               {/* Accent bar at top — thicker on mobile for at-a-glance recognition */}
@@ -2190,7 +2224,7 @@ export default function VerbsPage() {
 
                 <div className={
                   frontSide === "image" || backSide === "image"
-                    ? "grid gap-4"
+                    ? "grid gap-6"
                     : "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3"
                 }
                 style={
@@ -2203,6 +2237,7 @@ export default function VerbsPage() {
                   return (
                     <motion.div
                       key={verb.id}
+                      ref={index === 0 && (frontSide === "image" || backSide === "image") ? cardRef : null}
                       initial={{ opacity: 0, scale: 0.9 }}
                       animate={{
                         opacity: 1,
@@ -2233,7 +2268,11 @@ export default function VerbsPage() {
                           style={{
                             backfaceVisibility: "hidden",
                             WebkitBackfaceVisibility: "hidden",
-                            height: (frontSide === "image" || backSide === "image") ? "100%" : "180px"
+                            ...(frontSide === "image" || backSide === "image")
+                              ? cardDimensions
+                                ? { width: `${cardDimensions.width}px`, height: `${cardDimensions.height}px` }
+                                : { height: "100%" }
+                              : { height: "180px" }
                           }}
                         >
                           {/* Button Group in Top Right */}
@@ -2311,7 +2350,11 @@ export default function VerbsPage() {
                             backfaceVisibility: "hidden",
                             WebkitBackfaceVisibility: "hidden",
                             transform: "rotateY(180deg)",
-                            height: (frontSide === "image" || backSide === "image") ? "100%" : "180px"
+                            ...(frontSide === "image" || backSide === "image")
+                              ? cardDimensions
+                                ? { width: `${cardDimensions.width}px`, height: `${cardDimensions.height}px` }
+                                : { height: "100%" }
+                              : { height: "180px" }
                           }}
                         >
                           {/* Accent bar at top — thicker on mobile for at-a-glance recognition */}
