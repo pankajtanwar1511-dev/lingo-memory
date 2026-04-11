@@ -1921,7 +1921,11 @@ export default function VerbsPage() {
                 </Card>
 
                 {/* Grid of Cards */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
+                <div className={`grid gap-4 ${
+                  frontSide === "image" || backSide === "image"
+                    ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+                    : "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+                }`}>
                   {filteredVerbs.map((verb, index) => {
                     const isFlipped = flippedCards.has(verb.id)
                     const progress = verbProgress.get(verb.id)
@@ -2053,7 +2057,9 @@ export default function VerbsPage() {
                                 </div>
                               )}
 
-                              <CardContent className="p-6 text-center min-h-[180px] flex items-center justify-center bg-gradient-to-b from-background to-muted/30">
+                              <CardContent className={`p-6 text-center flex items-center justify-center bg-gradient-to-b from-background to-muted/30 ${
+                                frontSide === "image" || backSide === "image" ? "min-h-[280px]" : "min-h-[180px]"
+                              }`}>
                                 {renderCardContent(verb, frontSide, false)}
                               </CardContent>
                             </Card>
@@ -2115,7 +2121,9 @@ export default function VerbsPage() {
                                   </button>
                                 )}
                               </div>
-                              <CardContent className="p-3 sm:p-4 text-center min-h-[180px] flex flex-col items-center justify-between bg-gradient-to-b from-violet-100/90 via-purple-50/60 to-muted/30 dark:from-violet-950/50 dark:via-purple-950/30 dark:to-muted/30">
+                              <CardContent className={`p-3 sm:p-4 text-center flex flex-col items-center justify-between bg-gradient-to-b from-violet-100/90 via-purple-50/60 to-muted/30 dark:from-violet-950/50 dark:via-purple-950/30 dark:to-muted/30 ${
+                                frontSide === "image" || backSide === "image" ? "min-h-[280px]" : "min-h-[180px]"
+                              }`}>
                                 <div className="flex-1 flex items-center justify-center w-full">
                                   {renderCardContent(verb, backSide, false)}
                                 </div>
@@ -2169,7 +2177,11 @@ export default function VerbsPage() {
                   </div>
                 )}
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
+                <div className={`grid gap-4 ${
+                  frontSide === "image" || backSide === "image"
+                    ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+                    : "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+                }`}>
                   {filteredVerbs.map((verb, index) => {
                   const isFlipped = flippedCards.has(verb.id)
                   return (
@@ -2265,7 +2277,9 @@ export default function VerbsPage() {
                             </div>
                           )}
 
-                          <CardContent className="p-6 text-center min-h-[180px] flex items-center justify-center bg-gradient-to-b from-background to-muted/30">
+                          <CardContent className={`p-6 text-center flex items-center justify-center bg-gradient-to-b from-background to-muted/30 ${
+                            frontSide === "image" || backSide === "image" ? "min-h-[280px]" : "min-h-[180px]"
+                          }`}>
                             {renderCardContent(verb, frontSide, false)}
                           </CardContent>
                         </Card>
@@ -2327,7 +2341,9 @@ export default function VerbsPage() {
                               </button>
                             )}
                           </div>
-                          <CardContent className="p-4 sm:p-6 text-center min-h-[180px] flex items-center justify-center bg-gradient-to-b from-violet-100/90 via-purple-50/60 to-muted/30 dark:from-violet-950/50 dark:via-purple-950/30 dark:to-muted/30">
+                          <CardContent className={`p-4 sm:p-6 text-center flex items-center justify-center bg-gradient-to-b from-violet-100/90 via-purple-50/60 to-muted/30 dark:from-violet-950/50 dark:via-purple-950/30 dark:to-muted/30 ${
+                            frontSide === "image" || backSide === "image" ? "min-h-[280px]" : "min-h-[180px]"
+                          }`}>
                             {renderCardContent(verb, backSide, false)}
                           </CardContent>
                         </Card>
