@@ -1940,9 +1940,10 @@ export default function VerbsPage() {
                         animate={{
                           opacity: 1,
                           scale: 1,
-                          height: (frontSide === 'english' && expandedMeanings.has(verb.id)) ||
-                                  (isFlipped && backSide === 'english' && expandedMeanings.has(verb.id)) ||
-                                  (frontSide === "image" || backSide === "image")
+                          height: (frontSide === "image" || backSide === "image")
+                                  ? "280px"
+                                  : (frontSide === 'english' && expandedMeanings.has(verb.id)) ||
+                                    (isFlipped && backSide === 'english' && expandedMeanings.has(verb.id))
                                   ? "auto"
                                   : "180px"
                         }}
@@ -2195,9 +2196,10 @@ export default function VerbsPage() {
                       animate={{
                         opacity: 1,
                         scale: 1,
-                        height: (frontSide === 'english' && expandedMeanings.has(verb.id)) ||
-                                (isFlipped && backSide === 'english' && expandedMeanings.has(verb.id)) ||
-                                (frontSide === "image" || backSide === "image")
+                        height: (frontSide === "image" || backSide === "image")
+                                ? "280px"
+                                : (frontSide === 'english' && expandedMeanings.has(verb.id)) ||
+                                  (isFlipped && backSide === 'english' && expandedMeanings.has(verb.id))
                                 ? "auto"
                                 : "180px"
                       }}
