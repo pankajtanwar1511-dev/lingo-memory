@@ -1923,11 +1923,16 @@ export default function VerbsPage() {
                 </Card>
 
                 {/* Grid of Cards */}
-                <div className={`grid ${
+                <div className={
                   frontSide === "image" || backSide === "image"
-                    ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4"
-                    : "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3"
-                }`}>
+                    ? "grid gap-4"
+                    : "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3"
+                }
+                style={
+                  frontSide === "image" || backSide === "image"
+                    ? { gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))" }
+                    : undefined
+                }>
                   {filteredVerbs.map((verb, index) => {
                     const isFlipped = flippedCards.has(verb.id)
                     const progress = verbProgress.get(verb.id)
@@ -1941,7 +1946,7 @@ export default function VerbsPage() {
                           opacity: 1,
                           scale: 1,
                           height: (frontSide === "image" || backSide === "image")
-                                  ? "280px"
+                                  ? "auto"
                                   : (frontSide === 'english' && expandedMeanings.has(verb.id)) ||
                                     (isFlipped && backSide === 'english' && expandedMeanings.has(verb.id))
                                   ? "auto"
@@ -1949,7 +1954,7 @@ export default function VerbsPage() {
                         }}
                         transition={{ delay: Math.min(index * 0.02, 0.5) }}
                         style={{ perspective: "1000px" }}
-                        className={frontSide === "image" || backSide === "image" ? "aspect-square" : ""}
+                        className={frontSide === "image" || backSide === "image" ? "aspect-square w-full" : ""}
                       >
                         <div className="relative w-full h-full">
                           <div
@@ -1972,7 +1977,7 @@ export default function VerbsPage() {
                               style={{
                                 backfaceVisibility: "hidden",
                                 WebkitBackfaceVisibility: "hidden",
-                                height: (frontSide === "image" || backSide === "image") ? "280px" : "180px"
+                                height: (frontSide === "image" || backSide === "image") ? "100%" : "180px"
                               }}
                             >
                               {/* Level Badge - top left inside card */}
@@ -2064,7 +2069,7 @@ export default function VerbsPage() {
                               )}
 
                               <CardContent className={`text-center flex items-center justify-center bg-gradient-to-b from-background to-muted/30 ${
-                                frontSide === "image" || backSide === "image" ? "p-0 h-[280px]" : "p-6 h-[180px]"
+                                frontSide === "image" || backSide === "image" ? "p-0 h-full" : "p-6 h-[180px]"
                               }`}>
                                 {renderCardContent(verb, frontSide, false)}
                               </CardContent>
@@ -2077,7 +2082,7 @@ export default function VerbsPage() {
                                 backfaceVisibility: "hidden",
                                 WebkitBackfaceVisibility: "hidden",
                                 transform: "rotateY(180deg)",
-                                height: (frontSide === "image" || backSide === "image") ? "280px" : "180px"
+                                height: (frontSide === "image" || backSide === "image") ? "100%" : "180px"
                               }}
                             >
                               {/* Accent bar at top — thicker on mobile for at-a-glance recognition */}
@@ -2128,7 +2133,7 @@ export default function VerbsPage() {
                                 )}
                               </div>
                               <CardContent className={`text-center flex flex-col items-center ${
-                                frontSide === "image" || backSide === "image" ? "p-0 justify-center h-[280px]" : "p-3 sm:p-4 justify-between h-[180px]"
+                                frontSide === "image" || backSide === "image" ? "p-0 justify-center h-full" : "p-3 sm:p-4 justify-between h-[180px]"
                               } bg-gradient-to-b from-violet-100/90 via-purple-50/60 to-muted/30 dark:from-violet-950/50 dark:via-purple-950/30 dark:to-muted/30`}>
                                 <div className="flex-1 flex items-center justify-center w-full">
                                   {renderCardContent(verb, backSide, false)}
@@ -2183,11 +2188,16 @@ export default function VerbsPage() {
                   </div>
                 )}
 
-                <div className={`grid ${
+                <div className={
                   frontSide === "image" || backSide === "image"
-                    ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4"
-                    : "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3"
-                }`}>
+                    ? "grid gap-4"
+                    : "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3"
+                }
+                style={
+                  frontSide === "image" || backSide === "image"
+                    ? { gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))" }
+                    : undefined
+                }>
                   {filteredVerbs.map((verb, index) => {
                   const isFlipped = flippedCards.has(verb.id)
                   return (
@@ -2198,7 +2208,7 @@ export default function VerbsPage() {
                         opacity: 1,
                         scale: 1,
                         height: (frontSide === "image" || backSide === "image")
-                                ? "280px"
+                                ? "auto"
                                 : (frontSide === 'english' && expandedMeanings.has(verb.id)) ||
                                   (isFlipped && backSide === 'english' && expandedMeanings.has(verb.id))
                                 ? "auto"
@@ -2206,7 +2216,7 @@ export default function VerbsPage() {
                       }}
                       transition={{ delay: Math.min(index * 0.02, 0.5) }}
                       style={{ perspective: "1000px" }}
-                      className={frontSide === "image" || backSide === "image" ? "aspect-square" : ""}
+                      className={frontSide === "image" || backSide === "image" ? "aspect-square w-full" : ""}
                     >
                       <div
                         onClick={() => toggleCardFlip(verb.id)}
@@ -2223,7 +2233,7 @@ export default function VerbsPage() {
                           style={{
                             backfaceVisibility: "hidden",
                             WebkitBackfaceVisibility: "hidden",
-                            height: (frontSide === "image" || backSide === "image") ? "280px" : "180px"
+                            height: (frontSide === "image" || backSide === "image") ? "100%" : "180px"
                           }}
                         >
                           {/* Button Group in Top Right */}
@@ -2288,7 +2298,7 @@ export default function VerbsPage() {
                           )}
 
                           <CardContent className={`text-center flex items-center justify-center bg-gradient-to-b from-background to-muted/30 ${
-                            frontSide === "image" || backSide === "image" ? "p-0 h-[280px]" : "p-6 h-[180px]"
+                            frontSide === "image" || backSide === "image" ? "p-0 h-full" : "p-6 h-[180px]"
                           }`}>
                             {renderCardContent(verb, frontSide, false)}
                           </CardContent>
@@ -2301,7 +2311,7 @@ export default function VerbsPage() {
                             backfaceVisibility: "hidden",
                             WebkitBackfaceVisibility: "hidden",
                             transform: "rotateY(180deg)",
-                            height: (frontSide === "image" || backSide === "image") ? "280px" : "180px"
+                            height: (frontSide === "image" || backSide === "image") ? "100%" : "180px"
                           }}
                         >
                           {/* Accent bar at top — thicker on mobile for at-a-glance recognition */}
@@ -2352,7 +2362,7 @@ export default function VerbsPage() {
                             )}
                           </div>
                           <CardContent className={`text-center flex items-center justify-center bg-gradient-to-b from-violet-100/90 via-purple-50/60 to-muted/30 dark:from-violet-950/50 dark:via-purple-950/30 dark:to-muted/30 ${
-                            frontSide === "image" || backSide === "image" ? "p-0 h-[280px]" : "p-4 sm:p-6 h-[180px]"
+                            frontSide === "image" || backSide === "image" ? "p-0 h-full" : "p-4 sm:p-6 h-[180px]"
                           }`}>
                             {renderCardContent(verb, backSide, false)}
                           </CardContent>
