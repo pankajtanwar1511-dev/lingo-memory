@@ -951,17 +951,17 @@ export default function VerbsPage() {
       case "image":
         if (failedImages.has(verb.id)) {
           return (
-            <div className="flex items-center justify-center w-full h-full p-2">
+            <div className="flex items-center justify-center w-full h-full">
               <div className="text-sm text-muted-foreground">Image not available</div>
             </div>
           )
         }
         return (
-          <div className="flex items-center justify-center w-full h-full p-2">
+          <div className="flex items-center justify-center w-full h-full">
             <img
               src={`/images/verbs/${verb.id}.png`}
               alt={`${verb.lemma.kanji} - ${verb.meaning.primary}`}
-              className="max-w-full max-h-full object-contain rounded-lg"
+              className="w-full h-full object-contain"
               onError={() => {
                 setFailedImages(prev => new Set(prev).add(verb.id))
               }}
