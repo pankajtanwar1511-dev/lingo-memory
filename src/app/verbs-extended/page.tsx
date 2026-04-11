@@ -1925,7 +1925,7 @@ export default function VerbsPage() {
                 {/* Grid of Cards */}
                 <div className={`grid ${
                   frontSide === "image" || backSide === "image"
-                    ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+                    ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4"
                     : "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3"
                 }`}>
                   {filteredVerbs.map((verb, index) => {
@@ -1949,6 +1949,7 @@ export default function VerbsPage() {
                         }}
                         transition={{ delay: Math.min(index * 0.02, 0.5) }}
                         style={{ perspective: "1000px" }}
+                        className={frontSide === "image" || backSide === "image" ? "aspect-square" : ""}
                       >
                         <div className="relative w-full h-full">
                           <div
@@ -2184,7 +2185,7 @@ export default function VerbsPage() {
 
                 <div className={`grid ${
                   frontSide === "image" || backSide === "image"
-                    ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+                    ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4"
                     : "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3"
                 }`}>
                   {filteredVerbs.map((verb, index) => {
@@ -2205,6 +2206,7 @@ export default function VerbsPage() {
                       }}
                       transition={{ delay: Math.min(index * 0.02, 0.5) }}
                       style={{ perspective: "1000px" }}
+                      className={frontSide === "image" || backSide === "image" ? "aspect-square" : ""}
                     >
                       <div
                         onClick={() => toggleCardFlip(verb.id)}
