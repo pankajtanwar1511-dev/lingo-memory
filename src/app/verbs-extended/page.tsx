@@ -1971,7 +1971,7 @@ export default function VerbsPage() {
                               style={{
                                 backfaceVisibility: "hidden",
                                 WebkitBackfaceVisibility: "hidden",
-                                minHeight: (frontSide === "image" || backSide === "image") ? "280px" : "180px"
+                                height: (frontSide === "image" || backSide === "image") ? "280px" : "180px"
                               }}
                             >
                               {/* Level Badge - top left inside card */}
@@ -2063,7 +2063,7 @@ export default function VerbsPage() {
                               )}
 
                               <CardContent className={`p-6 text-center flex items-center justify-center bg-gradient-to-b from-background to-muted/30 ${
-                                frontSide === "image" || backSide === "image" ? "min-h-[280px]" : "min-h-[180px]"
+                                frontSide === "image" || backSide === "image" ? "h-[280px]" : "h-[180px]"
                               }`}>
                                 {renderCardContent(verb, frontSide, false)}
                               </CardContent>
@@ -2076,7 +2076,7 @@ export default function VerbsPage() {
                                 backfaceVisibility: "hidden",
                                 WebkitBackfaceVisibility: "hidden",
                                 transform: "rotateY(180deg)",
-                                minHeight: (frontSide === "image" || backSide === "image") ? "280px" : "180px"
+                                height: (frontSide === "image" || backSide === "image") ? "280px" : "180px"
                               }}
                             >
                               {/* Accent bar at top — thicker on mobile for at-a-glance recognition */}
@@ -2126,9 +2126,9 @@ export default function VerbsPage() {
                                   </button>
                                 )}
                               </div>
-                              <CardContent className={`p-3 sm:p-4 text-center flex flex-col items-center justify-between bg-gradient-to-b from-violet-100/90 via-purple-50/60 to-muted/30 dark:from-violet-950/50 dark:via-purple-950/30 dark:to-muted/30 ${
-                                frontSide === "image" || backSide === "image" ? "min-h-[280px]" : "min-h-[180px]"
-                              }`}>
+                              <CardContent className={`p-3 sm:p-4 text-center flex flex-col items-center ${
+                                frontSide === "image" || backSide === "image" ? "justify-center h-[280px]" : "justify-between h-[180px]"
+                              } bg-gradient-to-b from-violet-100/90 via-purple-50/60 to-muted/30 dark:from-violet-950/50 dark:via-purple-950/30 dark:to-muted/30`}>
                                 <div className="flex-1 flex items-center justify-center w-full">
                                   {renderCardContent(verb, backSide, false)}
                                 </div>
@@ -2221,7 +2221,7 @@ export default function VerbsPage() {
                           style={{
                             backfaceVisibility: "hidden",
                             WebkitBackfaceVisibility: "hidden",
-                            minHeight: (frontSide === "image" || backSide === "image") ? "280px" : "180px"
+                            height: (frontSide === "image" || backSide === "image") ? "280px" : "180px"
                           }}
                         >
                           {/* Button Group in Top Right */}
@@ -2286,7 +2286,7 @@ export default function VerbsPage() {
                           )}
 
                           <CardContent className={`p-6 text-center flex items-center justify-center bg-gradient-to-b from-background to-muted/30 ${
-                            frontSide === "image" || backSide === "image" ? "min-h-[280px]" : "min-h-[180px]"
+                            frontSide === "image" || backSide === "image" ? "h-[280px]" : "h-[180px]"
                           }`}>
                             {renderCardContent(verb, frontSide, false)}
                           </CardContent>
@@ -2299,7 +2299,7 @@ export default function VerbsPage() {
                             backfaceVisibility: "hidden",
                             WebkitBackfaceVisibility: "hidden",
                             transform: "rotateY(180deg)",
-                            minHeight: (frontSide === "image" || backSide === "image") ? "280px" : "180px"
+                            height: (frontSide === "image" || backSide === "image") ? "280px" : "180px"
                           }}
                         >
                           {/* Accent bar at top — thicker on mobile for at-a-glance recognition */}
@@ -2350,7 +2350,7 @@ export default function VerbsPage() {
                             )}
                           </div>
                           <CardContent className={`p-4 sm:p-6 text-center flex items-center justify-center bg-gradient-to-b from-violet-100/90 via-purple-50/60 to-muted/30 dark:from-violet-950/50 dark:via-purple-950/30 dark:to-muted/30 ${
-                            frontSide === "image" || backSide === "image" ? "min-h-[280px]" : "min-h-[180px]"
+                            frontSide === "image" || backSide === "image" ? "h-[280px]" : "h-[180px]"
                           }`}>
                             {renderCardContent(verb, backSide, false)}
                           </CardContent>
