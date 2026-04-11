@@ -131,7 +131,12 @@
           "jp": "かのじょに あいたいです",
           "en": "want to meet her"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0001.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0002",
@@ -257,7 +262,12 @@
           "jp": "そとで あそびます",
           "en": "play outside"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0002.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0003",
@@ -382,7 +392,12 @@
           "jp": "ふくを あらいます",
           "en": "wash clothes"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0003.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0004",
@@ -515,7 +530,12 @@
           "jp": "もんだいが あります",
           "en": "there is a problem"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0004.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0005",
@@ -640,7 +660,12 @@
           "jp": "30ぷん あるきます",
           "en": "walk for 30 minutes"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0005.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0006",
@@ -766,7 +791,12 @@
           "jp": "もう いちど いいます",
           "en": "say it again"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0006.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0007",
@@ -891,7 +921,12 @@
           "jp": "えいがを みに いきます",
           "en": "go to see a movie"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0007.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0008",
@@ -1014,7 +1049,12 @@
           "jp": "いそいで じゅんびします",
           "en": "prepare quickly"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0008.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0009",
@@ -1122,7 +1162,12 @@
           "jp": "パスポートが いります",
           "en": "need a passport"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0009.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0010",
@@ -1246,7 +1291,12 @@
           "jp": "からだを うごかします",
           "en": "move the body (exercise)"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0010.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0011",
@@ -1371,7 +1421,12 @@
           "jp": "みんなで うたいます",
           "en": "sing together"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0011.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0012",
@@ -1496,7 +1551,12 @@
           "jp": "ほんを うります",
           "en": "sell books"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0012.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0013",
@@ -1622,7 +1682,12 @@
           "jp": "さいふを おきます",
           "en": "put down the wallet"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0013.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0014",
@@ -1748,7 +1813,12 @@
           "jp": "にもつを おくります",
           "en": "send a package"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0014.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0015",
@@ -1874,7 +1944,12 @@
           "jp": "つよく おします",
           "en": "push hard"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0015.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0016",
@@ -2000,7 +2075,12 @@
           "jp": "ともだちを おもいだします",
           "en": "think of a friend"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0016.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0017",
@@ -2126,7 +2206,12 @@
           "jp": "ほんとうだと おもいます",
           "en": "think it's true"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0017.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0018",
@@ -2251,7 +2336,12 @@
           "jp": "はやく およぎます",
           "en": "swim fast"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0018.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0019",
@@ -2273,9 +2363,13 @@
         "coreStructure": "Object を 下ろす"
       },
       "meaning": {
-        "primary": "to withdraw",
+        "primary": "to lower, to take down; to withdraw",
         "gloss": [
-          "withdraw"
+          "lower",
+          "take down",
+          "withdraw",
+          "put down",
+          "unload"
         ]
       },
       "forms": {
@@ -2376,7 +2470,12 @@
           "jp": "3まんえん おろしました",
           "en": "withdrew 30,000 yen"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0019.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0020",
@@ -2502,7 +2601,12 @@
           "jp": "もう おわりました",
           "en": "already finished"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0020.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0021",
@@ -2626,7 +2730,12 @@
           "jp": "プレゼントを かいます",
           "en": "buy a present"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0021.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0022",
@@ -2751,7 +2860,12 @@
           "jp": "ともだちに かえします",
           "en": "return to a friend"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0022.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0023",
@@ -2876,7 +2990,12 @@
           "jp": "いっしょに かえりましょう",
           "en": "let's go home together"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0023.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0024",
@@ -3003,7 +3122,12 @@
           "jp": "たくさん かかりました",
           "en": "it took a lot"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0024.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0025",
@@ -3129,7 +3253,12 @@
           "jp": "にっきを かきます",
           "en": "write a diary"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0025.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0026",
@@ -3255,7 +3384,12 @@
           "jp": "かさを かします",
           "en": "lend an umbrella"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0026.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0027",
@@ -3379,7 +3513,12 @@
           "jp": "かんたんに かちました",
           "en": "won easily"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0027.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0028",
@@ -3504,7 +3643,12 @@
           "jp": "あたまに かぶります",
           "en": "wear on the head"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0028.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0029",
@@ -3626,7 +3770,12 @@
           "jp": "いっしょに がんばりましょう",
           "en": "let's do our best together"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0029.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0030",
@@ -3753,7 +3902,12 @@
           "jp": "しつもんを ききます",
           "en": "listen to a question"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0030.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0031",
@@ -3878,7 +4032,12 @@
           "jp": "かみを きります",
           "en": "cut hair"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0031.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0032",
@@ -4003,7 +4162,12 @@
           "jp": "パソコンを けす",
           "en": "turn off the computer"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0032.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0033",
@@ -4127,7 +4291,12 @@
           "jp": "さわらないで",
           "en": "don't touch"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0033.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0034",
@@ -4251,7 +4420,12 @@
           "jp": "しっている",
           "en": "know (state of knowing)"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0034.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0035",
@@ -4377,7 +4551,12 @@
           "jp": "きんえんで すえない",
           "en": "can't smoke (in a no-smoking area)"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0035.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0036",
@@ -4501,7 +4680,12 @@
           "jp": "ここに すむ",
           "en": "live here"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0036.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0037",
@@ -4625,7 +4809,12 @@
           "jp": "すわって ください",
           "en": "please sit down"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0037.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0038",
@@ -4752,7 +4941,12 @@
           "jp": "こたえを だす",
           "en": "come up with an answer"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0038.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0039",
@@ -4874,7 +5068,12 @@
           "jp": "ずっと たつ",
           "en": "keep standing"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0039.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0040",
@@ -4998,7 +5197,12 @@
           "jp": "よく つかう",
           "en": "use often"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0040.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0041",
@@ -5122,7 +5326,12 @@
           "jp": "くじに つく",
           "en": "arrive at 9 o'clock"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0041.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0042",
@@ -5247,7 +5456,12 @@
           "jp": "けいかくを つくる",
           "en": "make a plan"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0042.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0043",
@@ -5372,7 +5586,12 @@
           "jp": "うみに つれて いく",
           "en": "take (someone) to the beach"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0043.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0044",
@@ -5496,7 +5715,12 @@
           "jp": "そうじを てつだう",
           "en": "help with cleaning"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0044.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0045",
@@ -5620,7 +5844,12 @@
           "jp": "きょうとに とまる",
           "en": "stay in Kyoto"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0045.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0046",
@@ -5756,7 +5985,12 @@
           "jp": "よい せいせきを とる",
           "en": "get good grades"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0046.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0047",
@@ -5892,7 +6126,12 @@
           "jp": "かめらで とる",
           "en": "take photos with a camera"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0047.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0048",
@@ -6015,7 +6254,12 @@
           "jp": "としを とった",
           "en": "got old/aged"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0048.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0049",
@@ -6151,7 +6395,12 @@
           "jp": "しゅうりてんで なおす",
           "en": "repair at a repair shop"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0049.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0050",
@@ -6291,7 +6540,12 @@
           "jp": "やるきを なくす",
           "en": "lose motivation"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0050.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0051",
@@ -6431,7 +6685,12 @@
           "jp": "そぼから りょうりを ならう",
           "en": "learn cooking from grandmother"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0051.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0052",
@@ -6591,7 +6850,12 @@
           "jp": "ひっこす ことに なる",
           "en": "it has been decided to move"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0052.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0053",
@@ -6731,7 +6995,12 @@
           "jp": "くつしたも ぬぐ",
           "en": "also take off socks"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0053.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0054",
@@ -6871,7 +7140,12 @@
           "jp": "いそいで のぼる",
           "en": "climb in a hurry"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0054.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0055",
@@ -7019,7 +7293,12 @@
           "jp": "のみながら たべる",
           "en": "eat while drinking"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0055.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0056",
@@ -7163,7 +7442,12 @@
           "jp": "ながく のる",
           "en": "ride for a long time"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0056.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0057",
@@ -7311,7 +7595,12 @@
           "jp": "みぎを はいる",
           "en": "turn right"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0057.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0058",
@@ -7456,7 +7745,12 @@
           "jp": "はいて あるく",
           "en": "put on and walk"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0058.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0059",
@@ -7604,7 +7898,12 @@
           "jp": "よるまで はたらく",
           "en": "work until night"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0059.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0060",
@@ -7751,7 +8050,12 @@
           "jp": "きょうしつで はなす",
           "en": "speak in the classroom"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0060.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0061",
@@ -7899,7 +8203,12 @@
           "jp": "ともだちに はらう",
           "en": "pay a friend"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0061.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0062",
@@ -8039,7 +8348,12 @@
           "jp": "ゆっくり ひく",
           "en": "play slowly"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0062.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0063",
@@ -8187,7 +8501,12 @@
           "jp": "ことばを ひく",
           "en": "look up a word"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0063.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0064",
@@ -8335,7 +8654,12 @@
           "jp": "ゆきが ふりはじめる",
           "en": "snow starts falling"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0064.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0065",
@@ -8479,7 +8803,12 @@
           "jp": "ここで まがる",
           "en": "turn here"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0065.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0066",
@@ -8627,7 +8956,12 @@
           "jp": "ずっと まって いる",
           "en": "be waiting for a long time"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0066.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0067",
@@ -8767,7 +9101,12 @@
           "jp": "よさんを まわす",
           "en": "allocate budget"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0067.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0068",
@@ -8913,7 +9252,12 @@
           "jp": "おかねを もって いる",
           "en": "have money"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0068.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0069",
@@ -9054,7 +9398,12 @@
           "jp": "いえに もって いっても いいですか",
           "en": "may I take it home?"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0069.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0070",
@@ -9199,7 +9548,12 @@
           "jp": "てつだって もらう",
           "en": "have someone help"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0070.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0071",
@@ -9335,7 +9689,12 @@
           "jp": "ほんとうに やくに たつ",
           "en": "be really useful"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0071.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0072",
@@ -9487,7 +9846,12 @@
           "jp": "やすみなく べんきょうする",
           "en": "study without rest"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0072.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0073",
@@ -9635,7 +9999,12 @@
           "jp": "たすけを よんで もらう",
           "en": "have someone call for help"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0073.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0074",
@@ -9795,7 +10164,12 @@
           "jp": "いま よんで いる",
           "en": "be reading now"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0074.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0075",
@@ -9943,7 +10317,12 @@
           "jp": "ぜんぜん わからない",
           "en": "don't understand at all"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0075.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0076",
@@ -10067,7 +10446,12 @@
           "jp": "あおしんごうで みちを わたります",
           "en": "Cross the road at the green light"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0076.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0077",
@@ -10191,7 +10575,12 @@
           "jp": "プレゼントを あけます",
           "en": "open a present"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0077.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0078",
@@ -10316,7 +10705,12 @@
           "jp": "おとうとに おかねを あげます",
           "en": "give money to younger brother"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0078.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0079",
@@ -10440,7 +10834,12 @@
           "jp": "しりょうを あつめます",
           "en": "gather materials"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0079.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0080",
@@ -10565,7 +10964,12 @@
           "jp": "まいにち シャワーを あびます",
           "en": "take a shower every day"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0080.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0081",
@@ -10681,7 +11085,12 @@
           "jp": "そこに いて ください",
           "en": "please stay there"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0081.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0082",
@@ -10807,7 +11216,12 @@
           "jp": "れいぞうこに いれます",
           "en": "put in the refrigerator"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0082.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0083",
@@ -10923,7 +11337,12 @@
           "jp": "どこで うまれましたか",
           "en": "where were you born?"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0083.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0084",
@@ -11047,7 +11466,12 @@
           "jp": "まいにち 7じに おきます",
           "en": "get up at 7 every day"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0084.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0085",
@@ -11172,7 +11596,12 @@
           "jp": "えいごを おしえます",
           "en": "teach English"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0085.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0086",
@@ -11297,7 +11726,12 @@
           "jp": "ぜんぶ おぼえます",
           "en": "memorize everything"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0086.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0087",
@@ -11421,7 +11855,12 @@
           "jp": "ここで おります",
           "en": "get off here"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0087.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0088",
@@ -11545,7 +11984,12 @@
           "jp": "デザインを かえます",
           "en": "change the design"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0088.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0089",
@@ -11673,7 +12117,12 @@
           "jp": "ともだちに でんわを かけます",
           "en": "call a friend"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0089.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0090",
@@ -11798,7 +12247,12 @@
           "jp": "CDを かります",
           "en": "borrow a CD"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0090.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0091",
@@ -11922,7 +12376,12 @@
           "jp": "もんだいを かんがえます",
           "en": "think about the problem"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0091.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0092",
@@ -12046,7 +12505,12 @@
           "jp": "あたらしい ふくを きる",
           "en": "wear new clothes"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0092.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0093",
@@ -12170,7 +12634,12 @@
           "jp": "ことばに きを つける",
           "en": "be careful with one's words"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0093.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0094",
@@ -12286,7 +12755,12 @@
           "jp": "あにが おかねを くれる",
           "en": "my older brother gives me money"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0094.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0095",
@@ -12410,7 +12884,12 @@
           "jp": "しっかり しめる",
           "en": "close firmly"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0095.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0096",
@@ -12534,7 +13013,12 @@
           "jp": "としょかんで しらべる",
           "en": "research at the library"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0096.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0097",
@@ -12658,7 +13142,12 @@
           "jp": "ペットボトルを すてる",
           "en": "throw away a plastic bottle"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0097.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0098",
@@ -12782,7 +13271,12 @@
           "jp": "ともだちと たべる",
           "en": "eat with friends"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0098.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0099",
@@ -12898,7 +13392,12 @@
           "jp": "たりない",
           "en": "not enough"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0099.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0100",
@@ -13014,7 +13513,12 @@
           "jp": "つかれている",
           "en": "be tired (state)"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0100.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0101",
@@ -13138,7 +13642,12 @@
           "jp": "スイッチを つける",
           "en": "turn on a switch"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0101.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0102",
@@ -13262,7 +13771,12 @@
           "jp": "よく でかける",
           "en": "go out often"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0102.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0103",
@@ -13378,7 +13892,12 @@
           "jp": "よく できる",
           "en": "be able to do well"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0103.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0104",
@@ -13502,7 +14021,12 @@
           "jp": "はやく でる",
           "en": "leave early"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0104.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0105",
@@ -13626,7 +14150,12 @@
           "jp": "ここに とめる",
           "en": "stop/park here"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0105.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0106",
@@ -13774,7 +14303,12 @@
           "jp": "ねて わすれる",
           "en": "sleep and forget"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0106.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0107",
@@ -13906,7 +14440,12 @@
           "jp": "いっかいだけ のりかえる",
           "en": "transfer only once"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0107.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0108",
@@ -14050,7 +14589,12 @@
           "jp": "いえで はじめる",
           "en": "start at home"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0108.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0109",
@@ -14190,7 +14734,12 @@
           "jp": "またも まけて しまう",
           "en": "lose again"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0109.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0110",
@@ -14331,7 +14880,12 @@
           "jp": "めにゅーを みせて ください",
           "en": "please show me the menu"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0110.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0111",
@@ -14480,7 +15034,12 @@
           "jp": "とけいを みる",
           "en": "check the time"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0111.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0112",
@@ -14620,7 +15179,12 @@
           "jp": "えきに むかえに いく",
           "en": "go pick up at the station"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0112.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0113",
@@ -14761,7 +15325,12 @@
           "jp": "ことし やめる",
           "en": "quit this year"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0113.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0114",
@@ -14897,7 +15466,12 @@
           "jp": "なまえを すっかり わすれました",
           "en": "I completely forgot the name"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0114.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0115",
@@ -15021,7 +15595,12 @@
           "jp": "いえに くる",
           "en": "come to (my/someone's) house"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0115.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0116",
@@ -15145,7 +15724,12 @@
           "jp": "スポーツを する",
           "en": "play sports"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0116.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0117",
@@ -15270,7 +15854,12 @@
           "jp": "かんこうちを あんないします",
           "en": "guide to tourist spots"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0117.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0118",
@@ -15394,7 +15983,12 @@
           "jp": "バスを うんてんします",
           "en": "drive a bus"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0118.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0119",
@@ -15516,7 +16110,12 @@
           "jp": "かいものに いきます",
           "en": "go shopping"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0119.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0120",
@@ -15640,7 +16239,12 @@
           "jp": "わかい ときに けっこんする",
           "en": "get married when young"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0120.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0121",
@@ -15765,7 +16369,12 @@
           "jp": "かいしゃを けんがくする",
           "en": "tour a company"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0121.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0122",
@@ -15889,7 +16498,12 @@
           "jp": "まいにち けんきゅうする",
           "en": "do research every day"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0122.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0123",
@@ -16013,7 +16627,12 @@
           "jp": "りょうめんで こぴーしました",
           "en": "I made double-sided copies"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0123.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0124",
@@ -16135,7 +16754,12 @@
           "jp": "うみべを さんぽする",
           "en": "take a walk along the beach"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0124.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0125",
@@ -16257,7 +16881,12 @@
           "jp": "かいしゃで ざんぎょうする",
           "en": "work overtime at the company"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0125.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0126",
@@ -16381,7 +17010,12 @@
           "jp": "しゅうりに だす",
           "en": "send out for repair"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0126.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0127",
@@ -16461,7 +17095,12 @@
           "jp": "それは ちがう",
           "en": "that's wrong"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0127.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0128",
@@ -16585,7 +17224,12 @@
           "jp": "いっしゅうかん しゅっちょうする",
           "en": "go on a business trip for 1 week"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0128.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0129",
@@ -16657,7 +17301,12 @@
           "jp": "まいにち しごとする",
           "en": "work every day"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0129.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0130",
@@ -16782,7 +17431,12 @@
           "jp": "ほんを しょうかいする",
           "en": "introduce/recommend a book"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0130.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0131",
@@ -16878,7 +17532,12 @@
           "jp": "もうすぐ こんさーとが はじまる",
           "en": "the concert is about to begin"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0131.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0132",
@@ -17000,7 +17659,12 @@
           "jp": "そとで しょくじする",
           "en": "have a meal outside/out"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0132.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0133",
@@ -17098,7 +17762,12 @@
           "jp": "まえに もどる",
           "en": "go back"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0133.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0134",
@@ -17222,7 +17891,12 @@
           "jp": "しんぱいしないで",
           "en": "don't worry"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0134.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0135",
@@ -17306,7 +17980,12 @@
           "jp": "いなかで どらいぶする",
           "en": "drive in the countryside"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0135.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0136",
@@ -17430,7 +18109,12 @@
           "jp": "かれに せつめいする",
           "en": "explain to him"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0136.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0137",
@@ -17521,7 +18205,12 @@
           "jp": "らいしゅう はっぴょうする",
           "en": "announce next week"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0137.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0138",
@@ -17645,7 +18334,12 @@
           "jp": "せんたくして ほす",
           "en": "do laundry and hang it to dry"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0138.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0139",
@@ -17719,7 +18413,12 @@
           "jp": "すぐに こたえる",
           "en": "answer immediately"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0139.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0140",
@@ -17843,7 +18542,12 @@
           "jp": "トイレを そうじする",
           "en": "clean the toilet"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0140.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0141",
@@ -17916,7 +18620,12 @@
           "jp": "おかねが たすかる",
           "en": "it saves money"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0141.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0142",
@@ -18040,7 +18749,12 @@
           "jp": "けいたいで でんわする",
           "en": "call on a mobile phone"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0142.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0143",
@@ -18135,7 +18849,12 @@
           "jp": "しょっきを たなに ならべる",
           "en": "arrange dishes on the shelf"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0143.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0144",
@@ -18287,7 +19006,12 @@
           "jp": "よく べんきょうする",
           "en": "study well"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0144.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0145",
@@ -18359,7 +19083,12 @@
           "jp": "でかける まえに けしょうする",
           "en": "put on makeup before going out"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0145.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0146",
@@ -18507,7 +19236,12 @@
           "jp": "ふたりで よやくする",
           "en": "make a reservation for 2 people"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0146.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0147",
@@ -18581,7 +19315,12 @@
           "jp": "もう きめました",
           "en": "already decided"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0147.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0148",
@@ -18729,7 +19468,12 @@
           "jp": "だいがくせいの ときに りゅうがくする",
           "en": "study abroad during university"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0148.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0149",
@@ -18802,7 +19546,12 @@
           "jp": "ともだちに わらわれました",
           "en": "I was laughed at by my friend"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0149.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0150",
@@ -18927,7 +19676,12 @@
           "jp": "パーティーに つれて くる",
           "en": "bring (someone) to a party"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0150.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0151",
@@ -19011,7 +19765,12 @@
           "jp": "なきながら かえる",
           "en": "go home while crying"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0151.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0152",
@@ -19152,7 +19911,12 @@
           "jp": "ほんを もって きて ください",
           "en": "please bring the book"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0152.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0153",
@@ -19227,7 +19991,12 @@
           "jp": "けんかして なかなおりする",
           "en": "fight and then make up"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0153.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0154",
@@ -19319,7 +20088,12 @@
           "jp": "さんじゅっぷん はしる",
           "en": "run for 30 minutes"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0154.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0155",
@@ -19391,7 +20165,12 @@
           "jp": "いっしょに おどりましょう",
           "en": "let's dance together"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0155.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0156",
@@ -19463,7 +20242,12 @@
           "jp": "つかれたので きゅうけいします",
           "en": "take a break because I'm tired"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0156.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0157",
@@ -19535,7 +20319,12 @@
           "jp": "きょねん しんだ",
           "en": "died last year"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0157.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0158",
@@ -19638,7 +20427,12 @@
           "jp": "しゅうまつ りょこうする",
           "en": "travel on the weekend"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0158.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0159",
@@ -19712,7 +20506,12 @@
           "jp": "おはなしを うかがいます",
           "en": "listen to your story (humble)"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0159.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0160",
@@ -19810,7 +20609,12 @@
           "jp": "よく りょうりする",
           "en": "cook often"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0160.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0161",
@@ -19900,7 +20704,12 @@
           "jp": "やわらかく ゆでる",
           "en": "boil soft"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0161.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0162",
@@ -19992,7 +20801,12 @@
           "jp": "わくまで ごふん",
           "en": "5 minutes until it boils"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0162.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0163",
@@ -20074,7 +20888,12 @@
           "jp": "やくそくに おくれます",
           "en": "be late for an appointment"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0163.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0164",
@@ -20164,7 +20983,12 @@
           "jp": "はれの ひに ほす",
           "en": "hang to dry on sunny days"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0164.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0165",
@@ -20237,7 +21061,12 @@
           "jp": "にわに はなが さく",
           "en": "flowers bloom in the garden"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0165.png",
+        "type": "placeholder",
+        "generated": false
+      }
     },
     {
       "id": "n5_v_0166",
@@ -20340,7 +21169,12 @@
           "jp": "さむさから まもる",
           "en": "protect from cold"
         }
-      ]
+      ],
+      "image": {
+        "url": "/images/verbs/n5_v_0166.png",
+        "type": "placeholder",
+        "generated": false
+      }
     }
   ]
 }

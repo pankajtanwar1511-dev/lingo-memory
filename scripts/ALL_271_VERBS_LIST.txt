@@ -1,0 +1,279 @@
+================================================================================
+ALL 271 VERBS IN SEQUENCE
+================================================================================
+
+n5_v_0001: 会う (あう) - to meet
+n5_v_0002: 遊ぶ (あそぶ) - to enjoy oneself, play
+n5_v_0003: 洗う (あらう) - to wash
+n5_v_0004: ある (ある) - to exist; be; have
+n5_v_0005: 歩く (あるく) - to walk
+n5_v_0006: 言う (いう) - to say
+n5_v_0007: 行く (いく) - to go
+n5_v_0008: 急ぐ (いそぐ) - to hurry
+n5_v_0009: 要る (いる) - to need, require
+n5_v_0010: 動く (うごく) - to move, work
+n5_v_0011: 歌う (うたう) - to sing
+n5_v_0012: 売る (うる) - to sell
+n5_v_0013: 置く (おく) - to put
+n5_v_0014: 送る (おくる) - to send; escort
+n5_v_0015: 押す (おす) - to push, press
+n5_v_0016: 思い出す (おもいだす) - to remember, recollect
+n5_v_0017: 思う (おもう) - to think
+n5_v_0018: 泳ぐ (およぐ) - to swim
+n5_v_0019: 下ろす (おろす) - to withdraw
+n5_v_0020: 終わる (おわる) - to finish
+n5_v_0021: 買う (かう) - to buy
+n5_v_0022: 返す (かえす) - to give back, return
+n5_v_0023: 帰る (かえる) - to go home, return
+n5_v_0024: 掛かる (かかる) - to take, cost (time or money)
+n5_v_0025: 書く (かく) - to write, draw, paint
+n5_v_0026: 貸す (かす) - to lend
+n5_v_0027: 勝つ (かつ) - to win
+n5_v_0028: 被る (かぶる) - to put on (a hat, etc.)
+n5_v_0029: 頑張る (がんばる) - to do one's best
+n5_v_0030: 聞く (きく) - to hear, listen
+n5_v_0031: 切る (きる) - to cut, slice
+n5_v_0032: 消す (けす) - to turn off
+n5_v_0033: 触る (さわる) - to touch
+n5_v_0034: 知る (しる) - to get to know
+n5_v_0035: 吸う (すう) - to breathe in; inhale
+n5_v_0036: 住む (すむ) - to live; reside
+n5_v_0037: 座る (すわる) - to sit down
+n5_v_0038: 出す (だす) - to take out, hand in, send
+n5_v_0039: 立つ (たつ) - to stand up
+n5_v_0040: 使う (つかう) - to use
+n5_v_0041: 着く (つく) - to arrive
+n5_v_0042: 作る (つくる) - to make
+n5_v_0043: 連れて行く (つれていく) - to take (someone)
+n5_v_0044: 手伝う (てつだう) - to help
+n5_v_0045: 泊まる (とまる) - to stay
+n5_v_0046: 取る (とる) - to take
+n5_v_0047: 撮る (とる) - to take (a photo)
+n5_v_0048: 年を取る (としをとる) - to grow old
+n5_v_0049: 直す (なおす) - to repair
+n5_v_0050: 無くす (なくす) - to lose
+n5_v_0051: 習う (ならう) - to learn
+n5_v_0052: なる (なる) - to become
+n5_v_0053: 脱ぐ (ぬぐ) - to take off
+n5_v_0054: 登る (のぼる) - to climb
+n5_v_0055: 飲む (のむ) - to drink
+n5_v_0056: 乗る (のる) - to ride
+n5_v_0057: 入る (はいる) - to enter
+n5_v_0058: 履く (はく) - to put on
+n5_v_0059: 働く (はたらく) - to work
+n5_v_0060: 話す (はなす) - to speak
+n5_v_0061: 払う (はらう) - to pay
+n5_v_0062: 弾く (ひく) - to play (instrument)
+n5_v_0063: 引く (ひく) - to pull
+n5_v_0064: 降る (ふる) - to fall (rain/snow)
+n5_v_0065: 曲がる (まがる) - to turn
+n5_v_0066: 待つ (まつ) - to wait
+n5_v_0067: 回す (まわす) - to turn
+n5_v_0068: 持つ (もつ) - to hold
+n5_v_0069: 持って行く (もっていく) - to take (something)
+n5_v_0070: もらう (もらう) - to receive
+n5_v_0071: 役に立つ (やくにたつ) - to be useful
+n5_v_0072: 休む (やすむ) - to rest
+n5_v_0073: 呼ぶ (よぶ) - to call
+n5_v_0074: 読む (よむ) - to read
+n5_v_0075: 分かる (わかる) - to understand
+n5_v_0076: 渡る (わたる) - to cross
+n5_v_0077: 開ける (あける) - to open
+n5_v_0078: 上げる (あげる) - to give
+n5_v_0079: 集める (あつめる) - to collect
+n5_v_0080: 浴びる (あびる) - to bathe
+n5_v_0081: いる (いる) - to exist (animate)
+n5_v_0082: 入れる (いれる) - to put in
+n5_v_0083: 生まれる (うまれる) - to be born
+n5_v_0084: 起きる (おきる) - to get up
+n5_v_0085: 教える (おしえる) - to teach; to tell
+n5_v_0086: 覚える (おぼえる) - to memorize
+n5_v_0087: 降りる (おりる) - to get off
+n5_v_0088: 変える (かえる) - to change
+n5_v_0089: かける (かける) - to put on
+n5_v_0090: 借りる (かりる) - to borrow
+n5_v_0091: 考える (かんがえる) - to think
+n5_v_0092: 着る (きる) - to wear
+n5_v_0093: 気をつける (きをつける) - to be careful
+n5_v_0094: くれる (くれる) - to give (to me/us)
+n5_v_0095: 閉める (しめる) - to close
+n5_v_0096: 調べる (しらべる) - to investigate
+n5_v_0097: 捨てる (すてる) - to throw away
+n5_v_0098: 食べる (たべる) - to eat
+n5_v_0099: 足りる (たりる) - to be enough
+n5_v_0100: 疲れる (つかれる) - to get tired
+n5_v_0101: つける (つける) - to turn on
+n5_v_0102: 出かける (でかける) - to go out
+n5_v_0103: できる (できる) - to be able to
+n5_v_0104: 出る (でる) - to leave
+n5_v_0105: 止める (とめる) - to stop
+n5_v_0106: 寝る (ねる) - to sleep
+n5_v_0107: 乗り換える (のりかえる) - to transfer
+n5_v_0108: 始める (はじめる) - to start
+n5_v_0109: 負ける (まける) - to lose
+n5_v_0110: 見せる (みせる) - to show
+n5_v_0111: 見る (みる) - to see
+n5_v_0112: 迎える (むかえる) - to welcome
+n5_v_0113: 辞める (やめる) - to quit
+n5_v_0114: 忘れる (わすれる) - to forget
+n5_v_0115: 来る (くる) - to come
+n5_v_0116: する (する) - to do
+n5_v_0117: 案内する (あんないする) - to guide
+n5_v_0118: 運転する (うんてんする) - to drive
+n5_v_0119: 買い物する (かいものする) - to go shopping
+n5_v_0120: 結婚する (けっこんする) - to marry
+n5_v_0121: 見学する (けんがくする) - to tour
+n5_v_0122: 研究する (けんきゅうする) - to research
+n5_v_0123: コピーする (コピーする) - to copy
+n5_v_0124: 散歩する (さんぽする) - to take a walk
+n5_v_0125: 残業する (ざんぎょうする) - to work overtime
+n5_v_0126: 修理する (しゅうりする) - to repair
+n5_v_0127: 違う (ちがう) - to be different
+n5_v_0128: 出張する (しゅっちょうする) - to go on a business trip
+n5_v_0129: 仕事する (しごとする) - to work
+n5_v_0130: 紹介する (しょうかいする) - to introduce
+n5_v_0131: 始まる (はじまる) - to begin
+n5_v_0132: 食事する (しょくじする) - to have a meal
+n5_v_0133: 戻る (もどる) - to return
+n5_v_0134: 心配する (しんぱいする) - to worry
+n5_v_0135: ドライブする (どらいぶする) - to drive (for pleasure)
+n5_v_0136: 説明する (せつめいする) - to explain
+n5_v_0137: 発表する (はっぴょうする) - to announce
+n5_v_0138: 洗濯する (せんたくする) - to do laundry
+n5_v_0139: 答える (こたえる) - to answer
+n5_v_0140: 掃除する (そうじする) - to clean
+n5_v_0141: 助かる (たすかる) - to be saved
+n5_v_0142: 電話する (でんわする) - to call
+n5_v_0143: 並べる (ならべる) - to arrange
+n5_v_0144: 勉強する (べんきょうする) - to study
+n5_v_0145: 化粧する (けしょうする) - to put on makeup
+n5_v_0146: 予約する (よやくする) - to reserve
+n5_v_0147: 決める (きめる) - to decide
+n5_v_0148: 留学する (りゅうがくする) - to study abroad
+n5_v_0149: 笑う (わらう) - to laugh
+n5_v_0150: 連れて来る (つれてくる) - to bring (someone)
+n5_v_0151: 泣く (なく) - to cry
+n5_v_0152: 持って来る (もってくる) - to bring (something)
+n5_v_0153: けんかする (けんかする) - to fight
+n5_v_0154: 走る (はしる) - to run
+n5_v_0155: 踊る (おどる) - to dance
+n5_v_0156: 休憩する (きゅうけいする) - to take a break
+n5_v_0157: 死ぬ (しぬ) - to die
+n5_v_0158: 旅行する (りょこうする) - to travel
+n5_v_0159: 伺う (うかがう) - to visit (humble)
+n5_v_0160: 料理する (りょうりする) - to cook
+n5_v_0161: 茹でる (ゆでる) - to boil (food)
+n5_v_0162: 沸く (わく) - to boil (water)
+n5_v_0163: 遅れる (おくれる) - to be late
+n5_v_0164: 干す (ほす) - to dry
+n5_v_0165: 咲く (さく) - to bloom
+n5_v_0166: 守る (まもる) - to protect
+n5_v_0167: 続ける (つづける) - to continue
+n5_v_0168: 空く (すく) - to be empty
+n5_v_0169: 飼う (かう) - to keep
+n5_v_0170: 気にする (きにする) - to care about
+n5_v_0171: 準備する (じゅんびする) - to prepare
+n5_v_0172: 喜ぶ (よろこぶ) - to be pleased
+n5_v_0173: 止まる (とまる) - to stop (intransitive)
+n5_v_0174: 停める (とめる) - to park (vehicle)
+n5_v_0175: 無理する (むりする) - to overwork
+n5_v_0176: 分ける (わける) - to separate
+n5_v_0177: 渡す (わたす) - to hand out
+n5_v_0178: 練習する (れんしゅうする) - to practice
+n5_v_0179: 溢れる (あふれる) - to overflow
+n5_v_0180: 謝る (あやまる) - to apologize
+n5_v_0181: 温める (あたためる) - to warm up (food)
+n5_v_0182: 痛む (いたむ) - to hurt
+n5_v_0183: 炒める (いためる) - to stir-fry
+n5_v_0184: 打つ (うつ) - to hit
+n5_v_0185: 落とす (おとす) - to drop
+n5_v_0186: 掛ける (かける) - to hang (clothes)
+n5_v_0187: 片付ける (かたづける) - to tidy up
+n5_v_0188: 乾く (かわく) - to dry (intransitive)
+n5_v_0189: 蹴る (ける) - to kick
+n5_v_0190: 転ぶ (ころぶ) - to fall down
+n5_v_0191: 相談する (そうだんする) - to consult
+n5_v_0192: 探す (さがす) - to search
+n5_v_0193: 質問する (しつもんする) - to ask a question
+n5_v_0194: 叱る (しかる) - to scold
+n5_v_0195: 咳をする (せきをする) - to cough
+n5_v_0196: 滑る (すべる) - to slip
+n5_v_0197: 畳む (たたむ) - to fold
+n5_v_0198: 頼む (たのむ) - to ask
+n5_v_0199: 尋ねる (たずねる) - to ask
+n5_v_0200: 訪ねる (たずねる) - to visit (person)
+n5_v_0201: 伝える (つたえる) - to convey
+n5_v_0202: 提出する (ていしゅつする) - to submit
+n5_v_0203: 跳ぶ (とぶ) - to jump
+n5_v_0204: 捕る (とる) - to catch
+n5_v_0205: 治る (なおる) - to heal
+n5_v_0206: 投げる (なげる) - to throw
+n5_v_0207: 伸ばす (のばす) - to stretch
+n5_v_0208: 貼る (はる) - to stick
+n5_v_0209: 掃く (はく) - to sweep
+n5_v_0210: 吐く (はく) - to vomit
+n5_v_0211: 腫れる (はれる) - to swell
+n5_v_0212: 冷やす (ひやす) - to cool
+n5_v_0213: 拾う (ひろう) - to pick up
+n5_v_0214: 褒める (ほめる) - to praise
+n5_v_0215: ぶつかる (ぶつかる) - to bump into
+n5_v_0216: 拭く (ふく) - to wipe
+n5_v_0217: 復習する (ふくしゅうする) - to review (lessons)
+n5_v_0218: 曲げる (まげる) - to bend
+n5_v_0219: 混ぜる (まぜる) - to mix
+n5_v_0220: 見つける (みつける) - to find
+n5_v_0221: 磨く (みがく) - to polish
+n5_v_0222: 濡れる (ぬれる) - to get wet
+n5_v_0223: 焼く (やく) - to grill
+n5_v_0224: 予習する (よしゅうする) - to prepare (lessons)
+n5_v_0225: 汚れる (よごれる) - to get dirty
+n5_v_0226: 断る (ことわる) - to refuse
+n5_v_0227: 配る (くばる) - to distribute
+n5_v_0228: 連絡する (れんらくする) - to contact
+n5_v_0229: 溢れる (あふれる) - to overflow
+n5_v_0230: 浮かぶ (うかぶ) - to float
+n5_v_0231: 折れる (おれる) - to break
+n5_v_0232: 溺れる (おぼれる) - to drown
+n5_v_0233: 噛む (かむ) - to chew
+n5_v_0234: 凍る (こおる) - to freeze
+n5_v_0235: 擦る (こする) - to rub
+n5_v_0236: 漉す (こす) - to strain
+n5_v_0237: 壊れる (こわれる) - to break (intransitive)
+n5_v_0238: 裂ける (さける) - to tear
+n5_v_0239: 絞る (しぼる) - to squeeze
+n5_v_0240: 沈む (しずむ) - to sink
+n5_v_0241: 染める (そめる) - to dye (hair)
+n5_v_0242: 剃る (そる) - to shave
+n5_v_0243: すすぐ (すすぐ) - to rinse
+n5_v_0244: 叩く (たたく) - to beat
+n5_v_0245: 倒れる (たおれる) - to fall over
+n5_v_0246: 垂らす (たらす) - to drip
+n5_v_0247: 詰まる (つまる) - to get stuck
+n5_v_0248: 飛ぶ (とぶ) - to fly
+n5_v_0249: 溶ける (とける) - to melt
+n5_v_0250: 梳かす (とかす) - to comb (hair)
+n5_v_0251: 流れる (ながれる) - to flow
+n5_v_0252: 並ぶ (ならぶ) - to line up
+n5_v_0253: 煮る (にる) - to boil
+n5_v_0254: 縫う (ぬう) - to sew
+n5_v_0255: 塗る (ぬる) - to apply (medicine)
+n5_v_0256: 飲み込む (のみこむ) - to swallow
+n5_v_0257: 吐き出す (はきだす) - to spit out
+n5_v_0258: 剥く (むく) - to peel
+n5_v_0259: 結ぶ (むすぶ) - to tie (hair)
+n5_v_0260: 蒸す (むす) - to steam
+n5_v_0261: 揉む (もむ) - to massage
+n5_v_0262: 破れる (やぶれる) - to tear
+n5_v_0263: 揺れる (ゆれる) - to shake
+n5_v_0264: 響く (ひびく) - to resound
+n5_v_0265: 光る (ひかる) - to shine
+n5_v_0266: 引っ掻く (ひっかく) - to scratch
+n5_v_0267: 挽く (ひく) - to grind
+n5_v_0268: 包帯を巻く (ほうたいをまく) - to bandage
+n5_v_0269: 燃える (もえる) - to burn
+n5_v_0270: 消える (きえる) - to disappear
+n5_v_0271: 擦る (こする) - to rub
+
+================================================================================
+Total verbs: 271
+================================================================================
