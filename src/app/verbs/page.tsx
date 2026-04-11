@@ -63,7 +63,7 @@ interface VerbsData {
 }
 
 type ViewMode = "all" | "dictionary" | "masu" | "kana-masu" | "dictionary-kana" | "te-form" | "te-form-kana"
-type FlipSide = "english" | "kanji" | "kana" | "masu-kanji" | "masu-kana" | "te-kanji" | "te-kana" | "kana-mixed"
+type FlipSide = "english" | "kanji" | "kana" | "masu-kanji" | "masu-kana" | "te-kanji" | "te-kana" | "kana-mixed" | "image"
 type ConjugationFormType = "dict" | "masu" | "te"
 
 /** Maps internal morphology.class key → user-facing group label */
@@ -947,6 +947,25 @@ export default function VerbsPage() {
             {verb.lemma.kana}
           </div>
         )
+      case "image":
+        return (
+          <div className="flex items-center justify-center w-full h-full p-2">
+            <img
+              src={`/images/verbs/${verb.id}.png`}
+              alt={`${verb.lemma.kanji} - ${verb.meaning.primary}`}
+              className="max-w-full max-h-full object-contain rounded-lg"
+              onError={(e) => {
+                // Fallback if image doesn't exist
+                const target = e.target as HTMLImageElement
+                target.style.display = 'none'
+                const parent = target.parentElement
+                if (parent) {
+                  parent.innerHTML = `<div class="text-sm text-muted-foreground">Image not available</div>`
+                }
+              }}
+            />
+          </div>
+        )
       default:
         return (
           <div className="relative w-full h-full flex items-center justify-center px-2 py-4">
@@ -1232,6 +1251,7 @@ export default function VerbsPage() {
                     <option value="masu-kana">Masu (Kana)</option>
                     <option value="te-kanji">Te-form (Kanji)</option>
                     <option value="te-kana">Te-form (Kana)</option>
+                    <option value="image">Image</option>
                   </select>
                 </div>
                 <div className="flex items-center gap-2 sm:contents">
@@ -1249,6 +1269,7 @@ export default function VerbsPage() {
                     <option value="masu-kana">Masu (Kana)</option>
                     <option value="te-kanji">Te-form (Kanji)</option>
                     <option value="te-kana">Te-form (Kana)</option>
+                    <option value="image">Image</option>
                   </select>
                 </div>
               </div>
