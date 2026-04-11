@@ -96,6 +96,7 @@ export default function VerbsPage() {
   const [flipMode, setFlipMode] = useState(false)
   const [frontSide, setFrontSide] = useState<FlipSide>("english")
   const [backSide, setBackSide] = useState<FlipSide>("kanji")
+  const [failedImages, setFailedImages] = useState<Set<string>>(new Set())
 
   // List filtering
   const [activeList, setActiveList] = useState<VerbList | null>(null)
@@ -948,20 +949,21 @@ export default function VerbsPage() {
           </div>
         )
       case "image":
+        if (failedImages.has(verb.id)) {
+          return (
+            <div className="flex items-center justify-center w-full h-full p-2">
+              <div className="text-sm text-muted-foreground">Image not available</div>
+            </div>
+          )
+        }
         return (
           <div className="flex items-center justify-center w-full h-full p-2">
             <img
               src={`/images/verbs/${verb.id}.png`}
               alt={`${verb.lemma.kanji} - ${verb.meaning.primary}`}
               className="max-w-full max-h-full object-contain rounded-lg"
-              onError={(e) => {
-                // Fallback if image doesn't exist
-                const target = e.target as HTMLImageElement
-                target.style.display = 'none'
-                const parent = target.parentElement
-                if (parent) {
-                  parent.innerHTML = `<div class="text-sm text-muted-foreground">Image not available</div>`
-                }
+              onError={() => {
+                setFailedImages(prev => new Set(prev).add(verb.id))
               }}
             />
           </div>
@@ -1968,7 +1970,7 @@ export default function VerbsPage() {
                               style={{
                                 backfaceVisibility: "hidden",
                                 WebkitBackfaceVisibility: "hidden",
-                                minHeight: "180px"
+                                minHeight: (frontSide === "image" || backSide === "image") ? "280px" : "180px"
                               }}
                             >
                               {/* Level Badge - top left inside card */}
@@ -2073,7 +2075,7 @@ export default function VerbsPage() {
                                 backfaceVisibility: "hidden",
                                 WebkitBackfaceVisibility: "hidden",
                                 transform: "rotateY(180deg)",
-                                minHeight: "180px"
+                                minHeight: (frontSide === "image" || backSide === "image") ? "280px" : "180px"
                               }}
                             >
                               {/* Accent bar at top — thicker on mobile for at-a-glance recognition */}
@@ -2217,7 +2219,7 @@ export default function VerbsPage() {
                           style={{
                             backfaceVisibility: "hidden",
                             WebkitBackfaceVisibility: "hidden",
-                            minHeight: "180px"
+                            minHeight: (frontSide === "image" || backSide === "image") ? "280px" : "180px"
                           }}
                         >
                           {/* Button Group in Top Right */}
@@ -2295,7 +2297,7 @@ export default function VerbsPage() {
                             backfaceVisibility: "hidden",
                             WebkitBackfaceVisibility: "hidden",
                             transform: "rotateY(180deg)",
-                            minHeight: "180px"
+                            minHeight: (frontSide === "image" || backSide === "image") ? "280px" : "180px"
                           }}
                         >
                           {/* Accent bar at top — thicker on mobile for at-a-glance recognition */}
