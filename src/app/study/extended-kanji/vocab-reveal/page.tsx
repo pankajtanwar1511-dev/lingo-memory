@@ -109,6 +109,21 @@ export default function VocabRevealPage() {
   const wasHeldRef = useRef(false);
   const downXRef = useRef<number | null>(null);
 
+  // Refs to the latest navigation handlers + state. The keyboard listener
+  // reads through these so the listener can stay mounted exactly once for
+  // the lifetime of the page — no detach/re-attach on every state change.
+  const nextRef = useRef(() => {});
+  const prevRef = useRef(() => {});
+  const reshuffleRef = useRef(() => {});
+  const dismissHelpRef = useRef(() => {});
+  const enterFullscreenRef = useRef(() => {});
+  const leaveFullscreenRef = useRef(() => {});
+  const stateRef = useRef({ showConfig: false, showHelp: false, fullscreen: false });
+  // Debounce: prevent the same logical key/click navigation from firing
+  // twice within this many milliseconds (covers OS auto-repeat + spurious
+  // double events).
+  const lastNavRef = useRef(0);
+
   // Initial data + queue restore
   useEffect(() => {
     (async () => {
@@ -288,27 +303,60 @@ export default function VocabRevealPage() {
     localStorage.setItem(HELP_DISMISSED_KEY, '1');
   }, []);
 
-  // Keyboard — active in BOTH compact and fullscreen drill modes (silent: no UI hint).
-  // Touch + keyboard coexist — keyboard is just an accelerator for desktop users.
+  // Keep the navigation refs current on every render. The keyboard listener
+  // reads these refs so it never has to be detached/reattached.
   useEffect(() => {
+    nextRef.current = next;
+    prevRef.current = prev;
+    reshuffleRef.current = reshuffle;
+    dismissHelpRef.current = dismissHelp;
+    enterFullscreenRef.current = enterFullscreen;
+    leaveFullscreenRef.current = leaveFullscreen;
+    stateRef.current = { showConfig, showHelp, fullscreen };
+  });
+
+  // Keyboard — single mount for the page's lifetime. Filters out:
+  //   • OS key auto-repeat (e.repeat === true) — was the main culprit:
+  //     a held arrow key fired keydown every ~50ms, advancing twice per tap.
+  //   • Bursty double-events within 150ms (debounce via lastNavRef).
+  // Both compact and fullscreen modes share the same listener.
+  useEffect(() => {
+    const NAV_DEBOUNCE_MS = 150;
     const onKey = (e: KeyboardEvent) => {
-      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLSelectElement || e.target instanceof HTMLTextAreaElement) return;
+      if (
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLSelectElement ||
+        e.target instanceof HTMLTextAreaElement
+      ) {
+        return;
+      }
+      const { showConfig, showHelp, fullscreen } = stateRef.current;
       if (showConfig) return;
+      // Block OS auto-repeat for navigation keys
+      if (e.repeat && (e.key === 'ArrowRight' || e.key === 'ArrowLeft' || e.key === ' ')) return;
+
+      const now = Date.now();
+      const navDebounced = now - lastNavRef.current < NAV_DEBOUNCE_MS;
+
       switch (e.key) {
         case 'ArrowRight':
         case ' ':
           e.preventDefault();
-          if (showHelp) dismissHelp();
-          next();
+          if (navDebounced) return;
+          lastNavRef.current = now;
+          if (showHelp) dismissHelpRef.current();
+          nextRef.current();
           break;
         case 'ArrowLeft':
           e.preventDefault();
-          if (showHelp) dismissHelp();
-          prev();
+          if (navDebounced) return;
+          lastNavRef.current = now;
+          if (showHelp) dismissHelpRef.current();
+          prevRef.current();
           break;
         case 'Escape':
-          if (showHelp) dismissHelp();
-          else if (fullscreen) leaveFullscreen();
+          if (showHelp) dismissHelpRef.current();
+          else if (fullscreen) leaveFullscreenRef.current();
           else router.push('/study/extended-kanji/vocabulary');
           break;
         case 's':
@@ -317,18 +365,18 @@ export default function VocabRevealPage() {
           break;
         case 'r':
         case 'R':
-          reshuffle();
+          reshuffleRef.current();
           break;
         case 'f':
         case 'F':
-          if (fullscreen) leaveFullscreen();
-          else enterFullscreen();
+          if (fullscreen) leaveFullscreenRef.current();
+          else enterFullscreenRef.current();
           break;
       }
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [next, prev, leaveFullscreen, enterFullscreen, reshuffle, showConfig, showHelp, dismissHelp, fullscreen, router]);
+  }, [router]);
 
   // Tap vs hold detection — pointer events handle the HOLD; the browser-native
   // `click` event handles the TAP (it's deduped across pointer + synthesized
@@ -370,7 +418,6 @@ export default function VocabRevealPage() {
 
   const onClick = (e: React.MouseEvent) => {
     if (showConfig) return;
-    // If this was a hold, swallow the click and reset the flag.
     if (wasHeldRef.current) {
       wasHeldRef.current = false;
       return;
@@ -379,6 +426,10 @@ export default function VocabRevealPage() {
       dismissHelp();
       return;
     }
+    // Share the same 150ms debounce that the keyboard uses.
+    const now = Date.now();
+    if (now - lastNavRef.current < 150) return;
+    lastNavRef.current = now;
     const x = downXRef.current ?? e.clientX;
     const halfway = window.innerWidth / 2;
     if (x < halfway) prev();
