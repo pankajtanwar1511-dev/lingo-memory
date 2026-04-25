@@ -46,8 +46,7 @@ export function ColoredWord({
         let colorCls = '';
         if (p.type === 'on') colorCls = READING_STYLES.on.text;
         else if (p.type === 'kun') colorCls = READING_STYLES.kun.text;
-        else if (p.type === 'mixed')
-          colorCls = `${READING_STYLES.on.text} underline decoration-green-400`;
+        else if (p.type === 'mixed') colorCls = READING_STYLES.on.text;
         return (
           <span
             key={i}

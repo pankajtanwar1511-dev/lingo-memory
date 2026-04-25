@@ -667,7 +667,7 @@ export default function VocabRevealPage() {
 
             <div
               key={`reading-${index}`}
-              className={`text-[clamp(1rem,3vw,1.75rem)] font-light leading-tight tracking-wide text-center transition-opacity duration-200 ease-out ${
+              className={`text-[clamp(1.25rem,3.5vw,2.25rem)] font-light leading-tight tracking-wide text-center transition-opacity duration-200 ease-out ${
                 revealed ? 'opacity-100' : 'opacity-0'
               } ${typeStyle ? typeStyle.text : 'text-muted-foreground'}`}
               aria-hidden={!revealed}
@@ -791,7 +791,7 @@ export default function VocabRevealPage() {
 
         <div
           key={`fs-reading-${index}`}
-          className={`mt-10 text-[clamp(1.25rem,4vw,2.5rem)] font-light leading-tight text-center tracking-wide transition-opacity duration-200 ease-out ${
+          className={`mt-10 text-[clamp(1.5rem,4.5vw,3rem)] font-light leading-tight text-center tracking-wide transition-opacity duration-200 ease-out ${
             revealed ? 'opacity-100' : 'opacity-0'
           } ${typeStyle ? typeStyle.text : 'text-muted-foreground'}`}
           aria-hidden={!revealed}
