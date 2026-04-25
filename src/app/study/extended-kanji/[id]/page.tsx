@@ -198,15 +198,15 @@ export default function ExtendedKanjiDetailPage() {
     kanji.bundledWith?.map((c) => allKanji.find((k) => k.kanji === c)).filter(Boolean) ?? [];
 
   return (
-    <div className="container max-w-4xl mx-auto px-4 py-8 space-y-6">
-      <div className="flex items-center justify-between">
+    <div className="container max-w-4xl mx-auto px-4 py-6 sm:py-8 space-y-6">
+      <div className="flex flex-wrap items-center justify-between gap-2">
         <Button variant="ghost" onClick={() => router.back()} className="gap-2">
           <ArrowLeft className="h-4 w-4" />
           Back
         </Button>
         {kanji.lessonNumber && (
           <Link href={`/study/extended-kanji/lessons/lesson_${kanji.lessonNumber}`}>
-            <Badge variant="secondary" className="cursor-pointer">
+            <Badge variant="secondary" className="cursor-pointer text-xs sm:text-sm">
               Lesson {kanji.lessonNumber} · {kanji.lessonDate}
             </Badge>
           </Link>
@@ -217,8 +217,8 @@ export default function ExtendedKanjiDetailPage() {
       <Card>
         <CardContent className="pt-6">
           <div className="text-center space-y-4">
-            <div className="text-9xl font-bold">{kanji.kanji}</div>
-            <h2 className="text-2xl font-semibold">{kanji.meaning}</h2>
+            <div className="text-[clamp(5rem,18vw,9rem)] font-bold leading-none">{kanji.kanji}</div>
+            <h2 className="text-xl sm:text-2xl font-semibold">{kanji.meaning}</h2>
             {kanji.bundledWith && kanji.bundledWith.length > 0 && (
               <p className="text-xs text-muted-foreground">
                 Taught alongside{' '}

@@ -174,8 +174,8 @@ export default function ExtendedKanjiSentencesPage() {
         )}
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-3">
-        <div className="flex-1 relative">
+      <div className="flex flex-col gap-3">
+        <div className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
           <Input
             type="text"
@@ -185,11 +185,11 @@ export default function ExtendedKanjiSentencesPage() {
             className="pl-10"
           />
         </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
         {(view === 'all' || view === 'topics') && (
           <Select
             value={topicFilter}
             onChange={(e) => setTopicFilter(e.target.value)}
-            className="w-[200px]"
           >
             <option value="all">All topics</option>
             {topics.map((t) => (
@@ -202,13 +202,13 @@ export default function ExtendedKanjiSentencesPage() {
         <Select
           value={kanjiFilter}
           onChange={(e) => setKanjiFilter(e.target.value)}
-          className="w-[170px]"
         >
           <option value="all">Any kanji</option>
           {allParentKanji.map((c) => (
             <option key={c} value={c}>Contains: {c}</option>
           ))}
         </Select>
+        </div>
       </div>
 
       <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground">

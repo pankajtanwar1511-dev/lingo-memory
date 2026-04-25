@@ -359,15 +359,15 @@ export default function VocabRevealPage() {
 
   return (
     <div className="container max-w-5xl mx-auto px-4 py-6 space-y-6 min-h-screen">
-      {/* Top bar */}
-      <div className="flex items-center justify-between">
+      {/* Top bar — wraps to a second row on phones, single row on tablet+ */}
+      <div className="flex flex-wrap items-center justify-between gap-2">
         <Link href="/study/extended-kanji/vocabulary">
           <Button variant="ghost" className="gap-2">
             <ArrowLeft className="h-4 w-4" />
             Exit
           </Button>
         </Link>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-2">
           <Badge variant="secondary">
             {index + 1} / {order.length}
           </Badge>
@@ -389,12 +389,12 @@ export default function VocabRevealPage() {
           {mode === 'random' && (
             <Button variant="outline" size="sm" onClick={reshuffle} title="Press R">
               <Shuffle className="h-4 w-4 mr-1.5" />
-              Reshuffle
+              <span className="hidden sm:inline">Reshuffle</span>
             </Button>
           )}
           <Button variant="outline" size="sm" onClick={() => setShowConfig(true)}>
-            <Settings className="h-4 w-4 mr-1.5" />
-            Filters
+            <Settings className="h-4 w-4 sm:mr-1.5" />
+            <span className="hidden sm:inline">Filters</span>
           </Button>
         </div>
       </div>
@@ -501,8 +501,8 @@ export default function VocabRevealPage() {
         />
       </div>
 
-      {/* Keyboard legend */}
-      <div className="flex flex-wrap justify-center gap-3 text-xs text-muted-foreground">
+      {/* Keyboard legend — desktop only (hidden on phones where there's no keyboard) */}
+      <div className="hidden md:flex flex-wrap justify-center gap-3 text-xs text-muted-foreground">
         <span><kbd className="px-1.5 py-0.5 rounded bg-muted">→</kbd> advance / reveal</span>
         <span><kbd className="px-1.5 py-0.5 rounded bg-muted">←</kbd> previous</span>
         <span><kbd className="px-1.5 py-0.5 rounded bg-muted">Space</kbd> toggle reveal</span>
@@ -510,6 +510,10 @@ export default function VocabRevealPage() {
         <span><kbd className="px-1.5 py-0.5 rounded bg-muted">S</kbd> seq↔random</span>
         {mode === 'random' && <span><kbd className="px-1.5 py-0.5 rounded bg-muted">R</kbd> reshuffle</span>}
       </div>
+      {/* Mobile hint — replaces keyboard legend on phones */}
+      <p className="md:hidden text-center text-xs text-muted-foreground">
+        Tap the card or the buttons below
+      </p>
     </div>
   );
 }
