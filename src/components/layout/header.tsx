@@ -47,9 +47,9 @@ export function Header() {
           name: "Extended Kanji",
           href: "/study/extended-kanji",
           icon: Languages,
-          badge: "83",
+          badge: "86",
           badgeVariant: "default" as const,
-          description: "Teacher 36-lesson reference (Feb–Apr 2026)"
+          description: "Teacher 37-lesson reference (Feb–Apr 2026)"
         },
         {
           name: "Vocabulary",
