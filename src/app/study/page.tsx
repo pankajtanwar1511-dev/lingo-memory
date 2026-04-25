@@ -421,6 +421,36 @@ export default function StudyPage() {
                   </Link>
                 </CardContent>
               </Card>
+
+              <Card className="hover:shadow-xl transition-all border-primary/50">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Languages className="h-5 w-5" />
+                    Extended Kanji
+                  </CardTitle>
+                  <CardDescription>
+                    Teacher's 36-lesson reference (Feb–Apr 2026)
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-sm">
+                      <span>Kanji taught</span>
+                      <span className="font-bold">83</span>
+                    </div>
+                    <div className="flex justify-between text-sm">
+                      <span>Lessons · vocab · sentences</span>
+                      <Badge variant="outline">36 · 350 · 130</Badge>
+                    </div>
+                  </div>
+                  <Link href="/study/extended-kanji">
+                    <Button className="w-full" variant="default">
+                      <Languages className="h-4 w-4 mr-2" />
+                      Open Extended Kanji
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
             </div>
 
             {/* Progress overview */}

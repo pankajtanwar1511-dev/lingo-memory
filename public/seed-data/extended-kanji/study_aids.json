@@ -1,0 +1,252 @@
+{
+  "metadata": {
+    "source": "KANJI_REFERENCE.md",
+    "generatedAt": "2026-04-24T12:36:42.494597+00:00",
+    "lessonsCount": 37,
+    "kanjiCount": 86,
+    "vocabularyCount": 378,
+    "sentencesPart1": 111,
+    "sentencesPart1Extras": 24,
+    "sentencesPart3Groups": 7,
+    "sentencesTotal": 173,
+    "answerKeyPages": 9,
+    "prerequisiteKanji": 124
+  },
+  "confusables": [
+    {
+      "context": "From lesson 15 (p.212) — these look similar, don't mix them up",
+      "group": [
+        {
+          "Kanji": "口",
+          "Reading": "くち",
+          "Meaning": "mouth"
+        },
+        {
+          "Kanji": "日",
+          "Reading": "ひ / にち",
+          "Meaning": "day, sun"
+        },
+        {
+          "Kanji": "目",
+          "Reading": "め",
+          "Meaning": "eye"
+        },
+        {
+          "Kanji": "耳",
+          "Reading": "みみ",
+          "Meaning": "ear"
+        },
+        {
+          "Kanji": "百",
+          "Reading": "ひゃく",
+          "Meaning": "hundred"
+        },
+        {
+          "Kanji": "白",
+          "Reading": "しろ",
+          "Meaning": "white"
+        },
+        {
+          "Kanji": "首",
+          "Reading": "くび",
+          "Meaning": "neck"
+        }
+      ]
+    },
+    {
+      "context": "From lesson 35 (書・使・歩) — teacher's note",
+      "note": "**木？本？** — remember to distinguish **木** (tree) from **本** (book). The extra stroke at the bottom of 本 means \"root/origin\" → base → book."
+    }
+  ],
+  "specialReadings": [
+    {
+      "context": "From lesson 15",
+      "entry": "上手（な）— じょうず (good at) — ※ special reading, not \"うえて\""
+    },
+    {
+      "context": "From lesson 15",
+      "entry": "下手（な）— へた (poor at) — ※ special reading, not \"したて\""
+    },
+    {
+      "context": "From lesson 15",
+      "entry": "苦手（な）— にがて (weak at / dislike)"
+    },
+    {
+      "context": "From lesson 12 (年)",
+      "entry": "きょ年・こ年・らい年 — written partly in hiragana at this stage (the kanji 去・今・来 come later for 去年・今年・来年)"
+    }
+  ],
+  "verbStems": [
+    {
+      "context": "From lesson 35 intro (書・使・歩)",
+      "item": "(てがみを) かく — write (a letter)"
+    },
+    {
+      "context": "From lesson 35 intro (書・使・歩)",
+      "item": "(道具を) つかう — use (tools) — 道具 = tool"
+    },
+    {
+      "context": "From lesson 35 intro (書・使・歩)",
+      "item": "あるく — walk"
+    },
+    {
+      "context": "From lesson 33 intro area (directional vocabulary)",
+      "item": "日本 (にほん) / 東日本 (ひがしにほん) / 西日本 (にしにほん)"
+    },
+    {
+      "context": "From lesson 33 intro area (directional vocabulary)",
+      "item": "南北 (なんぼく) — north & south"
+    },
+    {
+      "context": "From lesson 33 intro area (directional vocabulary)",
+      "item": "北西 (ほくせい) — northwest"
+    }
+  ],
+  "sectionLabels": [
+    {
+      "Lesson": "もじ4",
+      "Textbook page": "p.200",
+      "Topic": "山・川・田"
+    },
+    {
+      "Lesson": "もじ5",
+      "Textbook page": "p.201, p.202",
+      "Topic": "四・五・六 / 十"
+    },
+    {
+      "Lesson": "もじ6",
+      "Textbook page": "p.204",
+      "Topic": "百・千・万"
+    },
+    {
+      "Lesson": "もじ7",
+      "Textbook page": "p.206, p.207",
+      "Topic": "review practice"
+    },
+    {
+      "Lesson": "もじ8",
+      "Textbook page": "p.208",
+      "Topic": "日・月・火 / 水・木・金"
+    },
+    {
+      "Lesson": "もじ9",
+      "Textbook page": "p.211",
+      "Topic": "学"
+    },
+    {
+      "Lesson": "もじ10",
+      "Textbook page": "p.212, p.208",
+      "Topic": "口・目・耳 / 手・足"
+    },
+    {
+      "Lesson": "もじ12",
+      "Textbook page": "p.216",
+      "Topic": "言・話・読"
+    },
+    {
+      "Lesson": "もじ14",
+      "Textbook page": "p.220, p.221",
+      "Topic": "内・外・国 / 入・出"
+    },
+    {
+      "Lesson": "もじ15",
+      "Textbook page": "p.222, p.223",
+      "Topic": "右・左・名 + review"
+    },
+    {
+      "Lesson": "もじ16",
+      "Textbook page": "p.224",
+      "Topic": "毎・先・週"
+    },
+    {
+      "Lesson": "もじ17",
+      "Textbook page": "p.226, p.227",
+      "Topic": "午"
+    },
+    {
+      "Lesson": "もじ18",
+      "Textbook page": "p.228, p.229, p.230",
+      "Topic": "父・母・子 / 男・女"
+    },
+    {
+      "Lesson": "もじ(-)",
+      "Textbook page": "p.233",
+      "Topic": "review (木・本・東・食・飲)"
+    },
+    {
+      "Lesson": "漢字1",
+      "Textbook page": "p.188",
+      "Topic": "作・立・文 + 書・使・歩"
+    }
+  ],
+  "dialogPhrases": {
+    "Food / meal": [
+      {
+        "jp": "いただきます。",
+        "en": "(before meal)"
+      },
+      {
+        "jp": "ごちそうさまでした。",
+        "en": "(after meal)"
+      }
+    ],
+    "Politeness / office": [
+      {
+        "jp": "お先にどうぞ。",
+        "en": "Please go ahead."
+      },
+      {
+        "jp": "お先に失礼します。",
+        "en": "Excuse me for leaving first."
+      },
+      {
+        "jp": "手つだいましょうか。",
+        "en": "Shall I help you?"
+      },
+      {
+        "jp": "どうぞ、使ってください。",
+        "en": "Please use it."
+      },
+      {
+        "jp": "もう一度言ってください。",
+        "en": "Please say it again."
+      },
+      {
+        "jp": "お名前を教えてください。",
+        "en": "Please tell me your name."
+      },
+      {
+        "jp": "はい、わかりました。",
+        "en": "Yes, understood."
+      }
+    ],
+    "Office dialog (lesson 29)": [
+      {
+        "jp": "A: 明日の会議の資料、午前中にお願いします。",
+        "en": "The documents for tomorrow's meeting — please, by morning."
+      },
+      {
+        "jp": "B: はい、わかりました。",
+        "en": "Yes, understood."
+      }
+    ],
+    "Q & A patterns (lesson 12)": [
+      {
+        "jp": "何曜日ですか。— 土曜日です。",
+        "en": "What day is it? — Saturday."
+      },
+      {
+        "jp": "何時ですか。— 10時です。",
+        "en": "What time is it? — 10:00."
+      },
+      {
+        "jp": "お子さんは何さいですか。— むすこは5さいです。",
+        "en": "How old is your child? — My son is 5."
+      },
+      {
+        "jp": "お国はどちらですか？",
+        "en": "What country are you from?"
+      }
+    ]
+  }
+}

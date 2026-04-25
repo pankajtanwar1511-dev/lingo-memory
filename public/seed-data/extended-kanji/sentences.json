@@ -1,0 +1,928 @@
+{
+  "metadata": {
+    "source": "KANJI_REFERENCE.md",
+    "generatedAt": "2026-04-24T12:36:42.494597+00:00",
+    "lessonsCount": 37,
+    "kanjiCount": 86,
+    "vocabularyCount": 378,
+    "sentencesPart1": 111,
+    "sentencesPart1Extras": 24,
+    "sentencesPart3Groups": 7,
+    "sentencesTotal": 173,
+    "answerKeyPages": 9,
+    "prerequisiteKanji": 124
+  },
+  "part1": [
+    {
+      "japanese": "この家は大きいです。",
+      "english": "This house is big.",
+      "parentKanji": "大",
+      "source": "part1"
+    },
+    {
+      "japanese": "この家は小さいです。",
+      "english": "This house is small.",
+      "parentKanji": "小",
+      "source": "part1"
+    },
+    {
+      "japanese": "ホセさんはメキシコ人です。",
+      "english": "Mr. Jose is Mexican.",
+      "parentKanji": "人",
+      "source": "part1"
+    },
+    {
+      "japanese": "七五三のとき、写真を撮りました。",
+      "english": "At the Shichi-Go-San festival, I took photos.",
+      "parentKanji": "七",
+      "source": "part1"
+    },
+    {
+      "japanese": "八歳の息子と七歳の娘がいます。",
+      "english": "I have an 8-year-old son and a 7-year-old daughter.",
+      "parentKanji": "八",
+      "source": "part1"
+    },
+    {
+      "japanese": "ジョンさんは二十九センチのくつを買いました。",
+      "english": "John bought 29 cm shoes.",
+      "parentKanji": "九",
+      "source": "part1"
+    },
+    {
+      "japanese": "このコーヒーは三百円です。",
+      "english": "This coffee is 300 yen.",
+      "parentKanji": "百",
+      "source": "part1"
+    },
+    {
+      "japanese": "このラーメンは八百円です。",
+      "english": "This ramen is 800 yen.",
+      "parentKanji": "百",
+      "source": "part1"
+    },
+    {
+      "japanese": "このシャツは二千円です。",
+      "english": "This shirt is 2,000 yen.",
+      "parentKanji": "千",
+      "source": "part1"
+    },
+    {
+      "japanese": "それは三千円です。",
+      "english": "That is 3,000 yen.",
+      "parentKanji": "千",
+      "source": "part1"
+    },
+    {
+      "japanese": "あれは八千円です。",
+      "english": "That (over there) is 8,000 yen.",
+      "parentKanji": "千",
+      "source": "part1"
+    },
+    {
+      "japanese": "このりんごは三百円です。",
+      "english": "This apple is 300 yen.",
+      "parentKanji": "万",
+      "source": "part1"
+    },
+    {
+      "japanese": "この車は五百万円です。",
+      "english": "This car is 5,000,000 yen.",
+      "parentKanji": "万",
+      "source": "part1"
+    },
+    {
+      "japanese": "テーブルの上に本があります。",
+      "english": "There is a book on the table.",
+      "parentKanji": "上",
+      "source": "part1"
+    },
+    {
+      "japanese": "去年より売上が上がりました。",
+      "english": "Sales went up compared to last year.",
+      "parentKanji": "上",
+      "source": "part1"
+    },
+    {
+      "japanese": "子どもは部屋の中で遊んでいます。",
+      "english": "The children are playing inside the room.",
+      "parentKanji": "中",
+      "source": "part1"
+    },
+    {
+      "japanese": "去年より売上が下がりました。",
+      "english": "Sales went down compared to last year.",
+      "parentKanji": "下",
+      "source": "part1"
+    },
+    {
+      "japanese": "今朝は昨日より気温が下がりました。",
+      "english": "This morning the temperature dropped from yesterday.",
+      "parentKanji": "下",
+      "source": "part1"
+    },
+    {
+      "japanese": "ゴミの日は火曜日と木曜日です。",
+      "english": "Garbage day is Tuesday and Thursday.",
+      "parentKanji": "日",
+      "source": "part1"
+    },
+    {
+      "japanese": "日曜日、映画を見に行きませんか。",
+      "english": "On Sunday, shall we go watch a movie?",
+      "parentKanji": "日",
+      "source": "part1"
+    },
+    {
+      "japanese": "毎月テストがあります。",
+      "english": "There's a test every month.",
+      "parentKanji": "月",
+      "source": "part1"
+    },
+    {
+      "japanese": "来月京都へ旅行に行きます。",
+      "english": "Next month I'll travel to Kyoto.",
+      "parentKanji": "月",
+      "source": "part1"
+    },
+    {
+      "japanese": "ガスの火を止めてください。",
+      "english": "Please turn off the gas flame.",
+      "parentKanji": "火",
+      "source": "part1"
+    },
+    {
+      "japanese": "水曜日にともだちと海へドライブにいきます。",
+      "english": "On Wednesday I'll drive to the sea with friends.",
+      "parentKanji": "水",
+      "source": "part1"
+    },
+    {
+      "japanese": "毎日水をたくさん飲みます。",
+      "english": "I drink a lot of water every day.",
+      "parentKanji": "水",
+      "source": "part1"
+    },
+    {
+      "japanese": "毎週木曜日に会議があります。",
+      "english": "We have a meeting every Thursday.",
+      "parentKanji": "木",
+      "source": "part1"
+    },
+    {
+      "japanese": "この木はとても大きいです。",
+      "english": "This tree is very big.",
+      "parentKanji": "木",
+      "source": "part1"
+    },
+    {
+      "japanese": "金曜日に息子の誕生日パーティがあります。",
+      "english": "On Friday there's my son's birthday party.",
+      "parentKanji": "金",
+      "source": "part1"
+    },
+    {
+      "japanese": "お金がたくさんほしいです。",
+      "english": "I want a lot of money.",
+      "parentKanji": "金",
+      "source": "part1"
+    },
+    {
+      "japanese": "何曜日ですか。 — 土曜日です。",
+      "english": "What day is it? — It's Saturday.",
+      "parentKanji": "何",
+      "source": "part1"
+    },
+    {
+      "japanese": "何時ですか。 — 10時です。",
+      "english": "What time is it? — It's 10:00.",
+      "parentKanji": "何",
+      "source": "part1"
+    },
+    {
+      "japanese": "お子さんは何さいですか。",
+      "english": "How old is your child?",
+      "parentKanji": "何",
+      "source": "part1"
+    },
+    {
+      "japanese": "きょ年にほんへきました。",
+      "english": "I came to Japan last year.",
+      "parentKanji": "年",
+      "source": "part1"
+    },
+    {
+      "japanese": "にほんの生かつはどうですか。",
+      "english": "How is life in Japan?",
+      "parentKanji": "生",
+      "source": "part1"
+    },
+    {
+      "japanese": "TCJはにほんごの学校です。",
+      "english": "TCJ is a Japanese-language school.",
+      "parentKanji": "学",
+      "source": "part1"
+    },
+    {
+      "japanese": "ぞうは耳が大きいです。",
+      "english": "Elephants have big ears.",
+      "parentKanji": "耳",
+      "source": "part1"
+    },
+    {
+      "japanese": "手つだいましょうか。",
+      "english": "Shall I help you?",
+      "parentKanji": "手",
+      "source": "part1"
+    },
+    {
+      "japanese": "足音がうるさいです。",
+      "english": "The footsteps are noisy.",
+      "parentKanji": "足",
+      "source": "part1"
+    },
+    {
+      "japanese": "会社へ行きます。",
+      "english": "I go to the company.",
+      "parentKanji": "行",
+      "source": "part1"
+    },
+    {
+      "japanese": "明日試験を行います。",
+      "english": "We'll hold an exam tomorrow.",
+      "parentKanji": "行",
+      "source": "part1"
+    },
+    {
+      "japanese": "来月京都へ旅行に行きます。",
+      "english": "Next month I'll travel to Kyoto.",
+      "parentKanji": "来",
+      "source": "part1"
+    },
+    {
+      "japanese": "自転車で学校へ行きます。",
+      "english": "I go to school by bicycle.",
+      "parentKanji": "車",
+      "source": "part1"
+    },
+    {
+      "japanese": "もう一度言ってください。",
+      "english": "Please say it again.",
+      "parentKanji": "言",
+      "source": "part1"
+    },
+    {
+      "japanese": "部長の話はおもしろくないです。",
+      "english": "The manager's story is not interesting.",
+      "parentKanji": "話",
+      "source": "part1"
+    },
+    {
+      "japanese": "本を読みます。",
+      "english": "I read a book.",
+      "parentKanji": "読",
+      "source": "part1"
+    },
+    {
+      "japanese": "わたしは日本語を勉強しています。",
+      "english": "I am studying Japanese.",
+      "parentKanji": "語",
+      "source": "part1"
+    },
+    {
+      "japanese": "あなたは何語を話しますか。",
+      "english": "What language do you speak?",
+      "parentKanji": "語",
+      "source": "part1"
+    },
+    {
+      "japanese": "わたしは本を読みます。",
+      "english": "I read a book.",
+      "parentKanji": "本",
+      "source": "part1"
+    },
+    {
+      "japanese": "映画を見ます。",
+      "english": "I watch a movie.",
+      "parentKanji": "見",
+      "source": "part1"
+    },
+    {
+      "japanese": "パスポートを見せます。",
+      "english": "I show my passport.",
+      "parentKanji": "見",
+      "source": "part1"
+    },
+    {
+      "japanese": "新聞を読みます。",
+      "english": "I read the newspaper.",
+      "parentKanji": "聞",
+      "source": "part1"
+    },
+    {
+      "japanese": "音楽を聞きます。",
+      "english": "I listen to music.",
+      "parentKanji": "聞",
+      "source": "part1"
+    },
+    {
+      "japanese": "ご飯を食べます。",
+      "english": "I eat rice/meal.",
+      "parentKanji": "食",
+      "source": "part1"
+    },
+    {
+      "japanese": "きょう新宿の飲み屋へ行きます。",
+      "english": "Today I'm going to a bar in Shinjuku.",
+      "parentKanji": "飲",
+      "source": "part1"
+    },
+    {
+      "japanese": "ちちは外国にいます。",
+      "english": "My father is abroad.",
+      "parentKanji": "外",
+      "source": "part1"
+    },
+    {
+      "japanese": "外に行きます。",
+      "english": "I'll go outside.",
+      "parentKanji": "外",
+      "source": "part1"
+    },
+    {
+      "japanese": "お国はどちらですか。",
+      "english": "What country are you from?",
+      "parentKanji": "国",
+      "source": "part1"
+    },
+    {
+      "japanese": "来週国へ帰ります。",
+      "english": "Next week I'll return to my country.",
+      "parentKanji": "国",
+      "source": "part1"
+    },
+    {
+      "japanese": "部屋に入ります。",
+      "english": "I enter the room.",
+      "parentKanji": "入",
+      "source": "part1"
+    },
+    {
+      "japanese": "しおを入れます。",
+      "english": "I add salt.",
+      "parentKanji": "入",
+      "source": "part1"
+    },
+    {
+      "japanese": "部屋を出ます。",
+      "english": "I leave the room.",
+      "parentKanji": "出",
+      "source": "part1"
+    },
+    {
+      "japanese": "手紙を出します。",
+      "english": "I send a letter.",
+      "parentKanji": "出",
+      "source": "part1"
+    },
+    {
+      "japanese": "みずが出ます。",
+      "english": "Water comes out.",
+      "parentKanji": "出",
+      "source": "part1"
+    },
+    {
+      "japanese": "クラスの後で、ともだちとランチします。",
+      "english": "After class, I have lunch with my friend.",
+      "parentKanji": "後",
+      "source": "part1"
+    },
+    {
+      "japanese": "いただきます。ごちそうさまでした。",
+      "english": "(meal phrases)",
+      "parentKanji": "後",
+      "source": "part1"
+    },
+    {
+      "japanese": "私の前後は、女の人です。",
+      "english": "The people in front of and behind me are women.",
+      "parentKanji": "後",
+      "source": "part1"
+    },
+    {
+      "japanese": "左の人はちちです。",
+      "english": "The person on the left is my father.",
+      "parentKanji": "左",
+      "source": "part1"
+    },
+    {
+      "japanese": "お名前を教えてください。",
+      "english": "Please tell me your name.",
+      "parentKanji": "名",
+      "source": "part1"
+    },
+    {
+      "japanese": "清水寺は有名なお寺です。",
+      "english": "Kiyomizu Temple is a famous temple.",
+      "parentKanji": "名",
+      "source": "part1"
+    },
+    {
+      "japanese": "毎日犬の散歩をします。",
+      "english": "I walk the dog every day.",
+      "parentKanji": "毎",
+      "source": "part1"
+    },
+    {
+      "japanese": "お先にどうぞ。",
+      "english": "Please go ahead.",
+      "parentKanji": "先",
+      "source": "part1"
+    },
+    {
+      "japanese": "お先に失礼します。",
+      "english": "Excuse me for leaving first.",
+      "parentKanji": "先",
+      "source": "part1"
+    },
+    {
+      "japanese": "毎週日曜日は、ジムで運動します。",
+      "english": "Every Sunday I exercise at the gym.",
+      "parentKanji": "週",
+      "source": "part1"
+    },
+    {
+      "japanese": "私は子どもの時、野菜が苦手でした。",
+      "english": "When I was a child, I didn't like vegetables.",
+      "parentKanji": "時",
+      "source": "part1"
+    },
+    {
+      "japanese": "1週間後に、JLPTの試験があります。",
+      "english": "In one week, there's the JLPT exam.",
+      "parentKanji": "間",
+      "source": "part1"
+    },
+    {
+      "japanese": "コンビニとレストランの間に交番があります。",
+      "english": "There's a police box between the convenience store and the restaurant.",
+      "parentKanji": "間",
+      "source": "part1"
+    },
+    {
+      "japanese": "この間、駅で田中さんに会いました。",
+      "english": "The other day I met Mr. Tanaka at the station.",
+      "parentKanji": "間",
+      "source": "part1"
+    },
+    {
+      "japanese": "今日は、たろうくんの10歳の誕生日です。",
+      "english": "Today is Taro's 10th birthday.",
+      "parentKanji": "今",
+      "source": "part1"
+    },
+    {
+      "japanese": "今週の金曜日に、漢字テストをします。",
+      "english": "This Friday we have a kanji test.",
+      "parentKanji": "今",
+      "source": "part1"
+    },
+    {
+      "japanese": "今から、社長が来ます。",
+      "english": "The company president is coming now.",
+      "parentKanji": "今",
+      "source": "part1"
+    },
+    {
+      "japanese": "今週はとてもいそがしいです。",
+      "english": "This week is very busy.",
+      "parentKanji": "今",
+      "source": "part1"
+    },
+    {
+      "japanese": "半分に分けます。",
+      "english": "Divide in half.",
+      "parentKanji": "分",
+      "source": "part1"
+    },
+    {
+      "japanese": "日本では、プラスチックと生ごみを分けます。",
+      "english": "In Japan, we separate plastics and food waste.",
+      "parentKanji": "分",
+      "source": "part1"
+    },
+    {
+      "japanese": "友だちとパンを半分こして食べました。",
+      "english": "I split the bread in half with my friend and ate it.",
+      "parentKanji": "半",
+      "source": "part1"
+    },
+    {
+      "japanese": "よる8時半から11時半までべんきょうします。",
+      "english": "I study from 8:30 to 11:30 PM.",
+      "parentKanji": "半",
+      "source": "part1"
+    },
+    {
+      "japanese": "明日の会議の資料、午前中にお願いします。 — はい、わかりました。",
+      "english": "The documents for tomorrow's meeting, please by morning. — Yes, understood.",
+      "parentKanji": "午",
+      "source": "part1"
+    },
+    {
+      "japanese": "父の日に、お父さんに花をあげました。",
+      "english": "On Father's Day, I gave flowers to my father.",
+      "parentKanji": "父",
+      "source": "part1"
+    },
+    {
+      "japanese": "母の日に、お母さんに花をあげました。",
+      "english": "On Mother's Day, I gave flowers to my mother.",
+      "parentKanji": "母",
+      "source": "part1"
+    },
+    {
+      "japanese": "男の子と女の子の双子です。",
+      "english": "Twins — a boy and a girl.",
+      "parentKanji": "子",
+      "source": "part1"
+    },
+    {
+      "japanese": "公園に女の子が2人います。",
+      "english": "There are 2 girls in the park.",
+      "parentKanji": "女",
+      "source": "part1"
+    },
+    {
+      "japanese": "子どものとき、父と母の間でねました。",
+      "english": "As a child, I slept between my father and mother.",
+      "parentKanji": "女",
+      "source": "part1"
+    },
+    {
+      "japanese": "ノイさんのお母さんはどんなかたですか。",
+      "english": "What kind of person is Noi's mother?",
+      "parentKanji": "女",
+      "source": "part1"
+    },
+    {
+      "japanese": "あの男性はどなたですか。 — ノイさんのお父さんですよ。",
+      "english": "Who is that man? — It's Noi's father.",
+      "parentKanji": "女",
+      "source": "part1"
+    },
+    {
+      "japanese": "日本へ来るとき、父に辞書をもらいました。",
+      "english": "When I came to Japan, my father gave me a dictionary.",
+      "parentKanji": "女",
+      "source": "part1"
+    },
+    {
+      "japanese": "母の日にカーネーションとブラウスをあげました。",
+      "english": "On Mother's Day, I gave carnations and a blouse.",
+      "parentKanji": "女",
+      "source": "part1"
+    },
+    {
+      "japanese": "おなかの中のあかちゃんは男の子ですか。女の子ですか。",
+      "english": "Is the baby in the tummy a boy or a girl?",
+      "parentKanji": "女",
+      "source": "part1"
+    },
+    {
+      "japanese": "毎週水曜日、女性は1,000円でえいがを見ることができます。",
+      "english": "Every Wednesday, women can watch movies for 1,000 yen.",
+      "parentKanji": "女",
+      "source": "part1"
+    },
+    {
+      "japanese": "小学校では男子より女子のほうがよくしゃべります。",
+      "english": "In elementary school, girls talk more than boys.",
+      "parentKanji": "女",
+      "source": "part1"
+    },
+    {
+      "japanese": "祖父と祖母はもう92さいと90さいですが、自分たちでそうじしたり、買い物に行ったりしています。",
+      "english": "Grandfather and grandmother are already 92 and 90, but they clean and go shopping by themselves.",
+      "parentKanji": "女",
+      "source": "part1"
+    },
+    {
+      "japanese": "東京駅で東海道線にのりかえます。",
+      "english": "I transfer to the Tokaido Line at Tokyo Station.",
+      "parentKanji": "東",
+      "source": "part1"
+    },
+    {
+      "japanese": "太陽は東からのぼって、西にしずみます。",
+      "english": "The sun rises in the east and sets in the west.",
+      "parentKanji": "西",
+      "source": "part1"
+    },
+    {
+      "japanese": "夏休みに北海道へ行きました。",
+      "english": "I went to Hokkaido during summer vacation.",
+      "parentKanji": "北",
+      "source": "part1"
+    },
+    {
+      "japanese": "辞書で調べて漢字を書きます。",
+      "english": "I look it up in the dictionary and write the kanji.",
+      "parentKanji": "書",
+      "source": "part1"
+    },
+    {
+      "japanese": "どうぞ、使ってください。",
+      "english": "Please use it.",
+      "parentKanji": "使",
+      "source": "part1"
+    },
+    {
+      "japanese": "犬の散歩",
+      "english": "walking the dog",
+      "parentKanji": "歩",
+      "source": "part1"
+    },
+    {
+      "japanese": "毎朝歩いて会社へ行きます。",
+      "english": "I walk to the office every morning.",
+      "parentKanji": "歩",
+      "source": "part1"
+    },
+    {
+      "japanese": "ケーキを作ります。",
+      "english": "I make a cake.",
+      "parentKanji": "作",
+      "source": "part1"
+    },
+    {
+      "japanese": "趣味は曲を作ることです。",
+      "english": "My hobby is composing music.",
+      "parentKanji": "作",
+      "source": "part1"
+    },
+    {
+      "japanese": "国立大学を卒業しました。",
+      "english": "I graduated from a national university.",
+      "parentKanji": "立",
+      "source": "part1"
+    },
+    {
+      "japanese": "友だちと旅行の計画を立てます。",
+      "english": "I'll make a travel plan with my friend.",
+      "parentKanji": "立",
+      "source": "part1"
+    },
+    {
+      "japanese": "長い文章を読みます。",
+      "english": "I read a long passage.",
+      "parentKanji": "文",
+      "source": "part1"
+    }
+  ],
+  "part1Extras": [
+    {
+      "japanese": "大きい人がいます。",
+      "english": "There is a big person.",
+      "parentKanji": "円",
+      "sectionTitle": "Review warm-up sentences (from lesson 6)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "小さい人がいます。",
+      "english": "There is a small person.",
+      "parentKanji": "円",
+      "sectionTitle": "Review warm-up sentences (from lesson 6)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "おじいさんは山へいきました。",
+      "english": "The old man went to the mountain.",
+      "parentKanji": "円",
+      "sectionTitle": "Review warm-up sentences (from lesson 6)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "おばあさんは川へいきました。",
+      "english": "The old woman went to the river.",
+      "parentKanji": "円",
+      "sectionTitle": "Review warm-up sentences (from lesson 6)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "母に手紙を書きました。",
+      "english": "I wrote a letter to my mother.",
+      "parentKanji": "足",
+      "sectionTitle": "Review practice (pp.212)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "アルは目が大きいです。",
+      "english": "Al has big eyes.",
+      "parentKanji": "足",
+      "sectionTitle": "Review practice (pp.212)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "耳がいたいですから、耳鼻科へ行きます。",
+      "english": "My ear hurts, so I'll go to the ENT clinic.",
+      "parentKanji": "足",
+      "sectionTitle": "Review practice (pp.212)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "去年山で右足のほねをおりました。",
+      "english": "Last year I broke the bone in my right leg in the mountains.",
+      "parentKanji": "足",
+      "sectionTitle": "Review practice (pp.212)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "ビルの入口で友だちと会いました。",
+      "english": "I met my friend at the entrance of the building.",
+      "parentKanji": "足",
+      "sectionTitle": "Review practice (pp.212)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "おっとはピアノが上手です。でも、わたしは下手です。",
+      "english": "My husband is good at piano. But I'm bad at it.",
+      "parentKanji": "足",
+      "sectionTitle": "Review practice (pp.212)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "日本の人口は１おく2500万人ぐらいです。",
+      "english": "Japan's population is about 125,000,000.",
+      "parentKanji": "足",
+      "sectionTitle": "Review practice (pp.212)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "駅の改札口を出て、タクシーにのります。",
+      "english": "I exit the ticket gate and take a taxi.",
+      "parentKanji": "足",
+      "sectionTitle": "Review practice (pp.212)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "大切な人の名前をわすれないでください。",
+      "english": "Don't forget the name of important people.",
+      "parentKanji": "名",
+      "sectionTitle": "Review practice (p.223)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "食前のくすりを飲んでから、ごはんを食べてください。",
+      "english": "Take the pre-meal medicine before eating.",
+      "parentKanji": "名",
+      "sectionTitle": "Review practice (p.223)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "何か食後のデザートを食べない？ — じゃあ、アイスクリーム。",
+      "english": "Shall we eat dessert after the meal? — Then, ice cream.",
+      "parentKanji": "名",
+      "sectionTitle": "Review practice (p.223)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "デパートの前に有名なレストランがあります。",
+      "english": "There's a famous restaurant in front of the department store.",
+      "parentKanji": "名",
+      "sectionTitle": "Review practice (p.223)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "右手を前に出して、左足を後ろにのばしてください。",
+      "english": "Put your right hand forward and stretch your left leg back.",
+      "parentKanji": "名",
+      "sectionTitle": "Review practice (p.223)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "あたまを前後にまげてください。",
+      "english": "Bend your head forward and backward.",
+      "parentKanji": "名",
+      "sectionTitle": "Review practice (p.223)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "大木くんは右から2人目の人です。",
+      "english": "Oki-kun is the 2nd person from the right.",
+      "parentKanji": "名",
+      "sectionTitle": "Positioning people (p.223 problem 5)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "前のいすにすわっています。",
+      "english": "He is sitting on the front chair.",
+      "parentKanji": "名",
+      "sectionTitle": "Positioning people (p.223 problem 5)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "本田くんはいちばん左の人です。",
+      "english": "Honda-kun is the leftmost person.",
+      "parentKanji": "名",
+      "sectionTitle": "Positioning people (p.223 problem 5)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "川口さんは本田くんの後ろです。",
+      "english": "Ms. Kawaguchi is behind Honda-kun.",
+      "parentKanji": "名",
+      "sectionTitle": "Positioning people (p.223 problem 5)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "金田さんは川口さんのとなりです。",
+      "english": "Ms. Kaneda is next to Kawaguchi-san.",
+      "parentKanji": "名",
+      "sectionTitle": "Positioning people (p.223 problem 5)",
+      "source": "part1_extras"
+    },
+    {
+      "japanese": "前川くんはいちばん後ろにいます。",
+      "english": "Maekawa-kun is at the very back.",
+      "parentKanji": "名",
+      "sectionTitle": "Positioning people (p.223 problem 5)",
+      "source": "part1_extras"
+    }
+  ],
+  "part3": [
+    {
+      "topic": "Self / People",
+      "sentences": [
+        "ホセさんはメキシコ人です。",
+        "日本の人口は１おく2500万人ぐらいです。",
+        "八歳の息子と七歳の娘がいます。"
+      ]
+    },
+    {
+      "topic": "Places & direction",
+      "sentences": [
+        "テーブルの上に本があります。",
+        "子どもは部屋の中で遊んでいます。",
+        "コンビニとレストランの間に交番があります。",
+        "ちちは外国にいます。",
+        "駅の改札口を出て、タクシーにのります。"
+      ]
+    },
+    {
+      "topic": "Daily activities",
+      "sentences": [
+        "毎日水をたくさん飲みます。",
+        "毎朝歩いて会社へ行きます。",
+        "自転車で学校へ行きます。",
+        "本を読みます。",
+        "映画を見ます。",
+        "音楽を聞きます。",
+        "新聞を読みます。",
+        "ご飯を食べます。",
+        "ケーキを作ります。"
+      ]
+    },
+    {
+      "topic": "Time-related",
+      "sentences": [
+        "今週の金曜日に、漢字テストをします。",
+        "来月京都へ旅行に行きます。",
+        "1週間後に、JLPTの試験があります。",
+        "よる8時半から11時半までべんきょうします。",
+        "今から、社長が来ます。"
+      ]
+    },
+    {
+      "topic": "Family events",
+      "sentences": [
+        "父の日に、お父さんに花をあげました。",
+        "母の日に、お母さんに花をあげました。",
+        "金曜日に息子の誕生日パーティがあります。",
+        "今日は、たろうくんの10歳の誕生日です。"
+      ]
+    },
+    {
+      "topic": "Travel",
+      "sentences": [
+        "来月京都へ旅行に行きます。",
+        "夏休みに北海道へ行きました。",
+        "東京駅で東海道線にのりかえます。",
+        "水曜日にともだちと海へドライブにいきます。"
+      ]
+    },
+    {
+      "topic": "Polite phrases",
+      "sentences": [
+        "お先にどうぞ。",
+        "お先に失礼します。",
+        "もう一度言ってください。",
+        "お名前を教えてください。",
+        "手つだいましょうか。",
+        "どうぞ、使ってください。",
+        "いただきます。",
+        "ごちそうさまでした。"
+      ]
+    }
+  ]
+}

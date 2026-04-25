@@ -44,6 +44,14 @@ export function Header() {
           description: "N5 Kanji practice"
         },
         {
+          name: "Extended Kanji",
+          href: "/study/extended-kanji",
+          icon: Languages,
+          badge: "83",
+          badgeVariant: "default" as const,
+          description: "Teacher 36-lesson reference (Feb–Apr 2026)"
+        },
+        {
           name: "Vocabulary",
           href: "/vocabulary",
           icon: Library,

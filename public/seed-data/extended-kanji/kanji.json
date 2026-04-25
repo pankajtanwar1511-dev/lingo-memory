@@ -1,0 +1,5067 @@
+{
+  "metadata": {
+    "source": "KANJI_REFERENCE.md",
+    "generatedAt": "2026-04-24T12:36:42.494597+00:00",
+    "lessonsCount": 37,
+    "kanjiCount": 86,
+    "vocabularyCount": 378,
+    "sentencesPart1": 111,
+    "sentencesPart1Extras": 24,
+    "sentencesPart3Groups": 7,
+    "sentencesTotal": 173,
+    "answerKeyPages": 9,
+    "prerequisiteKanji": 124
+  },
+  "kanji": [
+    {
+      "id": "ext_kanji_大",
+      "kanji": "大",
+      "meaning": "big",
+      "kunReadings": [
+        "おお (きい)"
+      ],
+      "onReadings": [
+        "ダイ",
+        "タイ"
+      ],
+      "vocabulary": [
+        {
+          "word": "大きい",
+          "reading": "おおきい",
+          "meaning": "big"
+        },
+        {
+          "word": "大好き（な）",
+          "reading": "だいすき",
+          "meaning": "favorite / like very much"
+        },
+        {
+          "word": "大変（な）",
+          "reading": "たいへん",
+          "meaning": "tough / very"
+        },
+        {
+          "word": "大学",
+          "reading": "だいがく",
+          "meaning": "college, university"
+        },
+        {
+          "word": "大学生",
+          "reading": "だいがくせい",
+          "meaning": "college student"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "この家は大きいです。",
+          "english": "This house is big."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 1,
+      "bundledWith": null,
+      "lessonNumber": 1,
+      "lessonDate": "2026-02-17",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_小",
+      "kanji": "小",
+      "meaning": "small",
+      "kunReadings": [
+        "ちい (さい)",
+        "こ",
+        "お"
+      ],
+      "onReadings": [
+        "ショウ"
+      ],
+      "vocabulary": [
+        {
+          "word": "小さい",
+          "reading": "ちいさい",
+          "meaning": "small"
+        },
+        {
+          "word": "小学校",
+          "reading": "しょうがっこう",
+          "meaning": "elementary school"
+        },
+        {
+          "word": "小学生",
+          "reading": "しょうがくせい",
+          "meaning": "elementary school student"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "この家は小さいです。",
+          "english": "This house is small."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 2,
+      "bundledWith": null,
+      "lessonNumber": 1,
+      "lessonDate": "2026-02-17",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_人",
+      "kanji": "人",
+      "meaning": "person",
+      "kunReadings": [
+        "ひと",
+        "びと"
+      ],
+      "onReadings": [
+        "ジン",
+        "ニン"
+      ],
+      "vocabulary": [
+        {
+          "word": "人",
+          "reading": "ひと",
+          "meaning": "person"
+        },
+        {
+          "word": "日本人",
+          "reading": "にほんじん",
+          "meaning": "Japanese person"
+        },
+        {
+          "word": "三人",
+          "reading": "さんにん",
+          "meaning": "three people"
+        },
+        {
+          "word": "女の人",
+          "reading": "おんなのひと",
+          "meaning": "woman"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "ホセさんはメキシコ人です。",
+          "english": "Mr. Jose is Mexican."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 3,
+      "bundledWith": null,
+      "lessonNumber": 1,
+      "lessonDate": "2026-02-17",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_山",
+      "kanji": "山",
+      "meaning": "mountain",
+      "kunReadings": [
+        "やま"
+      ],
+      "onReadings": [
+        "サン"
+      ],
+      "vocabulary": [
+        {
+          "word": "山",
+          "reading": "やま",
+          "meaning": "mountain"
+        },
+        {
+          "word": "富士山",
+          "reading": "ふじさん",
+          "meaning": "Mt. Fuji"
+        },
+        {
+          "word": "山口県",
+          "reading": "やまぐちけん",
+          "meaning": "Yamaguchi Prefecture"
+        },
+        {
+          "word": "山形県",
+          "reading": "やまがたけん",
+          "meaning": "Yamagata Prefecture"
+        },
+        {
+          "word": "山田さん",
+          "reading": "やまださん",
+          "meaning": "Mr./Ms. Yamada"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 4,
+      "bundledWith": null,
+      "lessonNumber": 2,
+      "lessonDate": "2026-02-18",
+      "textbookPage": 200,
+      "lessonSource": "もじ4, p.200"
+    },
+    {
+      "id": "ext_kanji_川",
+      "kanji": "川",
+      "meaning": "river",
+      "kunReadings": [
+        "かわ",
+        "がわ"
+      ],
+      "onReadings": [
+        "セン"
+      ],
+      "vocabulary": [
+        {
+          "word": "川",
+          "reading": "かわ",
+          "meaning": "river"
+        },
+        {
+          "word": "アマゾン川",
+          "reading": "アマゾンがわ",
+          "meaning": "Amazon river"
+        },
+        {
+          "word": "河川",
+          "reading": "かせん",
+          "meaning": "rivers (formal)"
+        },
+        {
+          "word": "ナイル川",
+          "reading": "ナイルがわ",
+          "meaning": "Nile river"
+        },
+        {
+          "word": "小川さん",
+          "reading": "おがわさん",
+          "meaning": "Mr./Ms. Ogawa"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 5,
+      "bundledWith": null,
+      "lessonNumber": 2,
+      "lessonDate": "2026-02-18",
+      "textbookPage": 200,
+      "lessonSource": "もじ4, p.200"
+    },
+    {
+      "id": "ext_kanji_田",
+      "kanji": "田",
+      "meaning": "rice field",
+      "kunReadings": [
+        "た",
+        "だ"
+      ],
+      "onReadings": [
+        "デン"
+      ],
+      "vocabulary": [
+        {
+          "word": "田んぼ",
+          "reading": "たんぼ",
+          "meaning": "rice field"
+        },
+        {
+          "word": "田中さん",
+          "reading": "たなかさん",
+          "meaning": "Mr./Ms. Tanaka"
+        },
+        {
+          "word": "山田さん",
+          "reading": "やまださん",
+          "meaning": "Mr./Ms. Yamada"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 6,
+      "bundledWith": null,
+      "lessonNumber": 2,
+      "lessonDate": "2026-02-18",
+      "textbookPage": 200,
+      "lessonSource": "もじ4, p.200"
+    },
+    {
+      "id": "ext_kanji_一",
+      "kanji": "一",
+      "meaning": "one",
+      "kunReadings": [
+        "ひと (つ)"
+      ],
+      "onReadings": [
+        "イチ",
+        "イッ"
+      ],
+      "vocabulary": [
+        {
+          "word": "一時",
+          "reading": "いちじ",
+          "meaning": "1 o'clock"
+        },
+        {
+          "word": "二時",
+          "reading": "にじ",
+          "meaning": "2 o'clock"
+        },
+        {
+          "word": "三時",
+          "reading": "さんじ",
+          "meaning": "3 o'clock"
+        },
+        {
+          "word": "三人",
+          "reading": "さんにん",
+          "meaning": "three people"
+        },
+        {
+          "word": "三人家族",
+          "reading": "さんにんかぞく",
+          "meaning": "family of three"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 7,
+      "bundledWith": [
+        "二",
+        "三"
+      ],
+      "lessonNumber": null,
+      "lessonDate": null,
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_二",
+      "kanji": "二",
+      "meaning": "two",
+      "kunReadings": [
+        "ふた (つ)"
+      ],
+      "onReadings": [
+        "ニ"
+      ],
+      "vocabulary": [
+        {
+          "word": "一時",
+          "reading": "いちじ",
+          "meaning": "1 o'clock"
+        },
+        {
+          "word": "二時",
+          "reading": "にじ",
+          "meaning": "2 o'clock"
+        },
+        {
+          "word": "三時",
+          "reading": "さんじ",
+          "meaning": "3 o'clock"
+        },
+        {
+          "word": "三人",
+          "reading": "さんにん",
+          "meaning": "three people"
+        },
+        {
+          "word": "三人家族",
+          "reading": "さんにんかぞく",
+          "meaning": "family of three"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 8,
+      "bundledWith": [
+        "一",
+        "三"
+      ],
+      "lessonNumber": null,
+      "lessonDate": null,
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_三",
+      "kanji": "三",
+      "meaning": "three",
+      "kunReadings": [
+        "み (っつ)"
+      ],
+      "onReadings": [
+        "サン"
+      ],
+      "vocabulary": [
+        {
+          "word": "一時",
+          "reading": "いちじ",
+          "meaning": "1 o'clock"
+        },
+        {
+          "word": "二時",
+          "reading": "にじ",
+          "meaning": "2 o'clock"
+        },
+        {
+          "word": "三時",
+          "reading": "さんじ",
+          "meaning": "3 o'clock"
+        },
+        {
+          "word": "三人",
+          "reading": "さんにん",
+          "meaning": "three people"
+        },
+        {
+          "word": "三人家族",
+          "reading": "さんにんかぞく",
+          "meaning": "family of three"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 9,
+      "bundledWith": [
+        "一",
+        "二"
+      ],
+      "lessonNumber": null,
+      "lessonDate": null,
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_四",
+      "kanji": "四",
+      "meaning": "four",
+      "kunReadings": [
+        "よん",
+        "よっ",
+        "よ"
+      ],
+      "onReadings": [
+        "シ"
+      ],
+      "vocabulary": [
+        {
+          "word": "四月",
+          "reading": "しがつ",
+          "meaning": "April"
+        },
+        {
+          "word": "四日",
+          "reading": "よっか",
+          "meaning": "the 4th"
+        },
+        {
+          "word": "四時",
+          "reading": "よじ",
+          "meaning": "4 o'clock"
+        },
+        {
+          "word": "四歳",
+          "reading": "よんさい",
+          "meaning": "four years old"
+        },
+        {
+          "word": "四人",
+          "reading": "よにん",
+          "meaning": "four people"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 10,
+      "bundledWith": null,
+      "lessonNumber": 3,
+      "lessonDate": "2026-02-20",
+      "textbookPage": 201,
+      "lessonSource": "もじ5, p.201"
+    },
+    {
+      "id": "ext_kanji_五",
+      "kanji": "五",
+      "meaning": "five",
+      "kunReadings": [
+        "いつ"
+      ],
+      "onReadings": [
+        "ゴ"
+      ],
+      "vocabulary": [
+        {
+          "word": "五月",
+          "reading": "ごがつ",
+          "meaning": "May"
+        },
+        {
+          "word": "五日",
+          "reading": "いつか",
+          "meaning": "the 5th"
+        },
+        {
+          "word": "五時",
+          "reading": "ごじ",
+          "meaning": "5 o'clock"
+        },
+        {
+          "word": "五歳",
+          "reading": "ごさい",
+          "meaning": "five years old"
+        },
+        {
+          "word": "五人",
+          "reading": "ごにん",
+          "meaning": "five people"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 11,
+      "bundledWith": null,
+      "lessonNumber": 3,
+      "lessonDate": "2026-02-20",
+      "textbookPage": 201,
+      "lessonSource": "もじ5, p.201"
+    },
+    {
+      "id": "ext_kanji_六",
+      "kanji": "六",
+      "meaning": "six",
+      "kunReadings": [
+        "むっ",
+        "むい",
+        "む"
+      ],
+      "onReadings": [
+        "ロク",
+        "ロッ"
+      ],
+      "vocabulary": [
+        {
+          "word": "六月",
+          "reading": "ろくがつ",
+          "meaning": "June"
+        },
+        {
+          "word": "六日",
+          "reading": "むいか",
+          "meaning": "the 6th"
+        },
+        {
+          "word": "六時",
+          "reading": "ろくじ",
+          "meaning": "6 o'clock"
+        },
+        {
+          "word": "六歳",
+          "reading": "ろくさい",
+          "meaning": "six years old"
+        },
+        {
+          "word": "六人",
+          "reading": "ろくにん",
+          "meaning": "six people"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 12,
+      "bundledWith": null,
+      "lessonNumber": 3,
+      "lessonDate": "2026-02-20",
+      "textbookPage": 201,
+      "lessonSource": "もじ5, p.201"
+    },
+    {
+      "id": "ext_kanji_七",
+      "kanji": "七",
+      "meaning": "seven",
+      "kunReadings": [
+        "なな (つ)",
+        "なな"
+      ],
+      "onReadings": [
+        "シチ"
+      ],
+      "vocabulary": [
+        {
+          "word": "七",
+          "reading": "なな",
+          "meaning": "seven"
+        },
+        {
+          "word": "七人",
+          "reading": "しちにん / ななにん",
+          "meaning": "seven people"
+        },
+        {
+          "word": "七時",
+          "reading": "しちじ",
+          "meaning": "7 o'clock"
+        },
+        {
+          "word": "七歳",
+          "reading": "ななさい",
+          "meaning": "seven years old"
+        },
+        {
+          "word": "七月",
+          "reading": "しちがつ",
+          "meaning": "July"
+        },
+        {
+          "word": "七日",
+          "reading": "なのか",
+          "meaning": "the 7th"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "七五三のとき、写真を撮りました。",
+          "english": "At the Shichi-Go-San festival, I took photos."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 13,
+      "bundledWith": null,
+      "lessonNumber": 4,
+      "lessonDate": "2026-02-24",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_八",
+      "kanji": "八",
+      "meaning": "eight",
+      "kunReadings": [
+        "やっ (つ)"
+      ],
+      "onReadings": [
+        "ハチ",
+        "ハッ"
+      ],
+      "vocabulary": [
+        {
+          "word": "八",
+          "reading": "はち",
+          "meaning": "eight"
+        },
+        {
+          "word": "八人",
+          "reading": "はちにん",
+          "meaning": "eight people"
+        },
+        {
+          "word": "八時",
+          "reading": "はちじ",
+          "meaning": "8 o'clock"
+        },
+        {
+          "word": "八歳",
+          "reading": "はっさい",
+          "meaning": "eight years old"
+        },
+        {
+          "word": "八月",
+          "reading": "はちがつ",
+          "meaning": "August"
+        },
+        {
+          "word": "八日",
+          "reading": "ようか",
+          "meaning": "the 8th"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "八歳の息子と七歳の娘がいます。",
+          "english": "I have an 8-year-old son and a 7-year-old daughter."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 14,
+      "bundledWith": null,
+      "lessonNumber": 4,
+      "lessonDate": "2026-02-24",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_九",
+      "kanji": "九",
+      "meaning": "nine",
+      "kunReadings": [
+        "ここの (つ)"
+      ],
+      "onReadings": [
+        "キュウ",
+        "ク"
+      ],
+      "vocabulary": [
+        {
+          "word": "九",
+          "reading": "きゅう",
+          "meaning": "nine"
+        },
+        {
+          "word": "九人",
+          "reading": "きゅうにん",
+          "meaning": "nine people"
+        },
+        {
+          "word": "九時",
+          "reading": "くじ",
+          "meaning": "9 o'clock"
+        },
+        {
+          "word": "九歳",
+          "reading": "きゅうさい",
+          "meaning": "nine years old"
+        },
+        {
+          "word": "九月",
+          "reading": "くがつ",
+          "meaning": "September"
+        },
+        {
+          "word": "九日",
+          "reading": "ここのか",
+          "meaning": "the 9th"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "ジョンさんは二十九センチのくつを買いました。",
+          "english": "John bought 29 cm shoes."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 15,
+      "bundledWith": null,
+      "lessonNumber": 4,
+      "lessonDate": "2026-02-24",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_十",
+      "kanji": "十",
+      "meaning": "ten",
+      "kunReadings": [
+        "とお"
+      ],
+      "onReadings": [
+        "ジュウ",
+        "ジュッ",
+        "ジッ"
+      ],
+      "vocabulary": [
+        {
+          "word": "十歳",
+          "reading": "じゅっさい",
+          "meaning": "ten years old"
+        },
+        {
+          "word": "十時",
+          "reading": "じゅうじ",
+          "meaning": "10 o'clock"
+        },
+        {
+          "word": "十月",
+          "reading": "じゅうがつ",
+          "meaning": "October"
+        },
+        {
+          "word": "十日",
+          "reading": "とおか",
+          "meaning": "the 10th"
+        },
+        {
+          "word": "十分",
+          "reading": "じゅっぷん",
+          "meaning": "ten minutes"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 16,
+      "bundledWith": null,
+      "lessonNumber": 5,
+      "lessonDate": "2026-02-25",
+      "textbookPage": 202,
+      "lessonSource": "もじ5, p.202"
+    },
+    {
+      "id": "ext_kanji_百",
+      "kanji": "百",
+      "meaning": "hundred",
+      "kunReadings": [],
+      "onReadings": [
+        "ヒャク",
+        "ビャク",
+        "ピャク"
+      ],
+      "vocabulary": [
+        {
+          "word": "百",
+          "reading": "ひゃく",
+          "meaning": "100"
+        },
+        {
+          "word": "百円",
+          "reading": "ひゃくえん",
+          "meaning": "100 yen"
+        },
+        {
+          "word": "百円ショップ",
+          "reading": "ひゃくえんショップ",
+          "meaning": "100-yen shop"
+        },
+        {
+          "word": "百歳",
+          "reading": "ひゃくさい",
+          "meaning": "100 years old"
+        },
+        {
+          "word": "三百円",
+          "reading": "さんびゃくえん",
+          "meaning": "300 yen"
+        },
+        {
+          "word": "八百円",
+          "reading": "はっぴゃくえん",
+          "meaning": "800 yen"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "このコーヒーは三百円です。",
+          "english": "This coffee is 300 yen."
+        },
+        {
+          "japanese": "このラーメンは八百円です。",
+          "english": "This ramen is 800 yen."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 17,
+      "bundledWith": null,
+      "lessonNumber": 6,
+      "lessonDate": "2026-02-27",
+      "textbookPage": 204,
+      "lessonSource": "もじ6, p.204"
+    },
+    {
+      "id": "ext_kanji_千",
+      "kanji": "千",
+      "meaning": "thousand",
+      "kunReadings": [
+        "ち"
+      ],
+      "onReadings": [
+        "セン",
+        "ゼン"
+      ],
+      "vocabulary": [
+        {
+          "word": "千",
+          "reading": "せん",
+          "meaning": "1,000"
+        },
+        {
+          "word": "千円",
+          "reading": "せんえん",
+          "meaning": "1,000 yen"
+        },
+        {
+          "word": "千葉",
+          "reading": "ちば",
+          "meaning": "Chiba (place)"
+        },
+        {
+          "word": "千駄ヶ谷",
+          "reading": "せんだがや",
+          "meaning": "Sendagaya (place)"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "このシャツは二千円です。",
+          "english": "This shirt is 2,000 yen."
+        },
+        {
+          "japanese": "それは三千円です。",
+          "english": "That is 3,000 yen."
+        },
+        {
+          "japanese": "あれは八千円です。",
+          "english": "That (over there) is 8,000 yen."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 18,
+      "bundledWith": null,
+      "lessonNumber": 6,
+      "lessonDate": "2026-02-27",
+      "textbookPage": 204,
+      "lessonSource": "もじ6, p.204"
+    },
+    {
+      "id": "ext_kanji_万",
+      "kanji": "万",
+      "meaning": "ten thousand",
+      "kunReadings": [],
+      "onReadings": [
+        "マン",
+        "バン"
+      ],
+      "vocabulary": [
+        {
+          "word": "一万",
+          "reading": "いちまん",
+          "meaning": "10,000"
+        },
+        {
+          "word": "十万",
+          "reading": "じゅうまん",
+          "meaning": "100,000"
+        },
+        {
+          "word": "百万",
+          "reading": "ひゃくまん",
+          "meaning": "1,000,000"
+        },
+        {
+          "word": "万年筆",
+          "reading": "まんねんひつ",
+          "meaning": "fountain pen"
+        },
+        {
+          "word": "万歳",
+          "reading": "ばんざい",
+          "meaning": "hurrah!"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "このりんごは三百円です。",
+          "english": "This apple is 300 yen."
+        },
+        {
+          "japanese": "この車は五百万円です。",
+          "english": "This car is 5,000,000 yen."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 19,
+      "bundledWith": null,
+      "lessonNumber": 6,
+      "lessonDate": "2026-02-27",
+      "textbookPage": 204,
+      "lessonSource": "もじ6, p.204"
+    },
+    {
+      "id": "ext_kanji_円",
+      "kanji": "円",
+      "meaning": "yen",
+      "kunReadings": [
+        "まる (い)"
+      ],
+      "onReadings": [
+        "エン"
+      ],
+      "vocabulary": [
+        {
+          "word": "円をかく",
+          "reading": "えんをかく",
+          "meaning": "to draw a circle"
+        },
+        {
+          "word": "一円",
+          "reading": "いちえん",
+          "meaning": "1 yen"
+        },
+        {
+          "word": "五円",
+          "reading": "ごえん",
+          "meaning": "5 yen"
+        },
+        {
+          "word": "十円",
+          "reading": "じゅうえん",
+          "meaning": "10 yen"
+        },
+        {
+          "word": "五十円",
+          "reading": "ごじゅうえん",
+          "meaning": "50 yen"
+        },
+        {
+          "word": "百円",
+          "reading": "ひゃくえん",
+          "meaning": "100 yen"
+        },
+        {
+          "word": "五百円",
+          "reading": "ごひゃくえん",
+          "meaning": "500 yen"
+        },
+        {
+          "word": "千円",
+          "reading": "せんえん",
+          "meaning": "1,000 yen"
+        },
+        {
+          "word": "五千円",
+          "reading": "ごせんえん",
+          "meaning": "5,000 yen"
+        },
+        {
+          "word": "一万円 / 壱万円",
+          "reading": "いちまんえん",
+          "meaning": "10,000 yen"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [
+        {
+          "title": "Counting yen — common readings",
+          "type": "table",
+          "headers": [
+            "Kanji",
+            "Reading"
+          ],
+          "rows": [
+            {
+              "Kanji": "三百円",
+              "Reading": "さんびゃくえん"
+            },
+            {
+              "Kanji": "六百円",
+              "Reading": "ろっぴゃくえん"
+            },
+            {
+              "Kanji": "八百円",
+              "Reading": "はっぴゃくえん"
+            },
+            {
+              "Kanji": "三千円",
+              "Reading": "さんぜんえん"
+            },
+            {
+              "Kanji": "八千円",
+              "Reading": "はっせんえん"
+            },
+            {
+              "Kanji": "一万円",
+              "Reading": "いちまんえん"
+            },
+            {
+              "Kanji": "十万円",
+              "Reading": "じゅうまんえん"
+            },
+            {
+              "Kanji": "百万円",
+              "Reading": "ひゃくまんえん"
+            },
+            {
+              "Kanji": "一千万円",
+              "Reading": "いっせんまんえん"
+            },
+            {
+              "Kanji": "三千万円",
+              "Reading": "さんぜんまんえん"
+            },
+            {
+              "Kanji": "八千万円",
+              "Reading": "はっせんまんえん"
+            }
+          ]
+        },
+        {
+          "title": "Practice readings",
+          "type": "bullets",
+          "items": [
+            {
+              "text": "四つ → よっつ",
+              "gloss": ""
+            },
+            {
+              "text": "六百四十五円 → ろっぴゃく よんじゅう ご えん",
+              "gloss": ""
+            },
+            {
+              "text": "三百五十五円 → さんびゃく ごじゅう ご えん",
+              "gloss": ""
+            },
+            {
+              "text": "千五百八十キロ → せん ごひゃく はちじゅっ キロ",
+              "gloss": ""
+            },
+            {
+              "text": "五万三千円 → ごまん さんぜん えん",
+              "gloss": ""
+            },
+            {
+              "text": "百八十センチ → ひゃく はちじゅっ センチ",
+              "gloss": ""
+            },
+            {
+              "text": "富士山 3,776 → ふじさん さんぜん ななひゃく ななじゅう ろく",
+              "gloss": ""
+            }
+          ]
+        },
+        {
+          "title": "Review warm-up sentences (from lesson 6)",
+          "type": "bullets",
+          "items": [
+            {
+              "text": "大きい人がいます。",
+              "gloss": "There is a big person."
+            },
+            {
+              "text": "小さい人がいます。",
+              "gloss": "There is a small person."
+            },
+            {
+              "text": "おじいさんは山へいきました。",
+              "gloss": "The old man went to the mountain."
+            },
+            {
+              "text": "おばあさんは川へいきました。",
+              "gloss": "The old woman went to the river."
+            }
+          ]
+        },
+        {
+          "title": "March dates (review of numbers)",
+          "type": "table",
+          "headers": [
+            "Date",
+            "Reading"
+          ],
+          "rows": [
+            {
+              "Date": "三月一日",
+              "Reading": "さんがつ ついたち"
+            },
+            {
+              "Date": "三月二日",
+              "Reading": "さんがつ ふつか"
+            },
+            {
+              "Date": "三月三日",
+              "Reading": "さんがつ みっか"
+            },
+            {
+              "Date": "三月四日",
+              "Reading": "さんがつ よっか"
+            },
+            {
+              "Date": "三月五日",
+              "Reading": "さんがつ いつか"
+            },
+            {
+              "Date": "三月六日",
+              "Reading": "さんがつ むいか"
+            },
+            {
+              "Date": "三月七日",
+              "Reading": "さんがつ なのか"
+            },
+            {
+              "Date": "三月八日",
+              "Reading": "さんがつ ようか"
+            },
+            {
+              "Date": "三月九日",
+              "Reading": "さんがつ ここのか"
+            },
+            {
+              "Date": "三月十日",
+              "Reading": "さんがつ とおか"
+            }
+          ]
+        }
+      ],
+      "orderInReference": 20,
+      "bundledWith": null,
+      "lessonNumber": 7,
+      "lessonDate": "2026-03-02",
+      "textbookPage": 204,
+      "lessonSource": "一歩2, p.204"
+    },
+    {
+      "id": "ext_kanji_上",
+      "kanji": "上",
+      "meaning": "up",
+      "kunReadings": [
+        "うえ",
+        "のぼ (る)",
+        "うわ",
+        "かみ",
+        "あ (げる・がる)"
+      ],
+      "onReadings": [
+        "ジョウ"
+      ],
+      "vocabulary": [
+        {
+          "word": "上",
+          "reading": "うえ",
+          "meaning": "on / above"
+        },
+        {
+          "word": "頂上",
+          "reading": "ちょうじょう",
+          "meaning": "summit"
+        },
+        {
+          "word": "上野駅",
+          "reading": "うえのえき",
+          "meaning": "Ueno Station"
+        },
+        {
+          "word": "売上",
+          "reading": "うりあげ",
+          "meaning": "sales"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "テーブルの上に本があります。",
+          "english": "There is a book on the table."
+        },
+        {
+          "japanese": "去年より売上が上がりました。",
+          "english": "Sales went up compared to last year."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 21,
+      "bundledWith": null,
+      "lessonNumber": 8,
+      "lessonDate": "2026-03-03",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_中",
+      "kanji": "中",
+      "meaning": "middle",
+      "kunReadings": [
+        "なか"
+      ],
+      "onReadings": [
+        "チュウ",
+        "ジュウ"
+      ],
+      "vocabulary": [
+        {
+          "word": "中",
+          "reading": "なか",
+          "meaning": "middle / inside"
+        },
+        {
+          "word": "真ん中",
+          "reading": "まんなか",
+          "meaning": "the very middle"
+        },
+        {
+          "word": "家の中",
+          "reading": "いえのなか",
+          "meaning": "inside the house"
+        },
+        {
+          "word": "仕事中",
+          "reading": "しごとちゅう",
+          "meaning": "at work / working now"
+        },
+        {
+          "word": "中学生",
+          "reading": "ちゅうがくせい",
+          "meaning": "middle-school student"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "子どもは部屋の中で遊んでいます。",
+          "english": "The children are playing inside the room."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 22,
+      "bundledWith": null,
+      "lessonNumber": 8,
+      "lessonDate": "2026-03-03",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_下",
+      "kanji": "下",
+      "meaning": "down",
+      "kunReadings": [
+        "した",
+        "くだ (る)",
+        "さ (げる・がる)",
+        "お (りる・ろす)",
+        "しも",
+        "もと"
+      ],
+      "onReadings": [
+        "カ",
+        "ゲ"
+      ],
+      "vocabulary": [
+        {
+          "word": "下",
+          "reading": "した",
+          "meaning": "below / under"
+        },
+        {
+          "word": "地下鉄",
+          "reading": "ちかてつ",
+          "meaning": "subway"
+        },
+        {
+          "word": "くつ下",
+          "reading": "くつした",
+          "meaning": "socks"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "去年より売上が下がりました。",
+          "english": "Sales went down compared to last year."
+        },
+        {
+          "japanese": "今朝は昨日より気温が下がりました。",
+          "english": "This morning the temperature dropped from yesterday."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 23,
+      "bundledWith": null,
+      "lessonNumber": 8,
+      "lessonDate": "2026-03-03",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_日",
+      "kanji": "日",
+      "meaning": "day",
+      "kunReadings": [
+        "ひ",
+        "び",
+        "ぴ",
+        "か"
+      ],
+      "onReadings": [
+        "ニチ",
+        "ニッ",
+        "ジツ"
+      ],
+      "vocabulary": [
+        {
+          "word": "今日",
+          "reading": "きょう",
+          "meaning": "today"
+        },
+        {
+          "word": "七日",
+          "reading": "なのか",
+          "meaning": "the 7th"
+        },
+        {
+          "word": "日本",
+          "reading": "にほん",
+          "meaning": "Japan"
+        },
+        {
+          "word": "ゴミの日",
+          "reading": "ゴミのひ",
+          "meaning": "garbage day"
+        },
+        {
+          "word": "日曜日",
+          "reading": "にちようび",
+          "meaning": "Sunday"
+        },
+        {
+          "word": "明日",
+          "reading": "あした",
+          "meaning": "tomorrow"
+        },
+        {
+          "word": "昨日",
+          "reading": "きのう",
+          "meaning": "yesterday"
+        },
+        {
+          "word": "毎日",
+          "reading": "まいにち",
+          "meaning": "every day"
+        },
+        {
+          "word": "誕生日",
+          "reading": "たんじょうび",
+          "meaning": "birthday"
+        },
+        {
+          "word": "一日目",
+          "reading": "いちにちめ",
+          "meaning": "the first day"
+        },
+        {
+          "word": "父の日",
+          "reading": "ちちのひ",
+          "meaning": "Father's Day"
+        },
+        {
+          "word": "母の日",
+          "reading": "ははのひ",
+          "meaning": "Mother's Day"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "ゴミの日は火曜日と木曜日です。",
+          "english": "Garbage day is Tuesday and Thursday."
+        },
+        {
+          "japanese": "日曜日、映画を見に行きませんか。",
+          "english": "On Sunday, shall we go watch a movie?"
+        }
+      ],
+      "extraSections": [
+        {
+          "title": "Date readings (review)",
+          "type": "table",
+          "headers": [
+            "#",
+            "Reading"
+          ],
+          "rows": [
+            {
+              "#": "二日",
+              "Reading": "ふつか"
+            },
+            {
+              "#": "三日",
+              "Reading": "みっか"
+            },
+            {
+              "#": "四日",
+              "Reading": "よっか"
+            },
+            {
+              "#": "五日",
+              "Reading": "いつか"
+            },
+            {
+              "#": "六日",
+              "Reading": "むいか"
+            },
+            {
+              "#": "七日",
+              "Reading": "なのか"
+            },
+            {
+              "#": "八日",
+              "Reading": "ようか"
+            },
+            {
+              "#": "九日",
+              "Reading": "ここのか"
+            },
+            {
+              "#": "十日",
+              "Reading": "とおか"
+            },
+            {
+              "#": "二十日",
+              "Reading": "はつか"
+            }
+          ]
+        }
+      ],
+      "orderInReference": 24,
+      "bundledWith": null,
+      "lessonNumber": 10,
+      "lessonDate": "2026-03-05",
+      "textbookPage": 208,
+      "lessonSource": "もじ8, p.208"
+    },
+    {
+      "id": "ext_kanji_月",
+      "kanji": "月",
+      "meaning": "month",
+      "kunReadings": [
+        "つき"
+      ],
+      "onReadings": [
+        "ゲツ",
+        "ガツ",
+        "ガッ"
+      ],
+      "vocabulary": [
+        {
+          "word": "月",
+          "reading": "つき",
+          "meaning": "moon"
+        },
+        {
+          "word": "満月",
+          "reading": "まんげつ",
+          "meaning": "full moon"
+        },
+        {
+          "word": "月曜日",
+          "reading": "げつようび",
+          "meaning": "Monday"
+        },
+        {
+          "word": "先月",
+          "reading": "せんげつ",
+          "meaning": "last month"
+        },
+        {
+          "word": "今月",
+          "reading": "こんげつ",
+          "meaning": "this month"
+        },
+        {
+          "word": "来月",
+          "reading": "らいげつ",
+          "meaning": "next month"
+        },
+        {
+          "word": "毎月",
+          "reading": "まいつき",
+          "meaning": "every month"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "毎月テストがあります。",
+          "english": "There's a test every month."
+        },
+        {
+          "japanese": "来月京都へ旅行に行きます。",
+          "english": "Next month I'll travel to Kyoto."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 25,
+      "bundledWith": null,
+      "lessonNumber": 10,
+      "lessonDate": "2026-03-05",
+      "textbookPage": 208,
+      "lessonSource": "もじ8, p.208"
+    },
+    {
+      "id": "ext_kanji_火",
+      "kanji": "火",
+      "meaning": "fire",
+      "kunReadings": [
+        "ひ",
+        "び"
+      ],
+      "onReadings": [
+        "カ"
+      ],
+      "vocabulary": [
+        {
+          "word": "火",
+          "reading": "ひ",
+          "meaning": "fire"
+        },
+        {
+          "word": "火曜日",
+          "reading": "かようび",
+          "meaning": "Tuesday"
+        },
+        {
+          "word": "火山",
+          "reading": "かざん",
+          "meaning": "volcano"
+        },
+        {
+          "word": "火事",
+          "reading": "かじ",
+          "meaning": "fire (incident)"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "ガスの火を止めてください。",
+          "english": "Please turn off the gas flame."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 26,
+      "bundledWith": null,
+      "lessonNumber": 10,
+      "lessonDate": "2026-03-05",
+      "textbookPage": 208,
+      "lessonSource": "もじ8, p.208"
+    },
+    {
+      "id": "ext_kanji_水",
+      "kanji": "水",
+      "meaning": "water",
+      "kunReadings": [
+        "みず"
+      ],
+      "onReadings": [
+        "スイ"
+      ],
+      "vocabulary": [
+        {
+          "word": "水",
+          "reading": "みず",
+          "meaning": "water"
+        },
+        {
+          "word": "水曜日",
+          "reading": "すいようび",
+          "meaning": "Wednesday"
+        },
+        {
+          "word": "水道",
+          "reading": "すいどう",
+          "meaning": "water supply"
+        },
+        {
+          "word": "水星",
+          "reading": "すいせい",
+          "meaning": "Mercury (planet)"
+        },
+        {
+          "word": "海水浴",
+          "reading": "かいすいよく",
+          "meaning": "sea bathing"
+        },
+        {
+          "word": "水泳",
+          "reading": "すいえい",
+          "meaning": "swimming"
+        },
+        {
+          "word": "水着",
+          "reading": "みずぎ",
+          "meaning": "bathing suit"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "水曜日にともだちと海へドライブにいきます。",
+          "english": "On Wednesday I'll drive to the sea with friends."
+        },
+        {
+          "japanese": "毎日水をたくさん飲みます。",
+          "english": "I drink a lot of water every day."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 27,
+      "bundledWith": null,
+      "lessonNumber": 11,
+      "lessonDate": "2026-03-06",
+      "textbookPage": 208,
+      "lessonSource": "もじ8, p.208"
+    },
+    {
+      "id": "ext_kanji_木",
+      "kanji": "木",
+      "meaning": "tree",
+      "kunReadings": [
+        "き",
+        "こ"
+      ],
+      "onReadings": [
+        "モク",
+        "ボク"
+      ],
+      "vocabulary": [
+        {
+          "word": "木",
+          "reading": "き",
+          "meaning": "tree"
+        },
+        {
+          "word": "木曜日",
+          "reading": "もくようび",
+          "meaning": "Thursday"
+        },
+        {
+          "word": "大木",
+          "reading": "たいぼく",
+          "meaning": "big tree"
+        },
+        {
+          "word": "木星",
+          "reading": "もくせい",
+          "meaning": "Jupiter"
+        },
+        {
+          "word": "木陰",
+          "reading": "こかげ",
+          "meaning": "shade of a tree"
+        },
+        {
+          "word": "木綿",
+          "reading": "もめん",
+          "meaning": "cotton"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "毎週木曜日に会議があります。",
+          "english": "We have a meeting every Thursday."
+        },
+        {
+          "japanese": "この木はとても大きいです。",
+          "english": "This tree is very big."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 28,
+      "bundledWith": null,
+      "lessonNumber": 11,
+      "lessonDate": "2026-03-06",
+      "textbookPage": 208,
+      "lessonSource": "もじ8, p.208"
+    },
+    {
+      "id": "ext_kanji_金",
+      "kanji": "金",
+      "meaning": "gold",
+      "kunReadings": [
+        "かね",
+        "かな"
+      ],
+      "onReadings": [
+        "キン",
+        "コン"
+      ],
+      "vocabulary": [
+        {
+          "word": "金",
+          "reading": "きん",
+          "meaning": "gold"
+        },
+        {
+          "word": "金曜日",
+          "reading": "きんようび",
+          "meaning": "Friday"
+        },
+        {
+          "word": "金星",
+          "reading": "きんせい",
+          "meaning": "Venus (planet)"
+        },
+        {
+          "word": "お金",
+          "reading": "おかね",
+          "meaning": "money"
+        },
+        {
+          "word": "お金持ち",
+          "reading": "おかねもち",
+          "meaning": "rich person"
+        },
+        {
+          "word": "料金",
+          "reading": "りょうきん",
+          "meaning": "fee, charge"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "金曜日に息子の誕生日パーティがあります。",
+          "english": "On Friday there's my son's birthday party."
+        },
+        {
+          "japanese": "お金がたくさんほしいです。",
+          "english": "I want a lot of money."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 29,
+      "bundledWith": null,
+      "lessonNumber": 11,
+      "lessonDate": "2026-03-06",
+      "textbookPage": 208,
+      "lessonSource": "もじ8, p.208"
+    },
+    {
+      "id": "ext_kanji_土",
+      "kanji": "土",
+      "meaning": "earth",
+      "kunReadings": [
+        "つち"
+      ],
+      "onReadings": [
+        "ド"
+      ],
+      "vocabulary": [
+        {
+          "word": "土",
+          "reading": "つち",
+          "meaning": "earth, soil"
+        },
+        {
+          "word": "土曜日",
+          "reading": "どようび",
+          "meaning": "Saturday"
+        },
+        {
+          "word": "土星",
+          "reading": "どせい",
+          "meaning": "Saturn"
+        },
+        {
+          "word": "土を掘る",
+          "reading": "つちをほる",
+          "meaning": "to dig the soil"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [
+        {
+          "title": "Days of the week (review)",
+          "type": "table",
+          "headers": [
+            "Kanji",
+            "Reading",
+            "Day"
+          ],
+          "rows": [
+            {
+              "Kanji": "月曜日",
+              "Reading": "げつようび",
+              "Day": "Monday"
+            },
+            {
+              "Kanji": "火曜日",
+              "Reading": "かようび",
+              "Day": "Tuesday"
+            },
+            {
+              "Kanji": "水曜日",
+              "Reading": "すいようび",
+              "Day": "Wednesday"
+            },
+            {
+              "Kanji": "木曜日",
+              "Reading": "もくようび",
+              "Day": "Thursday"
+            },
+            {
+              "Kanji": "金曜日",
+              "Reading": "きんようび",
+              "Day": "Friday"
+            },
+            {
+              "Kanji": "土曜日",
+              "Reading": "どようび",
+              "Day": "Saturday"
+            },
+            {
+              "Kanji": "日曜日",
+              "Reading": "にちようび",
+              "Day": "Sunday"
+            }
+          ]
+        },
+        {
+          "title": "Dates — 九月 (September) readings",
+          "type": "table",
+          "headers": [
+            "Date",
+            "Reading"
+          ],
+          "rows": [
+            {
+              "Date": "九月一日",
+              "Reading": "くがつ ついたち"
+            },
+            {
+              "Date": "九月二日",
+              "Reading": "くがつ ふつか"
+            },
+            {
+              "Date": "九月三日",
+              "Reading": "くがつ みっか"
+            },
+            {
+              "Date": "九月四日",
+              "Reading": "くがつ よっか"
+            },
+            {
+              "Date": "九月五日",
+              "Reading": "くがつ いつか"
+            },
+            {
+              "Date": "九月六日",
+              "Reading": "くがつ むいか"
+            },
+            {
+              "Date": "九月七日",
+              "Reading": "くがつ なのか"
+            },
+            {
+              "Date": "九月八日",
+              "Reading": "くがつ ようか"
+            },
+            {
+              "Date": "九月九日",
+              "Reading": "くがつ ここのか"
+            },
+            {
+              "Date": "九月十日",
+              "Reading": "くがつ とおか"
+            },
+            {
+              "Date": "九月二十日",
+              "Reading": "くがつ はつか"
+            },
+            {
+              "Date": "九月二十三日",
+              "Reading": "くがつ にじゅうさんにち"
+            }
+          ]
+        }
+      ],
+      "orderInReference": 30,
+      "bundledWith": null,
+      "lessonNumber": 12,
+      "lessonDate": "2026-03-09",
+      "textbookPage": 209,
+      "lessonSource": "一歩2, p.209"
+    },
+    {
+      "id": "ext_kanji_何",
+      "kanji": "何",
+      "meaning": "what",
+      "kunReadings": [
+        "なに",
+        "なん"
+      ],
+      "onReadings": [
+        "カ"
+      ],
+      "vocabulary": [
+        {
+          "word": "何",
+          "reading": "なに",
+          "meaning": "what"
+        },
+        {
+          "word": "何曜日",
+          "reading": "なんようび",
+          "meaning": "what day of the week"
+        },
+        {
+          "word": "何時",
+          "reading": "なんじ",
+          "meaning": "what time"
+        },
+        {
+          "word": "何さい",
+          "reading": "なんさい",
+          "meaning": "how old"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "何曜日ですか。 — 土曜日です。",
+          "english": "What day is it? — It's Saturday."
+        },
+        {
+          "japanese": "何時ですか。 — 10時です。",
+          "english": "What time is it? — It's 10:00."
+        },
+        {
+          "japanese": "お子さんは何さいですか。",
+          "english": "How old is your child?"
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 31,
+      "bundledWith": null,
+      "lessonNumber": 13,
+      "lessonDate": "2026-03-10",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_年",
+      "kanji": "年",
+      "meaning": "year",
+      "kunReadings": [
+        "とし"
+      ],
+      "onReadings": [
+        "ネン"
+      ],
+      "vocabulary": [
+        {
+          "word": "一年",
+          "reading": "いちねん",
+          "meaning": "one year"
+        },
+        {
+          "word": "きょ年",
+          "reading": "きょねん",
+          "meaning": "last year"
+        },
+        {
+          "word": "こ年",
+          "reading": "ことし",
+          "meaning": "this year"
+        },
+        {
+          "word": "らい年",
+          "reading": "らいねん",
+          "meaning": "next year"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "きょ年にほんへきました。",
+          "english": "I came to Japan last year."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 32,
+      "bundledWith": null,
+      "lessonNumber": 13,
+      "lessonDate": "2026-03-10",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_生",
+      "kanji": "生",
+      "meaning": "birth",
+      "kunReadings": [
+        "う (まれる・む)",
+        "なま",
+        "き",
+        "い (きる)",
+        "は (える)"
+      ],
+      "onReadings": [
+        "セイ",
+        "ショウ",
+        "ジョウ"
+      ],
+      "vocabulary": [
+        {
+          "word": "生まれます",
+          "reading": "うまれます",
+          "meaning": "to be born"
+        },
+        {
+          "word": "生みます",
+          "reading": "うみます",
+          "meaning": "to give birth"
+        },
+        {
+          "word": "生にく",
+          "reading": "なまにく",
+          "meaning": "raw meat"
+        },
+        {
+          "word": "生ざかな",
+          "reading": "なまざかな",
+          "meaning": "raw fish"
+        },
+        {
+          "word": "生やさい",
+          "reading": "なまやさい",
+          "meaning": "raw vegetables"
+        },
+        {
+          "word": "生きます",
+          "reading": "いきます",
+          "meaning": "to live"
+        },
+        {
+          "word": "生えます",
+          "reading": "はえます",
+          "meaning": "to grow / sprout"
+        },
+        {
+          "word": "生かつ",
+          "reading": "せいかつ",
+          "meaning": "life (daily living)"
+        },
+        {
+          "word": "たん生",
+          "reading": "たんじょう",
+          "meaning": "birth"
+        },
+        {
+          "word": "たん生日",
+          "reading": "たんじょうび",
+          "meaning": "birthday"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "にほんの生かつはどうですか。",
+          "english": "How is life in Japan?"
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 33,
+      "bundledWith": null,
+      "lessonNumber": 13,
+      "lessonDate": "2026-03-10",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_学",
+      "kanji": "学",
+      "meaning": "learning",
+      "kunReadings": [
+        "まな (ぶ)"
+      ],
+      "onReadings": [
+        "ガク",
+        "ガッ"
+      ],
+      "vocabulary": [
+        {
+          "word": "学生",
+          "reading": "がくせい",
+          "meaning": "student"
+        },
+        {
+          "word": "学校",
+          "reading": "がっこう",
+          "meaning": "school"
+        },
+        {
+          "word": "小学生",
+          "reading": "しょうがくせい",
+          "meaning": "elementary school student"
+        },
+        {
+          "word": "中学生",
+          "reading": "ちゅうがくせい",
+          "meaning": "junior high student"
+        },
+        {
+          "word": "大学生",
+          "reading": "だいがくせい",
+          "meaning": "university / college student"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "TCJはにほんごの学校です。",
+          "english": "TCJ is a Japanese-language school."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 34,
+      "bundledWith": null,
+      "lessonNumber": 14,
+      "lessonDate": "2026-03-11",
+      "textbookPage": 211,
+      "lessonSource": "もじ9, p.211"
+    },
+    {
+      "id": "ext_kanji_口",
+      "kanji": "口",
+      "meaning": "mouth",
+      "kunReadings": [
+        "くち",
+        "ぐち"
+      ],
+      "onReadings": [
+        "コウ",
+        "ク"
+      ],
+      "vocabulary": [
+        {
+          "word": "口",
+          "reading": "くち",
+          "meaning": "mouth"
+        },
+        {
+          "word": "入口",
+          "reading": "いりぐち",
+          "meaning": "entrance"
+        },
+        {
+          "word": "出口",
+          "reading": "でぐち",
+          "meaning": "exit"
+        },
+        {
+          "word": "改札口",
+          "reading": "かいさつぐち",
+          "meaning": "ticket gate"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 35,
+      "bundledWith": null,
+      "lessonNumber": 15,
+      "lessonDate": "2026-03-12",
+      "textbookPage": 212,
+      "lessonSource": "もじ10, p.212"
+    },
+    {
+      "id": "ext_kanji_目",
+      "kanji": "目",
+      "meaning": "eye",
+      "kunReadings": [
+        "め"
+      ],
+      "onReadings": [
+        "モク"
+      ],
+      "vocabulary": [
+        {
+          "word": "目",
+          "reading": "め",
+          "meaning": "eye"
+        },
+        {
+          "word": "一日目",
+          "reading": "いちにちめ",
+          "meaning": "the first day"
+        },
+        {
+          "word": "目的",
+          "reading": "もくてき",
+          "meaning": "purpose"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 36,
+      "bundledWith": null,
+      "lessonNumber": 15,
+      "lessonDate": "2026-03-12",
+      "textbookPage": 212,
+      "lessonSource": "もじ10, p.212"
+    },
+    {
+      "id": "ext_kanji_耳",
+      "kanji": "耳",
+      "meaning": "ear",
+      "kunReadings": [
+        "みみ"
+      ],
+      "onReadings": [
+        "ジ"
+      ],
+      "vocabulary": [
+        {
+          "word": "耳",
+          "reading": "みみ",
+          "meaning": "ear"
+        },
+        {
+          "word": "耳鼻科",
+          "reading": "じびか",
+          "meaning": "ear-nose-throat clinic"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "ぞうは耳が大きいです。",
+          "english": "Elephants have big ears."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 37,
+      "bundledWith": null,
+      "lessonNumber": 15,
+      "lessonDate": "2026-03-12",
+      "textbookPage": 212,
+      "lessonSource": "もじ10, p.212"
+    },
+    {
+      "id": "ext_kanji_手",
+      "kanji": "手",
+      "meaning": "hand",
+      "kunReadings": [
+        "て"
+      ],
+      "onReadings": [
+        "シュ"
+      ],
+      "vocabulary": [
+        {
+          "word": "手",
+          "reading": "て",
+          "meaning": "hand"
+        },
+        {
+          "word": "手紙",
+          "reading": "てがみ",
+          "meaning": "letter"
+        },
+        {
+          "word": "お手洗い",
+          "reading": "おてあらい",
+          "meaning": "toilet (polite)"
+        },
+        {
+          "word": "上手（な）",
+          "reading": "じょうず",
+          "meaning": "good at (skilled)"
+        },
+        {
+          "word": "下手（な）",
+          "reading": "へた",
+          "meaning": "poor at"
+        },
+        {
+          "word": "苦手（な）",
+          "reading": "にがて",
+          "meaning": "weak at / dislike"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "手つだいましょうか。",
+          "english": "Shall I help you?"
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 38,
+      "bundledWith": null,
+      "lessonNumber": 16,
+      "lessonDate": "2026-03-13",
+      "textbookPage": 208,
+      "lessonSource": "もじ10, p.208"
+    },
+    {
+      "id": "ext_kanji_足",
+      "kanji": "足",
+      "meaning": "foot/leg",
+      "kunReadings": [
+        "あし",
+        "た (りる・す)"
+      ],
+      "onReadings": [
+        "ソク"
+      ],
+      "vocabulary": [
+        {
+          "word": "足",
+          "reading": "あし",
+          "meaning": "foot, leg"
+        },
+        {
+          "word": "足す",
+          "reading": "たす",
+          "meaning": "to add"
+        },
+        {
+          "word": "足りる",
+          "reading": "たりる",
+          "meaning": "to be enough"
+        },
+        {
+          "word": "足音",
+          "reading": "あしおと",
+          "meaning": "sound of footsteps"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "足音がうるさいです。",
+          "english": "The footsteps are noisy."
+        }
+      ],
+      "extraSections": [
+        {
+          "title": "Review practice (pp.212)",
+          "type": "bullets",
+          "items": [
+            {
+              "text": "母に手紙を書きました。",
+              "gloss": "I wrote a letter to my mother."
+            },
+            {
+              "text": "アルは目が大きいです。",
+              "gloss": "Al has big eyes."
+            },
+            {
+              "text": "耳がいたいですから、耳鼻科へ行きます。",
+              "gloss": "My ear hurts, so I'll go to the ENT clinic."
+            },
+            {
+              "text": "去年山で右足のほねをおりました。",
+              "gloss": "Last year I broke the bone in my right leg in the mountains."
+            },
+            {
+              "text": "ビルの入口で友だちと会いました。",
+              "gloss": "I met my friend at the entrance of the building."
+            },
+            {
+              "text": "おっとはピアノが上手です。でも、わたしは下手です。",
+              "gloss": "My husband is good at piano. But I'm bad at it."
+            },
+            {
+              "text": "日本の人口は１おく2500万人ぐらいです。",
+              "gloss": "Japan's population is about 125,000,000."
+            },
+            {
+              "text": "駅の改札口を出て、タクシーにのります。",
+              "gloss": "I exit the ticket gate and take a taxi."
+            }
+          ]
+        }
+      ],
+      "orderInReference": 39,
+      "bundledWith": null,
+      "lessonNumber": 16,
+      "lessonDate": "2026-03-13",
+      "textbookPage": 208,
+      "lessonSource": "もじ10, p.208"
+    },
+    {
+      "id": "ext_kanji_行",
+      "kanji": "行",
+      "meaning": "to go",
+      "kunReadings": [
+        "い (く)",
+        "おこな (う)"
+      ],
+      "onReadings": [
+        "コウ",
+        "ギョウ"
+      ],
+      "vocabulary": [
+        {
+          "word": "銀行",
+          "reading": "ぎんこう",
+          "meaning": "bank"
+        },
+        {
+          "word": "飛行機",
+          "reading": "ひこうき",
+          "meaning": "airplane"
+        },
+        {
+          "word": "旅行",
+          "reading": "りょこう",
+          "meaning": "trip, travel"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "会社へ行きます。",
+          "english": "I go to the company."
+        },
+        {
+          "japanese": "明日試験を行います。",
+          "english": "We'll hold an exam tomorrow."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 40,
+      "bundledWith": null,
+      "lessonNumber": 17,
+      "lessonDate": "2026-03-16",
+      "textbookPage": 214,
+      "lessonSource": "一歩2, p.214"
+    },
+    {
+      "id": "ext_kanji_来",
+      "kanji": "来",
+      "meaning": "to come",
+      "kunReadings": [
+        "く (る)",
+        "き (ます)",
+        "こ (ない)"
+      ],
+      "onReadings": [
+        "ライ"
+      ],
+      "vocabulary": [
+        {
+          "word": "今年",
+          "reading": "ことし",
+          "meaning": "this year"
+        },
+        {
+          "word": "来年",
+          "reading": "らいねん",
+          "meaning": "next year"
+        },
+        {
+          "word": "来週",
+          "reading": "らいしゅう",
+          "meaning": "next week"
+        },
+        {
+          "word": "来月",
+          "reading": "らいげつ",
+          "meaning": "next month"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "来月京都へ旅行に行きます。",
+          "english": "Next month I'll travel to Kyoto."
+        }
+      ],
+      "extraSections": [
+        {
+          "title": "Conjugations",
+          "type": "bullets",
+          "items": [
+            {
+              "text": "日本に来ます — *come to Japan* (polite)",
+              "gloss": ""
+            },
+            {
+              "text": "日本に来る — *come to Japan* (plain)",
+              "gloss": ""
+            },
+            {
+              "text": "日本に来ない — *not come to Japan* (plain negative)",
+              "gloss": ""
+            }
+          ]
+        }
+      ],
+      "orderInReference": 41,
+      "bundledWith": null,
+      "lessonNumber": 17,
+      "lessonDate": "2026-03-16",
+      "textbookPage": 214,
+      "lessonSource": "一歩2, p.214"
+    },
+    {
+      "id": "ext_kanji_車",
+      "kanji": "車",
+      "meaning": "car",
+      "kunReadings": [
+        "くるま"
+      ],
+      "onReadings": [
+        "シャ"
+      ],
+      "vocabulary": [
+        {
+          "word": "電車",
+          "reading": "でんしゃ",
+          "meaning": "train"
+        },
+        {
+          "word": "自動車",
+          "reading": "じどうしゃ",
+          "meaning": "automobile"
+        },
+        {
+          "word": "自転車",
+          "reading": "じてんしゃ",
+          "meaning": "bicycle"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "自転車で学校へ行きます。",
+          "english": "I go to school by bicycle."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 42,
+      "bundledWith": null,
+      "lessonNumber": 17,
+      "lessonDate": "2026-03-16",
+      "textbookPage": 214,
+      "lessonSource": "一歩2, p.214"
+    },
+    {
+      "id": "ext_kanji_言",
+      "kanji": "言",
+      "meaning": "to say",
+      "kunReadings": [
+        "い (う)"
+      ],
+      "onReadings": [
+        "ゲン",
+        "ゴン"
+      ],
+      "vocabulary": [
+        {
+          "word": "言います / 言う",
+          "reading": "いいます / いう",
+          "meaning": "to say"
+        },
+        {
+          "word": "言葉",
+          "reading": "ことば",
+          "meaning": "word, language"
+        },
+        {
+          "word": "方言",
+          "reading": "ほうげん",
+          "meaning": "dialect"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "もう一度言ってください。",
+          "english": "Please say it again."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 43,
+      "bundledWith": null,
+      "lessonNumber": 18,
+      "lessonDate": "2026-03-18",
+      "textbookPage": 216,
+      "lessonSource": "もじ12, p.216"
+    },
+    {
+      "id": "ext_kanji_話",
+      "kanji": "話",
+      "meaning": "to speak",
+      "kunReadings": [
+        "はな (す)",
+        "はなし"
+      ],
+      "onReadings": [
+        "ワ"
+      ],
+      "vocabulary": [
+        {
+          "word": "話します / 話す",
+          "reading": "はなします / はなす",
+          "meaning": "to speak"
+        },
+        {
+          "word": "電話",
+          "reading": "でんわ",
+          "meaning": "telephone"
+        },
+        {
+          "word": "手話",
+          "reading": "しゅわ",
+          "meaning": "sign language"
+        },
+        {
+          "word": "会話",
+          "reading": "かいわ",
+          "meaning": "conversation"
+        },
+        {
+          "word": "話",
+          "reading": "はなし",
+          "meaning": "talk, story"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "部長の話はおもしろくないです。",
+          "english": "The manager's story is not interesting."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 44,
+      "bundledWith": null,
+      "lessonNumber": 18,
+      "lessonDate": "2026-03-18",
+      "textbookPage": 216,
+      "lessonSource": "もじ12, p.216"
+    },
+    {
+      "id": "ext_kanji_読",
+      "kanji": "読",
+      "meaning": "to read",
+      "kunReadings": [
+        "よ (む)"
+      ],
+      "onReadings": [
+        "ドク",
+        "トク"
+      ],
+      "vocabulary": [
+        {
+          "word": "読みます / 読む",
+          "reading": "よみます / よむ",
+          "meaning": "to read"
+        },
+        {
+          "word": "読書",
+          "reading": "どくしょ",
+          "meaning": "reading (books)"
+        },
+        {
+          "word": "句読点",
+          "reading": "くとうてん",
+          "meaning": "punctuation"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "本を読みます。",
+          "english": "I read a book."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 45,
+      "bundledWith": null,
+      "lessonNumber": 18,
+      "lessonDate": "2026-03-18",
+      "textbookPage": 216,
+      "lessonSource": "もじ12, p.216"
+    },
+    {
+      "id": "ext_kanji_語",
+      "kanji": "語",
+      "meaning": "language",
+      "kunReadings": [
+        "かた (る)"
+      ],
+      "onReadings": [
+        "ゴ"
+      ],
+      "vocabulary": [
+        {
+          "word": "日本語",
+          "reading": "にほんご",
+          "meaning": "Japanese language"
+        },
+        {
+          "word": "英語",
+          "reading": "えいご",
+          "meaning": "English language"
+        },
+        {
+          "word": "中国語",
+          "reading": "ちゅうごくご",
+          "meaning": "Chinese language"
+        },
+        {
+          "word": "外国語",
+          "reading": "がいこくご",
+          "meaning": "foreign language"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "わたしは日本語を勉強しています。",
+          "english": "I am studying Japanese."
+        },
+        {
+          "japanese": "あなたは何語を話しますか。",
+          "english": "What language do you speak?"
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 46,
+      "bundledWith": null,
+      "lessonNumber": 19,
+      "lessonDate": "2026-03-19",
+      "textbookPage": 216,
+      "lessonSource": "一歩2, p.216–217"
+    },
+    {
+      "id": "ext_kanji_本",
+      "kanji": "本",
+      "meaning": "book",
+      "kunReadings": [
+        "もと"
+      ],
+      "onReadings": [
+        "ホン",
+        "ボン",
+        "ポン"
+      ],
+      "vocabulary": [
+        {
+          "word": "本",
+          "reading": "ほん",
+          "meaning": "book"
+        },
+        {
+          "word": "山本さん",
+          "reading": "やまもとさん",
+          "meaning": "Mr./Ms. Yamamoto"
+        },
+        {
+          "word": "橋本さん",
+          "reading": "はしもとさん",
+          "meaning": "Mr./Ms. Hashimoto"
+        },
+        {
+          "word": "岡本さん",
+          "reading": "おかもとさん",
+          "meaning": "Mr./Ms. Okamoto"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "わたしは本を読みます。",
+          "english": "I read a book."
+        }
+      ],
+      "extraSections": [
+        {
+          "title": "Counter 〜本 (for long objects)",
+          "type": "table",
+          "headers": [
+            "#",
+            "Reading"
+          ],
+          "rows": [
+            {
+              "#": "1本",
+              "Reading": "いっぽん"
+            },
+            {
+              "#": "2本",
+              "Reading": "にほん"
+            },
+            {
+              "#": "3本",
+              "Reading": "さんぼん"
+            },
+            {
+              "#": "4本",
+              "Reading": "よんほん"
+            },
+            {
+              "#": "5本",
+              "Reading": "ごほん"
+            },
+            {
+              "#": "6本",
+              "Reading": "ろっぽん"
+            },
+            {
+              "#": "7本",
+              "Reading": "ななほん"
+            },
+            {
+              "#": "8本",
+              "Reading": "はっぽん"
+            },
+            {
+              "#": "9本",
+              "Reading": "きゅうほん"
+            },
+            {
+              "#": "10本",
+              "Reading": "じゅっぽん"
+            },
+            {
+              "#": "何本？",
+              "Reading": "なんぼん"
+            }
+          ]
+        }
+      ],
+      "orderInReference": 47,
+      "bundledWith": null,
+      "lessonNumber": 19,
+      "lessonDate": "2026-03-19",
+      "textbookPage": 216,
+      "lessonSource": "一歩2, p.216–217"
+    },
+    {
+      "id": "ext_kanji_見",
+      "kanji": "見",
+      "meaning": "to see",
+      "kunReadings": [
+        "み (る・える・せる)"
+      ],
+      "onReadings": [
+        "ケン"
+      ],
+      "vocabulary": [
+        {
+          "word": "お見舞い",
+          "reading": "おみまい",
+          "meaning": "visit to the sick"
+        },
+        {
+          "word": "見学します",
+          "reading": "けんがくします",
+          "meaning": "to tour / observe"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "映画を見ます。",
+          "english": "I watch a movie."
+        },
+        {
+          "japanese": "パスポートを見せます。",
+          "english": "I show my passport."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 48,
+      "bundledWith": null,
+      "lessonNumber": 20,
+      "lessonDate": "2026-03-23",
+      "textbookPage": 218,
+      "lessonSource": "一歩2, p.218"
+    },
+    {
+      "id": "ext_kanji_聞",
+      "kanji": "聞",
+      "meaning": "to listen",
+      "kunReadings": [
+        "き (く・こえる)"
+      ],
+      "onReadings": [
+        "ブン",
+        "モン"
+      ],
+      "vocabulary": [
+        {
+          "word": "新聞",
+          "reading": "しんぶん",
+          "meaning": "newspaper"
+        },
+        {
+          "word": "音楽",
+          "reading": "おんがく",
+          "meaning": "music"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "新聞を読みます。",
+          "english": "I read the newspaper."
+        },
+        {
+          "japanese": "音楽を聞きます。",
+          "english": "I listen to music."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 49,
+      "bundledWith": null,
+      "lessonNumber": 20,
+      "lessonDate": "2026-03-23",
+      "textbookPage": 218,
+      "lessonSource": "一歩2, p.218"
+    },
+    {
+      "id": "ext_kanji_食",
+      "kanji": "食",
+      "meaning": "to eat",
+      "kunReadings": [
+        "た (べる)",
+        "く (う)"
+      ],
+      "onReadings": [
+        "ショク",
+        "ショッ"
+      ],
+      "vocabulary": [
+        {
+          "word": "食べます / 食べる",
+          "reading": "たべます / たべる",
+          "meaning": "to eat"
+        },
+        {
+          "word": "昼食",
+          "reading": "ちゅうしょく",
+          "meaning": "lunch"
+        },
+        {
+          "word": "食べもの",
+          "reading": "たべもの",
+          "meaning": "food"
+        },
+        {
+          "word": "食堂",
+          "reading": "しょくどう",
+          "meaning": "dining hall, cafeteria"
+        },
+        {
+          "word": "食器",
+          "reading": "しょっき",
+          "meaning": "tableware"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "ご飯を食べます。",
+          "english": "I eat rice/meal."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 50,
+      "bundledWith": null,
+      "lessonNumber": 20,
+      "lessonDate": "2026-03-23",
+      "textbookPage": 218,
+      "lessonSource": "一歩2, p.218"
+    },
+    {
+      "id": "ext_kanji_飲",
+      "kanji": "飲",
+      "meaning": "to drink",
+      "kunReadings": [
+        "の (む)"
+      ],
+      "onReadings": [
+        "イン"
+      ],
+      "vocabulary": [
+        {
+          "word": "飲みます / 飲む",
+          "reading": "のみます / のむ",
+          "meaning": "to drink"
+        },
+        {
+          "word": "飲みもの",
+          "reading": "のみもの",
+          "meaning": "drink"
+        },
+        {
+          "word": "飲み屋",
+          "reading": "のみや",
+          "meaning": "bar, pub"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "きょう新宿の飲み屋へ行きます。",
+          "english": "Today I'm going to a bar in Shinjuku."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 51,
+      "bundledWith": null,
+      "lessonNumber": 21,
+      "lessonDate": "2026-03-24",
+      "textbookPage": 219,
+      "lessonSource": "一歩2, p.219"
+    },
+    {
+      "id": "ext_kanji_休",
+      "kanji": "休",
+      "meaning": "to rest",
+      "kunReadings": [
+        "やす (む)"
+      ],
+      "onReadings": [
+        "キュウ"
+      ],
+      "vocabulary": [
+        {
+          "word": "休みます",
+          "reading": "やすみます",
+          "meaning": "to rest"
+        },
+        {
+          "word": "休み時間",
+          "reading": "やすみじかん",
+          "meaning": "break time"
+        },
+        {
+          "word": "休けいします",
+          "reading": "きゅうけいします",
+          "meaning": "to take a break"
+        },
+        {
+          "word": "春休み",
+          "reading": "はるやすみ",
+          "meaning": "spring break"
+        },
+        {
+          "word": "夏休み",
+          "reading": "なつやすみ",
+          "meaning": "summer vacation"
+        },
+        {
+          "word": "冬休み",
+          "reading": "ふゆやすみ",
+          "meaning": "winter vacation"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 52,
+      "bundledWith": null,
+      "lessonNumber": 21,
+      "lessonDate": "2026-03-24",
+      "textbookPage": 219,
+      "lessonSource": "一歩2, p.219"
+    },
+    {
+      "id": "ext_kanji_内",
+      "kanji": "内",
+      "meaning": "inside",
+      "kunReadings": [
+        "うち"
+      ],
+      "onReadings": [
+        "ナイ",
+        "ダイ"
+      ],
+      "vocabulary": [
+        {
+          "word": "内科",
+          "reading": "ないか",
+          "meaning": "internal medicine"
+        },
+        {
+          "word": "案内します",
+          "reading": "あんないします",
+          "meaning": "to guide, show around"
+        },
+        {
+          "word": "車内",
+          "reading": "しゃない",
+          "meaning": "inside a train/car"
+        },
+        {
+          "word": "国内",
+          "reading": "こくない",
+          "meaning": "domestic (within country)"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 53,
+      "bundledWith": null,
+      "lessonNumber": 22,
+      "lessonDate": "2026-03-25",
+      "textbookPage": 220,
+      "lessonSource": "もじ14, p.220"
+    },
+    {
+      "id": "ext_kanji_外",
+      "kanji": "外",
+      "meaning": "outside",
+      "kunReadings": [
+        "そと",
+        "ほか",
+        "はず (れる)"
+      ],
+      "onReadings": [
+        "ガイ",
+        "ゲ"
+      ],
+      "vocabulary": [
+        {
+          "word": "外",
+          "reading": "そと",
+          "meaning": "outside"
+        },
+        {
+          "word": "外国",
+          "reading": "がいこく",
+          "meaning": "foreign country"
+        },
+        {
+          "word": "外国人",
+          "reading": "がいこくじん",
+          "meaning": "foreigner"
+        },
+        {
+          "word": "外科",
+          "reading": "げか",
+          "meaning": "surgery (dept.)"
+        },
+        {
+          "word": "車外",
+          "reading": "しゃがい",
+          "meaning": "outside the train/car"
+        },
+        {
+          "word": "海外",
+          "reading": "かいがい",
+          "meaning": "overseas"
+        },
+        {
+          "word": "外出します",
+          "reading": "がいしゅつします",
+          "meaning": "to go out"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "ちちは外国にいます。",
+          "english": "My father is abroad."
+        },
+        {
+          "japanese": "外に行きます。",
+          "english": "I'll go outside."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 54,
+      "bundledWith": null,
+      "lessonNumber": 22,
+      "lessonDate": "2026-03-25",
+      "textbookPage": 220,
+      "lessonSource": "もじ14, p.220"
+    },
+    {
+      "id": "ext_kanji_国",
+      "kanji": "国",
+      "meaning": "country",
+      "kunReadings": [
+        "くに"
+      ],
+      "onReadings": [
+        "コク",
+        "ゴク"
+      ],
+      "vocabulary": [
+        {
+          "word": "国",
+          "reading": "くに",
+          "meaning": "country"
+        },
+        {
+          "word": "中国",
+          "reading": "ちゅうごく",
+          "meaning": "China"
+        },
+        {
+          "word": "外国",
+          "reading": "がいこく",
+          "meaning": "foreign country"
+        },
+        {
+          "word": "米国",
+          "reading": "べいこく",
+          "meaning": "USA"
+        },
+        {
+          "word": "英国",
+          "reading": "えいこく",
+          "meaning": "UK"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "お国はどちらですか。",
+          "english": "What country are you from?"
+        },
+        {
+          "japanese": "来週国へ帰ります。",
+          "english": "Next week I'll return to my country."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 55,
+      "bundledWith": null,
+      "lessonNumber": 22,
+      "lessonDate": "2026-03-25",
+      "textbookPage": 220,
+      "lessonSource": "もじ14, p.220"
+    },
+    {
+      "id": "ext_kanji_入",
+      "kanji": "入",
+      "meaning": "to enter",
+      "kunReadings": [
+        "はい (る)",
+        "い (れる)"
+      ],
+      "onReadings": [
+        "ニュウ"
+      ],
+      "vocabulary": [
+        {
+          "word": "入口",
+          "reading": "いりぐち",
+          "meaning": "entrance"
+        },
+        {
+          "word": "入国",
+          "reading": "にゅうこく",
+          "meaning": "entering a country"
+        },
+        {
+          "word": "入学",
+          "reading": "にゅうがく",
+          "meaning": "entering school"
+        },
+        {
+          "word": "入院",
+          "reading": "にゅういん",
+          "meaning": "hospitalization"
+        },
+        {
+          "word": "お預け入れ",
+          "reading": "おあずけいれ",
+          "meaning": "deposit (bank)"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "部屋に入ります。",
+          "english": "I enter the room."
+        },
+        {
+          "japanese": "しおを入れます。",
+          "english": "I add salt."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 56,
+      "bundledWith": null,
+      "lessonNumber": 23,
+      "lessonDate": "2026-04-06",
+      "textbookPage": 220,
+      "lessonSource": "もじ14 / 一歩2 p.220–221"
+    },
+    {
+      "id": "ext_kanji_出",
+      "kanji": "出",
+      "meaning": "to exit",
+      "kunReadings": [
+        "で (る)",
+        "だ (す)"
+      ],
+      "onReadings": [
+        "シュツ",
+        "シュッ"
+      ],
+      "vocabulary": [
+        {
+          "word": "出口",
+          "reading": "でぐち",
+          "meaning": "exit"
+        },
+        {
+          "word": "出国",
+          "reading": "しゅっこく",
+          "meaning": "leaving a country"
+        },
+        {
+          "word": "外出",
+          "reading": "がいしゅつ",
+          "meaning": "going out"
+        },
+        {
+          "word": "お引き出し",
+          "reading": "おひきだし",
+          "meaning": "withdrawal (bank)"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "部屋を出ます。",
+          "english": "I leave the room."
+        },
+        {
+          "japanese": "手紙を出します。",
+          "english": "I send a letter."
+        },
+        {
+          "japanese": "みずが出ます。",
+          "english": "Water comes out."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 57,
+      "bundledWith": null,
+      "lessonNumber": 23,
+      "lessonDate": "2026-04-06",
+      "textbookPage": 220,
+      "lessonSource": "もじ14 / 一歩2 p.220–221"
+    },
+    {
+      "id": "ext_kanji_前",
+      "kanji": "前",
+      "meaning": "before",
+      "kunReadings": [
+        "まえ"
+      ],
+      "onReadings": [
+        "ゼン"
+      ],
+      "vocabulary": [
+        {
+          "word": "前",
+          "reading": "まえ",
+          "meaning": "front / before"
+        },
+        {
+          "word": "午前",
+          "reading": "ごぜん",
+          "meaning": "AM, morning"
+        },
+        {
+          "word": "午前中",
+          "reading": "ごぜんちゅう",
+          "meaning": "during the morning"
+        },
+        {
+          "word": "食前",
+          "reading": "しょくぜん",
+          "meaning": "before a meal"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 58,
+      "bundledWith": null,
+      "lessonNumber": 24,
+      "lessonDate": "2026-04-07",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_後",
+      "kanji": "後",
+      "meaning": "back",
+      "kunReadings": [
+        "うし (ろ)",
+        "のち",
+        "あと",
+        "おく (れる)"
+      ],
+      "onReadings": [
+        "ゴ",
+        "コウ"
+      ],
+      "vocabulary": [
+        {
+          "word": "後ろ",
+          "reading": "うしろ",
+          "meaning": "behind"
+        },
+        {
+          "word": "後で",
+          "reading": "あとで",
+          "meaning": "later"
+        },
+        {
+          "word": "食後",
+          "reading": "しょくご",
+          "meaning": "after a meal"
+        },
+        {
+          "word": "前後",
+          "reading": "ぜんご",
+          "meaning": "before & after / around"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "クラスの後で、ともだちとランチします。",
+          "english": "After class, I have lunch with my friend."
+        },
+        {
+          "japanese": "いただきます。ごちそうさまでした。",
+          "english": "(meal phrases)"
+        },
+        {
+          "japanese": "私の前後は、女の人です。",
+          "english": "The people in front of and behind me are women."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 59,
+      "bundledWith": null,
+      "lessonNumber": 24,
+      "lessonDate": "2026-04-07",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_右",
+      "kanji": "右",
+      "meaning": "right",
+      "kunReadings": [
+        "みぎ"
+      ],
+      "onReadings": [
+        "ウ",
+        "ユウ"
+      ],
+      "vocabulary": [
+        {
+          "word": "右",
+          "reading": "みぎ",
+          "meaning": "right"
+        },
+        {
+          "word": "右手",
+          "reading": "みぎて",
+          "meaning": "right hand"
+        },
+        {
+          "word": "右足",
+          "reading": "みぎあし",
+          "meaning": "right foot"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 60,
+      "bundledWith": null,
+      "lessonNumber": 25,
+      "lessonDate": "2026-04-08",
+      "textbookPage": 222,
+      "lessonSource": "もじ15, p.222"
+    },
+    {
+      "id": "ext_kanji_左",
+      "kanji": "左",
+      "meaning": "left",
+      "kunReadings": [
+        "ひだり"
+      ],
+      "onReadings": [
+        "サ"
+      ],
+      "vocabulary": [
+        {
+          "word": "左",
+          "reading": "ひだり",
+          "meaning": "left"
+        },
+        {
+          "word": "左手",
+          "reading": "ひだりて",
+          "meaning": "left hand"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "左の人はちちです。",
+          "english": "The person on the left is my father."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 61,
+      "bundledWith": null,
+      "lessonNumber": 25,
+      "lessonDate": "2026-04-08",
+      "textbookPage": 222,
+      "lessonSource": "もじ15, p.222"
+    },
+    {
+      "id": "ext_kanji_名",
+      "kanji": "名",
+      "meaning": "name",
+      "kunReadings": [
+        "な"
+      ],
+      "onReadings": [
+        "メイ",
+        "ミョウ"
+      ],
+      "vocabulary": [
+        {
+          "word": "名前",
+          "reading": "なまえ",
+          "meaning": "name"
+        },
+        {
+          "word": "名字",
+          "reading": "みょうじ",
+          "meaning": "surname"
+        },
+        {
+          "word": "名刺",
+          "reading": "めいし",
+          "meaning": "business card"
+        },
+        {
+          "word": "名詞",
+          "reading": "めいし",
+          "meaning": "noun"
+        },
+        {
+          "word": "有名（な）",
+          "reading": "ゆうめい",
+          "meaning": "famous"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "お名前を教えてください。",
+          "english": "Please tell me your name."
+        },
+        {
+          "japanese": "清水寺は有名なお寺です。",
+          "english": "Kiyomizu Temple is a famous temple."
+        }
+      ],
+      "extraSections": [
+        {
+          "title": "Review practice (p.223)",
+          "type": "bullets",
+          "items": [
+            {
+              "text": "大切な人の名前をわすれないでください。",
+              "gloss": "Don't forget the name of important people."
+            },
+            {
+              "text": "食前のくすりを飲んでから、ごはんを食べてください。",
+              "gloss": "Take the pre-meal medicine before eating."
+            },
+            {
+              "text": "何か食後のデザートを食べない？ — じゃあ、アイスクリーム。",
+              "gloss": "Shall we eat dessert after the meal? — Then, ice cream."
+            },
+            {
+              "text": "デパートの前に有名なレストランがあります。",
+              "gloss": "There's a famous restaurant in front of the department store."
+            },
+            {
+              "text": "右手を前に出して、左足を後ろにのばしてください。",
+              "gloss": "Put your right hand forward and stretch your left leg back."
+            },
+            {
+              "text": "あたまを前後にまげてください。",
+              "gloss": "Bend your head forward and backward."
+            }
+          ]
+        },
+        {
+          "title": "Positioning people (p.223 problem 5)",
+          "type": "bullets",
+          "items": [
+            {
+              "text": "大木くんは右から2人目の人です。",
+              "gloss": "Oki-kun is the 2nd person from the right."
+            },
+            {
+              "text": "前のいすにすわっています。",
+              "gloss": "He is sitting on the front chair."
+            },
+            {
+              "text": "本田くんはいちばん左の人です。",
+              "gloss": "Honda-kun is the leftmost person."
+            },
+            {
+              "text": "川口さんは本田くんの後ろです。",
+              "gloss": "Ms. Kawaguchi is behind Honda-kun."
+            },
+            {
+              "text": "金田さんは川口さんのとなりです。",
+              "gloss": "Ms. Kaneda is next to Kawaguchi-san."
+            },
+            {
+              "text": "前川くんはいちばん後ろにいます。",
+              "gloss": "Maekawa-kun is at the very back."
+            }
+          ]
+        }
+      ],
+      "orderInReference": 62,
+      "bundledWith": null,
+      "lessonNumber": 25,
+      "lessonDate": "2026-04-08",
+      "textbookPage": 222,
+      "lessonSource": "もじ15, p.222"
+    },
+    {
+      "id": "ext_kanji_毎",
+      "kanji": "毎",
+      "meaning": "every",
+      "kunReadings": [],
+      "onReadings": [
+        "マイ"
+      ],
+      "vocabulary": [
+        {
+          "word": "毎年",
+          "reading": "まいとし",
+          "meaning": "every year"
+        },
+        {
+          "word": "毎月",
+          "reading": "まいつき",
+          "meaning": "every month"
+        },
+        {
+          "word": "毎週",
+          "reading": "まいしゅう",
+          "meaning": "every week"
+        },
+        {
+          "word": "毎日",
+          "reading": "まいにち",
+          "meaning": "every day"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "毎日犬の散歩をします。",
+          "english": "I walk the dog every day."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 63,
+      "bundledWith": null,
+      "lessonNumber": 27,
+      "lessonDate": "2026-04-10",
+      "textbookPage": 224,
+      "lessonSource": "もじ16, p.224"
+    },
+    {
+      "id": "ext_kanji_先",
+      "kanji": "先",
+      "meaning": "previous",
+      "kunReadings": [
+        "さき"
+      ],
+      "onReadings": [
+        "セン"
+      ],
+      "vocabulary": [
+        {
+          "word": "先生",
+          "reading": "せんせい",
+          "meaning": "teacher"
+        },
+        {
+          "word": "先週",
+          "reading": "せんしゅう",
+          "meaning": "last week"
+        },
+        {
+          "word": "お先に",
+          "reading": "おさきに",
+          "meaning": "ahead (of you)"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "お先にどうぞ。",
+          "english": "Please go ahead."
+        },
+        {
+          "japanese": "お先に失礼します。",
+          "english": "Excuse me for leaving first."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 64,
+      "bundledWith": null,
+      "lessonNumber": 27,
+      "lessonDate": "2026-04-10",
+      "textbookPage": 224,
+      "lessonSource": "もじ16, p.224"
+    },
+    {
+      "id": "ext_kanji_週",
+      "kanji": "週",
+      "meaning": "week",
+      "kunReadings": [],
+      "onReadings": [
+        "シュウ"
+      ],
+      "vocabulary": [
+        {
+          "word": "先週",
+          "reading": "せんしゅう",
+          "meaning": "last week"
+        },
+        {
+          "word": "今週",
+          "reading": "こんしゅう",
+          "meaning": "this week"
+        },
+        {
+          "word": "来週",
+          "reading": "らいしゅう",
+          "meaning": "next week"
+        },
+        {
+          "word": "週替わり",
+          "reading": "しゅうがわり",
+          "meaning": "weekly special"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "毎週日曜日は、ジムで運動します。",
+          "english": "Every Sunday I exercise at the gym."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 65,
+      "bundledWith": null,
+      "lessonNumber": 27,
+      "lessonDate": "2026-04-10",
+      "textbookPage": 224,
+      "lessonSource": "もじ16, p.224"
+    },
+    {
+      "id": "ext_kanji_時",
+      "kanji": "時",
+      "meaning": "time",
+      "kunReadings": [
+        "とき"
+      ],
+      "onReadings": [
+        "ジ"
+      ],
+      "vocabulary": [
+        {
+          "word": "時間",
+          "reading": "じかん",
+          "meaning": "time, hour(s)"
+        },
+        {
+          "word": "時計",
+          "reading": "とけい",
+          "meaning": "clock, watch"
+        },
+        {
+          "word": "めざまし時計",
+          "reading": "めざましどけい",
+          "meaning": "alarm clock"
+        },
+        {
+          "word": "腕時計",
+          "reading": "うでどけい",
+          "meaning": "wristwatch"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "私は子どもの時、野菜が苦手でした。",
+          "english": "When I was a child, I didn't like vegetables."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 66,
+      "bundledWith": null,
+      "lessonNumber": 28,
+      "lessonDate": "2026-04-13",
+      "textbookPage": 224,
+      "lessonSource": "一歩2, p.224–225"
+    },
+    {
+      "id": "ext_kanji_間",
+      "kanji": "間",
+      "meaning": "interval",
+      "kunReadings": [
+        "あいだ",
+        "ま"
+      ],
+      "onReadings": [
+        "カン",
+        "ケン"
+      ],
+      "vocabulary": [
+        {
+          "word": "時間",
+          "reading": "じかん",
+          "meaning": "time"
+        },
+        {
+          "word": "1週間",
+          "reading": "いっしゅうかん",
+          "meaning": "one week (duration)"
+        },
+        {
+          "word": "間",
+          "reading": "あいだ",
+          "meaning": "between"
+        },
+        {
+          "word": "この間",
+          "reading": "このあいだ",
+          "meaning": "the other day"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "1週間後に、JLPTの試験があります。",
+          "english": "In one week, there's the JLPT exam."
+        },
+        {
+          "japanese": "コンビニとレストランの間に交番があります。",
+          "english": "There's a police box between the convenience store and the restaurant."
+        },
+        {
+          "japanese": "この間、駅で田中さんに会いました。",
+          "english": "The other day I met Mr. Tanaka at the station."
+        }
+      ],
+      "extraSections": [
+        {
+          "title": "Bonus — counter 〜錠 (pills/tablets, from p.225)",
+          "type": "mixed",
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "#",
+                "Reading"
+              ],
+              "rows": [
+                {
+                  "#": "1錠",
+                  "Reading": "いちじょう"
+                },
+                {
+                  "#": "2錠",
+                  "Reading": "にじょう"
+                },
+                {
+                  "#": "3錠",
+                  "Reading": "さんじょう"
+                },
+                {
+                  "#": "4錠",
+                  "Reading": "よんじょう"
+                },
+                {
+                  "#": "5錠",
+                  "Reading": "ごじょう"
+                }
+              ]
+            },
+            {
+              "type": "prose",
+              "text": "Also: 耳鼻科 (じびか) — ENT clinic; 小笠原 (おがさわら) — Ogasawara (surname/place)."
+            }
+          ]
+        }
+      ],
+      "orderInReference": 67,
+      "bundledWith": null,
+      "lessonNumber": 28,
+      "lessonDate": "2026-04-13",
+      "textbookPage": 224,
+      "lessonSource": "一歩2, p.224–225"
+    },
+    {
+      "id": "ext_kanji_今",
+      "kanji": "今",
+      "meaning": "now",
+      "kunReadings": [
+        "いま"
+      ],
+      "onReadings": [
+        "コン",
+        "キン"
+      ],
+      "vocabulary": [
+        {
+          "word": "今",
+          "reading": "いま",
+          "meaning": "now"
+        },
+        {
+          "word": "今日",
+          "reading": "きょう",
+          "meaning": "today"
+        },
+        {
+          "word": "今月",
+          "reading": "こんげつ",
+          "meaning": "this month"
+        },
+        {
+          "word": "今年",
+          "reading": "ことし",
+          "meaning": "this year"
+        },
+        {
+          "word": "今朝",
+          "reading": "けさ",
+          "meaning": "this morning"
+        },
+        {
+          "word": "今夜",
+          "reading": "こんや",
+          "meaning": "tonight"
+        },
+        {
+          "word": "今週",
+          "reading": "こんしゅう",
+          "meaning": "this week"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "今日は、たろうくんの10歳の誕生日です。",
+          "english": "Today is Taro's 10th birthday."
+        },
+        {
+          "japanese": "今週の金曜日に、漢字テストをします。",
+          "english": "This Friday we have a kanji test."
+        },
+        {
+          "japanese": "今から、社長が来ます。",
+          "english": "The company president is coming now."
+        },
+        {
+          "japanese": "今週はとてもいそがしいです。",
+          "english": "This week is very busy."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 68,
+      "bundledWith": null,
+      "lessonNumber": 29,
+      "lessonDate": "2026-04-14",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_分",
+      "kanji": "分",
+      "meaning": "minute",
+      "kunReadings": [
+        "わ (ける・かる)"
+      ],
+      "onReadings": [
+        "フン",
+        "プン",
+        "ブン",
+        "ブ"
+      ],
+      "vocabulary": [
+        {
+          "word": "1分",
+          "reading": "いっぷん",
+          "meaning": "1 minute"
+        },
+        {
+          "word": "5分",
+          "reading": "ごふん",
+          "meaning": "5 minutes"
+        },
+        {
+          "word": "3等分",
+          "reading": "さんとうぶん",
+          "meaning": "divide into thirds"
+        },
+        {
+          "word": "半分",
+          "reading": "はんぶん",
+          "meaning": "half"
+        },
+        {
+          "word": "分けます",
+          "reading": "わけます",
+          "meaning": "to divide"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "半分に分けます。",
+          "english": "Divide in half."
+        },
+        {
+          "japanese": "日本では、プラスチックと生ごみを分けます。",
+          "english": "In Japan, we separate plastics and food waste."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 69,
+      "bundledWith": null,
+      "lessonNumber": 29,
+      "lessonDate": "2026-04-14",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_半",
+      "kanji": "半",
+      "meaning": "half",
+      "kunReadings": [
+        "なか (ば)"
+      ],
+      "onReadings": [
+        "ハン"
+      ],
+      "vocabulary": [
+        {
+          "word": "16時半",
+          "reading": "じゅうろくじはん",
+          "meaning": "4:30 PM"
+        },
+        {
+          "word": "半額",
+          "reading": "はんがく",
+          "meaning": "half price"
+        },
+        {
+          "word": "半日",
+          "reading": "はんにち",
+          "meaning": "half a day"
+        },
+        {
+          "word": "半年",
+          "reading": "はんとし",
+          "meaning": "half a year"
+        },
+        {
+          "word": "半分",
+          "reading": "はんぶん",
+          "meaning": "half"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "友だちとパンを半分こして食べました。",
+          "english": "I split the bread in half with my friend and ate it."
+        },
+        {
+          "japanese": "よる8時半から11時半までべんきょうします。",
+          "english": "I study from 8:30 to 11:30 PM."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 70,
+      "bundledWith": null,
+      "lessonNumber": 29,
+      "lessonDate": "2026-04-14",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_午",
+      "kanji": "午",
+      "meaning": "noon",
+      "kunReadings": [],
+      "onReadings": [
+        "ゴ"
+      ],
+      "vocabulary": [
+        {
+          "word": "午前",
+          "reading": "ごぜん",
+          "meaning": "AM"
+        },
+        {
+          "word": "午後",
+          "reading": "ごご",
+          "meaning": "PM"
+        },
+        {
+          "word": "午前中",
+          "reading": "ごぜんちゅう",
+          "meaning": "during the morning"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "明日の会議の資料、午前中にお願いします。 — はい、わかりました。",
+          "english": "The documents for tomorrow's meeting, please by morning. — Yes, understood."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 71,
+      "bundledWith": null,
+      "lessonNumber": 30,
+      "lessonDate": "2026-04-15",
+      "textbookPage": 226,
+      "lessonSource": "もじ17, p.226–227"
+    },
+    {
+      "id": "ext_kanji_父",
+      "kanji": "父",
+      "meaning": "father",
+      "kunReadings": [
+        "ちち"
+      ],
+      "onReadings": [
+        "フ"
+      ],
+      "vocabulary": [
+        {
+          "word": "父",
+          "reading": "ちち",
+          "meaning": "my father"
+        },
+        {
+          "word": "お父さん",
+          "reading": "おとうさん",
+          "meaning": "father (polite)"
+        },
+        {
+          "word": "祖父",
+          "reading": "そふ",
+          "meaning": "grandfather"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "父の日に、お父さんに花をあげました。",
+          "english": "On Father's Day, I gave flowers to my father."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 72,
+      "bundledWith": null,
+      "lessonNumber": 31,
+      "lessonDate": "2026-04-16",
+      "textbookPage": 228,
+      "lessonSource": "もじ18, p.228"
+    },
+    {
+      "id": "ext_kanji_母",
+      "kanji": "母",
+      "meaning": "mother",
+      "kunReadings": [
+        "はは"
+      ],
+      "onReadings": [
+        "ボ"
+      ],
+      "vocabulary": [
+        {
+          "word": "母",
+          "reading": "はは",
+          "meaning": "my mother"
+        },
+        {
+          "word": "お母さん",
+          "reading": "おかあさん",
+          "meaning": "mother (polite)"
+        },
+        {
+          "word": "祖母",
+          "reading": "そぼ",
+          "meaning": "grandmother"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "母の日に、お母さんに花をあげました。",
+          "english": "On Mother's Day, I gave flowers to my mother."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 73,
+      "bundledWith": null,
+      "lessonNumber": 31,
+      "lessonDate": "2026-04-16",
+      "textbookPage": 228,
+      "lessonSource": "もじ18, p.228"
+    },
+    {
+      "id": "ext_kanji_子",
+      "kanji": "子",
+      "meaning": "child",
+      "kunReadings": [
+        "こ"
+      ],
+      "onReadings": [
+        "シ",
+        "ス"
+      ],
+      "vocabulary": [
+        {
+          "word": "子ども",
+          "reading": "こども",
+          "meaning": "child"
+        },
+        {
+          "word": "男子",
+          "reading": "だんし",
+          "meaning": "boy, male"
+        },
+        {
+          "word": "女子",
+          "reading": "じょし",
+          "meaning": "girl, female"
+        },
+        {
+          "word": "男の子",
+          "reading": "おとこのこ",
+          "meaning": "boy"
+        },
+        {
+          "word": "女の子",
+          "reading": "おんなのこ",
+          "meaning": "girl"
+        },
+        {
+          "word": "双子",
+          "reading": "ふたご",
+          "meaning": "twins"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "男の子と女の子の双子です。",
+          "english": "Twins — a boy and a girl."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 74,
+      "bundledWith": null,
+      "lessonNumber": 31,
+      "lessonDate": "2026-04-16",
+      "textbookPage": 228,
+      "lessonSource": "もじ18, p.228"
+    },
+    {
+      "id": "ext_kanji_男",
+      "kanji": "男",
+      "meaning": "man",
+      "kunReadings": [
+        "おとこ"
+      ],
+      "onReadings": [
+        "ダン",
+        "ナン"
+      ],
+      "vocabulary": [
+        {
+          "word": "男",
+          "reading": "おとこ",
+          "meaning": "man"
+        },
+        {
+          "word": "男の子",
+          "reading": "おとこのこ",
+          "meaning": "boy"
+        },
+        {
+          "word": "男の人",
+          "reading": "おとこのひと",
+          "meaning": "man"
+        },
+        {
+          "word": "男性",
+          "reading": "だんせい",
+          "meaning": "male"
+        },
+        {
+          "word": "男子学生",
+          "reading": "だんしがくせい",
+          "meaning": "male student"
+        },
+        {
+          "word": "男子トイレ",
+          "reading": "だんしトイレ",
+          "meaning": "men's restroom"
+        },
+        {
+          "word": "男子マラソン",
+          "reading": "だんしマラソン",
+          "meaning": "men's marathon"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [],
+      "orderInReference": 75,
+      "bundledWith": null,
+      "lessonNumber": 32,
+      "lessonDate": "2026-04-17",
+      "textbookPage": 229,
+      "lessonSource": "もじ18, p.229–230"
+    },
+    {
+      "id": "ext_kanji_女",
+      "kanji": "女",
+      "meaning": "woman",
+      "kunReadings": [
+        "おんな"
+      ],
+      "onReadings": [
+        "ジョ"
+      ],
+      "vocabulary": [
+        {
+          "word": "女",
+          "reading": "おんな",
+          "meaning": "woman"
+        },
+        {
+          "word": "女の子",
+          "reading": "おんなのこ",
+          "meaning": "girl"
+        },
+        {
+          "word": "女の人",
+          "reading": "おんなのひと",
+          "meaning": "woman"
+        },
+        {
+          "word": "女性",
+          "reading": "じょせい",
+          "meaning": "female"
+        },
+        {
+          "word": "女子学生",
+          "reading": "じょしがくせい",
+          "meaning": "female student"
+        },
+        {
+          "word": "女子トイレ",
+          "reading": "じょしトイレ",
+          "meaning": "women's restroom"
+        },
+        {
+          "word": "女子サッカー",
+          "reading": "じょしサッカー",
+          "meaning": "women's soccer"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "公園に女の子が2人います。",
+          "english": "There are 2 girls in the park."
+        },
+        {
+          "japanese": "子どものとき、父と母の間でねました。",
+          "english": "As a child, I slept between my father and mother."
+        },
+        {
+          "japanese": "ノイさんのお母さんはどんなかたですか。",
+          "english": "What kind of person is Noi's mother?"
+        },
+        {
+          "japanese": "あの男性はどなたですか。 — ノイさんのお父さんですよ。",
+          "english": "Who is that man? — It's Noi's father."
+        },
+        {
+          "japanese": "日本へ来るとき、父に辞書をもらいました。",
+          "english": "When I came to Japan, my father gave me a dictionary."
+        },
+        {
+          "japanese": "母の日にカーネーションとブラウスをあげました。",
+          "english": "On Mother's Day, I gave carnations and a blouse."
+        },
+        {
+          "japanese": "おなかの中のあかちゃんは男の子ですか。女の子ですか。",
+          "english": "Is the baby in the tummy a boy or a girl?"
+        },
+        {
+          "japanese": "毎週水曜日、女性は1,000円でえいがを見ることができます。",
+          "english": "Every Wednesday, women can watch movies for 1,000 yen."
+        },
+        {
+          "japanese": "小学校では男子より女子のほうがよくしゃべります。",
+          "english": "In elementary school, girls talk more than boys."
+        },
+        {
+          "japanese": "祖父と祖母はもう92さいと90さいですが、自分たちでそうじしたり、買い物に行ったりしています。",
+          "english": "Grandfather and grandmother are already 92 and 90, but they clean and go shopping by themselves."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 76,
+      "bundledWith": null,
+      "lessonNumber": 32,
+      "lessonDate": "2026-04-17",
+      "textbookPage": 229,
+      "lessonSource": "もじ18, p.229–230"
+    },
+    {
+      "id": "ext_kanji_東",
+      "kanji": "東",
+      "meaning": "east",
+      "kunReadings": [
+        "ひがし"
+      ],
+      "onReadings": [
+        "トウ"
+      ],
+      "vocabulary": [
+        {
+          "word": "東",
+          "reading": "ひがし",
+          "meaning": "east"
+        },
+        {
+          "word": "東京",
+          "reading": "とうきょう",
+          "meaning": "Tokyo"
+        },
+        {
+          "word": "関東",
+          "reading": "かんとう",
+          "meaning": "Kanto region"
+        },
+        {
+          "word": "東北",
+          "reading": "とうほく",
+          "meaning": "Tohoku region"
+        },
+        {
+          "word": "東北新幹線",
+          "reading": "とうほくしんかんせん",
+          "meaning": "Tohoku Shinkansen"
+        },
+        {
+          "word": "東海道線",
+          "reading": "とうかいどうせん",
+          "meaning": "Tokaido Line"
+        },
+        {
+          "word": "東口",
+          "reading": "ひがしぐち",
+          "meaning": "east exit"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "東京駅で東海道線にのりかえます。",
+          "english": "I transfer to the Tokaido Line at Tokyo Station."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 77,
+      "bundledWith": null,
+      "lessonNumber": 33,
+      "lessonDate": "2026-04-20",
+      "textbookPage": 231,
+      "lessonSource": "一歩2, p.231"
+    },
+    {
+      "id": "ext_kanji_西",
+      "kanji": "西",
+      "meaning": "west",
+      "kunReadings": [
+        "にし"
+      ],
+      "onReadings": [
+        "セイ",
+        "サイ",
+        "ザイ"
+      ],
+      "vocabulary": [
+        {
+          "word": "西",
+          "reading": "にし",
+          "meaning": "west"
+        },
+        {
+          "word": "関西",
+          "reading": "かんさい",
+          "meaning": "Kansai region"
+        },
+        {
+          "word": "東西",
+          "reading": "とうざい",
+          "meaning": "east and west"
+        },
+        {
+          "word": "西口",
+          "reading": "にしぐち",
+          "meaning": "west exit"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "太陽は東からのぼって、西にしずみます。",
+          "english": "The sun rises in the east and sets in the west."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 78,
+      "bundledWith": null,
+      "lessonNumber": 33,
+      "lessonDate": "2026-04-20",
+      "textbookPage": 231,
+      "lessonSource": "一歩2, p.231"
+    },
+    {
+      "id": "ext_kanji_南",
+      "kanji": "南",
+      "meaning": "south",
+      "kunReadings": [
+        "みなみ"
+      ],
+      "onReadings": [
+        "ナン"
+      ],
+      "vocabulary": [
+        {
+          "word": "南",
+          "reading": "みなみ",
+          "meaning": "south"
+        },
+        {
+          "word": "南口",
+          "reading": "みなみぐち",
+          "meaning": "south exit"
+        },
+        {
+          "word": "東南アジア",
+          "reading": "とうなんアジア",
+          "meaning": "Southeast Asia"
+        },
+        {
+          "word": "南極",
+          "reading": "なんきょく",
+          "meaning": "Antarctica"
+        }
+      ],
+      "exampleSentences": [],
+      "extraSections": [
+        {
+          "title": "Four exits (for reference)",
+          "type": "table",
+          "headers": [
+            "Kanji",
+            "Reading",
+            "Meaning"
+          ],
+          "rows": [
+            {
+              "Kanji": "東口",
+              "Reading": "ひがしぐち",
+              "Meaning": "east exit"
+            },
+            {
+              "Kanji": "西口",
+              "Reading": "にしぐち",
+              "Meaning": "west exit"
+            },
+            {
+              "Kanji": "南口",
+              "Reading": "みなみぐち",
+              "Meaning": "south exit"
+            },
+            {
+              "Kanji": "北口",
+              "Reading": "きたぐち",
+              "Meaning": "north exit"
+            }
+          ]
+        }
+      ],
+      "orderInReference": 79,
+      "bundledWith": null,
+      "lessonNumber": 33,
+      "lessonDate": "2026-04-20",
+      "textbookPage": 231,
+      "lessonSource": "一歩2, p.231"
+    },
+    {
+      "id": "ext_kanji_北",
+      "kanji": "北",
+      "meaning": "north",
+      "kunReadings": [
+        "きた"
+      ],
+      "onReadings": [
+        "ホク",
+        "ボク",
+        "ホッ"
+      ],
+      "vocabulary": [
+        {
+          "word": "北",
+          "reading": "きた",
+          "meaning": "north"
+        },
+        {
+          "word": "北海道",
+          "reading": "ほっかいどう",
+          "meaning": "Hokkaido"
+        },
+        {
+          "word": "東北地方",
+          "reading": "とうほくちほう",
+          "meaning": "Tohoku region"
+        },
+        {
+          "word": "北口",
+          "reading": "きたぐち",
+          "meaning": "north exit"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "夏休みに北海道へ行きました。",
+          "english": "I went to Hokkaido during summer vacation."
+        }
+      ],
+      "extraSections": [
+        {
+          "title": "Regions of Japan (reference)",
+          "type": "table",
+          "headers": [
+            "#",
+            "Region",
+            "Reading"
+          ],
+          "rows": [
+            {
+              "#": "1",
+              "Region": "北海道",
+              "Reading": "ほっかいどう"
+            },
+            {
+              "#": "2",
+              "Region": "東北",
+              "Reading": "とうほく"
+            },
+            {
+              "#": "3",
+              "Region": "中部",
+              "Reading": "ちゅうぶ"
+            },
+            {
+              "#": "4",
+              "Region": "関東",
+              "Reading": "かんとう"
+            },
+            {
+              "#": "5",
+              "Region": "近畿",
+              "Reading": "きんき"
+            },
+            {
+              "#": "6",
+              "Region": "中国",
+              "Reading": "ちゅうごく"
+            },
+            {
+              "#": "7",
+              "Region": "四国",
+              "Reading": "しこく"
+            },
+            {
+              "#": "8",
+              "Region": "九州",
+              "Reading": "きゅうしゅう"
+            }
+          ]
+        }
+      ],
+      "orderInReference": 80,
+      "bundledWith": null,
+      "lessonNumber": 34,
+      "lessonDate": "2026-04-21",
+      "textbookPage": null,
+      "lessonSource": null
+    },
+    {
+      "id": "ext_kanji_書",
+      "kanji": "書",
+      "meaning": "to write",
+      "kunReadings": [
+        "か (く)"
+      ],
+      "onReadings": [
+        "ショ"
+      ],
+      "vocabulary": [
+        {
+          "word": "書きます / 書く",
+          "reading": "かきます / かく",
+          "meaning": "to write"
+        },
+        {
+          "word": "図書館",
+          "reading": "としょかん",
+          "meaning": "library"
+        },
+        {
+          "word": "書道",
+          "reading": "しょどう",
+          "meaning": "calligraphy"
+        },
+        {
+          "word": "書類",
+          "reading": "しょるい",
+          "meaning": "document"
+        },
+        {
+          "word": "辞書",
+          "reading": "じしょ",
+          "meaning": "dictionary"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "辞書で調べて漢字を書きます。",
+          "english": "I look it up in the dictionary and write the kanji."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 81,
+      "bundledWith": null,
+      "lessonNumber": 36,
+      "lessonDate": "2026-04-23",
+      "textbookPage": 188,
+      "lessonSource": "一歩3, p.188"
+    },
+    {
+      "id": "ext_kanji_使",
+      "kanji": "使",
+      "meaning": "to use",
+      "kunReadings": [
+        "つか (う)"
+      ],
+      "onReadings": [
+        "シ"
+      ],
+      "vocabulary": [
+        {
+          "word": "使います / 使う",
+          "reading": "つかいます / つかう",
+          "meaning": "to use"
+        },
+        {
+          "word": "大使館",
+          "reading": "たいしかん",
+          "meaning": "embassy"
+        },
+        {
+          "word": "使用中",
+          "reading": "しようちゅう",
+          "meaning": "in use"
+        },
+        {
+          "word": "使用禁止",
+          "reading": "しようきんし",
+          "meaning": "do not use"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "どうぞ、使ってください。",
+          "english": "Please use it."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 82,
+      "bundledWith": null,
+      "lessonNumber": 36,
+      "lessonDate": "2026-04-23",
+      "textbookPage": 188,
+      "lessonSource": "一歩3, p.188"
+    },
+    {
+      "id": "ext_kanji_歩",
+      "kanji": "歩",
+      "meaning": "to walk",
+      "kunReadings": [
+        "ある (く)"
+      ],
+      "onReadings": [
+        "ホ",
+        "ポ"
+      ],
+      "vocabulary": [
+        {
+          "word": "歩きます",
+          "reading": "あるきます",
+          "meaning": "to walk"
+        },
+        {
+          "word": "散歩",
+          "reading": "さんぽ",
+          "meaning": "walk / stroll"
+        },
+        {
+          "word": "一歩",
+          "reading": "いっぽ",
+          "meaning": "one step"
+        },
+        {
+          "word": "二歩",
+          "reading": "にほ",
+          "meaning": "two steps"
+        },
+        {
+          "word": "三歩",
+          "reading": "さんぽ",
+          "meaning": "three steps"
+        },
+        {
+          "word": "横断歩道",
+          "reading": "おうだんほどう",
+          "meaning": "pedestrian crossing"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "犬の散歩",
+          "english": "walking the dog"
+        },
+        {
+          "japanese": "毎朝歩いて会社へ行きます。",
+          "english": "I walk to the office every morning."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 83,
+      "bundledWith": null,
+      "lessonNumber": 36,
+      "lessonDate": "2026-04-23",
+      "textbookPage": 188,
+      "lessonSource": "一歩3, p.188"
+    },
+    {
+      "id": "ext_kanji_作",
+      "kanji": "作",
+      "meaning": "to make",
+      "kunReadings": [
+        "つく (る)"
+      ],
+      "onReadings": [
+        "サク",
+        "サッ"
+      ],
+      "vocabulary": [
+        {
+          "word": "作ります",
+          "reading": "つくります",
+          "meaning": "to make"
+        },
+        {
+          "word": "手作り",
+          "reading": "てづくり",
+          "meaning": "handmade"
+        },
+        {
+          "word": "作曲",
+          "reading": "さっきょく",
+          "meaning": "composition (music)"
+        },
+        {
+          "word": "作文",
+          "reading": "さくぶん",
+          "meaning": "composition (writing)"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "ケーキを作ります。",
+          "english": "I make a cake."
+        },
+        {
+          "japanese": "趣味は曲を作ることです。",
+          "english": "My hobby is composing music."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 84,
+      "bundledWith": null,
+      "lessonNumber": 37,
+      "lessonDate": "2026-04-24",
+      "textbookPage": 188,
+      "lessonSource": "漢字1, p.188"
+    },
+    {
+      "id": "ext_kanji_立",
+      "kanji": "立",
+      "meaning": "to stand",
+      "kunReadings": [
+        "た (つ/てる)"
+      ],
+      "onReadings": [
+        "リツ"
+      ],
+      "vocabulary": [
+        {
+          "word": "立ちます",
+          "reading": "たちます",
+          "meaning": "to stand"
+        },
+        {
+          "word": "立てます",
+          "reading": "たてます",
+          "meaning": "to set up, make (a plan)"
+        },
+        {
+          "word": "公立学校",
+          "reading": "こうりつがっこう",
+          "meaning": "public school"
+        },
+        {
+          "word": "区立の学校",
+          "reading": "くりつのがっこう",
+          "meaning": "ward-run school"
+        },
+        {
+          "word": "市立の学校",
+          "reading": "しりつのがっこう",
+          "meaning": "city-run school"
+        },
+        {
+          "word": "国立大学",
+          "reading": "こくりつだいがく",
+          "meaning": "national university"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "国立大学を卒業しました。",
+          "english": "I graduated from a national university."
+        },
+        {
+          "japanese": "友だちと旅行の計画を立てます。",
+          "english": "I'll make a travel plan with my friend."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 85,
+      "bundledWith": null,
+      "lessonNumber": 37,
+      "lessonDate": "2026-04-24",
+      "textbookPage": 188,
+      "lessonSource": "漢字1, p.188"
+    },
+    {
+      "id": "ext_kanji_文",
+      "kanji": "文",
+      "meaning": "sentence",
+      "kunReadings": [],
+      "onReadings": [
+        "ブン",
+        "モン"
+      ],
+      "vocabulary": [
+        {
+          "word": "文化",
+          "reading": "ぶんか",
+          "meaning": "culture"
+        },
+        {
+          "word": "作文",
+          "reading": "さくぶん",
+          "meaning": "composition (writing)"
+        },
+        {
+          "word": "文章",
+          "reading": "ぶんしょう",
+          "meaning": "passage, sentences"
+        }
+      ],
+      "exampleSentences": [
+        {
+          "japanese": "長い文章を読みます。",
+          "english": "I read a long passage."
+        }
+      ],
+      "extraSections": [],
+      "orderInReference": 86,
+      "bundledWith": null,
+      "lessonNumber": 37,
+      "lessonDate": "2026-04-24",
+      "textbookPage": 188,
+      "lessonSource": "漢字1, p.188"
+    }
+  ]
+}

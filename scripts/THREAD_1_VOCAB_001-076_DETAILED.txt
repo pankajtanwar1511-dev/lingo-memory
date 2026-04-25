@@ -1,0 +1,1645 @@
+================================================================================
+THREAD 1: EXTENDED KANJI VOCAB 001-076 — DETAILED PROMPTS
+================================================================================
+
+Source: public/seed-data/extended-kanji/vocabulary.json (first 76 rows)
+Style: calm but warm gouache picture-book illustration — in between washed-out
+watercolor and vibrant anime. Slightly deeper, grounded earth tones. 1:1 ratio.
+Absolutely NO text / letters / numbers / kanji / kana / romaji on any image.
+
+How to use: copy the FULL paragraph for each vocab into your image generator,
+then save the result with the SAVE AS id.
+
+Shared style anchor (baked into every prompt):
+  • Modern gouache picture-book illustration, Ghibli concept-art aesthetic
+  • Calm but warm: deeper mosses, warm ochres, muted terracottas, dusty blue
+    accents, aged-cream backgrounds, with soft but present golden-hour shadows
+  • Slightly deeper than pastel — grounded, never neon or saturated
+  • Soft form outlines so subjects read clearly; generous negative space
+  • Mood: quiet, storybook, emotionally settled
+
+================================================================================
+
+VOCAB 1: ext_vocab_001 — 大きい (おおきい) — big
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm, calming gouache picture-book
+illustration style depicting the concept of "big". A small child in a soft
+olive-green linen outfit stands at the foot of an enormous ancient tree with
+a wide, gently textured bark, gazing upward in quiet wonder with arms
+slightly lifted. The tree dominates the frame, its broad canopy extending
+past the top edge, rendered in deep moss green and warm sage with soft
+golden patches where late-afternoon sunlight filters through the leaves.
+The background is a gentle warm cream with a rich peach and ochre gradient
+near the horizon, suggesting late golden hour. Generous negative space
+around the child emphasizes the scale. Lighting is warm and natural with
+soft but present shadows beneath the canopy and a gentle rim-glow on the
+child's outline. Palette: deep moss, warm sage, rich ochre, muted
+terracotta, warm cream, with a single dusty-blue accent on the child's
+clothing — cohesive, grounded, slightly deeper than pastel but never
+saturated. Art style: modern gouache picture-book illustration in the
+aesthetic of Studio Ghibli concept backgrounds and quality Japanese
+children's books — warm, defined, softly textured.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_001
+
+================================================================================
+
+VOCAB 2: ext_vocab_002 — 大好き（な） (だいすき) — favorite / like very much
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting "favorite / like very much". A pair of gentle hands cradles a
+small, beloved stuffed bear with visibly worn fabric and a little hand-sewn
+patch, held close to the chest as if keeping it safe. The bear is rendered
+in soft honey-brown gouache with a cream muzzle. A single small dusty-pink
+heart shape, painted as a soft gouache blob (not a sharp symbol), floats
+just above the bear in warm air. The background is a quiet home interior
+implied only by a warm cream wall and the edge of a worn wooden floor in
+amber, with late-afternoon light coming from off-frame. Composition is
+close and intimate, the bear filling the lower-center third. Palette: honey
+brown, warm cream, dusty pink, deep wood amber, muted sage — grounded and
+slightly deeper than pastel. Lighting is soft golden, with gentle shadows
+giving the bear dimension. Art style: modern gouache picture-book
+illustration, Ghibli concept-art warmth, softly textured and emotionally
+tender. The image should feel like holding something treasured.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_002
+
+================================================================================
+
+VOCAB 3: ext_vocab_003 — 大変（な） (たいへん) — tough / very
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting "tough / difficult / a lot of effort". A lone figure in a warm
+earth-brown coat and a soft woolen scarf walks up a gently sloping stone
+path carrying a large cloth-wrapped bundle on their back. Their posture
+shows honest effort — slightly leaning forward — but their face is calm,
+not distressed. The slope is flanked by low wild grasses in muted sage
+and deep ochre. The sky is a late dusk wash of warm grey, rose, and deep
+cream. A few soft clouds are brushed in gouache. The figure is placed in
+the lower third, moving upward toward the right, with the slope drawing
+the eye. Palette: deep warm brown, muted sage, rich ochre, dusty rose,
+warm grey — grounded and slightly deeper than pastel. Lighting comes from
+a low setting sun off-frame, casting long soft shadows. Art style: modern
+gouache picture-book illustration with Ghibli-like atmosphere — quiet,
+honest, emotionally settled rather than dramatic.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_003
+
+================================================================================
+
+VOCAB 4: ext_vocab_004 — 大学 (だいがく) — college / university
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a university. An aged stone academic building with a clock-tower
+silhouette (the clock face is a plain blank disc, no numerals or hands),
+ivy growing along one wall, sits at the end of a cobblestone path. Tall
+deciduous trees with early autumn leaves — burnished ochre, deep red-brown,
+warm olive — arch overhead. A single student figure in a soft mustard
+cardigan walks toward the building with a satchel, seen from behind. Warm
+lantern-style path lights have begun to glow though the sky is still
+golden-dusk. Background is a soft warm cream wash with a peach horizon.
+Composition centers the building in the upper two-thirds with the path
+leading the eye. Palette: warm stone grey, burnished ochre, deep ivy
+green, mustard, soft peach — deeper than pastel, grounded and academic.
+Lighting is golden-hour warm with lantern glow. Art style: gouache
+picture-book, Ghibli concept-art warmth, softly textured.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_004
+
+================================================================================
+
+VOCAB 5: ext_vocab_005 — 大学生 (だいがくせい) — college student
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a college student. A young adult in a soft forest-green knit
+sweater sits on a weathered wooden park bench, reading a cloth-bound book
+with both hands, an open leather satchel beside them with a thermos and a
+small notebook peeking out. Autumn leaves in deep ochre and warm rust
+scatter across the bench and ground. A large maple tree in the background
+is rendered in moss green just beginning to turn. Late afternoon golden
+light filters through the branches, casting soft dappled shadows on the
+bench. The student's expression is quietly absorbed. Composition: student
+centered, bench horizontal anchor, maple filling upper background.
+Palette: forest green, burnished ochre, warm rust, deep cream, weathered
+wood brown — grounded and warm. Lighting is golden-hour with soft present
+shadows. Art style: modern gouache picture-book illustration, Ghibli
+concept-art aesthetic.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_005
+
+================================================================================
+
+VOCAB 6: ext_vocab_006 — 小さい (ちいさい) — small
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting the concept of "small". A pair of adult hands, rendered softly
+with gentle skin tones, are cupped together and hold a tiny pinecone and
+a single sprouting acorn with one young leaf. The hands fill the center
+of the frame, shown from the angle of the viewer looking down gently at
+the palms. The background is an out-of-focus mossy forest floor in deep
+sage and warm umber, with hints of fallen leaves. A soft beam of warm
+afternoon light falls on the palms. Composition: hands centered, subjects
+tiny and delicate, plenty of soft background space around them. Palette:
+warm skin tone, deep sage, warm umber, rich ochre, soft cream — grounded
+and quiet. Lighting is warm and natural with a single soft highlight on
+the pinecone. Art style: gouache picture-book illustration with Ghibli
+tenderness, softly textured. The image should feel intimate, the smallness
+of the objects emphasized by the gentle scale of the hands holding them.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_006
+
+================================================================================
+
+VOCAB 7: ext_vocab_007 — 小学校 (しょうがっこう) — elementary school
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a Japanese elementary school. A low two-storey wooden-and-cream
+schoolhouse with a gently sloped tile roof sits in the background, a tall
+cherry tree with a few late blossoms beside it. A small open gate leads to
+a stone-paved path. Two forgotten bright-red randoseru satchels rest near
+the gate — warm rust red, not neon. Afternoon light is slanting and golden;
+the school yard beyond is softly empty. Background is a soft amber sky
+behind gentle hills. Composition: school building upper center, path and
+satchels drawing the eye forward, cherry tree balancing left frame.
+Palette: warm cream, soft tile grey, deep amber, rust red, muted pink,
+sage — grounded, slightly nostalgic. Lighting is late-afternoon golden
+with soft shadows along the building edge. Art style: modern gouache
+picture-book illustration, Ghibli nostalgia.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_007
+
+================================================================================
+
+VOCAB 8: ext_vocab_008 — 小学生 (しょうがくせい) — elementary school student
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting an elementary school student. A small child in a simple cream
+uniform shirt and soft navy shorts walks home alone along a quiet stone
+path, wearing a red randoseru satchel on their back, holding a small
+leather lunch case by the handle. Their expression is calm and content.
+The path is lined with old stone lanterns and low bushes. Tall persimmon
+trees with ripe fruit in muted amber line the far side. The sky is a deep
+warm rose-and-cream dusk. The child is placed slightly left of center,
+walking forward, seen from behind-and-side. Composition balances the
+walking child with the long stone path receding to the right. Palette:
+warm cream, muted navy, rust red, deep persimmon amber, dusty rose —
+grounded and warm. Lighting is golden-dusk with soft long shadows. Art
+style: modern gouache picture-book illustration, Ghibli concept-art
+warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_008
+
+================================================================================
+
+VOCAB 9: ext_vocab_009 — 人 (ひと) — person
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a single person. A solitary figure stands in profile on the
+crest of a gently rolling hill of tall grass, wearing a long soft earth-
+brown coat and a simple woolen scarf. They are rendered softly with no
+detailed face — just a calm silhouette tilted slightly to observe the
+horizon. The grass is deep wheat-gold with hints of olive. The sky behind
+fills two-thirds of the frame: a quiet wash of warm dusk rose, dusty
+mauve, and deep cream fading to pale umber at the top. A single small
+bird is brushed against the sky in dark silhouette. The figure is small,
+placed right-of-center. Palette: warm wheat, olive, dusk rose, dusty
+mauve, deep earth brown — grounded and deeper than pastel. Lighting is
+warm backlighting from the setting sun. Art style: gouache picture-book
+illustration, Ghibli-style painterly landscape. The image should feel
+solitary and calm, not lonely.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_009
+
+================================================================================
+
+VOCAB 10: ext_vocab_010 — 日本人 (にほんじん) — Japanese person
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a Japanese person in a traditional setting. A person in a muted
+indigo yukata with a soft cream obi stands barefoot on the wooden engawa
+porch of an old wooden house, holding a small ceramic tea cup with both
+hands. Behind them, a shoji screen is partly slid open, revealing a glimpse
+of a tatami-mat room in warm straw tones. The engawa overlooks a quiet
+garden: a stone lantern, a shaped pine tree, and a gently mossed path.
+Late afternoon golden light falls warmly across the scene. The figure
+stands in three-quarter view, facing outward gently, expression calm.
+Composition: figure slightly left-of-center, porch and garden balancing
+right. Palette: muted indigo, warm cream, straw tan, deep moss, stone
+grey, soft amber — grounded and deeply traditional. Lighting is warm
+golden-hour with soft shadows along the porch. Art style: modern gouache
+picture-book illustration, Ghibli warmth and painterly atmosphere.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_010
+
+================================================================================
+
+VOCAB 11: ext_vocab_011 — 三人 (さんにん) — three people
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting three people together. Three friends sit on a long weathered
+wooden bench beneath the spread canopy of a large maple tree, turned
+gently toward each other in quiet conversation. One wears a soft olive
+cardigan, one a warm rust sweater, one a muted mustard jacket — all in
+grounded earth tones. Their faces are softly suggested, expressions
+gentle. Fallen maple leaves in deep ochre and rust scatter around the
+bench. A small stone path curves past. The background fades to a warm
+dusk cream beyond the tree. Composition: three figures spaced evenly
+along the bench in the lower-center, maple canopy filling the upper
+frame. Palette: olive, rust, mustard, deep maple red, warm cream, stone
+grey — grounded, slightly deeper than pastel. Lighting is late-afternoon
+golden with soft dappled shadows. Art style: gouache picture-book
+illustration, Ghibli warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_011
+
+================================================================================
+
+VOCAB 12: ext_vocab_012 — 女の人 (おんなのひと) — woman
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a woman. An adult woman in a soft linen dress of muted dusty-
+rose with a rolled-sleeve cream cardigan walks slowly along a stone
+garden path, carrying a woven basket filled with freshly cut wildflowers
+— soft sage greens and cream-white blooms. Her hair is gently tied back.
+Her expression is peaceful, looking softly downward at the flowers. A
+small moss-covered stone lantern stands to her left, a low bamboo fence
+to the right. Background is an out-of-focus garden wash in deep sage and
+warm cream. Composition: figure centered, walking toward the viewer,
+lantern and fence framing. Palette: dusty rose, warm cream, sage green,
+moss, stone grey, soft amber — grounded and quiet. Lighting is soft
+mid-afternoon with gentle shadows. Art style: gouache picture-book
+illustration, Ghibli warmth and quiet grace.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_012
+
+================================================================================
+
+VOCAB 13: ext_vocab_013 — 山 (やま) — mountain
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a mountain. A single tall mountain rises in the background,
+shaped gently with a softly conical silhouette, its upper slopes wrapped
+in low misty cloud. The lower slopes are a deep moss green with hints of
+warm amber where autumn has begun. In the foreground, tall dark pine
+trees are rendered in deep green-black silhouette, their tops jagged but
+soft. A quiet flat meadow in wheat-gold lies between the pines and the
+mountain. The sky is a soft dusk wash of warm rose, dusty cream, and
+deep umber at the crown. Composition: mountain dominating upper two-
+thirds, pines anchoring the lower left, meadow guiding the eye. Palette:
+deep moss, warm amber, wheat-gold, dusk rose, deep umber — grounded and
+atmospheric, slightly deeper than pastel. Lighting is quiet dawn-or-dusk,
+soft and flat. Art style: gouache picture-book illustration, Ghibli
+landscape painting.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_013
+
+================================================================================
+
+VOCAB 14: ext_vocab_014 — 富士山 (ふじさん) — Mt. Fuji
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting Mount Fuji. The iconic symmetrical cone of Mt. Fuji rises in
+the background, its upper third softly capped in snow rendered in warm
+cream rather than pure white. Low horizontal bands of dawn cloud drift
+across its middle slopes in dusty rose and muted mauve. In the foreground,
+a still lake reflects the mountain softly, slightly abstracted. A small
+grove of dark pines is rendered as silhouette on the left shore. The sky
+is a calm dawn gradient: warm peach at the horizon rising to deep rose
+and dusty blue at the top. Composition: Fuji centered, reflection
+mirroring below, pines anchoring left. Palette: warm cream, dusty rose,
+muted mauve, deep pine green, warm peach, dusty blue — grounded, calm,
+deeper than pastel. Lighting is soft dawn with gentle warmth on the
+upper slopes. Art style: modern gouache picture-book illustration,
+Ghibli-style painterly landscape, unmistakably Fuji without any text
+label.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_014
+
+================================================================================
+
+VOCAB 15: ext_vocab_015 — 山口県 (やまぐちけん) — Yamaguchi Prefecture
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a famous Yamaguchi Prefecture landmark. The Kintai Bridge — a
+historic wooden arched bridge with five distinct graceful arches — spans
+a calm river, rendered in warm weathered wood brown and cream stone
+supports. Soft pines frame both banks in deep moss green. In the
+background, a gentle hillside rises with low traditional houses barely
+visible. The water is calm, reflecting the arches softly. The sky is a
+warm dusk cream with peach and dusty mauve at the horizon. Composition:
+bridge spanning the full horizontal middle, reflection below, hills in
+the background. Palette: warm wood brown, cream stone, deep moss, dusty
+mauve, soft peach — grounded and historical. Lighting is golden-hour
+warm with soft water reflection. Art style: gouache picture-book
+illustration, Ghibli-style painterly landscape.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_015
+
+================================================================================
+
+VOCAB 16: ext_vocab_016 — 山形県 (やまがたけん) — Yamagata Prefecture
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a rural Yamagata Prefecture landscape. A wide valley of
+terraced rice paddies in warm wheat-gold stretches between rolling hills
+in deep sage and moss green. A distant snow-capped mountain range — the
+iconic Zao range — rises in the far background, its peaks softly capped
+in warm cream. A few old farmhouses with dark tile roofs are nestled
+along the valley floor. A narrow country road curves through. The sky is
+a warm dusk wash of peach, dusty cream, and muted rose. Composition:
+mountains upper background, valley filling middle, road leading the eye
+forward. Palette: wheat-gold, deep sage, moss green, warm cream, dusty
+rose, peach — grounded, rural, deeper than pastel. Lighting is late-
+afternoon golden. Art style: gouache picture-book illustration, Ghibli
+countryside atmosphere.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_016
+
+================================================================================
+
+VOCAB 17: ext_vocab_017 — 山田さん (やまださん) — Mr./Ms. Yamada
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a friendly neighbor figure (a generic person, not a specific
+individual). A middle-aged adult in a soft earth-brown farmer's jacket
+and loose trousers stands at the open wooden gate of an old traditional
+house, raising one hand in a gentle wave of greeting. Their face is
+softly suggested with a kind, welcoming expression. Behind them, the
+wooden house has warm-cream plaster walls and a dark tile roof. A small
+stone lantern and a potted bonsai pine sit beside the gate. Rice paddies
+in wheat-gold stretch in the background. The sky is soft dusk cream and
+peach. Composition: figure centered at the gate, house behind, paddies
+in distant background. Palette: earth brown, warm cream, stone grey,
+wheat-gold, deep pine green, soft peach — grounded and welcoming.
+Lighting is warm golden-hour. Art style: gouache picture-book
+illustration, Ghibli rural warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_017
+
+================================================================================
+
+VOCAB 18: ext_vocab_018 — 川 (かわ) — river
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a river. A gently winding river in calm muted teal-blue moves
+smoothly through a grassy valley, its surface softly reflecting the sky.
+The banks are lined with low wheat-gold reeds and scattered smooth river
+stones in warm grey. A few tall deciduous trees with autumn leaves in
+burnished ochre and deep rust stand on the far bank. The sky is a calm
+warm dusk of peach, dusty rose, and cream, with soft drifting clouds.
+Composition: river curving from lower-left to middle-right, drawing the
+eye into depth; trees anchoring right, reeds framing the foreground.
+Palette: muted teal-blue, wheat-gold, warm grey, burnished ochre, deep
+rust, dusty rose — grounded and peaceful. Lighting is golden-hour warm
+with soft reflection on the water. Art style: gouache picture-book
+illustration, Ghibli painterly landscape.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_018
+
+================================================================================
+
+VOCAB 19: ext_vocab_019 — アマゾン川 (アマゾンがわ) — Amazon River
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting the Amazon River. A wide slow river in muted warm-brown and
+deep sage-green winds through dense tropical rainforest. Tall canopy
+trees with broad dark leaves frame both banks in deep jungle green and
+warm olive. A single small wooden canoe drifts on the water in the
+middle distance, empty and calm. Steam-like mist rises softly from the
+forest. The sky glimpses through the canopy in muted dusk peach. A few
+large tropical leaves are brushed in the foreground. Composition: river
+opening from foreground into the distance, canoe midground, forest
+framing. Palette: warm river-brown, deep sage, jungle green, warm olive,
+dusty peach, muted cream — grounded and atmospheric, not tropical-bright.
+Lighting is soft, humid, filtered. Art style: gouache picture-book
+illustration, Ghibli-like painterly jungle.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_019
+
+================================================================================
+
+VOCAB 20: ext_vocab_020 — 河川 (かせん) — rivers (formal)
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting multiple rivers — an aerial view of a river system. Seen from
+high above, several rivers branch and meander across a gently hilly
+landscape of deep moss-green forests and wheat-gold fields. The rivers
+are rendered in muted teal-blue with softly painted banks, like a
+hand-drawn cartographer's study on aged cream paper. A few tiny rooftops
+suggest villages along the banks. The whole image has the feel of a
+worn, painterly map. Composition: rivers forming an organic branching
+pattern across the frame, landmarks scattered sparsely. Palette: muted
+teal, wheat-gold, deep moss, aged cream, warm umber — grounded, like
+an antique atlas. Lighting is a flat, even, soft warm wash. Art style:
+gouache picture-book illustration with aged-paper cartographic feel,
+Ghibli storybook atlas aesthetic.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, place-labels, or writing of any kind.
+SAVE AS: ext_vocab_020
+
+================================================================================
+
+VOCAB 21: ext_vocab_021 — ナイル川 (ナイルがわ) — Nile River
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting the Nile River. A wide calm river in muted turquoise-blue flows
+through a warm desert landscape at dusk. The banks are lined with tall
+slender palm trees in deep olive and warm silhouette. A single small
+felucca sailboat drifts on the water, its triangular sail in soft cream.
+In the far background, a low pyramid silhouette is gently brushed against
+the horizon in warm sand tone. The sky is a warm dusk gradient: deep
+gold at the horizon rising to dusty rose and muted mauve. Composition:
+river spanning the middle horizontally, palms framing, pyramid centered
+in distance. Palette: muted turquoise, warm sand, deep olive, dusty rose,
+muted mauve, cream — grounded, desert-warm. Lighting is soft golden dusk.
+Art style: gouache picture-book illustration, Ghibli-style painterly
+landscape.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_021
+
+================================================================================
+
+VOCAB 22: ext_vocab_022 — 小川さん (おがわさん) — Mr./Ms. Ogawa
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a generic friendly figure near a small stream. A person in a
+soft sage-green waterproof jacket and rolled-up trousers wades gently at
+the edge of a small clear stream, one hand resting on a wooden walking
+staff, the other adjusting a wide-brimmed straw hat. Their expression is
+calm and focused. Smooth river stones in warm grey and cream line the
+streambed; the water is a muted clear teal. Low ferns and moss cover the
+banks in deep green. A gnarled old tree leans over the stream, its bark
+warm umber. Composition: figure slightly right-of-center, stream flowing
+through lower third, tree and banks framing. Palette: sage green, warm
+grey, cream, muted teal, deep moss, warm umber — grounded and natural.
+Lighting is dappled soft afternoon. Art style: gouache picture-book
+illustration, Ghibli woodland warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_022
+
+================================================================================
+
+VOCAB 23: ext_vocab_023 — 田んぼ (たんぼ) — rice field
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a rice field. A geometric pattern of flooded rice paddies
+stretches across the frame, the water softly reflecting a warm dusk sky.
+The paddy dividers are narrow strips of deep moss-green grass. Tender
+young rice shoots in soft sage rise from the water. In the distance,
+low hills rise in deep green-black silhouette. A single weathered wooden
+farm hut with a dark tile roof stands at the far end of one paddy. The
+sky is a warm dusk wash of peach, rose, and dusty mauve, reflected in
+the paddy water. Composition: paddies forming a calm grid receding into
+the distance, hut as focal point, hills anchoring horizon. Palette:
+reflective water-peach, deep moss, soft sage, dark pine green, warm
+umber, dusty rose — grounded, rural, reflective. Lighting is warm dusk
+with strong reflection in the water. Art style: gouache picture-book
+illustration, Ghibli-style rural landscape.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_023
+
+================================================================================
+
+VOCAB 24: ext_vocab_024 — 田中さん (たなかさん) — Mr./Ms. Tanaka
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a generic friendly farmer figure. An adult in a muted navy
+work jacket and loose earth-brown trousers stands at the edge of a rice
+paddy, wearing a wide woven-straw hat and holding a simple wooden tool
+over one shoulder. Their face is softly suggested, calm and weathered.
+A small wooden footbridge crosses one paddy behind them. The rice shoots
+are tender sage green, the paddy water reflects a warm sky. Distant
+hills rise in deep moss. The sky is a warm golden-dusk gradient.
+Composition: figure slightly left-of-center, paddies and bridge receding
+right. Palette: muted navy, earth brown, straw tan, sage green, deep
+moss, warm gold — grounded and rural. Lighting is warm late-afternoon
+with soft shadow beneath the hat. Art style: gouache picture-book
+illustration, Ghibli countryside warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_024
+
+================================================================================
+
+VOCAB 25: ext_vocab_025 — 一時 (いちじ) — 1 o'clock
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting early afternoon. A quiet wooden study interior: a tall analog
+wall clock with a plain cream face and a single long slender hand pointing
+straight up and another pointing to the right (positioned horizontally at
+the right, indicating 1 o'clock through hand position alone — the face
+has only tiny dot tick-marks, absolutely no numerals or Roman numerals).
+Warm early-afternoon sunlight streams through a tall window at a sharp
+angle, casting a long warm patch across an open wooden desk with a cup of
+tea. A small vase of wildflowers in dusty sage sits nearby. Composition:
+clock upper-right, desk anchoring lower half, window light cutting across.
+Palette: warm wood brown, cream, soft sage, dusty amber, warm gold —
+grounded and study-like. Lighting is warm and directional, strong shadow.
+Art style: gouache picture-book illustration, Ghibli interior warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — the clock face
+must have NO numerals, only plain tick dots.
+SAVE AS: ext_vocab_025
+
+================================================================================
+
+VOCAB 26: ext_vocab_026 — 二時 (にじ) — 2 o'clock
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting mid-afternoon. Same calm wooden study interior aesthetic. The
+analog wall clock shows 2 o'clock (short hand pointing to the 2-position,
+long hand pointing straight up) — the face has only dot tick-marks, no
+numerals at all. The window light has shifted, now coming in at a
+slightly lower angle, warmer gold tone, casting a longer stripe across
+the wooden floorboards. The teacup is now half-empty. A cat is curled
+asleep on the corner of the desk in warm ginger tones. Composition:
+clock upper-left this time, cat and desk lower-right, window light
+cutting diagonally. Palette: warm wood brown, cream, warm ginger, soft
+sage, dusty amber — grounded and domestic. Lighting is golden, directional.
+Art style: gouache picture-book illustration, Ghibli domestic warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — clock face
+NO numerals, only dots.
+SAVE AS: ext_vocab_026
+
+================================================================================
+
+VOCAB 27: ext_vocab_027 — 三時 (さんじ) — 3 o'clock
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting afternoon tea time. A small wooden tea table bathed in warm
+slanted golden light. On it: a ceramic teapot in muted sage, two small
+cups (one slightly drunk from), a small plate with three round tea
+biscuits in warm cream. An analog clock is visible on the wall in the
+background, its short hand pointing to the 3-position and long hand
+straight up (dot tick-marks only, no numerals). A window beyond shows
+late-afternoon trees in warm ochre. Composition: tea table filling lower
+two-thirds, clock small upper-right, window filling upper-left. Palette:
+muted sage, warm cream, dusty rose, warm ochre, wood brown, soft amber —
+grounded and homely. Lighting is warm golden afternoon with soft shadows.
+Art style: gouache picture-book illustration, Ghibli teatime warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — clock face
+NO numerals.
+SAVE AS: ext_vocab_027
+
+================================================================================
+
+VOCAB 28: ext_vocab_028 — 三人家族 (さんにんかぞく) — family of three
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a family of three. A mother, father, and small child walk hand-
+in-hand along a quiet autumn park path, seen from behind. The mother
+wears a soft rust-red coat, the father a muted olive jacket, the child
+between them a small mustard-yellow hoodie with a tiny backpack. The
+path is scattered with fallen maple leaves in deep ochre and warm red.
+Tall trees arch overhead, canopy in burnished autumn colors. Golden-
+dusk light streams between the trunks. Composition: three figures
+centered, walking away from the viewer into the light, trees framing.
+Palette: rust red, olive, mustard, deep ochre, warm amber, maple red,
+deep tree brown — grounded and deeply warm. Lighting is warm backlight
+with soft long shadows in front. Art style: gouache picture-book
+illustration, Ghibli family warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_028
+
+================================================================================
+
+VOCAB 29: ext_vocab_029 — 四月 (しがつ) — April
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting April in Japan. A stone path beneath a canopy of cherry trees
+in full bloom, the blossoms rendered in soft muted pink rather than
+bright pastel pink — dusky rose with cream centers. A few petals have
+fallen onto the path. A weathered wooden bench sits to one side, empty.
+The sky glimpses through the branches in soft warm cream and peach.
+Low stone lanterns in muted grey frame the path. A single person in a
+sage-green coat walks in the far distance. Composition: canopy filling
+upper two-thirds, path leading away, bench midground-right. Palette:
+dusky rose, cream, sage green, warm grey, muted peach, deep tree brown —
+grounded and gently nostalgic, not bright spring-pastel. Lighting is
+soft warm midday. Art style: gouache picture-book illustration, Ghibli-
+like cherry blossom atmosphere.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_029
+
+================================================================================
+
+VOCAB 30: ext_vocab_030 — 四日 (よっか) — the 4th (of the month)
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting the number four through quiet counted objects. Four smooth
+river stones of varying warm grey tones are arranged in a soft curve on
+a weathered wooden plank, on a bed of soft moss. Each stone has a subtle
+hand-painted texture. A single small green fern frond rests beside them.
+The background is an out-of-focus warm cream wall with a hint of peach
+afternoon light. Composition: stones running horizontally across the
+lower-middle of the frame with generous negative space, fern at the end.
+Palette: warm grey, soft moss, deep fern green, cream, muted peach, warm
+wood — grounded, calm, meditative. Lighting is soft warm afternoon with
+gentle shadows beneath each stone. Art style: gouache picture-book
+illustration, zen-like stillness, Ghibli's quiet-object warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_030
+
+================================================================================
+
+VOCAB 31: ext_vocab_031 — 四時 (よじ) — 4 o'clock
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting late afternoon. The sun sits lower now; warm amber light pours
+through a westward window onto a wooden desk and a half-empty cup. The
+analog wall clock shows 4 o'clock (short hand pointing to 4-position, long
+hand straight up — dot tick-marks only, no numerals). Long soft shadows
+stretch across the room. A small stack of cloth-bound books rests on the
+desk. Outside the window, treetops are turning warm amber. Composition:
+clock upper-right, desk anchoring lower, window light flooding left.
+Palette: warm amber, wood brown, cream, dusty gold, soft ochre — grounded
+and golden. Lighting is strong warm late-afternoon with prominent long
+shadows. Art style: gouache picture-book illustration, Ghibli afternoon
+warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — clock face
+NO numerals.
+SAVE AS: ext_vocab_031
+
+================================================================================
+
+VOCAB 32: ext_vocab_032 — 四歳 (よんさい) — four years old
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a four-year-old child. A small child with soft rounded cheeks,
+wearing a muted mustard jumper and cream linen trousers, sits cross-
+legged on a warm wooden floor, their small hand held up with four little
+fingers extended in a gentle counting gesture. Their expression is shy
+and sweet. A single small storybook lies open face-down beside them in
+muted sage cloth cover. Warm afternoon light falls softly across the
+floor. Background is a simple cream wall with a small framed painting
+(a simple landscape blob, no text). Composition: child centered, four
+fingers prominent but natural. Palette: mustard, cream, warm wood, muted
+sage, soft peach skin tone — grounded and tender. Lighting is soft warm
+afternoon. Art style: gouache picture-book illustration, Ghibli child
+tenderness.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_032
+
+================================================================================
+
+VOCAB 33: ext_vocab_033 — 四人 (よにん) — four people
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting four people. Four silhouetted figures walk together along the
+water's edge of a calm beach at golden hour, spaced gently apart, seen
+from behind. They wear earth-toned coats — warm rust, muted olive,
+mustard, deep brown. Soft wet sand reflects their silhouettes. Low
+lapping waves in muted teal. The sky is a wide warm dusk wash of deep
+gold, rose, and dusty mauve. A few soft clouds drift. Composition: four
+figures spaced evenly across lower third, sky filling upper two-thirds.
+Palette: warm rust, olive, mustard, deep brown, muted teal, dusk gold,
+rose — grounded and quietly deep. Lighting is golden-dusk backlight with
+long soft shadows. Art style: gouache picture-book illustration, Ghibli
+coastal warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_033
+
+================================================================================
+
+VOCAB 34: ext_vocab_034 — 五月 (ごがつ) — May
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting May in Japan. Traditional Children's Day carp streamers
+(koinobori) in muted rust, muted blue, and soft cream, hang on a tall
+bamboo pole against a gentle late-spring sky. The streamers sway softly
+in a breeze, painted as long flowing shapes. Below, a grassy field in
+deep moss-and-sage with scattered wildflowers in warm dusty pink. A
+distant traditional farmhouse with a tile roof sits in the background.
+The sky is soft warm cream with peach clouds. Composition: streamers
+dominating the upper two-thirds, field anchoring lower, farmhouse in
+distance. Palette: muted rust, deep dusty blue, soft cream, deep moss,
+dusty pink, warm peach — grounded and gently seasonal. Lighting is soft
+late-afternoon warm. Art style: gouache picture-book illustration,
+Ghibli rural seasonal warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_034
+
+================================================================================
+
+VOCAB 35: ext_vocab_035 — 五日 (いつか) — the 5th (of the month)
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting the number five through quiet counted objects. Five small
+persimmons in deep amber-orange rest on a woven bamboo tray on a
+weathered wooden surface, arranged in a gentle slight curve. Each
+persimmon has subtle hand-painted texture and a tiny dark stem. A single
+small green leaf tucked beside them. Background is a soft warm cream
+wall with faint late-afternoon shadow. Composition: tray centered
+slightly lower, persimmons running across, generous negative space
+above. Palette: deep amber, bamboo tan, warm wood, soft moss, cream —
+grounded and autumnal. Lighting is soft warm afternoon with gentle
+shadow. Art style: gouache picture-book illustration, Ghibli still-life
+quietness.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_035
+
+================================================================================
+
+VOCAB 36: ext_vocab_036 — 五時 (ごじ) — 5 o'clock
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting early evening. The sun is low; warm deep-gold light pours
+across a quiet kitchen counter where a wall clock shows 5 o'clock
+(short hand to 5-position, long hand straight up — dot tick-marks
+only, no numerals). On the counter: a ceramic kettle in muted sage,
+a cutting board with a few sprigs of herbs, a small glass vase of
+wildflowers. Long soft shadows stretch. A window reveals deepening
+gold sky outside. Composition: clock upper-center on the wall, counter
+anchoring lower, window light flooding side. Palette: deep gold, muted
+sage, warm cream, wood brown, dusty amber — grounded, golden-hour.
+Lighting is strong warm directional with long shadows. Art style:
+gouache picture-book illustration, Ghibli domestic golden hour.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — clock face
+NO numerals.
+SAVE AS: ext_vocab_036
+
+================================================================================
+
+VOCAB 37: ext_vocab_037 — 五歳 (ごさい) — five years old
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a five-year-old child. A small child with soft features, in a
+cream linen smock and muted sage-green shorts, kneels on a wooden floor
+surrounded by five small wooden toy blocks arranged in a wobbly line.
+They hold one block up to their face with both hands, focused and
+curious. Warm late-afternoon light pours softly from a window. A small
+stuffed rabbit in honey brown sits nearby. Composition: child centered,
+five blocks arranged clearly in the foreground. Palette: cream, muted
+sage, warm wood, honey brown, soft peach skin tone, dusty amber —
+grounded and gentle. Lighting is soft warm afternoon with present
+shadows. Art style: gouache picture-book illustration, Ghibli child
+softness.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — the blocks
+have NO letters or numbers on them, only plain painted wood.
+SAVE AS: ext_vocab_037
+
+================================================================================
+
+VOCAB 38: ext_vocab_038 — 五人 (ごにん) — five people
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting five people together. Five friends of varied adult ages sit in
+a loose circle on a woven tatami mat around a low wooden table, sharing
+tea from small ceramic cups. Each wears soft earth-toned casual clothing:
+olive, rust, mustard, dusty rose, muted navy. Expressions are warm and
+unhurried. On the table: a sage-green teapot, a small plate of cream
+biscuits. Around them, a traditional room with warm paper shoji screens
+letting in soft diffused evening light. Composition: group centered
+around the table, soft warm interior framing. Palette: olive, rust,
+mustard, dusty rose, muted navy, warm cream, sage green, honey wood —
+grounded, communal, slightly deeper than pastel. Lighting is soft warm
+diffused late-afternoon. Art style: gouache picture-book illustration,
+Ghibli interior warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_038
+
+================================================================================
+
+VOCAB 39: ext_vocab_039 — 六月 (ろくがつ) — June
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting June — the rainy season in Japan. A cluster of hydrangea
+bushes in full bloom, flowers rendered in muted dusty purple, soft
+powder blue, and dusty pink-cream, heavy with rain. A gentle soft rain
+falls, painted as subtle long thin strokes. A stone lantern stands wet
+and moss-covered among the blooms. A single small snail climbs a leaf.
+The ground is soft mossy green with shallow puddles reflecting the
+cloudy sky. Composition: hydrangeas filling most of the frame as a soft
+cloud of color, lantern anchoring right. Palette: dusty purple, powder
+blue, dusty pink-cream, deep moss, stone grey, soft rain-cream —
+grounded and gently melancholy. Lighting is diffused soft grey-warm with
+wet surface sheens. Art style: gouache picture-book illustration, Ghibli
+rainy-season atmosphere.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_039
+
+================================================================================
+
+VOCAB 40: ext_vocab_040 — 六日 (むいか) — the 6th (of the month)
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting the number six through quiet counted objects. Six smooth river
+stones of varying warm grey and soft umber tones are stacked carefully
+into a simple balanced cairn on the mossy bank of a small stream. The
+water in the background is calm muted teal. Around the cairn: soft green
+moss, scattered fern fronds, a single small wildflower in dusty sage.
+Composition: cairn centered slightly right, stream flowing horizontally
+behind, moss anchoring foreground. Palette: warm grey, soft umber, deep
+moss, muted teal, sage green, warm cream — grounded and meditative.
+Lighting is soft dappled woodland warm. Art style: gouache picture-book
+illustration, Ghibli zen woodland.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_040
+
+================================================================================
+
+VOCAB 41: ext_vocab_041 — 六時 (ろくじ) — 6 o'clock
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting early evening dinner time. A soft dusk has fallen outside; warm
+amber lamplight glows from a single small desk lamp in a quiet room. The
+wall clock shows 6 o'clock (short hand straight down, long hand straight
+up — dot tick-marks only, no numerals). On the desk: an open book, a cup
+of tea, a small bowl of rice. A window shows a deep dusk sky of rose,
+mauve, and warm umber. Composition: clock upper-center, lamp casting
+warm circle on desk in lower half, window filling left. Palette: warm
+amber lamp-glow, deep rose, mauve, umber, wood brown, cream — grounded
+and cozy. Lighting is warm interior lamp-glow contrasted with cool
+outside dusk — gentle, not harsh. Art style: gouache picture-book
+illustration, Ghibli dusk domesticity.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — clock face
+NO numerals.
+SAVE AS: ext_vocab_041
+
+================================================================================
+
+VOCAB 42: ext_vocab_042 — 六歳 (ろくさい) — six years old
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a six-year-old child. A child in soft muted-blue overalls over
+a cream shirt sits cross-legged on a wooden floor, quietly counting six
+small folded paper cranes arranged in a gentle arc in front of them.
+The cranes are in muted colors: rust, olive, mustard, sage, dusty rose,
+soft cream. The child's expression is calm and focused. Warm afternoon
+light falls softly through a window. Composition: child centered, six
+cranes arranged clearly in the foreground arc. Palette: muted blue,
+cream, rust, olive, mustard, sage, dusty rose, warm wood — grounded and
+tender. Lighting is soft warm afternoon with gentle shadows. Art style:
+gouache picture-book illustration, Ghibli quiet child focus.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — the paper
+cranes have NO writing.
+SAVE AS: ext_vocab_042
+
+================================================================================
+
+VOCAB 43: ext_vocab_043 — 六人 (ろくにん) — six people
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting six people. Six friends sit around a low round wooden table in
+a traditional tatami room, sharing a calm evening meal. Six small bowls
+and six pairs of chopsticks sit before them. Each person wears soft
+earth-toned casual clothes. Their expressions are warm, in quiet
+conversation. A single paper lantern overhead casts warm glow. Shoji
+screens soften the outside dusk. Composition: circle of figures
+balanced around the table, soft paper lantern drawing the eye upward.
+Palette: warm wood, cream, olive, rust, mustard, muted navy, honey
+lantern-glow — grounded and communal. Lighting is warm paper-lantern
+interior glow. Art style: gouache picture-book illustration, Ghibli
+communal warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_043
+
+================================================================================
+
+VOCAB 44: ext_vocab_044 — 七 (なな) — seven
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting the number seven through a quiet natural scene. Seven cranes
+fly in a gentle staggered V-formation across a wide warm dusk sky, their
+silhouettes soft and painterly in deep umber and warm grey. The sky is
+a vast gradient of warm peach, dusty rose, deep mauve, and soft cream.
+Low distant hills rise in deep pine-green silhouette along the bottom
+third. A few soft clouds drift. Composition: cranes forming the V across
+the upper two-thirds, hills anchoring lower, negative sky space giving
+them room. Palette: warm peach, dusty rose, deep mauve, soft cream,
+pine green, deep umber — grounded and skyward, slightly deeper than
+pastel. Lighting is warm golden-dusk. Art style: gouache picture-book
+illustration, Ghibli skyward serenity.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_044
+
+================================================================================
+
+VOCAB 45: ext_vocab_045 — 七人 (しちにん / ななにん) — seven people
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting seven people. Seven figures walk single-file along a gently
+winding mountain trail at dawn mist, each carrying a simple walking
+staff and a small pack. They wear earth-toned hiking clothes: various
+muted browns, olives, rust, mustard. The mist is a soft warm-grey and
+cream wash. Tall dark pines rise on either side of the path in deep
+green-black silhouette. A warm dawn glow filters between the trees.
+Composition: line of figures receding from foreground into the misty
+distance, pines framing, trail leading the eye. Palette: earth brown,
+olive, rust, mustard, deep pine, warm grey mist, dawn peach — grounded
+and atmospheric. Lighting is soft diffused dawn with gentle warmth. Art
+style: gouache picture-book illustration, Ghibli misty-mountain mood.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_045
+
+================================================================================
+
+VOCAB 46: ext_vocab_046 — 七時 (しちじ) — 7 o'clock
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a quiet evening at 7 o'clock. The wall clock shows 7 o'clock
+(short hand to 7-position, long hand straight up — dot tick-marks only,
+no numerals). The room is lit by a single warm amber ceiling paper-
+lantern. Outside the window, a deep indigo-and-warm-umber dusk has
+settled with first stars softly appearing. A small wooden table holds a
+steaming bowl of noodles and a pair of chopsticks. A shoji screen is
+half-open. Composition: clock upper-right, table lower-center, lantern
+casting warm circle, window showing dusk. Palette: warm amber lantern-
+glow, deep indigo, warm umber, cream, wood brown, soft gold — grounded
+and deeply warm. Lighting is warm indoor lantern contrasted gently
+against cool outside dusk. Art style: gouache picture-book illustration,
+Ghibli evening warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — clock face
+NO numerals.
+SAVE AS: ext_vocab_046
+
+================================================================================
+
+VOCAB 47: ext_vocab_047 — 七歳 (ななさい) — seven years old
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a seven-year-old child. A child with soft-tied hair, wearing a
+cream sweater and dusty-rose skirt, kneels on a wooden floor holding a
+gentle bouquet of seven small wildflowers — varied muted tones of dusty
+pink, soft cream, muted lavender, warm yellow. Their face is quietly
+pleased. A small wicker basket sits beside them. Warm afternoon light
+falls softly through a window. Composition: child centered, flowers
+prominent. Palette: cream, dusty rose, muted lavender, warm yellow,
+wicker tan, wood brown, soft peach skin tone — grounded and tender.
+Lighting is warm afternoon with soft present shadows. Art style: gouache
+picture-book illustration, Ghibli child gentleness.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_047
+
+================================================================================
+
+VOCAB 48: ext_vocab_048 — 七月 (しちがつ) — July
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting July in Japan — summer festival evening. A quiet stone-paved
+old-town street at dusk, hung with rows of warm-glowing red-and-cream
+paper lanterns overhead. The lanterns are muted rust-red and warm cream,
+glowing softly against a deep indigo-and-mauve dusk sky. A few silhouettes
+of people in yukata stroll in the middle distance. Traditional wooden
+shopfronts line the street in warm wood tones. Composition: lanterns
+filling the upper half in receding perspective, street and figures lower.
+Palette: rust red, warm cream, deep indigo, mauve dusk, wood brown,
+stone grey — grounded and quietly festive, not bright-celebratory.
+Lighting is soft lantern-glow against deep dusk. Art style: gouache
+picture-book illustration, Ghibli matsuri atmosphere.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — the lanterns
+are plain without characters on them.
+SAVE AS: ext_vocab_048
+
+================================================================================
+
+VOCAB 49: ext_vocab_049 — 七日 (なのか) — the 7th (of the month, or Tanabata)
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting the Tanabata festival (7th of July) in a calm way. A tall
+leafy bamboo stalk leans gently in a garden, hung with seven paper strips
+(tanzaku) in muted colors: dusty rose, sage, mustard, dusky pink, deep
+cream, muted lavender, soft terracotta. The strips are plain — no text
+at all, just softly painted paper shapes. Above, the night sky is a deep
+warm indigo with two bright soft stars (representing the legend)
+connected by a very faint path of small stars like a gentle Milky Way.
+Distant silhouettes of traditional rooftops below. Composition: bamboo
+leaning from lower-right upward, tanzaku hanging gently, night sky
+filling upper three-quarters. Palette: deep warm indigo, muted rose,
+sage, mustard, dusky pink, cream, star-gold — grounded and mythic.
+Lighting is warm night sky with subtle star-glow. Art style: gouache
+picture-book illustration, Ghibli night-folk-legend feel.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — tanzaku are
+blank painted paper.
+SAVE AS: ext_vocab_049
+
+================================================================================
+
+VOCAB 50: ext_vocab_050 — 八 (はち) — eight
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting the number eight through a natural scene. Eight smooth round
+sea-glass stones in varied muted colors — dusty teal, soft sage, pale
+amber, warm cream, dusty grey, and umber — are arranged in a gentle
+curving line on warm sandy beach, wet at the edge where a soft wave has
+just receded. The wet sand reflects the soft warm sky. The ocean behind
+is a calm muted teal with gentle lapping waves. The sky is a quiet dusk
+wash of peach and dusty rose. Composition: stones curving across lower-
+third, horizon and sky filling above. Palette: dusty teal, soft sage,
+pale amber, warm cream, warm sand, dusk peach, dusty rose — grounded
+and contemplative. Lighting is warm dusk with gentle water reflection.
+Art style: gouache picture-book illustration, Ghibli coastal quietness.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_050
+
+================================================================================
+
+VOCAB 51: ext_vocab_051 — 八人 (はちにん) — eight people
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting eight people at a summer evening festival. Eight figures in
+muted yukata — rust, sage, dusty navy, mustard, soft cream, muted
+lavender, terracotta, olive — walk slowly together along a stone-paved
+street hung with warm paper lanterns above. They are seen from behind,
+silhouettes softly backlit by the lantern glow. The street recedes
+toward a distant traditional torii gate. Composition: eight figures
+arranged across the lower-middle in a gentle group, lanterns receding
+overhead, torii visible in the background. Palette: rust, sage, dusty
+navy, mustard, cream, lavender, terracotta, olive, warm lantern amber —
+grounded and quietly festive. Lighting is warm backlit lantern-glow
+against deep dusk. Art style: gouache picture-book illustration, Ghibli
+matsuri warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — lanterns are
+plain.
+SAVE AS: ext_vocab_051
+
+================================================================================
+
+VOCAB 52: ext_vocab_052 — 八時 (はちじ) — 8 o'clock
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a quiet study at 8 o'clock in the evening. The wall clock
+shows 8 o'clock (short hand to 8-position, long hand straight up — dot
+tick-marks only, no numerals). A warm desk lamp glows softly over an
+open book, a notebook with a pencil resting across it, and a steaming
+cup of tea. Outside the window, full night has fallen with a deep warm
+indigo sky and a soft half-moon. A woven rug in muted rust under the
+desk. Composition: desk with warm circle of lamp-light in the lower
+half, clock and window upper half, lamp casting gentle shadows.
+Palette: warm lamp amber, deep indigo night, wood brown, muted rust,
+cream, soft moonlight silver — grounded and studious. Lighting is warm
+focused lamp-glow against deep night. Art style: gouache picture-book
+illustration, Ghibli study-night atmosphere.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — the open
+book shows blank painted pages, no text.
+SAVE AS: ext_vocab_052
+
+================================================================================
+
+VOCAB 53: ext_vocab_053 — 八歳 (はっさい) — eight years old
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting an eight-year-old child. A child in a soft muted-olive sweater
+and cream trousers sits cross-legged on a wooden floor by a low bookshelf,
+carefully arranging a stack of eight cloth-bound storybooks. The books
+are in muted colors: rust, sage, mustard, dusty rose, deep cream, olive,
+dusty navy, warm cream. The child's expression is quietly proud. A small
+cup of hot tea sits nearby. Warm afternoon light falls softly. Composition:
+child centered, stack of books clearly visible. Palette: muted olive,
+cream, rust, sage, mustard, dusty rose, navy, wood brown — grounded and
+calm. Lighting is warm afternoon with present shadows. Art style:
+gouache picture-book illustration, Ghibli childhood quiet.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — books have
+plain painted covers, no titles.
+SAVE AS: ext_vocab_053
+
+================================================================================
+
+VOCAB 54: ext_vocab_054 — 八月 (はちがつ) — August
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting August in Japan — late-summer dusk. A wooden engawa porch of a
+traditional house at dusk. A ceramic wind chime (furin) in muted cream
+hangs from the eaves, its small paper strip gently curling in the
+breeze. A single cicada is softly painted on the old wooden post. A
+cool glass of iced mugicha (barley tea) in amber rests on the porch.
+Beyond the porch, a garden with a small pond reflects the warm dusk sky.
+A few fireflies flicker softly. Composition: wind chime upper-right,
+porch and tea lower-center, garden receding into background.
+Palette: warm cream, wood brown, deep moss, amber tea, dusky peach,
+soft indigo dusk — grounded and gently warm. Lighting is late-dusk with
+soft firefly glow. Art style: gouache picture-book illustration, Ghibli
+summer-evening warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — the wind
+chime's paper strip is plain blank.
+SAVE AS: ext_vocab_054
+
+================================================================================
+
+VOCAB 55: ext_vocab_055 — 八日 (ようか) — the 8th (of the month)
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting the number eight through a quiet scene. Eight fireflies drift
+softly through a dim forest glade at twilight, each a small soft warm-
+gold glow rendered as gentle painterly dots. The forest around is deep
+moss green and warm umber, softened by evening haze. A small mossy log
+rests in the foreground. A distant glimpse of a stream in muted teal
+flows gently behind the trees. The sky above, just visible through the
+canopy, is a deep warm indigo. Composition: fireflies scattered in a
+gentle arc through the middle of the frame, log anchoring lower.
+Palette: deep moss, warm umber, indigo dusk, firefly gold, muted teal,
+soft cream — grounded and softly magical. Lighting is low forest
+twilight with warm firefly-glow points. Art style: gouache picture-book
+illustration, Ghibli-like firefly evening.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_055
+
+================================================================================
+
+VOCAB 56: ext_vocab_056 — 九 (きゅう) — nine
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting the number nine through a quiet scene. Nine origami paper
+cranes rest together on a woven tatami mat, arranged in a gentle soft
+cluster. The cranes are in varied muted colors: dusty rose, soft sage,
+mustard, muted lavender, deep cream, warm terracotta, olive, dusty
+navy, and soft peach. Warm evening light pours in from a shoji screen
+just off-frame, casting soft long shadows beside each crane. A single
+small brush and ink-stone sit in the corner. Composition: cranes
+forming a loose cluster centered, generous negative space around them
+on the mat. Palette: muted tatami straw, dusty rose, sage, mustard,
+lavender, cream, terracotta, olive, navy — grounded and tactile.
+Lighting is warm directional evening with strong shadows. Art style:
+gouache picture-book illustration, Ghibli quiet interior.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_056
+
+================================================================================
+
+VOCAB 57: ext_vocab_057 — 九人 (きゅうにん) — nine people
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting nine people together. Nine figures stand in a gentle curved
+row on a grassy hillside at golden hour, seen from behind, each in soft
+earth-toned clothing. They look outward toward a distant wide valley.
+The grass beneath is deep wheat-gold with hints of sage. Tall clouds
+drift in a warm dusk sky of peach, dusty rose, and cream. Far below, a
+small village with warm wooden rooftops and a winding river. Composition:
+nine figures arranged across the middle-horizontal in a soft curve,
+valley and sky filling the rest. Palette: warm wheat, sage, peach,
+dusty rose, cream, muted village brown, river teal — grounded and
+expansive. Lighting is warm backlight with gentle long shadows in front.
+Art style: gouache picture-book illustration, Ghibli panoramic warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_057
+
+================================================================================
+
+VOCAB 58: ext_vocab_058 — 九時 (くじ) — 9 o'clock
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting 9 o'clock at night. The wall clock shows 9 o'clock (short
+hand to 9-position, long hand straight up — dot tick-marks only, no
+numerals). A quiet bedroom with a single warm bedside lamp glowing
+softly. A cup of herbal tea steams gently on the nightstand. An open
+cloth-bound book lies spine-up on the folded quilt. Through the window,
+a deep night sky with a soft half-moon and a scatter of small stars.
+Composition: clock upper-right, bed anchoring lower-center, lamp
+casting warm circle, window showing moonlit night. Palette: warm lamp
+amber, deep indigo night, moonlight silver, cream, muted navy bedding,
+wood brown — grounded and restful. Lighting is intimate warm lamp-glow
+against cool moonlit window. Art style: gouache picture-book illustration,
+Ghibli nighttime calm.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — book and
+clock face both blank.
+SAVE AS: ext_vocab_058
+
+================================================================================
+
+VOCAB 59: ext_vocab_059 — 九歳 (きゅうさい) — nine years old
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a nine-year-old child. A child with tied-back hair, in a
+simple cream smock apron over a muted-navy shirt, sits at a low wooden
+desk practicing calligraphy with a brush and ink-stone. Their face is
+focused but peaceful. The ink-stone is deep black on warm wood; the
+brush is held gently. A sheet of blank washi paper lies before them (no
+characters painted — paper is plain, since the image must not contain
+text). A small cup of tea and a few more blank sheets are stacked neatly
+beside. Warm afternoon light pours from a shoji-screened window.
+Composition: child slightly off-center at the desk, calligraphy setup
+prominent, window light flooding from the side. Palette: cream, muted
+navy, warm wood, black ink, soft amber light, dusty sage — grounded and
+focused. Lighting is warm directional with soft shadows. Art style:
+gouache picture-book illustration, Ghibli quiet-focus domesticity.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — the washi
+paper is entirely blank, no brushstrokes making letters.
+SAVE AS: ext_vocab_059
+
+================================================================================
+
+VOCAB 60: ext_vocab_060 — 九月 (くがつ) — September
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting September in Japan — early autumn and harvest moon. A full
+round warm-cream moon rises large above recently cut rice paddies,
+golden stubble catching its soft light. The paddies stretch in calm
+geometric bands in warm wheat-gold, dusty ochre, and deep moss. A
+traditional farmhouse with dark tile roof sits along one edge. A few
+gentle pampas grass plumes in soft cream sway. The sky is deep indigo-
+and-warm-umber dusk, the moon suffused with soft golden halo.
+Composition: harvest moon upper-center, paddies filling the lower
+three-quarters, farmhouse anchoring right. Palette: warm moon-cream,
+wheat-gold, dusty ochre, deep moss, indigo dusk, soft umber — grounded
+and seasonal. Lighting is warm moonlight with deep dusk. Art style:
+gouache picture-book illustration, Ghibli harvest-moon atmosphere.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_060
+
+================================================================================
+
+VOCAB 61: ext_vocab_061 — 九日 (ここのか) — the 9th (of the month)
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting the number nine through a quiet still life. Nine small
+pomegranate seeds (arils) in deep ruby-red, arranged in a gentle cluster
+on a weathered wooden spoon, sitting on a warm linen napkin. A single
+split pomegranate in muted crimson with a hint of its seeds sits beside
+the spoon. Warm afternoon light falls softly, illuminating the ruby
+tones. Composition: spoon with seeds centered, pomegranate beside, cream
+linen beneath. Palette: deep ruby, muted crimson, warm wood, cream linen,
+soft ochre, warm peach — grounded and jewel-toned, slightly deeper than
+pastel. Lighting is warm directional afternoon with soft highlights.
+Art style: gouache picture-book illustration, Ghibli still-life warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_061
+
+================================================================================
+
+VOCAB 62: ext_vocab_062 — 十歳 (じゅっさい) — ten years old
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a ten-year-old child. A child in a soft mustard sweater and
+earth-brown trousers sits on a wooden floor beside a low table where
+ten small unlit candles are arranged in a gentle circle on a cream
+plate. A single small wrapped gift in muted sage-green cloth sits beside
+the plate. The child's expression is reflective and quietly content.
+Warm late-afternoon light falls softly from a window. A small potted
+fern sits on the windowsill. Composition: child and table centered, ten
+candles clearly arranged, gift nearby. Palette: mustard, earth brown,
+cream, soft sage, warm wood, dusty amber — grounded and tender. Lighting
+is warm afternoon with gentle shadows around the candles. Art style:
+gouache picture-book illustration, Ghibli tender milestone.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — candles are
+plain, no writing on gift wrap.
+SAVE AS: ext_vocab_062
+
+================================================================================
+
+VOCAB 63: ext_vocab_063 — 十時 (じゅうじ) — 10 o'clock
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting 10 o'clock at night. The wall clock shows 10 o'clock (short
+hand to 10-position, long hand straight up — dot tick-marks only, no
+numerals). A cozy reading nook: a worn armchair in muted rust upholstery
+with a soft cream knit throw, a small side table with a warm amber
+table-lamp and a cup of tea, and an open book resting pages-down. The
+window beside shows deep night sky with a crescent moon and a few soft
+stars. Composition: armchair centered, lamp casting warm circle, window
+framing right. Palette: muted rust, cream, warm lamp amber, deep indigo
+night, wood brown, soft silver moonlight — grounded and deeply cozy.
+Lighting is intimate warm lamp-glow. Art style: gouache picture-book
+illustration, Ghibli nighttime reading calm.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — book pages
+blank, clock face no numerals.
+SAVE AS: ext_vocab_063
+
+================================================================================
+
+VOCAB 64: ext_vocab_064 — 十月 (じゅうがつ) — October
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting October in Japan — peak autumn. A stone path winds through a
+grove of maple trees in peak autumn color: deep burnished red, warm rust,
+burnished ochre, and flecks of remaining moss green. Fallen leaves
+carpet the path. A small stone lantern sits moss-covered beside it. The
+sky glimpses through the canopy in warm cream and peach. A single small
+figure in a warm earth-brown coat walks in the distance, seen from
+behind. Composition: canopy filling upper two-thirds in rich autumn
+color, path leading the eye forward, figure small in the distance.
+Palette: burnished red, warm rust, burnished ochre, deep moss, warm
+cream, peach, stone grey — grounded and richly autumnal, slightly
+deeper than pastel. Lighting is warm late-afternoon with soft glow
+between the leaves. Art style: gouache picture-book illustration,
+Ghibli peak-autumn warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_064
+
+================================================================================
+
+VOCAB 65: ext_vocab_065 — 十日 (とおか) — the 10th (of the month)
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting the number ten through a quiet forest scene. Ten acorns of
+varied warm brown and amber tones rest in a gentle row along a mossy
+wooden log in a forest glade. Each acorn has a subtle cap and stem,
+softly painted. Around them: deep moss, a few scattered fallen oak
+leaves in rust, soft ferns. The background fades to out-of-focus
+autumn forest in warm umbers and moss green. A single small mushroom
+in muted cream peeks from beside the log. Composition: log crossing
+horizontally in the lower third, ten acorns clearly visible in a line,
+forest softly behind. Palette: warm brown, amber, deep moss, rust, soft
+umber, cream mushroom — grounded and forest-floor warm. Lighting is
+soft dappled woodland warm. Art style: gouache picture-book illustration,
+Ghibli forest-floor quietness.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_065
+
+================================================================================
+
+VOCAB 66: ext_vocab_066 — 十分 (じゅっぷん) — ten minutes
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a short span of time. A beautiful old wooden hourglass sits
+on a weathered wooden desk, the fine warm-amber sand midway through its
+journey — upper chamber still softly full, lower chamber quietly
+collecting. A single thin stream of sand connects the two. Beside the
+hourglass: a folded cloth napkin in muted sage, a small ceramic cup
+of steaming tea, and a simple sprig of dried lavender. The background
+is a soft warm cream wall with a hint of afternoon light. Composition:
+hourglass centered upright, objects arranged in calm still-life beside.
+Palette: warm amber sand, wood brown, muted sage, cream, dusty lavender,
+soft peach light — grounded and meditative, gently deeper than pastel.
+Lighting is warm afternoon with delicate shadows around the glass. Art
+style: gouache picture-book illustration, Ghibli still-life quiet.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_066
+
+================================================================================
+
+VOCAB 67: ext_vocab_067 — 百 (ひゃく) — 100 / hundred
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting the concept of "one hundred" through abundance. A single
+branch of a flowering plum tree fills the frame, heavy with approximately
+a hundred tiny blossoms in soft muted pink-cream, painted as delicate
+gouache dots. The branch is a dark gnarled warm umber. Small buds in
+deeper dusty rose dot the branch between open blooms. The background is
+a soft warm cream wash with a hint of early-dusk peach. A single tiny
+bird in warm terracotta sits quietly on one twig. Composition: branch
+diagonal across the frame, blossoms forming a soft cloud, bird upper-
+right. Palette: muted pink-cream, dusty rose, warm umber, cream, soft
+peach, warm terracotta — grounded and abundant-quiet. Lighting is soft
+warm diffused. Art style: gouache picture-book illustration, Ghibli
+blossom abundance.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_067
+
+================================================================================
+
+VOCAB 68: ext_vocab_068 — 百円 (ひゃくえん) — 100 yen
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting the concept of 100 yen — a small affordable amount. A single
+round coin-shaped disc in muted cream-silver rests on a warm wooden
+counter of a traditional shop. The coin is painted plainly without any
+writing, letters, or numbers — just a simple round metallic disc with
+a soft hand-painted sheen. Beside it, a small pastry wrapped in wax
+paper tied with a muted twine. A warm dusk glow from a paper lantern
+above casts soft amber light across the counter. The background is a
+suggestion of shop shelves softly out of focus. Composition: coin
+centered in foreground, pastry just behind, shop softly framing.
+Palette: muted cream-silver, warm wood, pastry cream, twine tan, warm
+amber lantern-glow, soft umber shelves — grounded and humble. Lighting
+is warm paper-lantern glow with gentle shadows. Art style: gouache
+picture-book illustration, Ghibli small-shop warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — the coin is
+a blank simple disc, no denominations.
+SAVE AS: ext_vocab_068
+
+================================================================================
+
+VOCAB 69: ext_vocab_069 — 百円ショップ (ひゃくえんショップ) — 100-yen shop
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a small everyday shop at dusk. A modest storefront along a
+quiet town street, its plate-glass window glowing with warm interior
+lamp-light. Through the window, softly painted shelves with an
+impression of small household items (bowls, cloth napkins, small
+wooden utensils, potted succulents) in varied muted colors. The shop's
+awning is in muted deep-blue cloth. A simple wooden sign above the
+door is plain — completely blank, no text at all. A small lantern
+glows beside the door. The street outside is dusky warm grey with a
+gentle reflection on wet cobblestones. Composition: shop front centered,
+warm interior glow drawing the eye through the window. Palette: warm
+cream, deep-blue awning, wood brown, warm lantern amber, wet-cobblestone
+grey, dusky rose sky — grounded and domestic. Lighting is warm interior
+contrasted against cool dusk street. Art style: gouache picture-book
+illustration, Ghibli small-shop calm.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — all signs,
+awnings, and labels are completely blank.
+SAVE AS: ext_vocab_069
+
+================================================================================
+
+VOCAB 70: ext_vocab_070 — 百歳 (ひゃくさい) — 100 years old
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a hundred-year-old person. A close-up of gentle elderly hands
+— softly wrinkled, warm skin tone, softly lit — holding a small ceramic
+teacup of steaming green tea. The hands rest on a folded woolen blanket
+in muted sage over a wooden chair's arm. A single silver wedding ring
+catches a soft gleam. The background is softly out-of-focus: a warm
+window showing a quiet autumn garden, afternoon light. Composition:
+hands and teacup filling the lower-center, background warm and soft.
+Palette: warm skin tone, cream-silver, muted sage, teacup celadon, warm
+wood, dusty autumn amber — grounded and quietly dignified. Lighting is
+soft warm afternoon with gentle highlights on the cup. Art style: gouache
+picture-book illustration, Ghibli tender age.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_070
+
+================================================================================
+
+VOCAB 71: ext_vocab_071 — 三百円 (さんびゃくえん) — 300 yen
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting 300 yen — three coins. Three round coin-shaped discs in muted
+cream-silver rest on a warm wooden counter of a traditional shop,
+arranged in a soft gentle overlap. Each coin is plain — no writing,
+letters, or numbers — just softly painted metallic discs. Beside them,
+a small rolled-up cloth bundle in muted rust, tied with simple twine.
+A warm lantern glow above casts gentle amber light. Composition: three
+coins centered, bundle just behind, shop interior softly framing.
+Palette: muted cream-silver, warm wood, rust cloth, twine tan, warm
+amber lantern-glow — grounded and quiet. Lighting is warm paper-lantern
+glow. Art style: gouache picture-book illustration, Ghibli small-shop
+calm.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — coins are
+blank metallic discs, no denominations.
+SAVE AS: ext_vocab_071
+
+================================================================================
+
+VOCAB 72: ext_vocab_072 — 八百円 (はっぴゃくえん) — 800 yen
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting 800 yen — eight coins. Eight round coin-shaped discs in muted
+cream-silver rest in a gentle curve along an old leather-bound ledger
+book on a weathered wooden desk. The ledger is closed, its cover warm
+umber-brown. An inkwell with a simple wooden pen lies beside. The coins
+are plain — no writing, letters, or numbers of any kind, just softly
+painted metallic discs with a subtle hand-painted sheen. A small lamp
+casts warm glow. Composition: coins curving across lower-middle, ledger
+as anchor, inkwell just behind. Palette: muted cream-silver, warm
+umber leather, wood brown, warm lamp amber, dusty ink-black, soft
+cream — grounded and traditional. Lighting is warm lamp-glow with
+gentle shadows. Art style: gouache picture-book illustration, Ghibli
+quiet study.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — coins,
+ledger cover, and any visible pages are completely blank.
+SAVE AS: ext_vocab_072
+
+================================================================================
+
+VOCAB 73: ext_vocab_073 — 千 (せん) — 1,000 / thousand
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting "one thousand" through the traditional senbazuru — a
+multitude of origami paper cranes. Many (implied one thousand) small
+folded origami cranes in varied muted colors — dusty rose, sage, mustard,
+lavender, terracotta, olive, navy, soft cream — are strung together on
+long slender threads, hanging in gentle vertical cascades from a warm
+wooden beam. The cranes fill most of the frame as a soft layered
+cascade, softened at the edges. Warm diffused afternoon light filters
+across them. The background fades to a soft cream wall with a hint of
+warm peach. Composition: hanging cranes filling the frame in gentle
+vertical layers, beam anchoring top. Palette: muted rose, sage, mustard,
+lavender, terracotta, olive, navy, cream, warm wood — grounded and
+plentiful. Lighting is soft diffused warm afternoon with gentle glow.
+Art style: gouache picture-book illustration, Ghibli ceremonial
+abundance.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_073
+
+================================================================================
+
+VOCAB 74: ext_vocab_074 — 千円 (せんえん) — 1,000 yen
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting the concept of 1,000 yen as a modest sum. A small traditional
+cloth furoshiki wrap in muted deep-blue with a soft cream wave pattern
+rests on a weathered wooden tray. The fabric bundle is loosely knotted
+at the top, and a few cream-silver coin-shaped discs rest beside it on
+the tray. The coins are plain — no writing, letters, or numbers of any
+kind. A single small sprig of dried pampas grass in cream leans softly
+nearby. The background is a soft warm cream wall. Composition: furoshiki
+bundle and coins centered, pampas grass balancing, generous negative
+space. Palette: deep muted blue, cream, warm wood, muted cream-silver,
+dusty pampas cream, soft ochre — grounded and everyday-humble. Lighting
+is soft warm afternoon with gentle shadows. Art style: gouache picture-
+book illustration, Ghibli quiet still-life.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — no banknote
+imagery, no printed currency; only plain cloth and plain coin discs.
+SAVE AS: ext_vocab_074
+
+================================================================================
+
+VOCAB 75: ext_vocab_075 — 千葉 (ちば) — Chiba (place name)
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a Chiba landscape — famous for its coastline and nanohana
+(rapeseed) fields. A wide field of soft muted yellow nanohana flowers
+stretches across the lower two-thirds of the frame, painted as gentle
+clusters of warm yellow gouache on deep sage-green stems. In the
+background, a calm sea in muted teal-blue with gentle low waves meets
+a warm dusk horizon. A small traditional lighthouse in warm cream sits
+on a distant headland. The sky is a soft dusk wash of peach, dusty
+rose, and deep cream. Composition: nanohana field filling foreground,
+sea and lighthouse middle ground, sky upper third. Palette: muted
+yellow, deep sage, muted teal, warm cream, peach, dusty rose — grounded
+and coastal. Lighting is warm late-afternoon with gentle softness on
+the flowers. Art style: gouache picture-book illustration, Ghibli
+coastal warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind.
+SAVE AS: ext_vocab_075
+
+================================================================================
+
+VOCAB 76: ext_vocab_076 — 千駄ヶ谷 (せんだがや) — Sendagaya (neighborhood)
+────────────────────────────────────────────────────────────────────────────
+Draw an image in 1:1 square ratio in a warm gouache picture-book style
+depicting a quiet Tokyo neighborhood — Sendagaya feel. A narrow
+residential side-street at early dusk with old traditional wooden
+houses lining both sides, some with tile roofs and small potted plants
+by the doorways. Low stone walls, a few slender telephone poles
+(painted softly, not too modern), and a gentle curve of the road. A
+single person on a bicycle rides slowly down the lane, silhouetted
+warmly. Warm light glows from a few house windows. The sky above the
+narrow rooftops is a soft dusk wash of peach, dusty rose, and warm
+indigo. Composition: street receding into the distance, houses framing
+left and right, sky filling upper quarter. Palette: warm wood brown,
+stone grey, cream, warm window-amber, dusk peach, dusty rose, soft
+indigo, muted potted-plant green — grounded and residential. Lighting
+is warm dusk with window-glow accents. Art style: gouache picture-book
+illustration, Ghibli quiet-neighborhood warmth.
+Absolutely no text, letters, numbers, kanji, hiragana, katakana, romaji,
+typography, signature, watermark, or writing of any kind — all houses,
+signs, and surfaces are blank.
+SAVE AS: ext_vocab_076
+
+================================================================================
+END OF THREAD 1 — VOCAB 001 to 076
+================================================================================

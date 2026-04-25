@@ -1,0 +1,703 @@
+{
+  "metadata": {
+    "source": "KANJI_REFERENCE.md",
+    "generatedAt": "2026-04-24T12:36:42.494597+00:00",
+    "lessonsCount": 37,
+    "kanjiCount": 86,
+    "vocabularyCount": 378,
+    "sentencesPart1": 111,
+    "sentencesPart1Extras": 24,
+    "sentencesPart3Groups": 7,
+    "sentencesTotal": 173,
+    "answerKeyPages": 9,
+    "prerequisiteKanji": 124
+  },
+  "lessons": [
+    {
+      "number": 1,
+      "date": "2026-02-17",
+      "kanjiChars": [
+        "大",
+        "小",
+        "人"
+      ],
+      "reviewKanjiChars": [],
+      "source": null,
+      "textbookPage": null,
+      "isPracticeOnly": false,
+      "rawKanjiField": "大・小・人",
+      "kanjiIds": [
+        "ext_kanji_大",
+        "ext_kanji_小",
+        "ext_kanji_人"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 2,
+      "date": "2026-02-18",
+      "kanjiChars": [
+        "山",
+        "川",
+        "田"
+      ],
+      "reviewKanjiChars": [],
+      "source": "もじ4, p.200",
+      "textbookPage": 200,
+      "isPracticeOnly": false,
+      "rawKanjiField": "山・川・田",
+      "kanjiIds": [
+        "ext_kanji_山",
+        "ext_kanji_川",
+        "ext_kanji_田"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 3,
+      "date": "2026-02-20",
+      "kanjiChars": [
+        "四",
+        "五",
+        "六"
+      ],
+      "reviewKanjiChars": [
+        "一",
+        "二",
+        "三"
+      ],
+      "source": "もじ5, p.201",
+      "textbookPage": 201,
+      "isPracticeOnly": false,
+      "rawKanjiField": "四・五・六 (review 一・二・三)",
+      "kanjiIds": [
+        "ext_kanji_四",
+        "ext_kanji_五",
+        "ext_kanji_六"
+      ],
+      "reviewKanjiIds": [
+        "ext_kanji_一",
+        "ext_kanji_二",
+        "ext_kanji_三"
+      ]
+    },
+    {
+      "number": 4,
+      "date": "2026-02-24",
+      "kanjiChars": [
+        "七",
+        "八",
+        "九"
+      ],
+      "reviewKanjiChars": [],
+      "source": null,
+      "textbookPage": null,
+      "isPracticeOnly": false,
+      "rawKanjiField": "七・八・九",
+      "kanjiIds": [
+        "ext_kanji_七",
+        "ext_kanji_八",
+        "ext_kanji_九"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 5,
+      "date": "2026-02-25",
+      "kanjiChars": [
+        "十"
+      ],
+      "reviewKanjiChars": [],
+      "source": "もじ5, p.202",
+      "textbookPage": 202,
+      "isPracticeOnly": false,
+      "rawKanjiField": "十",
+      "kanjiIds": [
+        "ext_kanji_十"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 6,
+      "date": "2026-02-27",
+      "kanjiChars": [
+        "百",
+        "千",
+        "万"
+      ],
+      "reviewKanjiChars": [],
+      "source": "もじ6, p.204",
+      "textbookPage": 204,
+      "isPracticeOnly": false,
+      "rawKanjiField": "百・千・万",
+      "kanjiIds": [
+        "ext_kanji_百",
+        "ext_kanji_千",
+        "ext_kanji_万"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 7,
+      "date": "2026-03-02",
+      "kanjiChars": [
+        "円"
+      ],
+      "reviewKanjiChars": [],
+      "source": "一歩2, p.204",
+      "textbookPage": 204,
+      "isPracticeOnly": false,
+      "rawKanjiField": "円 (+ numbers practice)",
+      "kanjiIds": [
+        "ext_kanji_円"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 8,
+      "date": "2026-03-03",
+      "kanjiChars": [
+        "上",
+        "中",
+        "下"
+      ],
+      "reviewKanjiChars": [],
+      "source": null,
+      "textbookPage": null,
+      "isPracticeOnly": false,
+      "rawKanjiField": "上・中・下",
+      "kanjiIds": [
+        "ext_kanji_上",
+        "ext_kanji_中",
+        "ext_kanji_下"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 9,
+      "date": "2026-03-04",
+      "kanjiChars": [],
+      "reviewKanjiChars": [],
+      "source": "もじ7, p.206–207",
+      "textbookPage": 206,
+      "isPracticeOnly": true,
+      "rawKanjiField": "(practice)",
+      "kanjiIds": [],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 10,
+      "date": "2026-03-05",
+      "kanjiChars": [
+        "日",
+        "月",
+        "火"
+      ],
+      "reviewKanjiChars": [],
+      "source": "もじ8, p.208",
+      "textbookPage": 208,
+      "isPracticeOnly": false,
+      "rawKanjiField": "日・月・火",
+      "kanjiIds": [
+        "ext_kanji_日",
+        "ext_kanji_月",
+        "ext_kanji_火"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 11,
+      "date": "2026-03-06",
+      "kanjiChars": [
+        "水",
+        "木",
+        "金"
+      ],
+      "reviewKanjiChars": [],
+      "source": "もじ8, p.208",
+      "textbookPage": 208,
+      "isPracticeOnly": false,
+      "rawKanjiField": "水・木・金",
+      "kanjiIds": [
+        "ext_kanji_水",
+        "ext_kanji_木",
+        "ext_kanji_金"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 12,
+      "date": "2026-03-09",
+      "kanjiChars": [
+        "土"
+      ],
+      "reviewKanjiChars": [],
+      "source": "一歩2, p.209",
+      "textbookPage": 209,
+      "isPracticeOnly": false,
+      "rawKanjiField": "土 (+ days/dates)",
+      "kanjiIds": [
+        "ext_kanji_土"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 13,
+      "date": "2026-03-10",
+      "kanjiChars": [
+        "何",
+        "年",
+        "生"
+      ],
+      "reviewKanjiChars": [],
+      "source": null,
+      "textbookPage": null,
+      "isPracticeOnly": false,
+      "rawKanjiField": "何・年・生",
+      "kanjiIds": [
+        "ext_kanji_何",
+        "ext_kanji_年",
+        "ext_kanji_生"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 14,
+      "date": "2026-03-11",
+      "kanjiChars": [
+        "学"
+      ],
+      "reviewKanjiChars": [],
+      "source": "もじ9, p.211",
+      "textbookPage": 211,
+      "isPracticeOnly": false,
+      "rawKanjiField": "学",
+      "kanjiIds": [
+        "ext_kanji_学"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 15,
+      "date": "2026-03-12",
+      "kanjiChars": [
+        "口",
+        "目",
+        "耳"
+      ],
+      "reviewKanjiChars": [],
+      "source": "もじ10, p.212",
+      "textbookPage": 212,
+      "isPracticeOnly": false,
+      "rawKanjiField": "口・目・耳",
+      "kanjiIds": [
+        "ext_kanji_口",
+        "ext_kanji_目",
+        "ext_kanji_耳"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 16,
+      "date": "2026-03-13",
+      "kanjiChars": [
+        "手",
+        "足"
+      ],
+      "reviewKanjiChars": [],
+      "source": "もじ10, p.208",
+      "textbookPage": 208,
+      "isPracticeOnly": false,
+      "rawKanjiField": "手・足",
+      "kanjiIds": [
+        "ext_kanji_手",
+        "ext_kanji_足"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 17,
+      "date": "2026-03-16",
+      "kanjiChars": [
+        "行",
+        "来",
+        "車"
+      ],
+      "reviewKanjiChars": [],
+      "source": "一歩2, p.214",
+      "textbookPage": 214,
+      "isPracticeOnly": false,
+      "rawKanjiField": "行・来・車",
+      "kanjiIds": [
+        "ext_kanji_行",
+        "ext_kanji_来",
+        "ext_kanji_車"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 18,
+      "date": "2026-03-18",
+      "kanjiChars": [
+        "言",
+        "話",
+        "読"
+      ],
+      "reviewKanjiChars": [],
+      "source": "もじ12, p.216",
+      "textbookPage": 216,
+      "isPracticeOnly": false,
+      "rawKanjiField": "言・話・読",
+      "kanjiIds": [
+        "ext_kanji_言",
+        "ext_kanji_話",
+        "ext_kanji_読"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 19,
+      "date": "2026-03-19",
+      "kanjiChars": [
+        "語",
+        "本"
+      ],
+      "reviewKanjiChars": [],
+      "source": "一歩2, p.216–217",
+      "textbookPage": 216,
+      "isPracticeOnly": false,
+      "rawKanjiField": "語・本",
+      "kanjiIds": [
+        "ext_kanji_語",
+        "ext_kanji_本"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 20,
+      "date": "2026-03-23",
+      "kanjiChars": [
+        "見",
+        "聞",
+        "食"
+      ],
+      "reviewKanjiChars": [],
+      "source": "一歩2, p.218",
+      "textbookPage": 218,
+      "isPracticeOnly": false,
+      "rawKanjiField": "見・聞・食",
+      "kanjiIds": [
+        "ext_kanji_見",
+        "ext_kanji_聞",
+        "ext_kanji_食"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 21,
+      "date": "2026-03-24",
+      "kanjiChars": [
+        "飲",
+        "休"
+      ],
+      "reviewKanjiChars": [],
+      "source": "一歩2, p.219",
+      "textbookPage": 219,
+      "isPracticeOnly": false,
+      "rawKanjiField": "飲・休",
+      "kanjiIds": [
+        "ext_kanji_飲",
+        "ext_kanji_休"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 22,
+      "date": "2026-03-25",
+      "kanjiChars": [
+        "内",
+        "外",
+        "国"
+      ],
+      "reviewKanjiChars": [],
+      "source": "もじ14, p.220",
+      "textbookPage": 220,
+      "isPracticeOnly": false,
+      "rawKanjiField": "内・外・国",
+      "kanjiIds": [
+        "ext_kanji_内",
+        "ext_kanji_外",
+        "ext_kanji_国"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 23,
+      "date": "2026-04-06",
+      "kanjiChars": [
+        "入",
+        "出"
+      ],
+      "reviewKanjiChars": [],
+      "source": "もじ14 / 一歩2 p.220–221",
+      "textbookPage": 220,
+      "isPracticeOnly": false,
+      "rawKanjiField": "入・出 (+ 内・外・国 review)",
+      "kanjiIds": [
+        "ext_kanji_入",
+        "ext_kanji_出"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 24,
+      "date": "2026-04-07",
+      "kanjiChars": [
+        "前",
+        "後"
+      ],
+      "reviewKanjiChars": [],
+      "source": null,
+      "textbookPage": null,
+      "isPracticeOnly": false,
+      "rawKanjiField": "前・後",
+      "kanjiIds": [
+        "ext_kanji_前",
+        "ext_kanji_後"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 25,
+      "date": "2026-04-08",
+      "kanjiChars": [
+        "右",
+        "左",
+        "名"
+      ],
+      "reviewKanjiChars": [],
+      "source": "もじ15, p.222",
+      "textbookPage": 222,
+      "isPracticeOnly": false,
+      "rawKanjiField": "右・左・名",
+      "kanjiIds": [
+        "ext_kanji_右",
+        "ext_kanji_左",
+        "ext_kanji_名"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 26,
+      "date": "2026-04-09",
+      "kanjiChars": [],
+      "reviewKanjiChars": [],
+      "source": "一歩 p.223",
+      "textbookPage": 223,
+      "isPracticeOnly": true,
+      "rawKanjiField": "(review)",
+      "kanjiIds": [],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 27,
+      "date": "2026-04-10",
+      "kanjiChars": [
+        "毎",
+        "先",
+        "週"
+      ],
+      "reviewKanjiChars": [],
+      "source": "もじ16, p.224",
+      "textbookPage": 224,
+      "isPracticeOnly": false,
+      "rawKanjiField": "毎・先・週",
+      "kanjiIds": [
+        "ext_kanji_毎",
+        "ext_kanji_先",
+        "ext_kanji_週"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 28,
+      "date": "2026-04-13",
+      "kanjiChars": [
+        "時",
+        "間"
+      ],
+      "reviewKanjiChars": [],
+      "source": "一歩2, p.224–225",
+      "textbookPage": 224,
+      "isPracticeOnly": false,
+      "rawKanjiField": "時・間",
+      "kanjiIds": [
+        "ext_kanji_時",
+        "ext_kanji_間"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 29,
+      "date": "2026-04-14",
+      "kanjiChars": [
+        "今",
+        "分",
+        "半"
+      ],
+      "reviewKanjiChars": [],
+      "source": null,
+      "textbookPage": null,
+      "isPracticeOnly": false,
+      "rawKanjiField": "今・分・半",
+      "kanjiIds": [
+        "ext_kanji_今",
+        "ext_kanji_分",
+        "ext_kanji_半"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 30,
+      "date": "2026-04-15",
+      "kanjiChars": [
+        "午"
+      ],
+      "reviewKanjiChars": [],
+      "source": "もじ17, p.226–227",
+      "textbookPage": 226,
+      "isPracticeOnly": false,
+      "rawKanjiField": "午",
+      "kanjiIds": [
+        "ext_kanji_午"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 31,
+      "date": "2026-04-16",
+      "kanjiChars": [
+        "父",
+        "母",
+        "子"
+      ],
+      "reviewKanjiChars": [],
+      "source": "もじ18, p.228",
+      "textbookPage": 228,
+      "isPracticeOnly": false,
+      "rawKanjiField": "父・母・子",
+      "kanjiIds": [
+        "ext_kanji_父",
+        "ext_kanji_母",
+        "ext_kanji_子"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 32,
+      "date": "2026-04-17",
+      "kanjiChars": [
+        "男",
+        "女"
+      ],
+      "reviewKanjiChars": [],
+      "source": "もじ18, p.229–230",
+      "textbookPage": 229,
+      "isPracticeOnly": false,
+      "rawKanjiField": "男・女",
+      "kanjiIds": [
+        "ext_kanji_男",
+        "ext_kanji_女"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 33,
+      "date": "2026-04-20",
+      "kanjiChars": [
+        "東",
+        "西",
+        "南"
+      ],
+      "reviewKanjiChars": [],
+      "source": "一歩2, p.231",
+      "textbookPage": 231,
+      "isPracticeOnly": false,
+      "rawKanjiField": "東・西・南",
+      "kanjiIds": [
+        "ext_kanji_東",
+        "ext_kanji_西",
+        "ext_kanji_南"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 34,
+      "date": "2026-04-21",
+      "kanjiChars": [
+        "北"
+      ],
+      "reviewKanjiChars": [],
+      "source": null,
+      "textbookPage": null,
+      "isPracticeOnly": false,
+      "rawKanjiField": "北",
+      "kanjiIds": [
+        "ext_kanji_北"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 35,
+      "date": "2026-04-22",
+      "kanjiChars": [],
+      "reviewKanjiChars": [],
+      "source": "p.233",
+      "textbookPage": 233,
+      "isPracticeOnly": true,
+      "rawKanjiField": "(review)",
+      "kanjiIds": [],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 36,
+      "date": "2026-04-23",
+      "kanjiChars": [
+        "書",
+        "使",
+        "歩"
+      ],
+      "reviewKanjiChars": [],
+      "source": "一歩3, p.188",
+      "textbookPage": 188,
+      "isPracticeOnly": false,
+      "rawKanjiField": "書・使・歩",
+      "kanjiIds": [
+        "ext_kanji_書",
+        "ext_kanji_使",
+        "ext_kanji_歩"
+      ],
+      "reviewKanjiIds": []
+    },
+    {
+      "number": 37,
+      "date": "2026-04-24",
+      "kanjiChars": [
+        "作",
+        "立",
+        "文"
+      ],
+      "reviewKanjiChars": [],
+      "source": "漢字1, p.188",
+      "textbookPage": 188,
+      "isPracticeOnly": false,
+      "rawKanjiField": "作・立・文",
+      "kanjiIds": [
+        "ext_kanji_作",
+        "ext_kanji_立",
+        "ext_kanji_文"
+      ],
+      "reviewKanjiIds": []
+    }
+  ]
+}
