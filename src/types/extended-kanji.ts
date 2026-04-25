@@ -23,9 +23,19 @@ export interface MergedVocabRow {
   themes: string[];
 }
 
+/** A single ruby annotation: characters [start, end) in `japanese`
+ * read as `reading`. Sourced from inline `kanji(reading)` markup in
+ * KANJI_REFERENCE_v2.md. */
+export interface SentenceRuby {
+  start: number;
+  end: number;
+  reading: string;
+}
+
 export interface ExtendedKanjiSentence {
   japanese: string;
   english: string;
+  rubies?: SentenceRuby[];
   parentKanji?: string;
   sectionTitle?: string;
   source?: 'part1' | 'part1_extras';
@@ -101,6 +111,9 @@ export interface ExtendedKanjiTheme {
 export interface TopicSentenceGroup {
   topic: string;
   sentences: string[];
+  /** Parallel array — rubies[i] applies to sentences[i]. Empty when source
+   * has no inline annotations. */
+  rubies?: SentenceRuby[][];
 }
 
 export interface AnswerKeyPage {

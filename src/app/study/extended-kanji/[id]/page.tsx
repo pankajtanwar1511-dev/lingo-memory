@@ -47,6 +47,7 @@ import { InteractiveSentence } from '@/components/extended-kanji/interactive-sen
 interface AnySentence {
   japanese: string;
   english: string;
+  rubies?: import('@/types/extended-kanji').SentenceRuby[];
   origin: 'part1' | 'part1_extras' | 'part3';
   parentKanji?: string;
   sectionTitle?: string;
@@ -87,6 +88,7 @@ export default function ExtendedKanjiDetailPage() {
           unified.push({
             japanese: s.japanese,
             english: s.english,
+            rubies: s.rubies,
             origin: 'part1',
             parentKanji: s.parentKanji,
           }),
@@ -95,14 +97,21 @@ export default function ExtendedKanjiDetailPage() {
           unified.push({
             japanese: s.japanese,
             english: s.english,
+            rubies: s.rubies,
             origin: 'part1_extras',
             parentKanji: s.parentKanji,
             sectionTitle: s.sectionTitle,
           }),
         );
         (sData.part3 as TopicSentenceGroup[]).forEach((g) =>
-          g.sentences.forEach((jp) =>
-            unified.push({ japanese: jp, english: '', origin: 'part3', topic: g.topic }),
+          g.sentences.forEach((jp, i) =>
+            unified.push({
+              japanese: jp,
+              english: '',
+              rubies: g.rubies?.[i],
+              origin: 'part3',
+              topic: g.topic,
+            }),
           ),
         );
         setAllSentences(unified);
@@ -529,6 +538,7 @@ export default function ExtendedKanjiDetailPage() {
                   key={i}
                   japanese={s.japanese}
                   english={s.english}
+                  rubies={s.rubies}
                   kanjiByChar={kanjiByChar}
                   highlightChar={kanji.kanji}
                   className="border-purple-200 dark:border-purple-900/50"
@@ -561,6 +571,7 @@ export default function ExtendedKanjiDetailPage() {
                   key={`${s.origin}-${i}`}
                   japanese={s.japanese}
                   english={s.english}
+                  rubies={s.rubies}
                   kanjiByChar={kanjiByChar}
                   highlightChar={kanji.kanji}
                   className="border-sky-200 dark:border-sky-900/50"

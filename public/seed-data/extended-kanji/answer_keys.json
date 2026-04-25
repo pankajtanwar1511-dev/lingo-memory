@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "source": "KANJI_REFERENCE.md",
-    "generatedAt": "2026-04-24T12:36:42.494597+00:00",
+    "source": "KANJI_REFERENCE_v2.md",
+    "generatedAt": "2026-04-25T16:49:10.842985+00:00",
     "lessonsCount": 37,
     "kanjiCount": 86,
     "vocabularyCount": 378,
     "sentencesPart1": 111,
-    "sentencesPart1Extras": 24,
+    "sentencesPart1Extras": 27,
     "sentencesPart3Groups": 7,
-    "sentencesTotal": 173,
+    "sentencesTotal": 176,
     "answerKeyPages": 9,
     "prerequisiteKanji": 124
   },
@@ -63,7 +63,7 @@
         "④ 去年山で右足のほねをおりました。",
         "⑤ ビルの入口で友だちと会いました。",
         "⑥ おっとはピアノが上手です。でも、わたしは下手です。",
-        "⑦ 日本の人口は１おく2500万人ぐらいです。(125,000,000)",
+        "⑦ 日本の人口は１おく2500万人ぐらいです。",
         "⑧ 駅の改札口を出て、タクシーにのります。"
       ],
       "subSections": []
@@ -93,7 +93,7 @@
         "③ にち/の",
         "④ はなし/き/み",
         "⑤ やす/ぶん/のみ",
-        "⑥ きゅうじつ (休日)",
+        "⑥ きゅうじつ ",
         "⑦ にほんご/やす",
         "Review kanji block: 休・飲・聞・何・話"
       ],
@@ -110,18 +110,18 @@
         "⑤ でます・ないか・いって",
         "⑥ かんこくじん・げか",
         "⑦ はいっても",
-        "⑧ にゅうりょく (入力)"
+        "⑧ にゅうりょく "
       ],
       "subSections": [
         {
           "title": "Bank vocabulary set",
           "items": [
-            "① 入学 (にゅうがく) — entering school",
-            "② 入院 (にゅういん) — hospitalization",
-            "③ 入国 (にゅうこく) — entering a country",
-            "④ 出国 (しゅっこく) — leaving a country",
-            "⑤ お預け入れ (おあずけいれ) — deposit",
-            "⑥ お引き出し (おひきだし) — withdrawal"
+            "① 入学  — entering school",
+            "② 入院  — hospitalization",
+            "③ 入国  — entering a country",
+            "④ 出国  — leaving a country",
+            "⑤ お預け入れ  — deposit",
+            "⑥ お引き出し  — withdrawal"
           ]
         }
       ]
@@ -166,11 +166,11 @@
         {
           "title": "Clinic/dosage problems",
           "items": [
-            "(1) ①",
-            "(2) はな みみ (耳鼻科 — ENT clinic: 鼻 nose, 耳 ear)",
-            "(3) ごはんのあと (after meal)",
-            "(4) ２じょう (2 tablets)",
-            "(5) ２４じょう (24 tablets)"
+            " ①",
+            " はな みみ ",
+            " ごはんのあと ",
+            " ２じょう ",
+            " ２４じょう "
           ]
         }
       ]

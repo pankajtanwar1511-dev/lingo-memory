@@ -21,9 +21,100 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-SOURCE = REPO_ROOT / "KANJI_REFERENCE.md"
+# v2 is the corrected source: English glosses removed, inline ruby annotations
+# kanji(reading) added to every sentence. Falls back to v1 if v2 is missing.
+SOURCE_V2 = REPO_ROOT / "KANJI_REFERENCE_v2.md"
+SOURCE_V1 = REPO_ROOT / "KANJI_REFERENCE.md"
+SOURCE = SOURCE_V2 if SOURCE_V2.exists() else SOURCE_V1
 OUT_DIR = REPO_ROOT / "public" / "seed-data" / "extended-kanji"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+
+# ---------------------------------------------------------------------------
+# Inline ruby parsing (v2 format)
+#
+# v2 sentences embed pronunciation hints like:  この家(いえ)は大(おお)きいです。
+# A "ruby annotation" is `<target>(<reading>)` where <target> is a contiguous
+# run of non-kana, non-Latin-letter characters preceding the open paren — kanji
+# and/or digits (e.g. `92(きゅうじゅうに)`).
+#
+# parse_inline_rubies(text) returns:
+#   cleaned:  the JP text with all `(reading)` segments stripped
+#   rubies:   list of {start, end, reading} where start/end are character
+#             offsets INTO `cleaned` for the run the reading applies to.
+
+_KANA_RANGES = (
+    (0x3040, 0x309F),  # hiragana
+    (0x30A0, 0x30FF),  # katakana
+)
+
+
+def _is_kana(ch: str) -> bool:
+    if not ch:
+        return False
+    code = ord(ch)
+    return any(lo <= code <= hi for (lo, hi) in _KANA_RANGES)
+
+
+def _is_ascii_letter(ch: str) -> bool:
+    return bool(ch) and (ch.isascii() and ch.isalpha())
+
+
+def _is_target_terminator(ch: str) -> bool:
+    """A character that ends the backwards scan when picking a ruby's target.
+    Anything kana, ASCII letter, whitespace, or Japanese punctuation stops us;
+    digits and CJK ideographs do not (they're valid ruby targets).
+    """
+    if not ch:
+        return True
+    if _is_kana(ch):
+        return True
+    if _is_ascii_letter(ch):
+        return True
+    if ch in " \t\n、。！？「」『』…ー〜（）()":
+        return True
+    return False
+
+
+def parse_inline_rubies(text: str) -> tuple[str, list[dict]]:
+    """Strip `(reading)` annotations from `text`, returning the cleaned JP and
+    a list of rubies anchored at character offsets in the cleaned string.
+    """
+    if not text or "(" not in text:
+        return text, []
+    out_chars: list[str] = []
+    rubies: list[dict] = []
+    i = 0
+    n = len(text)
+    while i < n:
+        ch = text[i]
+        if ch == "(":
+            close = text.find(")", i + 1)
+            if close == -1:
+                # Unbalanced — emit as literal and continue
+                out_chars.append(ch)
+                i += 1
+                continue
+            reading = text[i + 1 : close]
+            # Target = run of target chars at the end of out_chars
+            j = len(out_chars) - 1
+            while j >= 0 and not _is_target_terminator(out_chars[j]):
+                j -= 1
+            target_start = j + 1
+            target_end = len(out_chars)
+            if target_end > target_start and reading:
+                rubies.append(
+                    {
+                        "start": target_start,
+                        "end": target_end,
+                        "reading": reading.strip(),
+                    }
+                )
+            i = close + 1
+        else:
+            out_chars.append(ch)
+            i += 1
+    return "".join(out_chars), rubies
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -153,6 +244,28 @@ BULLET_LABEL_RE = re.compile(r"^-\s*\*\*(Kun'yomi|On'yomi|Meaning):\*\*\s*(.+)$"
 # sentence bullet: `- JP — *EN*` (em-dash separator + italics for EN)
 SENTENCE_BULLET_RE = re.compile(r"^-\s*(.+?)\s+—\s*\*(.+?)\*\s*$")
 # sometimes the EN gloss is in parentheses without italics e.g. `— *(meal phrases)*`
+
+
+def parse_sentence_bullet_line(line: str) -> dict:
+    """Parse a `- ...` bullet line into {japanese, english, rubies}.
+
+    Handles BOTH formats:
+    - v1 with English gloss:  `- 大きい家です。 — *It is a big house.*`
+    - v2 with inline rubies:  `- 大(おお)きい家(いえ)です。`
+    """
+    if not line.startswith("- "):
+        return {"japanese": "", "english": "", "rubies": []}
+    body = line[2:].rstrip()
+    # Try v1 with EN gloss first
+    m = SENTENCE_BULLET_RE.match(line)
+    if m:
+        jp_raw = m.group(1).strip()
+        en = m.group(2).strip()
+    else:
+        jp_raw = body.strip()
+        en = ""
+    cleaned, rubies = parse_inline_rubies(jp_raw)
+    return {"japanese": cleaned, "english": en, "rubies": rubies}
 SUBKANJI_H3_RE = re.compile(r"^### ([^\s(（]+)\s*[\(（]([^\)）]+)[\)）]\s*$")
 
 
@@ -256,15 +369,7 @@ def parse_part1(lines: list[str], part_range: tuple[int, int]) -> list[dict]:
                         if bl.startswith("###") or bl.startswith("## "):
                             break
                         if bl.startswith("- "):
-                            sm = SENTENCE_BULLET_RE.match(bl)
-                            if sm:
-                                sents.append(
-                                    {"japanese": sm.group(1).strip(), "english": sm.group(2).strip()}
-                                )
-                            else:
-                                # fallback: just the Japanese line
-                                jp_only = bl[2:].strip()
-                                sents.append({"japanese": jp_only, "english": ""})
+                            sents.append(parse_sentence_bullet_line(bl))
                             m2 += 1
                             continue
                         # Non-bullet line — end of section
@@ -369,12 +474,15 @@ def _capture_extra_section(body: list[str], start: int) -> dict:
         if stripped.startswith("- "):
             items: list[dict] = []
             while i < len(body) and body[i].lstrip().startswith("- "):
-                bl = body[i].lstrip()[2:].rstrip()
-                sm = SENTENCE_BULLET_RE.match(f"- {bl}")
-                if sm:
-                    items.append({"text": sm.group(1).strip(), "gloss": sm.group(2).strip()})
-                else:
-                    items.append({"text": bl, "gloss": ""})
+                bl = body[i].lstrip()
+                parsed = parse_sentence_bullet_line(bl)
+                items.append(
+                    {
+                        "text": parsed["japanese"],
+                        "gloss": parsed["english"],
+                        "rubies": parsed["rubies"],
+                    }
+                )
                 i += 1
             blocks.append({"type": "bullets", "items": items})
             continue
@@ -421,6 +529,11 @@ def parse_part2(lines: list[str], part_range: tuple[int, int]) -> list[dict]:
 # PART 3 — Topic-grouped sentences
 
 def parse_part3(lines: list[str], part_range: tuple[int, int]) -> list[dict]:
+    """PART 3 — sentences grouped by topic. v2 may include inline rubies on
+    each sentence; we keep the cleaned sentence string in `sentences` for
+    backwards compatibility and add a parallel `rubies` array (one entry per
+    sentence) so the UI can render context-correct furigana when present.
+    """
     start, end = part_range
     groups: list[dict] = []
     i = start
@@ -430,13 +543,22 @@ def parse_part3(lines: list[str], part_range: tuple[int, int]) -> list[dict]:
         if m:
             topic = m.group(1).strip()
             j = i + 1
-            items: list[str] = []
+            sentences: list[str] = []
+            rubies_per_sentence: list[list[dict]] = []
             while j < end and not lines[j].startswith("## ") and not lines[j].startswith("# "):
                 bl = lines[j].rstrip()
                 if bl.startswith("- "):
-                    items.append(bl[2:].strip())
+                    parsed = parse_sentence_bullet_line(bl)
+                    sentences.append(parsed["japanese"])
+                    rubies_per_sentence.append(parsed["rubies"])
                 j += 1
-            groups.append({"topic": topic, "sentences": items})
+            groups.append(
+                {
+                    "topic": topic,
+                    "sentences": sentences,
+                    "rubies": rubies_per_sentence,
+                }
+            )
             i = j
             continue
         i += 1
@@ -482,18 +604,20 @@ def parse_part4(lines: list[str], part_range: tuple[int, int]) -> list[dict]:
                     continue
                 # Prose line (e.g. "Review kanji block: 休・飲・聞・何・話")
                 if not bl.startswith("- "):
+                    cleaned_prose, _ = parse_inline_rubies(bl_stripped)
                     if current_sub_title is not None:
-                        current_sub_items.append(bl_stripped)
+                        current_sub_items.append(cleaned_prose)
                     else:
-                        items.append(bl_stripped)
+                        items.append(cleaned_prose)
                     j += 1
                     continue
-                # Bullet item
-                bullet = bl[2:].strip()
+                # Bullet item — strip inline rubies for clean display
+                bullet_raw = bl[2:].strip()
+                cleaned_bullet, _ = parse_inline_rubies(bullet_raw)
                 if current_sub_title is not None:
-                    current_sub_items.append(bullet)
+                    current_sub_items.append(cleaned_bullet)
                 else:
-                    items.append(bullet)
+                    items.append(cleaned_bullet)
                 j += 1
             if current_sub_title is not None:
                 subsections.append({"title": current_sub_title, "items": current_sub_items})
@@ -620,11 +744,14 @@ def _parse_dialog_phrases_body(body: list[str]) -> dict:
         if not current:
             continue
         if s.startswith("- "):
-            sm = SENTENCE_BULLET_RE.match(s)
-            if sm:
-                groups[current].append({"jp": sm.group(1).strip(), "en": sm.group(2).strip()})
-            else:
-                groups[current].append({"jp": s[2:].strip(), "en": ""})
+            parsed = parse_sentence_bullet_line(s)
+            groups[current].append(
+                {
+                    "jp": parsed["japanese"],
+                    "en": parsed["english"],
+                    "rubies": parsed["rubies"],
+                }
+            )
     return groups
 
 
@@ -704,7 +831,8 @@ def build_sentences(kanji_entries: list[dict], part3_groups: list[dict]) -> dict
             part1.append(
                 {
                     "japanese": s["japanese"],
-                    "english": s["english"],
+                    "english": s.get("english", ""),
+                    "rubies": s.get("rubies", []),
                     "parentKanji": entry["kanji"],
                     "source": "part1",
                 }
@@ -721,12 +849,15 @@ def build_sentences(kanji_entries: list[dict], part3_groups: list[dict]) -> dict
                 for item in bucket.get("items", []):
                     text = item.get("text", "")
                     gloss = item.get("gloss", "")
-                    # Treat as a sentence if it ends with JP punctuation or has a gloss.
-                    if gloss or any(ch in text for ch in "。？！"):
+                    rubies = item.get("rubies", [])
+                    # Treat as a sentence if it ends with JP punctuation or has
+                    # a gloss or has any ruby annotations.
+                    if gloss or rubies or any(ch in text for ch in "。？！"):
                         part1_extras.append(
                             {
                                 "japanese": text,
                                 "english": gloss,
+                                "rubies": rubies,
                                 "parentKanji": entry["kanji"],
                                 "sectionTitle": section["title"],
                                 "source": "part1_extras",
@@ -800,7 +931,7 @@ def main() -> None:
 
     now = datetime.now(timezone.utc).isoformat()
     meta = {
-        "source": "KANJI_REFERENCE.md",
+        "source": SOURCE.name,
         "generatedAt": now,
         "lessonsCount": len(lessons),
         "kanjiCount": len(kanji_entries),

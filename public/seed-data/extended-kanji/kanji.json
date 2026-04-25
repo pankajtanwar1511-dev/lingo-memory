@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "source": "KANJI_REFERENCE.md",
-    "generatedAt": "2026-04-24T12:36:42.494597+00:00",
+    "source": "KANJI_REFERENCE_v2.md",
+    "generatedAt": "2026-04-25T16:49:10.842985+00:00",
     "lessonsCount": 37,
     "kanjiCount": 86,
     "vocabularyCount": 378,
     "sentencesPart1": 111,
-    "sentencesPart1Extras": 24,
+    "sentencesPart1Extras": 27,
     "sentencesPart3Groups": 7,
-    "sentencesTotal": 173,
+    "sentencesTotal": 176,
     "answerKeyPages": 9,
     "prerequisiteKanji": 124
   },
@@ -54,7 +54,19 @@
       "exampleSentences": [
         {
           "japanese": "この家は大きいです。",
-          "english": "This house is big."
+          "english": "",
+          "rubies": [
+            {
+              "start": 2,
+              "end": 3,
+              "reading": "いえ"
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "reading": "おお"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -97,7 +109,19 @@
       "exampleSentences": [
         {
           "japanese": "この家は小さいです。",
-          "english": "This house is small."
+          "english": "",
+          "rubies": [
+            {
+              "start": 2,
+              "end": 3,
+              "reading": "いえ"
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "reading": "ちい"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -145,7 +169,14 @@
       "exampleSentences": [
         {
           "japanese": "ホセさんはメキシコ人です。",
-          "english": "Mr. Jose is Mexican."
+          "english": "",
+          "rubies": [
+            {
+              "start": 9,
+              "end": 10,
+              "reading": "じん"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -623,7 +654,24 @@
       "exampleSentences": [
         {
           "japanese": "七五三のとき、写真を撮りました。",
-          "english": "At the Shichi-Go-San festival, I took photos."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 3,
+              "reading": "しちごさん"
+            },
+            {
+              "start": 7,
+              "end": 9,
+              "reading": "しゃしん"
+            },
+            {
+              "start": 10,
+              "end": 11,
+              "reading": "と"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -680,7 +728,29 @@
       "exampleSentences": [
         {
           "japanese": "八歳の息子と七歳の娘がいます。",
-          "english": "I have an 8-year-old son and a 7-year-old daughter."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "はっさい"
+            },
+            {
+              "start": 3,
+              "end": 5,
+              "reading": "むすこ"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "reading": "ななさい"
+            },
+            {
+              "start": 9,
+              "end": 10,
+              "reading": "むすめ"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -737,7 +807,19 @@
       "exampleSentences": [
         {
           "japanese": "ジョンさんは二十九センチのくつを買いました。",
-          "english": "John bought 29 cm shoes."
+          "english": "",
+          "rubies": [
+            {
+              "start": 6,
+              "end": 9,
+              "reading": "にじゅうきゅう"
+            },
+            {
+              "start": 16,
+              "end": 17,
+              "reading": "か"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -841,11 +923,25 @@
       "exampleSentences": [
         {
           "japanese": "このコーヒーは三百円です。",
-          "english": "This coffee is 300 yen."
+          "english": "",
+          "rubies": [
+            {
+              "start": 7,
+              "end": 10,
+              "reading": "さんびゃくえん"
+            }
+          ]
         },
         {
           "japanese": "このラーメンは八百円です。",
-          "english": "This ramen is 800 yen."
+          "english": "",
+          "rubies": [
+            {
+              "start": 7,
+              "end": 10,
+              "reading": "はっぴゃくえん"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -892,15 +988,36 @@
       "exampleSentences": [
         {
           "japanese": "このシャツは二千円です。",
-          "english": "This shirt is 2,000 yen."
+          "english": "",
+          "rubies": [
+            {
+              "start": 6,
+              "end": 9,
+              "reading": "にせんえん"
+            }
+          ]
         },
         {
           "japanese": "それは三千円です。",
-          "english": "That is 3,000 yen."
+          "english": "",
+          "rubies": [
+            {
+              "start": 3,
+              "end": 6,
+              "reading": "さんぜんえん"
+            }
+          ]
         },
         {
           "japanese": "あれは八千円です。",
-          "english": "That (over there) is 8,000 yen."
+          "english": "",
+          "rubies": [
+            {
+              "start": 3,
+              "end": 6,
+              "reading": "はっせんえん"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -950,11 +1067,30 @@
       "exampleSentences": [
         {
           "japanese": "このりんごは三百円です。",
-          "english": "This apple is 300 yen."
+          "english": "",
+          "rubies": [
+            {
+              "start": 6,
+              "end": 9,
+              "reading": "さんびゃくえん"
+            }
+          ]
         },
         {
           "japanese": "この車は五百万円です。",
-          "english": "This car is 5,000,000 yen."
+          "english": "",
+          "rubies": [
+            {
+              "start": 2,
+              "end": 3,
+              "reading": "くるま"
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "reading": "ごひゃくまんえん"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -1089,31 +1225,38 @@
           "items": [
             {
               "text": "四つ → よっつ",
-              "gloss": ""
+              "gloss": "",
+              "rubies": []
             },
             {
               "text": "六百四十五円 → ろっぴゃく よんじゅう ご えん",
-              "gloss": ""
+              "gloss": "",
+              "rubies": []
             },
             {
               "text": "三百五十五円 → さんびゃく ごじゅう ご えん",
-              "gloss": ""
+              "gloss": "",
+              "rubies": []
             },
             {
               "text": "千五百八十キロ → せん ごひゃく はちじゅっ キロ",
-              "gloss": ""
+              "gloss": "",
+              "rubies": []
             },
             {
               "text": "五万三千円 → ごまん さんぜん えん",
-              "gloss": ""
+              "gloss": "",
+              "rubies": []
             },
             {
               "text": "百八十センチ → ひゃく はちじゅっ センチ",
-              "gloss": ""
+              "gloss": "",
+              "rubies": []
             },
             {
               "text": "富士山 3,776 → ふじさん さんぜん ななひゃく ななじゅう ろく",
-              "gloss": ""
+              "gloss": "",
+              "rubies": []
             }
           ]
         },
@@ -1123,19 +1266,57 @@
           "items": [
             {
               "text": "大きい人がいます。",
-              "gloss": "There is a big person."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "reading": "おお"
+                },
+                {
+                  "start": 3,
+                  "end": 4,
+                  "reading": "ひと"
+                }
+              ]
             },
             {
               "text": "小さい人がいます。",
-              "gloss": "There is a small person."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "reading": "ちい"
+                },
+                {
+                  "start": 3,
+                  "end": 4,
+                  "reading": "ひと"
+                }
+              ]
             },
             {
               "text": "おじいさんは山へいきました。",
-              "gloss": "The old man went to the mountain."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 6,
+                  "end": 7,
+                  "reading": "やま"
+                }
+              ]
             },
             {
               "text": "おばあさんは川へいきました。",
-              "gloss": "The old woman went to the river."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 6,
+                  "end": 7,
+                  "reading": "かわ"
+                }
+              ]
             }
           ]
         },
@@ -1236,11 +1417,40 @@
       "exampleSentences": [
         {
           "japanese": "テーブルの上に本があります。",
-          "english": "There is a book on the table."
+          "english": "",
+          "rubies": [
+            {
+              "start": 5,
+              "end": 6,
+              "reading": "うえ"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "reading": "ほん"
+            }
+          ]
         },
         {
           "japanese": "去年より売上が上がりました。",
-          "english": "Sales went up compared to last year."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "きょねん"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "reading": "うりあげ"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "reading": "あ"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -1292,7 +1502,29 @@
       "exampleSentences": [
         {
           "japanese": "子どもは部屋の中で遊んでいます。",
-          "english": "The children are playing inside the room."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "こ"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "reading": "へや"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "reading": "なか"
+            },
+            {
+              "start": 9,
+              "end": 10,
+              "reading": "あそ"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -1339,11 +1571,50 @@
       "exampleSentences": [
         {
           "japanese": "去年より売上が下がりました。",
-          "english": "Sales went down compared to last year."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "きょねん"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "reading": "うりあげ"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "reading": "さ"
+            }
+          ]
         },
         {
           "japanese": "今朝は昨日より気温が下がりました。",
-          "english": "This morning the temperature dropped from yesterday."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "けさ"
+            },
+            {
+              "start": 3,
+              "end": 5,
+              "reading": "きのう"
+            },
+            {
+              "start": 7,
+              "end": 9,
+              "reading": "きおん"
+            },
+            {
+              "start": 10,
+              "end": 11,
+              "reading": "さ"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -1434,11 +1705,50 @@
       "exampleSentences": [
         {
           "japanese": "ゴミの日は火曜日と木曜日です。",
-          "english": "Garbage day is Tuesday and Thursday."
+          "english": "",
+          "rubies": [
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "ひ"
+            },
+            {
+              "start": 5,
+              "end": 8,
+              "reading": "かようび"
+            },
+            {
+              "start": 9,
+              "end": 12,
+              "reading": "もくようび"
+            }
+          ]
         },
         {
           "japanese": "日曜日、映画を見に行きませんか。",
-          "english": "On Sunday, shall we go watch a movie?"
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 3,
+              "reading": "にちようび"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "reading": "えいが"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "reading": "み"
+            },
+            {
+              "start": 9,
+              "end": 10,
+              "reading": "い"
+            }
+          ]
         }
       ],
       "extraSections": [
@@ -1552,11 +1862,40 @@
       "exampleSentences": [
         {
           "japanese": "毎月テストがあります。",
-          "english": "There's a test every month."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "まいつき"
+            }
+          ]
         },
         {
           "japanese": "来月京都へ旅行に行きます。",
-          "english": "Next month I'll travel to Kyoto."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "らいげつ"
+            },
+            {
+              "start": 0,
+              "end": 4,
+              "reading": "きょうと"
+            },
+            {
+              "start": 5,
+              "end": 7,
+              "reading": "りょこう"
+            },
+            {
+              "start": 8,
+              "end": 9,
+              "reading": "い"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -1603,7 +1942,19 @@
       "exampleSentences": [
         {
           "japanese": "ガスの火を止めてください。",
-          "english": "Please turn off the gas flame."
+          "english": "",
+          "rubies": [
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "ひ"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "reading": "と"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -1664,11 +2015,40 @@
       "exampleSentences": [
         {
           "japanese": "水曜日にともだちと海へドライブにいきます。",
-          "english": "On Wednesday I'll drive to the sea with friends."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 3,
+              "reading": "すいようび"
+            },
+            {
+              "start": 9,
+              "end": 10,
+              "reading": "うみ"
+            }
+          ]
         },
         {
           "japanese": "毎日水をたくさん飲みます。",
-          "english": "I drink a lot of water every day."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "まいにち"
+            },
+            {
+              "start": 0,
+              "end": 3,
+              "reading": "みず"
+            },
+            {
+              "start": 8,
+              "end": 9,
+              "reading": "の"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -1726,11 +2106,40 @@
       "exampleSentences": [
         {
           "japanese": "毎週木曜日に会議があります。",
-          "english": "We have a meeting every Thursday."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "まいしゅう"
+            },
+            {
+              "start": 0,
+              "end": 5,
+              "reading": "もくようび"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "reading": "かいぎ"
+            }
+          ]
         },
         {
           "japanese": "この木はとても大きいです。",
-          "english": "This tree is very big."
+          "english": "",
+          "rubies": [
+            {
+              "start": 2,
+              "end": 3,
+              "reading": "き"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "reading": "おお"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -1788,11 +2197,35 @@
       "exampleSentences": [
         {
           "japanese": "金曜日に息子の誕生日パーティがあります。",
-          "english": "On Friday there's my son's birthday party."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 3,
+              "reading": "きんようび"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "reading": "むすこ"
+            },
+            {
+              "start": 7,
+              "end": 10,
+              "reading": "たんじょうび"
+            }
+          ]
         },
         {
           "japanese": "お金がたくさんほしいです。",
-          "english": "I want a lot of money."
+          "english": "",
+          "rubies": [
+            {
+              "start": 1,
+              "end": 2,
+              "reading": "かね"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -1985,15 +2418,51 @@
       "exampleSentences": [
         {
           "japanese": "何曜日ですか。 — 土曜日です。",
-          "english": "What day is it? — It's Saturday."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 3,
+              "reading": "なんようび"
+            },
+            {
+              "start": 10,
+              "end": 13,
+              "reading": "どようび"
+            }
+          ]
         },
         {
           "japanese": "何時ですか。 — 10時です。",
-          "english": "What time is it? — It's 10:00."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "なんじ"
+            },
+            {
+              "start": 9,
+              "end": 12,
+              "reading": "じ"
+            }
+          ]
         },
         {
           "japanese": "お子さんは何さいですか。",
-          "english": "How old is your child?"
+          "english": "",
+          "rubies": [
+            {
+              "start": 1,
+              "end": 2,
+              "reading": "こ"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "reading": "なん"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -2039,7 +2508,14 @@
       "exampleSentences": [
         {
           "japanese": "きょ年にほんへきました。",
-          "english": "I came to Japan last year."
+          "english": "",
+          "rubies": [
+            {
+              "start": 2,
+              "end": 3,
+              "reading": "ねん"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -2121,7 +2597,14 @@
       "exampleSentences": [
         {
           "japanese": "にほんの生かつはどうですか。",
-          "english": "How is life in Japan?"
+          "english": "",
+          "rubies": [
+            {
+              "start": 4,
+              "end": 5,
+              "reading": "せい"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -2173,7 +2656,14 @@
       "exampleSentences": [
         {
           "japanese": "TCJはにほんごの学校です。",
-          "english": "TCJ is a Japanese-language school."
+          "english": "",
+          "rubies": [
+            {
+              "start": 9,
+              "end": 11,
+              "reading": "がっこう"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -2288,7 +2778,19 @@
       "exampleSentences": [
         {
           "japanese": "ぞうは耳が大きいです。",
-          "english": "Elephants have big ears."
+          "english": "",
+          "rubies": [
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "みみ"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "reading": "おお"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -2344,7 +2846,14 @@
       "exampleSentences": [
         {
           "japanese": "手つだいましょうか。",
-          "english": "Shall I help you?"
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "て"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -2391,7 +2900,14 @@
       "exampleSentences": [
         {
           "japanese": "足音がうるさいです。",
-          "english": "The footsteps are noisy."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "あしおと"
+            }
+          ]
         }
       ],
       "extraSections": [
@@ -2401,35 +2917,161 @@
           "items": [
             {
               "text": "母に手紙を書きました。",
-              "gloss": "I wrote a letter to my mother."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "reading": "はは"
+                },
+                {
+                  "start": 2,
+                  "end": 4,
+                  "reading": "てがみ"
+                },
+                {
+                  "start": 5,
+                  "end": 6,
+                  "reading": "か"
+                }
+              ]
             },
             {
               "text": "アルは目が大きいです。",
-              "gloss": "Al has big eyes."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 3,
+                  "end": 4,
+                  "reading": "め"
+                },
+                {
+                  "start": 5,
+                  "end": 6,
+                  "reading": "おお"
+                }
+              ]
             },
             {
               "text": "耳がいたいですから、耳鼻科へ行きます。",
-              "gloss": "My ear hurts, so I'll go to the ENT clinic."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "reading": "みみ"
+                },
+                {
+                  "start": 10,
+                  "end": 13,
+                  "reading": "じびか"
+                },
+                {
+                  "start": 14,
+                  "end": 15,
+                  "reading": "い"
+                }
+              ]
             },
             {
               "text": "去年山で右足のほねをおりました。",
-              "gloss": "Last year I broke the bone in my right leg in the mountains."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 2,
+                  "reading": "きょねん"
+                },
+                {
+                  "start": 0,
+                  "end": 3,
+                  "reading": "やま"
+                },
+                {
+                  "start": 4,
+                  "end": 6,
+                  "reading": "みぎあし"
+                }
+              ]
             },
             {
               "text": "ビルの入口で友だちと会いました。",
-              "gloss": "I met my friend at the entrance of the building."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 3,
+                  "end": 5,
+                  "reading": "いりぐち"
+                },
+                {
+                  "start": 6,
+                  "end": 7,
+                  "reading": "とも"
+                },
+                {
+                  "start": 10,
+                  "end": 11,
+                  "reading": "あ"
+                }
+              ]
             },
             {
               "text": "おっとはピアノが上手です。でも、わたしは下手です。",
-              "gloss": "My husband is good at piano. But I'm bad at it."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 8,
+                  "end": 10,
+                  "reading": "じょうず"
+                },
+                {
+                  "start": 20,
+                  "end": 22,
+                  "reading": "へた"
+                }
+              ]
             },
             {
               "text": "日本の人口は１おく2500万人ぐらいです。",
-              "gloss": "Japan's population is about 125,000,000."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 2,
+                  "reading": "にほん"
+                },
+                {
+                  "start": 3,
+                  "end": 5,
+                  "reading": "じんこう"
+                },
+                {
+                  "start": 9,
+                  "end": 15,
+                  "reading": "まんにん"
+                }
+              ]
             },
             {
               "text": "駅の改札口を出て、タクシーにのります。",
-              "gloss": "I exit the ticket gate and take a taxi."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "reading": "えき"
+                },
+                {
+                  "start": 2,
+                  "end": 5,
+                  "reading": "かいさつぐち"
+                },
+                {
+                  "start": 6,
+                  "end": 7,
+                  "reading": "で"
+                }
+              ]
             }
           ]
         }
@@ -2473,11 +3115,40 @@
       "exampleSentences": [
         {
           "japanese": "会社へ行きます。",
-          "english": "I go to the company."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "かいしゃ"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "い"
+            }
+          ]
         },
         {
           "japanese": "明日試験を行います。",
-          "english": "We'll hold an exam tomorrow."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "あした"
+            },
+            {
+              "start": 0,
+              "end": 4,
+              "reading": "しけん"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "reading": "おこな"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -2525,7 +3196,29 @@
       "exampleSentences": [
         {
           "japanese": "来月京都へ旅行に行きます。",
-          "english": "Next month I'll travel to Kyoto."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "らいげつ"
+            },
+            {
+              "start": 0,
+              "end": 4,
+              "reading": "きょうと"
+            },
+            {
+              "start": 5,
+              "end": 7,
+              "reading": "りょこう"
+            },
+            {
+              "start": 8,
+              "end": 9,
+              "reading": "い"
+            }
+          ]
         }
       ],
       "extraSections": [
@@ -2534,16 +3227,52 @@
           "type": "bullets",
           "items": [
             {
-              "text": "日本に来ます — *come to Japan* (polite)",
-              "gloss": ""
+              "text": "日本に来ます ",
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 2,
+                  "reading": "にほん"
+                },
+                {
+                  "start": 3,
+                  "end": 4,
+                  "reading": "き"
+                }
+              ]
             },
             {
-              "text": "日本に来る — *come to Japan* (plain)",
-              "gloss": ""
+              "text": "日本に来る ",
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 2,
+                  "reading": "にほん"
+                },
+                {
+                  "start": 3,
+                  "end": 4,
+                  "reading": "く"
+                }
+              ]
             },
             {
-              "text": "日本に来ない — *not come to Japan* (plain negative)",
-              "gloss": ""
+              "text": "日本に来ない ",
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 2,
+                  "reading": "にほん"
+                },
+                {
+                  "start": 3,
+                  "end": 4,
+                  "reading": "こ"
+                }
+              ]
             }
           ]
         }
@@ -2585,7 +3314,24 @@
       "exampleSentences": [
         {
           "japanese": "自転車で学校へ行きます。",
-          "english": "I go to school by bicycle."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 3,
+              "reading": "じてんしゃ"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "reading": "がっこう"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "reading": "い"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -2627,7 +3373,19 @@
       "exampleSentences": [
         {
           "japanese": "もう一度言ってください。",
-          "english": "Please say it again."
+          "english": "",
+          "rubies": [
+            {
+              "start": 2,
+              "end": 4,
+              "reading": "いちど"
+            },
+            {
+              "start": 2,
+              "end": 5,
+              "reading": "い"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -2679,7 +3437,19 @@
       "exampleSentences": [
         {
           "japanese": "部長の話はおもしろくないです。",
-          "english": "The manager's story is not interesting."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "ぶちょう"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "はなし"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -2721,7 +3491,19 @@
       "exampleSentences": [
         {
           "japanese": "本を読みます。",
-          "english": "I read a book."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "ほん"
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "reading": "よ"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -2767,11 +3549,35 @@
       "exampleSentences": [
         {
           "japanese": "わたしは日本語を勉強しています。",
-          "english": "I am studying Japanese."
+          "english": "",
+          "rubies": [
+            {
+              "start": 4,
+              "end": 7,
+              "reading": "にほんご"
+            },
+            {
+              "start": 8,
+              "end": 10,
+              "reading": "べんきょう"
+            }
+          ]
         },
         {
           "japanese": "あなたは何語を話しますか。",
-          "english": "What language do you speak?"
+          "english": "",
+          "rubies": [
+            {
+              "start": 4,
+              "end": 6,
+              "reading": "なにご"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "reading": "はな"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -2819,7 +3625,19 @@
       "exampleSentences": [
         {
           "japanese": "わたしは本を読みます。",
-          "english": "I read a book."
+          "english": "",
+          "rubies": [
+            {
+              "start": 4,
+              "end": 5,
+              "reading": "ほん"
+            },
+            {
+              "start": 6,
+              "end": 7,
+              "reading": "よ"
+            }
+          ]
         }
       ],
       "extraSections": [
@@ -2910,11 +3728,30 @@
       "exampleSentences": [
         {
           "japanese": "映画を見ます。",
-          "english": "I watch a movie."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "えいが"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "み"
+            }
+          ]
         },
         {
           "japanese": "パスポートを見せます。",
-          "english": "I show my passport."
+          "english": "",
+          "rubies": [
+            {
+              "start": 6,
+              "end": 7,
+              "reading": "み"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -2951,11 +3788,35 @@
       "exampleSentences": [
         {
           "japanese": "新聞を読みます。",
-          "english": "I read the newspaper."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "しんぶん"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "よ"
+            }
+          ]
         },
         {
           "japanese": "音楽を聞きます。",
-          "english": "I listen to music."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "おんがく"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "き"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -3008,7 +3869,19 @@
       "exampleSentences": [
         {
           "japanese": "ご飯を食べます。",
-          "english": "I eat rice/meal."
+          "english": "",
+          "rubies": [
+            {
+              "start": 1,
+              "end": 2,
+              "reading": "はん"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "た"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -3049,7 +3922,29 @@
       "exampleSentences": [
         {
           "japanese": "きょう新宿の飲み屋へ行きます。",
-          "english": "Today I'm going to a bar in Shinjuku."
+          "english": "",
+          "rubies": [
+            {
+              "start": 3,
+              "end": 5,
+              "reading": "しんじゅく"
+            },
+            {
+              "start": 6,
+              "end": 7,
+              "reading": "の"
+            },
+            {
+              "start": 8,
+              "end": 9,
+              "reading": "や"
+            },
+            {
+              "start": 10,
+              "end": 11,
+              "reading": "い"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -3206,11 +4101,30 @@
       "exampleSentences": [
         {
           "japanese": "ちちは外国にいます。",
-          "english": "My father is abroad."
+          "english": "",
+          "rubies": [
+            {
+              "start": 3,
+              "end": 5,
+              "reading": "がいこく"
+            }
+          ]
         },
         {
           "japanese": "外に行きます。",
-          "english": "I'll go outside."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "そと"
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "reading": "い"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -3262,11 +4176,35 @@
       "exampleSentences": [
         {
           "japanese": "お国はどちらですか。",
-          "english": "What country are you from?"
+          "english": "",
+          "rubies": [
+            {
+              "start": 1,
+              "end": 2,
+              "reading": "くに"
+            }
+          ]
         },
         {
           "japanese": "来週国へ帰ります。",
-          "english": "Next week I'll return to my country."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "らいしゅう"
+            },
+            {
+              "start": 0,
+              "end": 3,
+              "reading": "くに"
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "reading": "かえ"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -3318,11 +4256,30 @@
       "exampleSentences": [
         {
           "japanese": "部屋に入ります。",
-          "english": "I enter the room."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "へや"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "はい"
+            }
+          ]
         },
         {
           "japanese": "しおを入れます。",
-          "english": "I add salt."
+          "english": "",
+          "rubies": [
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "い"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -3370,15 +4327,46 @@
       "exampleSentences": [
         {
           "japanese": "部屋を出ます。",
-          "english": "I leave the room."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "へや"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "で"
+            }
+          ]
         },
         {
           "japanese": "手紙を出します。",
-          "english": "I send a letter."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "てがみ"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "だ"
+            }
+          ]
         },
         {
           "japanese": "みずが出ます。",
-          "english": "Water comes out."
+          "english": "",
+          "rubies": [
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "で"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -3469,15 +4457,45 @@
       "exampleSentences": [
         {
           "japanese": "クラスの後で、ともだちとランチします。",
-          "english": "After class, I have lunch with my friend."
+          "english": "",
+          "rubies": [
+            {
+              "start": 4,
+              "end": 5,
+              "reading": "あと"
+            }
+          ]
         },
         {
           "japanese": "いただきます。ごちそうさまでした。",
-          "english": "(meal phrases)"
+          "english": "",
+          "rubies": []
         },
         {
           "japanese": "私の前後は、女の人です。",
-          "english": "The people in front of and behind me are women."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "わたし"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "reading": "ぜんご"
+            },
+            {
+              "start": 6,
+              "end": 7,
+              "reading": "おんな"
+            },
+            {
+              "start": 8,
+              "end": 9,
+              "reading": "ひと"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -3550,7 +4568,19 @@
       "exampleSentences": [
         {
           "japanese": "左の人はちちです。",
-          "english": "The person on the left is my father."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "ひだり"
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "reading": "ひと"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -3602,11 +4632,40 @@
       "exampleSentences": [
         {
           "japanese": "お名前を教えてください。",
-          "english": "Please tell me your name."
+          "english": "",
+          "rubies": [
+            {
+              "start": 1,
+              "end": 3,
+              "reading": "なまえ"
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "reading": "おし"
+            }
+          ]
         },
         {
           "japanese": "清水寺は有名なお寺です。",
-          "english": "Kiyomizu Temple is a famous temple."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 3,
+              "reading": "きよみずでら"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "reading": "ゆうめい"
+            },
+            {
+              "start": 8,
+              "end": 9,
+              "reading": "てら"
+            }
+          ]
         }
       ],
       "extraSections": [
@@ -3616,27 +4675,124 @@
           "items": [
             {
               "text": "大切な人の名前をわすれないでください。",
-              "gloss": "Don't forget the name of important people."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 2,
+                  "reading": "たいせつ"
+                },
+                {
+                  "start": 3,
+                  "end": 4,
+                  "reading": "ひと"
+                },
+                {
+                  "start": 5,
+                  "end": 7,
+                  "reading": "なまえ"
+                }
+              ]
             },
             {
               "text": "食前のくすりを飲んでから、ごはんを食べてください。",
-              "gloss": "Take the pre-meal medicine before eating."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 2,
+                  "reading": "しょくぜん"
+                },
+                {
+                  "start": 7,
+                  "end": 8,
+                  "reading": "の"
+                },
+                {
+                  "start": 17,
+                  "end": 18,
+                  "reading": "た"
+                }
+              ]
             },
             {
               "text": "何か食後のデザートを食べない？ — じゃあ、アイスクリーム。",
-              "gloss": "Shall we eat dessert after the meal? — Then, ice cream."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "reading": "なに"
+                },
+                {
+                  "start": 2,
+                  "end": 4,
+                  "reading": "しょくご"
+                },
+                {
+                  "start": 10,
+                  "end": 11,
+                  "reading": "た"
+                }
+              ]
             },
             {
               "text": "デパートの前に有名なレストランがあります。",
-              "gloss": "There's a famous restaurant in front of the department store."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 5,
+                  "end": 6,
+                  "reading": "まえ"
+                },
+                {
+                  "start": 7,
+                  "end": 9,
+                  "reading": "ゆうめい"
+                }
+              ]
             },
             {
               "text": "右手を前に出して、左足を後ろにのばしてください。",
-              "gloss": "Put your right hand forward and stretch your left leg back."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 2,
+                  "reading": "みぎて"
+                },
+                {
+                  "start": 3,
+                  "end": 4,
+                  "reading": "まえ"
+                },
+                {
+                  "start": 5,
+                  "end": 6,
+                  "reading": "だ"
+                },
+                {
+                  "start": 9,
+                  "end": 11,
+                  "reading": "ひだりあし"
+                },
+                {
+                  "start": 12,
+                  "end": 13,
+                  "reading": "うし"
+                }
+              ]
             },
             {
               "text": "あたまを前後にまげてください。",
-              "gloss": "Bend your head forward and backward."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 4,
+                  "end": 6,
+                  "reading": "ぜんご"
+                }
+              ]
             }
           ]
         },
@@ -3646,27 +4802,114 @@
           "items": [
             {
               "text": "大木くんは右から2人目の人です。",
-              "gloss": "Oki-kun is the 2nd person from the right."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 2,
+                  "reading": "おおき"
+                },
+                {
+                  "start": 5,
+                  "end": 6,
+                  "reading": "みぎ"
+                },
+                {
+                  "start": 8,
+                  "end": 11,
+                  "reading": "ふたりめ"
+                },
+                {
+                  "start": 12,
+                  "end": 13,
+                  "reading": "ひと"
+                }
+              ]
             },
             {
               "text": "前のいすにすわっています。",
-              "gloss": "He is sitting on the front chair."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "reading": "まえ"
+                }
+              ]
             },
             {
               "text": "本田くんはいちばん左の人です。",
-              "gloss": "Honda-kun is the leftmost person."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 2,
+                  "reading": "ほんだ"
+                },
+                {
+                  "start": 9,
+                  "end": 10,
+                  "reading": "ひだり"
+                },
+                {
+                  "start": 11,
+                  "end": 12,
+                  "reading": "ひと"
+                }
+              ]
             },
             {
               "text": "川口さんは本田くんの後ろです。",
-              "gloss": "Ms. Kawaguchi is behind Honda-kun."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 2,
+                  "reading": "かわぐち"
+                },
+                {
+                  "start": 5,
+                  "end": 7,
+                  "reading": "ほんだ"
+                },
+                {
+                  "start": 10,
+                  "end": 11,
+                  "reading": "うし"
+                }
+              ]
             },
             {
               "text": "金田さんは川口さんのとなりです。",
-              "gloss": "Ms. Kaneda is next to Kawaguchi-san."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 2,
+                  "reading": "かねだ"
+                },
+                {
+                  "start": 5,
+                  "end": 7,
+                  "reading": "かわぐち"
+                }
+              ]
             },
             {
               "text": "前川くんはいちばん後ろにいます。",
-              "gloss": "Maekawa-kun is at the very back."
+              "gloss": "",
+              "rubies": [
+                {
+                  "start": 0,
+                  "end": 2,
+                  "reading": "まえかわ"
+                },
+                {
+                  "start": 9,
+                  "end": 10,
+                  "reading": "うし"
+                }
+              ]
             }
           ]
         }
@@ -3711,7 +4954,24 @@
       "exampleSentences": [
         {
           "japanese": "毎日犬の散歩をします。",
-          "english": "I walk the dog every day."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "まいにち"
+            },
+            {
+              "start": 0,
+              "end": 3,
+              "reading": "いぬ"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "reading": "さんぽ"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -3752,11 +5012,30 @@
       "exampleSentences": [
         {
           "japanese": "お先にどうぞ。",
-          "english": "Please go ahead."
+          "english": "",
+          "rubies": [
+            {
+              "start": 1,
+              "end": 2,
+              "reading": "さき"
+            }
+          ]
         },
         {
           "japanese": "お先に失礼します。",
-          "english": "Excuse me for leaving first."
+          "english": "",
+          "rubies": [
+            {
+              "start": 1,
+              "end": 2,
+              "reading": "さき"
+            },
+            {
+              "start": 3,
+              "end": 5,
+              "reading": "しつれい"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -3800,7 +5079,24 @@
       "exampleSentences": [
         {
           "japanese": "毎週日曜日は、ジムで運動します。",
-          "english": "Every Sunday I exercise at the gym."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "まいしゅう"
+            },
+            {
+              "start": 0,
+              "end": 5,
+              "reading": "にちようび"
+            },
+            {
+              "start": 10,
+              "end": 12,
+              "reading": "うんどう"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -3846,7 +5142,34 @@
       "exampleSentences": [
         {
           "japanese": "私は子どもの時、野菜が苦手でした。",
-          "english": "When I was a child, I didn't like vegetables."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "わたし"
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "reading": "こ"
+            },
+            {
+              "start": 6,
+              "end": 7,
+              "reading": "とき"
+            },
+            {
+              "start": 8,
+              "end": 10,
+              "reading": "やさい"
+            },
+            {
+              "start": 11,
+              "end": 13,
+              "reading": "にがて"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -3894,15 +5217,61 @@
       "exampleSentences": [
         {
           "japanese": "1週間後に、JLPTの試験があります。",
-          "english": "In one week, there's the JLPT exam."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 4,
+              "reading": "しゅうかんご"
+            },
+            {
+              "start": 11,
+              "end": 13,
+              "reading": "しけん"
+            }
+          ]
         },
         {
           "japanese": "コンビニとレストランの間に交番があります。",
-          "english": "There's a police box between the convenience store and the restaurant."
+          "english": "",
+          "rubies": [
+            {
+              "start": 11,
+              "end": 12,
+              "reading": "あいだ"
+            },
+            {
+              "start": 13,
+              "end": 15,
+              "reading": "こうばん"
+            }
+          ]
         },
         {
           "japanese": "この間、駅で田中さんに会いました。",
-          "english": "The other day I met Mr. Tanaka at the station."
+          "english": "",
+          "rubies": [
+            {
+              "start": 2,
+              "end": 3,
+              "reading": "あいだ"
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "reading": "えき"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "reading": "たなか"
+            },
+            {
+              "start": 11,
+              "end": 12,
+              "reading": "あ"
+            }
+          ]
         }
       ],
       "extraSections": [
@@ -4004,19 +5373,77 @@
       "exampleSentences": [
         {
           "japanese": "今日は、たろうくんの10歳の誕生日です。",
-          "english": "Today is Taro's 10th birthday."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "きょう"
+            },
+            {
+              "start": 10,
+              "end": 13,
+              "reading": "さい"
+            },
+            {
+              "start": 14,
+              "end": 17,
+              "reading": "たんじょうび"
+            }
+          ]
         },
         {
           "japanese": "今週の金曜日に、漢字テストをします。",
-          "english": "This Friday we have a kanji test."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "こんしゅう"
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "reading": "きんようび"
+            },
+            {
+              "start": 8,
+              "end": 10,
+              "reading": "かんじ"
+            }
+          ]
         },
         {
           "japanese": "今から、社長が来ます。",
-          "english": "The company president is coming now."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "いま"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "reading": "しゃちょう"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "reading": "き"
+            }
+          ]
         },
         {
           "japanese": "今週はとてもいそがしいです。",
-          "english": "This week is very busy."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "こんしゅう"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -4070,11 +5497,40 @@
       "exampleSentences": [
         {
           "japanese": "半分に分けます。",
-          "english": "Divide in half."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "はんぶん"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "わ"
+            }
+          ]
         },
         {
           "japanese": "日本では、プラスチックと生ごみを分けます。",
-          "english": "In Japan, we separate plastics and food waste."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "にほん"
+            },
+            {
+              "start": 12,
+              "end": 13,
+              "reading": "なま"
+            },
+            {
+              "start": 16,
+              "end": 17,
+              "reading": "わ"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -4125,11 +5581,40 @@
       "exampleSentences": [
         {
           "japanese": "友だちとパンを半分こして食べました。",
-          "english": "I split the bread in half with my friend and ate it."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "とも"
+            },
+            {
+              "start": 7,
+              "end": 9,
+              "reading": "はんぶん"
+            },
+            {
+              "start": 12,
+              "end": 13,
+              "reading": "た"
+            }
+          ]
         },
         {
           "japanese": "よる8時半から11時半までべんきょうします。",
-          "english": "I study from 8:30 to 11:30 PM."
+          "english": "",
+          "rubies": [
+            {
+              "start": 2,
+              "end": 5,
+              "reading": "じはん"
+            },
+            {
+              "start": 7,
+              "end": 11,
+              "reading": "じはん"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -4168,7 +5653,34 @@
       "exampleSentences": [
         {
           "japanese": "明日の会議の資料、午前中にお願いします。 — はい、わかりました。",
-          "english": "The documents for tomorrow's meeting, please by morning. — Yes, understood."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "あした"
+            },
+            {
+              "start": 3,
+              "end": 5,
+              "reading": "かいぎ"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "reading": "しりょう"
+            },
+            {
+              "start": 9,
+              "end": 12,
+              "reading": "ごぜんちゅう"
+            },
+            {
+              "start": 14,
+              "end": 15,
+              "reading": "ねが"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -4209,7 +5721,29 @@
       "exampleSentences": [
         {
           "japanese": "父の日に、お父さんに花をあげました。",
-          "english": "On Father's Day, I gave flowers to my father."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "ちち"
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "reading": "ひ"
+            },
+            {
+              "start": 6,
+              "end": 7,
+              "reading": "とう"
+            },
+            {
+              "start": 10,
+              "end": 11,
+              "reading": "はな"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -4250,7 +5784,29 @@
       "exampleSentences": [
         {
           "japanese": "母の日に、お母さんに花をあげました。",
-          "english": "On Mother's Day, I gave flowers to my mother."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "はは"
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "reading": "ひ"
+            },
+            {
+              "start": 6,
+              "end": 7,
+              "reading": "かあ"
+            },
+            {
+              "start": 10,
+              "end": 11,
+              "reading": "はな"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -4307,7 +5863,34 @@
       "exampleSentences": [
         {
           "japanese": "男の子と女の子の双子です。",
-          "english": "Twins — a boy and a girl."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "おとこ"
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "reading": "こ"
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "reading": "おんな"
+            },
+            {
+              "start": 6,
+              "end": 7,
+              "reading": "こ"
+            },
+            {
+              "start": 8,
+              "end": 10,
+              "reading": "ふたご"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -4425,43 +6008,253 @@
       "exampleSentences": [
         {
           "japanese": "公園に女の子が2人います。",
-          "english": "There are 2 girls in the park."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "こうえん"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "おんな"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "reading": "こ"
+            },
+            {
+              "start": 7,
+              "end": 9,
+              "reading": "ふたり"
+            }
+          ]
         },
         {
           "japanese": "子どものとき、父と母の間でねました。",
-          "english": "As a child, I slept between my father and mother."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "こ"
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "reading": "ちち"
+            },
+            {
+              "start": 9,
+              "end": 10,
+              "reading": "はは"
+            },
+            {
+              "start": 11,
+              "end": 12,
+              "reading": "あいだ"
+            }
+          ]
         },
         {
           "japanese": "ノイさんのお母さんはどんなかたですか。",
-          "english": "What kind of person is Noi's mother?"
+          "english": "",
+          "rubies": [
+            {
+              "start": 6,
+              "end": 7,
+              "reading": "かあ"
+            }
+          ]
         },
         {
           "japanese": "あの男性はどなたですか。 — ノイさんのお父さんですよ。",
-          "english": "Who is that man? — It's Noi's father."
+          "english": "",
+          "rubies": [
+            {
+              "start": 2,
+              "end": 4,
+              "reading": "だんせい"
+            },
+            {
+              "start": 21,
+              "end": 22,
+              "reading": "とう"
+            }
+          ]
         },
         {
           "japanese": "日本へ来るとき、父に辞書をもらいました。",
-          "english": "When I came to Japan, my father gave me a dictionary."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "にほん"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "く"
+            },
+            {
+              "start": 8,
+              "end": 9,
+              "reading": "ちち"
+            },
+            {
+              "start": 10,
+              "end": 12,
+              "reading": "じしょ"
+            }
+          ]
         },
         {
           "japanese": "母の日にカーネーションとブラウスをあげました。",
-          "english": "On Mother's Day, I gave carnations and a blouse."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "はは"
+            },
+            {
+              "start": 2,
+              "end": 3,
+              "reading": "ひ"
+            }
+          ]
         },
         {
           "japanese": "おなかの中のあかちゃんは男の子ですか。女の子ですか。",
-          "english": "Is the baby in the tummy a boy or a girl?"
+          "english": "",
+          "rubies": [
+            {
+              "start": 4,
+              "end": 5,
+              "reading": "なか"
+            },
+            {
+              "start": 12,
+              "end": 13,
+              "reading": "おとこ"
+            },
+            {
+              "start": 14,
+              "end": 15,
+              "reading": "こ"
+            },
+            {
+              "start": 19,
+              "end": 20,
+              "reading": "おんな"
+            },
+            {
+              "start": 21,
+              "end": 22,
+              "reading": "こ"
+            }
+          ]
         },
         {
           "japanese": "毎週水曜日、女性は1,000円でえいがを見ることができます。",
-          "english": "Every Wednesday, women can watch movies for 1,000 yen."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "まいしゅう"
+            },
+            {
+              "start": 0,
+              "end": 5,
+              "reading": "すいようび"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "reading": "じょせい"
+            },
+            {
+              "start": 9,
+              "end": 15,
+              "reading": "えん"
+            },
+            {
+              "start": 20,
+              "end": 21,
+              "reading": "み"
+            }
+          ]
         },
         {
           "japanese": "小学校では男子より女子のほうがよくしゃべります。",
-          "english": "In elementary school, girls talk more than boys."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 3,
+              "reading": "しょうがっこう"
+            },
+            {
+              "start": 5,
+              "end": 7,
+              "reading": "だんし"
+            },
+            {
+              "start": 9,
+              "end": 11,
+              "reading": "じょし"
+            }
+          ]
         },
         {
           "japanese": "祖父と祖母はもう92さいと90さいですが、自分たちでそうじしたり、買い物に行ったりしています。",
-          "english": "Grandfather and grandmother are already 92 and 90, but they clean and go shopping by themselves."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "そふ"
+            },
+            {
+              "start": 3,
+              "end": 5,
+              "reading": "そぼ"
+            },
+            {
+              "start": 8,
+              "end": 10,
+              "reading": "きゅうじゅうに"
+            },
+            {
+              "start": 13,
+              "end": 15,
+              "reading": "きゅうじゅっ"
+            },
+            {
+              "start": 21,
+              "end": 23,
+              "reading": "じぶん"
+            },
+            {
+              "start": 33,
+              "end": 34,
+              "reading": "か"
+            },
+            {
+              "start": 35,
+              "end": 36,
+              "reading": "もの"
+            },
+            {
+              "start": 37,
+              "end": 38,
+              "reading": "い"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -4522,7 +6315,19 @@
       "exampleSentences": [
         {
           "japanese": "東京駅で東海道線にのりかえます。",
-          "english": "I transfer to the Tokaido Line at Tokyo Station."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 3,
+              "reading": "とうきょうえき"
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "reading": "とうかいどうせん"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -4570,7 +6375,24 @@
       "exampleSentences": [
         {
           "japanese": "太陽は東からのぼって、西にしずみます。",
-          "english": "The sun rises in the east and sets in the west."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "たいよう"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "ひがし"
+            },
+            {
+              "start": 11,
+              "end": 12,
+              "reading": "にし"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -4691,7 +6513,24 @@
       "exampleSentences": [
         {
           "japanese": "夏休みに北海道へ行きました。",
-          "english": "I went to Hokkaido during summer vacation."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "なつやす"
+            },
+            {
+              "start": 4,
+              "end": 7,
+              "reading": "ほっかいどう"
+            },
+            {
+              "start": 8,
+              "end": 9,
+              "reading": "い"
+            }
+          ]
         }
       ],
       "extraSections": [
@@ -4794,7 +6633,29 @@
       "exampleSentences": [
         {
           "japanese": "辞書で調べて漢字を書きます。",
-          "english": "I look it up in the dictionary and write the kanji."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "じしょ"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "しら"
+            },
+            {
+              "start": 6,
+              "end": 8,
+              "reading": "かんじ"
+            },
+            {
+              "start": 9,
+              "end": 10,
+              "reading": "か"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -4840,7 +6701,14 @@
       "exampleSentences": [
         {
           "japanese": "どうぞ、使ってください。",
-          "english": "Please use it."
+          "english": "",
+          "rubies": [
+            {
+              "start": 4,
+              "end": 5,
+              "reading": "つか"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -4897,11 +6765,40 @@
       "exampleSentences": [
         {
           "japanese": "犬の散歩",
-          "english": "walking the dog"
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "いぬ"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "reading": "さんぽ"
+            }
+          ]
         },
         {
           "japanese": "毎朝歩いて会社へ行きます。",
-          "english": "I walk to the office every morning."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 3,
+              "reading": "まいあさある"
+            },
+            {
+              "start": 5,
+              "end": 7,
+              "reading": "かいしゃ"
+            },
+            {
+              "start": 8,
+              "end": 9,
+              "reading": "い"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -4948,11 +6845,35 @@
       "exampleSentences": [
         {
           "japanese": "ケーキを作ります。",
-          "english": "I make a cake."
+          "english": "",
+          "rubies": [
+            {
+              "start": 4,
+              "end": 5,
+              "reading": "つく"
+            }
+          ]
         },
         {
           "japanese": "趣味は曲を作ることです。",
-          "english": "My hobby is composing music."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 2,
+              "reading": "しゅみ"
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "reading": "きょく"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "reading": "つく"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -5008,11 +6929,45 @@
       "exampleSentences": [
         {
           "japanese": "国立大学を卒業しました。",
-          "english": "I graduated from a national university."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 4,
+              "reading": "こくりつだいがく"
+            },
+            {
+              "start": 5,
+              "end": 7,
+              "reading": "そつぎょう"
+            }
+          ]
         },
         {
           "japanese": "友だちと旅行の計画を立てます。",
-          "english": "I'll make a travel plan with my friend."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "とも"
+            },
+            {
+              "start": 4,
+              "end": 6,
+              "reading": "りょこう"
+            },
+            {
+              "start": 7,
+              "end": 9,
+              "reading": "けいかく"
+            },
+            {
+              "start": 10,
+              "end": 11,
+              "reading": "た"
+            }
+          ]
         }
       ],
       "extraSections": [],
@@ -5052,7 +7007,24 @@
       "exampleSentences": [
         {
           "japanese": "長い文章を読みます。",
-          "english": "I read a long passage."
+          "english": "",
+          "rubies": [
+            {
+              "start": 0,
+              "end": 1,
+              "reading": "なが"
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "reading": "ぶんしょう"
+            },
+            {
+              "start": 5,
+              "end": 6,
+              "reading": "よ"
+            }
+          ]
         }
       ],
       "extraSections": [],
