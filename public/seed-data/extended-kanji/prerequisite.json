@@ -1,0 +1,637 @@
+{
+  "metadata": {
+    "source": "KANJI_REFERENCE.md",
+    "generatedAt": "2026-04-24T12:36:42.494597+00:00",
+    "lessonsCount": 37,
+    "kanjiCount": 86,
+    "vocabularyCount": 378,
+    "sentencesPart1": 111,
+    "sentencesPart1Extras": 24,
+    "sentencesPart3Groups": 7,
+    "sentencesTotal": 173,
+    "answerKeyPages": 9,
+    "prerequisiteKanji": 124
+  },
+  "prerequisite": [
+    {
+      "Kanji": "会",
+      "Reading": "かい",
+      "Common uses seen": "会社, 会議, 会話, 会います"
+    },
+    {
+      "Kanji": "社",
+      "Reading": "しゃ",
+      "Common uses seen": "会社, 社長"
+    },
+    {
+      "Kanji": "校",
+      "Reading": "こう",
+      "Common uses seen": "学校, 小学校"
+    },
+    {
+      "Kanji": "曜",
+      "Reading": "よう",
+      "Common uses seen": "月曜日, 何曜日"
+    },
+    {
+      "Kanji": "誕",
+      "Reading": "たん",
+      "Common uses seen": "誕生日"
+    },
+    {
+      "Kanji": "駅",
+      "Reading": "えき",
+      "Common uses seen": "駅, 東京駅, 上野駅"
+    },
+    {
+      "Kanji": "飛",
+      "Reading": "ひ",
+      "Common uses seen": "飛行機"
+    },
+    {
+      "Kanji": "機",
+      "Reading": "き",
+      "Common uses seen": "飛行機"
+    },
+    {
+      "Kanji": "銀",
+      "Reading": "ぎん",
+      "Common uses seen": "銀行"
+    },
+    {
+      "Kanji": "旅",
+      "Reading": "りょ",
+      "Common uses seen": "旅行"
+    },
+    {
+      "Kanji": "部",
+      "Reading": "ぶ / へ",
+      "Common uses seen": "部屋, 部長"
+    },
+    {
+      "Kanji": "屋",
+      "Reading": "や",
+      "Common uses seen": "部屋, 飲み屋"
+    },
+    {
+      "Kanji": "映",
+      "Reading": "えい",
+      "Common uses seen": "映画"
+    },
+    {
+      "Kanji": "画",
+      "Reading": "が",
+      "Common uses seen": "映画"
+    },
+    {
+      "Kanji": "電",
+      "Reading": "でん",
+      "Common uses seen": "電車, 電話"
+    },
+    {
+      "Kanji": "新",
+      "Reading": "しん",
+      "Common uses seen": "新聞, 新宿"
+    },
+    {
+      "Kanji": "勉",
+      "Reading": "べん",
+      "Common uses seen": "勉強"
+    },
+    {
+      "Kanji": "強",
+      "Reading": "きょう",
+      "Common uses seen": "勉強"
+    },
+    {
+      "Kanji": "試",
+      "Reading": "し",
+      "Common uses seen": "試験"
+    },
+    {
+      "Kanji": "験",
+      "Reading": "けん",
+      "Common uses seen": "試験"
+    },
+    {
+      "Kanji": "誌 / 詞",
+      "Reading": "し",
+      "Common uses seen": "名詞, 雑誌"
+    },
+    {
+      "Kanji": "英",
+      "Reading": "えい",
+      "Common uses seen": "英語"
+    },
+    {
+      "Kanji": "米",
+      "Reading": "べい",
+      "Common uses seen": "米国"
+    },
+    {
+      "Kanji": "韓",
+      "Reading": "かん",
+      "Common uses seen": "韓国"
+    },
+    {
+      "Kanji": "宿",
+      "Reading": "しゅく",
+      "Common uses seen": "新宿, 宿"
+    },
+    {
+      "Kanji": "科",
+      "Reading": "か",
+      "Common uses seen": "内科, 外科, 耳鼻科"
+    },
+    {
+      "Kanji": "地",
+      "Reading": "ち",
+      "Common uses seen": "地下鉄, 地方"
+    },
+    {
+      "Kanji": "鉄",
+      "Reading": "てつ",
+      "Common uses seen": "地下鉄"
+    },
+    {
+      "Kanji": "転",
+      "Reading": "てん",
+      "Common uses seen": "自転車"
+    },
+    {
+      "Kanji": "自",
+      "Reading": "じ",
+      "Common uses seen": "自転車, 自動車, 自分"
+    },
+    {
+      "Kanji": "動",
+      "Reading": "どう",
+      "Common uses seen": "自動車, 運動"
+    },
+    {
+      "Kanji": "運",
+      "Reading": "うん",
+      "Common uses seen": "運動, 運"
+    },
+    {
+      "Kanji": "真",
+      "Reading": "ま",
+      "Common uses seen": "真ん中, 写真"
+    },
+    {
+      "Kanji": "写",
+      "Reading": "しゃ",
+      "Common uses seen": "写真"
+    },
+    {
+      "Kanji": "映",
+      "Reading": "えい",
+      "Common uses seen": "映画"
+    },
+    {
+      "Kanji": "街",
+      "Reading": "がい",
+      "Common uses seen": "(街)"
+    },
+    {
+      "Kanji": "寺",
+      "Reading": "てら / じ",
+      "Common uses seen": "お寺, 清水寺"
+    },
+    {
+      "Kanji": "清",
+      "Reading": "せい",
+      "Common uses seen": "清水寺"
+    },
+    {
+      "Kanji": "祖",
+      "Reading": "そ",
+      "Common uses seen": "祖父, 祖母"
+    },
+    {
+      "Kanji": "息",
+      "Reading": "そく",
+      "Common uses seen": "息子"
+    },
+    {
+      "Kanji": "娘",
+      "Reading": "むすめ",
+      "Common uses seen": "娘"
+    },
+    {
+      "Kanji": "双",
+      "Reading": "そう",
+      "Common uses seen": "双子"
+    },
+    {
+      "Kanji": "性",
+      "Reading": "せい",
+      "Common uses seen": "男性, 女性"
+    },
+    {
+      "Kanji": "料",
+      "Reading": "りょう",
+      "Common uses seen": "料金"
+    },
+    {
+      "Kanji": "持",
+      "Reading": "も / じ",
+      "Common uses seen": "お金持ち"
+    },
+    {
+      "Kanji": "計",
+      "Reading": "けい",
+      "Common uses seen": "時計, 計画"
+    },
+    {
+      "Kanji": "番",
+      "Reading": "ばん",
+      "Common uses seen": "交番"
+    },
+    {
+      "Kanji": "交",
+      "Reading": "こう",
+      "Common uses seen": "交番"
+    },
+    {
+      "Kanji": "近",
+      "Reading": "きん",
+      "Common uses seen": "近畿"
+    },
+    {
+      "Kanji": "部",
+      "Reading": "ぶ",
+      "Common uses seen": "中部, 部屋"
+    },
+    {
+      "Kanji": "州",
+      "Reading": "しゅう",
+      "Common uses seen": "九州"
+    },
+    {
+      "Kanji": "方",
+      "Reading": "ほう",
+      "Common uses seen": "地方, 方言"
+    },
+    {
+      "Kanji": "海",
+      "Reading": "かい / うみ",
+      "Common uses seen": "海, 海外, 北海道"
+    },
+    {
+      "Kanji": "道",
+      "Reading": "どう / みち",
+      "Common uses seen": "北海道, 水道, 書道, 横断歩道"
+    },
+    {
+      "Kanji": "極",
+      "Reading": "きょく",
+      "Common uses seen": "南極"
+    },
+    {
+      "Kanji": "関",
+      "Reading": "かん",
+      "Common uses seen": "関東, 関西"
+    },
+    {
+      "Kanji": "幹",
+      "Reading": "かん",
+      "Common uses seen": "新幹線"
+    },
+    {
+      "Kanji": "線",
+      "Reading": "せん",
+      "Common uses seen": "新幹線, 東海道線"
+    },
+    {
+      "Kanji": "太",
+      "Reading": "たい",
+      "Common uses seen": "太陽"
+    },
+    {
+      "Kanji": "陽",
+      "Reading": "よう",
+      "Common uses seen": "太陽"
+    },
+    {
+      "Kanji": "公",
+      "Reading": "こう",
+      "Common uses seen": "公園, 公立"
+    },
+    {
+      "Kanji": "園",
+      "Reading": "えん",
+      "Common uses seen": "公園"
+    },
+    {
+      "Kanji": "資",
+      "Reading": "し",
+      "Common uses seen": "資料"
+    },
+    {
+      "Kanji": "議",
+      "Reading": "ぎ",
+      "Common uses seen": "会議"
+    },
+    {
+      "Kanji": "札",
+      "Reading": "さつ",
+      "Common uses seen": "改札"
+    },
+    {
+      "Kanji": "改",
+      "Reading": "かい",
+      "Common uses seen": "改札"
+    },
+    {
+      "Kanji": "紙",
+      "Reading": "し",
+      "Common uses seen": "手紙"
+    },
+    {
+      "Kanji": "音",
+      "Reading": "おと / おん",
+      "Common uses seen": "足音, 音楽"
+    },
+    {
+      "Kanji": "楽",
+      "Reading": "がく",
+      "Common uses seen": "音楽"
+    },
+    {
+      "Kanji": "勉",
+      "Reading": "べん",
+      "Common uses seen": "勉強"
+    },
+    {
+      "Kanji": "買",
+      "Reading": "か",
+      "Common uses seen": "買いました, 買い物"
+    },
+    {
+      "Kanji": "物",
+      "Reading": "もの / ぶつ",
+      "Common uses seen": "買い物, 飲みもの, 食べもの"
+    },
+    {
+      "Kanji": "持",
+      "Reading": "も",
+      "Common uses seen": "お金持ち"
+    },
+    {
+      "Kanji": "帰",
+      "Reading": "かえ",
+      "Common uses seen": "帰ります"
+    },
+    {
+      "Kanji": "失",
+      "Reading": "しつ",
+      "Common uses seen": "失礼"
+    },
+    {
+      "Kanji": "礼",
+      "Reading": "れい",
+      "Common uses seen": "失礼"
+    },
+    {
+      "Kanji": "切",
+      "Reading": "せつ / き",
+      "Common uses seen": "大切"
+    },
+    {
+      "Kanji": "昨",
+      "Reading": "さく",
+      "Common uses seen": "昨日"
+    },
+    {
+      "Kanji": "朝",
+      "Reading": "あさ / ちょう",
+      "Common uses seen": "今朝, 毎朝, 朝"
+    },
+    {
+      "Kanji": "夜",
+      "Reading": "よる / や",
+      "Common uses seen": "今夜, 夜"
+    },
+    {
+      "Kanji": "夏",
+      "Reading": "なつ",
+      "Common uses seen": "夏休み"
+    },
+    {
+      "Kanji": "春",
+      "Reading": "はる",
+      "Common uses seen": "春休み"
+    },
+    {
+      "Kanji": "冬",
+      "Reading": "ふゆ",
+      "Common uses seen": "冬休み"
+    },
+    {
+      "Kanji": "秋",
+      "Reading": "あき",
+      "Common uses seen": "(autumn)"
+    },
+    {
+      "Kanji": "葉",
+      "Reading": "は / ば",
+      "Common uses seen": "言葉, 千葉"
+    },
+    {
+      "Kanji": "橋",
+      "Reading": "はし",
+      "Common uses seen": "橋本さん"
+    },
+    {
+      "Kanji": "岡",
+      "Reading": "おか",
+      "Common uses seen": "岡本さん"
+    },
+    {
+      "Kanji": "駄",
+      "Reading": "だ",
+      "Common uses seen": "千駄ヶ谷, 駄目"
+    },
+    {
+      "Kanji": "谷",
+      "Reading": "たに / や",
+      "Common uses seen": "千駄ヶ谷"
+    },
+    {
+      "Kanji": "笠",
+      "Reading": "かさ / がさ",
+      "Common uses seen": "小笠原"
+    },
+    {
+      "Kanji": "原",
+      "Reading": "はら / げん",
+      "Common uses seen": "小笠原"
+    },
+    {
+      "Kanji": "壱",
+      "Reading": "いち",
+      "Common uses seen": "壱万円"
+    },
+    {
+      "Kanji": "双",
+      "Reading": "ふた",
+      "Common uses seen": "双子"
+    },
+    {
+      "Kanji": "鼻",
+      "Reading": "はな / び",
+      "Common uses seen": "耳鼻科"
+    },
+    {
+      "Kanji": "錠",
+      "Reading": "じょう",
+      "Common uses seen": "1錠 (pill counter)"
+    },
+    {
+      "Kanji": "断",
+      "Reading": "だん",
+      "Common uses seen": "横断歩道"
+    },
+    {
+      "Kanji": "横",
+      "Reading": "よこ",
+      "Common uses seen": "横断歩道"
+    },
+    {
+      "Kanji": "辞",
+      "Reading": "じ",
+      "Common uses seen": "辞書"
+    },
+    {
+      "Kanji": "調",
+      "Reading": "しら",
+      "Common uses seen": "調べる"
+    },
+    {
+      "Kanji": "掘",
+      "Reading": "ほ",
+      "Common uses seen": "掘ります"
+    },
+    {
+      "Kanji": "卒",
+      "Reading": "そつ",
+      "Common uses seen": "卒業"
+    },
+    {
+      "Kanji": "業",
+      "Reading": "ぎょう",
+      "Common uses seen": "卒業, 授業"
+    },
+    {
+      "Kanji": "計",
+      "Reading": "けい",
+      "Common uses seen": "計画"
+    },
+    {
+      "Kanji": "画",
+      "Reading": "かく / が",
+      "Common uses seen": "計画, 映画"
+    },
+    {
+      "Kanji": "趣",
+      "Reading": "しゅ",
+      "Common uses seen": "趣味"
+    },
+    {
+      "Kanji": "味",
+      "Reading": "み",
+      "Common uses seen": "趣味"
+    },
+    {
+      "Kanji": "曲",
+      "Reading": "きょく",
+      "Common uses seen": "作曲, 曲"
+    },
+    {
+      "Kanji": "章",
+      "Reading": "しょう",
+      "Common uses seen": "文章"
+    },
+    {
+      "Kanji": "類",
+      "Reading": "るい",
+      "Common uses seen": "書類"
+    },
+    {
+      "Kanji": "禁",
+      "Reading": "きん",
+      "Common uses seen": "使用禁止"
+    },
+    {
+      "Kanji": "止",
+      "Reading": "し",
+      "Common uses seen": "禁止"
+    },
+    {
+      "Kanji": "用",
+      "Reading": "よう",
+      "Common uses seen": "使用中"
+    },
+    {
+      "Kanji": "帳",
+      "Reading": "ちょう",
+      "Common uses seen": "手帳"
+    },
+    {
+      "Kanji": "館",
+      "Reading": "かん",
+      "Common uses seen": "図書館, 大使館"
+    },
+    {
+      "Kanji": "図",
+      "Reading": "と / ず",
+      "Common uses seen": "図書館"
+    },
+    {
+      "Kanji": "明",
+      "Reading": "あき / めい",
+      "Common uses seen": "明日"
+    },
+    {
+      "Kanji": "古",
+      "Reading": "こ",
+      "Common uses seen": "(old)"
+    },
+    {
+      "Kanji": "置",
+      "Reading": "お",
+      "Common uses seen": "置きます"
+    },
+    {
+      "Kanji": "遊",
+      "Reading": "あそ",
+      "Common uses seen": "遊んでいます"
+    },
+    {
+      "Kanji": "温",
+      "Reading": "おん",
+      "Common uses seen": "気温"
+    },
+    {
+      "Kanji": "気",
+      "Reading": "き",
+      "Common uses seen": "気温, 気"
+    },
+    {
+      "Kanji": "銀",
+      "Reading": "ぎん",
+      "Common uses seen": "銀行"
+    },
+    {
+      "Kanji": "服",
+      "Reading": "ふく",
+      "Common uses seen": "(clothes)"
+    },
+    {
+      "Kanji": "去",
+      "Reading": "きょ",
+      "Common uses seen": "去年"
+    }
+  ]
+}

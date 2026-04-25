@@ -1,0 +1,302 @@
+{
+  "metadata": {
+    "source": "KANJI_REFERENCE.md",
+    "generatedAt": "2026-04-24T12:36:42.494597+00:00",
+    "lessonsCount": 37,
+    "kanjiCount": 86,
+    "vocabularyCount": 378,
+    "sentencesPart1": 111,
+    "sentencesPart1Extras": 24,
+    "sentencesPart3Groups": 7,
+    "sentencesTotal": 173,
+    "answerKeyPages": 9,
+    "prerequisiteKanji": 124
+  },
+  "themes": [
+    {
+      "theme": "Days of the week",
+      "rows": [
+        {
+          "Kanji": "月曜日",
+          "Reading": "げつようび",
+          "Day": "Monday"
+        },
+        {
+          "Kanji": "火曜日",
+          "Reading": "かようび",
+          "Day": "Tuesday"
+        },
+        {
+          "Kanji": "水曜日",
+          "Reading": "すいようび",
+          "Day": "Wednesday"
+        },
+        {
+          "Kanji": "木曜日",
+          "Reading": "もくようび",
+          "Day": "Thursday"
+        },
+        {
+          "Kanji": "金曜日",
+          "Reading": "きんようび",
+          "Day": "Friday"
+        },
+        {
+          "Kanji": "土曜日",
+          "Reading": "どようび",
+          "Day": "Saturday"
+        },
+        {
+          "Kanji": "日曜日",
+          "Reading": "にちようび",
+          "Day": "Sunday"
+        },
+        {
+          "Kanji": "何曜日",
+          "Reading": "なんようび",
+          "Day": "what day"
+        }
+      ]
+    },
+    {
+      "theme": "Time-relative words",
+      "rows": [
+        {
+          "Kanji": "きょ年",
+          "Reading": "きょねん",
+          "Meaning": "last year"
+        },
+        {
+          "Kanji": "こ年 / 今年",
+          "Reading": "ことし",
+          "Meaning": "this year"
+        },
+        {
+          "Kanji": "らい年 / 来年",
+          "Reading": "らいねん",
+          "Meaning": "next year"
+        },
+        {
+          "Kanji": "先週",
+          "Reading": "せんしゅう",
+          "Meaning": "last week"
+        },
+        {
+          "Kanji": "今週",
+          "Reading": "こんしゅう",
+          "Meaning": "this week"
+        },
+        {
+          "Kanji": "来週",
+          "Reading": "らいしゅう",
+          "Meaning": "next week"
+        },
+        {
+          "Kanji": "今月",
+          "Reading": "こんげつ",
+          "Meaning": "this month"
+        },
+        {
+          "Kanji": "来月",
+          "Reading": "らいげつ",
+          "Meaning": "next month"
+        },
+        {
+          "Kanji": "毎日",
+          "Reading": "まいにち",
+          "Meaning": "every day"
+        },
+        {
+          "Kanji": "毎週",
+          "Reading": "まいしゅう",
+          "Meaning": "every week"
+        },
+        {
+          "Kanji": "毎月",
+          "Reading": "まいつき",
+          "Meaning": "every month"
+        },
+        {
+          "Kanji": "毎年",
+          "Reading": "まいとし",
+          "Meaning": "every year"
+        },
+        {
+          "Kanji": "今朝",
+          "Reading": "けさ",
+          "Meaning": "this morning"
+        },
+        {
+          "Kanji": "今夜",
+          "Reading": "こんや",
+          "Meaning": "tonight"
+        },
+        {
+          "Kanji": "午前",
+          "Reading": "ごぜん",
+          "Meaning": "AM"
+        },
+        {
+          "Kanji": "午後",
+          "Reading": "ごご",
+          "Meaning": "PM"
+        },
+        {
+          "Kanji": "午前中",
+          "Reading": "ごぜんちゅう",
+          "Meaning": "during the morning"
+        }
+      ]
+    },
+    {
+      "theme": "Family",
+      "rows": [
+        {
+          "Kanji": "父",
+          "Reading": "ちち",
+          "Meaning": "my father"
+        },
+        {
+          "Kanji": "お父さん",
+          "Reading": "おとうさん",
+          "Meaning": "father (polite)"
+        },
+        {
+          "Kanji": "祖父",
+          "Reading": "そふ",
+          "Meaning": "grandfather"
+        },
+        {
+          "Kanji": "母",
+          "Reading": "はは",
+          "Meaning": "my mother"
+        },
+        {
+          "Kanji": "お母さん",
+          "Reading": "おかあさん",
+          "Meaning": "mother (polite)"
+        },
+        {
+          "Kanji": "祖母",
+          "Reading": "そぼ",
+          "Meaning": "grandmother"
+        },
+        {
+          "Kanji": "子ども",
+          "Reading": "こども",
+          "Meaning": "child"
+        },
+        {
+          "Kanji": "息子",
+          "Reading": "むすこ",
+          "Meaning": "son"
+        },
+        {
+          "Kanji": "娘",
+          "Reading": "むすめ",
+          "Meaning": "daughter"
+        },
+        {
+          "Kanji": "双子",
+          "Reading": "ふたご",
+          "Meaning": "twins"
+        }
+      ]
+    },
+    {
+      "theme": "Places",
+      "rows": [
+        {
+          "Kanji": "学校",
+          "Reading": "がっこう",
+          "Meaning": "school"
+        },
+        {
+          "Kanji": "大学",
+          "Reading": "だいがく",
+          "Meaning": "university"
+        },
+        {
+          "Kanji": "銀行",
+          "Reading": "ぎんこう",
+          "Meaning": "bank"
+        },
+        {
+          "Kanji": "図書館",
+          "Reading": "としょかん",
+          "Meaning": "library"
+        },
+        {
+          "Kanji": "大使館",
+          "Reading": "たいしかん",
+          "Meaning": "embassy"
+        },
+        {
+          "Kanji": "食堂",
+          "Reading": "しょくどう",
+          "Meaning": "cafeteria"
+        },
+        {
+          "Kanji": "会社",
+          "Reading": "かいしゃ",
+          "Meaning": "company"
+        }
+      ]
+    },
+    {
+      "theme": "Counters & money",
+      "rows": [
+        {
+          "Kanji": "一本",
+          "Reading": "いっぽん",
+          "Meaning": "1 (long object)"
+        },
+        {
+          "Kanji": "三本",
+          "Reading": "さんぼん",
+          "Meaning": "3 (long objects)"
+        },
+        {
+          "Kanji": "六本",
+          "Reading": "ろっぽん",
+          "Meaning": "6 (long objects)"
+        },
+        {
+          "Kanji": "八本",
+          "Reading": "はっぽん",
+          "Meaning": "8 (long objects)"
+        },
+        {
+          "Kanji": "一人",
+          "Reading": "ひとり",
+          "Meaning": "1 person"
+        },
+        {
+          "Kanji": "二人",
+          "Reading": "ふたり",
+          "Meaning": "2 people"
+        },
+        {
+          "Kanji": "三人",
+          "Reading": "さんにん",
+          "Meaning": "3 people"
+        },
+        {
+          "Kanji": "百円",
+          "Reading": "ひゃくえん",
+          "Meaning": "100 yen"
+        },
+        {
+          "Kanji": "千円",
+          "Reading": "せんえん",
+          "Meaning": "1,000 yen"
+        },
+        {
+          "Kanji": "一万円",
+          "Reading": "いちまんえん",
+          "Meaning": "10,000 yen"
+        }
+      ]
+    }
+  ]
+}

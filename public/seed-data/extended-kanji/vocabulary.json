@@ -1,0 +1,3538 @@
+{
+  "metadata": {
+    "source": "KANJI_REFERENCE.md",
+    "generatedAt": "2026-04-24T12:36:42.494597+00:00",
+    "lessonsCount": 37,
+    "kanjiCount": 86,
+    "vocabularyCount": 378,
+    "sentencesPart1": 111,
+    "sentencesPart1Extras": 24,
+    "sentencesPart3Groups": 7,
+    "sentencesTotal": 173,
+    "answerKeyPages": 9,
+    "prerequisiteKanji": 124
+  },
+  "vocabulary": [
+    {
+      "word": "大きい",
+      "reading": "おおきい",
+      "meaning": "big",
+      "parentKanji": [
+        "大"
+      ],
+      "themes": []
+    },
+    {
+      "word": "大好き（な）",
+      "reading": "だいすき",
+      "meaning": "favorite / like very much",
+      "parentKanji": [
+        "大"
+      ],
+      "themes": []
+    },
+    {
+      "word": "大変（な）",
+      "reading": "たいへん",
+      "meaning": "tough / very",
+      "parentKanji": [
+        "大"
+      ],
+      "themes": []
+    },
+    {
+      "word": "大学",
+      "reading": "だいがく",
+      "meaning": "college, university",
+      "parentKanji": [
+        "大"
+      ],
+      "themes": [
+        "Places"
+      ]
+    },
+    {
+      "word": "大学生",
+      "reading": "だいがくせい",
+      "meaning": "college student",
+      "parentKanji": [
+        "大",
+        "学"
+      ],
+      "themes": []
+    },
+    {
+      "word": "小さい",
+      "reading": "ちいさい",
+      "meaning": "small",
+      "parentKanji": [
+        "小"
+      ],
+      "themes": []
+    },
+    {
+      "word": "小学校",
+      "reading": "しょうがっこう",
+      "meaning": "elementary school",
+      "parentKanji": [
+        "小"
+      ],
+      "themes": []
+    },
+    {
+      "word": "小学生",
+      "reading": "しょうがくせい",
+      "meaning": "elementary school student",
+      "parentKanji": [
+        "小",
+        "学"
+      ],
+      "themes": []
+    },
+    {
+      "word": "人",
+      "reading": "ひと",
+      "meaning": "person",
+      "parentKanji": [
+        "人"
+      ],
+      "themes": []
+    },
+    {
+      "word": "日本人",
+      "reading": "にほんじん",
+      "meaning": "Japanese person",
+      "parentKanji": [
+        "人"
+      ],
+      "themes": []
+    },
+    {
+      "word": "三人",
+      "reading": "さんにん",
+      "meaning": "three people",
+      "parentKanji": [
+        "人",
+        "一",
+        "二",
+        "三"
+      ],
+      "themes": [
+        "Counters & money"
+      ]
+    },
+    {
+      "word": "女の人",
+      "reading": "おんなのひと",
+      "meaning": "woman",
+      "parentKanji": [
+        "人",
+        "女"
+      ],
+      "themes": []
+    },
+    {
+      "word": "山",
+      "reading": "やま",
+      "meaning": "mountain",
+      "parentKanji": [
+        "山"
+      ],
+      "themes": []
+    },
+    {
+      "word": "富士山",
+      "reading": "ふじさん",
+      "meaning": "Mt. Fuji",
+      "parentKanji": [
+        "山"
+      ],
+      "themes": []
+    },
+    {
+      "word": "山口県",
+      "reading": "やまぐちけん",
+      "meaning": "Yamaguchi Prefecture",
+      "parentKanji": [
+        "山"
+      ],
+      "themes": []
+    },
+    {
+      "word": "山形県",
+      "reading": "やまがたけん",
+      "meaning": "Yamagata Prefecture",
+      "parentKanji": [
+        "山"
+      ],
+      "themes": []
+    },
+    {
+      "word": "山田さん",
+      "reading": "やまださん",
+      "meaning": "Mr./Ms. Yamada",
+      "parentKanji": [
+        "山",
+        "田"
+      ],
+      "themes": []
+    },
+    {
+      "word": "川",
+      "reading": "かわ",
+      "meaning": "river",
+      "parentKanji": [
+        "川"
+      ],
+      "themes": []
+    },
+    {
+      "word": "アマゾン川",
+      "reading": "アマゾンがわ",
+      "meaning": "Amazon river",
+      "parentKanji": [
+        "川"
+      ],
+      "themes": []
+    },
+    {
+      "word": "河川",
+      "reading": "かせん",
+      "meaning": "rivers (formal)",
+      "parentKanji": [
+        "川"
+      ],
+      "themes": []
+    },
+    {
+      "word": "ナイル川",
+      "reading": "ナイルがわ",
+      "meaning": "Nile river",
+      "parentKanji": [
+        "川"
+      ],
+      "themes": []
+    },
+    {
+      "word": "小川さん",
+      "reading": "おがわさん",
+      "meaning": "Mr./Ms. Ogawa",
+      "parentKanji": [
+        "川"
+      ],
+      "themes": []
+    },
+    {
+      "word": "田んぼ",
+      "reading": "たんぼ",
+      "meaning": "rice field",
+      "parentKanji": [
+        "田"
+      ],
+      "themes": []
+    },
+    {
+      "word": "田中さん",
+      "reading": "たなかさん",
+      "meaning": "Mr./Ms. Tanaka",
+      "parentKanji": [
+        "田"
+      ],
+      "themes": []
+    },
+    {
+      "word": "一時",
+      "reading": "いちじ",
+      "meaning": "1 o'clock",
+      "parentKanji": [
+        "一",
+        "二",
+        "三"
+      ],
+      "themes": []
+    },
+    {
+      "word": "二時",
+      "reading": "にじ",
+      "meaning": "2 o'clock",
+      "parentKanji": [
+        "一",
+        "二",
+        "三"
+      ],
+      "themes": []
+    },
+    {
+      "word": "三時",
+      "reading": "さんじ",
+      "meaning": "3 o'clock",
+      "parentKanji": [
+        "一",
+        "二",
+        "三"
+      ],
+      "themes": []
+    },
+    {
+      "word": "三人家族",
+      "reading": "さんにんかぞく",
+      "meaning": "family of three",
+      "parentKanji": [
+        "一",
+        "二",
+        "三"
+      ],
+      "themes": []
+    },
+    {
+      "word": "四月",
+      "reading": "しがつ",
+      "meaning": "April",
+      "parentKanji": [
+        "四"
+      ],
+      "themes": []
+    },
+    {
+      "word": "四日",
+      "reading": "よっか",
+      "meaning": "the 4th",
+      "parentKanji": [
+        "四"
+      ],
+      "themes": []
+    },
+    {
+      "word": "四時",
+      "reading": "よじ",
+      "meaning": "4 o'clock",
+      "parentKanji": [
+        "四"
+      ],
+      "themes": []
+    },
+    {
+      "word": "四歳",
+      "reading": "よんさい",
+      "meaning": "four years old",
+      "parentKanji": [
+        "四"
+      ],
+      "themes": []
+    },
+    {
+      "word": "四人",
+      "reading": "よにん",
+      "meaning": "four people",
+      "parentKanji": [
+        "四"
+      ],
+      "themes": []
+    },
+    {
+      "word": "五月",
+      "reading": "ごがつ",
+      "meaning": "May",
+      "parentKanji": [
+        "五"
+      ],
+      "themes": []
+    },
+    {
+      "word": "五日",
+      "reading": "いつか",
+      "meaning": "the 5th",
+      "parentKanji": [
+        "五"
+      ],
+      "themes": []
+    },
+    {
+      "word": "五時",
+      "reading": "ごじ",
+      "meaning": "5 o'clock",
+      "parentKanji": [
+        "五"
+      ],
+      "themes": []
+    },
+    {
+      "word": "五歳",
+      "reading": "ごさい",
+      "meaning": "five years old",
+      "parentKanji": [
+        "五"
+      ],
+      "themes": []
+    },
+    {
+      "word": "五人",
+      "reading": "ごにん",
+      "meaning": "five people",
+      "parentKanji": [
+        "五"
+      ],
+      "themes": []
+    },
+    {
+      "word": "六月",
+      "reading": "ろくがつ",
+      "meaning": "June",
+      "parentKanji": [
+        "六"
+      ],
+      "themes": []
+    },
+    {
+      "word": "六日",
+      "reading": "むいか",
+      "meaning": "the 6th",
+      "parentKanji": [
+        "六"
+      ],
+      "themes": []
+    },
+    {
+      "word": "六時",
+      "reading": "ろくじ",
+      "meaning": "6 o'clock",
+      "parentKanji": [
+        "六"
+      ],
+      "themes": []
+    },
+    {
+      "word": "六歳",
+      "reading": "ろくさい",
+      "meaning": "six years old",
+      "parentKanji": [
+        "六"
+      ],
+      "themes": []
+    },
+    {
+      "word": "六人",
+      "reading": "ろくにん",
+      "meaning": "six people",
+      "parentKanji": [
+        "六"
+      ],
+      "themes": []
+    },
+    {
+      "word": "七",
+      "reading": "なな",
+      "meaning": "seven",
+      "parentKanji": [
+        "七"
+      ],
+      "themes": []
+    },
+    {
+      "word": "七人",
+      "reading": "しちにん / ななにん",
+      "meaning": "seven people",
+      "parentKanji": [
+        "七"
+      ],
+      "themes": []
+    },
+    {
+      "word": "七時",
+      "reading": "しちじ",
+      "meaning": "7 o'clock",
+      "parentKanji": [
+        "七"
+      ],
+      "themes": []
+    },
+    {
+      "word": "七歳",
+      "reading": "ななさい",
+      "meaning": "seven years old",
+      "parentKanji": [
+        "七"
+      ],
+      "themes": []
+    },
+    {
+      "word": "七月",
+      "reading": "しちがつ",
+      "meaning": "July",
+      "parentKanji": [
+        "七"
+      ],
+      "themes": []
+    },
+    {
+      "word": "七日",
+      "reading": "なのか",
+      "meaning": "the 7th",
+      "parentKanji": [
+        "七",
+        "日"
+      ],
+      "themes": []
+    },
+    {
+      "word": "八",
+      "reading": "はち",
+      "meaning": "eight",
+      "parentKanji": [
+        "八"
+      ],
+      "themes": []
+    },
+    {
+      "word": "八人",
+      "reading": "はちにん",
+      "meaning": "eight people",
+      "parentKanji": [
+        "八"
+      ],
+      "themes": []
+    },
+    {
+      "word": "八時",
+      "reading": "はちじ",
+      "meaning": "8 o'clock",
+      "parentKanji": [
+        "八"
+      ],
+      "themes": []
+    },
+    {
+      "word": "八歳",
+      "reading": "はっさい",
+      "meaning": "eight years old",
+      "parentKanji": [
+        "八"
+      ],
+      "themes": []
+    },
+    {
+      "word": "八月",
+      "reading": "はちがつ",
+      "meaning": "August",
+      "parentKanji": [
+        "八"
+      ],
+      "themes": []
+    },
+    {
+      "word": "八日",
+      "reading": "ようか",
+      "meaning": "the 8th",
+      "parentKanji": [
+        "八"
+      ],
+      "themes": []
+    },
+    {
+      "word": "九",
+      "reading": "きゅう",
+      "meaning": "nine",
+      "parentKanji": [
+        "九"
+      ],
+      "themes": []
+    },
+    {
+      "word": "九人",
+      "reading": "きゅうにん",
+      "meaning": "nine people",
+      "parentKanji": [
+        "九"
+      ],
+      "themes": []
+    },
+    {
+      "word": "九時",
+      "reading": "くじ",
+      "meaning": "9 o'clock",
+      "parentKanji": [
+        "九"
+      ],
+      "themes": []
+    },
+    {
+      "word": "九歳",
+      "reading": "きゅうさい",
+      "meaning": "nine years old",
+      "parentKanji": [
+        "九"
+      ],
+      "themes": []
+    },
+    {
+      "word": "九月",
+      "reading": "くがつ",
+      "meaning": "September",
+      "parentKanji": [
+        "九"
+      ],
+      "themes": []
+    },
+    {
+      "word": "九日",
+      "reading": "ここのか",
+      "meaning": "the 9th",
+      "parentKanji": [
+        "九"
+      ],
+      "themes": []
+    },
+    {
+      "word": "十歳",
+      "reading": "じゅっさい",
+      "meaning": "ten years old",
+      "parentKanji": [
+        "十"
+      ],
+      "themes": []
+    },
+    {
+      "word": "十時",
+      "reading": "じゅうじ",
+      "meaning": "10 o'clock",
+      "parentKanji": [
+        "十"
+      ],
+      "themes": []
+    },
+    {
+      "word": "十月",
+      "reading": "じゅうがつ",
+      "meaning": "October",
+      "parentKanji": [
+        "十"
+      ],
+      "themes": []
+    },
+    {
+      "word": "十日",
+      "reading": "とおか",
+      "meaning": "the 10th",
+      "parentKanji": [
+        "十"
+      ],
+      "themes": []
+    },
+    {
+      "word": "十分",
+      "reading": "じゅっぷん",
+      "meaning": "ten minutes",
+      "parentKanji": [
+        "十"
+      ],
+      "themes": []
+    },
+    {
+      "word": "百",
+      "reading": "ひゃく",
+      "meaning": "100",
+      "parentKanji": [
+        "百"
+      ],
+      "themes": []
+    },
+    {
+      "word": "百円",
+      "reading": "ひゃくえん",
+      "meaning": "100 yen",
+      "parentKanji": [
+        "百",
+        "円"
+      ],
+      "themes": [
+        "Counters & money"
+      ]
+    },
+    {
+      "word": "百円ショップ",
+      "reading": "ひゃくえんショップ",
+      "meaning": "100-yen shop",
+      "parentKanji": [
+        "百"
+      ],
+      "themes": []
+    },
+    {
+      "word": "百歳",
+      "reading": "ひゃくさい",
+      "meaning": "100 years old",
+      "parentKanji": [
+        "百"
+      ],
+      "themes": []
+    },
+    {
+      "word": "三百円",
+      "reading": "さんびゃくえん",
+      "meaning": "300 yen",
+      "parentKanji": [
+        "百"
+      ],
+      "themes": []
+    },
+    {
+      "word": "八百円",
+      "reading": "はっぴゃくえん",
+      "meaning": "800 yen",
+      "parentKanji": [
+        "百"
+      ],
+      "themes": []
+    },
+    {
+      "word": "千",
+      "reading": "せん",
+      "meaning": "1,000",
+      "parentKanji": [
+        "千"
+      ],
+      "themes": []
+    },
+    {
+      "word": "千円",
+      "reading": "せんえん",
+      "meaning": "1,000 yen",
+      "parentKanji": [
+        "千",
+        "円"
+      ],
+      "themes": [
+        "Counters & money"
+      ]
+    },
+    {
+      "word": "千葉",
+      "reading": "ちば",
+      "meaning": "Chiba (place)",
+      "parentKanji": [
+        "千"
+      ],
+      "themes": []
+    },
+    {
+      "word": "千駄ヶ谷",
+      "reading": "せんだがや",
+      "meaning": "Sendagaya (place)",
+      "parentKanji": [
+        "千"
+      ],
+      "themes": []
+    },
+    {
+      "word": "一万",
+      "reading": "いちまん",
+      "meaning": "10,000",
+      "parentKanji": [
+        "万"
+      ],
+      "themes": []
+    },
+    {
+      "word": "十万",
+      "reading": "じゅうまん",
+      "meaning": "100,000",
+      "parentKanji": [
+        "万"
+      ],
+      "themes": []
+    },
+    {
+      "word": "百万",
+      "reading": "ひゃくまん",
+      "meaning": "1,000,000",
+      "parentKanji": [
+        "万"
+      ],
+      "themes": []
+    },
+    {
+      "word": "万年筆",
+      "reading": "まんねんひつ",
+      "meaning": "fountain pen",
+      "parentKanji": [
+        "万"
+      ],
+      "themes": []
+    },
+    {
+      "word": "万歳",
+      "reading": "ばんざい",
+      "meaning": "hurrah!",
+      "parentKanji": [
+        "万"
+      ],
+      "themes": []
+    },
+    {
+      "word": "円をかく",
+      "reading": "えんをかく",
+      "meaning": "to draw a circle",
+      "parentKanji": [
+        "円"
+      ],
+      "themes": []
+    },
+    {
+      "word": "一円",
+      "reading": "いちえん",
+      "meaning": "1 yen",
+      "parentKanji": [
+        "円"
+      ],
+      "themes": []
+    },
+    {
+      "word": "五円",
+      "reading": "ごえん",
+      "meaning": "5 yen",
+      "parentKanji": [
+        "円"
+      ],
+      "themes": []
+    },
+    {
+      "word": "十円",
+      "reading": "じゅうえん",
+      "meaning": "10 yen",
+      "parentKanji": [
+        "円"
+      ],
+      "themes": []
+    },
+    {
+      "word": "五十円",
+      "reading": "ごじゅうえん",
+      "meaning": "50 yen",
+      "parentKanji": [
+        "円"
+      ],
+      "themes": []
+    },
+    {
+      "word": "五百円",
+      "reading": "ごひゃくえん",
+      "meaning": "500 yen",
+      "parentKanji": [
+        "円"
+      ],
+      "themes": []
+    },
+    {
+      "word": "五千円",
+      "reading": "ごせんえん",
+      "meaning": "5,000 yen",
+      "parentKanji": [
+        "円"
+      ],
+      "themes": []
+    },
+    {
+      "word": "一万円 / 壱万円",
+      "reading": "いちまんえん",
+      "meaning": "10,000 yen",
+      "parentKanji": [
+        "円"
+      ],
+      "themes": []
+    },
+    {
+      "word": "上",
+      "reading": "うえ",
+      "meaning": "on / above",
+      "parentKanji": [
+        "上"
+      ],
+      "themes": []
+    },
+    {
+      "word": "頂上",
+      "reading": "ちょうじょう",
+      "meaning": "summit",
+      "parentKanji": [
+        "上"
+      ],
+      "themes": []
+    },
+    {
+      "word": "上野駅",
+      "reading": "うえのえき",
+      "meaning": "Ueno Station",
+      "parentKanji": [
+        "上"
+      ],
+      "themes": []
+    },
+    {
+      "word": "売上",
+      "reading": "うりあげ",
+      "meaning": "sales",
+      "parentKanji": [
+        "上"
+      ],
+      "themes": []
+    },
+    {
+      "word": "中",
+      "reading": "なか",
+      "meaning": "middle / inside",
+      "parentKanji": [
+        "中"
+      ],
+      "themes": []
+    },
+    {
+      "word": "真ん中",
+      "reading": "まんなか",
+      "meaning": "the very middle",
+      "parentKanji": [
+        "中"
+      ],
+      "themes": []
+    },
+    {
+      "word": "家の中",
+      "reading": "いえのなか",
+      "meaning": "inside the house",
+      "parentKanji": [
+        "中"
+      ],
+      "themes": []
+    },
+    {
+      "word": "仕事中",
+      "reading": "しごとちゅう",
+      "meaning": "at work / working now",
+      "parentKanji": [
+        "中"
+      ],
+      "themes": []
+    },
+    {
+      "word": "中学生",
+      "reading": "ちゅうがくせい",
+      "meaning": "middle-school student",
+      "parentKanji": [
+        "中",
+        "学"
+      ],
+      "themes": []
+    },
+    {
+      "word": "下",
+      "reading": "した",
+      "meaning": "below / under",
+      "parentKanji": [
+        "下"
+      ],
+      "themes": []
+    },
+    {
+      "word": "地下鉄",
+      "reading": "ちかてつ",
+      "meaning": "subway",
+      "parentKanji": [
+        "下"
+      ],
+      "themes": []
+    },
+    {
+      "word": "くつ下",
+      "reading": "くつした",
+      "meaning": "socks",
+      "parentKanji": [
+        "下"
+      ],
+      "themes": []
+    },
+    {
+      "word": "今日",
+      "reading": "きょう",
+      "meaning": "today",
+      "parentKanji": [
+        "日",
+        "今"
+      ],
+      "themes": []
+    },
+    {
+      "word": "日本",
+      "reading": "にほん",
+      "meaning": "Japan",
+      "parentKanji": [
+        "日"
+      ],
+      "themes": []
+    },
+    {
+      "word": "ゴミの日",
+      "reading": "ゴミのひ",
+      "meaning": "garbage day",
+      "parentKanji": [
+        "日"
+      ],
+      "themes": []
+    },
+    {
+      "word": "日曜日",
+      "reading": "にちようび",
+      "meaning": "Sunday",
+      "parentKanji": [
+        "日"
+      ],
+      "themes": [
+        "Days of the week"
+      ]
+    },
+    {
+      "word": "明日",
+      "reading": "あした",
+      "meaning": "tomorrow",
+      "parentKanji": [
+        "日"
+      ],
+      "themes": []
+    },
+    {
+      "word": "昨日",
+      "reading": "きのう",
+      "meaning": "yesterday",
+      "parentKanji": [
+        "日"
+      ],
+      "themes": []
+    },
+    {
+      "word": "毎日",
+      "reading": "まいにち",
+      "meaning": "every day",
+      "parentKanji": [
+        "日",
+        "毎"
+      ],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "誕生日",
+      "reading": "たんじょうび",
+      "meaning": "birthday",
+      "parentKanji": [
+        "日"
+      ],
+      "themes": []
+    },
+    {
+      "word": "一日目",
+      "reading": "いちにちめ",
+      "meaning": "the first day",
+      "parentKanji": [
+        "日",
+        "目"
+      ],
+      "themes": []
+    },
+    {
+      "word": "父の日",
+      "reading": "ちちのひ",
+      "meaning": "Father's Day",
+      "parentKanji": [
+        "日"
+      ],
+      "themes": []
+    },
+    {
+      "word": "母の日",
+      "reading": "ははのひ",
+      "meaning": "Mother's Day",
+      "parentKanji": [
+        "日"
+      ],
+      "themes": []
+    },
+    {
+      "word": "月",
+      "reading": "つき",
+      "meaning": "moon",
+      "parentKanji": [
+        "月"
+      ],
+      "themes": []
+    },
+    {
+      "word": "満月",
+      "reading": "まんげつ",
+      "meaning": "full moon",
+      "parentKanji": [
+        "月"
+      ],
+      "themes": []
+    },
+    {
+      "word": "月曜日",
+      "reading": "げつようび",
+      "meaning": "Monday",
+      "parentKanji": [
+        "月"
+      ],
+      "themes": [
+        "Days of the week"
+      ]
+    },
+    {
+      "word": "先月",
+      "reading": "せんげつ",
+      "meaning": "last month",
+      "parentKanji": [
+        "月"
+      ],
+      "themes": []
+    },
+    {
+      "word": "今月",
+      "reading": "こんげつ",
+      "meaning": "this month",
+      "parentKanji": [
+        "月",
+        "今"
+      ],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "来月",
+      "reading": "らいげつ",
+      "meaning": "next month",
+      "parentKanji": [
+        "月",
+        "来"
+      ],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "毎月",
+      "reading": "まいつき",
+      "meaning": "every month",
+      "parentKanji": [
+        "月",
+        "毎"
+      ],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "火",
+      "reading": "ひ",
+      "meaning": "fire",
+      "parentKanji": [
+        "火"
+      ],
+      "themes": []
+    },
+    {
+      "word": "火曜日",
+      "reading": "かようび",
+      "meaning": "Tuesday",
+      "parentKanji": [
+        "火"
+      ],
+      "themes": [
+        "Days of the week"
+      ]
+    },
+    {
+      "word": "火山",
+      "reading": "かざん",
+      "meaning": "volcano",
+      "parentKanji": [
+        "火"
+      ],
+      "themes": []
+    },
+    {
+      "word": "火事",
+      "reading": "かじ",
+      "meaning": "fire (incident)",
+      "parentKanji": [
+        "火"
+      ],
+      "themes": []
+    },
+    {
+      "word": "水",
+      "reading": "みず",
+      "meaning": "water",
+      "parentKanji": [
+        "水"
+      ],
+      "themes": []
+    },
+    {
+      "word": "水曜日",
+      "reading": "すいようび",
+      "meaning": "Wednesday",
+      "parentKanji": [
+        "水"
+      ],
+      "themes": [
+        "Days of the week"
+      ]
+    },
+    {
+      "word": "水道",
+      "reading": "すいどう",
+      "meaning": "water supply",
+      "parentKanji": [
+        "水"
+      ],
+      "themes": []
+    },
+    {
+      "word": "水星",
+      "reading": "すいせい",
+      "meaning": "Mercury (planet)",
+      "parentKanji": [
+        "水"
+      ],
+      "themes": []
+    },
+    {
+      "word": "海水浴",
+      "reading": "かいすいよく",
+      "meaning": "sea bathing",
+      "parentKanji": [
+        "水"
+      ],
+      "themes": []
+    },
+    {
+      "word": "水泳",
+      "reading": "すいえい",
+      "meaning": "swimming",
+      "parentKanji": [
+        "水"
+      ],
+      "themes": []
+    },
+    {
+      "word": "水着",
+      "reading": "みずぎ",
+      "meaning": "bathing suit",
+      "parentKanji": [
+        "水"
+      ],
+      "themes": []
+    },
+    {
+      "word": "木",
+      "reading": "き",
+      "meaning": "tree",
+      "parentKanji": [
+        "木"
+      ],
+      "themes": []
+    },
+    {
+      "word": "木曜日",
+      "reading": "もくようび",
+      "meaning": "Thursday",
+      "parentKanji": [
+        "木"
+      ],
+      "themes": [
+        "Days of the week"
+      ]
+    },
+    {
+      "word": "大木",
+      "reading": "たいぼく",
+      "meaning": "big tree",
+      "parentKanji": [
+        "木"
+      ],
+      "themes": []
+    },
+    {
+      "word": "木星",
+      "reading": "もくせい",
+      "meaning": "Jupiter",
+      "parentKanji": [
+        "木"
+      ],
+      "themes": []
+    },
+    {
+      "word": "木陰",
+      "reading": "こかげ",
+      "meaning": "shade of a tree",
+      "parentKanji": [
+        "木"
+      ],
+      "themes": []
+    },
+    {
+      "word": "木綿",
+      "reading": "もめん",
+      "meaning": "cotton",
+      "parentKanji": [
+        "木"
+      ],
+      "themes": []
+    },
+    {
+      "word": "金",
+      "reading": "きん",
+      "meaning": "gold",
+      "parentKanji": [
+        "金"
+      ],
+      "themes": []
+    },
+    {
+      "word": "金曜日",
+      "reading": "きんようび",
+      "meaning": "Friday",
+      "parentKanji": [
+        "金"
+      ],
+      "themes": [
+        "Days of the week"
+      ]
+    },
+    {
+      "word": "金星",
+      "reading": "きんせい",
+      "meaning": "Venus (planet)",
+      "parentKanji": [
+        "金"
+      ],
+      "themes": []
+    },
+    {
+      "word": "お金",
+      "reading": "おかね",
+      "meaning": "money",
+      "parentKanji": [
+        "金"
+      ],
+      "themes": []
+    },
+    {
+      "word": "お金持ち",
+      "reading": "おかねもち",
+      "meaning": "rich person",
+      "parentKanji": [
+        "金"
+      ],
+      "themes": []
+    },
+    {
+      "word": "料金",
+      "reading": "りょうきん",
+      "meaning": "fee, charge",
+      "parentKanji": [
+        "金"
+      ],
+      "themes": []
+    },
+    {
+      "word": "土",
+      "reading": "つち",
+      "meaning": "earth, soil",
+      "parentKanji": [
+        "土"
+      ],
+      "themes": []
+    },
+    {
+      "word": "土曜日",
+      "reading": "どようび",
+      "meaning": "Saturday",
+      "parentKanji": [
+        "土"
+      ],
+      "themes": [
+        "Days of the week"
+      ]
+    },
+    {
+      "word": "土星",
+      "reading": "どせい",
+      "meaning": "Saturn",
+      "parentKanji": [
+        "土"
+      ],
+      "themes": []
+    },
+    {
+      "word": "土を掘る",
+      "reading": "つちをほる",
+      "meaning": "to dig the soil",
+      "parentKanji": [
+        "土"
+      ],
+      "themes": []
+    },
+    {
+      "word": "何",
+      "reading": "なに",
+      "meaning": "what",
+      "parentKanji": [
+        "何"
+      ],
+      "themes": []
+    },
+    {
+      "word": "何曜日",
+      "reading": "なんようび",
+      "meaning": "what day of the week",
+      "parentKanji": [
+        "何"
+      ],
+      "themes": [
+        "Days of the week"
+      ]
+    },
+    {
+      "word": "何時",
+      "reading": "なんじ",
+      "meaning": "what time",
+      "parentKanji": [
+        "何"
+      ],
+      "themes": []
+    },
+    {
+      "word": "何さい",
+      "reading": "なんさい",
+      "meaning": "how old",
+      "parentKanji": [
+        "何"
+      ],
+      "themes": []
+    },
+    {
+      "word": "一年",
+      "reading": "いちねん",
+      "meaning": "one year",
+      "parentKanji": [
+        "年"
+      ],
+      "themes": []
+    },
+    {
+      "word": "きょ年",
+      "reading": "きょねん",
+      "meaning": "last year",
+      "parentKanji": [
+        "年"
+      ],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "こ年",
+      "reading": "ことし",
+      "meaning": "this year",
+      "parentKanji": [
+        "年"
+      ],
+      "themes": []
+    },
+    {
+      "word": "らい年",
+      "reading": "らいねん",
+      "meaning": "next year",
+      "parentKanji": [
+        "年"
+      ],
+      "themes": []
+    },
+    {
+      "word": "生まれます",
+      "reading": "うまれます",
+      "meaning": "to be born",
+      "parentKanji": [
+        "生"
+      ],
+      "themes": []
+    },
+    {
+      "word": "生みます",
+      "reading": "うみます",
+      "meaning": "to give birth",
+      "parentKanji": [
+        "生"
+      ],
+      "themes": []
+    },
+    {
+      "word": "生にく",
+      "reading": "なまにく",
+      "meaning": "raw meat",
+      "parentKanji": [
+        "生"
+      ],
+      "themes": []
+    },
+    {
+      "word": "生ざかな",
+      "reading": "なまざかな",
+      "meaning": "raw fish",
+      "parentKanji": [
+        "生"
+      ],
+      "themes": []
+    },
+    {
+      "word": "生やさい",
+      "reading": "なまやさい",
+      "meaning": "raw vegetables",
+      "parentKanji": [
+        "生"
+      ],
+      "themes": []
+    },
+    {
+      "word": "生きます",
+      "reading": "いきます",
+      "meaning": "to live",
+      "parentKanji": [
+        "生"
+      ],
+      "themes": []
+    },
+    {
+      "word": "生えます",
+      "reading": "はえます",
+      "meaning": "to grow / sprout",
+      "parentKanji": [
+        "生"
+      ],
+      "themes": []
+    },
+    {
+      "word": "生かつ",
+      "reading": "せいかつ",
+      "meaning": "life (daily living)",
+      "parentKanji": [
+        "生"
+      ],
+      "themes": []
+    },
+    {
+      "word": "たん生",
+      "reading": "たんじょう",
+      "meaning": "birth",
+      "parentKanji": [
+        "生"
+      ],
+      "themes": []
+    },
+    {
+      "word": "たん生日",
+      "reading": "たんじょうび",
+      "meaning": "birthday",
+      "parentKanji": [
+        "生"
+      ],
+      "themes": []
+    },
+    {
+      "word": "学生",
+      "reading": "がくせい",
+      "meaning": "student",
+      "parentKanji": [
+        "学"
+      ],
+      "themes": []
+    },
+    {
+      "word": "学校",
+      "reading": "がっこう",
+      "meaning": "school",
+      "parentKanji": [
+        "学"
+      ],
+      "themes": [
+        "Places"
+      ]
+    },
+    {
+      "word": "口",
+      "reading": "くち",
+      "meaning": "mouth",
+      "parentKanji": [
+        "口"
+      ],
+      "themes": []
+    },
+    {
+      "word": "入口",
+      "reading": "いりぐち",
+      "meaning": "entrance",
+      "parentKanji": [
+        "口",
+        "入"
+      ],
+      "themes": []
+    },
+    {
+      "word": "出口",
+      "reading": "でぐち",
+      "meaning": "exit",
+      "parentKanji": [
+        "口",
+        "出"
+      ],
+      "themes": []
+    },
+    {
+      "word": "改札口",
+      "reading": "かいさつぐち",
+      "meaning": "ticket gate",
+      "parentKanji": [
+        "口"
+      ],
+      "themes": []
+    },
+    {
+      "word": "目",
+      "reading": "め",
+      "meaning": "eye",
+      "parentKanji": [
+        "目"
+      ],
+      "themes": []
+    },
+    {
+      "word": "目的",
+      "reading": "もくてき",
+      "meaning": "purpose",
+      "parentKanji": [
+        "目"
+      ],
+      "themes": []
+    },
+    {
+      "word": "耳",
+      "reading": "みみ",
+      "meaning": "ear",
+      "parentKanji": [
+        "耳"
+      ],
+      "themes": []
+    },
+    {
+      "word": "耳鼻科",
+      "reading": "じびか",
+      "meaning": "ear-nose-throat clinic",
+      "parentKanji": [
+        "耳"
+      ],
+      "themes": []
+    },
+    {
+      "word": "手",
+      "reading": "て",
+      "meaning": "hand",
+      "parentKanji": [
+        "手"
+      ],
+      "themes": []
+    },
+    {
+      "word": "手紙",
+      "reading": "てがみ",
+      "meaning": "letter",
+      "parentKanji": [
+        "手"
+      ],
+      "themes": []
+    },
+    {
+      "word": "お手洗い",
+      "reading": "おてあらい",
+      "meaning": "toilet (polite)",
+      "parentKanji": [
+        "手"
+      ],
+      "themes": []
+    },
+    {
+      "word": "上手（な）",
+      "reading": "じょうず",
+      "meaning": "good at (skilled)",
+      "parentKanji": [
+        "手"
+      ],
+      "themes": []
+    },
+    {
+      "word": "下手（な）",
+      "reading": "へた",
+      "meaning": "poor at",
+      "parentKanji": [
+        "手"
+      ],
+      "themes": []
+    },
+    {
+      "word": "苦手（な）",
+      "reading": "にがて",
+      "meaning": "weak at / dislike",
+      "parentKanji": [
+        "手"
+      ],
+      "themes": []
+    },
+    {
+      "word": "足",
+      "reading": "あし",
+      "meaning": "foot, leg",
+      "parentKanji": [
+        "足"
+      ],
+      "themes": []
+    },
+    {
+      "word": "足す",
+      "reading": "たす",
+      "meaning": "to add",
+      "parentKanji": [
+        "足"
+      ],
+      "themes": []
+    },
+    {
+      "word": "足りる",
+      "reading": "たりる",
+      "meaning": "to be enough",
+      "parentKanji": [
+        "足"
+      ],
+      "themes": []
+    },
+    {
+      "word": "足音",
+      "reading": "あしおと",
+      "meaning": "sound of footsteps",
+      "parentKanji": [
+        "足"
+      ],
+      "themes": []
+    },
+    {
+      "word": "銀行",
+      "reading": "ぎんこう",
+      "meaning": "bank",
+      "parentKanji": [
+        "行"
+      ],
+      "themes": [
+        "Places"
+      ]
+    },
+    {
+      "word": "飛行機",
+      "reading": "ひこうき",
+      "meaning": "airplane",
+      "parentKanji": [
+        "行"
+      ],
+      "themes": []
+    },
+    {
+      "word": "旅行",
+      "reading": "りょこう",
+      "meaning": "trip, travel",
+      "parentKanji": [
+        "行"
+      ],
+      "themes": []
+    },
+    {
+      "word": "今年",
+      "reading": "ことし",
+      "meaning": "this year",
+      "parentKanji": [
+        "来",
+        "今"
+      ],
+      "themes": []
+    },
+    {
+      "word": "来年",
+      "reading": "らいねん",
+      "meaning": "next year",
+      "parentKanji": [
+        "来"
+      ],
+      "themes": []
+    },
+    {
+      "word": "来週",
+      "reading": "らいしゅう",
+      "meaning": "next week",
+      "parentKanji": [
+        "来",
+        "週"
+      ],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "電車",
+      "reading": "でんしゃ",
+      "meaning": "train",
+      "parentKanji": [
+        "車"
+      ],
+      "themes": []
+    },
+    {
+      "word": "自動車",
+      "reading": "じどうしゃ",
+      "meaning": "automobile",
+      "parentKanji": [
+        "車"
+      ],
+      "themes": []
+    },
+    {
+      "word": "自転車",
+      "reading": "じてんしゃ",
+      "meaning": "bicycle",
+      "parentKanji": [
+        "車"
+      ],
+      "themes": []
+    },
+    {
+      "word": "言います / 言う",
+      "reading": "いいます / いう",
+      "meaning": "to say",
+      "parentKanji": [
+        "言"
+      ],
+      "themes": []
+    },
+    {
+      "word": "言葉",
+      "reading": "ことば",
+      "meaning": "word, language",
+      "parentKanji": [
+        "言"
+      ],
+      "themes": []
+    },
+    {
+      "word": "方言",
+      "reading": "ほうげん",
+      "meaning": "dialect",
+      "parentKanji": [
+        "言"
+      ],
+      "themes": []
+    },
+    {
+      "word": "話します / 話す",
+      "reading": "はなします / はなす",
+      "meaning": "to speak",
+      "parentKanji": [
+        "話"
+      ],
+      "themes": []
+    },
+    {
+      "word": "電話",
+      "reading": "でんわ",
+      "meaning": "telephone",
+      "parentKanji": [
+        "話"
+      ],
+      "themes": []
+    },
+    {
+      "word": "手話",
+      "reading": "しゅわ",
+      "meaning": "sign language",
+      "parentKanji": [
+        "話"
+      ],
+      "themes": []
+    },
+    {
+      "word": "会話",
+      "reading": "かいわ",
+      "meaning": "conversation",
+      "parentKanji": [
+        "話"
+      ],
+      "themes": []
+    },
+    {
+      "word": "話",
+      "reading": "はなし",
+      "meaning": "talk, story",
+      "parentKanji": [
+        "話"
+      ],
+      "themes": []
+    },
+    {
+      "word": "読みます / 読む",
+      "reading": "よみます / よむ",
+      "meaning": "to read",
+      "parentKanji": [
+        "読"
+      ],
+      "themes": []
+    },
+    {
+      "word": "読書",
+      "reading": "どくしょ",
+      "meaning": "reading (books)",
+      "parentKanji": [
+        "読"
+      ],
+      "themes": []
+    },
+    {
+      "word": "句読点",
+      "reading": "くとうてん",
+      "meaning": "punctuation",
+      "parentKanji": [
+        "読"
+      ],
+      "themes": []
+    },
+    {
+      "word": "日本語",
+      "reading": "にほんご",
+      "meaning": "Japanese language",
+      "parentKanji": [
+        "語"
+      ],
+      "themes": []
+    },
+    {
+      "word": "英語",
+      "reading": "えいご",
+      "meaning": "English language",
+      "parentKanji": [
+        "語"
+      ],
+      "themes": []
+    },
+    {
+      "word": "中国語",
+      "reading": "ちゅうごくご",
+      "meaning": "Chinese language",
+      "parentKanji": [
+        "語"
+      ],
+      "themes": []
+    },
+    {
+      "word": "外国語",
+      "reading": "がいこくご",
+      "meaning": "foreign language",
+      "parentKanji": [
+        "語"
+      ],
+      "themes": []
+    },
+    {
+      "word": "本",
+      "reading": "ほん",
+      "meaning": "book",
+      "parentKanji": [
+        "本"
+      ],
+      "themes": []
+    },
+    {
+      "word": "山本さん",
+      "reading": "やまもとさん",
+      "meaning": "Mr./Ms. Yamamoto",
+      "parentKanji": [
+        "本"
+      ],
+      "themes": []
+    },
+    {
+      "word": "橋本さん",
+      "reading": "はしもとさん",
+      "meaning": "Mr./Ms. Hashimoto",
+      "parentKanji": [
+        "本"
+      ],
+      "themes": []
+    },
+    {
+      "word": "岡本さん",
+      "reading": "おかもとさん",
+      "meaning": "Mr./Ms. Okamoto",
+      "parentKanji": [
+        "本"
+      ],
+      "themes": []
+    },
+    {
+      "word": "お見舞い",
+      "reading": "おみまい",
+      "meaning": "visit to the sick",
+      "parentKanji": [
+        "見"
+      ],
+      "themes": []
+    },
+    {
+      "word": "見学します",
+      "reading": "けんがくします",
+      "meaning": "to tour / observe",
+      "parentKanji": [
+        "見"
+      ],
+      "themes": []
+    },
+    {
+      "word": "新聞",
+      "reading": "しんぶん",
+      "meaning": "newspaper",
+      "parentKanji": [
+        "聞"
+      ],
+      "themes": []
+    },
+    {
+      "word": "音楽",
+      "reading": "おんがく",
+      "meaning": "music",
+      "parentKanji": [
+        "聞"
+      ],
+      "themes": []
+    },
+    {
+      "word": "食べます / 食べる",
+      "reading": "たべます / たべる",
+      "meaning": "to eat",
+      "parentKanji": [
+        "食"
+      ],
+      "themes": []
+    },
+    {
+      "word": "昼食",
+      "reading": "ちゅうしょく",
+      "meaning": "lunch",
+      "parentKanji": [
+        "食"
+      ],
+      "themes": []
+    },
+    {
+      "word": "食べもの",
+      "reading": "たべもの",
+      "meaning": "food",
+      "parentKanji": [
+        "食"
+      ],
+      "themes": []
+    },
+    {
+      "word": "食堂",
+      "reading": "しょくどう",
+      "meaning": "dining hall, cafeteria",
+      "parentKanji": [
+        "食"
+      ],
+      "themes": [
+        "Places"
+      ]
+    },
+    {
+      "word": "食器",
+      "reading": "しょっき",
+      "meaning": "tableware",
+      "parentKanji": [
+        "食"
+      ],
+      "themes": []
+    },
+    {
+      "word": "飲みます / 飲む",
+      "reading": "のみます / のむ",
+      "meaning": "to drink",
+      "parentKanji": [
+        "飲"
+      ],
+      "themes": []
+    },
+    {
+      "word": "飲みもの",
+      "reading": "のみもの",
+      "meaning": "drink",
+      "parentKanji": [
+        "飲"
+      ],
+      "themes": []
+    },
+    {
+      "word": "飲み屋",
+      "reading": "のみや",
+      "meaning": "bar, pub",
+      "parentKanji": [
+        "飲"
+      ],
+      "themes": []
+    },
+    {
+      "word": "休みます",
+      "reading": "やすみます",
+      "meaning": "to rest",
+      "parentKanji": [
+        "休"
+      ],
+      "themes": []
+    },
+    {
+      "word": "休み時間",
+      "reading": "やすみじかん",
+      "meaning": "break time",
+      "parentKanji": [
+        "休"
+      ],
+      "themes": []
+    },
+    {
+      "word": "休けいします",
+      "reading": "きゅうけいします",
+      "meaning": "to take a break",
+      "parentKanji": [
+        "休"
+      ],
+      "themes": []
+    },
+    {
+      "word": "春休み",
+      "reading": "はるやすみ",
+      "meaning": "spring break",
+      "parentKanji": [
+        "休"
+      ],
+      "themes": []
+    },
+    {
+      "word": "夏休み",
+      "reading": "なつやすみ",
+      "meaning": "summer vacation",
+      "parentKanji": [
+        "休"
+      ],
+      "themes": []
+    },
+    {
+      "word": "冬休み",
+      "reading": "ふゆやすみ",
+      "meaning": "winter vacation",
+      "parentKanji": [
+        "休"
+      ],
+      "themes": []
+    },
+    {
+      "word": "内科",
+      "reading": "ないか",
+      "meaning": "internal medicine",
+      "parentKanji": [
+        "内"
+      ],
+      "themes": []
+    },
+    {
+      "word": "案内します",
+      "reading": "あんないします",
+      "meaning": "to guide, show around",
+      "parentKanji": [
+        "内"
+      ],
+      "themes": []
+    },
+    {
+      "word": "車内",
+      "reading": "しゃない",
+      "meaning": "inside a train/car",
+      "parentKanji": [
+        "内"
+      ],
+      "themes": []
+    },
+    {
+      "word": "国内",
+      "reading": "こくない",
+      "meaning": "domestic (within country)",
+      "parentKanji": [
+        "内"
+      ],
+      "themes": []
+    },
+    {
+      "word": "外",
+      "reading": "そと",
+      "meaning": "outside",
+      "parentKanji": [
+        "外"
+      ],
+      "themes": []
+    },
+    {
+      "word": "外国",
+      "reading": "がいこく",
+      "meaning": "foreign country",
+      "parentKanji": [
+        "外",
+        "国"
+      ],
+      "themes": []
+    },
+    {
+      "word": "外国人",
+      "reading": "がいこくじん",
+      "meaning": "foreigner",
+      "parentKanji": [
+        "外"
+      ],
+      "themes": []
+    },
+    {
+      "word": "外科",
+      "reading": "げか",
+      "meaning": "surgery (dept.)",
+      "parentKanji": [
+        "外"
+      ],
+      "themes": []
+    },
+    {
+      "word": "車外",
+      "reading": "しゃがい",
+      "meaning": "outside the train/car",
+      "parentKanji": [
+        "外"
+      ],
+      "themes": []
+    },
+    {
+      "word": "海外",
+      "reading": "かいがい",
+      "meaning": "overseas",
+      "parentKanji": [
+        "外"
+      ],
+      "themes": []
+    },
+    {
+      "word": "外出します",
+      "reading": "がいしゅつします",
+      "meaning": "to go out",
+      "parentKanji": [
+        "外"
+      ],
+      "themes": []
+    },
+    {
+      "word": "国",
+      "reading": "くに",
+      "meaning": "country",
+      "parentKanji": [
+        "国"
+      ],
+      "themes": []
+    },
+    {
+      "word": "中国",
+      "reading": "ちゅうごく",
+      "meaning": "China",
+      "parentKanji": [
+        "国"
+      ],
+      "themes": []
+    },
+    {
+      "word": "米国",
+      "reading": "べいこく",
+      "meaning": "USA",
+      "parentKanji": [
+        "国"
+      ],
+      "themes": []
+    },
+    {
+      "word": "英国",
+      "reading": "えいこく",
+      "meaning": "UK",
+      "parentKanji": [
+        "国"
+      ],
+      "themes": []
+    },
+    {
+      "word": "入国",
+      "reading": "にゅうこく",
+      "meaning": "entering a country",
+      "parentKanji": [
+        "入"
+      ],
+      "themes": []
+    },
+    {
+      "word": "入学",
+      "reading": "にゅうがく",
+      "meaning": "entering school",
+      "parentKanji": [
+        "入"
+      ],
+      "themes": []
+    },
+    {
+      "word": "入院",
+      "reading": "にゅういん",
+      "meaning": "hospitalization",
+      "parentKanji": [
+        "入"
+      ],
+      "themes": []
+    },
+    {
+      "word": "お預け入れ",
+      "reading": "おあずけいれ",
+      "meaning": "deposit (bank)",
+      "parentKanji": [
+        "入"
+      ],
+      "themes": []
+    },
+    {
+      "word": "出国",
+      "reading": "しゅっこく",
+      "meaning": "leaving a country",
+      "parentKanji": [
+        "出"
+      ],
+      "themes": []
+    },
+    {
+      "word": "外出",
+      "reading": "がいしゅつ",
+      "meaning": "going out",
+      "parentKanji": [
+        "出"
+      ],
+      "themes": []
+    },
+    {
+      "word": "お引き出し",
+      "reading": "おひきだし",
+      "meaning": "withdrawal (bank)",
+      "parentKanji": [
+        "出"
+      ],
+      "themes": []
+    },
+    {
+      "word": "前",
+      "reading": "まえ",
+      "meaning": "front / before",
+      "parentKanji": [
+        "前"
+      ],
+      "themes": []
+    },
+    {
+      "word": "午前",
+      "reading": "ごぜん",
+      "meaning": "AM, morning",
+      "parentKanji": [
+        "前",
+        "午"
+      ],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "午前中",
+      "reading": "ごぜんちゅう",
+      "meaning": "during the morning",
+      "parentKanji": [
+        "前",
+        "午"
+      ],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "食前",
+      "reading": "しょくぜん",
+      "meaning": "before a meal",
+      "parentKanji": [
+        "前"
+      ],
+      "themes": []
+    },
+    {
+      "word": "後ろ",
+      "reading": "うしろ",
+      "meaning": "behind",
+      "parentKanji": [
+        "後"
+      ],
+      "themes": []
+    },
+    {
+      "word": "後で",
+      "reading": "あとで",
+      "meaning": "later",
+      "parentKanji": [
+        "後"
+      ],
+      "themes": []
+    },
+    {
+      "word": "食後",
+      "reading": "しょくご",
+      "meaning": "after a meal",
+      "parentKanji": [
+        "後"
+      ],
+      "themes": []
+    },
+    {
+      "word": "前後",
+      "reading": "ぜんご",
+      "meaning": "before & after / around",
+      "parentKanji": [
+        "後"
+      ],
+      "themes": []
+    },
+    {
+      "word": "右",
+      "reading": "みぎ",
+      "meaning": "right",
+      "parentKanji": [
+        "右"
+      ],
+      "themes": []
+    },
+    {
+      "word": "右手",
+      "reading": "みぎて",
+      "meaning": "right hand",
+      "parentKanji": [
+        "右"
+      ],
+      "themes": []
+    },
+    {
+      "word": "右足",
+      "reading": "みぎあし",
+      "meaning": "right foot",
+      "parentKanji": [
+        "右"
+      ],
+      "themes": []
+    },
+    {
+      "word": "左",
+      "reading": "ひだり",
+      "meaning": "left",
+      "parentKanji": [
+        "左"
+      ],
+      "themes": []
+    },
+    {
+      "word": "左手",
+      "reading": "ひだりて",
+      "meaning": "left hand",
+      "parentKanji": [
+        "左"
+      ],
+      "themes": []
+    },
+    {
+      "word": "名前",
+      "reading": "なまえ",
+      "meaning": "name",
+      "parentKanji": [
+        "名"
+      ],
+      "themes": []
+    },
+    {
+      "word": "名字",
+      "reading": "みょうじ",
+      "meaning": "surname",
+      "parentKanji": [
+        "名"
+      ],
+      "themes": []
+    },
+    {
+      "word": "名刺",
+      "reading": "めいし",
+      "meaning": "business card",
+      "parentKanji": [
+        "名"
+      ],
+      "themes": []
+    },
+    {
+      "word": "名詞",
+      "reading": "めいし",
+      "meaning": "noun",
+      "parentKanji": [
+        "名"
+      ],
+      "themes": []
+    },
+    {
+      "word": "有名（な）",
+      "reading": "ゆうめい",
+      "meaning": "famous",
+      "parentKanji": [
+        "名"
+      ],
+      "themes": []
+    },
+    {
+      "word": "毎年",
+      "reading": "まいとし",
+      "meaning": "every year",
+      "parentKanji": [
+        "毎"
+      ],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "毎週",
+      "reading": "まいしゅう",
+      "meaning": "every week",
+      "parentKanji": [
+        "毎"
+      ],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "先生",
+      "reading": "せんせい",
+      "meaning": "teacher",
+      "parentKanji": [
+        "先"
+      ],
+      "themes": []
+    },
+    {
+      "word": "先週",
+      "reading": "せんしゅう",
+      "meaning": "last week",
+      "parentKanji": [
+        "先",
+        "週"
+      ],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "お先に",
+      "reading": "おさきに",
+      "meaning": "ahead (of you)",
+      "parentKanji": [
+        "先"
+      ],
+      "themes": []
+    },
+    {
+      "word": "今週",
+      "reading": "こんしゅう",
+      "meaning": "this week",
+      "parentKanji": [
+        "週",
+        "今"
+      ],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "週替わり",
+      "reading": "しゅうがわり",
+      "meaning": "weekly special",
+      "parentKanji": [
+        "週"
+      ],
+      "themes": []
+    },
+    {
+      "word": "時間",
+      "reading": "じかん",
+      "meaning": "time, hour(s)",
+      "parentKanji": [
+        "時",
+        "間"
+      ],
+      "themes": []
+    },
+    {
+      "word": "時計",
+      "reading": "とけい",
+      "meaning": "clock, watch",
+      "parentKanji": [
+        "時"
+      ],
+      "themes": []
+    },
+    {
+      "word": "めざまし時計",
+      "reading": "めざましどけい",
+      "meaning": "alarm clock",
+      "parentKanji": [
+        "時"
+      ],
+      "themes": []
+    },
+    {
+      "word": "腕時計",
+      "reading": "うでどけい",
+      "meaning": "wristwatch",
+      "parentKanji": [
+        "時"
+      ],
+      "themes": []
+    },
+    {
+      "word": "1週間",
+      "reading": "いっしゅうかん",
+      "meaning": "one week (duration)",
+      "parentKanji": [
+        "間"
+      ],
+      "themes": []
+    },
+    {
+      "word": "間",
+      "reading": "あいだ",
+      "meaning": "between",
+      "parentKanji": [
+        "間"
+      ],
+      "themes": []
+    },
+    {
+      "word": "この間",
+      "reading": "このあいだ",
+      "meaning": "the other day",
+      "parentKanji": [
+        "間"
+      ],
+      "themes": []
+    },
+    {
+      "word": "今",
+      "reading": "いま",
+      "meaning": "now",
+      "parentKanji": [
+        "今"
+      ],
+      "themes": []
+    },
+    {
+      "word": "今朝",
+      "reading": "けさ",
+      "meaning": "this morning",
+      "parentKanji": [
+        "今"
+      ],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "今夜",
+      "reading": "こんや",
+      "meaning": "tonight",
+      "parentKanji": [
+        "今"
+      ],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "1分",
+      "reading": "いっぷん",
+      "meaning": "1 minute",
+      "parentKanji": [
+        "分"
+      ],
+      "themes": []
+    },
+    {
+      "word": "5分",
+      "reading": "ごふん",
+      "meaning": "5 minutes",
+      "parentKanji": [
+        "分"
+      ],
+      "themes": []
+    },
+    {
+      "word": "3等分",
+      "reading": "さんとうぶん",
+      "meaning": "divide into thirds",
+      "parentKanji": [
+        "分"
+      ],
+      "themes": []
+    },
+    {
+      "word": "半分",
+      "reading": "はんぶん",
+      "meaning": "half",
+      "parentKanji": [
+        "分",
+        "半"
+      ],
+      "themes": []
+    },
+    {
+      "word": "分けます",
+      "reading": "わけます",
+      "meaning": "to divide",
+      "parentKanji": [
+        "分"
+      ],
+      "themes": []
+    },
+    {
+      "word": "16時半",
+      "reading": "じゅうろくじはん",
+      "meaning": "4:30 PM",
+      "parentKanji": [
+        "半"
+      ],
+      "themes": []
+    },
+    {
+      "word": "半額",
+      "reading": "はんがく",
+      "meaning": "half price",
+      "parentKanji": [
+        "半"
+      ],
+      "themes": []
+    },
+    {
+      "word": "半日",
+      "reading": "はんにち",
+      "meaning": "half a day",
+      "parentKanji": [
+        "半"
+      ],
+      "themes": []
+    },
+    {
+      "word": "半年",
+      "reading": "はんとし",
+      "meaning": "half a year",
+      "parentKanji": [
+        "半"
+      ],
+      "themes": []
+    },
+    {
+      "word": "午後",
+      "reading": "ごご",
+      "meaning": "PM",
+      "parentKanji": [
+        "午"
+      ],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "父",
+      "reading": "ちち",
+      "meaning": "my father",
+      "parentKanji": [
+        "父"
+      ],
+      "themes": [
+        "Family"
+      ]
+    },
+    {
+      "word": "お父さん",
+      "reading": "おとうさん",
+      "meaning": "father (polite)",
+      "parentKanji": [
+        "父"
+      ],
+      "themes": [
+        "Family"
+      ]
+    },
+    {
+      "word": "祖父",
+      "reading": "そふ",
+      "meaning": "grandfather",
+      "parentKanji": [
+        "父"
+      ],
+      "themes": [
+        "Family"
+      ]
+    },
+    {
+      "word": "母",
+      "reading": "はは",
+      "meaning": "my mother",
+      "parentKanji": [
+        "母"
+      ],
+      "themes": [
+        "Family"
+      ]
+    },
+    {
+      "word": "お母さん",
+      "reading": "おかあさん",
+      "meaning": "mother (polite)",
+      "parentKanji": [
+        "母"
+      ],
+      "themes": [
+        "Family"
+      ]
+    },
+    {
+      "word": "祖母",
+      "reading": "そぼ",
+      "meaning": "grandmother",
+      "parentKanji": [
+        "母"
+      ],
+      "themes": [
+        "Family"
+      ]
+    },
+    {
+      "word": "子ども",
+      "reading": "こども",
+      "meaning": "child",
+      "parentKanji": [
+        "子"
+      ],
+      "themes": [
+        "Family"
+      ]
+    },
+    {
+      "word": "男子",
+      "reading": "だんし",
+      "meaning": "boy, male",
+      "parentKanji": [
+        "子"
+      ],
+      "themes": []
+    },
+    {
+      "word": "女子",
+      "reading": "じょし",
+      "meaning": "girl, female",
+      "parentKanji": [
+        "子"
+      ],
+      "themes": []
+    },
+    {
+      "word": "男の子",
+      "reading": "おとこのこ",
+      "meaning": "boy",
+      "parentKanji": [
+        "子",
+        "男"
+      ],
+      "themes": []
+    },
+    {
+      "word": "女の子",
+      "reading": "おんなのこ",
+      "meaning": "girl",
+      "parentKanji": [
+        "子",
+        "女"
+      ],
+      "themes": []
+    },
+    {
+      "word": "双子",
+      "reading": "ふたご",
+      "meaning": "twins",
+      "parentKanji": [
+        "子"
+      ],
+      "themes": [
+        "Family"
+      ]
+    },
+    {
+      "word": "男",
+      "reading": "おとこ",
+      "meaning": "man",
+      "parentKanji": [
+        "男"
+      ],
+      "themes": []
+    },
+    {
+      "word": "男の人",
+      "reading": "おとこのひと",
+      "meaning": "man",
+      "parentKanji": [
+        "男"
+      ],
+      "themes": []
+    },
+    {
+      "word": "男性",
+      "reading": "だんせい",
+      "meaning": "male",
+      "parentKanji": [
+        "男"
+      ],
+      "themes": []
+    },
+    {
+      "word": "男子学生",
+      "reading": "だんしがくせい",
+      "meaning": "male student",
+      "parentKanji": [
+        "男"
+      ],
+      "themes": []
+    },
+    {
+      "word": "男子トイレ",
+      "reading": "だんしトイレ",
+      "meaning": "men's restroom",
+      "parentKanji": [
+        "男"
+      ],
+      "themes": []
+    },
+    {
+      "word": "男子マラソン",
+      "reading": "だんしマラソン",
+      "meaning": "men's marathon",
+      "parentKanji": [
+        "男"
+      ],
+      "themes": []
+    },
+    {
+      "word": "女",
+      "reading": "おんな",
+      "meaning": "woman",
+      "parentKanji": [
+        "女"
+      ],
+      "themes": []
+    },
+    {
+      "word": "女性",
+      "reading": "じょせい",
+      "meaning": "female",
+      "parentKanji": [
+        "女"
+      ],
+      "themes": []
+    },
+    {
+      "word": "女子学生",
+      "reading": "じょしがくせい",
+      "meaning": "female student",
+      "parentKanji": [
+        "女"
+      ],
+      "themes": []
+    },
+    {
+      "word": "女子トイレ",
+      "reading": "じょしトイレ",
+      "meaning": "women's restroom",
+      "parentKanji": [
+        "女"
+      ],
+      "themes": []
+    },
+    {
+      "word": "女子サッカー",
+      "reading": "じょしサッカー",
+      "meaning": "women's soccer",
+      "parentKanji": [
+        "女"
+      ],
+      "themes": []
+    },
+    {
+      "word": "東",
+      "reading": "ひがし",
+      "meaning": "east",
+      "parentKanji": [
+        "東"
+      ],
+      "themes": []
+    },
+    {
+      "word": "東京",
+      "reading": "とうきょう",
+      "meaning": "Tokyo",
+      "parentKanji": [
+        "東"
+      ],
+      "themes": []
+    },
+    {
+      "word": "関東",
+      "reading": "かんとう",
+      "meaning": "Kanto region",
+      "parentKanji": [
+        "東"
+      ],
+      "themes": []
+    },
+    {
+      "word": "東北",
+      "reading": "とうほく",
+      "meaning": "Tohoku region",
+      "parentKanji": [
+        "東"
+      ],
+      "themes": []
+    },
+    {
+      "word": "東北新幹線",
+      "reading": "とうほくしんかんせん",
+      "meaning": "Tohoku Shinkansen",
+      "parentKanji": [
+        "東"
+      ],
+      "themes": []
+    },
+    {
+      "word": "東海道線",
+      "reading": "とうかいどうせん",
+      "meaning": "Tokaido Line",
+      "parentKanji": [
+        "東"
+      ],
+      "themes": []
+    },
+    {
+      "word": "東口",
+      "reading": "ひがしぐち",
+      "meaning": "east exit",
+      "parentKanji": [
+        "東"
+      ],
+      "themes": []
+    },
+    {
+      "word": "西",
+      "reading": "にし",
+      "meaning": "west",
+      "parentKanji": [
+        "西"
+      ],
+      "themes": []
+    },
+    {
+      "word": "関西",
+      "reading": "かんさい",
+      "meaning": "Kansai region",
+      "parentKanji": [
+        "西"
+      ],
+      "themes": []
+    },
+    {
+      "word": "東西",
+      "reading": "とうざい",
+      "meaning": "east and west",
+      "parentKanji": [
+        "西"
+      ],
+      "themes": []
+    },
+    {
+      "word": "西口",
+      "reading": "にしぐち",
+      "meaning": "west exit",
+      "parentKanji": [
+        "西"
+      ],
+      "themes": []
+    },
+    {
+      "word": "南",
+      "reading": "みなみ",
+      "meaning": "south",
+      "parentKanji": [
+        "南"
+      ],
+      "themes": []
+    },
+    {
+      "word": "南口",
+      "reading": "みなみぐち",
+      "meaning": "south exit",
+      "parentKanji": [
+        "南"
+      ],
+      "themes": []
+    },
+    {
+      "word": "東南アジア",
+      "reading": "とうなんアジア",
+      "meaning": "Southeast Asia",
+      "parentKanji": [
+        "南"
+      ],
+      "themes": []
+    },
+    {
+      "word": "南極",
+      "reading": "なんきょく",
+      "meaning": "Antarctica",
+      "parentKanji": [
+        "南"
+      ],
+      "themes": []
+    },
+    {
+      "word": "北",
+      "reading": "きた",
+      "meaning": "north",
+      "parentKanji": [
+        "北"
+      ],
+      "themes": []
+    },
+    {
+      "word": "北海道",
+      "reading": "ほっかいどう",
+      "meaning": "Hokkaido",
+      "parentKanji": [
+        "北"
+      ],
+      "themes": []
+    },
+    {
+      "word": "東北地方",
+      "reading": "とうほくちほう",
+      "meaning": "Tohoku region",
+      "parentKanji": [
+        "北"
+      ],
+      "themes": []
+    },
+    {
+      "word": "北口",
+      "reading": "きたぐち",
+      "meaning": "north exit",
+      "parentKanji": [
+        "北"
+      ],
+      "themes": []
+    },
+    {
+      "word": "書きます / 書く",
+      "reading": "かきます / かく",
+      "meaning": "to write",
+      "parentKanji": [
+        "書"
+      ],
+      "themes": []
+    },
+    {
+      "word": "図書館",
+      "reading": "としょかん",
+      "meaning": "library",
+      "parentKanji": [
+        "書"
+      ],
+      "themes": [
+        "Places"
+      ]
+    },
+    {
+      "word": "書道",
+      "reading": "しょどう",
+      "meaning": "calligraphy",
+      "parentKanji": [
+        "書"
+      ],
+      "themes": []
+    },
+    {
+      "word": "書類",
+      "reading": "しょるい",
+      "meaning": "document",
+      "parentKanji": [
+        "書"
+      ],
+      "themes": []
+    },
+    {
+      "word": "辞書",
+      "reading": "じしょ",
+      "meaning": "dictionary",
+      "parentKanji": [
+        "書"
+      ],
+      "themes": []
+    },
+    {
+      "word": "使います / 使う",
+      "reading": "つかいます / つかう",
+      "meaning": "to use",
+      "parentKanji": [
+        "使"
+      ],
+      "themes": []
+    },
+    {
+      "word": "大使館",
+      "reading": "たいしかん",
+      "meaning": "embassy",
+      "parentKanji": [
+        "使"
+      ],
+      "themes": [
+        "Places"
+      ]
+    },
+    {
+      "word": "使用中",
+      "reading": "しようちゅう",
+      "meaning": "in use",
+      "parentKanji": [
+        "使"
+      ],
+      "themes": []
+    },
+    {
+      "word": "使用禁止",
+      "reading": "しようきんし",
+      "meaning": "do not use",
+      "parentKanji": [
+        "使"
+      ],
+      "themes": []
+    },
+    {
+      "word": "歩きます",
+      "reading": "あるきます",
+      "meaning": "to walk",
+      "parentKanji": [
+        "歩"
+      ],
+      "themes": []
+    },
+    {
+      "word": "散歩",
+      "reading": "さんぽ",
+      "meaning": "walk / stroll",
+      "parentKanji": [
+        "歩"
+      ],
+      "themes": []
+    },
+    {
+      "word": "一歩",
+      "reading": "いっぽ",
+      "meaning": "one step",
+      "parentKanji": [
+        "歩"
+      ],
+      "themes": []
+    },
+    {
+      "word": "二歩",
+      "reading": "にほ",
+      "meaning": "two steps",
+      "parentKanji": [
+        "歩"
+      ],
+      "themes": []
+    },
+    {
+      "word": "三歩",
+      "reading": "さんぽ",
+      "meaning": "three steps",
+      "parentKanji": [
+        "歩"
+      ],
+      "themes": []
+    },
+    {
+      "word": "横断歩道",
+      "reading": "おうだんほどう",
+      "meaning": "pedestrian crossing",
+      "parentKanji": [
+        "歩"
+      ],
+      "themes": []
+    },
+    {
+      "word": "作ります",
+      "reading": "つくります",
+      "meaning": "to make",
+      "parentKanji": [
+        "作"
+      ],
+      "themes": []
+    },
+    {
+      "word": "手作り",
+      "reading": "てづくり",
+      "meaning": "handmade",
+      "parentKanji": [
+        "作"
+      ],
+      "themes": []
+    },
+    {
+      "word": "作曲",
+      "reading": "さっきょく",
+      "meaning": "composition (music)",
+      "parentKanji": [
+        "作"
+      ],
+      "themes": []
+    },
+    {
+      "word": "作文",
+      "reading": "さくぶん",
+      "meaning": "composition (writing)",
+      "parentKanji": [
+        "作",
+        "文"
+      ],
+      "themes": []
+    },
+    {
+      "word": "立ちます",
+      "reading": "たちます",
+      "meaning": "to stand",
+      "parentKanji": [
+        "立"
+      ],
+      "themes": []
+    },
+    {
+      "word": "立てます",
+      "reading": "たてます",
+      "meaning": "to set up, make (a plan)",
+      "parentKanji": [
+        "立"
+      ],
+      "themes": []
+    },
+    {
+      "word": "公立学校",
+      "reading": "こうりつがっこう",
+      "meaning": "public school",
+      "parentKanji": [
+        "立"
+      ],
+      "themes": []
+    },
+    {
+      "word": "区立の学校",
+      "reading": "くりつのがっこう",
+      "meaning": "ward-run school",
+      "parentKanji": [
+        "立"
+      ],
+      "themes": []
+    },
+    {
+      "word": "市立の学校",
+      "reading": "しりつのがっこう",
+      "meaning": "city-run school",
+      "parentKanji": [
+        "立"
+      ],
+      "themes": []
+    },
+    {
+      "word": "国立大学",
+      "reading": "こくりつだいがく",
+      "meaning": "national university",
+      "parentKanji": [
+        "立"
+      ],
+      "themes": []
+    },
+    {
+      "word": "文化",
+      "reading": "ぶんか",
+      "meaning": "culture",
+      "parentKanji": [
+        "文"
+      ],
+      "themes": []
+    },
+    {
+      "word": "文章",
+      "reading": "ぶんしょう",
+      "meaning": "passage, sentences",
+      "parentKanji": [
+        "文"
+      ],
+      "themes": []
+    },
+    {
+      "word": "こ年 / 今年",
+      "reading": "ことし",
+      "meaning": "this year",
+      "parentKanji": [],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "らい年 / 来年",
+      "reading": "らいねん",
+      "meaning": "next year",
+      "parentKanji": [],
+      "themes": [
+        "Time-relative words"
+      ]
+    },
+    {
+      "word": "息子",
+      "reading": "むすこ",
+      "meaning": "son",
+      "parentKanji": [],
+      "themes": [
+        "Family"
+      ]
+    },
+    {
+      "word": "娘",
+      "reading": "むすめ",
+      "meaning": "daughter",
+      "parentKanji": [],
+      "themes": [
+        "Family"
+      ]
+    },
+    {
+      "word": "会社",
+      "reading": "かいしゃ",
+      "meaning": "company",
+      "parentKanji": [],
+      "themes": [
+        "Places"
+      ]
+    },
+    {
+      "word": "一本",
+      "reading": "いっぽん",
+      "meaning": "1 (long object)",
+      "parentKanji": [],
+      "themes": [
+        "Counters & money"
+      ]
+    },
+    {
+      "word": "三本",
+      "reading": "さんぼん",
+      "meaning": "3 (long objects)",
+      "parentKanji": [],
+      "themes": [
+        "Counters & money"
+      ]
+    },
+    {
+      "word": "六本",
+      "reading": "ろっぽん",
+      "meaning": "6 (long objects)",
+      "parentKanji": [],
+      "themes": [
+        "Counters & money"
+      ]
+    },
+    {
+      "word": "八本",
+      "reading": "はっぽん",
+      "meaning": "8 (long objects)",
+      "parentKanji": [],
+      "themes": [
+        "Counters & money"
+      ]
+    },
+    {
+      "word": "一人",
+      "reading": "ひとり",
+      "meaning": "1 person",
+      "parentKanji": [],
+      "themes": [
+        "Counters & money"
+      ]
+    },
+    {
+      "word": "二人",
+      "reading": "ふたり",
+      "meaning": "2 people",
+      "parentKanji": [],
+      "themes": [
+        "Counters & money"
+      ]
+    },
+    {
+      "word": "一万円",
+      "reading": "いちまんえん",
+      "meaning": "10,000 yen",
+      "parentKanji": [],
+      "themes": [
+        "Counters & money"
+      ]
+    }
+  ]
+}
