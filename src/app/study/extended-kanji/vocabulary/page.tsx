@@ -229,7 +229,97 @@ export default function ExtendedKanjiVocabularyPage() {
         </span>
       </div>
 
-      <Card>
+      {/* MOBILE: stacked card per row — full info, no horizontal scroll. */}
+      <div className="md:hidden space-y-3">
+        {filtered.map((v, i) => {
+          const type = classifyRow(v);
+          const style = readingTypeStyle(type);
+          const autoParents = showAutoDiscovered
+            ? autoParentsFor(v.word, v.parentKanji)
+            : [];
+          return (
+            <Card
+              key={`m-${v.word}-${v.reading}-${i}`}
+              className={style ? `border-l-4 ${style.border}` : ''}
+            >
+              <CardContent className="px-4 py-3 space-y-2">
+                {/* Word + usage pill on the same row */}
+                <div className="flex items-start justify-between gap-2">
+                  <div className="text-2xl font-medium leading-tight">
+                    <ColoredWord
+                      word={v.word}
+                      reading={v.reading}
+                      kanjiByChar={kanjiByChar}
+                    />
+                  </div>
+                  {type === 'on' || type === 'kun' ? (
+                    <span className={`shrink-0 inline-block px-2 py-0.5 rounded text-[10px] font-medium ${READING_STYLES[type].chip}`}>
+                      {READING_STYLES[type].label}
+                    </span>
+                  ) : type === 'mixed' ? (
+                    <span className="shrink-0 inline-flex gap-1 text-[10px]">
+                      <span className={`px-1.5 py-0.5 rounded ${READING_STYLES.on.chip}`}>音</span>
+                      <span className={`px-1.5 py-0.5 rounded ${READING_STYLES.kun.chip}`}>訓</span>
+                    </span>
+                  ) : null}
+                </div>
+                {/* Reading */}
+                <div
+                  className={`text-base ${
+                    style ? style.text : 'text-muted-foreground'
+                  }`}
+                >
+                  {v.reading}
+                </div>
+                {/* Meaning */}
+                <div className="text-sm">{v.meaning}</div>
+                {/* Parent kanji + themes */}
+                {(v.parentKanji.length > 0 || autoParents.length > 0 || v.themes.length > 0) && (
+                  <div className="flex flex-wrap items-center gap-1.5 pt-1">
+                    {v.parentKanji.map((p) => {
+                      const id = kanjiById[p];
+                      return id ? (
+                        <Link key={p} href={`/study/extended-kanji/${encodeURIComponent(id)}`}>
+                          <Badge className="text-base cursor-pointer">{p}</Badge>
+                        </Link>
+                      ) : (
+                        <Badge key={p} className="text-base">{p}</Badge>
+                      );
+                    })}
+                    {autoParents.map((p) => {
+                      const id = kanjiById[p];
+                      return id ? (
+                        <Link
+                          key={`auto-${p}`}
+                          href={`/study/extended-kanji/${encodeURIComponent(id)}`}
+                          title={`Auto-discovered: ${p} appears in ${v.word}`}
+                        >
+                          <Badge variant="outline" className="text-base cursor-pointer border-dashed">
+                            {p}
+                          </Badge>
+                        </Link>
+                      ) : null;
+                    })}
+                    {v.themes.map((t) => (
+                      <Badge key={t} variant="secondary" className="text-[10px]">{t}</Badge>
+                    ))}
+                  </div>
+                )}
+              </CardContent>
+            </Card>
+          );
+        })}
+        {filtered.length === 0 && (
+          <Card>
+            <CardContent className="pt-6 text-center text-muted-foreground">
+              No matching vocabulary. Try clearing filters.
+            </CardContent>
+          </Card>
+        )}
+      </div>
+
+      {/* TABLET / DESKTOP: full table layout. */}
+      <Card className="hidden md:block">
         <CardContent className="pt-6">
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
