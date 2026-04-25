@@ -129,82 +129,102 @@ export function InteractiveSentence({
           so revealed readings never collapse into one another. Lines have
           generous row-gap so a wrapped second line's ruby doesn't crash
           into the previous line's glyphs. */}
+        {/* Build flow groups: each group is either a single char or a
+          ruby-span (multi-kanji compound). Ruby groups render as a SINGLE
+          non-wrapping inline-flex column, so a long compound like 三百円
+          can never split across two lines on narrow phones. */}
         <div className="flex flex-wrap items-end gap-x-0.5 gap-y-4 text-2xl select-text leading-none">
-          {chars.map((ch, i) => {
-            const k = kanjiByChar[ch];
-            const r = rubyByChar?.[i];
-            // If this position is mid-ruby (not the first char of its span),
-            // render only the kanji glyph — the ruby reading was already
-            // rendered above the span's first char.
-            const isRubyContinuation = r && i > r.start;
-            const isAnchor = highlightChar && ch === highlightChar;
+          {(() => {
+            const cleanReading = (raw: string): string =>
+              raw.split(/[\s(（]/)[0].replace(/^-|-$/g, '').trim();
 
-            // Non-taught chars with no ruby: keep baseline alignment.
-            if (!r && !(isKanjiChar(ch) && k)) {
-              return (
-                <span
-                  key={i}
-                  className="inline-flex flex-col items-center leading-none"
-                >
-                  <span className="h-5 mb-1.5" aria-hidden />
-                  <span className="font-medium">{ch}</span>
-                </span>
-              );
+            type RubyGroup = { kind: 'ruby'; start: number; end: number; reading: string };
+            type SoloGroup = { kind: 'solo'; index: number };
+            const groups: (RubyGroup | SoloGroup)[] = [];
+            let i = 0;
+            while (i < chars.length) {
+              const r = rubyByChar?.[i];
+              if (r && i === r.start) {
+                groups.push({ kind: 'ruby', start: r.start, end: r.end, reading: r.reading });
+                i = r.end;
+              } else {
+                groups.push({ kind: 'solo', index: i });
+                i++;
+              }
             }
 
-            const key = groupKey(i);
-            const isRevealed = revealed.has(key);
-
-            // ----- Ruby-driven path (v2 inline rubies) -----
-            if (r) {
-              if (isRubyContinuation) {
-                // Just the glyph — the parent span owns the ruby slot
+            return groups.map((g) => {
+              if (g.kind === 'ruby') {
+                const spanChars = chars.slice(g.start, g.end);
+                const groupId = `r:${g.start}-${g.end}`;
+                const isRevealed = revealed.has(groupId);
+                const anchorIdx = highlightChar
+                  ? spanChars.indexOf(highlightChar)
+                  : -1;
+                return (
+                  <span
+                    key={groupId}
+                    className="inline-flex flex-col items-center leading-none whitespace-nowrap"
+                  >
+                    <span
+                      className={`h-5 mb-1.5 text-[11px] font-medium leading-none whitespace-nowrap text-foreground/80 transition-opacity duration-150 ${
+                        isRevealed ? 'opacity-100' : 'opacity-0'
+                      }`}
+                      aria-hidden={!isRevealed}
+                    >
+                      {g.reading}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => toggle(g.start)}
+                      className={`font-semibold cursor-pointer transition-colors hover:bg-accent rounded px-0.5 leading-none whitespace-nowrap ${
+                        anchorIdx >= 0
+                          ? 'underline decoration-2 decoration-teal-500 underline-offset-4'
+                          : ''
+                      }`}
+                      title={`Tap to ${isRevealed ? 'hide' : 'reveal'} reading`}
+                    >
+                      {spanChars.join('')}
+                    </button>
+                  </span>
+                );
+              }
+              // Solo char path
+              const i = g.index;
+              const ch = chars[i];
+              const k = kanjiByChar[ch];
+              const isAnchor = highlightChar && ch === highlightChar;
+              const isTaught = isKanjiChar(ch) && k;
+              if (!isTaught) {
                 return (
                   <span
                     key={i}
                     className="inline-flex flex-col items-center leading-none"
                   >
                     <span className="h-5 mb-1.5" aria-hidden />
-                    <button
-                      type="button"
-                      onClick={() => toggle(i)}
-                      className={`font-semibold cursor-pointer transition-colors hover:bg-accent rounded px-0.5 leading-none ${
-                        isAnchor
-                          ? 'underline decoration-2 decoration-teal-500 underline-offset-4'
-                          : ''
-                      }`}
-                      title={`Tap to ${isRevealed ? 'hide' : 'reveal'} reading`}
-                    >
-                      {ch}
-                    </button>
+                    <span className="font-medium">{ch}</span>
                   </span>
                 );
               }
-              // First char of a ruby span — render the reading above the
-              // entire span. Span width derives naturally from the chars
-              // sitting next to this one in the same flex row; the absolute-
-              // positioned ruby is anchored to the first char and centered
-              // visually across the run.
-              const spanLength = r.end - r.start;
+              const groupId = `c:${i}`;
+              const isRevealed = revealed.has(groupId);
+              const kun = k!.kunReadings[0] ? cleanReading(k!.kunReadings[0]) : '';
+              const on = k!.onReadings[0] ? cleanReading(k!.onReadings[0]) : '';
               return (
                 <span
                   key={i}
-                  className="relative inline-flex flex-col items-center leading-none"
+                  className="inline-flex flex-col items-center leading-none"
                 >
                   <span
-                    className={`absolute -top-5 left-0 h-5 text-[11px] font-medium leading-none whitespace-nowrap text-foreground/80 transition-opacity duration-150 ${
+                    className={`h-5 mb-1.5 text-[11px] font-medium whitespace-nowrap leading-none flex items-center gap-1 transition-opacity duration-150 ${
                       isRevealed ? 'opacity-100' : 'opacity-0'
                     }`}
-                    style={{
-                      // Center the ruby horizontally across the span by
-                      // translating left by half the (n-1) glyphs that follow
-                      transform: `translateX(${(spanLength - 1) * 0.5}em)`,
-                    }}
                     aria-hidden={!isRevealed}
                   >
-                    {r.reading}
+                    {kun && <span className={READING_STYLES.kun.text}>{kun}</span>}
+                    {kun && on && <span className="text-muted-foreground/50">·</span>}
+                    {on && <span className={READING_STYLES.on.text}>{on}</span>}
                   </span>
-                  <span className="h-5 mb-1.5" aria-hidden />
                   <button
                     type="button"
                     onClick={() => toggle(i)}
@@ -213,52 +233,14 @@ export function InteractiveSentence({
                         ? 'underline decoration-2 decoration-teal-500 underline-offset-4'
                         : ''
                     }`}
-                    title={`Tap to ${isRevealed ? 'hide' : 'reveal'} reading`}
+                    title={`Tap to ${isRevealed ? 'hide' : 'reveal'} readings`}
                   >
                     {ch}
                   </button>
                 </span>
               );
-            }
-
-            // ----- Fallback: no ruby for this char, but it's a taught kanji.
-            // Show both primary kun (green) and primary on (blue) so the
-            // reader can pick whichever fits in context. -----
-            const cleanReading = (raw: string): string =>
-              raw.split(/[\s(（]/)[0].replace(/^-|-$/g, '').trim();
-            const kun = k!.kunReadings[0] ? cleanReading(k!.kunReadings[0]) : '';
-            const on = k!.onReadings[0] ? cleanReading(k!.onReadings[0]) : '';
-
-            return (
-              <span
-                key={i}
-                className="inline-flex flex-col items-center leading-none"
-              >
-                <span
-                  className={`h-5 mb-1.5 text-[11px] font-medium whitespace-nowrap leading-none flex items-center gap-1 transition-opacity duration-150 ${
-                    isRevealed ? 'opacity-100' : 'opacity-0'
-                  }`}
-                  aria-hidden={!isRevealed}
-                >
-                  {kun && <span className={READING_STYLES.kun.text}>{kun}</span>}
-                  {kun && on && <span className="text-muted-foreground/50">·</span>}
-                  {on && <span className={READING_STYLES.on.text}>{on}</span>}
-                </span>
-                <button
-                  type="button"
-                  onClick={() => toggle(i)}
-                  className={`font-semibold cursor-pointer transition-colors hover:bg-accent rounded px-0.5 leading-none ${
-                    isAnchor
-                      ? 'underline decoration-2 decoration-teal-500 underline-offset-4'
-                      : ''
-                  }`}
-                  title={`Tap to ${isRevealed ? 'hide' : 'reveal'} readings`}
-                >
-                  {ch}
-                </button>
-              </span>
-            );
-          })}
+            });
+          })()}
         </div>
 
         {/* Reveal-all toggle */}
