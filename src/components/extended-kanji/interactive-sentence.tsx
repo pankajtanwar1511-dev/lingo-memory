@@ -100,10 +100,16 @@ export function InteractiveSentence({
               );
             }
 
-            const reading = k!.kunReadings[0] || k!.onReadings[0] || '';
-            const colorCls = k!.kunReadings[0]
-              ? READING_STYLES.kun.text
-              : READING_STYLES.on.text;
+            // Strip teacher notation suffixes like "おお (きい)" → "おお" so the
+            // ruby reads cleanly. Show BOTH primary kun and primary on rather
+            // than guessing which fits in this sentence — without word-level
+            // context we can't pick correctly (e.g. 七五三 wants on-yomi
+            // しちごさん, while 七人 wants on-yomi しち and 一人 wants kun-yomi
+            // ひと). Showing both lets the reader pick.
+            const cleanReading = (r: string): string =>
+              r.split(/[\s(（]/)[0].replace(/^-|-$/g, '').trim();
+            const kun = k!.kunReadings[0] ? cleanReading(k!.kunReadings[0]) : '';
+            const on = k!.onReadings[0] ? cleanReading(k!.onReadings[0]) : '';
 
             return (
               <span
@@ -111,26 +117,28 @@ export function InteractiveSentence({
                 className="inline-flex flex-col items-center leading-none"
               >
                 {/* Reserved ruby slot — fixed height so neighboring readings
-                  never overlap and the kanji line stays aligned. */}
+                  never overlap and the kanji line stays aligned. Renders both
+                  primary on (blue) and primary kun (green), separated by a
+                  thin dot. */}
                 <span
-                  className={`h-5 mb-1.5 text-[12px] font-medium whitespace-nowrap leading-none transition-opacity duration-150 ${colorCls} ${
+                  className={`h-5 mb-1.5 text-[11px] font-medium whitespace-nowrap leading-none flex items-center gap-1 transition-opacity duration-150 ${
                     isRevealed ? 'opacity-100' : 'opacity-0'
                   }`}
                   aria-hidden={!isRevealed}
                 >
-                  {reading}
+                  {kun && <span className={READING_STYLES.kun.text}>{kun}</span>}
+                  {kun && on && <span className="text-muted-foreground/50">·</span>}
+                  {on && <span className={READING_STYLES.on.text}>{on}</span>}
                 </span>
                 <button
                   type="button"
                   onClick={() => toggle(i)}
                   className={`font-semibold cursor-pointer transition-colors hover:bg-accent rounded px-0.5 leading-none ${
-                    isRevealed ? colorCls : ''
-                  } ${
                     isAnchor
                       ? 'underline decoration-2 decoration-teal-500 underline-offset-4'
                       : ''
                   }`}
-                  title={`Tap to ${isRevealed ? 'hide' : 'reveal'} reading`}
+                  title={`Tap to ${isRevealed ? 'hide' : 'reveal'} readings`}
                 >
                   {ch}
                 </button>
