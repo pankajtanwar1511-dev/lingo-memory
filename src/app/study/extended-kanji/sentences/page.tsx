@@ -4,18 +4,34 @@
  * Extended Kanji — master sentences browser
  * Route: /study/extended-kanji/sentences
  *
- * Shows ALL sentences from KANJI_REFERENCE.md:
- *   • PART 1 main — 106, attached to a specific kanji
- *   • PART 1 extras — 24 from extraSections (review practice, warm-ups, etc.)
- *   • PART 3 — 38 grouped by topic
- * Total: 168
+ * Three modes:
+ *   • Reader  — calm single-column list, hairline dividers, generous whitespace
+ *   • Study   — one-sentence-at-a-time focus drill (full-screen-ish), tap left/right,
+ *               press & hold to reveal English meaning
+ *   • Topics  — accordion grouped by PART 3 topic for browsing
  */
 
-import { useEffect, useMemo, useState } from 'react';
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Quote, Search } from 'lucide-react';
+import {
+  ArrowLeft,
+  BookOpen,
+  ChevronDown,
+  ChevronRight,
+  Eye,
+  EyeOff,
+  Layers,
+  Search,
+  X,
+} from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Select } from '@/components/ui/select';
@@ -26,21 +42,57 @@ import {
 } from '@/types/extended-kanji';
 import { InteractiveSentence } from '@/components/extended-kanji/interactive-sentence';
 
-type View = 'all' | 'part1' | 'extras' | 'topics';
+type ViewMode = 'reader' | 'study' | 'topics';
 
-export default function ExtendedKanjiSentencesPage() {
+interface UnifiedSentence {
+  id: string;
+  japanese: string;
+  english: string;
+  origin: 'part1' | 'part1_extras' | 'part3';
+  parentKanji?: string;
+  sectionTitle?: string;
+  topic?: string;
+}
+
+const VIEW_MODES: { id: ViewMode; label: string; Icon: typeof BookOpen }[] = [
+  { id: 'reader', label: 'Reader', Icon: BookOpen },
+  { id: 'study', label: 'Study', Icon: Eye },
+  { id: 'topics', label: 'Topics', Icon: Layers },
+];
+
+function originLabel(origin: UnifiedSentence['origin']): string {
+  if (origin === 'part1') return 'Main';
+  if (origin === 'part1_extras') return 'Review';
+  return 'Topic';
+}
+
+export default function SentencesPage() {
+  // ---- data ----
   const [part1, setPart1] = useState<ExtendedKanjiSentence[]>([]);
   const [extras, setExtras] = useState<ExtendedKanjiSentence[]>([]);
   const [topics, setTopics] = useState<TopicSentenceGroup[]>([]);
-  const [kanjiIdByChar, setKanjiIdByChar] = useState<Record<string, string>>({});
   const [kanjiByChar, setKanjiByChar] = useState<Record<string, ExtendedKanji>>({});
+  const [kanjiIdByChar, setKanjiIdByChar] = useState<Record<string, string>>({});
   const [kanjiCharSet, setKanjiCharSet] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
-  const [view, setView] = useState<View>('all');
+
+  // ---- ui ----
+  const [view, setView] = useState<ViewMode>('reader');
   const [search, setSearch] = useState('');
   const [topicFilter, setTopicFilter] = useState<string>('all');
   const [kanjiFilter, setKanjiFilter] = useState<string>('all');
   const [showAutoParents, setShowAutoParents] = useState(true);
+
+  // ---- study mode ----
+  const [studyIndex, setStudyIndex] = useState(0);
+  const [englishHeld, setEnglishHeld] = useState(false);
+
+  // hold-vs-tap detection (mirrors the vocab-reveal pattern)
+  const HOLD_THRESHOLD_MS = 280;
+  const holdTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const wasHeldRef = useRef(false);
+  const downXRef = useRef<number | null>(null);
+  const lastNavRef = useRef(0);
 
   useEffect(() => {
     (async () => {
@@ -53,73 +105,194 @@ export default function ExtendedKanjiSentencesPage() {
       setPart1(sData.part1);
       setExtras(sData.part1Extras);
       setTopics(sData.part3);
-      const map: Record<string, string> = {};
+      const idMap: Record<string, string> = {};
       const byChar: Record<string, ExtendedKanji> = {};
       const chars: string[] = [];
       (kData.kanji as ExtendedKanji[]).forEach((k) => {
-        map[k.kanji] = k.id;
+        idMap[k.kanji] = k.id;
         byChar[k.kanji] = k;
         chars.push(k.kanji);
       });
-      setKanjiIdByChar(map);
+      setKanjiIdByChar(idMap);
       setKanjiByChar(byChar);
       setKanjiCharSet(chars);
       setLoading(false);
     })();
   }, []);
 
-  /** Runtime: which of the 86 extended kanji appear in this sentence, beyond
-   * the teacher-tagged parent? */
-  const autoKanjiIn = (jp: string, teacherParent?: string): string[] => {
-    const skip = new Set<string>(teacherParent ? [teacherParent] : []);
-    return kanjiCharSet.filter((c) => jp.includes(c) && !skip.has(c));
-  };
+  // ---- unified list ----
+  const unified = useMemo<UnifiedSentence[]>(() => {
+    const out: UnifiedSentence[] = [];
+    part1.forEach((s, i) =>
+      out.push({
+        id: `p1-${i}`,
+        japanese: s.japanese,
+        english: s.english,
+        origin: 'part1',
+        parentKanji: s.parentKanji,
+      }),
+    );
+    extras.forEach((s, i) =>
+      out.push({
+        id: `ex-${i}`,
+        japanese: s.japanese,
+        english: s.english,
+        origin: 'part1_extras',
+        parentKanji: s.parentKanji,
+        sectionTitle: s.sectionTitle,
+      }),
+    );
+    topics.forEach((g) =>
+      g.sentences.forEach((jp, i) =>
+        out.push({
+          id: `t-${g.topic}-${i}`,
+          japanese: jp,
+          english: '',
+          origin: 'part3',
+          topic: g.topic,
+        }),
+      ),
+    );
+    return out;
+  }, [part1, extras, topics]);
 
-  const totalAll = part1.length + extras.length + topics.reduce((s, g) => s + g.sentences.length, 0);
-  // Expose every taught kanji as a filter option — not just those with a teacher-assigned
-  // parent sentence. This lets the runtime substring match surface all occurrences.
   const allParentKanji = useMemo(() => [...kanjiCharSet].sort(), [kanjiCharSet]);
 
-  const matchesSearch = (jp: string, en: string = ''): boolean => {
-    const q = search.trim().toLowerCase();
-    if (!q) return true;
-    return jp.toLowerCase().includes(q) || en.toLowerCase().includes(q);
-  };
-
-  const matchesKanjiFilter = (jp: string, parent?: string) => {
-    if (kanjiFilter === 'all') return true;
-    if (parent === kanjiFilter) return true;
-    // Auto-discovered: kanji appears inside the sentence text
-    return showAutoParents && jp.includes(kanjiFilter);
-  };
-
-  const filteredPart1 = useMemo(
-    () =>
-      part1.filter(
-        (s) => matchesSearch(s.japanese, s.english) && matchesKanjiFilter(s.japanese, s.parentKanji),
-      ),
-    [part1, search, kanjiFilter, showAutoParents],
+  const matchesSearch = useCallback(
+    (s: UnifiedSentence) => {
+      const q = search.trim().toLowerCase();
+      if (!q) return true;
+      return (
+        s.japanese.toLowerCase().includes(q) ||
+        (s.english || '').toLowerCase().includes(q)
+      );
+    },
+    [search],
   );
 
-  const filteredExtras = useMemo(
-    () =>
-      extras.filter(
-        (s) => matchesSearch(s.japanese, s.english) && matchesKanjiFilter(s.japanese, s.parentKanji),
-      ),
-    [extras, search, kanjiFilter, showAutoParents],
+  const matchesKanji = useCallback(
+    (s: UnifiedSentence) => {
+      if (kanjiFilter === 'all') return true;
+      if (s.parentKanji === kanjiFilter) return true;
+      return showAutoParents && s.japanese.includes(kanjiFilter);
+    },
+    [kanjiFilter, showAutoParents],
   );
 
-  const filteredTopics = useMemo(() => {
-    return topics
-      .filter((t) => topicFilter === 'all' || t.topic === topicFilter)
-      .map((t) => ({
-        ...t,
-        sentences: t.sentences.filter(
-          (s) => matchesSearch(s) && matchesKanjiFilter(s),
-        ),
-      }))
-      .filter((t) => t.sentences.length > 0);
-  }, [topics, search, topicFilter, kanjiFilter, showAutoParents]);
+  const matchesTopic = useCallback(
+    (s: UnifiedSentence) => topicFilter === 'all' || s.topic === topicFilter,
+    [topicFilter],
+  );
+
+  const filtered = useMemo(
+    () => unified.filter((s) => matchesSearch(s) && matchesKanji(s) && matchesTopic(s)),
+    [unified, matchesSearch, matchesKanji, matchesTopic],
+  );
+
+  // Reset study index when the queue changes
+  useEffect(() => {
+    if (studyIndex >= filtered.length) setStudyIndex(0);
+  }, [filtered.length, studyIndex]);
+
+  // ---- study-mode pointer + key handlers ----
+  const studyNext = useCallback(() => {
+    if (filtered.length === 0) return;
+    setStudyIndex((i) => (i + 1) % filtered.length);
+  }, [filtered.length]);
+
+  const studyPrev = useCallback(() => {
+    if (filtered.length === 0) return;
+    setStudyIndex((i) => (i - 1 + filtered.length) % filtered.length);
+  }, [filtered.length]);
+
+  // Refs so the keyboard listener stays mounted once
+  const studyNextRef = useRef(studyNext);
+  const studyPrevRef = useRef(studyPrev);
+  const viewRef = useRef(view);
+  useEffect(() => {
+    studyNextRef.current = studyNext;
+    studyPrevRef.current = studyPrev;
+    viewRef.current = view;
+  });
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLSelectElement ||
+        e.target instanceof HTMLTextAreaElement
+      )
+        return;
+      if (viewRef.current !== 'study') return;
+      if (e.repeat && (e.key === 'ArrowRight' || e.key === 'ArrowLeft' || e.key === ' '))
+        return;
+      const now = Date.now();
+      const debounced = now - lastNavRef.current < 150;
+      switch (e.key) {
+        case 'ArrowRight':
+        case ' ':
+          e.preventDefault();
+          if (debounced) return;
+          lastNavRef.current = now;
+          studyNextRef.current();
+          break;
+        case 'ArrowLeft':
+          e.preventDefault();
+          if (debounced) return;
+          lastNavRef.current = now;
+          studyPrevRef.current();
+          break;
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
+
+  const onStudyPointerDown = (e: React.PointerEvent) => {
+    wasHeldRef.current = false;
+    downXRef.current = e.clientX;
+    if (holdTimerRef.current) clearTimeout(holdTimerRef.current);
+    holdTimerRef.current = setTimeout(() => {
+      wasHeldRef.current = true;
+      setEnglishHeld(true);
+    }, HOLD_THRESHOLD_MS);
+  };
+
+  const cancelHoldTimer = () => {
+    if (holdTimerRef.current) {
+      clearTimeout(holdTimerRef.current);
+      holdTimerRef.current = null;
+    }
+  };
+
+  const onStudyPointerUp = () => {
+    cancelHoldTimer();
+    if (wasHeldRef.current) {
+      setEnglishHeld(false);
+    }
+  };
+
+  const onStudyPointerCancel = () => {
+    cancelHoldTimer();
+    setEnglishHeld(false);
+    wasHeldRef.current = false;
+    downXRef.current = null;
+  };
+
+  const onStudyClick = (e: React.MouseEvent) => {
+    if (wasHeldRef.current) {
+      wasHeldRef.current = false;
+      return;
+    }
+    const now = Date.now();
+    if (now - lastNavRef.current < 150) return;
+    lastNavRef.current = now;
+    const x = downXRef.current ?? e.clientX;
+    const halfway = window.innerWidth / 2;
+    if (x < halfway) studyPrev();
+    else studyNext();
+    downXRef.current = null;
+  };
 
   if (loading) {
     return (
@@ -129,267 +302,418 @@ export default function ExtendedKanjiSentencesPage() {
     );
   }
 
-  const showPart1 = view === 'all' || view === 'part1';
-  const showExtras = view === 'all' || view === 'extras';
-  const showTopics = view === 'all' || view === 'topics';
-  const visibleCount =
-    (showPart1 ? filteredPart1.length : 0) +
-    (showExtras ? filteredExtras.length : 0) +
-    (showTopics ? filteredTopics.reduce((s, t) => s + t.sentences.length, 0) : 0);
-
-  return (
-    <div className="container max-w-4xl mx-auto px-4 py-8 space-y-6">
-      <div className="flex items-center justify-between">
+  // ---------------------------------------------------------------------------
+  // Header / mode switcher / filters — shared across modes
+  // ---------------------------------------------------------------------------
+  const header = (
+    <div className="space-y-4">
+      <div className="flex items-center justify-between gap-3">
         <Link href="/study/extended-kanji">
           <Button variant="ghost" className="gap-2">
             <ArrowLeft className="h-4 w-4" />
             Back
           </Button>
         </Link>
-        <Badge variant="secondary">All sentences</Badge>
+        <Badge variant="secondary" className="text-xs">
+          {filtered.length} of {unified.length} sentences
+        </Badge>
       </div>
 
-      <div>
-        <h1 className="text-3xl font-bold flex items-center gap-2">
-          <Quote className="h-7 w-7" />
-          Sentences
-        </h1>
-        <p className="text-muted-foreground">
-          {visibleCount} of {totalAll} sentences visible · PART 1 main ({part1.length}) · PART 1 review &amp; warm-ups ({extras.length}) · PART 3 topics ({topics.reduce((s, g) => s + g.sentences.length, 0)})
-        </p>
-      </div>
-
-      <div className="flex flex-wrap gap-2">
-        {([['all', 'All'], ['part1', `Main (${part1.length})`], ['extras', `Review/warm-ups (${extras.length})`], ['topics', `By topic (${topics.reduce((s, g) => s + g.sentences.length, 0)})`]] as const).map(
-          ([v, label]) => (
-            <Button
-              key={v}
-              variant={view === v ? 'default' : 'outline'}
-              size="sm"
-              onClick={() => setView(v)}
-            >
-              {label}
-            </Button>
-          ),
-        )}
-      </div>
-
-      <div className="flex flex-col gap-3">
-        <div className="relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-          <Input
-            type="text"
-            placeholder="Search Japanese or English…"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="pl-10"
-          />
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-        {(view === 'all' || view === 'topics') && (
-          <Select
-            value={topicFilter}
-            onChange={(e) => setTopicFilter(e.target.value)}
+      {/* Mode segmented control */}
+      <div className="inline-flex p-1 rounded-lg bg-muted/60 border border-border/40 mx-auto">
+        {VIEW_MODES.map(({ id, label, Icon }) => (
+          <button
+            key={id}
+            type="button"
+            onClick={() => setView(id)}
+            className={`flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-md text-sm font-medium transition ${
+              view === id
+                ? 'bg-background shadow-sm text-foreground'
+                : 'text-muted-foreground hover:text-foreground'
+            }`}
           >
-            <option value="all">All topics</option>
-            {topics.map((t) => (
-              <option key={t.topic} value={t.topic}>
-                {t.topic}
-              </option>
-            ))}
-          </Select>
-        )}
+            <Icon className="h-4 w-4" />
+            {label}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+
+  const filtersRow = (
+    <div className="space-y-3">
+      <div className="relative">
+        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+        <Input
+          type="text"
+          placeholder="Search Japanese or English…"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="pl-10 bg-background/60 border-border/40"
+        />
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
         <Select
           value={kanjiFilter}
           onChange={(e) => setKanjiFilter(e.target.value)}
+          className="bg-background/60 border-border/40"
         >
           <option value="all">Any kanji</option>
           {allParentKanji.map((c) => (
-            <option key={c} value={c}>Contains: {c}</option>
+            <option key={c} value={c}>
+              Contains: {c}
+            </option>
           ))}
         </Select>
+        <Select
+          value={topicFilter}
+          onChange={(e) => setTopicFilter(e.target.value)}
+          className="bg-background/60 border-border/40"
+        >
+          <option value="all">All topics</option>
+          {topics.map((t) => (
+            <option key={t.topic} value={t.topic}>
+              {t.topic}
+            </option>
+          ))}
+        </Select>
+      </div>
+      <label className="flex items-center gap-2 text-xs text-muted-foreground">
+        <input
+          type="checkbox"
+          checked={showAutoParents}
+          onChange={(e) => setShowAutoParents(e.target.checked)}
+          className="w-4 h-4"
+        />
+        Match kanji appearing inside the sentence (not just teacher-tagged parents)
+      </label>
+    </div>
+  );
+
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Sticky header bar with mode switcher + filters; calmer surface */}
+      <header className="sticky top-0 z-30 backdrop-blur-md bg-background/80 border-b border-border/30">
+        <div className="container max-w-3xl mx-auto px-4 py-4 space-y-4 flex flex-col items-center">
+          {header}
         </div>
+      </header>
+
+      {/* Filters live below the sticky header — not sticky themselves so reading
+        gets generous space */}
+      <div className="container max-w-3xl mx-auto px-4 py-5 border-b border-border/20">
+        {filtersRow}
       </div>
 
-      <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
-        <label className="flex items-center gap-2">
-          <input
-            type="checkbox"
-            checked={showAutoParents}
-            onChange={(e) => setShowAutoParents(e.target.checked)}
-            className="w-4 h-4"
+      <main className="pb-20">
+        {view === 'reader' && (
+          <ReaderView
+            sentences={filtered}
+            kanjiByChar={kanjiByChar}
+            kanjiIdByChar={kanjiIdByChar}
           />
-          Show auto-discovered kanji in each sentence (runtime match across {kanjiCharSet.length} taught)
-        </label>
-        <span className="flex items-center gap-1.5">
-          <Badge className="text-xs">大</Badge> Teacher-tagged parent
-        </span>
-        <span className="flex items-center gap-1.5">
-          <Badge variant="outline" className="text-xs border-dashed">大</Badge>
-          Auto-discovered
-        </span>
-      </div>
+        )}
 
-      {/* PART 1 main */}
-      {showPart1 && filteredPart1.length > 0 && (
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-xl">
-              Main example sentences
-              <span className="ml-2 text-sm font-normal text-muted-foreground">
-                · {filteredPart1.length}
-              </span>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-3">
-              {filteredPart1.map((s, i) => (
-                <InteractiveSentence
-                  key={`p1-${i}`}
-                  japanese={s.japanese}
-                  english={s.english}
-                  kanjiByChar={kanjiByChar}
-                  footer={
-                    <SentenceMeta
-                      kanji={s.parentKanji}
-                      autoKanji={showAutoParents ? autoKanjiIn(s.japanese, s.parentKanji) : []}
-                      kanjiIdByChar={kanjiIdByChar}
-                    />
-                  }
-                />
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      )}
+        {view === 'study' && (
+          <StudyView
+            sentences={filtered}
+            index={studyIndex}
+            englishHeld={englishHeld}
+            kanjiByChar={kanjiByChar}
+            onPointerDown={onStudyPointerDown}
+            onPointerUp={onStudyPointerUp}
+            onPointerCancel={onStudyPointerCancel}
+            onClick={onStudyClick}
+            onPrev={studyPrev}
+            onNext={studyNext}
+          />
+        )}
 
-      {/* PART 1 extras */}
-      {showExtras && filteredExtras.length > 0 && (
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-xl">
-              Review practice &amp; warm-ups
-              <span className="ml-2 text-sm font-normal text-muted-foreground">
-                · {filteredExtras.length}
-              </span>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-3">
-              {filteredExtras.map((s, i) => (
-                <InteractiveSentence
-                  key={`ex-${i}`}
-                  japanese={s.japanese}
-                  english={s.english}
-                  kanjiByChar={kanjiByChar}
-                  footer={
-                    <SentenceMeta
-                      kanji={s.parentKanji}
-                      section={s.sectionTitle}
-                      autoKanji={showAutoParents ? autoKanjiIn(s.japanese, s.parentKanji) : []}
-                      kanjiIdByChar={kanjiIdByChar}
-                    />
-                  }
-                />
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      )}
-
-      {/* PART 3 topics */}
-      {showTopics && filteredTopics.map((group) => (
-        <Card key={group.topic}>
-          <CardHeader>
-            <CardTitle className="text-xl">
-              {group.topic}
-              <span className="ml-2 text-sm font-normal text-muted-foreground">
-                · {group.sentences.length}
-              </span>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-3">
-              {group.sentences.map((s, i) => (
-                <InteractiveSentence
-                  key={`t-${group.topic}-${i}`}
-                  japanese={s}
-                  kanjiByChar={kanjiByChar}
-                  footer={
-                    <SentenceMeta
-                      autoKanji={showAutoParents ? autoKanjiIn(s) : []}
-                      kanjiIdByChar={kanjiIdByChar}
-                    />
-                  }
-                />
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      ))}
-
-      {visibleCount === 0 && (
-        <Card>
-          <CardContent className="pt-6 text-center space-y-3">
-            <p className="text-muted-foreground">No sentences match your filters.</p>
-            <Button
-              variant="outline"
-              onClick={() => {
-                setSearch('');
-                setTopicFilter('all');
-                setKanjiFilter('all');
-                setView('all');
-              }}
-            >
-              Clear filters
-            </Button>
-          </CardContent>
-        </Card>
-      )}
+        {view === 'topics' && (
+          <TopicsView
+            topics={topics}
+            unified={unified}
+            kanjiByChar={kanjiByChar}
+            search={search}
+            kanjiFilter={kanjiFilter}
+            showAutoParents={showAutoParents}
+          />
+        )}
+      </main>
     </div>
   );
 }
 
-function SentenceMeta({
-  kanji,
-  section,
-  autoKanji = [],
+// =============================================================================
+// READER VIEW — calm vertical column with hairline dividers
+// =============================================================================
+function ReaderView({
+  sentences,
+  kanjiByChar,
   kanjiIdByChar,
 }: {
-  kanji?: string;
-  section?: string;
-  autoKanji?: string[];
+  sentences: UnifiedSentence[];
+  kanjiByChar: Record<string, ExtendedKanji>;
   kanjiIdByChar: Record<string, string>;
 }) {
-  if (!kanji && !section && autoKanji.length === 0) return null;
+  if (sentences.length === 0) {
+    return (
+      <div className="container max-w-3xl mx-auto px-4 py-16 text-center text-muted-foreground">
+        No sentences match the current filters.
+      </div>
+    );
+  }
   return (
-    <div className="flex flex-wrap gap-1.5 text-xs">
-      {kanji &&
-        (kanjiIdByChar[kanji] ? (
-          <Link href={`/study/extended-kanji/${encodeURIComponent(kanjiIdByChar[kanji])}`}>
-            <Badge className="cursor-pointer">Parent: {kanji}</Badge>
-          </Link>
-        ) : (
-          <Badge>Parent: {kanji}</Badge>
+    <div className="max-w-2xl mx-auto px-5 sm:px-6">
+      <ul className="divide-y divide-border/30">
+        {sentences.map((s) => (
+          <li key={s.id} className="py-9">
+            <InteractiveSentence
+              bare
+              japanese={s.japanese}
+              english={s.english}
+              kanjiByChar={kanjiByChar}
+            />
+            <div className="mt-3 text-[11px] text-muted-foreground/70 flex flex-wrap gap-x-2.5 gap-y-1">
+              <span className="uppercase tracking-wider">{originLabel(s.origin)}</span>
+              {s.parentKanji && (
+                <span>
+                  ·{' '}
+                  {kanjiIdByChar[s.parentKanji] ? (
+                    <Link
+                      href={`/study/extended-kanji/${encodeURIComponent(
+                        kanjiIdByChar[s.parentKanji],
+                      )}`}
+                      className="hover:text-foreground transition"
+                    >
+                      {s.parentKanji}
+                    </Link>
+                  ) : (
+                    <span>{s.parentKanji}</span>
+                  )}
+                </span>
+              )}
+              {s.topic && <span>· {s.topic}</span>}
+              {s.sectionTitle && <span>· {s.sectionTitle}</span>}
+            </div>
+          </li>
         ))}
-      {autoKanji.map((c) => {
-        const id = kanjiIdByChar[c];
-        return id ? (
-          <Link
-            key={`auto-${c}`}
-            href={`/study/extended-kanji/${encodeURIComponent(id)}`}
-            title={`Auto-discovered: ${c} appears in this sentence`}
+      </ul>
+    </div>
+  );
+}
+
+// =============================================================================
+// STUDY VIEW — focus drill, one sentence at a time, hold-to-reveal English
+// =============================================================================
+function StudyView({
+  sentences,
+  index,
+  englishHeld,
+  kanjiByChar,
+  onPointerDown,
+  onPointerUp,
+  onPointerCancel,
+  onClick,
+  onPrev,
+  onNext,
+}: {
+  sentences: UnifiedSentence[];
+  index: number;
+  englishHeld: boolean;
+  kanjiByChar: Record<string, ExtendedKanji>;
+  onPointerDown: (e: React.PointerEvent) => void;
+  onPointerUp: () => void;
+  onPointerCancel: () => void;
+  onClick: (e: React.MouseEvent) => void;
+  onPrev: () => void;
+  onNext: () => void;
+}) {
+  if (sentences.length === 0) {
+    return (
+      <div className="container max-w-3xl mx-auto px-4 py-16 text-center text-muted-foreground">
+        No sentences match the current filters.
+      </div>
+    );
+  }
+  const current = sentences[index];
+  if (!current) return null;
+  const progressPct = ((index + 1) / sentences.length) * 100;
+
+  return (
+    <div className="container max-w-3xl mx-auto px-4 py-6 space-y-5">
+      <div
+        className="relative rounded-xl border border-border/40 bg-card/40 select-none cursor-pointer overflow-hidden"
+        style={{
+          touchAction: 'manipulation',
+          WebkitTouchCallout: 'none',
+          WebkitUserSelect: 'none',
+        }}
+        onPointerDown={onPointerDown}
+        onPointerUp={onPointerUp}
+        onPointerCancel={onPointerCancel}
+        onClick={onClick}
+        onContextMenu={(e) => e.preventDefault()}
+      >
+        {/* Thin progress bar */}
+        <div className="absolute top-0 left-0 right-0 h-0.5 bg-muted">
+          <div
+            className="h-full bg-primary transition-all"
+            style={{ width: `${progressPct}%` }}
+          />
+        </div>
+
+        {/* Counter top-right */}
+        <div className="absolute top-3 right-4 text-xs text-muted-foreground tabular-nums">
+          {index + 1} / {sentences.length}
+        </div>
+
+        <div className="px-6 sm:px-10 pt-16 pb-10 flex flex-col items-center min-h-[55vh] justify-center gap-8">
+          <div key={`s-${index}`} className="w-full">
+            <InteractiveSentence
+              bare
+              japanese={current.japanese}
+              english={undefined /* hidden until held */}
+              kanjiByChar={kanjiByChar}
+            />
+          </div>
+
+          {/* English meaning — fades in only while held */}
+          <div
+            key={`en-${index}`}
+            className={`text-base sm:text-lg font-light italic text-foreground/75 text-center max-w-xl transition-opacity duration-200 ease-out min-h-[1.5em] ${
+              englishHeld && current.english ? 'opacity-100' : 'opacity-0'
+            }`}
+            aria-hidden={!englishHeld}
           >
-            <Badge
-              variant="outline"
-              className="cursor-pointer hover:bg-accent border-dashed"
+            {current.english || ' '}
+          </div>
+        </div>
+      </div>
+
+      {/* Hint — only shows when no English available for the current item */}
+      <div className="text-center text-[11px] text-muted-foreground/60">
+        Tap right · next · Tap left · previous · Press &amp; hold · meaning
+      </div>
+    </div>
+  );
+}
+
+// =============================================================================
+// TOPICS VIEW — accordion grouped by source / topic
+// =============================================================================
+function TopicsView({
+  topics,
+  unified,
+  kanjiByChar,
+  search,
+  kanjiFilter,
+  showAutoParents,
+}: {
+  topics: TopicSentenceGroup[];
+  unified: UnifiedSentence[];
+  kanjiByChar: Record<string, ExtendedKanji>;
+  search: string;
+  kanjiFilter: string;
+  showAutoParents: boolean;
+}) {
+  const [open, setOpen] = useState<Set<string>>(new Set());
+
+  const toggle = (key: string) => {
+    setOpen((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  };
+
+  const matches = useCallback(
+    (jp: string, en: string, parent: string | undefined) => {
+      const q = search.trim().toLowerCase();
+      if (q && !jp.toLowerCase().includes(q) && !en.toLowerCase().includes(q)) return false;
+      if (kanjiFilter !== 'all') {
+        if (parent === kanjiFilter) return true;
+        if (showAutoParents && jp.includes(kanjiFilter)) return true;
+        return false;
+      }
+      return true;
+    },
+    [search, kanjiFilter, showAutoParents],
+  );
+
+  // Three buckets: Main (part1), Review (part1_extras), Topic groups (part3)
+  const part1Items = unified.filter((u) => u.origin === 'part1');
+  const extrasItems = unified.filter((u) => u.origin === 'part1_extras');
+
+  const groups: { key: string; label: string; items: UnifiedSentence[] }[] = [
+    { key: '__main', label: 'Main examples', items: part1Items.filter((s) => matches(s.japanese, s.english, s.parentKanji)) },
+    { key: '__review', label: 'Review & warm-ups', items: extrasItems.filter((s) => matches(s.japanese, s.english, s.parentKanji)) },
+    ...topics.map((t) => ({
+      key: `t-${t.topic}`,
+      label: t.topic,
+      items: t.sentences
+        .map(
+          (jp, i): UnifiedSentence => ({
+            id: `t-${t.topic}-${i}`,
+            japanese: jp,
+            english: '',
+            origin: 'part3',
+            topic: t.topic,
+          }),
+        )
+        .filter((s) => matches(s.japanese, '', undefined)),
+    })),
+  ].filter((g) => g.items.length > 0);
+
+  if (groups.length === 0) {
+    return (
+      <div className="container max-w-3xl mx-auto px-4 py-16 text-center text-muted-foreground">
+        No sentences match the current filters.
+      </div>
+    );
+  }
+
+  return (
+    <div className="container max-w-3xl mx-auto px-4 py-6 space-y-2">
+      {groups.map(({ key, label, items }) => {
+        const isOpen = open.has(key);
+        return (
+          <Card key={key} className="border-border/40 overflow-hidden">
+            <button
+              type="button"
+              onClick={() => toggle(key)}
+              className="w-full flex items-center justify-between gap-3 px-5 py-4 hover:bg-accent/30 transition"
             >
-              {c}
-            </Badge>
-          </Link>
-        ) : null;
+              <div className="flex items-center gap-3">
+                {isOpen ? (
+                  <ChevronDown className="h-4 w-4 text-muted-foreground" />
+                ) : (
+                  <ChevronRight className="h-4 w-4 text-muted-foreground" />
+                )}
+                <span className="font-medium text-base">{label}</span>
+                <span className="text-xs text-muted-foreground">· {items.length}</span>
+              </div>
+            </button>
+            {isOpen && (
+              <CardContent className="px-5 pb-5 pt-0">
+                <ul className="divide-y divide-border/30">
+                  {items.map((s) => (
+                    <li key={s.id} className="py-5">
+                      <InteractiveSentence
+                        bare
+                        japanese={s.japanese}
+                        english={s.english}
+                        kanjiByChar={kanjiByChar}
+                      />
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            )}
+          </Card>
+        );
       })}
-      {section && <Badge variant="secondary">{section}</Badge>}
     </div>
   );
 }

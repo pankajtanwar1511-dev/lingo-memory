@@ -32,6 +32,8 @@ interface Props {
   highlightChar?: string;
   /** Optional small footer slot for source/parent badges. */
   footer?: React.ReactNode;
+  /** Strip card chrome (border, bg, padding) — used by Reader-mode lists. */
+  bare?: boolean;
   className?: string;
 }
 
@@ -41,6 +43,7 @@ export function InteractiveSentence({
   kanjiByChar,
   highlightChar,
   footer,
+  bare = false,
   className = '',
 }: Props) {
   const chars = Array.from(japanese);
@@ -64,7 +67,11 @@ export function InteractiveSentence({
 
   return (
     <div
-      className={`px-5 pt-7 pb-5 rounded-lg bg-white dark:bg-slate-900 border border-border space-y-3 ${className}`}
+      className={
+        bare
+          ? `space-y-3 ${className}`
+          : `px-5 pt-7 pb-5 rounded-lg bg-white dark:bg-slate-900 border border-border space-y-3 ${className}`
+      }
     >
       <div className="flex items-start justify-between gap-3">
         {/* Sentence with click-to-reveal furigana. Each character is its own
