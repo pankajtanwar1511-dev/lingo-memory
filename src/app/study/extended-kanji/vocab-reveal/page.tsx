@@ -288,11 +288,12 @@ export default function VocabRevealPage() {
     localStorage.setItem(HELP_DISMISSED_KEY, '1');
   }, []);
 
-  // Keyboard — only active in fullscreen drill mode (silent: no UI hint)
+  // Keyboard — active in BOTH compact and fullscreen drill modes (silent: no UI hint).
+  // Touch + keyboard coexist — keyboard is just an accelerator for desktop users.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLSelectElement || e.target instanceof HTMLTextAreaElement) return;
-      if (showConfig || !fullscreen) return;
+      if (showConfig) return;
       switch (e.key) {
         case 'ArrowRight':
         case ' ':
@@ -307,7 +308,8 @@ export default function VocabRevealPage() {
           break;
         case 'Escape':
           if (showHelp) dismissHelp();
-          else leaveFullscreen();
+          else if (fullscreen) leaveFullscreen();
+          else router.push('/study/extended-kanji/vocabulary');
           break;
         case 's':
         case 'S':
@@ -317,11 +319,16 @@ export default function VocabRevealPage() {
         case 'R':
           reshuffle();
           break;
+        case 'f':
+        case 'F':
+          if (fullscreen) leaveFullscreen();
+          else enterFullscreen();
+          break;
       }
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [next, prev, leaveFullscreen, reshuffle, showConfig, showHelp, dismissHelp, fullscreen]);
+  }, [next, prev, leaveFullscreen, enterFullscreen, reshuffle, showConfig, showHelp, dismissHelp, fullscreen, router]);
 
   // Pointer (tap vs hold)
   const onPointerDown = (e: React.PointerEvent) => {
@@ -573,8 +580,8 @@ export default function VocabRevealPage() {
 
           <CardContent className="pt-32 sm:pt-40 pb-12 sm:pb-16 flex flex-col items-center gap-6">
             <div
-              className="text-[clamp(3rem,9vw,6rem)] font-light leading-none tracking-tight text-center"
-              style={{ fontFeatureSettings: '"palt", "kern"' }}
+              className="text-[clamp(3rem,9vw,6rem)] font-light leading-none text-center"
+              style={{ fontFeatureSettings: '"palt", "kern"', letterSpacing: '0.06em' }}
             >
               <ColoredWord
                 word={current.word}
@@ -677,8 +684,8 @@ export default function VocabRevealPage() {
         a flex column whose top spacer is larger than the bottom. */}
       <div className="h-full w-full flex flex-col items-center px-6 pt-[42vh] pb-[18vh]">
         <div
-          className="text-[clamp(3.5rem,12vw,9rem)] font-light leading-none tracking-tight text-center"
-          style={{ fontFeatureSettings: '"palt", "kern"' }}
+          className="text-[clamp(3.5rem,12vw,9rem)] font-light leading-none text-center"
+          style={{ fontFeatureSettings: '"palt", "kern"', letterSpacing: '0.06em' }}
         >
           <ColoredWord
             word={current.word}
