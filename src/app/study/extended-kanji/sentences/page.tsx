@@ -38,6 +38,7 @@ import { Select } from '@/components/ui/select';
 import {
   ExtendedKanji,
   ExtendedKanjiSentence,
+  SentenceRuby,
   TopicSentenceGroup,
 } from '@/types/extended-kanji';
 import { InteractiveSentence } from '@/components/extended-kanji/interactive-sentence';
@@ -48,6 +49,7 @@ interface UnifiedSentence {
   id: string;
   japanese: string;
   english: string;
+  rubies?: SentenceRuby[];
   origin: 'part1' | 'part1_extras' | 'part3';
   parentKanji?: string;
   sectionTitle?: string;
@@ -128,6 +130,7 @@ export default function SentencesPage() {
         id: `p1-${i}`,
         japanese: s.japanese,
         english: s.english,
+        rubies: s.rubies,
         origin: 'part1',
         parentKanji: s.parentKanji,
       }),
@@ -137,6 +140,7 @@ export default function SentencesPage() {
         id: `ex-${i}`,
         japanese: s.japanese,
         english: s.english,
+        rubies: s.rubies,
         origin: 'part1_extras',
         parentKanji: s.parentKanji,
         sectionTitle: s.sectionTitle,
@@ -148,6 +152,7 @@ export default function SentencesPage() {
           id: `t-${g.topic}-${i}`,
           japanese: jp,
           english: '',
+          rubies: g.rubies?.[i],
           origin: 'part3',
           topic: g.topic,
         }),
@@ -472,6 +477,7 @@ function ReaderView({
               bare
               japanese={s.japanese}
               english={s.english}
+              rubies={s.rubies}
               kanjiByChar={kanjiByChar}
             />
             <div className="mt-3 text-[11px] text-muted-foreground/70 flex flex-wrap gap-x-2.5 gap-y-1">
@@ -574,6 +580,7 @@ function StudyView({
               bare
               japanese={current.japanese}
               english={undefined /* hidden until held */}
+              rubies={current.rubies}
               kanjiByChar={kanjiByChar}
             />
           </div>
@@ -658,6 +665,7 @@ function TopicsView({
             id: `t-${t.topic}-${i}`,
             japanese: jp,
             english: '',
+            rubies: t.rubies?.[i],
             origin: 'part3',
             topic: t.topic,
           }),
@@ -704,6 +712,7 @@ function TopicsView({
                         bare
                         japanese={s.japanese}
                         english={s.english}
+                        rubies={s.rubies}
                         kanjiByChar={kanjiByChar}
                       />
                     </li>

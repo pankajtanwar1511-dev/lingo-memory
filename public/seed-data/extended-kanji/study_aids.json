@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "source": "KANJI_REFERENCE.md",
-    "generatedAt": "2026-04-24T12:36:42.494597+00:00",
+    "source": "KANJI_REFERENCE_v2.md",
+    "generatedAt": "2026-04-25T16:49:10.842985+00:00",
     "lessonsCount": 37,
     "kanjiCount": 86,
     "vocabularyCount": 378,
     "sentencesPart1": 111,
-    "sentencesPart1Extras": 24,
+    "sentencesPart1Extras": 27,
     "sentencesPart3Groups": 7,
-    "sentencesTotal": 173,
+    "sentencesTotal": 176,
     "answerKeyPages": 9,
     "prerequisiteKanji": 124
   },
@@ -183,69 +183,200 @@
     "Food / meal": [
       {
         "jp": "いただきます。",
-        "en": "(before meal)"
+        "en": "",
+        "rubies": []
       },
       {
         "jp": "ごちそうさまでした。",
-        "en": "(after meal)"
+        "en": "",
+        "rubies": []
       }
     ],
     "Politeness / office": [
       {
         "jp": "お先にどうぞ。",
-        "en": "Please go ahead."
+        "en": "",
+        "rubies": [
+          {
+            "start": 1,
+            "end": 2,
+            "reading": "さき"
+          }
+        ]
       },
       {
         "jp": "お先に失礼します。",
-        "en": "Excuse me for leaving first."
+        "en": "",
+        "rubies": [
+          {
+            "start": 1,
+            "end": 2,
+            "reading": "さき"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "reading": "しつれい"
+          }
+        ]
       },
       {
         "jp": "手つだいましょうか。",
-        "en": "Shall I help you?"
+        "en": "",
+        "rubies": [
+          {
+            "start": 0,
+            "end": 1,
+            "reading": "て"
+          }
+        ]
       },
       {
         "jp": "どうぞ、使ってください。",
-        "en": "Please use it."
+        "en": "",
+        "rubies": [
+          {
+            "start": 4,
+            "end": 5,
+            "reading": "つか"
+          }
+        ]
       },
       {
         "jp": "もう一度言ってください。",
-        "en": "Please say it again."
+        "en": "",
+        "rubies": [
+          {
+            "start": 2,
+            "end": 4,
+            "reading": "いちど"
+          },
+          {
+            "start": 2,
+            "end": 5,
+            "reading": "い"
+          }
+        ]
       },
       {
         "jp": "お名前を教えてください。",
-        "en": "Please tell me your name."
+        "en": "",
+        "rubies": [
+          {
+            "start": 1,
+            "end": 3,
+            "reading": "なまえ"
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "reading": "おし"
+          }
+        ]
       },
       {
         "jp": "はい、わかりました。",
-        "en": "Yes, understood."
+        "en": "",
+        "rubies": []
       }
     ],
     "Office dialog (lesson 29)": [
       {
         "jp": "A: 明日の会議の資料、午前中にお願いします。",
-        "en": "The documents for tomorrow's meeting — please, by morning."
+        "en": "",
+        "rubies": [
+          {
+            "start": 3,
+            "end": 5,
+            "reading": "あした"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "reading": "かいぎ"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "reading": "しりょう"
+          },
+          {
+            "start": 12,
+            "end": 15,
+            "reading": "ごぜんちゅう"
+          },
+          {
+            "start": 17,
+            "end": 18,
+            "reading": "ねが"
+          }
+        ]
       },
       {
         "jp": "B: はい、わかりました。",
-        "en": "Yes, understood."
+        "en": "",
+        "rubies": []
       }
     ],
     "Q & A patterns (lesson 12)": [
       {
         "jp": "何曜日ですか。— 土曜日です。",
-        "en": "What day is it? — Saturday."
+        "en": "",
+        "rubies": [
+          {
+            "start": 0,
+            "end": 3,
+            "reading": "なんようび"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "reading": "どようび"
+          }
+        ]
       },
       {
         "jp": "何時ですか。— 10時です。",
-        "en": "What time is it? — 10:00."
+        "en": "",
+        "rubies": [
+          {
+            "start": 0,
+            "end": 2,
+            "reading": "なんじ"
+          },
+          {
+            "start": 8,
+            "end": 11,
+            "reading": "じ"
+          }
+        ]
       },
       {
         "jp": "お子さんは何さいですか。— むすこは5さいです。",
-        "en": "How old is your child? — My son is 5."
+        "en": "",
+        "rubies": [
+          {
+            "start": 1,
+            "end": 2,
+            "reading": "こ"
+          },
+          {
+            "start": 5,
+            "end": 6,
+            "reading": "なん"
+          }
+        ]
       },
       {
         "jp": "お国はどちらですか？",
-        "en": "What country are you from?"
+        "en": "",
+        "rubies": [
+          {
+            "start": 1,
+            "end": 2,
+            "reading": "くに"
+          }
+        ]
       }
     ]
   }
