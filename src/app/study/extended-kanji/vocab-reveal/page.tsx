@@ -20,8 +20,9 @@
  */
 
 import { useCallback, useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Settings, Shuffle, X } from 'lucide-react';
+import { ArrowLeft, Maximize2, Settings, Shuffle, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Select } from '@/components/ui/select';
@@ -98,9 +99,11 @@ export default function VocabRevealPage() {
   const [order, setOrder] = useState<MergedVocabRow[]>([]);
   const [index, setIndex] = useState(0);
   const [holding, setHolding] = useState(false);
+  const [revealed, setRevealed] = useState(false);
 
   const [showConfig, setShowConfig] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
+  const [fullscreen, setFullscreen] = useState(false);
 
   const holdTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const wasHeldRef = useRef(false);
@@ -160,8 +163,29 @@ export default function VocabRevealPage() {
       if (savedIdx) setIndex(Math.min(parseInt(savedIdx, 10) || 0, resolved.length - 1));
 
       setLoading(false);
-      if (!localStorage.getItem(HELP_DISMISSED_KEY)) setShowHelp(true);
+      // Help overlay only shows when entering full-screen (handled in enterFullscreen)
     })();
+  }, []);
+
+  const enterFullscreen = useCallback(() => {
+    setRevealed(false);
+    setFullscreen(true);
+    if (!localStorage.getItem(HELP_DISMISSED_KEY)) setShowHelp(true);
+    try {
+      document.documentElement.requestFullscreen?.().catch(() => undefined);
+    } catch {
+      /* no-op */
+    }
+  }, []);
+
+  const leaveFullscreen = useCallback(() => {
+    setFullscreen(false);
+    setHolding(false);
+    try {
+      if (document.fullscreenElement) document.exitFullscreen?.().catch(() => undefined);
+    } catch {
+      /* no-op */
+    }
   }, []);
 
   const classifyRow = useCallback(
@@ -182,15 +206,35 @@ export default function VocabRevealPage() {
 
   const current = order[index];
 
+  /**
+   * Next-tap behavior: two-stage advance.
+   *   1st tap on a word  → reveal its kana reading
+   *   2nd tap            → move to the next word (kana hidden again)
+   *
+   * Previous-tap is the exact inverse — it walks back through the same
+   * states, so left-tap on a revealed word hides the kana, and left-tap
+   * on a hidden word steps back to the previous word with its kana
+   * already revealed (since that's where the user came from).
+   */
   const next = useCallback(() => {
     if (order.length === 0) return;
-    setIndex((i) => (i + 1) % order.length);
-  }, [order.length]);
+    if (!revealed) {
+      setRevealed(true);
+    } else {
+      setIndex((i) => (i + 1) % order.length);
+      setRevealed(false);
+    }
+  }, [order.length, revealed]);
 
   const prev = useCallback(() => {
     if (order.length === 0) return;
-    setIndex((i) => (i - 1 + order.length) % order.length);
-  }, [order.length]);
+    if (revealed) {
+      setRevealed(false);
+    } else {
+      setIndex((i) => (i - 1 + order.length) % order.length);
+      setRevealed(true);
+    }
+  }, [order.length, revealed]);
 
   const reshuffle = useCallback(() => {
     if (vocab.length === 0) return;
@@ -204,6 +248,7 @@ export default function VocabRevealPage() {
     setMode('random');
     setOrder(built);
     setIndex(0);
+    setRevealed(false);
     sessionStorage.setItem(
       ORDER_KEY,
       JSON.stringify(built.map((v) => `${v.word}|${v.reading}`)),
@@ -220,6 +265,7 @@ export default function VocabRevealPage() {
     const built = buildQueue(vocab, kanjiByChar, cfg);
     setOrder(built);
     setIndex(0);
+    setRevealed(false);
     sessionStorage.setItem(
       ORDER_KEY,
       JSON.stringify(built.map((v) => `${v.word}|${v.reading}`)),
@@ -227,7 +273,11 @@ export default function VocabRevealPage() {
     setShowConfig(false);
   }, [mode, themeFilter, parentFilter, usageFilter, cardLimit, vocab, kanjiByChar]);
 
-  const exit = useCallback(() => {
+  const exitToLanding = useCallback(() => {
+    leaveFullscreen();
+  }, [leaveFullscreen]);
+
+  const exitDrillEntirely = useCallback(() => {
     sessionStorage.removeItem(ORDER_KEY);
     sessionStorage.removeItem(IDX_KEY);
     router.push('/study/extended-kanji/vocabulary');
@@ -238,11 +288,11 @@ export default function VocabRevealPage() {
     localStorage.setItem(HELP_DISMISSED_KEY, '1');
   }, []);
 
-  // Keyboard (silent — no UI hint)
+  // Keyboard — only active in fullscreen drill mode (silent: no UI hint)
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLSelectElement || e.target instanceof HTMLTextAreaElement) return;
-      if (showConfig) return;
+      if (showConfig || !fullscreen) return;
       switch (e.key) {
         case 'ArrowRight':
         case ' ':
@@ -257,7 +307,7 @@ export default function VocabRevealPage() {
           break;
         case 'Escape':
           if (showHelp) dismissHelp();
-          else exit();
+          else leaveFullscreen();
           break;
         case 's':
         case 'S':
@@ -271,7 +321,7 @@ export default function VocabRevealPage() {
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [next, prev, exit, reshuffle, showConfig, showHelp, dismissHelp]);
+  }, [next, prev, leaveFullscreen, reshuffle, showConfig, showHelp, dismissHelp, fullscreen]);
 
   // Pointer (tap vs hold)
   const onPointerDown = (e: React.PointerEvent) => {
@@ -421,14 +471,19 @@ export default function VocabRevealPage() {
 
   if (!current) {
     return (
-      <div className="fixed inset-0 flex items-center justify-center bg-background">
-        <Card className="max-w-md mx-4">
+      <div className="container max-w-3xl mx-auto px-4 py-8 space-y-6">
+        <div className="flex items-center justify-between">
+          <Link href="/study/extended-kanji/vocabulary">
+            <Button variant="ghost" className="gap-2">
+              <ArrowLeft className="h-4 w-4" />
+              Back
+            </Button>
+          </Link>
+        </div>
+        <Card>
           <CardContent className="pt-6 text-center space-y-4">
             <p className="text-muted-foreground">No vocabulary matches your filters.</p>
-            <div className="flex gap-2 justify-center">
-              <Button variant="outline" onClick={exit}>Exit</Button>
-              <Button onClick={() => setShowConfig(true)}>Open filters</Button>
-            </div>
+            <Button onClick={() => setShowConfig(true)}>Open filters</Button>
           </CardContent>
         </Card>
       </div>
@@ -439,6 +494,88 @@ export default function VocabRevealPage() {
   const typeStyle = readingTypeStyle(type);
   const progressPct = ((index + 1) / order.length) * 100;
 
+  // Landing view (not full-screen) — preview the current card and offer to enter.
+  if (!fullscreen) {
+    return (
+      <div className="container max-w-3xl mx-auto px-4 py-6 sm:py-10 space-y-6">
+        <div className="flex items-center justify-between">
+          <Link href="/study/extended-kanji/vocabulary">
+            <Button variant="ghost" className="gap-2">
+              <ArrowLeft className="h-4 w-4" />
+              Back
+            </Button>
+          </Link>
+          <div className="flex items-center gap-2">
+            <Button variant="outline" size="sm" onClick={() => setShowConfig(true)} className="gap-2">
+              <Settings className="h-4 w-4" />
+              <span className="hidden sm:inline">Filters</span>
+            </Button>
+          </div>
+        </div>
+
+        <Card className="border-border/50">
+          <CardContent className="py-12 sm:py-16 flex flex-col items-center gap-8">
+            <div className="text-center space-y-3">
+              <div className="text-xs uppercase tracking-widest text-muted-foreground">
+                Vocabulary drill
+              </div>
+              <div className="text-2xl sm:text-3xl font-light tracking-tight">
+                {order.length} cards ready · {mode === 'random' ? 'shuffled' : 'sequential'}
+              </div>
+            </div>
+
+            {/* Card preview — same typography as fullscreen for consistency */}
+            <div className="w-full text-center space-y-4 py-6">
+              <div className="text-[clamp(3rem,9vw,6rem)] font-light leading-none tracking-tight" style={{ fontFeatureSettings: '"palt"' }}>
+                <ColoredWord
+                  word={current.word}
+                  reading={current.reading}
+                  kanjiByChar={kanjiByChar}
+                />
+              </div>
+              <div
+                className={`text-[clamp(1rem,3vw,1.75rem)] font-light leading-tight ${
+                  typeStyle ? typeStyle.text : 'text-muted-foreground'
+                }`}
+              >
+                {current.reading}
+              </div>
+              <div className="text-xs text-muted-foreground">
+                {index + 1} / {order.length}
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-3 w-full max-w-md">
+              <Button
+                onClick={enterFullscreen}
+                size="lg"
+                className="flex-1 gap-2 min-h-[52px] text-base"
+              >
+                <Maximize2 className="h-5 w-5" />
+                Enter full-screen drill
+              </Button>
+              <Button
+                variant="outline"
+                onClick={reshuffle}
+                size="lg"
+                className="gap-2 min-h-[52px]"
+                title="Reshuffle"
+              >
+                <Shuffle className="h-5 w-5" />
+                <span className="sm:hidden">Reshuffle</span>
+              </Button>
+            </div>
+
+            <div className="text-xs text-muted-foreground text-center max-w-sm">
+              In full-screen: tap left = previous · tap right = next · press &amp; hold = reveal meaning
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
+  // Full-screen drill view
   return (
     <div
       className="fixed inset-0 z-50 bg-background select-none touch-none overflow-hidden"
@@ -455,56 +592,59 @@ export default function VocabRevealPage() {
         />
       </div>
 
-      {/* Tiny corner controls — opt-out, not chrome */}
+      {/* Tiny corner controls — bumped to 44×44 for proper touch targets */}
       <div className="absolute top-3 left-3 z-20" onPointerDown={(e) => e.stopPropagation()}>
         <button
           type="button"
-          onClick={exit}
-          className="h-9 w-9 rounded-full bg-card/70 hover:bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-foreground transition"
-          title="Exit"
-          aria-label="Exit drill"
+          onClick={leaveFullscreen}
+          className="h-11 w-11 rounded-full bg-card/70 hover:bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-foreground transition"
+          title="Exit full-screen"
+          aria-label="Exit full-screen"
         >
-          <X className="h-4 w-4" />
+          <X className="h-5 w-5" />
         </button>
       </div>
       <div
         className="absolute top-3 right-3 z-20 flex items-center gap-2"
         onPointerDown={(e) => e.stopPropagation()}
       >
-        <span className="text-xs text-muted-foreground tabular-nums">
+        <span className="text-xs text-muted-foreground tabular-nums px-1">
           {index + 1} / {order.length}
         </span>
         <button
           type="button"
           onClick={reshuffle}
-          className="h-9 w-9 rounded-full bg-card/70 hover:bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-foreground transition"
+          className="h-11 w-11 rounded-full bg-card/70 hover:bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-foreground transition"
           title="Reshuffle"
           aria-label="Reshuffle"
         >
-          <Shuffle className="h-4 w-4" />
+          <Shuffle className="h-5 w-5" />
         </button>
         <button
           type="button"
           onClick={() => setShowConfig(true)}
-          className="h-9 w-9 rounded-full bg-card/70 hover:bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-foreground transition"
+          className="h-11 w-11 rounded-full bg-card/70 hover:bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-foreground transition"
           title="Filters"
           aria-label="Filters"
         >
-          <Settings className="h-4 w-4" />
+          <Settings className="h-5 w-5" />
         </button>
       </div>
 
       {(type === 'on' || type === 'kun') && (
-        <div className="absolute top-14 right-3 z-10 opacity-70">
+        <div className="absolute top-16 right-3 z-10 opacity-60">
           <span className={`inline-block px-2 py-0.5 rounded text-[10px] font-medium ${READING_STYLES[type].chip}`}>
             {READING_STYLES[type].label}
           </span>
         </div>
       )}
 
-      {/* The drill — big word + reading; meaning fades in on hold */}
+      {/* The drill — lighter font weight, refined kerning, calmer rhythm */}
       <div className="h-full w-full flex flex-col items-center justify-center px-6">
-        <div className="text-[clamp(3.5rem,12vw,9rem)] font-semibold leading-none tracking-tight text-center">
+        <div
+          className="text-[clamp(3.5rem,12vw,9rem)] font-light leading-none tracking-tight text-center"
+          style={{ fontFeatureSettings: '"palt", "kern"' }}
+        >
           <ColoredWord
             word={current.word}
             reading={current.reading}
@@ -512,22 +652,24 @@ export default function VocabRevealPage() {
           />
         </div>
 
+        {/* Kana — fades in only after the first next-tap on this word */}
         <div
-          className={`mt-8 text-[clamp(1.25rem,4vw,2.5rem)] font-normal leading-tight text-center ${
-            typeStyle ? typeStyle.text : 'text-muted-foreground'
-          }`}
+          className={`mt-10 text-[clamp(1.25rem,4vw,2.5rem)] font-light leading-tight text-center tracking-wide transition-opacity duration-200 ease-out ${
+            revealed ? 'opacity-100' : 'opacity-0'
+          } ${typeStyle ? typeStyle.text : 'text-muted-foreground'}`}
+          aria-hidden={!revealed}
         >
           {current.reading}
         </div>
 
         {/* English meaning fades in only while held */}
         <div
-          className={`mt-10 max-w-2xl text-center transition-opacity duration-200 ease-out ${
+          className={`mt-12 max-w-2xl text-center transition-opacity duration-200 ease-out ${
             holding ? 'opacity-100' : 'opacity-0'
           }`}
           aria-hidden={!holding}
         >
-          <div className="text-[clamp(1rem,2.5vw,1.5rem)] text-foreground/80 italic">
+          <div className="text-[clamp(1rem,2.5vw,1.5rem)] font-light text-foreground/75 italic">
             {current.meaning}
           </div>
         </div>
@@ -536,7 +678,7 @@ export default function VocabRevealPage() {
       {/* First-open help overlay */}
       {showHelp && (
         <div
-          className="absolute inset-0 z-30 bg-background/85 backdrop-blur-sm flex items-center justify-center"
+          className="absolute inset-0 z-30 bg-background/90 backdrop-blur-sm flex items-center justify-center"
           onPointerDown={(e) => {
             e.stopPropagation();
             dismissHelp();
@@ -544,17 +686,17 @@ export default function VocabRevealPage() {
         >
           <div className="grid grid-cols-2 w-full max-w-3xl gap-4 px-6">
             <div className="rounded-lg border-2 border-dashed border-border p-6 text-center space-y-2">
-              <div className="text-4xl">←</div>
+              <div className="text-4xl font-light">←</div>
               <div className="text-sm font-medium">Tap left half</div>
               <div className="text-xs text-muted-foreground">Previous word</div>
             </div>
             <div className="rounded-lg border-2 border-dashed border-border p-6 text-center space-y-2">
-              <div className="text-4xl">→</div>
+              <div className="text-4xl font-light">→</div>
               <div className="text-sm font-medium">Tap right half</div>
               <div className="text-xs text-muted-foreground">Next word</div>
             </div>
             <div className="col-span-2 rounded-lg border-2 border-dashed border-border p-6 text-center space-y-2">
-              <div className="text-2xl">⏵</div>
+              <div className="text-2xl font-light">⏵</div>
               <div className="text-sm font-medium">Press &amp; hold anywhere</div>
               <div className="text-xs text-muted-foreground">
                 Reveal English meaning while held
