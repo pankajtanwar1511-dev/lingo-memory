@@ -334,7 +334,6 @@ export default function VocabRevealPage() {
       if (showConfig) return;
       // Block OS auto-repeat for navigation keys
       if (e.repeat && (e.key === 'ArrowRight' || e.key === 'ArrowLeft' || e.key === ' ')) return;
-
       const now = Date.now();
       const navDebounced = now - lastNavRef.current < NAV_DEBOUNCE_MS;
 
@@ -426,7 +425,6 @@ export default function VocabRevealPage() {
       dismissHelp();
       return;
     }
-    // Share the same 150ms debounce that the keyboard uses.
     const now = Date.now();
     if (now - lastNavRef.current < 150) return;
     lastNavRef.current = now;
@@ -652,7 +650,11 @@ export default function VocabRevealPage() {
           )}
 
           <CardContent className="pt-32 sm:pt-40 pb-12 sm:pb-16 flex flex-col items-center gap-6">
+            {/* `key={index}` forces these elements to unmount/remount when the
+              word changes, so the kana never bleeds into the next word's
+              fade transition. */}
             <div
+              key={`word-${index}`}
               className="text-[clamp(3rem,9vw,6rem)] font-light leading-none text-center"
               style={{ fontFeatureSettings: '"palt", "kern"', letterSpacing: '0.06em' }}
             >
@@ -664,6 +666,7 @@ export default function VocabRevealPage() {
             </div>
 
             <div
+              key={`reading-${index}`}
               className={`text-[clamp(1rem,3vw,1.75rem)] font-light leading-tight tracking-wide text-center transition-opacity duration-200 ease-out ${
                 revealed ? 'opacity-100' : 'opacity-0'
               } ${typeStyle ? typeStyle.text : 'text-muted-foreground'}`}
@@ -673,6 +676,7 @@ export default function VocabRevealPage() {
             </div>
 
             <div
+              key={`meaning-${index}`}
               className={`max-w-xl text-center transition-opacity duration-200 ease-out ${
                 holding ? 'opacity-100' : 'opacity-0'
               }`}
@@ -771,7 +775,10 @@ export default function VocabRevealPage() {
         Content sits slightly below visual center via `pt-[60vh]` reset and
         a flex column whose top spacer is larger than the bottom. */}
       <div className="h-full w-full flex flex-col items-center px-6 pt-[42vh] pb-[18vh]">
+        {/* `key={index}` ensures these unmount/remount on word change so the
+          previous word's fade-out can't smear into the next word's content. */}
         <div
+          key={`fs-word-${index}`}
           className="text-[clamp(3.5rem,12vw,9rem)] font-light leading-none text-center"
           style={{ fontFeatureSettings: '"palt", "kern"', letterSpacing: '0.06em' }}
         >
@@ -782,8 +789,8 @@ export default function VocabRevealPage() {
           />
         </div>
 
-        {/* Kana — fades in only after the first next-tap on this word */}
         <div
+          key={`fs-reading-${index}`}
           className={`mt-10 text-[clamp(1.25rem,4vw,2.5rem)] font-light leading-tight text-center tracking-wide transition-opacity duration-200 ease-out ${
             revealed ? 'opacity-100' : 'opacity-0'
           } ${typeStyle ? typeStyle.text : 'text-muted-foreground'}`}
@@ -792,8 +799,8 @@ export default function VocabRevealPage() {
           {current.reading}
         </div>
 
-        {/* English meaning fades in only while held */}
         <div
+          key={`fs-meaning-${index}`}
           className={`mt-12 max-w-2xl text-center transition-opacity duration-200 ease-out ${
             holding ? 'opacity-100' : 'opacity-0'
           }`}
