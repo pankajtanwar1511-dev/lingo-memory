@@ -260,7 +260,7 @@ export default function ExtendedKanjiPracticePage() {
                 <Button
                   variant={lessonFilter === 'all' ? 'default' : 'outline'}
                   onClick={() => setLessonFilter('all')}
-                  className="col-span-2"
+                  className="col-span-2 min-h-[44px]"
                 >
                   All
                 </Button>
@@ -270,6 +270,7 @@ export default function ExtendedKanjiPracticePage() {
                     variant={lessonFilter === String(n) ? 'default' : 'outline'}
                     onClick={() => setLessonFilter(String(n))}
                     size="sm"
+                    className="min-h-[44px]"
                   >
                     L{n}
                   </Button>

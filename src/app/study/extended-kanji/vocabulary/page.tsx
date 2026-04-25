@@ -154,8 +154,8 @@ export default function ExtendedKanjiVocabularyPage() {
         </p>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-3">
-        <div className="flex-1 relative">
+      <div className="flex flex-col gap-3">
+        <div className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
           <Input
             type="text"
@@ -165,36 +165,35 @@ export default function ExtendedKanjiVocabularyPage() {
             className="pl-10"
           />
         </div>
-        <Select
-          value={themeFilter}
-          onChange={(e) => setThemeFilter(e.target.value)}
-          className="w-[180px]"
-        >
-          <option value="all">All themes</option>
-          {allThemes.map((t) => (
-            <option key={t} value={t}>{t}</option>
-          ))}
-        </Select>
-        <Select
-          value={parentFilter}
-          onChange={(e) => setParentFilter(e.target.value)}
-          className="w-[150px]"
-        >
-          <option value="all">All kanji</option>
-          {allParents.map((p) => (
-            <option key={p} value={p}>Parent: {p}</option>
-          ))}
-        </Select>
-        <Select
-          value={sourceFilter}
-          onChange={(e) => setSourceFilter(e.target.value as typeof sourceFilter)}
-          className="w-[170px]"
-        >
-          <option value="all">Any source</option>
-          <option value="kanji">Kanji tables only</option>
-          <option value="theme">Themes only</option>
-          <option value="both">In both</option>
-        </Select>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <Select
+            value={themeFilter}
+            onChange={(e) => setThemeFilter(e.target.value)}
+          >
+            <option value="all">All themes</option>
+            {allThemes.map((t) => (
+              <option key={t} value={t}>{t}</option>
+            ))}
+          </Select>
+          <Select
+            value={parentFilter}
+            onChange={(e) => setParentFilter(e.target.value)}
+          >
+            <option value="all">All kanji</option>
+            {allParents.map((p) => (
+              <option key={p} value={p}>Parent: {p}</option>
+            ))}
+          </Select>
+          <Select
+            value={sourceFilter}
+            onChange={(e) => setSourceFilter(e.target.value as typeof sourceFilter)}
+          >
+            <option value="all">Any source</option>
+            <option value="kanji">Kanji tables only</option>
+            <option value="theme">Themes only</option>
+            <option value="both">In both</option>
+          </Select>
+        </div>
       </div>
 
       <label className="flex items-center gap-2 text-sm">

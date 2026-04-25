@@ -170,23 +170,23 @@ export default function ExtendedKanjiListPage() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-3">
             <div className="flex-1 relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
                 type="text"
-                placeholder="Search kanji, reading, meaning, or vocab word…"
+                placeholder="Search kanji, reading, meaning, or vocab…"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 className="pl-10"
               />
             </div>
-            <div className="flex items-center gap-2">
-              <SortAsc className="h-4 w-4 text-muted-foreground" />
+            <div className="flex flex-wrap items-center gap-2">
+              <SortAsc className="hidden sm:block h-4 w-4 text-muted-foreground shrink-0" />
               <Select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as SortOption)}
-                className="w-[170px]"
+                className="flex-1 sm:flex-initial sm:w-[170px] min-w-[140px]"
               >
                 <option value="default">Teacher order</option>
                 <option value="lesson">Lesson number</option>
@@ -196,7 +196,7 @@ export default function ExtendedKanjiListPage() {
               <Select
                 value={lessonFilter}
                 onChange={(e) => setLessonFilter(e.target.value)}
-                className="w-[140px]"
+                className="flex-1 sm:flex-initial sm:w-[140px] min-w-[120px]"
               >
                 <option value="all">All lessons</option>
                 {uniqueLessons.map((n) => (
@@ -207,17 +207,17 @@ export default function ExtendedKanjiListPage() {
           </div>
         </div>
 
-        {/* Secondary nav */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3">
+        {/* Secondary nav — tighter on mobile, full info on tablet+ */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-2 sm:gap-3">
           {SECTION_LINKS.map(({ href, label, icon: Icon, hint }) => (
             <Link key={href} href={href}>
               <Card className="hover:shadow-md hover:border-primary transition-all h-full cursor-pointer">
-                <CardContent className="pt-5 pb-5 space-y-1">
+                <CardContent className="px-3 py-3 sm:pt-5 sm:pb-5 sm:px-6 space-y-1">
                   <div className="flex items-center gap-2">
-                    <Icon className="h-4 w-4 text-primary" />
-                    <span className="text-sm font-semibold">{label}</span>
+                    <Icon className="h-4 w-4 text-primary shrink-0" />
+                    <span className="text-xs sm:text-sm font-semibold leading-tight">{label}</span>
                   </div>
-                  <p className="text-xs text-muted-foreground">{hint}</p>
+                  <p className="hidden sm:block text-xs text-muted-foreground">{hint}</p>
                 </CardContent>
               </Card>
             </Link>
