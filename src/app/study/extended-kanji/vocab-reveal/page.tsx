@@ -494,10 +494,12 @@ export default function VocabRevealPage() {
   const typeStyle = readingTypeStyle(type);
   const progressPct = ((index + 1) / order.length) * 100;
 
-  // Landing view (not full-screen) — preview the current card and offer to enter.
+  // Compact (quick-view) drill — the page IS the drill at a calm card size.
+  // Same gestures as fullscreen: tap left half, tap right half, press & hold.
+  // A tiny Maximize button in the card corner is the only fullscreen affordance.
   if (!fullscreen) {
     return (
-      <div className="container max-w-3xl mx-auto px-4 py-6 sm:py-10 space-y-6">
+      <div className="container max-w-3xl mx-auto px-4 py-6 sm:py-10 space-y-4">
         <div className="flex items-center justify-between">
           <Link href="/study/extended-kanji/vocabulary">
             <Button variant="ghost" className="gap-2">
@@ -506,68 +508,99 @@ export default function VocabRevealPage() {
             </Button>
           </Link>
           <div className="flex items-center gap-2">
-            <Button variant="outline" size="sm" onClick={() => setShowConfig(true)} className="gap-2">
+            <span className="text-xs text-muted-foreground tabular-nums px-1">
+              {index + 1} / {order.length}
+            </span>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={reshuffle}
+              className="h-9 w-9 p-0"
+              title="Reshuffle"
+              aria-label="Reshuffle"
+            >
+              <Shuffle className="h-4 w-4" />
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setShowConfig(true)}
+              className="h-9 w-9 p-0"
+              title="Filters"
+              aria-label="Filters"
+            >
               <Settings className="h-4 w-4" />
-              <span className="hidden sm:inline">Filters</span>
             </Button>
           </div>
         </div>
 
-        <Card className="border-border/50">
-          <CardContent className="py-12 sm:py-16 flex flex-col items-center gap-8">
-            <div className="text-center space-y-3">
-              <div className="text-xs uppercase tracking-widest text-muted-foreground">
-                Vocabulary drill
-              </div>
-              <div className="text-2xl sm:text-3xl font-light tracking-tight">
-                {order.length} cards ready · {mode === 'random' ? 'shuffled' : 'sequential'}
-              </div>
+        <Card
+          className="relative border-border/60 select-none touch-none cursor-pointer overflow-hidden"
+          onPointerDown={onPointerDown}
+          onPointerUp={onPointerUp}
+          onPointerCancel={onPointerCancel}
+          onContextMenu={(e) => e.preventDefault()}
+        >
+          {/* Thin progress bar at top edge of the card */}
+          <div className="absolute top-0 left-0 right-0 h-0.5 bg-muted">
+            <div
+              className="h-full bg-primary transition-all"
+              style={{ width: `${progressPct}%` }}
+            />
+          </div>
+
+          {/* Tiny fullscreen toggle */}
+          <button
+            type="button"
+            onClick={enterFullscreen}
+            onPointerDown={(e) => e.stopPropagation()}
+            className="absolute top-2 right-2 z-10 h-8 w-8 rounded-full bg-card hover:bg-accent border border-border/70 flex items-center justify-center text-muted-foreground hover:text-foreground transition"
+            title="Full-screen"
+            aria-label="Enter full-screen"
+          >
+            <Maximize2 className="h-3.5 w-3.5" />
+          </button>
+
+          {(type === 'on' || type === 'kun') && (
+            <div className="absolute top-3 left-3 z-10 opacity-60">
+              <span
+                className={`inline-block px-2 py-0.5 rounded text-[10px] font-medium ${READING_STYLES[type].chip}`}
+              >
+                {READING_STYLES[type].label}
+              </span>
+            </div>
+          )}
+
+          <CardContent className="pt-32 sm:pt-40 pb-12 sm:pb-16 flex flex-col items-center gap-6">
+            <div
+              className="text-[clamp(3rem,9vw,6rem)] font-light leading-none tracking-tight text-center"
+              style={{ fontFeatureSettings: '"palt", "kern"' }}
+            >
+              <ColoredWord
+                word={current.word}
+                reading={current.reading}
+                kanjiByChar={kanjiByChar}
+              />
             </div>
 
-            {/* Card preview — same typography as fullscreen for consistency */}
-            <div className="w-full text-center space-y-4 py-6">
-              <div className="text-[clamp(3rem,9vw,6rem)] font-light leading-none tracking-tight" style={{ fontFeatureSettings: '"palt"' }}>
-                <ColoredWord
-                  word={current.word}
-                  reading={current.reading}
-                  kanjiByChar={kanjiByChar}
-                />
-              </div>
-              <div
-                className={`text-[clamp(1rem,3vw,1.75rem)] font-light leading-tight ${
-                  typeStyle ? typeStyle.text : 'text-muted-foreground'
-                }`}
-              >
-                {current.reading}
-              </div>
-              <div className="text-xs text-muted-foreground">
-                {index + 1} / {order.length}
-              </div>
+            <div
+              className={`text-[clamp(1rem,3vw,1.75rem)] font-light leading-tight tracking-wide text-center transition-opacity duration-200 ease-out ${
+                revealed ? 'opacity-100' : 'opacity-0'
+              } ${typeStyle ? typeStyle.text : 'text-muted-foreground'}`}
+              aria-hidden={!revealed}
+            >
+              {current.reading}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 w-full max-w-md">
-              <Button
-                onClick={enterFullscreen}
-                size="lg"
-                className="flex-1 gap-2 min-h-[52px] text-base"
-              >
-                <Maximize2 className="h-5 w-5" />
-                Enter full-screen drill
-              </Button>
-              <Button
-                variant="outline"
-                onClick={reshuffle}
-                size="lg"
-                className="gap-2 min-h-[52px]"
-                title="Reshuffle"
-              >
-                <Shuffle className="h-5 w-5" />
-                <span className="sm:hidden">Reshuffle</span>
-              </Button>
-            </div>
-
-            <div className="text-xs text-muted-foreground text-center max-w-sm">
-              In full-screen: tap left = previous · tap right = next · press &amp; hold = reveal meaning
+            <div
+              className={`max-w-xl text-center transition-opacity duration-200 ease-out ${
+                holding ? 'opacity-100' : 'opacity-0'
+              }`}
+              aria-hidden={!holding}
+            >
+              <div className="text-[clamp(0.875rem,2vw,1.125rem)] font-light text-foreground/75 italic">
+                {current.meaning}
+              </div>
             </div>
           </CardContent>
         </Card>
@@ -639,8 +672,10 @@ export default function VocabRevealPage() {
         </div>
       )}
 
-      {/* The drill — lighter font weight, refined kerning, calmer rhythm */}
-      <div className="h-full w-full flex flex-col items-center justify-center px-6">
+      {/* The drill — lighter font weight, refined kerning, calmer rhythm.
+        Content sits slightly below visual center via `pt-[60vh]` reset and
+        a flex column whose top spacer is larger than the bottom. */}
+      <div className="h-full w-full flex flex-col items-center px-6 pt-[42vh] pb-[18vh]">
         <div
           className="text-[clamp(3.5rem,12vw,9rem)] font-light leading-none tracking-tight text-center"
           style={{ fontFeatureSettings: '"palt", "kern"' }}
