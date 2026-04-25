@@ -330,10 +330,11 @@ export default function VocabRevealPage() {
     return () => window.removeEventListener('keydown', onKey);
   }, [next, prev, leaveFullscreen, enterFullscreen, reshuffle, showConfig, showHelp, dismissHelp, fullscreen, router]);
 
-  // Pointer (tap vs hold)
+  // Tap vs hold detection — pointer events handle the HOLD; the browser-native
+  // `click` event handles the TAP (it's deduped across pointer + synthesized
+  // mouse events, so navigation never double-fires on touch devices).
   const onPointerDown = (e: React.PointerEvent) => {
     if (showConfig) return;
-    e.preventDefault();
     wasHeldRef.current = false;
     downXRef.current = e.clientX;
     if (holdTimerRef.current) clearTimeout(holdTimerRef.current);
@@ -350,11 +351,27 @@ export default function VocabRevealPage() {
     }
   };
 
-  const onPointerUp = (e: React.PointerEvent) => {
+  const onPointerUp = () => {
     if (showConfig) return;
     cancelTimer();
     if (wasHeldRef.current) {
+      // Was a hold — drop the meaning overlay. Leave wasHeldRef set so the
+      // upcoming click event knows to skip navigation.
       setHolding(false);
+    }
+  };
+
+  const onPointerCancel = () => {
+    cancelTimer();
+    setHolding(false);
+    wasHeldRef.current = false;
+    downXRef.current = null;
+  };
+
+  const onClick = (e: React.MouseEvent) => {
+    if (showConfig) return;
+    // If this was a hold, swallow the click and reset the flag.
+    if (wasHeldRef.current) {
       wasHeldRef.current = false;
       return;
     }
@@ -366,12 +383,7 @@ export default function VocabRevealPage() {
     const halfway = window.innerWidth / 2;
     if (x < halfway) prev();
     else next();
-  };
-
-  const onPointerCancel = () => {
-    cancelTimer();
-    setHolding(false);
-    wasHeldRef.current = false;
+    downXRef.current = null;
   };
 
   // ---- Render ----
@@ -542,10 +554,16 @@ export default function VocabRevealPage() {
         </div>
 
         <Card
-          className="relative border-border/60 select-none touch-none cursor-pointer overflow-hidden"
+          className="relative border-border/60 select-none cursor-pointer overflow-hidden"
+          style={{
+            touchAction: 'manipulation',
+            WebkitTouchCallout: 'none',
+            WebkitUserSelect: 'none',
+          }}
           onPointerDown={onPointerDown}
           onPointerUp={onPointerUp}
           onPointerCancel={onPointerCancel}
+          onClick={onClick}
           onContextMenu={(e) => e.preventDefault()}
         >
           {/* Thin progress bar at top edge of the card */}
@@ -556,11 +574,15 @@ export default function VocabRevealPage() {
             />
           </div>
 
-          {/* Tiny fullscreen toggle */}
+          {/* Tiny fullscreen toggle — fully isolated from the card's tap handler */}
           <button
             type="button"
-            onClick={enterFullscreen}
+            onClick={(e) => {
+              e.stopPropagation();
+              enterFullscreen();
+            }}
             onPointerDown={(e) => e.stopPropagation()}
+            onPointerUp={(e) => e.stopPropagation()}
             className="absolute top-2 right-2 z-10 h-8 w-8 rounded-full bg-card hover:bg-accent border border-border/70 flex items-center justify-center text-muted-foreground hover:text-foreground transition"
             title="Full-screen"
             aria-label="Enter full-screen"
@@ -618,10 +640,16 @@ export default function VocabRevealPage() {
   // Full-screen drill view
   return (
     <div
-      className="fixed inset-0 z-50 bg-background select-none touch-none overflow-hidden"
+      className="fixed inset-0 z-50 bg-background select-none overflow-hidden"
+      style={{
+        touchAction: 'manipulation',
+        WebkitTouchCallout: 'none',
+        WebkitUserSelect: 'none',
+      }}
       onPointerDown={onPointerDown}
       onPointerUp={onPointerUp}
       onPointerCancel={onPointerCancel}
+      onClick={onClick}
       onContextMenu={(e) => e.preventDefault()}
     >
       {/* Thin top progress bar */}
@@ -632,8 +660,15 @@ export default function VocabRevealPage() {
         />
       </div>
 
-      {/* Tiny corner controls — bumped to 44×44 for proper touch targets */}
-      <div className="absolute top-3 left-3 z-20" onPointerDown={(e) => e.stopPropagation()}>
+      {/* Tiny corner controls — bumped to 44×44 for proper touch targets.
+        Each button stops both pointerdown AND click from bubbling, so the
+        underlying tap-surface handler doesn't double-fire. */}
+      <div
+        className="absolute top-3 left-3 z-20"
+        onPointerDown={(e) => e.stopPropagation()}
+        onPointerUp={(e) => e.stopPropagation()}
+        onClick={(e) => e.stopPropagation()}
+      >
         <button
           type="button"
           onClick={leaveFullscreen}
@@ -647,6 +682,8 @@ export default function VocabRevealPage() {
       <div
         className="absolute top-3 right-3 z-20 flex items-center gap-2"
         onPointerDown={(e) => e.stopPropagation()}
+        onPointerUp={(e) => e.stopPropagation()}
+        onClick={(e) => e.stopPropagation()}
       >
         <span className="text-xs text-muted-foreground tabular-nums px-1">
           {index + 1} / {order.length}
