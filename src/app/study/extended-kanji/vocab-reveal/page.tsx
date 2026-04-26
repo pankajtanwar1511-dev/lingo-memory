@@ -567,7 +567,7 @@ export default function VocabRevealPage() {
   // A tiny Maximize button in the card corner is the only fullscreen affordance.
   if (!fullscreen) {
     return (
-      <div className="container max-w-3xl mx-auto px-4 py-6 sm:py-10 space-y-4">
+      <div className="container max-w-3xl mx-auto px-4 py-6 sm:py-10 min-h-[100dvh] flex flex-col">
         <div className="flex items-center justify-between">
           <Link href="/study/extended-kanji/vocabulary">
             <Button variant="ghost" className="gap-2">
@@ -603,7 +603,7 @@ export default function VocabRevealPage() {
         </div>
 
         <Card
-          className="relative border-border/60 select-none cursor-pointer overflow-hidden"
+          className="relative border-border/60 select-none cursor-pointer overflow-hidden mt-[32vh] sm:mt-[28vh]"
           style={{
             touchAction: 'manipulation',
             WebkitTouchCallout: 'none',
@@ -649,7 +649,7 @@ export default function VocabRevealPage() {
             </div>
           )}
 
-          <CardContent className="pt-32 sm:pt-40 pb-12 sm:pb-16 flex flex-col items-center gap-6">
+          <CardContent className="pt-12 sm:pt-14 pb-12 sm:pb-14 flex flex-col items-center gap-6">
             {/* `key={index}` forces these elements to unmount/remount when the
               word changes, so the kana never bleeds into the next word's
               fade transition. */}
