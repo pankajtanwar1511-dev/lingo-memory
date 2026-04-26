@@ -53,6 +53,7 @@ interface QueueConfig {
   parentFilter: string;
   usageFilter: UsageFilter;
   cardLimit: number;
+  holdToReveal: boolean;
 }
 
 function buildQueue(
@@ -95,6 +96,7 @@ export default function VocabRevealPage() {
   const [parentFilter, setParentFilter] = useState<string>('all');
   const [usageFilter, setUsageFilter] = useState<UsageFilter>('all');
   const [cardLimit, setCardLimit] = useState<number>(0);
+  const [holdToReveal, setHoldToReveal] = useState<boolean>(true);
 
   const [order, setOrder] = useState<MergedVocabRow[]>([]);
   const [index, setIndex] = useState(0);
@@ -146,6 +148,7 @@ export default function VocabRevealPage() {
         parentFilter: 'all',
         usageFilter: 'all',
         cardLimit: 0,
+        holdToReveal: true,
         ...(savedCfg ? JSON.parse(savedCfg) : {}),
       };
       setMode(cfg.mode);
@@ -153,6 +156,7 @@ export default function VocabRevealPage() {
       setParentFilter(cfg.parentFilter);
       setUsageFilter(cfg.usageFilter);
       setCardLimit(cfg.cardLimit);
+      setHoldToReveal(cfg.holdToReveal);
 
       const savedOrder = sessionStorage.getItem(ORDER_KEY);
       let resolved: MergedVocabRow[] = [];
@@ -259,6 +263,7 @@ export default function VocabRevealPage() {
       parentFilter,
       usageFilter,
       cardLimit,
+      holdToReveal,
     });
     setMode('random');
     setOrder(built);
@@ -270,12 +275,12 @@ export default function VocabRevealPage() {
     );
     sessionStorage.setItem(
       CFG_KEY,
-      JSON.stringify({ mode: 'random', themeFilter, parentFilter, usageFilter, cardLimit }),
+      JSON.stringify({ mode: 'random', themeFilter, parentFilter, usageFilter, cardLimit, holdToReveal }),
     );
-  }, [vocab, kanjiByChar, themeFilter, parentFilter, usageFilter, cardLimit]);
+  }, [vocab, kanjiByChar, themeFilter, parentFilter, usageFilter, cardLimit, holdToReveal]);
 
   const applyConfigAndStart = useCallback(() => {
-    const cfg: QueueConfig = { mode, themeFilter, parentFilter, usageFilter, cardLimit };
+    const cfg: QueueConfig = { mode, themeFilter, parentFilter, usageFilter, cardLimit, holdToReveal };
     sessionStorage.setItem(CFG_KEY, JSON.stringify(cfg));
     const built = buildQueue(vocab, kanjiByChar, cfg);
     setOrder(built);
@@ -286,7 +291,7 @@ export default function VocabRevealPage() {
       JSON.stringify(built.map((v) => `${v.word}|${v.reading}`)),
     );
     setShowConfig(false);
-  }, [mode, themeFilter, parentFilter, usageFilter, cardLimit, vocab, kanjiByChar]);
+  }, [mode, themeFilter, parentFilter, usageFilter, cardLimit, holdToReveal, vocab, kanjiByChar]);
 
   const exitToLanding = useCallback(() => {
     leaveFullscreen();
@@ -527,6 +532,28 @@ export default function VocabRevealPage() {
                   onChange={(e) => setCardLimit(parseInt(e.target.value) || 0)}
                 />
               </div>
+              <div className="space-y-2">
+                <Label>English meaning</Label>
+                <div className="grid grid-cols-2 gap-2">
+                  <Button
+                    variant={holdToReveal ? 'default' : 'outline'}
+                    onClick={() => setHoldToReveal(true)}
+                    className="min-h-[44px]"
+                  >
+                    Hold to reveal
+                  </Button>
+                  <Button
+                    variant={!holdToReveal ? 'default' : 'outline'}
+                    onClick={() => setHoldToReveal(false)}
+                    className="min-h-[44px]"
+                  >
+                    Always show
+                  </Button>
+                </div>
+                <p className="text-xs text-muted-foreground">
+                  Off = meaning appears together with the kana — handy when navigating with arrow keys.
+                </p>
+              </div>
               <Button onClick={applyConfigAndStart} className="w-full min-h-[48px]" size="lg">
                 Apply &amp; start
               </Button>
@@ -561,6 +588,7 @@ export default function VocabRevealPage() {
   const type = classifyRow(current);
   const typeStyle = readingTypeStyle(type);
   const progressPct = ((index + 1) / order.length) * 100;
+  const showMeaning = holdToReveal ? holding : revealed;
 
   // Compact (quick-view) drill — the page IS the drill at a calm card size.
   // Same gestures as fullscreen: tap left half, tap right half, press & hold.
@@ -678,9 +706,9 @@ export default function VocabRevealPage() {
             <div
               key={`meaning-${index}`}
               className={`max-w-xl text-center transition-opacity duration-200 ease-out ${
-                holding ? 'opacity-100' : 'opacity-0'
+                showMeaning ? 'opacity-100' : 'opacity-0'
               }`}
-              aria-hidden={!holding}
+              aria-hidden={!showMeaning}
             >
               <div className="text-[clamp(0.875rem,2vw,1.125rem)] font-light text-foreground/75 italic">
                 {current.meaning}
@@ -802,9 +830,9 @@ export default function VocabRevealPage() {
         <div
           key={`fs-meaning-${index}`}
           className={`mt-12 max-w-2xl text-center transition-opacity duration-200 ease-out ${
-            holding ? 'opacity-100' : 'opacity-0'
+            showMeaning ? 'opacity-100' : 'opacity-0'
           }`}
-          aria-hidden={!holding}
+          aria-hidden={!showMeaning}
         >
           <div className="text-[clamp(1rem,2.5vw,1.5rem)] font-light text-foreground/75 italic">
             {current.meaning}
