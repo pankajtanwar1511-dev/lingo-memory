@@ -12,7 +12,8 @@
  *   - 5  : mastered (never appears as 4 in real data, but treated equivalently)
  */
 
-import type { CardProgress, ExtendedKanji } from '@/types/extended-kanji'
+import type { CardProgress, ExtendedKanji, MergedVocabRow } from '@/types/extended-kanji'
+import { cardKey, type SrsState } from '@/types/vocab-reveal-srs'
 
 export type ProgressMap = Record<string, CardProgress>
 
@@ -247,6 +248,94 @@ export function getStuckCards(
 
 // ──────────────────────────────────────────────────────────────────────────
 // Filter helper for listings
+// ──────────────────────────────────────────────────────────────────────────
+
+// ──────────────────────────────────────────────────────────────────────────
+// Vocab-reveal drill stats (separate data shape: SrsState keyed by
+// `${word}|${reading}`, level 0..4, no interval-based "due" since the drill
+// uses draw-weighted picking instead).
+// ──────────────────────────────────────────────────────────────────────────
+
+export const VOCAB_LEVELS_DISPLAYED = [0, 1, 2, 3, 4] as const
+export type VocabLevelKey = typeof VOCAB_LEVELS_DISPLAYED[number]
+
+export interface VocabKpis {
+  total: number
+  mastered: number    // level === 4
+  learning: number    // level 1..3
+  newCount: number    // not in srs OR reviewCount === 0
+}
+
+export function getVocabKpis(srs: SrsState, vocab: MergedVocabRow[]): VocabKpis {
+  const k: VocabKpis = { total: vocab.length, mastered: 0, learning: 0, newCount: 0 }
+  for (const v of vocab) {
+    const e = srs[cardKey(v.word, v.reading)]
+    if (!e || e.reviewCount === 0) k.newCount++
+    else if (e.level === 4) k.mastered++
+    else k.learning++
+  }
+  return k
+}
+
+export type VocabDistribution = Record<VocabLevelKey | 'new', number>
+
+export function getVocabDistribution(
+  srs: SrsState,
+  vocab: MergedVocabRow[],
+): VocabDistribution {
+  const dist: VocabDistribution = { new: 0, 0: 0, 1: 0, 2: 0, 3: 0, 4: 0 }
+  for (const v of vocab) {
+    const e = srs[cardKey(v.word, v.reading)]
+    if (!e || e.reviewCount === 0) {
+      dist.new++
+      continue
+    }
+    dist[e.level as VocabLevelKey] = (dist[e.level as VocabLevelKey] ?? 0) + 1
+  }
+  return dist
+}
+
+/** Per-day review counts for the vocab-reveal drill. */
+export function getVocabActivityLastNDays(srs: SrsState, days = 7): DayBucket[] {
+  const buckets: DayBucket[] = []
+  const now = Date.now()
+  for (let i = days - 1; i >= 0; i--) {
+    buckets.push({ date: ymd(now - i * DAY_MS), count: 0 })
+  }
+  const index = new Map(buckets.map((b, i) => [b.date, i]))
+  for (const k in srs) {
+    const day = ymd(srs[k].lastSeen)
+    const i = index.get(day)
+    if (i !== undefined) buckets[i].count++
+  }
+  return buckets
+}
+
+/** Cards rated 3+ times that haven't reached L2. */
+export interface VocabStuck {
+  row: MergedVocabRow
+  level: number
+  reviewCount: number
+}
+
+export function getStuckVocab(
+  srs: SrsState,
+  vocab: MergedVocabRow[],
+  limit = 6,
+): VocabStuck[] {
+  const out: VocabStuck[] = []
+  for (const v of vocab) {
+    const e = srs[cardKey(v.word, v.reading)]
+    if (!e || e.reviewCount < 3 || e.level > 1) continue
+    out.push({ row: v, level: e.level, reviewCount: e.reviewCount })
+  }
+  out.sort((a, b) => {
+    if (a.level !== b.level) return a.level - b.level
+    return b.reviewCount - a.reviewCount
+  })
+  return out.slice(0, limit)
+}
+
 // ──────────────────────────────────────────────────────────────────────────
 
 export function filterByCategory(

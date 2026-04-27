@@ -32,20 +32,28 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Header } from '@/components/layout/header'
-import { CardProgress, ExtendedKanji } from '@/types/extended-kanji'
+import { CardProgress, ExtendedKanji, MergedVocabRow } from '@/types/extended-kanji'
+import { type SrsState } from '@/types/vocab-reveal-srs'
+import { load as loadVocabSrs } from '@/services/vocab-reveal-srs.service'
+import { Eye } from 'lucide-react'
 import { useAuth } from '@/contexts/auth-context'
 import { loadProgress } from '@/services/cloud-progress.service'
 import { useSettings } from '@/contexts/settings-context'
 import {
   DEFAULT_SRS_INTERVALS,
   LEVELS_DISPLAYED,
+  VOCAB_LEVELS_DISPLAYED,
   getActivityLastNDays,
   getDistribution,
   getKpis,
   getLessonStats,
   getStreak,
   getStuckCards,
+  getStuckVocab,
   getTodayCount,
+  getVocabActivityLastNDays,
+  getVocabDistribution,
+  getVocabKpis,
   type SrsIntervals,
 } from '@/lib/extended-kanji/stats'
 import { useSrsIntervals, INTERVAL_BOUNDS } from '@/hooks/use-srs-intervals'
@@ -78,6 +86,8 @@ export default function ExtendedKanjiProgressPage() {
 
   const [kanjiList, setKanjiList] = useState<ExtendedKanji[]>([])
   const [progress, setProgress] = useState<Record<string, CardProgress>>({})
+  const [vocabList, setVocabList] = useState<MergedVocabRow[]>([])
+  const [vocabSrs, setVocabSrs] = useState<SrsState>({})
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const { intervals, setIntervals, reset: resetIntervals } = useSrsIntervals()
@@ -87,17 +97,27 @@ export default function ExtendedKanjiProgressPage() {
     let cancelled = false
     void (async () => {
       try {
-        const res = await fetch('/seed-data/extended-kanji/kanji.json')
-        if (!res.ok) throw new Error('Failed to load extended-kanji dataset')
-        const data = await res.json()
+        // Kanji dataset + per-kanji practice progress
+        const [kanjiRes, vocabRes] = await Promise.all([
+          fetch('/seed-data/extended-kanji/kanji.json'),
+          fetch('/seed-data/extended-kanji/vocabulary.json'),
+        ])
+        if (!kanjiRes.ok) throw new Error('Failed to load extended-kanji dataset')
+        if (!vocabRes.ok) throw new Error('Failed to load vocabulary dataset')
+        const kanjiData = await kanjiRes.json()
+        const vocabData = await vocabRes.json()
         if (cancelled) return
-        setKanjiList(data.kanji as ExtendedKanji[])
-        const merged = await loadProgress<Record<string, CardProgress>>(
-          user?.uid,
-          PROGRESS_KEY,
-          {},
-        )
-        if (!cancelled) setProgress(merged)
+        setKanjiList(kanjiData.kanji as ExtendedKanji[])
+        setVocabList(vocabData.vocabulary as MergedVocabRow[])
+
+        const [merged, vSrs] = await Promise.all([
+          loadProgress<Record<string, CardProgress>>(user?.uid, PROGRESS_KEY, {}),
+          loadVocabSrs(user?.uid ?? null),
+        ])
+        if (!cancelled) {
+          setProgress(merged)
+          setVocabSrs(vSrs)
+        }
       } catch (e) {
         if (!cancelled) setError(e instanceof Error ? e.message : 'Failed to load')
       } finally {
@@ -114,6 +134,10 @@ export default function ExtendedKanjiProgressPage() {
     () => getDistribution(progress, kanjiList),
     [progress, kanjiList],
   )
+  const vocabKpis = useMemo(() => getVocabKpis(vocabSrs, vocabList), [vocabSrs, vocabList])
+  const vocabDist = useMemo(() => getVocabDistribution(vocabSrs, vocabList), [vocabSrs, vocabList])
+  const vocabActivity = useMemo(() => getVocabActivityLastNDays(vocabSrs, 7), [vocabSrs])
+  const vocabStuck = useMemo(() => getStuckVocab(vocabSrs, vocabList, 6), [vocabSrs, vocabList])
   const activity = useMemo(() => getActivityLastNDays(progress, 7), [progress])
   const lessonStats = useMemo(
     () => getLessonStats(progress, kanjiList, intervals),
@@ -384,6 +408,180 @@ export default function ExtendedKanjiProgressPage() {
                 launchPractice({ sortMode: 'untouched', cardCount: Math.min(10, kpis.untouched) })
               }
             />
+          </CardContent>
+        </Card>
+
+        {/* ── Vocab reveal drill ────────────────────────────────────── */}
+        <Card>
+          <CardHeader>
+            <div className="flex items-center justify-between">
+              <CardTitle className="text-base flex items-center gap-2">
+                <Eye className="h-4 w-4" />
+                Vocab reveal drill
+              </CardTitle>
+              <Link href="/study/extended-kanji/vocab-reveal">
+                <Button size="sm" variant="outline" className="h-7 text-xs gap-1">
+                  <Play className="h-3 w-3" />
+                  Open drill
+                </Button>
+              </Link>
+            </div>
+            <p className="text-xs text-muted-foreground mt-1">
+              Big-type kanji → press → kana. Levels 0–4. Low-level cards picked
+              5× more often than mastered ones.
+            </p>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            {/* Vocab KPIs */}
+            <div className="grid grid-cols-4 gap-2">
+              <KpiTile
+                label="Total"
+                value={vocabKpis.total}
+                icon={<BookOpen className="h-4 w-4" />}
+              />
+              <KpiTile
+                label="Mastered"
+                value={vocabKpis.mastered}
+                icon={<CheckCircle2 className="h-4 w-4" />}
+                tone="emerald"
+              />
+              <KpiTile
+                label="Learning"
+                value={vocabKpis.learning}
+                icon={<TrendingUp className="h-4 w-4" />}
+                tone="sky"
+              />
+              <KpiTile
+                label="New"
+                value={vocabKpis.newCount}
+                icon={<Circle className="h-4 w-4" />}
+                tone="muted"
+              />
+            </div>
+
+            {/* Vocab level distribution as a single horizontal stacked bar */}
+            <div>
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-xs font-medium text-muted-foreground">
+                  Level distribution
+                </span>
+                <span className="text-[11px] text-muted-foreground tabular-nums">
+                  {vocabKpis.total} cards
+                </span>
+              </div>
+              {(() => {
+                const segments = (['new', 0, 1, 2, 3, 4] as const)
+                  .map((k) => ({
+                    key: k,
+                    count: vocabDist[k],
+                    pct: vocabKpis.total > 0 ? (vocabDist[k] / vocabKpis.total) * 100 : 0,
+                  }))
+                  .filter((s) => s.count > 0)
+                const colorMap: Record<string, string> = {
+                  new: 'bg-slate-300 dark:bg-slate-700',
+                  '0': 'bg-rose-500',
+                  '1': 'bg-orange-500',
+                  '2': 'bg-amber-500',
+                  '3': 'bg-lime-500',
+                  '4': 'bg-emerald-600',
+                }
+                const labelMap: Record<string, string> = {
+                  new: 'New',
+                  '0': 'L0',
+                  '1': 'L1',
+                  '2': 'L2',
+                  '3': 'L3',
+                  '4': 'L4',
+                }
+                return (
+                  <>
+                    <div className="flex h-3 rounded-full overflow-hidden bg-muted">
+                      {segments.map((s) => (
+                        <div
+                          key={String(s.key)}
+                          className={colorMap[String(s.key)]}
+                          style={{ width: `${s.pct}%` }}
+                          title={`${labelMap[String(s.key)]}: ${s.count}`}
+                        />
+                      ))}
+                    </div>
+                    <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-muted-foreground">
+                      {segments.map((s) => (
+                        <span key={String(s.key)} className="flex items-center gap-1">
+                          <span className={`h-2 w-2 rounded-sm ${colorMap[String(s.key)]}`} />
+                          {labelMap[String(s.key)]}{' '}
+                          <span className="tabular-nums">{s.count}</span>
+                        </span>
+                      ))}
+                    </div>
+                  </>
+                )
+              })()}
+            </div>
+
+            {/* Last 7 days for vocab */}
+            <div>
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-xs font-medium text-muted-foreground flex items-center gap-1">
+                  <Calendar className="h-3 w-3" />
+                  Last 7 days
+                </span>
+                <span className="text-[11px] text-muted-foreground tabular-nums">
+                  {vocabActivity.reduce((a, b) => a + b.count, 0)} reveals
+                </span>
+              </div>
+              <div className="flex items-end justify-between gap-1.5 h-12">
+                {vocabActivity.map((b, i) => {
+                  const max = Math.max(1, ...vocabActivity.map((x) => x.count))
+                  const h = (b.count / max) * 100
+                  const isToday = i === vocabActivity.length - 1
+                  return (
+                    <div key={b.date} className="flex-1 flex flex-col items-center gap-0.5">
+                      <div
+                        className={`w-full rounded-t ${
+                          b.count === 0 ? 'bg-muted' : isToday ? 'bg-primary' : 'bg-primary/60'
+                        }`}
+                        style={{ height: `${Math.max(6, h)}%` }}
+                        title={`${b.date}: ${b.count}`}
+                      />
+                      <div className="text-[9px] text-muted-foreground tabular-nums">
+                        {new Date(b.date + 'T00:00').toLocaleDateString(undefined, {
+                          weekday: 'narrow',
+                        })}
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+
+            {/* Stuck vocab — same idea as kanji "needs attention" */}
+            {vocabStuck.length > 0 && (
+              <div className="pt-2 border-t">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-xs font-medium text-muted-foreground flex items-center gap-1">
+                    <AlertCircle className="h-3 w-3 text-amber-500" />
+                    Stuck vocab — {vocabStuck.length}
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                  {vocabStuck.map(({ row, level, reviewCount }) => (
+                    <div
+                      key={`${row.word}|${row.reading}`}
+                      className="rounded border p-2 text-center"
+                    >
+                      <div className="text-base font-bold leading-none">{row.word}</div>
+                      <div className="text-[10px] text-muted-foreground mt-1 truncate">
+                        {row.reading} · {row.meaning}
+                      </div>
+                      <div className="text-[10px] text-muted-foreground tabular-nums mt-1">
+                        L{level} · {reviewCount}×
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </CardContent>
         </Card>
 
