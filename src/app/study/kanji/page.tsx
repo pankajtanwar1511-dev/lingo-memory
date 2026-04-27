@@ -75,6 +75,14 @@ const TIER_AIDS: SectionLink[] = [
 ];
 
 export default function ExtendedKanjiListPage() {
+  const { meta: datasetMeta } = useKanjiDataset();
+  // Wrap so we can `key` on dataset id and remount the inner state-holding
+  // component when the user toggles. Cleanest way to flush every per-dataset
+  // bit (filters, search, scroll) without coordinating resets manually.
+  return <KanjiListInner key={datasetMeta.id} />;
+}
+
+function KanjiListInner() {
   const { user } = useAuth();
   const { meta: datasetMeta } = useKanjiDataset();
   const [kanjiList, setKanjiList] = useState<ExtendedKanji[]>([]);
@@ -185,6 +193,11 @@ export default function ExtendedKanjiListPage() {
     <>
       <Header />
       <div className="container max-w-7xl mx-auto px-4 py-8 space-y-6">
+        {/* Dataset switch — sits above everything as the page-level toggle */}
+        <div className="flex justify-center sm:justify-start">
+          <KanjiDatasetSwitch />
+        </div>
+
         <div className="flex flex-col gap-4">
           <div className="flex items-center justify-between">
             <div>
@@ -193,9 +206,6 @@ export default function ExtendedKanjiListPage() {
                 {filtered.length} of {kanjiList.length} kanji ·{' '}
                 <span className="text-xs">{datasetMeta.description}</span>
               </p>
-              <div className="mt-2">
-                <KanjiDatasetSwitch />
-              </div>
             </div>
             <div className="flex items-center gap-3">
               <Link href="/study/kanji-practice">

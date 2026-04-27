@@ -60,6 +60,13 @@ import {
 const PROGRESS_KEY = 'extended-kanji-practice-progress'
 
 export default function KanjiProgressPage() {
+  const { meta: datasetMeta } = useKanjiDataset()
+  // Remount on dataset toggle so all internal state (kanji list, coverage
+  // memos, lesson breakdown) flushes cleanly.
+  return <KanjiProgressInner key={datasetMeta.id} />
+}
+
+function KanjiProgressInner() {
   const { user } = useAuth()
   const router = useRouter()
   const { settings } = useSettings()
@@ -205,6 +212,11 @@ export default function KanjiProgressPage() {
     <>
       <Header />
       <div className="container max-w-4xl mx-auto px-4 py-6 sm:py-8 space-y-6">
+        {/* Dataset switch — page-level toggle, sits above everything */}
+        <div className="flex justify-center sm:justify-start">
+          <KanjiDatasetSwitch />
+        </div>
+
         {/* ─── Header ─────────────────────────────────────────────── */}
         <div className="flex items-center justify-between gap-2">
           <Link href="/study/kanji">
@@ -232,9 +244,6 @@ export default function KanjiProgressPage() {
           <p className="text-sm text-muted-foreground mt-1">
             {vocabKpis.total} vocab cards · {kanjiList.length} kanji
           </p>
-          <div className="mt-2">
-            <KanjiDatasetSwitch />
-          </div>
           {/* Daily goal bar */}
           <div className="mt-3">
             <div className="h-2 rounded-full bg-muted overflow-hidden max-w-md">
