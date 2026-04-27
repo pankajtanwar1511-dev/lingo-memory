@@ -55,7 +55,7 @@ export class AuthService {
    * Check if authentication is available
    */
   isAvailable(): boolean {
-    return isFirebaseConfigured() && !!auth && !!firestore
+    return isFirebaseConfigured() && !!auth
   }
 
   /**
