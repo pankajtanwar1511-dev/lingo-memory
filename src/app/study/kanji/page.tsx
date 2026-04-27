@@ -14,7 +14,6 @@ import {
   BookOpen,
   BookOpenText,
   Eye,
-  Layers,
   Quote,
   Search,
   SortAsc,
@@ -64,7 +63,6 @@ const SENTENCE_LINKS: SectionLink[] = [
 
 const STUDY_LINKS: SectionLink[] = [
   { href: '/study/kanji-practice', label: 'Flashcard browse', icon: BookOpenText, hint: 'Read through cards (no rating)' },
-  { href: '/study/kanji/prerequisite', label: 'Drawing practice', icon: Layers, hint: 'Stroke-by-stroke writing' },
 ];
 
 export default function ExtendedKanjiListPage() {
