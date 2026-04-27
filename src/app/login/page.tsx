@@ -1,13 +1,12 @@
-import { Metadata } from "next"
 import { LoginForm } from "@/components/auth/login-form"
 import { Header } from "@/components/layout/header"
 
-export const metadata: Metadata = {
-  title: "Sign In - LingoMemory",
-  description: "Sign in to sync your Japanese vocabulary learning progress across all devices",
-}
-
-export default function LoginPage() {
+export default function LoginPage({
+  searchParams,
+}: {
+  searchParams?: { next?: string }
+}) {
+  const next = typeof searchParams?.next === 'string' ? searchParams.next : '/'
   return (
     <div className="min-h-screen">
       <Header />
@@ -21,7 +20,7 @@ export default function LoginPage() {
             Continue your Japanese learning journey
           </p>
         </div>
-        <LoginForm redirectTo="/" />
+        <LoginForm redirectTo={next} />
       </div>
     </main>
     </div>

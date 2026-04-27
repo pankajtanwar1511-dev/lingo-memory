@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
 import { DatabaseProvider } from "@/components/providers/database-provider"
 import { AuthProvider } from "@/contexts/auth-context"
+import { RequireAuth } from "@/components/auth/require-auth"
 import { SettingsProvider } from "@/contexts/settings-context"
 import { PWAInstaller, IOSInstallInstructions } from "@/components/pwa-installer"
 import { OfflineIndicator } from "@/components/offline-indicator"
@@ -77,7 +78,7 @@ export default function RootLayout({
                   {/* Gradient mesh background */}
                   <div className="fixed inset-0 gradient-mesh opacity-50 dark:opacity-30" />
                   <div className="relative z-10">
-                    {children}
+                    <RequireAuth>{children}</RequireAuth>
                   </div>
                 </div>
                 <Toaster />

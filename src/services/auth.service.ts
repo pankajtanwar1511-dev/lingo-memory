@@ -15,6 +15,7 @@ import {
   GoogleAuthProvider,
   signOut as firebaseSignOut,
   sendPasswordResetEmail,
+  sendEmailVerification,
   updateProfile,
   User,
   UserCredential,
@@ -80,10 +81,48 @@ export class AuthService {
       // Create user document in Firestore
       await this.createUserDocument(credential.user)
 
+      // Send verification email. Failure here is non-fatal — the user can
+      // resend from /verify-email.
+      try {
+        await sendEmailVerification(credential.user)
+      } catch (e) {
+        console.warn('Failed to send verification email on signup:', e)
+      }
+
       return this.toAuthUser(credential.user)
     } catch (error: any) {
       throw this.handleAuthError(error)
     }
+  }
+
+  /**
+   * Resend the email-verification link for the currently signed-in user.
+   * Throws if no user is signed in or if the user is already verified.
+   */
+  async resendEmailVerification(): Promise<void> {
+    if (!this.isAvailable()) {
+      throw new Error('Firebase authentication not configured')
+    }
+    const user = auth?.currentUser
+    if (!user) throw new Error('No user signed in')
+    if (user.emailVerified) throw new Error('Email already verified')
+    try {
+      await sendEmailVerification(user)
+    } catch (error: any) {
+      throw this.handleAuthError(error)
+    }
+  }
+
+  /**
+   * Force-refresh the current user from Firebase. Used by /verify-email to
+   * detect when the user has clicked the link in their inbox.
+   */
+  async reloadCurrentUser(): Promise<AuthUser | null> {
+    if (!this.isAvailable()) return null
+    const user = auth?.currentUser
+    if (!user) return null
+    await user.reload()
+    return this.toAuthUser(user)
   }
 
   /**
