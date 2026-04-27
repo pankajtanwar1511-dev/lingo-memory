@@ -43,6 +43,8 @@ import { load as loadVocabSrs } from '@/services/vocab-reveal-srs.service'
 import { useAuth } from '@/contexts/auth-context'
 import { loadProgress } from '@/services/cloud-progress.service'
 import { useSettings } from '@/contexts/settings-context'
+import { useKanjiDataset } from '@/hooks/use-kanji-dataset'
+import { KanjiDatasetSwitch } from '@/components/kanji/dataset-switch'
 import {
   getActivityLastNDays,
   getStreak,
@@ -61,6 +63,7 @@ export default function KanjiProgressPage() {
   const { user } = useAuth()
   const router = useRouter()
   const { settings } = useSettings()
+  const { meta: datasetMeta } = useKanjiDataset()
   const dailyGoal = settings?.dailyGoal ?? 20
 
   const [kanjiList, setKanjiList] = useState<ExtendedKanji[]>([])
@@ -73,13 +76,14 @@ export default function KanjiProgressPage() {
 
   useEffect(() => {
     let cancelled = false
+    setLoading(true)
     void (async () => {
       try {
         const [kanjiRes, vocabRes] = await Promise.all([
-          fetch('/seed-data/extended-kanji/kanji.json'),
+          fetch(datasetMeta.fetchUrl),
           fetch('/seed-data/extended-kanji/vocabulary.json'),
         ])
-        if (!kanjiRes.ok) throw new Error('Failed to load kanji dataset')
+        if (!kanjiRes.ok) throw new Error(`Failed to load ${datasetMeta.label} dataset`)
         if (!vocabRes.ok) throw new Error('Failed to load vocabulary dataset')
         const kanjiData = await kanjiRes.json()
         const vocabData = await vocabRes.json()
@@ -104,7 +108,7 @@ export default function KanjiProgressPage() {
     return () => {
       cancelled = true
     }
-  }, [user?.uid])
+  }, [user?.uid, datasetMeta.fetchUrl, datasetMeta.label])
 
   // ─── Vocab-reveal stats (the real SRS) ──────────────────────────────
   const vocabKpis = useMemo(() => getVocabKpis(vocabSrs, vocabList), [vocabSrs, vocabList])
@@ -228,6 +232,9 @@ export default function KanjiProgressPage() {
           <p className="text-sm text-muted-foreground mt-1">
             {vocabKpis.total} vocab cards · {kanjiList.length} kanji
           </p>
+          <div className="mt-2">
+            <KanjiDatasetSwitch />
+          </div>
           {/* Daily goal bar */}
           <div className="mt-3">
             <div className="h-2 rounded-full bg-muted overflow-hidden max-w-md">

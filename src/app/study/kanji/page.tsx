@@ -35,6 +35,8 @@ import { CardProgress, ExtendedKanji } from '@/types/extended-kanji';
 import { READING_STYLES } from '@/lib/extended-kanji/readings';
 import { useAuth } from '@/contexts/auth-context';
 import { loadProgress } from '@/services/cloud-progress.service';
+import { useKanjiDataset } from '@/hooks/use-kanji-dataset';
+import { KanjiDatasetSwitch } from '@/components/kanji/dataset-switch';
 type StatusFilter = 'all' | 'untouched' | 'viewed';
 
 type SortOption = 'default' | 'lesson' | 'kanji' | 'vocab';
@@ -74,6 +76,7 @@ const TIER_AIDS: SectionLink[] = [
 
 export default function ExtendedKanjiListPage() {
   const { user } = useAuth();
+  const { meta: datasetMeta } = useKanjiDataset();
   const [kanjiList, setKanjiList] = useState<ExtendedKanji[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -85,9 +88,10 @@ export default function ExtendedKanjiListPage() {
 
   useEffect(() => {
     (async () => {
+      setLoading(true);
       try {
-        const res = await fetch('/seed-data/extended-kanji/kanji.json');
-        if (!res.ok) throw new Error('Failed to load extended-kanji dataset');
+        const res = await fetch(datasetMeta.fetchUrl);
+        if (!res.ok) throw new Error(`Failed to load ${datasetMeta.label} dataset`);
         const data = await res.json();
         setKanjiList(data.kanji as ExtendedKanji[]);
         const merged = await loadProgress<Record<string, CardProgress>>(
@@ -102,7 +106,7 @@ export default function ExtendedKanjiListPage() {
         setLoading(false);
       }
     })();
-  }, [user?.uid]);
+  }, [user?.uid, datasetMeta.fetchUrl, datasetMeta.label]);
 
   const filtered = useMemo(() => {
     let list = kanjiList;
@@ -186,8 +190,12 @@ export default function ExtendedKanjiListPage() {
             <div>
               <h1 className="text-3xl font-bold">Kanji</h1>
               <p className="text-muted-foreground">
-                {filtered.length} of {kanjiList.length} kanji
+                {filtered.length} of {kanjiList.length} kanji ·{' '}
+                <span className="text-xs">{datasetMeta.description}</span>
               </p>
+              <div className="mt-2">
+                <KanjiDatasetSwitch />
+              </div>
             </div>
             <div className="flex items-center gap-3">
               <Link href="/study/kanji-practice">

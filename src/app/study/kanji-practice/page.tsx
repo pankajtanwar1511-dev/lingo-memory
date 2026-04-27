@@ -30,6 +30,7 @@ import { CardProgress, ExtendedKanji } from '@/types/extended-kanji';
 import { READING_STYLES } from '@/lib/extended-kanji/readings';
 import { useAuth } from '@/contexts/auth-context';
 import { loadProgress, saveProgress } from '@/services/cloud-progress.service';
+import { useKanjiDataset } from '@/hooks/use-kanji-dataset';
 
 type SortMode = 'teacher' | 'untouched' | 'random';
 
@@ -42,6 +43,7 @@ const CONFIG_KEY = 'extended-kanji-practice-config';
 
 export default function ExtendedKanjiPracticePage() {
   const { user } = useAuth();
+  const { meta: datasetMeta } = useKanjiDataset();
   const searchParams = useSearchParams();
   const [loading, setLoading] = useState(true);
   const [allKanji, setAllKanji] = useState<ExtendedKanji[]>([]);
@@ -69,9 +71,10 @@ export default function ExtendedKanjiPracticePage() {
   } | null>(null);
 
   useEffect(() => {
+    setLoading(true);
     (async () => {
       try {
-        const res = await fetch('/seed-data/extended-kanji/kanji.json');
+        const res = await fetch(datasetMeta.fetchUrl);
         const data = await res.json();
         const kanji = data.kanji as ExtendedKanji[];
         setAllKanji(kanji);
@@ -154,7 +157,7 @@ export default function ExtendedKanjiPracticePage() {
         setLoading(false);
       }
     })();
-  }, [user?.uid]);
+  }, [user?.uid, datasetMeta.fetchUrl]);
 
   useEffect(() => {
     if (order.length > 0) sessionStorage.setItem(INDEX_KEY, index.toString());
