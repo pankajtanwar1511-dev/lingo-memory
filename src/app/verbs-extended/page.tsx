@@ -21,6 +21,8 @@ import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
 import { ALL_PREDEFINED_LISTS, type VerbList } from "@/data/verb-lists"
 import { analyticsService } from "@/services/analytics.service"
+import { useAuth } from "@/contexts/auth-context"
+import { loadProgress, saveProgress } from "@/services/cloud-progress.service"
 
 interface VerbExample {
   jp: string
@@ -83,6 +85,7 @@ interface VerbProgress {
 }
 
 export default function VerbsPage() {
+  const { user } = useAuth()
   const searchParams = useSearchParams()
   const router = useRouter()
 
@@ -153,18 +156,18 @@ export default function VerbsPage() {
   const [showBatchResult, setShowBatchResult] = useState(false)
   const [totalAttempts, setTotalAttempts] = useState(0)
 
-  // Load custom lists and favorites from localStorage
+  // Load custom lists and favorites — local + cloud, newer wins.
   useEffect(() => {
-    const savedCustomLists = localStorage.getItem('customVerbLists')
-    if (savedCustomLists) {
-      setCustomLists(JSON.parse(savedCustomLists))
-    }
+    let cancelled = false
+    void (async () => {
+      const lists = await loadProgress<any[]>(user?.uid, 'customVerbLists', [])
+      if (!cancelled && lists.length > 0) setCustomLists(lists)
 
-    const savedFavorites = localStorage.getItem('favoriteVerbs')
-    if (savedFavorites) {
-      setFavoriteVerbs(new Set(JSON.parse(savedFavorites)))
-    }
-  }, [])
+      const favs = await loadProgress<string[]>(user?.uid, 'favoriteVerbs', [])
+      if (!cancelled && favs.length > 0) setFavoriteVerbs(new Set(favs))
+    })()
+    return () => { cancelled = true }
+  }, [user?.uid])
 
   // Load active list from URL params
   useEffect(() => {
@@ -211,10 +214,13 @@ export default function VerbsPage() {
         setFilteredVerbs(data.verbs)
         setIsLoading(false)
 
-        // Load progress from localStorage
-        const savedProgress = localStorage.getItem('verbProgress')
-        if (savedProgress) {
-          const progressData = JSON.parse(savedProgress)
+        // Load verb progress — local + cloud, newer wins.
+        const progressData = await loadProgress<Record<string, any>>(
+          user?.uid,
+          'verbProgress',
+          {},
+        )
+        if (Object.keys(progressData).length > 0) {
           const progressMap = new Map()
           Object.entries(progressData).forEach(([key, value]: [string, any]) => {
             progressMap.set(key, {
@@ -231,7 +237,7 @@ export default function VerbsPage() {
       }
     }
     loadVerbs()
-  }, [])
+  }, [user?.uid])
 
   // Filter and shuffle verbs
   useEffect(() => {
@@ -394,8 +400,7 @@ export default function VerbsPage() {
         newSet.add(verbId)
       }
 
-      // Save to localStorage
-      localStorage.setItem('favoriteVerbs', JSON.stringify(Array.from(newSet)))
+      saveProgress(user?.uid, 'favoriteVerbs', Array.from(newSet))
       return newSet
     })
   }
@@ -599,12 +604,11 @@ export default function VerbsPage() {
     newProgress.set(verbId, updated)
     setVerbProgress(newProgress)
 
-    // Save to localStorage
     const progressObj: any = {}
     newProgress.forEach((value, key) => {
       progressObj[key] = value
     })
-    localStorage.setItem('verbProgress', JSON.stringify(progressObj))
+    saveProgress(user?.uid, 'verbProgress', progressObj)
 
     // Auto-flip the card back after marking
     setTimeout(() => {

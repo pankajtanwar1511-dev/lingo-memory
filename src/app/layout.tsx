@@ -11,6 +11,7 @@ import { PWAInstaller, IOSInstallInstructions } from "@/components/pwa-installer
 import { OfflineIndicator } from "@/components/offline-indicator"
 import { ServiceWorkerInit } from "@/components/service-worker-init"
 import { SyncStatus } from "@/components/sync-status"
+import { CloudSyncBoot } from "@/components/cloud-sync-boot"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -67,6 +68,7 @@ export default function RootLayout({
             <SettingsProvider>
               <DatabaseProvider>
                 <ServiceWorkerInit />
+                <CloudSyncBoot />
                 <OfflineIndicator />
 
                 {/* Sync Status - Fixed position */}

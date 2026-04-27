@@ -14,6 +14,7 @@ import {
   type VerbList
 } from '@/data/verb-lists'
 import { useAuth } from '@/contexts/auth-context'
+import { loadProgress, saveProgress } from '@/services/cloud-progress.service'
 import { CreateCustomListDialog } from '@/components/verbs/create-custom-list-dialog'
 import { ManageListVerbsDialog } from '@/components/verbs/manage-list-verbs-dialog'
 import { Play, Plus, Star, BookOpen, GraduationCap, Edit, Trash2, ListPlus, CheckSquare, Square, ArrowLeft } from 'lucide-react'
@@ -52,12 +53,10 @@ export default function VerbListsPage() {
     loadVerbs()
   }, [])
 
-  // Load user data (custom lists, favorites, progress)
+  // Load user data — local first, cloud merge if signed in.
   useEffect(() => {
-    if (isAuthenticated && user) {
-      loadUserData()
-    }
-  }, [isAuthenticated, user])
+    loadUserData()
+  }, [user?.uid])
 
   const loadVerbs = async () => {
     try {
@@ -95,27 +94,19 @@ export default function VerbListsPage() {
   }
 
   const loadUserData = async () => {
-    // TODO: Load from Firestore
-    // For now, load from localStorage
-    const savedCustomLists = localStorage.getItem('customVerbLists')
-    const savedFavorites = localStorage.getItem('favoriteVerbs')
-    const savedProgress = localStorage.getItem('verbProgress')
-
-    if (savedCustomLists) {
-      setCustomLists(JSON.parse(savedCustomLists))
-    }
-    if (savedFavorites) {
-      setFavorites(JSON.parse(savedFavorites))
-    }
-    if (savedProgress) {
-      setVerbProgress(JSON.parse(savedProgress))
-    }
+    const [lists, favs, prog] = await Promise.all([
+      loadProgress<VerbList[]>(user?.uid, 'customVerbLists', []),
+      loadProgress<string[]>(user?.uid, 'favoriteVerbs', []),
+      loadProgress<Record<string, number>>(user?.uid, 'verbProgress', {}),
+    ])
+    if (lists.length > 0) setCustomLists(lists)
+    if (favs.length > 0) setFavorites(favs)
+    if (Object.keys(prog).length > 0) setVerbProgress(prog)
   }
 
   const saveCustomLists = (lists: VerbList[]) => {
     setCustomLists(lists)
-    localStorage.setItem('customVerbLists', JSON.stringify(lists))
-    // TODO: Sync to Firestore
+    saveProgress(user?.uid, 'customVerbLists', lists)
   }
 
   const calculateListProgress = (list: VerbList): number => {

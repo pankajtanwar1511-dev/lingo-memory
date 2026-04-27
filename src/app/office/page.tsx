@@ -20,6 +20,8 @@ import {
 import { motion, AnimatePresence } from "framer-motion"
 import officeData from "@/../public/seed-data/office_vocabulary.json"
 import { fsrs as fsrsScheduler, FSRS, type FSRSCard, Rating, CardState } from "@/lib/fsrs"
+import { useAuth } from "@/contexts/auth-context"
+import { loadProgress, saveProgress } from "@/services/cloud-progress.service"
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -122,6 +124,7 @@ function getCategoryLabel(card: OfficeCard): string {
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function OfficePage() {
+  const { user } = useAuth()
   const router = useRouter()
 
   // Mode state — mirrors verbs page exactly
@@ -161,16 +164,24 @@ export default function OfficePage() {
   const [matchingTestMode, setMatchingTestMode] = useState(false)
   const [showBatchResult, setShowBatchResult] = useState(false)
 
-  // Load favorites + progress from localStorage
+  // Load favorites + progress — local + cloud, newer wins.
   useEffect(() => {
-    const fav = localStorage.getItem("officeFavorites")
-    if (fav) setFavoriteCards(new Set(JSON.parse(fav)))
-    const prog = localStorage.getItem("officeProgress")
-    if (prog) {
-      const obj = JSON.parse(prog)
-      setCardProgress(new Map(Object.entries(obj) as [string, CardProgress][]))
-    }
-  }, [])
+    let cancelled = false
+    void (async () => {
+      const fav = await loadProgress<string[]>(user?.uid, "officeFavorites", [])
+      if (!cancelled && fav.length > 0) setFavoriteCards(new Set(fav))
+
+      const prog = await loadProgress<Record<string, CardProgress>>(
+        user?.uid,
+        "officeProgress",
+        {},
+      )
+      if (!cancelled && Object.keys(prog).length > 0) {
+        setCardProgress(new Map(Object.entries(prog) as [string, CardProgress][]))
+      }
+    })()
+    return () => { cancelled = true }
+  }, [user?.uid])
 
   // ── Data ──────────────────────────────────────────────────────────────────
 
@@ -364,7 +375,7 @@ export default function OfficePage() {
     setCardProgress(newProgress)
     const obj: Record<string, CardProgress> = {}
     newProgress.forEach((v, k) => { obj[k] = v })
-    localStorage.setItem("officeProgress", JSON.stringify(obj))
+    saveProgress(user?.uid, "officeProgress", obj)
     setTimeout(() => setFlippedCards(prev => { const s = new Set(prev); s.delete(cardId); return s }), 500)
   }
 
@@ -382,7 +393,7 @@ export default function OfficePage() {
     setFavoriteCards(prev => {
       const s = new Set(prev)
       if (s.has(cardId)) s.delete(cardId); else s.add(cardId)
-      localStorage.setItem("officeFavorites", JSON.stringify(Array.from(s)))
+      saveProgress(user?.uid, "officeFavorites", Array.from(s))
       return s
     })
   }
