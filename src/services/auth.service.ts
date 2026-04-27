@@ -78,11 +78,13 @@ export class AuthService {
         await updateProfile(credential.user, { displayName })
       }
 
-      // Create user document in Firestore
-      await this.createUserDocument(credential.user)
+      // Firestore not yet provisioned — failures must not block the auth flow.
+      try {
+        await this.createUserDocument(credential.user)
+      } catch (e) {
+        console.warn('Failed to create user document:', e)
+      }
 
-      // Send verification email. Failure here is non-fatal — the user can
-      // resend from /verify-email.
       try {
         await sendEmailVerification(credential.user)
       } catch (e) {
@@ -136,10 +138,13 @@ export class AuthService {
     try {
       const credential = await signInWithEmailAndPassword(auth!, email, password)
 
-      // Update last login time
-      await this.updateUserDocument(credential.user.uid, {
-        lastLoginAt: serverTimestamp()
-      })
+      try {
+        await this.updateUserDocument(credential.user.uid, {
+          lastLoginAt: serverTimestamp()
+        })
+      } catch (e) {
+        console.warn('Failed to update user document on email sign-in:', e)
+      }
 
       return this.toAuthUser(credential.user)
     } catch (error: any) {
@@ -158,14 +163,19 @@ export class AuthService {
     try {
       const credential = await signInWithPopup(auth!, this.googleProvider)
 
-      // Create/update user document
-      const userDoc = await getDoc(doc(firestore!, 'users', credential.user.uid))
-      if (!userDoc.exists()) {
-        await this.createUserDocument(credential.user)
-      } else {
-        await this.updateUserDocument(credential.user.uid, {
-          lastLoginAt: serverTimestamp()
-        })
+      // Firestore not yet provisioned — wrap so an offline read doesn't block
+      // the auth flow. The user is signed in regardless.
+      try {
+        const userDoc = await getDoc(doc(firestore!, 'users', credential.user.uid))
+        if (!userDoc.exists()) {
+          await this.createUserDocument(credential.user)
+        } else {
+          await this.updateUserDocument(credential.user.uid, {
+            lastLoginAt: serverTimestamp()
+          })
+        }
+      } catch (e) {
+        console.warn('Failed to sync user document on Google sign-in:', e)
       }
 
       return this.toAuthUser(credential.user)
