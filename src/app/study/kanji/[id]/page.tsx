@@ -69,16 +69,26 @@ export default function ExtendedKanjiDetailPage() {
   useEffect(() => {
     (async () => {
       try {
-        const [kRes, vRes, sRes] = await Promise.all([
+        // Fetch BOTH datasets and union them so a kanji id from either set
+        // resolves on this detail page. Curated takes precedence on id
+        // collision (its data tends to be richer for the 86 it covers).
+        const [kRes, eRes, vRes, sRes] = await Promise.all([
           fetch('/seed-data/extended-kanji/kanji.json'),
+          fetch('/seed-data/extended-kanji/prerequisite-detailed.json'),
           fetch('/seed-data/extended-kanji/vocabulary.json'),
           fetch('/seed-data/extended-kanji/sentences.json'),
         ]);
-        if (!kRes.ok) throw new Error('Failed to load dataset');
-        const kData = await kRes.json();
+        if (!kRes.ok && !eRes.ok) throw new Error('Failed to load dataset');
+        const kData = kRes.ok ? await kRes.json() : { kanji: [] };
+        const eData = eRes.ok ? await eRes.json() : { kanji: [] };
         const vData = await vRes.json();
         const sData = await sRes.json();
-        const all = kData.kanji as ExtendedKanji[];
+        const curated = (kData.kanji ?? []) as ExtendedKanji[];
+        const extended = (eData.kanji ?? []) as ExtendedKanji[];
+        const byId = new Map<string, ExtendedKanji>();
+        for (const k of extended) byId.set(k.id, k);
+        for (const k of curated) byId.set(k.id, k); // curated wins on collision
+        const all = Array.from(byId.values());
         setAllKanji(all);
         setAllVocab(vData.vocabulary as MergedVocabRow[]);
 
