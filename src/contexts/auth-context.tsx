@@ -10,7 +10,6 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
 import { authService, AuthUser } from '@/services/auth.service'
-import { syncService } from '@/services/sync.service'
 import { isFirebaseConfigured } from '@/lib/firebase'
 
 interface AuthContextType {
@@ -33,27 +32,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [isFirebaseAvailable] = useState(isFirebaseConfigured())
 
   useEffect(() => {
-    // Subscribe to auth state changes
-    const unsubscribe = authService.onAuthStateChange(async (authUser) => {
+    const unsubscribe = authService.onAuthStateChange((authUser) => {
       setUser(authUser)
       setLoading(false)
 
-      // Handle sync service based on auth state
-      if (authUser) {
-        // User logged in - initialize sync
-        try {
-          await syncService.initialize(authUser.uid)
-          console.log('Sync service initialized for user:', authUser.email)
-        } catch (error) {
-          console.error('Failed to initialize sync service:', error)
-        }
-      } else {
-        // User logged out - stop sync
-        syncService.stop()
-        console.log('Sync service stopped')
-      }
-
-      // Debug logging
       if (process.env.NODE_ENV === 'development') {
         console.log('Auth state changed:', authUser ? authUser.email : 'signed out')
       }
@@ -61,7 +43,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     return () => {
       unsubscribe()
-      syncService.stop()
     }
   }, [])
 
