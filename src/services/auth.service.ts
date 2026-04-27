@@ -23,8 +23,8 @@ import {
   setPersistence,
   browserLocalPersistence,
 } from 'firebase/auth'
-import { doc, setDoc, getDoc, serverTimestamp } from 'firebase/firestore'
-import { auth, firestore, isFirebaseConfigured } from '@/lib/firebase'
+import { ref, get, set, update, serverTimestamp } from 'firebase/database'
+import { auth, database, isFirebaseConfigured } from '@/lib/firebase'
 
 export interface AuthUser {
   uid: string
@@ -163,16 +163,16 @@ export class AuthService {
     try {
       const credential = await signInWithPopup(auth!, this.googleProvider)
 
-      // Firestore not yet provisioned — wrap so an offline read doesn't block
-      // the auth flow. The user is signed in regardless.
       try {
-        const userDoc = await getDoc(doc(firestore!, 'users', credential.user.uid))
-        if (!userDoc.exists()) {
-          await this.createUserDocument(credential.user)
-        } else {
-          await this.updateUserDocument(credential.user.uid, {
-            lastLoginAt: serverTimestamp()
-          })
+        if (database) {
+          const snap = await get(ref(database, `users/${credential.user.uid}`))
+          if (!snap.exists()) {
+            await this.createUserDocument(credential.user)
+          } else {
+            await this.updateUserDocument(credential.user.uid, {
+              lastLoginAt: serverTimestamp(),
+            })
+          }
         }
       } catch (e) {
         console.warn('Failed to sync user document on Google sign-in:', e)
@@ -188,18 +188,13 @@ export class AuthService {
    * Sign out current user
    */
   async signOut(): Promise<void> {
-    console.log("[auth.signOut] entered")
     if (!this.isAvailable()) {
-      console.log("[auth.signOut] not available — early return")
       return
     }
 
     try {
-      console.log("[auth.signOut] awaiting firebaseSignOut")
       await firebaseSignOut(auth!)
-      console.log("[auth.signOut] firebaseSignOut resolved")
     } catch (error: any) {
-      console.error("[auth.signOut] firebaseSignOut threw:", error)
       throw this.handleAuthError(error)
     }
   }
@@ -244,10 +239,8 @@ export class AuthService {
    * Create user document in Firestore
    */
   private async createUserDocument(user: User): Promise<void> {
-    if (!firestore) return
-
-    const userRef = doc(firestore, 'users', user.uid)
-    await setDoc(userRef, {
+    if (!database) return
+    await set(ref(database, `users/${user.uid}`), {
       uid: user.uid,
       email: user.email,
       displayName: user.displayName,
@@ -262,22 +255,20 @@ export class AuthService {
         sound: true,
         autoplay: false,
         showFurigana: true,
-        language: 'en'
-      }
+        language: 'en',
+      },
     })
   }
 
   /**
-   * Update user document in Firestore
+   * Update user document in Realtime Database (merge semantics).
    */
   private async updateUserDocument(
     uid: string,
     updates: Record<string, any>
   ): Promise<void> {
-    if (!firestore) return
-
-    const userRef = doc(firestore, 'users', uid)
-    await setDoc(userRef, updates, { merge: true })
+    if (!database) return
+    await update(ref(database, `users/${uid}`), updates)
   }
 
   /**

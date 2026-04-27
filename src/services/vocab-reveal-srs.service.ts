@@ -19,8 +19,8 @@
  *   - flushNow(uid, state)   — immediate cloud write.
  */
 
-import { doc, getDoc, setDoc, Timestamp } from 'firebase/firestore';
-import { firestore, isFirebaseConfigured } from '@/lib/firebase';
+import { ref, get, update, serverTimestamp } from 'firebase/database';
+import { database, isFirebaseConfigured } from '@/lib/firebase';
 import {
   CardKey,
   CardSrs,
@@ -61,17 +61,16 @@ export function persistLocal(state: SrsState): void {
 
 /** True when Firebase is configured AND a uid is present. */
 function canUseCloud(uid: string | null): uid is string {
-  return !!uid && uid !== 'local-user' && isFirebaseConfigured() && !!firestore;
+  return !!uid && uid !== 'local-user' && isFirebaseConfigured() && !!database;
 }
 
-/** Read the user's cards map from Firestore. Returns {} if doc missing. */
+/** Read the user's cards map from Realtime Database. Returns {} if missing. */
 async function readCloud(uid: string): Promise<SrsState> {
   if (!canUseCloud(uid)) return {};
   try {
-    const ref = doc(firestore!, SRS.FIRESTORE_DOC(uid));
-    const snap = await getDoc(ref);
+    const snap = await get(ref(database!, SRS.FIRESTORE_DOC(uid)));
     if (!snap.exists()) return {};
-    const data = snap.data();
+    const data = snap.val();
     const cards = data?.cards;
     return isSrsState(cards) ? cards : {};
   } catch (e) {
@@ -80,16 +79,14 @@ async function readCloud(uid: string): Promise<SrsState> {
   }
 }
 
-/** Write the cards map to Firestore. Single doc, full overwrite of the `cards` field. */
+/** Write the cards map to Realtime Database. Merges into the existing node. */
 async function writeCloud(uid: string, state: SrsState): Promise<void> {
   if (!canUseCloud(uid)) return;
   try {
-    const ref = doc(firestore!, SRS.FIRESTORE_DOC(uid));
-    await setDoc(
-      ref,
-      { cards: state, updatedAt: Timestamp.now() },
-      { merge: true },
-    );
+    await update(ref(database!, SRS.FIRESTORE_DOC(uid)), {
+      cards: state,
+      updatedAt: serverTimestamp(),
+    });
   } catch (e) {
     console.warn('[vocab-reveal-srs] cloud write failed:', e);
   }

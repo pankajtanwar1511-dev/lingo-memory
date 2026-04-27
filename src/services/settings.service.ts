@@ -5,8 +5,8 @@
  * Handles CRUD operations, caching, and real-time updates.
  */
 
-import { doc, getDoc, setDoc, Timestamp, onSnapshot } from 'firebase/firestore'
-import { firestore, isFirebaseConfigured } from '@/lib/firebase'
+import { ref, get, set, update, onValue, serverTimestamp } from 'firebase/database'
+import { database, isFirebaseConfigured } from '@/lib/firebase'
 import { UserSettings, DEFAULT_SETTINGS, SyncActivity, UserProfile } from '@/types/settings'
 import { db } from '@/lib/db'
 
@@ -17,7 +17,7 @@ export class SettingsService {
    * Check if settings service is available
    */
   isAvailable(): boolean {
-    return isFirebaseConfigured() && !!firestore
+    return isFirebaseConfigured() && !!database
   }
 
   /**
@@ -95,10 +95,12 @@ export class SettingsService {
       return () => {}
     }
 
-    const docRef = doc(firestore!, `users/${userId}/settings/preferences`)
-    return onSnapshot(docRef, (snapshot) => {
-      if (snapshot.exists()) {
-        const settings = this.firestoreToSettings(snapshot.data())
+    const r = ref(database!, `users/${userId}/settings/preferences`)
+    // onValue returns its own unsubscribe function in v9+ modular SDK.
+    return onValue(r, (snapshot) => {
+      const val = snapshot.val()
+      if (val) {
+        const settings = this.cloudToSettings(val)
         this.settingsCache.set(userId, settings)
         callback(settings)
       }
@@ -166,18 +168,14 @@ export class SettingsService {
   }
 
   /**
-   * Get settings from Firestore
+   * Get settings from Realtime Database
    */
   private async getCloudSettings(userId: string): Promise<UserSettings | null> {
+    if (!database) return null
     try {
-      const docRef = doc(firestore!, `users/${userId}/settings/preferences`)
-      const snapshot = await getDoc(docRef)
-
-      if (snapshot.exists()) {
-        return this.firestoreToSettings(snapshot.data())
-      }
-
-      return null
+      const snap = await get(ref(database, `users/${userId}/settings/preferences`))
+      if (!snap.exists()) return null
+      return this.cloudToSettings(snap.val())
     } catch (error) {
       console.error('Error getting cloud settings:', error)
       return null
@@ -185,15 +183,16 @@ export class SettingsService {
   }
 
   /**
-   * Save settings to Firestore
+   * Save settings to Realtime Database
    */
   private async saveCloudSettings(userId: string, settings: UserSettings): Promise<void> {
+    if (!database) return
     try {
-      const docRef = doc(firestore!, `users/${userId}/settings/preferences`)
-      await setDoc(docRef, {
+      await set(ref(database, `users/${userId}/settings/preferences`), {
         ...settings,
-        createdAt: Timestamp.fromDate(settings.createdAt),
-        updatedAt: Timestamp.fromDate(settings.updatedAt),
+        // RTDB has no Timestamp type — store as ms epoch numbers.
+        createdAt: settings.createdAt.getTime(),
+        updatedAt: settings.updatedAt.getTime(),
       })
     } catch (error) {
       console.error('Error saving cloud settings:', error)
@@ -202,9 +201,9 @@ export class SettingsService {
   }
 
   /**
-   * Convert Firestore data to UserSettings
+   * Convert RTDB JSON to UserSettings
    */
-  private firestoreToSettings(data: any): UserSettings {
+  private cloudToSettings(data: any): UserSettings {
     return {
       theme: data.theme || 'system',
       language: data.language || 'en',
@@ -223,8 +222,8 @@ export class SettingsService {
       autoSync: data.autoSync ?? true,
       syncFrequency: data.syncFrequency || 'realtime',
       syncOnMobileData: data.syncOnMobileData ?? false,
-      createdAt: data.createdAt?.toDate() || new Date(),
-      updatedAt: data.updatedAt?.toDate() || new Date(),
+      createdAt: typeof data.createdAt === 'number' ? new Date(data.createdAt) : new Date(),
+      updatedAt: typeof data.updatedAt === 'number' ? new Date(data.updatedAt) : new Date(),
     }
   }
 
@@ -245,13 +244,12 @@ export class SettingsService {
    */
   async logSyncActivity(userId: string, activity: Omit<SyncActivity, 'id' | 'userId'>): Promise<void> {
     if (!this.isAvailable()) return
-
     try {
-      const activityRef = doc(firestore!, `users/${userId}/syncActivity/${Date.now()}`)
-      await setDoc(activityRef, {
+      const id = `${Date.now()}`
+      await set(ref(database!, `users/${userId}/syncActivity/${id}`), {
         ...activity,
         userId,
-        timestamp: Timestamp.fromDate(activity.timestamp),
+        timestamp: activity.timestamp.getTime(),
       })
     } catch (error) {
       console.error('Error logging sync activity:', error)
@@ -259,29 +257,28 @@ export class SettingsService {
   }
 
   /**
-   * Get recent sync activity
+   * Get recent sync activity (RTDB has no SQL-like limit/orderBy at scale —
+   * fetch all then sort+slice in memory; fine for personal-scale activity log).
    */
   async getSyncActivity(userId: string, limit: number = 50): Promise<SyncActivity[]> {
     if (!this.isAvailable()) return []
-
     try {
-      const { getDocs, collection, query, orderBy, limit: limitQuery } = await import('firebase/firestore')
-
-      const activitiesRef = collection(firestore!, `users/${userId}/syncActivity`)
-      const q = query(activitiesRef, orderBy('timestamp', 'desc'), limitQuery(limit))
-      const snapshot = await getDocs(q)
-
-      return snapshot.docs.map(doc => ({
-        id: doc.id,
+      const snap = await get(ref(database!, `users/${userId}/syncActivity`))
+      if (!snap.exists()) return []
+      const all = snap.val() as Record<string, any>
+      const entries = Object.entries(all).map(([id, data]) => ({
+        id,
         userId,
-        type: doc.data().type,
-        entityType: doc.data().entityType,
-        entityCount: doc.data().entityCount,
-        timestamp: doc.data().timestamp.toDate(),
-        duration: doc.data().duration,
-        success: doc.data().success,
-        error: doc.data().error,
+        type: data.type,
+        entityType: data.entityType,
+        entityCount: data.entityCount,
+        timestamp: typeof data.timestamp === 'number' ? new Date(data.timestamp) : new Date(),
+        duration: data.duration,
+        success: data.success,
+        error: data.error,
       }))
+      entries.sort((a, b) => b.timestamp.getTime() - a.timestamp.getTime())
+      return entries.slice(0, limit)
     } catch (error) {
       console.error('Error getting sync activity:', error)
       return []
@@ -293,30 +290,24 @@ export class SettingsService {
    */
   async getUserProfile(userId: string): Promise<UserProfile | null> {
     if (!this.isAvailable()) return null
-
     try {
-      const docRef = doc(firestore!, `users/${userId}`)
-      const snapshot = await getDoc(docRef)
-
-      if (snapshot.exists()) {
-        const data = snapshot.data()
-        return {
-          uid: userId,
-          displayName: data.displayName || '',
-          email: data.email || '',
-          emailVerified: data.emailVerified || false,
-          photoURL: data.photoURL || null,
-          phoneNumber: data.phoneNumber || null,
-          bio: data.bio,
-          location: data.location,
-          nativeLanguage: data.nativeLanguage,
-          learningGoals: data.learningGoals || [],
-          joinedAt: data.createdAt?.toDate() || new Date(),
-          lastActive: data.lastActive?.toDate() || new Date(),
-        }
+      const snap = await get(ref(database!, `users/${userId}`))
+      if (!snap.exists()) return null
+      const data = snap.val()
+      return {
+        uid: userId,
+        displayName: data.displayName || '',
+        email: data.email || '',
+        emailVerified: data.emailVerified || false,
+        photoURL: data.photoURL || null,
+        phoneNumber: data.phoneNumber || null,
+        bio: data.bio,
+        location: data.location,
+        nativeLanguage: data.nativeLanguage,
+        learningGoals: data.learningGoals || [],
+        joinedAt: typeof data.createdAt === 'number' ? new Date(data.createdAt) : new Date(),
+        lastActive: typeof data.lastActive === 'number' ? new Date(data.lastActive) : new Date(),
       }
-
-      return null
     } catch (error) {
       console.error('Error getting user profile:', error)
       return null
@@ -328,13 +319,11 @@ export class SettingsService {
    */
   async updateUserProfile(userId: string, profile: Partial<UserProfile>): Promise<void> {
     if (!this.isAvailable()) return
-
     try {
-      const docRef = doc(firestore!, `users/${userId}`)
-      await setDoc(docRef, {
+      await update(ref(database!, `users/${userId}`), {
         ...profile,
-        lastActive: Timestamp.now(),
-      }, { merge: true })
+        lastActive: serverTimestamp(),
+      })
     } catch (error) {
       console.error('Error updating user profile:', error)
       throw error

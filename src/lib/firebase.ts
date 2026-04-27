@@ -9,11 +9,13 @@
 import { initializeApp, getApps, FirebaseApp } from 'firebase/app'
 import { getAuth, Auth } from 'firebase/auth'
 import { getFirestore, Firestore } from 'firebase/firestore'
+import { getDatabase, Database } from 'firebase/database'
 
 // Firebase configuration from environment variables
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
   authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL,
   projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
   storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
@@ -34,6 +36,7 @@ export const isFirebaseConfigured = (): boolean => {
 let app: FirebaseApp | undefined
 let auth: Auth | undefined
 let firestore: Firestore | undefined
+let database: Database | undefined
 
 if (typeof window !== 'undefined') {
   if (isFirebaseConfigured()) {
@@ -42,14 +45,19 @@ if (typeof window !== 'undefined') {
       try {
         app = initializeApp(firebaseConfig)
         auth = getAuth(app)
-        // Firestore is intentionally NOT initialized — the project's Firestore
-        // database is not provisioned yet, and live reads hang on retry for
-        // ~10s before throwing "client is offline". Leaving firestore as
-        // undefined means downstream calls fail fast (synchronously) and
-        // existing try/catch wrappers swallow the error. Re-enable once the
-        // DB is created in Firebase Console + Blaze plan is on.
+        // Firestore stays disabled — the project uses Realtime Database for
+        // cross-device sync (free Spark plan, no Blaze required). Any code
+        // that still imports `firestore` will see undefined and skip.
         firestore = undefined
-        console.log('✓ Firebase Auth initialized (Firestore disabled)')
+        if (firebaseConfig.databaseURL) {
+          database = getDatabase(app)
+          console.log('✓ Firebase Auth + Realtime Database initialized')
+        } else {
+          console.warn(
+            '⚠ NEXT_PUBLIC_FIREBASE_DATABASE_URL not set — cloud sync disabled. ' +
+            'Add it to .env.local and Vercel env vars.',
+          )
+        }
       } catch (error) {
         console.error('✗ Firebase initialization error:', error)
       }
@@ -57,6 +65,7 @@ if (typeof window !== 'undefined') {
       app = getApps()[0]
       auth = getAuth(app)
       firestore = undefined
+      if (firebaseConfig.databaseURL) database = getDatabase(app)
     }
   } else {
     console.warn(
@@ -73,9 +82,9 @@ if (typeof window !== 'undefined') {
 }
 
 // Export Firebase instances
-export { app, auth, firestore }
+export { app, auth, firestore, database }
 
 // Export for debugging
 if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
-  (window as any).firebase = { app, auth, firestore, isConfigured: isFirebaseConfigured() }
+  (window as any).firebase = { app, auth, firestore, database, isConfigured: isFirebaseConfigured() }
 }
