@@ -2,18 +2,25 @@
 
 /**
  * useKanjiDataset — single source of truth for which kanji set the kanji
- * pages display. Persisted via cloud-progress.service so the choice syncs
- * across devices.
+ * pages display. State is shared via a Context (KanjiDatasetProvider) so
+ * the modal can flip it and ALL consumer pages re-render in sync. Without
+ * Context each call site would have its own useState and updates wouldn't
+ * propagate.
+ *
+ * Persistence: cloud-progress.service so the choice syncs across devices.
  *
  *   - 'curated'  : 86 kanji in kanji.json (teacher's KANJI_REFERENCE.md set)
  *   - 'extended' : 117 prerequisite kanji in prerequisite-detailed.json
- *
- * Both files yield ExtendedKanji-compatible objects, so consumer pages
- * just swap the fetch URL based on `dataset` and everything downstream
- * (listing, dashboard, practice) works without further changes.
  */
 
-import { useCallback, useEffect, useState } from 'react'
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+  type ReactNode,
+} from 'react'
 import { useAuth } from '@/contexts/auth-context'
 import { loadProgress, saveProgress } from '@/services/cloud-progress.service'
 
@@ -46,7 +53,16 @@ export const DATASETS: Record<KanjiDataset, KanjiDatasetMeta> = {
   },
 }
 
-export function useKanjiDataset() {
+interface KanjiDatasetContextValue {
+  dataset: KanjiDataset
+  setDataset: (next: KanjiDataset) => void
+  meta: KanjiDatasetMeta
+  loaded: boolean
+}
+
+const KanjiDatasetContext = createContext<KanjiDatasetContextValue | null>(null)
+
+export function KanjiDatasetProvider({ children }: { children: ReactNode }) {
   const { user } = useAuth()
   const [dataset, setDatasetState] = useState<KanjiDataset>('curated')
   const [loaded, setLoaded] = useState(false)
@@ -56,7 +72,6 @@ export function useKanjiDataset() {
     void (async () => {
       const stored = await loadProgress<KanjiDataset>(user?.uid, KANJI_DATASET_KEY, 'curated')
       if (cancelled) return
-      // Defensive: if the stored value isn't one of the known options, fall back.
       setDatasetState(stored === 'extended' ? 'extended' : 'curated')
       setLoaded(true)
     })()
@@ -73,5 +88,21 @@ export function useKanjiDataset() {
     [user?.uid],
   )
 
-  return { dataset, setDataset, meta: DATASETS[dataset], loaded }
+  return (
+    <KanjiDatasetContext.Provider
+      value={{ dataset, setDataset, meta: DATASETS[dataset], loaded }}
+    >
+      {children}
+    </KanjiDatasetContext.Provider>
+  )
+}
+
+export function useKanjiDataset(): KanjiDatasetContextValue {
+  const ctx = useContext(KanjiDatasetContext)
+  if (!ctx) {
+    throw new Error(
+      'useKanjiDataset must be used inside <KanjiDatasetProvider>. Wrap the kanji section in src/app/study/kanji/layout.tsx.',
+    )
+  }
+  return ctx
 }
