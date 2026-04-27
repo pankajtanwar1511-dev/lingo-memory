@@ -4,6 +4,7 @@ import { useState } from "react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
 import { useAuth } from "@/contexts/auth-context"
+import { useIsAdmin } from "@/lib/admin"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -13,11 +14,12 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { User, Settings, LogOut, Cloud, CloudOff, LogIn } from "lucide-react"
+import { User, Settings, LogOut, Cloud, CloudOff, LogIn, ShieldCheck } from "lucide-react"
 
 export function UserProfile() {
   const router = useRouter()
   const { user, isAuthenticated, signOut, isFirebaseAvailable } = useAuth()
+  const isAdmin = useIsAdmin()
   const [signingOut, setSigningOut] = useState(false)
 
   const handleSignOut = async () => {
@@ -87,6 +89,14 @@ export function UserProfile() {
             Settings
           </Link>
         </DropdownMenuItem>
+        {isAdmin && (
+          <DropdownMenuItem asChild>
+            <Link href="/admin/access" className="w-full cursor-pointer">
+              <ShieldCheck className="mr-2 h-4 w-4" />
+              Admin access
+            </Link>
+          </DropdownMenuItem>
+        )}
         <DropdownMenuItem className="cursor-pointer">
           <Cloud className="mr-2 h-4 w-4" />
           <span>Synced</span>
