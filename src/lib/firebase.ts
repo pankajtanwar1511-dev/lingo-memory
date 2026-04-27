@@ -42,15 +42,21 @@ if (typeof window !== 'undefined') {
       try {
         app = initializeApp(firebaseConfig)
         auth = getAuth(app)
-        firestore = getFirestore(app)
-        console.log('✓ Firebase initialized successfully')
+        // Firestore is intentionally NOT initialized — the project's Firestore
+        // database is not provisioned yet, and live reads hang on retry for
+        // ~10s before throwing "client is offline". Leaving firestore as
+        // undefined means downstream calls fail fast (synchronously) and
+        // existing try/catch wrappers swallow the error. Re-enable once the
+        // DB is created in Firebase Console + Blaze plan is on.
+        firestore = undefined
+        console.log('✓ Firebase Auth initialized (Firestore disabled)')
       } catch (error) {
         console.error('✗ Firebase initialization error:', error)
       }
     } else {
       app = getApps()[0]
       auth = getAuth(app)
-      firestore = getFirestore(app)
+      firestore = undefined
     }
   } else {
     console.warn(
