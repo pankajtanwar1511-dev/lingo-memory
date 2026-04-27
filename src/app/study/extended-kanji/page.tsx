@@ -23,6 +23,7 @@ import {
   SortAsc,
   Sparkles,
   Tags,
+  TrendingUp,
 } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -34,6 +35,7 @@ import { CardProgress, ExtendedKanji } from '@/types/extended-kanji';
 import { READING_STYLES } from '@/lib/extended-kanji/readings';
 import { useAuth } from '@/contexts/auth-context';
 import { loadProgress } from '@/services/cloud-progress.service';
+import { classify, type CardCategory } from '@/lib/extended-kanji/stats';
 
 type SortOption = 'default' | 'lesson' | 'kanji' | 'vocab';
 
@@ -45,6 +47,7 @@ const SECTION_LINKS: {
   icon: React.ComponentType<{ className?: string }>;
   hint: string;
 }[] = [
+  { href: '/study/extended-kanji/progress', label: 'Progress dashboard', icon: TrendingUp, hint: 'KPIs · level distribution · stuck cards' },
   { href: '/study/extended-kanji/lessons', label: 'Lesson timeline', icon: CalendarDays, hint: '37 lessons, Feb–Apr 2026' },
   { href: '/study/extended-kanji/vocabulary', label: 'All vocabulary', icon: BookOpen, hint: '378 unique rows (PART 1 + themes)' },
   { href: '/study/extended-kanji/vocab-reveal', label: 'Vocab reveal drill', icon: Eye, hint: 'Big-type kanji → press → kana' },
@@ -64,6 +67,7 @@ export default function ExtendedKanjiListPage() {
   const [sortBy, setSortBy] = useState<SortOption>('default');
   const [lessonFilter, setLessonFilter] = useState<string>('all');
   const [progress, setProgress] = useState<Record<string, CardProgress>>({});
+  const [statusFilter, setStatusFilter] = useState<CardCategory | 'all'>('all');
 
   useEffect(() => {
     (async () => {
@@ -108,6 +112,9 @@ export default function ExtendedKanjiListPage() {
       const n = parseInt(lessonFilter, 10);
       list = list.filter((k) => k.lessonNumber === n);
     }
+    if (statusFilter !== 'all') {
+      list = list.filter((k) => classify(progress[k.id]) === statusFilter);
+    }
     const sorted = [...list];
     switch (sortBy) {
       case 'lesson':
@@ -123,7 +130,7 @@ export default function ExtendedKanjiListPage() {
         sorted.sort((a, b) => a.orderInReference - b.orderInReference);
     }
     return sorted;
-  }, [kanjiList, search, sortBy, lessonFilter]);
+  }, [kanjiList, search, sortBy, lessonFilter, statusFilter, progress]);
 
   const uniqueLessons = useMemo(() => {
     const set = new Set<number>();
@@ -211,6 +218,29 @@ export default function ExtendedKanjiListPage() {
                 ))}
               </Select>
             </div>
+          </div>
+
+          {/* Status chips — filter by progress category. Counts derived from
+              progress + kanjiList; quick way to find what to work on. */}
+          <div className="flex flex-wrap gap-1.5">
+            {([
+              ['all', 'All', kanjiList.length],
+              ['untouched', 'Untouched', kanjiList.filter((k) => classify(progress[k.id]) === 'untouched').length],
+              ['learning', 'Learning', kanjiList.filter((k) => classify(progress[k.id]) === 'learning').length],
+              ['due', 'Due now', kanjiList.filter((k) => classify(progress[k.id]) === 'due').length],
+              ['mastered', 'Mastered', kanjiList.filter((k) => classify(progress[k.id]) === 'mastered').length],
+            ] as const).map(([key, label, count]) => (
+              <Button
+                key={key}
+                size="sm"
+                variant={statusFilter === key ? 'default' : 'outline'}
+                onClick={() => setStatusFilter(key)}
+                className="h-7 text-xs gap-1"
+              >
+                {label}
+                <span className="opacity-70 tabular-nums">({count})</span>
+              </Button>
+            ))}
           </div>
         </div>
 
