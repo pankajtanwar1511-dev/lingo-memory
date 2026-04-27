@@ -51,7 +51,8 @@ import {
   getVocabActivityLastNDays,
   getVocabDistribution,
   getVocabKpis,
-  getLessonStats,
+  getKanjiCoverage,
+  getLessonCoverage,
 } from '@/lib/extended-kanji/stats'
 
 const PROGRESS_KEY = 'extended-kanji-practice-progress'
@@ -128,15 +129,22 @@ export default function KanjiProgressPage() {
     return getTodayCount(synth)
   }, [vocabSrs])
 
-  // ─── Kanji coverage (no SRS — viewed vs not viewed) ─────────────────
-  const kanjiViewed = useMemo(
-    () => kanjiList.filter((k) => !!progress[k.id] && progress[k.id].reviewCount > 0).length,
-    [kanjiList, progress],
+  // ─── Kanji coverage via vocab mastery ───────────────────────────────
+  // A kanji counts as "covered" once every vocab card under it has reached
+  // mastered (L4) in the reading drill. Vocab-less kanji fall back to the
+  // simpler "viewed via flashcard browse" signal.
+  const coverage = useMemo(
+    () => getKanjiCoverage(kanjiList, vocabSrs, progress),
+    [kanjiList, vocabSrs, progress],
   )
-  const kanjiCoverage = kanjiList.length > 0 ? Math.round((kanjiViewed / kanjiList.length) * 100) : 0
+  const coveragePct = coverage.total > 0 ? Math.round((coverage.covered / coverage.total) * 100) : 0
+  const partialPct = coverage.total > 0 ? Math.round((coverage.partial / coverage.total) * 100) : 0
   const kanjiActivity = useMemo(() => getActivityLastNDays(progress, 7), [progress])
-  const lessonStats = useMemo(() => getLessonStats(progress, kanjiList), [progress, kanjiList])
-  const visibleLessons = showAllLessons ? lessonStats : lessonStats.slice(0, 6)
+  const lessonCoverage = useMemo(
+    () => getLessonCoverage(kanjiList, vocabSrs, progress),
+    [kanjiList, vocabSrs, progress],
+  )
+  const visibleLessons = showAllLessons ? lessonCoverage : lessonCoverage.slice(0, 6)
 
   const goalPct = Math.min(100, Math.round((todayCount / Math.max(1, dailyGoal)) * 100))
 
@@ -243,10 +251,10 @@ export default function KanjiProgressPage() {
               <div>
                 <CardTitle className="text-xl flex items-center gap-2">
                   <Eye className="h-5 w-5 text-primary" />
-                  Vocab reveal drill
+                  Reading drill
                 </CardTitle>
                 <p className="text-xs text-muted-foreground mt-1">
-                  Atomic SRS · big-type kanji → press → kana
+                  Atomic SRS · see kanji, recall the reading
                 </p>
               </div>
               <Link href="/study/kanji/vocab-reveal">
@@ -363,10 +371,11 @@ export default function KanjiProgressPage() {
               <div>
                 <CardTitle className="text-base flex items-center gap-2">
                   <BookOpen className="h-4 w-4" />
-                  Kanji study coverage
+                  Kanji coverage
                 </CardTitle>
                 <p className="text-xs text-muted-foreground mt-1">
-                  No level dial — kanji cards are too compound for atomic ratings. Just track what you've opened.
+                  A kanji counts as <span className="font-medium">covered</span> when every vocab
+                  card under it is mastered (L4) in the reading drill.
                 </p>
               </div>
               <Link href="/study/kanji">
@@ -378,20 +387,40 @@ export default function KanjiProgressPage() {
             </div>
           </CardHeader>
           <CardContent className="space-y-4">
-            {/* Coverage bar */}
+            {/* Coverage bar — covered (emerald) + partial (sky) on a single bar */}
             <div>
               <div className="flex items-center justify-between mb-1">
-                <span className="text-xs font-medium text-muted-foreground">Viewed coverage</span>
+                <span className="text-xs font-medium text-muted-foreground">Coverage</span>
                 <span className="text-xs tabular-nums">
-                  <span className="font-bold">{kanjiViewed}</span>{' '}
-                  <span className="text-muted-foreground">/ {kanjiList.length} ({kanjiCoverage}%)</span>
+                  <span className="font-bold">{coverage.covered}</span>{' '}
+                  <span className="text-muted-foreground">/ {coverage.total} ({coveragePct}%)</span>
                 </span>
               </div>
-              <div className="h-2.5 rounded-full bg-muted overflow-hidden">
+              <div className="flex h-2.5 rounded-full bg-muted overflow-hidden">
                 <div
                   className="h-full bg-emerald-500 transition-all"
-                  style={{ width: `${kanjiCoverage}%` }}
+                  style={{ width: `${coveragePct}%` }}
+                  title={`Covered: ${coverage.covered}`}
                 />
+                <div
+                  className="h-full bg-sky-500/70 transition-all"
+                  style={{ width: `${partialPct}%` }}
+                  title={`Partial: ${coverage.partial}`}
+                />
+              </div>
+              <div className="mt-1.5 flex flex-wrap gap-x-3 gap-y-0.5 text-[11px] text-muted-foreground">
+                <span className="flex items-center gap-1">
+                  <span className="h-2 w-2 rounded-sm bg-emerald-500" />
+                  Covered <span className="tabular-nums">{coverage.covered}</span>
+                </span>
+                <span className="flex items-center gap-1">
+                  <span className="h-2 w-2 rounded-sm bg-sky-500/70" />
+                  Partial <span className="tabular-nums">{coverage.partial}</span>
+                </span>
+                <span className="flex items-center gap-1">
+                  <span className="h-2 w-2 rounded-sm bg-muted-foreground/30" />
+                  None <span className="tabular-nums">{coverage.none}</span>
+                </span>
               </div>
             </div>
 
@@ -429,14 +458,14 @@ export default function KanjiProgressPage() {
               </div>
             </div>
 
-            {/* Lesson coverage breakdown */}
-            {lessonStats.length > 0 && (
+            {/* Lesson coverage breakdown — covered + partial bars per lesson */}
+            {lessonCoverage.length > 0 && (
               <div className="pt-3 border-t">
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-xs font-medium text-muted-foreground">
-                    Lesson coverage · {lessonStats.length} lessons
+                    Lesson coverage · {lessonCoverage.length} lessons
                   </span>
-                  {lessonStats.length > 6 && (
+                  {lessonCoverage.length > 6 && (
                     <Button
                       variant="ghost"
                       size="sm"
@@ -449,7 +478,7 @@ export default function KanjiProgressPage() {
                         </>
                       ) : (
                         <>
-                          All {lessonStats.length} <ChevronDown className="h-3 w-3" />
+                          All {lessonCoverage.length} <ChevronDown className="h-3 w-3" />
                         </>
                       )}
                     </Button>
@@ -457,20 +486,21 @@ export default function KanjiProgressPage() {
                 </div>
                 <div className={showAllLessons ? 'max-h-72 overflow-y-auto pr-1 space-y-1.5' : 'space-y-1.5'}>
                   {visibleLessons.map((s) => {
-                    const viewedCount = s.mastered + s.learning
-                    const pct = s.total > 0 ? (viewedCount / s.total) * 100 : 0
+                    const coveredPct = s.total > 0 ? (s.covered / s.total) * 100 : 0
+                    const partialPctL = s.total > 0 ? (s.partial / s.total) * 100 : 0
                     return (
                       <div key={s.lesson} className="flex items-center gap-2">
                         <div className="w-7 shrink-0 text-[11px] tabular-nums text-muted-foreground">
                           L{s.lesson}
                         </div>
                         <div className="flex-1 min-w-0">
-                          <div className="h-2 rounded-full bg-muted overflow-hidden">
-                            <div className="h-full bg-emerald-500 transition-all" style={{ width: `${pct}%` }} />
+                          <div className="flex h-2 rounded-full bg-muted overflow-hidden">
+                            <div className="h-full bg-emerald-500 transition-all" style={{ width: `${coveredPct}%` }} />
+                            <div className="h-full bg-sky-500/70 transition-all" style={{ width: `${partialPctL}%` }} />
                           </div>
                         </div>
                         <div className="w-12 shrink-0 text-right text-[10px] text-muted-foreground tabular-nums">
-                          {viewedCount}/{s.total}
+                          {s.covered}/{s.total}
                         </div>
                         <Button
                           size="sm"
@@ -492,17 +522,17 @@ export default function KanjiProgressPage() {
         </Card>
 
         {/* Empty state */}
-        {vocabKpis.newCount === vocabKpis.total && kanjiViewed === 0 && (
+        {vocabKpis.newCount === vocabKpis.total && coverage.covered === 0 && (
           <Card className="border-dashed">
             <CardContent className="pt-4 pb-4 text-center space-y-2">
               <Sparkles className="h-6 w-6 mx-auto text-muted-foreground" />
               <p className="text-sm text-muted-foreground">
-                Try the vocab-reveal drill to seed your data.
+                Try the reading drill to seed your data.
               </p>
               <Link href="/study/kanji/vocab-reveal">
                 <Button size="sm">
                   <Play className="h-3 w-3 mr-1" />
-                  Open vocab drill
+                  Open reading drill
                 </Button>
               </Link>
             </CardContent>

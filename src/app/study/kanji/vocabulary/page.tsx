@@ -204,7 +204,7 @@ export default function ExtendedKanjiVocabularyPage() {
           className="w-4 h-4"
         />
         Also show auto-discovered parents (runtime substring match across the{' '}
-        {kanjiCharSet.length} extended kanji)
+        {kanjiCharSet.length} kanji)
       </label>
 
       <div className="flex flex-wrap gap-4 text-xs text-muted-foreground">

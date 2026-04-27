@@ -399,7 +399,7 @@ export default function StudyPage() {
                     Kanji
                   </CardTitle>
                   <CardDescription>
-                    37-lesson reference + vocab reveal SRS
+                    37-lesson reference + reading drill SRS
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">

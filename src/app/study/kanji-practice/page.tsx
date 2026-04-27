@@ -311,7 +311,7 @@ export default function ExtendedKanjiPracticePage() {
           <Link href="/study/kanji">
             <Button variant="ghost" className="gap-2">
               <ArrowLeft className="h-4 w-4" />
-              Back to Extended Kanji
+              Back to Kanji
             </Button>
           </Link>
         </div>

@@ -43,7 +43,7 @@ export function Header() {
           icon: Languages,
           badge: "86",
           badgeVariant: "default" as const,
-          description: "37-lesson reference + vocab reveal SRS"
+          description: "37-lesson reference + reading drill SRS"
         },
         {
           name: "Vocabulary",

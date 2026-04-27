@@ -311,6 +311,94 @@ export function getVocabActivityLastNDays(srs: SrsState, days = 7): DayBucket[] 
   return buckets
 }
 
+// ──────────────────────────────────────────────────────────────────────────
+// Kanji coverage via vocab mastery
+//
+// A kanji is "covered" when EVERY vocab card listed under it has reached the
+// mastery threshold in vocab-reveal SRS (default L4). For kanji with no
+// associated vocab, fall back to the simpler "viewed via kanji-practice"
+// signal so the metric isn't undefined.
+// ──────────────────────────────────────────────────────────────────────────
+
+export const COVERAGE_DEFAULT_THRESHOLD = 4
+
+export type CoverageState = 'covered' | 'partial' | 'none'
+
+export function classifyKanjiCoverage(
+  kanji: ExtendedKanji,
+  vocabSrs: SrsState,
+  viewProgress: ProgressMap,
+  threshold: number = COVERAGE_DEFAULT_THRESHOLD,
+): CoverageState {
+  const vocab = kanji.vocabulary ?? []
+  if (vocab.length === 0) {
+    // Vocab-less kanji can only signal via the viewed flag.
+    const p = viewProgress[kanji.id]
+    return !!p && p.reviewCount > 0 ? 'covered' : 'none'
+  }
+  let mastered = 0
+  let any = 0
+  for (const v of vocab) {
+    const e = vocabSrs[cardKey(v.word, v.reading)]
+    if (!e || e.reviewCount === 0) continue
+    any++
+    if (e.level >= threshold) mastered++
+  }
+  if (mastered === vocab.length) return 'covered'
+  if (any > 0) return 'partial'
+  return 'none'
+}
+
+export interface CoverageStats {
+  total: number
+  covered: number
+  partial: number
+  none: number
+}
+
+export function getKanjiCoverage(
+  kanjiList: ExtendedKanji[],
+  vocabSrs: SrsState,
+  viewProgress: ProgressMap,
+  threshold: number = COVERAGE_DEFAULT_THRESHOLD,
+): CoverageStats {
+  const out: CoverageStats = { total: kanjiList.length, covered: 0, partial: 0, none: 0 }
+  for (const k of kanjiList) {
+    const c = classifyKanjiCoverage(k, vocabSrs, viewProgress, threshold)
+    out[c]++
+  }
+  return out
+}
+
+export interface LessonCoverageStat {
+  lesson: number
+  total: number
+  covered: number
+  partial: number
+}
+
+export function getLessonCoverage(
+  kanjiList: ExtendedKanji[],
+  vocabSrs: SrsState,
+  viewProgress: ProgressMap,
+  threshold: number = COVERAGE_DEFAULT_THRESHOLD,
+): LessonCoverageStat[] {
+  const byLesson = new Map<number, LessonCoverageStat>()
+  for (const k of kanjiList) {
+    if (k.lessonNumber == null) continue
+    let s = byLesson.get(k.lessonNumber)
+    if (!s) {
+      s = { lesson: k.lessonNumber, total: 0, covered: 0, partial: 0 }
+      byLesson.set(k.lessonNumber, s)
+    }
+    s.total++
+    const c = classifyKanjiCoverage(k, vocabSrs, viewProgress, threshold)
+    if (c === 'covered') s.covered++
+    else if (c === 'partial') s.partial++
+  }
+  return [...byLesson.values()].sort((a, b) => a.lesson - b.lesson)
+}
+
 /** Cards rated 3+ times that haven't reached L2. */
 export interface VocabStuck {
   row: MergedVocabRow

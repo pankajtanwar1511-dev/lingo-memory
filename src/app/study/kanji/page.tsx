@@ -51,7 +51,7 @@ type SectionLink = {
 };
 
 const TIER_DAILY: SectionLink[] = [
-  { href: '/study/kanji/vocab-reveal', label: 'Vocab reveal drill', icon: Eye, hint: 'SRS · big-type kanji → press → kana' },
+  { href: '/study/kanji/vocab-reveal', label: 'Reading drill', icon: Eye, hint: 'SRS · see kanji, recall the reading' },
   { href: '/study/kanji/progress', label: 'Progress dashboard', icon: TrendingUp, hint: 'Streak · today · stuck · quick actions' },
 ];
 
@@ -184,9 +184,9 @@ export default function ExtendedKanjiListPage() {
         <div className="flex flex-col gap-4">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-bold">Extended Kanji</h1>
+              <h1 className="text-3xl font-bold">Kanji</h1>
               <p className="text-muted-foreground">
-                {filtered.length} of {kanjiList.length} characters from KANJI_REFERENCE.md
+                {filtered.length} of {kanjiList.length} kanji
               </p>
             </div>
             <div className="flex items-center gap-3">
