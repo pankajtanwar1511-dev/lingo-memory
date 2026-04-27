@@ -34,6 +34,7 @@ import { READING_STYLES } from '@/lib/extended-kanji/readings';
 import { useAuth } from '@/contexts/auth-context';
 import { loadProgress, saveProgress } from '@/services/cloud-progress.service';
 import { isDue } from '@/lib/extended-kanji/stats';
+import { useSrsIntervals } from '@/hooks/use-srs-intervals';
 
 type SortMode = 'weak-first' | 'random' | 'teacher' | 'due' | 'stuck' | 'untouched';
 
@@ -47,6 +48,7 @@ const CONFIG_KEY = 'extended-kanji-practice-config';
 export default function ExtendedKanjiPracticePage() {
   const { user } = useAuth();
   const searchParams = useSearchParams();
+  const { intervals } = useSrsIntervals();
   const [loading, setLoading] = useState(true);
   const [allKanji, setAllKanji] = useState<ExtendedKanji[]>([]);
   const [order, setOrder] = useState<ExtendedKanji[]>([]);
@@ -192,9 +194,10 @@ export default function ExtendedKanjiPracticePage() {
         });
         break;
       case 'due':
-        // Cards that are past their next-review interval. Oldest-overdue first.
+        // Cards past their next-review interval (per the user's schedule).
+        // Oldest-overdue first.
         sorted = pool
-          .filter((k) => isDue(progressData[k.id]))
+          .filter((k) => isDue(progressData[k.id], Date.now(), intervals))
           .sort((a, b) => (progressData[a.id]?.lastSeen ?? 0) - (progressData[b.id]?.lastSeen ?? 0));
         break;
       case 'stuck':

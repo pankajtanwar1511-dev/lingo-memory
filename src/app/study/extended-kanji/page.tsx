@@ -36,6 +36,7 @@ import { READING_STYLES } from '@/lib/extended-kanji/readings';
 import { useAuth } from '@/contexts/auth-context';
 import { loadProgress } from '@/services/cloud-progress.service';
 import { classify, type CardCategory } from '@/lib/extended-kanji/stats';
+import { useSrsIntervals } from '@/hooks/use-srs-intervals';
 
 type SortOption = 'default' | 'lesson' | 'kanji' | 'vocab';
 
@@ -60,6 +61,7 @@ const SECTION_LINKS: {
 
 export default function ExtendedKanjiListPage() {
   const { user } = useAuth();
+  const { intervals } = useSrsIntervals();
   const [kanjiList, setKanjiList] = useState<ExtendedKanji[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -113,7 +115,7 @@ export default function ExtendedKanjiListPage() {
       list = list.filter((k) => k.lessonNumber === n);
     }
     if (statusFilter !== 'all') {
-      list = list.filter((k) => classify(progress[k.id]) === statusFilter);
+      list = list.filter((k) => classify(progress[k.id], intervals) === statusFilter);
     }
     const sorted = [...list];
     switch (sortBy) {
@@ -130,7 +132,7 @@ export default function ExtendedKanjiListPage() {
         sorted.sort((a, b) => a.orderInReference - b.orderInReference);
     }
     return sorted;
-  }, [kanjiList, search, sortBy, lessonFilter, statusFilter, progress]);
+  }, [kanjiList, search, sortBy, lessonFilter, statusFilter, progress, intervals]);
 
   const uniqueLessons = useMemo(() => {
     const set = new Set<number>();
@@ -225,10 +227,10 @@ export default function ExtendedKanjiListPage() {
           <div className="flex flex-wrap gap-1.5">
             {([
               ['all', 'All', kanjiList.length],
-              ['untouched', 'Untouched', kanjiList.filter((k) => classify(progress[k.id]) === 'untouched').length],
-              ['learning', 'Learning', kanjiList.filter((k) => classify(progress[k.id]) === 'learning').length],
-              ['due', 'Due now', kanjiList.filter((k) => classify(progress[k.id]) === 'due').length],
-              ['mastered', 'Mastered', kanjiList.filter((k) => classify(progress[k.id]) === 'mastered').length],
+              ['untouched', 'Untouched', kanjiList.filter((k) => classify(progress[k.id], intervals) === 'untouched').length],
+              ['learning', 'Learning', kanjiList.filter((k) => classify(progress[k.id], intervals) === 'learning').length],
+              ['due', 'Due now', kanjiList.filter((k) => classify(progress[k.id], intervals) === 'due').length],
+              ['mastered', 'Mastered', kanjiList.filter((k) => classify(progress[k.id], intervals) === 'mastered').length],
             ] as const).map(([key, label, count]) => (
               <Button
                 key={key}

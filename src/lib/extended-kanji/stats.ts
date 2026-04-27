@@ -21,12 +21,14 @@ export const LEVELS_DISPLAYED = [0, 1, 2, 3, 5] as const
 export type LevelKey = typeof LEVELS_DISPLAYED[number]
 
 /**
- * Days a card stays "fresh" before it's due for review again. Pure doubling
- * (1, 2, 4, 8, 16, 32) — keeps the SuperMemo pattern but tighter than the
- * earlier 1/2/5/14/30/60 schedule so cards re-surface more often. Untouched
+ * Default review intervals (days a card stays "fresh" per level). Pure
+ * doubling — clean SuperMemo pattern. The user can override these via the
+ * dashboard; see useSrsIntervals() in hooks/use-srs-intervals.ts. Untouched
  * cards are never "due" — they're "new".
  */
-const REVIEW_INTERVAL_DAYS: Record<number, number> = {
+export type SrsIntervals = Record<0 | 1 | 2 | 3 | 4 | 5, number>
+
+export const DEFAULT_SRS_INTERVALS: SrsIntervals = {
   0: 1,
   1: 2,
   2: 4,
@@ -40,16 +42,23 @@ const DAY_MS = 86_400_000
 /** Card classification used by listing filters. */
 export type CardCategory = 'untouched' | 'learning' | 'mastered' | 'due'
 
-export function classify(p: CardProgress | undefined): CardCategory {
+export function classify(
+  p: CardProgress | undefined,
+  intervals: SrsIntervals = DEFAULT_SRS_INTERVALS,
+): CardCategory {
   if (!p || p.reviewCount === 0) return 'untouched'
   if (p.level === 5) return 'mastered'
-  return isDue(p) ? 'due' : 'learning'
+  return isDue(p, Date.now(), intervals) ? 'due' : 'learning'
 }
 
-export function isDue(p: CardProgress | undefined, now: number = Date.now()): boolean {
+export function isDue(
+  p: CardProgress | undefined,
+  now: number = Date.now(),
+  intervals: SrsIntervals = DEFAULT_SRS_INTERVALS,
+): boolean {
   if (!p || p.reviewCount === 0) return false
   if (p.level === 5) return false
-  const interval = REVIEW_INTERVAL_DAYS[p.level] ?? 7
+  const interval = intervals[p.level as 0 | 1 | 2 | 3 | 4 | 5] ?? 7
   return now - p.lastSeen >= interval * DAY_MS
 }
 
@@ -65,10 +74,14 @@ export interface Kpis {
   due: number
 }
 
-export function getKpis(progress: ProgressMap, kanjiList: ExtendedKanji[]): Kpis {
+export function getKpis(
+  progress: ProgressMap,
+  kanjiList: ExtendedKanji[],
+  intervals: SrsIntervals = DEFAULT_SRS_INTERVALS,
+): Kpis {
   const k: Kpis = { total: kanjiList.length, mastered: 0, learning: 0, untouched: 0, due: 0 }
   for (const kanji of kanjiList) {
-    switch (classify(progress[kanji.id])) {
+    switch (classify(progress[kanji.id], intervals)) {
       case 'mastered':
         k.mastered++
         break
@@ -183,6 +196,7 @@ export interface LessonStat {
 export function getLessonStats(
   progress: ProgressMap,
   kanjiList: ExtendedKanji[],
+  intervals: SrsIntervals = DEFAULT_SRS_INTERVALS,
 ): LessonStat[] {
   const byLesson = new Map<number, LessonStat>()
   for (const kanji of kanjiList) {
@@ -193,7 +207,7 @@ export function getLessonStats(
       byLesson.set(kanji.lessonNumber, stat)
     }
     stat.total++
-    const cat = classify(progress[kanji.id])
+    const cat = classify(progress[kanji.id], intervals)
     if (cat === 'mastered') stat.mastered++
     else if (cat === 'untouched') stat.untouched++
     else stat.learning++
@@ -239,7 +253,8 @@ export function filterByCategory(
   kanjiList: ExtendedKanji[],
   progress: ProgressMap,
   category: CardCategory | 'all',
+  intervals: SrsIntervals = DEFAULT_SRS_INTERVALS,
 ): ExtendedKanji[] {
   if (category === 'all') return kanjiList
-  return kanjiList.filter((k) => classify(progress[k.id]) === category)
+  return kanjiList.filter((k) => classify(progress[k.id], intervals) === category)
 }

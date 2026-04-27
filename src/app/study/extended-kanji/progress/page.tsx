@@ -37,6 +37,7 @@ import { useAuth } from '@/contexts/auth-context'
 import { loadProgress } from '@/services/cloud-progress.service'
 import { useSettings } from '@/contexts/settings-context'
 import {
+  DEFAULT_SRS_INTERVALS,
   LEVELS_DISPLAYED,
   getActivityLastNDays,
   getDistribution,
@@ -45,7 +46,11 @@ import {
   getStreak,
   getStuckCards,
   getTodayCount,
+  type SrsIntervals,
 } from '@/lib/extended-kanji/stats'
+import { useSrsIntervals, INTERVAL_BOUNDS } from '@/hooks/use-srs-intervals'
+import { Input } from '@/components/ui/input'
+import { Settings2, RotateCcw } from 'lucide-react'
 
 const PROGRESS_KEY = 'extended-kanji-practice-progress'
 
@@ -75,6 +80,8 @@ export default function ExtendedKanjiProgressPage() {
   const [progress, setProgress] = useState<Record<string, CardProgress>>({})
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const { intervals, setIntervals, reset: resetIntervals } = useSrsIntervals()
+  const [showIntervals, setShowIntervals] = useState(false)
 
   useEffect(() => {
     let cancelled = false
@@ -102,13 +109,16 @@ export default function ExtendedKanjiProgressPage() {
     }
   }, [user?.uid])
 
-  const kpis = useMemo(() => getKpis(progress, kanjiList), [progress, kanjiList])
+  const kpis = useMemo(() => getKpis(progress, kanjiList, intervals), [progress, kanjiList, intervals])
   const distribution = useMemo(
     () => getDistribution(progress, kanjiList),
     [progress, kanjiList],
   )
   const activity = useMemo(() => getActivityLastNDays(progress, 7), [progress])
-  const lessonStats = useMemo(() => getLessonStats(progress, kanjiList), [progress, kanjiList])
+  const lessonStats = useMemo(
+    () => getLessonStats(progress, kanjiList, intervals),
+    [progress, kanjiList, intervals],
+  )
   const stuckCards = useMemo(() => getStuckCards(progress, kanjiList, 10), [progress, kanjiList])
   const streak = useMemo(() => getStreak(progress), [progress])
   const todayCount = useMemo(() => getTodayCount(progress), [progress])
@@ -375,6 +385,77 @@ export default function ExtendedKanjiProgressPage() {
               }
             />
           </CardContent>
+        </Card>
+
+        {/* ── Review schedule (adjustable, persisted via cloud sync) ── */}
+        <Card>
+          <CardHeader className="pb-3">
+            <button
+              type="button"
+              onClick={() => setShowIntervals((v) => !v)}
+              className="w-full flex items-center justify-between text-left group"
+            >
+              <CardTitle className="text-base flex items-center gap-2">
+                <Settings2 className="h-4 w-4" />
+                Review schedule
+              </CardTitle>
+              <span className="text-xs text-muted-foreground tabular-nums">
+                {intervals[0]}/{intervals[1]}/{intervals[2]}/{intervals[3]}/{intervals[5]}d
+                <span className="ml-2 text-primary opacity-70 group-hover:opacity-100">
+                  {showIntervals ? 'Hide' : 'Edit'}
+                </span>
+              </span>
+            </button>
+            {!showIntervals && (
+              <p className="text-xs text-muted-foreground mt-1">
+                Days a card stays fresh per memory level before counting as “due”.
+                Shorter = more frequent review.
+              </p>
+            )}
+          </CardHeader>
+          {showIntervals && (
+            <CardContent>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                {([0, 1, 2, 3, 5] as const).map((lvl) => (
+                  <div key={lvl} className="space-y-1">
+                    <label className="text-xs font-medium text-muted-foreground flex items-center justify-between">
+                      <span>L{lvl} · {LEVEL_LABEL[lvl]}</span>
+                      <span className="tabular-nums">{intervals[lvl]}d</span>
+                    </label>
+                    <Input
+                      type="number"
+                      min={INTERVAL_BOUNDS.min}
+                      max={INTERVAL_BOUNDS.max}
+                      value={intervals[lvl]}
+                      onChange={(e) => {
+                        const n = parseInt(e.target.value, 10)
+                        if (Number.isFinite(n)) {
+                          setIntervals({ ...intervals, [lvl]: n } as SrsIntervals)
+                        }
+                      }}
+                      className="h-8 text-sm"
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="mt-4 flex items-center justify-between gap-2">
+                <p className="text-[11px] text-muted-foreground">
+                  Defaults: {DEFAULT_SRS_INTERVALS[0]}/{DEFAULT_SRS_INTERVALS[1]}/
+                  {DEFAULT_SRS_INTERVALS[2]}/{DEFAULT_SRS_INTERVALS[3]}/
+                  {DEFAULT_SRS_INTERVALS[5]} days. Synced across devices.
+                </p>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={resetIntervals}
+                  className="gap-1 h-7 text-xs"
+                >
+                  <RotateCcw className="h-3 w-3" />
+                  Reset
+                </Button>
+              </div>
+            </CardContent>
+          )}
         </Card>
 
         {/* ── Lesson breakdown ──────────────────────────────────────── */}
