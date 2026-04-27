@@ -32,6 +32,7 @@ import { useAuth } from '@/contexts/auth-context';
 import { loadProgress } from '@/services/cloud-progress.service';
 import { useKanjiDataset } from '@/hooks/use-kanji-dataset';
 import { KanjiSettingsButton } from '@/components/kanji/settings-dialog';
+import { KanjiDatasetSwitch } from '@/components/kanji/dataset-switch';
 type StatusFilter = 'all' | 'untouched' | 'viewed';
 
 type SortOption = 'default' | 'lesson' | 'kanji' | 'vocab';
@@ -185,28 +186,26 @@ function KanjiListInner() {
     <>
       <Header />
       <div className="container max-w-7xl mx-auto px-4 py-8 space-y-6">
+        {/* Inline dataset switch — primary, always-visible toggle. */}
+        <div className="flex items-center justify-between gap-3 flex-wrap">
+          <KanjiDatasetSwitch />
+          <div className="flex items-center gap-2">
+            <Link href="/study/kanji/vocab-reveal">
+              <Button variant="default" size="sm" className="gap-1.5">
+                <Eye className="h-4 w-4" />
+                Drill
+              </Button>
+            </Link>
+            <KanjiSettingsButton />
+          </div>
+        </div>
+
         <div className="flex flex-col gap-4">
-          <div className="flex items-center justify-between gap-3">
-            <div className="min-w-0">
-              <div className="flex items-center gap-2 flex-wrap">
-                <h1 className="text-3xl font-bold">Kanji</h1>
-                <span className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground tabular-nums">
-                  {datasetMeta.label} · {datasetMeta.count}
-                </span>
-              </div>
-              <p className="text-muted-foreground text-sm mt-1">
-                {filtered.length} of {kanjiList.length} kanji
-              </p>
-            </div>
-            <div className="flex items-center gap-2">
-              <Link href="/study/kanji/vocab-reveal">
-                <Button variant="default" size="sm" className="gap-1.5">
-                  <Eye className="h-4 w-4" />
-                  Drill
-                </Button>
-              </Link>
-              <KanjiSettingsButton />
-            </div>
+          <div className="flex items-baseline gap-2 flex-wrap">
+            <h1 className="text-3xl font-bold">Kanji</h1>
+            <p className="text-muted-foreground text-sm">
+              {filtered.length} of {kanjiList.length} kanji · {datasetMeta.description}
+            </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3">
