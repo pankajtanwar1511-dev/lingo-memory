@@ -12,7 +12,6 @@ import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import {
   BookOpenText,
-  Eye,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -136,15 +135,7 @@ function KanjiListInner() {
         {/* Inline dataset switch — primary, always-visible toggle. */}
         <div className="flex items-center justify-between gap-3 flex-wrap">
           <KanjiDatasetSwitch />
-          <div className="flex items-center gap-2">
-            <Link href="/study/kanji/vocab-reveal">
-              <Button variant="default" size="sm" className="gap-1.5">
-                <Eye className="h-4 w-4" />
-                Drill
-              </Button>
-            </Link>
-            <KanjiSettingsButton />
-          </div>
+          <KanjiSettingsButton />
         </div>
 
         <div className="flex flex-col gap-4">
