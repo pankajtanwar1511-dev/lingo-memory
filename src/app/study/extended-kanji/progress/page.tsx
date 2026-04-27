@@ -4,9 +4,8 @@
  * Extended-kanji learning dashboard.
  * Route: /study/extended-kanji/progress
  *
- * Aggregates the per-kanji progress map into things a student actually
- * needs to see: where am I, what should I do next, am I keeping up.
- *
+ * Compact layout: status row, insight card (distribution + 7-day strip),
+ * quick actions, lesson breakdown (collapsed by default).
  * All sections derive from the same `progress` + `kanjiList` inputs;
  * computation lives in lib/extended-kanji/stats.ts.
  */
@@ -17,16 +16,16 @@ import { useRouter } from 'next/navigation'
 import {
   ArrowLeft,
   Flame,
-  Target,
   TrendingUp,
   AlertCircle,
-  Sparkles,
   Calendar,
-  BookOpen,
   Play,
+  ChevronDown,
+  ChevronUp,
   CheckCircle2,
   Circle,
   Clock,
+  Sparkles,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -49,20 +48,21 @@ import {
 
 const PROGRESS_KEY = 'extended-kanji-practice-progress'
 
-// Friendly label per level for the distribution row.
-const LEVEL_LABEL: Record<number, string> = {
-  0: 'Didn’t know',
-  1: 'Hard',
-  2: 'Medium',
-  3: 'Good',
-  5: 'Mastered',
-}
-const LEVEL_COLOR: Record<number, string> = {
+const LEVEL_COLOR: Record<number | 'untouched', string> = {
+  untouched: 'bg-slate-300 dark:bg-slate-700',
   0: 'bg-rose-500',
   1: 'bg-orange-500',
   2: 'bg-amber-500',
   3: 'bg-lime-500',
   5: 'bg-emerald-600',
+}
+const LEVEL_LABEL: Record<number | 'untouched', string> = {
+  untouched: 'New',
+  0: 'L0',
+  1: 'L1',
+  2: 'L2',
+  3: 'L3',
+  5: 'L5',
 }
 
 export default function ExtendedKanjiProgressPage() {
@@ -75,6 +75,7 @@ export default function ExtendedKanjiProgressPage() {
   const [progress, setProgress] = useState<Record<string, CardProgress>>({})
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [showAllLessons, setShowAllLessons] = useState(false)
 
   useEffect(() => {
     let cancelled = false
@@ -109,17 +110,16 @@ export default function ExtendedKanjiProgressPage() {
   )
   const activity = useMemo(() => getActivityLastNDays(progress, 7), [progress])
   const lessonStats = useMemo(() => getLessonStats(progress, kanjiList), [progress, kanjiList])
-  const stuckCards = useMemo(() => getStuckCards(progress, kanjiList, 10), [progress, kanjiList])
+  const stuckCards = useMemo(() => getStuckCards(progress, kanjiList, 6), [progress, kanjiList])
   const streak = useMemo(() => getStreak(progress), [progress])
   const todayCount = useMemo(() => getTodayCount(progress), [progress])
 
   const goalPct = Math.min(100, Math.round((todayCount / Math.max(1, dailyGoal)) * 100))
   const masteryPct = kpis.total > 0 ? Math.round((kpis.mastered / kpis.total) * 100) : 0
-  const distributionTotal = Object.values(distribution).reduce((a, b) => a + b, 0)
+  const distTotal = Object.values(distribution).reduce((a, b) => a + b, 0)
   const last7Total = activity.reduce((a, b) => a + b.count, 0)
-  const distMaxCount = Math.max(1, ...Object.values(distribution))
+  const visibleLessons = showAllLessons ? lessonStats : lessonStats.slice(0, 6)
 
-  // Quick-action launcher — passes config to practice page via URL params.
   function launchPractice(opts: {
     sortMode: 'teacher' | 'weak-first' | 'random' | 'due' | 'stuck' | 'untouched'
     cardCount?: number
@@ -136,9 +136,9 @@ export default function ExtendedKanjiProgressPage() {
     return (
       <>
         <Header />
-        <div className="container max-w-5xl mx-auto px-4 py-8">
-          <div className="flex items-center justify-center min-h-[60vh]">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary" />
+        <div className="container max-w-4xl mx-auto px-4 py-8">
+          <div className="flex items-center justify-center min-h-[40vh]">
+            <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-primary" />
           </div>
         </div>
       </>
@@ -149,355 +149,310 @@ export default function ExtendedKanjiProgressPage() {
     return (
       <>
         <Header />
-        <div className="container max-w-5xl mx-auto px-4 py-8">
+        <div className="container max-w-4xl mx-auto px-4 py-8">
           <p className="text-destructive">{error}</p>
         </div>
       </>
     )
   }
 
+  // ────────────────────────────────────────────────────────────────────────
+  // Distribution rendered as a single horizontal stacked bar — one glance,
+  // not six rows. Hover/title shows counts; legend underneath.
+  // ────────────────────────────────────────────────────────────────────────
+  const distSegments: { key: number | 'untouched'; count: number; pct: number }[] = (
+    ['untouched', 0, 1, 2, 3, 5] as const
+  )
+    .map((k) => ({
+      key: k,
+      count: distribution[k],
+      pct: distTotal > 0 ? (distribution[k] / distTotal) * 100 : 0,
+    }))
+    .filter((s) => s.count > 0)
+
   return (
     <>
       <Header />
-      <div className="container max-w-5xl mx-auto px-4 py-6 sm:py-8 space-y-6">
-        {/* ── Header ─────────────────────────────────────────────────── */}
-        <div className="flex items-center justify-between">
+      <div className="container max-w-4xl mx-auto px-4 py-5 sm:py-6 space-y-4">
+        {/* ── Compact header ──────────────────────────────────────── */}
+        <div className="flex items-center justify-between gap-2">
           <Link href="/study/extended-kanji">
-            <Button variant="ghost" className="gap-2">
+            <Button variant="ghost" size="sm" className="gap-1 -ml-2">
               <ArrowLeft className="h-4 w-4" />
-              Back to Extended Kanji
+              Back
             </Button>
           </Link>
-          <Badge variant="outline" className="gap-1">
-            <TrendingUp className="h-3 w-3" />
-            {masteryPct}% mastered
-          </Badge>
+          <div className="flex items-center gap-2">
+            <Badge variant="outline" className="gap-1 text-xs">
+              <TrendingUp className="h-3 w-3" />
+              {masteryPct}% mastered
+            </Badge>
+            {streak > 0 && (
+              <Badge variant="outline" className="gap-1 text-xs">
+                <Flame className="h-3 w-3 text-orange-500" />
+                {streak}d
+              </Badge>
+            )}
+          </div>
         </div>
 
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">Progress dashboard</h1>
-          <p className="text-muted-foreground mt-1">
-            {kpis.total} prerequisite kanji · synced across devices
+          <h1 className="text-2xl font-bold tracking-tight">Progress</h1>
+          <p className="text-sm text-muted-foreground">
+            {todayCount}/{dailyGoal} today · {kpis.total} prereq kanji
           </p>
         </div>
 
-        {/* ── KPI row ────────────────────────────────────────────────── */}
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
-          <KpiTile label="Total" value={kpis.total} icon={<BookOpen className="h-4 w-4" />} />
-          <KpiTile
-            label="Mastered"
-            value={kpis.mastered}
-            icon={<CheckCircle2 className="h-4 w-4" />}
-            tone="emerald"
-          />
-          <KpiTile
-            label="Learning"
-            value={kpis.learning}
-            icon={<TrendingUp className="h-4 w-4" />}
-            tone="sky"
-          />
-          <KpiTile
-            label="Untouched"
-            value={kpis.untouched}
-            icon={<Circle className="h-4 w-4" />}
-            tone="muted"
-          />
-          <KpiTile
-            label="Due now"
-            value={kpis.due}
-            icon={<Clock className="h-4 w-4" />}
-            tone="amber"
-          />
-        </div>
-
-        {/* ── Today's activity + streak ─────────────────────────────── */}
+        {/* ── Status card: KPIs + today bar in one tight grouping ── */}
         <Card>
-          <CardContent className="pt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <CardContent className="pt-4 pb-4 space-y-3">
+            <div className="grid grid-cols-4 gap-2">
+              <Kpi label="Mastered" value={kpis.mastered} icon={<CheckCircle2 className="h-3 w-3" />} tone="emerald" />
+              <Kpi label="Learning" value={kpis.learning} icon={<TrendingUp className="h-3 w-3" />} tone="sky" />
+              <Kpi label="New" value={kpis.untouched} icon={<Circle className="h-3 w-3" />} tone="muted" />
+              <Kpi label="Due" value={kpis.due} icon={<Clock className="h-3 w-3" />} tone="amber" />
+            </div>
             <div>
-              <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground mb-2">
-                <Target className="h-4 w-4" />
-                Daily goal
+              <div className="flex justify-between text-[11px] text-muted-foreground mb-1">
+                <span>Today</span>
+                <span className="tabular-nums">{goalPct}%</span>
               </div>
-              <div className="flex items-baseline gap-2">
-                <span className="text-3xl font-bold">{todayCount}</span>
-                <span className="text-muted-foreground">/ {dailyGoal} reviews today</span>
-              </div>
-              <div className="mt-3 h-2 rounded-full bg-muted overflow-hidden">
+              <div className="h-1.5 rounded-full bg-muted overflow-hidden">
                 <div
                   className="h-full bg-primary transition-all"
                   style={{ width: `${goalPct}%` }}
                 />
               </div>
-              <div className="mt-1 text-xs text-muted-foreground">{goalPct}% complete</div>
             </div>
+          </CardContent>
+        </Card>
+
+        {/* ── Insights: stacked-bar distribution + 7-day sparkline ── */}
+        <Card>
+          <CardContent className="pt-4 pb-4 space-y-4">
             <div>
-              <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground mb-2">
-                <Flame className="h-4 w-4 text-orange-500" />
-                Current streak
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-xs font-medium text-muted-foreground">
+                  Memory level distribution
+                </span>
+                <span className="text-[11px] text-muted-foreground">{kpis.total} cards</span>
               </div>
-              <div className="flex items-baseline gap-2">
-                <span className="text-3xl font-bold">{streak}</span>
-                <span className="text-muted-foreground">
-                  {streak === 1 ? 'day' : 'days'} in a row
+              <div className="flex h-3 rounded-full overflow-hidden bg-muted">
+                {distSegments.map((s) => (
+                  <div
+                    key={s.key}
+                    className={`${LEVEL_COLOR[s.key]} transition-all`}
+                    style={{ width: `${s.pct}%` }}
+                    title={`${LEVEL_LABEL[s.key]}: ${s.count}`}
+                  />
+                ))}
+              </div>
+              <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-muted-foreground">
+                {distSegments.map((s) => (
+                  <span key={s.key} className="flex items-center gap-1">
+                    <span className={`h-2 w-2 rounded-sm ${LEVEL_COLOR[s.key]}`} />
+                    {LEVEL_LABEL[s.key]} <span className="tabular-nums">{s.count}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-xs font-medium text-muted-foreground flex items-center gap-1">
+                  <Calendar className="h-3 w-3" />
+                  Last 7 days
+                </span>
+                <span className="text-[11px] text-muted-foreground tabular-nums">
+                  {last7Total} reviews
                 </span>
               </div>
-              <p className="mt-3 text-xs text-muted-foreground">
-                {streak === 0
-                  ? 'Review at least one card today to start a streak.'
-                  : streak < 3
-                    ? 'Keep going — daily reviews are when retention compounds.'
-                    : 'Great consistency! Don’t break the chain.'}
-              </p>
+              <div className="flex items-end justify-between gap-1.5 h-14">
+                {activity.map((b, i) => {
+                  const max = Math.max(1, ...activity.map((x) => x.count))
+                  const h = (b.count / max) * 100
+                  const isToday = i === activity.length - 1
+                  return (
+                    <div key={b.date} className="flex-1 flex flex-col items-center gap-0.5">
+                      <div
+                        className={`w-full rounded-t transition-all ${
+                          b.count === 0 ? 'bg-muted' : isToday ? 'bg-primary' : 'bg-primary/60'
+                        }`}
+                        style={{ height: `${Math.max(6, h)}%` }}
+                        title={`${b.date}: ${b.count}`}
+                      />
+                      <div className="text-[9px] text-muted-foreground tabular-nums">
+                        {new Date(b.date + 'T00:00').toLocaleDateString(undefined, {
+                          weekday: 'narrow',
+                        })}
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
           </CardContent>
         </Card>
 
-        {/* ── Memory level distribution ─────────────────────────────── */}
+        {/* ── Quick actions ─────────────────────────────────────── */}
         <Card>
-          <CardHeader>
-            <CardTitle className="text-base flex items-center gap-2">
-              <Sparkles className="h-4 w-4" />
-              Memory level distribution
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-2">
-            <DistRow
-              label="Untouched"
-              count={distribution.untouched}
-              total={distributionTotal}
-              max={distMaxCount}
-              color="bg-slate-300 dark:bg-slate-700"
-              actionLabel={kpis.untouched > 0 ? 'Practice new' : undefined}
-              onAction={() =>
-                launchPractice({ sortMode: 'untouched', cardCount: Math.min(10, kpis.untouched) })
-              }
-            />
-            {LEVELS_DISPLAYED.map((level) => (
-              <DistRow
-                key={level}
-                label={`L${level} · ${LEVEL_LABEL[level]}`}
-                count={distribution[level]}
-                total={distributionTotal}
-                max={distMaxCount}
-                color={LEVEL_COLOR[level]}
-                actionLabel={
-                  level <= 1 && distribution[level] > 0 ? 'Practice these' : undefined
-                }
-                onAction={() =>
-                  launchPractice({
-                    sortMode: 'weak-first',
-                    cardCount: Math.min(10, distribution[level]),
-                  })
+          <CardContent className="pt-4 pb-4">
+            <div className="grid grid-cols-2 gap-2">
+              <QuickAction
+                label="Review due"
+                hint={`${kpis.due} cards`}
+                disabled={kpis.due === 0}
+                onClick={() => launchPractice({ sortMode: 'due', cardCount: Math.min(20, kpis.due) })}
+              />
+              <QuickAction
+                label="Drill weakest"
+                hint="L0/L1 first"
+                disabled={kpis.learning === 0}
+                onClick={() => launchPractice({ sortMode: 'weak-first', cardCount: 10 })}
+              />
+              <QuickAction
+                label="Stuck cards"
+                hint={`${stuckCards.length} stuck`}
+                disabled={stuckCards.length === 0}
+                onClick={() =>
+                  launchPractice({ sortMode: 'stuck', cardCount: Math.min(10, stuckCards.length) })
                 }
               />
-            ))}
-          </CardContent>
-        </Card>
-
-        {/* ── Last 7 days activity ──────────────────────────────────── */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-base flex items-center gap-2">
-              <Calendar className="h-4 w-4" />
-              Last 7 days · {last7Total} reviews
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="flex items-end justify-between gap-2 h-24">
-              {activity.map((b) => {
-                const max = Math.max(1, ...activity.map((x) => x.count))
-                const h = (b.count / max) * 100
-                const isToday = b.date === activity[activity.length - 1].date
-                return (
-                  <div key={b.date} className="flex-1 flex flex-col items-center gap-1">
-                    <div className="text-[10px] tabular-nums font-medium text-muted-foreground">
-                      {b.count || ''}
-                    </div>
-                    <div
-                      className={`w-full rounded-t transition-all ${
-                        b.count === 0
-                          ? 'bg-muted'
-                          : isToday
-                            ? 'bg-primary'
-                            : 'bg-primary/60'
-                      }`}
-                      style={{ height: `${Math.max(4, h)}%` }}
-                    />
-                    <div className="text-[10px] text-muted-foreground tabular-nums">
-                      {new Date(b.date + 'T00:00').toLocaleDateString(undefined, {
-                        weekday: 'narrow',
-                      })}
-                    </div>
-                  </div>
-                )
-              })}
+              <QuickAction
+                label="Learn new"
+                hint={`${kpis.untouched} untouched`}
+                disabled={kpis.untouched === 0}
+                onClick={() =>
+                  launchPractice({ sortMode: 'untouched', cardCount: Math.min(10, kpis.untouched) })
+                }
+              />
             </div>
           </CardContent>
         </Card>
 
-        {/* ── Quick actions ─────────────────────────────────────────── */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-base flex items-center gap-2">
-              <Play className="h-4 w-4" />
-              Quick start
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <QuickAction
-              label="Review due cards"
-              hint={`${kpis.due} due now`}
-              disabled={kpis.due === 0}
-              onClick={() =>
-                launchPractice({ sortMode: 'due', cardCount: Math.min(20, kpis.due) })
-              }
-            />
-            <QuickAction
-              label="Drill weakest"
-              hint="L0/L1 first"
-              disabled={kpis.learning === 0 && kpis.due === 0}
-              onClick={() => launchPractice({ sortMode: 'weak-first', cardCount: 10 })}
-            />
-            <QuickAction
-              label="Tackle stuck cards"
-              hint={`${stuckCards.length} stuck`}
-              disabled={stuckCards.length === 0}
-              onClick={() =>
-                launchPractice({ sortMode: 'stuck', cardCount: Math.min(10, stuckCards.length) })
-              }
-            />
-            <QuickAction
-              label="Learn new"
-              hint={`${kpis.untouched} untouched`}
-              disabled={kpis.untouched === 0}
-              onClick={() =>
-                launchPractice({ sortMode: 'untouched', cardCount: Math.min(10, kpis.untouched) })
-              }
-            />
-          </CardContent>
-        </Card>
-
-        {/* ── Lesson breakdown ──────────────────────────────────────── */}
-        {lessonStats.length > 0 && (
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-base flex items-center gap-2">
-                <BookOpen className="h-4 w-4" />
-                Lesson breakdown · {lessonStats.length} lessons
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-2 max-h-[24rem] overflow-y-auto pr-1">
-              {lessonStats.map((s) => {
-                const masteryPct = s.total > 0 ? (s.mastered / s.total) * 100 : 0
-                const learnPct = s.total > 0 ? (s.learning / s.total) * 100 : 0
-                return (
-                  <div
-                    key={s.lesson}
-                    className="flex items-center gap-3 py-1.5 border-b last:border-b-0"
-                  >
-                    <div className="w-12 shrink-0 text-sm font-medium tabular-nums">
-                      L{s.lesson}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex h-3 rounded-full bg-muted overflow-hidden">
-                        <div
-                          className="bg-emerald-500 transition-all"
-                          style={{ width: `${masteryPct}%` }}
-                        />
-                        <div
-                          className="bg-sky-500 transition-all"
-                          style={{ width: `${learnPct}%` }}
-                        />
-                      </div>
-                      <div className="mt-1 flex gap-2 text-[10px] text-muted-foreground tabular-nums">
-                        <span>{s.mastered}/{s.total} mastered</span>
-                        {s.learning > 0 && <span>· {s.learning} learning</span>}
-                        {s.untouched > 0 && <span>· {s.untouched} new</span>}
-                      </div>
-                    </div>
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="shrink-0 h-7 text-xs"
-                      onClick={() =>
-                        launchPractice({
-                          sortMode: 'teacher',
-                          cardCount: Math.min(10, s.total),
-                          lesson: s.lesson,
-                        })
-                      }
-                    >
-                      Practice
-                    </Button>
-                  </div>
-                )
-              })}
-            </CardContent>
-          </Card>
-        )}
-
-        {/* ── Stuck cards ───────────────────────────────────────────── */}
+        {/* ── Stuck cards (compact inline) ──────────────────────── */}
         {stuckCards.length > 0 && (
           <Card>
-            <CardHeader>
-              <CardTitle className="text-base flex items-center gap-2">
-                <AlertCircle className="h-4 w-4 text-amber-500" />
-                Cards needing extra attention
-              </CardTitle>
-              <p className="text-xs text-muted-foreground mt-1">
-                Reviewed 3+ times but still at L0/L1. Targeted practice helps these the most.
-              </p>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
+            <CardContent className="pt-4 pb-4">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-xs font-medium text-muted-foreground flex items-center gap-1">
+                  <AlertCircle className="h-3 w-3 text-amber-500" />
+                  Needs attention
+                </span>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="h-6 text-xs gap-1"
+                  onClick={() =>
+                    launchPractice({ sortMode: 'stuck', cardCount: Math.min(10, stuckCards.length) })
+                  }
+                >
+                  Drill all
+                  <Play className="h-3 w-3" />
+                </Button>
+              </div>
+              <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
                 {stuckCards.map(({ kanji, progress: p }) => (
                   <Link
                     key={kanji.id}
                     href={`/study/extended-kanji/${encodeURIComponent(kanji.id)}`}
+                    className="flex flex-col items-center rounded border p-2 hover:border-primary transition-colors"
                   >
-                    <Card className="hover:border-primary cursor-pointer transition-colors">
-                      <CardContent className="pt-4 text-center space-y-1">
-                        <div className="text-3xl font-bold">{kanji.kanji}</div>
-                        <div className="text-[10px] text-muted-foreground line-clamp-1">
-                          {kanji.meaning}
-                        </div>
-                        <div className="text-[10px] text-muted-foreground tabular-nums">
-                          L{p.level} · {p.reviewCount}×
-                        </div>
-                      </CardContent>
-                    </Card>
+                    <div className="text-2xl font-bold leading-none">{kanji.kanji}</div>
+                    <div className="text-[9px] text-muted-foreground tabular-nums mt-1">
+                      L{p.level} · {p.reviewCount}×
+                    </div>
                   </Link>
                 ))}
               </div>
-              <Button
-                variant="outline"
-                className="w-full mt-3"
-                size="sm"
-                onClick={() =>
-                  launchPractice({
-                    sortMode: 'stuck',
-                    cardCount: Math.min(10, stuckCards.length),
-                  })
-                }
-              >
-                <Play className="h-3 w-3 mr-1" />
-                Drill all {stuckCards.length} together
-              </Button>
             </CardContent>
           </Card>
         )}
 
-        {/* ── Empty state for fresh users ───────────────────────────── */}
+        {/* ── Lesson breakdown (collapsed by default) ────────────── */}
+        {lessonStats.length > 0 && (
+          <Card>
+            <CardContent className="pt-4 pb-4 space-y-2">
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-xs font-medium text-muted-foreground">
+                  Lesson breakdown
+                </span>
+                {lessonStats.length > 6 && (
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="h-6 text-xs gap-1"
+                    onClick={() => setShowAllLessons((v) => !v)}
+                  >
+                    {showAllLessons ? (
+                      <>
+                        Less <ChevronUp className="h-3 w-3" />
+                      </>
+                    ) : (
+                      <>
+                        All {lessonStats.length} <ChevronDown className="h-3 w-3" />
+                      </>
+                    )}
+                  </Button>
+                )}
+              </div>
+              <div className={showAllLessons ? 'max-h-80 overflow-y-auto pr-1 space-y-1' : 'space-y-1'}>
+                {visibleLessons.map((s) => {
+                  const masteryPct = s.total > 0 ? (s.mastered / s.total) * 100 : 0
+                  const learnPct = s.total > 0 ? (s.learning / s.total) * 100 : 0
+                  return (
+                    <div key={s.lesson} className="flex items-center gap-2">
+                      <div className="w-7 shrink-0 text-[11px] tabular-nums text-muted-foreground">
+                        L{s.lesson}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex h-2 rounded-full bg-muted overflow-hidden">
+                          <div
+                            className="bg-emerald-500"
+                            style={{ width: `${masteryPct}%` }}
+                          />
+                          <div className="bg-sky-500" style={{ width: `${learnPct}%` }} />
+                        </div>
+                      </div>
+                      <div className="w-12 shrink-0 text-right text-[10px] text-muted-foreground tabular-nums">
+                        {s.mastered}/{s.total}
+                      </div>
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        className="shrink-0 h-6 px-2 text-[10px]"
+                        onClick={() =>
+                          launchPractice({
+                            sortMode: 'teacher',
+                            cardCount: Math.min(10, s.total),
+                            lesson: s.lesson,
+                          })
+                        }
+                      >
+                        Practice
+                      </Button>
+                    </div>
+                  )
+                })}
+              </div>
+            </CardContent>
+          </Card>
+        )}
+
+        {/* ── Empty state ───────────────────────────────────────── */}
         {kpis.untouched === kpis.total && (
           <Card className="border-dashed">
-            <CardContent className="pt-6 text-center space-y-3">
-              <Sparkles className="h-8 w-8 mx-auto text-muted-foreground" />
-              <p className="text-muted-foreground">
-                You haven’t rated any kanji yet. Start with a small session to seed your data.
+            <CardContent className="pt-4 pb-4 text-center space-y-2">
+              <Sparkles className="h-6 w-6 mx-auto text-muted-foreground" />
+              <p className="text-sm text-muted-foreground">
+                Rate a few kanji to see your progress here.
               </p>
-              <Button onClick={() => launchPractice({ sortMode: 'teacher', cardCount: 10 })}>
-                <Play className="h-4 w-4 mr-1" />
-                Start with 10 cards
+              <Button
+                size="sm"
+                onClick={() => launchPractice({ sortMode: 'teacher', cardCount: 10 })}
+              >
+                <Play className="h-3 w-3 mr-1" />
+                Start with 10
               </Button>
             </CardContent>
           </Card>
@@ -508,86 +463,33 @@ export default function ExtendedKanjiProgressPage() {
 }
 
 // ──────────────────────────────────────────────────────────────────────────
-// Subcomponents
-// ──────────────────────────────────────────────────────────────────────────
 
-function KpiTile({
+function Kpi({
   label,
   value,
   icon,
-  tone = 'default',
+  tone,
 }: {
   label: string
   value: number
   icon: React.ReactNode
-  tone?: 'default' | 'emerald' | 'sky' | 'amber' | 'muted'
+  tone: 'emerald' | 'sky' | 'amber' | 'muted'
 }) {
   const toneClass = {
-    default: 'text-foreground',
     emerald: 'text-emerald-600 dark:text-emerald-400',
     sky: 'text-sky-600 dark:text-sky-400',
     amber: 'text-amber-600 dark:text-amber-400',
     muted: 'text-muted-foreground',
   }[tone]
   return (
-    <Card>
-      <CardContent className="pt-4 pb-4">
-        <div className="flex items-center gap-1 text-[11px] text-muted-foreground font-medium uppercase tracking-wide">
-          {icon}
-          {label}
-        </div>
-        <div className={`text-2xl font-bold tabular-nums mt-1 ${toneClass}`}>{value}</div>
-      </CardContent>
-    </Card>
-  )
-}
-
-function DistRow({
-  label,
-  count,
-  total,
-  max,
-  color,
-  actionLabel,
-  onAction,
-}: {
-  label: string
-  count: number
-  total: number
-  max: number
-  color: string
-  actionLabel?: string
-  onAction?: () => void
-}) {
-  const pct = total > 0 ? Math.round((count / total) * 100) : 0
-  const barPct = max > 0 ? Math.round((count / max) * 100) : 0
-  return (
-    <div className="flex items-center gap-3">
-      <div className="w-32 shrink-0 text-xs text-muted-foreground">{label}</div>
-      <div className="flex-1 min-w-0">
-        <div className="h-5 rounded bg-muted overflow-hidden">
-          <div
-            className={`h-full ${color} transition-all flex items-center justify-end pr-2`}
-            style={{ width: `${barPct}%` }}
-          >
-            {count > 0 && barPct > 12 && (
-              <span className="text-[10px] font-medium text-white tabular-nums">
-                {count}
-              </span>
-            )}
-          </div>
-        </div>
+    <div className="flex flex-col">
+      <div className="flex items-center gap-1 text-[10px] text-muted-foreground uppercase tracking-wide font-medium">
+        {icon}
+        {label}
       </div>
-      <div className="w-16 shrink-0 text-right text-xs text-muted-foreground tabular-nums">
-        {count} ({pct}%)
+      <div className={`text-xl font-bold tabular-nums leading-tight mt-0.5 ${toneClass}`}>
+        {value}
       </div>
-      {actionLabel && onAction ? (
-        <Button size="sm" variant="ghost" className="h-7 text-xs" onClick={onAction}>
-          {actionLabel}
-        </Button>
-      ) : (
-        <div className="w-[72px] shrink-0" />
-      )}
     </div>
   )
 }
@@ -606,11 +508,12 @@ function QuickAction({
   return (
     <Button
       variant="outline"
-      className="h-auto py-3 flex-col items-start gap-1 text-left"
+      size="sm"
+      className="h-auto py-2.5 flex-col items-start gap-0.5 text-left"
       onClick={onClick}
       disabled={disabled}
     >
-      <span className="font-medium">{label}</span>
+      <span className="text-sm font-medium">{label}</span>
       <span className="text-[10px] text-muted-foreground font-normal">{hint}</span>
     </Button>
   )
