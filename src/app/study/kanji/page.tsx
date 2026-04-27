@@ -61,9 +61,6 @@ const SENTENCE_LINKS: SectionLink[] = [
   { href: '/study/kanji/sentences', label: 'Reference', icon: Quote, hint: 'Browse the sentence corpus' },
 ];
 
-const STUDY_LINKS: SectionLink[] = [
-  { href: '/study/kanji-practice', label: 'Flashcard browse', icon: BookOpenText, hint: 'Read through cards (no rating)' },
-];
 
 export default function ExtendedKanjiListPage() {
   const { meta: datasetMeta } = useKanjiDataset();
@@ -265,9 +262,6 @@ function KanjiListInner() {
 
         {/* ─── Sentence ──────────────────────────────────────────── */}
         <SectionGroup title="Sentence" links={SENTENCE_LINKS} />
-
-        {/* ─── Study tools ───────────────────────────────────────── */}
-        <SectionGroup title="Study" links={STUDY_LINKS} />
 
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
