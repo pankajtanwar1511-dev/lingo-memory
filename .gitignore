@@ -65,3 +65,4 @@ docs/data-source/kanji/raw/kanjivg/
 # Fetched data caches for prerequisite-kanji curation (regenerable via scripts/fetch_*.js)
 scripts/_words_cache.json
 scripts/_kanjidic_cache.json
+.claude/
