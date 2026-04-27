@@ -10,6 +10,7 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
 import { authService, AuthUser } from '@/services/auth.service'
+import { syncService } from '@/services/sync.service'
 import { isFirebaseConfigured } from '@/lib/firebase'
 
 interface AuthContextType {
@@ -36,6 +37,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setUser(authUser)
       setLoading(false)
 
+      // Wire up cloud sync (vocab cards / study cards / decks) in the
+      // background. We DON'T await — sync.initialize does multiple RTDB
+      // round-trips that can take a few seconds, and blocking the auth
+      // callback would freeze the UI in the spinner.
+      if (authUser) {
+        void syncService.initialize(authUser.uid).catch((err) => {
+          console.warn('Sync init failed:', err)
+        })
+      } else {
+        syncService.stop()
+      }
+
       if (process.env.NODE_ENV === 'development') {
         console.log('Auth state changed:', authUser ? authUser.email : 'signed out')
       }
@@ -43,6 +56,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     return () => {
       unsubscribe()
+      syncService.stop()
     }
   }, [])
 

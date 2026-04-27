@@ -21,10 +21,11 @@ import { useRouter } from "next/navigation"
 import { toast } from "@/components/ui/toaster"
 import { Download, Trash2, Loader2, AlertTriangle, RefreshCw } from "lucide-react"
 import { db } from "@/lib/db"
-import { firestoreService } from "@/lib/firestore.service"
+import { realtimeDbService as cloudDb } from "@/lib/realtime-db.service"
+import { ref as dbRef, remove as dbRemove } from "firebase/database"
+import { database } from "@/lib/firebase"
 import { deleteUser, EmailAuthProvider, reauthenticateWithCredential } from "firebase/auth"
 import { auth } from "@/lib/firebase"
-import { deleteDoc, doc } from "firebase/firestore"
 import { seedLoaderService } from "@/services/seed-loader.service"
 
 export function DataTab() {
@@ -171,9 +172,9 @@ export function DataTab() {
         await reauthenticateWithCredential(auth.currentUser, credential)
       }
 
-      // Delete Firestore data
-      if (isFirebaseAvailable && firestoreService.isAvailable()) {
-        await deleteDoc(doc(auth.currentUser as any, `users/${user.uid}`))
+      // Delete cloud data (Realtime Database).
+      if (isFirebaseAvailable && cloudDb.isAvailable() && database) {
+        await dbRemove(dbRef(database, `users/${user.uid}`))
       }
 
       // Delete local data

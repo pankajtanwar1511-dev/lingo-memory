@@ -6,7 +6,7 @@
  */
 
 import { db } from '@/lib/db'
-import { firestoreService } from '@/lib/firestore.service'
+import { realtimeDbService as cloudDb } from '@/lib/realtime-db.service'
 import { VocabularyCard, Deck } from '@/types/vocabulary'
 import { StudyCard } from '@/store/study-store'
 
@@ -38,7 +38,7 @@ export class SyncService {
    * Initialize sync for a user
    */
   async initialize(userId: string): Promise<void> {
-    if (!firestoreService.isAvailable()) {
+    if (!cloudDb.isAvailable()) {
       console.log('Firestore not available, skipping sync initialization')
       return
     }
@@ -95,7 +95,7 @@ export class SyncService {
 
     try {
       // Get last sync timestamp
-      const lastSync = await firestoreService.getLastSync(this.userId)
+      const lastSync = await cloudDb.getLastSync(this.userId)
       console.log('Last sync:', lastSync)
 
       // Sync vocabulary
@@ -111,7 +111,7 @@ export class SyncService {
       await this.syncLocalChangesUp()
 
       // Update last sync timestamp
-      await firestoreService.updateLastSync(this.userId)
+      await cloudDb.updateLastSync(this.userId)
 
       console.log('Initial sync completed successfully')
     } catch (error) {
@@ -128,7 +128,7 @@ export class SyncService {
   private async syncVocabularyDown(): Promise<void> {
     if (!this.userId) return
 
-    const remoteCards = await firestoreService.getVocabularyCards(this.userId)
+    const remoteCards = await cloudDb.getVocabularyCards(this.userId)
     console.log(`Downloaded ${remoteCards.length} vocabulary cards from cloud`)
 
     for (const remoteCard of remoteCards) {
@@ -164,7 +164,7 @@ export class SyncService {
   private async syncStudyCardsDown(): Promise<void> {
     if (!this.userId) return
 
-    const remoteCards = await firestoreService.getStudyCards(this.userId)
+    const remoteCards = await cloudDb.getStudyCards(this.userId)
     console.log(`Downloaded ${remoteCards.length} study cards from cloud`)
 
     for (const remoteCard of remoteCards) {
@@ -189,7 +189,7 @@ export class SyncService {
   private async syncDecksDown(): Promise<void> {
     if (!this.userId) return
 
-    const remoteDecks = await firestoreService.getDecks(this.userId)
+    const remoteDecks = await cloudDb.getDecks(this.userId)
     console.log(`Downloaded ${remoteDecks.length} decks from cloud`)
 
     for (const remoteDeck of remoteDecks) {
@@ -243,14 +243,14 @@ export class SyncService {
         const { deckId, addedAt, modifiedAt, ...vocabCard } = card
         return vocabCard as VocabularyCard
       })
-      await firestoreService.syncVocabularyCards(this.userId, vocabCards)
+      await cloudDb.syncVocabularyCards(this.userId, vocabCards)
       console.log(`Uploaded ${vocabCards.length} vocabulary cards`)
     }
 
     // Upload study cards
     const localStudyCards = await db.studyCards.where('userId').equals(this.userId).toArray()
     if (localStudyCards.length > 0) {
-      await firestoreService.syncStudyCards(this.userId, localStudyCards)
+      await cloudDb.syncStudyCards(this.userId, localStudyCards)
       console.log(`Uploaded ${localStudyCards.length} study cards`)
     }
 
@@ -280,7 +280,7 @@ export class SyncService {
         updatedAt: dbDeck.updatedAt,
       }
 
-      await firestoreService.syncDeck(this.userId, deck)
+      await cloudDb.syncDeck(this.userId, deck)
     }
     if (localDecks.length > 0) {
       console.log(`Uploaded ${localDecks.length} decks`)
@@ -296,7 +296,7 @@ export class SyncService {
     console.log('Starting real-time sync listeners')
 
     // Listen for vocabulary changes
-    const vocabUnsubscribe = firestoreService.subscribeToVocabulary(
+    const vocabUnsubscribe = cloudDb.subscribeToVocabulary(
       this.userId,
       async (remoteCards) => {
         if (this.isSyncing) return // Skip if we're syncing
@@ -344,7 +344,7 @@ export class SyncService {
         console.log('Running periodic sync...')
         try {
           await this.syncLocalChangesUp()
-          await firestoreService.updateLastSync(this.userId)
+          await cloudDb.updateLastSync(this.userId)
         } catch (error) {
           console.error('Periodic sync failed:', error)
         }
@@ -412,21 +412,21 @@ export class SyncService {
     switch (item.type) {
       case 'vocabulary':
         if (item.action === 'create' || item.action === 'update') {
-          await firestoreService.syncVocabularyCard(this.userId, item.data)
+          await cloudDb.syncVocabularyCard(this.userId, item.data)
         } else if (item.action === 'delete') {
-          await firestoreService.deleteVocabularyCard(this.userId, item.id)
+          await cloudDb.deleteVocabularyCard(this.userId, item.id)
         }
         break
 
       case 'study-card':
         if (item.action === 'create' || item.action === 'update') {
-          await firestoreService.syncStudyCard(this.userId, item.data)
+          await cloudDb.syncStudyCard(this.userId, item.data)
         }
         break
 
       case 'deck':
         if (item.action === 'create' || item.action === 'update') {
-          await firestoreService.syncDeck(this.userId, item.data)
+          await cloudDb.syncDeck(this.userId, item.data)
         }
         break
     }
