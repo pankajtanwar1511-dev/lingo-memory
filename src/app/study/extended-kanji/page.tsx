@@ -32,6 +32,8 @@ import { Select } from '@/components/ui/select';
 import { Header } from '@/components/layout/header';
 import { CardProgress, ExtendedKanji } from '@/types/extended-kanji';
 import { READING_STYLES } from '@/lib/extended-kanji/readings';
+import { useAuth } from '@/contexts/auth-context';
+import { loadProgress } from '@/services/cloud-progress.service';
 
 type SortOption = 'default' | 'lesson' | 'kanji' | 'vocab';
 
@@ -54,6 +56,7 @@ const SECTION_LINKS: {
 ];
 
 export default function ExtendedKanjiListPage() {
+  const { user } = useAuth();
   const [kanjiList, setKanjiList] = useState<ExtendedKanji[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -69,15 +72,19 @@ export default function ExtendedKanjiListPage() {
         if (!res.ok) throw new Error('Failed to load extended-kanji dataset');
         const data = await res.json();
         setKanjiList(data.kanji as ExtendedKanji[]);
-        const saved = localStorage.getItem(PROGRESS_KEY);
-        if (saved) setProgress(JSON.parse(saved));
+        const merged = await loadProgress<Record<string, CardProgress>>(
+          user?.uid,
+          PROGRESS_KEY,
+          {},
+        );
+        setProgress(merged);
       } catch (e) {
         setError(e instanceof Error ? e.message : 'Failed to load');
       } finally {
         setLoading(false);
       }
     })();
-  }, []);
+  }, [user?.uid]);
 
   const filtered = useMemo(() => {
     let list = kanjiList;

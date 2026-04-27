@@ -15,6 +15,10 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { useAuth } from '@/contexts/auth-context';
+import { loadProgress, saveProgress } from '@/services/cloud-progress.service';
+
+const PROGRESS_KEY = 'kanji-practice-progress';
 
 interface KanjiCard {
   id: string;
@@ -36,6 +40,7 @@ interface CardProgress {
 type SortMode = 'weak-first' | 'random' | 'algorithm';
 
 export default function KanjiPracticePage() {
+  const { user } = useAuth();
   const [kanjiList, setKanjiList] = useState<KanjiCard[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -60,9 +65,12 @@ export default function KanjiPracticePage() {
 
         const data = await response.json();
 
-        // Load progress from localStorage
-        const savedProgress = localStorage.getItem('kanji-practice-progress');
-        const progressData = savedProgress ? JSON.parse(savedProgress) : {};
+        // Load progress from local + cloud (whichever is newer wins).
+        const progressData = await loadProgress<Record<string, CardProgress>>(
+          user?.uid,
+          PROGRESS_KEY,
+          {},
+        );
         setProgress(progressData);
 
         // Load default settings from localStorage
@@ -126,7 +134,7 @@ export default function KanjiPracticePage() {
     };
 
     loadKanji();
-  }, []);
+  }, [user?.uid]);
 
   // Sort kanji by priority (struggling cards first)
   const sortByPriority = (kanji: KanjiCard[], progressData: Record<string, CardProgress>) => {
@@ -283,7 +291,7 @@ export default function KanjiPracticePage() {
     };
 
     setProgress(newProgress);
-    localStorage.setItem('kanji-practice-progress', JSON.stringify(newProgress));
+    saveProgress(user?.uid, PROGRESS_KEY, newProgress);
 
     // Don't auto-advance - let user navigate manually
   };

@@ -26,6 +26,8 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { CardProgress, ExtendedKanji } from '@/types/extended-kanji';
 import { READING_STYLES } from '@/lib/extended-kanji/readings';
+import { useAuth } from '@/contexts/auth-context';
+import { loadProgress, saveProgress } from '@/services/cloud-progress.service';
 
 type SortMode = 'weak-first' | 'random' | 'teacher';
 
@@ -37,6 +39,7 @@ const INDEX_KEY = 'extended-kanji-practice-index';
 const CONFIG_KEY = 'extended-kanji-practice-config';
 
 export default function ExtendedKanjiPracticePage() {
+  const { user } = useAuth();
   const [loading, setLoading] = useState(true);
   const [allKanji, setAllKanji] = useState<ExtendedKanji[]>([]);
   const [order, setOrder] = useState<ExtendedKanji[]>([]);
@@ -60,8 +63,11 @@ export default function ExtendedKanjiPracticePage() {
         const kanji = data.kanji as ExtendedKanji[];
         setAllKanji(kanji);
 
-        const savedProgress = localStorage.getItem(PROGRESS_KEY);
-        const progressData = savedProgress ? JSON.parse(savedProgress) : {};
+        const progressData = await loadProgress<Record<string, CardProgress>>(
+          user?.uid,
+          PROGRESS_KEY,
+          {},
+        );
         setProgress(progressData);
 
         const savedDefaults = localStorage.getItem(DEFAULTS_KEY);
@@ -105,7 +111,7 @@ export default function ExtendedKanjiPracticePage() {
         setLoading(false);
       }
     })();
-  }, []);
+  }, [user?.uid]);
 
   useEffect(() => {
     if (order.length > 0) sessionStorage.setItem(INDEX_KEY, index.toString());
@@ -193,7 +199,7 @@ export default function ExtendedKanjiPracticePage() {
       },
     };
     setProgress(next);
-    localStorage.setItem(PROGRESS_KEY, JSON.stringify(next));
+    saveProgress(user?.uid, PROGRESS_KEY, next);
   };
 
   useEffect(() => {
