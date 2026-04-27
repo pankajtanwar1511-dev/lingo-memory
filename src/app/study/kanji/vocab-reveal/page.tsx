@@ -443,7 +443,7 @@ export default function VocabRevealPage() {
   const exitDrillEntirely = useCallback(() => {
     sessionStorage.removeItem(ORDER_KEY);
     sessionStorage.removeItem(IDX_KEY);
-    router.push('/study/kanji/vocabulary');
+    router.push('/study/kanji/list');
   }, [router]);
 
   const dismissHelp = useCallback(() => {
@@ -519,7 +519,7 @@ export default function VocabRevealPage() {
         case 'Escape':
           if (showHelp) dismissHelpRef.current();
           else if (fullscreen) leaveFullscreenRef.current();
-          else router.push('/study/kanji/vocabulary');
+          else router.push('/study/kanji/list');
           break;
         case 's':
         case 'S':
@@ -795,7 +795,7 @@ export default function VocabRevealPage() {
     return (
       <div className="container max-w-3xl mx-auto px-4 py-8 space-y-6">
         <div className="flex items-center justify-between">
-          <Link href="/study/kanji/vocabulary">
+          <Link href="/study/kanji/list">
             <Button variant="ghost" className="gap-2">
               <ArrowLeft className="h-4 w-4" />
               Back
@@ -838,7 +838,7 @@ export default function VocabRevealPage() {
     return (
       <div className="container max-w-3xl mx-auto px-4 py-6 sm:py-10 min-h-[100dvh] flex flex-col">
         <div className="flex items-center justify-between">
-          <Link href="/study/kanji/vocabulary">
+          <Link href="/study/kanji/list">
             <Button variant="ghost" className="gap-2">
               <ArrowLeft className="h-4 w-4" />
               Back
