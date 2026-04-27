@@ -13,26 +13,19 @@ import Link from 'next/link';
 import {
   BookOpenText,
   Eye,
-  Search,
-  SortAsc,
 } from 'lucide-react';
-import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Select } from '@/components/ui/select';
 import { Header } from '@/components/layout/header';
 import { CardProgress, ExtendedKanji } from '@/types/extended-kanji';
 import { READING_STYLES } from '@/lib/extended-kanji/readings';
 import { useAuth } from '@/contexts/auth-context';
 import { loadProgress } from '@/services/cloud-progress.service';
 import { useKanjiDataset } from '@/hooks/use-kanji-dataset';
+import { useKanjiListFilters } from '@/hooks/use-kanji-list-filters';
 import { KanjiSettingsButton } from '@/components/kanji/settings-dialog';
 import { KanjiDatasetSwitch } from '@/components/kanji/dataset-switch';
 import { KanjiSectionTiles } from '@/components/kanji/section-tiles';
-type StatusFilter = 'all' | 'untouched' | 'viewed';
-
-type SortOption = 'default' | 'kanji' | 'vocab';
 
 const PROGRESS_KEY = 'extended-kanji-practice-progress';
 
@@ -51,10 +44,8 @@ function KanjiListInner() {
   const [kanjiList, setKanjiList] = useState<ExtendedKanji[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [search, setSearch] = useState('');
-  const [sortBy, setSortBy] = useState<SortOption>('default');
   const [progress, setProgress] = useState<Record<string, CardProgress>>({});
-  const [statusFilter, setStatusFilter] = useState<StatusFilter>('all');
+  const { search, sortBy, statusFilter, isAnyActive, reset: resetFilters } = useKanjiListFilters();
 
   useEffect(() => {
     (async () => {
@@ -164,51 +155,21 @@ function KanjiListInner() {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-3">
-            <div className="flex-1 relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input
-                type="text"
-                placeholder="Search kanji, reading, meaning, or vocab…"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                className="pl-10"
-              />
-            </div>
-            <div className="flex flex-wrap items-center gap-2">
-              <SortAsc className="hidden sm:block h-4 w-4 text-muted-foreground shrink-0" />
-              <Select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value as SortOption)}
-                className="flex-1 sm:flex-initial sm:w-[170px] min-w-[140px]"
-              >
-                <option value="default">Teacher order</option>
-                <option value="kanji">Kanji (a→z)</option>
-                <option value="vocab">Most vocab</option>
-              </Select>
-            </div>
-          </div>
-
-          {/* Status chips — filter by progress category. Counts derived from
-              progress + kanjiList; quick way to find what to work on. */}
-          <div className="flex flex-wrap gap-1.5">
-            {([
-              ['all', 'All', kanjiList.length],
-              ['untouched', 'Not viewed', kanjiList.filter((k) => !progress[k.id] || progress[k.id].reviewCount === 0).length],
-              ['viewed', 'Viewed', kanjiList.filter((k) => !!progress[k.id] && progress[k.id].reviewCount > 0).length],
-            ] as const).map(([key, label, count]) => (
+          {/* If user has narrowed via settings filters, surface a subtle hint
+              with a one-click reset so they don't get confused why N < total. */}
+          {isAnyActive && (
+            <div className="flex items-center gap-2 text-xs text-muted-foreground">
+              <span>Filters active.</span>
               <Button
-                key={key}
+                variant="ghost"
                 size="sm"
-                variant={statusFilter === key ? 'default' : 'outline'}
-                onClick={() => setStatusFilter(key)}
-                className="h-7 text-xs gap-1"
+                onClick={resetFilters}
+                className="h-6 px-2 text-xs"
               >
-                {label}
-                <span className="opacity-70 tabular-nums">({count})</span>
+                Reset
               </Button>
-            ))}
-          </div>
+            </div>
+          )}
         </div>
 
         {/* Section nav — three icon tiles. Drill + Reference open dropdowns. */}
@@ -258,13 +219,7 @@ function KanjiListInner() {
           <Card>
             <CardContent className="pt-6 text-center space-y-4">
               <p className="text-muted-foreground">No kanji match your filter.</p>
-              <Button
-                variant="outline"
-                onClick={() => {
-                  setSearch('');
-                  setStatusFilter('all');
-                }}
-              >
+              <Button variant="outline" onClick={resetFilters}>
                 Clear filters
               </Button>
             </CardContent>

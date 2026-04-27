@@ -7,7 +7,12 @@
  */
 
 import { KanjiDatasetProvider } from '@/hooks/use-kanji-dataset'
+import { KanjiListFiltersProvider } from '@/hooks/use-kanji-list-filters'
 
 export default function StudySectionLayout({ children }: { children: React.ReactNode }) {
-  return <KanjiDatasetProvider>{children}</KanjiDatasetProvider>
+  return (
+    <KanjiDatasetProvider>
+      <KanjiListFiltersProvider>{children}</KanjiListFiltersProvider>
+    </KanjiDatasetProvider>
+  )
 }

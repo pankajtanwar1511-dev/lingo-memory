@@ -103,7 +103,7 @@ function TileShell({
   return (
     <div className="flex flex-col items-center gap-1.5 group" title={title}>
       {children}
-      <span className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">
+      <span className="text-sm font-medium text-muted-foreground group-hover:text-foreground transition-colors">
         {label}
       </span>
     </div>
@@ -125,10 +125,10 @@ function TileLink({
     <TileShell label={label} title={title}>
       <Link
         href={href}
-        className="h-14 w-14 sm:h-16 sm:w-16 rounded-xl border bg-gradient-to-br from-primary/10 to-transparent text-primary flex items-center justify-center hover:border-primary hover:from-primary/20 transition-all hover:shadow-md cursor-pointer"
+        className="h-20 w-20 sm:h-24 sm:w-24 rounded-2xl border-2 bg-gradient-to-br from-primary/10 to-transparent text-primary flex items-center justify-center hover:border-primary hover:from-primary/20 transition-all hover:shadow-lg cursor-pointer"
         aria-label={label}
       >
-        <Icon className="h-6 w-6 sm:h-7 sm:w-7" />
+        <Icon className="h-9 w-9 sm:h-10 sm:w-10" />
       </Link>
     </TileShell>
   )
@@ -151,10 +151,10 @@ function TileMenu({
         <DropdownMenuTrigger asChild>
           <button
             type="button"
-            className="h-14 w-14 sm:h-16 sm:w-16 rounded-xl border bg-gradient-to-br from-primary/10 to-transparent text-primary flex items-center justify-center hover:border-primary hover:from-primary/20 transition-all hover:shadow-md cursor-pointer"
+            className="h-20 w-20 sm:h-24 sm:w-24 rounded-2xl border-2 bg-gradient-to-br from-primary/10 to-transparent text-primary flex items-center justify-center hover:border-primary hover:from-primary/20 transition-all hover:shadow-lg cursor-pointer"
             aria-label={label}
           >
-            <Icon className="h-6 w-6 sm:h-7 sm:w-7" />
+            <Icon className="h-9 w-9 sm:h-10 sm:w-10" />
           </button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="start" className="w-64">

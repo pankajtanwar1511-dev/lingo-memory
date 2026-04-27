@@ -11,8 +11,10 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Settings, BookOpenText, ArrowRight } from 'lucide-react'
+import { Settings, BookOpenText, ArrowRight, Search, RotateCcw } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Select } from '@/components/ui/select'
 import {
   Dialog,
   DialogClose,
@@ -23,6 +25,11 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog'
 import { useKanjiDataset, DATASETS, type KanjiDataset } from '@/hooks/use-kanji-dataset'
+import {
+  useKanjiListFilters,
+  type ListSortOption,
+  type ListStatusFilter,
+} from '@/hooks/use-kanji-list-filters'
 
 export function KanjiSettingsButton({ className = '' }: { className?: string }) {
   const [open, setOpen] = useState(false)
@@ -45,12 +52,81 @@ export function KanjiSettingsButton({ className = '' }: { className?: string }) 
             Applies across listing, dashboard, drill, and flashcards.
           </DialogDescription>
         </DialogHeader>
-        <div className="space-y-6 mt-2">
+        <div className="space-y-6 mt-2 max-h-[70vh] overflow-y-auto pr-1">
           <DatasetSection />
+          <FiltersSection />
           <ToolsSection />
         </div>
       </DialogContent>
     </Dialog>
+  )
+}
+
+function FiltersSection() {
+  const { search, setSearch, sortBy, setSortBy, statusFilter, setStatusFilter, isAnyActive, reset } =
+    useKanjiListFilters()
+  const chips: { id: ListStatusFilter; label: string }[] = [
+    { id: 'all', label: 'All' },
+    { id: 'untouched', label: 'Not viewed' },
+    { id: 'viewed', label: 'Viewed' },
+  ]
+  return (
+    <section className="space-y-3 pt-4 border-t">
+      <div className="flex items-baseline justify-between gap-2">
+        <div>
+          <h3 className="text-sm font-semibold">Filters</h3>
+          <p className="text-xs text-muted-foreground mt-0.5">
+            Apply to the kanji listing grid.
+          </p>
+        </div>
+        {isAnyActive && (
+          <Button variant="ghost" size="sm" onClick={reset} className="h-7 text-xs gap-1">
+            <RotateCcw className="h-3 w-3" />
+            Reset
+          </Button>
+        )}
+      </div>
+
+      {/* Search */}
+      <div className="relative">
+        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+        <Input
+          type="text"
+          placeholder="Search kanji, reading, meaning, vocab…"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="pl-10"
+        />
+      </div>
+
+      {/* Sort */}
+      <div className="space-y-1">
+        <label className="text-xs font-medium text-muted-foreground">Sort by</label>
+        <Select value={sortBy} onChange={(e) => setSortBy(e.target.value as ListSortOption)}>
+          <option value="default">Teacher order</option>
+          <option value="kanji">Kanji (a→z)</option>
+          <option value="vocab">Most vocab</option>
+        </Select>
+      </div>
+
+      {/* Status chips */}
+      <div className="space-y-1">
+        <label className="text-xs font-medium text-muted-foreground">Status</label>
+        <div className="flex flex-wrap gap-1.5">
+          {chips.map(({ id, label }) => (
+            <Button
+              key={id}
+              size="sm"
+              variant={statusFilter === id ? 'default' : 'outline'}
+              onClick={() => setStatusFilter(id)}
+              className="h-7 text-xs"
+            >
+              {label}
+            </Button>
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
 
