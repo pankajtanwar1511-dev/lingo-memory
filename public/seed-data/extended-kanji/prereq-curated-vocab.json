@@ -1,0 +1,4503 @@
+{
+  "metadata": {
+    "source": "JMdict via kanjiapi.dev/v1/words",
+    "generatedAt": "2026-04-27T04:15:15.511Z",
+    "totalKanji": 117,
+    "totalVocab": 573,
+    "rule": "5 basic vocab per kanji, JMdict priority-tagged, deduped against existing linked vocab",
+    "skipped": []
+  },
+  "results": [
+    {
+      "parentKanji": "会",
+      "vocabulary": [
+        {
+          "word": "会う",
+          "reading": "あう",
+          "meaning": "to meet; to encounter",
+          "parentKanji": "会"
+        },
+        {
+          "word": "会長",
+          "reading": "かいちょう",
+          "meaning": "chairperson; president",
+          "parentKanji": "会"
+        },
+        {
+          "word": "会見",
+          "reading": "かいけん",
+          "meaning": "interview; press conference",
+          "parentKanji": "会"
+        },
+        {
+          "word": "会議",
+          "reading": "かいぎ",
+          "meaning": "meeting; conference",
+          "parentKanji": "会"
+        },
+        {
+          "word": "会社",
+          "reading": "かいしゃ",
+          "meaning": "company; firm",
+          "parentKanji": "会"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 128,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "社",
+      "vocabulary": [
+        {
+          "word": "社会人",
+          "reading": "しゃかいじん",
+          "meaning": "working adult; member of society",
+          "parentKanji": "社"
+        },
+        {
+          "word": "社長",
+          "reading": "しゃちょう",
+          "meaning": "company president",
+          "parentKanji": "社"
+        },
+        {
+          "word": "社会",
+          "reading": "しゃかい",
+          "meaning": "society",
+          "parentKanji": "社"
+        },
+        {
+          "word": "新聞社",
+          "reading": "しんぶんしゃ",
+          "meaning": "newspaper company",
+          "parentKanji": "社"
+        },
+        {
+          "word": "入社",
+          "reading": "にゅうしゃ",
+          "meaning": "joining a company",
+          "parentKanji": "社"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 73,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "校",
+      "vocabulary": [
+        {
+          "word": "校長",
+          "reading": "こうちょう",
+          "meaning": "principal; head teacher",
+          "parentKanji": "校"
+        },
+        {
+          "word": "高校生",
+          "reading": "こうこうせい",
+          "meaning": "high school student",
+          "parentKanji": "校"
+        },
+        {
+          "word": "高校",
+          "reading": "こうこう",
+          "meaning": "high school",
+          "parentKanji": "校"
+        },
+        {
+          "word": "中学校",
+          "reading": "ちゅうがっこう",
+          "meaning": "junior high school",
+          "parentKanji": "校"
+        },
+        {
+          "word": "登校",
+          "reading": "とうこう",
+          "meaning": "attendance (at school); going to school",
+          "parentKanji": "校"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 44,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "曜",
+      "vocabulary": [
+        {
+          "word": "曜日",
+          "reading": "ようび",
+          "meaning": "day of the week",
+          "parentKanji": "曜"
+        },
+        {
+          "word": "土曜",
+          "reading": "どよう",
+          "meaning": "Saturday",
+          "parentKanji": "曜"
+        },
+        {
+          "word": "日曜",
+          "reading": "にちよう",
+          "meaning": "Sunday",
+          "parentKanji": "曜"
+        },
+        {
+          "word": "金曜",
+          "reading": "きんよう",
+          "meaning": "Friday",
+          "parentKanji": "曜"
+        },
+        {
+          "word": "月曜",
+          "reading": "げつよう",
+          "meaning": "Monday",
+          "parentKanji": "曜"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 10,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "誕",
+      "vocabulary": [
+        {
+          "word": "誕生",
+          "reading": "たんじょう",
+          "meaning": "birth",
+          "parentKanji": "誕"
+        },
+        {
+          "word": "生誕",
+          "reading": "せいたん",
+          "meaning": "birth (of a notable person)",
+          "parentKanji": "誕"
+        },
+        {
+          "word": "お誕生日",
+          "reading": "おたんじょうび",
+          "meaning": "birthday",
+          "parentKanji": "誕"
+        },
+        {
+          "word": "お誕生日おめでとうございます",
+          "reading": "おたんじょうびおめでとうございます",
+          "meaning": "happy birthday",
+          "parentKanji": "誕"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 4,
+        "pickCount": 4
+      }
+    },
+    {
+      "parentKanji": "駅",
+      "vocabulary": [
+        {
+          "word": "駅",
+          "reading": "えき",
+          "meaning": "station",
+          "parentKanji": "駅"
+        },
+        {
+          "word": "駅前",
+          "reading": "えきまえ",
+          "meaning": "in front of a station",
+          "parentKanji": "駅"
+        },
+        {
+          "word": "駅員",
+          "reading": "えきいん",
+          "meaning": "station attendant",
+          "parentKanji": "駅"
+        },
+        {
+          "word": "駅弁",
+          "reading": "えきべん",
+          "meaning": "station boxed lunch",
+          "parentKanji": "駅"
+        },
+        {
+          "word": "駅長",
+          "reading": "えきちょう",
+          "meaning": "stationmaster",
+          "parentKanji": "駅"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 9,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "飛",
+      "vocabulary": [
+        {
+          "word": "飛ぶ",
+          "reading": "とぶ",
+          "meaning": "to fly; to leap",
+          "parentKanji": "飛"
+        },
+        {
+          "word": "飛ばす",
+          "reading": "とばす",
+          "meaning": "to let fly; to make fly",
+          "parentKanji": "飛"
+        },
+        {
+          "word": "飛行",
+          "reading": "ひこう",
+          "meaning": "flight; aviation",
+          "parentKanji": "飛"
+        },
+        {
+          "word": "飛びだす",
+          "reading": "とびだす",
+          "meaning": "to jump out; to rush out",
+          "parentKanji": "飛"
+        },
+        {
+          "word": "飛躍",
+          "reading": "ひやく",
+          "meaning": "leap; jump",
+          "parentKanji": "飛"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 50,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "機",
+      "vocabulary": [
+        {
+          "word": "機会",
+          "reading": "きかい",
+          "meaning": "opportunity; chance",
+          "parentKanji": "機"
+        },
+        {
+          "word": "機関",
+          "reading": "きかん",
+          "meaning": "institution; organ; engine",
+          "parentKanji": "機"
+        },
+        {
+          "word": "動機",
+          "reading": "どうき",
+          "meaning": "motive; motivation",
+          "parentKanji": "機"
+        },
+        {
+          "word": "機長",
+          "reading": "きちょう",
+          "meaning": "captain (of an aircraft)",
+          "parentKanji": "機"
+        },
+        {
+          "word": "機能",
+          "reading": "きのう",
+          "meaning": "function",
+          "parentKanji": "機"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 83,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "銀",
+      "vocabulary": [
+        {
+          "word": "銀",
+          "reading": "ぎん",
+          "meaning": "silver",
+          "parentKanji": "銀"
+        },
+        {
+          "word": "銀河",
+          "reading": "ぎんが",
+          "meaning": "galaxy; Milky Way",
+          "parentKanji": "銀"
+        },
+        {
+          "word": "水銀",
+          "reading": "すいぎん",
+          "meaning": "mercury (Hg)",
+          "parentKanji": "銀"
+        },
+        {
+          "word": "日本銀行",
+          "reading": "にっぽんぎんこう",
+          "meaning": "Bank of Japan; BOJ",
+          "parentKanji": "銀"
+        },
+        {
+          "word": "世銀",
+          "reading": "せぎん",
+          "meaning": "World Bank",
+          "parentKanji": "銀"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 19,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "旅",
+      "vocabulary": [
+        {
+          "word": "旅",
+          "reading": "たび",
+          "meaning": "travel; trip; journey",
+          "parentKanji": "旅"
+        },
+        {
+          "word": "旅だつ",
+          "reading": "たびだつ",
+          "meaning": "to set off on a journey",
+          "parentKanji": "旅"
+        },
+        {
+          "word": "旅館",
+          "reading": "りょかん",
+          "meaning": "Japanese-style inn",
+          "parentKanji": "旅"
+        },
+        {
+          "word": "旅客",
+          "reading": "りょかく",
+          "meaning": "passenger",
+          "parentKanji": "旅"
+        },
+        {
+          "word": "旅客機",
+          "reading": "りょかくき",
+          "meaning": "passenger plane",
+          "parentKanji": "旅"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 23,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "部",
+      "vocabulary": [
+        {
+          "word": "部分",
+          "reading": "ぶぶん",
+          "meaning": "portion; section",
+          "parentKanji": "部"
+        },
+        {
+          "word": "部長",
+          "reading": "ぶちょう",
+          "meaning": "head (chief, director) of a section or department",
+          "parentKanji": "部"
+        },
+        {
+          "word": "東部",
+          "reading": "とうぶ",
+          "meaning": "eastern part; the east (of a region)",
+          "parentKanji": "部"
+        },
+        {
+          "word": "北部",
+          "reading": "ほくぶ",
+          "meaning": "northern part; the north (of a region)",
+          "parentKanji": "部"
+        },
+        {
+          "word": "南部",
+          "reading": "なんぶ",
+          "meaning": "southern part; the south (of a region)",
+          "parentKanji": "部"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 75,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "屋",
+      "vocabulary": [
+        {
+          "word": "部屋",
+          "reading": "へや",
+          "meaning": "room",
+          "parentKanji": "屋"
+        },
+        {
+          "word": "屋上",
+          "reading": "おくじょう",
+          "meaning": "rooftop",
+          "parentKanji": "屋"
+        },
+        {
+          "word": "屋外",
+          "reading": "おくがい",
+          "meaning": "outdoors",
+          "parentKanji": "屋"
+        },
+        {
+          "word": "小屋",
+          "reading": "こや",
+          "meaning": "hut; cabin; shed",
+          "parentKanji": "屋"
+        },
+        {
+          "word": "屋根",
+          "reading": "やね",
+          "meaning": "roof",
+          "parentKanji": "屋"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 61,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "映",
+      "vocabulary": [
+        {
+          "word": "映る",
+          "reading": "うつる",
+          "meaning": "to be reflected",
+          "parentKanji": "映"
+        },
+        {
+          "word": "映す",
+          "reading": "うつす",
+          "meaning": "to project; to reflect",
+          "parentKanji": "映"
+        },
+        {
+          "word": "映画",
+          "reading": "えいが",
+          "meaning": "movie; film",
+          "parentKanji": "映"
+        },
+        {
+          "word": "映画館",
+          "reading": "えいがかん",
+          "meaning": "movie theater",
+          "parentKanji": "映"
+        },
+        {
+          "word": "上映",
+          "reading": "じょうえい",
+          "meaning": "screening (film)",
+          "parentKanji": "映"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 15,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "画",
+      "vocabulary": [
+        {
+          "word": "画する",
+          "reading": "かくする",
+          "meaning": "to draw (a line)",
+          "parentKanji": "画"
+        },
+        {
+          "word": "画",
+          "reading": "え",
+          "meaning": "image (TV, film, etc.); picture",
+          "parentKanji": "画"
+        },
+        {
+          "word": "計画",
+          "reading": "けいかく",
+          "meaning": "plan; project",
+          "parentKanji": "画"
+        },
+        {
+          "word": "画家",
+          "reading": "がか",
+          "meaning": "painter; artist",
+          "parentKanji": "画"
+        },
+        {
+          "word": "画面",
+          "reading": "がめん",
+          "meaning": "image (on a screen); picture",
+          "parentKanji": "画"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 60,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "電",
+      "vocabulary": [
+        {
+          "word": "電気",
+          "reading": "でんき",
+          "meaning": "electricity",
+          "parentKanji": "電"
+        },
+        {
+          "word": "電子",
+          "reading": "でんし",
+          "meaning": "electron",
+          "parentKanji": "電"
+        },
+        {
+          "word": "電力",
+          "reading": "でんりょく",
+          "meaning": "electric power",
+          "parentKanji": "電"
+        },
+        {
+          "word": "電波",
+          "reading": "でんぱ",
+          "meaning": "radio waves; electromagnetic waves",
+          "parentKanji": "電"
+        },
+        {
+          "word": "発電",
+          "reading": "はつでん",
+          "meaning": "electric power generation",
+          "parentKanji": "電"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 72,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "新",
+      "vocabulary": [
+        {
+          "word": "新た",
+          "reading": "あらた",
+          "meaning": "new; fresh",
+          "parentKanji": "新"
+        },
+        {
+          "word": "新しい",
+          "reading": "あたらしい",
+          "meaning": "new",
+          "parentKanji": "新"
+        },
+        {
+          "word": "新幹線",
+          "reading": "しんかんせん",
+          "meaning": "Shinkansen; bullet train",
+          "parentKanji": "新"
+        },
+        {
+          "word": "新人",
+          "reading": "しんじん",
+          "meaning": "newcomer; rookie",
+          "parentKanji": "新"
+        },
+        {
+          "word": "新年",
+          "reading": "しんねん",
+          "meaning": "New Year",
+          "parentKanji": "新"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 95,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "勉",
+      "vocabulary": [
+        {
+          "word": "勉める",
+          "reading": "つとめる",
+          "meaning": "to endeavor; to strive",
+          "parentKanji": "勉"
+        },
+        {
+          "word": "勉強",
+          "reading": "べんきょう",
+          "meaning": "study",
+          "parentKanji": "勉"
+        },
+        {
+          "word": "勤勉",
+          "reading": "きんべん",
+          "meaning": "diligent; hard-working",
+          "parentKanji": "勉"
+        },
+        {
+          "word": "勉学",
+          "reading": "べんがく",
+          "meaning": "study; learning",
+          "parentKanji": "勉"
+        },
+        {
+          "word": "勉強中",
+          "reading": "べんきょうちゅう",
+          "meaning": "in the middle of studying",
+          "parentKanji": "勉"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 5,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "強",
+      "vocabulary": [
+        {
+          "word": "強める",
+          "reading": "つよめる",
+          "meaning": "to strengthen",
+          "parentKanji": "強"
+        },
+        {
+          "word": "強いる",
+          "reading": "しいる",
+          "meaning": "to force; to compel",
+          "parentKanji": "強"
+        },
+        {
+          "word": "強い",
+          "reading": "つよい",
+          "meaning": "strong; powerful",
+          "parentKanji": "強"
+        },
+        {
+          "word": "強まる",
+          "reading": "つよまる",
+          "meaning": "to grow stronger",
+          "parentKanji": "強"
+        },
+        {
+          "word": "強力",
+          "reading": "きょうりょく",
+          "meaning": "powerful; strong",
+          "parentKanji": "強"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 48,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "試",
+      "vocabulary": [
+        {
+          "word": "試す",
+          "reading": "ためす",
+          "meaning": "to try; to test",
+          "parentKanji": "試"
+        },
+        {
+          "word": "試し",
+          "reading": "ためし",
+          "meaning": "trial; test",
+          "parentKanji": "試"
+        },
+        {
+          "word": "試みる",
+          "reading": "こころみる",
+          "meaning": "to try; to attempt",
+          "parentKanji": "試"
+        },
+        {
+          "word": "試験",
+          "reading": "しけん",
+          "meaning": "examination; test",
+          "parentKanji": "試"
+        },
+        {
+          "word": "入試",
+          "reading": "にゅうし",
+          "meaning": "entrance exam",
+          "parentKanji": "試"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 32,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "験",
+      "vocabulary": [
+        {
+          "word": "験す",
+          "reading": "ためす",
+          "meaning": "to try (out); to have a try (at)",
+          "parentKanji": "験"
+        },
+        {
+          "word": "験",
+          "reading": "ためし",
+          "meaning": "trial; test",
+          "parentKanji": "験"
+        },
+        {
+          "word": "経験",
+          "reading": "けいけん",
+          "meaning": "experience",
+          "parentKanji": "験"
+        },
+        {
+          "word": "受験",
+          "reading": "じゅけん",
+          "meaning": "taking an examination (esp. for entrance to a school or university)",
+          "parentKanji": "験"
+        },
+        {
+          "word": "実験",
+          "reading": "じっけん",
+          "meaning": "experiment; experimentation",
+          "parentKanji": "験"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 15,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "誌",
+      "vocabulary": [
+        {
+          "word": "誌す",
+          "reading": "しるす",
+          "meaning": "to remember; to engrave (in one's mind)",
+          "parentKanji": "誌"
+        },
+        {
+          "word": "誌",
+          "reading": "し",
+          "meaning": "magazine",
+          "parentKanji": "誌"
+        },
+        {
+          "word": "雑誌",
+          "reading": "ざっし",
+          "meaning": "journal; magazine",
+          "parentKanji": "誌"
+        },
+        {
+          "word": "日誌",
+          "reading": "にっし",
+          "meaning": "journal; log",
+          "parentKanji": "誌"
+        },
+        {
+          "word": "機関誌",
+          "reading": "きかんし",
+          "meaning": "bulletin; (party) organ",
+          "parentKanji": "誌"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 14,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "詞",
+      "vocabulary": [
+        {
+          "word": "詞",
+          "reading": "ことば",
+          "meaning": "words; remark",
+          "parentKanji": "詞"
+        },
+        {
+          "word": "代名詞",
+          "reading": "だいめいし",
+          "meaning": "pronoun",
+          "parentKanji": "詞"
+        },
+        {
+          "word": "動詞",
+          "reading": "どうし",
+          "meaning": "verb",
+          "parentKanji": "詞"
+        },
+        {
+          "word": "作詞",
+          "reading": "さくし",
+          "meaning": "(writing) song lyrics",
+          "parentKanji": "詞"
+        },
+        {
+          "word": "助詞",
+          "reading": "じょし",
+          "meaning": "particle; postpositional word in Japanese grammar that functions as an auxiliary to a main word",
+          "parentKanji": "詞"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 12,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "英",
+      "vocabulary": [
+        {
+          "word": "英文",
+          "reading": "えいぶん",
+          "meaning": "English text; English sentence",
+          "parentKanji": "英"
+        },
+        {
+          "word": "英雄",
+          "reading": "えいゆう",
+          "meaning": "hero; great person",
+          "parentKanji": "英"
+        },
+        {
+          "word": "英和",
+          "reading": "えいわ",
+          "meaning": "English-Japanese",
+          "parentKanji": "英"
+        },
+        {
+          "word": "和英",
+          "reading": "わえい",
+          "meaning": "Japanese-English",
+          "parentKanji": "英"
+        },
+        {
+          "word": "英文学",
+          "reading": "えいぶんがく",
+          "meaning": "English(-language) literature",
+          "parentKanji": "英"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 20,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "米",
+      "vocabulary": [
+        {
+          "word": "日米",
+          "reading": "にちべい",
+          "meaning": "Japan and the US",
+          "parentKanji": "米"
+        },
+        {
+          "word": "米",
+          "reading": "こめ",
+          "meaning": "(husked grains of) rice",
+          "parentKanji": "米"
+        },
+        {
+          "word": "新米",
+          "reading": "しんまい",
+          "meaning": "new rice",
+          "parentKanji": "米"
+        },
+        {
+          "word": "米価",
+          "reading": "べいか",
+          "meaning": "price of rice",
+          "parentKanji": "米"
+        },
+        {
+          "word": "中南米",
+          "reading": "ちゅうなんべい",
+          "meaning": "Central and South America",
+          "parentKanji": "米"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 32,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "韓",
+      "vocabulary": [
+        {
+          "word": "日韓",
+          "reading": "にっかん",
+          "meaning": "Japan and South Korea; Japanese-Korean",
+          "parentKanji": "韓"
+        },
+        {
+          "word": "韓方薬",
+          "reading": "かんぽうやく",
+          "meaning": "Chinese herbal medicine",
+          "parentKanji": "韓"
+        },
+        {
+          "word": "韓国",
+          "reading": "かんこく",
+          "meaning": "Korean Empire (1897-1910)",
+          "parentKanji": "韓"
+        },
+        {
+          "word": "韓国語",
+          "reading": "かんこくご",
+          "meaning": "Korean (language)",
+          "parentKanji": "韓"
+        },
+        {
+          "word": "大韓民国",
+          "reading": "だいかんみんこく",
+          "meaning": "Republic of Korea; South Korea",
+          "parentKanji": "韓"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 5,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "宿",
+      "vocabulary": [
+        {
+          "word": "宿",
+          "reading": "やど",
+          "meaning": "inn; lodging",
+          "parentKanji": "宿"
+        },
+        {
+          "word": "宿泊",
+          "reading": "しゅくはく",
+          "meaning": "lodging; staying at",
+          "parentKanji": "宿"
+        },
+        {
+          "word": "下宿",
+          "reading": "げしゅく",
+          "meaning": "boarding house; lodging",
+          "parentKanji": "宿"
+        },
+        {
+          "word": "宿る",
+          "reading": "やどる",
+          "meaning": "to lodge; to dwell",
+          "parentKanji": "宿"
+        },
+        {
+          "word": "合宿",
+          "reading": "がっしゅく",
+          "meaning": "training camp",
+          "parentKanji": "宿"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 20,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "科",
+      "vocabulary": [
+        {
+          "word": "科",
+          "reading": "か",
+          "meaning": "department; section",
+          "parentKanji": "科"
+        },
+        {
+          "word": "科学",
+          "reading": "かがく",
+          "meaning": "science",
+          "parentKanji": "科"
+        },
+        {
+          "word": "学科",
+          "reading": "がっか",
+          "meaning": "department (university, etc.)",
+          "parentKanji": "科"
+        },
+        {
+          "word": "科目",
+          "reading": "かもく",
+          "meaning": "(school) subject; curriculum",
+          "parentKanji": "科"
+        },
+        {
+          "word": "科する",
+          "reading": "かする",
+          "meaning": "to inflict; to impose (a fine, etc.)",
+          "parentKanji": "科"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 39,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "地",
+      "vocabulary": [
+        {
+          "word": "地",
+          "reading": "つち",
+          "meaning": "the earth (historically, esp. as opposed to the heavens); the ground",
+          "parentKanji": "地"
+        },
+        {
+          "word": "地",
+          "reading": "ち",
+          "meaning": "earth; ground",
+          "parentKanji": "地"
+        },
+        {
+          "word": "地図",
+          "reading": "ちず",
+          "meaning": "map",
+          "parentKanji": "地"
+        },
+        {
+          "word": "地上",
+          "reading": "ちじょう",
+          "meaning": "aboveground",
+          "parentKanji": "地"
+        },
+        {
+          "word": "地方",
+          "reading": "ちほう",
+          "meaning": "region; district; province",
+          "parentKanji": "地"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 168,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "鉄",
+      "vocabulary": [
+        {
+          "word": "鉄",
+          "reading": "てつ",
+          "meaning": "iron (Fe)",
+          "parentKanji": "鉄"
+        },
+        {
+          "word": "鉄道",
+          "reading": "てつどう",
+          "meaning": "railroad; railway",
+          "parentKanji": "鉄"
+        },
+        {
+          "word": "国鉄",
+          "reading": "こくてつ",
+          "meaning": "national railway",
+          "parentKanji": "鉄"
+        },
+        {
+          "word": "私鉄",
+          "reading": "してつ",
+          "meaning": "private railway",
+          "parentKanji": "鉄"
+        },
+        {
+          "word": "製鉄",
+          "reading": "せいてつ",
+          "meaning": "iron manufacture",
+          "parentKanji": "鉄"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 13,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "転",
+      "vocabulary": [
+        {
+          "word": "転がす",
+          "reading": "ころがす",
+          "meaning": "to leave",
+          "parentKanji": "転"
+        },
+        {
+          "word": "転がる",
+          "reading": "ころがる",
+          "meaning": "(of a situation or outcome) to change; to turn out",
+          "parentKanji": "転"
+        },
+        {
+          "word": "転ぶ",
+          "reading": "ころぶ",
+          "meaning": "to fall down; to fall over",
+          "parentKanji": "転"
+        },
+        {
+          "word": "運転手",
+          "reading": "うんてんしゅ",
+          "meaning": "driver; chauffeur",
+          "parentKanji": "転"
+        },
+        {
+          "word": "転じる",
+          "reading": "てんじる",
+          "meaning": "to turn; to shift",
+          "parentKanji": "転"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 58,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "自",
+      "vocabulary": [
+        {
+          "word": "自ら",
+          "reading": "みずから",
+          "meaning": "oneself; in person",
+          "parentKanji": "自"
+        },
+        {
+          "word": "自国",
+          "reading": "じこく",
+          "meaning": "one's own country",
+          "parentKanji": "自"
+        },
+        {
+          "word": "自分",
+          "reading": "じぶん",
+          "meaning": "oneself; myself",
+          "parentKanji": "自"
+        },
+        {
+          "word": "自白",
+          "reading": "じはく",
+          "meaning": "confession",
+          "parentKanji": "自"
+        },
+        {
+          "word": "自殺",
+          "reading": "じさつ",
+          "meaning": "suicide",
+          "parentKanji": "自"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 99,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "動",
+      "vocabulary": [
+        {
+          "word": "動かす",
+          "reading": "うごかす",
+          "meaning": "to move; to shift",
+          "parentKanji": "動"
+        },
+        {
+          "word": "動物",
+          "reading": "どうぶつ",
+          "meaning": "animal",
+          "parentKanji": "動"
+        },
+        {
+          "word": "行動",
+          "reading": "こうどう",
+          "meaning": "action; behavior",
+          "parentKanji": "動"
+        },
+        {
+          "word": "自動",
+          "reading": "じどう",
+          "meaning": "automatic",
+          "parentKanji": "動"
+        },
+        {
+          "word": "運動",
+          "reading": "うんどう",
+          "meaning": "exercise; movement",
+          "parentKanji": "動"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 77,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "運",
+      "vocabulary": [
+        {
+          "word": "運ぶ",
+          "reading": "はこぶ",
+          "meaning": "to carry; to transport",
+          "parentKanji": "運"
+        },
+        {
+          "word": "運",
+          "reading": "うん",
+          "meaning": "fortune; luck",
+          "parentKanji": "運"
+        },
+        {
+          "word": "運用",
+          "reading": "うんよう",
+          "meaning": "operation; application",
+          "parentKanji": "運"
+        },
+        {
+          "word": "運転",
+          "reading": "うんてん",
+          "meaning": "driving (a vehicle)",
+          "parentKanji": "運"
+        },
+        {
+          "word": "運輸",
+          "reading": "うんゆ",
+          "meaning": "transportation",
+          "parentKanji": "運"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 35,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "真",
+      "vocabulary": [
+        {
+          "word": "真の",
+          "reading": "しんの",
+          "meaning": "true; real",
+          "parentKanji": "真"
+        },
+        {
+          "word": "写真",
+          "reading": "しゃしん",
+          "meaning": "photograph; photo",
+          "parentKanji": "真"
+        },
+        {
+          "word": "真相",
+          "reading": "しんそう",
+          "meaning": "truth; real situation",
+          "parentKanji": "真"
+        },
+        {
+          "word": "真夏",
+          "reading": "まなつ",
+          "meaning": "midsummer; height of summer",
+          "parentKanji": "真"
+        },
+        {
+          "word": "真っ先",
+          "reading": "まっさき",
+          "meaning": "the head; the foremost",
+          "parentKanji": "真"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 65,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "写",
+      "vocabulary": [
+        {
+          "word": "写る",
+          "reading": "うつる",
+          "meaning": "to be photographed; to be projected",
+          "parentKanji": "写"
+        },
+        {
+          "word": "写す",
+          "reading": "うつす",
+          "meaning": "to describe",
+          "parentKanji": "写"
+        },
+        {
+          "word": "写し",
+          "reading": "うつし",
+          "meaning": "copy; duplicate",
+          "parentKanji": "写"
+        },
+        {
+          "word": "描写",
+          "reading": "びょうしゃ",
+          "meaning": "depiction; description",
+          "parentKanji": "写"
+        },
+        {
+          "word": "写生",
+          "reading": "しゃせい",
+          "meaning": "sketching; drawing from nature",
+          "parentKanji": "写"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 29,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "街",
+      "vocabulary": [
+        {
+          "word": "街",
+          "reading": "まち",
+          "meaning": "downtown; main street",
+          "parentKanji": "街"
+        },
+        {
+          "word": "街頭",
+          "reading": "がいとう",
+          "meaning": "(on the) street",
+          "parentKanji": "街"
+        },
+        {
+          "word": "街中",
+          "reading": "まちなか",
+          "meaning": "downtown",
+          "parentKanji": "街"
+        },
+        {
+          "word": "街",
+          "reading": "がい",
+          "meaning": "street; quarter",
+          "parentKanji": "街"
+        },
+        {
+          "word": "街道",
+          "reading": "かいどう",
+          "meaning": "subdistrict (in China)",
+          "parentKanji": "街"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 19,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "寺",
+      "vocabulary": [
+        {
+          "word": "寺",
+          "reading": "てら",
+          "meaning": "Buddhist temple",
+          "parentKanji": "寺"
+        },
+        {
+          "word": "寺院",
+          "reading": "じいん",
+          "meaning": "Buddhist temple",
+          "parentKanji": "寺"
+        },
+        {
+          "word": "山寺",
+          "reading": "やまでら",
+          "meaning": "mountain temple",
+          "parentKanji": "寺"
+        },
+        {
+          "word": "禅寺",
+          "reading": "ぜんでら",
+          "meaning": "Zen temple",
+          "parentKanji": "寺"
+        },
+        {
+          "word": "寺子屋",
+          "reading": "てらこや",
+          "meaning": "temple elementary school (during the Edo period)",
+          "parentKanji": "寺"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 9,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "清",
+      "vocabulary": [
+        {
+          "word": "清い",
+          "reading": "きよい",
+          "meaning": "pure; honest",
+          "parentKanji": "清"
+        },
+        {
+          "word": "清掃",
+          "reading": "せいそう",
+          "meaning": "cleaning; clean-up",
+          "parentKanji": "清"
+        },
+        {
+          "word": "清潔",
+          "reading": "せいけつ",
+          "meaning": "pure; virtuous",
+          "parentKanji": "清"
+        },
+        {
+          "word": "清算",
+          "reading": "せいさん",
+          "meaning": "liquidation",
+          "parentKanji": "清"
+        },
+        {
+          "word": "清新",
+          "reading": "せいしん",
+          "meaning": "fresh; new",
+          "parentKanji": "清"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 21,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "祖",
+      "vocabulary": [
+        {
+          "word": "先祖",
+          "reading": "せんぞ",
+          "meaning": "ancestor; forefather",
+          "parentKanji": "祖"
+        },
+        {
+          "word": "祖",
+          "reading": "そ",
+          "meaning": "originator; pioneer",
+          "parentKanji": "祖"
+        },
+        {
+          "word": "祖先",
+          "reading": "そせん",
+          "meaning": "ancestor",
+          "parentKanji": "祖"
+        },
+        {
+          "word": "祖国",
+          "reading": "そこく",
+          "meaning": "homeland; motherland",
+          "parentKanji": "祖"
+        },
+        {
+          "word": "祖父母",
+          "reading": "そふぼ",
+          "meaning": "grandparents",
+          "parentKanji": "祖"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 11,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "息",
+      "vocabulary": [
+        {
+          "word": "息",
+          "reading": "いき",
+          "meaning": "breath",
+          "parentKanji": "息"
+        },
+        {
+          "word": "利息",
+          "reading": "りそく",
+          "meaning": "interest (on money)",
+          "parentKanji": "息"
+        },
+        {
+          "word": "休息",
+          "reading": "きゅうそく",
+          "meaning": "rest; relaxation",
+          "parentKanji": "息"
+        },
+        {
+          "word": "消息",
+          "reading": "しょうそく",
+          "meaning": "news; word; whereabouts",
+          "parentKanji": "息"
+        },
+        {
+          "word": "窒息",
+          "reading": "ちっそく",
+          "meaning": "suffocation",
+          "parentKanji": "息"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 25,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "娘",
+      "vocabulary": [
+        {
+          "word": "娘",
+          "reading": "むすめ",
+          "meaning": "daughter; girl",
+          "parentKanji": "娘"
+        },
+        {
+          "word": "ひとり娘",
+          "reading": "ひとりむすめ",
+          "meaning": "only daughter",
+          "parentKanji": "娘"
+        },
+        {
+          "word": "娘婿",
+          "reading": "むすめむこ",
+          "meaning": "son-in-law",
+          "parentKanji": "娘"
+        },
+        {
+          "word": "孫娘",
+          "reading": "まごむすめ",
+          "meaning": "granddaughter",
+          "parentKanji": "娘"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 4,
+        "pickCount": 4
+      }
+    },
+    {
+      "parentKanji": "双",
+      "vocabulary": [
+        {
+          "word": "双",
+          "reading": "そう",
+          "meaning": "pair; set",
+          "parentKanji": "双"
+        },
+        {
+          "word": "双方",
+          "reading": "そうほう",
+          "meaning": "both sides; both parties",
+          "parentKanji": "双"
+        },
+        {
+          "word": "双葉",
+          "reading": "ふたば",
+          "meaning": "cotyledon; first leaves",
+          "parentKanji": "双"
+        },
+        {
+          "word": "双生児",
+          "reading": "そうせいじ",
+          "meaning": "twins",
+          "parentKanji": "双"
+        },
+        {
+          "word": "双書",
+          "reading": "そうしょ",
+          "meaning": "series (of publications); library (set of books)",
+          "parentKanji": "双"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 8,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "性",
+      "vocabulary": [
+        {
+          "word": "性格",
+          "reading": "せいかく",
+          "meaning": "character; personality",
+          "parentKanji": "性"
+        },
+        {
+          "word": "急性",
+          "reading": "きゅうせい",
+          "meaning": "acute (illness)",
+          "parentKanji": "性"
+        },
+        {
+          "word": "個性",
+          "reading": "こせい",
+          "meaning": "individuality; personality",
+          "parentKanji": "性"
+        },
+        {
+          "word": "性",
+          "reading": "せい",
+          "meaning": "sex; gender",
+          "parentKanji": "性"
+        },
+        {
+          "word": "人間性",
+          "reading": "にんげんせい",
+          "meaning": "humanity; human nature",
+          "parentKanji": "性"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 88,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "料",
+      "vocabulary": [
+        {
+          "word": "食料",
+          "reading": "しょくりょう",
+          "meaning": "food; foodstuffs",
+          "parentKanji": "料"
+        },
+        {
+          "word": "資料",
+          "reading": "しりょう",
+          "meaning": "materials; data",
+          "parentKanji": "料"
+        },
+        {
+          "word": "原料",
+          "reading": "げんりょう",
+          "meaning": "raw materials",
+          "parentKanji": "料"
+        },
+        {
+          "word": "料理",
+          "reading": "りょうり",
+          "meaning": "cooking; dish",
+          "parentKanji": "料"
+        },
+        {
+          "word": "燃料",
+          "reading": "ねんりょう",
+          "meaning": "fuel",
+          "parentKanji": "料"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 44,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "持",
+      "vocabulary": [
+        {
+          "word": "持ち",
+          "reading": "もち",
+          "meaning": "having; holding",
+          "parentKanji": "持"
+        },
+        {
+          "word": "持つ",
+          "reading": "もつ",
+          "meaning": "to hold (meeting, etc.); to have (opportunity, etc.)",
+          "parentKanji": "持"
+        },
+        {
+          "word": "気持",
+          "reading": "きもち",
+          "meaning": "preparedness; readiness",
+          "parentKanji": "持"
+        },
+        {
+          "word": "金持",
+          "reading": "かねもち",
+          "meaning": "rich person",
+          "parentKanji": "持"
+        },
+        {
+          "word": "維持",
+          "reading": "いじ",
+          "meaning": "maintenance; preservation",
+          "parentKanji": "持"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 57,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "計",
+      "vocabulary": [
+        {
+          "word": "計",
+          "reading": "けい",
+          "meaning": "plan",
+          "parentKanji": "計"
+        },
+        {
+          "word": "計る",
+          "reading": "はかる",
+          "meaning": "to measure; to weigh",
+          "parentKanji": "計"
+        },
+        {
+          "word": "会計",
+          "reading": "かいけい",
+          "meaning": "accounting; finance",
+          "parentKanji": "計"
+        },
+        {
+          "word": "計算",
+          "reading": "けいさん",
+          "meaning": "forecast",
+          "parentKanji": "計"
+        },
+        {
+          "word": "統計",
+          "reading": "とうけい",
+          "meaning": "statistics",
+          "parentKanji": "計"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 36,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "番",
+      "vocabulary": [
+        {
+          "word": "一番",
+          "reading": "いちばん",
+          "meaning": "first; best; most",
+          "parentKanji": "番"
+        },
+        {
+          "word": "本番",
+          "reading": "ほんばん",
+          "meaning": "the real thing; actual performance",
+          "parentKanji": "番"
+        },
+        {
+          "word": "番号",
+          "reading": "ばんごう",
+          "meaning": "number",
+          "parentKanji": "番"
+        },
+        {
+          "word": "番組",
+          "reading": "ばんぐみ",
+          "meaning": "TV program; show",
+          "parentKanji": "番"
+        },
+        {
+          "word": "番め",
+          "reading": "ばんめ",
+          "meaning": "the nth ...",
+          "parentKanji": "番"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 39,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "交",
+      "vocabulary": [
+        {
+          "word": "交す",
+          "reading": "かわす",
+          "meaning": "... with one another; ... to each other",
+          "parentKanji": "交"
+        },
+        {
+          "word": "交ぜる",
+          "reading": "まぜる",
+          "meaning": "to mix; to stir",
+          "parentKanji": "交"
+        },
+        {
+          "word": "交ざる",
+          "reading": "まざる",
+          "meaning": "to be mixed; to be blended with",
+          "parentKanji": "交"
+        },
+        {
+          "word": "交じる",
+          "reading": "まじる",
+          "meaning": "to associate with; to mingle with",
+          "parentKanji": "交"
+        },
+        {
+          "word": "交わる",
+          "reading": "まじわる",
+          "meaning": "to associate with; to mingle with",
+          "parentKanji": "交"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 54,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "近",
+      "vocabulary": [
+        {
+          "word": "近い",
+          "reading": "ちかい",
+          "meaning": "near; close",
+          "parentKanji": "近"
+        },
+        {
+          "word": "近所",
+          "reading": "きんじょ",
+          "meaning": "neighborhood",
+          "parentKanji": "近"
+        },
+        {
+          "word": "近代",
+          "reading": "きんだい",
+          "meaning": "modern era",
+          "parentKanji": "近"
+        },
+        {
+          "word": "付近",
+          "reading": "ふきん",
+          "meaning": "vicinity; neighborhood",
+          "parentKanji": "近"
+        },
+        {
+          "word": "最近",
+          "reading": "さいきん",
+          "meaning": "recently; lately",
+          "parentKanji": "近"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 28,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "州",
+      "vocabulary": [
+        {
+          "word": "州",
+          "reading": "しゅう",
+          "meaning": "state (of the US, Australia, India, Germany, etc.); province (e.g. of Canada)",
+          "parentKanji": "州"
+        },
+        {
+          "word": "九州",
+          "reading": "きゅうしゅう",
+          "meaning": "Kyūshū (southernmost of the four main islands of Japan)",
+          "parentKanji": "州"
+        },
+        {
+          "word": "欧州",
+          "reading": "おうしゅう",
+          "meaning": "Europe",
+          "parentKanji": "州"
+        },
+        {
+          "word": "州都",
+          "reading": "しゅうと",
+          "meaning": "state capital; provincial capital",
+          "parentKanji": "州"
+        },
+        {
+          "word": "広州",
+          "reading": "こうしゅう",
+          "meaning": "Guangzhou (China); Kwangchow",
+          "parentKanji": "州"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 11,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "方",
+      "vocabulary": [
+        {
+          "word": "方",
+          "reading": "ほう",
+          "meaning": "direction; way",
+          "parentKanji": "方"
+        },
+        {
+          "word": "見方",
+          "reading": "みかた",
+          "meaning": "viewpoint; point of view",
+          "parentKanji": "方"
+        },
+        {
+          "word": "一方",
+          "reading": "いっぽう",
+          "meaning": "one (esp. of two); the other",
+          "parentKanji": "方"
+        },
+        {
+          "word": "方々",
+          "reading": "かたがた",
+          "meaning": "people; (all) persons",
+          "parentKanji": "方"
+        },
+        {
+          "word": "後方",
+          "reading": "こうほう",
+          "meaning": "behind; in the rear",
+          "parentKanji": "方"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 95,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "海",
+      "vocabulary": [
+        {
+          "word": "海",
+          "reading": "うみ",
+          "meaning": "sea; ocean",
+          "parentKanji": "海"
+        },
+        {
+          "word": "海上",
+          "reading": "かいじょう",
+          "meaning": "on the sea; maritime",
+          "parentKanji": "海"
+        },
+        {
+          "word": "海水",
+          "reading": "かいすい",
+          "meaning": "seawater",
+          "parentKanji": "海"
+        },
+        {
+          "word": "海軍",
+          "reading": "かいぐん",
+          "meaning": "navy",
+          "parentKanji": "海"
+        },
+        {
+          "word": "海岸",
+          "reading": "かいがん",
+          "meaning": "coast; shore",
+          "parentKanji": "海"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 67,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "道",
+      "vocabulary": [
+        {
+          "word": "道",
+          "reading": "みち",
+          "meaning": "road; path; way",
+          "parentKanji": "道"
+        },
+        {
+          "word": "国道",
+          "reading": "こくどう",
+          "meaning": "national highway",
+          "parentKanji": "道"
+        },
+        {
+          "word": "歩道",
+          "reading": "ほどう",
+          "meaning": "sidewalk; footpath",
+          "parentKanji": "道"
+        },
+        {
+          "word": "道のり",
+          "reading": "みちのり",
+          "meaning": "distance; journey",
+          "parentKanji": "道"
+        },
+        {
+          "word": "中道",
+          "reading": "ちゅうどう",
+          "meaning": "middle way; middle path",
+          "parentKanji": "道"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 95,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "極",
+      "vocabulary": [
+        {
+          "word": "極",
+          "reading": "ごく",
+          "meaning": "quite; very",
+          "parentKanji": "極"
+        },
+        {
+          "word": "極る",
+          "reading": "きまる",
+          "meaning": "to be decided; to be settled",
+          "parentKanji": "極"
+        },
+        {
+          "word": "極める",
+          "reading": "きめる",
+          "meaning": "to always do; to have made a habit of",
+          "parentKanji": "極"
+        },
+        {
+          "word": "極める",
+          "reading": "きわめる",
+          "meaning": "to master; to carry to extremes",
+          "parentKanji": "極"
+        },
+        {
+          "word": "極まる",
+          "reading": "きわまる",
+          "meaning": "extremely",
+          "parentKanji": "極"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 44,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "関",
+      "vocabulary": [
+        {
+          "word": "関する",
+          "reading": "かんする",
+          "meaning": "to concern; to be related to",
+          "parentKanji": "関"
+        },
+        {
+          "word": "関心",
+          "reading": "かんしん",
+          "meaning": "interest; concern",
+          "parentKanji": "関"
+        },
+        {
+          "word": "関税",
+          "reading": "かんぜい",
+          "meaning": "tariff; customs duty",
+          "parentKanji": "関"
+        },
+        {
+          "word": "関係",
+          "reading": "かんけい",
+          "meaning": "relation; relationship; connection",
+          "parentKanji": "関"
+        },
+        {
+          "word": "玄関",
+          "reading": "げんかん",
+          "meaning": "entrance; front door",
+          "parentKanji": "関"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 36,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "幹",
+      "vocabulary": [
+        {
+          "word": "幹",
+          "reading": "みき",
+          "meaning": "(tree) trunk; (arrow) shaft",
+          "parentKanji": "幹"
+        },
+        {
+          "word": "幹部",
+          "reading": "かんぶ",
+          "meaning": "management; (executive) staff",
+          "parentKanji": "幹"
+        },
+        {
+          "word": "幹事",
+          "reading": "かんじ",
+          "meaning": "executive secretary; coordinator",
+          "parentKanji": "幹"
+        },
+        {
+          "word": "幹線",
+          "reading": "かんせん",
+          "meaning": "main line; trunk line",
+          "parentKanji": "幹"
+        },
+        {
+          "word": "根幹",
+          "reading": "こんかん",
+          "meaning": "root and trunk",
+          "parentKanji": "幹"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 8,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "線",
+      "vocabulary": [
+        {
+          "word": "線",
+          "reading": "せん",
+          "meaning": "line",
+          "parentKanji": "線"
+        },
+        {
+          "word": "線維",
+          "reading": "せんい",
+          "meaning": "fiber",
+          "parentKanji": "線"
+        },
+        {
+          "word": "無線",
+          "reading": "むせん",
+          "meaning": "wireless; radio",
+          "parentKanji": "線"
+        },
+        {
+          "word": "曲線",
+          "reading": "きょくせん",
+          "meaning": "curve",
+          "parentKanji": "線"
+        },
+        {
+          "word": "本線",
+          "reading": "ほんせん",
+          "meaning": "main line",
+          "parentKanji": "線"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 64,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "太",
+      "vocabulary": [
+        {
+          "word": "太い",
+          "reading": "ふとい",
+          "meaning": "thick; fat",
+          "parentKanji": "太"
+        },
+        {
+          "word": "太る",
+          "reading": "ふとる",
+          "meaning": "to get fat; to gain weight",
+          "parentKanji": "太"
+        },
+        {
+          "word": "太陽",
+          "reading": "たいよう",
+          "meaning": "the sun",
+          "parentKanji": "太"
+        },
+        {
+          "word": "太鼓",
+          "reading": "たいこ",
+          "meaning": "drum",
+          "parentKanji": "太"
+        },
+        {
+          "word": "太古",
+          "reading": "たいこ",
+          "meaning": "ancient times",
+          "parentKanji": "太"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 16,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "陽",
+      "vocabulary": [
+        {
+          "word": "陽ざし",
+          "reading": "ひざし",
+          "meaning": "sunlight",
+          "parentKanji": "陽"
+        },
+        {
+          "word": "陽気",
+          "reading": "ようき",
+          "meaning": "cheerful; jovial",
+          "parentKanji": "陽"
+        },
+        {
+          "word": "夕陽",
+          "reading": "ゆうひ",
+          "meaning": "evening sun; setting sun",
+          "parentKanji": "陽"
+        },
+        {
+          "word": "山陽",
+          "reading": "さんよう",
+          "meaning": "south side of a mountain; Sanyo district",
+          "parentKanji": "陽"
+        },
+        {
+          "word": "陽性",
+          "reading": "ようせい",
+          "meaning": "positive (result)",
+          "parentKanji": "陽"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 15,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "公",
+      "vocabulary": [
+        {
+          "word": "公園",
+          "reading": "こうえん",
+          "meaning": "public park",
+          "parentKanji": "公"
+        },
+        {
+          "word": "公立",
+          "reading": "こうりつ",
+          "meaning": "public (institution)",
+          "parentKanji": "公"
+        },
+        {
+          "word": "公表",
+          "reading": "こうひょう",
+          "meaning": "official announcement",
+          "parentKanji": "公"
+        },
+        {
+          "word": "公共",
+          "reading": "こうきょう",
+          "meaning": "public; communal",
+          "parentKanji": "公"
+        },
+        {
+          "word": "公害",
+          "reading": "こうがい",
+          "meaning": "pollution; public nuisance",
+          "parentKanji": "公"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 84,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "園",
+      "vocabulary": [
+        {
+          "word": "園",
+          "reading": "その",
+          "meaning": "garden; orchard",
+          "parentKanji": "園"
+        },
+        {
+          "word": "学園",
+          "reading": "がくえん",
+          "meaning": "school; academy",
+          "parentKanji": "園"
+        },
+        {
+          "word": "動物園",
+          "reading": "どうぶつえん",
+          "meaning": "zoo",
+          "parentKanji": "園"
+        },
+        {
+          "word": "田園",
+          "reading": "でんえん",
+          "meaning": "rural area; countryside",
+          "parentKanji": "園"
+        },
+        {
+          "word": "遊園地",
+          "reading": "ゆうえんち",
+          "meaning": "amusement park",
+          "parentKanji": "園"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 24,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "資",
+      "vocabulary": [
+        {
+          "word": "資金",
+          "reading": "しきん",
+          "meaning": "funds; capital",
+          "parentKanji": "資"
+        },
+        {
+          "word": "資本",
+          "reading": "しほん",
+          "meaning": "funds; capital",
+          "parentKanji": "資"
+        },
+        {
+          "word": "物資",
+          "reading": "ぶっし",
+          "meaning": "goods; materials",
+          "parentKanji": "資"
+        },
+        {
+          "word": "資する",
+          "reading": "しする",
+          "meaning": "to contribute; to play a part in",
+          "parentKanji": "資"
+        },
+        {
+          "word": "資源",
+          "reading": "しげん",
+          "meaning": "resources",
+          "parentKanji": "資"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 26,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "議",
+      "vocabulary": [
+        {
+          "word": "議会",
+          "reading": "ぎかい",
+          "meaning": "congress; parliament",
+          "parentKanji": "議"
+        },
+        {
+          "word": "議長",
+          "reading": "ぎちょう",
+          "meaning": "chair; chairman",
+          "parentKanji": "議"
+        },
+        {
+          "word": "議題",
+          "reading": "ぎだい",
+          "meaning": "topic of discussion; agenda",
+          "parentKanji": "議"
+        },
+        {
+          "word": "議論",
+          "reading": "ぎろん",
+          "meaning": "argument; discussion",
+          "parentKanji": "議"
+        },
+        {
+          "word": "議員",
+          "reading": "ぎいん",
+          "meaning": "member of an assembly; member of the Diet",
+          "parentKanji": "議"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 50,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "札",
+      "vocabulary": [
+        {
+          "word": "札",
+          "reading": "ふだ",
+          "meaning": "tag; label; card",
+          "parentKanji": "札"
+        },
+        {
+          "word": "入札",
+          "reading": "にゅうさつ",
+          "meaning": "bid; tender",
+          "parentKanji": "札"
+        },
+        {
+          "word": "改札",
+          "reading": "かいさつ",
+          "meaning": "ticket gate",
+          "parentKanji": "札"
+        },
+        {
+          "word": "落札",
+          "reading": "らくさつ",
+          "meaning": "winning bid",
+          "parentKanji": "札"
+        },
+        {
+          "word": "名札",
+          "reading": "なふだ",
+          "meaning": "name plate; name tag",
+          "parentKanji": "札"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 12,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "改",
+      "vocabulary": [
+        {
+          "word": "改める",
+          "reading": "あらためる",
+          "meaning": "to examine; to check",
+          "parentKanji": "改"
+        },
+        {
+          "word": "改まる",
+          "reading": "あらたまる",
+          "meaning": "to be renewed; to change",
+          "parentKanji": "改"
+        },
+        {
+          "word": "改革",
+          "reading": "かいかく",
+          "meaning": "reform; reformation",
+          "parentKanji": "改"
+        },
+        {
+          "word": "改正",
+          "reading": "かいせい",
+          "meaning": "revision; amendment",
+          "parentKanji": "改"
+        },
+        {
+          "word": "改善",
+          "reading": "かいぜん",
+          "meaning": "betterment; improvement",
+          "parentKanji": "改"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 28,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "紙",
+      "vocabulary": [
+        {
+          "word": "紙",
+          "reading": "かみ",
+          "meaning": "paper",
+          "parentKanji": "紙"
+        },
+        {
+          "word": "用紙",
+          "reading": "ようし",
+          "meaning": "paper form; sheet",
+          "parentKanji": "紙"
+        },
+        {
+          "word": "白紙",
+          "reading": "はくし",
+          "meaning": "blank paper",
+          "parentKanji": "紙"
+        },
+        {
+          "word": "紙幣",
+          "reading": "しへい",
+          "meaning": "paper money",
+          "parentKanji": "紙"
+        },
+        {
+          "word": "紙面",
+          "reading": "しめん",
+          "meaning": "page space (newspaper)",
+          "parentKanji": "紙"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 44,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "音",
+      "vocabulary": [
+        {
+          "word": "音",
+          "reading": "おと",
+          "meaning": "sound; noise",
+          "parentKanji": "音"
+        },
+        {
+          "word": "本音",
+          "reading": "ほんね",
+          "meaning": "real intention; true feelings",
+          "parentKanji": "音"
+        },
+        {
+          "word": "騒音",
+          "reading": "そうおん",
+          "meaning": "noise; din",
+          "parentKanji": "音"
+        },
+        {
+          "word": "音響",
+          "reading": "おんきょう",
+          "meaning": "acoustics; sound",
+          "parentKanji": "音"
+        },
+        {
+          "word": "音声",
+          "reading": "おんせい",
+          "meaning": "sound (e.g. of a TV)",
+          "parentKanji": "音"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 49,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "楽",
+      "vocabulary": [
+        {
+          "word": "楽しい",
+          "reading": "たのしい",
+          "meaning": "fun; enjoyable; pleasant",
+          "parentKanji": "楽"
+        },
+        {
+          "word": "楽しむ",
+          "reading": "たのしむ",
+          "meaning": "to enjoy; to take pleasure in",
+          "parentKanji": "楽"
+        },
+        {
+          "word": "楽",
+          "reading": "らく",
+          "meaning": "comfort; ease; relaxation",
+          "parentKanji": "楽"
+        },
+        {
+          "word": "行楽",
+          "reading": "こうらく",
+          "meaning": "outing; excursion",
+          "parentKanji": "楽"
+        },
+        {
+          "word": "気楽",
+          "reading": "きらく",
+          "meaning": "carefree; easygoing",
+          "parentKanji": "楽"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 44,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "買",
+      "vocabulary": [
+        {
+          "word": "買う",
+          "reading": "かう",
+          "meaning": "to buy; to purchase",
+          "parentKanji": "買"
+        },
+        {
+          "word": "買収",
+          "reading": "ばいしゅう",
+          "meaning": "acquisition; bribery",
+          "parentKanji": "買"
+        },
+        {
+          "word": "売買",
+          "reading": "ばいばい",
+          "meaning": "trade; buying and selling",
+          "parentKanji": "買"
+        },
+        {
+          "word": "購買",
+          "reading": "こうばい",
+          "meaning": "purchase; procurement",
+          "parentKanji": "買"
+        },
+        {
+          "word": "売買高",
+          "reading": "ばいばいだか",
+          "meaning": "sales amount; sales volume",
+          "parentKanji": "買"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 5,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "物",
+      "vocabulary": [
+        {
+          "word": "贈り物",
+          "reading": "おくりもの",
+          "meaning": "gift; present",
+          "parentKanji": "物"
+        },
+        {
+          "word": "物語",
+          "reading": "ものがたり",
+          "meaning": "story; tale",
+          "parentKanji": "物"
+        },
+        {
+          "word": "買い物",
+          "reading": "かいもの",
+          "meaning": "shopping; purchase",
+          "parentKanji": "物"
+        },
+        {
+          "word": "本物",
+          "reading": "ほんもの",
+          "meaning": "genuine article; real thing",
+          "parentKanji": "物"
+        },
+        {
+          "word": "生物",
+          "reading": "せいぶつ",
+          "meaning": "living thing; organism",
+          "parentKanji": "物"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 169,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "帰",
+      "vocabulary": [
+        {
+          "word": "帰す",
+          "reading": "かえす",
+          "meaning": "to send (someone) back; to send (someone) home",
+          "parentKanji": "帰"
+        },
+        {
+          "word": "帰る",
+          "reading": "かえる",
+          "meaning": "to get home; to get to home plate",
+          "parentKanji": "帰"
+        },
+        {
+          "word": "帰国",
+          "reading": "きこく",
+          "meaning": "returning to one's country",
+          "parentKanji": "帰"
+        },
+        {
+          "word": "復帰",
+          "reading": "ふっき",
+          "meaning": "return; comeback",
+          "parentKanji": "帰"
+        },
+        {
+          "word": "帰宅",
+          "reading": "きたく",
+          "meaning": "returning home",
+          "parentKanji": "帰"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 26,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "失",
+      "vocabulary": [
+        {
+          "word": "失う",
+          "reading": "うしなう",
+          "meaning": "to lose",
+          "parentKanji": "失"
+        },
+        {
+          "word": "失業",
+          "reading": "しつぎょう",
+          "meaning": "unemployment",
+          "parentKanji": "失"
+        },
+        {
+          "word": "損失",
+          "reading": "そんしつ",
+          "meaning": "loss (of assets, profit, etc.)",
+          "parentKanji": "失"
+        },
+        {
+          "word": "失望",
+          "reading": "しつぼう",
+          "meaning": "disappointment; despair",
+          "parentKanji": "失"
+        },
+        {
+          "word": "過失",
+          "reading": "かしつ",
+          "meaning": "fault; defect",
+          "parentKanji": "失"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 23,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "礼",
+      "vocabulary": [
+        {
+          "word": "礼",
+          "reading": "れい",
+          "meaning": "ceremony; ritual",
+          "parentKanji": "礼"
+        },
+        {
+          "word": "礼儀",
+          "reading": "れいぎ",
+          "meaning": "manners; courtesy",
+          "parentKanji": "礼"
+        },
+        {
+          "word": "儀礼",
+          "reading": "ぎれい",
+          "meaning": "courtesy; etiquette",
+          "parentKanji": "礼"
+        },
+        {
+          "word": "礼服",
+          "reading": "れいふく",
+          "meaning": "formal dress; ceremonial dress",
+          "parentKanji": "礼"
+        },
+        {
+          "word": "礼金",
+          "reading": "れいきん",
+          "meaning": "money (given as thanks); reward money",
+          "parentKanji": "礼"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 29,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "切",
+      "vocabulary": [
+        {
+          "word": "切る",
+          "reading": "きる",
+          "meaning": "to cut",
+          "parentKanji": "切"
+        },
+        {
+          "word": "一切",
+          "reading": "いっさい",
+          "meaning": "all; everything; without exception",
+          "parentKanji": "切"
+        },
+        {
+          "word": "大切",
+          "reading": "たいせつ",
+          "meaning": "important; precious",
+          "parentKanji": "切"
+        },
+        {
+          "word": "〆切",
+          "reading": "しめきり",
+          "meaning": "deadline",
+          "parentKanji": "切"
+        },
+        {
+          "word": "適切",
+          "reading": "てきせつ",
+          "meaning": "appropriate; suitable",
+          "parentKanji": "切"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 131,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "昨",
+      "vocabulary": [
+        {
+          "word": "昨年",
+          "reading": "さくねん",
+          "meaning": "last year",
+          "parentKanji": "昨"
+        },
+        {
+          "word": "一昨年",
+          "reading": "いっさくねん",
+          "meaning": "year before last",
+          "parentKanji": "昨"
+        },
+        {
+          "word": "昨日",
+          "reading": "さくじつ",
+          "meaning": "yesterday",
+          "parentKanji": "昨"
+        },
+        {
+          "word": "昨夜",
+          "reading": "さくや",
+          "meaning": "last night; yesterday evening",
+          "parentKanji": "昨"
+        },
+        {
+          "word": "昨秋",
+          "reading": "さくしゅう",
+          "meaning": "autumn of last year; fall of last year",
+          "parentKanji": "昨"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 11,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "朝",
+      "vocabulary": [
+        {
+          "word": "朝",
+          "reading": "あさ",
+          "meaning": "morning",
+          "parentKanji": "朝"
+        },
+        {
+          "word": "朝日",
+          "reading": "あさひ",
+          "meaning": "morning sun",
+          "parentKanji": "朝"
+        },
+        {
+          "word": "早朝",
+          "reading": "そうちょう",
+          "meaning": "early morning",
+          "parentKanji": "朝"
+        },
+        {
+          "word": "朝食",
+          "reading": "ちょうしょく",
+          "meaning": "breakfast",
+          "parentKanji": "朝"
+        },
+        {
+          "word": "毎朝",
+          "reading": "まいあさ",
+          "meaning": "every morning",
+          "parentKanji": "朝"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 31,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "夜",
+      "vocabulary": [
+        {
+          "word": "夜",
+          "reading": "よる",
+          "meaning": "evening; night",
+          "parentKanji": "夜"
+        },
+        {
+          "word": "夜なか",
+          "reading": "よなか",
+          "meaning": "middle of the night",
+          "parentKanji": "夜"
+        },
+        {
+          "word": "夜間",
+          "reading": "やかん",
+          "meaning": "nighttime",
+          "parentKanji": "夜"
+        },
+        {
+          "word": "前夜",
+          "reading": "ぜんや",
+          "meaning": "the previous night",
+          "parentKanji": "夜"
+        },
+        {
+          "word": "夜明",
+          "reading": "よあけ",
+          "meaning": "dawn; daybreak",
+          "parentKanji": "夜"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 45,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "夏",
+      "vocabulary": [
+        {
+          "word": "夏",
+          "reading": "なつ",
+          "meaning": "summer",
+          "parentKanji": "夏"
+        },
+        {
+          "word": "夏季",
+          "reading": "かき",
+          "meaning": "summer season",
+          "parentKanji": "夏"
+        },
+        {
+          "word": "初夏",
+          "reading": "しょか",
+          "meaning": "early summer",
+          "parentKanji": "夏"
+        },
+        {
+          "word": "夏至",
+          "reading": "げし",
+          "meaning": "summer solstice",
+          "parentKanji": "夏"
+        },
+        {
+          "word": "春夏秋冬",
+          "reading": "しゅんかしゅうとう",
+          "meaning": "the four seasons",
+          "parentKanji": "夏"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 20,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "春",
+      "vocabulary": [
+        {
+          "word": "春",
+          "reading": "はる",
+          "meaning": "spring; springtime",
+          "parentKanji": "春"
+        },
+        {
+          "word": "青春",
+          "reading": "せいしゅん",
+          "meaning": "youth; springtime of life",
+          "parentKanji": "春"
+        },
+        {
+          "word": "早春",
+          "reading": "そうしゅん",
+          "meaning": "early spring",
+          "parentKanji": "春"
+        },
+        {
+          "word": "春分",
+          "reading": "しゅんぶん",
+          "meaning": "spring equinox",
+          "parentKanji": "春"
+        },
+        {
+          "word": "来春",
+          "reading": "らいしゅん",
+          "meaning": "next spring",
+          "parentKanji": "春"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 23,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "冬",
+      "vocabulary": [
+        {
+          "word": "冬",
+          "reading": "ふゆ",
+          "meaning": "winter",
+          "parentKanji": "冬"
+        },
+        {
+          "word": "冬季",
+          "reading": "とうき",
+          "meaning": "winter season",
+          "parentKanji": "冬"
+        },
+        {
+          "word": "冬眠",
+          "reading": "とうみん",
+          "meaning": "hibernation",
+          "parentKanji": "冬"
+        },
+        {
+          "word": "冬物",
+          "reading": "ふゆもの",
+          "meaning": "winter clothing",
+          "parentKanji": "冬"
+        },
+        {
+          "word": "真冬",
+          "reading": "まふゆ",
+          "meaning": "midwinter; dead of winter",
+          "parentKanji": "冬"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 15,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "秋",
+      "vocabulary": [
+        {
+          "word": "秋",
+          "reading": "あき",
+          "meaning": "autumn; fall",
+          "parentKanji": "秋"
+        },
+        {
+          "word": "秋風",
+          "reading": "あきかぜ",
+          "meaning": "autumn breeze",
+          "parentKanji": "秋"
+        },
+        {
+          "word": "今秋",
+          "reading": "こんしゅう",
+          "meaning": "this autumn",
+          "parentKanji": "秋"
+        },
+        {
+          "word": "春秋",
+          "reading": "しゅんじゅう",
+          "meaning": "spring and autumn",
+          "parentKanji": "秋"
+        },
+        {
+          "word": "千秋楽",
+          "reading": "せんしゅうらく",
+          "meaning": "final day of a tournament",
+          "parentKanji": "秋"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 16,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "葉",
+      "vocabulary": [
+        {
+          "word": "葉",
+          "reading": "は",
+          "meaning": "leaf; blade (of grass)",
+          "parentKanji": "葉"
+        },
+        {
+          "word": "葉っぱ",
+          "reading": "はっぱ",
+          "meaning": "leaf; blade (of grass)",
+          "parentKanji": "葉"
+        },
+        {
+          "word": "紅葉",
+          "reading": "こうよう",
+          "meaning": "autumn leaves; red leaves",
+          "parentKanji": "葉"
+        },
+        {
+          "word": "絵葉書",
+          "reading": "えはがき",
+          "meaning": "picture postcard",
+          "parentKanji": "葉"
+        },
+        {
+          "word": "枯れ葉",
+          "reading": "かれは",
+          "meaning": "dead leaf; dry leaves",
+          "parentKanji": "葉"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 28,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "橋",
+      "vocabulary": [
+        {
+          "word": "橋",
+          "reading": "はし",
+          "meaning": "bridge",
+          "parentKanji": "橋"
+        },
+        {
+          "word": "桟橋",
+          "reading": "さんばし",
+          "meaning": "pier; jetty",
+          "parentKanji": "橋"
+        },
+        {
+          "word": "鉄橋",
+          "reading": "てっきょう",
+          "meaning": "iron bridge",
+          "parentKanji": "橋"
+        },
+        {
+          "word": "陸橋",
+          "reading": "りっきょう",
+          "meaning": "overpass; viaduct",
+          "parentKanji": "橋"
+        },
+        {
+          "word": "架橋",
+          "reading": "かきょう",
+          "meaning": "bridge",
+          "parentKanji": "橋"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 11,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "岡",
+      "vocabulary": [
+        {
+          "word": "岡",
+          "reading": "おか",
+          "meaning": "hill",
+          "parentKanji": "岡"
+        },
+        {
+          "word": "福岡",
+          "reading": "ふくおか",
+          "meaning": "Fukuoka",
+          "parentKanji": "岡"
+        },
+        {
+          "word": "静岡",
+          "reading": "しずおか",
+          "meaning": "Shizuoka",
+          "parentKanji": "岡"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 3,
+        "pickCount": 3
+      }
+    },
+    {
+      "parentKanji": "駄",
+      "vocabulary": [
+        {
+          "word": "駄目",
+          "reading": "だめ",
+          "meaning": "neutral point; intersection owned by neither player at the end of a game",
+          "parentKanji": "駄"
+        },
+        {
+          "word": "無駄",
+          "reading": "むだ",
+          "meaning": "futility; waste",
+          "parentKanji": "駄"
+        },
+        {
+          "word": "下駄",
+          "reading": "げた",
+          "meaning": "geta; traditional Japanese wooden sandal",
+          "parentKanji": "駄"
+        },
+        {
+          "word": "無駄づかい",
+          "reading": "むだづかい",
+          "meaning": "waste (of money, time, etc.); squandering",
+          "parentKanji": "駄"
+        },
+        {
+          "word": "駄菓子",
+          "reading": "だがし",
+          "meaning": "penny candy; cheap individually wrapped sweets",
+          "parentKanji": "駄"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 6,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "谷",
+      "vocabulary": [
+        {
+          "word": "谷",
+          "reading": "たに",
+          "meaning": "valley",
+          "parentKanji": "谷"
+        },
+        {
+          "word": "谷川",
+          "reading": "たにがわ",
+          "meaning": "mountain stream",
+          "parentKanji": "谷"
+        },
+        {
+          "word": "谷間",
+          "reading": "たにま",
+          "meaning": "valley; ravine",
+          "parentKanji": "谷"
+        },
+        {
+          "word": "渓谷",
+          "reading": "けいこく",
+          "meaning": "gorge; ravine",
+          "parentKanji": "谷"
+        },
+        {
+          "word": "谷底",
+          "reading": "たにぞこ",
+          "meaning": "valley floor; bottom of a gorge",
+          "parentKanji": "谷"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 6,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "笠",
+      "vocabulary": [
+        {
+          "word": "笠",
+          "reading": "かさ",
+          "meaning": "conical hat (East-Asian style); coolie hat",
+          "parentKanji": "笠"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 1,
+        "pickCount": 1
+      }
+    },
+    {
+      "parentKanji": "原",
+      "vocabulary": [
+        {
+          "word": "原っぱ",
+          "reading": "はらっぱ",
+          "meaning": "open field; empty lot",
+          "parentKanji": "原"
+        },
+        {
+          "word": "原作",
+          "reading": "げんさく",
+          "meaning": "original work",
+          "parentKanji": "原"
+        },
+        {
+          "word": "高原",
+          "reading": "こうげん",
+          "meaning": "tableland; plateau",
+          "parentKanji": "原"
+        },
+        {
+          "word": "原油",
+          "reading": "げんゆ",
+          "meaning": "crude oil",
+          "parentKanji": "原"
+        },
+        {
+          "word": "原爆",
+          "reading": "げんばく",
+          "meaning": "atomic bomb; A-bomb",
+          "parentKanji": "原"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 75,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "壱",
+      "vocabulary": [
+        {
+          "word": "壱",
+          "reading": "いち",
+          "meaning": "ace",
+          "parentKanji": "壱"
+        },
+        {
+          "word": "拾壱",
+          "reading": "じゅういち",
+          "meaning": "jack",
+          "parentKanji": "壱"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 2,
+        "pickCount": 2
+      }
+    },
+    {
+      "parentKanji": "鼻",
+      "vocabulary": [
+        {
+          "word": "鼻",
+          "reading": "はな",
+          "meaning": "nose",
+          "parentKanji": "鼻"
+        },
+        {
+          "word": "鼻水",
+          "reading": "はなみず",
+          "meaning": "snot; runny nose",
+          "parentKanji": "鼻"
+        },
+        {
+          "word": "鼻紙",
+          "reading": "はながみ",
+          "meaning": "tissue paper",
+          "parentKanji": "鼻"
+        },
+        {
+          "word": "鼻息",
+          "reading": "はないき",
+          "meaning": "nasal breathing",
+          "parentKanji": "鼻"
+        },
+        {
+          "word": "鼻先",
+          "reading": "はなさき",
+          "meaning": "tip of nose",
+          "parentKanji": "鼻"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 10,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "錠",
+      "vocabulary": [
+        {
+          "word": "錠",
+          "reading": "じょう",
+          "meaning": "lock; padlock",
+          "parentKanji": "錠"
+        },
+        {
+          "word": "手錠",
+          "reading": "てじょう",
+          "meaning": "handcuffs; manacles",
+          "parentKanji": "錠"
+        },
+        {
+          "word": "錠剤",
+          "reading": "じょうざい",
+          "meaning": "pill; lozenge",
+          "parentKanji": "錠"
+        },
+        {
+          "word": "施錠",
+          "reading": "せじょう",
+          "meaning": "locking",
+          "parentKanji": "錠"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 4,
+        "pickCount": 4
+      }
+    },
+    {
+      "parentKanji": "断",
+      "vocabulary": [
+        {
+          "word": "断る",
+          "reading": "ことわる",
+          "meaning": "to refuse; to decline",
+          "parentKanji": "断"
+        },
+        {
+          "word": "断つ",
+          "reading": "たつ",
+          "meaning": "to cut off; to abstain from",
+          "parentKanji": "断"
+        },
+        {
+          "word": "中断",
+          "reading": "ちゅうだん",
+          "meaning": "interruption; suspension",
+          "parentKanji": "断"
+        },
+        {
+          "word": "横断",
+          "reading": "おうだん",
+          "meaning": "crossing; intersection",
+          "parentKanji": "断"
+        },
+        {
+          "word": "決断",
+          "reading": "けつだん",
+          "meaning": "decision; determination",
+          "parentKanji": "断"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 45,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "横",
+      "vocabulary": [
+        {
+          "word": "横",
+          "reading": "よこ",
+          "meaning": "side; horizontal",
+          "parentKanji": "横"
+        },
+        {
+          "word": "横綱",
+          "reading": "よこづな",
+          "meaning": "yokozuna (top sumo rank)",
+          "parentKanji": "横"
+        },
+        {
+          "word": "横書",
+          "reading": "よこがき",
+          "meaning": "horizontal writing",
+          "parentKanji": "横"
+        },
+        {
+          "word": "横づけ",
+          "reading": "よこづけ",
+          "meaning": "bringing alongside (ship, vehicle, etc.); coming alongside",
+          "parentKanji": "横"
+        },
+        {
+          "word": "横道",
+          "reading": "よこみち",
+          "meaning": "side road; byway",
+          "parentKanji": "横"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 37,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "辞",
+      "vocabulary": [
+        {
+          "word": "辞める",
+          "reading": "やめる",
+          "meaning": "to quit; to resign",
+          "parentKanji": "辞"
+        },
+        {
+          "word": "辞職",
+          "reading": "じしょく",
+          "meaning": "resignation",
+          "parentKanji": "辞"
+        },
+        {
+          "word": "辞任",
+          "reading": "じにん",
+          "meaning": "resignation (from a position)",
+          "parentKanji": "辞"
+        },
+        {
+          "word": "辞典",
+          "reading": "じてん",
+          "meaning": "dictionary",
+          "parentKanji": "辞"
+        },
+        {
+          "word": "辞退",
+          "reading": "じたい",
+          "meaning": "declining; refusal",
+          "parentKanji": "辞"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 25,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "調",
+      "vocabulary": [
+        {
+          "word": "調べ",
+          "reading": "しらべ",
+          "meaning": "tune; melody",
+          "parentKanji": "調"
+        },
+        {
+          "word": "調う",
+          "reading": "ととのう",
+          "meaning": "to be ready; to be in order",
+          "parentKanji": "調"
+        },
+        {
+          "word": "調べる",
+          "reading": "しらべる",
+          "meaning": "to examine; to look up",
+          "parentKanji": "調"
+        },
+        {
+          "word": "調子",
+          "reading": "ちょうし",
+          "meaning": "tune; tone",
+          "parentKanji": "調"
+        },
+        {
+          "word": "歩調",
+          "reading": "ほちょう",
+          "meaning": "pace; step",
+          "parentKanji": "調"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 58,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "掘",
+      "vocabulary": [
+        {
+          "word": "掘る",
+          "reading": "ほる",
+          "meaning": "to dig; to excavate",
+          "parentKanji": "掘"
+        },
+        {
+          "word": "発掘",
+          "reading": "はっくつ",
+          "meaning": "excavation; exhumation",
+          "parentKanji": "掘"
+        },
+        {
+          "word": "採掘",
+          "reading": "さいくつ",
+          "meaning": "mining; digging",
+          "parentKanji": "掘"
+        },
+        {
+          "word": "試掘",
+          "reading": "しくつ",
+          "meaning": "prospecting; trial digging",
+          "parentKanji": "掘"
+        },
+        {
+          "word": "盗掘",
+          "reading": "とうくつ",
+          "meaning": "illegal digging; illegal mining",
+          "parentKanji": "掘"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 5,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "卒",
+      "vocabulary": [
+        {
+          "word": "卒業",
+          "reading": "そつぎょう",
+          "meaning": "graduation",
+          "parentKanji": "卒"
+        },
+        {
+          "word": "大卒",
+          "reading": "だいそつ",
+          "meaning": "university graduate",
+          "parentKanji": "卒"
+        },
+        {
+          "word": "高卒",
+          "reading": "こうそつ",
+          "meaning": "having graduated from high school (as one's highest completed level of education); high school graduate",
+          "parentKanji": "卒"
+        },
+        {
+          "word": "新卒",
+          "reading": "しんそつ",
+          "meaning": "new graduate; recent graduate",
+          "parentKanji": "卒"
+        },
+        {
+          "word": "学卒",
+          "reading": "がくそつ",
+          "meaning": "college graduate",
+          "parentKanji": "卒"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 10,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "業",
+      "vocabulary": [
+        {
+          "word": "業",
+          "reading": "ぎょう",
+          "meaning": "work; business",
+          "parentKanji": "業"
+        },
+        {
+          "word": "作業",
+          "reading": "さぎょう",
+          "meaning": "work; operation",
+          "parentKanji": "業"
+        },
+        {
+          "word": "休業",
+          "reading": "きゅうぎょう",
+          "meaning": "business closure; off-day",
+          "parentKanji": "業"
+        },
+        {
+          "word": "業界",
+          "reading": "ぎょうかい",
+          "meaning": "industry; business world",
+          "parentKanji": "業"
+        },
+        {
+          "word": "業績",
+          "reading": "ぎょうせき",
+          "meaning": "achievement; performance",
+          "parentKanji": "業"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 83,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "趣",
+      "vocabulary": [
+        {
+          "word": "趣",
+          "reading": "おもむき",
+          "meaning": "atmosphere; charm; taste",
+          "parentKanji": "趣"
+        },
+        {
+          "word": "趣味",
+          "reading": "しゅみ",
+          "meaning": "hobby; pastime",
+          "parentKanji": "趣"
+        },
+        {
+          "word": "趣旨",
+          "reading": "しゅし",
+          "meaning": "purpose; point; gist",
+          "parentKanji": "趣"
+        },
+        {
+          "word": "趣く",
+          "reading": "おもむく",
+          "meaning": "to head toward; to proceed to",
+          "parentKanji": "趣"
+        },
+        {
+          "word": "趣向",
+          "reading": "しゅこう",
+          "meaning": "taste; liking",
+          "parentKanji": "趣"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 6,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "味",
+      "vocabulary": [
+        {
+          "word": "味",
+          "reading": "あじ",
+          "meaning": "flavor; taste",
+          "parentKanji": "味"
+        },
+        {
+          "word": "味わう",
+          "reading": "あじわう",
+          "meaning": "to taste; to experience",
+          "parentKanji": "味"
+        },
+        {
+          "word": "味わい",
+          "reading": "あじわい",
+          "meaning": "flavor; charm",
+          "parentKanji": "味"
+        },
+        {
+          "word": "中味",
+          "reading": "なかみ",
+          "meaning": "contents; interior",
+          "parentKanji": "味"
+        },
+        {
+          "word": "味方",
+          "reading": "みかた",
+          "meaning": "ally; friend",
+          "parentKanji": "味"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 64,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "曲",
+      "vocabulary": [
+        {
+          "word": "曲",
+          "reading": "きょく",
+          "meaning": "tune; piece of music",
+          "parentKanji": "曲"
+        },
+        {
+          "word": "曲がる",
+          "reading": "まがる",
+          "meaning": "to bend; to turn",
+          "parentKanji": "曲"
+        },
+        {
+          "word": "曲げる",
+          "reading": "まげる",
+          "meaning": "to bend",
+          "parentKanji": "曲"
+        },
+        {
+          "word": "交響曲",
+          "reading": "こうきょうきょく",
+          "meaning": "symphony",
+          "parentKanji": "曲"
+        },
+        {
+          "word": "戯曲",
+          "reading": "ぎきょく",
+          "meaning": "play; drama",
+          "parentKanji": "曲"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 34,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "章",
+      "vocabulary": [
+        {
+          "word": "章",
+          "reading": "しょう",
+          "meaning": "chapter",
+          "parentKanji": "章"
+        },
+        {
+          "word": "憲章",
+          "reading": "けんしょう",
+          "meaning": "charter",
+          "parentKanji": "章"
+        },
+        {
+          "word": "楽章",
+          "reading": "がくしょう",
+          "meaning": "movement (of music)",
+          "parentKanji": "章"
+        },
+        {
+          "word": "受章",
+          "reading": "じゅしょう",
+          "meaning": "receiving an award",
+          "parentKanji": "章"
+        },
+        {
+          "word": "勲章",
+          "reading": "くんしょう",
+          "meaning": "decoration; medal",
+          "parentKanji": "章"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 16,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "類",
+      "vocabulary": [
+        {
+          "word": "人類",
+          "reading": "じんるい",
+          "meaning": "humanity; mankind",
+          "parentKanji": "類"
+        },
+        {
+          "word": "種類",
+          "reading": "しゅるい",
+          "meaning": "kind; type; variety",
+          "parentKanji": "類"
+        },
+        {
+          "word": "類",
+          "reading": "るい",
+          "meaning": "kind; sort",
+          "parentKanji": "類"
+        },
+        {
+          "word": "分類",
+          "reading": "ぶんるい",
+          "meaning": "classification",
+          "parentKanji": "類"
+        },
+        {
+          "word": "衣類",
+          "reading": "いるい",
+          "meaning": "clothing",
+          "parentKanji": "類"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 30,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "禁",
+      "vocabulary": [
+        {
+          "word": "禁じる",
+          "reading": "きんじる",
+          "meaning": "to forbid; to prohibit",
+          "parentKanji": "禁"
+        },
+        {
+          "word": "禁ずる",
+          "reading": "きんずる",
+          "meaning": "to forbid; to ban",
+          "parentKanji": "禁"
+        },
+        {
+          "word": "禁止",
+          "reading": "きんし",
+          "meaning": "prohibition; ban",
+          "parentKanji": "禁"
+        },
+        {
+          "word": "禁物",
+          "reading": "きんもつ",
+          "meaning": "forbidden thing; taboo",
+          "parentKanji": "禁"
+        },
+        {
+          "word": "監禁",
+          "reading": "かんきん",
+          "meaning": "confinement; imprisonment",
+          "parentKanji": "禁"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 24,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "止",
+      "vocabulary": [
+        {
+          "word": "止まる",
+          "reading": "とまる",
+          "meaning": "to stop",
+          "parentKanji": "止"
+        },
+        {
+          "word": "中止",
+          "reading": "ちゅうし",
+          "meaning": "cancellation; suspension",
+          "parentKanji": "止"
+        },
+        {
+          "word": "防止",
+          "reading": "ぼうし",
+          "meaning": "prevention",
+          "parentKanji": "止"
+        },
+        {
+          "word": "止む",
+          "reading": "やむ",
+          "meaning": "to cease; to stop",
+          "parentKanji": "止"
+        },
+        {
+          "word": "廃止",
+          "reading": "はいし",
+          "meaning": "abolition; repeal",
+          "parentKanji": "止"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 40,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "用",
+      "vocabulary": [
+        {
+          "word": "用いる",
+          "reading": "もちいる",
+          "meaning": "to use; to make use of",
+          "parentKanji": "用"
+        },
+        {
+          "word": "使用",
+          "reading": "しよう",
+          "meaning": "use; usage",
+          "parentKanji": "用"
+        },
+        {
+          "word": "用語",
+          "reading": "ようご",
+          "meaning": "term; terminology",
+          "parentKanji": "用"
+        },
+        {
+          "word": "作用",
+          "reading": "さよう",
+          "meaning": "action; effect",
+          "parentKanji": "用"
+        },
+        {
+          "word": "用意",
+          "reading": "ようい",
+          "meaning": "preparation",
+          "parentKanji": "用"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 99,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "帳",
+      "vocabulary": [
+        {
+          "word": "手帳",
+          "reading": "てちょう",
+          "meaning": "notebook; memo pad",
+          "parentKanji": "帳"
+        },
+        {
+          "word": "通帳",
+          "reading": "つうちょう",
+          "meaning": "passbook; bankbook",
+          "parentKanji": "帳"
+        },
+        {
+          "word": "帳本人",
+          "reading": "ちょうほんにん",
+          "meaning": "originator; ringleader",
+          "parentKanji": "帳"
+        },
+        {
+          "word": "電話帳",
+          "reading": "でんわちょう",
+          "meaning": "telephone book; telephone directory",
+          "parentKanji": "帳"
+        },
+        {
+          "word": "帳簿",
+          "reading": "ちょうぼ",
+          "meaning": "account book; register",
+          "parentKanji": "帳"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 12,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "館",
+      "vocabulary": [
+        {
+          "word": "博物館",
+          "reading": "はくぶつかん",
+          "meaning": "museum",
+          "parentKanji": "館"
+        },
+        {
+          "word": "水族館",
+          "reading": "すいぞくかん",
+          "meaning": "aquarium",
+          "parentKanji": "館"
+        },
+        {
+          "word": "公民館",
+          "reading": "こうみんかん",
+          "meaning": "public hall; community center",
+          "parentKanji": "館"
+        },
+        {
+          "word": "会館",
+          "reading": "かいかん",
+          "meaning": "meeting hall; assembly hall",
+          "parentKanji": "館"
+        },
+        {
+          "word": "館長",
+          "reading": "かんちょう",
+          "meaning": "superintendent; director",
+          "parentKanji": "館"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 19,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "図",
+      "vocabulary": [
+        {
+          "word": "図",
+          "reading": "ず",
+          "meaning": "drawing; picture",
+          "parentKanji": "図"
+        },
+        {
+          "word": "図る",
+          "reading": "はかる",
+          "meaning": "to plan; to attempt",
+          "parentKanji": "図"
+        },
+        {
+          "word": "図書",
+          "reading": "としょ",
+          "meaning": "books",
+          "parentKanji": "図"
+        },
+        {
+          "word": "意図",
+          "reading": "いと",
+          "meaning": "intention; aim",
+          "parentKanji": "図"
+        },
+        {
+          "word": "図形",
+          "reading": "ずけい",
+          "meaning": "figure; shape",
+          "parentKanji": "図"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 35,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "明",
+      "vocabulary": [
+        {
+          "word": "明かり",
+          "reading": "あかり",
+          "meaning": "lamp; light",
+          "parentKanji": "明"
+        },
+        {
+          "word": "明らか",
+          "reading": "あきらか",
+          "meaning": "obvious; clear; evident",
+          "parentKanji": "明"
+        },
+        {
+          "word": "明かす",
+          "reading": "あかす",
+          "meaning": "to pass (the night); to spend",
+          "parentKanji": "明"
+        },
+        {
+          "word": "明日",
+          "reading": "みょうにち",
+          "meaning": "tomorrow",
+          "parentKanji": "明"
+        },
+        {
+          "word": "文明",
+          "reading": "ぶんめい",
+          "meaning": "civilization; culture",
+          "parentKanji": "明"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 74,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "古",
+      "vocabulary": [
+        {
+          "word": "古い",
+          "reading": "ふるい",
+          "meaning": "old",
+          "parentKanji": "古"
+        },
+        {
+          "word": "古里",
+          "reading": "ふるさと",
+          "meaning": "hometown",
+          "parentKanji": "古"
+        },
+        {
+          "word": "中古",
+          "reading": "ちゅうこ",
+          "meaning": "used; secondhand",
+          "parentKanji": "古"
+        },
+        {
+          "word": "古代",
+          "reading": "こだい",
+          "meaning": "ancient times",
+          "parentKanji": "古"
+        },
+        {
+          "word": "古本",
+          "reading": "ふるほん",
+          "meaning": "used book",
+          "parentKanji": "古"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 49,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "置",
+      "vocabulary": [
+        {
+          "word": "措置",
+          "reading": "そち",
+          "meaning": "measure; step",
+          "parentKanji": "置"
+        },
+        {
+          "word": "設置",
+          "reading": "せっち",
+          "meaning": "installation; establishment",
+          "parentKanji": "置"
+        },
+        {
+          "word": "装置",
+          "reading": "そうち",
+          "meaning": "apparatus; device",
+          "parentKanji": "置"
+        },
+        {
+          "word": "位置",
+          "reading": "いち",
+          "meaning": "position; location",
+          "parentKanji": "置"
+        },
+        {
+          "word": "置く",
+          "reading": "おく",
+          "meaning": "to put; to place",
+          "parentKanji": "置"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 27,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "遊",
+      "vocabulary": [
+        {
+          "word": "遊ぶ",
+          "reading": "あそぶ",
+          "meaning": "to play; to enjoy oneself",
+          "parentKanji": "遊"
+        },
+        {
+          "word": "遊ばす",
+          "reading": "あそばす",
+          "meaning": "to let (someone) play",
+          "parentKanji": "遊"
+        },
+        {
+          "word": "外遊",
+          "reading": "がいゆう",
+          "meaning": "foreign travel",
+          "parentKanji": "遊"
+        },
+        {
+          "word": "遊休",
+          "reading": "ゆうきゅう",
+          "meaning": "idle; unused",
+          "parentKanji": "遊"
+        },
+        {
+          "word": "遊牧",
+          "reading": "ゆうぼく",
+          "meaning": "nomadism",
+          "parentKanji": "遊"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 23,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "温",
+      "vocabulary": [
+        {
+          "word": "温まる",
+          "reading": "あたたまる",
+          "meaning": "to warm oneself; to sun oneself",
+          "parentKanji": "温"
+        },
+        {
+          "word": "温かい",
+          "reading": "あたたかい",
+          "meaning": "warm (of a colour); mellow",
+          "parentKanji": "温"
+        },
+        {
+          "word": "気温",
+          "reading": "きおん",
+          "meaning": "air temperature",
+          "parentKanji": "温"
+        },
+        {
+          "word": "高温",
+          "reading": "こうおん",
+          "meaning": "high temperature",
+          "parentKanji": "温"
+        },
+        {
+          "word": "温度",
+          "reading": "おんど",
+          "meaning": "temperature",
+          "parentKanji": "温"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 26,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "気",
+      "vocabulary": [
+        {
+          "word": "気",
+          "reading": "き",
+          "meaning": "spirit; mood; mind",
+          "parentKanji": "気"
+        },
+        {
+          "word": "気分",
+          "reading": "きぶん",
+          "meaning": "mood; feeling",
+          "parentKanji": "気"
+        },
+        {
+          "word": "強気",
+          "reading": "つよき",
+          "meaning": "bullish; confident",
+          "parentKanji": "気"
+        },
+        {
+          "word": "大気",
+          "reading": "たいき",
+          "meaning": "atmosphere",
+          "parentKanji": "気"
+        },
+        {
+          "word": "人気",
+          "reading": "にんき",
+          "meaning": "popularity",
+          "parentKanji": "気"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 174,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "服",
+      "vocabulary": [
+        {
+          "word": "服",
+          "reading": "ふく",
+          "meaning": "clothes",
+          "parentKanji": "服"
+        },
+        {
+          "word": "服用",
+          "reading": "ふくよう",
+          "meaning": "taking (medicine)",
+          "parentKanji": "服"
+        },
+        {
+          "word": "服装",
+          "reading": "ふくそう",
+          "meaning": "attire; dress",
+          "parentKanji": "服"
+        },
+        {
+          "word": "洋服",
+          "reading": "ようふく",
+          "meaning": "Western clothes",
+          "parentKanji": "服"
+        },
+        {
+          "word": "制服",
+          "reading": "せいふく",
+          "meaning": "uniform",
+          "parentKanji": "服"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 33,
+        "pickCount": 5
+      }
+    },
+    {
+      "parentKanji": "去",
+      "vocabulary": [
+        {
+          "word": "去る",
+          "reading": "さる",
+          "meaning": "to leave",
+          "parentKanji": "去"
+        },
+        {
+          "word": "去年",
+          "reading": "きょねん",
+          "meaning": "last year",
+          "parentKanji": "去"
+        },
+        {
+          "word": "死去",
+          "reading": "しきょ",
+          "meaning": "death; passing",
+          "parentKanji": "去"
+        },
+        {
+          "word": "過去",
+          "reading": "かこ",
+          "meaning": "the past",
+          "parentKanji": "去"
+        },
+        {
+          "word": "立ち去る",
+          "reading": "たちさる",
+          "meaning": "to leave; to depart",
+          "parentKanji": "去"
+        }
+      ],
+      "debug": {
+        "candidatesConsidered": 24,
+        "pickCount": 5
+      }
+    }
+  ]
+}
