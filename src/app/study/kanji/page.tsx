@@ -13,16 +13,11 @@ import Link from 'next/link';
 import {
   BookOpen,
   BookOpenText,
-  CalendarDays,
   Eye,
-  GitCompareArrows,
   Layers,
-  ListChecks,
   Quote,
   Search,
   SortAsc,
-  Sparkles,
-  Tags,
   TrendingUp,
 } from 'lucide-react';
 import { Input } from '@/components/ui/input';
@@ -36,15 +31,16 @@ import { READING_STYLES } from '@/lib/extended-kanji/readings';
 import { useAuth } from '@/contexts/auth-context';
 import { loadProgress } from '@/services/cloud-progress.service';
 import { useKanjiDataset } from '@/hooks/use-kanji-dataset';
-import { KanjiDatasetSwitch } from '@/components/kanji/dataset-switch';
+import { KanjiSettingsButton } from '@/components/kanji/settings-dialog';
 type StatusFilter = 'all' | 'untouched' | 'viewed';
 
 type SortOption = 'default' | 'lesson' | 'kanji' | 'vocab';
 
 const PROGRESS_KEY = 'extended-kanji-practice-progress';
 
-// Sections grouped by usage tier — see audit. Two hero tiles for daily
-// learning, four study tools, four references (collapsed in a small group).
+// Trimmed nav per the latest pass — keep only the actively-used surfaces.
+// Lessons / themes / answer-keys / confusables are temporarily off the page
+// (routes still exist; just unlinked).
 type SectionLink = {
   href: string;
   label: string;
@@ -53,25 +49,21 @@ type SectionLink = {
 };
 
 const TIER_DAILY: SectionLink[] = [
-  { href: '/study/kanji/vocab-reveal', label: 'Reading drill', icon: Eye, hint: 'SRS · see kanji, recall the reading' },
-  { href: '/study/kanji/progress', label: 'Progress dashboard', icon: TrendingUp, hint: 'Streak · today · stuck · quick actions' },
+  { href: '/study/kanji/progress', label: 'Progress dashboard', icon: TrendingUp, hint: 'Streak · today · coverage · quick actions' },
 ];
 
-const TIER_STUDY: SectionLink[] = [
+const VOCAB_LINKS: SectionLink[] = [
+  { href: '/study/kanji/vocabulary', label: 'Reference', icon: BookOpen, hint: 'Browse / search the vocab list' },
+  { href: '/study/kanji/vocab-reveal', label: 'Drill', icon: Eye, hint: 'SRS · see kanji, recall the reading' },
+];
+
+const SENTENCE_LINKS: SectionLink[] = [
+  { href: '/study/kanji/sentences', label: 'Reference', icon: Quote, hint: 'Browse the sentence corpus' },
+];
+
+const STUDY_LINKS: SectionLink[] = [
   { href: '/study/kanji-practice', label: 'Flashcard browse', icon: BookOpenText, hint: 'Read through cards (no rating)' },
-  { href: '/study/kanji/prerequisite', label: 'Drawing practice', icon: Layers, hint: '117 kanji · stroke-by-stroke' },
-];
-
-const TIER_REFERENCE: SectionLink[] = [
-  { href: '/study/kanji/vocabulary', label: 'Vocabulary', icon: BookOpen, hint: '378 rows · search and filter' },
-  { href: '/study/kanji/sentences', label: 'Sentences', icon: Quote, hint: '173 example sentences' },
-  { href: '/study/kanji/lessons', label: 'Lessons', icon: CalendarDays, hint: '37-lesson timeline (Feb–Apr 2026)' },
-  { href: '/study/kanji/themes', label: 'Themes', icon: Tags, hint: 'Vocab grouped by topic' },
-];
-
-const TIER_AIDS: SectionLink[] = [
-  { href: '/study/kanji/answer-keys', label: 'Answer keys', icon: ListChecks, hint: 'Textbook practice answers' },
-  { href: '/study/kanji/confusables', label: 'Confusables & special readings', icon: GitCompareArrows, hint: 'Niche reference' },
+  { href: '/study/kanji/prerequisite', label: 'Drawing practice', icon: Layers, hint: 'Stroke-by-stroke writing' },
 ];
 
 export default function ExtendedKanjiListPage() {
@@ -193,28 +185,27 @@ function KanjiListInner() {
     <>
       <Header />
       <div className="container max-w-7xl mx-auto px-4 py-8 space-y-6">
-        {/* Dataset switch — sits above everything as the page-level toggle */}
-        <div className="flex justify-center sm:justify-start">
-          <KanjiDatasetSwitch />
-        </div>
-
         <div className="flex flex-col gap-4">
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-3xl font-bold">Kanji</h1>
-              <p className="text-muted-foreground">
-                {filtered.length} of {kanjiList.length} kanji ·{' '}
-                <span className="text-xs">{datasetMeta.description}</span>
+          <div className="flex items-center justify-between gap-3">
+            <div className="min-w-0">
+              <div className="flex items-center gap-2 flex-wrap">
+                <h1 className="text-3xl font-bold">Kanji</h1>
+                <span className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground tabular-nums">
+                  {datasetMeta.label} · {datasetMeta.count}
+                </span>
+              </div>
+              <p className="text-muted-foreground text-sm mt-1">
+                {filtered.length} of {kanjiList.length} kanji
               </p>
             </div>
-            <div className="flex items-center gap-3">
-              <Link href="/study/kanji-practice">
-                <Button variant="default" className="gap-2">
-                  <Sparkles className="h-4 w-4" />
-                  Practice
+            <div className="flex items-center gap-2">
+              <Link href="/study/kanji/vocab-reveal">
+                <Button variant="default" size="sm" className="gap-1.5">
+                  <Eye className="h-4 w-4" />
+                  Drill
                 </Button>
               </Link>
-              <Badge variant="secondary" className="text-lg px-4 py-2">Teacher data</Badge>
+              <KanjiSettingsButton />
             </div>
           </div>
 
@@ -276,12 +267,12 @@ function KanjiListInner() {
           </div>
         </div>
 
-        {/* ─── Tier 1: daily drivers — hero tiles ─── */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {/* ─── Daily — hero tile ─────────────────────────────────── */}
+        <div className="grid grid-cols-1 sm:grid-cols-1 gap-3">
           {TIER_DAILY.map(({ href, label, icon: Icon, hint }) => (
             <Link key={href} href={href}>
-              <Card className="group hover:shadow-lg hover:border-primary/60 transition-all h-full cursor-pointer bg-gradient-to-br from-primary/5 to-transparent border-primary/20">
-                <CardContent className="p-5 sm:p-6 space-y-2">
+              <Card className="group hover:shadow-lg hover:border-primary/60 transition-all cursor-pointer bg-gradient-to-br from-primary/5 to-transparent border-primary/20">
+                <CardContent className="p-5 sm:p-6">
                   <div className="flex items-center gap-3">
                     <div className="h-10 w-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                       <Icon className="h-5 w-5" />
@@ -297,66 +288,14 @@ function KanjiListInner() {
           ))}
         </div>
 
-        {/* ─── Tier 2: deep study ─── */}
-        <div>
-          <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
-            Study
-          </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-3">
-            {TIER_STUDY.map(({ href, label, icon: Icon, hint }) => (
-              <Link key={href} href={href}>
-                <Card className="hover:shadow-md hover:border-primary transition-all h-full cursor-pointer">
-                  <CardContent className="p-3 sm:p-4 space-y-1">
-                    <div className="flex items-center gap-2">
-                      <Icon className="h-4 w-4 text-primary shrink-0" />
-                      <span className="text-sm font-semibold leading-tight">{label}</span>
-                    </div>
-                    <p className="hidden sm:block text-xs text-muted-foreground">{hint}</p>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </div>
+        {/* ─── Vocab ─────────────────────────────────────────────── */}
+        <SectionGroup title="Vocab" links={VOCAB_LINKS} />
 
-        {/* ─── Tier 3: reference ─── */}
-        <div>
-          <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
-            Reference
-          </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
-            {TIER_REFERENCE.map(({ href, label, icon: Icon, hint }) => (
-              <Link key={href} href={href}>
-                <Card className="hover:shadow-md hover:border-primary transition-all h-full cursor-pointer">
-                  <CardContent className="p-3 sm:p-4 space-y-1">
-                    <div className="flex items-center gap-2">
-                      <Icon className="h-4 w-4 text-muted-foreground shrink-0" />
-                      <span className="text-xs sm:text-sm font-semibold leading-tight">{label}</span>
-                    </div>
-                    <p className="hidden sm:block text-xs text-muted-foreground line-clamp-1">{hint}</p>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </div>
+        {/* ─── Sentence ──────────────────────────────────────────── */}
+        <SectionGroup title="Sentence" links={SENTENCE_LINKS} />
 
-        {/* ─── Tier 4: study aids (collapsed in a small row) ─── */}
-        <div>
-          <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
-            Study aids
-          </h3>
-          <div className="flex flex-wrap gap-2">
-            {TIER_AIDS.map(({ href, label, icon: Icon }) => (
-              <Link key={href} href={href}>
-                <Button variant="outline" size="sm" className="h-8 gap-1.5 text-xs">
-                  <Icon className="h-3 w-3" />
-                  {label}
-                </Button>
-              </Link>
-            ))}
-          </div>
-        </div>
+        {/* ─── Study tools ───────────────────────────────────────── */}
+        <SectionGroup title="Study" links={STUDY_LINKS} />
 
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -489,5 +428,38 @@ function KanjiListInner() {
         </Card>
       </div>
     </>
+  );
+}
+
+function SectionGroup({
+  title,
+  links,
+}: {
+  title: string;
+  links: SectionLink[];
+}) {
+  return (
+    <div>
+      <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
+        {title}
+      </h3>
+      <div className={`grid gap-2 sm:gap-3 ${
+        links.length === 1 ? 'grid-cols-1 sm:max-w-md' : 'grid-cols-2'
+      }`}>
+        {links.map(({ href, label, icon: Icon, hint }) => (
+          <Link key={href} href={href}>
+            <Card className="hover:shadow-md hover:border-primary transition-all h-full cursor-pointer">
+              <CardContent className="p-3 sm:p-4 space-y-1">
+                <div className="flex items-center gap-2">
+                  <Icon className="h-4 w-4 text-primary shrink-0" />
+                  <span className="text-sm font-semibold leading-tight">{label}</span>
+                </div>
+                <p className="hidden sm:block text-xs text-muted-foreground line-clamp-1">{hint}</p>
+              </CardContent>
+            </Card>
+          </Link>
+        ))}
+      </div>
+    </div>
   );
 }

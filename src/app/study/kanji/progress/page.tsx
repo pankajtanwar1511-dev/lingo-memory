@@ -44,7 +44,7 @@ import { useAuth } from '@/contexts/auth-context'
 import { loadProgress } from '@/services/cloud-progress.service'
 import { useSettings } from '@/contexts/settings-context'
 import { useKanjiDataset } from '@/hooks/use-kanji-dataset'
-import { KanjiDatasetSwitch } from '@/components/kanji/dataset-switch'
+import { KanjiSettingsButton } from '@/components/kanji/settings-dialog'
 import {
   getActivityLastNDays,
   getStreak,
@@ -212,11 +212,6 @@ function KanjiProgressInner() {
     <>
       <Header />
       <div className="container max-w-4xl mx-auto px-4 py-6 sm:py-8 space-y-6">
-        {/* Dataset switch — page-level toggle, sits above everything */}
-        <div className="flex justify-center sm:justify-start">
-          <KanjiDatasetSwitch />
-        </div>
-
         {/* ─── Header ─────────────────────────────────────────────── */}
         <div className="flex items-center justify-between gap-2">
           <Link href="/study/kanji">
@@ -236,6 +231,7 @@ function KanjiProgressInner() {
               <Target className="h-3 w-3" />
               {todayCount}/{dailyGoal} today
             </Badge>
+            <KanjiSettingsButton />
           </div>
         </div>
 
