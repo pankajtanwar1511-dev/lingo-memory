@@ -11,13 +11,10 @@
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import {
-  BookOpen,
   BookOpenText,
   Eye,
-  Quote,
   Search,
   SortAsc,
-  TrendingUp,
 } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -32,34 +29,12 @@ import { loadProgress } from '@/services/cloud-progress.service';
 import { useKanjiDataset } from '@/hooks/use-kanji-dataset';
 import { KanjiSettingsButton } from '@/components/kanji/settings-dialog';
 import { KanjiDatasetSwitch } from '@/components/kanji/dataset-switch';
+import { KanjiSectionTiles } from '@/components/kanji/section-tiles';
 type StatusFilter = 'all' | 'untouched' | 'viewed';
 
 type SortOption = 'default' | 'kanji' | 'vocab';
 
 const PROGRESS_KEY = 'extended-kanji-practice-progress';
-
-// Trimmed nav per the latest pass — keep only the actively-used surfaces.
-// Lessons / themes / answer-keys / confusables are temporarily off the page
-// (routes still exist; just unlinked).
-type SectionLink = {
-  href: string;
-  label: string;
-  icon: React.ComponentType<{ className?: string }>;
-  hint: string;
-};
-
-const TIER_DAILY: SectionLink[] = [
-  { href: '/study/kanji/progress', label: 'Progress dashboard', icon: TrendingUp, hint: 'Streak · today · coverage · quick actions' },
-];
-
-const VOCAB_LINKS: SectionLink[] = [
-  { href: '/study/kanji/vocabulary', label: 'Reference', icon: BookOpen, hint: 'Browse / search the vocab list' },
-  { href: '/study/kanji/vocab-reveal', label: 'Drill', icon: Eye, hint: 'SRS · see kanji, recall the reading' },
-];
-
-const SENTENCE_LINKS: SectionLink[] = [
-  { href: '/study/kanji/sentences', label: 'Reference', icon: Quote, hint: 'Browse the sentence corpus' },
-];
 
 
 export default function ExtendedKanjiListPage() {
@@ -236,32 +211,8 @@ function KanjiListInner() {
           </div>
         </div>
 
-        {/* ─── Daily — hero tile ─────────────────────────────────── */}
-        <div className="grid grid-cols-1 sm:grid-cols-1 gap-3">
-          {TIER_DAILY.map(({ href, label, icon: Icon, hint }) => (
-            <Link key={href} href={href}>
-              <Card className="group hover:shadow-lg hover:border-primary/60 transition-all cursor-pointer bg-gradient-to-br from-primary/5 to-transparent border-primary/20">
-                <CardContent className="p-5 sm:p-6">
-                  <div className="flex items-center gap-3">
-                    <div className="h-10 w-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <Icon className="h-5 w-5" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="font-semibold text-base">{label}</div>
-                      <div className="text-xs text-muted-foreground">{hint}</div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
-        </div>
-
-        {/* ─── Vocab ─────────────────────────────────────────────── */}
-        <SectionGroup title="Vocab" links={VOCAB_LINKS} />
-
-        {/* ─── Sentence ──────────────────────────────────────────── */}
-        <SectionGroup title="Sentence" links={SENTENCE_LINKS} />
+        {/* Section nav — three icon tiles. Drill + Reference open dropdowns. */}
+        <KanjiSectionTiles />
 
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -386,35 +337,3 @@ function KanjiListInner() {
   );
 }
 
-function SectionGroup({
-  title,
-  links,
-}: {
-  title: string;
-  links: SectionLink[];
-}) {
-  return (
-    <div>
-      <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
-        {title}
-      </h3>
-      <div className={`grid gap-2 sm:gap-3 ${
-        links.length === 1 ? 'grid-cols-1 sm:max-w-md' : 'grid-cols-2'
-      }`}>
-        {links.map(({ href, label, icon: Icon, hint }) => (
-          <Link key={href} href={href}>
-            <Card className="hover:shadow-md hover:border-primary transition-all h-full cursor-pointer">
-              <CardContent className="p-3 sm:p-4 space-y-1">
-                <div className="flex items-center gap-2">
-                  <Icon className="h-4 w-4 text-primary shrink-0" />
-                  <span className="text-sm font-semibold leading-tight">{label}</span>
-                </div>
-                <p className="hidden sm:block text-xs text-muted-foreground line-clamp-1">{hint}</p>
-              </CardContent>
-            </Card>
-          </Link>
-        ))}
-      </div>
-    </div>
-  );
-}
