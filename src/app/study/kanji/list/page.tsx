@@ -10,21 +10,15 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
-import {
-  BookOpenText,
-} from 'lucide-react';
+import { BookOpenText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Header } from '@/components/layout/header';
 import { CardProgress, ExtendedKanji } from '@/types/extended-kanji';
 import { READING_STYLES } from '@/lib/extended-kanji/readings';
 import { useAuth } from '@/contexts/auth-context';
 import { loadProgress } from '@/services/cloud-progress.service';
 import { useKanjiDataset } from '@/hooks/use-kanji-dataset';
 import { useKanjiListFilters } from '@/hooks/use-kanji-list-filters';
-import { KanjiSettingsButton } from '@/components/kanji/settings-dialog';
-import { KanjiDatasetSwitch } from '@/components/kanji/dataset-switch';
-import { ArrowLeft } from 'lucide-react';
 
 const PROGRESS_KEY = 'extended-kanji-practice-progress';
 
@@ -130,21 +124,7 @@ function KanjiListInner() {
 
   return (
     <>
-      <Header />
-      <div className="container max-w-7xl mx-auto px-4 py-8 space-y-6">
-        <div className="flex items-center justify-between gap-3 flex-wrap">
-          <Link href="/study/kanji">
-            <Button variant="ghost" size="sm" className="gap-1 -ml-2">
-              <ArrowLeft className="h-4 w-4" />
-              Hub
-            </Button>
-          </Link>
-          <div className="flex items-center gap-2">
-            <KanjiDatasetSwitch />
-            <KanjiSettingsButton />
-          </div>
-        </div>
-
+      <div className="space-y-6">
         <div className="flex flex-col gap-4">
           <div className="flex items-baseline gap-2 flex-wrap">
             <h1 className="text-3xl font-bold">Kanji</h1>

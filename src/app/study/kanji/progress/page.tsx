@@ -17,7 +17,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import {
-  ArrowLeft,
   Flame,
   Target,
   TrendingUp,
@@ -33,7 +32,6 @@ import {
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Header } from '@/components/layout/header'
 import { CardProgress, ExtendedKanji, MergedVocabRow } from '@/types/extended-kanji'
 import { type SrsState } from '@/types/vocab-reveal-srs'
 import { load as loadVocabSrs } from '@/services/vocab-reveal-srs.service'
@@ -41,8 +39,6 @@ import { useAuth } from '@/contexts/auth-context'
 import { loadProgress } from '@/services/cloud-progress.service'
 import { useSettings } from '@/contexts/settings-context'
 import { useKanjiDataset } from '@/hooks/use-kanji-dataset'
-import { KanjiSettingsButton } from '@/components/kanji/settings-dialog'
-import { KanjiDatasetSwitch } from '@/components/kanji/dataset-switch'
 import {
   getActivityLastNDays,
   getStreak,
@@ -176,58 +172,30 @@ function KanjiProgressInner() {
 
   if (loading) {
     return (
-      <>
-        <Header />
-        <div className="container max-w-4xl mx-auto px-4 py-8">
-          <div className="flex items-center justify-center min-h-[40vh]">
-            <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-primary" />
-          </div>
-        </div>
-      </>
+      <div className="flex items-center justify-center min-h-[40vh]">
+        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-primary" />
+      </div>
     )
   }
 
   if (error) {
-    return (
-      <>
-        <Header />
-        <div className="container max-w-4xl mx-auto px-4 py-8">
-          <p className="text-destructive">{error}</p>
-        </div>
-      </>
-    )
+    return <p className="text-destructive">{error}</p>
   }
 
   return (
-    <>
-      <Header />
-      <div className="container max-w-4xl mx-auto px-4 py-6 sm:py-8 space-y-6">
-        {/* Inline dataset switch — primary toggle, always visible */}
-        <div className="flex items-center justify-between gap-2 flex-wrap">
-          <KanjiDatasetSwitch />
-          <KanjiSettingsButton />
-        </div>
-
-        {/* ─── Header ─────────────────────────────────────────────── */}
-        <div className="flex items-center justify-between gap-2">
-          <Link href="/study/kanji">
-            <Button variant="ghost" size="sm" className="gap-1 -ml-2">
-              <ArrowLeft className="h-4 w-4" />
-              Back
-            </Button>
-          </Link>
-          <div className="flex items-center gap-2">
-            {streak > 0 && (
-              <Badge variant="outline" className="gap-1 text-xs">
-                <Flame className="h-3 w-3 text-orange-500" />
-                {streak}d streak
-              </Badge>
-            )}
+    <div className="space-y-6">
+        {/* Streak + today's count strip */}
+        <div className="flex items-center justify-end gap-2">
+          {streak > 0 && (
             <Badge variant="outline" className="gap-1 text-xs">
-              <Target className="h-3 w-3" />
-              {todayCount}/{dailyGoal} today
+              <Flame className="h-3 w-3 text-orange-500" />
+              {streak}d streak
             </Badge>
-          </div>
+          )}
+          <Badge variant="outline" className="gap-1 text-xs">
+            <Target className="h-3 w-3" />
+            {todayCount}/{dailyGoal} today
+          </Badge>
         </div>
 
         <div>
@@ -485,8 +453,7 @@ function KanjiProgressInner() {
             </CardContent>
           </Card>
         )}
-      </div>
-    </>
+    </div>
   )
 }
 
