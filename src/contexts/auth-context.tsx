@@ -23,6 +23,11 @@ interface AuthContextType {
   signInWithGoogle: () => Promise<AuthUser>
   signOut: () => Promise<void>
   resetPassword: (email: string) => Promise<void>
+  /** Attach an email/password credential to the currently-signed-in user
+   *  (preserves their UID — used for migrating away from Google sign-in). */
+  linkPasswordToCurrentUser: (password: string) => Promise<void>
+  /** Whether the current user already has email/password as a sign-in method. */
+  hasPasswordProvider: () => boolean
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
@@ -70,6 +75,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     signInWithGoogle: authService.signInWithGoogle.bind(authService),
     signOut: authService.signOut.bind(authService),
     resetPassword: authService.resetPassword.bind(authService),
+    linkPasswordToCurrentUser: authService.linkPasswordToCurrentUser.bind(authService),
+    hasPasswordProvider: authService.hasPasswordProvider.bind(authService),
   }
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>

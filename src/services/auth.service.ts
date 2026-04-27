@@ -13,6 +13,8 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   GoogleAuthProvider,
+  EmailAuthProvider,
+  linkWithCredential,
   signOut as firebaseSignOut,
   sendPasswordResetEmail,
   sendEmailVerification,
@@ -182,6 +184,48 @@ export class AuthService {
     } catch (error: any) {
       throw this.handleAuthError(error)
     }
+  }
+
+  /**
+   * Attach an email/password credential to the currently-signed-in user.
+   *
+   * Critical for migrating away from Google sign-in WITHOUT losing data:
+   * the password is linked to the same Firebase UID, so the user can sign
+   * in with either method and read the same RTDB records.
+   *
+   * Throws `auth/no-current-user` if nobody is signed in,
+   *        `auth/provider-already-linked` if a password is already set,
+   *        `auth/email-already-in-use` if the email belongs to another UID,
+   *        `auth/weak-password` if the password is too short.
+   */
+  async linkPasswordToCurrentUser(password: string): Promise<void> {
+    if (!this.isAvailable()) {
+      throw new Error('Firebase authentication not configured')
+    }
+    const user = auth!.currentUser
+    if (!user) {
+      throw new Error('No signed-in user to link a password to')
+    }
+    if (!user.email) {
+      throw new Error('Current user has no email — cannot create email/password credential')
+    }
+    try {
+      const credential = EmailAuthProvider.credential(user.email, password)
+      await linkWithCredential(user, credential)
+    } catch (error: any) {
+      throw this.handleAuthError(error)
+    }
+  }
+
+  /**
+   * True if the current user already has email/password as a sign-in method.
+   * Used to decide whether to show the "Set a password" form.
+   */
+  hasPasswordProvider(): boolean {
+    if (!this.isAvailable()) return false
+    const user = auth!.currentUser
+    if (!user) return false
+    return user.providerData.some((p) => p.providerId === 'password')
   }
 
   /**
