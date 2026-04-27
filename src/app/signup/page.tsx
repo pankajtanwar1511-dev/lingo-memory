@@ -1,13 +1,12 @@
-import { Metadata } from "next"
 import { SignupForm } from "@/components/auth/signup-form"
 import { Header } from "@/components/layout/header"
 
-export const metadata: Metadata = {
-  title: "Sign Up - LingoMemory",
-  description: "Create an account to sync your Japanese vocabulary learning progress across all devices",
-}
-
-export default function SignupPage() {
+export default function SignupPage({
+  searchParams,
+}: {
+  searchParams?: { next?: string }
+}) {
+  const next = typeof searchParams?.next === 'string' ? searchParams.next : '/'
   return (
     <div className="min-h-screen">
       <Header />
@@ -21,7 +20,7 @@ export default function SignupPage() {
             Create your account and start learning Japanese
           </p>
         </div>
-        <SignupForm redirectTo="/" />
+        <SignupForm redirectTo={next} />
       </div>
     </main>
     </div>

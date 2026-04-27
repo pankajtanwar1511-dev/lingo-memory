@@ -8,6 +8,7 @@
  */
 
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react'
+import { usePathname, useRouter } from 'next/navigation'
 import { authService, AuthUser } from '@/services/auth.service'
 import { syncService } from '@/services/sync.service'
 import { isFirebaseConfigured } from '@/lib/firebase'
@@ -91,15 +92,27 @@ export function useAuth() {
 }
 
 /**
- * Hook to require authentication
- * Throws error if user is not authenticated
+ * Hook to require authentication.
+ *
+ * The top-level <RequireAuth> guard already enforces login + email-verification
+ * for the whole app, so this hook is mostly a no-op for new code. Kept for
+ * backwards-compat: instead of throwing, we redirect to /login with ?next=<...>
+ * so callers don't crash if Firebase resolves a logged-out state late.
  */
 export function useRequireAuth() {
   const context = useAuth()
+  const router = useRouter()
+  const pathname = usePathname() || '/'
 
-  if (!context.isAuthenticated && !context.loading) {
-    throw new Error('This feature requires authentication')
-  }
+  useEffect(() => {
+    if (context.loading) return
+    if (!context.isFirebaseAvailable) return
+    if (!context.isAuthenticated) {
+      router.replace(`/login?next=${encodeURIComponent(pathname)}`)
+    } else if (context.user && !context.user.emailVerified) {
+      router.replace(`/verify-email?next=${encodeURIComponent(pathname)}`)
+    }
+  }, [context.loading, context.isAuthenticated, context.user, context.isFirebaseAvailable, router, pathname])
 
   return context
 }

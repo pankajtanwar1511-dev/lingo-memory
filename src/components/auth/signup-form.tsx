@@ -48,7 +48,11 @@ export function SignupForm({ redirectTo = "/" }: SignupFormProps) {
 
     try {
       await signUpWithEmail(email, password, displayName)
-      router.push(redirectTo as any)
+      // After signup, route the user to the verify-email page. Carry the
+      // original `redirectTo` along so once they verify, they land on the
+      // page they were trying to reach.
+      const next = redirectTo && redirectTo !== '/' ? `?next=${encodeURIComponent(redirectTo)}` : ''
+      router.push(`/verify-email${next}` as any)
     } catch (err: any) {
       setError(err.message || "Failed to create account")
     } finally {
