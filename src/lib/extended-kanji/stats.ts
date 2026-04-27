@@ -21,17 +21,18 @@ export const LEVELS_DISPLAYED = [0, 1, 2, 3, 5] as const
 export type LevelKey = typeof LEVELS_DISPLAYED[number]
 
 /**
- * Days a card stays "fresh" before it's due for review again. Hand-tuned
- * SuperMemo-2 lite — long enough to feel relaxed, short enough that a daily
- * habit clears the queue. Untouched cards are never "due" (they're "new").
+ * Days a card stays "fresh" before it's due for review again. Pure doubling
+ * (1, 2, 4, 8, 16, 32) — keeps the SuperMemo pattern but tighter than the
+ * earlier 1/2/5/14/30/60 schedule so cards re-surface more often. Untouched
+ * cards are never "due" — they're "new".
  */
 const REVIEW_INTERVAL_DAYS: Record<number, number> = {
   0: 1,
   1: 2,
-  2: 5,
-  3: 14,
-  4: 30,
-  5: 60,
+  2: 4,
+  3: 8,
+  4: 16,
+  5: 32,
 }
 
 const DAY_MS = 86_400_000
