@@ -188,13 +188,16 @@ export class AuthService {
    * Sign out current user
    */
   async signOut(): Promise<void> {
+    console.log("[auth.signOut] entered, available=", this.isAvailable())
     if (!this.isAvailable()) {
       return
     }
-
     try {
+      console.log("[auth.signOut] awaiting firebaseSignOut")
       await firebaseSignOut(auth!)
+      console.log("[auth.signOut] firebaseSignOut resolved")
     } catch (error: any) {
+      console.error("[auth.signOut] firebaseSignOut threw:", error)
       throw this.handleAuthError(error)
     }
   }
