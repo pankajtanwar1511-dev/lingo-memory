@@ -10,83 +10,15 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import {
-  Eye,
-  BookOpen,
-  Quote,
-  TrendingUp,
-  Languages,
-  type LucideIcon,
-} from 'lucide-react'
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
-
-interface SubItem {
-  href: string
-  label: string
-  icon: LucideIcon
-  hint: string
-  disabled?: boolean
-}
-
-const DRILL_ITEMS: SubItem[] = [
-  {
-    href: '/study/kanji/vocab-reveal',
-    label: 'Vocab drill',
-    icon: BookOpen,
-    hint: 'SRS · see kanji, recall the reading',
-  },
-  {
-    href: '#',
-    label: 'Sentence drill',
-    icon: Quote,
-    hint: 'Coming soon',
-    disabled: true,
-  },
-]
-
-const DASHBOARD_ITEMS: SubItem[] = [
-  {
-    href: '/study/kanji/progress',
-    label: 'Vocab dashboard',
-    icon: BookOpen,
-    hint: 'Streak · today · vocab coverage',
-  },
-  {
-    href: '#',
-    label: 'Sentence dashboard',
-    icon: Quote,
-    hint: 'Coming soon',
-    disabled: true,
-  },
-]
-
-const REFERENCE_ITEMS: SubItem[] = [
-  {
-    href: '/study/kanji/vocabulary',
-    label: 'Vocab reference',
-    icon: BookOpen,
-    hint: 'Browse / search the vocab list',
-  },
-  {
-    href: '/study/kanji/sentences',
-    label: 'Sentence reference',
-    icon: Quote,
-    hint: 'Browse the sentence corpus',
-  },
-]
+import { Eye, BookOpen, TrendingUp, Languages, type LucideIcon } from 'lucide-react'
 
 export function KanjiPersistentNav() {
   const pathname = usePathname() || ''
-  const isKanji = pathname === '/study/kanji/list'
-  const isDrill = pathname === '/study/kanji/vocab-reveal'
-  const isDashboard = pathname === '/study/kanji/progress'
+  const isKanji = pathname.startsWith('/study/kanji/list') || pathname === '/study/kanji'
+  const isDrill = pathname.startsWith('/study/kanji/vocab-reveal')
+  const isDashboard = pathname.startsWith('/study/kanji/progress')
   const isReference =
-    pathname === '/study/kanji/vocabulary' || pathname === '/study/kanji/sentences'
+    pathname.startsWith('/study/kanji/vocabulary') || pathname.startsWith('/study/kanji/sentences')
 
   return (
     <div className="flex items-center justify-center gap-3 sm:gap-6 py-2">
@@ -95,28 +27,28 @@ export function KanjiPersistentNav() {
         icon={Languages}
         label="Kanji"
         active={isKanji}
-        title="Browse all kanji — switch between Kanji (86) and Extended (117)"
+        title="Browse all kanji — switch dataset via Kanji|Extended in the header"
       />
-      <TileMenu
+      <TileLink
+        href="/study/kanji/vocab-reveal"
         icon={Eye}
         label="Drill"
         active={isDrill}
-        title="Active recall sessions (SRS)"
-        items={DRILL_ITEMS}
+        title="Active recall sessions (SRS) — switch Vocab|Sentence in the header"
       />
-      <TileMenu
+      <TileLink
+        href="/study/kanji/progress"
         icon={TrendingUp}
         label="Dashboard"
         active={isDashboard}
-        title="Progress overview · streaks · coverage"
-        items={DASHBOARD_ITEMS}
+        title="Progress overview — switch Vocab|Sentence in the header"
       />
-      <TileMenu
+      <TileLink
+        href="/study/kanji/vocabulary"
         icon={BookOpen}
         label="Reference"
         active={isReference}
-        title="Browse the vocab and sentence corpora"
-        items={REFERENCE_ITEMS}
+        title="Browse — switch Vocab|Sentence in the header"
       />
     </div>
   )
@@ -180,58 +112,3 @@ function TileLink({
   )
 }
 
-function TileMenu({
-  icon: Icon,
-  label,
-  title,
-  items,
-  active,
-}: {
-  icon: LucideIcon
-  label: string
-  title: string
-  items: SubItem[]
-  active: boolean
-}) {
-  return (
-    <TileShell label={label} title={title} active={active}>
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <button type="button" className={tileBtn(active)} aria-label={label}>
-            <Icon className={TILE_ICON} />
-          </button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent align="center" className="w-64">
-          {items.map((item) => {
-            const ItemIcon = item.icon
-            const inner = (
-              <div className="flex items-start gap-2.5 w-full">
-                <ItemIcon className="h-4 w-4 text-muted-foreground shrink-0 mt-0.5" />
-                <div className="flex-1 min-w-0">
-                  <div className="text-sm font-medium leading-tight">{item.label}</div>
-                  <div className="text-[11px] text-muted-foreground mt-0.5">{item.hint}</div>
-                </div>
-              </div>
-            )
-            if (item.disabled) {
-              return (
-                <DropdownMenuItem
-                  key={item.label}
-                  disabled
-                  className="cursor-not-allowed opacity-60 py-2.5"
-                >
-                  {inner}
-                </DropdownMenuItem>
-              )
-            }
-            return (
-              <DropdownMenuItem key={item.label} asChild className="py-2.5 cursor-pointer">
-                <Link href={item.href}>{inner}</Link>
-              </DropdownMenuItem>
-            )
-          })}
-        </DropdownMenuContent>
-      </DropdownMenu>
-    </TileShell>
-  )
-}

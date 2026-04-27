@@ -13,7 +13,7 @@
 
 import { Header } from '@/components/layout/header'
 import { KanjiPersistentNav } from '@/components/kanji/persistent-nav'
-import { KanjiDatasetSwitch } from '@/components/kanji/dataset-switch'
+import { KanjiContextualSwitch } from '@/components/kanji/contextual-switch'
 import { KanjiSettingsButton } from '@/components/kanji/settings-dialog'
 
 export default function KanjiSectionLayout({ children }: { children: React.ReactNode }) {
@@ -24,7 +24,7 @@ export default function KanjiSectionLayout({ children }: { children: React.React
       <div className="sticky top-0 z-30 bg-background/90 backdrop-blur border-b">
         <div className="container max-w-5xl mx-auto px-4 pt-3 pb-2 space-y-2">
           <div className="flex items-center justify-between gap-2 flex-wrap">
-            <KanjiDatasetSwitch />
+            <KanjiContextualSwitch />
             <KanjiSettingsButton />
           </div>
           <KanjiPersistentNav />
