@@ -21,13 +21,18 @@ export function UserProfile() {
   const [signingOut, setSigningOut] = useState(false)
 
   const handleSignOut = async () => {
+    console.log("[signout] start")
     setSigningOut(true)
     try {
+      console.log("[signout] calling signOut()")
       await signOut()
+      console.log("[signout] signOut() resolved, navigating to /")
       router.push("/")
+      console.log("[signout] router.push returned")
     } catch (error) {
-      console.error("Sign out error:", error)
+      console.error("[signout] error:", error)
     } finally {
+      console.log("[signout] finally — clearing spinner")
       setSigningOut(false)
     }
   }
