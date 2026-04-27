@@ -21,24 +21,18 @@ export function UserProfile() {
   const [signingOut, setSigningOut] = useState(false)
 
   const handleSignOut = async () => {
-    console.log("[signout] start")
     setSigningOut(true)
-    // Hard timeout: if signOut hasn't resolved in 3s, force-navigate anyway.
+    // Hard timeout: force-navigate even if signOut hangs.
     const forceNavTimer = setTimeout(() => {
-      console.warn("[signout] 3s timeout — forcing window.location.replace('/login')")
       window.location.replace("/login")
     }, 3000)
     try {
-      console.log("[signout] calling signOut()")
       await signOut()
-      console.log("[signout] signOut() resolved")
-      clearTimeout(forceNavTimer)
-      // Use window.location.replace instead of router.push so we get a full
-      // page nav (clears any stale React state from the auth'd tree).
-      window.location.replace("/login")
     } catch (error) {
-      console.error("[signout] error:", error)
+      console.error("Sign out error:", error)
+    } finally {
       clearTimeout(forceNavTimer)
+      // Full-page nav clears any stale React state from the auth'd tree.
       window.location.replace("/login")
     }
   }
