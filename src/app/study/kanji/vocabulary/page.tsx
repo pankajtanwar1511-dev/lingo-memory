@@ -2,7 +2,7 @@
 
 /**
  * Extended Kanji — master vocabulary browser
- * Route: /study/extended-kanji/vocabulary
+ * Route: /study/kanji/vocabulary
  *
  * Every vocab row from every PART 1 per-kanji table + every PART 2 themed
  * table, deduplicated by (word, reading). Each row shows which kanji
@@ -126,14 +126,14 @@ export default function ExtendedKanjiVocabularyPage() {
   return (
     <div className="container max-w-5xl mx-auto px-4 py-8 space-y-6">
       <div className="flex items-center justify-between">
-        <Link href="/study/extended-kanji">
+        <Link href="/study/kanji">
           <Button variant="ghost" className="gap-2">
             <ArrowLeft className="h-4 w-4" />
             Back
           </Button>
         </Link>
         <div className="flex items-center gap-2">
-          <Link href="/study/extended-kanji/vocab-reveal">
+          <Link href="/study/kanji/vocab-reveal">
             <Button variant="default" className="gap-2">
               <Eye className="h-4 w-4" />
               Reveal drill
@@ -279,7 +279,7 @@ export default function ExtendedKanjiVocabularyPage() {
                     {v.parentKanji.map((p) => {
                       const id = kanjiById[p];
                       return id ? (
-                        <Link key={p} href={`/study/extended-kanji/${encodeURIComponent(id)}`}>
+                        <Link key={p} href={`/study/kanji/${encodeURIComponent(id)}`}>
                           <Badge className="text-base cursor-pointer">{p}</Badge>
                         </Link>
                       ) : (
@@ -291,7 +291,7 @@ export default function ExtendedKanjiVocabularyPage() {
                       return id ? (
                         <Link
                           key={`auto-${p}`}
-                          href={`/study/extended-kanji/${encodeURIComponent(id)}`}
+                          href={`/study/kanji/${encodeURIComponent(id)}`}
                           title={`Auto-discovered: ${p} appears in ${v.word}`}
                         >
                           <Badge variant="outline" className="text-base cursor-pointer border-dashed">
@@ -378,7 +378,7 @@ export default function ExtendedKanjiVocabularyPage() {
                         {v.parentKanji.map((p) => {
                           const id = kanjiById[p];
                           return id ? (
-                            <Link key={p} href={`/study/extended-kanji/${encodeURIComponent(id)}`}>
+                            <Link key={p} href={`/study/kanji/${encodeURIComponent(id)}`}>
                               <Badge className="text-base cursor-pointer">
                                 {p}
                               </Badge>
@@ -395,7 +395,7 @@ export default function ExtendedKanjiVocabularyPage() {
                             return id ? (
                               <Link
                                 key={`auto-${p}`}
-                                href={`/study/extended-kanji/${encodeURIComponent(id)}`}
+                                href={`/study/kanji/${encodeURIComponent(id)}`}
                                 title={`Auto-discovered: ${p} appears in ${v.word}`}
                               >
                                 <Badge

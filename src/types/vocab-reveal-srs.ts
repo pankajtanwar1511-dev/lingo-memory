@@ -1,7 +1,7 @@
 /**
  * Vocab-reveal spaced-repetition state.
  *
- * Per-card progress for the /study/extended-kanji/vocab-reveal drill.
+ * Per-card progress for the /study/kanji/vocab-reveal drill.
  * Persisted in two places (kept in sync by vocab-reveal-srs.service.ts):
  *   - localStorage  → instant write on every rating, source of truth offline
  *   - Firestore     → users/{uid}/preferences/vocabRevealSrs (single doc, batched flush)

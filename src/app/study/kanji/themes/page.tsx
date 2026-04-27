@@ -2,7 +2,7 @@
 
 /**
  * Extended Kanji — themed vocabulary (PART 2 of KANJI_REFERENCE.md)
- * Route: /study/extended-kanji/themes
+ * Route: /study/kanji/themes
  */
 
 import { useEffect, useState } from 'react';
@@ -37,7 +37,7 @@ export default function ExtendedKanjiThemesPage() {
   return (
     <div className="container max-w-4xl mx-auto px-4 py-8 space-y-6">
       <div className="flex items-center justify-between">
-        <Link href="/study/extended-kanji">
+        <Link href="/study/kanji">
           <Button variant="ghost" className="gap-2">
             <ArrowLeft className="h-4 w-4" />
             Back

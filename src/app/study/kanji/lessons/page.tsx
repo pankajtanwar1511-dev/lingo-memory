@@ -2,7 +2,7 @@
 
 /**
  * Extended Kanji — lesson timeline index
- * Route: /study/extended-kanji/lessons
+ * Route: /study/kanji/lessons
  */
 
 import { useEffect, useState } from 'react';
@@ -37,7 +37,7 @@ export default function ExtendedKanjiLessonsIndexPage() {
   return (
     <div className="container max-w-4xl mx-auto px-4 py-8 space-y-6">
       <div className="flex items-center justify-between">
-        <Link href="/study/extended-kanji">
+        <Link href="/study/kanji">
           <Button variant="ghost" className="gap-2">
             <ArrowLeft className="h-4 w-4" />
             Back to kanji
@@ -62,7 +62,7 @@ export default function ExtendedKanjiLessonsIndexPage() {
         {lessons.map((lesson) => (
           <Link
             key={lesson.number}
-            href={`/study/extended-kanji/lessons/lesson_${lesson.number}`}
+            href={`/study/kanji/lessons/lesson_${lesson.number}`}
             className="block"
           >
             <Card className="hover:shadow-md hover:border-primary transition-all cursor-pointer">

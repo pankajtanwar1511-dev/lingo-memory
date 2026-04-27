@@ -8,7 +8,7 @@
  * Reused on:
  *   - kanji detail page "Example sentences" card
  *   - kanji detail page "Also appears in sentences" card
- *   - /study/extended-kanji/sentences master browser
+ *   - /study/kanji/sentences master browser
  *
  * Pure runtime — no data changes. Reading source is each kanji's own
  * onReadings/kunReadings arrays. Anchor kanji (the page's subject) gets a

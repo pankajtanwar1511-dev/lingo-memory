@@ -1,6 +1,6 @@
 /**
  * Shared utilities for classifying and styling kanji readings across the
- * /study/extended-kanji feature.
+ * /study/kanji feature.
  *
  *   On'yomi  (音読み)  →  BLUE
  *   Kun'yomi (訓読み)  →  GREEN

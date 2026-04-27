@@ -2,7 +2,7 @@
  * Vocab-reveal SRS storage service.
  *
  * Dual-layer persistence for the per-card spaced-repetition state used by the
- * /study/extended-kanji/vocab-reveal drill:
+ * /study/kanji/vocab-reveal drill:
  *
  *   1. localStorage  → written on every rating, source of truth offline.
  *   2. Firestore     → users/{uid}/preferences/vocabRevealSrs, single doc with

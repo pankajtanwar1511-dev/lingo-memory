@@ -2,9 +2,9 @@
 
 /**
  * Extended Kanji — prerequisite kanji detail page
- * Route: /study/extended-kanji/prerequisite/[id]
+ * Route: /study/kanji/prerequisite/[id]
  *
- * Mirrors the main /study/extended-kanji/[id] detail layout but for the 117
+ * Mirrors the main /study/kanji/[id] detail layout but for the 117
  * prerequisite kanji. Vocabulary and sentences are pre-scoped in the dataset
  * (linked only from the existing main-kanji corpus), so no runtime cross-ref
  * is needed. Adds a "Common uses seen" card showing the teacher's compound
@@ -94,7 +94,7 @@ export default function PrerequisiteKanjiDetailPage() {
     return m;
   }, [allMainKanji, allPrereq]);
 
-  // Map of main-kanji char -> id for click-through links to /study/extended-kanji/[id]
+  // Map of main-kanji char -> id for click-through links to /study/kanji/[id]
   const mainIdByChar = useMemo(() => {
     const m: Record<string, string> = {};
     allMainKanji.forEach((k) => (m[k.kanji] = k.id));
@@ -142,7 +142,7 @@ export default function PrerequisiteKanjiDetailPage() {
           <ArrowLeft className="h-4 w-4" />
           Back
         </Button>
-        <Link href="/study/extended-kanji/prerequisite">
+        <Link href="/study/kanji/prerequisite">
           <Badge variant="secondary" className="cursor-pointer text-xs sm:text-sm gap-1">
             <Layers className="h-3 w-3" />
             Prerequisite
@@ -392,7 +392,7 @@ export default function PrerequisiteKanjiDetailPage() {
                         <td className="py-2">
                           {v.parentKanji && parentId ? (
                             <Link
-                              href={`/study/extended-kanji/${encodeURIComponent(parentId)}`}
+                              href={`/study/kanji/${encodeURIComponent(parentId)}`}
                             >
                               <Badge
                                 variant="outline"

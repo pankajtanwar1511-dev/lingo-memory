@@ -2,7 +2,7 @@
 
 /**
  * Extended Kanji — textbook answer keys (PART 4 of KANJI_REFERENCE.md)
- * Route: /study/extended-kanji/answer-keys
+ * Route: /study/kanji/answer-keys
  *
  * Each page has an "Attempt" toggle: answers are hidden by default so the
  * student can try first, then reveal.
@@ -43,7 +43,7 @@ export default function ExtendedKanjiAnswerKeysPage() {
   return (
     <div className="container max-w-4xl mx-auto px-4 py-8 space-y-6">
       <div className="flex items-center justify-between">
-        <Link href="/study/extended-kanji">
+        <Link href="/study/kanji">
           <Button variant="ghost" className="gap-2">
             <ArrowLeft className="h-4 w-4" />
             Back

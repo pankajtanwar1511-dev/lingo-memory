@@ -2,7 +2,7 @@
 
 /**
  * Extended Kanji — prerequisite kanji card grid
- * Route: /study/extended-kanji/prerequisite
+ * Route: /study/kanji/prerequisite
  *
  * Mirrors the main 86-kanji card grid but for the 117 prerequisite kanji
  * from PART 6 of KANJI_REFERENCE_v2.md. Vocab and sentence links are
@@ -131,7 +131,7 @@ export default function ExtendedKanjiPrerequisitePage() {
       <Header />
       <div className="container max-w-7xl mx-auto px-4 py-8 space-y-6">
         <div className="flex items-center justify-between">
-          <Link href="/study/extended-kanji">
+          <Link href="/study/kanji">
             <Button variant="ghost" className="gap-2">
               <ArrowLeft className="h-4 w-4" />
               Back to Extended Kanji
@@ -259,7 +259,7 @@ export default function ExtendedKanjiPrerequisitePage() {
               return (
                 <Link
                   key={k.id}
-                  href={`/study/extended-kanji/prerequisite/${encodeURIComponent(k.id)}`}
+                  href={`/study/kanji/prerequisite/${encodeURIComponent(k.id)}`}
                 >
                   <Card className="hover:shadow-lg hover:border-primary transition-all h-full cursor-pointer">
                     <CardContent className="pt-6 text-center space-y-2">

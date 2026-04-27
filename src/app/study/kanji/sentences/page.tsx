@@ -2,7 +2,7 @@
 
 /**
  * Extended Kanji — master sentences browser
- * Route: /study/extended-kanji/sentences
+ * Route: /study/kanji/sentences
  *
  * Three modes:
  *   • Reader  — calm single-column list, hairline dividers, generous whitespace
@@ -313,7 +313,7 @@ export default function SentencesPage() {
   const header = (
     <div className="space-y-4">
       <div className="flex items-center justify-between gap-3">
-        <Link href="/study/extended-kanji">
+        <Link href="/study/kanji">
           <Button variant="ghost" className="gap-2">
             <ArrowLeft className="h-4 w-4" />
             Back
@@ -487,7 +487,7 @@ function ReaderView({
                   ·{' '}
                   {kanjiIdByChar[s.parentKanji] ? (
                     <Link
-                      href={`/study/extended-kanji/${encodeURIComponent(
+                      href={`/study/kanji/${encodeURIComponent(
                         kanjiIdByChar[s.parentKanji],
                       )}`}
                       className="hover:text-foreground transition"

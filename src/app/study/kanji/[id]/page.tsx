@@ -1,166 +1,191 @@
 'use client';
 
 /**
- * Enhanced Kanji Detail Page with kanji.md Integration
+ * Extended Kanji — detail page
+ * Route: /study/kanji/[id]
  *
- * Dynamic route: /study/kanji/[id]
- * Example: /study/kanji/kanji_n5_日
- *
- * Displays:
- * - Kanji character (large)
- * - Meanings and readings
- * - Stroke order animation
- * - Metadata (stroke count, grade, frequency)
- * - Example vocabulary words (clickable)
- * - Example sentences with full translations (NEW)
- * - Related lessons (NEW)
- * - Cultural notes (NEW)
+ * Renders every field from KANJI_REFERENCE.md for one kanji:
+ *   teacher readings, vocabulary table, example sentences, lesson context,
+ *   bundled-with cross-links, and all extraSections (counting yen, March dates,
+ *   day-of-week tables, verb conjugations, review practice, etc.).
  */
 
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, BookOpen, Sparkles, MessageSquare, GraduationCap, Landmark, ExternalLink } from 'lucide-react';
+import {
+  ArrowLeft,
+  BookOpen,
+  CalendarDays,
+  Info,
+  Languages,
+  Link2,
+  MessageSquare,
+  Sparkles,
+} from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { StrokeOrderAnimation } from '@/components/kanji/StrokeOrderAnimation';
-import { KanjiCard, KanjiSentence, KanjiLesson, CulturalNote } from '@/types/kanji';
+import {
+  ExtendedKanji,
+  ExtendedKanjiSentence,
+  ExtraSection,
+  MergedVocabRow,
+  TopicSentenceGroup,
+} from '@/types/extended-kanji';
+import {
+  READING_STYLES,
+  classifyReading,
+  readingTypeStyle,
+  type ReadingType,
+} from '@/lib/extended-kanji/readings';
+import { ColoredWord } from '@/components/extended-kanji/colored-word';
+import { InteractiveSentence } from '@/components/extended-kanji/interactive-sentence';
 
-export default function KanjiDetailPage() {
+/** A unified sentence row used for runtime cross-refs. */
+interface AnySentence {
+  japanese: string;
+  english: string;
+  rubies?: import('@/types/extended-kanji').SentenceRuby[];
+  origin: 'part1' | 'part1_extras' | 'part3';
+  parentKanji?: string;
+  sectionTitle?: string;
+  topic?: string;
+}
+
+export default function ExtendedKanjiDetailPage() {
   const params = useParams();
   const router = useRouter();
   const kanjiId = decodeURIComponent(params.id as string);
 
-  const [kanji, setKanji] = useState<KanjiCard | null>(null);
-  const [vocabData, setVocabData] = useState<Record<string, any>>({});
-  const [sentences, setSentences] = useState<KanjiSentence[]>([]);
-  const [lessons, setLessons] = useState<KanjiLesson[]>([]);
-  const [culturalNotes, setCulturalNotes] = useState<CulturalNote[]>([]);
+  const [kanji, setKanji] = useState<ExtendedKanji | null>(null);
+  const [allKanji, setAllKanji] = useState<ExtendedKanji[]>([]);
+  const [allVocab, setAllVocab] = useState<MergedVocabRow[]>([]);
+  const [allSentences, setAllSentences] = useState<AnySentence[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const loadKanji = async () => {
+    (async () => {
       try {
-        setLoading(true);
-        console.log('🔍 Loading kanji with ID:', kanjiId);
+        const [kRes, vRes, sRes] = await Promise.all([
+          fetch('/seed-data/extended-kanji/kanji.json'),
+          fetch('/seed-data/extended-kanji/vocabulary.json'),
+          fetch('/seed-data/extended-kanji/sentences.json'),
+        ]);
+        if (!kRes.ok) throw new Error('Failed to load dataset');
+        const kData = await kRes.json();
+        const vData = await vRes.json();
+        const sData = await sRes.json();
+        const all = kData.kanji as ExtendedKanji[];
+        setAllKanji(all);
+        setAllVocab(vData.vocabulary as MergedVocabRow[]);
 
-        // Load kanji data
-        const kanjiResponse = await fetch('/seed-data/kanji_n5.json');
-        if (!kanjiResponse.ok) {
-          throw new Error('Failed to load kanji data');
-        }
-        const kanjiData = await kanjiResponse.json();
+        // Flatten all sentence sources into one list so cross-ref is uniform.
+        const unified: AnySentence[] = [];
+        (sData.part1 as ExtendedKanjiSentence[]).forEach((s) =>
+          unified.push({
+            japanese: s.japanese,
+            english: s.english,
+            rubies: s.rubies,
+            origin: 'part1',
+            parentKanji: s.parentKanji,
+          }),
+        );
+        (sData.part1Extras as ExtendedKanjiSentence[]).forEach((s) =>
+          unified.push({
+            japanese: s.japanese,
+            english: s.english,
+            rubies: s.rubies,
+            origin: 'part1_extras',
+            parentKanji: s.parentKanji,
+            sectionTitle: s.sectionTitle,
+          }),
+        );
+        (sData.part3 as TopicSentenceGroup[]).forEach((g) =>
+          g.sentences.forEach((jp, i) =>
+            unified.push({
+              japanese: jp,
+              english: '',
+              rubies: g.rubies?.[i],
+              origin: 'part3',
+              topic: g.topic,
+            }),
+          ),
+        );
+        setAllSentences(unified);
 
-        // Load vocabulary data
-        const vocabResponse = await fetch('/seed-data/N5_vocab_dataset.json');
-        if (!vocabResponse.ok) {
-          throw new Error('Failed to load vocabulary data');
-        }
-        const vocabDataset = await vocabResponse.json();
-
-        // Load sentences data (NEW)
-        let sentencesData: any = { sentences: [] };
-        try {
-          const sentencesResponse = await fetch('/seed-data/kanji_sentences.json');
-          if (sentencesResponse.ok) {
-            sentencesData = await sentencesResponse.json();
-            console.log('✅ Loaded sentences:', sentencesData.sentences.length);
-          }
-        } catch (err) {
-          console.warn('⚠️ Sentences data not available');
-        }
-
-        // Load lessons data (NEW)
-        let lessonsData: any = { lessons: [] };
-        try {
-          const lessonsResponse = await fetch('/seed-data/kanji_lessons.json');
-          if (lessonsResponse.ok) {
-            lessonsData = await lessonsResponse.json();
-            console.log('✅ Loaded lessons:', lessonsData.lessons.length);
-          }
-        } catch (err) {
-          console.warn('⚠️ Lessons data not available');
-        }
-
-        // Load cultural notes data (NEW)
-        let culturalData: any = { notes: [] };
-        try {
-          const culturalResponse = await fetch('/seed-data/cultural_notes.json');
-          if (culturalResponse.ok) {
-            culturalData = await culturalResponse.json();
-            console.log('✅ Loaded cultural notes:', culturalData.notes.length);
-          }
-        } catch (err) {
-          console.warn('⚠️ Cultural notes data not available');
-        }
-
-        // Create vocab lookup map
-        const vocabMap: Record<string, any> = {};
-        vocabDataset.vocabulary.forEach((vocab: any) => {
-          vocabMap[vocab.id] = vocab;
-        });
-        setVocabData(vocabMap);
-
-        // Find the kanji
-        console.log('📦 Loaded kanji dataset:', kanjiData.metadata);
-        console.log('🔎 Searching for kanji with ID:', kanjiId);
-        const kanjiCard = kanjiData.kanji.find((k: KanjiCard) => k.id === kanjiId);
-
-        if (!kanjiCard) {
-          console.error('❌ Kanji not found. Available IDs:', kanjiData.kanji.slice(0, 5).map((k: any) => k.id));
-          throw new Error('Kanji not found');
-        }
-
-        console.log('✅ Found kanji:', kanjiCard.kanji);
-
-        // Filter sentences for this kanji (NEW)
-        if (kanjiCard.sentence_ids && kanjiCard.sentence_ids.length > 0) {
-          const kanjiSentences = sentencesData.sentences.filter((s: KanjiSentence) =>
-            kanjiCard.sentence_ids?.includes(s.id)
-          );
-          setSentences(kanjiSentences);
-          console.log('📝 Found sentences:', kanjiSentences.length);
-        }
-
-        // Filter lessons for this kanji (NEW)
-        if (kanjiCard.lesson_ids && kanjiCard.lesson_ids.length > 0) {
-          const kanjiLessons = lessonsData.lessons.filter((l: KanjiLesson) =>
-            kanjiCard.lesson_ids?.includes(l.id)
-          );
-          setLessons(kanjiLessons);
-          console.log('📚 Found lessons:', kanjiLessons.length);
-        }
-
-        // Filter cultural notes for this kanji (NEW)
-        if (kanjiCard.cultural_note_ids && kanjiCard.cultural_note_ids.length > 0) {
-          const kanjiCulturalNotes = culturalData.notes.filter((n: CulturalNote) =>
-            kanjiCard.cultural_note_ids?.includes(n.id)
-          );
-          setCulturalNotes(kanjiCulturalNotes);
-          console.log('🎎 Found cultural notes:', kanjiCulturalNotes.length);
-        }
-
-        setKanji(kanjiCard);
-        setError(null);
-      } catch (err) {
-        console.error('Error loading kanji:', err);
-        setError(err instanceof Error ? err.message : 'Failed to load kanji');
+        const found = all.find((k) => k.id === kanjiId);
+        if (!found) throw new Error(`Kanji ${kanjiId} not found`);
+        setKanji(found);
+      } catch (e) {
+        setError(e instanceof Error ? e.message : 'Failed to load');
       } finally {
         setLoading(false);
       }
-    };
-
-    loadKanji();
+    })();
   }, [kanjiId]);
+
+  /** Runtime cross-reference: every vocab row (from all 378) whose `word`
+   * contains this kanji character. Split into rows already listed in the
+   * teacher's per-kanji table vs auto-discovered from elsewhere. */
+  const crossRefs = useMemo(() => {
+    if (!kanji) return { inTeacherTable: [], autoDiscovered: [] as MergedVocabRow[] };
+    const teacherKeys = new Set(
+      kanji.vocabulary.map((v) => `${v.word}|${v.reading}`),
+    );
+    const hits = allVocab.filter((v) => v.word.includes(kanji.kanji));
+    const inTable: MergedVocabRow[] = [];
+    const auto: MergedVocabRow[] = [];
+    for (const v of hits) {
+      if (teacherKeys.has(`${v.word}|${v.reading}`)) inTable.push(v);
+      else auto.push(v);
+    }
+    return { inTeacherTable: inTable, autoDiscovered: auto };
+  }, [kanji, allVocab]);
+
+  /** Map kanji char → id for cross-linking to other kanji detail pages. */
+  const kanjiIdByChar = useMemo(() => {
+    const m: Record<string, string> = {};
+    allKanji.forEach((k) => (m[k.kanji] = k.id));
+    return m;
+  }, [allKanji]);
+
+  /** Map kanji char → full entry, used by <ColoredWord> to classify per char. */
+  const kanjiByChar = useMemo(() => {
+    const m: Record<string, ExtendedKanji> = {};
+    allKanji.forEach((k) => (m[k.kanji] = k));
+    return m;
+  }, [allKanji]);
+
+  /** Runtime cross-reference: every sentence containing this kanji character,
+   * grouped into teacher's examples vs everything else (extras, topics, other
+   * kanji's examples). */
+  const sentenceCrossRefs = useMemo(() => {
+    if (!kanji) return { inTeacherExamples: 0, autoDiscovered: [] as AnySentence[] };
+    const teacherSet = new Set(kanji.exampleSentences.map((s) => s.japanese));
+    const hits = allSentences.filter((s) => s.japanese.includes(kanji.kanji));
+    const auto: AnySentence[] = [];
+    let inTable = 0;
+    for (const s of hits) {
+      if (
+        teacherSet.has(s.japanese) &&
+        s.origin === 'part1' &&
+        s.parentKanji === kanji.kanji
+      ) {
+        inTable++;
+      } else {
+        auto.push(s);
+      }
+    }
+    return { inTeacherExamples: inTable, autoDiscovered: auto };
+  }, [kanji, allSentences]);
 
   if (loading) {
     return (
-      <div className="container max-w-4xl mx-auto px-4 py-8">
-        <div className="flex items-center justify-center min-h-[60vh]">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-        </div>
+      <div className="container max-w-4xl mx-auto px-4 py-8 flex items-center justify-center min-h-[60vh]">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary" />
       </div>
     );
   }
@@ -169,73 +194,78 @@ export default function KanjiDetailPage() {
     return (
       <div className="container max-w-4xl mx-auto px-4 py-8">
         <Card>
-          <CardContent className="pt-6">
-            <div className="text-center">
-              <p className="text-destructive mb-4">{error || 'Kanji not found'}</p>
-              <Button onClick={() => router.back()}>Go Back</Button>
-            </div>
+          <CardContent className="pt-6 text-center space-y-4">
+            <p className="text-destructive">{error || 'Kanji not found'}</p>
+            <Button onClick={() => router.back()}>Go back</Button>
           </CardContent>
         </Card>
       </div>
     );
   }
 
+  const bundled =
+    kanji.bundledWith?.map((c) => allKanji.find((k) => k.kanji === c)).filter(Boolean) ?? [];
+
   return (
-    <div className="container max-w-4xl mx-auto px-4 py-8 space-y-6">
-      {/* Header */}
-      <div className="flex items-center justify-between">
-        <Button
-          variant="ghost"
-          onClick={() => router.back()}
-          className="gap-2"
-        >
+    <div className="container max-w-4xl mx-auto px-4 py-6 sm:py-8 space-y-6">
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <Button variant="ghost" onClick={() => router.back()} className="gap-2">
           <ArrowLeft className="h-4 w-4" />
           Back
         </Button>
-
-        <Badge variant="secondary">{kanji.jlptLevel}</Badge>
+        {kanji.lessonNumber && (
+          <Link href={`/study/kanji/lessons/lesson_${kanji.lessonNumber}`}>
+            <Badge variant="secondary" className="cursor-pointer text-xs sm:text-sm">
+              Lesson {kanji.lessonNumber} · {kanji.lessonDate}
+            </Badge>
+          </Link>
+        )}
       </div>
 
-      {/* Main Kanji Display */}
+      {/* Main */}
       <Card>
         <CardContent className="pt-6">
           <div className="text-center space-y-4">
-            {/* Large Kanji Character */}
-            <div className="text-9xl font-bold text-foreground">
-              {kanji.kanji}
-            </div>
-
-            {/* Meanings */}
-            <div className="space-y-2">
-              <h2 className="text-2xl font-semibold">
-                {kanji.meanings.slice(0, 3).join(', ')}
-              </h2>
-              {kanji.meanings.length > 3 && (
-                <p className="text-sm text-muted-foreground">
-                  +{kanji.meanings.length - 3} more meanings
-                </p>
-              )}
-            </div>
+            <div className="text-[clamp(5rem,18vw,9rem)] font-bold leading-none">{kanji.kanji}</div>
+            <h2 className="text-xl sm:text-2xl font-semibold">{kanji.meaning}</h2>
+            {kanji.bundledWith && kanji.bundledWith.length > 0 && (
+              <p className="text-xs text-muted-foreground">
+                Taught alongside{' '}
+                {bundled.map((b, i) => (
+                  <span key={b!.id}>
+                    <Link
+                      href={`/study/kanji/${encodeURIComponent(b!.id)}`}
+                      className="underline hover:text-primary"
+                    >
+                      {b!.kanji}
+                    </Link>
+                    {i < bundled.length - 1 ? ', ' : ''}
+                  </span>
+                ))}
+              </p>
+            )}
           </div>
         </CardContent>
       </Card>
 
       {/* Readings */}
       <div className="grid md:grid-cols-2 gap-4">
-        {/* On-readings Card */}
-        <Card className="bg-blue-50 dark:bg-blue-950/20 border-blue-200 dark:border-blue-900/30">
+        <Card className={`${READING_STYLES.on.bg} ${READING_STYLES.on.border}`}>
           <CardHeader>
             <CardTitle className="text-lg">
-              音読み <span className="text-sm font-normal text-muted-foreground">(On-reading)</span>
+              音読み <span className="text-sm font-normal text-muted-foreground">({READING_STYLES.on.label})</span>
             </CardTitle>
           </CardHeader>
           <CardContent>
             {kanji.onReadings.length > 0 ? (
-              <div className="space-y-2">
-                {kanji.onReadings.map((reading, i) => (
-                  <div key={i} className="text-3xl font-medium text-blue-900 dark:text-blue-100">
-                    {reading}
-                  </div>
+              <div className="flex flex-wrap gap-2">
+                {kanji.onReadings.map((r, i) => (
+                  <span
+                    key={i}
+                    className={`px-3 py-1.5 rounded text-2xl font-medium bg-white dark:bg-blue-950/40 ${READING_STYLES.on.text} border ${READING_STYLES.on.border}`}
+                  >
+                    {r}
+                  </span>
                 ))}
               </div>
             ) : (
@@ -244,20 +274,22 @@ export default function KanjiDetailPage() {
           </CardContent>
         </Card>
 
-        {/* Kun-readings Card */}
-        <Card className="bg-green-50 dark:bg-green-950/20 border-green-200 dark:border-green-900/30">
+        <Card className={`${READING_STYLES.kun.bg} ${READING_STYLES.kun.border}`}>
           <CardHeader>
             <CardTitle className="text-lg">
-              訓読み <span className="text-sm font-normal text-muted-foreground">(Kun-reading)</span>
+              訓読み <span className="text-sm font-normal text-muted-foreground">({READING_STYLES.kun.label})</span>
             </CardTitle>
           </CardHeader>
           <CardContent>
             {kanji.kunReadings.length > 0 ? (
-              <div className="space-y-2">
-                {kanji.kunReadings.map((reading, i) => (
-                  <div key={i} className="text-3xl font-medium text-green-900 dark:text-green-100">
-                    {reading}
-                  </div>
+              <div className="flex flex-wrap gap-2">
+                {kanji.kunReadings.map((r, i) => (
+                  <span
+                    key={i}
+                    className={`px-3 py-1.5 rounded text-2xl font-medium bg-white dark:bg-green-950/40 ${READING_STYLES.kun.text} border ${READING_STYLES.kun.border}`}
+                  >
+                    {r}
+                  </span>
                 ))}
               </div>
             ) : (
@@ -267,224 +299,24 @@ export default function KanjiDetailPage() {
         </Card>
       </div>
 
-      {/* Example Vocabulary (Moved up for better visibility) */}
-      {kanji.examples.length > 0 && (
-        <Card className="bg-amber-50 dark:bg-amber-950/10 border-amber-200 dark:border-amber-900/30">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <BookOpen className="h-5 w-5" />
-              Example Words ({kanji.examples.length})
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="text-sm text-muted-foreground mb-4">
-              Words that use this kanji
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {kanji.examples.slice(0, 12).map((vocabId) => {
-                const vocab = vocabData[vocabId];
-                if (!vocab) return null;
-
-                return (
-                  <Link
-                    key={vocabId}
-                    href={`/vocabulary/${vocabId}`}
-                    className="p-4 bg-white dark:bg-slate-900 border border-amber-200 dark:border-amber-900/50 rounded-lg shadow-sm hover:shadow-md hover:border-amber-400 dark:hover:border-amber-700 transition-all cursor-pointer"
-                  >
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="text-2xl font-bold text-foreground">
-                        {vocab.kanji || vocab.kana}
-                      </div>
-                      <Badge variant="outline" className="text-xs">
-                        {vocab.partOfSpeech[0] || 'word'}
-                      </Badge>
-                    </div>
-                    <div className="text-base text-muted-foreground mb-1">
-                      {vocab.kana}
-                    </div>
-                    <div className="text-sm text-muted-foreground">
-                      {vocab.meaning[0]}
-                    </div>
-                  </Link>
-                );
-              })}
-            </div>
-
-            {kanji.examples.length > 12 && (
-              <p className="text-sm text-muted-foreground mt-4 text-center">
-                +{kanji.examples.length - 12} more examples
-              </p>
-            )}
-          </CardContent>
-        </Card>
-      )}
-
-      {/* Example Sentences (NEW - kanji.md integration) */}
-      {sentences.length > 0 && (
-        <Card className="bg-purple-50 dark:bg-purple-950/10 border-purple-200 dark:border-purple-900/30">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <MessageSquare className="h-5 w-5" />
-              Example Sentences ({sentences.length})
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="text-sm text-muted-foreground mb-4">
-              Real sentences from Japanese textbooks
-            </div>
-            <div className="space-y-6">
-              {sentences.slice(0, 6).map((sentence) => (
-                <div key={sentence.id} className="p-4 bg-white dark:bg-slate-900 border border-purple-200 dark:border-purple-900/50 rounded-lg">
-                  <div className="space-y-2">
-                    <div className="text-2xl font-bold text-foreground">
-                      {sentence.japanese}
-                    </div>
-                    <div className="text-lg text-muted-foreground">
-                      {sentence.kana}
-                    </div>
-                    <div className="text-base text-muted-foreground italic">
-                      {sentence.romaji}
-                    </div>
-                    <div className="text-lg font-medium text-foreground pt-2">
-                      {sentence.english}
-                    </div>
-                    {sentence.grammarPoints.length > 0 && (
-                      <div className="flex flex-wrap gap-2 pt-2">
-                        {sentence.grammarPoints.map((point, i) => (
-                          <Badge key={i} variant="outline" className="text-xs">
-                            {point}
-                          </Badge>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-            {sentences.length > 6 && (
-              <p className="text-sm text-muted-foreground mt-4 text-center">
-                +{sentences.length - 6} more sentences
-              </p>
-            )}
-          </CardContent>
-        </Card>
-      )}
-
-      {/* Related Lessons (NEW - kanji.md integration) */}
-      {lessons.length > 0 && (
-        <Card className="bg-indigo-50 dark:bg-indigo-950/10 border-indigo-200 dark:border-indigo-900/30">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <GraduationCap className="h-5 w-5" />
-              Taught in Lessons ({lessons.length})
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="text-sm text-muted-foreground mb-4">
-              Structured learning path for this kanji
-            </div>
-            <div className="space-y-3">
-              {lessons.map((lesson) => (
-                <Link
-                  key={lesson.id}
-                  href={`/study/kanji/lessons/${lesson.id}`}
-                  className="block p-4 bg-white dark:bg-slate-900 border border-indigo-200 dark:border-indigo-900/50 rounded-lg hover:shadow-md hover:border-indigo-400 dark:hover:border-indigo-700 transition-all"
-                >
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Badge variant="outline">Lesson {lesson.number}</Badge>
-                        <span className="text-sm text-muted-foreground">{lesson.page}</span>
-                      </div>
-                      <h3 className="text-lg font-semibold text-foreground mb-1">
-                        {lesson.title}
-                      </h3>
-                      <p className="text-sm text-muted-foreground mb-2">
-                        {lesson.description}
-                      </p>
-                      <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                        <span>⏱ {lesson.estimatedMinutes} minutes</span>
-                        <span>📝 {lesson.sentence_ids.length} sentences</span>
-                        <span>🔤 {lesson.kanji_chars.length} kanji</span>
-                      </div>
-                    </div>
-                    <ArrowLeft className="h-5 w-5 rotate-180 text-muted-foreground" />
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      )}
-
-      {/* Cultural Notes (NEW - kanji.md integration) */}
-      {culturalNotes.length > 0 && (
-        <Card className="bg-rose-50 dark:bg-rose-950/10 border-rose-200 dark:border-rose-900/30">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Landmark className="h-5 w-5" />
-              Cultural Notes ({culturalNotes.length})
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="text-sm text-muted-foreground mb-4">
-              Japanese cultural context and traditions
-            </div>
-            <div className="space-y-4">
-              {culturalNotes.map((note) => (
-                <div key={note.id} className="p-4 bg-white dark:bg-slate-900 border border-rose-200 dark:border-rose-900/50 rounded-lg">
-                  <div className="space-y-3">
-                    <div className="flex items-start justify-between">
-                      <div>
-                        <h3 className="text-xl font-bold text-foreground mb-1">
-                          {note.title}
-                        </h3>
-                        <Badge variant="outline" className="text-xs">
-                          {note.category}
-                        </Badge>
-                      </div>
-                      <div className="text-3xl">
-                        {note.term}
-                      </div>
-                    </div>
-                    <p className="text-base text-muted-foreground leading-relaxed">
-                      {note.fullDescription.substring(0, 300)}...
-                    </p>
-                    {note.externalLinks.length > 0 && (
-                      <div className="flex flex-wrap gap-2 pt-2">
-                        {note.externalLinks.map((link, i) => (
-                          <a
-                            key={i}
-                            href={link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-sm text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1"
-                          >
-                            Learn more <ExternalLink className="h-3 w-3" />
-                          </a>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      )}
-
-      {/* Stroke Order Animation */}
+      {/* Stroke order animation — SVG path derived from the hex codepoint */}
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Sparkles className="h-5 w-5" />
-            Stroke Order
+            Stroke order
           </CardTitle>
         </CardHeader>
         <CardContent>
           <StrokeOrderAnimation
             kanji={kanji.kanji}
-            strokes={kanji.strokes}
+            strokes={{
+              svgPath: `/kanji/strokes/${kanji.kanji
+                .codePointAt(0)!
+                .toString(16)
+                .padStart(5, '0')}.svg`,
+              count: 0,
+            }}
             autoPlay={false}
             showStrokeNumbers={true}
             loop={false}
@@ -492,125 +324,435 @@ export default function KanjiDetailPage() {
         </CardContent>
       </Card>
 
-      {/* Metadata */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Details</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div>
-              <p className="text-sm text-muted-foreground mb-1">Strokes</p>
-              <p className="text-2xl font-bold">{kanji.strokeCount}</p>
-            </div>
-
-            {kanji.grade && (
-              <div>
-                <p className="text-sm text-muted-foreground mb-1">Grade</p>
-                <p className="text-2xl font-bold">{kanji.grade}</p>
+      {/* Lesson context banner */}
+      {kanji.lessonNumber !== null && (
+        <Card className="bg-indigo-50 dark:bg-indigo-950/10 border-indigo-200 dark:border-indigo-900/30">
+          <CardContent className="pt-6">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <CalendarDays className="h-5 w-5 text-indigo-600 dark:text-indigo-400" />
+                <div>
+                  <p className="font-medium">
+                    Taught on {kanji.lessonDate} (Lesson {kanji.lessonNumber})
+                  </p>
+                  {kanji.lessonSource && (
+                    <p className="text-xs text-muted-foreground">Source: {kanji.lessonSource}</p>
+                  )}
+                </div>
               </div>
-            )}
-
-            {kanji.frequency && (
-              <div>
-                <p className="text-sm text-muted-foreground mb-1">Frequency</p>
-                <p className="text-2xl font-bold">#{kanji.frequency}</p>
-              </div>
-            )}
-
-            <div>
-              <p className="text-sm text-muted-foreground mb-1">Examples</p>
-              <p className="text-2xl font-bold">{kanji.examples.length}</p>
+              {kanji.textbookPage && (
+                <Badge variant="outline">p.{kanji.textbookPage}</Badge>
+              )}
             </div>
-          </div>
-
-          {kanji.radical && (
-            <div className="mt-4 pt-4 border-t">
-              <p className="text-sm text-muted-foreground mb-2">Radical</p>
-              <div className="flex items-center gap-2">
-                <span className="text-3xl">{kanji.radical.literal}</span>
-                <span className="text-sm text-muted-foreground">
-                  ({kanji.radical.meaning})
-                </span>
-              </div>
-            </div>
-          )}
-        </CardContent>
-      </Card>
-
-      {/* Example Vocabulary */}
-      {kanji.examples.length > 0 && (
-        <Card className="bg-amber-50 dark:bg-amber-950/10 border-amber-200 dark:border-amber-900/30">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <BookOpen className="h-5 w-5" />
-              Example Words ({kanji.examples.length})
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="text-sm text-muted-foreground mb-4">
-              Words that use this kanji
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {kanji.examples.slice(0, 12).map((vocabId) => {
-                const vocab = vocabData[vocabId];
-                if (!vocab) return null;
-
-                return (
-                  <Link
-                    key={vocabId}
-                    href={`/vocabulary/${vocabId}`}
-                    className="p-4 bg-white dark:bg-slate-900 border border-amber-200 dark:border-amber-900/50 rounded-lg shadow-sm hover:shadow-md hover:border-amber-400 dark:hover:border-amber-700 transition-all cursor-pointer"
-                  >
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="text-2xl font-bold text-foreground">
-                        {vocab.kanji || vocab.kana}
-                      </div>
-                      <Badge variant="outline" className="text-xs">
-                        {vocab.partOfSpeech[0] || 'word'}
-                      </Badge>
-                    </div>
-                    <div className="text-base text-muted-foreground mb-1">
-                      {vocab.kana}
-                    </div>
-                    <div className="text-sm text-muted-foreground">
-                      {vocab.meaning[0]}
-                    </div>
-                  </Link>
-                );
-              })}
-            </div>
-
-            {kanji.examples.length > 12 && (
-              <p className="text-sm text-muted-foreground mt-4 text-center">
-                +{kanji.examples.length - 12} more examples
-              </p>
-            )}
           </CardContent>
         </Card>
       )}
 
-      {/* Attribution */}
+      {/* Vocabulary */}
+      {kanji.vocabulary.length > 0 && (
+        <Card className="bg-amber-50 dark:bg-amber-950/10 border-amber-200 dark:border-amber-900/30">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <BookOpen className="h-5 w-5" />
+              Vocabulary ({kanji.vocabulary.length})
+            </CardTitle>
+            <ReadingLegend />
+          </CardHeader>
+          <CardContent>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-amber-200 dark:border-amber-900/50">
+                    <th className="text-left py-2 font-medium">Word</th>
+                    <th className="text-left py-2 font-medium">Reading</th>
+                    <th className="text-left py-2 font-medium">Meaning</th>
+                    <th className="text-left py-2 font-medium">Usage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {kanji.vocabulary.map((v, i) => {
+                    const type = classifyReading(v.reading, kanji);
+                    const style = readingTypeStyle(type);
+                    return (
+                      <tr
+                        key={i}
+                        className={`border-b border-amber-100 dark:border-amber-900/30 ${
+                          style ? `border-l-4 ${style.border}` : ''
+                        }`}
+                      >
+                        <td className="py-2 pl-2 text-lg font-medium">
+                          <ColoredWord
+                            word={v.word}
+                            reading={v.reading}
+                            kanjiByChar={kanjiByChar}
+                            highlightChar={kanji.kanji}
+                          />
+                        </td>
+                        <td
+                          className={`py-2 whitespace-nowrap ${
+                            style ? style.text : 'text-muted-foreground'
+                          }`}
+                        >
+                          {v.reading}
+                        </td>
+                        <td className="py-2">{v.meaning}</td>
+                        <td className="py-2">
+                          <ReadingTypePill type={type} />
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
+      {/* Runtime cross-reference: every vocab row containing this kanji */}
+      {crossRefs.autoDiscovered.length > 0 && (
+        <Card className="bg-teal-50 dark:bg-teal-950/10 border-teal-200 dark:border-teal-900/30">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Link2 className="h-5 w-5" />
+              Also used in ({crossRefs.autoDiscovered.length})
+            </CardTitle>
+            <p className="text-xs text-muted-foreground mt-1">
+              Runtime match across all {allVocab.length} vocab rows — words containing{' '}
+              <span className="text-lg font-bold">{kanji.kanji}</span> that aren't in
+              this kanji's own teacher table.
+            </p>
+          </CardHeader>
+          <CardContent>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-teal-200 dark:border-teal-900/50">
+                    <th className="text-left py-2 font-medium">Word</th>
+                    <th className="text-left py-2 font-medium">Reading</th>
+                    <th className="text-left py-2 font-medium">Meaning</th>
+                    <th className="text-left py-2 font-medium">Usage</th>
+                    <th className="text-left py-2 font-medium">Listed under</th>
+                    <th className="text-left py-2 font-medium">Themes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {crossRefs.autoDiscovered.map((v, i) => {
+                    const type = classifyReading(v.reading, kanji);
+                    const style = readingTypeStyle(type);
+                    return (
+                      <tr
+                        key={`${v.word}-${v.reading}-${i}`}
+                        className={`border-b border-teal-100 dark:border-teal-900/30 ${
+                          style ? `border-l-4 ${style.border}` : ''
+                        }`}
+                      >
+                        <td className="py-2 pl-2 text-lg font-medium">
+                          <ColoredWord
+                            word={v.word}
+                            reading={v.reading}
+                            kanjiByChar={kanjiByChar}
+                            highlightChar={kanji.kanji}
+                          />
+                        </td>
+                        <td
+                          className={`py-2 whitespace-nowrap ${
+                            style ? style.text : 'text-muted-foreground'
+                          }`}
+                        >
+                          {v.reading}
+                        </td>
+                        <td className="py-2">{v.meaning}</td>
+                        <td className="py-2">
+                          <ReadingTypePill type={type} />
+                        </td>
+                        <td className="py-2">
+                          <div className="flex flex-wrap gap-1">
+                            {v.parentKanji.length === 0 ? (
+                              <span className="text-xs text-muted-foreground">theme-only</span>
+                            ) : (
+                              v.parentKanji.map((p) => {
+                                const id = kanjiIdByChar[p];
+                                return id && p !== kanji.kanji ? (
+                                  <Link
+                                    key={p}
+                                    href={`/study/kanji/${encodeURIComponent(id)}`}
+                                  >
+                                    <Badge
+                                      variant="outline"
+                                      className="cursor-pointer hover:bg-accent"
+                                    >
+                                      {p}
+                                    </Badge>
+                                  </Link>
+                                ) : (
+                                  <Badge key={p} variant="outline">
+                                    {p}
+                                  </Badge>
+                                );
+                              })
+                            )}
+                          </div>
+                        </td>
+                        <td className="py-2">
+                          <div className="flex flex-wrap gap-1">
+                            {v.themes.length === 0 ? (
+                              <span className="text-xs text-muted-foreground">—</span>
+                            ) : (
+                              v.themes.map((t) => (
+                                <Badge key={t} variant="secondary" className="text-xs">
+                                  {t}
+                                </Badge>
+                              ))
+                            )}
+                          </div>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-muted-foreground mt-3">
+              Teacher's own table already includes {crossRefs.inTeacherTable.length}{' '}
+              of the {crossRefs.inTeacherTable.length + crossRefs.autoDiscovered.length}{' '}
+              total matches.
+            </p>
+          </CardContent>
+        </Card>
+      )}
+
+      {/* Example sentences */}
+      {kanji.exampleSentences.length > 0 && (
+        <Card className="bg-purple-50 dark:bg-purple-950/10 border-purple-200 dark:border-purple-900/30">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <MessageSquare className="h-5 w-5" />
+              Example sentences ({kanji.exampleSentences.length})
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-3">
+              {kanji.exampleSentences.map((s, i) => (
+                <InteractiveSentence
+                  key={i}
+                  japanese={s.japanese}
+                  english={s.english}
+                  rubies={s.rubies}
+                  kanjiByChar={kanjiByChar}
+                  highlightChar={kanji.kanji}
+                  className="border-purple-200 dark:border-purple-900/50"
+                />
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
+      {/* Runtime cross-ref: every sentence containing this kanji */}
+      {sentenceCrossRefs.autoDiscovered.length > 0 && (
+        <Card className="bg-sky-50 dark:bg-sky-950/10 border-sky-200 dark:border-sky-900/30">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Link2 className="h-5 w-5" />
+              Also appears in sentences ({sentenceCrossRefs.autoDiscovered.length})
+            </CardTitle>
+            <p className="text-xs text-muted-foreground mt-1">
+              Runtime match across all {allSentences.length} sentences in the reference —
+              occurrences of <span className="text-lg font-bold">{kanji.kanji}</span>{' '}
+              beyond this kanji's own {sentenceCrossRefs.inTeacherExamples} teacher example
+              {sentenceCrossRefs.inTeacherExamples === 1 ? '' : 's'}.
+            </p>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-2">
+              {sentenceCrossRefs.autoDiscovered.map((s, i) => (
+                <InteractiveSentence
+                  key={`${s.origin}-${i}`}
+                  japanese={s.japanese}
+                  english={s.english}
+                  rubies={s.rubies}
+                  kanjiByChar={kanjiByChar}
+                  highlightChar={kanji.kanji}
+                  className="border-sky-200 dark:border-sky-900/50"
+                />
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
+      {/* Extra sections — counting yen, March dates, etc. */}
+      {kanji.extraSections.length > 0 && (
+        <div className="space-y-4">
+          {kanji.extraSections.map((section, idx) => (
+            <Card key={idx} className="bg-slate-50 dark:bg-slate-900/40">
+              <CardHeader>
+                <CardTitle className="text-base flex items-center gap-2">
+                  <Sparkles className="h-4 w-4" />
+                  {section.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ExtraSectionBody section={section} />
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      )}
+
+      {/* Footer */}
       <Card>
-        <CardContent className="pt-6">
-          <div className="text-xs text-muted-foreground space-y-1">
-            <p>
-              <strong>Data Source:</strong> {kanji.source.type} ({kanji.source.version})
-            </p>
-            <p>
-              <strong>Stroke Order:</strong> KanjiVG (CC BY-SA 3.0)
-            </p>
-            {sentences.length > 0 && (
-              <p>
-                <strong>Example Sentences:</strong> kanji.md textbook
-              </p>
-            )}
-            <p>
-              <strong>License:</strong> {kanji.license.text}
-            </p>
-          </div>
+        <CardContent className="pt-6 text-xs text-muted-foreground space-y-1">
+          <p>
+            <Info className="inline h-3 w-3 mr-1" />
+            Data from teacher's KANJI_REFERENCE.md (not KANJIDIC2).
+          </p>
+          <p>
+            <Languages className="inline h-3 w-3 mr-1" />
+            Reading notation preserved as written in the reference
+            (e.g. "おお (きい)" → stem + ending).
+          </p>
         </CardContent>
       </Card>
     </div>
+  );
+}
+
+function ExtraSectionBody({ section }: { section: ExtraSection }) {
+  if (section.type === 'table') {
+    return <TableBlock headers={section.headers} rows={section.rows} />;
+  }
+  if (section.type === 'bullets') {
+    return <BulletsBlock items={section.items} />;
+  }
+  if (section.type === 'prose') {
+    return <p className="text-sm">{section.text}</p>;
+  }
+  return (
+    <div className="space-y-3">
+      {section.blocks.map((b, i) => {
+        if (b.type === 'table') return <TableBlock key={i} headers={b.headers} rows={b.rows} />;
+        if (b.type === 'bullets') return <BulletsBlock key={i} items={b.items} />;
+        return (
+          <p key={i} className="text-sm">
+            {b.text}
+          </p>
+        );
+      })}
+    </div>
+  );
+}
+
+function TableBlock({
+  headers,
+  rows,
+}: {
+  headers: string[];
+  rows: Record<string, string>[];
+}) {
+  return (
+    <div className="overflow-x-auto">
+      <table className="w-full text-sm">
+        <thead>
+          <tr className="border-b">
+            {headers.map((h) => (
+              <th key={h} className="text-left py-2 font-medium">
+                {h}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((r, i) => (
+            <tr key={i} className="border-b last:border-0">
+              {headers.map((h) => (
+                <td key={h} className="py-2">
+                  {r[h] ?? ''}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function ReadingTypePill({ type }: { type: ReadingType }) {
+  if (type === 'on' || type === 'kun') {
+    const style = READING_STYLES[type];
+    return (
+      <span className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${style.chip}`}>
+        {style.label}
+      </span>
+    );
+  }
+  if (type === 'mixed') {
+    return (
+      <span className="inline-flex gap-1 text-xs">
+        <span className={`px-1.5 py-0.5 rounded ${READING_STYLES.on.chip}`}>音</span>
+        <span className={`px-1.5 py-0.5 rounded ${READING_STYLES.kun.chip}`}>訓</span>
+      </span>
+    );
+  }
+  return <span className="text-xs text-muted-foreground">—</span>;
+}
+
+function ReadingLegend() {
+  return (
+    <div className="flex flex-wrap gap-3 text-xs text-muted-foreground">
+      <span className="flex items-center gap-1.5">
+        <span className={`inline-block px-2 py-0.5 rounded ${READING_STYLES.on.chip}`}>
+          {READING_STYLES.on.label}
+        </span>
+        <span className={`${READING_STYLES.on.text} font-semibold`}>大</span>
+        on'yomi reading
+      </span>
+      <span className="flex items-center gap-1.5">
+        <span className={`inline-block px-2 py-0.5 rounded ${READING_STYLES.kun.chip}`}>
+          {READING_STYLES.kun.label}
+        </span>
+        <span className={`${READING_STYLES.kun.text} font-semibold`}>大</span>
+        kun'yomi reading
+      </span>
+      <span className="flex items-center gap-1.5">
+        <span>好</span>
+        not in the 86 taught kanji
+      </span>
+    </div>
+  );
+}
+
+function sentenceOriginLabel(origin: AnySentence['origin']): string {
+  if (origin === 'part1') return 'Main example';
+  if (origin === 'part1_extras') return 'Review / warm-up';
+  return 'Topic sentence';
+}
+
+/** Bold-highlight every occurrence of `char` inside `word`. */
+function highlightChar(word: string, char: string): React.ReactNode {
+  if (!char || !word.includes(char)) return word;
+  const parts = word.split(char);
+  return parts.map((part, i) => (
+    <span key={i}>
+      {part}
+      {i < parts.length - 1 && (
+        <span className="text-teal-700 dark:text-teal-400 font-bold">{char}</span>
+      )}
+    </span>
+  ));
+}
+
+function BulletsBlock({ items }: { items: { text: string; gloss: string }[] }) {
+  return (
+    <ul className="space-y-2">
+      {items.map((it, i) => (
+        <li key={i} className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
+          <span className="text-base font-medium">{it.text}</span>
+          {it.gloss && <span className="text-sm text-muted-foreground italic">— {it.gloss}</span>}
+        </li>
+      ))}
+    </ul>
   );
 }
