@@ -25,7 +25,6 @@ import {
 } from 'firebase/auth'
 import { doc, setDoc, getDoc, serverTimestamp } from 'firebase/firestore'
 import { auth, firestore, isFirebaseConfigured } from '@/lib/firebase'
-import { writePendingRequest } from '@/services/allowlist.service'
 
 export interface AuthUser {
   uid: string
@@ -88,18 +87,6 @@ export class AuthService {
         await sendEmailVerification(credential.user)
       } catch (e) {
         console.warn('Failed to send verification email on signup:', e)
-      }
-
-      // Write a pending-request doc so the admin can see and approve. No-op
-      // for admins or already-allowed emails.
-      try {
-        await writePendingRequest(
-          credential.user.uid,
-          credential.user.email || '',
-          credential.user.displayName,
-        )
-      } catch (e) {
-        console.warn('Failed to write pending-request:', e)
       }
 
       return this.toAuthUser(credential.user)
@@ -175,16 +162,6 @@ export class AuthService {
       const userDoc = await getDoc(doc(firestore!, 'users', credential.user.uid))
       if (!userDoc.exists()) {
         await this.createUserDocument(credential.user)
-        // First sign-in via Google → write pending-request unless already allowed.
-        try {
-          await writePendingRequest(
-            credential.user.uid,
-            credential.user.email || '',
-            credential.user.displayName,
-          )
-        } catch (e) {
-          console.warn('Failed to write pending-request:', e)
-        }
       } else {
         await this.updateUserDocument(credential.user.uid, {
           lastLoginAt: serverTimestamp()

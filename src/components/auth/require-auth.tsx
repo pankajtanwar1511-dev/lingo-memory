@@ -16,17 +16,14 @@
  * protected content.
  */
 
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
 import { useAuth } from '@/contexts/auth-context'
-import { isAdminEmail } from '@/lib/admin'
-import { isEmailAllowed } from '@/services/allowlist.service'
 
 const PUBLIC_PATHS = new Set([
   '/login',
   '/signup',
   '/verify-email',
-  '/pending-approval',
   '/reset-password',
   '/forgot-password',
 ])
@@ -44,21 +41,9 @@ export function RequireAuth({ children }: { children: React.ReactNode }) {
   const pathname = usePathname() || '/'
   const { user, loading, isFirebaseAvailable } = useAuth()
 
-  // 'unknown' until we've resolved against the allowlist. We resolve once
-  // per (uid, email) pair.
-  const [allowState, setAllowState] = useState<'unknown' | 'allowed' | 'denied'>(
-    'unknown',
-  )
-
   useEffect(() => {
-    // While auth state is resolving, do nothing — let the spinner render.
     if (loading) return
-
-    // If Firebase isn't configured at all, fall back to fully open access
-    // (e.g., local dev without env vars). This keeps the app usable without
-    // forcing a Firebase project on contributors.
     if (!isFirebaseAvailable) return
-
     if (isPublicPath(pathname)) return
 
     if (!user) {
@@ -72,42 +57,8 @@ export function RequireAuth({ children }: { children: React.ReactNode }) {
       router.replace(`/verify-email?next=${next}`)
       return
     }
-
-    // Allowlist check. Admins are auto-allowed by isEmailAllowed itself.
-    let cancelled = false
-    setAllowState((s) => (s === 'allowed' ? s : 'unknown'))
-    isEmailAllowed(user.email)
-      .then((allowed) => {
-        if (cancelled) return
-        if (allowed) {
-          setAllowState('allowed')
-        } else {
-          setAllowState('denied')
-          const next = encodeURIComponent(pathname)
-          router.replace(`/pending-approval?next=${next}`)
-        }
-      })
-      .catch(() => {
-        if (cancelled) return
-        // Fail-closed on read errors so a missing app/allowlist doc doesn't
-        // accidentally grant access. Admins still pass via isAdminEmail.
-        if (isAdminEmail(user.email)) {
-          setAllowState('allowed')
-        } else {
-          setAllowState('denied')
-          const next = encodeURIComponent(pathname)
-          router.replace(`/pending-approval?next=${next}`)
-        }
-      })
-
-    return () => {
-      cancelled = true
-    }
   }, [loading, user, pathname, router, isFirebaseAvailable])
 
-  // Render a neutral spinner while we don't yet know whether to allow access.
-  // For public paths, render children immediately even during loading so the
-  // login/signup forms aren't held back by auth resolution.
   if (isPublicPath(pathname)) {
     return <>{children}</>
   }
@@ -121,8 +72,7 @@ export function RequireAuth({ children }: { children: React.ReactNode }) {
       </div>
     )
   }
-  if (!user || !user.emailVerified || allowState !== 'allowed') {
-    // Redirect is in flight. Render nothing rather than the protected tree.
+  if (!user || !user.emailVerified) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-primary" />
