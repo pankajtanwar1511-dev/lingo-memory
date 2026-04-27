@@ -20,7 +20,6 @@ interface AuthContextType {
   isFirebaseAvailable: boolean
   signUpWithEmail: (email: string, password: string, displayName?: string) => Promise<AuthUser>
   signInWithEmail: (email: string, password: string) => Promise<AuthUser>
-  signInWithGoogle: () => Promise<AuthUser>
   signOut: () => Promise<void>
   resetPassword: (email: string) => Promise<void>
   /** Attach an email/password credential to the currently-signed-in user
@@ -72,7 +71,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     isFirebaseAvailable,
     signUpWithEmail: authService.signUpWithEmail.bind(authService),
     signInWithEmail: authService.signInWithEmail.bind(authService),
-    signInWithGoogle: authService.signInWithGoogle.bind(authService),
     signOut: authService.signOut.bind(authService),
     resetPassword: authService.resetPassword.bind(authService),
     linkPasswordToCurrentUser: authService.linkPasswordToCurrentUser.bind(authService),

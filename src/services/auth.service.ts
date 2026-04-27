@@ -1,18 +1,14 @@
 /**
  * Authentication Service
  *
- * Handles all authentication operations including:
- * - Email/Password authentication
- * - Google Sign-In
- * - Session persistence
- * - User state management
+ * Email/password authentication only. Google sign-in was removed in
+ * favor of a single, consistent sign-in flow that works reliably across
+ * mobile Safari and desktop without popup/redirect quirks.
  */
 
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  signInWithPopup,
-  GoogleAuthProvider,
   EmailAuthProvider,
   linkWithCredential,
   signOut as firebaseSignOut,
@@ -39,14 +35,7 @@ export interface AuthUser {
 }
 
 export class AuthService {
-  private googleProvider: GoogleAuthProvider
-
   constructor() {
-    this.googleProvider = new GoogleAuthProvider()
-    this.googleProvider.setCustomParameters({
-      prompt: 'select_account'
-    })
-
     // Set persistence to LOCAL (survives page refresh)
     if (auth) {
       setPersistence(auth, browserLocalPersistence).catch(console.error)
@@ -146,38 +135,6 @@ export class AuthService {
         })
       } catch (e) {
         console.warn('Failed to update user document on email sign-in:', e)
-      }
-
-      return this.toAuthUser(credential.user)
-    } catch (error: any) {
-      throw this.handleAuthError(error)
-    }
-  }
-
-  /**
-   * Sign in with Google
-   */
-  async signInWithGoogle(): Promise<AuthUser> {
-    if (!this.isAvailable()) {
-      throw new Error('Firebase authentication not configured')
-    }
-
-    try {
-      const credential = await signInWithPopup(auth!, this.googleProvider)
-
-      try {
-        if (database) {
-          const snap = await get(ref(database, `users/${credential.user.uid}`))
-          if (!snap.exists()) {
-            await this.createUserDocument(credential.user)
-          } else {
-            await this.updateUserDocument(credential.user.uid, {
-              lastLoginAt: serverTimestamp(),
-            })
-          }
-        }
-      } catch (e) {
-        console.warn('Failed to sync user document on Google sign-in:', e)
       }
 
       return this.toAuthUser(credential.user)

@@ -8,7 +8,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Mail, Lock, User, UserPlus, Loader2 } from "lucide-react"
 import { useAuth } from "@/contexts/auth-context"
-import { GoogleSignInButton } from "./google-sign-in-button"
 
 interface SignupFormProps {
   redirectTo?: string
@@ -192,19 +191,6 @@ export function SignupForm({ redirectTo = "/" }: SignupFormProps) {
             )}
           </Button>
         </form>
-
-        <div className="relative">
-          <div className="absolute inset-0 flex items-center">
-            <span className="w-full border-t" />
-          </div>
-          <div className="relative flex justify-center text-xs uppercase">
-            <span className="bg-white dark:bg-gray-900 px-2 text-gray-500">
-              Or continue with
-            </span>
-          </div>
-        </div>
-
-        <GoogleSignInButton redirectTo={redirectTo} />
 
         <p className="text-center text-sm text-gray-600 dark:text-gray-400">
           Already have an account?{" "}
