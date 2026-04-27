@@ -27,24 +27,59 @@ import {
   type ReadingType,
 } from '@/lib/extended-kanji/readings';
 import { ColoredWord } from '@/components/extended-kanji/colored-word';
+import { useAuth } from '@/contexts/auth-context';
+import { load as loadSrs } from '@/services/vocab-reveal-srs.service';
+import { cardKey, type SrsState, type SrsLevel } from '@/types/vocab-reveal-srs';
+
+type LevelFilter = 'all' | 0 | 1 | 2 | 3 | 4;
+
+/** Visual style per SRS level — red 0 → emerald 4, with a neutral "—" for
+ *  cards never rated. Reused by both the mobile card and desktop table. */
+const LEVEL_STYLES: Record<number, { chip: string; label: string }> = {
+  0: { chip: 'bg-red-500/15 text-red-700 dark:text-red-400 border-red-500/40', label: 'L0' },
+  1: { chip: 'bg-orange-500/15 text-orange-700 dark:text-orange-400 border-orange-500/40', label: 'L1' },
+  2: { chip: 'bg-amber-500/15 text-amber-700 dark:text-amber-400 border-amber-500/40', label: 'L2' },
+  3: { chip: 'bg-sky-500/15 text-sky-700 dark:text-sky-400 border-sky-500/40', label: 'L3' },
+  4: { chip: 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border-emerald-500/40', label: 'L4' },
+};
+
+function LevelChip({ level, seen }: { level: number; seen: boolean }) {
+  if (!seen) {
+    return (
+      <span className="inline-block px-2 py-0.5 rounded text-[10px] font-medium border border-border text-muted-foreground/60">
+        —
+      </span>
+    );
+  }
+  const s = LEVEL_STYLES[level] ?? LEVEL_STYLES[0];
+  return (
+    <span className={`inline-block px-2 py-0.5 rounded text-[10px] font-bold border ${s.chip}`}>
+      {s.label}
+    </span>
+  );
+}
 
 export default function ExtendedKanjiVocabularyPage() {
+  const { user } = useAuth();
   const [vocab, setVocab] = useState<MergedVocabRow[]>([]);
   const [kanjiById, setKanjiById] = useState<Record<string, string>>({});
   const [kanjiByChar, setKanjiByChar] = useState<Record<string, ExtendedKanji>>({});
   const [kanjiCharSet, setKanjiCharSet] = useState<string[]>([]);
+  const [srs, setSrs] = useState<SrsState>({});
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
   const [themeFilter, setThemeFilter] = useState<string>('all');
   const [parentFilter, setParentFilter] = useState<string>('all');
   const [sourceFilter, setSourceFilter] = useState<'all' | 'kanji' | 'theme' | 'both'>('all');
+  const [levelFilter, setLevelFilter] = useState<LevelFilter>('all');
   const [showAutoDiscovered, setShowAutoDiscovered] = useState(true);
 
   useEffect(() => {
     (async () => {
-      const [vRes, kRes] = await Promise.all([
+      const [vRes, kRes, srsLoaded] = await Promise.all([
         fetch('/seed-data/extended-kanji/vocabulary.json'),
         fetch('/seed-data/extended-kanji/kanji.json'),
+        loadSrs(user?.uid ?? null),
       ]);
       const vData = await vRes.json();
       const kData = await kRes.json();
@@ -60,9 +95,16 @@ export default function ExtendedKanjiVocabularyPage() {
       setKanjiById(map);
       setKanjiByChar(byChar);
       setKanjiCharSet(chars);
+      setSrs(srsLoaded);
       setLoading(false);
     })();
-  }, []);
+  }, [user?.uid]);
+
+  /** Look up SRS data for one row. Returns level + whether the user has ever rated it. */
+  const srsFor = (v: MergedVocabRow): { level: SrsLevel; seen: boolean } => {
+    const entry = srs[cardKey(v.word, v.reading)];
+    return { level: (entry?.level ?? 0) as SrsLevel, seen: !!entry && entry.reviewCount > 0 };
+  };
 
   /** Classify the reading using the first teacher-tagged parent kanji. */
   const classifyRow = (v: MergedVocabRow): ReadingType => {
@@ -114,8 +156,28 @@ export default function ExtendedKanjiVocabularyPage() {
     if (sourceFilter === 'kanji') rows = rows.filter((v) => v.parentKanji.length > 0 && v.themes.length === 0);
     else if (sourceFilter === 'theme') rows = rows.filter((v) => v.themes.length > 0 && v.parentKanji.length === 0);
     else if (sourceFilter === 'both') rows = rows.filter((v) => v.themes.length > 0 && v.parentKanji.length > 0);
+    if (levelFilter !== 'all') {
+      rows = rows.filter((v) => srsFor(v).level === levelFilter);
+    }
     return rows;
-  }, [vocab, search, themeFilter, parentFilter, sourceFilter, showAutoDiscovered]);
+    // srsFor is a stable lookup over `srs` — listing srs in deps is sufficient
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [vocab, search, themeFilter, parentFilter, sourceFilter, showAutoDiscovered, levelFilter, srs]);
+
+  /** Per-level breakdown across the full corpus — drives the chips shown
+   *  above the table so the user has a one-glance mastery snapshot. */
+  const levelCounts = useMemo(() => {
+    const counts: { 0: number; 1: number; 2: number; 3: number; 4: number; unseen: number } = {
+      0: 0, 1: 0, 2: 0, 3: 0, 4: 0, unseen: 0,
+    };
+    for (const v of vocab) {
+      const { level, seen } = srsFor(v);
+      if (!seen) counts.unseen++;
+      else (counts as any)[level]++;
+    }
+    return counts;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [vocab, srs]);
 
   if (loading) {
     return (
@@ -188,6 +250,47 @@ export default function ExtendedKanjiVocabularyPage() {
             <option value="both">In both</option>
           </Select>
         </div>
+
+        {/* Level breakdown — click any chip to filter to that level */}
+        <div className="flex flex-wrap items-center gap-1.5 text-xs">
+          <span className="text-muted-foreground mr-1">SRS level:</span>
+          <button
+            type="button"
+            onClick={() => setLevelFilter('all')}
+            className={`px-2 py-0.5 rounded border transition-colors ${
+              levelFilter === 'all'
+                ? 'bg-primary text-primary-foreground border-primary'
+                : 'border-input hover:border-foreground/30'
+            }`}
+          >
+            All <span className="tabular-nums opacity-70">{vocab.length}</span>
+          </button>
+          {([0, 1, 2, 3, 4] as const).map((n) => {
+            const count = (levelCounts as any)[n] as number;
+            const active = levelFilter === n;
+            const s = LEVEL_STYLES[n];
+            return (
+              <button
+                key={n}
+                type="button"
+                onClick={() => setLevelFilter(active ? 'all' : n)}
+                disabled={count === 0}
+                className={`px-2 py-0.5 rounded border font-bold transition-colors disabled:opacity-40 disabled:cursor-not-allowed ${
+                  active ? s.chip + ' ring-2 ring-offset-1 ring-current' : s.chip
+                }`}
+                title={`${count} card${count === 1 ? '' : 's'} at L${n}`}
+              >
+                {s.label} <span className="tabular-nums opacity-80">{count}</span>
+              </button>
+            );
+          })}
+          <span
+            className="px-2 py-0.5 rounded border border-border text-muted-foreground/70"
+            title="Cards never rated yet"
+          >
+            Unseen <span className="tabular-nums">{levelCounts.unseen}</span>
+          </span>
+        </div>
       </div>
 
       <label className="flex items-center gap-2 text-sm">
@@ -237,7 +340,7 @@ export default function ExtendedKanjiVocabularyPage() {
               className={style ? `border-l-4 ${style.border}` : ''}
             >
               <CardContent className="px-4 py-3 space-y-2">
-                {/* Word + usage pill on the same row */}
+                {/* Word + level + usage pill on the same row */}
                 <div className="flex items-start justify-between gap-2">
                   <div className="text-2xl font-medium leading-tight">
                     <ColoredWord
@@ -246,16 +349,19 @@ export default function ExtendedKanjiVocabularyPage() {
                       kanjiByChar={kanjiByChar}
                     />
                   </div>
-                  {type === 'on' || type === 'kun' ? (
-                    <span className={`shrink-0 inline-block px-2 py-0.5 rounded text-[10px] font-medium ${READING_STYLES[type].chip}`}>
-                      {READING_STYLES[type].label}
-                    </span>
-                  ) : type === 'mixed' ? (
-                    <span className="shrink-0 inline-flex gap-1 text-[10px]">
-                      <span className={`px-1.5 py-0.5 rounded ${READING_STYLES.on.chip}`}>音</span>
-                      <span className={`px-1.5 py-0.5 rounded ${READING_STYLES.kun.chip}`}>訓</span>
-                    </span>
-                  ) : null}
+                  <div className="flex items-center gap-1 shrink-0">
+                    <LevelChip level={srsFor(v).level} seen={srsFor(v).seen} />
+                    {type === 'on' || type === 'kun' ? (
+                      <span className={`inline-block px-2 py-0.5 rounded text-[10px] font-medium ${READING_STYLES[type].chip}`}>
+                        {READING_STYLES[type].label}
+                      </span>
+                    ) : type === 'mixed' ? (
+                      <span className="inline-flex gap-1 text-[10px]">
+                        <span className={`px-1.5 py-0.5 rounded ${READING_STYLES.on.chip}`}>音</span>
+                        <span className={`px-1.5 py-0.5 rounded ${READING_STYLES.kun.chip}`}>訓</span>
+                      </span>
+                    ) : null}
+                  </div>
                 </div>
                 {/* Reading */}
                 <div
@@ -321,6 +427,7 @@ export default function ExtendedKanjiVocabularyPage() {
                 <tr className="border-b">
                   <th className="text-left py-2 font-medium">Word</th>
                   <th className="text-left py-2 font-medium">Reading</th>
+                  <th className="text-left py-2 font-medium">Level</th>
                   <th className="text-left py-2 font-medium">Usage</th>
                   <th className="text-left py-2 font-medium">Meaning</th>
                   <th className="text-left py-2 font-medium">Parent kanji</th>
@@ -351,6 +458,9 @@ export default function ExtendedKanjiVocabularyPage() {
                       }`}
                     >
                       {v.reading}
+                    </td>
+                    <td className="py-3">
+                      <LevelChip level={srsFor(v).level} seen={srsFor(v).seen} />
                     </td>
                     <td className="py-3">
                       {type === 'on' || type === 'kun' ? (
@@ -422,7 +532,7 @@ export default function ExtendedKanjiVocabularyPage() {
                 })}
                 {filtered.length === 0 && (
                   <tr>
-                    <td colSpan={6} className="py-8 text-center text-muted-foreground">
+                    <td colSpan={7} className="py-8 text-center text-muted-foreground">
                       No matching vocabulary. Try clearing filters.
                     </td>
                   </tr>

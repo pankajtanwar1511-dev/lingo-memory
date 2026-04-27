@@ -90,7 +90,7 @@ There's **no** "resume where I left off" — the queue isn't persisted on purpos
 - **`/list`** — Grid of all kanji in the active dataset (curated 86 or extended 117). Inline search, sort (teacher / a→z / most vocab), status chips (All / Not viewed / Viewed). Cards link to the per-kanji detail page; viewed cards get a green dot.
 - **`/[id]`** — Per-kanji detail. Loads from **both** datasets and unions them (curated wins on collision) so deep links work regardless of which dataset is active.
 - **`/progress`** — Coverage dashboard. Shows kanji viewed, vocab KPIs (new / learning / mastered), stuck vocab list, last-N-day activity.
-- **`/vocabulary`** — Master vocab browser. Mobile = stacked card per row; desktop = full table. Filters: search, theme, parent kanji, source (kanji-table / theme / both), and an opt-in "auto-discover" toggle that surfaces kanji-substring matches the curated data didn't tag.
+- **`/vocabulary`** — Master vocab browser. Mobile = stacked card per row; desktop = full table. Filters: search, theme, parent kanji, source (kanji-table / theme / both), and an opt-in "auto-discover" toggle that surfaces kanji-substring matches the curated data didn't tag. Each row shows the user's **SRS level** (L0–L4 color-coded chip; "—" for unrated cards), and a **per-level breakdown** above the table doubles as a one-click filter — tap "L0 12" to see only your 12 unrated/forgotten cards. The data here mirrors the same RTDB record the drill writes to, so progress made in the drill is immediately visible in Reference and vice versa.
 - **`/sentences`** — Three modes via segmented control:
   - **Reader** — calm vertical column, hairline dividers
   - **Study** — one sentence at a time, hold to reveal English (mirrors the drill)
