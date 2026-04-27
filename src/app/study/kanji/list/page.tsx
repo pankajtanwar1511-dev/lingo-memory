@@ -99,8 +99,6 @@ function KanjiListInner() {
     return sorted;
   }, [kanjiList, search, sortBy, statusFilter, progress]);
 
-  const totalVocab = kanjiList.reduce((sum, k) => sum + k.vocabulary.length, 0);
-  const totalSentences = kanjiList.reduce((sum, k) => sum + k.exampleSentences.length, 0);
 
   if (loading) {
     return (
@@ -125,52 +123,20 @@ function KanjiListInner() {
   return (
     <>
       <div className="space-y-6">
-        <div className="flex flex-col gap-4">
-          <div className="flex items-baseline gap-2 flex-wrap">
-            <h1 className="text-3xl font-bold">Kanji</h1>
-            <p className="text-muted-foreground text-sm">
-              {filtered.length} of {kanjiList.length} kanji · {datasetMeta.description}
-            </p>
+        {/* Subtle filters-active hint, only shown when filters narrow the view */}
+        {isAnyActive && (
+          <div className="flex items-center gap-2 text-xs text-muted-foreground">
+            <span>Filters active · {filtered.length} of {kanjiList.length}</span>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={resetFilters}
+              className="h-6 px-2 text-xs"
+            >
+              Reset
+            </Button>
           </div>
-
-          {/* If user has narrowed via settings filters, surface a subtle hint
-              with a one-click reset so they don't get confused why N < total. */}
-          {isAnyActive && (
-            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-              <span>Filters active.</span>
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={resetFilters}
-                className="h-6 px-2 text-xs"
-              >
-                Reset
-              </Button>
-            </div>
-          )}
-        </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <Card>
-            <CardContent className="pt-6">
-              <div className="text-2xl font-bold">{kanjiList.length}</div>
-              <p className="text-xs text-muted-foreground">Total kanji</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="pt-6">
-              <div className="text-2xl font-bold">{totalVocab}</div>
-              <p className="text-xs text-muted-foreground">Vocabulary rows</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="pt-6">
-              <div className="text-2xl font-bold">{totalSentences}</div>
-              <p className="text-xs text-muted-foreground">Example sentences</p>
-            </CardContent>
-          </Card>
-        </div>
+        )}
 
         {/* Reading palette legend */}
         <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
@@ -254,14 +220,6 @@ function KanjiListInner() {
           </div>
         )}
 
-        <Card>
-          <CardContent className="pt-6">
-            <p className="text-xs text-muted-foreground text-center">
-              Source: KANJI_REFERENCE.md — compiled from 36 teacher lessons (Feb 17 – Apr 24,
-              2026). No KANJIDIC2 merge.
-            </p>
-          </CardContent>
-        </Card>
       </div>
     </>
   );
