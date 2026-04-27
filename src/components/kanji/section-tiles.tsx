@@ -1,18 +1,25 @@
 'use client'
 
 /**
- * Top-of-page nav for the kanji section. Three icon tiles instead of a
- * mixed mess of cards:
- *   - Dashboard : direct link
- *   - Drill     : dropdown of available drills (vocab today, sentence later)
- *   - Reference : dropdown of reference browsers (vocab, sentence)
+ * Kanji hub — 4 large icon tiles.
+ *   - Kanji      : direct link to the listing/grid
+ *   - Drill      : dropdown → Vocab drill / Sentence drill
+ *   - Dashboard  : dropdown → Vocab dashboard / Sentence dashboard
+ *   - Reference  : dropdown → Vocab reference / Sentence reference
  *
- * Each tile uses a big icon + label below; hover shows a description via
- * native title attr. Dropdowns open on click (DropdownMenu).
+ * Sentence-side items that don't exist yet are shown as "Coming soon"
+ * disabled rows so the 2-option symmetry is consistent.
  */
 
 import Link from 'next/link'
-import { Eye, BookOpen, Quote, TrendingUp, type LucideIcon } from 'lucide-react'
+import {
+  Eye,
+  BookOpen,
+  Quote,
+  TrendingUp,
+  Languages,
+  type LucideIcon,
+} from 'lucide-react'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -31,13 +38,29 @@ interface SubItem {
 const DRILL_ITEMS: SubItem[] = [
   {
     href: '/study/kanji/vocab-reveal',
-    label: 'Vocab reading drill',
+    label: 'Vocab drill',
     icon: BookOpen,
     hint: 'SRS · see kanji, recall the reading',
   },
   {
     href: '#',
     label: 'Sentence drill',
+    icon: Quote,
+    hint: 'Coming soon',
+    disabled: true,
+  },
+]
+
+const DASHBOARD_ITEMS: SubItem[] = [
+  {
+    href: '/study/kanji/progress',
+    label: 'Vocab dashboard',
+    icon: BookOpen,
+    hint: 'Streak · today · vocab coverage',
+  },
+  {
+    href: '#',
+    label: 'Sentence dashboard',
     icon: Quote,
     hint: 'Coming soon',
     disabled: true,
@@ -59,26 +82,27 @@ const REFERENCE_ITEMS: SubItem[] = [
   },
 ]
 
-export function KanjiSectionTiles() {
+export function KanjiHubTiles() {
   return (
-    <div className="flex items-stretch gap-3 sm:gap-4">
-      {/* Direct-link tile: Dashboard */}
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-3xl mx-auto">
       <TileLink
-        href="/study/kanji/progress"
-        icon={TrendingUp}
-        label="Dashboard"
-        title="Progress dashboard — streak, today, coverage, drill stats"
+        href="/study/kanji/list"
+        icon={Languages}
+        label="Kanji"
+        title="Browse all kanji — switch between Kanji (86) and Extended (117)"
       />
-
-      {/* Dropdown tile: Drill */}
       <TileMenu
         icon={Eye}
         label="Drill"
         title="Active recall sessions (SRS)"
         items={DRILL_ITEMS}
       />
-
-      {/* Dropdown tile: Reference */}
+      <TileMenu
+        icon={TrendingUp}
+        label="Dashboard"
+        title="Progress overview · streaks · coverage"
+        items={DASHBOARD_ITEMS}
+      />
       <TileMenu
         icon={BookOpen}
         label="Reference"
@@ -101,14 +125,18 @@ function TileShell({
   title: string
 }) {
   return (
-    <div className="flex flex-col items-center gap-1.5 group" title={title}>
+    <div className="flex flex-col items-center gap-2 group" title={title}>
       {children}
-      <span className="text-sm font-medium text-muted-foreground group-hover:text-foreground transition-colors">
+      <span className="text-sm sm:text-base font-medium text-muted-foreground group-hover:text-foreground transition-colors">
         {label}
       </span>
     </div>
   )
 }
+
+const TILE_BUTTON =
+  'h-24 w-24 sm:h-28 sm:w-28 rounded-2xl border-2 bg-gradient-to-br from-primary/10 to-transparent text-primary flex items-center justify-center hover:border-primary hover:from-primary/20 transition-all hover:shadow-lg cursor-pointer'
+const TILE_ICON = 'h-10 w-10 sm:h-12 sm:w-12'
 
 function TileLink({
   href,
@@ -123,12 +151,8 @@ function TileLink({
 }) {
   return (
     <TileShell label={label} title={title}>
-      <Link
-        href={href}
-        className="h-20 w-20 sm:h-24 sm:w-24 rounded-2xl border-2 bg-gradient-to-br from-primary/10 to-transparent text-primary flex items-center justify-center hover:border-primary hover:from-primary/20 transition-all hover:shadow-lg cursor-pointer"
-        aria-label={label}
-      >
-        <Icon className="h-9 w-9 sm:h-10 sm:w-10" />
+      <Link href={href} className={TILE_BUTTON} aria-label={label}>
+        <Icon className={TILE_ICON} />
       </Link>
     </TileShell>
   )
@@ -149,15 +173,11 @@ function TileMenu({
     <TileShell label={label} title={title}>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <button
-            type="button"
-            className="h-20 w-20 sm:h-24 sm:w-24 rounded-2xl border-2 bg-gradient-to-br from-primary/10 to-transparent text-primary flex items-center justify-center hover:border-primary hover:from-primary/20 transition-all hover:shadow-lg cursor-pointer"
-            aria-label={label}
-          >
-            <Icon className="h-9 w-9 sm:h-10 sm:w-10" />
+          <button type="button" className={TILE_BUTTON} aria-label={label}>
+            <Icon className={TILE_ICON} />
           </button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="start" className="w-64">
+        <DropdownMenuContent align="center" className="w-64">
           {items.map((item) => {
             const ItemIcon = item.icon
             const inner = (
@@ -171,7 +191,11 @@ function TileMenu({
             )
             if (item.disabled) {
               return (
-                <DropdownMenuItem key={item.label} disabled className="cursor-not-allowed opacity-60 py-2.5">
+                <DropdownMenuItem
+                  key={item.label}
+                  disabled
+                  className="cursor-not-allowed opacity-60 py-2.5"
+                >
                   {inner}
                 </DropdownMenuItem>
               )
