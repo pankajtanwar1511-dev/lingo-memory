@@ -33,6 +33,12 @@ export interface UserSettings {
   syncFrequency: 'realtime' | 'hourly' | 'daily'
   syncOnMobileData: boolean
 
+  // Kanji vocab-reveal SRS tuning (managed from the Kanji hub settings dialog)
+  /** Idle days before a card drops one SRS level on next session start. */
+  srsDecayDays: number
+  /** Built-queue length = pool × this multiplier (lower = tighter loops). */
+  srsQueueMultiplier: number
+
   // Metadata
   createdAt: Date
   updatedAt: Date
@@ -141,6 +147,10 @@ export const DEFAULT_SETTINGS: Omit<UserSettings, 'createdAt' | 'updatedAt'> = {
   autoSync: true,
   syncFrequency: 'realtime',
   syncOnMobileData: false,
+
+  // Kanji vocab-reveal SRS tuning
+  srsDecayDays: 7,
+  srsQueueMultiplier: 1.5,
 }
 
 // Setting categories for UI organization

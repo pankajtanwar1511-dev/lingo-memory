@@ -133,6 +133,8 @@ export class SettingsService {
         autoSync: setting.dataSync,
         syncFrequency: 'realtime',
         syncOnMobileData: false,
+        srsDecayDays: (setting as any).srsDecayDays ?? 7,
+        srsQueueMultiplier: (setting as any).srsQueueMultiplier ?? 1.5,
         createdAt: setting.createdAt,
         updatedAt: setting.updatedAt,
       }
@@ -222,6 +224,8 @@ export class SettingsService {
       autoSync: data.autoSync ?? true,
       syncFrequency: data.syncFrequency || 'realtime',
       syncOnMobileData: data.syncOnMobileData ?? false,
+      srsDecayDays: typeof data.srsDecayDays === 'number' ? data.srsDecayDays : 7,
+      srsQueueMultiplier: typeof data.srsQueueMultiplier === 'number' ? data.srsQueueMultiplier : 1.5,
       createdAt: typeof data.createdAt === 'number' ? new Date(data.createdAt) : new Date(),
       updatedAt: typeof data.updatedAt === 'number' ? new Date(data.updatedAt) : new Date(),
     }

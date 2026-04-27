@@ -10,15 +10,23 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
-import { BookOpenText } from 'lucide-react';
+import { ArrowLeft, BookOpenText, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Select } from '@/components/ui/select';
+import { Header } from '@/components/layout/header';
 import { CardProgress, ExtendedKanji } from '@/types/extended-kanji';
 import { READING_STYLES } from '@/lib/extended-kanji/readings';
 import { useAuth } from '@/contexts/auth-context';
 import { loadProgress } from '@/services/cloud-progress.service';
 import { useKanjiDataset } from '@/hooks/use-kanji-dataset';
-import { useKanjiListFilters } from '@/hooks/use-kanji-list-filters';
+import {
+  useKanjiListFilters,
+  type ListSortOption,
+  type ListStatusFilter,
+} from '@/hooks/use-kanji-list-filters';
+import { KanjiContextualSwitch } from '@/components/kanji/contextual-switch';
 
 const PROGRESS_KEY = 'extended-kanji-practice-progress';
 
@@ -38,7 +46,16 @@ function KanjiListInner() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [progress, setProgress] = useState<Record<string, CardProgress>>({});
-  const { search, sortBy, statusFilter, isAnyActive, reset: resetFilters } = useKanjiListFilters();
+  const {
+    search,
+    setSearch,
+    sortBy,
+    setSortBy,
+    statusFilter,
+    setStatusFilter,
+    isAnyActive,
+    reset: resetFilters,
+  } = useKanjiListFilters();
 
   useEffect(() => {
     (async () => {
@@ -102,41 +119,84 @@ function KanjiListInner() {
 
   if (loading) {
     return (
-      <div className="container max-w-7xl mx-auto px-4 py-8">
-        <div className="flex items-center justify-center min-h-[60vh]">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary" />
+      <>
+        <Header />
+        <div className="container max-w-7xl mx-auto px-4 py-6">
+          <SubPageHeader />
+          <div className="flex items-center justify-center min-h-[40vh]">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary" />
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 
   if (error) {
     return (
-      <div className="container max-w-3xl mx-auto px-4 py-8">
-        <Card>
-          <CardContent className="pt-6 text-center text-destructive">{error}</CardContent>
-        </Card>
-      </div>
+      <>
+        <Header />
+        <div className="container max-w-3xl mx-auto px-4 py-6">
+          <SubPageHeader />
+          <Card className="mt-4">
+            <CardContent className="pt-6 text-center text-destructive">{error}</CardContent>
+          </Card>
+        </div>
+      </>
     );
   }
 
   return (
     <>
-      <div className="space-y-6">
-        {/* Subtle filters-active hint, only shown when filters narrow the view */}
-        {isAnyActive && (
-          <div className="flex items-center gap-2 text-xs text-muted-foreground">
-            <span>Filters active · {filtered.length} of {kanjiList.length}</span>
+      <Header />
+      <div className="container max-w-7xl mx-auto px-4 py-6 space-y-6">
+        <SubPageHeader />
+
+        {/* Inline filters — listing view controls live with the listing,
+            not in the global Kanji settings dialog. */}
+        <div className="flex flex-wrap items-center gap-2">
+          <div className="relative flex-1 min-w-[200px]">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <Input
+              type="text"
+              placeholder="Search kanji, reading, meaning, vocab…"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="pl-10 h-9"
+            />
+          </div>
+          <Select
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value as ListSortOption)}
+            className="h-9 w-auto"
+          >
+            <option value="default">Teacher order</option>
+            <option value="kanji">Kanji (a→z)</option>
+            <option value="vocab">Most vocab</option>
+          </Select>
+          <div className="flex items-center gap-1">
+            {(['all', 'untouched', 'viewed'] as ListStatusFilter[]).map((id) => (
+              <Button
+                key={id}
+                size="sm"
+                variant={statusFilter === id ? 'default' : 'outline'}
+                onClick={() => setStatusFilter(id)}
+                className="h-9 text-xs"
+              >
+                {id === 'all' ? 'All' : id === 'untouched' ? 'Not viewed' : 'Viewed'}
+              </Button>
+            ))}
+          </div>
+          {isAnyActive && (
             <Button
               variant="ghost"
               size="sm"
               onClick={resetFilters}
-              className="h-6 px-2 text-xs"
+              className="h-9 text-xs text-muted-foreground"
             >
-              Reset
+              Reset · {filtered.length}/{kanjiList.length}
             </Button>
-          </div>
-        )}
+          )}
+        </div>
 
         {/* Reading palette legend */}
         <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
@@ -222,6 +282,23 @@ function KanjiListInner() {
 
       </div>
     </>
+  );
+}
+
+/** Reusable sub-page header bar — Hub link, contextual switch, gear. */
+function SubPageHeader() {
+  return (
+    <div className="flex items-center justify-between gap-2 flex-wrap">
+      <Link href="/study/kanji">
+        <Button variant="ghost" size="sm" className="gap-1 -ml-2">
+          <ArrowLeft className="h-4 w-4" />
+          Hub
+        </Button>
+      </Link>
+      <div className="flex items-center gap-2">
+        <KanjiContextualSwitch />
+      </div>
+    </div>
   );
 }
 

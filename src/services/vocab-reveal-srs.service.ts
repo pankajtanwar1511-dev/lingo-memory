@@ -15,8 +15,8 @@
  *   - load(uid)       — fetches local + cloud, merges by `lastSeen`, returns SrsState.
  *   - rate(state, key, knew) — pure: returns mutated state for one rating.
  *   - persistLocal(state)    — synchronous localStorage write.
- *   - scheduleFlush(uid, state) — debounced cloud write, also armed on beforeunload.
- *   - flushNow(uid, state)   — immediate cloud write.
+ *   - scheduleFlush(uid, state) — fire-and-forget cloud write (no debounce).
+ *   - flushNow(uid, state)   — awaited cloud write (use on unmount).
  */
 
 import { ref, get, update, serverTimestamp } from 'firebase/database';
@@ -149,12 +149,17 @@ export function rate(state: SrsState, key: CardKey, knew: boolean): SrsState {
 // ----- Time-decay ---------------------------------------------------------
 
 /**
- * Demote cards that have been idle for SRS.DECAY_DAYS+ days, one level per
- * full decay window. Pure function — returns a new state.
+ * Demote cards that have been idle for `decayDays`+ days, one level per full
+ * decay window. Pure function — returns a new state. Pass the user's preferred
+ * window (settings.srsDecayDays); falls back to SRS.DECAY_DAYS otherwise.
  */
-export function applyDecay(state: SrsState, now: number = Date.now()): SrsState {
+export function applyDecay(
+  state: SrsState,
+  now: number = Date.now(),
+  decayDays: number = SRS.DECAY_DAYS,
+): SrsState {
   const out: SrsState = {};
-  const windowMs = SRS.DECAY_DAYS * 86_400_000;
+  const windowMs = Math.max(1, decayDays) * 86_400_000;
   for (const k in state) {
     const c = state[k];
     if (c.level === 0 || c.lastSeen === 0) {
@@ -172,56 +177,27 @@ export function applyDecay(state: SrsState, now: number = Date.now()): SrsState 
   return out;
 }
 
-// ----- Batched cloud flush ------------------------------------------------
-
-let flushTimer: ReturnType<typeof setTimeout> | null = null;
-let beforeUnloadArmed = false;
-let pendingState: SrsState | null = null;
-let pendingUid: string | null = null;
+// ----- Cloud sync ---------------------------------------------------------
 
 /**
- * Schedule a cloud flush. Coalesces multiple calls within FLUSH_INTERVAL_MS
- * into a single Firestore write, and arms a beforeunload handler so we never
- * lose the last batch when the user navigates away.
+ * Fire-and-forget cloud write. Called on every rating — local write is
+ * synchronous (already happened upstream), so this just ships the latest
+ * state to RTDB without blocking the UI.
+ *
+ * No debounce: ratings are infrequent (~1 per 1-3 sec at peak), each write
+ * is a tiny JSON merge, and immediate sync keeps cross-device behavior live.
  */
 export function scheduleFlush(uid: string | null, state: SrsState): void {
-  // Always update the pending snapshot so the eventual flush reflects the
-  // latest state, even if many ratings happen during the timer window.
-  pendingState = state;
-  pendingUid = uid;
-
   if (typeof window === 'undefined') return;
   if (!canUseCloud(uid)) return;
-
-  if (!beforeUnloadArmed) {
-    window.addEventListener('beforeunload', onBeforeUnload);
-    beforeUnloadArmed = true;
-  }
-
-  if (flushTimer) return; // already pending
-  flushTimer = setTimeout(() => {
-    flushTimer = null;
-    if (pendingUid && pendingState) void writeCloud(pendingUid, pendingState);
-  }, SRS.FLUSH_INTERVAL_MS);
+  void writeCloud(uid, state);
 }
 
-/** Force an immediate cloud write of the latest state. */
+/** Same as scheduleFlush — kept as a separate name so callers that want to
+ * await completion (e.g. on unmount) read clearly. */
 export async function flushNow(uid: string | null, state: SrsState): Promise<void> {
   if (!canUseCloud(uid)) return;
-  if (flushTimer) {
-    clearTimeout(flushTimer);
-    flushTimer = null;
-  }
-  pendingState = state;
-  pendingUid = uid;
   await writeCloud(uid, state);
-}
-
-function onBeforeUnload() {
-  if (!canUseCloud(pendingUid) || !pendingState) return;
-  // Best-effort write. setDoc returns a Promise that may not resolve before
-  // unload, but Firestore's offline cache catches it on next session start.
-  void writeCloud(pendingUid, pendingState);
 }
 
 // ----- Helpers ------------------------------------------------------------

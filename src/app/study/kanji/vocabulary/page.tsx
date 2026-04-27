@@ -11,12 +11,14 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, BookOpen, Eye, Search } from 'lucide-react';
+import { ArrowLeft, BookOpen, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Select } from '@/components/ui/select';
+import { Header } from '@/components/layout/header';
+import { KanjiContextualSwitch } from '@/components/kanji/contextual-switch';
 import { ExtendedKanji, MergedVocabRow } from '@/types/extended-kanji';
 import {
   READING_STYLES,
@@ -117,31 +119,23 @@ export default function ExtendedKanjiVocabularyPage() {
 
   if (loading) {
     return (
-      <div className="container max-w-5xl mx-auto px-4 py-8 flex items-center justify-center min-h-[60vh]">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary" />
-      </div>
+      <>
+        <Header />
+        <div className="container max-w-5xl mx-auto px-4 py-6">
+          <SubPageHeader />
+          <div className="flex items-center justify-center min-h-[40vh]">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary" />
+          </div>
+        </div>
+      </>
     );
   }
 
   return (
-    <div className="container max-w-5xl mx-auto px-4 py-8 space-y-6">
-      <div className="flex items-center justify-between">
-        <Link href="/study/kanji">
-          <Button variant="ghost" className="gap-2">
-            <ArrowLeft className="h-4 w-4" />
-            Back
-          </Button>
-        </Link>
-        <div className="flex items-center gap-2">
-          <Link href="/study/kanji/vocab-reveal">
-            <Button variant="default" className="gap-2">
-              <Eye className="h-4 w-4" />
-              Reveal drill
-            </Button>
-          </Link>
-          <Badge variant="secondary">Master vocabulary</Badge>
-        </div>
-      </div>
+    <>
+      <Header />
+      <div className="container max-w-5xl mx-auto px-4 py-6 space-y-6">
+        <SubPageHeader />
 
       <div>
         <h1 className="text-3xl font-bold flex items-center gap-2">
@@ -438,6 +432,23 @@ export default function ExtendedKanjiVocabularyPage() {
           </div>
         </CardContent>
       </Card>
+      </div>
+    </>
+  );
+}
+
+function SubPageHeader() {
+  return (
+    <div className="flex items-center justify-between gap-2 flex-wrap">
+      <Link href="/study/kanji">
+        <Button variant="ghost" size="sm" className="gap-1 -ml-2">
+          <ArrowLeft className="h-4 w-4" />
+          Hub
+        </Button>
+      </Link>
+      <div className="flex items-center gap-2">
+        <KanjiContextualSwitch />
+      </div>
     </div>
   );
 }

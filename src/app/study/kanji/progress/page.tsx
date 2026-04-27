@@ -39,6 +39,9 @@ import { useAuth } from '@/contexts/auth-context'
 import { loadProgress } from '@/services/cloud-progress.service'
 import { useSettings } from '@/contexts/settings-context'
 import { useKanjiDataset } from '@/hooks/use-kanji-dataset'
+import { Header } from '@/components/layout/header'
+import { KanjiContextualSwitch } from '@/components/kanji/contextual-switch'
+import { ArrowLeft } from 'lucide-react'
 import {
   getActivityLastNDays,
   getStreak,
@@ -172,18 +175,36 @@ function KanjiProgressInner() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-[40vh]">
-        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-primary" />
-      </div>
+      <>
+        <Header />
+        <div className="container max-w-4xl mx-auto px-4 py-6">
+          <SubPageHeader />
+          <div className="flex items-center justify-center min-h-[40vh]">
+            <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-primary" />
+          </div>
+        </div>
+      </>
     )
   }
 
   if (error) {
-    return <p className="text-destructive">{error}</p>
+    return (
+      <>
+        <Header />
+        <div className="container max-w-4xl mx-auto px-4 py-6">
+          <SubPageHeader />
+          <p className="text-destructive mt-4">{error}</p>
+        </div>
+      </>
+    )
   }
 
   return (
-    <div className="space-y-6">
+    <>
+      <Header />
+      <div className="container max-w-4xl mx-auto px-4 py-6 space-y-6">
+        <SubPageHeader />
+
         {/* Streak + today's count strip */}
         <div className="flex items-center justify-end gap-2">
           {streak > 0 && (
@@ -453,6 +474,23 @@ function KanjiProgressInner() {
             </CardContent>
           </Card>
         )}
+      </div>
+    </>
+  )
+}
+
+function SubPageHeader() {
+  return (
+    <div className="flex items-center justify-between gap-2 flex-wrap">
+      <Link href="/study/kanji">
+        <Button variant="ghost" size="sm" className="gap-1 -ml-2">
+          <ArrowLeft className="h-4 w-4" />
+          Hub
+        </Button>
+      </Link>
+      <div className="flex items-center gap-2">
+        <KanjiContextualSwitch />
+      </div>
     </div>
   )
 }

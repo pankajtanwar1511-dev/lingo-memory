@@ -25,16 +25,16 @@ import {
   ChevronDown,
   ChevronRight,
   Eye,
-  EyeOff,
   Layers,
   Search,
-  X,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Select } from '@/components/ui/select';
+import { Header } from '@/components/layout/header';
+import { KanjiContextualSwitch } from '@/components/kanji/contextual-switch';
 import {
   ExtendedKanji,
   ExtendedKanjiSentence,
@@ -301,9 +301,15 @@ export default function SentencesPage() {
 
   if (loading) {
     return (
-      <div className="container max-w-4xl mx-auto px-4 py-8 flex items-center justify-center min-h-[60vh]">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary" />
-      </div>
+      <>
+        <Header />
+        <div className="container max-w-4xl mx-auto px-4 py-6">
+          <SubPageHeader />
+          <div className="flex items-center justify-center min-h-[40vh]">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary" />
+          </div>
+        </div>
+      </>
     );
   }
 
@@ -312,17 +318,11 @@ export default function SentencesPage() {
   // ---------------------------------------------------------------------------
   const header = (
     <div className="space-y-4">
-      <div className="flex items-center justify-between gap-3">
-        <Link href="/study/kanji">
-          <Button variant="ghost" className="gap-2">
-            <ArrowLeft className="h-4 w-4" />
-            Back
-          </Button>
-        </Link>
+      <SubPageHeader rightSlot={
         <Badge variant="secondary" className="text-xs">
-          {filtered.length} of {unified.length} sentences
+          {filtered.length} of {unified.length}
         </Badge>
-      </div>
+      } />
 
       {/* Mode segmented control */}
       <div className="inline-flex p-1 rounded-lg bg-muted/60 border border-border/40 mx-auto">
@@ -397,6 +397,7 @@ export default function SentencesPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <Header />
       {/* Sticky header bar with mode switcher + filters; calmer surface */}
       <header className="sticky top-0 z-30 backdrop-blur-md bg-background/80 border-b border-border/30">
         <div className="container max-w-3xl mx-auto px-4 py-4 space-y-4 flex flex-col items-center">
@@ -445,6 +446,23 @@ export default function SentencesPage() {
           />
         )}
       </main>
+    </div>
+  );
+}
+
+function SubPageHeader({ rightSlot }: { rightSlot?: React.ReactNode }) {
+  return (
+    <div className="w-full flex items-center justify-between gap-2 flex-wrap">
+      <Link href="/study/kanji">
+        <Button variant="ghost" size="sm" className="gap-1 -ml-2">
+          <ArrowLeft className="h-4 w-4" />
+          Hub
+        </Button>
+      </Link>
+      <div className="flex items-center gap-2">
+        {rightSlot}
+        <KanjiContextualSwitch />
+      </div>
     </div>
   );
 }
