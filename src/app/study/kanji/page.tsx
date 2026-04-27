@@ -34,7 +34,7 @@ import { KanjiSettingsButton } from '@/components/kanji/settings-dialog';
 import { KanjiDatasetSwitch } from '@/components/kanji/dataset-switch';
 type StatusFilter = 'all' | 'untouched' | 'viewed';
 
-type SortOption = 'default' | 'lesson' | 'kanji' | 'vocab';
+type SortOption = 'default' | 'kanji' | 'vocab';
 
 const PROGRESS_KEY = 'extended-kanji-practice-progress';
 
@@ -81,7 +81,6 @@ function KanjiListInner() {
   const [error, setError] = useState<string | null>(null);
   const [search, setSearch] = useState('');
   const [sortBy, setSortBy] = useState<SortOption>('default');
-  const [lessonFilter, setLessonFilter] = useState<string>('all');
   const [progress, setProgress] = useState<Record<string, CardProgress>>({});
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all');
 
@@ -125,10 +124,6 @@ function KanjiListInner() {
           ),
       );
     }
-    if (lessonFilter !== 'all') {
-      const n = parseInt(lessonFilter, 10);
-      list = list.filter((k) => k.lessonNumber === n);
-    }
     if (statusFilter === 'untouched') {
       list = list.filter((k) => !progress[k.id] || progress[k.id].reviewCount === 0);
     } else if (statusFilter === 'viewed') {
@@ -136,9 +131,6 @@ function KanjiListInner() {
     }
     const sorted = [...list];
     switch (sortBy) {
-      case 'lesson':
-        sorted.sort((a, b) => (a.lessonNumber ?? 99) - (b.lessonNumber ?? 99));
-        break;
       case 'kanji':
         sorted.sort((a, b) => a.kanji.localeCompare(b.kanji, 'ja'));
         break;
@@ -149,13 +141,7 @@ function KanjiListInner() {
         sorted.sort((a, b) => a.orderInReference - b.orderInReference);
     }
     return sorted;
-  }, [kanjiList, search, sortBy, lessonFilter, statusFilter, progress]);
-
-  const uniqueLessons = useMemo(() => {
-    const set = new Set<number>();
-    kanjiList.forEach((k) => k.lessonNumber && set.add(k.lessonNumber));
-    return Array.from(set).sort((a, b) => a - b);
-  }, [kanjiList]);
+  }, [kanjiList, search, sortBy, statusFilter, progress]);
 
   const totalVocab = kanjiList.reduce((sum, k) => sum + k.vocabulary.length, 0);
   const totalSentences = kanjiList.reduce((sum, k) => sum + k.exampleSentences.length, 0);
@@ -225,19 +211,8 @@ function KanjiListInner() {
                 className="flex-1 sm:flex-initial sm:w-[170px] min-w-[140px]"
               >
                 <option value="default">Teacher order</option>
-                <option value="lesson">Lesson number</option>
                 <option value="kanji">Kanji (a→z)</option>
                 <option value="vocab">Most vocab</option>
-              </Select>
-              <Select
-                value={lessonFilter}
-                onChange={(e) => setLessonFilter(e.target.value)}
-                className="flex-1 sm:flex-initial sm:w-[140px] min-w-[120px]"
-              >
-                <option value="all">All lessons</option>
-                {uniqueLessons.map((n) => (
-                  <option key={n} value={n}>Lesson {n}</option>
-                ))}
               </Select>
             </div>
           </div>
@@ -314,12 +289,6 @@ function KanjiListInner() {
               <p className="text-xs text-muted-foreground">Example sentences</p>
             </CardContent>
           </Card>
-          <Card>
-            <CardContent className="pt-6">
-              <div className="text-2xl font-bold">{uniqueLessons.length}</div>
-              <p className="text-xs text-muted-foreground">Lessons</p>
-            </CardContent>
-          </Card>
         </div>
 
         {/* Reading palette legend */}
@@ -348,7 +317,7 @@ function KanjiListInner() {
                 variant="outline"
                 onClick={() => {
                   setSearch('');
-                  setLessonFilter('all');
+                  setStatusFilter('all');
                 }}
               >
                 Clear filters
@@ -397,15 +366,10 @@ function KanjiListInner() {
                       <div className="text-xs text-muted-foreground line-clamp-1">
                         {k.meaning}
                       </div>
-                      <div className="flex items-center justify-between text-xs text-muted-foreground pt-2 border-t">
+                      <div className="flex items-center justify-center text-xs text-muted-foreground pt-2 border-t">
                         <span className="flex items-center gap-1">
-                          <BookOpenText className="h-3 w-3" /> {k.vocabulary.length}
+                          <BookOpenText className="h-3 w-3" /> {k.vocabulary.length} vocab
                         </span>
-                        {k.lessonNumber ? (
-                          <Badge variant="outline">L{k.lessonNumber}</Badge>
-                        ) : (
-                          <span className="text-[10px]">—</span>
-                        )}
                       </div>
                     </CardContent>
                   </Card>

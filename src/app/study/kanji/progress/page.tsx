@@ -16,7 +16,6 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 import {
   ArrowLeft,
   Flame,
@@ -30,8 +29,6 @@ import {
   CheckCircle2,
   Circle,
   Eye,
-  ChevronDown,
-  ChevronUp,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -55,7 +52,6 @@ import {
   getVocabDistribution,
   getVocabKpis,
   getKanjiCoverage,
-  getLessonCoverage,
 } from '@/lib/extended-kanji/stats'
 
 const PROGRESS_KEY = 'extended-kanji-practice-progress'
@@ -69,7 +65,6 @@ export default function KanjiProgressPage() {
 
 function KanjiProgressInner() {
   const { user } = useAuth()
-  const router = useRouter()
   const { settings } = useSettings()
   const { meta: datasetMeta } = useKanjiDataset()
   const dailyGoal = settings?.dailyGoal ?? 20
@@ -80,7 +75,6 @@ function KanjiProgressInner() {
   const [vocabSrs, setVocabSrs] = useState<SrsState>({})
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [showAllLessons, setShowAllLessons] = useState(false)
 
   useEffect(() => {
     let cancelled = false
@@ -152,11 +146,6 @@ function KanjiProgressInner() {
   const coveragePct = coverage.total > 0 ? Math.round((coverage.covered / coverage.total) * 100) : 0
   const partialPct = coverage.total > 0 ? Math.round((coverage.partial / coverage.total) * 100) : 0
   const kanjiActivity = useMemo(() => getActivityLastNDays(progress, 7), [progress])
-  const lessonCoverage = useMemo(
-    () => getLessonCoverage(kanjiList, vocabSrs, progress),
-    [kanjiList, vocabSrs, progress],
-  )
-  const visibleLessons = showAllLessons ? lessonCoverage : lessonCoverage.slice(0, 6)
 
   const goalPct = Math.min(100, Math.round((todayCount / Math.max(1, dailyGoal)) * 100))
 
@@ -476,66 +465,6 @@ function KanjiProgressInner() {
               </div>
             </div>
 
-            {/* Lesson coverage breakdown — covered + partial bars per lesson */}
-            {lessonCoverage.length > 0 && (
-              <div className="pt-3 border-t">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-xs font-medium text-muted-foreground">
-                    Lesson coverage · {lessonCoverage.length} lessons
-                  </span>
-                  {lessonCoverage.length > 6 && (
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      className="h-6 text-xs gap-1"
-                      onClick={() => setShowAllLessons((v) => !v)}
-                    >
-                      {showAllLessons ? (
-                        <>
-                          Less <ChevronUp className="h-3 w-3" />
-                        </>
-                      ) : (
-                        <>
-                          All {lessonCoverage.length} <ChevronDown className="h-3 w-3" />
-                        </>
-                      )}
-                    </Button>
-                  )}
-                </div>
-                <div className={showAllLessons ? 'max-h-72 overflow-y-auto pr-1 space-y-1.5' : 'space-y-1.5'}>
-                  {visibleLessons.map((s) => {
-                    const coveredPct = s.total > 0 ? (s.covered / s.total) * 100 : 0
-                    const partialPctL = s.total > 0 ? (s.partial / s.total) * 100 : 0
-                    return (
-                      <div key={s.lesson} className="flex items-center gap-2">
-                        <div className="w-7 shrink-0 text-[11px] tabular-nums text-muted-foreground">
-                          L{s.lesson}
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className="flex h-2 rounded-full bg-muted overflow-hidden">
-                            <div className="h-full bg-emerald-500 transition-all" style={{ width: `${coveredPct}%` }} />
-                            <div className="h-full bg-sky-500/70 transition-all" style={{ width: `${partialPctL}%` }} />
-                          </div>
-                        </div>
-                        <div className="w-12 shrink-0 text-right text-[10px] text-muted-foreground tabular-nums">
-                          {s.covered}/{s.total}
-                        </div>
-                        <Button
-                          size="sm"
-                          variant="ghost"
-                          className="shrink-0 h-6 px-2 text-[10px]"
-                          onClick={() =>
-                            router.push(`/study/kanji-practice?sort=teacher&count=${Math.min(10, s.total)}&lesson=${s.lesson}` as any)
-                          }
-                        >
-                          Open
-                        </Button>
-                      </div>
-                    )
-                  })}
-                </div>
-              </div>
-            )}
           </CardContent>
         </Card>
 
