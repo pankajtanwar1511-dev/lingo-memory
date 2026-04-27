@@ -50,7 +50,7 @@ const SECTION_LINKS: {
   { href: '/study/extended-kanji/sentences', label: 'All sentences', icon: Quote, hint: '173 sentences (main + review + topics)' },
   { href: '/study/extended-kanji/answer-keys', label: 'Answer keys', icon: ListChecks, hint: 'Textbook practice answers' },
   { href: '/study/extended-kanji/confusables', label: 'Study aids', icon: GitCompareArrows, hint: 'Confusables, special readings' },
-  { href: '/study/extended-kanji/prerequisite', label: 'Prerequisite kanji', icon: Layers, hint: '124 kanji from earlier lessons' },
+  { href: '/study/extended-kanji/prerequisite', label: 'Prerequisite kanji', icon: Layers, hint: '117 kanji · cards + drawing' },
 ];
 
 export default function ExtendedKanjiListPage() {
