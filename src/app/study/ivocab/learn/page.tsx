@@ -183,7 +183,7 @@ export default function IVocabLearnPage() {
               Hub
             </Button>
           </Link>
-          <span className="text-xs text-muted-foreground tabular-nums px-1">
+          <span className="text-sm sm:text-xs text-muted-foreground tabular-nums px-1">
             {index + 1} / {pages.length}
           </span>
         </div>
@@ -228,7 +228,7 @@ export default function IVocabLearnPage() {
   // ── Fullscreen ──
   return (
     <div
-      className="fixed inset-0 z-50 bg-background select-none overflow-hidden touch-none"
+      className="fixed inset-0 z-50 bg-background select-none overflow-hidden touch-pinch-zoom"
       onPointerDown={onPointerDown}
       onClick={onCardClick}
       onContextMenu={(e) => e.preventDefault()}

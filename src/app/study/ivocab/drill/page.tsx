@@ -816,17 +816,17 @@ export default function RpcDrillPage() {
             End session
           </Button>
           <div className="flex items-center gap-1.5">
-            <span className="text-xs text-muted-foreground tabular-nums px-1">
+            <span className="text-sm sm:text-xs text-muted-foreground tabular-nums px-1">
               {index + 1} / {order.length}
             </span>
             <span
-              className="text-[10px] text-muted-foreground/70 tabular-nums px-1 hidden sm:inline"
+              className="text-xs sm:text-[10px] text-muted-foreground/70 tabular-nums px-1 hidden sm:inline"
               title="Cards still at level 0 or 1 · cards at level 4 (mastered)"
             >
               {srsStats.due}↻ · {srsStats.mastered}✓
             </span>
             <span
-              className="text-[10px] text-muted-foreground/60 px-1 hidden md:inline"
+              className="text-xs sm:text-[10px] text-muted-foreground/60 px-1 hidden md:inline"
               title="Locked options for this session"
             >
               {cfg.order} · {cfg.levelOp}L{cfg.levelValue}
@@ -835,7 +835,7 @@ export default function RpcDrillPage() {
         </div>
 
         <Card
-          className="relative border-border/60 select-none cursor-grab active:cursor-grabbing overflow-hidden flex-1 flex flex-col touch-none rounded-3xl shadow-lg"
+          className="relative border-border/60 select-none cursor-grab active:cursor-grabbing overflow-hidden flex-1 flex flex-col touch-pinch-zoom rounded-3xl shadow-lg"
           style={{
             WebkitTouchCallout: 'none',
             WebkitUserSelect: 'none',
@@ -921,7 +921,7 @@ export default function RpcDrillPage() {
   // ── Fullscreen drill ─────────────────────────────────────────────────
   return (
     <div
-      className="fixed inset-0 z-50 bg-background select-none overflow-hidden touch-none"
+      className="fixed inset-0 z-50 bg-background select-none overflow-hidden touch-pinch-zoom"
       style={{
         WebkitTouchCallout: 'none',
         WebkitUserSelect: 'none',
@@ -977,11 +977,11 @@ export default function RpcDrillPage() {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex flex-col items-end leading-tight px-1">
-          <span className="text-xs text-muted-foreground tabular-nums">
+          <span className="text-sm sm:text-xs text-muted-foreground tabular-nums">
             {index + 1} / {order.length}
           </span>
           <span
-            className="text-[10px] text-muted-foreground/70 tabular-nums"
+            className="text-xs sm:text-[10px] text-muted-foreground/70 tabular-nums"
             title="Cards still at level 0 or 1 · cards at level 4 (mastered)"
           >
             {srsStats.due}↻ · {srsStats.mastered}✓

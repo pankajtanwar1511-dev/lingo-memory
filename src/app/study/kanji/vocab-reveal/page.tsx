@@ -828,17 +828,17 @@ export default function VocabRevealPage() {
             End session
           </Button>
           <div className="flex items-center gap-1.5">
-            <span className="text-xs text-muted-foreground tabular-nums px-1">
+            <span className="text-sm sm:text-xs text-muted-foreground tabular-nums px-1">
               {index + 1} / {order.length}
             </span>
             <span
-              className="text-[10px] text-muted-foreground/70 tabular-nums px-1 hidden sm:inline"
+              className="text-xs sm:text-[10px] text-muted-foreground/70 tabular-nums px-1 hidden sm:inline"
               title="Cards still at level 0 or 1 · cards at level 4 (mastered)"
             >
               {srsStats.due}↻ · {srsStats.mastered}✓
             </span>
             <span
-              className="text-[10px] text-muted-foreground/60 px-1 hidden md:inline"
+              className="text-xs sm:text-[10px] text-muted-foreground/60 px-1 hidden md:inline"
               title="Locked options for this session"
             >
               {cfg.order} · {cfg.levelOp}L{cfg.levelValue}

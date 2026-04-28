@@ -38,7 +38,9 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
+  // No maximumScale — let mobile users pinch-zoom the iVocab drill image
+  // (and any other dense content). Accessibility wins outweigh the small
+  // risk of accidental zoom.
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#6B46C1" },
     { media: "(prefers-color-scheme: dark)", color: "#0F172A" },
