@@ -1,11 +1,14 @@
 'use client';
 
 /**
- * Extended Kanji — list page
- * Route: /study/kanji
+ * Kanji — listing grid (one of the four hub spokes).
+ * Route: /study/kanji/list
  *
- * Data source: public/seed-data/extended-kanji/kanji.json (generated from
- * KANJI_REFERENCE.md). Does NOT merge with the /study/kanji dataset.
+ * Renders the active dataset (curated 86 or extended 117) as a card grid
+ * with inline search / sort / status filters. The dataset toggle lives
+ * in the contextual switch in the header; this page reacts to it via
+ * `useKanjiDataset()` and remounts on toggle to flush per-dataset state
+ * (search, scroll, filters).
  */
 
 import { useEffect, useMemo, useState } from 'react';

@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * Extended Kanji — single lesson detail
+ * Kanji — single lesson detail.
  * Route: /study/kanji/lessons/lesson_{N}
  */
 

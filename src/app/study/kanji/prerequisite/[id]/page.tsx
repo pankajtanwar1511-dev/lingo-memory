@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * Extended Kanji — prerequisite kanji detail page
+ * Kanji — prerequisite kanji detail page
  * Route: /study/kanji/prerequisite/[id]
  *
  * Mirrors the main /study/kanji/[id] detail layout but for the 117

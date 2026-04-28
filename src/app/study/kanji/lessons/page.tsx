@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * Extended Kanji — lesson timeline index
+ * Kanji — lesson timeline index.
  * Route: /study/kanji/lessons
  */
 

@@ -1,13 +1,15 @@
 'use client';
 
 /**
- * Extended Kanji — detail page
+ * Kanji — per-kanji detail page.
  * Route: /study/kanji/[id]
  *
- * Renders every field from KANJI_REFERENCE.md for one kanji:
- *   teacher readings, vocabulary table, example sentences, lesson context,
- *   bundled-with cross-links, and all extraSections (counting yen, March dates,
- *   day-of-week tables, verb conjugations, review practice, etc.).
+ * Loads from both datasets (curated + extended) and unions them so deep
+ * links work regardless of which dataset is active. Renders every field
+ * for one kanji: teacher readings, vocabulary table, example sentences,
+ * lesson context, bundled-with cross-links, and all extraSections
+ * (counting yen, March dates, day-of-week tables, verb conjugations,
+ * review practice, etc.).
  */
 
 import { useEffect, useMemo, useState } from 'react';

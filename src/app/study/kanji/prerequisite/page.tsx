@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * Extended Kanji — prerequisite kanji card grid
+ * Kanji — prerequisite kanji card grid.
  * Route: /study/kanji/prerequisite
  *
  * Mirrors the main 86-kanji card grid but for the 117 prerequisite kanji
@@ -134,7 +134,7 @@ export default function ExtendedKanjiPrerequisitePage() {
           <Link href="/study/kanji">
             <Button variant="ghost" className="gap-2">
               <ArrowLeft className="h-4 w-4" />
-              Back to Extended Kanji
+              Back to Kanji hub
             </Button>
           </Link>
           <Badge variant="secondary">PART 6 · 117 kanji</Badge>

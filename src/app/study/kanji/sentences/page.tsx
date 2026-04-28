@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * Extended Kanji — master sentences browser
+ * Kanji — master sentences browser (Reference · Sentence variant).
  * Route: /study/kanji/sentences
  *
  * Three modes:

@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * Extended Kanji — themed vocabulary (PART 2 of KANJI_REFERENCE.md)
+ * Kanji — themed vocabulary (PART 2 of KANJI_REFERENCE.md).
  * Route: /study/kanji/themes
  */
 

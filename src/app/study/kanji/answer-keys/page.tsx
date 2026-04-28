@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * Extended Kanji — textbook answer keys (PART 4 of KANJI_REFERENCE.md)
+ * Kanji — textbook answer keys (PART 4 of KANJI_REFERENCE.md)
  * Route: /study/kanji/answer-keys
  *
  * Each page has an "Attempt" toggle: answers are hidden by default so the

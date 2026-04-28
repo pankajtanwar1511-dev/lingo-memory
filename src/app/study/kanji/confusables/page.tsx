@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * Extended Kanji — study aids (PART 5 of KANJI_REFERENCE.md)
+ * Kanji — study aids (PART 5 of KANJI_REFERENCE.md)
  * Route: /study/kanji/confusables
  *
  * Renders confusable groups, special readings, verb stems, section labels,

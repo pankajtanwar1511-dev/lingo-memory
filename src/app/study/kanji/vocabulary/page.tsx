@@ -1,12 +1,14 @@
 'use client';
 
 /**
- * Extended Kanji — master vocabulary browser
+ * Kanji — master vocabulary browser (Reference spoke).
  * Route: /study/kanji/vocabulary
  *
  * Every vocab row from every PART 1 per-kanji table + every PART 2 themed
  * table, deduplicated by (word, reading). Each row shows which kanji
- * introduced it and which themes it appears under.
+ * introduced it, which themes it appears under, and the user's current
+ * SRS level (L0–L4 chip; "—" for unrated cards). Mirrors the same RTDB
+ * record the drill writes to, so progress is visible both ways.
  */
 
 import { useEffect, useMemo, useState } from 'react';

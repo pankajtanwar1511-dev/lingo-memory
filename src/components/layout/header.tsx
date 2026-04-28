@@ -76,6 +76,14 @@ export function Header() {
           description: "Office vocab, drills & scenarios"
         },
         {
+          name: "iVocab",
+          href: "/study/ivocab",
+          icon: Languages,
+          badge: "761",
+          badgeVariant: "default" as const,
+          description: "Image-card SRS — reveal answers on tap"
+        },
+        {
           name: "Dlingo",
           href: "/dlingo",
           icon: BookMarked,

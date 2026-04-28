@@ -1,19 +1,25 @@
 'use client';
 
 /**
- * Extended Kanji — full-screen vocabulary drill
+ * Kanji — focus-mode vocabulary drill.
  * Route: /study/kanji/vocab-reveal
  *
- * Three icon controls in the toolbar — no settings modal:
- *   • # cards  — pick session length (25 / 50 / 100 / All)
- *   • Shuffle  — toggle random vs teacher order
- *   • Eye      — toggle "always show meaning" vs "hold to reveal"
+ * Two phases: setup → playing. Setup picks four things, locked once you
+ * start: cards (25 / 50 / 100 / All), level filter (≤ / ≥ × 0..4), order
+ * (teacher / shuffle / lowest first), and reveal mode (hold / always).
  *
- * Smart repetition is always on. Pool = the entire vocab corpus. The SRS
- * cycles weak cards more often (weighted by level); ↑/↓ ratings re-tune the
- * upcoming queue in-session.
+ * In-game: tap to browse, swipe to rate. Tap and swipe are separate by
+ * design — casual taps don't change SRS levels. Right-swipe = "knew it"
+ * (↑ level), left-swipe = "didn't" (↓ level), drag-and-release snaps
+ * back. Hold ≥280ms peeks the English meaning while held.
  *
- * Keyboard (silent): →/Space = next · ← = prev · R = reshuffle · Esc = exit
+ * Pool = the entire vocab corpus filtered by the level filter. SRS draw
+ * weights are L0=1.0 → L4=0.2 (L0 cards 5× more likely than L4). In
+ * shuffle mode, ratings retune the queue tail mid-session. Teacher and
+ * lowest-first are deterministic — they don't retune.
+ *
+ * Keyboard (silent): →/Space = next · ← = prev · ↑ = knew · ↓ = didn't ·
+ * Esc = end session · F = toggle fullscreen.
  */
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
@@ -815,7 +821,7 @@ export default function VocabRevealPage() {
   // A tiny Maximize button in the card corner is the only fullscreen affordance.
   if (!fullscreen) {
     return (
-      <div className="px-[10vw] py-[10vh] min-h-[100dvh] flex flex-col gap-4">
+      <div className="px-3 sm:px-4 py-3 sm:py-4 min-h-[100dvh] flex flex-col gap-2 sm:gap-3">
         <div className="flex items-center justify-between">
           <Button variant="ghost" className="gap-2" onClick={endSession}>
             <ArrowLeft className="h-4 w-4" />

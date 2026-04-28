@@ -212,6 +212,7 @@ src/app/study/kanji/
 - **No "session complete" screen.** When you finish slot N/N the index wraps silently to slot 0. Worth adding a celebration card at session end (`promoted X · demoted Y · accuracy Z%`) eventually.
 - **No "graduate / retire" mechanic.** L4 cards stay in the pool with weight 0.2 forever. Some SRS systems remove them; this one doesn't.
 - **No mid-session level changes for teacher/lowest modes.** By design — those modes are predictable. Switch to shuffle if you want the queue to react to your ratings.
+- **Sentence variant only exists on the Reference side.** The contextual switch shows `Vocab | Sentence` on drill, dashboard, and reference, but the Sentence chip is disabled with a "soon" badge on drill and dashboard — only `/sentences` (under Reference) is wired up today.
 - **Listing filters don't persist.** Reload = reset. Considered a feature (filters are transient view state); easy to change if you'd rather they survive.
 - **iOS Safari ITP edge case.** Local cache may evict after 7 idle days; RTDB recovers it on next sign-in.
 
