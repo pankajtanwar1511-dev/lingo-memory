@@ -847,9 +847,10 @@ export default function VocabRevealPage() {
         </div>
 
         <Card
-          className="relative border-border/60 select-none cursor-grab active:cursor-grabbing overflow-hidden flex-1 flex flex-col touch-none rounded-3xl shadow-lg"
+          className="relative border-border/60 select-none cursor-grab active:cursor-grabbing overflow-hidden flex-1 flex flex-col touch-pinch-zoom rounded-3xl shadow-lg"
           style={{
-            // touchAction:'none' (via touch-none) lets the card own pan-x
+            // touch-pinch-zoom: browser handles 2-finger pinch (zoom),
+            // 1-finger gestures fall through to our swipe/tap handlers
             // gestures instead of the browser scrolling the page.
             WebkitTouchCallout: 'none',
             WebkitUserSelect: 'none',
@@ -973,7 +974,7 @@ export default function VocabRevealPage() {
   // Full-screen drill view
   return (
     <div
-      className="fixed inset-0 z-50 bg-background select-none overflow-hidden touch-none"
+      className="fixed inset-0 z-50 bg-background select-none overflow-hidden touch-pinch-zoom"
       style={{
         WebkitTouchCallout: 'none',
         WebkitUserSelect: 'none',
