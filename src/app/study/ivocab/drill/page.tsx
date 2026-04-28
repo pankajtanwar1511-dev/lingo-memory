@@ -891,7 +891,7 @@ export default function RpcDrillPage() {
               `available_height × 720/405`. The padding constants below
               should match the px-/py- on the outer container plus the
               top-bar height — kept in sync with the wrapper above. */}
-          <CardContent className="flex-1 flex items-start justify-center pt-4 px-2 sm:px-4 pb-2 min-h-0">
+          <CardContent className="flex-1 flex items-center justify-center px-2 sm:px-4 py-2 min-h-0">
             <div
               key={`card-${index}`}
               className="relative"

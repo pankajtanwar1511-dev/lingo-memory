@@ -208,7 +208,7 @@ export default function IVocabLearnPage() {
             <Maximize2 className="h-3.5 w-3.5" />
           </button>
 
-          <CardContent className="flex-1 flex items-start justify-center pt-4 px-2 sm:px-4 pb-2 min-h-0">
+          <CardContent className="flex-1 flex items-center justify-center px-2 sm:px-4 py-2 min-h-0">
             <div
               key={`card-${index}`}
               className="relative"
