@@ -67,10 +67,4 @@ scripts/_words_cache.json
 scripts/_kanjidic_cache.json
 .claude/
 
-# RPC drill — rendered PDF pages (regenerable via scripts/render-rpc-pages.mjs)
-# pages.json (the manifest) is committed; the binary images are not.
-/public/seed-data/rpc/page-*.jpg
-/public/seed-data/rpc/page-*.jpeg
-/public/seed-data/rpc/page-*.png
-/public/seed-data/rpc/page-*.webp
 
