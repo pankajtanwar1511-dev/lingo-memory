@@ -12,7 +12,7 @@
  *
  * Setup screen — same options as the kanji vocab-reveal drill:
  *   • Cards         25 / 50 / 100 / All
- *   • Level filter  ≤ / ≥ × 0..4
+ *   • Level filter  ≤ / = / ≥ × 0..4
  *   • Order         Teacher / Shuffle / Lowest first
  *   • Reveal        Hidden until tap (default) / Always visible
  *
@@ -73,7 +73,7 @@ const CARD_LIMIT_OPTIONS: { v: number; label: string }[] = [
 ]
 
 type OrderMode = 'teacher' | 'shuffle' | 'lowest'
-type LevelOp = '<=' | '>='
+type LevelOp = '<=' | '==' | '>='
 type LevelValue = 0 | 1 | 2 | 3 | 4
 
 interface PageEntry {
@@ -133,7 +133,9 @@ function filterByLevel(
 ): PageEntry[] {
   return pages.filter((p) => {
     const lvl = srs[cardKey(p.id)]?.level ?? 0
-    return op === '<=' ? lvl <= value : lvl >= value
+    if (op === '<=') return lvl <= value
+    if (op === '==') return lvl === value
+    return lvl >= value
   })
 }
 
@@ -1152,7 +1154,7 @@ function SetupScreen({
             <h3 className="text-sm font-semibold">Level filter</h3>
             <div className="flex flex-wrap items-center gap-2">
               <div className="inline-flex gap-1">
-                {(['<=', '>='] as LevelOp[]).map((op) => (
+                {(['<=', '==', '>='] as LevelOp[]).map((op) => (
                   <button
                     key={op}
                     type="button"
@@ -1188,7 +1190,7 @@ function SetupScreen({
             <p className="text-xs text-muted-foreground">
               {matching > 0
                 ? `${matching} card${matching === 1 ? '' : 's'} match (level ${draft.levelOp} ${draft.levelValue}).`
-                : `No cards match level ${draft.levelOp} ${draft.levelValue}. Try the other operator.`}
+                : `No cards match level ${draft.levelOp} ${draft.levelValue}. Try a different operator.`}
             </p>
           </section>
 
