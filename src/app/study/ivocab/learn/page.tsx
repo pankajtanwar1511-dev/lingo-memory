@@ -10,7 +10,6 @@
  */
 
 import { useCallback, useEffect, useRef, useState } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Maximize2, X } from 'lucide-react'
 import { Header } from '@/components/layout/header'
@@ -159,14 +158,17 @@ export default function IVocabLearnPage() {
 
   if (!current) return null
 
+  // Plain <img> (not next/image) and stable wrapper key so React reuses
+  // the same HTMLImageElement across card swaps. See the matching note
+  // in drill/page.tsx for why — same iOS Safari decoded-image retention
+  // pattern that crashed the drill on phone.
   const cardImg = (
-    <Image
+    <img
       src={`${IMG_BASE}${current.file}`}
       alt={`iVocab card ${current.page}`}
-      fill
-      sizes="(max-width: 768px) 100vw, 768px"
-      quality={85}
+      className="absolute inset-0 w-full h-full"
       style={{ objectFit: 'contain' }}
+      decoding="async"
       draggable={false}
     />
   )
@@ -209,7 +211,6 @@ export default function IVocabLearnPage() {
 
           <CardContent className="flex-1 flex items-center justify-center px-2 sm:px-4 py-2 min-h-0">
             <div
-              key={`card-${index}`}
               className="relative"
               style={{
                 width: 'min(100%, calc((100dvh - 7rem) * 720 / 405))',
@@ -260,7 +261,6 @@ export default function IVocabLearnPage() {
 
       <div className="h-full w-full flex items-center justify-center px-4 pt-8 pb-6">
         <div
-          key={`fs-card-${index}`}
           className="relative"
           style={{
             width: 'min(100%, calc((100dvh - 5rem) * 720 / 405))',

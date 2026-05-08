@@ -40,7 +40,6 @@
  */
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { ArrowLeft, ArrowUp, Maximize2, X } from 'lucide-react'
 import { Header } from '@/components/layout/header'
@@ -777,15 +776,22 @@ export default function RpcDrillPage() {
   // Image + covers — used by both compact and fullscreen layouts. The
   // image fills the wrapper at 16:9; covers are positioned by % of the
   // wrapper since the rects come back as 0..1 fractions of page size.
+  //
+  // Plain <img> (not next/image) and stable wrapper (no key={index}) so
+  // React reuses the SAME HTMLImageElement on each card swap — only the
+  // `src` attribute changes. iOS Safari aggressively retains decoded
+  // images of detached <img> elements for 30+ seconds, so remounting per
+  // card piled up "ghost" decoded buffers and OOM-killed the tab after
+  // ~20-30 swipes. Reusing one element forces the browser to release the
+  // previous decoded buffer when src changes.
   const cardBody = (
     <>
-      <Image
+      <img
         src={`${IMG_BASE}${current.file}`}
         alt={`iVocab card ${current.page}`}
-        fill
-        sizes="(max-width: 768px) 100vw, 768px"
-        quality={85}
+        className="absolute inset-0 w-full h-full"
         style={{ objectFit: 'contain' }}
+        decoding="async"
         draggable={false}
       />
       {currentCovers.map((r, i) => (
@@ -894,7 +900,6 @@ export default function RpcDrillPage() {
               top-bar height — kept in sync with the wrapper above. */}
           <CardContent className="flex-1 flex items-center justify-center px-2 sm:px-4 py-2 min-h-0">
             <div
-              key={`card-${index}`}
               className="relative"
               style={{
                 width: 'min(100%, calc((100dvh - 7rem) * 720 / 405))',
@@ -1002,7 +1007,6 @@ export default function RpcDrillPage() {
         }}
       >
         <div
-          key={`fs-card-${index}`}
           className="relative"
           style={{
             // Width is the smaller of (100% available) or (100% available
