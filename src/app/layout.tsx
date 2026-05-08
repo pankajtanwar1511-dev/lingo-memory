@@ -33,6 +33,17 @@ export const metadata: Metadata = {
     description: "Learn Japanese vocabulary efficiently with spaced repetition",
   },
   manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    title: "LingoMemory",
+    statusBarStyle: "default",
+  },
+  icons: {
+    // iOS Safari "Add to Home Screen" reads this, ignoring the manifest's
+    // icons array. Point at our largest existing icon — iOS will scale it
+    // to whatever resolution the device needs (no separate 180×180 file).
+    apple: { url: "/icons/icon-192x192.png", sizes: "192x192", type: "image/png" },
+  },
 }
 
 export const viewport: Viewport = {
