@@ -151,6 +151,22 @@ export default function HomePage() {
             <p className="text-sm text-muted-foreground">
               No credit card required • 20 free cards daily • Cancel anytime
             </p>
+
+            {/* Build stamp — surfaces the deployed git SHA + build time so
+                it's obvious when a refresh has actually picked up the new
+                code (vs. a stale SW or browser cache). */}
+            <p className="text-[11px] text-muted-foreground/60 pt-2 tabular-nums">
+              Build {process.env.NEXT_PUBLIC_BUILD_SHA} ·{" "}
+              {process.env.NEXT_PUBLIC_BUILD_TIME
+                ? new Date(process.env.NEXT_PUBLIC_BUILD_TIME).toLocaleString(undefined, {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                  })
+                : ""}
+            </p>
           </motion.div>
 
           {/* Sample Flashcard */}
