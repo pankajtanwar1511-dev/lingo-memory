@@ -25,14 +25,17 @@ const exec = promisify(execFile);
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = join(__dirname, '..');
-const PDF_PATH = join(REPO_ROOT, 'public/seed-data/RPC_Vocabs.pdf');
+// Source PDF lives outside /public so it isn't shipped to production.
+const PDF_PATH = join(REPO_ROOT, 'seed-source/RPC_Vocabs.pdf');
 const OUT_DIR = join(REPO_ROOT, 'public/seed-data/rpc');
 const MANIFEST_PATH = join(OUT_DIR, 'pages.json');
 
-// 720×405 pt source. 110 DPI was fine in the compact card but visibly
-// soft when the image fills a 4K monitor in fullscreen. 220 DPI emits
-// ~2200×1240 — sharp on every common display, ~150–250KB JPEG @ q82.
-const DPI = 220;
+// 720×405 pt source. 220 DPI (~2200×1240) crashed mobile Safari/Chrome —
+// each image cost ~10MB of decoded RGBA in the browser image cache, and
+// swiping through cards quickly exhausted the per-tab limit. 140 DPI emits
+// ~1400×790 — still sharp on phones and on a normal laptop fullscreen,
+// ~4MB decoded per image (60% reduction).
+const DPI = 140;
 const CONCURRENCY = Math.max(2, Math.min(8, os.cpus().length - 1));
 
 function hasBin(bin) {

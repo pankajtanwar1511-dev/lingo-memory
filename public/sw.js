@@ -1,5 +1,14 @@
 // Service Worker for LingoMemory PWA
-const CACHE_NAME = 'lingomemory-v2';
+//
+// v3 bump (2026-05-08): the previous SW cached every same-origin static
+// asset cache-first with no quota and no eviction. After visiting iVocab
+// the 220-DPI card images filled iOS Safari's CacheStorage quota and
+// destabilized the tab even on routes that didn't load images. v3:
+//   • Skips caching responses > 1 MB.
+//   • Skips caching iVocab card images and the source PDF outright.
+//   • Caps the runtime cache at MAX_RUNTIME_ENTRIES with FIFO eviction.
+//   • Bumped name forces clients to drop the old, bloated cache.
+const CACHE_NAME = 'lingomemory-v3';
 const urlsToCache = [
   '/',
   '/study',
@@ -9,6 +18,27 @@ const urlsToCache = [
   '/manage',
   '/manifest.json'
 ];
+
+const MAX_RUNTIME_ENTRIES = 60;
+const MAX_CACHED_RESPONSE_BYTES = 1024 * 1024;
+
+function shouldSkipCache(url) {
+  // Never cache the iVocab card images or source PDF — they're large,
+  // not needed offline, and (for the images) numerous enough to fill the
+  // SW cache quota on their own.
+  if (url.includes('/seed-data/rpc/') && /\.(jpg|jpeg|png|webp)$/i.test(url)) return true;
+  if (/\.pdf($|\?)/i.test(url)) return true;
+  return false;
+}
+
+async function trimCache(cacheName, max) {
+  const cache = await caches.open(cacheName);
+  const keys = await cache.keys();
+  if (keys.length <= max) return;
+  // Drop oldest entries first (Cache Storage preserves insertion order).
+  const drop = keys.length - max;
+  for (let i = 0; i < drop; i += 1) await cache.delete(keys[i]);
+}
 
 // Install event - cache essential files
 self.addEventListener('install', (event) => {
@@ -42,21 +72,23 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  // Skip non-GET — Cache Storage only accepts GET anyway.
+  if (event.request.method !== 'GET') return;
+
+  // Bypass cache entirely for known-large/numerous assets (iVocab images,
+  // PDFs). The browser's HTTP cache + Vercel's CDN handle these fine
+  // without us pinning them on-device.
+  if (shouldSkipCache(event.request.url)) return;
+
   // Network-first strategy for API calls
   if (event.request.url.includes('/api/')) {
     event.respondWith(
       fetch(event.request)
         .then((response) => {
-          // Clone the response before caching
-          const responseToCache = response.clone();
-          caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, responseToCache);
-          });
+          maybeCachePut(event.request, response);
           return response;
         })
-        .catch(() => {
-          return caches.match(event.request);
-        })
+        .catch(() => caches.match(event.request))
     );
     return;
   }
@@ -75,12 +107,7 @@ self.addEventListener('fetch', (event) => {
             return response;
           }
 
-          // Clone and cache the response
-          const responseToCache = response.clone();
-          caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, responseToCache);
-          });
-
+          maybeCachePut(event.request, response);
           return response;
         });
       })
@@ -92,6 +119,18 @@ self.addEventListener('fetch', (event) => {
       })
   );
 });
+
+// Cache a response only if Content-Length is below the size cap. We can't
+// stream-measure here without reading the body twice, so trust the header
+// and skip if it's missing for a non-trivial-looking type.
+function maybeCachePut(request, response) {
+  const len = Number(response.headers.get('content-length'));
+  if (Number.isFinite(len) && len > MAX_CACHED_RESPONSE_BYTES) return;
+  const clone = response.clone();
+  caches.open(CACHE_NAME).then((cache) => {
+    cache.put(request, clone).then(() => trimCache(CACHE_NAME, MAX_RUNTIME_ENTRIES));
+  });
+}
 
 // Background sync for uploading study progress
 self.addEventListener('sync', (event) => {

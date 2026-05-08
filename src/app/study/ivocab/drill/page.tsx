@@ -783,9 +783,8 @@ export default function RpcDrillPage() {
         src={`${IMG_BASE}${current.file}`}
         alt={`iVocab card ${current.page}`}
         fill
-        priority
-        sizes="100vw"
-        quality={92}
+        sizes="(max-width: 768px) 100vw, 768px"
+        quality={85}
         style={{ objectFit: 'contain' }}
         draggable={false}
       />
