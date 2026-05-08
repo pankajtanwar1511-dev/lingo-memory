@@ -991,6 +991,8 @@ export default function VerbsPage() {
               src={`/images/verbs/${verb.id}.png`}
               alt={`${verb.lemma.kanji} - ${verb.meaning.primary}`}
               className="w-full h-full object-contain"
+              loading="lazy"
+              decoding="async"
               onError={() => {
                 setFailedImages(prev => new Set(prev).add(verb.id))
               }}
