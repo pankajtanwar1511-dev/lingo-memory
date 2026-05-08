@@ -282,6 +282,22 @@ export default function RpcDrillPage() {
   const downXRef = useRef<number | null>(null)
   const downYRef = useRef<number | null>(null)
 
+  // ── Image ring buffer ─────────────────────────────────────────────────
+  // Three persistent <img> slots that hold prev / current / next. They
+  // never unmount (stable React keys); we only mutate `src`. This both
+  // (a) preloads the next card so swipe transitions are flicker-free and
+  // (b) sidesteps iOS Safari's 30s decoded-buffer retention on detached
+  // <img> elements that previously OOM-killed the tab. Active slot has
+  // opacity 1; the others crossfade to 0. Memory is capped at 3 decoded
+  // images (~13MB).
+  const [slots, setSlots] = useState<[string | null, string | null, string | null]>(
+    [null, null, null],
+  )
+  // Track which files have fired onLoad. Covers only render when the
+  // active file is loaded, so we never paint cover rects on top of a
+  // stale/old image during the brief decode of the new one.
+  const [loadedFiles, setLoadedFiles] = useState<Set<string>>(new Set())
+
   // Refs the keyboard listener reads through so it can stay mounted once.
   const nextRef = useRef(() => {})
   const prevRef = useRef(() => {})
@@ -363,6 +379,51 @@ export default function RpcDrillPage() {
       void flushAllPending()
     }
   }, [uid])
+
+  // Reconcile the 3 slots so they hold {prev, current, next}. We only
+  // overwrite a slot whose file is no longer in the wanted set, which
+  // means already-loaded prev/current/next files persist across moves.
+  useEffect(() => {
+    if (order.length === 0 || index >= order.length) return
+    const cur = order[index]
+    if (!cur) return
+    const wanted = new Set<string>([cur.file])
+    if (order.length > 1) {
+      wanted.add(order[(index + 1) % order.length].file)
+      wanted.add(order[(index - 1 + order.length) % order.length].file)
+    }
+    setSlots((prev) => {
+      const next: [string | null, string | null, string | null] = [prev[0], prev[1], prev[2]]
+      for (const want of wanted) {
+        if (next.includes(want)) continue
+        // First slot whose file is null or no longer wanted.
+        for (let i = 0; i < 3; i += 1) {
+          const f = next[i]
+          if (f === null || !wanted.has(f)) {
+            next[i] = want
+            break
+          }
+        }
+      }
+      if (next[0] === prev[0] && next[1] === prev[1] && next[2] === prev[2]) return prev
+      return next
+    })
+  }, [index, order])
+
+  // Trim loadedFiles to only files currently held by some slot — keeps
+  // the set bounded and prevents stale "loaded" entries from leaking.
+  useEffect(() => {
+    setLoadedFiles((prev) => {
+      const inSlots = new Set(slots.filter(Boolean) as string[])
+      let changed = false
+      const next = new Set<string>()
+      for (const f of prev) {
+        if (inSlots.has(f)) next.add(f)
+        else changed = true
+      }
+      return changed ? next : prev
+    })
+  }, [slots])
 
   // ── Session lifecycle ─────────────────────────────────────────────────
 
@@ -773,40 +834,55 @@ export default function RpcDrillPage() {
   const swipeTintR = Math.min(0.18, (dragX / SWIPE_DX_MIN) * 0.18)
   const swipeTintL = Math.min(0.18, (-dragX / SWIPE_DX_MIN) * 0.18)
 
-  // Image + covers — used by both compact and fullscreen layouts. The
-  // image fills the wrapper at 16:9; covers are positioned by % of the
-  // wrapper since the rects come back as 0..1 fractions of page size.
-  //
-  // Plain <img> (not next/image) and stable wrapper (no key={index}) so
-  // React reuses the SAME HTMLImageElement on each card swap — only the
-  // `src` attribute changes. iOS Safari aggressively retains decoded
-  // images of detached <img> elements for 30+ seconds, so remounting per
-  // card piled up "ghost" decoded buffers and OOM-killed the tab after
-  // ~20-30 swipes. Reusing one element forces the browser to release the
-  // previous decoded buffer when src changes.
+  // Image ring buffer + covers. The 3 slots are stable React-keyed <img>
+  // elements that never unmount — they just have their `src` rewritten
+  // by the reconciliation effect above. Only the slot whose file matches
+  // `current.file` is at full opacity; the others crossfade to 0. Covers
+  // only render once the active file has fired onLoad, so we never paint
+  // the next card's mask positions on top of a still-decoding old image.
+  const currentLoaded = loadedFiles.has(current.file)
   const cardBody = (
     <>
-      <img
-        src={`${IMG_BASE}${current.file}`}
-        alt={`iVocab card ${current.page}`}
-        className="absolute inset-0 w-full h-full"
-        style={{ objectFit: 'contain' }}
-        decoding="async"
-        draggable={false}
-      />
-      {currentCovers.map((r, i) => (
-        <div
-          key={i}
-          className="absolute pointer-events-none transition-opacity duration-150 bg-background ring-1 ring-foreground/10"
-          style={{
-            left: `${r.x * 100}%`,
-            top: `${r.y * 100}%`,
-            width: `${r.w * 100}%`,
-            height: `${r.h * 100}%`,
-            opacity: i < revealedCount ? 0 : 1,
-          }}
-        />
-      ))}
+      {slots.map((file, i) => {
+        const isActive = file !== null && file === current.file
+        return (
+          <img
+            // Stable index-based keys: these elements are reused across
+            // card swaps; React just updates `src` when `slots[i]` changes.
+            key={i}
+            src={file ? `${IMG_BASE}${file}` : undefined}
+            alt=""
+            aria-hidden={!isActive}
+            className="absolute inset-0 w-full h-full"
+            style={{
+              objectFit: 'contain',
+              opacity: isActive ? 1 : 0,
+              transition: 'opacity 120ms ease',
+              pointerEvents: 'none',
+            }}
+            onLoad={() => {
+              if (!file) return
+              setLoadedFiles((prev) => (prev.has(file) ? prev : new Set(prev).add(file)))
+            }}
+            decoding="async"
+            draggable={false}
+          />
+        )
+      })}
+      {currentLoaded &&
+        currentCovers.map((r, i) => (
+          <div
+            key={i}
+            className="absolute pointer-events-none transition-opacity duration-150 bg-background ring-1 ring-foreground/10"
+            style={{
+              left: `${r.x * 100}%`,
+              top: `${r.y * 100}%`,
+              width: `${r.w * 100}%`,
+              height: `${r.h * 100}%`,
+              opacity: i < revealedCount ? 0 : 1,
+            }}
+          />
+        ))}
     </>
   )
 

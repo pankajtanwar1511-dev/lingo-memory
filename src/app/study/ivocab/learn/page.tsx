@@ -39,6 +39,13 @@ export default function IVocabLearnPage() {
   const [fullscreen, setFullscreen] = useState(false)
   const downXRef = useRef<number | null>(null)
 
+  // Image ring buffer — same approach as the iVocab drill. Three persistent
+  // <img> slots holding {prev, current, next}, src updated in place. See
+  // drill/page.tsx for the rationale on iOS Safari decoded-buffer retention.
+  const [slots, setSlots] = useState<[string | null, string | null, string | null]>(
+    [null, null, null],
+  )
+
   // Load manifest + restore last-visited index from cloud-progress (RTDB
   // when signed in, localStorage fallback otherwise).
   useEffect(() => {
@@ -72,6 +79,33 @@ export default function IVocabLearnPage() {
     if (!restored || pages.length === 0) return
     saveProgress(uid, POSITION_KEY, index)
   }, [index, pages.length, restored, uid])
+
+  // Reconcile the 3 ring-buffer slots so they hold prev/current/next.
+  useEffect(() => {
+    if (pages.length === 0 || index >= pages.length) return
+    const cur = pages[index]
+    if (!cur) return
+    const wanted = new Set<string>([cur.file])
+    if (pages.length > 1) {
+      wanted.add(pages[(index + 1) % pages.length].file)
+      wanted.add(pages[(index - 1 + pages.length) % pages.length].file)
+    }
+    setSlots((prev) => {
+      const next: [string | null, string | null, string | null] = [prev[0], prev[1], prev[2]]
+      for (const want of wanted) {
+        if (next.includes(want)) continue
+        for (let i = 0; i < 3; i += 1) {
+          const f = next[i]
+          if (f === null || !wanted.has(f)) {
+            next[i] = want
+            break
+          }
+        }
+      }
+      if (next[0] === prev[0] && next[1] === prev[1] && next[2] === prev[2]) return prev
+      return next
+    })
+  }, [index, pages])
 
   const next = useCallback(() => {
     setIndex((i) => (pages.length === 0 ? 0 : (i + 1) % pages.length))
@@ -158,19 +192,32 @@ export default function IVocabLearnPage() {
 
   if (!current) return null
 
-  // Plain <img> (not next/image) and stable wrapper key so React reuses
-  // the same HTMLImageElement across card swaps. See the matching note
-  // in drill/page.tsx for why — same iOS Safari decoded-image retention
-  // pattern that crashed the drill on phone.
+  // Image ring buffer — three crossfading <img> slots, prev/current/next
+  // preloaded so navigation is instant. Inactive slots stay mounted at
+  // opacity 0 so iOS doesn't have to re-decode when the user goes back.
   const cardImg = (
-    <img
-      src={`${IMG_BASE}${current.file}`}
-      alt={`iVocab card ${current.page}`}
-      className="absolute inset-0 w-full h-full"
-      style={{ objectFit: 'contain' }}
-      decoding="async"
-      draggable={false}
-    />
+    <>
+      {slots.map((file, i) => {
+        const isActive = file !== null && file === current.file
+        return (
+          <img
+            key={i}
+            src={file ? `${IMG_BASE}${file}` : undefined}
+            alt=""
+            aria-hidden={!isActive}
+            className="absolute inset-0 w-full h-full"
+            style={{
+              objectFit: 'contain',
+              opacity: isActive ? 1 : 0,
+              transition: 'opacity 120ms ease',
+              pointerEvents: 'none',
+            }}
+            decoding="async"
+            draggable={false}
+          />
+        )
+      })}
+    </>
   )
 
   // ── Compact ──
