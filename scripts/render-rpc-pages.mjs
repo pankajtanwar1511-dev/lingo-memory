@@ -28,14 +28,23 @@ const REPO_ROOT = join(__dirname, '..');
 // Source PDF lives outside /public so it isn't shipped to production.
 const PDF_PATH = join(REPO_ROOT, 'seed-source/RPC_Vocabs.pdf');
 const OUT_DIR = join(REPO_ROOT, 'public/seed-data/rpc');
+const MOBILE_OUT_DIR = join(OUT_DIR, 'mobile');
 const MANIFEST_PATH = join(OUT_DIR, 'pages.json');
 
-// 720×405 pt source. 220 DPI (~2200×1240) crashed mobile Safari/Chrome —
-// each image cost ~10MB of decoded RGBA in the browser image cache, and
-// swiping through cards quickly exhausted the per-tab limit. 140 DPI emits
-// ~1400×790 — still sharp on phones and on a normal laptop fullscreen,
-// ~4MB decoded per image (60% reduction).
-const DPI = 140;
+// Two render variants:
+//   • desktop (140 DPI, ~1400×790, ~4MB decoded) — sharp on retina laptops
+//   • mobile  (100 DPI, ~1000×563, ~2.3MB decoded) — pushed the iVocab
+//     drill crash threshold from ~30 cards to ~70+ on mid-age iPhones
+//     (X/XR/11), where iOS Safari's per-URL decoded-buffer cache piled
+//     up faster than the ring buffer could counter.
+//
+// 720×405 pt source. Original runs were 220 DPI (crashed phones outright);
+// 140 DPI compromise didn't fully fix it for the slower phones. The drill/
+// learn pages now pick the variant at runtime via matchMedia.
+const VARIANTS = [
+  { name: 'desktop', dpi: 140, dir: OUT_DIR },
+  { name: 'mobile',  dpi: 100, dir: MOBILE_OUT_DIR },
+];
 const CONCURRENCY = Math.max(2, Math.min(8, os.cpus().length - 1));
 
 function hasBin(bin) {
@@ -55,40 +64,40 @@ async function pageCount() {
 }
 
 /** Render one page → final file path. Skips if the file already exists. */
-async function renderOne(pageNum, ext, useWebp) {
+async function renderOne(pageNum, ext, useWebp, outDir, dpi) {
   const finalName = `page-${pageNum}.${ext}`;
-  const finalPath = join(OUT_DIR, finalName);
+  const finalPath = join(outDir, finalName);
   if (existsSync(finalPath)) return { pageNum, skipped: true };
 
   // pdftoppm always appends -{N}.{ext} where {N} is zero-padded to the page
   // count's width; we render one page at a time and let it use a unique
   // tmp prefix so we can rename to a clean filename.
-  const tmpPrefix = join(OUT_DIR, `_tmp_p${pageNum}`);
+  const tmpPrefix = join(outDir, `_tmp_p${pageNum}`);
   if (useWebp) {
     // Render to PNG first, then convert with cwebp — quality vs jpeg+cwebp.
     await exec('pdftoppm', [
-      '-png', '-r', String(DPI), '-f', String(pageNum), '-l', String(pageNum),
+      '-png', '-r', String(dpi), '-f', String(pageNum), '-l', String(pageNum),
       PDF_PATH, tmpPrefix,
     ]);
-    const pngFile = (await readdir(OUT_DIR)).find(
+    const pngFile = (await readdir(outDir)).find(
       (f) => f.startsWith(`_tmp_p${pageNum}-`) && f.endsWith('.png'),
     );
     if (!pngFile) throw new Error(`pdftoppm produced no png for page ${pageNum}`);
-    const pngPath = join(OUT_DIR, pngFile);
+    const pngPath = join(outDir, pngFile);
     await exec('cwebp', ['-quiet', '-q', '78', pngPath, '-o', finalPath]);
     await rm(pngPath);
   } else {
     // JPEG path — works without cwebp installed.
     await exec('pdftoppm', [
       '-jpeg', '-jpegopt', 'quality=82,optimize=y',
-      '-r', String(DPI), '-f', String(pageNum), '-l', String(pageNum),
+      '-r', String(dpi), '-f', String(pageNum), '-l', String(pageNum),
       PDF_PATH, tmpPrefix,
     ]);
-    const jpgFile = (await readdir(OUT_DIR)).find(
+    const jpgFile = (await readdir(outDir)).find(
       (f) => f.startsWith(`_tmp_p${pageNum}-`) && f.endsWith('.jpg'),
     );
     if (!jpgFile) throw new Error(`pdftoppm produced no jpg for page ${pageNum}`);
-    await rename(join(OUT_DIR, jpgFile), finalPath);
+    await rename(join(outDir, jpgFile), finalPath);
   }
   return { pageNum, skipped: false };
 }
@@ -126,17 +135,24 @@ async function main() {
   }
   const useWebp = hasBin('cwebp');
   const ext = useWebp ? 'webp' : 'jpg';
-  await mkdir(OUT_DIR, { recursive: true });
 
   const total = await pageCount();
   console.log(`PDF: ${PDF_PATH}`);
-  console.log(`Pages: ${total} · DPI: ${DPI} · format: ${ext} · concurrency: ${CONCURRENCY}`);
+  console.log(`Pages: ${total} · format: ${ext} · concurrency: ${CONCURRENCY}`);
 
   const pageNums = Array.from({ length: total }, (_, i) => i + 1);
-  await pool(pageNums, (n) => renderOne(n, ext, useWebp), CONCURRENCY);
 
-  // Build manifest. Ext is uniform per run — older runs in another format are
-  // detected and the most-recent ext wins.
+  // Render each variant in turn. renderOne skips files that already exist,
+  // so re-running is safe and idempotent.
+  for (const v of VARIANTS) {
+    await mkdir(v.dir, { recursive: true });
+    console.log(`\n${v.name} variant → ${v.dir} @ ${v.dpi} DPI`);
+    await pool(pageNums, (n) => renderOne(n, ext, useWebp, v.dir, v.dpi), CONCURRENCY);
+  }
+
+  // Build manifest from the desktop set (filenames are identical across
+  // variants; only the directory differs). The runtime picks the right
+  // path via matchMedia.
   const files = await readdir(OUT_DIR);
   const seen = new Map();
   for (const f of files) {
@@ -161,17 +177,20 @@ async function main() {
   const manifest = {
     source: 'RPC_Vocabs_Combined_no_titles.pdf',
     renderedAt: new Date().toISOString(),
-    dpi: DPI,
+    variants: VARIANTS.map((v) => ({ name: v.name, dpi: v.dpi })),
     aspectRatio: '720:405',
     total: pages.length,
     pages,
   };
   await writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
-  console.log(`Manifest: ${MANIFEST_PATH} (${pages.length} pages)`);
+  console.log(`\nManifest: ${MANIFEST_PATH} (${pages.length} pages)`);
 
-  // Cleanup any orphan tmp files from interrupted prior runs.
-  for (const f of files) {
-    if (f.startsWith('_tmp_p')) await rm(join(OUT_DIR, f));
+  // Cleanup any orphan tmp files from interrupted prior runs in either dir.
+  for (const v of VARIANTS) {
+    const dirFiles = await readdir(v.dir);
+    for (const f of dirFiles) {
+      if (f.startsWith('_tmp_p')) await rm(join(v.dir, f));
+    }
   }
   console.log('Done.');
 }

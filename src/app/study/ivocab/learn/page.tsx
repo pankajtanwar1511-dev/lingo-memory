@@ -19,7 +19,10 @@ import { useAuth } from '@/contexts/auth-context'
 import { loadProgress, saveProgress } from '@/services/cloud-progress.service'
 
 const MANIFEST_URL = '/seed-data/rpc/pages.json'
-const IMG_BASE = '/seed-data/rpc/'
+// Mobile and desktop image variants. See drill/page.tsx for rationale.
+const IMG_BASE_DESKTOP = '/seed-data/rpc/'
+const IMG_BASE_MOBILE = '/seed-data/rpc/mobile/'
+const MOBILE_MEDIA_QUERY = '(max-width: 768px)'
 // Cloud-progress key — synced to RTDB when signed in, falls back to
 // localStorage when offline. Same pattern as the drill's CFG_KEY.
 const POSITION_KEY = 'ivocab-learn-position'
@@ -30,6 +33,19 @@ interface PageEntry {
   file: string
 }
 
+function useIsMobile(): boolean {
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const mq = window.matchMedia(MOBILE_MEDIA_QUERY)
+    const update = () => setIsMobile(mq.matches)
+    update()
+    mq.addEventListener('change', update)
+    return () => mq.removeEventListener('change', update)
+  }, [])
+  return isMobile
+}
+
 export default function IVocabLearnPage() {
   const { user } = useAuth()
   const uid = user?.uid ?? null
@@ -38,6 +54,8 @@ export default function IVocabLearnPage() {
   const [restored, setRestored] = useState(false)
   const [fullscreen, setFullscreen] = useState(false)
   const downXRef = useRef<number | null>(null)
+  const isMobile = useIsMobile()
+  const imgBase = isMobile ? IMG_BASE_MOBILE : IMG_BASE_DESKTOP
 
   // Image ring buffer — same approach as the iVocab drill. Three persistent
   // <img> slots holding {prev, current, next}, src updated in place. See
@@ -202,7 +220,7 @@ export default function IVocabLearnPage() {
         return (
           <img
             key={i}
-            src={file ? `${IMG_BASE}${file}` : undefined}
+            src={file ? `${imgBase}${file}` : undefined}
             alt=""
             aria-hidden={!isActive}
             className="absolute inset-0 w-full h-full"

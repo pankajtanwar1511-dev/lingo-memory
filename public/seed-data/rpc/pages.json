@@ -1,7 +1,16 @@
 {
   "source": "RPC_Vocabs_Combined_no_titles.pdf",
-  "renderedAt": "2026-05-08T08:44:47.620Z",
-  "dpi": 140,
+  "renderedAt": "2026-05-09T08:43:40.121Z",
+  "variants": [
+    {
+      "name": "desktop",
+      "dpi": 140
+    },
+    {
+      "name": "mobile",
+      "dpi": 100
+    }
+  ],
   "aspectRatio": "720:405",
   "total": 761,
   "pages": [

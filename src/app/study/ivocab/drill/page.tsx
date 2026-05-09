@@ -61,7 +61,14 @@ import {
 const CFG_KEY = 'rpc-drill-config'
 const MANIFEST_URL = '/seed-data/rpc/pages.json'
 const COVERS_URL = '/seed-data/rpc/covers.json'
-const IMG_BASE = '/seed-data/rpc/'
+// Two image variants live under /seed-data/rpc/. Desktop uses 140 DPI
+// (1400×788, ~4.4MB decoded). Mobile uses 100 DPI (1000×563, ~2.3MB
+// decoded) under the /mobile/ subfolder. The drill picks the right
+// folder via matchMedia so iPhones don't pile up 4MB ghosts in iOS's
+// per-URL decoded-buffer cache while swiping through cards.
+const IMG_BASE_DESKTOP = '/seed-data/rpc/'
+const IMG_BASE_MOBILE = '/seed-data/rpc/mobile/'
+const MOBILE_MEDIA_QUERY = '(max-width: 768px)'
 const HELP_DISMISSED_KEY = 'rpc-drill-help-dismissed'
 
 const CARD_LIMIT_OPTIONS: { v: number; label: string }[] = [
@@ -233,6 +240,22 @@ function retuneTail(
   return head.concat(newTail)
 }
 
+/** Track whether the viewport matches MOBILE_MEDIA_QUERY. Updates live so
+ *  rotation / window resize switches the variant on the fly. SSR-safe:
+ *  initial value is `false` and the real value is read in the effect. */
+function useIsMobile(): boolean {
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const mq = window.matchMedia(MOBILE_MEDIA_QUERY)
+    const update = () => setIsMobile(mq.matches)
+    update()
+    mq.addEventListener('change', update)
+    return () => mq.removeEventListener('change', update)
+  }, [])
+  return isMobile
+}
+
 // ─── Component ───────────────────────────────────────────────────────────
 
 export default function RpcDrillPage() {
@@ -242,6 +265,9 @@ export default function RpcDrillPage() {
   const uid = isAuthenticated && user ? user.uid : null
   const decayDays = settings?.srsDecayDays ?? SRS.DECAY_DAYS
   const queueMultiplier = settings?.srsQueueMultiplier ?? SRS.QUEUE_MULTIPLIER
+  // Mobile gets the 100 DPI variant — half the decoded memory per image.
+  const isMobile = useIsMobile()
+  const imgBase = isMobile ? IMG_BASE_MOBILE : IMG_BASE_DESKTOP
 
   const [pages, setPages] = useState<PageEntry[]>([])
   const [covers, setCovers] = useState<Record<string, CoverRect[]>>({})
@@ -850,7 +876,7 @@ export default function RpcDrillPage() {
             // Stable index-based keys: these elements are reused across
             // card swaps; React just updates `src` when `slots[i]` changes.
             key={i}
-            src={file ? `${IMG_BASE}${file}` : undefined}
+            src={file ? `${imgBase}${file}` : undefined}
             alt=""
             aria-hidden={!isActive}
             className="absolute inset-0 w-full h-full"
