@@ -13,7 +13,7 @@ export function MobileBottomNav() {
       name: "Learn",
       href: "/study",
       icon: BookOpenCheck,
-      activePattern: ["/study", "/vocabulary", "/verbs", "/dlingo"]
+      activePattern: ["/study", "/verbs", "/dlingo"]
     },
     {
       name: "Practice",

@@ -440,9 +440,6 @@ export default function HomePage() {
               <Link href={"/study" as any} className="hover:text-foreground transition-colors">
                 Study
               </Link>
-              <Link href={"/vocabulary" as any} className="hover:text-foreground transition-colors">
-                Vocabulary
-              </Link>
               <Link href={"/login" as any} className="hover:text-foreground transition-colors">
                 Sign In
               </Link>

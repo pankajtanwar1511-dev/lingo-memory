@@ -4,7 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
 import {
-  Moon, Sun, BookOpen, Trophy, Settings, Menu, X, Zap, Library,
+  Moon, Sun, BookOpen, Trophy, Settings, Menu, X, Zap,
   BarChart3, GraduationCap, Wrench, Database, Languages, BookMarked,
   FlaskConical, BookOpenCheck, Target, LayoutDashboard, Building2
 } from "lucide-react"
@@ -44,12 +44,6 @@ export function Header() {
           badge: "86",
           badgeVariant: "default" as const,
           description: "37-lesson reference + reading drill SRS"
-        },
-        {
-          name: "Vocabulary",
-          href: "/vocabulary",
-          icon: Library,
-          description: "N5 vocab deck (800+ words)"
         },
         {
           name: "Verbs",
