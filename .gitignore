@@ -68,3 +68,6 @@ scripts/_kanjidic_cache.json
 .claude/
 
 
+
+# Rendered images (regenerable via render-decks)
+seed-output/
