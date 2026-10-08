@@ -61,3 +61,6 @@ data/kanji/raw/kanjidic2.xml# Backups
 # Temp folders
 docs/temp/
 docs/data-source/kanji/raw/kanjivg/
+
+# Local data caches written by scripts (regenerable)
+scripts/_*_cache.json
