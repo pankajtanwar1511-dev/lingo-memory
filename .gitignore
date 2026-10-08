@@ -71,3 +71,6 @@ scripts/_kanjidic_cache.json
 
 # Rendered images (regenerable via render-decks)
 seed-output/
+
+# Local data caches written by scripts (regenerable)
+scripts/_*_cache.json
